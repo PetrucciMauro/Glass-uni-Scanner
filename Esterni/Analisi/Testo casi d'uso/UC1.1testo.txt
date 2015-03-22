@@ -1,0 +1,7 @@
+CASO D’USO: UC1.1
+ATTORI: utente desktop
+PRECONDIZIONE: l’utente desktop ha avviato il sistema e questo è pronto all’uso
+SCOPO E DESCRIZIONE: l’utente può creare una nuova presentazione
+SCENARIO PRINCIPALE:
+	1. l’utente crea una nuova presentazione vuota
+POSTCONDIZIONE:l’utente ha creato una nuova presentazione
