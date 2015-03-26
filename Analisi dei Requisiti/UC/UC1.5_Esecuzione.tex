@@ -1,0 +1,150 @@
+\subsection{UC 1.5 - Esecuzione presentazione}{
+	\label{uc1.5}
+%	 \includegraphics{\imgs } %inserire il diagramma UML
+	\textbf{Attori}: utente generico \\
+	\textbf{Descrizione}: l'utente sceglie una presentazione e la esegue. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
+	\textbf{Precondizione}: il sistema è funzionante e l'utente non ha ancora scelto nessuna presentazione da eseguire.	\\
+	\textbf{Postcondizione}: la presentazione scelta è stata eseguita e l'utente può scegliere il metodo di avanzamento dei frame che ritiene più appropriato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item scelta della presentazione da eseguire
+		\item scelta del metodo con cui eseguirla: automatica o manuale
+		\item possibilità di passare da manuale ad automatico e viceversa
+	\end{enumerate}
+	}
+\subsection{UC 1.5.1 - Caricamento presentazione}{
+	\label{uc1.5.1}
+%			 \includegraphics{\imgs } %inserire il diagramma UML
+	\textbf{Attori}: utente generico \\
+	\textbf{Descrizione}: l'utente vuole scegliere una presentazione da eseguire tra quelle presenti in locale o nel proprio spazio cloud se l'utente è registrato. \\
+	\textbf{Precondizione}: il sistema è funzionante e l'utente vuole scegliere una presentazione da eseguire.	\\
+	\textbf{Postcondizione}: la presentazione scelta è accettata dal sistema, ossia non è corrotta e la sua esecuzione può essere avviata.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item l'utente naviga nel filesystem
+		\item l'utente sceglie la presentazione
+		\item l'utente apre la presentazione scelta
+	\end{enumerate}
+	}
+	\subsection{UC 1.5.1.1 - Navigazione nel filesystem}{
+		\label{uc1.5.1.1}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente naviga nel filesystem per scegliere una presentazione da caricare. \\
+		\textbf{Precondizione}: il sistema è in attesa che l'utente specifichi un percorso, che può essere lo stesso di quello corrente.	\\
+		\textbf{Postcondizione}: il percorso è stato trovato e il sistema è in attesa che l'utente scelga la presentazione da eseguire.	\\
+	}
+	\subsection{UC 1.5.1.2 - Scelta della presentazione}{
+		\label{uc1.5.1.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente seleziona una presentazione da eseguire. \\
+		\textbf{Precondizione}: il sistema mostra all'utente tutti i file presenti nella cartella corrente.	\\
+		\textbf{Postcondizione}: l'utente ha trovato la presentazione voluta ed è pronto a farla eseguire.	\\
+	}
+	\subsection{UC 1.5.1.3 - Esecuzione della presentazione}{
+		\label{uc1.5.1.3}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente vuole eseguire una presentazione già selezionata. \\
+		\textbf{Precondizione}: il sistema attende il via libera dell'utente per eseguire la presentazione selezionata.	\\
+		\textbf{Postcondizione}: l'utente ha eseguito la presentazione.	\\
+	}
+	\subsection{UC 1.5.2 - Esecuzione manuale}{
+		\label{uc1.5.2}
+	%			 \includegraphics{\imgs } %inserire il diagramma UML
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
+		\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
+		\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item l'utente scorre la presentazione
+			\item l'utente può scegliere il percorso su cui continuare
+			\item l'utente può cambiare il livello di visualizzazione
+			\item l'utente può ritornare a punti precedenti
+			\item l'utente può avviare la presentazione automatica da qualsiasi frame
+		\end{enumerate}
+		}
+	\subsection{UC 1.5.2.1 - Scorrimento in avanti e indietro dei frame}{
+		\label{uc1.5.2.1}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente vuole scorrere la presentazione al frame immediatamente successivo o precedente. \\
+		\textbf{Precondizione}: un frame è in presentazione.	\\
+		\textbf{Postcondizione}: il frame in presentazione è cambiato passando a quello successivo o precedente in base alla scelta dell'utente.	\\
+	}
+	\subsection{UC 1.5.2.2 - Scelta all'interno del frame}{
+		\label{uc1.5.2.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente deve poter scegliere come far continuare la presentazione. \\
+		\textbf{Precondizione}: il frame in presentazione presenta la possibilità di scegliere con quale percorso continuare la presentazione e l'utente deve poter effettuare tale scelta.	\\
+		\textbf{Postcondizione}: la presentazione può continuare con il primo frame del percorso che l'utente ha scelto.	\\
+	}
+	\subsection{UC 1.5.2.3 - Salto al bookmark successivo}{
+		\label{uc1.5.2.3}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può andare a presentare un altro frame saltando una parte della presentazione. \\
+		\textbf{Precondizione}: il frame attuale presenta un bookmark ad un altro frame.	\\
+		\textbf{Postcondizione}: il frame in presentazione è quello puntato dal bookmark e la presentazione può continuare da questo punto.	\\
+	}
+	\subsection{UC 1.5.2.4 - Passaggio ad un livello superiore}{
+		\label{uc1.5.2.4}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può salire nel frame padre appena superiore. \\
+		\textbf{Precondizione}: il frame in presentazione è figlio di almeno un frame padre (non è quindi la radice).	\\
+		\textbf{Postcondizione}: il frame in presentazione è passato al padre .	\\
+	}
+\subsection{UC 1.5.3 - Esecuzione automatica}{
+	\label{uc1.5.3}
+%			 \includegraphics{\imgs } %inserire il diagramma UML
+	\textbf{Attori}: utente generico \\
+	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. \\
+	\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
+	\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item l'utente avvia la presentazione
+		\item l'utente mette in pausa la presentazione
+		\item l'utente arresta la presentazione
+		\item l'utente decide di passare alla modalità manuale
+	\end{enumerate}
+	}
+	\subsection{UC 1.5.3.1 - Avvia/riprendi presentazione}{
+		\label{uc1.5.3.1}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può avviare la presentazione automatica o riprenderla da un punto specifico. \\
+		\textbf{Precondizione}: una presentazione è stata eseguita e un frame è selezionato.	\\
+		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame scorrono autonomamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
+	}
+	\subsection{UC 1.5.3.2 - Arresta presentazione}{
+		\label{uc1.5.3.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può arrestare e chiudere la presentazione. \\
+		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
+		\textbf{Postcondizione}: la presentazione viene chiusa e il programma ritorna alla home.	\\
+	}
+	\subsection{UC 1.5.3.3 - Sospendi presentazione}{
+		\label{uc1.5.3.3}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può mettere in pausa la presentazione. \\
+		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
+		\textbf{Postcondizione}: la presentazione automatica è stata fermata temporaneamente e potrà essere ripresa dallo stesso punto in qualsiasi momento.	\\
+	}
+	\subsection{UC 1.5.3.4 - Imposta tempo scorrimento frame}{
+		\label{uc1.5.3.4}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può impostare un tempo di visualizzazione che vale per ogni frame. \\
+		\textbf{Precondizione}: la presentazione è in modalità manuale.	\\
+		\textbf{Postcondizione}: la presentazione automatica può essere avviata con il tempo di scorrimento impostato dall'utente e non con quello impostato al momento della creazione della presentazione.	\\
+	}
+	\subsection{UC 1.5.4 - Passaggio alla presentazione automatica}{
+		\label{uc1.5.4}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione manuale a quella automatica. \\
+		\textbf{Precondizione}: la presentazione manuale è in esecuzione.	\\
+		\textbf{Postcondizione}: la presentazione automatica si è avviata dal frame corrente.	\\
+	}
+	\subsection{UC 1.5.5 - Passaggio alla presentazione manuale}{
+		\label{uc1.5.5}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione automatica a quella manuale. \\
+		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
+		\textbf{Postcondizione}: la presentazione automatica si è arrestata permettendo all'utente di gestirla manualmente.	\\
+	}

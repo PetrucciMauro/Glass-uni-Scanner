@@ -1,0 +1,102 @@
+%	Questo file è di esempio per le varie parti. Sono presenti alcuni metodi per scrivere il testo nel modo corretto con latex, dagli elenchi a tutto il resto.
+%	Chiunque utilizzi comandi nuovi è pregato di riportarlo qui in modo che tutti ne conoscano l'effetto
+
+%	\section è fondamentale da utilizzare per la creazione dell'indice. Section è la macro-parte, subsection tutte le altre. La numerazione di tutte le varie parti la fa Latex direttamente (parte 1, sottoparte 1.1,1.2 etc)
+\section{Titolo del capitolo}{
+	\subsection{sotto capitolo 1}{
+		bla bla bla	 }
+	\subsection{sotto capitolo 2}{ 
+		bla bla bla	}
+}
+
+%	Formattazione testo e altro
+\textbf{} % grassetto
+\uppercase{} % maiuscolo
+\emph{} % corsivo
+\\ %per andare a capo
+
+%grandezza del carattere dal più piccolo al più grande
+\tiny{} 
+\small{}
+\normalsize{}
+\large{}
+\Large{}
+\huge{}
+\Huge{}
+
+%Per richiamare il Glossario usare il pedice:
+blablabla \ped{(g)}
+
+%elenchi
+%puntati
+\begin{itemize}
+	\item primo
+	\item secondo
+\end{itemize}
+%numerati
+\begin{enumerate}
+	\item primo
+	\item secondo
+\end{enumerate}
+%con descrizione: Tipo Primo	primo item
+%Secondo 	secondo item
+\begin{description}
+	\item[Primo] \hfill  primo item %\hfill riempie di spazi la riga e primo item lo fa scrivere leggermente più sotto rispetto a Primo
+	\item[Secondo] secondo item
+\end{description}
+%si possono innestare più elenchi uno dentro l'altro, per i puntati il tipo di punto viene cambiato da latex automaticamente
+
+%RIFERIMENTI
+%nei documenti può risultar essere necessario riferirsi ad altre parti. In questi casi bisogna creare un riferimento ipertestuale che ti rimanda a quella parte. Come fare? Facile:
+\label{nome label} %bisogna mettere una label sulla parte che deve essere riferita
+%per richiamare quella parte
+\ref{nome label} %nel pdf verrà visualizzato il numero del capitolo
+\pageref{nome label} %dà il numero di pagina dove si trova il riferimento
+
+%riporto ciò che wiki dice in merito ai riferimenti:
+%Since you can use exactly the same commands to reference almost anything, you might get a bit confused after you have introduced a lot of references. It is common practice among LaTeX users to add a few letters to the label to describe what you are referencing. Some packages, such as fancyref, rely on this meta information. Here is an example:
+%ch:			chapter
+%sec:		section
+%subsec:	subsection
+%fig:		figure
+%tab:		table
+%eq:			equation
+%lst: 		code listing
+%itm:		enumerated list item
+%alg:		algorithm
+%app:		appendix subsection
+
+%Se il riferimento è a qualcosa che non è nello stesso documento ma in un altro, in questo caso allora bisogna scrivere:
+\externaldocument{nomefile} %nomefile deve essere un .tex (non serve scriverlo dentro le graffe)
+%poi si procede come prima, usando \ref{nome label}
+%questa cosa ancora non l'ho provata
+
+% TABELLE
+%farle con latex può essere molto intorcolato... puoi farci tutti i tipi di tabelle che vuoi, anche quelle che ti fanno il caffè, ma vi rimando qui per approfondire: http://en.wikibooks.org/wiki/LaTeX/Tables
+
+%allora: begin{table} è opzionale e si mette se la tabella deve avere una didascalia. Latex numera le tabelle in modo automatico.
+%begin{tabular} crea fisicamente la tabella. toprule è la prima riga, midrule è per aggiungere righe che contengono i dati veri e propri e bottomrule è per chiudere la tabella.
+\begin{table}[h]
+	\begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}}
+		\toprule \textbf{Versione 1.0}	&	\textbf{Nominativo}\\
+		\midrule Redazione	& \\
+		\midrule Verifica &	\\
+		\midrule Approvazione	&	\\
+		\bottomrule
+	\end{tabular}
+	\caption{Storico ruoli pre-RR}
+\end{table}
+
+%un altro modo è questo:
+\begin{tabular}{ l | c || r }
+  \hline                       
+  1 & 2 & 3 \\
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+  \hline  
+\end{tabular}
+%\\ va a capo e crea un'altra riga
+%\hline crea una riga orizzontale
+%{ l | c || r }: l sta per allineamento a sx, c in centro e r a dx.  Il numero di letterine che ci sono indica il numero di colonne quindi in qst caso 3. le prime due colonne sono divise da una riga verticale, la seconda e terza colonna invece da 2 colonne (||)
+
+%Il tabular NON può essere usato per tabelle grandi che occupano più pagine. In quel caso allora si utilizza \begin{longtabu}. sul file registroMod.tex c'è un esempio
