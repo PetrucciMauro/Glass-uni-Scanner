@@ -1,0 +1,43 @@
+\section{???}{
+	\subsection{Gestione degli incarichi}{
+		Per il servizio di gestione degli incarichi verrà usato lo strumento Redmine, seguendo una specifica normativa.\\Di seguito è elencata la prassi relativa all’assegnazione degli incarichi ai membri del team:
+		\begin{enumerate}
+			\item Il Responsabile crea una milestone e la renderà pubblica al gruppo. E’ suo incarico controllare lo stato di avanzamento della milestone e dei relativi ticket.
+			\item I ticket saranno creati dal Responsabile; ognuno di essi rappresenterà un lavoro da svolgere. Ogni ticket verrà assegnato al componente del gruppo più idoneo a soddisfare il relativo compito. Ogni ticket verrà compilato secondo le seguenti direttive:
+			\begin{itemize}
+				\item \textbf{Title}: specifica, in maniera sintetica, l’oggetto del compito
+				\item \textbf{Status}: può essere \emph{open, accepted o close} e rappresenta lo stato attuale del ticket
+				\item \textbf{Owner}: rappresenta il membro del gruppo che dovrà adempiere all'incarico
+				\item \textbf{Labels}: indica il campo del ticket, può essere \textbf{D} (per i documenti) oppure \textbf{C} (per il codice)
+				\item \textbf{Private}: indica il compito come privato e la scelta è decisa dal Responsabile
+				\item \textbf{Summary}: contiene la descrizione di ciò che il proprietario dell’incarico dovrà svolgere
+			\end{itemize}
+			\item Il Responsabile avrà  il compito di  creare i \textbf{ticket di verifica}: ad ogni ticket segnalato closed ne verrà associato uno nuovo con i seguenti campi:
+			\begin{itemize}
+				\item \textbf{Title}: è di tipo: \begin{center}
+				VERIFICA \{\emph{Oggetto del compito da verificare}\}
+				\end{center}
+				\item \textbf{Status}: come in precedenza è da impostare come \emph{open}
+				\item \textbf{Owner}: questa volta sarà il riferimento del Verificatore proprietario di questo ticket
+				\item \textbf{Labels}: si aggiunge al label del ticket originale il suffisso \textbf{V}
+				\item \textbf{Private}: indica il compito come privato e la scelta è lasciata al Responsabile 
+				\item \textbf{Summary}: descrizione fatta dal Responsabile
+			\end{itemize}
+			\item Il Verificatore può rifiutare il ticket impostando il campo \textbf{Status} a \emph{won't fix} specificandone il motivo nel campo \textbf{Summary}. Nel caso accettasse il ticket imposterà lo \textbf{Status} a \emph{accepted}  e procederà con la fase di verifica.
+			Se la verifica ha esito positivo lo stato passerà a \emph{closed} mentre nel caso opposto il Verificatore dovrà creare un nuovo ticket con i seguenti campi:
+			
+			\begin{itemize}
+				\item \textbf{Title}: specifica, in maniera sintetica, l’oggetto del compito
+				\item \textbf{Status}: impostato a \emph{open}
+				\item \textbf{Owner}: in questo caso il riferimento sarà il Responsabile 
+				\item \textbf{Labels}: label del ticket originale
+				\item \textbf{Private}: indica il compito come privato e la scelta è decisa dal Verificatore
+				\item \textbf{Summary}: descrive l’errore
+			\end{itemize}
+			Il Responsabile dovrà decidere se accettare o rifiutare il ticket di verifica. In caso positivo dovrà segnare nel campo \textbf{Owner} il riferimento all’addetto del soddisfacimento di quel compito. Una volta che quel ticket verrà segnalato come closed il Responsabile dovrà seguire una nuova procedura di verifica.
+			\item Infine una volta che tutti i ticket appartenenti alla milestone saranno segnalati come \emph{closed} il Responsabile potrà rendere la milestone \emph{closed} ed aprirne una nuova ripartendo dal primo punto.
+		\end{enumerate}
+
+		
+	 }
+}
