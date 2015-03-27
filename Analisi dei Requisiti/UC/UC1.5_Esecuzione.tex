@@ -1,6 +1,10 @@
 \subsection{UC 1.5 - Esecuzione presentazione}{
 	\label{uc1.5}
-%	 \includegraphics{\imgs } %inserire il diagramma UML
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.5_Esecuzione}.jpg} %inserire il diagramma UML
+	\end{figure}
+
 	\textbf{Attori}: utente generico \\
 	\textbf{Descrizione}: l'utente sceglie una presentazione e la esegue. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
 	\textbf{Precondizione}: il sistema è funzionante e l'utente non ha ancora scelto nessuna presentazione da eseguire.	\\
@@ -49,7 +53,10 @@
 	}
 	\subsection{UC 1.5.2 - Esecuzione manuale}{
 		\label{uc1.5.2}
-	%			 \includegraphics{\imgs } %inserire il diagramma UML
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.5.2_Manuale}.jpg} %inserire il diagramma UML
+		\end{figure}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
 		\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
@@ -91,9 +98,70 @@
 		\textbf{Precondizione}: il frame in presentazione è figlio di almeno un frame padre (non è quindi la radice).	\\
 		\textbf{Postcondizione}: il frame in presentazione è passato al padre .	\\
 	}
+	\subsection{UC 1.5.2.5 - Possibilità di ingrandimento di immagini e video}{
+		\label{uc1.5.2.5}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può ingrandire immagini o video presenti nel frame. \\
+		\textbf{Precondizione}: il frame in presentazione contiene almeno un'immagine o un video.	\\
+		\textbf{Postcondizione}: lo schermo presenta l'immagine o video selezionato; l'utente può in qualsiasi momento ritornare al frame di cui l'immagine o video fa parte.	\\
+	}
+	\subsection{UC 1.5.2.6 - Gestione video}{
+		\label{uc1.5.2.6}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.5.2.6_GestioneVideoManuale}.jpg} %inserire il diagramma UML
+		\end{figure}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: durante una presentazione manuale l'utente potrà riprodurre i video presenti nel frame. \\
+		\textbf{Precondizione}: il frame in presentazione contiene dei video da riprodurre.	\\
+		\textbf{Postcondizione}: il video è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item l'utente può avviare la riproduzione di un video, dall'inizio o da un punto specifico
+			\item l'utente può mettere in pausa la riproduzione del video e riprenderla successivamente
+		\end{enumerate}
+	}
+	\subsection{UC 1.5.2.6.1 - Avvio manuale della riproduzione di un video}{
+		\label{uc1.5.2.6.1}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può avviare la riproduzione del video presente nel frame in qualsiasi momento. \\
+		\textbf{Precondizione}: il frame in presentazione contiene almeno un video.	\\
+		\textbf{Postcondizione}: il video è in riproduzione.	\\
+	}
+	\subsection{UC 1.5.2.6.2 - Sospensione della riproduzione del video}{
+		\label{uc1.5.2.6.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del video in corso. \\
+		\textbf{Precondizione}: è in riproduzione un video.	\\
+		\textbf{Postcondizione}: il video è in pausa.	\\
+	}
+	\subsection{UC 1.5.2.6.3 - Ripresa dell'esecuzione del video}{
+		\label{uc1.5.2.6.3}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può far riavviare la riproduzione del video. \\
+		\textbf{Precondizione}: il video in riproduzione è stato messo in pausa.	\\
+		\textbf{Postcondizione}: il video ha ripreso la sua riproduzione.	\\
+	}
+	\subsection{UC 1.5.2.6.4 - Riproduzione del video da qualsiasi punto}{
+		\label{uc1.5.2.6.4}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può può far riprodurre il video da qualsiasi minuto in qualsiasi momento. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: il video è in riproduzione dal punto scelto dall'utente.	\\
+	}
+	\subsection{UC 1.5.2.6.5 - Arresto della riproduzione in corso}{
+		\label{uc1.5.2.6.5}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può arrestare la riproduzione del video in corso. Se il video è stato ingrandito allora lo schermo tornerà a presentare il frame di cui il video faceva parte. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: il video è stato arrestato e se l'utente decidesse di riavviarne la riproduzione, essa ripartirà dall'inizio.	\\
+	}
 \subsection{UC 1.5.3 - Esecuzione automatica}{
 	\label{uc1.5.3}
-%			 \includegraphics{\imgs } %inserire il diagramma UML
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.5.3_Automatico}.jpg} %inserire il diagramma UML
+	\end{figure}
 	\textbf{Attori}: utente generico \\
 	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. \\
 	\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
@@ -106,33 +174,100 @@
 		\item l'utente decide di passare alla modalità manuale
 	\end{enumerate}
 	}
-	\subsection{UC 1.5.3.1 - Avvia/riprendi presentazione}{
+	\subsection{UC 1.5.3.1 - Avvia presentazione}{
 		\label{uc1.5.3.1}
 		\textbf{Attori}: utente generico \\
-		\textbf{Descrizione}: l'utente può avviare la presentazione automatica o riprenderla da un punto specifico. \\
-		\textbf{Precondizione}: una presentazione è stata eseguita e un frame è selezionato.	\\
-		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame scorrono autonomamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
+		\textbf{Descrizione}: l'utente può avviare la presentazione automatica dal primo frame o da un altro. \\
+		\textbf{Precondizione}: una presentazione è stata caricata e un frame è selezionato.	\\
+		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame scorrono automaticamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
 	}
-	\subsection{UC 1.5.3.2 - Arresta presentazione}{
+	\subsection{UC 1.5.3.2 - Riprendi presentazione}{
 		\label{uc1.5.3.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può riprendere la presentazione automatica in seguito ad una sua sospensione. \\
+		\textbf{Precondizione}: la presentazione automatica è stata temporaneamente sospesa.	\\
+		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame riprendono a scorrere automaticamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
+	}
+	\subsection{UC 1.5.3.3 - Arresta presentazione}{
+		\label{uc1.5.3.3}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: l'utente può arrestare e chiudere la presentazione. \\
 		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione viene chiusa e il programma ritorna alla home.	\\
 	}
-	\subsection{UC 1.5.3.3 - Sospendi presentazione}{
-		\label{uc1.5.3.3}
+	\subsection{UC 1.5.3.4 - Sospendi presentazione}{
+		\label{uc1.5.3.4}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: l'utente può mettere in pausa la presentazione. \\
 		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione automatica è stata fermata temporaneamente e potrà essere ripresa dallo stesso punto in qualsiasi momento.	\\
 	}
-	\subsection{UC 1.5.3.4 - Imposta tempo scorrimento frame}{
-		\label{uc1.5.3.4}
+	\subsection{UC 1.5.3.5 - Imposta tempo scorrimento frame}{
+		\label{uc1.5.3.5}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: l'utente può impostare un tempo di visualizzazione che vale per ogni frame. \\
 		\textbf{Precondizione}: la presentazione è in modalità manuale.	\\
 		\textbf{Postcondizione}: la presentazione automatica può essere avviata con il tempo di scorrimento impostato dall'utente e non con quello impostato al momento della creazione della presentazione.	\\
+	}
+	\subsection{UC 1.5.3.6 - Gestione video}{
+		\label{uc1.5.3.6}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.5.3.6_GestioneVideoAutomatico}.jpg} %inserire il diagramma UML
+		\end{figure}
+
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: durante una presentazione automatica, se nel frame sono presenti uno o più video essi verranno avviati secondo un certo ordine in modo automatico; l'utente, se ha bisogno, può saltare la riproduzione di tali video e la presentazione automatica continua col frame successivo. \\
+		\textbf{Precondizione}: il frame in presentazione contiene dei video da riprodurre.	\\
+		\textbf{Postcondizione}: il video è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item la presentazione automatica avvia la riproduzione del video
+			\item l'utente può saltare la riproduzione del video
+			\item l'utente può mettere in pausa la riproduzione del video
+		\end{enumerate}
+	}
+	\subsection{UC 1.5.3.6.1 - Avvio automatico riproduzione di un video}{
+		\label{uc1.5.3.6.1}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: il video presente nel frame viene fatto riprodurre in modo automatico; se più video sono presenti allora verranno riprodotto tutti uno alla volta. \\
+		\textbf{Precondizione}: il frame in presentazione contiene un video.	\\
+		\textbf{Postcondizione}: il video è in riproduzione.	\\
+	}
+	\subsection{UC 1.5.3.6.2 - Sospensione della riproduzione del video}{
+		\label{uc1.5.3.6.2}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del video in corso. \\
+		\textbf{Precondizione}: è in riproduzione un video.	\\
+		\textbf{Postcondizione}: il video è in pausa.	\\
+	}
+	\subsection{UC 1.5.3.6.3 - Ripresa dell'esecuzione del video}{
+		\label{uc1.5.3.6.3}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente far riprendere la riproduzione del video. \\
+		\textbf{Precondizione}: il video in riproduzione è stato messo in pausa.	\\
+		\textbf{Postcondizione}: il video ha ripreso la sua riproduzione.	\\
+	}
+	\subsection{UC 1.5.3.6.4 - Riproduzione del video da qualsiasi minuto}{
+		\label{uc1.5.3.6.4}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può può far riprodurre il video da qualsiasi minuto in qualsiasi momento. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: il video è in riproduzione dal minuto scelto dall'utente.	\\
+	}
+	\subsection{UC 1.5.3.6.5 - Possibilità di saltare la riproduzione in corso}{
+		\label{uc1.5.3.6.5}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente può saltare la riproduzione in corso e far proseguire normalmente la presentazione automatica. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: la presentazione automatica riprende la sua normale esecuzione.	\\
+	}
+	\subsection{UC 1.5.3.6.6 - Possibilità di ingrandimento di un video}{
+		\label{uc1.5.3.6.6}
+		\textbf{Attori}: utente generico \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può ingrandire il video in riproduzione o in sospensione. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: lo schermo presenta il video selezionato nella sua interezza; l'utente ha la possibilità in ogni momento di rimpicciolire il video tornando a presentare il frame di cui ne fa parte.	\\
 	}
 	\subsection{UC 1.5.4 - Passaggio alla presentazione automatica}{
 		\label{uc1.5.4}

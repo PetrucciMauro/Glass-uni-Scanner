@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  24 MAR 2015 23:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  27 MAR 2015 02:11
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.tex
 
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Template\for
-mat.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Template\format.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1003,16 +1003,36 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xr.sty"
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box37
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen155
+\ttl@minus=\dimen156
+\ttl@toksa=\toks26
+\titlewidth=\dimen157
+\titlewidthlast=\dimen158
+\titlewidthfirst=\dimen159
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count136
+\float@exts=\toks27
+\float@box=\box38
+\@float@everytoks=\toks28
+\@floatcapt=\box39
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 101.
+Package hyperref Info: Option `colorlinks' set `true' on input line 103.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1071,19 +1091,19 @@ LaTeX Font Info:    ... okay on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count136
-\scratchdimen=\dimen155
-\scratchbox=\box37
-\nofMPsegments=\count137
-\nofMParguments=\count138
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count139
-\MPscratchDim=\dimen156
-\MPnumerator=\count140
-\makeMPintoPDFobject=\count141
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count137
+\scratchdimen=\dimen160
+\scratchbox=\box40
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen161
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks30
 )
-\AtBeginShipoutBox=\box38
+\AtBeginShipoutBox=\box41
 Package hyperref Info: Link coloring ON on input line 29.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1091,16 +1111,16 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count142
+\c@section@level=\count143
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
 
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.out")
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.out")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.out")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.out")
 \@outlinefile=\write3
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -1109,10 +1129,10 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 29.
-\c@lstlisting=\count143
+\c@lstlisting=\count144
 
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Template\fir
-stpage.tex" <../logo.jpg, id=67, 803.0pt x 250.9375pt>
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Template\firstpage.tex"
+<../logo.jpg, id=135, 803.0pt x 250.9375pt>
 File: ../logo.jpg Graphic file (type jpg)
  <use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 22.
@@ -1123,15 +1143,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
+ [1
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Matteo/Google Dr
-ive/Ingegneria del SW/Norme/Latex Norme/logo.jpg>])
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Template\som
-mario.tex")
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
+Fiup/3° Anno/SWE/SmartGit/logo.jpg>])
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Template\sommario.tex")
 File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
+
+<use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -1140,8 +1159,8 @@ been already used, duplicate ignored
                    \relax 
 l.33 	\newpage
                [1]
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\parti\registroMod.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\par
+ti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -1174,89 +1193,234 @@ File: ../logo.jpg Graphic file (type jpg)
  <use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [3]
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.toc")
+ [3pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.35 	\newpage
+              ]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.toc")
 \tf@toc=\write4
 File: ../logo.jpg Graphic file (type jpg)
  <use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [4]
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\parti\casiduso.tex"
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\UC\UC1.5_Esecuzione.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\par
+ti\casiduso.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\UC\
+UC1.5_Esecuzione.tex"
+<./images/UC1.5_Esecuzione.jpg, id=212, 641.39626pt x 314.17375pt>
+File: ./images/UC1.5_Esecuzione.jpg Graphic file (type jpg)
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
-
- []
-
+<use ./images/UC1.5_Esecuzione.jpg>
+Package pdftex.def Info: ./images/UC1.5_Esecuzione.jpg used on input line 5.
+(pdftex.def)             Requested size: 481.046pt x 235.62973pt.
 File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 43.
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 45--50
+ [5 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
+images/UC1.5_Esecuzione.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 42--47
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+
+ []
+
+<./images/UC1.5.2_Manuale.jpg, id=224, 508.90125pt x 330.23375pt>
+File: ./images/UC1.5.2_Manuale.jpg Graphic file (type jpg)
+
+<use ./images/UC1.5.2_Manuale.jpg>
+Package pdftex.def Info: ./images/UC1.5.2_Manuale.jpg used on input line 58.
+(pdftex.def)             Requested size: 381.675pt x 247.67468pt.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 60.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [6]
 Underfull \hbox (badness 10000) in paragraph at lines 75--80
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 80.
-(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 82--87
 
  []
 
-
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 87.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [7 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
+images/UC1.5.2_Manuale.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 89--94
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--116
+Underfull \hbox (badness 10000) in paragraph at lines 96--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
+
+ []
+
+
+<./images/UC1.5.2.6_GestioneVideoManuale.jpg, id=248, 523.9575pt x 302.12875pt>
+File: ./images/UC1.5.2.6_GestioneVideoManuale.jpg Graphic file (type jpg)
+<use ./images/UC1.5.2.6_GestioneVideoManuale.jpg>
+Package pdftex.def Info: ./images/UC1.5.2.6_GestioneVideoManuale.jpg used on in
+put line 112.
+(pdftex.def)             Requested size: 392.96716pt x 226.596pt.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 114.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 126--131
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--145
 
  []
 
 File: ../logo.jpg Graphic file (type jpg)
 <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 116.
+Package pdftex.def Info: ../logo.jpg used on input line 145.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+ [9 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
+images/UC1.5.2.6_GestioneVideoManuale.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
+Underfull \hbox (badness 10000) in paragraph at lines 154--159
+
+ []
+
+<./images/UC1.5.3_Automatico.jpg, id=265, 471.7625pt x 303.1325pt>
+File: ./images/UC1.5.3_Automatico.jpg Graphic file (type jpg)
+
+<use ./images/UC1.5.3_Automatico.jpg>
+Package pdftex.def Info: ./images/UC1.5.3_Automatico.jpg used on input line 163
+.
+(pdftex.def)             Requested size: 353.821pt x 227.34882pt.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 170.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [10 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti
+/images/UC1.5.3_Automatico.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 179--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--137
+Underfull \hbox (badness 10000) in paragraph at lines 186--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--212
+
+ []
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 212.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [11]
+<./images/UC1.5.3.6_GestioneVideoAutomatico.jpg, id=284, 550.055pt x 354.32375p
+t>
+File: ./images/UC1.5.3.6_GestioneVideoAutomatico.jpg Graphic file (type jpg)
+ <use ./images/UC1.5.3.6_GestioneVideoAutomatico.jpg>
+Package pdftex.def Info: ./images/UC1.5.3.6_GestioneVideoAutomatico.jpg used on
+ input line 214.
+(pdftex.def)             Requested size: 550.05365pt x 354.32288pt.
+
+Overfull \hbox (66.35678pt too wide) in paragraph at lines 214--220
+[]
+ []
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 223.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [12 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti
+/images/UC1.5.3.6_GestioneVideoAutomatico.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--268
+
+ []
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 268.
+(pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 270--275
 
  []
 
 )) 
 AED: lastpage setting LastPage
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--40
+Underfull \hbox (badness 10000) in paragraph at lines 277--40
 
  []
 
@@ -1264,26 +1428,26 @@ File: ../logo.jpg Graphic file (type jpg)
 <use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [8]
+ [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
 
-("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Analisi dei 
-Requisiti\AnalisiDeiRequisiti_v.1.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
+lisiDeiRequisiti_v.1.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `AnalisiDeiRequisiti_v.1.0.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 697018305AF2886DF1CDFA44E01D6913;1427.
+(rerunfilecheck)             Checksum: 1329D775E3F25EE64B30DEEC37119F61;3129.
  ) 
 Here is how much of TeX's memory you used:
- 10535 strings out of 493921
- 148436 string characters out of 3147280
- 290519 words of memory out of 3000000
- 13605 multiletter control sequences out of 15000+200000
+ 10930 strings out of 493921
+ 153738 string characters out of 3147280
+ 299845 words of memory out of 3000000
+ 13961 multiletter control sequences out of 15000+200000
  14000 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 48i,15n,45p,839b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,16n,45p,839b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 
@@ -1292,9 +1456,9 @@ s/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX
 blic/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
 uper/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti
 1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.pdf (9 pages, 180086 bytes).
+Output written on AnalisiDeiRequisiti_v.1.0.pdf (15 pages, 355531 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 295 words of extra memory for PDF output out of 10000 (max. 10000000)
 
