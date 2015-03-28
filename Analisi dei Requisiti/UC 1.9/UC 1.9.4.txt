@@ -1,0 +1,28 @@
+UC 1.9.4- Caricamento di un template
+Attori primari: Amministratore .
+Descrizione: l'amministratore esegue il caricamento di un nuovo elemento nel database 
+Precondizione: il sistema  è funzionante e l’amministratore ha effettuato il login.
+Postcondizione: l'elemento grafico è stato caricato correttamente nel database.
+Scenario principale:
+• l'amministratore naviga nel file system per trovare l'emento grafico da inserire;
+• Inserisce l'elemento grafico nel database;
+
+
+Scenario alternativo:
+il file grafico è già presente nel database;
+
+UC 1.9.4.1 Navigazione nel file system
+
+• Attori: Amministratore;
+• Descrizione: L'Amministratore può navigare nel filesystem per selezionare la
+   posizione da cui caricare il file;
+• Precondizione: L’Amministratore ha inizializzato l’attività di Caricamento di un file;
+• Postcondizione: Lo stato dell’attività di Caricamento è stato completato.
+
+UC 1.9.4.2 Selezione File.
+• Attori: Amministratore;
+• Descrizione: L’Amministratore seleziona il file da caricare nel database
+• Precondizione: L’Amministratore ha inizializzato l’attività di Caricamento di un file;
+• Postcondizione: il File è stato caricato.
+
+
