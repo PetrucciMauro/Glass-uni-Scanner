@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  30 MAR 2015 13:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  30 MAR 2015 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **StrumentiTecnicheMetriche.tex
 (./StrumentiTecnicheMetriche.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 ! Undefined control sequence.
 l.2 \subsection
                {Strumenti,tecniche e metriche}
@@ -2609,19 +2609,6 @@ Overfull \hbox (41.79144pt too wide) in paragraph at lines 40--42
 \OT1/cmr/bx/n/10 grazione
  []
 
-Missing character: There is no T in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
 Missing character: There is no : in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -2738,6 +2725,26 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
+
+Overfull \hbox (21.32071pt too wide) in paragraph at lines 42--44
+\OT1/cmr/bx/n/10 Test
+ []
+
+
+Overfull \hbox (9.58328pt too wide) in paragraph at lines 42--44
+\OT1/cmr/bx/n/10 di
+ []
+
+
+Overfull \hbox (16.09988pt too wide) in paragraph at lines 42--44
+\OT1/cmr/bx/n/10 sis-
+ []
+
+
+Overfull \hbox (24.91652pt too wide) in paragraph at lines 42--44
+\OT1/cmr/bx/n/10 tema
+ []
+
 Missing character: There is no : in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -3611,28 +3618,19 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 60--62
 []
  []
 
-Missing character: There is no D in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no T in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 63.
-Missing character: There is no T in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no X in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (5.90282pt too wide) in paragraph at lines 63--64
-[][] 
+Overfull \hbox (54.97888pt too wide) in paragraph at lines 63--64
+\OT1/cmr/bx/n/10 Documenti
+ []
+
+
+Overfull \hbox (28.72205pt too wide) in paragraph at lines 63--64
+\OT1/cmr/bx/n/10 L[]T[]X 
  []
 
 Missing character: There is no r in font nullfont!
@@ -3839,13 +3837,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
+
+Overfull \hbox (34.3401pt too wide) in paragraph at lines 71--72
+\OT1/cmr/bx/n/10 Codice 
+ []
+
 Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -3968,16 +3965,17 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no U in font nullfont!
-Missing character: There is no M in font nullfont!
-Missing character: There is no L in font nullfont!
 Missing character: There is no : in font nullfont!
+
+Overfull \hbox (35.61787pt too wide) in paragraph at lines 75--76
+\OT1/cmr/bx/n/10 Schemi
+ []
+
+
+Overfull \hbox (26.6804pt too wide) in paragraph at lines 75--76
+\OT1/cmr/bx/n/10 UML 
+ []
+
 Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -5476,11 +5474,11 @@ Overfull \hbox (46.96642pt too wide) in paragraph at lines 98--100
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 495017
- 302 string characters out of 6181021
- 51976 words of memory out of 5000000
- 3327 multiletter control sequences out of 15000+600000
- 3948 words of font info for 15 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 17i,3n,12p,562b,152s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 17 strings out of 493304
+ 321 string characters out of 6139871
+ 57880 words of memory out of 5000000
+ 3574 multiletter control sequences out of 15000+600000
+ 4258 words of font info for 16 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 18i,3n,13p,562b,173s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
