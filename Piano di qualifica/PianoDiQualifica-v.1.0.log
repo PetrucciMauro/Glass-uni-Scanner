@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  30 MAR 2015 17:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  30 MAR 2015 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,7 +870,7 @@ File: ../logo.jpg Graphic file (type jpg)
  <use ../logo.jpg>
 Package pdftex.def Info: ../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
- [6] (./parti/StrumentiTecnicheMetriche.tex
+ [6] (./parti/StrumentiTecnicheMetodi.tex
 File: ../logo.jpg Graphic file (type jpg)
 
 <use ../logo.jpg>
@@ -895,11 +895,11 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
 Package rerunfilecheck Info: File `PianoDiQualifica-v.1.0.out' has not changed.
 
-(rerunfilecheck)             Checksum: C06FB8E03E3498B911083C9F6DEBEF0C;786.
+(rerunfilecheck)             Checksum: 1086249F84C23ACF17538ED01D5624A2;784.
  ) 
 Here is how much of TeX's memory you used:
  10656 strings out of 493304
- 150360 string characters out of 6139871
+ 150354 string characters out of 6139871
  301697 words of memory out of 5000000
  13893 multiletter control sequences out of 15000+600000
  15853 words of font info for 36 fonts, out of 8000000 for 9000
@@ -915,7 +915,7 @@ nappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
 c/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
 88.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PianoDiQualifica-v.1.0.pdf (10 pages, 134229 bytes).
+Output written on PianoDiQualifica-v.1.0.pdf (10 pages, 134215 bytes).
 PDF statistics:
  475 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
