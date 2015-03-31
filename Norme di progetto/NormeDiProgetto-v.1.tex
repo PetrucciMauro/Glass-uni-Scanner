@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/}
+\newcommand{\temp}{../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Norme di Progetto}
+\newcommand{\dataCreazione}{2 marzo 2015}
+\newcommand{\versione}{1.0} % versione corrente del documento
+\newcommand{\dataUM}{2 marzo 2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Interno}
+\newcommand{\appr}{}
+\newcommand{\redaz}{}
+\newcommand{\verif}{}
+\newcommand{\sommario}{
+	Il presente documento contiene le norme e le convenzioni che il gruppo \gruppo  intende adottare durante l'intero ciclo di vita del prodotto software \premi .
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\input{\parti introduzione}
+	\newpage
+	\input{\parti comunicazioni}
+	\newpage
+	\input{\parti riunioni}
+	\newpage
+	\input{\parti gestioneIncarichi}
+	\newpage
+	\input{\parti ingegneriaRequisiti}
+	\newpage
+	\input{\parti documenti}
+	\newpage
+	\input{\parti glossario}
+\end{document}
