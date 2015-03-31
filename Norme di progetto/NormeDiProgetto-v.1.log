@@ -1112,10 +1112,10 @@ Package lastpage Info: Please have a look at the pageslts package at
 \c@lstlisting=\count143
 
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Template\fir
-stpage.tex" <../logo.jpg, id=123, 803.0pt x 250.9375pt>
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 22.
+stpage.tex" <../logo.png, id=123, 803.0pt x 250.9375pt>
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 22.
 (pdftex.def)             Requested size: 284.534pt x 113.81297pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 29.
@@ -1127,12 +1127,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Matteo/Google Dr
-ive/Ingegneria del SW/Norme/Latex Norme/logo.jpg>])
+ive/Ingegneria del SW/Norme/Latex Norme/logo.png>])
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Template\som
 mario.tex")
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 33.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 33.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1155,9 +1155,9 @@ Overfull \hbox (1.84283pt too wide) in paragraph at lines 13--13
 Underfull \vbox (badness 10000) detected at line 13
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 15.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 15.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [2]
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
@@ -1170,24 +1170,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
  []
 
 )
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 35.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 35.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [3]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
 getto\NormeDiProgetto-v.1.toc")
 \tf@toc=\write4
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 37.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 37.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [4]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
 getto\parti\introduzione.tex")
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 39.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 39.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [5]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
@@ -1197,9 +1197,9 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 4.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 41.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 41.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 
 [6]
@@ -1212,21 +1212,21 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
 )
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 43.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 43.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [7]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
 getto\parti\gestioneIncarichi.tex"
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 36.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 36.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [8])
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 45.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 45.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 
 [9]
@@ -1256,25 +1256,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--29
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 29.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 29.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [10]
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 69.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 69.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [11]
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 94.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 94.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [12])
-File: ../logo.jpg Graphic file (type jpg)
+File: ../logo.png Graphic file (type jpg)
 
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 47.
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 47.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [13]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
@@ -1283,36 +1283,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 39.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 39.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [14]
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 71.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 71.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [15]
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 96.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 96.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [16])
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 49.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 49.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [17]
 ("C:\Users\Matteo\Google Drive\Ingegneria del SW\Norme\Latex Norme\Norme di pro
 getto\parti\glossario.tex") 
 AED: lastpage setting LastPage
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 51.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 51.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.

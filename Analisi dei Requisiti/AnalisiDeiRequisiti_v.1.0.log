@@ -1132,10 +1132,10 @@ Package lastpage Info: Please have a look at the pageslts package at
 \c@lstlisting=\count144
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Template\firstpage.tex"
-<../logo.jpg, id=119, 803.0pt x 250.9375pt>
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 22.
+<../logo.png, id=119, 803.0pt x 250.9375pt>
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 22.
 (pdftex.def)             Requested size: 284.534pt x 113.81297pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 29.
@@ -1146,12 +1146,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
-Fiup/3° Anno/SWE/SmartGit/logo.jpg>])
+Fiup/3° Anno/SWE/SmartGit/logo.png>])
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Template\sommario.tex")
-File: ../logo.jpg Graphic file (type jpg)
+File: ../logo.png Graphic file (type jpg)
 
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 33.
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 33.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1174,9 +1174,9 @@ Overfull \hbox (1.84283pt too wide) in paragraph at lines 12--12
 Underfull \vbox (badness 10000) detected at line 12
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 14.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 14.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [2]
 Underfull \hbox (badness 10000) in paragraph at lines 15--17
@@ -1189,9 +1189,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
  []
 
 )
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 35.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 35.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
@@ -1203,9 +1203,9 @@ l.35 	\newpage
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\Ana
 lisiDeiRequisiti_v.1.0.toc")
 \tf@toc=\write4
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 37.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 37.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [4]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\Analisi dei Requisiti\par
@@ -1229,9 +1229,9 @@ File: ./images/UC1.5.1_Manuale.jpg Graphic file (type jpg)
 <use ./images/UC1.5.1_Manuale.jpg>
 Package pdftex.def Info: ./images/UC1.5.1_Manuale.jpg used on input line 22.
 (pdftex.def)             Requested size: 395.9784pt x 262.73091pt.
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 24.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 24.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [5 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
 images/UC1.5_Esecuzione.jpg>]
@@ -1244,9 +1244,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 51.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 51.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [6 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
 images/UC1.5.1_Manuale.jpg>]
@@ -1271,9 +1271,9 @@ File: ./images/UC1.5.1.6_GestioneVideoManuale.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/UC1.5.1.6_GestioneVideoManuale.jpg used on in
 put line 76.
 (pdftex.def)             Requested size: 392.96716pt x 226.596pt.
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 78.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 78.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [7]
 Underfull \hbox (badness 10000) in paragraph at lines 90--95
@@ -1290,9 +1290,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 109.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 109.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [8 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
 images/UC1.5.1.6_GestioneVideoManuale.jpg>]
@@ -1312,9 +1312,9 @@ File: ./images/UC1.5.2_Automatico.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/UC1.5.2_Automatico.jpg used on input line 127
 .
 (pdftex.def)             Requested size: 371.13565pt x 227.34882pt.
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 134.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 134.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [9 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
 images/UC1.5.2_Automatico.jpg>]
@@ -1337,9 +1337,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--169
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 169.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 169.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [10]
 Underfull \hbox (badness 10000) in paragraph at lines 171--176
@@ -1354,9 +1354,9 @@ File: ./images/UC1.5.2.6_GestioneVideoAutomatico.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/UC1.5.2.6_GestioneVideoAutomatico.jpg used on
  input line 180.
 (pdftex.def)             Requested size: 412.54024pt x 265.74216pt.
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 192.
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 192.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
 
 [11 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/Analisi dei Requisiti/
@@ -1390,9 +1390,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--236
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 236.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 236.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [12]
 Underfull \hbox (badness 10000) in paragraph at lines 238--243
@@ -1406,9 +1406,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--40
 
  []
 
-File: ../logo.jpg Graphic file (type jpg)
-<use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 40.
+File: ../logo.png Graphic file (type jpg)
+<use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 40.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
