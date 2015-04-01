@@ -1,5 +1,3 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{titlesec}
 \titleclass{\subsubsubsection}{straight}[\subsection]
 
 \newcounter{subsubsubsection}[subsubsection]
@@ -32,25 +30,19 @@
 \@addtoreset{subsubsubsection}{subsection}
 \@addtoreset{paragraph}{subsubsubsection}
 \makeatother
-
-\setcounter{secnumdepth}{6}
-\setcounter{tocdepth}{6}
-\usepackage{hyperref}
-\usepackage[utf8x]{inputenc}
-\begin{document}
 \section{Ambiente di lavoro} 
 
 \subsection{Sistemi Operativi}
-{
+
 L’intero sviluppo del progetto viene svolto in ambienti Unix-Like e Windows, nello specifico, Ubuntu , Mac , Windows . Tale scelta è maturata dopo aver appurato che le tecnologie utilizzate per lo sviluppo del progetto sono indipendenti dall’ambiente di sviluppo e di impiego.
-}
+
 \subsection{Coordinamento}
-{
+
 È stato predisposto un server dedicato sul quale sono installate alcune applicazioni web
 che facilitano la gestione del progetto. Per connettersi al server (completare).
 
 \subsubsection{Software di gestione del progetto} 
-{
+
 Come piattaforma di gestione del progetto è stato scelto \textbf{Redmine}. Redmine fornisce:
 \begin{itemize}
 \item Un sistema flessibile di gestione dei ticket;
@@ -62,7 +54,7 @@ Come piattaforma di gestione del progetto è stato scelto \textbf{Redmine}. Redm
 
 
 \subsubsection{Versionamento}
-{ 
+
 
 Come strumento di versionamento si è deciso di utilizzare \textbf{Git}.
 Git è uno strumento di versionamento veloce e di facile apprendimento che
@@ -86,18 +78,17 @@ Si descrive ora la procedura di corretto utilizzo del programma smartgit .
 \item \textbf{Inviare le modifiche al repository remoto}: Dalla schermata principale premere il pulsante Push e successivamente ,alla comparta del nuovo riquadro , ancora push, ciò comporterà l'invio delle modifiche ai file al repository remoto;
 
 \end{itemize}
-}
+
 \subsubsection{Software di Integrazione Continua}
-{
+
 Si è scelto di adottare \textbf{Jenkins} per applicare l’integrazione continua allo sviluppo del progetto.\\ 
 Tale software permette di pianificare ed impostare la compilazione del codice.\\
 Mette inoltre a disposizione un cruscotto su cui è possibile visualizzare lo stato del codice prodotto. Tale software è infatti in grado di interagire con il software di versionamento,e se disponibile con software per l’esecuzione di test sul codice prodotto.\\ 
 Attualmente Jenkins viene utilizzato per la compilazione dei documenti \LaTeX. 
-}
-}
+
 
 \subsubsection{Condivisione dei file}
-{
+
   Si è inoltre scelto di utilizzare degli strumenti online che permettono di condividere file
   in modo semplice e veloce e che consentono di organizzare gli appuntamenti personali
   dei singoli componenti del gruppo.
@@ -115,7 +106,7 @@ Attualmente Jenkins viene utilizzato per la compilazione dei documenti \LaTeX.
   come strumento di supporto allo sviluppo della documentazione e del software presente
   su Git .
   
-}
+
 
 \subsubsection{Google Calendar}
  
@@ -127,9 +118,9 @@ ad esempio le date delle riunioni.
 
 
 \subsection{Strumenti per i documenti}
-{
+
 \subsubsection{LATEX} 
-{ 
+ 
 Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
 Il motivo 
 principale dietro a questa scelta è la facilità di separazione tra contenuto e formattazione: 
@@ -142,20 +133,20 @@ variabili globali che rendono la scrittura del contenuto più corretta sotto un 
 vista semantico. Un esempio è dato dal comando /role{ruolo} che identifica ogni ruolo 
 all’interno del progetto.\\
 Per la scrittura di documenti \LaTeX\  l’editor consigliato è \textbf{TeXstudio}. 
-}
+
 \subsubsection{Controllo ortografico}
-{
+
 Il software per il controllo ortografico è \textbf{Aspell}\ .\ Il programma è accessibile tramite il \emph{Makefile} oppure tramite interfaccia grafica nell’editor consigliato TeXstudio.
-}
+
 
 \subsubsection{Grafici UML} 
-{
+
 Per la stesura dei grafici UML viene utilizzato il programma \textbf{Visual Paradigm}. Il programma viene utilizzato in licenza Community Edition la quale ne permette l’uso per fini non commerciali.
 
-}
+
 
 \subsubsection{Ambiente di verifica}
-{ 
+
 Vengono qui elencati e sommariamente descritti gli strumenti automatizzati per effettuare la verifica dei documenti redatti e del codice prodotto.\\ 
 Le metriche ed i metodi per effettuare verifica sono ampiamente e dettagliatamente descritti nel \emph{Piano di Qualifica} . A tale documento si fa inoltre riferimento per le 
 caratteristiche di fondamentale importanza per la verifica degli strumenti qui riportati. 
@@ -166,7 +157,7 @@ testo durante la stesura del testo stesso;
 \item \textbf{Aspell}: strumento per la correzione tipografica dei documenti redatti in \LaTeX. 
 \item \textbf{Axiom}: permette di automatizzare il tracciamento dei requisiti; 
 \end{itemize} 
-}
+
 
 \subsubsection{Fogli di calcolo}
 Per l’elaborazione dei dati si utilizza il software Calc del pacchetto LibreOffice in quanto
@@ -174,39 +165,32 @@ tale prodotto è open source.
 
 
 \subsubsection{Codice} 
-{
+
 La verifica del codice è suddivisa in statica e dinamica.\\ 
 Per entrambe vengono riportati gli strumenti da utilizzare. 
 
 \subsubsubsection{Analisi Statica} 
-{
+
   \begin{itemize}
   \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice javascript;
-  \item 
-  
   \end{itemize}
-} 
+
 \subsubsubsection{Analisi Dinamica}
-{
- \begin{itemize}
- 
- \end{itemize}
-}
+
+
+
 \subsubsubsection{Validazione}
-{
+
 La validazione del codice HTML e CSS dell’applicazione da noi sviluppata verrà
 fatta tramite il servizio W3C Validator32 del W3C.
-}
-}
-}
 
 
-\section{Protocollo per lo sviluppo dell’applicazione} 
+\section{Protocollo per lo sviluppo dell'applicazione} 
 Per procedere con uno sviluppo controllato dei documenti e del codice si è scelto di adottare il sistema di ticketing \textbf{Redmine}.\\ 
 La scelta di tale software è descritta nella sezione \ref{sec:Redmine}.
 
 \subsection{Creare un nuovo progetto} 
-{
+
 La creazione di un progetto è compito del \emph{Responsabile di Progetto}.\\ 
 Un nuovo progetto rappresenta una macro-attività caratterizzata da molte sotto-attività 
 supervisionate da un responsabile.\\\\ 
@@ -219,18 +203,16 @@ Per creare un nuovo progetto:
 \item \textbf{Identificativo}: scrivere in minuscolo ed indicare codice della fase a cui si riferisce ;
 \item Lasciare inalterati gli altri campi. 
 \end{itemize}
-} 
+ 
 \subsection{Creazione ticket}
-{ 
+ 
   I ticket vengono creati da:
  \begin{itemize}
  
 
     \item \textbf{Responsabile di Progetto}: crea i ticket più importanti che rappresentano le macro fasi evidenziate dalla pianificazione; 
-	\item \textbf{Responsabile di Sotto-progetto}: crea i ticket per i processi non pianificati inizialmente, che si evidenziano necessari per l’avanzamento   del sotto-progetto assegnato; 
-	\item \textbf{Verificatore}: crea i ticket per segnalare errori ed imprecisioni trovate durante il 
-processo di verifica. 
-
+	\item \textbf{Responsabile di Sotto-progetto}: crea i ticket per i processi non pianificati inizialmente, che si evidenziano necessari per l’avanzamento del sotto-progetto assegnato; 
+	\item \textbf{Verificatore}: crea i ticket per segnalare errori ed imprecisioni trovate durante il processo di verifica. 
  \end{itemize}
 
 
@@ -238,13 +220,11 @@ I ticket possono essere di tre tipologie:
 \begin{itemize}
 
 
-\item \textbf{Ticket di pianificazione}: rappresentano le macro-attività di maggiore importanza.\\ Sono organizzate in una gerarchia con vari livelli di importanza.\\
+\item \textbf{Ticket di pianificazione}: rappresentano le macro-attività di maggiore importanza. Sono organizzate in una gerarchia con vari livelli di importanza.
  Tali attività vengono create da: 
 \begin{itemize}
-\item \emph{Responsabile di Progetto} che durante la pianificazione identifica le attività 
-più importati e generali; 
-\item \emph{Responsabile di Sotto-progetto} che durante lo svolgimento delle attività può 
-scomporre in sotto-problemi l’attività indicata dal Responsabile di Progetto. 
+\item \emph{Responsabile di Progetto} che durante la pianificazione identifica le attività più importati e generali; 
+\item \emph{Responsabile di Sotto-progetto} che durante lo svolgimento delle attività può scomporre in sotto-problemi l’attività indicata dal Responsabile di Progetto. 
 \end{itemize}
 
 
@@ -262,7 +242,7 @@ rispetti tutte le norme.
 }
 
 \subsubsection{Ticket di pianificazione}
-{
+
 \begin{itemize}
 
 
@@ -285,10 +265,10 @@ padre;
 \item \textbf{Assegnato a}: inserire il nome del responsabile; 
 \item \textbf{Osservatori}: aggiungere eventuali collaboratori.
 \end{itemize}  
-}
+
 
 \subsubsection{Ticket di realizzazione e controllo} 
-{
+
 		\begin{itemize}
 		
 		\item Selezionare \textbf{Nuova segnalazione} da menù principale; 
@@ -312,15 +292,15 @@ padre;
 \item \textbf{Assegnato a}: inserire il nome del responsabile; 
 \item \textbf{Osservatori}: aggiungere eventuali collaboratori. 
 \end{itemize} 
-}
+
 \subsubsection{Ticket di verifica}
-{
+
 
 Un \emph{Verificatore} per creare un \emph{ticket di verifica} deve: 
 \begin{enumerate}
-\item assicurarsi che esista all’interno del progetto l’attività \emph{Verifica}.\\
+\item assicurarsi che esista all’interno del progetto l’attività \emph{Verifica}.
 Su tale attività vi devono essere due sotto-attività: “Verifica - realizzazione”, 
-“Verifica - approvazione”. \\
+“Verifica - approvazione”. 
 Tutti i ticket creati devono essere sotto-attività di: “Verifica - realizzazione”; 
 \item Creare quindi il ticket secondo le seguenti direttive: 
 		\begin{itemize}
@@ -331,8 +311,7 @@ Tutti i ticket creati devono essere sotto-attività di: “Verifica - realizzazi
 		\item \textbf{Oggetto}: descrizione breve e significativa dell’errore incontrato; 
 		\item \textbf{Descrizione}: descrivere in modo dettagliato e chiaro: la natura e la posizione dell’errore; 
 		\item \textbf{Stato}: New; 
-		\item \textbf{Attività principale}: tutti i ticket devono essere figli del ticket “Verifica - 
-		realizzazione” del progetto su cui si sta eseguendo la verifica; 
+		\item \textbf{Attività principale}: tutti i ticket devono essere figli del ticket “Verifica - realizzazione” del progetto su cui si sta eseguendo la verifica; 
 		\item \textbf{Assegnato a}: inserire il nome del responsabile del progetto padre (es. 
 		responsabile delle \emph{Norme di Progetto}). 
 		\end{itemize}
@@ -342,9 +321,9 @@ Sarà poi compito del responsabile del progetto padre decidere a chi assegnare l
 
 \end{enumerate}
 
-}
+
 \subsubsection{Dipendenze temporali}
-{
+
 
 Dopo la creazione del ticket, per aggiungere \textbf{dipendenze temporali} tra i ticket:
 \begin{itemize}
@@ -354,14 +333,14 @@ Dopo la creazione del ticket, per aggiungere \textbf{dipendenze temporali} tra i
 \item Scegliere \textbf{segue} e indicare il numero della segnalazione che lo blocca ed eventuali giorni di slack. 
 
 \end{itemize} 
-}
+
 Tutti i campi non segnalati sono da lasciare vuoti. 
 
 \subsection{Aggiornamento ticket}
-{ 
+
 Esistendo due tipologie di ticket, viene qui definito la procedura per effettuare l’aggiornamento di entrambe. 
 \subsubsection{Ticket di pianificazione}
-{
+
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
 \item Selezionare il ticket di interesse; 
@@ -380,10 +359,10 @@ Esistendo due tipologie di ticket, viene qui definito la procedura per effettuar
 \item Se viene concluso, aggiornare lo stato del ticket di pianificazione padre. 
 
 \end{itemize}
-}
+
 
 \subsubsection{Ticket di realizzazione e controllo}
-{ 
+
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
 \item Selezionare il ticket di interesse; 
@@ -409,10 +388,10 @@ Esistendo due tipologie di ticket, viene qui definito la procedura per effettuar
 
 \end{itemize}
 
-}
+
 
 \subsubsection{Ticket di verifica}
-{
+
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
 \item Selezionare il ticket di interesse; 
@@ -440,14 +419,14 @@ Esistendo due tipologie di ticket, viene qui definito la procedura per effettuar
 		\end{itemize} 
 
 \end{itemize} 
-}
-}
+
+
 
 
 \subsection{Consigli di utilizzo}
-{ 
+
 \subsubsection{Pagina personale}
-{ 
+ 
 	Per avere una immediata visualizzazione dei ticket assegnati, è consigliato personalizzare 
 	la pagina personale: 
 	\begin{itemize}
@@ -461,11 +440,8 @@ Esistendo due tipologie di ticket, viene qui definito la procedura per effettuar
 
 	
 \subsubsection{Visualizzare segnalazioni}
-{ 
+
 	Per avere una visualizzazione più chiara delle segnalazioni si consiglia di ordinarle per 
 	oggetto. Tale risultato può essere ottenuto premendo \textbf{Oggetto} dalla pagina \textbf{Segnalazioni}.
-}
-}
-}
 
-\end{document}
+
