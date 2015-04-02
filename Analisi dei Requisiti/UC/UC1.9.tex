@@ -1,0 +1,255 @@
+\subsection{UC 1.9 - Gestione del sistema}{
+	\label{uc1.9}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore ha effettuato il login e il programma è correttamente funzionante. L’amministratore ha la possibilità di inserire nuovi oggetti per comporre i template e nuovi template di infografiche e\o di slide ,  modificare quelli vecchi o eliminarli. \\
+	\textbf{Precondizione}: il programma è in funzione e l’amministratore ha effettuato il login.	\\
+	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state eseguite con successo.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item scelta tipologia di template \hyperref[uc1.9.1]{(UC 1.9.1)};
+		\item caricamento di un template \hyperref[uc1.9.2]{(UC 1.9.2)};
+		\item caricamento di un elemento \hyperref[uc1.9.4]{(UC 1.9.4)};
+		\item eliminazione di un template \hyperref[uc1.9.5]{(UC 1.9.5)};
+		\item modifica  di template \hyperref[uc1.9.6]{(UC 1.9.6)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item l'amministratore può ripristinare un template eliminato \hyperref[uc1.9.7.3]{(UC 1.9.7.3)};
+		\item l'amministratore può ripristinare le modifiche eseguite;
+		\item visualizzazione di un errore nel caso vengano inseriti un oggetto o un template già presenti nel database.
+	\end{itemize}
+	}
+\subsection{UC 1.9.1 - Scelta tipologia del template}{
+	\label{uc1.9.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.1}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore ha la possibilità di scegliere su quale tipologia di template operare tra infografiche e slide. \\
+	\textbf{Precondizione}: il programma è in funzione e l’amministratore ha effettuato il login.	\\
+	\textbf{Postcondizione}: la scelta dell'amministratore è stata eseguita con successo.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'amministratore può scegliere un template di slide;
+		\item l'amministratore può scegliere un template di infografiche.
+	\end{enumerate}
+	}
+\subsection{UC 1.9.2 - Caricamento di un template}{
+	\label{uc1.9.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.2}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo template nel database. \\
+	\textbf{Precondizione}: il sistema  è funzionante e l’amministratore ha effettuato il login.	\\
+	\textbf{Postcondizione}: il template è stato caricato correttamente nel database.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'amministratore naviga nel file system per trovare il template da inserire \hyperref[uc1.9.2.1]{(UC 1.9.2.1)};
+		\item l'amministratore inserisce il template nel database \hyperref[uc1.9.2.2]{(UC 1.9.2.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item il template è già presente nel database.
+	\end{itemize}
+	}
+\subsection{UC 1.9.2.1 - Navigazione nel file system}{
+	\label{uc1.9.2.1}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può navigare nel filesystem per selezionare la posizione da cui caricare il file. \\
+	\textbf{Precondizione}: l'amministratore ha selezionato quale tipologia di template andrà a caricare.	\\
+	\textbf{Postcondizione}: lo stato dell’attività di caricamento è stato completato.	\\
+	}
+\subsection{UC 1.9.2.2 - Selezione file}{
+	\label{uc1.9.2.2}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
+	\textbf{Precondizione}: l'amministratore ha inizializzato l’attività di caricamento di un file.	\\
+	\textbf{Postcondizione}: il file è stato caricato.	\\
+	}
+\subsection{UC 1.9.4 - Caricamento di un elemento}{
+	\label{uc1.9.4}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.4}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo elemento nel database. \\
+	\textbf{Precondizione}: il sistema  è funzionante e l’amministratore ha effettuato il login.	\\
+	\textbf{Postcondizione}: l'elemento grafico è stato caricato correttamente nel database.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'amministratore naviga nel file system per trovare l'emento grafico da inserire \hyperref[uc1.9.4.1]{(UC 1.9.4.1)};
+		\item l'amministratore inserisce l'elemento grafico nel database \hyperref[uc1.9.4.2]{(UC 1.9.4.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item il file grafico è già presente nel database.
+	\end{itemize}
+	}
+\subsection{UC 1.9.4.1 - Navigazione nel file system}{
+	\label{uc1.9.4.1}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può navigare nel filesystem per selezionare la posizione da cui caricare il file. \\
+	\textbf{Precondizione}: l'amministratore ha inizializzato l’attività di caricamento di un file.	\\
+	\textbf{Postcondizione}: lo stato dell’attività di caricamento è stato completato.	\\
+	}
+\subsection{UC 1.9.4.2 - Selezione file}{
+	\label{uc1.9.4.2}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
+	\textbf{Precondizione}: l'amministratore ha inizializzato l’attività di caricamento di un file.	\\
+	\textbf{Postcondizione}: il file è stato caricato.	\\
+	}
+\subsection{UC 1.9.5 - Eliminazione di un template}{
+	\label{uc1.9.5}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore elimina uno dei template. \\
+	\textbf{Precondizione}: il sistema è funzionante e l’utente non ancora autenticato vuole effettuare il login.	\\
+	\textbf{Postcondizione}: il template è stato eliminato dal sistema.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l’amministratore elimina il template selezionato.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item l'amministratore decide di ripristinare il template eliminato \hyperref[uc1.9.7.3]{(UC 1.9.7.3)}.
+	\end{itemize}
+	}
+\subsection{UC 1.9.6 - Modifica  di template}{
+	\label{uc1.9.6}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.6}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare il template in ogni sua parte. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: il template è stato modificato correttamente secondo le scelte dell'amministratore.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item selezionare il blocco da modificare \hyperref[uc1.9.6.1]{(UC 1.9.6.1)};
+		\item inserire un nuovo elemento grafico \hyperref[uc1.9.6.2]{(UC 1.9.6.2)};
+		\item modificare il testo del template \hyperref[uc1.9.6.5]{(UC 1.9.6.5)};
+		\item modificare la dimensione degli oggetti presenti nel template \hyperref[uc1.9.6.3]{(UC 1.9.6.3)};
+		\item modificare il colore dello sfondo del template \hyperref[uc1.9.6.4]{(UC 1.9.6.4)};
+		\item eliminare oggetti dal template \hyperref[uc1.9.6.6]{(UC 1.9..6.6)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.9.6.1 - Selezione blocco template}{
+	\label{uc1.9.6.1}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può selezionare quale blocco del template modificare. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: il blocco è stato selezionato dall' Amministratore.	\\
+	}
+\subsection{UC 1.9.6.2 - Inserimento di un nuovo elemento nel template}{
+	\label{uc1.9.6.2}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può inserire un nuovo elemento grafico nel template. \\
+	\textbf{Precondizione}: il sistema è funzionante.	\\
+	\textbf{Postcondizione}: il template è stato modificato correttamente secondo le scelte dell'amministratore.	\\
+	}
+\subsection{UC 1.9.6.3 - Modifica dimensione degli oggetti presenti nel template}{
+	\label{uc1.9.6.3}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare tutti gli oggetti presenti nel template. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: gli oggetti del template sono stati modificati correttamente secondo le scelte dell'amministratore.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item modifica della dimensione di una casella di testo;
+		\item modifica della dimensione di un immagine.
+	\end{enumerate}
+	}
+\subsection{UC 1.9.6.4 - Modifica colore sfondo template}{
+	\label{uc1.9.6.4}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare il colore dello sfondo del template. \\
+	\textbf{Precondizione}: il sistema è funzionante.	\\
+	\textbf{Postcondizione}: il template è stato modificato correttamente secondo le scelte dell'amministratore.	\\
+	}
+\subsection{UC 1.9.6.5 - Modifica testo template}{
+	\label{uc1.9.6.5}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.6.5}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare tutte le parti testuali del template scelto, modificandone , colore , font e grandezza. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: il testo del template è stato modificato correttamente secondo le scelte dell'amministratore.	\\
+	}
+\subsection{UC 1.9.6.5.1 - Modifica dimensione testo}{
+	\label{uc1.9.6.5.1}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare la dimensione del testo del template. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: la dimensione del testo è stata modificata correttamente.	\\
+	}
+\subsection{UC 1.9.6.5.2 - Modifica colore del testo}{
+	\label{uc1.9.6.5.2}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare il colore del testo del template. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: il colore del testo è stato modificata correttamente.	\\
+	}
+\subsection{UC 1.9.6.5.3 - Modifica font del testo}{
+	\label{uc1.9.6.5.3}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può modificare il font  del testo del template. \\
+	\textbf{Precondizione}: il sistema è funzionante e il template esiste nel database.	\\
+	\textbf{Postcondizione}: il font del testo è stato modificato correttamente.	\\
+	}
+\subsection{UC 1.9.6.6 - Eliminazione oggetti del template}{
+	\label{uc1.9.6.6}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può eliminare qualsiasi oggetto presente nel template. \\
+	\textbf{Precondizione}: il sistema è funzionante.	\\
+	\textbf{Postcondizione}: l'oggetto del template è stato eliminato correttamente.	\\
+	}
+\subsection{UC 1.9.6.7 - Annulla/Ripristina}{
+	\label{uc1.9.6.7}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.9.6.7}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore ha deciso di annullare una o più modifiche applicate o di ripristinare una modifica annullata. \\
+	\textbf{Precondizione}: lo storico delle modifiche non è vuoto.	\\
+	\textbf{Postcondizione}: la scena ha il livello di modifiche desiderato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item annullamento comando \hyperref[uc1.9.7.1]{(UC 1.9.7.1)};
+		\item ripristino del comando annullato \hyperref[uc1.9.7.2]{(UC 1.9.7.2)};
+		\item ripristino del template eliminato \hyperref[uc1.9.7.3]{(UC 1.9.7.3)}
+	\end{enumerate}
+	}
+\subsection{UC 1.9.6.7.1 - Annullamento comando}{
+	\label{uc1.9.6.7.1}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può annullare l’ultimo comando di modifica del template presente nello storico. \\
+	\textbf{Precondizione}: il sistema ha registrato almeno un comando di modifica del template eseguito dall’amministratore.	\\
+	\textbf{Postcondizione}: il sistema ha ripristinato lo stato precedente all’ultimo comando di modifica del template dall'amministratore, e ha memorizzato nello storico degli	annullamenti il comando annullato.	\\
+	}
+\subsection{UC 1.9.6.7.2 - Ripristino del comando annullato}{
+	\label{uc1.9.6.7.2}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può ripristinare l’ultimo comando presente nello	storico dei comandi annullati. \\
+	\textbf{Precondizione}: il sistema ha annullato l’ultimo comando di modifica del template
+	eseguito dall’amministratore.	\\
+	\textbf{Postcondizione}: il sistema ha eseguito nuovamente l’ultimo comando di modifica	del template presente nello storico dei comandi annullati, e ha rimosso il comando eseguito nuovamente dallo storico.	\\
+	}
+\subsection{UC 1.9.6.7.3 - Ripristino del template eliminato}{
+	\label{uc1.9.6.7.3}
+	\textbf{Attori}: amministratore di sistema \\
+	\textbf{Descrizione}: l'amministratore può ripristinare il template appena eliminato. \\
+	\textbf{Precondizione}: il sistema ha annullato il comando di cancellazione del template eseguito dall'amministratore.	\\
+	\textbf{Postcondizione}: il sistema ha riprisitinato lo stato precedente alla cancellazione del template da parte dell'amministratore.	\\
+	}

@@ -1,0 +1,230 @@
+\subsection{UC 1.6 - Creazione di un'Infografica}{
+	\label{uc1.6}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di prendere gli elementi di una presentazione slide e di inserirli in un unico documento stampabile e quindi lineare. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante.	\\
+	\textbf{Postcondizione}: l'utente ha creato un'infografica che può aver salvato (nel suo computer?).	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item selezione della modalità "crea infografica" \hyperref[uc1.6.1]{(UC 1.6.1)};
+		\item selezione della presentazione di cui produrre l'infografica \hyperref[uc1.6.2]{(UC 1.6.2)};
+		\item selezione di un template di infografica \hyperref[uc1.6.3]{(UC 1.6.3)};
+		\item selezione di un elemento dell'infografica \hyperref[uc1.6.4]{(UC 1.6.4)};
+		\item modifica e rimozione di un elemento grafico o di un elemento di testo \hyperref[uc1.6.5]{(UC 1.6.5)};
+		\item rimozione di uno sfondo \hyperref[uc1.6.6]{(UC 1.6.6)};
+		\item inserimento di uno sfondo \hyperref[uc1.6.7]{(UC 1.6.7)};
+		\item inserimento di un elemento grafico \hyperref[uc1.6.8]{(UC 1.6.8)};
+		\item inserimento di un elemento di testo \hyperref[uc1.6.9]{(UC 1.6.9)};
+		\item inserimento di una slide nella sua interezza \hyperref[uc1.6.10]{(UC 1.6.10)};
+		\item salvataggio dell'infografica.
+	\end{enumerate}
+	}
+\subsection{UC 1.6.1 - Selezione della modalità infografica}{
+	\label{uc1.6.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.1}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: permettere all'utente di entrare nella modalità adatta alla creazione di un'infografica. \\
+	\textbf{Precondizione}: il programma è attivo e funzionante.	\\
+	\textbf{Postcondizione}: l'utente ha avuto accesso alla sezione del programma dedicata alla creazione e modifica dell'infografica.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item  elezione di un riquadro apposito tramite mouse o tastiera.
+	\end{enumerate}
+	}
+\subsection{UC 1.6.2 - Selezione della presentazione}{
+	\label{uc1.6.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.2}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di selezionare la presentazione di cui produrre l'infografica per potervi attingere elementi direttamente. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante.	\\
+	\textbf{Postcondizione}: nell'editor, in una barra laterale, viene caricata una presentazione sui quali oggetti si può andare a interagire.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente tramite mouse o tastiera seleziona l'icona che apre l'elenco delle sue presentazioni;
+		\item  l'utente tramite mouse o tastiera seleziona la presentazione.
+	\end{enumerate}
+	}
+\subsection{UC 1.6.3 - Selezione di un template}{
+	\label{uc1.6.3}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.3}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: permettere all'utente di selezionare il template che preferisce. \\
+	\textbf{Precondizione}: il programma è attivo e funzionante.\\
+	\textbf{Postcondizione}: l'utente ha caricato nell'editor un template che potrà modificare per creare la sua infografica.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item  selezione tramite mouse o tastiera della funzione di visualizzazione template disponibili. Sullo schermo appaiono le anteprime dei vari template;
+		\item  selezione vera e propria del template tramite mouse o tastiera, scorrendo le anteprime disponibili.
+	\end{enumerate}
+	}
+\subsection{UC 1.6.4 - Selezione di un oggetto dell'infografica}{
+	\label{uc1.6.4}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.4}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli inseriti da lui. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, un template di infografica è stato caricato nell'editor.	\\
+	\textbf{Postcondizione}: l'oggetto è stato selezionato e un riquadro tratteggiato lo circonda.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item  sul "foglio" dell'infografica è possibile selezionare tramite mouse o tastiere un oggetto per poi andarlo a modificare;
+		\item  se l'oggetto è testuale, cliccando due volte si accede direttamente al caso d'uso di modifica dell'oggetto \hyperref[uc1.6.5]{(UC 1.6.5)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.6.5 - Modifica di un oggetto dell'infografica}{
+	\label{uc1.6.5}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.5}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli inseriti da lui. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, un oggetto della presentazione è stato selezionato.	\\
+	\textbf{Postcondizione}: l'oggetto selezionato è stato modificato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item  se l'oggetto è un elemento grafico è possibile ingrandirne o diminuirne le dimensioni tramite trascinamento con il mouse delle ancore posizionate sui lati e sugli angoli;
+		\item se l'oggetto è un elemento testuale è possibile effettuare diverse modifiche \hyperref[uc1.6.5.2]{(UC 1.6.5.2)}
+		\item in entrambi i casi è possibile cambiare la posizione dell'oggetto.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è possibile annullare l'ultima modifica effettuata ed eventualmente ripristinarla finché non viene effettuata un'altra operazione.
+	\end{itemize}
+	}
+\subsection{UC 1.6.5.2 - Modifica di elemento testuale}{
+	\label{uc1.6.5.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.5.2}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di modificare un elemento testuale. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, un oggetto testuale della presentazione è stato selezionato.	\\
+	\textbf{Postcondizione}: l'.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item cambiare il carattere;
+		\item modificare le dimensioni del carattere;
+		\item una formattazione (corsivo, grassetto, sottolineato);
+		\item cambiare colore del carattere;
+		\item cambiare il colore di sfondo.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è sempre possibile annullare l'ultima modifica effettuata ed eventualmente ripristinarla.
+	\end{itemize}
+	}
+\subsection{UC 1.6.6 - Rimozione dello sfondo}{
+	\label{uc1.6.6}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.6}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di rimuovere lo sfondo dell'infografica. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o una infografica personale dell'utente.	\\
+	\textbf{Postcondizione}: lo sfondo dell'infografica è stato eliminato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente seleziona tramite mouse o tastiera l'apposito pulsante "Sfondo" che permette di visualizzare le opzioni "cambia sfondo" e "rimuovi sfondo";
+		\item l'utente seleziona l'opzione "rimuovi sfondo" tramite tastiera o mouse;
+		\item l'utente conferma sull'apposito messaggio se vuole eseguire o meno l'operazione.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è sempre possibile annullare la modifica.
+	\end{itemize}
+	}
+\subsection{UC 1.6.7 - Inserimento di uno sfondo}{
+	\label{uc1.6.7}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.7}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di scegliere uno sfondo per l'infografica. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o una infografica personale dell'utente.	\\
+	\textbf{Postcondizione}: lo sfondo dell'infografica è stato cambiato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente seleziona tramite mouse o tastiera l'apposito pulsante "Sfondo" che permette di visualizzare le opzioni "cambia sfondo" e "rimuovi sfondo";
+		\item l'utente seleziona l'opzione "cambia sfondo" tramite tastiera o mouse;
+		\item l'utente seleziona uno sfondo tramite tastiera o mouse.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è possibile annullare la modifica finché non si effettuano altre operazioni di modifica.
+	\end{itemize}
+	}
+\subsection{UC 1.6.8 - Inserimento di un elemento grafico}{
+	\label{uc1.6.8}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.8}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di inserire un elemento grafico. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o una infografica personale dell'utente.	\\
+	\textbf{Postcondizione}: è stato inserito un oggetto precedentemente assente nell'infografica.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente seleziona, tramite mouse o tastiera, il pulsante di inserimento oggetto;
+		\item sono visualizzati tutti gli elementi grafici già caricati da cui l'utente può selezionare tramite mouse o tastiera, dopodiché compare l'oggetto selezionato che l'utente può modificare \hyperref[uc1.6.5]{(UC 1.6.5)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è possibile annullare la modifica finché non si effettuano altre operazioni di modifica.
+	\end{itemize}
+	}
+\subsection{UC 1.6.9 - Inserimento di un elemento testuale}{
+	\label{uc1.6.9}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.6.9}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o una infografica personale dell'utente.	\\
+	\textbf{Postcondizione}: è stato inserito un oggetto testuale precedentemente assente nell'infografica.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente seleziona, tramite mouse o tastiera, il pulsante di inserimento testo;
+		\item l'utente seleziona il punto dell'infografica in cui vuole inserire il testo
+		Sull'infografica compare l'oggetto testuale che l'utente può modificare \hyperref[uc1.6.5.2]{(UC 1.6.5.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è possibile annullare la modifica finché non si effettuano altre operazioni di modifica.
+	\end{itemize}
+	}
+\subsection{UC 1.6.10 - Inserimento di una slide}{
+	\label{uc1.6.10}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o una infografica personale dell'utente, è stata caricata una presentazione di cui l'utente vuole fare l'infografica.	\\
+	\textbf{Postcondizione}: nell'infografica è stata inserita come immagine vettoriale una slide precedentemente assente.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente può cliccare con il mouse su una delle slide della presentazione, che si trova in una barra laterale, e trascinarla nel punto da lui scelto. L'immagine si comporta come un oggetto vettoriale.
+	\end{enumerate}
+	\textbf{Scenari alternativi}:
+	\begin{itemize}
+		\item è possibile annullare la modifica finché non si effettuano altre operazioni di modifica.
+	\end{itemize}
+	}

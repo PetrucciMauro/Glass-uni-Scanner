@@ -2,24 +2,23 @@
 	\label{uc1.5}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.5_Esecuzione}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.5}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente generico \\
-	\textbf{Descrizione}: l'utente sceglie una presentazione e la esegue. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
-	\textbf{Precondizione}: il sistema è funzionante e l'utente non ha ancora scelto nessuna presentazione da eseguire.	\\
-	\textbf{Postcondizione}: la presentazione scelta è stata eseguita e l'utente può scegliere il metodo di avanzamento dei frame che ritiene più appropriato.	\\
+	\textbf{Descrizione}: l'utente può eseguire una presentazione. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
+	\textbf{Precondizione}: una presentazione è già stata caricata e l'utente può avviarla nella modalità desiderata. \\
+	\textbf{Postcondizione}: la presentazione è stata eseguita secondo il metodo scelto.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item scelta della presentazione da eseguire
-		\item scelta del metodo con cui eseguirla: automatica o manuale
-		\item possibilità di passare da manuale ad automatico e viceversa
+		\item scelta del metodo con cui eseguirla: automatica \hyperref[uc1.5.2]{(UC 1.5.2)} o manuale \hyperref[uc1.5.1]{(UC 1.5.1)};
+		\item possibilità di passare da manuale ad automatico e viceversa \hyperref[uc1.5.3]{(UC 1.5.3)}  \hyperref[uc1.5.4]{(UC 1.5.4)}.
 	\end{enumerate}
 	}
 \subsection{UC 1.5.1 - Esecuzione manuale}{
 		\label{uc1.5.1}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.75]{\imgs {UC1.5.1_Manuale}.jpg} %inserire il diagramma UML
+			\includegraphics[scale=0.75]{\imgs {UC1.5.1}.jpg} %inserire il diagramma UML
 		\end{figure}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
@@ -27,11 +26,13 @@
 		\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item l'utente scorre la presentazione
-			\item l'utente può scegliere il percorso su cui continuare
-			\item l'utente può cambiare il livello di visualizzazione
-			\item l'utente può ritornare a punti precedenti
-			\item l'utente può avviare la presentazione automatica da qualsiasi frame
+			\item l'utente scorre la presentazione \hyperref[uc1.5.1.1]{(UC 1.5.1.1)};
+			\item l'utente può scegliere il percorso su cui continuare \hyperref[uc1.5.1.2]{(UC 1.5.1.2)};
+			\item l'utente può saltare al bookmark successivo \hyperref[uc1.5.1.3]{(UC 1.5.1.3)};
+			\item l'utente può cambiare il livello di visualizzazione \hyperref[uc1.5.1.4]{(UC 1.5.1.4)};
+			\item l'utente può ingrandire il contenuto \hyperref[uc1.5.1.5]{(UC 1.5.1.5)};
+			\item l'utente può riprodurre file media \hyperref[uc1.5.1.6]{(UC 1.5.1.6)};
+			\item l'utente può avviare la presentazione automatica da qualsiasi frame \hyperref[uc1.5.3]{(UC 1.5.3)}.
 		\end{enumerate}
 		}
 	\subsection{UC 1.5.1.1 - Scorrimento in avanti e indietro dei frame}{
@@ -69,11 +70,11 @@
 		\textbf{Precondizione}: il frame in presentazione contiene più elementi di contenuto.	\\
 		\textbf{Postcondizione}: lo schermo presenta l'immagine, il video o il testo selezionato; l'utente può in qualsiasi momento ritornare al frame di cui il contenuto fa parte.	\\
 	}
-	\subsection{UC 1.5.1.6 - Riproduzione audio/video}{
+	\subsection{UC 1.5.1.6 - Riproduzione media}{
 		\label{uc1.5.1.6}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.75]{\imgs {UC1.5.1.6_GestioneVideoManuale}.jpg} %inserire il diagramma UML
+			\includegraphics[scale=0.75]{\imgs {UC1.5.1.6}.jpg} %inserire il diagramma UML
 		\end{figure}
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: durante una presentazione manuale l'utente potrà riprodurre un media audio o video presente nel frame. \\
@@ -81,8 +82,9 @@
 		\textbf{Postcondizione}: il media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item l'utente può avviare la riproduzione di un media, dall'inizio o da un punto specifico
-			\item l'utente può mettere in pausa la riproduzione del media e riprenderla successivamente
+			\item l'utente può avviare la riproduzione di un media, dall'inizio \hyperref[uc1.5.1.6.1]{(UC 1.5.1.6.1)} o da un punto specifico  \hyperref[uc1.5.1.6.4]{(UC 1.5.1.6.4)};
+			\item l'utente può mettere in pausa la riproduzione del media \hyperref[uc1.5.1.6.2]{(UC 1.5.1.6.2)} e riprenderla successivamente  \hyperref[uc1.5.1.6.3]{(UC 1.5.1.6.3)};
+			\item l'utente può arrestare la presentazione \hyperref[uc1.5.1.6.5]{(UC 1.5.1.6.5)}.
 		\end{enumerate}
 	}
 	\subsection{UC 1.5.1.6.1 - Avvio manuale della riproduzione di un media}{
@@ -124,7 +126,7 @@
 	\label{uc1.5.2}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.5.2_Automatico}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.5.2}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente generico \\
 	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. \\
@@ -132,10 +134,12 @@
 	\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item l'utente avvia la presentazione
-		\item l'utente mette in pausa la presentazione
-		\item l'utente arresta la presentazione
-		\item l'utente decide di passare alla modalità manuale
+		\item l'utente avvia la presentazione \hyperref[uc1.5.2.1]{(UC 1.5.2.1)};
+		\item l'utente mette in pausa la presentazione \hyperref[uc1.5.2.4]{(UC 1.5.2.4)}  e riprenderla successivamente  \hyperref[uc1.5.2.2]{(UC 1.5.2.2)};
+		\item l'utente arresta la presentazione \hyperref[uc1.5.2.3]{(UC 1.5.2.3)};
+		\item l'utente può decidere il tempo di scorrimento frame \hyperref[uc1.5.2.5]{(UC 1.5.2.5)};
+		\item l'utente può gestire i file media \hyperref[uc1.5.2.6]{(UC 1.5.2.6)};
+		\item l'utente decide di passare alla modalità manuale \hyperref[uc1.5.4]{(UC 1.5.4)}.
 	\end{enumerate}
 	}
 	\subsection{UC 1.5.2.1 - Avvia presentazione}{
@@ -177,18 +181,18 @@
 		\label{uc1.5.2.6}
 		\begin{figure}
 			\centering
-			\includegraphics[scale=0.75]{\imgs {UC1.5.2.6_GestioneVideoAutomatico}.jpg} %inserire il diagramma UML
+			\includegraphics[scale=0.75]{\imgs {UC1.5.2.6}.jpg} %inserire il diagramma UML
 		\end{figure}
-
 		\textbf{Attori}: utente generico \\
 		\textbf{Descrizione}: durante una presentazione automatica, se nel frame sono presenti uno o più media essi verranno avviati secondo un certo ordine in modo automatico; l'utente, se ha bisogno, può saltare la riproduzione di tali media e la presentazione automatica continua col frame successivo. \\
 		\textbf{Precondizione}: il frame in presentazione contiene dei media da riprodurre.	\\
 		\textbf{Postcondizione}: il media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item la presentazione automatica avvia la riproduzione del media
-			\item l'utente può saltare la riproduzione del media
-			\item l'utente può mettere in pausa la riproduzione del media
+			\item la presentazione automatica avvia la riproduzione del media \hyperref[uc1.5.2.6.1]{(UC 1.5.2.6.1)};
+			\item l'utente può saltare la riproduzione del media \hyperref[uc1.5.2.6.5]{(UC 1.5.2.6.5)};
+			\item l'utente può mettere in pausa la riproduzione del media \hyperref[uc1.5.2.6.2]{(UC 1.5.2.6.2)} e riprenderla dallo stesso punto \hyperref[uc1.5.2.6.3]{(UC 1.5.2.6.3)} o da punti diversi \hyperref[uc1.5.2.6.4]{(UC 1.5.2.6.4)};
+			\item l'utente ha la possibilità di ingrandire un video \hyperref[uc1.5.2.6.6]{(UC 1.5.2.6.6)}.
 		\end{enumerate}
 	}
 	\subsection{UC 1.5.2.6.1 - Avvio automatico riproduzione di un media}{

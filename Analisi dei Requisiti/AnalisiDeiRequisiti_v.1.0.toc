@@ -1,30 +1,96 @@
 \select@language {italian}
-\contentsline {section}{\numberline {1}Casi d'uso}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}UC 1.5 - Esecuzione presentazione}{5}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}UC 1.5.1 - Esecuzione manuale}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}UC 1.5.1.1 - Scorrimento in avanti e indietro dei frame}{6}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}UC 1.5.1.2 - Scelta all'interno del frame}{7}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}UC 1.5.1.3 - Salto al bookmark successivo}{7}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}UC 1.5.1.4 - Passaggio ad un livello superiore}{7}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}UC 1.5.1.5 - Possibilit\IeC {\`a} di ingrandimento del contenuto}{7}{subsection.1.7}
-\contentsline {subsection}{\numberline {1.8}UC 1.5.1.6 - Riproduzione audio/video}{8}{subsection.1.8}
-\contentsline {subsection}{\numberline {1.9}UC 1.5.1.6.1 - Avvio manuale della riproduzione di un media}{8}{subsection.1.9}
-\contentsline {subsection}{\numberline {1.10}UC 1.5.1.6.2 - Sospensione della riproduzione del media}{8}{subsection.1.10}
-\contentsline {subsection}{\numberline {1.11}UC 1.5.1.6.3 - Ripresa dell'esecuzione del media}{9}{subsection.1.11}
-\contentsline {subsection}{\numberline {1.12}UC 1.5.1.6.4 - Riproduzione del media da qualsiasi punto}{9}{subsection.1.12}
-\contentsline {subsection}{\numberline {1.13}UC 1.5.1.6.5 - Arresto della riproduzione in corso}{9}{subsection.1.13}
-\contentsline {subsection}{\numberline {1.14}UC 1.5.2 - Esecuzione automatica}{9}{subsection.1.14}
-\contentsline {subsection}{\numberline {1.15}UC 1.5.2.1 - Avvia presentazione}{10}{subsection.1.15}
-\contentsline {subsection}{\numberline {1.16}UC 1.5.2.2 - Riprendi presentazione}{10}{subsection.1.16}
-\contentsline {subsection}{\numberline {1.17}UC 1.5.2.3 - Arresta presentazione}{10}{subsection.1.17}
-\contentsline {subsection}{\numberline {1.18}UC 1.5.2.4 - Sospendi presentazione}{10}{subsection.1.18}
-\contentsline {subsection}{\numberline {1.19}UC 1.5.2.5 - Imposta tempo scorrimento frame}{11}{subsection.1.19}
-\contentsline {subsection}{\numberline {1.20}UC 1.5.2.6 - Gestione media}{11}{subsection.1.20}
-\contentsline {subsection}{\numberline {1.21}UC 1.5.2.6.1 - Avvio automatico riproduzione di un media}{12}{subsection.1.21}
-\contentsline {subsection}{\numberline {1.22}UC 1.5.2.6.2 - Sospensione della riproduzione del media}{12}{subsection.1.22}
-\contentsline {subsection}{\numberline {1.23}UC 1.5.2.6.3 - Ripresa dell'esecuzione del media}{12}{subsection.1.23}
-\contentsline {subsection}{\numberline {1.24}UC 1.5.2.6.4 - Riproduzione del media da qualsiasi minuto}{12}{subsection.1.24}
-\contentsline {subsection}{\numberline {1.25}UC 1.5.2.6.5 - Possibilit\IeC {\`a} di saltare la riproduzione in corso}{12}{subsection.1.25}
-\contentsline {subsection}{\numberline {1.26}UC 1.5.2.6.6 - Possibilit\IeC {\`a} di ingrandimento di un video}{13}{subsection.1.26}
-\contentsline {subsection}{\numberline {1.27}UC 1.5.3 - Passaggio alla presentazione automatica}{13}{subsection.1.27}
-\contentsline {subsection}{\numberline {1.28}UC 1.5.4 - Passaggio alla presentazione manuale}{13}{subsection.1.28}
+\contentsline {section}{\numberline {1}Casi d'uso}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}UC 1.2 - Nuova presentazione}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}UC 1.3 - Modifica presentazione}{9}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}UC 1.3.1 - Inserimento nuovo frame}{10}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}UC 1.3.1.1 - Selezione frame}{10}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}UC 1.3.1.2 - Spostamento frame nel piano della presentazione}{10}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}UC 1.3.2 - Spostamento frame}{11}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}UC 1.3.3 - Modifica desktop di un frame}{11}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}UC 1.3.3.1 - Inserimento di un elemento testo}{12}{subsection.1.8}
+\contentsline {subsection}{\numberline {1.9}UC 1.3.3.2 - Inserimento di un elemento immagine}{12}{subsection.1.9}
+\contentsline {subsection}{\numberline {1.10}UC 1.3.3.3 - Inserimento di un elemento video}{12}{subsection.1.10}
+\contentsline {subsection}{\numberline {1.11}UC 1.3.3.4 - Modifica di un elemento testo}{13}{subsection.1.11}
+\contentsline {subsection}{\numberline {1.12}UC 1.3.3.5 - Modifica di un elemento immagine}{13}{subsection.1.12}
+\contentsline {subsection}{\numberline {1.13}UC 1.3.3.6 - Modifica di un elemento video}{13}{subsection.1.13}
+\contentsline {subsection}{\numberline {1.14}UC 1.3.3.7 - Spostamento di un elemento}{13}{subsection.1.14}
+\contentsline {subsection}{\numberline {1.15}UC 1.3.3.8 - Eliminazione di un elemento}{14}{subsection.1.15}
+\contentsline {subsection}{\numberline {1.16}UC 1.3.3.9 - Inserimento di un elemento scelta}{14}{subsection.1.16}
+\contentsline {subsection}{\numberline {1.17}UC 1.3.3.10 - Modifica di un elemento scelta}{14}{subsection.1.17}
+\contentsline {subsection}{\numberline {1.18}UC 1.3.3.11 - Modifica della dimensione del frame}{14}{subsection.1.18}
+\contentsline {subsection}{\numberline {1.19}UC 1.3.3.12 - Modifica della forma di un frame}{15}{subsection.1.19}
+\contentsline {subsection}{\numberline {1.20}UC 1.3.3.13 - Modifica dello spessore del bordo del frame}{15}{subsection.1.20}
+\contentsline {subsection}{\numberline {1.21}UC 1.3.3.14 - Modifica del colore del bordo del frame}{15}{subsection.1.21}
+\contentsline {subsection}{\numberline {1.22}UC 1.3.3.15 - Modifica dello sfondo del frame}{15}{subsection.1.22}
+\contentsline {subsection}{\numberline {1.23}UC 1.3.4 - Eliminazione frame}{16}{subsection.1.23}
+\contentsline {subsection}{\numberline {1.24}UC 1.3.5 - Impostazione sfondo}{16}{subsection.1.24}
+\contentsline {subsection}{\numberline {1.25}UC 1.3.5.1 - Inserimento sfondo}{17}{subsection.1.25}
+\contentsline {subsection}{\numberline {1.26}UC 1.3.5.1.1 - Selezione immagine sfondo}{17}{subsection.1.26}
+\contentsline {subsection}{\numberline {1.27}UC 1.3.5.1.2 - Selezione colore sfondo}{18}{subsection.1.27}
+\contentsline {subsection}{\numberline {1.28}UC 1.3.5.1.3 - Definizione area sfondo}{18}{subsection.1.28}
+\contentsline {subsection}{\numberline {1.29}UC 1.3.5.1.4 - Conferma sfondo}{18}{subsection.1.29}
+\contentsline {subsection}{\numberline {1.30}UC 1.3.5.2 - Spostamento sfondo}{18}{subsection.1.30}
+\contentsline {subsection}{\numberline {1.31}UC 1.3.5.3 - Ridimensionamento sfondo}{19}{subsection.1.31}
+\contentsline {subsection}{\numberline {1.32}UC 1.3.6 - Definizione percorsi di visualizzazione}{19}{subsection.1.32}
+\contentsline {subsection}{\numberline {1.33}UC 1.3.6.1 - Imposta frame iniziale}{20}{subsection.1.33}
+\contentsline {subsection}{\numberline {1.34}UC 1.3.6.2 - Nuova transizione}{20}{subsection.1.34}
+\contentsline {subsection}{\numberline {1.35}UC 1.3.6.3 - Togli frame dal percorso}{20}{subsection.1.35}
+\contentsline {subsection}{\numberline {1.36}UC 1.3.6.4 - Elimina transizione}{21}{subsection.1.36}
+\contentsline {subsection}{\numberline {1.37}UC 1.3.6.5 - Definisci scelta}{21}{subsection.1.37}
+\contentsline {subsection}{\numberline {1.38}UC 1.3.7 - Gestione bookmark}{21}{subsection.1.38}
+\contentsline {subsection}{\numberline {1.39}UC 1.3.7.1 - Inserimento bookmark}{22}{subsection.1.39}
+\contentsline {subsection}{\numberline {1.40}UC 1.3.7.2 - Eliminazione bookmark}{22}{subsection.1.40}
+\contentsline {subsection}{\numberline {1.41}UC 1.3.8 - Definizione effetti di transizione}{22}{subsection.1.41}
+\contentsline {subsection}{\numberline {1.42}UC 1.3.8.1 - Selezione transizione}{23}{subsection.1.42}
+\contentsline {subsection}{\numberline {1.43}UC 1.3. 8.2 - Selezione effetto}{23}{subsection.1.43}
+\contentsline {subsection}{\numberline {1.44}UC 1.3.8.3 - Conferma effetto}{23}{subsection.1.44}
+\contentsline {subsection}{\numberline {1.45}UC 1.3.8.4 - Imposta velocit\IeC {\`a} transizione}{24}{subsection.1.45}
+\contentsline {subsection}{\numberline {1.46}UC 1.3.9 - Definizione tempo di permanenza}{24}{subsection.1.46}
+\contentsline {subsection}{\numberline {1.47}UC 1.3.10 - Salvataggio modifiche in locale}{24}{subsection.1.47}
+\contentsline {subsection}{\numberline {1.48}UC 1.4 - Modifica mobile di una presentazione}{25}{subsection.1.48}
+\contentsline {subsection}{\numberline {1.49}UC 1.4.1 - Modifica mobile di un frame}{26}{subsection.1.49}
+\contentsline {subsection}{\numberline {1.50}UC 1.4.1.1 - Inserimento di un elemento testo}{26}{subsection.1.50}
+\contentsline {subsection}{\numberline {1.51}UC 1.4.1.2 - Modifica di un elemento testo}{27}{subsection.1.51}
+\contentsline {subsection}{\numberline {1.52}UC 1.4.2 - Gestione mobile dei bookmark}{27}{subsection.1.52}
+\contentsline {subsection}{\numberline {1.53}UC 1.4.2.1 - Inserimento di un nuovo bookmark}{28}{subsection.1.53}
+\contentsline {subsection}{\numberline {1.54}UC 1.4.2.2 - Rimozione di un bookmark}{28}{subsection.1.54}
+\contentsline {subsection}{\numberline {1.55}UC 1.5 - Esecuzione presentazione}{29}{subsection.1.55}
+\contentsline {subsection}{\numberline {1.56}UC 1.5.1 - Esecuzione manuale}{30}{subsection.1.56}
+\contentsline {subsection}{\numberline {1.57}UC 1.5.1.1 - Scorrimento in avanti e indietro dei frame}{30}{subsection.1.57}
+\contentsline {subsection}{\numberline {1.58}UC 1.5.1.2 - Scelta all'interno del frame}{31}{subsection.1.58}
+\contentsline {subsection}{\numberline {1.59}UC 1.5.1.3 - Salto al bookmark successivo}{31}{subsection.1.59}
+\contentsline {subsection}{\numberline {1.60}UC 1.5.1.4 - Passaggio ad un livello superiore}{31}{subsection.1.60}
+\contentsline {subsection}{\numberline {1.61}UC 1.5.1.5 - Possibilit\IeC {\`a} di ingrandimento del contenuto}{31}{subsection.1.61}
+\contentsline {subsection}{\numberline {1.62}UC 1.5.1.6 - Riproduzione media}{32}{subsection.1.62}
+\contentsline {subsection}{\numberline {1.63}UC 1.5.1.6.1 - Avvio manuale della riproduzione di un media}{32}{subsection.1.63}
+\contentsline {subsection}{\numberline {1.64}UC 1.5.1.6.2 - Sospensione della riproduzione del media}{32}{subsection.1.64}
+\contentsline {subsection}{\numberline {1.65}UC 1.5.1.6.3 - Ripresa dell'esecuzione del media}{33}{subsection.1.65}
+\contentsline {subsection}{\numberline {1.66}UC 1.5.1.6.4 - Riproduzione del media da qualsiasi punto}{33}{subsection.1.66}
+\contentsline {subsection}{\numberline {1.67}UC 1.5.1.6.5 - Arresto della riproduzione in corso}{33}{subsection.1.67}
+\contentsline {subsection}{\numberline {1.68}UC 1.5.2 - Esecuzione automatica}{34}{subsection.1.68}
+\contentsline {subsection}{\numberline {1.69}UC 1.5.2.1 - Avvia presentazione}{34}{subsection.1.69}
+\contentsline {subsection}{\numberline {1.70}UC 1.5.2.2 - Riprendi presentazione}{35}{subsection.1.70}
+\contentsline {subsection}{\numberline {1.71}UC 1.5.2.3 - Arresta presentazione}{35}{subsection.1.71}
+\contentsline {subsection}{\numberline {1.72}UC 1.5.2.4 - Sospendi presentazione}{35}{subsection.1.72}
+\contentsline {subsection}{\numberline {1.73}UC 1.5.2.5 - Imposta tempo scorrimento frame}{35}{subsection.1.73}
+\contentsline {subsection}{\numberline {1.74}UC 1.5.2.6 - Gestione media}{35}{subsection.1.74}
+\contentsline {subsection}{\numberline {1.75}UC 1.5.2.6.1 - Avvio automatico riproduzione di un media}{36}{subsection.1.75}
+\contentsline {subsection}{\numberline {1.76}UC 1.5.2.6.2 - Sospensione della riproduzione del media}{36}{subsection.1.76}
+\contentsline {subsection}{\numberline {1.77}UC 1.5.2.6.3 - Ripresa dell'esecuzione del media}{37}{subsection.1.77}
+\contentsline {subsection}{\numberline {1.78}UC 1.5.2.6.4 - Riproduzione del media da qualsiasi minuto}{37}{subsection.1.78}
+\contentsline {subsection}{\numberline {1.79}UC 1.5.2.6.5 - Possibilit\IeC {\`a} di saltare la riproduzione in corso}{37}{subsection.1.79}
+\contentsline {subsection}{\numberline {1.80}UC 1.5.2.6.6 - Possibilit\IeC {\`a} di ingrandimento di un video}{37}{subsection.1.80}
+\contentsline {subsection}{\numberline {1.81}UC 1.5.3 - Passaggio alla presentazione automatica}{37}{subsection.1.81}
+\contentsline {subsection}{\numberline {1.82}UC 1.5.4 - Passaggio alla presentazione manuale}{38}{subsection.1.82}
+\contentsline {subsection}{\numberline {1.83}UC 1.6 - Creazione di un'Infografica}{39}{subsection.1.83}
+\contentsline {subsection}{\numberline {1.84}UC 1.6.1 - Selezione della modalit\IeC {\`a} infografica}{40}{subsection.1.84}
+\contentsline {subsection}{\numberline {1.85}UC 1.6.2 - Selezione della presentazione}{41}{subsection.1.85}
+\contentsline {subsection}{\numberline {1.86}UC 1.6.3 - Selezione di un template}{42}{subsection.1.86}
+\contentsline {subsection}{\numberline {1.87}UC 1.6.4 - Selezione di un oggetto dell'infografica}{43}{subsection.1.87}
+\contentsline {subsection}{\numberline {1.88}UC 1.6.5 - Modifica di un oggetto dell'infografica}{44}{subsection.1.88}
+\contentsline {subsection}{\numberline {1.89}UC 1.6.5.2 - Modifica di elemento testuale}{45}{subsection.1.89}
+\contentsline {subsection}{\numberline {1.90}UC 1.6.6 - Rimozione dello sfondo}{46}{subsection.1.90}
+\contentsline {subsection}{\numberline {1.91}UC 1.6.7 - Inserimento di uno sfondo}{47}{subsection.1.91}
+\contentsline {subsection}{\numberline {1.92}UC 1.6.8 - Inserimento di un elemento grafico}{48}{subsection.1.92}
+\contentsline {subsection}{\numberline {1.93}UC 1.6.9 - Inserimento di un elemento testuale}{49}{subsection.1.93}
+\contentsline {subsection}{\numberline {1.94}UC 1.6.10 - Inserimento di una slide}{49}{subsection.1.94}
