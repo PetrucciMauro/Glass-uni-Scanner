@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  1 APR 2015 20:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  2 APR 2015 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -659,7 +659,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 103.
+Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+\c@subsubsubsection=\count139
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -720,16 +721,16 @@ LaTeX Info: Redefining \it@ocap on input line 29.
 LaTeX Info: Redefining \it@ccap on input line 29.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
+\scratchcounter=\count140
 \scratchdimen=\dimen160
 \scratchbox=\box40
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\nofMPsegments=\count141
+\nofMParguments=\count142
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count142
+\MPscratchCnt=\count143
 \MPscratchDim=\dimen161
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -755,7 +756,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count145
+\c@section@level=\count146
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -772,13 +773,13 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 29.
-\c@lstlisting=\count146
+\c@lstlisting=\count147
 
-(../Template/firstpage.tex <../logo.png, id=144, 572.1375pt x 572.1375pt>
-File: ../logo.png Graphic file (type png)
+(../Template/firstpage.tex <../logo.jpg, id=134, 572.1375pt x 572.1375pt>
+File: ../logo.jpg Graphic file (type jpg)
 
-<use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 22.
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 284.53154pt x 113.80563pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 29.
@@ -788,7 +789,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../logo.png>]) (./parti/re
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../logo.jpg>]) (./parti/re
 gistroMod.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
@@ -803,9 +804,9 @@ Overfull \hbox (1.84283pt too wide) in paragraph at lines 13--13
 Underfull \vbox (badness 10000) detected at line 13
  []
 
-File: ../logo.png Graphic file (type png)
-<use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 15.
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -823,9 +824,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
  []
 
 )
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 33.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
@@ -837,19 +838,22 @@ l.33 	\newpage
 \tf@toc=\write4
 \openout4 = `PianoDiQualifica-v.1.0.toc'.
 
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 35.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [3]
 (../Template/sommario.tex)
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 37.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [4] (./parti/introduzione.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 9.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -860,81 +864,96 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 15.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 31.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
 
 [5])
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 39.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
- [6] (./parti/Obiettivi.tex
+ [6] (./parti/obiettivi.tex
 Overfull \hbox (1.4805pt too wide) in paragraph at lines 13--14
 []\T1/cmr/m/n/12 qua an-dreb-be in-se-ri-ta una fi-gu-ra Fi-gu-ra 1: Rap-pre-se
 n-ta-zio-ne del mo-del-lo ISO/IEC 9126:2001 
  []
 
-File: ../logo.png Graphic file (type png)
-<use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 29.
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 15.
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [7])
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 41.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [8]
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 41.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [9]
-(./parti/StrategiaVerifica.tex
+(./parti/strategiaVerifica.tex
 
 Package xr Warning: 
 No file StrategiaVerifica.aux
 LABELS NOT IMPORTED.
  on input line 1.
 
-File: ../logo.png Graphic file (type png)
-<use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 50.
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 50.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [10]
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 100.
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 64.
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 100.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
- [11])
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 43.
+ [11]
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 105.
+
+)
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
- [12]
-(./parti/StrumentiTecnicheMetodi.tex
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 41.
+ [12] (./parti/strumentiTecnicheMetodi.tex
+
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 4.
+
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [13]
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 92.
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 92.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
-
-[14])
-File: ../logo.png Graphic file (type png)
- <use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 45.
+ [14])
+File: ../logo.jpg Graphic file (type jpg)
+ <use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
- [15] (./parti/GestioneAmministrativa.tex)
-
+ [15]
+(./parti/gestioneAmministrativa.tex) 
 AED: lastpage setting LastPage
-File: ../logo.png Graphic file (type png)
-<use ../logo.png>
-Package pdftex.def Info: ../logo.png used on input line 47.
+File: ../logo.jpg Graphic file (type jpg)
+<use ../logo.jpg>
+Package pdftex.def Info: ../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 28.4514pt.
  [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
@@ -944,13 +963,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `PianoDiQualifica-v.1.0.out' has not changed.
 
-(rerunfilecheck)             Checksum: 2D23C02E631602179EDFCA7736CE70DC;2472.
+(rerunfilecheck)             Checksum: 2FEECA096B485887995412E4866E7915;2324.
  ) 
 Here is how much of TeX's memory you used:
- 10720 strings out of 493304
- 151403 string characters out of 6139871
- 302697 words of memory out of 5000000
- 13919 multiletter control sequences out of 15000+600000
+ 10714 strings out of 493304
+ 151166 string characters out of 6139871
+ 302704 words of memory out of 5000000
+ 13922 multiletter control sequences out of 15000+600000
  15853 words of font info for 36 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  48i,15n,45p,1024b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -964,10 +983,10 @@ nappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
 c/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
 88.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PianoDiQualifica-v.1.0.pdf (17 pages, 176060 bytes).
+Output written on PianoDiQualifica-v.1.0.pdf (17 pages, 175746 bytes).
 PDF statistics:
- 687 PDF objects out of 1000 (max. 8388607)
- 356 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 51 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
