@@ -1,4 +1,5 @@
 \select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
 \contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Glossario}{6}{subsection.1.2}
@@ -7,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.2}Esterne}{7}{subsection.2.2}
 \contentsline {section}{\numberline {3}Riunioni}{8}{section.3}
 \contentsline {subsection}{\numberline {3.1}Interne}{8}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Casi Particolari}{8}{subsubsection.3.1.1}
+\contentsline {subsubsection}{Casi Particolari}{8}{section*.1}
 \contentsline {subsection}{\numberline {3.2}Esterne}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Esito}{8}{subsection.3.3}
 \contentsline {section}{\numberline {4}Documenti}{9}{section.4}
@@ -20,45 +21,45 @@
 \contentsline {section}{\numberline {6}Processi di ingegneria dei requisiti}{15}{section.6}
 \contentsline {subsection}{\numberline {6.1}Fattibilit\IeC {\`a}}{15}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Deduzione e analisi dei requisiti}{15}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Scoperta dei requisiti}{15}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Classificazone e priorit\IeC {\`a}}{16}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Specifica}{17}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Verifica dei requisiti}{17}{subsubsection.6.2.4}
+\contentsline {subsubsection}{Scoperta dei requisiti}{15}{section*.2}
+\contentsline {subsubsection}{Classificazone e priorit\IeC {\`a}}{16}{Item.17}
+\contentsline {subsubsection}{Specifica}{17}{Item.22}
+\contentsline {subsubsection}{Verifica dei requisiti}{17}{Item.30}
 \contentsline {subsection}{\numberline {6.3}Validazione dei requisiti}{18}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Interna}{18}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Esterna}{18}{subsubsection.6.3.2}
+\contentsline {subsubsection}{Interna}{18}{section*.3}
+\contentsline {subsubsection}{Esterna}{18}{section*.3}
 \contentsline {subsection}{\numberline {6.4}Gestione delle modifiche ai requisiti}{18}{subsection.6.4}
 \contentsline {section}{\numberline {7}Ambiente di lavoro}{19}{section.7}
 \contentsline {subsection}{\numberline {7.1}Sistemi Operativi}{19}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Coordinamento}{19}{subsection.7.2}
-\contentsline {subsubsection}{Software di gestione del progetto}{19}{section*.1}
-\contentsline {subsubsection}{Versionamento}{19}{section*.1}
-\contentsline {subsubsection}{Software di Integrazione Continua}{20}{section*.1}
-\contentsline {subsubsection}{Condivisione dei file}{20}{section*.1}
+\contentsline {subsubsection}{Software di gestione del progetto}{19}{section*.4}
+\contentsline {subsubsection}{Versionamento}{19}{section*.4}
+\contentsline {subsubsection}{Software di Integrazione Continua}{20}{section*.4}
+\contentsline {subsubsection}{Condivisione dei file}{20}{section*.4}
 \contentsline {subsubsubsection}{\numberline {7.2.0.1}Google Drive}{20}{subsubsubsection.7.2.1}
 \contentsline {subsubsection}{Google Calendar}{20}{subsubsubsection.7.2.1}
 \contentsline {subsection}{\numberline {7.3}Strumenti per i documenti}{21}{subsection.7.3}
-\contentsline {subsubsection}{LATEX}{21}{section*.2}
-\contentsline {subsubsection}{Controllo ortografico}{21}{section*.2}
-\contentsline {subsubsection}{Grafici UML}{21}{section*.2}
-\contentsline {subsubsection}{Ambiente di verifica}{21}{section*.2}
-\contentsline {subsubsection}{Fogli di calcolo}{21}{section*.2}
-\contentsline {subsubsection}{Codice}{22}{section*.2}
+\contentsline {subsubsection}{LATEX}{21}{section*.5}
+\contentsline {subsubsection}{Controllo ortografico}{21}{section*.5}
+\contentsline {subsubsection}{Grafici UML}{21}{section*.5}
+\contentsline {subsubsection}{Ambiente di verifica}{21}{section*.5}
+\contentsline {subsubsection}{Fogli di calcolo}{21}{section*.5}
+\contentsline {subsubsection}{Codice}{22}{section*.5}
 \contentsline {subsubsubsection}{\numberline {7.3.0.1}Analisi Statica}{22}{subsubsubsection.7.3.1}
 \contentsline {subsubsubsection}{\numberline {7.3.0.2}Analisi Dinamica}{22}{subsubsubsection.7.3.2}
 \contentsline {subsubsubsection}{\numberline {7.3.0.3}Validazione}{22}{subsubsubsection.7.3.3}
 \contentsline {section}{\numberline {8}Protocollo per lo sviluppo dell'applicazione}{22}{section.8}
 \contentsline {subsection}{\numberline {8.1}Creare un nuovo progetto}{22}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Creazione ticket}{22}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Ticket di pianificazione}{23}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Ticket di realizzazione e controllo}{24}{subsubsection.8.2.2}
-\contentsline {subsubsection}{\numberline {8.2.3}Ticket di verifica}{24}{subsubsection.8.2.3}
-\contentsline {subsubsection}{\numberline {8.2.4}Dipendenze temporali}{25}{subsubsection.8.2.4}
+\contentsline {subsubsection}{Ticket di pianificazione}{23}{section*.6}
+\contentsline {subsubsection}{Ticket di realizzazione e controllo}{24}{section*.6}
+\contentsline {subsubsection}{Ticket di verifica}{24}{section*.6}
+\contentsline {subsubsection}{Dipendenze temporali}{25}{Item.35}
 \contentsline {subsection}{\numberline {8.3}Aggiornamento ticket}{25}{subsection.8.3}
-\contentsline {subsubsection}{\numberline {8.3.1}Ticket di pianificazione}{25}{subsubsection.8.3.1}
-\contentsline {subsubsection}{\numberline {8.3.2}Ticket di realizzazione e controllo}{26}{subsubsection.8.3.2}
-\contentsline {subsubsection}{\numberline {8.3.3}Ticket di verifica}{26}{subsubsection.8.3.3}
+\contentsline {subsubsection}{Ticket di pianificazione}{25}{section*.7}
+\contentsline {subsubsection}{Ticket di realizzazione e controllo}{26}{section*.7}
+\contentsline {subsubsection}{Ticket di verifica}{26}{section*.7}
 \contentsline {subsection}{\numberline {8.4}Consigli di utilizzo}{27}{subsection.8.4}
-\contentsline {subsubsection}{\numberline {8.4.1}Pagina personale}{27}{subsubsection.8.4.1}
-\contentsline {subsubsection}{\numberline {8.4.2}Visualizzare segnalazioni}{27}{subsubsection.8.4.2}
+\contentsline {subsubsection}{Pagina personale}{27}{section*.8}
+\contentsline {subsubsection}{Visualizzare segnalazioni}{27}{section*.8}
 \contentsline {section}{\numberline {9}Glossario}{28}{section.9}

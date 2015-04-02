@@ -1,35 +1,4 @@
-\titleclass{\subsubsubsection}{straight}[\subsection]
 
-\newcounter{subsubsubsection}[subsubsection]
-
-\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
-\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}}
-\renewcommand\thesubparagraph{\theparagraph.\arabic{subparagraph}}
-
-\titleformat{\subsubsubsection}
-  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
-\titlespacing*{\subsubsubsection}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-
-\makeatletter
-\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
-  {3.25ex \@plus1ex \@minus.2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
-\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}
-  {3.25ex \@plus1ex \@minus .2ex}%
-  {-1em}%
-  {\normalfont\normalsize\bfseries}}
-\def\toclevel@subsubsubsection{4}
-\def\toclevel@paragraph{5}
-\def\toclevel@paragraph{6}
-\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
-\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
-\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
-\@addtoreset{subsubsubsection}{section}
-\@addtoreset{subsubsubsection}{subsection}
-\@addtoreset{paragraph}{subsubsubsection}
-\makeatother
 \section{Ambiente di lavoro} 
 
 \subsection{Sistemi Operativi}
@@ -39,10 +8,11 @@ L’intero sviluppo del progetto viene svolto in ambienti Unix-Like e Windows, n
 \subsection{Coordinamento}
 
 È stato predisposto un server dedicato sul quale sono installate alcune applicazioni web
-che facilitano la gestione del progetto. Per connettersi al server (completare).
-
+che facilitano la gestione del progetto. Per connettersi al server, l'indirizzo è il seguente:\\
+\url{http://gioberry.no-ip.org/}
+\phantomsection
 \subsubsection{Software di gestione del progetto} 
-
+\label{sec:Software di gestione del prodotto}
 Come piattaforma di gestione del progetto è stato scelto \textbf{Redmine}. Redmine fornisce:
 \begin{itemize}
 \item Un sistema flessibile di gestione dei ticket;
@@ -118,7 +88,7 @@ ad esempio le date delle riunioni.
 
 
 \subsection{Strumenti per i documenti}
-
+\phantomsection
 \subsubsection{LATEX} 
  
 Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
@@ -187,7 +157,7 @@ fatta tramite il servizio W3C Validator32 del W3C.
 
 \section{Protocollo per lo sviluppo dell'applicazione} 
 Per procedere con uno sviluppo controllato dei documenti e del codice si è scelto di adottare il sistema di ticketing \textbf{Redmine}.\\ 
-La scelta di tale software è descritta nella sezione \ref{sec:Redmine}.
+La scelta di tale software è descritta nella sezione \ref{sec:Software di gestione del prodotto}.
 
 \subsection{Creare un nuovo progetto} 
 
@@ -241,6 +211,7 @@ rispetti tutte le norme.
 \end{itemize}
 }
 
+\phantomsection
 \subsubsection{Ticket di pianificazione}
 
 \begin{itemize}
@@ -338,7 +309,8 @@ Tutti i campi non segnalati sono da lasciare vuoti.
 
 \subsection{Aggiornamento ticket}
 
-Esistendo due tipologie di ticket, viene qui definito la procedura per effettuare l’aggiornamento di entrambe. 
+Esistendo due tipologie di ticket, viene qui definito la procedura per effettuare l’aggiornamento di entrambe.
+\phantomsection 
 \subsubsection{Ticket di pianificazione}
 
 \begin{itemize}
@@ -424,7 +396,7 @@ Esistendo due tipologie di ticket, viene qui definito la procedura per effettuar
 
 
 \subsection{Consigli di utilizzo}
-
+\phantomsection
 \subsubsection{Pagina personale}
  
 	Per avere una immediata visualizzazione dei ticket assegnati, è consigliato personalizzare 
