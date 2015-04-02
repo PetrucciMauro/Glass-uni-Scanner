@@ -1,0 +1,135 @@
+\section{Ambiente di verifica e validazione}{
+	Vengono descritti di seguito gli strumenti che \textit{GoGo Team} utilizzerà per
+	garantire la qualità del prodotto software$_{|g|}$ sviluppato. Per ogni strumento, è
+	fornita una descrizione delle principali funzionalità.
+
+	\subsection{Analisi statica}{
+		\subsubsection{Eclipse ($\geqslant$ 3.5)}{
+			Eclipse non è un editor, ma un ambiente di sviluppo; non si può, ad esempio, aprire 
+			e compilare un qualunque file. Per usare questo IDE$_{|g|}$ bisogna organizzare il 
+			proprio lavoro in progetti. Un progetto è l'insieme di file e impostazioni relativi 
+			ad un programma che si sta sviluppando. Integra un debugger$_{|g|}$, che permette di:
+				\begin{itemize}
+					\item far partire l'esecuzione;
+					\item sospendere l'esecuzione e ispezionare lo stack$_{|g|}$ di attivazione 
+						dei metodi (comprese le variabili);
+					\item eseguire solo una riga o un metodo;
+					\item far ripartire il programma.
+				\end{itemize}
+			Per indicare al debugger$_{|g|}$ quando sospendere l'esecuzione si devono 
+			indicare una o più righe di codice che (se raggiunte) bloccano il programma, 
+			permettendo al programmatore di analizzare lo stato del processo in cerca di 
+			errori. Eclipse supporta poi l'evidenziazione della sintassi, l'auto-completamento,
+			può essere integrato con dei plugin$_{|g|}$ e tiene traccia delle gerarchie e dei
+			percorsi dei file, nonché dei metodi e dei campi dati delle classi.
+			\begin{center}
+				\begin{figure}[h!]
+					\centering
+					\includegraphics[scale=0.28]{\docsImg eclipse.png}
+					\caption{Interfaccia grafica di Eclipse.}	
+				\end{figure}
+			\end{center}
+		
+		}
+		\subsubsection{GWT ($\geqslant$ 2.5.0)}{
+			GWT è un framework\g~ integrato per la creazione di applicazioni web$_{|g|}$. 
+			Esso agevola lo sviluppo del codice, grazie all'auto-completamento, all'evidenziazione
+			della sintassi (\textit{syntax highlighting}) e alla conoscenza del linguaggio Java$_{|g|}$, 
+			poichè fornisce dei suggerimenti. Offre molte librerie AJAX$_{|g|}$ e un debugger$_{|g|}$ integrato.
+			\begin{center}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[scale=0.3]{\docsImg gwt.png}
+					\caption{Interfaccia grafica di GWT in ambiente Eclipse.}	
+				\end{figure}
+			\end{center}
+		}
+		\subsubsection{Metrics Plugin for Eclipse ($\geqslant$ 1.3.6)}\label{plugMETRICS}{
+			Per calcolare le metriche relative al software$_{|g|}$ prodotto verrà utilizzato Metrics Plugin for Eclipse. La spiegazione dettagliata
+			delle metriche, la loro interpretazione e i vincoli da rispettare sono esposti nel \emph{\PianoDiQualifica}.
+		}
+		\subsubsection{FindBugs Plugin for Eclipse ($\geqslant$ 2.0)}\label{findbugs}{
+			FindBugs cerca errori nei programmi Java$_{|g|}$. I bug$_{|g|}$ sorgono per una serie di motivi:
+			\begin{itemize}
+				\item caratteristiche del linguaggio difficili;
+				\item metodi API$_{|g|}$ non compresi appieno;
+				\item invarianti non compresi appieno quando il codice viene modificato;
+				\item errori banali: utilizzo errato degli operatori booleani, errori di tipo.
+			\end{itemize}.
+			
+			FindBugs utilizza l'analisi statica per ispezionare il codice Java$_{|g|}$ per trovare le 
+			occorrenze di errori. L'analisi statica di FindBugs avviene controllando il codice di un programma (l'esecuzione non è necessaria). I bug$_{|g|}$ vengono suddivisi in rank e il loro intervallo va da 1 a 20. Le 
+			categorie sono le seguenti (un indice più basso indica un bug$_{|g|}$ più importante):
+			\begin{itemize}
+				\item Molto preoccupante (scariest) [1;4]
+				\item Preoccupante (scary) [5;9]
+				\item Problematico (troubling) [10;14]
+				\item Rilevante (of concern) [15;20]
+			\end{itemize}
+			La lista di sigle possibili riguardanti i bug$_{|g|}$ trovati è raggiungibile all'indirizzo 	
+			\url{http://findbugs.sourceforge.net/bugDescriptions.html}. 
+			Findbugs indica inoltre a quale categoria appartiene il bug$_{|g|}$ rilevato (correctness bug, 
+			bad practice\g , dodgy code). Di maggior rilievo sono i bug$_{|g|}$ riferiti a cattive norme di 
+			codifica (bad practice\g ) o segmenti di codice scritti in maniera ambigua (dodgy code).
+			FindBugs, tuttavia, in alcuni casi fornisce alcuni risultati da considerare falsi positivi 
+			(riguardanti possibili ambiguità del codice e bad practice$_{|g|}$). Il Programmatore, in tal caso, deve 
+			motivare la scelta di non correggere tale errore.
+			Utilizzando l'attivazione automatica di questo strumento viene effettuata la 
+			verifica di bug$_{|g|}$ ogni volta che viene modificata una classe interna del progetto.
+			\begin{center}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[scale=0.3]{\docsImg findbugs.png}
+					\caption{Interfaccia grafica di FindBugs.}	
+				\end{figure}
+			\end{center}		
+		}			
+
+		\subsubsection{JUnit ($\geqslant$ 4.11)}\label{junit}{
+		    JUnit è un framework$_{|g|}$ \underline{open source}$_{|g|}$ per effettuare test di unità.
+		    I \textit{test di unità} sono dei test che vanno a verificare la correttezza direttamente del codice, in ogni sua piccola parte. 
+		    Questi test vanno scritti ed eseguiti dal programmatore stesso per ogni porzione di codice da lui sviluppata.\\
+		    I \textit{test funzionali}, invece, sono dei test che vanno a verificare che il software$_{|g|}$ nella sua completezza 
+		    funzioni correttamente. Questi test trattano il sistema come se fosse una scatola nera, 
+		    alla quale vengono forniti degli input e viene verificata la correttezza degli output. 
+		    Alcune delle caratteristiche principali di JUnit sono:
+		    \begin{itemize}
+		       \item Possibilità di effettuare diversi tipi di test con asserzioni diverse. 
+		       \item Presenza di funzionalità per eseguire delle istruzioni prima o dopo che vengano eseguiti i test, 
+			     grazie alle annotazioni \texttt{@Before} e \texttt{@After}.
+		    JUnit permette lo sviluppo di test di integrazione grazie all'unione automatica di più test di unità: come sopra, compito del Programmatore è 
+		    unicamente quello di unire i test di unità da integrare. Un'altra funzione aggiuntiva è l'identificazione e classificazione delle varie tipologie di 
+		    errori, suddivise tra “errors" (difetti) e "failures" (malfunzionamenti).
+		    \end{itemize}
+		    \begin{center}
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[scale=0.5]{\docsImg junit.png}
+				\caption{Interfaccia grafica di JUnit.}	
+			\end{figure}
+		    \end{center}
+	}
+
+	\subsection{Analisi dinamica}{
+		\subsubsection{EclEmma Plugin for Eclipse ($\geqslant$ 2.2.0)}\label{plugECLE}{
+			Strumento che permette di individuare quali righe di codice vengono effettivamente eseguite 
+			durante un specifico test. 
+			\`E necessario che il Programmatore verifichi ogni possibile cammino del codice tracciando 
+			quali righe non vengono mai eseguite (eliminare le righe inutilizzate o rivedere la logica 
+			del metodo). EclEmma fornisce statistiche sui segmenti di codice testati, per una visione 
+			generale del cammino percorso dall'esecuzione dei test. Solo una volta testati tutti i 
+			cammini possibili del metodo, è possibile avere un test completo.
+			\begin{center}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[scale=0.5]{\docsImg eclemma.jpg}
+					\caption{Utilizzo di EclEmma all'interno di Eclipse.}	
+				\end{figure}
+			\end{center}	
+		}
+		\subsubsection{ApacheBench ($\geqslant$ 2.2)}{
+		    ApacheBench è uno strumento che ci permette di stressare al massimo il server$_{|g|}$, 
+		    normalmente è disponibile tramite riga di comando su Linux col comando\\
+		    "\texttt{ab -n numero di richieste da testare -c numero di richieste contemporanee [http[s]://]hostname[:port]/path}". 
+		}
+}

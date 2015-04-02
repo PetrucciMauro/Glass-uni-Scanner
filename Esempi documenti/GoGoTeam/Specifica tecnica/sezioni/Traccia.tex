@@ -1,0 +1,331 @@
+\section{Tracciamento relazione componenti - requisiti}{
+
+\subsection{Tracciamento package - componenti}{
+
+	\begin{longtable}{p{0.55\textwidth} p{0.45\textwidth}}
+\toprule
+\textbf{Package}	&	\textbf{Componente}\\
+\midrule
+\midrule
+\texttt{mytalk.client.view.administrator}	&
+{VA1 - \texttt{PageAdminView}}\newline
+{VA2 - \texttt{LogAdmin}}\newline
+{VA3 - \texttt{StatisticsView}}\\
+\midrule
+\texttt{mytalk.client.view.user}	&
+{VU1 - \texttt{PageUserView}}\newline
+{VU2 - \texttt{LogUser}}\newline
+{VU3 - \texttt{Register}}\newline
+{VU4 - \texttt{UserDataView}}\newline
+{VU5 - \texttt{ShowDataUser}}\newline
+{VU6 - \texttt{ModifyDataUser}}\newline
+{VU7 - \texttt{CommunicationView}}\newline
+{VU8 - \texttt{CallManage}}\newline
+{VU9 - \texttt{MediaManage}}\newline
+{VU10 - \texttt{MakeCall}}\\
+\midrule
+\texttt{mytalk.client.presenter.administrator}	&
+{PA1 - \texttt{LogAdminLogic}}\newline
+{PA2 - \texttt{StatisticsLogic}}\newline
+{PA3 - \texttt{UpdateViewLogic}}\newline
+{PA4 - \texttt{WebSocketAdmin}}\newline
+{PA5 - \texttt{CommonFunctions}}\\
+\midrule
+\texttt{mytalk.client.model.administrator}	&
+{MCA1 - \texttt{ManageCookies}}\\
+\midrule
+\texttt{mytalk.presenter.user}	&
+{PU1 - \texttt{LogUserLogic}}\newline
+{PU2 - \texttt{RegisterLogic}}\newline
+{PU3 - \texttt{DataUserLogic}}\newline
+{PU4 - \texttt{CommunicationLogic}}\newline
+{PU5 - \texttt{UpdateViewLogic}}\newline
+{PU6 - \texttt{PeerConnection}}\newline
+{PU7 - \texttt{MediaStream}}\newline
+{PU8 - \texttt{WebSocketUser}}\newline
+{PU9 - \texttt{CommonFunctions}}\\
+\midrule
+\texttt{mytalk.client.model.user}	&
+{MCU1 - \texttt{ManageCookies}}\\
+\midrule
+\texttt{mytalk.server.model}	&
+{MS1 - \texttt{ManageWSU}}\newline
+{MS2 - \texttt{WSClient}}\newline
+{MS3 - \texttt{ManageWSA}}\newline
+{MS4 - \texttt{WSAdmin}}\newline
+{MS5 - \texttt{ManageDBMS}}\\
+\bottomrule
+	\caption{Tracciamento package - componenti}
+\end{longtable}
+}
+\newpage
+
+\subsection{Tracciamento componenti - requisiti}{
+\begin{longtable}{p{0.20\textwidth} p{0.80\textwidth}}
+\toprule
+\textbf{Componenti}	&	\textbf{Requisiti}\\
+\midrule
+\midrule
+VA1	& 	{FAOB0, FAOB1, FAOB2, FAOB3}\\
+\midrule
+VA2	&	{FAOB1, FAOB1.1, FAOB1.2, FAOB3}\\
+\midrule
+VA3	&	{FAOB2, FAOB2.1, FAOB2.1.1, FAOB2.1.1.1, FAOB2.1.2, FAOB2.1.2.1, FAOB2.1.3, FAOB2.1.3.1, FAOB2.1.3.1.1, FAOB2.1.3.2, FAOB2.1.3.2.1, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6}\\
+\midrule
+VU1	&	{FOB0, FOB1, FOB2, FOB3, FOB4}\\
+\midrule
+VU2	&	{FOB1, FOB1.1, FOB1.2, FOB6}\\
+\midrule
+VU3	&	{FOB2, FOB2.1, FOB2.1.1, FOB2.2, FOB2.3, FOB2.4, FOB2.5, FOB2.6}\\
+\midrule
+VU4	&	{FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3, FOB3.2.4, FOB3.2.5, FOB3.2.6}\\
+\midrule
+VU5	&	{FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5}\\
+\midrule
+VU6	&	{FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3, FOB3.2.4, FOB3.2.5, FOB3.2.6}\\
+\midrule
+VU7	&	{FOB4}\\
+\midrule
+VU8	&	{FOB4.1, FOB4.1.1, FOB4.1.1.1, FOB4.1.1.1.2, FOB4.1.1.1.3, FOB4.1.1.1.4, FOB4.1.1.1.4.1, FOB4.1.1.1.4.2, FOB4.1.1.1.4.3, FOB4.1.1.1.4.4, FOB4.1.2}\\
+\midrule
+VU9	&	{FOB4.1.1.1.1, FOB4.1.1.1.1.1, FOB4.1.1.1.1.2}\\
+\midrule
+VU10		&	{FOB4.2, FOB4.2.1, FOB4.2.1.1, FOB4.2.1.1.1, FOB4.2.1.2, FOB4.2.1.2.1, FOB4.2.1.3, FOB4.2.1.3.1,FOB4.2.1.3.2}\\
+\midrule
+PA1		&	{FAOB0, FAOB1, FAOB1.1, FAOB1.2, FAOB3}\\
+\midrule
+PA2		&	{FAOB0, FAOB2, FAOB2.1, FAOB2.1.1, FAOB2.1.1.1, FAOB2.1.2, FAOB2.1.2.1, FAOB2.1.3, FAOB2.1.3.1, FAOB2.1.3.1.1, FAOB2.1.3.2, FAOB2.1.3.2.1, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6}\\
+\midrule
+PA3		&	{FAOB0, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6, FAOB2.2.7}\\
+\midrule
+PA4		&	{FAOB1, FAOB2, FAOB2.1, FAOB2.1.1, FAOB2.1.1.1, FAOB2.1.2, FAOB2.1.2.1, FAOB2.1.3, FAOB2.1.3.1, FAOB2.1.3.1.1, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6, FAOB3}\\
+\midrule
+PA5	&    Non tracciabile perché contiene metodi comuni a tutte le classi.\\
+\midrule
+PU1		&	{FOB1, FOB1.1, FOB1.2, FOB6}\\
+\midrule
+PU2		&	{FOB2, FOB2.1, FOB2.1.1, FOB2.2, FOB2.2.1, FOB2.3, FOB2.4, FOB2.5, FOB2.6}\\
+\midrule
+PU3		&	{FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3, FOB3.2.4, FOB3.2.5, FOB3.2.6}\\
+\midrule
+PU4		&	{FOB4, FOB4.1, FOB4.1.1, FOB4.1.1.1, FOB4.1.1.1.1, FOB4.1.1.1.1.1, FOB4.1.1.1.1.2, FOB4.1.1.1.2, FOB4.1.1.1.3, FOB4.1.1.1.4, FOB4.1.1.1.4.1, FOB4.1.1.1.4.2, FOB4.1.1.1.4.3, FOB4.1.1.1.4.4, FOB4.1.2, FOB4.2, FOB4.2.1, FOB4.2.1.1, FOB4.2.1.1.1, FOB4.2.1.2, FOB4.2.1.2.1, FOB4.2.1.3, FOB4.2.1.3.1,  FOB4.2.1.3.2, FOB5}\\
+\midrule
+PU5		&	{FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB4, FOB4.1, FOB4.1.1.1.4, FOB4.1.1.1.4.1, FOB4.1.1.1.4.2, FOB4.1.1.1.4.2, FOB4.1.1.1.4.3, FOB4.1.1.1.4.4}\\
+\midrule
+PU6		&	{FOB4, FOB4.1, FOB4.1.1, FOB4.1.1.1, FOB4.1.1.1.1, FOB4.1.1.1.1.1, FOB4.1.1.1.1.2, FOB4.1.1.1.4.1, FOB4.1.1.1.4.2, FOB4.1.1.1.4.3, FOB4.1.1.1.4.4, FOB4.1.2, FOB4.2, FOB4.2.1, FOB5}\\
+\midrule
+PU7	&	{FOB4, FOB4.1, FOB4.1.1, FOB4.1.1.1, FOB4.1.1.1.1, FOB4.1.1.1.1.1, FOB4.1.1.1.1.2, FOB4.1.1.1.4.1, FOB4.1.1.1.4.2, FOB4.1.1.1.4.3, FOB4.1.1.1.4.4, FOB4.1.2, FOB4.2, FOB4.2.1, FOB5}\\
+\midrule
+PU8	&	{FOB1, FOB2, FOB2.1, FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3,  FOB3.2.4, FOB3.2.5, FOB3.2.6, FOB4.2.1, FOB4.2.1.1, FOB4.2.1.1.1, FOB4.2.1.2, FOB4.2.1.2.1, FOB4.2.1.3, FOB4.2.1.3.1, FOB4.2.1.3.2, FOB5, FOB6}\\
+\midrule
+PU9 &	Non tracciabile perché contiene metodi comuni a tutte le classi.\\
+\midrule
+MCU1 & {FOB1}\\
+\midrule
+MCA1 & {FAOB1}\\
+\midrule
+MS1		&	{FOB4, FOB4.1, 4.1.1.1.2, FOB4.1.1.1.3, FOB4.2, FOB4.2.1, FOB5}\\
+\midrule
+MS2		&	{FOB1, FOB2, FOB2.1, FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3,  FOB3.2.4, FOB3.2.5, FOB3.2.6, FOB4.2.1, FOB4.2.1.1, FOB4.2.1.1.1, FOB4.2.1.2, FOB4.2.1.2.1, FOB4.2.1.3, FOB4.2.1.3.1, FOB4.2.1.3.2, FOB5, FOB6}\\
+\midrule
+MS3		&	{Non mappabile perché non ci sono requisiti associati.}\\
+\midrule
+MS4		&	{FAOB1, FAOB2, FAOB2.1, FAOB2.1.1, FAOB2.1.1.1, FAOB2.1.2, FAOB2.1.2.1, FAOB2.1.3, FAOB2.1.3.1, FAOB2.1.3.1.1, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6, FAOB3}\\
+\midrule
+MS5		&	{FOB1, FOB2, FOB2.1, FOB3, FOB3.1, FOB3.1.1, FOB3.1.2, FOB3.1.3, FOB3.1.4, FOB3.1.5, FOB3.2, FOB3.2.1, FOB3.2.2, FOB3.2.2.1, FOB3.2.2.2, FOB3.2.3,  FOB3.2.4, FOB3.2.5, FOB3.2.6, FOB4.1.1.1.3, FOB4.2.1, FOB4.2.1.1, FOB4.2.1.1.1, FOB4.2.1.2, FOB4.2.1.2.1, FOB4.2.1.3, FOB4.2.1.3.1, FOB4.2.1.3.2, FOB6, FAOB1, FAOB2, FAOB2.1, FAOB2.1.1, FAOB2.1.1.1, FAOB2.1.2, FAOB2.1.2.1, FAOB2.1.3, FAOB2.1.3.1, FAOB2.1.3.1.1, FAOB2.2, FAOB2.2.1, FAOB2.2.2, FAOB2.2.3, FAOB2.2.4, FAOB2.2.5, FAOB2.2.6, FAOB3}\\
+\bottomrule
+\caption{Tracciamento componenti - requisiti}
+\label{tab:tcr}
+\end{longtable}
+}
+\newpage
+
+\subsection{Tracciamento requisiti - componenti}{
+\begin{longtable}{p{0.30\textwidth} p{0.70\textwidth}}
+\toprule
+\textbf{Requisiti}	&	\textbf{Componenti}\\
+\midrule
+\midrule
+FOB0		& 	{VU1}\\
+\midrule
+FOB1		& 	{VU1, VU2, PU1, PU8, MS2, MS5, MCU1}\\
+\midrule
+FOB1.1		& 	{VU2, PU1}\\
+\midrule
+FOB1.2		& 	{VU2, PU1}\\
+\midrule
+FOB2	& 	{VU1, VU3, PU2, PU8, MS2, MS5}\\
+\midrule
+FOB2.1		& 	{VU3, PU2, PU8, MS2, MS5}\\
+\midrule
+FOB2.1.1		& 	{VU3, PU2}\\
+\midrule
+FOB2.2		& 	{VU3, PU2}\\
+\midrule
+FOB2.2.1		& 	{PU2}\\
+\midrule
+FOB2.3		& 	{VU3, PU2}\\
+\midrule
+FOB2.4		& 	{VU3, PU2}\\
+\midrule
+FOB2.5		& 	{VU3, PU2}\\
+\midrule
+FOB2.6		& 	{VU3, PU2}\\
+\midrule
+FOB3		& 	{VU1, VU4, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.1	& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.1.1		& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.1.2		& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.1.3		& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.1.4		& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.1.5		& 	{VU4, VU5, PU3, PU5, PU8, MS2, MS5}\\
+\midrule
+FOB3.2		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.1		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.2		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.2.1		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.2.2		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.3		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.4		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.5		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB3.2.6		& 	{VU4, VU6, PU3, PU8, MS2, MS5}\\
+\midrule
+FOB4		& 	{VU1, VU7, VU8, PU4, PU5, PU6, PU7, MS1}\\
+\midrule
+FOB4.1		& 	{VU8, PU4, PU6, PU7, MS1}\\
+\midrule
+FOB4.1.1		& 	{VU8, PU4, PU6, PU7}\\
+\midrule
+FOB4.1.1.1		& 	{VU8, PU4, PU6, PU7, MS1}\\
+\midrule
+FOB4.1.1.1.1		& 	{VU9, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.1.1		& 	{VU9, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.1.2		& 	{VU9, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.2		& 	{VU8, PU4}\\
+\midrule
+FOB4.1.1.1.3		& 	{VU8, PU4, MS1, MS5}\\
+\midrule
+FOB4.1.1.1.4		& 	{VU8, PU4, PU5}\\
+\midrule
+FOB4.1.1.1.4.1		& 	{VU8, PU4, PU5, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.4.2		& 	{VU8, PU4, PU5, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.4.3		& 	{VU8, PU4, PU5, PU6, PU7}\\
+\midrule
+FOB4.1.1.1.4.4		& 	{VU8, PU4, PU5, PU6, PU7}\\
+\midrule
+FOB4.1.2		& 	{VU8, PU4, PU6, PU7}\\
+\midrule
+FOB4.2		& 	{VU10, PU4, PU6, PU7, MS1}\\
+\midrule
+FOB4.2.1		& 	{VU10, PU4, PU6, PU7, PU8, MS1, MS2, MS5}\\
+\midrule
+FOB4.2.1.1		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.1.1		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.2		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.2.1		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.3		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.3.1		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB4.2.1.3.2		& 	{VU10, PU4, PU8, MS2, MS5}\\
+\midrule
+FOB5		& 	{PU4, PU5, PU6, PU7, PU8, MS1, MS2}\\
+\midrule
+FOB6		& 	{VU2, PU1, PU8, MS2, MS5}\\
+\midrule
+FAOB0		& 	{VA1, VA2, PA1, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB1		& 	{VA1, PA1, PA4, MS4, MS5, MCA1}\\
+\midrule
+FAOB1.1		& 	{VA2, PA1, PA4, MS4, MS5}\\
+\midrule
+FAOB1.2		& 	{VA2, PA1, PA4, MS4, MS5}\\
+\midrule
+FAOB2		& 	{VA1, VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.1.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.2		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.2.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.3		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.3.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.3.1.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.3.2		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.1.3.2.1		& 	{VA3, PA2, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.1		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.2		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.3		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.4		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.5		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB2.2.6		& 	{VA3, PA2, PA3, PA4, MS4, MS5}\\
+\midrule
+FAOB3		& 	{VA1, VA2, PA1, PA3, PA4, MS4, MS5}\\
+\midrule
+VOB1		& 	{Vincolo soddisfatto in fase di Specifica Tecnica.}\\
+\midrule
+VOB2		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB3		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB4		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB5		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB6		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB7		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB8		& 	{Vincolo tecnologico implementato dal software.}\\
+\midrule
+VOB9		& 	{Vincolo soddisfatto in fase progettuale.}\\
+\midrule
+VOB10		& 	{Vincolo soddisfatto in fase di Specifica Tecnica.}\\
+\bottomrule
+\caption{Tracciamento requisiti - componenti}
+\label{tab:trc}
+\end{longtable}
+}
+
+
+} %traccia

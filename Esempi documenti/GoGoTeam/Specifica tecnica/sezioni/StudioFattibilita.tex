@@ -1,0 +1,13 @@
+\section{Stima di fattibilità}
+
+Da un'analisi delle caratteristiche che il prodotto dovrà avere, appare evidente come la scelta delle tecnologie utilizzate per il suo sviluppo sia adeguata a portarne a termine il compimento:
+\begin{itemize}
+ \item l'interfaccia verrà realizzata con i linguaggi HTML5\g~ e CSS3\g : ciò garantisce compatibilità con molti browser\g , in particolare quello di riferimento (Google Chrome\g ), e una buona manutenibilità;
+ \item il linguaggio Java\g~ è idoneo ad implementare il server\g~; l'accesso ai dati persistenti sarà inoltre semplificato dall'utilizzo del connettore JDBC;
+ \item i dati persistenti vengono memorizzati tramite un database\g~ MySQL, che garantisce semplicità di gestione ed estendibilità;
+ \item la comunicazione full-duplex\g~ sarà fornita dall'utilizzo della tecnologia WebSocket\g , che può essere utilizzata lato browser\g , lato server\g~ o per qualsiasi applicazione client-server\g .
+ \item il requisito che l'applicazione risieda su una singola pagina web\g~ può essere soddisfatto utilizzando AJAX\g , il quale permette di aggiornare singole componenti della pagina senza doverla ricaricare completamente.
+ \item il framework GWT\g~ consente di sviluppare applicazioni web dinamiche in linguaggio Javascript programmando in linguaggio Java\g .
+\end{itemize}
+
+Pertanto, visto quanto descritto sopra, appare possibile realizzare il prodotto rimanendo all'interno dei vincoli temporali ed economici stabiliti.

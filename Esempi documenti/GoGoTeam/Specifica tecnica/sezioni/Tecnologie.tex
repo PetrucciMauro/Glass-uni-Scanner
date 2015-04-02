@@ -1,0 +1,96 @@
+\section{Tecnologie utilizzate} {
+	
+	\subsection{MySQL}{
+		MySQL, definito Oracle MySQL, è un Relational DataBase Management System (RDBMS), composto da un client$_{|g|}$ 
+		con interfaccia a riga di comando e un server$_{|g|}$, entrambi disponibili sia per sistemi GNU/Linux che per Windows. 
+		Verrà utilizzato un database\g~ 
+		relazionale per la sua estendibilità, per la sua maggiore espressività rispetto ad un database\g~ XML$_{|g|}$ e per 
+		la semplicità di accedervi, utilizzando il linguaggio Java$_{|g|}$, tramite JDBC.
+		Nel progetto \textit{MyTalk} è stato utilizzato per memorizzare i dati degli utenti, quelli degli amministratori 
+		e quelli relativi alle statistiche.
+	}
+
+	\subsection{JDBC}{
+		JDBC (Java DataBase Connectivity) è un connettore per database\g~ che consente l'accesso alle basi di dati da qualsiasi 
+		programma scritto con il linguaggio di programmazione Java$_{|g|}$, indipendentemente dal tipo di DBMS\g~ utilizzato. 
+		È costituita da una API$_{|g|}$, raggruppata nel package$_{|g|}$ java.sql, che serve ai client$_{|g|}$ per connettersi 
+		a un database\g~. Fornisce metodi per interrogare e modificare i dati. È orientata ai database\g~ relazionali ed è Object 
+		Oriented. La piattaforma Java 2 Standard Edition contiene le API$_{|g|}$ JDBC, insieme all'implementazione di un 
+		\underline{bridge JDBC-ODBC}$_{|g|}$, che permette di connettersi a database\g~ relazionali che supportino ODBC$_{|g|}$.
+		Verrà utilizzato per effettuare effettuare query\g~ sul database\g~; tale risultato verrà passato ad un oggetto che poi 
+		lo invierà, tramite \underline{web socket}, al client$_{|g|}$ richiedente.\\
+		Verrà utilizzato con un design pattern DAO (Database Access Object).
+	}
+
+	\subsection{JavaScript}{
+		JavaScript$_{|g|}$ è un linguaggio di scripting lato client$_{|g|}$ orientato agli oggetti, comunemente usato nei 
+		siti web$_{|g|}$, ed interpretato dai browser$_{|g|}$. Ciò permette di alleggerire il server$_{|g|}$ dal peso della 
+		computazione, che viene eseguita dal client$_{|g|}$. Questo è un aspetto molto importante per lo sviluppo del capitolato 
+		MyTalk, che richiede che il server$_{|g|}$ si occupi solamente della connessione tra i client$_{|g|}$. Avremo quindi un 
+		“thin server” e un “fat client”.
+		La caratteristica principale di JavaScript$_{|g|}$ è, appunto, quella di essere un linguaggio interpretato: il codice 
+		non viene compilato, ma interpretato, dal browser$_{|g|}$.
+		Essendo molto popolare e ormai consolidato, JavaScript$_{|g|}$ può essere eseguito dalla maggior parte dei browser$_{|g|}$, 
+		sia desktop che mobile, grazie anche alla sua leggerezza.
+		Uno degli svantaggi di questo linguaggio è che ogni operazione che richieda informazioni che devono essere recuperate 
+		da un database$_{|g|}$ deve passare attraverso un linguaggio che effettui esplicitamente la transazione, per poi 
+		restituire i risultati a JavaScript$_{|g|}$. Tale operazione richiede l’aggiornamento totale della pagina, 
+		ma grazie ad AJAX$_{|g|}$ è possibile superare questo limite.
+	}
+
+	\subsection{WebSocket}{
+		WebSocket$_{|g|}$ è una tecnologia web$_{|g|}$ che fornisce canali di comunicazione full-duplex$_{|g|}$ attraverso una 
+		singola connessione TCP$_{|g|}$. WebSocket$_{|g|}$ può essere utilizzato da qualsiasi applicazione client-server$_{|g|}$, 
+		e permette ai browser$_{|g|}$ di comunicare tra loro in maniera asincrona senza l’intervento dell’utente.
+		Le comunicazioni sono fatte attraverso la porta TCP$_{|g|}$ 80, che è un vantaggio per quegli ambienti che bloccano 
+		porte non standard utilizzando dei firewall$_{|g|}$.
+	}
+
+	\subsection{HTML5}{
+		HTML5$_{|g|}$ verrà utilizzato per definire la struttura della pagina web$_{|g|}$ che ospita il software MyTalk. 
+		Tale struttura sarà completamente separata dalla presentazione, che verrà realizzata tramite CSS3$_{|g|}$. HTML5$_{|g|}$ 
+		presenta, rispetto ad HTML\g~ 4, diversi vantaggi per lo svolgimento del progetto:
+		\begin{itemize}
+			\item introduzione di elementi di controllo per i menu di navigazione (tag \texttt{<nav>});
+			\item introduzione di elementi specifici per l’inserimento di contenuti multimediali 
+			      (tag \texttt{<video>} e \texttt{<audio>}).
+		\end{itemize}
+	}
+
+	\subsection{CSS3}{
+		CSS$_{|g|}$ (Cascading Style Sheet) è un linguaggio utile a definire l’aspetto di pagine HTML$_{|g|}$, 
+		XHTML$_{|g|}$ e XML$_{|g|}$, che devono presentare un collegamento al loro foglio di stile nell’header 
+		(la parte del documento HTML$_{|g|}$ che introduce un gruppo di ausili introduttivi o di navigazione). 
+		Grazie ai CSS$_{|g|}$, è possibile una completa separazione tra la presentazione (cioè l’aspetto grafico 
+		delle pagine web$_{|g|}$) ed i contenuti delle pagine stesse. Ciò semplifica la comprensione, la manutenzione 
+		e la portabilità. Rispetto a CSS2, CSS3$_{|g|}$ introduce funzionalità grafiche più avanzate.
+	}
+
+	\subsection{AJAX}{ 
+		\`E una tecnica per lo sviluppo di applicazioni web interattive. Grazie ad AJAX$_{|g|}$ può avvenire uno 
+		scambio di dati in background tra il browser$_{|g|}$ del client$_{|g|}$ e il server$_{|g|}$; ciò permette 
+		l’aggiornamento dinamico della pagina web$_{|g|}$ senza l’intervento esplicito dell’utente.
+		Normalmente le funzioni richiamate sono scritte con il linguaggio JavaScript$_{|g|}$.
+		AJAX$_{|g|}$ è una tecnica multi-piattaforma utilizzabile su molti \underline{sistemi operativi}$_{|g|}$, 
+		architetture informatiche e sui principali browser$_{|g|}$ web$_{|g|}$.
+	}
+
+	\subsection{Java 7}{
+		Linguaggio di programmazione ad oggetti sviluppato da Oracle. Esso è indipendentemente dalla piattaforma 
+		ma necessita l’installazione, sulla macchina che lo esegue, di un interprete detto Java Virtual Machine 
+		(JVM$_{|g|}$). Java$_{|g|}$ è particolarmente adatto per eseguire codice da sorgenti remote in modo sicuro. 
+		Verrà utilizzato, come da requisito del capitolato, per la programmazione del server$_{|g|}$ che si occuperà 
+		di gestire la connessione e la sessione di comunicazione tra i client$_{|g|}$.
+	}
+
+	\subsection{GWT (Google Web Toolkit)}{
+		Framework$_{|g|}$ di sviluppo Java$_{|g|}$ con il quale è possibile realizzare applicazioni AJAX$_{|g|}$
+		complesse e aderenti agli standard web$_{|g|}$. Tale strumento permette di sviluppare mediante il linguaggio
+		Java$_{|g|}$, ben conosciuto dal gruppo e ricco di strumenti di sviluppo e testing, e si occupa di tradurre 
+		il codice in JavaScript$_{|g|}$ e HTML$_{|g|}$, generando una soluzione AJAX$_{|g|}$. Ciò rende quindi possibile 
+		l'utilizzo dell'IDE$_{|g|}$ Eclipse non solo per la parte server$_{|g|}$, ma anche per il front-end$_{|g|}$
+		dell'applicazione. GWT offre comunque la possibilità di scrivere codice JavaScript$_{|g|}$ nativo (JSNI,
+		JavaScript Native Interface) per accedere alle funzionalità non esposte nell'API$_{|g|}$ GWT, come 
+		l'interazione con le librerie WebRTC$_{|g|}$ e con i WebSocket$_{|g|}$.
+	}
+}
