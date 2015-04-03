@@ -1,0 +1,129 @@
+
+\section{Gestione amministrativa della revisione}{
+    \subsection{Comunicazione e risoluzione delle anomalie}{
+	Un’anomalia è uno scostamento del comportamento del programma rispetto alle aspettative prefissate.\\
+	Per la segnalazione e il trattamento delle anomalie si utilizza il servizio di ticketing offerto dalla piattaforma di sviluppo 
+	SourceForge (\url{http://www.sourceforge.net}). Quando il Verificatore riscontra un’anomalia deve aprire un ticket\g su SourceForge. 
+	Le modalità di risoluzione di quest’ultimo e la sua struttura vengono descritte in modo dettagliato nel documento \emph{\NormeDiProgetto}.
+	Quando un documento/modulo$_{|g|}$ viene rilasciato in una nuova versione, il Verificatore controlla il registro delle modifiche e, in base ad esso, 
+	effettua una verifica alla ricerca di anomalie da correggere. Se ne trova, apre un ticket$_{|g|}$~ su SourceForge e lo comunica all’Amministratore; 
+	sarà poi compito della persona che ha modificato il documento/modulo$_{|g|}$ apportare le dovute modifiche, che devono essere approvate dall’Amministratore. 
+    }
+
+    \subsection{Trattamento della discrepanza}{
+      Una discrepanza è una differenza tra il lavoro svolto e quanto era stato pianificato, sia per quanto riguarda i requisiti specificati nel capitolato d’appalto 
+      che per quanto riguarda le norme di progetto.\\
+      Risolvere una discrepanza comporta necessariamente dei costi, che dovranno venire quantificati dal Responsabile di Progetto sotto il punto di vista delle risorse umane, 
+      economiche e temporali.
+      Qualunque sia l’entità della discrepanza, essa dovrà essere registrata e tracciata tramite ticket$_{|g|}$.
+    }
+
+    \subsection{Procedure di controllo di qualità del processo}{
+	L’organizzazione dei processi fa riferimento al ciclo di Deming, che ha come
+	scopo il miglioramento continuo, secondo il principio del PDCA. Gli obiettivi
+	sono promuovere una cultura volta al perseguimento della qualità e all’utilizzo
+	ottimale delle risorse e dare una maggiore coesione tra le fasi di analisi,
+	progettazione, realizzazione, verifica e collaudo. Tale metodo è suddiviso in
+	quattro fasi:
+	\begin{itemize}{
+		\item[1.] \textbf{Plan - Pianificare}
+			\begin{itemize}
+			\item[(a)] Definire il problema/impostare il progetto;
+			\item[(b)] Documentare la situazione di partenza;
+			\item[(c)] Analizzare il problema;
+			\item[(d)] Pianificare le azioni da realizzare.
+			\end{itemize}
+			
+		\item[2.] \textbf{Do - Realizzare} 
+			\begin{itemize}
+				\item[(a)] Addestrare le persone incaricate della realizzazione;
+				\item[(b)] Realizzare le azioni che sono state pianificate.
+			\end{itemize}
+		\item[3.] \textbf{Check -Verificare} 
+			\begin{itemize}
+			    \item[(a)] Verificare i risultati e confrontarli con gli obiettivi;
+				\item[•] Se si è raggiunto l’obiettivo: passare alla lettera a della fase Act;
+				\item[•] Se non si è raggiunto l’obiettivo: passare alla lettera b della fase Act.
+			\end{itemize}
+		\item[4.] \textbf{Act - Mantenere o Migliorare}
+			\begin{itemize}
+				\item[(a)] Obiettivo raggiunto:
+				\begin{itemize}
+					\item[i.] Standardizzare, consolidare e addestrare gli operatori;
+					\item[ii.] Procedere a un nuovo PDCA per un ulteriore miglioramento sul tema.
+					\end{itemize}
+			\item[(b)] Obiettivo non raggiunto:
+				\begin{itemize}
+				\item[i.] Ripetere il ciclo PDCA sullo stesso problema, analizzando criticamente le varie fasi del ciclo precedente per individuare le cause del non raggiungimento dell’obiettivo.
+				\end{itemize}
+			\end{itemize}
+	}\end{itemize}
+	
+	 
+	\begin{figure}[h!]
+	  \centering
+	  \includegraphics[scale=.55]{\docsImg CicloDiDeming.pdf}
+	  \caption{Ciclo di Deming}
+	\end{figure}
+	
+	I parametri che permetteranno di valutare la qualità del processo saranno principalmente:
+	\begin{itemize}
+		\item il tempo impiegato per essere portato a termine;
+		\item la quantità di risorse impiegate;
+		\item l’aderenza del processo alla pianificazione iniziale;
+		\item il numero di iterazioni che è stato fatto;
+		\item la soddisfazione dei requisiti richiesti;
+		\item il numero di difetti trovati durante la fase di testing;
+		\item l'efficacia dell'attività di correzione dei difetti.
+	\end{itemize}
+	
+	Tali parametri devono essere quantificati sia durante che al termine del processo, al fine di individuare eventuali problemi e capire, 
+	attraverso un'analisi condivisa dai membri del gruppo, in quali aree c'è bisogno di un miglioramento. 
+	Alla successiva istanziazione del processo, i dati raccolti la volta precedente vanno capiti e migliorati in modo da rendere più 
+	efficiente ed efficace il processo stesso.\\
+
+	Il gruppo \textit{GoGo Team} adotta come riferimento gli standard \texttt{ISO/IEC}$_{|g|}$ \texttt{15939} e 
+	\texttt{ISO/IEC}$_{|g|}$ \texttt{14598} per la misurazione e valutazione del software$_{|g|}$ nel suo intero ciclo di vita. 
+	In particolare, \texttt{ISO/IEC}$_{|g|}$ \texttt{15939} definisce il processo di misura un ``ciclo iterativo che prevede la misurazione, 
+	la raccolta di feedback e l’utilizzo di questi ultimi per impostare azioni correttive per migliorare il processo di produzione PDCA''. 
+	La norma suddivide il processo di verifica nelle seguenti quattro attività:
+	\begin{enumerate}
+		\item definire l’esigenza della misura in base ai requisiti da rispettare e alle risorse a disposizione;
+		\item pianificare la misurazione definendo tecniche, metriche e procedure;
+		\item rilevare le misure memorizzando i dati per creare uno storico;
+		\item valutare le misure rilevate generando report e pianificando azioni correttive.
+	\end{enumerate}
+	Lo scopo delle misurazioni è quello di prevedere e stimare i costi per lo sviluppo e la qualità del prodotto. 
+	Per tutta la durata del ciclo di vita esse verranno effettuate in diversi momenti:
+	\begin{itemize}
+		\item in fase di progettazione: hanno l’obiettivo di quantificare l’impegno richiesto dalla manutenzione futura e di prevenire 
+		      problemi quando il software$_{|g|}$ sarà in uso; 
+		\item in fase di collaudo e test: viene effettuato un confronto con le specifiche date e si cerca di individuare problemi non 
+		      considerati precedentemente;
+	\end{itemize}
+	Vengono di seguito definiti i termini \textit{misurazione}, \textit{misura}, \textit{metrica} e \textit{indicatore}:
+	\begin{itemize}
+		\item \textit{misurazione}: l’uso di una metrica per assegnare un valore su una scala predefinita;
+		\item \textit{misura}: risultato della misurazione;
+		\item \textit{metrica}: insieme di regole per fissare le entità da misurare, gli attributi rilevanti, l’unità di misura, 
+		      la procedura per assegnare e interpretare i valori;
+		\item \textit{indicatore}: misura ottenuta indirettamente a partire da altre misure o tramite stime o predizioni; 
+		      si utilizza un indicatore per quantificare aspetti difficilmente misurabili.
+	\end{itemize}
+	La norma \texttt{ISO/IEC}$_{|g|}$ \texttt{14598} descrive il processo di valutazione della qualità del software$_{|g|}$, 
+	in accordo con la norma \texttt{ISO/IEC}$_{|g|}$ \texttt{9126} descritta in appendice \ref{sec:Qualita}. Essa verrà utilizzata per 
+	valutare il software$_{|g|}$ durante tutto il suo ciclo di vita. Ogni valutazione deve possedere una descrizione, uno scopo, deve 
+	identificare i prodotti da valutare e i risultati attesi per ogni caratteristica presa in esame. La figura seguente 
+	schematizza il processo di valutazione.
+ 
+	\begin{figure}[h!]
+	  \centering
+	  \includegraphics[scale=.55]{\docsImg ProcessoValutazione.pdf}
+	  \caption{Il processo di valutazione}
+	\end{figure}
+
+	Poiché le caratteristiche definite nel modello \texttt{ISO/IEC}$_{|g|}$ \texttt{9126} non sono tutte richieste per il prodotto 
+	che il gruppo deve sviluppare, verrà indicato nell'appendice \ref{sec:Qualita2} quali aspetti vengono ritenuti rilevanti e il profilo di qualità atteso per ognuno di loro. 
+	In ogni caso, tutte le componenti del prodotto devono essere sottoposte a valutazione.
+    }
+}

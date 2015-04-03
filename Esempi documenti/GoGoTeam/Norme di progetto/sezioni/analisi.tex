@@ -1,0 +1,114 @@
+\section{Analisi} {
+\subsection{Attività}{
+Lo scopo di questa attività è di analizzare tutte le informazioni utili all'analisi del prodotto per produrre requisiti semplici e di facile comprensione.\\
+I requisiti emersi dall'analisi dovranno ricoprire i seguenti aspetti:
+\begin{itemize}
+	\item specifiche funzionali e prestazionali, incluse le caratteristiche dell'ambiente nel quale il software deve operare;
+	\item ambito di utilizzo;
+	\item tipologia di utenti;
+	\item obiettivi di qualit\`a da raggiungere;
+	\item requisiti per la installazione e la accettazione;
+	\item tracciamento dei requisiti.
+\end{itemize}
+\`E inoltre necessario effettuare un'attivit\`a di tracciamento dei requisiti nel documento \textit{\SpecificaTecnica}.
+
+Le risorse considerate valide per la definizione dei requisiti sono, in ordine decrescente:
+\begin{itemize}
+	\item il capitolato d'appalto;
+	\item incontri con il proponente;
+	\item incontri con il committente;
+	\item incontri con persone che potrebbero utilizzare il prodotto (persone impegnate nell'implementazione e sviluppo di sistemi analoghi ed utenti finali che utilizzeranno il prodotto).
+\end{itemize}
+Terminata l'attività di analisi dei requisiti si deve produrre un documento completo ed esplicativo: l'Analisi dei Requisiti.\\
+Successivamente, nel documento di Piano di Qualifica (\textit{\PianoDiQualifica}) si definiscono una serie di test da eseguire per provare che il sistemi rispecchi i requisiti evidenziati.
+\begin{itemize}
+	\item []{\textbf{Input:} capitolato d'appalto, informazioni reperite dai vari stakeholder;}
+	\item []{\textbf{Output:} Analisi dei Requisiti, test di sistema;}
+	\item []{\textbf{Risorse:} Analisti, strumentazione;}
+	\item []{\textbf{Misurazioni:} avanzamento dell'elaborazione del documento Analisi dei Requisiti rispetto alla totalità delle informazioni in ingresso;}
+	\item []{\textbf{Norme:} descritte in seguito.}
+\end{itemize}
+}
+
+\subsection{Requisiti} {
+\subsubsection{Provenienza}{
+Per ogni requisito individuato dev'essere specificata la fonte di provenienza.
+\`E possibile utilizzare i seguenti acronimi o abbreviazioni:
+\begin{itemize}
+	\item []\textbf{CA:} capitolato;
+	\item []\textbf{IP:} incontro proponente;
+	\item []\textbf{IF:} interno fornitore.
+\end{itemize}
+}%provenienza
+
+\subsubsection{Classificazione}{
+Ogni requisito deve rispettare la seguente forma 
+		\begin{center}
+			\textit{\{Tipologia\}\{Importanza\}\{X\}} 
+		\end{center}
+		
+		\textbf{Tipologia utente:}
+		\begin{itemize}
+			\item []\textbf {\{F\}:} indica un requisito funzionale;
+			\item []\textbf {\{Q\}:} indica un requisito di qualità;
+			\item []\textbf {\{T\}:} indica un requisito tecnologico;
+			\item []\textbf {\{V\}:} indica un requisito di vincolo.
+		\end{itemize}
+		
+		\textbf{Tipologia amministratore:}
+		\begin{itemize}
+			\item []\textbf {\{FA\}:} indica un requisito funzionale.
+		\end{itemize}
+		
+		\textbf{Importanza:}	
+		\begin{itemize}
+			\item []\textbf{\{OB\}:} indica un requisito obbligatorio; 
+			\item []\textbf{\{DE\}:} indica un requisito desiderabile;
+			\item []\textbf{\{OP\}:} indica un requisito opzionale.
+		\end{itemize}
+		
+		La X indica il numero di requisito.\\
+		Se un requisito è un sotto-requisito di un altro, dev'essere denominato nel seguente modo
+		\begin{center}
+			\textit{\{Tipologia\}\{Importanza\}\{X\}.\{Y\}}
+		\end{center}
+		dove X è il numero del requisito principale, mentre Y quello del sotto - requisito.
+Si consiglia nell'Analisi dei Requisiti la creazione di una tabella di tracciamento dei requisiti. Si lascia agli Analisti la definizione della struttura della tabella.
+}%classificazione
+
+\subsubsection{Diagrammi UML: formalismo grafico}{
+La rappresentazione dei casi d'uso deve seguire il formalismo del linguaggio UML\g~ v2.x in modo da creare diagrammi che facilitano la comprensione dei requisiti.\\
+Dev'essere adottata la seguente nomenclatura:
+\begin{center}
+	\textit{\{Tipo\} \{A\}...\{Z\}}
+\end{center}dove \textit{Tipo} indica una tipologia dei seguenti diagrammi:
+\begin{itemize}
+	\item [] \textbf{UC:} diagramma dei casi d’uso;
+	\item [] \textbf{UCA:} diagramma dei casi d’uso per amministratore;
+\end{itemize}
+e \textit{\{A\}...\{Z\}} indica una struttura gerarchica di insiemi. (\textit{es.} \texttt{A.B.C}: \texttt{A} indica il diagramma principale, \texttt{B} una specifica/estensione di \texttt{A}, \texttt{C} una specifica/estensione di \texttt{B} e cosi via).
+}%desc grafica
+
+\subsubsection{Diagrammi UML: descrizione testuale}{
+Ciascun diagramma dei casi d'uso dev'essere seguito da una descrizione testuale nella quale devono essere esplicitati i seguenti punti:
+\begin{itemize}
+	\item Attori principali;
+	\item Descrizione del requisito;
+	\item Precondizione;
+	\item Postcondizione;
+	\item Scenario principale dello svolgersi degli eventi;
+	\item Scenario alternativo.
+\end{itemize}
+}%desc testuale
+
+\subsection{Strumenti} {
+Per l'esecuzione di questa attività si utilizzano i seguenti strumenti:
+\begin{itemize}
+	\item []{\textbf{\LaTeX :} per la stesura del documento Analisi dei Requisiti (dettaglio cap. \ref{TextLaTeX});}
+	\item []{\textbf{Visual Paradigm:} per la stesura dei diagrammi UML\g~ (dettaglio cap. \ref{diaUML});}
+	\item []{\textbf{git:} per il versionamento della documentazione (dettaglio cap. \ref{git});}
+\end{itemize}
+
+}
+
+}

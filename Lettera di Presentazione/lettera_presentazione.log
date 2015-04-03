@@ -1056,14 +1056,14 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
 
-<../logo.jpg, id=3, 803.0pt x 250.9375pt>
-File: ../logo.jpg Graphic file (type jpg)
- <use ../logo.jpg>
-Package pdftex.def Info: ../logo.jpg used on input line 54.
+<../logo.png, id=3, 803.0pt x 250.9375pt>
+File: ../logo.png Graphic file (type jpg)
+ <use ../logo.png>
+Package pdftex.def Info: ../logo.png used on input line 54.
 (pdftex.def)             Requested size: 56.90189pt x 28.4494pt.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <C:/Users/Matteo/Desktop/LaTex/logo.jpg>]
+ <C:/Users/Matteo/Desktop/LaTex/logo.png>]
 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.

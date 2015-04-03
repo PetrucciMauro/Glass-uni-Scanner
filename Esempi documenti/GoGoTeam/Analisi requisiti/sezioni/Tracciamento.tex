@@ -1,0 +1,579 @@
+\section{Tracciamento dei requisiti}
+\subsection{Tracciamento casi d'uso - requisiti}
+\subsubsection{Ambito utente}
+\begin{longtable}{p{0.2\textwidth} p{0.45\textwidth} p{0.25\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Codice \newline caso d'uso} & \textbf{Nome caso d'uso} & \textbf{Codice requisito} \\
+\midrule
+
+\midrule
+UC 1 & Login & FOB 1\\
+
+\midrule
+UC 1.1 & Inserisci username login & FOB 1.1\\
+\midrule
+UC 1.2 & Inserisci password login & FOB 1.2\\
+
+\midrule
+UC 2 & Registrazione & FOB 2\\
+
+\midrule
+UC 2.1 & Inserisci username per registrazione & FOB 2.1 \newline FOB 2.1.1\\
+\midrule
+UC 2.2 & Inserisci password per registrazione & FOB 2.2 \newline FOB 2.2.1\\
+\midrule
+UC 2.3 & Inserisci nome per registrazione & FOB 2.3\\
+\midrule
+UC 2.4 & Inserisci cognome per registrazione & FOB 2.4\\
+\midrule
+UC 2.5 & Inserisci azienda per registrazione & FOB 2.5\\
+\midrule
+UC 2.6 & Inserisci numero di telefono per \newline registrazione & FOB 2.6\\
+
+
+
+\midrule
+UC 3 & Gestione account & FOB 3\\
+
+\midrule
+UC 3.1 & Visualizzazione dati utente & FOB 3.1\\
+\midrule
+UC 3.1.1 & Visualizza username & FOB 3.1.1\\
+\midrule
+UC 3.1.2 & Visualizza nome & FOB 3.1.2\\
+\midrule
+UC 3.1.3 & Visualizza cognome & FOB 3.1.3\\
+\midrule
+UC 3.1.4 & Visualizza azienda & FOB 3.1.4\\
+\midrule
+UC 3.1.5 & Visualizza numero di telefono & FOB 3.1.5\\
+
+\midrule
+UC 3.2 & Modifica dati utente & FOB 3.2\\
+
+\midrule
+UC 3.2.1 & Modifica username & FOB 3.2.1\\
+
+\midrule
+UC 3.2.2 & Modifica password & FOB 3.2.2\\
+\midrule
+UC 3.2.2.1 & Inserisci vecchia password & FOB 3.2.2.1\\
+\midrule
+UC 3.2.2.2 & Inserisci nuova password & FOB 3.2.2.2\\
+
+\midrule
+UC 3.2.3 & Modifica nome & FOB 3.2.3\\
+
+\midrule
+UC 3.2.4 & Modifica cognome & FOB 3.2.4\\
+
+\midrule
+UC 3.2.5 & Modifica azienda & FOB 3.2.5\\
+
+\midrule
+UC 3.2.6 & Modifica numero di telefono & FOB 3.2.6\\
+
+
+\midrule
+UC 4 & Comunicazione audio e video & FOB 4\\
+
+\midrule
+UC 4.1 & Gestisci chiamata in entrata & FOB 4.1\\
+
+\midrule
+UC 4.1.1 & Accetta chiamata & FOB 4.1.1\\
+
+\midrule
+UC 4.1.1.1 & Gestisci chiamata in corso & FOB 4.1.1.1\\
+
+\midrule
+UC 4.1.1.1.1 & Operazioni su comunicazione in corso & FOP 2\\
+\midrule
+UC 4.1.1.1.1.1 & Condividi file & FOP 2.1\\
+\midrule
+UC 4.1.1.1.1.2 & Scarica file condiviso & FOP 2.2\\
+\midrule
+UC 4.1.1.1.1.3 & Registrazione comunicazione & FOP 2.3\\
+
+\midrule
+UC 4.1.1.1.2 & Comunicazione audio/video & FOB 4.1.1.1.1\\
+\midrule
+UC 4.1.1.1.2.1 & Comunicazione audio & FOB 4.1.1.1.1.1\\
+\midrule
+UC 4.1.1.1.2.2 & Comunicazione video & FOB 4.1.1.1.1.2\\
+
+\midrule
+UC 4.1.1.1.3 & Chiudi comunicazione & FOB 4.1.1.1.2\\
+
+\midrule
+UC 4.1.1.1.4 & Esprimi giudizio & FOB 4.1.1.1.3\\
+
+\midrule
+UC 4.1.1.1.5 & Visualizza statistiche & FOB 4.1.1.1.4\\
+\midrule
+UC 4.1.1.1.5.1 & Visualizza pacchetti inviati & FOB 4.1.1.1.4.1\\
+\midrule
+UC 4.1.1.1.5.2 & Visualizza latenza$_{|g|}$ & FOB 4.1.1.1.4.2\\
+\midrule
+UC 4.1.1.1.5.3 & Visualizza durata trasmissione & FOB 4.1.1.1.4.3\\
+\midrule
+UC 4.1.1.1.5.4 & Visualizza byte trasmessi & FOB 4.1.1.1.4.4\\
+\midrule
+UC 4.1.1.1.5.5 & Visualizza pacchetti persi & FOB 4.1.1.1.4.5\\
+
+\midrule
+UC 4.1.2 & Rifiuta chiamata & FOB 4.1.2\\
+
+\midrule
+UC 4.2 & Effettua chiamata & FOB 4.2\\
+
+\midrule
+UC 4.2.1 & Chiama & FOB 4.2\\
+
+\midrule
+UC 4.2.1.1 & Chiama utente singolo & FOB 4.2.1\\
+
+\midrule
+UC 4.2.1.1.1 & Chiama utente da username & FOB 4.2.1.1\\
+\midrule
+UC 4.2.1.1.1.1 & Inserisci username & FOB 4.2.1.1.1\\
+
+\midrule
+UC 4.2.1.1.2 & Chiama utente da indirizzo IP$_{|g|}$ & FOB 4.2.1.2\\
+\midrule
+UC 4.2.1.1.2.1 & Inserisci indirizzo IP$_{|g|}$ & FOB 4.2.1.2.1\\
+
+\midrule
+UC 4.2.1.1.3 & Chiama utente da lista & FOB 4.2.1.3\\
+\midrule
+UC 4.2.1.1.3.1 & Visualizza lista di utenti registrati & FOB 4.2.1.3.1\\
+\midrule
+UC 4.2.1.1.3.2 & Seleziona utente da chiamare & FOB 4.2.1.3.2\\
+\midrule
+UC 4.2.1.1.3.3 & Evidenzia utenti online & FOP 3\\
+\midrule
+UC 4.2.1.1.3.4 & Ricerca & FOP 4\\
+\midrule
+UC 4.2.1.1.3.4.1 & Ricerca per username & FOP 4.1\\
+\midrule
+UC 4.2.1.1.3.4.2 & Ricerca per indirizzo IP$_{|g|}$ & FOP 4.2\\
+\midrule
+UC 4.2.1.1.3.4.3 & Ricerca per nome & FOP 4.3\\
+\midrule
+UC 4.2.1.1.3.4.4 & Ricerca per cognome & FOP 4.4\\
+\midrule
+UC 4.2.1.1.3.4.5 & Ricerca per azienda & FOP 4.5\\
+
+
+\midrule
+UC 4.2.1.2 & Chiama più utenti & FDE 1\\
+
+\midrule
+UC 4.2.1.2.1 & Aggiungi a selezione utente da \newline username & FDE 1.1\\
+
+\midrule
+UC 4.2.1.2.2 & Aggiungi a selezione utente da \newline indirizzo IP$_{|g|}$ & FDE 1.2\\
+
+\midrule
+UC 4.2.1.2.3 & Aggiungi a selezione utente da lista & FDE 1.3\\
+\midrule
+UC 4.2.1.2.3.1 & Aggiungi utente da lista & FDE 1.3.1\\
+
+\midrule
+UC 4.2.2 & Comunicazione impossibile & FOB 5\\
+
+\midrule
+UC 4.2.3 & Lascia un messaggio & FOP 5\\
+
+\midrule
+UC 4.2.3.1 & Lascia un messaggio di testo & FOP 5.1\\
+\midrule
+UC 4.2.3.1.1 & Inserisci testo & FOP 5.1.1\\
+
+\midrule
+UC 4.2.3.2 & Lascia un video messaggio & FOP 5.2\\
+\midrule
+UC 4.2.3.2.1 & Registra video messaggio & FOP 5.2.1\\
+
+
+\midrule
+UC 5 & Comunicazione chat & FOP 1\\
+
+\midrule
+UC 5.1 & Inizia chat & FOP 1.1\\
+
+\midrule
+UC 5.1.1 & Accetta proposta chat & FOP 1.1.1\\
+
+\midrule
+UC 5.1.2 & Invia richiesta chat ad utenti & FOP 1.1.2\\
+\midrule
+UC 5.1.2.1 & Invita utente in chat da username & FOP 1.1.2.1\\
+\midrule
+UC 5.1.2.1.1 & Inserisci username per chat & FOP 1.1.2.1.1\\
+
+\midrule
+UC 5.1.2.2 & Invita utente in chat da indirizzo IP$_{|g|}$ & FOP 1.1.2.2\\
+\midrule
+UC 5.1.2.2.1 & Inserisci indirizzo IP$_{|g|}$ per chat & FOP 1.1.2.2.1\\
+
+\midrule
+UC 5.1.2.3 & Invita utente in chat da lista & FOP 1.1.2.3\\
+\midrule
+UC 5.1.2.3.1 & Seleziona utente per chat da lista & FOP 1.1.2.3.1\\
+
+\midrule
+UC 5.2 & Visualizza chat & FOP 1.2\\
+
+\midrule
+UC 5.3 & Inserisci messaggio & FOP 1.3\\
+
+\midrule
+UC 5.4 & Chiudi chat & FOP 1.4\\
+
+
+\midrule
+UC 6 & Logout & FOB 6\\
+
+\end{longtable}
+\newpage
+
+\subsubsection{Ambito amministratore}
+\begin{longtable}{p{0.2\textwidth} p{0.45\textwidth} p{0.25\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Codice \newline caso d'uso} & \textbf{Nome caso d'uso} & \textbf{Codice requisito} \\
+\midrule
+\midrule
+UCA 0 & Caso base amministratore & FAOB 0\\
+
+\midrule
+UCA 1 & Login amministratore & FAOB 1\\
+
+\midrule
+UCA 1.1 & Inserisci username amministratore & FAOB 1.1\\
+\midrule
+UCA 1.2 & Inserisci password amministratore & FAOB 1.2\\
+
+\midrule
+UCA 2 & Visualizza lista chiamate & FAOB 2\\
+
+\midrule
+UCA 2.1 & Visualizza tutte le chiamate della settimana & FAOB 2.1\\
+
+\midrule
+UCA 2.1.1 & Filtra chiamate per giorno & FAOB 2.1.1\\
+\midrule
+UCA 2.1.1.1 & Seleziona giorno & FAOB 2.1.1.1\\
+
+\midrule
+UCA 2.1.2 & Filtra chiamate per giudizio & FAOB 2.1.2\\
+\midrule
+UCA 2.1.2.1 & Seleziona giudizio & FAOB 2.1.2.1\\
+
+\midrule
+UCA 2.1.3 & Filtra chiamate per utente & FAOB 2.1.3\\
+\midrule
+UCA 2.1.3.1 & Seleziona utente da username & FAOB 2.1.3.1\\
+\midrule
+UCA 2.1.3.1.1 & Inserisci username utente & FAOB 2.1.3.1.1\\
+\midrule
+UCA 2.1.3.2 & Seleziona utente da indirizzo IP$_{|g|}$ & FAOP 2\\
+\midrule
+UCA 2.1.3.2.1 & Inserisci indirizzo IP$_{|g|}$ utente & FAOP 2.1\\
+\midrule
+UCA 2.1.3.3 & Seleziona utente da lista per \newline visualizzare chiamate & FAOB 2.1.3.2\\
+\midrule
+UCA 2.1.3.3.1 & Seleziona utente & FAOB 2.1.3.2.1\\
+\midrule
+UCA 2.1.3.3.2 & Visualizza lista utenti registrati & FAOB 2.1.3.2.2\\
+\midrule
+UCA 2.1.3.3.3 & Ricerca & FAOP 1\\
+\midrule
+UCA 2.1.3.3.3.1 & Ricerca per username & FAOP 1.1\\
+\midrule
+UCA 2.1.3.3.3.2 & Ricerca per indirizzo IP$_{|g|}$ & FAOP 1.2\\
+
+
+\midrule
+UCA 2.2 & Visualizza statistiche sulle chiamate & FAOB 2.2\\
+
+\midrule
+UCA 2.2.1 & Visualizza username chiamanti & FAOB 2.2.1\\
+\midrule
+UCA 2.2.2 & Visualizza numero pacchetti trasmessi & FAOB 2.2.2\\
+\midrule
+UCA 2.2.3 & Visualizza numero byte trasmessi & FAOB 2.2.3\\
+\midrule
+UCA 2.2.4 & Visualizza giudizio su chiamata & FAOB 2.2.4\\
+\midrule
+UCA 2.2.5 & Visualizza numero pacchetti persi & FAOB 2.2.5\\
+\midrule
+UCA 2.2.6 & Visualizza data comunicazione & FAOB 2.2.6\\
+\midrule
+UCA 2.2.7 & Visualizza durata chiamata & FAOB 2.2.7\\
+
+
+\midrule
+UCA 3 & Logout amministratore & FAOB 3\\
+
+\end{longtable}
+
+\newpage
+
+\subsection{Tracciamento requisiti - casi d'uso}
+Il tracciamento dei requisiti di vincolo e di qualità non viene riportato in quanto tali requisiti non riguardano funzionalità offerte e quindi non sono tracciabili su casi d’uso, pertanto verranno tracciati solo i requisiti funzionali.
+\subsubsection{Ambito utente}
+\begin{longtable}{p{0.4\textwidth} p{0.4\textwidth}}
+\rowcolors{2}{light}{}
+\textbf{Codice requisito} & \textbf{Codice caso d'uso}\\
+\midrule
+\midrule
+FOB 1 & UC 1\\
+\midrule
+FOB 1.1 & UC 1.1\\
+\midrule
+FOB 1.2 & UC 1.2\\
+\midrule
+FOB 2 & UC 2\\
+\midrule
+FOB 2.1 & UC 2.1\\
+\midrule
+FOB 2.1.1 & UC 2.1\\
+\midrule
+FOB 2.2 & UC 2.2\\
+\midrule
+FOB 2.2.1 & UC 2.2\\
+\midrule
+FOB 2.3 & UC 2.3\\
+\midrule
+FOB 2.4 & UC 2.4\\
+\midrule
+FOB 2.5 & UC 2.5\\
+\midrule
+FOB 2.6 & UC 2.6\\
+\midrule
+FOB 3 & UC 3\\
+\midrule
+FOB 3.1 & UC 3.1\\
+\midrule
+FOB 3.1.1 & UC 3.1.1\\
+\midrule
+FOB 3.1.2 & UC 3.1.2\\
+\midrule
+FOB 3.1.3 & UC 3.1.3\\
+\midrule
+FOB 3.1.4 & UC 3.1.4\\
+\midrule
+FOB 3.1.5 & UC 3.1.5\\
+\midrule
+FOB 3.2 & UC 3.2\\
+\midrule
+FOB 3.2.1 & UC 3.2.1\\
+\midrule
+FOB 3.2.2 & UC 3.2.2\\
+\midrule
+FOB 3.2.2.1 & UC 3.2.2.1\\
+\midrule
+FOB 3.2.2.2 & UC 3.2.2.2\\
+\midrule
+FOB 3.2.3 & UC 3.2.3\\
+\midrule
+FOB 3.2.4 & UC 3.2.4\\
+\midrule
+FOB 3.2.5 & UC 3.2.5\\
+\midrule
+FOB 3.2.6 & UC 3.2.6\\
+\midrule
+FOB 4 & UC 4\\
+\midrule
+FOB 4.1 & UC 4.1\\
+\midrule
+FOB 4.1.1 & UC 4.1.1\\
+\midrule
+FOB 4.1.1.1 & UC 4.1.1.1\\
+\midrule
+FOB 4.1.1.1.1 & UC 4.1.1.1.2\\
+\midrule
+FOB 4.1.1.1.1.1 & UC 4.1.1.1.2.1\\
+\midrule
+FOB 4.1.1.1.1.2 & UC 4.1.1.1.2.2\\
+\midrule
+FOB 4.1.1.1.2 & UC 4.1.1.1.3\\
+\midrule
+FOB 4.1.1.1.3 & UC 4.1.1.1.4\\
+\midrule
+FOB 4.1.1.1.4 & UC 4.1.1.1.5\\
+\midrule
+FOB 4.1.1.1.4.1 & UC 4.1.1.1.5.1\\
+\midrule
+FOB 4.1.1.1.4.2 & UC 4.1.1.1.5.2\\
+\midrule
+FOB 4.1.1.1.4.3 & UC 4.1.1.1.5.3\\
+\midrule
+FOB 4.1.1.1.4.4 & UC 4.1.1.1.5.4\\
+\midrule
+FOB 4.1.1.1.4.5 & UC 4.1.1.1.5.5\\
+\midrule
+FOB 4.1.2 & UC 4.1.2\\
+\midrule
+FOB 4.2 & UC 4.2 \newline UC 4.2.1\\
+\midrule
+FOB 4.2.1 & UC 4.2.1.1\\
+\midrule
+FOB 4.2.1.1 & UC 4.2.1.1.1\\
+\midrule
+FOB 4.2.1.1.1 & UC 4.2.1.1.1.1\\
+\midrule
+FOB 4.2.1.2 & UC 4.2.1.1.2\\
+\midrule
+FOB 4.2.1.2.1 & UC 4.2.1.1.2.1\\
+\midrule
+FOB 4.2.1.3 & UC 4.2.1.1.3\\
+\midrule
+FOB 4.2.1.3.1 & UC 4.2.1.1.3.1\\
+\midrule
+FOB 4.2.1.3.2 & UC 4.2.1.1.3.2\\
+\midrule
+FOB 5 & UC 4.2.2\\
+\midrule
+FOB 6 & UC 6\\
+\midrule
+FDE 1 & UC 4.2.1.2\\
+\midrule
+FDE 1.1 & UC 4.2.1.2.1\\
+\midrule
+FDE 1.2 & UC 4.2.1.2.2\\
+\midrule
+FDE 1.3 & UC 4.2.1.2.3\\
+\midrule
+FDE 1.3.1 & UC 4.2.1.2.3.1\\
+\midrule
+FOP 1 & UC 5\\
+\midrule
+FOP 1.1 & UC 5.1\\
+\midrule
+FOP 1.1.1 & UC 5.1.1\\
+\midrule
+FOP 1.1.2 & UC 5.1.2\\
+\midrule
+FOP 1.1.2.1 & UC 5.1.2.1\\
+\midrule
+FOP 1.1.2.1.1 & UC 5.1.2.1.1\\
+\midrule
+FOP 1.1.2.2 & UC 5.1.2.2\\
+\midrule
+FOP 1.1.2.2.1 & UC 5.1.2.2.1\\
+\midrule
+FOP 1.1.2.3 & UC 5.1.2.3\\
+\midrule
+FOP 1.1.2.3.1 & UC 5.1.2.3.1\\
+\midrule
+FOP 1.2 & UC 5.2\\
+\midrule
+FOP 1.3 & UC 5.3\\
+\midrule
+FOP 1.4 & UC 5.4\\
+\midrule
+FOP 2 & UC 4.1.1.1.1\\
+\midrule
+FOP 2.1 & UC 4.1.1.1.1.1\\
+\midrule
+FOP 2.2 & UC 4.1.1.1.1.2\\
+\midrule
+FOP 2.3 & UC 4.1.1.1.1.3\\
+\midrule
+FOP 3 & UC 4.2.1.1.3.3\\
+\midrule
+FOP 4 & UC 4.2.1.1.3.4\\
+\midrule
+FOP 4.1 & UC 4.2.1.1.3.4.1\\
+\midrule
+FOP 4.2 & UC 4.2.1.1.3.4.2\\
+\midrule
+FOP 4.3 & UC 4.2.1.1.3.4.3\\
+\midrule
+FOP 4.4 & UC 4.2.1.1.3.4.4\\
+\midrule
+FOP 4.5 & UC 4.2.1.1.3.4.5\\
+\midrule
+FOP 5 & UC 4.2.3\\
+\midrule
+FOP 5.1 & UC 4.2.3.1\\
+\midrule
+FOP 5.1.1 & UC 4.2.3.1.1\\
+\midrule
+FOP 5.2 & UC 4.2.3.2\\
+\midrule
+FOP 5.2.1 & UC 4.2.3.2.1\\
+
+\end{longtable}
+
+\newpage
+
+\subsubsection{Ambito amministratore}
+\begin{longtable}{p{0.4\textwidth} p{0.4\textwidth}}
+\rowcolors{2}{light}{}
+\textbf{Codice requisito} & \textbf{Codice caso d'uso}\\
+\midrule
+\midrule
+FAOB 0 & UCA 0\\
+\midrule
+FAOB 1 & UCA 1\\
+\midrule
+FAOB 1.1 & UCA 1.1\\
+\midrule
+FAOB 1.2 & UCA 1.2\\
+\midrule
+FAOB 2 & UCA 2\\
+\midrule
+FAOB 2.1 & UCA 2.1\\
+\midrule
+FAOB 2.1.1 & UCA 2.1.1\\
+\midrule
+FAOB 2.1.1.1 & UCA 2.1.1.1\\
+\midrule
+FAOB 2.1.2 & UCA 2.1.2\\
+\midrule
+FAOB 2.1.2.1 & UCA 2.1.2.1\\
+\midrule
+FAOB 2.1.3 & UCA 2.1.3\\
+\midrule
+FAOB 2.1.3.1 & UCA 2.1.3.1\\
+\midrule
+FAOB 2.1.3.1.1 & UCA 2.1.3.1.1\\
+\midrule
+FAOB 2.1.3.2 & UCA 2.1.3.3\\
+\midrule
+FAOB 2.1.3.2.1 & UCA 2.1.3.3.1\\
+\midrule
+FAOB 2.1.3.2.2 & UCA 2.1.3.3.2\\
+\midrule
+FAOB 2.2 & UCA 2.2\\
+\midrule
+FAOB 2.2.1 & UCA 2.2.1\\
+\midrule
+FAOB 2.2.2 & UCA 2.2.2\\
+\midrule
+FAOB 2.2.3 & UCA 2.2.3\\
+\midrule
+FAOB 2.2.4 & UCA 2.2.4\\
+\midrule
+FAOB 2.2.5 & UCA 2.2.5\\
+\midrule
+FAOB 2.2.6 & UCA 2.2.6\\
+\midrule
+FAOB 2.2.7 & UCA 2.2.7\\
+\midrule
+FAOB 3 & UCA 3\\
+\midrule
+FAOP 1 & UCA 2.1.3.3.3\\
+\midrule
+FAOP 1.1 & UCA 2.1.3.3.3.1\\
+\midrule
+FAOP 1.2 & UCA 2.1.3.3.3.2\\
+\midrule
+FAOP 2 & UCA 2.1.3.2\\
+\midrule
+FAOP 2.1 & UCA 2.1.3.2.1\\
+
+\end{longtable}

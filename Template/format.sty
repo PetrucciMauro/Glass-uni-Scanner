@@ -20,16 +20,18 @@
 \usepackage{tabu}
 \usepackage{xr}
 \usepackage{titlesec}
+\usepackage{bookmark}
 \usepackage{float}
+
 %\usepackage{appendix}
 
 \bibliographystyle{alpha}
 
 %	VARIABILI GLOBALI
 \newcommand{\gruppo}{}
-\newcommand{\mail}{info@gmail.com}
+\newcommand{\mail}{latebutsafe@gmail.com}
 \newcommand{\unipd}{Universit\`{a} degli studi di Padova}
-\newcommand{\uniAA}{2012/2013}
+\newcommand{\uniAA}{2014/2015}
 \newcommand{\Cardin}{Prof. Riccardo Cardin}
 \newcommand{\Vardanega}{Prof. Tullio Vardanega}
 \newcommand{\Zucchetti}{Zucchetti S.p.a.}
@@ -110,7 +112,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 %	Header
-\lhead{\includegraphics[width=2cm,height=1cm]{../logo.jpg}}
+\lhead{\includegraphics[width=2cm,height=2cm]{../logo}}
 
 %	Footer
 \cfoot{
@@ -119,3 +121,39 @@
 	\tiny Questo documento è distribuito sotto licenza \href{http://http://creativecommons.org/licenses/by-nc-sa/3.0/}{\licenza}}
 \rfoot{
 	\thepage\ di \pageref{LastPage}}
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}}
+\renewcommand\thesubparagraph{\theparagraph.\arabic{subparagraph}}
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\@addtoreset{subsubsubsection}{section}
+\@addtoreset{subsubsubsection}{subsection}
+\@addtoreset{paragraph}{subsubsubsection}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}

@@ -1,0 +1,58 @@
+%
+% LEGGERE
+% \texttt{} ha l'effetto collaterale che non manda a capo la parola, che quindi sfora la riga.
+% Per evitarlo, usare \path{} per i percorsi lunghi. \path{} va a capo quando incontra un punto
+% (quindi in mytalk.presenter va a capo al punto).
+% Sembrerebbe che \path{} fosse la panacea di tutti i mali, ma ha il difetto che ignora gli spazi
+% (giustamente, un path non contiene spazi).
+% Per i nomi di metodi qualificati (quindi completi di package), usare \path{} fino alla lista dei
+% parametri, poi usare \texttt{}.
+%
+
+\section{Test di Sistema}{
+	Sono stati eseguiti test di sistema  a mano  per verificare il corretto funzionamento dell'applicativo. Si riporta di seguito i requisiti soddisfatti e correttamente implementati all’interno dell’applicativo.
+	\subsection{Tabella riassuntiva dei test di Sistema}{
+		\begin{table}[h!]
+			\scriptsize
+			\begin{center}
+				\begin{tabular}{c l l c}				
+					\toprule
+					Data 	& Ambito & Codice Verifica & Esito \\ 
+					\midrule
+					2013-07-03 & Utente & TS-FOB 0 & Superato\\ 
+					2013-07-03 & Utente & TS-FOB 1 & Superato\\ 
+					2013-07-04 & Utente & TS-FOB 2 & Superato\\ 
+					2013-07-04 & Utente & TS-FOB 2.1.2 & Superato\\
+					2013-07-04 & Utente & TS-FOB 2.2.1 & Superato\\
+					2013-07-04 & Utente & TS-FOB 2.2.3 & Superato\\
+					2013-07-04 & Utente & TS-FOB 2.6 & Superato\\
+					2013-07-04 & Utente & TS-FOB 3.1a & Superato\\
+					2013-07-04 & Utente & TS-FOB 3.1b & Superato\\
+					2013-07-04 & Utente & TS-FOB 3.2 & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.1.1 & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.1.1.1.1 & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.1.2 & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1 & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1.1a & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1.1b & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1.2a & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1.2b & Superato\\
+					2013-07-04 & Utente & TS-FOB 4.2.1.3 & Superato\\
+					2013-07-04 & Utente & TS-FOB 6 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.1 & Superato\\ 
+					2013-07-05 & Amministratore & TS - FAOB 2.1.1 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.1.2 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.2 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.2.2 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.2.3 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.2.4 & Superato\\
+					2013-07-05 & Amministratore & TS - FAOB 2.2.5 & Superato\\										
+					\bottomrule
+				\end{tabular}
+			\end{center}	
+			\caption{Riassunto dell'esito dei test di sistema} 
+		\end{table}
+	}
+
+	
+}

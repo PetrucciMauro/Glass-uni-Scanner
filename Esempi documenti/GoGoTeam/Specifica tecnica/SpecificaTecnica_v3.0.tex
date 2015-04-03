@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{../stile}
+
+%posizione dei file di capitolo per il documento corrente
+%default scts (sections)
+\newcommand{\docs}{./sezioni/}
+%posizione delle immagini per il documento corrente
+\newcommand{\docsImg}{./sezioni/img/}
+
+%
+%	Dati locali del documento
+%
+%Titolo documento
+\newcommand{\titoloDocumento}{Specifica tecnica}
+%Prima data di creazione del documento
+\newcommand{\dataCreazione}{18 gennaio 2013}
+\newcommand{\dataUM}{25 giugno 2013}
+%Inserite la versione attuale del documento
+\newcommand{\versione}{3.0}
+%
+%++++	Dati rilascio documento	++++
+%
+%Stato in cui si trova il documento: Formale solo all'atto di consegna
+\newcommand{\stato}{Formale}
+%Uso del documento
+\newcommand{\uso}{Esterno}
+
+
+\rhead{\titoloDocumento}
+\lfoot{Versione: \versione}
+\title{\titoloDocumento}
+
+\begin{document}
+\input{\docs front.tex}
+\newpage
+\begin{center}
+	\input{\docs Sommario.tex}
+\end{center}
+\newpage
+\input{\docs regMod.tex}
+\newpage
+%\pagenumbering{arabic}
+\tableofcontents
+\newpage
+\listoftables
+
+\listoffigures
+\newpage
+\input{\docs Introduzione.tex}
+\newpage
+\input{\docs DefinizioneProdotto.tex}
+\newpage
+\input{\docs Package.tex}
+\newpage
+\input{\docs Classi.tex}
+\newpage
+\input{\docs DesignPattern.tex}
+\newpage
+\input{\docs DiagrammiAttivita.tex}
+\newpage
+\input{\docs DiagrammiSequenza.tex}
+\newpage
+\input{\docs StudioFattibilita.tex}
+\newpage
+\input{\docs Traccia.tex}
+\newpage
+\input{\docs GUI.tex}
+\newpage
+\input{\docs WebRTC.tex}
+\newpage
+\input{\docs Tecnologie.tex}
+
+%\bibliography{../bibliografia}
+
+\end{document}

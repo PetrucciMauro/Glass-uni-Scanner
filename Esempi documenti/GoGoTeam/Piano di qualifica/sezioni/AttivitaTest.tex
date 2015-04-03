@@ -1,0 +1,708 @@
+\section{Attività di test}{
+	\label{sec:test}
+	Questi test rientrano  nell’analisi dinamica è quindi necessario testare ogni singola componente, sia semplice 
+	che complessa, in quanto ogni singola unità funzionante non assicura l'integrazione tra esse. I test devono 
+	possedere due fondamentali caratteristiche:
+	\begin{itemize}
+		\item \textbf{Determinismo}: a priori bisogna sapere se il risultato ottenuto dal test è giusto o sbagliato;
+		\item \textbf{Ripetibilità}: eseguendo più volte lo stesso test sullo stesso codice, il risultato non deve variare.
+	\end{itemize}
+	Per garantire queste proprietà dei test risulta obbligatoria l’automatizzazione dei processi di verifica del codice prodotto.\\
+	\newpage
+	\subsection{Test di sistema}{
+		La presente sezione contiene l’insieme dei test che si prevede verranno attuati prima del rilascio del prodotto finito. 
+		L’esecuzione dei test deve garantire il rispetto dei requisiti (allegato \textit{\AnalisiDeiRequisiti}).\\
+		La copertura del codice deve essere garantita con una percentuale $\geqslant$ 60.\\
+		I test che verranno riportati sono quelli relativi alle funzionalità del prodotto. 
+		Il codice del test riporta anche la chiave del requisito a cui il test si riferisce.	
+		
+		\subsubsection{Ambito utente}{
+			\begin{table}[h!]
+				\begin{center}
+				\scriptsize
+					%\rotatebox{90}{
+						\begin{minipage}{1\linewidth}
+							\begin{tabular}{c c c c}				
+							\toprule
+								Codice requisito& Codice verifica & Modalità di verifica & Stato della verifica \\ 
+							\midrule	
+							
+							FOB 0
+							&
+							TS - FOB 0	
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: il server$_{|g|}$ su cui risiede il sistema dovrà
+								dimostrarsi funzionante rispondendo alle richieste dei vari
+								componenti.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\
+							
+							FOB 1
+							&
+							TS - FOB 1			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se le credenziali inserite 
+								dall'utente test risultano essere valide.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\
+							FOB 2
+							&
+							TS - FOB 2 			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se il sistema accetta
+								positivamente l'inserimento dei dati da parte dell'utente test.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\
+							FOB 2.1.2
+							&
+							TS - FOB 2.1.2			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se lo username inserito
+								dall'utente test è univoco o se è già utilizzato da altri
+								utenti.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\
+							FOB 2.2.1
+							&
+							TS - FOB 2.2.1			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se la password è formata da
+								almeno 8 caratteri alfanumerici.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\
+							FOB 2.2.3
+							&
+							TS - FOB 2.2.3 			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato che l'utente test abbia
+								inserito una conferma della password e che la password e la sua
+								conferma siano identiche.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\\\
+							FOB 2.6
+							&
+							TS - FOB 2.6			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato che il numero di telefono
+								sia completamente numerico e formato da massimo 11 cifre.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\\\
+							FOB 3.1
+							&
+							TS - FOB 3.1a 			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se dopo aver effettuato
+								l’autenticazione di un utente test, questo è effettivamente
+								autorizzato a visualizzare i propri dati personali.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\\\
+							FOB 3.1
+							&
+							TS - FOB 3.1b 			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se dopo aver effettuato
+								l’autenticazione di un utente test, questo riesce a
+								visualizzare i propri dati personali in modo corretto.
+							\end{minipage}	
+							&
+							Pianificata
+							\\
+							\\
+							\bottomrule
+							\\\\
+							FOB 3.2
+							&
+							TS - FOB 3.2			
+							& 
+							\begin{minipage}{0.55\linewidth}
+								Prova dinamica: viene verificato se dopo aver effettuato
+								l’autenticazione di un utente test, questo è effettivamente
+								autorizzato a modificare i propri dati personali.
+							\end{minipage}	
+							&
+							Pianificata
+							
+							\\  
+							\bottomrule
+							\end{tabular}
+						\end{minipage}
+						%}
+				\end{center}	
+				%\caption{}
+			\end{table}
+		}
+
+		\newpage
+
+		\begin{table}[h!]
+			\begin{center}
+			\scriptsize
+				%\rotatebox{90}{
+					\begin{minipage}{1\linewidth}
+						\begin{tabular}{c c c c}				
+						\toprule
+							Codice requisito& Codice verifica & Modalità di verifica & Stato della verifica \\ 
+						\midrule	
+						FOB 4.1.1
+						&
+						TS - FOB 4.1.1		
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a ricevere chiamate da
+							altri utenti.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB  4.1.1.1.1 
+						&
+						TS - FOB  4.1.1.1.1  			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato che il sistema durante una
+							chiamata permetta lo scambio del segnale audio e 
+							video.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.1.2 
+						&
+						TS - FOB 4.1.2  			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a rifiutare chiamate
+							in entrata.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\\\
+						FOB 4.2.1
+						&
+						TS - FOB 4.2.1 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a chiamare un singolo
+							utente.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.2.1.1
+						&
+						TS - FOB 4.2.1.1a 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a chiamare un altro
+							utente conoscendone lo username.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.2.1.1
+						&
+						TS - FOB 4.2.1.1b 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se il sistema accetta
+							positivamente l'inserimento dello username da parte dell'utente
+							test.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.2.1.2
+						&
+						TS - FOB 4.2.1.2a 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a chiamare un altro
+							utente conoscendone l'indirizzo IP$_{|g|}$.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.2.1.2
+						&
+						TS - FOB 4.2.1.2b 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica:  viene verificato se il sistema accetta
+							positivamente l'inserimento dell'indirizzo IP$_{|g|}$ da parte
+							dell'utente test.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 4.2.1.3
+						&
+						TS - FOB 4.2.1.3			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a chiamare un altro
+							utente selezionandolo dalla lista.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FOB 6
+						&
+						TS - FOB 6 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se dopo l'autenticazione di un
+							utente test, questo riesce effettivamente a uscire dalla
+							sessione autenticata.
+						\end{minipage}	
+						&
+						Pianificata
+						
+						\\  
+						\bottomrule
+						\end{tabular}
+					\end{minipage}
+					%}
+				
+			\end{center}	
+			\caption{Test relativi all'utente}
+		\end{table}
+	}
+	
+	\newpage
+	\subsubsection{Ambito amministratore}{
+		\begin{table}[h!]
+			\begin{center}
+			\scriptsize
+				%\rotatebox{90}{
+					\begin{minipage}{1\linewidth}
+						\begin{tabular}{c c c c}				
+						\toprule
+							Codice requisito& Codice verifica & Modalità di verifica & Stato della verifica \\ 
+						\midrule	
+						
+						FAOB 2.1
+						&
+						TS - FAOB 2.1	
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore
+							autenticato visualizza le chiamate effettuate dagli utenti
+							nella settimana.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\
+						
+						FAOB 2.1.1
+						&
+						TS - FAOB 2.1.1			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore autenticato
+							può filtrare le chiamate in base al giorno di effettuazione.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\
+						FAOB 2.1.2
+						&
+						TS - FAOB 2.1.2			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore autenticato
+							può filtrare le chiamate in base al giudizio espresso dagli
+							utenti.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\
+						FAOB 2.2
+						&
+						TS - FAOB 2.2			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore
+							autenticato può visualizzare le statistiche sulle chiamate.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\
+						FAOB 2.2.2
+						&
+						TS - FAOB 2.2.2			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore 
+							autenticato può visualizzare il numero di pacchetti trasmessi.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\
+						FAOB 2.2.3
+						&
+						TS - FAOB 2.2.3 			
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore 
+							autenticato può visualizzare il numero di byte trasmessi.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FAOB 2.2.4
+						&
+						TS - FAOB 2.2.4		
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore
+							autenticato può visualizzare il giudizio della chiamata.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						FAOB 2.2.5
+						&
+						TS - FAOB 2.2.5		
+						& 
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se l'amministratore
+							autenticato può visualizzare il numero di pacchetti persi.
+						\end{minipage}	
+						&
+						Pianificata
+						\\  
+						\bottomrule
+						\end{tabular}
+					\end{minipage}
+					%}
+				
+			\end{center}	
+			\caption{Test relativi all'amministratore}
+		\end{table}
+	}
+
+	\newpage
+
+	\subsubsection{Requisiti di vincolo}{
+		\begin{table}[h!]
+			\begin{center}
+			\scriptsize
+				%\rotatebox{90}{
+					\begin{minipage}{1\linewidth}
+						\begin{tabular}{c c c c}				
+						\toprule
+							Codice requisito& Codice verifica & Modalità di verifica & Stato della verifica \\
+						\midrule
+						VOB 1
+						&
+						TS - VOB 1
+						&
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato tramite l'utilizzo del browser$_{|g|}$ Chrome versione 27 
+							o successiva se il sistema è funzionante tramite interfaccia web$_{|g|}$.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						VOB 3
+						&
+						TS - VOB 3
+						&
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se, al primo accesso, il sistema richiede 
+							l'installazione di plugin$_{|g|}$ diversi dalle librerie WebRTC$_{|g|}$.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						VOB 7
+						&
+						TS - VOB 7
+						&
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato tramite l'utilizzo di un browser$_{|g|}$ se il sistema è 
+							effettivamente	contenuto in un'unica pagina web$_{|g|}$.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\
+						\bottomrule
+						\\\\
+						VOB 9
+						&
+						TS - VOB 9
+						&
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se il progetto è effettivamente stato pubblicato 
+							sul repository$_{|g|}$ SourceForge.
+						\end{minipage}	
+						&
+						Pianificata
+						\\
+						\\  
+						\bottomrule
+						\\\\
+						VOB 10
+						&
+						TS - VOB 10
+						&
+						\begin{minipage}{0.55\linewidth}
+							Prova dinamica: viene verificato se il server$_{|g|}$ su cui risiede il sistema è 
+							funzionante, quindi viene verificato se il server$_{|g|}$ risponde alle richieste degli utenti.
+						\end{minipage}	
+						&
+						Pianificata
+						\\  
+						\bottomrule
+						\end{tabular}
+					\end{minipage}
+					%}
+				
+			\end{center}	
+			\caption{Requisiti di vincolo}
+		\end{table}
+	}
+
+	\newpage
+
+	\newpage
+
+	\subsection{Test di integrazione}{
+		\label{sec:testI}
+		Di seguito, per ogni componente descritta nel documento \textit{\SpecificaTecnica}, 
+		sono riportate le funzioni che il gruppo ha reputato necessario testare ai fini di 
+		garantire il corretto funzionamento dell’applicazione una volta rilasciata.\\
+		
+		\subsubsection{Ambito utente}
+		\begin{table}[h!]
+				\begin{center}
+				\scriptsize
+					%\rotatebox{90}{
+						\begin{minipage}{1\linewidth}
+							\begin{tabular}{c c c}				
+							\toprule
+								Componente & Codice verifica & Test di integrazione \\ 
+							\midrule	
+							
+							Login
+							&
+							TI - Login	
+							& 
+							\begin{minipage}{0.70\linewidth}
+							\begin{itemize}
+								\item Autenticazione se le credenziali sono corrette
+								\item Opportuno avviso con credenziali errate
+								\item Uscita dalla sezione
+							\end{itemize}
+							\end{minipage}	
+							\\
+							\\
+							\midrule
+							Gestione dati
+							&
+							TI - gestione dati	
+							& 
+							\begin{minipage}{0.70\linewidth}
+								\begin{itemize}
+								      \item L’utente può visualizzare i propri dati
+								      \item L’utente può scegliere un eventuale dato da modificare
+								      \item L’utente può inserire il nuovo dato 
+								      \item Se il dato inserito è valido viene modificato (\textit{\AnalisiDeiRequisiti})
+								      \item Il sistema avvisa l’utente se il dato è errato
+								\end{itemize}
+							\end{minipage}	
+							\\
+							\\
+							\midrule
+
+							Communication
+							
+							&
+							
+							TI - Communication
+								
+							& 
+							
+							\begin{minipage}{0.70\linewidth}
+								\begin{itemize}
+									\item L'utente può selezionare un utente da chiamare inserendone lo username.
+									\item L'utente può selezionare un utente da chiamare inserendone l'indirizzo IP.
+									\item Se l'utente indicato mediante inserimento dati non esiste si riceve un'opportuna comunicazione.
+									\item L’utente può selezionare un utente da chiamare da una lista di utenti registrati al server. 
+									\item L’utente indicato, se esiste, viene chiamato.
+									\item Se l’utente selezionato accetta la chiamata il canale di comunicazione viene aperto.
+									\item Se l’utente indicato rifiuta la chiamata il canale di comunicazione non viene aperto e l’utente 
+									      che ha chiamato riceve un opportuno avviso.
+									\item Se uno dei due utenti chiude la chiamata il canale di comunicazione viene interrotto.
+									\item Al termine della chiamata vengono visualizzate statistiche sull'uso.
+									\item Al termine della chiamata l'utente può esprimere un giudizio.
+								\end{itemize}
+							\end{minipage}	
+							\\
+							\\
+							\bottomrule											
+							\end{tabular}
+						\end{minipage}
+						%}
+					
+				\end{center}	
+				\caption{Tabella dei requisiti di integrazione per l'utente.}
+			\end{table}
+		\newpage
+		\subsubsection{Ambito amministratore}
+			\begin{table}[h!]
+					\begin{center}
+					\scriptsize
+						%\rotatebox{90}{
+							\begin{minipage}{1\linewidth}
+								\begin{tabular}{c c c}				
+								\toprule
+								Componente & Codice verifica & Test di integrazione \\ 
+								\midrule	
+								
+								Login
+								&
+								TI - Login	
+								& 
+								\begin{minipage}{0.70\linewidth}
+								\begin{itemize}
+									\item Autenticazione se le credenziali sono corrette
+									\item Opportuno avviso se le credenziali sono errate
+									\item Uscita dalla sezione
+								\end{itemize}
+								\end{minipage}	
+								\\
+								\\
+								\midrule
+								Statistiche
+								&
+								TI - Statistic	
+								& 
+								\begin{minipage}{0.70\linewidth}
+								
+								  \begin{itemize}
+									\item l’amministratore può visualizzare le statistiche di tutte le chiamate effettuate nell’ultima settimana.
+								  \end{itemize}
+								\end{minipage}	
+								\\
+								\\
+								\bottomrule											
+								\end{tabular}
+							\end{minipage}
+							%}
+						
+					\end{center}	
+					\caption{Tabella dei requisiti di integrazione per l'amministratore}
+				\end{table}
+	}
+}

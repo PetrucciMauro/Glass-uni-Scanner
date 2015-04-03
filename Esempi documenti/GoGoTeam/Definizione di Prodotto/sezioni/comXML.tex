@@ -1,0 +1,1608 @@
+\appendix
+\appendixpage
+\addappheadtotoc
+\section{Specifica delle comunicazioni}
+\label{par:XMLComm}
+
+%
+% Ricordarsi:
+% <u t="123"> val </u>
+% u = nodo elemento (in breve, elemento)
+%	val = valore elemento
+% t = nodo attributo (in breve, attributo)
+%	123 = valore attributo
+%
+
+	{
+In questo capitolo vengono specificate le regole adottate nei messaggi di scambio tra gli attori che utilizzano i servizi del programma. Nella comunicazione tra client e server è stato scelto di incapsulare le informazioni da inviare (oggetti JSON\g~ compresi) all’interno di messaggi XML\g~ .
+Gli attori indicati sono:
+\begin{itemize}
+	\item[]{ Client: identifica la parte dell'applicativo utilizzata dall'utente finale. I componenti che lo identificano sono le classi definite nel package \path{mytalk.client.*}.\\
+	Le comunicazioni inviate possono essere riferite ad altri Client, nella fase di instaurare una nuova comunicazione e nella sua gestione, e verso il Server, per ottenere informazioni.
+	}
+	\item[]{ Server: identifica la parte dell'applicativo che gestisce le informazioni e consente la tracciabilità dei client. I componenti che lo identificano sono le classi definite nel package \path{mytalk.server.*}.\\
+	Le comunicazioni inviate possono essere riferite ai Client che si sono registrati nel server.
+	}
+\end{itemize}
+	}
+
+\subsection{Riferimento nomenclatura tag ed attributi}{
+	Nei messaggi il nome dei nodi elemento e dei nodi attributo sono stati scelti per consentire una rapida interpretazione e per ridurre la dimensione finale del messaggio.\\
+	Se ne specifica in seguito il nome e l'ambito di utilizzo.
+	\begin{itemize}
+		\item[] \texttt{c}:{ Communication.\\
+		Dev'essere utilizzato come elemento radice per indicare tutti i messaggi dove si devono gestire informazioni relative alle comunicazioni.\\
+		Contiene l'attributo obbligatorio:
+		\begin{itemize}
+			\item[] \texttt{op}:{ Operation.\\
+			Definisce il tipo di operazione da effettuare:
+				\begin{itemize}
+					\item[-] \texttt{am}: Answering Message, aggiungi messaggio di segreteria (vedi \ref{opAM});
+					\item[-] \texttt{amd}: Answering Message Delete, rimuovi messaggi in segreteria (vedi \ref{opAMD});
+					\item[-] \texttt{add}: Add, aggiungi statistiche (vedi \ref{opCInsStat});
+					\item[-] \texttt{callNegotation}: Call negotation, informazione per instaurare la comunicazione (vedi \ref{opCNeg});
+					\item[-] \texttt{callExchange}: Call exchange, informazioni per avviare la comunicazione (vedi \ref{opCExg});
+					\item[-] \texttt{find}: Find, effettua una ricerca secondo determinati parametri (vedi \ref{opCEus});
+					\item[-] \texttt{stat}: Stat, richiedi informazioni statistiche secondo determinati parametri (vedi \ref{opCValStat});
+					\item[-] \texttt{userList}: User list, lista utenti registrati (vedi \ref{opCUList}).
+					
+				\end{itemize}
+		Può avere gli attributi opzionali:
+				\begin{itemize}
+					\item[-] \texttt{type}: Type, definisce il sottotipo di operazione da effettuare;
+					\item[-] \texttt{h}: Hours, definisce il numero di ore.
+				\end{itemize}
+			}
+		\end{itemize}
+		}
+		\item[] \texttt{d}:{ Date.\\
+		Definisce la data generica nel formato \texttt{AAAAMMGGHHMMSS}.
+		}
+		\item[] \texttt{de}:{ Date end.\\
+		Definisce la data di termine nel formato \texttt{AAAAMMGGHHMMSS}.
+		}
+		\item[] \texttt{ds}:{ Date start.\\
+		Definisce la data di partenza nel formato \texttt{AAAAMMGGHHMMSS}.
+		}		
+		\item[] \texttt{dsc}:{ Description.\\
+		Definisce le informazioni aggiuntive.
+		}		
+		\item[] \texttt{er}:{ Error.\\
+		Definisce il commento di errore all'operazione.
+		}
+		\item[] \texttt{es}:{ Result.\\
+		Definisce il valore risultato dell'operazione.
+		}
+		\item[] \texttt{g}:{ Grade.\\
+		Definisce il valore di gradimento.
+		}
+		\item[] \texttt{ip}:{ IP.\\
+		Definisce il valore IP.
+		}
+		\item[] \texttt{ol}:{ Online.\\
+		Definisce il valore Online.
+		}	
+		\item[] \texttt{m}:{ E-mail.\\
+		Definisce l'indirizzo e-mail.
+		}
+		\item[] \texttt{msg}:{ E-mail.\\
+		Definisce il pacchetto di informazioni del messaggio di segreteria.
+		}
+		\item[] \texttt{nm}:{ Name.\\
+		Definisce il nome.
+		}
+		\item[] \texttt{p}:{ Password.\\
+		Definisce la password.
+		}
+		\item[] \texttt{pk}:{ Packages.\\
+		Definisce il numero di pacchetti.
+		}
+		\item[] \texttt{pkL}:{ Packages lost.\\
+		Definisce il numero di pacchetti persi.
+		}
+		\item[] \texttt{r}:{ Result.\\
+		Elemento che raggruppa le informazioni.
+		}
+		\item[] \texttt{ref}:{ Reference.\\
+		Definisce il valore di riferimento.
+		}
+		\item[] \texttt{sc}:{ Society.\\
+		Definisce la società.
+		}
+		\item[] \texttt{sg}:{ Sender grade.\\
+		Definisce il valore di gradimento del mittente.
+		}		
+		\item[] \texttt{sn}:{ Surname.\\
+		Definisce il cognome.
+		}
+		\item[] \texttt{ss}:{ Stream size.\\
+		Definisce la dimensione della comunicazione.
+		}
+		\item[] \texttt{st}:{ Status.\\
+		Definisce lo stato dell'operazione.
+		}
+		\item[] \texttt{text}:{ Text.\\
+		Definisce il messaggio testuale.
+		}
+		\item[] \texttt{tl}:{ Telephone.\\
+		Definisce il numero di telefono.
+		}
+		\item[] \texttt{ud}:{ UserData.\\
+		Dev'essere utilizzato come elemento radice per indicare tutti i messaggi dove si devono gestire informazioni relative all'utente client o amministratore.\\
+		Contiene l'attributo obbligatorio:
+		\begin{itemize}
+			\item[] \texttt{op}:{ Operation.\\
+			Specifica l'operazione da effettuare:
+				\begin{itemize}
+					\item[-] \texttt{log}: Login utente (vedi \ref{opLog});
+					\item[-] \texttt{ulg}: Logout utente (vedi \ref{opUlg});
+					\item[-] \texttt{add}: Add, aggiungi nuovo utente (vedi \ref{opUReg});
+					\item[-] \texttt{udt}: User Data, richiedi dati utente (vedi \ref{opUDT});
+					\item[-] \texttt{mod}: Modify, modifica i dati utente (vedi \ref{opUMod});
+					\item[-] \texttt{dlt}: Delete, elimina utente (vedi \ref{opUDel}).
+				\end{itemize}
+			}
+		\end{itemize}
+		}
+		\item[] \texttt{ur}:{ User receiver.\\
+		Definisce il riferimento all'utente destinatario.
+		}
+		\item[] \texttt{us}:{ User sender.\\
+		Definisce il riferimento all'utente mittente.
+		}	
+	\end{itemize}
+}
+
+\subsection{Comunicazioni Client-Server}{
+
+	\subsubsection{Indirizzo IP}{
+	\label{opIP}
+	
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia all'utente client il suo indirizzo IP.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+				Nessuno.
+				}
+			\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ip>
+	{Valore indirizzo IP}
+</ip>
+				\end{lstlisting}
+			\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+ targetNamespace="http://www.mytalk.com" 
+ xmlns="http://www.mytalk.com" 
+ elementFormDefault="qualified">
+
+<xs:element name="ip" type="xs:string" minOccurs="1" maxOccurs="1">
+</xs:element>
+
+</xs:schema>	
+				\end{lstlisting}
+				}
+		\end{itemize}		
+	}
+	
+	\subsubsection{Login utente}{
+	\label{opLog}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per autenticare l'utente.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="log">
+	<m>
+		{E-mail utente}
+	</m>
+	<p>
+		{Password utente}
+	</p>
+	<ip>
+		{Valore indirizzo IP}
+	</ip>
+</ud>
+				\end{lstlisting}
+			\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="p" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ip" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>	
+				\end{lstlisting}
+				}
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="log">
+	<es>
+		{Esito operazione}
+	</es>
+	<m>
+		{E-mail utente}
+	</m>
+	<p>
+		{Password utente}
+	</p>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="p" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>	
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: login effettuato con successo;
+					\item \texttt{false}: login non riuscito.
+				\end{itemize}
+			}
+		\end{itemize}
+	}%Login
+	
+		\subsubsection{Logout utente}{
+	\label{opUlg}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per indicare la disconnessione al servizio dell'utente.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="ulg">
+	<m>
+		{E-mail utente}
+	</m>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+			}
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				Nessuno.
+				}
+		\end{itemize}
+	}%Logout
+	
+		\subsubsection{Registrazione nuovo utente}{
+	\label{opUReg}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie registrare un nuovo utente.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="add">
+	<m>
+		{E-mail utente}
+	</m>
+	<p>
+		{Password utente}
+	</p>
+	<nm>
+		{Nome utente}
+	</nm>
+	<sn>
+		{Cognome utente}
+	</sn>
+	<sc>
+		{Societa' di riferimento per l'utente}
+	</sc>
+	<tl>
+		{Telefono utente}
+	</tl>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="p" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="nm" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sn" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sc" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="tl" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="add">
+	<es>
+		{Esito operazione}
+	</es>
+	<er>
+		{Errore nell'operazione}
+	</er>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="er" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: login effettuato con successo;
+					\item \texttt{false}: login non riuscito.
+				\end{itemize}
+				Nel caso di esito negativo dell'operazione, l'elemento \texttt{er} può contenere un messaggio informativo riguardanti le cause d'insuccesso.
+				}
+		\end{itemize}
+	}%Registrazione
+	
+			\subsubsection{Richiesta dati utente}{
+	\label{opUDT}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni per richiedere tutte le informazioni relative ad un specifico utente.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="udt">
+	<m>
+		{E-mail utente}
+	</m>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="add">
+	<m>
+		{E-mail utente}
+	</m>
+	<p>
+		{Password utente}
+	</p>
+	<nm>
+		{Nome utente}
+	</nm>
+	<sn>
+		{Cognome utente}
+	</sn>
+	<sc>
+		{Societa' di riferimento per l'utente}
+	</sc>
+	<tl>
+		{Telefono utente}
+	</tl>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="p" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="nm" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sn" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sc" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="tl" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+		\end{itemize}
+	}%Dati utente
+	
+		\subsubsection{Modifica dati utente}{
+	\label{opUMod}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per modificare i dati di un utente specifico.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="mod">
+	<ref>
+		{E-mail utente di riferimento}
+	</ref>
+	<m>
+		{Nuova e-mail utente}
+	</m>
+	<p>
+		{Nuova password utente}
+	</p>
+	<nm>
+		{Nuovo nome utente}
+	</nm>
+	<sn>
+		{Nuovo cognome utente}
+	</sn>
+	<sc>
+		{Nuova societa' di riferimento per l'utente}
+	</sc>
+	<tl>
+		{Nuovo telefono utente}
+	</tl>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ref" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="m" type="emailAddress" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="p" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="nm" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="sn" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="sc" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="tl" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="add">
+	<es>
+		{Esito operazione}
+	</es>
+	<er>
+		{Errore nell'operazione}
+	</er>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="er" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: modifica effettuata con successo;
+					\item \texttt{false}: modifica non riuscita.
+				\end{itemize}
+				Nel caso di esito negativo dell'operazione, l'elemento \texttt{er} può contenere un messaggio informativo riguardanti le cause d'insuccesso.
+				}
+		\end{itemize}
+	}%modifica dati utente
+	
+	\subsubsection{Eliminazione utente}{
+	\label{opUDel}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni per l'eliminazione di un specifico utente.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="dlt">
+	<m>
+		{E-mail utente}
+	</m>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<ud op="add">
+	<es>
+		{Esito operazione}
+	</es>
+	<er>
+		{Errore nell'operazione}
+	</er>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="ud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="er" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: eliminazione effettuata con successo;
+					\item \texttt{false}: eliminazione non riuscita.
+				\end{itemize}
+				Nel caso di esito negativo dell'operazione, l'elemento \texttt{er} può contenere un messaggio informativo riguardanti le cause d'insuccesso.
+				}
+		\end{itemize}
+	}%Eliminazione utente
+	
+	
+	\subsubsection{Lista utenti}{
+	\label{opCUList}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server la richiesta per ottenere la lista di tutti gli utenti registrati.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="userList">
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="op" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="userList">
+	<ud>
+		<m>
+			{E-mail utente}
+		</m>
+		<nm>
+			{Nome utente}
+		</nm>
+		<sn>
+			{Cognome utente}
+		</sn>
+		<ol>
+			{Utente online}
+		</ol>
+	</ud>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ud" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="nm" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="sn" type="xs:string" minOccurs="1" maxOccurs="1"/>
+              <xs:element name="ol" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="op" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+		\end{itemize}
+	}%Lista utenti
+	
+	\subsubsection{Negoziazione di chiamata}{
+	\label{opCNeg}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				messaggio inviato al server da parte di un utente mittente con le informazioni necessarie per poter comunicare con un utente destinatario.
+				}
+			
+			\item[] \textbf{Messaggio Client mittente -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="callNegotation" type="offer">
+	<us>
+		{E-mail utente mittente}
+	</us>
+	<ur>
+		{E-mail utente destinatario}
+	</ur>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+			\item[] \textbf{Messaggio Client destinatario -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="callNegotation" type="offer">
+	<us>
+		{E-mail utente destinatario}
+	</us>
+	<ur>
+		{E-mail utente mittente}
+	</ur>
+	<st>
+		{Accettazione della chiamata}
+	</st>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="st" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{st} deve essere:
+				\begin{itemize}
+					\item \texttt{accept}: richiesta di comunicazione accettata da parte dell'utente destinatario;
+					\item \texttt{refused}: richiesta di comunicazione rifiutata da parte dell'utente destinatario.
+				\end{itemize}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client mittente:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="callNegotation" type="answer">
+	<us>
+		{E-mail utente destinatario}
+	</us>
+	<ur>
+		{E-mail utente mittente}
+	</ur>
+	<st>
+		{Accettazione della chiamata}
+	</st>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="st" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				Questo messaggio viene inviato dal Server solo nel caso in cui l'utente destinatario non sia attualmente online; in questo caso, il valore dell'elemento \texttt{st} deve essere \texttt{offline}.
+				}
+		\end{itemize}
+	}%call Neg
+	
+	
+	
+	
+	\subsubsection{Inserimento nuove statistiche di chiamata}{
+	\label{opCInsStat}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per inserire delle nuove statistiche di chiamata.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="add">
+	<us>
+		{E-mail utente mittente}
+	</us>
+	<ur>
+		{E-mail utente destinatario}
+	</ur>
+	<pk>
+		{Numero pacchetti trasmessi}
+	</pk>
+	<pkL>
+		{Numero pacchetti persi}
+	</pkL>
+	<ss>
+		{Numero di byte trasmessi}
+	</ss>
+	<ds>
+		{Data d'inizio}
+	</ds>
+	<de>
+		{Data di fine}
+	</de>
+	<sg>
+		{Indice di gradimento dell'utente mittente}
+	</sg>
+	<rg>
+		{Indice di gradimento dell'utente destinatario}
+	</rg>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="pk" type="xs:long" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="pkL" type="xs:long" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ss" type="xs:long" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ds" type="dateType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="de" type="dateType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="sg" type="grade" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="rg" type="grade" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="dateType">
+   <xs:restriction base="xs:string">
+       <xs:pattern value="\d{14}"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="grade">
+   <xs:restriction base="xs:byte">
+       <xs:minInclusive value="0"/>
+       <xs:maxInclusive value="5"/>
+   </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="add">
+	<es>
+		{Esito operazione}
+	</es>
+	<er>
+		{Errore nell'operazione}
+	</er>
+</ud>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="er" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: statistiche inserite con successo;
+					\item \texttt{false}: inserimento nuove statistiche non riuscito.
+				\end{itemize}
+				Nel caso di esito negativo dell'operazione, l'elemento \texttt{er} può contenere un messaggio informativo riguardanti le cause d'insuccesso.
+				}
+		\end{itemize}
+	}%Statistiche chiamata
+	
+	\subsubsection{Verifica esistenza utente}{
+	\label{opCEus}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per verificare se esiste un utente registrato che rispetti i vincoli fissati.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="find">
+	<ip>
+		{Valore indirizzo IP}
+	</ip>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ip" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="find">
+	<es>
+		{Esito operazione}
+	</es>
+	<m>
+		{E-mail utente}
+	</m>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="es" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="m" type="emailAddress" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				Il valore contenuto nell'elemento \texttt{es} deve essere:
+				\begin{itemize}
+					\item \texttt{true}: la ricerca ha prodotto qualche risultato;
+					\item \texttt{false}: la ricerca non ha prodotto alcun risultato.
+				\end{itemize}
+				}
+		\end{itemize}
+	}%esistenza utente
+	
+	\subsubsection{Ricerca valori statistici}{
+	\label{opCValStat}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per ottenere delle particolari informazioni relative alle statistiche di comunicazione.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="stat" t="{Arco temporale in secondi}">
+	<m>
+		{E-mail utente}
+	</m>
+	<g>
+		{Indice di gradimento}
+	</g>
+	<ds>
+		{Data d'inizio}
+	</ds>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="g" type="grade" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="ds" type="dateType" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="t" type="xs:nonNegativeInteger" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="dateType">
+   <xs:restriction base="xs:string">
+       <xs:pattern value="\d{14}"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="grade">
+   <xs:restriction base="xs:byte">
+       <xs:minInclusive value="0"/>
+       <xs:maxInclusive value="5"/>
+   </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				Almeno uno degli elementi interni deve essere presente.
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="stat" t="{Arco temporale in secondi}">
+	<r>
+		<us>
+			{E-mail utente mittente}
+		</us>
+		<ur>
+			{E-mail utente destinatario}
+		</ur>
+		<pk>
+			{Numero pacchetti trasmessi}
+		</pk>
+		<pkL>
+			{Numero pacchetti persi}
+		</pkL>
+		<ss>
+			{Numero di byte trasmessi}
+		</ss>
+		<ds>
+			{Data d'inizio}
+		</ds>
+		<de>
+			{Data di fine}
+		</de>
+		<sg>
+			{Indice di gradimento dell'utente mittente}
+		</sg>
+		<rg>
+			{Indice di gradimento dell'utente destinatario}
+		</rg>
+	</r>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="r" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pk" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="pkL" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ss" type="xs:long" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="ds" type="dateType" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="de" type="dateType" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="sg" type="grade" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="rg" type="grade" minOccurs="1" maxOccurs="1"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="t" type="xs:nonNegativeInteger" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+  <xs:restriction base="xs:string"> 
+    <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+  </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="dateType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="\d{14}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="grade">
+  <xs:restriction base="xs:byte">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="5"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+		\end{itemize}
+	}%valori statistici
+	
+	\subsubsection{Aggiunta messaggio di segreteria}{
+	\label{opAM}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie per lasciare un messaggio testuale in segreteria da far pervenire all'utente destinatario.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="am">
+	<us>
+		{E-mail utente mittente}	
+	</us>
+	<ur>
+		{E-mail utente destinatario}
+	</ur>
+	<ds>
+		{Data invio messaggio}
+	</ds>
+	<msg>
+		{Messaggio testuale}
+	</msg>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ds" type="dateType" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="msg" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="dateType">
+   <xs:restriction base="xs:string">
+       <xs:pattern value="\d{14}"/>
+   </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}{\\
+				\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="am">
+	<ur>
+		{E-mail utente destinatario}
+	</ur>
+	<msg>
+		<us>
+			{E-mail utente mittente}
+		</us>
+		<d>
+			{Data d'inizio}
+		</d>
+		<text>
+			{Data d'inizio}
+		</text>
+	</msg>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="emailAddress" name="ur"/>
+        <xs:element name="msg" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="emailAddress" name="us"/>
+              <xs:element type="dateType" name="d"/>
+              <xs:element type="xs:string" name="text"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="op"/>
+    </xs:complexType>
+  </xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+<xs:simpleType name="dateType">
+   <xs:restriction base="xs:string">
+       <xs:pattern value="\d{14}"/>
+   </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+		\end{itemize}
+	}%Agg messaggio segreteria
+	
+		\subsubsection{Rimozione messaggi in segreteria}{
+	\label{opAMD}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				invia al Server le informazioni necessarie eliminare i messaggi presenti in segreteria.
+				}
+			
+			\item[] \textbf{Messaggio Client -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="amd">
+	<m>
+		{E-mail utente}
+	</m>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="m" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType>
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+				\item[] \textbf{Messaggio Server -\textgreater~ Client:}\\
+				Nessuno.
+		\end{itemize}
+	}%Agg messaggio segreteria
+}
+
+\subsection{Comunicazioni Client-Client}{
+
+	\subsubsection{Scambio informazioni di chiamata}{
+	\label{opCExg}
+		\begin{itemize}
+			\item[] \textbf{Funzione:}{\\
+				messaggio inviato da parte di un utente mittente con le informazioni necessarie per poter scambiare informazioni utili per poter instaurare una comunicazione con un utente destinatario.\\
+				Il server ha la funzione di far rimbalzare il messaggio tra i due client.
+				}
+			
+			\item[] \textbf{Messaggio Client Mittente -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="callExchange" type="offerDescription">
+	<us>
+		{E-mail utente mittente}
+	</us>
+	<ur>
+		{E-mail utente destinatario}
+	</ur>
+	<dsc>
+		{Contenuto informativo}
+	</dsc>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="dsc" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+				
+		\item[] \textbf{Messaggio Client Destinatario -\textgreater~ Server:}{\\
+			\textbf{Messaggio XML}\\
+				\begin{lstlisting}
+<c op="callExchange" type="offerDescription">
+	<us>
+		{E-mail utente destinatario}
+	</us>
+	<ur>
+		{E-mail utente mittente}
+	</ur>
+	<dsc>
+		{Contenuto informativo}
+	</dsc>
+</c>
+				\end{lstlisting}
+				\textbf{Validazione XSD}\\
+				\begin{lstlisting}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.mytalk.com"
+xmlns="http://www.mytalk.com"
+elementFormDefault="qualified">
+
+<xs:element name="c">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="us" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="ur" type="emailAddress" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="dsc" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="op" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="emailAddress"> 
+    <xs:restriction base="xs:string"> 
+      <xs:pattern value="[^@]+@[^\.]+\..+"/> 
+    </xs:restriction> 
+</xs:simpleType> 
+
+</xs:schema>
+				\end{lstlisting}
+				}
+		\end{itemize}
+	}%scambio info chiamata
+
+}

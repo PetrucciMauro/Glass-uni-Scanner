@@ -1,0 +1,171 @@
+%
+%	GOGOTEAM - Stile base per la scrittura di documenti interni in LaTex
+%
+
+%
+%	Pacchetti globali
+%	Fare qui eventuali aggiunte!
+%
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[top=1cm,bottom=4cm,left=80pt,right=80pt]{geometry} %disegna la linea
+\usepackage{listings} %per grandi porzioni di codice
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx}
+\usepackage{makeidx}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\usepackage{longtable}
+\usepackage{eurosym}
+\usepackage{appendix}
+\usepackage{multirow}
+%\usepackage{multibbl}
+%\usepackage{glossaries}
+%\makeglossaries
+%\makeindex
+\include{Sillabario.tex}
+
+%\bibliographystyle{alpha}
+\bibliographystyle{alpha}
+
+%
+%	VARIABILI GLOBALI
+%
+\newcommand{\ggt}{GoGo Team}
+\newcommand{\mytalk}{MyTalk}
+\newcommand{\mailGruppo}{gogoteam.info@gmail.com}
+\newcommand{\uni}{Universit\`{a} degli studi di Padova}
+\newcommand{\uniAA}{2012/2013}
+\newcommand{\Cardin}{Prof. Riccardo Cardin}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega}
+\newcommand{\Zucchetti}{Zucchetti S.p.A.}
+
+
+\newcommand{\BM}{Belletti Matteo}
+\newcommand{\BA}{Bonaldo Alessandro}
+\newcommand{\CD}{Ceccon Davide}
+\newcommand{\LS}{Lazzaretto Sara}
+\newcommand{\PV}{Pasqualotto Valentina}
+\newcommand{\ZF}{Zattarin Francesco}
+\newcommand{\ZE}{Zerbato Elena}
+
+\newcommand{\MB}{Matteo Belletti}
+\newcommand{\AB}{Alessandro Bonaldo}
+\newcommand{\DC}{Davide Ceccon}
+\newcommand{\SL}{Sara Lazzaretto}
+\newcommand{\VP}{Valentina Pasqualotto}
+\newcommand{\FZ}{Francesco Zattarin}
+\newcommand{\EZ}{Elena Zerbato}
+
+
+\newcommand{\licenza}{Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.}
+
+
+%link a documenti
+\newcommand{\DefinizioneDiProdotto}{\href{DefinizioneDiProdotto_v1.0.pdf}{DefinizioneDiProdotto\_v1.0.pdf}}
+\newcommand{\SpecificaTecnica}{\href{SpecificaTecnica_v3.0.pdf}{SpecificaTecnica\_v3.0.pdf}}
+\newcommand{\AnalisiDeiRequisiti}{\href{AnalisiDeiRequisiti_v4.0.pdf}{AnalisiDeiRequisiti\_v4.0.pdf}}
+\newcommand{\PianoDiProgetto}{\href{PianoDiProgetto_v4.0.pdf}{PianoDiProgetto\_v4.0.pdf}}
+\newcommand{\NormeDiProgetto}{\href{../Interni/NormeDiProgetto_v4.0.pdf}{NormeDiProgetto\_v4.0.pdf}}
+\newcommand{\PianoDiQualifica}{\href{PianoDiQualifica_v3.0.pdf}{PianoDiQualifica\_v3.0.pdf}}
+\newcommand{\ManualeInstallatore}{\href{ManualeInstallatore_v2.0.pdf}{ManualeInstallatore\_v2.0.pdf}}
+\newcommand{\ManualeUtente}{\href{ManualeUtente_v2.0.pdf}{ManualeUtente\_v2.0.pdf}}
+\newcommand{\ManualeAmministratore}{\href{ManualeAmministratore_v2.0.pdf}{ManualeAmministratore\_v2.0.pdf}}
+\newcommand{\Glossario}{\href{Glossario_v3.0.pdf}{Glossario\_v3.0.pdf}}
+\newcommand{\g}{$_{|g|}$}
+
+
+%
+%	Setup stili
+%
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{light}{RGB}{255,255,190}
+
+\lstset{ %
+  language=Java,                % the language of the code, list at http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+  basicstyle=\fontfamily{pcr}\selectfont,
+%  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  %stepnumber=2,                   % the step between two line-numbers. If it's 1, each line 
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+ % title=\lstname,                   % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},          % keyword style
+  commentstyle=\color{dkgreen},       % comment style
+  stringstyle=\color{mauve},         % string literal style
+  escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+  morekeywords={*,...},              % if you want to add more keywords to the set
+  deletekeywords={...}              % if you want to delete keywords from the given language
+}
+
+
+%
+%	Setup di pagina
+%
+
+%colorazione link
+\hypersetup
+{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+	citecolor=blue
+}
+
+%	Setup Header + Footer
+
+\pagestyle{fancy}
+\setlength{\headheight}{2cm} %settato grandezza header
+
+\renewcommand{\footrulewidth}{0.5pt} %ridefinisco il valore della riga di intestazione
+\renewcommand{\headrulewidth}{0.5pt} %ridefinisco il valore della riga di pie' di pagina
+%per fargli scrivere Appendici invece di Appendices nell'indice
+\renewcommand{\appendixtocname}{Appendici}
+%per fargli scrivere Appendice invece di Appendices nel documento. Lo scrive in grande, poi torna alla dimensione normale
+\renewcommand{\appendixpage}{\huge{\textbf{Appendici}}\normalsize}
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+\fancyhead{} %annulla head di default
+\fancyfoot{} %annulla foot di default
+
+%	Logo intestazione
+\lhead{\includegraphics[scale=0.28]{../imgs/gogoTeamLogo.png}}
+
+
+%	footer
+\cfoot{
+\uni \ - \uniAA \\
+\href{mailto:\mailGruppo}{\mailGruppo}\\
+{\tiny Questo documento è distribuito sotto licenza \href{http://creativecommons.org/licenses/by-nc-sa/3.0/}{\licenza}
+}
+}
+\rfoot{
+\thepage\ di \pageref{LastPage}
+}
+
+%\makeindex

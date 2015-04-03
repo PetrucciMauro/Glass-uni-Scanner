@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{../stile}
+
+
+%posizione dei file di capitolo per il documento corrente
+%default scts (sections)
+\newcommand{\docs}{./sezioni/}
+%posizione delle immagini per il documento corrente
+\newcommand{\docsImg}{./sezioni/img/}
+
+%
+%	Dati locali del documento
+%
+%Titolo documento
+\newcommand{\titoloDocumento}{Manuale per l'installatore}
+%Prima data di creazione del documento
+\newcommand{\dataCreazione}{20 Maggio 2013}
+%Inserite la versione attuale del documento
+\newcommand{\versione}{2.0}
+%Data ultima modifica
+\newcommand{\dataUM}{26 Giugno 2013}
+%
+%++++	Dati rilascio documento	++++
+%
+%Stato in cui si trova il documento: Formale solo all'atto di consegna
+\newcommand{\stato}{Formale}
+%Uso del documento
+\newcommand{\uso}{Esterno}
+
+
+
+\rhead{\titoloDocumento}
+\lfoot{Versione: \versione}
+\title{\titoloDocumento}
+
+\begin{document}
+\input{\docs front.tex}
+\newpage
+ \begin{center}
+	\input{\docs sommario.tex}
+\end{center}
+\newpage
+
+\input{\docs regMod.tex}
+
+
+\newpage
+
+%\pagenumbering{arabic}
+\tableofcontents
+%\newpage
+%\listoftables
+
+\newpage
+\input{\docs introduzione.tex}
+\newpage
+\input{\docs setup.tex}
+\newpage
+\input{\docs avvio.tex}
+
+%\newpage
+
+%\bibliography{../bibliografia}
+
+%	Indice analitico: sequenza texmaker: f6 + f12 e poi f7
+%\newpage
+%\printindex
+\end{document}

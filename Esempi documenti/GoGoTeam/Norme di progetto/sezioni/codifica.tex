@@ -1,0 +1,167 @@
+\section{Codifica} {
+\subsection{Attività}{
+Lo scopo di questa attività è quello di produrre il codice che soddisfi, il più fedelmente possibile, le specifiche definite nel documento Definizione di Prodotto.\\
+L'attività termina con la presentazione del codice sorgente del sistema.
+\begin{itemize}
+	\item []{\textbf{Input:} Definizione di Prodotto;}
+	\item []{\textbf{Output:} codice sorgente;}
+	\item []{\textbf{Risorse:} Programmatori, strumentazione;}
+	\item []{\textbf{Misurazioni:} avanzamento dell'elaborazione del codice sorgente rispetto alla totalità della Definizione di Prodotto;}
+	\item []{\textbf{Norme:} descritte in seguito.}
+\end{itemize}
+}
+
+	\subsection{Intestazione file}{
+		Ogni file di codice sorgente deve iniziare con un'intestazione che deve rispettare il seguente schema:
+		
+		{ \footnotesize
+		\begin{lstlisting}[basicstyle=\ttfamily]
+	/**
+	 * Name: {Nome del file}
+	 * Package: {Package di appartenenza}
+	 * Author: {Autore del file}
+	 * Date: {Data di approvazione del file}
+	 *
+	 * Changes:
+	 * Version		Date				Changes				Reason 
+	 * {X}.{Y}		AAAA-MM-GG	{Cambiamento}	{Motivazione}
+	 *
+	 *
+	 * ------------------------------------------------------------
+	 * Copyright (C) 2013 GoGoTeam
+	 * 
+	 * This file is part of MyTalk.
+	 * 
+	 * MyTalk is free software: you can redistribute it and/or modify
+	 * it under the terms of the GNU General Public License
+	 * as published by the Free Software Foundation, version 2 of the
+	 * License.
+	 * 
+	 * MyTalk is distributed in the hope that it will be useful,
+	 * but WITHOUT ANY WARRANTY; without even the implied warranty of
+	 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	 * GNU General Public License for more details.
+	 * 
+	 * You should have received a copy of the GNU General Public 
+	 * License along with MyTalk.  If not, see 
+	 * <http://www.gnu.org/licenses/>.
+	 * ------------------------------------------------------------
+	 *
+	 */
+		\end{lstlisting}
+}
+		\begin{itemize}
+			\item \textbf{Name}: indica il nome del file comprensivo di estensione;
+			\item \textbf{Package}$_{|g|}$: deve essere comprensivo della gerarchia del package$_{|g|}$;
+			\item \textbf{Author}: indica l'autore del file e non necessariamente il programmatore che sta modificando il file attuale;
+			\item \textbf{Date}: indica la data di creazione del file (come indicato nel cap. \ref{formatiRiferimento});
+			\item \textbf{Changes}: indica la lista di avanzamento delle  modifiche del file apportate. In dettaglio:
+			\begin{itemize}
+				\item \textbf{Version}: ultima modifica apportata al file (come indicato nel cap. \ref{versCod}).
+				\item \textbf{Date}: rappresenta la data dell'avvenuta modifica (come indicato nel cap. \ref{formatiRiferimento}).
+				\item \textbf{Changes}: rappresenta la lista dei cambiamenti effettuati. Questa lista deve fornire le informazioni inerenti i metodi modificati preceduti da una delle seguenti etichette:
+				\begin{itemize}
+					\item []\texttt{[+]} indica che il metodo è stato creato; 
+					\item []\texttt{[-]} indica che il metodo è stato eliminato;
+					\item []\texttt{[x]} indica che il metodo ha subito un cambiamento.
+				\end{itemize}
+				\item \textbf{Reason}: motivazione di modifica.
+			\end{itemize}
+			L'inserimento dell'ultima versione è aggiunto a capo della lista  in modo da avere uno storico a ritroso delle modifiche fatte al file.
+		\end{itemize} 
+	}
+
+	\subsection{Convenzione codifica codice} {
+		I programmatori devono seguire la Java Code Convention (\url{http://www.oracle.com/technetwork/java/codeconvtoc-136057.html}) in modo tale da rendere il codice più leggibile e mantenibile.
+		Tale convenzione può essere integrata o modificata solo su autorizzazione del Responsabile di Progetto.
+		
+		\subsubsection{Struttura interna delle classi}{
+			All’interno di una classe dovranno comparire nel seguente ordine:
+			\begin{itemize}
+				\item Variabili statiche
+				\item Variabili di istanza
+				\item Costruttori
+				\item Metodi
+			\end{itemize}
+		}
+		
+		\subsubsection{Struttura dei codici}{
+		
+			\begin{itemize}
+			
+		        \item[•]	 { \textbf{Struttura linea di codice:} La lunghezza della
+		        linea di codice deve facilitare la lettura e fornire una buona
+		        presentazione visiva. Per questo scopo  si è scelto l’utilizzo di
+		        spazi prima e dopo la maggior parte degli operatori, cercando di non
+		        alterare la funzione del codice, ed evitare per ciascuna riga
+		        l’inserimento di più istruzioni.
+		        }
+			
+			    \item[•] { \textbf{Rientri e uso delle parentesi graffe} La
+			    parentesi graffa di apertura di un blocco di codice dovrà essere
+			    posta sulla stessa riga della dichiarazione del blocco di codice
+			    interessato, mentre la parentesi graffa di chiusura va posizionata
+			    in una nuova riga, allineata verticalmente rispetto al primo
+			    carattere della dichiarazione del blocco di codice interessato.\\
+				Ogni livello di indentazione deve rientrare utilizzando il tasto di
+				tabulazione. Di seguito si riporta un esempio d’uso:
+					\begin{lstlisting}[basicstyle=\ttfamily]
+				public void stampa(String) {
+				    .........
+				}
+				\end{lstlisting}
+				}
+				
+				\item[•] { \textbf{Blocchi funzionali:} Il codice viene diviso in
+				paragrafi utilizzando le righe vuote per separarli. Questa
+				convenzione è stata pensata per favorire la leggibilità e
+				semplificare la comprensione della logica del codice stesso.
+				}				
+				
+				\item[•] { \textbf{Commenti:} I commenti vanno sempre scritti in una
+				nuova riga lasciando una riga di spazio prima di essi, anche se
+				inseriti all’interno di un blocco di codice. Il carattere che indica
+				l’inizio del commento deve essere // (doppia barra) oppure nella
+				forma /* */ se il commento necessita di più righe .
+				}
+			\end{itemize}
+			
+		}
+		
+		
+		\subsubsection{Convenzione sui nomi}{
+			\begin{itemize}
+				\item[•] {\textbf{Classi:} l'identificatore deve avere la prima
+				lettera maiuscola e tutte le altre minuscole. Se è composto da più
+				parole, la prima lettera di ogni parola deve essere in maiuscolo e
+				non ci devono essere dei caratteri speciali.
+				}
+				\item[•] {\textbf{Interfacce:} l'identificatore sarà composto dalla 
+				lettera \textit{i} maiuscola seguita dal nome della classe che
+				implementerà tale interfaccia. Esempio: classe \textit{Pippo},
+				interfaccia \textit{IPippo}.
+				}
+				\item[•] {\textbf{Metodi:} l'identificatore dovrebbe dare
+				un'immediata idea del suo comportamento contenendo almeno un verbo
+				scritto in minuscolo. Se è composto, la seconda parola andrà scritta
+				solo con la prima lettera in maiuscolo. Esempio \textit{pagareTassa}.
+				}
+				\item[•] {\textbf{Variabili:} scritte con nomi brevi ed evocativi con la prima lettera in minuscola. Nel caso siano composte da più parole, l'iniziale di ogni parola dovrebbe essere maiuscola.}
+				\item[•] {\textbf{Costanti:} dovrebbero essere scritte in maiuscolo.
+				Nel caso siano composte da più parole si dovrebbe utilizzare il
+				simbolo di underscore.}
+			\end{itemize}
+			}	
+		}
+		
+\subsection{Strumenti} {
+Per l'esecuzione di questa attività si utilizzano i seguenti strumenti:
+\begin{itemize}
+	\item []{\textbf{Eclipse:} per la realizzazione del codice (dettaglio cap. \ref{IDEEclipse});}
+	\item []{\textbf{GWT:} per la codifica dei linguaggi web (dettaglio cap. \ref{FWgwt});}
+	\item []{\textbf{git:} per il versionamento della documentazione (dettaglio cap. \ref{git});}
+\end{itemize}
+
+}%Strumenti
+
+}

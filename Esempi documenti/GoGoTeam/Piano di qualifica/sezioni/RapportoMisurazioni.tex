@@ -1,0 +1,399 @@
+\section{Rapporto delle misurazioni}{
+\subsection{Copertura del codice}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.35]{\docsImg CoperturaTest.png}
+	\caption{Copertura del codice.}
+	\label{fig:copCod} 
+\end{figure}
+
+La figura \ref{fig:copCod} illustra le percentuali di copertura raggiunte dai test di unità, suddivise per package, calcolate con il plugin di Eclipse \texttt{EclEmma}. Come si può vedere, la copertura raggiunta nel codice sorgente è del 59,2"\%". A questi test vanno aggiunti altri due test di unità, \texttt{WSAdminTest} e \texttt{WSUserTest}, eseguibili solo singolarmente e non come parte della suite di test rappresentata nell'immagine. Tali test coprono un ulteriore 5"\%" del codice totale del progetto. Quindi la copertura complessiva raggiunta nel codice sorgente è del 64,2"\%". \`E stato quindi raggiunto l'obiettivo del 60"\%" fissato in sezione \ref{sec:test}.
+\begin{itemize}
+	\item \`E stato scelto di non effettuare i test della componente View tramite JUnit, dato che il codice che gestisce l'interfaccia grafica non contiene logica e si basa in gran parte sulle funzionalità offerte dal framework\g~ GWT. Il test sulla View viene di conseguenza effettuato in modo manuale.
+	\item Il package \path{mytalk.client.prenter.user.serverComUser} raggiunge una percentuale bassa in quanto molti dei suoi metodi hanno il solo compito di concatenare delle stringhe e passarle ad un altro metodo; sono quindi stati testati i soli parser della classe \texttt{WebSocketUser}.
+	\item Il package \path{mytalk.client.presenter.user.communication} contiene due classi, \texttt{MediaStream} e \texttt{PeerConnection}, che sono composte quasi esclusivamente da metodi scritti in JavaScript\g~ nativo. Tale tipologia di metodi è risultata impossibile da testare all'interno del framework\g~ GWT; il loro corretto funzionamento è stato quindi verificato tramite i test di integrazione.
+	\item I package \path{mytalk.shared} e \path{mytalk.client} sono package generati dal framework\g~ \\GWT e contengono poche linee di codice, non testabili.
+\end{itemize}
+Da questo rapporto si può pertanto concludere che la quasi totalità del codice che ci si era prefissato di testare è stato verificato.
+\newpage
+\subsection{Metriche}{
+Le metriche che verranno considerate per le misurazioni sono riportate nella seguente tabella.
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l l}				
+					\toprule
+					Metrica & Descrizione\\
+					\midrule
+					TLOC & Total Lines of Code\\
+					MLOC & Method Lines of Code\\
+					NOC & Number of Classes\\
+					NOM & Number of Methods\\
+					VG M & McCabe Cyclomatic Complexity (Mean)\\
+					VG Sd & McCabe Cyclomatic Complexity (Standard Deviation)\\
+					LCOM M & Lack of Cohesion of Methods (Mean)\\
+					LCOM Sd & Lack of Cohesion of Methods (Standard Deviation)\\
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{Descrizione metriche considerate} 
+	\end{table}
+					
+\subsubsection{Parte Amministratore}
+	\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l c c c c}				
+					\toprule
+					Package & TLOC & MLOC & NOC & NOM\\ 
+					\midrule
+					mytalk.client.view.administrator & 432 & 227 & 3 & 29\\
+					
+					mytalk.client.presenter.administrator.logicAdmin & 229 & 109 & 3 & 27\\
+					
+					mytalk.client.presenter.administrator.serverComUser & 161 & 94 & 1 & 16\\
+					
+					mytalk.client.presenter.administrator.common & 36 & 22 & 1 & 0\\
+					
+					mytalk.client.model.administrator.localDataAdmin & 29 & 14 & 1 & 0\\
+					
+					mytalk.client & 22 & 1 & 1 & 1\\
+					
+					mytalk.server & 27 & 15 & 1 & 2\\
+					
+					mytalk.shared & 9 & 4 & 1 & 0\\
+
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{TLOC, MLOC, NOC e NOM MyTalk Amministratore} 
+	\end{table}
+
+
+
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+	\begin{tabular}{l c c c c}				
+					\toprule
+					Package & VG M & VG Sd & LCOM M & LCOM Sd\\ 
+					\midrule
+					mytalk.client.view.administrator & 1,138 & 0,433 & 0,636 & 0,157\\
+					
+					mytalk.client.presenter.administrator.logicAdmin & 1,556 & 0,916 & 0,289 & 0,287\\
+					
+					mytalk.client.presenter.administrator.serverComUser & 1,625 & 1,166 & 0,889 & 0\\
+					
+					mytalk.client.presenter.administrator.common & 2,75 & 0,433 & 0 & 0\\
+					
+					mytalk.client.model.administrator.localDataAdmin & 1,6 & 0,8 & 0 & 0\\
+					
+					mytalk.client & 1 & 0 & 0 & 0\\
+					
+					mytalk.server & 2 & 0 & 0 & 0\\
+					
+					mytalk.shared & 2 & 0 & 0 & 0\\
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{VG e LCOM MyTalk Amministratore} 
+	\end{table}
+\newpage
+\subsubsection{Parte Server}
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l c c c c}				
+					\toprule
+					Package & TLOC & MLOC & NOC & NOM\\ 
+					\midrule
+					mytalk.server.model.dao & 602 & 406 & 5 & 43\\
+					
+					mytalk.server.presenter & 148 & 68 & 1 & 0\\
+					
+					mytalk.server.presenter	.administrator.logicAdmin & 174 & 106 & 3 & 11\\
+					
+					mytalk.server.presenter.user.logicUser & 366 & 267 & 3 & 21\\
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{TLOC, MLOC, NOC e NOM MyTalk Server} 
+	\end{table}
+	
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+	\begin{tabular}{l c c c c}				
+					\toprule
+					Package & VG M & VG Sd & LCOM M & LCOM Sd\\ 
+					\midrule
+					mytalk.server.model.dao & 3,114 & 2,258 & 0,2 & 0,245\\
+					
+					mytalk.server.presenter & 3,167 & 2,192 & 0 & 0\\
+					
+					mytalk.server.presenter	.administrator.logicAdmin & 2,455 & 2,311 & 0,167 & 0,236\\
+					
+					mytalk.server.presenter.user.logicUser & 2,857 & 3,44 & 0,426 & 0,309\\		
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{VG e LCOM MyTalk Server} 
+	\end{table}
+	
+	\newpage
+	
+\subsubsection{Parte Utente}
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l c c c c}				
+					\toprule
+					Package & TLOC & MLOC & NOC & NOM\\ 
+					\midrule
+					mytalk.client.view.user & 1097 & 501 & 11 & 83\\ 
+
+					mytalk.client.presenter.client.user.logicUser & 584 & 290 & 5 & 65\\  
+					
+					mytalk.client.presenter.client.user.serverComUser & 428 & 300 & 1 & 38\\ 
+				
+					mytalk.client.presenter.client.user.communication & 131 & 46 & 2 & 27\\ 
+				
+					mytalk.client.presenter.client.user.logicUser.common & 55 & 35 & 1 & 0\\
+					
+				 	mytalk.client.model.client.localDataUser & 29 & 14 & 1 & 0\\ 
+				 	
+				 	mytalk.client & 22 & 1 & 1 & 1\\
+				 	
+					mytalk.shared(User) & 9 & 4 & 1 & 0\\
+				 
+					%\textbf{Totale} & - &-  \\
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{TLOC, MLOC, NOC e NOM MyTalk Utente} 
+	\end{table}
+	
+	
+\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+	\begin{tabular}{l c c c c}				
+					\toprule
+					Package & VG M & VG Sd & LCOM M & LCOM Sd\\ 
+					\midrule
+					mytalk.client.view.user & 1,277 & 0,7 & 0,42 & 0,397\\ 
+
+					mytalk.client.presenter.client.user.logicUser & 1,554 & 0,895 & 0,531 & 0,267\\  
+					
+					mytalk.client.presenter.client.user.serverComUser & 1,85 & 1,388 & 0,845 & 0\\ 
+				
+					mytalk.client.presenter.client.user.communication & 1,036 & 0,186 & 0,375 & 0,375\\ 
+				
+					mytalk.client.presenter.client.user.logicUser.common & 2,571 & 0.495 & 0 & 0\\
+					
+				 	mytalk.client.model.client.localDataUser & 1,6 & 0,8 & 0 & 0\\ 
+				 	
+				 	mytalk.client & 1 & 0 & 0 & 0\\
+				 	
+					mytalk.shared & 2 & 0 & 0 & 0\\
+				 
+					%\textbf{Totale} & - &-  \\
+					
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{VG e LCOM MyTalk Utente} 
+	\end{table}
+	
+	\newpage
+	\subsection{Rapporto misurazioni con ApacheBench}{
+In questa sezione mostreremo le misurazioni relative alla performance del server effettuate mediante \texttt{ApacheBench}
+\subsubsection{Parte Amministratore}
+	\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l c}				
+					\toprule
+					Descrizione & Misurazione\\ 
+					\midrule
+					Tempo impiegato per i test (in s) & 0,1794\\
+					
+					Richieste al secondo & 5609,517\\
+					
+					Tempo per richiesta (in ms) & 17,9267\\
+					
+					Tempo per richiesta (media di tutte le richieste simulatanee) [in ms] & 0,1794\\
+					
+					Velocità di trasferimento & 6255,929\\
+					
+					Tempo di connessione minimo (in ms) & 6,5\\
+					
+					Tempo di connessione massimo (in ms) & 48,6\\
+					
+					Tempo di connessione medio (in ms) & 16,3\\
+
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{Misurazioni con Apache Bench di MyTalk Amministratore} 
+	\end{table}
+	
+\subsubsection{Parte Utente}
+	\begin{table}[h!]
+\scriptsize
+		\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+					\begin{tabular}{l c}				
+					\toprule
+					Descrizione & Misurazione\\ 
+					\midrule
+					Tempo impiegato per i test (in s) & 0,2261\\
+					
+					Richieste al secondo & 5108,233\\
+					
+					Tempo per richiesta (in ms) & 22,6151\\
+					
+					Tempo per richiesta (media di tutte le richieste simulatanee) [in ms] & 0,2261\\
+					
+					Velocità di trasferimento & 5646,992\\
+					
+					Tempo di connessione minimo (in ms) & 7,4\\
+					
+					Tempo di connessione massimo (in ms) & 59,9\\
+					
+					Tempo di connessione medio (in ms) & 18,3\\
+
+					\bottomrule
+					\end{tabular}
+				%\end{minipage}
+				%}
+			
+		\end{center}	
+		\caption{Misurazioni con Apache Bench di MyTalk Utente} 
+	\end{table}
+	
+	\newpage
+	\subsection{Rapporto bug}{
+In questa sezione illustreremo i bug trovati mediante il plugin di Eclipse \texttt{FindBugs}
+\subsubsection{Parte Amministratore}
+	%\begin{table}[h!]
+%\scriptsize
+	%	\begin{center}
+			%\rotatebox{90}{
+				%\begin{minipage}{1\linewidth}
+	%				\begin{tabular}{l c c}				
+	%				\toprule
+	%				Errore & Metodo & Corretto\\ 
+	%				\midrule
+	\begin{longtable}{p{0.4\textwidth} p{0.4\textwidth} p{0.2\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Errore} & \textbf{Metodo} & \textbf{Corretto} \\
+\midrule
+					Dead store to local variable & MyTalkAdmin.onModuleLoad() & Si\\
+					\midrule
+					
+					Methods ignores return value & StatisticLogic.searchIP()
+													\newline StatisticLogic.searchUser()
+													\newline StatisticLogic.searchGrade()
+													\newline StatisticLogic.searchDay()
+													 & Si \newline Si \newline Si \newline Si\\
+													 \midrule
+													 
+													 \caption{Bug trovati tramite FindBugs di MyTalk Amministratore} 
+													 \end{longtable}
+			
+					%\bottomrule
+					%\end{tabular}
+				%\end{minipage}
+				%}
+			
+	%	\end{center}	
+	
+	%\end{table}
+ 
+\subsubsection{Parte Server}	
+\begin{longtable}{p{0.4\textwidth} p{0.45\textwidth} p{0.15\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Errore} & \textbf{Metodo} & \textbf{Corretto} \\
+\midrule
+	Method call passes null for nonnull parameter & DataAccessObject.updateItem() & falso positivo\\
+	\midrule
+	Method concatenates strings using + in a loop & DataAccessObject.makeGetQuery() \newline
+													  DataAccessObject.makeUpdateQuery() \newline
+													  DataAccessObject.makeInsertQuery() \newline
+													  DataAccessObject.makeDeleteQuery() \newline
+										& No \newline No \newline No \newline No\\
+	\midrule
+	Should be a static inner class & DataAccessObject.DBDataAccess \newline 
+									  WSAdmin.WebSocket \newline 
+									  WSUser.WebSocket
+									  & No \newline No \newline No\\
+									  \midrule
+									  
+									 \caption{Bug trovati tramite FindBugs di MyTalk Server} 
+													 \end{longtable}
+													 
+I bug che riguardano l'errore \texttt{Method concatenates strings using + in a loop} non sono stati corretti in quanto segnalano che sarebbe più efficiente concatenare le stringhe mediante il metodo append() e non mediante l'operatore \texttt{+}.
+I bug che riguardano l'errore \texttt{Should be a static inner class} non sono stati corretti in quanto le classi interne segnalate nel nostro caso non possono essere statiche.
+
+	\newpage												 
+\subsubsection{Parte Utente}	
+\begin{longtable}{p{0.4\textwidth} p{0.40\textwidth} p{0.20\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Errore} & \textbf{Metodo} & \textbf{Corretto} \\
+\midrule
+	Dead store to local variable & MyTalk.onModuleLoad() & Si\\\\
+	\midrule
+	Method invokes inefficient new String() constructor: & CommunicationLogic & Si\\
+	\midrule
+									  
+	\caption{Bug trovati tramite FindBugs di MyTalk User} 
+\end{longtable}
+}

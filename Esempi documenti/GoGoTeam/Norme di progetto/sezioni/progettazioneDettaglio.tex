@@ -1,0 +1,78 @@
+\section{Progettazione di dettaglio} {
+\subsection{Attività}{
+Lo scopo di questa attività è di realizzare una visione dettagliata di quello che dovrà essere il sistema estendendo in modo consono ed appropriato l'architettura specificata nel documento Specifica Tecnica.\\
+Terminata l'attività di organizzazione in dettaglio dell'intero sistema si deve produrre un documento completo ed esplicativo: la Definizione di Prodotto.\\
+Le attività necessarie alla redazione del documento  sono:
+\begin{itemize}
+	\item descrizione dettagliata delle singole unità (interfacce, classi, metodi e campi dati) che compongono il programma;
+	\item rappresentazione grafica, mediante diagrammi di sequenza, del comportamento del programma;
+	\item tracciamento componenti-requisiti.
+\end{itemize}
+Si deve inoltre definire, in un documento specifico (\textit{\PianoDiQualifica}), vari test da eseguire sulle classi in modo da provare il loro corretto comportamento.
+\begin{itemize}
+	\item []{\textbf{Input:} Specifica Tecnica;}
+	\item []{\textbf{Output:} Definizione di Prodotto, test di unità;}
+	\item []{\textbf{Risorse:} Progettisti, strumentazione;}
+	\item []{\textbf{Misurazioni:} avanzamento dell'elaborazione del documento Definizione di Prodotto rispetto alla totalità della Specifica Tecnica;}
+	\item []{\textbf{Norme:} descritte in seguito.}
+\end{itemize}
+}
+
+\subsection{Diagrammi UML}{
+\subsubsection{Tipologia}{
+Si deve utilizzare il linguaggio UML\g~ v2.x per definire:
+\begin{itemize}
+	\item [] \textbf{Diagrammi delle classi:} {per rendere chiare le relazioni tra le classi all'interno delle singole componenti.}
+	\item [] \textbf{Diagrammi delle attività:} {per definire in modo non ambiguo i flussi delle varie attività, composte dalle rispettive componenti, ritenuti non banali e non descritti nel documento di Specifica Tecnica.}
+	\item [] \textbf{Diagrammi di sequenza:} {per definire in modo preciso le responsabilità dei vari package\g~ o classi nel portare a termine un determinato compito, nel caso in cui  ciò non fosse stato specificato adeguatamente nel documento Specifica Tecnica. Si deve limitare la rappresentazione di cicli o condizioni alternative ai soli casi in cui la loro omissione comporti un grave scompenso alla comprensione del diagramma.}
+\end{itemize}
+}%tipologia
+\subsubsection{Classificazione}\label{classCAS}{
+Ciascuna tipologia di diagramma UML\g~ dev'essere identificata mediante la seguente nomenclatura:
+\begin{center}
+			\textit{\{Tipo\} \{A\}...\{Z\}}
+		\end{center}dove \textit{Tipo} indica una tipologia dei seguenti diagrammi:
+		\begin{itemize}
+			\item [] \textbf{DC:} diagramma delle classi;
+			\item [] \textbf{DA:} diagramma di attività;
+			\item [] \textbf{DS:} digramma di sequenza.
+		\end{itemize}e \textit{\{A\}...\{Z\}} indica una struttura gerarchica di insiemi. (\textit{es.} \texttt{A.B.C}: \texttt{A} indica il diagramma principale, \texttt{B} una specifica/estensione di \texttt{A}, \texttt{C} una specifica/estensione di \texttt{B} e cosi via). \\
+}%class
+
+}%diagrammi
+
+\subsection{Specifica delle classi}{
+Nel documento è importante specificare ciascuna classe mediante il seguente schema:
+\begin{itemize}
+	\item {\textbf{Funzione:}} specifica la funzione svolta dalla classe;
+	\item {{\textbf{Relazione con altre componenti:}} specifica la tipologia di relazione della classe con le altre componenti;
+	}
+	\item {\textbf{Attributi:}} definiti all'interno della classe corredati da una breve descrizione;
+	\item {\textbf{Metodi:}} definiti nella classe corredati da una descrizione che ne descriva, nel caso si presentasse, eccezioni lanciate o gestite oppure tipi di oggetti di ritorno.
+\end{itemize}
+}%specifica classe
+
+\subsection{Tracciamento} {
+Nel documento deve essere riportato, in forma tabellare, il tracciamento di ogni requisito con le varie classi che ne assicurano il soddisfacimento.
+\`E richiesto di riportare, anche questo in forma tabellare, il tracciamento di ciascuna classe con il requisito che ne giustifica l'esistenza.
+}%tracciamento
+
+\subsection{Organizzazione dei contenuti}{
+Il documento Definizione di Prodotto deve contenere al suo interno:
+\begin{itemize}
+	\item diagrammi delle classi per ogni suo componente;
+	\item specifiche e descrizioni per ogni classe specificata.
+\end{itemize}
+}%organizzazione dei contenuti
+
+\subsection{Strumenti} {
+Per l'esecuzione di questa attività si utilizzano i seguenti strumenti:
+\begin{itemize}
+	\item []{\textbf{\LaTeX :} per la stesura del documento Specifica Tecnica (dettaglio cap. \ref{TextLaTeX});}
+	\item []{\textbf{Visual Paradigm:} per la stesura dei diagrammi UML\g~ (dettaglio cap. \ref{diaUML});}
+	\item []{\textbf{git:} per il versionamento della documentazione (dettaglio cap. \ref{git});}
+\end{itemize}
+
+}%Strumenti
+
+}%progettazione dettaglio

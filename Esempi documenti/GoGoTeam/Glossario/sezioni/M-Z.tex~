@@ -1,0 +1,297 @@
+\hfill\Huge{\textbf{M}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{Macchina virtuale}:		&	termine utilizzato da Sun Microsystem per descrivere un software$_{|g|}$ che agisce come interfaccia tra il codice Java$_{|g|}$ e il processore che esegue le istruzioni. Una volta installata una JVM$_{|g|}$ (Java Virtual Machine), un qualsiasi programma Java$_{|g|}$ 
+							può essere eseguito sulla piattaforma.\\
+	    \\
+	    \textbf{Markup}:			&	linguaggio che combina il testo con informazioni sul testo stesso, che in genere riguardano la struttura nella quale il testo va inserito. L’esempio più famoso di un linguaggio di markup è HTML$_{|g|}$. L’output di un linguaggio 
+							di markup non è il documento stesso, ma un file che poi deve essere interpretato da un’applicazione (un browser$_{|g|}$ nel caso dell’HTML$_{|g|}$).\\
+	    \\
+	    \textbf{Metodi statici}: 		&	un metodo indica un sottoprogramma associato in modo esclusivo a una classe e che rappresenta un'operazione che può essere eseguita sugli oggetti istanze di quella classe. In particolare, i metodi statici rappresentano operazioni che non sono da riferirsi ai 
+							singoli oggetti ma alla classe nel suo insieme.\\
+	    \\
+	    \textbf{Milestone}:			&	letteralmente pietra miliare. Nell’ambito del project management viene tipicamente utilizzato nella pianificazione e gestione di progetti complessi per indicare obiettivi importanti stabiliti in fase di definizione del progetto stesso. Nei casi di progetti 
+							regolati da standard di qualità, il raggiungimento delle milestone viene decretato tramite documenti ufficiali redatti dai vari attori del progetto e monitorato tramite metriche attraverso le quali risulta possibile fornire una stima della bontà del progetto 
+							e del suo stato di avanzamento.\\
+	    \\
+	    \textbf{Modello}\newline
+	    \textbf{relazionale}:		&	modello logico di rappresentazione o strutturazione dei dati di un database$_{|g|}$ implementato su sistemi di gestione di basi di dati (DBMS$_{|g|}$), detti perciò sistemi di gestione di basi di dati relazionali (RDBMS$_{|g|}$).\\
+	    \\
+	    \textbf{Modulo}:			&	singola unità funzionale e collaudabile di un programma, oggetto del test denominato “unit testing”.\\
+	    \\
+	    \textbf{Motore di} \newline 
+	    \textbf{ rendering}:		&	(in inglese \textit{web browser engine}) componente software$_{|g|}$ che interpreta delle informazioni in ingresso codificate secondo uno specifico formato e le elabora creandone una rappresentazione grafica.\\
+	\end{longtable}
+\newpage
+
+\hfill\Huge{\textbf{N}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{NAT}:	&	acronimo che sta per Network Address Translation. \'E una funzione, spesso integrata nei router, che mappa uno spazio di indirizzi IP$_{|g|}$ in un altro spazio di indirizzi. Di solito, i NAT sono utilizzati per permettere ad un numero di dispositivi di condividere indirizzi IP$_{|g|}$, come accade in un router domestico. 
+					Molti protocolli Internet, come TCP$_{|g|}$, non hanno difficoltà ad attraversare i NAT. I protocolli \underline{peer-to-peer}$_{|g|}$, però, hanno più problemi: nel caso di WebRTC$_{|g|}$ viene usato il protocollo ICE$_{|g|}$.\\
+	\end{longtable}
+\newpage
+
+\hfill\Huge{\textbf{O}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{ODBC}:  		&	API$_{|g|}$ standard per la connessione dal client$_{|g|}$ al DBMS$_{|g|}$. Questa API$_{|g|}$ è indipendente dai linguaggi di programmazione, dai sistemi di database$_{|g|}$ e dal \underline{sistema operativo}$_{|g|}$.\\
+	    \\
+	    \textbf{Open source}:	&	software$_{|g|}$ i cui autori ne permettono l’uso e le modifiche da parte di altri programmatori indipendenti. La ridistribuzione deve essere libera e gratuita e includere il codice sorgente.\\
+	    \\
+	    \textbf{OpenGL (ES)}:	&	specifica che definisce un’API$_{|g|}$ multipiattaforma per più linguaggi utilizzata per scrivere applicazioni che producono computer grafica 2D e 3D. \`E ampiamente usato nell’industria dei videogiochi, 
+						per la realtà virtuale e per applicazioni di CAD (Computer Aided Design) e CAE (Computer Aided Engineering).\newline
+						OpenGL ES è un sottoinsieme delle librerie OpenGL pensato per dispositivi integrati (p. es. cellulari e palmari).\\
+	    \\
+	    \textbf{Opera}:		&	browser$_{|g|}$ web$_{|g|}$ multipiattaforma sviluppato da Opera Software.\\
+	    \\
+	    \textbf{OS}:		&	Operating System, vedi \underline{sistema operativo}$_{|g|}$.\\
+	    \\
+	    \textbf{Overriding}: 	&	nella programmazione orientata agli oggetti, l'overriding è la ridefinizione, in una sottoclasse, di un metodo ereditato da una superclasse. Nella maggior parte dei linguaggi di programmazione a oggetti (come ad esempio Java$_{|g|}$), 
+						si richiede che i due metodi (quello originale e quello che lo ridefinisce) abbiano la stessa firma e che il metodo della superclasse non sia privato o final.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{P}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{Package}: 		&	meccanismo per organizzare classi Java$_{|g|}$ all'interno di sottogruppi ordinati. Spesso si usano i package per riunire classi logicamente correlate o che forniscono servizi simili.\\
+	    \\
+	    \textbf{Pattern}: 		&	sono algoritmi specifici, a volte ricorsivi, che seguono uno schema prestabilito, come ad esempio le funzioni di ricerca in una stringa.\\
+	    \\
+	    \textbf{Peer}:		&	computer che stanno comunicando nella rete, svolgono alternativamente il ruolo di client$_{|g|}$ o server$_{|g|}$.\\
+	    \\
+	    \textbf{Peer-to-peer}:	&	abbreviato anche in P2P, significa pari-a-pari. \`E un modello di comunicazione nel quale ciascuna delle parti ha le stesse funzionalità ed ognuna delle due può iniziare la sessione di comunicazione, fungendo sia da server$_{|g|}$ che da client$_{|g|}$. Nel linguaggio corrente, peer-to-peer indica applicazioni con le quali gli utenti possono 
+						scambiare dati direttamente con altri computer.\\
+	    \\
+	    \textbf{PDF}:		&	acronimo che sta per Portable Document Format. Formato per file grafici elaborato dalla Adobe Systems. Viene utilizzato per rendere disponibili documenti per cui è importante che venga preservato l’aspetto grafico. Un esempio di programma freeware$_{|g|}$ per la visualizzazione di PDF è Adobe Reader.\\
+	    \\
+	    \textbf{Ping}:		&	utility$_{|g|}$ che viene utilizzata per verificare se un indirizzo IP$_{|g|}$ è raggiungibile. Il funzionamento è il seguente: un pacchetto di dati viene inviato all’indirizzo in questione e si attende una risposta. 
+						Se questa arriva, viene valutato il tempo impiegato per fare il tragitto di andata e ritorno. In generale vengono spediti più pacchetti in sequenza, in questo modo si può anche vedere se alcuni di questi pacchetti vengono persi.\\
+	    \\
+	    \textbf{Plugin}:		&	software$_{|g|}$ aggiuntivo non autonomo che potenzia e amplia il funzionamento del software$_{|g|}$ principale.\\
+	    \\
+	    \textbf{PNG}:		&	acronimo che sta per Portable Network Graphics. \`E un formato lossless (senza perdita di informazione) per la memorizzazione di immagini digitali. La sua principale differenza rispetto a JPG$_{|g|}$ sta 
+						nel supporto al canale alfa, cioè la trasparenza delle immagini, che nel JPG$_{|g|}$ viene invece visualizzata semplicemente con il colore bianco.\\
+	    \\
+	    \textbf{Proxy}: 		&	programma che si interpone tra un client$_{|g|}$ ed un server$_{|g|}$ facendo da tramite o interfaccia tra i due host$_{|g|}$ ovvero inoltrando le richieste e le risposte dall’uno all’altro.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{Q}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{Query}: 		&	interrogazione di un database$_{|g|}$ per compiere determinate operazioni sui dati (selezione, inserimento, cancellazione dati, etc.).\\
+	    \\
+	    \textbf{Query language}: 	&	linguaggio usato per creare query$_{|g|}$ sui database$_{|g|}$ da parte degli utenti. Serve per rendere possibile l'estrazione di informazioni dal database$_{|g|}$ interrogando la base dei dati interfacciandosi dunque con l'utente e le sue richieste di servizio.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{R}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{RDMS}:		&	indica un database management system (sistema software$_{|g|}$ progettato per consentire la creazione e la manipolazione e l'interrogazione efficiente  di database$_{|g|}$) basato sul \underline{modello relazionale}$_{|g|}$.\\
+	    \\
+	    \textbf{Rendering}:		&	generazione di un’immagine a partire da una descrizione matematica di una scena tridimensionale interpretata da algoritmi. 
+						Nell’ambito del processo di generazione grafica è l’ultimo stadio e fornisce l’aspetto finale al modello e all’animazione.\\
+	    \\
+	    \textbf{Repository}:	&	luogo di stoccaggio dati centralizzato in cui risiedono i componenti software$_{|g|}$ in grado di fornire 
+						funzionalità di versionamento per tener traccia della “storia” dei prodotti.\\
+	    \\
+	    \textbf{REST}: 		&	(Representational State Transfer) stile di architettura software$_{|g|}$ per sistemi distribuiti, come il World Wide Web. Emerge prevalentemente come modello di progettazione Web service$_{|g|}$.\\
+	    \\
+	    \textbf{RTP}: 		&	protocollo del livello applicazioni utilizzato per servizi di comunicazione in tempo reale su Internet.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{S}}\\
+\normalsize
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{Safari}:			&	browser$_{|g|}$ web$_{|g|}$ sviluppato da Apple Inc. basato su framework$_{|g|}$ WebKit$_{|g|}$.\\
+	    \\
+	    \textbf{Scope}: 			&	l'esistenza e la possibilità di richiamare un identificatore, in particolar modo una variabile, in un determinato punto del programma.\\
+	    \\
+	    \textbf{Script}:			&	programma o sequenza di istruzioni che viene interpretata o portata a termine da un altro programma (invece che dal processore come nei linguaggi compilati). \`E particolarmente adatto al web$_{|g|}$ 
+							grazie alla sua velocità di implementazione e di esecuzione. \\
+	    \\
+	    \textbf{Server}:			&	componente che fornisce, a livello logico o fisico, un qualunque tipo di servizio ad altre componenti denominate client$_{|g|}$ attraverso una rete di computer o direttamente in locale. Rappresenta 
+							dunque il nodo opposto al client$_{|g|}$ in una rete.\\
+	    \\
+	    \textbf{Servlet}:			&	piccoli programmi scritti in linguaggio Java$_{|g|}$ che operano sul server$_{|g|}$ invece che sul client$_{|g|}$ come le applet$_{|g|}$.\\
+	    \\
+	    \textbf{Sistema operativo}:		&	software$_{|g|}$ che, tramite l’interfaccia utente, consente l’invio di comandi al computer, controlla e gestisce tutto il traffico di dati all’interno del 
+							computer e fra questo e tutte le periferiche, operando anche come intermediario fra hardware$_{|g|}$ e software$_{|g|}$ di sistema ed i diversi programmi in esecuzione.\\
+	    \\
+	    \textbf{Sniffer}: 			&	intercettano i singoli pacchetti, decodificando le varie intestazioni di livello datalink$_{|g|}$, rete, trasporto, applicativo. Inoltre possono offrire strumenti di analisi che analizzano ad esempio tutti i pacchetti 
+							di una connessione TCP$_{|g|}$ per valutare il comportamento del protocollo di rete o per ricostruire lo scambio di dati tra le applicazioni.\\
+	    \\
+	    \textbf{Sniffing}: 			&	l'attività di intercettazione passiva dei dati che transitano in una rete telematica. I prodotti software$_{|g|}$ utilizzati per eseguire queste attività vengono detti sniffer$_{|g|}$ ed oltre ad intercettare e memorizzare 
+							il traffico offrono funzionalità di analisi del traffico stesso.\\
+	    \\
+	    \textbf{Socket}:			&	nell'ambito delle reti, il socket è la combinazione ottenuta dall'indirizzo IP$_{|g|}$ più la porta TCP$_{|g|}$ (o UDP$_{|g|}$) necessarie a rendere accessibile un applicativo in esecuzione su un host$_{|g|}$. 
+							Più precisamente, è un varco in ingresso ed in uscita con cui un applicativo che gira su un pc comunica, tramite il protocollo \underline{TCP/IP}$_{|g|}$, con un altro applicativo in esecuzione su un altro pc.\\
+	    \\
+	    \textbf{Software}:			&	termine generico che definisce programmi e procedure utilizzati per far eseguire al computer un determinato compito. Viene generalmente suddiviso in software di base, cioè quello indispensabile 
+							al funzionamento del sistema, identificato con il \underline{sistema operativo}$_{|g|}$, e software applicativo, che offre funzionalità aggiuntive al sistema.\\
+	    \\
+	    \textbf{Software} \newline
+	    \textbf{Balancer}:			&	programma che utilizza la tecnica \underline{load balancing}$_{|g|}$.\\
+	    \\
+	    \textbf{Software} \newline
+	    \textbf{Engineering}:		&	disciplina che si occupa dei processi produttivi e delle metodologie di sviluppo finalizzate alla realizzazione di sistemi software$_{|g|}$.\\
+	    \\
+	    \textbf{SQL}: 			&	linguaggio standardizzato per database$_{|g|}$ basati sul modello relazionale$_{|g|}$ (RDBMS$_{|g|}$).\\
+	    \\
+	    \textbf{Stack}:			&	tipo di dato astratto in cui la modalità d’accesso avviene secondo lo schema LIFO (Last In First Out), cioè l’ultimo dato che entra è il primo che viene tolto e letto. In programmazione, tiene 
+							traccia di tutte le chiamate di metodo effettuate e delle variabili locali all’interno del programma.\\
+	    \\
+	    \textbf{Stream}:			&	(tradotto flusso) si riferisce a una rappresentazione astratta di un flusso di input/output nell'API$_{|g|}$ di un linguaggio di programmazione\\
+	    \\
+	    \textbf{Stub}:			&	nell’ambito dello sviluppo e del testing software$_{|g|}$, è una porzione di codice utilizzata per rappresentare un metodo ancora da definire, simulandone il solo comportamento di base.
+							In particolare, questa componente viene utilizzata nel test d'integrazione top-down per simulare un'unità chiamata.\\
+	    \\
+	    \textbf{STUN}: 			&	acronimo che sta per Session Traversal Utilities for NAT$_{|g|}$. \'E un protocollo usato per agevolare l’attraversamento del NAT$_{|g|}$. Nelle WebRTC$_{|g|}$, un client$_{|g|}$ STUN 
+							viene incluso nello \underline{user agent}$_{|g|}$ del browser$_{|g|}$, 
+							e i \underline{web server}$_{|g|}$ eseguono uno STUN server$_{|g|}$.\\
+	    \\
+	    \textbf{Switch}:			&	Questo blocco seleziona semplicemente un'istruzione tra le proposte in base ad una variabile. L'istruzione break$_{|g|}$ 
+							interrompe l'elaborazione del blocco switch, in modo da uscire subito dal blocco se una condizione è vera. L'istruzione 
+							break$_{|g|}$ è opzionale, ma se non viene usata, vengono eseguite le istruzioni dei casi seguenti.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{T}}\\
+\normalsize
+\label{tabVers}
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{TCP}:		&	acronimo che sta per Transmission Control Protocol. \`E un protocollo orientato alla connessione che trasmette i dati in modalità \underline{full-duplex}$_{|g|}$ ed è 
+						responsabile della suddivisione dei dati in pacchetti, del loro invio e del loro riassemblaggio.\\
+	    \\
+	    \textbf{TCP/IP}:		&	acronimo che sta per Transmission Control Protocol/Internet Protocol. \`E l’insieme delle regole che rendono possibile il dialogo tra più computer e la connessione ad Internet.\\
+	    \\
+	    \textbf{Test case}:		&	una tripla <ingresso, uscita, ambiente> che esamina tutti gli aspetti di un sistema e fornisce una descrizione dettagliata dei passi da eseguire, dei risultati attesi e dell’ambiente di esecuzione.\\
+	    \\
+	    \textbf{Test suite}:	&	insieme di \underline{test case}$_{|g|}$ che si intende utilizzare per testare un software$_{|g|}$ per provare che ha un comportamento determinato. Spesso include gli obiettivi da raggiungere e 
+						la configurazione che il sistema deve avere per l’esecuzione del test.\\
+	    \\
+	    \textbf{Throughput rate}:	&	banda (quantità di dati trasmessi in un’unità di tempo) effettiva misurata in un certo periodo, tenuto conto del flusso di dati e del percorso di instradamento. Esso è necessariamente inferiore 
+						rispetto alla banda massima disponibile. \\
+	    \\
+	    \textbf{Ticket}:		&	strumento utilizzato per segnalare un errore o un compito da portare a termine, contenente le informazioni rilevanti relative. \`E un messaggio condiviso in una piattaforma predisposta per gestirlo.\\
+	    \\
+	    \textbf{Tool}:		&	piccola applicazione che svolge un determinato compito.\\
+	    \\
+	    \textbf{Top-down}:		&	tipo di strategia di elaborazione dell'informazione che consiste nella scomposizione del sistema per aumentarne la conoscenza andando sempre più nel dettaglio nei suoi sotto-sistemi. 
+						Ogni sotto-sistema è poi definito con un dettaglio maggiore e spesso viene suddiviso ulteriormente, fino ad arrivare ad elementi semplici.\\
+	    \\
+	    \textbf{TURN}: 		&	acronimo che sta per Traversal Using Realys around NAT. In alcuni casi, ad esempio a causa di NAT$_{|g|}$ o firewall$_{|g|}$ molto severi, non è possibile stabilire la connessione tra due peer$_{|g|}$ usando ICE$_{|g|}$. In questi casi viene usato il 
+						protocollo TURN, che fornisce indirizzi alternativi e mette i due peer in comunicazione con un server$_{|g|}$, detto server$_{|g|}$ TURN. Questi indirizzi possono essere configurati nel browser$_{|g|}$ per abilitare l’attraversamento del firewall$_{|g|}$.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{U}}\\
+\normalsize
+\label{tabVers}
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{UDP}:	       &	acronimo che sta per User Datagram Protocol. \`E un protocollo che fornisce un insieme di servizi addizionali quando vengono scambiati messaggi 
+						all’interno di una rete che usa il protocollo IP$_{|g|}$. \`E utilizzato in alternativa al TCP$_{|g|}$, ma a differenza di questo non si occupa del riassemblaggio dei pacchetti, 
+						che devono quindi arrivare nell’ordine corretto.\\
+	    \\
+	    \textbf{UML}: 		&	(Unified Modeling Language) “linguaggio di modellazione unificato”, e` una famiglia di notazioni grafiche che si basano su un singolo meta-modello e servono a supportare la descrizione e il progetto di sistemi software$_{|g|}$, in particolare 
+						quelli costruiti seguendo il paradigma orientato agli oggetti.\\
+	    \\
+	    \textbf{URL}: 		&	(Uniform Resource Locator) sequenza di caratteri che identifica univocamente l'indirizzo di una risorsa in Internet, tipicamente presente su un host$_{|g|}$ server$_{|g|}$, come ad esempio un documento, un'immagine, un video, rendendola accessibile ad 
+						un client$_{|g|}$ che ne fa richiesta attraverso l'utilizzo di un web$_{|g|}$ browser$_{|g|}$.\\
+	    \\
+	    \textbf{Use case}:		&	funzione o servizio offerto dal sistema ad uno o più attori, cioè entità (sia software$_{|g|}$ che umane) che interagiscono col sistema.\\
+	    \\
+	    \textbf{User agent}:	& 	applicazione installata sul computer dell'utente che si connette ad un processo server$_{|g|}$.\\
+	    \\
+	    \textbf{Utility}:		&	software$_{|g|}$ molto semplice che esegue uno o pochi compiti specifici.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{V}}\\
+\normalsize
+\label{tabVers}
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{Versioning}:	&	controllo di versione di tutto ciò che viene prodotto durante lo svolgimento del progetto. Permette di automatizzare la creazione di differenti versioni di un insieme di file ed il ritorno ad uno stato precedente 
+						a quello corrente. Il sistema di versionamento permette inoltre di bloccare l’accesso ai file su cui sta lavorando uno sviluppatore, ramificare un repository$_{|g|}$ in modo che ogni sviluppatore possa lavorare 
+						sulla propria versione, proporre soluzioni per l’unione di versioni differenti dello stesso file.\\
+	\end{longtable}
+\newpage
+
+
+\hfill\Huge{\textbf{W}}\\
+\normalsize
+\label{tabVers}
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{W3C}:		&	acronimo che sta per World Wide Web Consortium. \`E la principale organizzazione per la standardizzazione per il World Wide Web, che stabilisce standard inerenti sia i linguaggi di markup$_{|g|}$ che i protocolli di comunicazione.\\
+	    \\
+	    \textbf{Warning}:		&	avvertimento prodotto dal compilatore per segnalare righe di codice che potrebbero essere fonti d’errore.\\
+	    \\
+	    \textbf{Web}:		&	spesso è un’abbreviazione per World Wide Web (ragnatela mondiale). \`E un servizio Internet che permette di navigare ed usufruire dell’ampia gamma di contenuti presenti in rete.\\
+	    \\
+	    \textbf{Web client}:	&	vedi computer client$_{|g|}$.\\
+	    \\
+	    \textbf{Web server}:	&	tipo di server$_{|g|}$ che si occupa di fornire, tramite software$_{|g|}$ dedicato e su richiesta dell’utente (client$_{|g|}$), file di qualsiasi tipo, in particolare pagine web$_{|g|}$.\\
+	    \\
+	    \textbf{Web service}: 	&	sistema software$_{|g|}$ progettato per supportare l’interoperabilità tra diversi elaboratori su di una medesima rete.\\
+	    \\
+	    \textbf{WebKit}:		&	è il motore di Safari$_{|g|}$ e di altre applicazioni come Google Chrome$_{|g|}$. Esso permette a sviluppatori terzi di includere con facilità nelle loro applicazioni molte delle funzioni proprie di Safari$_{|g|}$. 
+						\`E un progetto \underline{open source}$_{|g|}$ che nasce dalla combinazione di componenti del sistema grafico KDE (un ambiente desktop per Unix) e di tecnologie Apple.\\
+	    \\
+	    \textbf{WebRTC}:		&	tecnologia \underline{open source}$_{|g|}$ sviluppata da Google, implementata in JavaScript$_{|g|}$ e HTML5$_{|g|}$, che permette ai browser$_{|g|}$ di effettuare la videochat in tempo reale senza l’installazione di plugin$_{|g|}$ aggiuntivi.\\
+	    \\
+	    \textbf{WebSocket}:		&	interfaccia JavaScript$_{|g|}$ che definisce una connessione \underline{full-duplex}$_{|g|}$ su un singolo socket$_{|g|}$ attraverso la quale possono essere inviati dei messaggi tra client$_{|g|}$ e server$_{|g|}$.
+						WebSocket può essere implementato sia lato client$_{|g|}$ che lato server$_{|g|}$, ma può essere utilizzato anche come applicazione \underline{client-server}$_{|g|}$.\\
+	    \\
+	    \textbf{Widget}: 		&	componente grafico di una interfaccia utente di un programma, che ha lo scopo di facilitare all'utente l'interazione con il programma stesso.\\
+	    \\
+	    \textbf{Workaround}:	&	metodo alternativo per raggiungere una soluzione quando il metodo tradizionale non funziona. In informatica spesso viene utilizzato per superare problemi di programmazione, di hardware$_{|g|}$ o di comunicazione.\\
+	\end{longtable}
+\newpage
+
+\hfill\Huge{\textbf{X}}\\
+\normalsize
+\label{tabVers}
+	\begin{longtable}{p{0.25\textwidth} p{0.75\textwidth}} 
+	    \toprule
+	    \\
+	    \textbf{XHTML}:	&	acronimo che sta per eXtensible Hypertext Markup Language. Secondo il W3C$_{|g|}$, è “una riformulazione dell'HTML$_{|g|}$ 4.0 in qualità di applicazione dell'XML$_{|g|}$”. 
+					Un file XHTML è quindi un pagina HTML$_{|g|}$ scritta in conformità con lo standard XML$_{|g|}$.\\
+	    \\
+	    \textbf{XML}:	&	acronimo che sta per eXtensible Markup Language, ovvero Linguaggio di Marcatura Estensibile. \`E un linguaggio di markup$_{|g|}$ nel quale i tag descrivono quanto racchiuso in base al tipo di informazione contenuta. 
+					XML è quindi un metalinguaggio (linguaggio che può definirne altri) adatto a creare nuovi linguaggi, usati per scrivere documenti strutturati. Secondo il W3C$_{|g|}$, XML è un linguaggio per trasportare dati, non per descriverli. 
+					Per descrivere questi dati ci si appoggia su altri linguaggi appositi, ad esempio XSLT (eXtensible Stylesheet Language Transformations) per la rappresentazione in HTML$_{|g|}$ dei documenti XML.
+	\end{longtable}
+\newpage
