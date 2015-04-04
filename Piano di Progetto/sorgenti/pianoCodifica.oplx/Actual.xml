@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="mW1-NFrAj9m">
+  <start-date>2015-03-27T23:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="36000" end-time="64800"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Resource 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t50"/>
+  </task>
+  <task id="t1">
+    <title>Progettazione in dettaglio  e codifica</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t10"/>
+    <child-task idref="t9"/>
+    <child-task idref="t16"/>
+    <child-task idref="t26"/>
+    <child-task idref="t30"/>
+    <child-task idref="t41"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t2">
+    <title>consuntivo</title>
+    <effort>7200</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <recalculate>effort</recalculate>
+    <prerequisite-task idref="t1"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t9">
+    <title>Piano di progetto</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t10">
+    <title>Norme di progetto</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t13"/>
+    <child-task idref="t14"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>Incremento</title>
+    <effort>36000</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t14">
+    <title>Verifica</title>
+    <effort>3600</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t13"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t16">
+    <title>Specifica tecnica</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t34"/>
+    <child-task idref="t35"/>
+    <child-task idref="t25"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>Rivalutazione</title>
+    <effort>7200</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t18">
+    <title>Verifica</title>
+    <effort>3600</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t17"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t25">
+    <title>Verifica</title>
+    <effort>14400</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t35"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t26">
+    <title>Definizione prodotto</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t28"/>
+    <child-task idref="t52"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t28">
+    <title>Specifica componenti</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <child-task idref="t37"/>
+    <child-task idref="t29"/>
+    <child-task idref="t49"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t40"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t29">
+    <title>Tracciamento base</title>
+    <effort>36000</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t37"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t30">
+    <title>Codifica</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <child-task idref="t74"/>
+    <child-task idref="t63"/>
+    <child-task idref="t70"/>
+    <child-task idref="t75"/>
+    <child-task idref="t36"/>
+    <child-task idref="t71"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t34">
+    <title>Incremento Design Patterns</title>
+    <effort>28800</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t35">
+    <title>Incremento Componenti</title>
+    <effort>57600</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t34"/>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t36">
+    <title>Incremento codifica</title>
+    <effort>111600</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t75"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t37">
+    <title>Base</title>
+    <effort>144000</effort>
+    <start-constraint-date>2015-05-04T08:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t40">
+    <title>Verifica incremento</title>
+    <effort>14400</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t47"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t41">
+    <title>Piano di qualifica</title>
+    <type>group</type>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <child-task idref="t42"/>
+    <child-task idref="t43"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t42">
+    <title>Resoconto attività di verifica</title>
+    <effort>28800</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t71"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t43">
+    <title>Verifica</title>
+    <effort>7200</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <recalculate>effort</recalculate>
+    <prerequisite-task idref="t42"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t46">
+    <title>Incremento</title>
+    <effort>72000</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t25"/>
+    <prerequisite-task idref="t49"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t47">
+    <title>Tracciamento incremento</title>
+    <effort>21600</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t46"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t49">
+    <title>Verifica Base</title>
+    <effort>28800</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t29"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t50">
+    <title>Fine codifica</title>
+    <type>milestone</type>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t2"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t52">
+    <title>Verifica</title>
+    <effort>14400</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t28"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t63">
+    <title>Base codifica</title>
+    <effort>334800</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t74"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t70">
+    <title>Verifica codifica Base</title>
+    <effort>86400</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t63"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t71">
+    <title>Verifica codifica Incremento</title>
+    <effort>36000</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t36"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t74">
+    <title>Preparazione test Unità</title>
+    <effort>108000</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t49"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t75">
+    <title>Preparazione test unità incremento</title>
+    <effort>54000</effort>
+    <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t40"/>
+    <prerequisite-task idref="t70"/>
+    <start-no-earlier-than>2015-05-03T15:45:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="true" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

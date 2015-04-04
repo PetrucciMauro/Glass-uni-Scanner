@@ -1,0 +1,50 @@
+;;;;;;;;
+;Macro-Attività;Attività;Ruolo;Ore;;;;
+;Norme di progetto;Incremento;"Responsabile2
+Amministratore";"6
+10";;;;
+;Norme di progetto;Verifica;Verificatore2;2;;;;
+;Analisi dei Requisiti;Incremento;Analista;6;;;;
+;Analisi dei Requisiti;Verifica;Verificatore1;1;;;;
+;Specifica Tecnica;Strumenti e tecnologie;Progettista5;6;;;;
+;Specifica Tecnica;Notazione;Progettista2;2;;;;
+;Specifica Tecnica;Architettura;"Progettista2
+Progettista3
+Progettista4";"6
+6
+8";;;;
+;Specifica Tecnica;Design Patterns;"Progettista1
+Progettista2
+Progettista3";"8
+8
+8";;;;
+;Specifica Tecnica;Componenti;"Progettista2
+Progettista3
+Progettista4";"8
+8
+8";;;;
+;Specifica Tecnica;Tracciamento;"Verificatore1
+Verificatore4";"5
+5";;;;
+;Specifica Tecnica;Verifica;"Verificatore3
+Responsabile2";"5
+1";;;;
+;Piano di Qualifica;Incremento;Responsabile1;4;;;;
+;Piano di Qualifica;Pianificazione Test;"Progettista5
+Verificatore1
+Verificatore2
+Responsabile1
+Amministratore";"6
+5
+6
+4
+6";;;;
+;Piano di Qualifica;Esito verifiche;Verificatore3;4;;;;
+;Piano di Qualifica;Verifica;"Verificatore3
+Responsabile1";"5
+1";;;;
+;Glossario;Incremento;/;6;;;;
+;Glossario;Verifica;Verificatore4;2;;;;
+;Piano di Progetto;Consuntivo;Responsabile2;2;;;;
+;;;;;;;;
+;;;;;;;;

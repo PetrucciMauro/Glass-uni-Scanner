@@ -1,0 +1,72 @@
+Macro-Attività;Attività;Ruolo;Ore;;;;;
+Norme di Progetto;Comunicazioni;Responsabile1;1;;;;;
+Norme di Progetto;Requisiti;Responsabile2;4;;;;;
+Norme di Progetto;Progettazione;Responsabile3;3;;;;;
+Norme di Progetto;Codifica;Responsabile4;3;;;;;
+Norme di Progetto;Documentazione;Responsabile3;5;;;;;
+Norme di Progetto;Strumenti;"Responsabile5
+Amministratore1
+Amministratore2";"4
+12
+2";;;;;
+Norme di Progetto;Norme ticketing;"Responsabile1
+Amministratore3";"1
+1";;;;;
+Norme di Progetto;Repository;"Responsabile4
+Amministratore1";"1
+1";;;;;
+Norme di Progetto;Verifica;"Verificatore3
+Verificatore2
+Responsabile3";"2
+2
+1";;;;;
+Analisi dei Requisiti;Descrizione;Analista1;6;;;;;
+Analisi dei Requisiti;Casi d’uso;"Analista1
+Analista2
+Analista3
+Analista4
+Analista5
+Analista6
+
+
+";"9
+8
+9
+8
+8
+8";;;;;
+Analisi dei Requisiti;Specifica;"Analista1
+Analista3
+Analista4";"7
+7
+6";;;;;
+Analisi dei Requisiti;Verifica;"Verificatore1
+Verificatore2
+Responsabile3";"2
+3
+1";;;;;
+Piano di Progetto;Calendario;Responsabile2;2;;;;;
+Piano di Progetto;Organigramma;Responsabile6;1;;;;;
+Piano di Progetto;Ciclo di vita;Responsabile2;2;;;;;
+Piano di Progetto;Analisi rischi;Responsabile2;2;;;;;
+Piano di Progetto;Individuazione attività;Responsabile2;6;;;;;
+Piano di Progetto;Assegnamento risorse;"Responsabile5
+Responsabile2";"4
+2";;;;;
+Piano di Progetto;Prospetto economico;Responsabile5;2;;;;;
+Piano di Progetto;Verifica;"Verificatore5
+Responsabile1";"3
+1";;;;;
+Piano di qualifica;Visione generale;"Verificatore3
+Responsabile4
+Responsabile6";"5
+3
+3";;;;;
+Piano di qualifica;Gestione amministrativa della revisione;Responsabile5;2;;;;;
+Piano di qualifica;Resoconto verifiche;Verificatore2;2;;;;;
+Piano di qualifica;Pianificazione validazione requisiti;Verificatore5;10;;;;;
+Piano di qualifica;Verifica;"Verificatore4
+Responsabile6";"2
+1";;;;;
+Glossario;Stesura;/;10;;;;;
+Glossario;Verifica;Verificatore;1;;;;;

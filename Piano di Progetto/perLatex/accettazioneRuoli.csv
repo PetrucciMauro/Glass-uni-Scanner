@@ -1,0 +1,44 @@
+;;;;;;;;
+;;;;;;;;
+;Macro-Attività;Attività;Ruoli;Ore;;;;
+;Norme;Incremento ;Responsabile1;2;;;;
+;Norme;Verifica;Verificatore1;1;;;;
+;Glossario;Incremento;/;4;;;;
+;Glossario;Verifica;Verificatore2;1;;;;
+;Piano di Qualifica;Incremento Verifiche;Verificatore2;4;;;;
+;Piano di Qualifica;Validazione Interna;"Programmatore1
+Verificatore1
+Progettista1
+Responsabile2
+Amministratore";"9
+4
+8
+6
+4";;;;
+;Piano di Qualifica;Verifica;Verificatore3;2;;;;
+;Definizione Prodotto;Incremento;Progettista2;12;;;;
+;Definizione Prodotto;Verifica;"Verificatore3
+Verificatore6";"2
+1";;;;
+;Specifica Tecnica;Incremento;Progettista3;8;;;;
+;Specifica Tecnica;Verifica;"Verificatore4
+Verificatore5
+";"5
+1";;;;
+;Manualistica;Incremento;"Progettista4
+Progettista5
+Amministratore
+Responsabile1";"6
+4
+3
+2";;;;
+;Manualistica;Verifica;"Verificatore5
+Verificatore4
+";"2
+2";;;;
+;Piano di Progetto;Consuntivo;Responsabile1;2;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
