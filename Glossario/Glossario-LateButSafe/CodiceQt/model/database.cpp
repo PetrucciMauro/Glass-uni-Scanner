@@ -7,6 +7,34 @@
 #include <QTextStream>
 DataBase::DataBase(){	}
 
+const QString DataBase::norme[]={"ambientelavoro.tex",
+									 "comunicazioni.tex",
+									 "documenti.tex",
+									 "glossario.tex",
+									 "ingegneriaRequisiti.tex",
+									 "introduzione.tex",
+									 "riunioni.tex"};
+
+const QString DataBase::qualifica[]={"gestioneAmministrativa.tex",
+												 "introduzione.tex",
+												 "obiettivi.tex",
+												 "pianoDiQualifica.tex",
+												 "strategiaVerifica.tex",
+												 "stumentiTecnicheMetodi.tex"};
+
+const QString DataBase::analisi[]={"UC1.tex","UC1.1.tex","UC1.2.tex",
+											  "UC1.3.tex","UC1.4.tex","UC1.5.tex",
+											  "UC1.6.tex","UC1.7.tex","UC1.8.tex",
+											  "UC1.9.tex","UC1.10.tex","UC1.11.tex",
+											  "UC1.12.tex"};
+
+const QString DataBase::filesLatex[]={"NormeDiProgetto_v.1.0.tex",
+												  "AnalisiDeiRequisiti_v.1.0.tex",
+												  "PianoDiProgetto_v.1.0.tex",
+												  "PianoDiQualifica_v.1.0.tex",
+												  "StudioDiFattibilita_v.1.0.tex",
+												  "NormeDiAmministrazione_v.1.0.tex"};
+
 void DataBase::load(){
 		QFile file("../glossario.xml");
 
@@ -138,7 +166,7 @@ void DataBase::texprint(){
 					primo=false;
 			}
 		out<<"\\end{longtabu} \n }";
-
+		file.close();
 	}
 
 void DataBase::inserisci(const QString& w, const QString& d){
@@ -149,5 +177,51 @@ void DataBase::inserisci(const QString& w, const QString& d){
 		else{
 				db[temp]=new Lemma(temp,d);
 			}
-
 	}
+
+void DataBase::substituteFile(const QString& nomefile,const QString& old){
+		QFile file(nomefile);
+		if(!file.open(QIODevice::ReadWrite))
+			{return;	throw Ecc_FileNotFound;}
+
+		QString nuova=old+"\\ped{(g)}";
+		QString text(file.readAll());
+		text.replace(old,nuova);
+
+		file.seek(0); // go to the beginning of the file
+		file.write(text.toUtf8()); // write the new text back to the file
+
+		file.close();
+	}
+/*
+void DataBase::substituteAll(const QString& old){
+		//NORME DI PROGETTO
+		for(int i=0;i<7;++i){
+				substituteFile(norme[i],old);
+			}
+		//FILE .TEX
+		for(int i=0;i<6;++i){
+				substituteFile(filesLatex[i],old);
+			}
+		//ANALISI DEI REQUISITI
+		for(int i=0;i<13;++i){
+				substituteFile(analisi[i],old);
+			}
+		//PIANO DI QUALIFICA
+		for(int i=0;i<6;++i){
+				substituteFile(qualifica[i],old);
+			}
+		//NORME DI AMMINISTRAZIONE
+		/*for(int i=0;i<;++i){
+				substituteFile(amm[i],old);
+			}
+		//PIANO DI PROGETTO
+		for(int i=0;i<;++i){
+				substituteFile(progetto[i],old);
+			}
+		//STUDIO DI FATTIBILITA'
+		for(int i=0;i<;++i){
+				substituteFile(fattibilita[i],old);
+			}
+	}
+*/
