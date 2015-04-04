@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="oDfB9eSOcSZ">
+  <start-date>2015-03-27T23:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r6"/>
+  </resource>
+  <resource id="r6">
+    <name>Resource 1</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="50400" end-time="64800"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t28"/>
+  </task>
+  <task id="t1">
+    <title>Verifica e validazione</title>
+    <type>group</type>
+    <start-constraint-date>2015-06-19T06:15:00.000Z</start-constraint-date>
+    <child-task idref="t3"/>
+    <child-task idref="t6"/>
+    <child-task idref="t10"/>
+    <child-task idref="t13"/>
+    <child-task idref="t16"/>
+    <child-task idref="t19"/>
+    <start-no-earlier-than>2015-06-19T06:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t2">
+    <title>consuntivo</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t1"/>
+  </task>
+  <task id="t3">
+    <title>Glossario</title>
+    <type>group</type>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+  </task>
+  <task id="t4">
+    <title>Incremento</title>
+    <effort>14400</effort>
+  </task>
+  <task id="t5">
+    <title>Verifica</title>
+    <effort>3600</effort>
+    <prerequisite-task idref="t4"/>
+  </task>
+  <task id="t6">
+    <title>Norme</title>
+    <type>group</type>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+  </task>
+  <task id="t7">
+    <title>Incremento</title>
+    <effort>7200</effort>
+  </task>
+  <task id="t8">
+    <title>Verifica</title>
+    <effort>3600</effort>
+    <prerequisite-task idref="t7"/>
+  </task>
+  <task id="t10">
+    <title>Piano di qulifica</title>
+    <type>group</type>
+    <child-task idref="t11"/>
+    <child-task idref="t26"/>
+    <child-task idref="t12"/>
+  </task>
+  <task id="t11">
+    <title>Incremento Verifiche</title>
+    <effort>14400</effort>
+  </task>
+  <task id="t12">
+    <title>Verifica</title>
+    <effort>7200</effort>
+    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t26"/>
+  </task>
+  <task id="t13">
+    <title>Definizione prodotto</title>
+    <type>group</type>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+  </task>
+  <task id="t14">
+    <title>Incremento</title>
+    <effort>43200</effort>
+  </task>
+  <task id="t15">
+    <title>Verifica</title>
+    <effort>10800</effort>
+    <prerequisite-task idref="t14"/>
+  </task>
+  <task id="t16">
+    <title>Specifica tecnica</title>
+    <type>group</type>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t17">
+    <title>Incremento</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t18">
+    <title>Verifica</title>
+    <effort>21600</effort>
+    <prerequisite-task idref="t17"/>
+  </task>
+  <task id="t19">
+    <title>Manualistica</title>
+    <type>group</type>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+  </task>
+  <task id="t20">
+    <title>Incremento</title>
+    <effort>54000</effort>
+  </task>
+  <task id="t21">
+    <title>Verifica</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t20"/>
+  </task>
+  <task id="t26">
+    <title>Validazione interna</title>
+    <effort>100800</effort>
+    <prerequisite-task idref="t11"/>
+  </task>
+  <task id="t28">
+    <title>Accettazione</title>
+    <type>milestone</type>
+    <start-constraint-date>2015-06-29T15:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t2"/>
+    <start-no-earlier-than>2015-06-29T15:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="true" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

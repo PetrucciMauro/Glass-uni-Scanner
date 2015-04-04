@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="pietro" date="2015-03-28T15:53:03.765Z" timestamp="2015-03-28T15:53:03.765Z">
+    <change idref="t13" attribute="title" type="string" from="Stesura req" to="correzione req"/>
+    <change idref="t14" attribute="title" type="string" from="Verifiva req" to="Verifica req"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-03-29T13:50:44.874Z" timestamp="2015-03-29T13:50:44.874Z">
+    <change idref="t31" attribute="effort" type="real" from="7200" to="14400"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T09:20:07.957Z" timestamp="2015-04-02T09:20:07.957Z">
+    <change idref="t30" attribute="effort" type="real" from="7200" to="14400" resolved="yes"/>
+    <change idref="t47" attribute="effort" type="real" from="21600" to="36000" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T09:21:18.913Z" timestamp="2015-04-02T09:21:18.913Z">
+    <change idref="t32" attribute="isGroup" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t32" attribute="taskType" type="real" from="2" to="0" resolved="yes"/>
+    <change idref="t32" attribute="isSplittableTask" type="real" to="1" resolved="yes"/>
+    <change idref="t32" attribute="resourceAssignmentType" type="real" to="0" resolved="yes"/>
+    <change idref="t32" attribute="staticCost" type="real" to="0" resolved="yes"/>
+    <change idref="t32" attribute="effort" type="real" to="108000" resolved="yes"/>
+    <change idref="t32" attribute="isSplitChunk" type="real" to="0" resolved="yes"/>
+    <change idref="t32" attribute="scheduleType" type="real" to="0" resolved="yes"/>
+    <change idref="t32" attribute="internalAssignments" type="string" to="" resolved="yes"/>
+    <change idref="t32" attribute="isSplitTask" type="real" to="0" resolved="yes"/>
+    <change idref="t32" attribute="internalEffortDone" type="real" to="0" resolved="yes"/>
+    <change idref="t35" from="t32" from-position="2" resolved="yes">
+      <change idref="t35" attribute="effort" type="real" from="28800" to="43200"/>
+      <change idref="t35" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T08:00:00.000Z"/>
+      <change idref="t35" attribute="title" type="string" to="Test di validazione"/>
+    </change>
+    <change idref="t34" from="t32" from-position="1" resolved="yes">
+      <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T08:00:00.000Z"/>
+      <change idref="t34" attribute="title" type="string" to="Test di integrazione"/>
+    </change>
+    <change idref="t33" from="t32" from-position="0" resolved="yes">
+      <change idref="t33" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t33" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T08:00:00.000Z"/>
+      <change idref="t33" attribute="title" type="string" to="Test di sistema"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T09:23:15.925Z" timestamp="2015-04-02T09:23:15.925Z">
+    <change idref="t36" attribute="effort" type="real" from="3600" to="7200" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T13:42:46.660Z" timestamp="2015-04-02T13:42:46.660Z">
+    <change idref="t3" to="t1" to-position="1" resolved="yes">
+      <change idref="t3" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t3" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T06:00:00.000Z"/>
+      <change idref="t3" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t3" attribute="title" type="string" to="Analisi requisiti"/>
+    </change>
+    <change idref="t11" to="t3" to-position="0" resolved="yes">
+      <change idref="t11" attribute="effort" type="real" from="28800" to="21600"/>
+      <change idref="t11" attribute="title" type="string" to="Incremento"/>
+    </change>
+    <change idref="t12" to="t3" to-position="1" resolved="yes">
+      <change idref="t12" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t12" attribute="internalPrerequisitesString" type="string" to="11FS"/>
+      <change idref="t12" attribute="title" type="string" to="Verifica"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T15:17:22.069Z" timestamp="2015-04-02T15:17:22.069Z">
+    <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T06:00:00.000Z" to="2015-04-08T04:45:00.000Z" resolved="yes"/>
+    <change idref="t3" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T06:00:00.000Z" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t9" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-08T04:30:00.000Z" resolved="yes"/>
+    <change idref="t15" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T06:00:00.000Z" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T08:00:00.000Z" to="2015-04-08T04:45:00.000Z" resolved="yes"/>
+    <change idref="t31" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T08:00:00.000Z" to="2015-04-27T08:15:00.000Z" resolved="yes"/>
+    <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T08:00:00.000Z" to="2015-04-25T05:45:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T08:00:00.000Z" to="2015-05-02T08:45:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T14:00:00.000Z" to="2015-05-01T08:15:00.000Z" resolved="yes"/>
+    <change idref="t40" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T08:00:00.000Z" to="2015-04-22T06:15:00.000Z" resolved="yes"/>
+    <change idref="t46" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T14:00:00.000Z" to="2015-04-08T04:45:00.000Z" resolved="yes"/>
+    <change idref="t47" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T14:00:00.000Z" to="2015-04-07T09:45:00.000Z" resolved="yes"/>
+    <change idref="t48" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T14:00:00.000Z" to="2015-04-10T07:15:00.000Z" resolved="yes"/>
+    <change idref="t49" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-07T14:00:00.000Z" to="2015-04-24T05:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-02T21:33:53.447Z" timestamp="2015-04-02T21:33:53.447Z">
+    <change idref="t32" attribute="effort" type="real" from="108000" to="97200" resolved="yes"/>
+    <change idref="t47" attribute="effort" type="real" from="36000" to="57600" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-03T09:39:44.849Z" timestamp="2015-04-03T09:39:44.849Z">
+    <change idref="t36" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-02T08:45:00.000Z" to="2015-05-01T08:00:00.000Z"/>
+    <change idref="t37" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-01T08:15:00.000Z" to="2015-04-30T08:00:00.000Z"/>
+  </task-change-set>
+  <resource-change-set user="pietro" date="2015-04-02T09:22:13.374Z" timestamp="2015-04-02T09:22:13.374Z">
+    <change idref="r-1" attribute="standardHoursString" type="string" from=";25200,43200;25200,43200;25200,43200;25200,43200;25200,43200;25200,43200" to=";23400,43200;23400,43200;23400,43200;23400,43200;23400,43200;23400,43200" resolved="yes"/>
+  </resource-change-set>
+</changelog>
