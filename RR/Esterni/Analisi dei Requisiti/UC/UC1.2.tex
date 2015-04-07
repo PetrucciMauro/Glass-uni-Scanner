@@ -1,15 +1,54 @@
-\subsection{UC 1.2 - Nuova presentazione}{
+\subsection{UC 1.2 - Creazione presentazione}{
 	\label{uc1.2}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1.2}.jpg} %inserire il diagramma UML
 	\end{figure}
-	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può creare una nuova presentazione. \\
-	\textbf{Precondizione}: l'utente desktop ha avviato il sistema e questo è pronto all'uso.	\\
+	\textbf{Attori}: utente autenticato.	\\
+	\textbf{Descrizione}: l'utente crea una presentazione.	\\
+	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente ha effettuato il login.	\\
 	\textbf{Postcondizione}: l'utente ha creato una nuova presentazione.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item l'utente crea una nuova presentazione vuota.
+		\item creazione presentazione vuota \hyperref[uc1.2.1]{(UC 1.2.1)}.
 	\end{enumerate}
+	}
+\subsection{UC 1.2.1 - Creazione presentazione vuota}{
+	\label{uc1.2.1}
+	\includegraphics{\imgs {UC1.2.1}.jpg} %inserire il diagramma UML
+	\textbf{Attori}: utente autenticato..	\\
+	\textbf{Descrizione}: l'utente sceglie una cartella dove inserire la nuova presentazione e procede a crearla.	\\
+	\textbf{Precondizione}: l'utente vuole creare una nuova presentazione.	\\
+	\textbf{Postcondizione}: l'utente ha creato una presentazione vuota nella posizione desiderata.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item navigazione FileSystem presentazioni sul server \hyperref[uc1.2.1.1]{(UC 1.2.1.1)};
+		\item selezione cartella \hyperref[uc1.2.1.2]{(UC 1.2.1.2)};
+		\item conferma e creazione presentazione vuota \hyperref[uc1.2.1.3]{(UC 1.2.1.3)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.2.1.1 - Navigazione FileSystem presentazioni sul server}{
+	\label{uc1.2.1.1}
+	\textbf{Attori}: utente autenticato.	\\
+	\textbf{Descrizione}:  L'utente naviga nelle proprie cartelle fino a scegliere quella in cui salvare la nuova presentazione; il sistema mostra il contenuto della directory corrente.	\\
+	\textbf{Precondizione}: l'utente vuole creare una presentazione vuota.	\\
+	\textbf{Postcondizione}: l'utente si trova nella cartella in cui desidera sia salvata la nuova presentazione.	\\
+	}
+\subsection{UC 1.2.1.2 - Selezione cartella}{
+	\label{uc1.2.1.2}
+	\textbf{Attori}: utente autenticato.	\\
+	\textbf{Descrizione}: l'utente conferma che la directory corrente è quella in cui scrivere la nuova presentazione.	\\
+	\textbf{Precondizione}: l'utente si trova nella directory in cui eseguire il salvataggio del file.	\\
+	\textbf{Postcondizione}: l'utente ha confermato la scelta fatta.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente desidera cambiare cartella.
+	\end{enumerate}	
+	}
+\subsection{UC 1.2.1.3 - Conferma e creazione presentazione vuota}{
+	\label{uc1.2.1.3}
+	\textbf{Attori}: utente autenticato.	\\
+	\textbf{Descrizione}: il sistema crea una presentazione vuota nella posizione selezionata precedentemente dall'utente.	\\
+	\textbf{Precondizione}: l'utente ha selezionato la cartella in cui salvare il file.	\\
+	\textbf{Postcondizione}: viene creata una nuova presentazione nella posizione selezionata dall'utente.	\\
 	}

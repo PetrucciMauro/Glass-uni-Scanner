@@ -1,0 +1,34 @@
+\subsection{UC 1.11 - Gestione profilo}{
+	\label{uc1.11}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.11}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente autenticato. \\
+	\textbf{Descrizione}: l'utente può modificare la propria password d'accesso al sistema. \\
+	\textbf{Precondizione}: il programma è attivo e funzionante; l'utente ha effettuato il login e desidera modificare la password d'accesso.	\\
+	\textbf{Postcondizione}: la password utente è stata cambiata con la nuova password inserita.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item modifica password \hyperref[uc1.11.1]{(UC 1.11.1)};
+		\item conferma modifica password \hyperref[uc1.11.2]{(UC 1.11.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item l'operazione viene annullata e non si apportano cambiamenti.
+	\end{itemize}
+	}
+	\subsection{UC 1.11.1 - Modifica password}{
+		\label{uc1.11.1}
+		\textbf{Attori}: utente autenticato.\\
+		\textbf{Descrizione}: l'utente ha la possibilità di inserire la nuova password. \\
+		\textbf{Precondizione}: l'utente ha avviato l'attività di cambiamento della password.	\\
+		\textbf{Postcondizione}: l'utente ha inserito la nuova password.	\\
+		}
+	\subsection{UC 1.11.2 - Conferma modifica password}{
+		\label{uc1.11.2}
+		\textbf{Attori}: utente autenticato.\\
+		\textbf{Descrizione}: nel server viene memorizzata la nuova password al posto della vecchia. \\
+		\textbf{Precondizione}: è stata avviata l'attività di cambio password ed è stata inserita la nuova password.	\\
+		\textbf{Postcondizione}: nel server la password utente è stata sostituita con la nuova.	\\
+		}
