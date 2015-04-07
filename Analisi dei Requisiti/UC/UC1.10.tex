@@ -1,0 +1,54 @@
+\subsection{UC 1.10 - Login account utente}{
+	\label{uc1.10}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.10}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente non autenticato. \\
+	\textbf{Descrizione}: l'utente inserisce il proprio username e la propria password, se queste risultano corrette l'utente viene autenticato. \\
+	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente non ancora autenticato vuole effettuare il login.	\\
+	\textbf{Postcondizione}: l'utente viene autenticato ed entra nel sistema.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item inserimento username \hyperref[uc1.10.1]{(UC 1.10.1)};
+		\item inserimento password \hyperref[uc1.10.2]{(UC 1.10.2)};
+		\item autenticazione \hyperref[uc1.10.3]{(UC 1.10.3)}.
+	\end{enumerate}
+	\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item le credenziali non risultano corrette, ne viene data comunicazione all'utente che potrà reinserire i dati.
+	\end{itemize}
+	}
+	\subsection{UC1.10.1 - Inserimento username}{
+		\label{uc1.10.1}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l'utente inserisce il proprio username.	\\
+		\textbf{Precondizione}: l'utente  è pronto ad inserire il proprio username per effettuare il login.	\\
+		\textbf{Postcondizione}: l'utente  ha inserito il proprio username per effettuare il login.	\\
+		\textbf{Procedura principale}:
+		\begin{enumerate}
+			\item l'utente  inserisce il proprio username.
+		\end{enumerate}
+		}
+	\subsection{UC1.10.2 - Inserimento password}{
+		\label{uc1.10.2}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l'utente  inserisce la propria password.	\\
+		\textbf{Precondizione}: l'utente  è pronto ad inserire la propria password per effettuare il login.	\\
+		\textbf{Postcondizione}: l'utente  ha inserito la propria password per effettuare il login.	\\
+		\textbf{Procedura principale}:
+		\begin{enumerate}
+			\item l'utente  inserisce la propria password.
+		\end{enumerate}
+		}
+	\subsection{UC1.10.3 - Autenticazione}{
+		\label{uc1.10.3}
+		\textbf{Attori}: Utente non autenticato.	\\
+		\textbf{Descrizione}: il sistema controlla le credenziali fornite dall'utente; se queste risultano corrette, concede l'accesso.	\\
+		\textbf{Precondizione}: l'utente  ha inserito le proprie credenziali per effettuare il login.	\\
+		\textbf{Postcondizione}: il sistema concede l'accesso.	\\
+		\textbf{Procedura principale}:
+		\begin{enumerate}
+			\item le credenziali fornite non risultano corrette e viene chiesto all'utente di reinserirle.
+		\end{enumerate}
+		}

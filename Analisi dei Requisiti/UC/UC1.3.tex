@@ -4,29 +4,45 @@
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1.3}.jpg} %inserire il diagramma UML
 	\end{figure}
+	\textbf{Attori}: utente autenticato.	\\
+	\textbf{Descrizione}: l'utente può modificare una presentazione.	\\
+	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente ha effettuato il login. L'utente desidera cambiare una presentazione presente nel sistema.	\\
+	\textbf{Postcondizione}: l'utente ha effettuato le modifiche desiderate.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item modifica da desktop \hyperref[uc1.3.1]{(UC 1.3.1)};
+		\item modifica da mobile \hyperref[uc1.3.2]{(UC 1.3.2)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.3.1 - Modifica presentazione da desktop}{
+	\label{uc1.3.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1}.jpg} %inserire il diagramma UML
+	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente ha la possibilità di modificare una presentazione. \\
 	\textbf{Precondizione}: è stata selezionata una presentazione in locale e aperta in modalità modifica.	\\
 	\textbf{Postcondizione}: l'utente ha modificato la presentazione selezionata e salvato le modifiche in locale.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item l'utente può inserire un nuovo frame vuoto \hyperref[uc1.3.1]{(UC 1.3.1)};
-		\item l'utente può spostare i frame nel piano della presentazione \hyperref[uc1.3.2]{(UC 1.3.2)};
-		\item l'utente può modificare i frame inseriti \hyperref[uc1.3.3]{(UC 1.3.3)};
-		\item l'utente può eliminare i frame inseriti \hyperref[uc1.3.4]{(UC 1.3.4)};
-		\item l'utente può impostare uno sfondo \hyperref[uc1.3.5]{(UC 1.3.5)};
-		\item l'utente può definire i percorsi della presentazione \hyperref[uc1.3.6]{(UC 1.3.6)};
-		\item l'utente può inserire e cancellare bookmark \hyperref[uc1.3.7]{(UC 1.3.7)};
-		\item l'utente può impostare le opzioni di esecuzione della presentazione \hyperref[uc1.3.8]{(UC 1.3.8)};
-		\item l'utente può definire i tempi di permanenza \hyperref[uc1.3.9]{(UC 1.3.9)};
-		\item l'utente può salvare le modifiche in locale \hyperref[uc1.3.10]{(UC 1.3.10)}.
+		\item l'utente può inserire un nuovo frame vuoto \hyperref[uc1.3.1.1]{(UC 1.3.1.1)};
+		\item l'utente può spostare i frame nel piano della presentazione \hyperref[uc1.3.1.2]{(UC 1.3.1.2)};
+		\item l'utente può modificare i frame inseriti \hyperref[uc1.3.1.3]{(UC 1.3.1.3)};
+		\item l'utente può eliminare i frame inseriti \hyperref[uc1.3.1.4]{(UC 1.3.1.4)};
+		\item l'utente può impostare uno sfondo \hyperref[uc1.3.1.5]{(UC 1.3.1.5)};
+		\item l'utente può definire i percorsi della presentazione \hyperref[uc1.3.1.6]{(UC 1.3.1.6)};
+		\item l'utente può inserire e cancellare bookmark \hyperref[uc1.3.1.7]{(UC 1.3.1.7)};
+		\item l'utente può impostare le opzioni di esecuzione della presentazione \hyperref[uc1.3.1.8]{(UC 1.3.1.8)};
+		\item l'utente può definire i tempi di permanenza \hyperref[uc1.3.1.9]{(UC 1.3.1.9)};
+		\item l'utente può salvare le modifiche in locale \hyperref[uc1.3.1.10]{(UC 1.3.1.10)}.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.1 - Inserimento nuovo frame}{
-	\label{uc1.3.1}
+\subsection{UC 1.3.1.1 - Inserimento nuovo frame}{
+	\label{uc1.3.1.1}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.1}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.1}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può inserire un nuovo frame nel piano della presentazione. \\
@@ -39,8 +55,8 @@
 		\item l'utente rilascia il frame.
 	\end{enumerate}
 }
-\subsection{UC 1.3.1.1 - Selezione frame}{
-	\label{uc1.3.1.1}
+\subsection{UC 1.3.1.1.1 - Selezione frame}{
+	\label{uc1.3.1.1.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può selezionare uno dei frame definiti nel menu a lato del piano della presentazione. \\
 	\textbf{Precondizione}: è stata selezionata una presentazione in locale e aperta in modalità modifica.	\\
@@ -51,8 +67,8 @@
 		\item l'utente seleziona uno dei frame ora selezionabili nel menu a sinistra del piano della presentazione.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.1.2 - Spostamento frame nel piano della presentazione}{
-	\label{uc1.3.1.2}
+\subsection{UC 1.3.1.1.2 - Spostamento frame nel piano della presentazione}{
+	\label{uc1.3.1.1.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può spostare un nuovo frame nel piano della presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica ed ha selezionato un frame da inserire nel menu a sinistra del piano della presentazione.	\\
@@ -63,8 +79,8 @@
 		\item l'utente rilascia la selezione sul frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.2 - Spostamento frame}{
-	\label{uc1.3.2}
+\subsection{UC 1.3.1.2 - Spostamento frame}{
+	\label{uc1.3.1.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può spostare un frame nel piano della presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica.	\\
@@ -76,33 +92,33 @@
 		\item l'utente rilascia il frame selezionato.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3 - Modifica desktop di un frame}{
-	\label{uc1.3.3}
+\subsection{UC 1.3.1.3 - Modifica desktop di un frame}{
+	\label{uc1.3.1.3}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop ha scelto l'opzione di modifica di un frame. L'utente desktop può scegliere di inserire o modificare un elemento (che può essere del testo, un'immagine, o un video), di spostare un elemento, di eliminare un elemento, di inserire o eliminare una scelta. Inoltre può modificare la dimensione e la forma del frame, lo spessore e il colore del bordo, e modificare lo sfondo. \\
 	\textbf{Precondizione}: l'utente desktop intende modificare un frame.	\\
 	\textbf{Postcondizione}: nella presentazione è presente un frame modificato.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item inserimento di un elemento testo \hyperref[uc1.3.3.1]{(UC 1.3.3.1)};
-		\item inserimento di un elemento immagine \hyperref[uc1.3.3.2]{(UC 1.3.3.2)};
-		\item inserimento di un elemento video \hyperref[uc1.3.3.3]{(UC 1.3.3.3)};
-		\item modifica di un elemento testo \hyperref[uc1.3.3.4]{(UC 1.3.3.4)};
-		\item modifica di un elemento immagine \hyperref[uc1.3.3.5]{(UC 1.3.3.5)};
-		\item modifica di un elemento video \hyperref[uc1.3.3.6]{(UC 1.3.3.6)};
-		\item spostamento di un elemento \hyperref[uc1.3.3.7]{(UC 1.3.3.7)};
-		\item eliminazione di un elemento \hyperref[uc1.3.3.8]{(UC 1.3.3.8)};
-		\item inserimento di un elemento scelta \hyperref[uc1.3.3.9]{(UC 1.3.3.9)};
-		\item modifica di un elemento scelta \hyperref[uc1.3.3.10]{(UC 1.3.3.10)};
-		\item modifica della dimensione del frame \hyperref[uc1.3.3.11]{(UC 1.3.3.11)};
-		\item modifica della forma del frame \hyperref[uc1.3.3.12]{(UC 1.3.3.12)};
-		\item modifica dello spessore del bordo del frame \hyperref[uc1.3.3.13]{(UC 1.3.3.13)};
-		\item modifica del colore del bordo del frame \hyperref[uc1.3.3.14]{(UC 1.3.3.14)};
-		\item modifica dello sfondo del frame \hyperref[uc1.3.3.15]{(UC 1.3.3.15)};
+		\item inserimento di un elemento testo \hyperref[uc1.3.1.3.1]{(UC 1.3.1.3.1)};
+		\item inserimento di un elemento immagine \hyperref[uc1.3.1.3.2]{(UC 1.3.1.3.2)};
+		\item inserimento di un elemento video \hyperref[uc1.3.1.3.3]{(UC 1.3.1.3.3)};
+		\item modifica di un elemento testo \hyperref[uc1.3.1.3.4]{(UC 1.3.1.3.4)};
+		\item modifica di un elemento immagine \hyperref[uc1.3.1.3.5]{(UC 1.3.1.3.5)};
+		\item modifica di un elemento video \hyperref[uc1.3.1.3.6]{(UC 1.3.1.3.6)};
+		\item spostamento di un elemento \hyperref[uc1.3.1.3.7]{(UC 1.3.1.3.7)};
+		\item eliminazione di un elemento \hyperref[uc1.3.1.3.8]{(UC 1.3.1.3.8)};
+		\item inserimento di un elemento scelta \hyperref[uc1.3.1.3.9]{(UC 1.3.1.3.9)};
+		\item modifica di un elemento scelta \hyperref[uc1.3.1.3.10]{(UC 1.3.1.3.10)};
+		\item modifica della dimensione del frame \hyperref[uc1.3.1.3.11]{(UC 1.3.1.3.11)};
+		\item modifica della forma del frame \hyperref[uc1.3.1.3.12]{(UC 1.3.1.3.12)};
+		\item modifica dello spessore del bordo del frame \hyperref[uc1.3.1.3.13]{(UC 1.3.1.3.13)};
+		\item modifica del colore del bordo del frame \hyperref[uc1.3.1.3.14]{(UC 1.3.1.3.14)};
+		\item modifica dello sfondo del frame \hyperref[uc1.3.1.3.15]{(UC 1.3.1.3.15)};
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.1 - Inserimento di un elemento testo}{
-	\label{uc1.3.3.1}
+\subsection{UC 1.3.1.3.1 - Inserimento di un elemento testo}{
+	\label{uc1.3.1.3.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop inserisce un elemento di tipo testo all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera inserire un nuovo elemento testo.	\\
@@ -113,8 +129,8 @@
 		\item l'utente desktop inserisce il testo desiderato.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.2 - Inserimento di un elemento immagine}{
-	\label{uc1.3.3.2}
+\subsection{UC 1.3.1.3.2 - Inserimento di un elemento immagine}{
+	\label{uc1.3.1.3.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop inserisce un elemento di tipo immagine all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera inserire un elemento immagine.	\\
@@ -125,8 +141,8 @@
 		\item l'utente desktop inserisce l'immagine desiderata.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.3 - Inserimento di un elemento video}{
-	\label{uc1.3.3.3}
+\subsection{UC 1.3.1.3.3 - Inserimento di un elemento video}{
+	\label{uc1.3.1.3.3}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop inserisce un elemento di tipo video all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera inserire un elemento video.	\\
@@ -137,8 +153,8 @@
 		\item l'utente desktop inserisce il video desiderato.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.4 - Modifica di un elemento testo}{
-	\label{uc1.3.3.4}
+\subsection{UC 1.3.1.3.4 - Modifica di un elemento testo}{
+	\label{uc1.3.1.3.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica un elemento testo presente all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare un elemento testo.	\\
@@ -149,8 +165,8 @@
 		\item l'utente desktop modifica il testo selezionato.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.5 - Modifica di un elemento immagine}{
-	\label{uc1.3.3.5}
+\subsection{UC 1.3.1.3.5 - Modifica di un elemento immagine}{
+	\label{uc1.3.1.3.5}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica la dimensione di un elemento immagine presente all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare la dimensione di un elemento immagine.	\\
@@ -161,8 +177,8 @@
 		\item l'utente desktop modifica la dimensione dell'elemento immagine.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.6 - Modifica di un elemento video}{
-	\label{uc1.3.3.6}
+\subsection{UC 1.3.1.3.6 - Modifica di un elemento video}{
+	\label{uc1.3.1.3.6}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica la dimensione di un elemento video presente all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare la dimensione di un elemento video.	\\
@@ -173,8 +189,8 @@
 		\item l'utente desktop modifica la dimensione dell'elemento video.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.7 - Spostamento di un elemento}{
-	\label{uc1.3.3.7}
+\subsection{UC 1.3.1.3.7 - Spostamento di un elemento}{
+	\label{uc1.3.1.3.7}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop sposta un elemento qualsiasi all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera spostare un elemento.	\\
@@ -184,8 +200,8 @@
 		\item l'utente desktop seleziona un elemento e lo trascina all'interno del frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.8 - Eliminazione di un elemento}{
-	\label{uc1.3.3.8}
+\subsection{UC 1.3.1.3.8 - Eliminazione di un elemento}{
+	\label{uc1.3.1.3.8}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop elimina un elemento qualsiasi all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera eliminare un elemento.	\\
@@ -196,8 +212,8 @@
 		\item l'utente desktop elimina l'elemento selezionato.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.9 - Inserimento di un elemento scelta}{
-	\label{uc1.3.3.9}
+\subsection{UC 1.3.1.3.9 - Inserimento di un elemento scelta}{
+	\label{uc1.3.1.3.9}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop inserisce all'interno di un frame un elemento scelta verso un altro frame non appartenente allo stesso percorso del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera inserire una scelta.	\\
@@ -209,8 +225,8 @@
 		\item l'utente desktop assegna il nome all'elemento scelta.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.10 - Modifica di un elemento scelta}{
-	\label{uc1.3.3.10}
+\subsection{UC 1.3.1.3.10 - Modifica di un elemento scelta}{
+	\label{uc1.3.1.3.10}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica il testo assegnato ad un elemento scelta presente all'interno del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare il nome assegnato ad una scelta all'interno del frame.	\\
@@ -221,8 +237,8 @@
 		\item l'utente desktop modifica il testo del nome assegnato all'elemento scelta.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.11 - Modifica della dimensione del frame}{
-	\label{uc1.3.3.11}
+\subsection{UC 1.3.1.3.11 - Modifica della dimensione del frame}{
+	\label{uc1.3.1.3.11}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica la dimensione del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare la dimensione del frame.	\\
@@ -233,8 +249,8 @@
 		\item l'utente desktop ridimensiona il frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.12 - Modifica della forma di un frame}{
-	\label{uc1.3.3.12}
+\subsection{UC 1.3.1.3.12 - Modifica della forma di un frame}{
+	\label{uc1.3.1.3.12}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica la forma del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare la forma del frame.	\\
@@ -245,8 +261,8 @@
 		\item l'utente desktop seleziona la nuova forma del frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.13 - Modifica dello spessore del bordo del frame}{
-	\label{uc1.3.3.13}
+\subsection{UC 1.3.1.3.13 - Modifica dello spessore del bordo del frame}{
+	\label{uc1.3.1.3.13}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica lo spessore del bordo del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare lo spessore del bordo del frame.	\\
@@ -257,8 +273,8 @@
 		\item l'utente desktop ridimensiona lo spessore del bordo del frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.14 - Modifica del colore del bordo del frame}{
-	\label{uc1.3.3.14}
+\subsection{UC 1.3.1.3.14 - Modifica del colore del bordo del frame}{
+	\label{uc1.3.1.3.14}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica il colore del bordo del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare il colore del bordo del frame.	\\
@@ -269,8 +285,8 @@
 		\item l'utente desktop seleziona il nuovo colore del bordo del frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.3.15 - Modifica dello sfondo del frame}{
-	\label{uc1.3.3.15}
+\subsection{UC 1.3.1.3.15 - Modifica dello sfondo del frame}{
+	\label{uc1.3.1.3.15}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica lo sfondo del frame. \\
 	\textbf{Precondizione}: l'utente desktop desidera modificare lo sfondo del frame.	\\
@@ -282,8 +298,8 @@
 		\item l'utente desktop può selezionare una nuova immagine di sfondo del frame.
 	\end{enumerate}
 	}
-\subsection{UC 1.3.4 - Eliminazione frame}{
-	\label{uc1.3.4}
+\subsection{UC 1.3.1.4 - Eliminazione frame}{
+	\label{uc1.3.1.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può eliminare un frame dal piano della presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica.	\\
@@ -299,11 +315,11 @@
 		\item l'utente non conferma l'azione di cancellazione e si ritorna alla precondizione.
 	\end{itemize}
 }
-\subsection{UC 1.3.5 - Impostazione sfondo}{
-	\label{uc1.3.5}
+\subsection{UC 1.3.1.5 - Impostazione sfondo}{
+	\label{uc1.3.1.5}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.5}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.5}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può impostare un'immagine o un colore di sfondo alla presentazione. \\
@@ -321,11 +337,11 @@
 		\item l'utente non conferma l'inserimento dello sfondo e si ritorna alla precondizione.
 	\end{itemize}
 }
-\subsection{UC 1.3.5.1 - Inserimento sfondo}{
-	\label{uc1.3.5.1}
+\subsection{UC 1.3.1.5.1 - Inserimento sfondo}{
+	\label{uc1.3.1.5.1}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.5.1}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.5.1}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può inserire una immagine o un colore di sfondo nel piano della presentazione. \\
@@ -343,8 +359,8 @@
 		\item l'utente annulla l'inserimento di un nuovo sfondo.
 	\end{itemize}
 }
-\subsection{UC 1.3.5.1.1 - Selezione immagine sfondo}{
-	\label{uc1.3.5.1.1}
+\subsection{UC 1.3.1.5.1.1 - Selezione immagine sfondo}{
+	\label{uc1.3.1.5.1.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può selezionare un'immagine per lo sfondo. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica ed ha selezionato "imposta sfondo".	\\
@@ -356,8 +372,8 @@
 		\item l'utente conferma la selezione.
 	\end{enumerate}
 }
-\subsection{UC 1.3.5.1.2 - Selezione colore sfondo}{
-	\label{uc1.3.5.1.2}
+\subsection{UC 1.3.1.5.1.2 - Selezione colore sfondo}{
+	\label{uc1.3.1.5.1.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può selezionare un colore per lo sfondo. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica ed ha selezionato "imposta sfondo".	\\
@@ -369,8 +385,8 @@
 		\item l'utente conferma la selezione.
 	\end{enumerate}
 }
-\subsection{UC 1.3.5.1.3 - Definizione area sfondo}{
-	\label{uc1.3.5.1.3}
+\subsection{UC 1.3.1.5.1.3.1 - Definizione area sfondo}{
+	\label{uc1.3.1.5.1.3.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire un'area per lo sfondo. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica ed ha selezionato un'immagine o un colore per lo sfondo.	\\
@@ -382,8 +398,8 @@
 	\end{enumerate}
 }
 
-\subsection{UC 1.3.5.1.4 - Conferma sfondo}{
-	\label{uc1.3.5.1.4}
+\subsection{UC 1.3.1.5.1.4 - Conferma sfondo}{
+	\label{uc1.3.1.5.1.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente deve confermare l'inserimento di uno sfondo. \\
 	\textbf{Precondizione}: l'utente ha selezionato un colore o un'immagine per lo sfondo e ne ha definito l'area.	\\
@@ -393,8 +409,8 @@
 		\item l'utente conferma l'inserimento dello sfondo.
 	\end{enumerate}
 }
-\subsection{UC 1.3.5.2 - Spostamento sfondo}{
-	\label{uc1.3.5.2}
+\subsection{UC 1.3.1.5.2 - Spostamento sfondo}{
+	\label{uc1.3.1.5.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può spostare l'area di sfondo nel piano della presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica in cui è presente un'area di sfondo.	\\
@@ -405,8 +421,8 @@
 		\item l'utente sposta sul piano della presentazione l'area di sfondo.
 	\end{enumerate}
 }
-\subsection{UC 1.3.5.3 - Ridimensionamento sfondo}{
-	\label{uc1.3.5.3}
+\subsection{UC 1.3.1.5.3 - Ridimensionamento sfondo}{
+	\label{uc1.3.1.5.3}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può ridimensionare l'area di sfondo nel piano della presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica in cui è presente un'area di sfondo.	\\
@@ -419,11 +435,11 @@
 		\item l'utente conferma la nuova area.
 	\end{enumerate}
 }
-\subsection{UC 1.3.6 - Definizione percorsi di visualizzazione}{
-	\label{uc1.3.6}
+\subsection{UC 1.3.1.6 - Definizione percorsi di visualizzazione}{
+	\label{uc1.3.1.6}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.6}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.6}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire la sequenza delle slide visualizzate di una presentazione. \\
@@ -439,8 +455,8 @@
 		\item l'utente può eliminare una transizione.
 	\end{enumerate}
 }
-\subsection{UC 1.3.6.1 - Imposta frame iniziale}{
-	\label{uc1.3.6.1}
+\subsection{UC 1.3.1.6.1 - Imposta frame iniziale}{
+	\label{uc1.3.1.6.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può impostare il primo frame visualizzato in fase di esecuzione di una presentazione. \\
 	\textbf{Precondizione}: l'utente ha selezionato la modalità "modifica percorsi di visualizzazione".	\\
@@ -451,8 +467,8 @@
 		\item l'utente seleziona l'icona "inizio" a lato del frame.
 	\end{enumerate}
 }
-\subsection{UC 1.3.6.2 - Nuova transizione}{
-	\label{uc1.3.6.2}
+\subsection{UC 1.3.1.6.2 - Nuova transizione}{
+	\label{uc1.3.1.6.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire una nuova transizione tra due frame. \\
 	\textbf{Precondizione}: l'utente ha selezionato la modalità "modifica percorsi visualizzazione".	\\
@@ -464,8 +480,8 @@
 		\item l'utente seleziona il frame destinazione.
 	\end{enumerate}
 }
-\subsection{UC 1.3.6.3 - Togli frame dal percorso}{
-	\label{uc1.3.6.3}
+\subsection{UC 1.3.1.6.3 - Togli frame dal percorso}{
+	\label{uc1.3.1.6.3}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può togliere la visualizzazione di un frame dal percorso. \\
 	\textbf{Precondizione}: l'utente ha selezionato la modalità "modifica percorsi visualizzazione".	\\
@@ -477,8 +493,8 @@
 		\item l'utente conferma l'eliminazione della slide.
 	\end{enumerate}
 }
-\subsection{UC 1.3.6.4 - Elimina transizione}{
-	\label{uc1.3.6.4}
+\subsection{UC 1.3.1.6.4 - Elimina transizione}{
+	\label{uc1.3.1.6.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può eliminare una transizione tra due frame del piano di presentazione. \\
 	\textbf{Precondizione}: l'utente ha selezionato la modalità "modifica percorsi visualizzazione", la presentazione aperta contiene almeno una transizione.	\\
@@ -489,8 +505,8 @@
 		\item l'utente seleziona l'azione "cancella transizione".
 	\end{enumerate}
 }
-\subsection{UC 1.3.6.5 - Definisci scelta}{
-	\label{uc1.3.6.5}
+\subsection{UC 1.3.1.6.5 - Definisci scelta}{
+	\label{uc1.3.1.6.5}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire una "scelta di transizione" (glossario). \\
 	\textbf{Precondizione}: l'utente ha selezionato la modalità "modifica percorsi visualizzazione".	\\
@@ -503,11 +519,11 @@
 		\item l'utente imposta un nome alla scelta.
 	\end{enumerate}
 }
-\subsection{UC 1.3.7 - Gestione bookmark}{
-	\label{uc1.3.7}
+\subsection{UC 1.3.1.7 - Gestione bookmark}{
+	\label{uc1.3.1.7}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.7}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.7}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può inserire e cancellare bookmark alle slide. \\
@@ -519,8 +535,8 @@
 		\item l'utente può eliminare un bookmark da una slide.
 	\end{enumerate}
 }
-\subsection{UC 1.3.7.1 - Inserimento bookmark}{
-	\label{uc1.3.7.1}
+\subsection{UC 1.3.1.7.1 - Inserimento bookmark}{
+	\label{uc1.3.1.7.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può inserire bookmark alle slide. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica.	\\
@@ -531,8 +547,8 @@
 		\item l'utente selezione l'icona inserisci bookmark a lato del numero della slide corrispondente.
 	\end{enumerate}
 }
-\subsection{UC 1.3.7.2 - Eliminazione bookmark}{
-	\label{uc1.3.7.2}
+\subsection{UC 1.3.1.7.2 - Eliminazione bookmark}{
+	\label{uc1.3.1.7.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può cancellare bookmark alle slide. \\
 	\textbf{Precondizione}: l'utente ha eliminato un bookmark da una slide.	\\
@@ -543,11 +559,11 @@
 		\item l'utente seleziona l'icona "elimina bookmark" a lato del frame e del numero della slide a cui è associato il bookmark da eliminare.
 	\end{enumerate}
 }
-\subsection{UC 1.3.8 - Definizione effetti di transizione}{
-	\label{uc1.3.8}
+\subsection{UC 1.3.1.8 - Definizione effetti di transizione}{
+	\label{uc1.3.1.8}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.3.8}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC1.3.1.8}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire gli effetti di transizione tra una slide e la successiva. \\
@@ -566,36 +582,36 @@
 		\item l'utente non conferma la modifica e si ritorna alla precondizione.
 	\end{itemize}
 	}
-\subsection{UC 1.3.8.1 - Selezione transizione}{
-	\label{uc1.3..8.1}
+\subsection{UC 1.3.1.8.1 - Selezione transizione}{
+	\label{uc1.3.1..8.1}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente selezionare una transizione tra due frame consecutivi in un percorso. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione "effetti transazioni".	\\
 	\textbf{Postcondizione}: l'utente ha selezionato una transizione.	\\
 }
-\subsection{UC 1.3. 8.2 - Selezione effetto}{
-	\label{uc1.3.8.2}
+\subsection{UC 1.3.1. 8.2 - Selezione effetto}{
+	\label{uc1.3.1.8.2}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può selezionare un effetto grafico di transizione da associare ad una transizione tra due frame. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione "effetti transazioni", l'utente ha selezionato una transizione.	\\
 	\textbf{Postcondizione}: l'utente ha selezionato un effetto di transizione per una transizione.	\\
 }
-\subsection{UC 1.3.8.3 - Conferma effetto}{
-	\label{uc1.3.8.3}
+\subsection{UC 1.3.1.8.3 - Conferma effetto}{
+	\label{uc1.3.1.8.3}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può confermare la modifica di un effetto grafico su di una transizione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione "effetti transazioni", l'utente ha selezionato una transizione, un effetto grafico per essa e una velocità di visualizzazione per la transizione.	\\
 	\textbf{Postcondizione}: l'utente ha confermato la modifica di un effetto grafico su di una transizione.	\\
 }
-\subsection{UC 1.3.8.4 - Imposta velocità transizione}{
-	\label{uc1.3..8.4}
+\subsection{UC 1.3.1.8.4 - Imposta velocità transizione}{
+	\label{uc1.3.1..8.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'impostare una velocita di visualizzazione di un effetto grafico su una transizione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione "effetti transazioni", l'utente ha selezionato una transizione e un effetto grafico su di essa.	\\
 	\textbf{Postcondizione}: l'utente ha impostato la velocità di visualizzazione di un effetto grafico su una transizione.	\\
 }
-\subsection{UC 1.3.9 - Definizione tempo di permanenza}{
-	\label{uc1.3.9}
+\subsection{UC 1.3.1.9 - Definizione tempo di permanenza}{
+	\label{uc1.3.1.9}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire il temo di permanenza per ogni slide in modalità esecuzione automatica di una presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica.	\\
@@ -611,8 +627,8 @@
 		\item l'utente non conferma la modifica  e si ritorna alla precondizione.
 	\end{itemize}
 }
-\subsection{UC 1.3.10 - Salvataggio modifiche in locale}{
-	\label{uc1.3.10}
+\subsection{UC 1.3.1.10 - Salvataggio modifiche in locale}{
+	\label{uc1.3.1.10}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può salvare in locale le modifiche fatte ad una presentazione. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica.	\\
@@ -627,3 +643,101 @@
 		\item l'utente ha salvato in locale le modifiche fatte ad una presentazione.
 	\end{itemize}
 }
+\subsection{UC 1.3.2 - Modifica presentazione da mobile}{
+	\label{uc1.3.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.3.2}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: L'utente mobile ha scelto l'opzione di modifica della presentazione. L'utente mobile può scegliere di modificare un frame o di gestire i bookmark. \\
+	\textbf{Precondizione}: l'utente mobile intende modificare una presetazione.	\\
+	\textbf{Postcondizione}: il sistema contiene una presentazione modificata.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item modifica mobile di un frame \hyperref[uc1.3.2.1]{(UC 1.3.2.1)};
+		\item gestione mobile dei bookmark \hyperref[uc1.3.2.2]{(UC 1.3.2.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item solo nel caso in cui venga effettuata una modifica l'utente mobile può scegliere di annullare l'ultima modifica eseguita.
+	\end{itemize}
+	}
+\subsection{UC 1.3.2.1 - Modifica mobile di un frame}{
+	\label{uc1.3.2.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.3.2.1}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile ha scelto l'opzione di modifica di un frame. L'utente mobile può scegliere di inserire o modificare un elemento testo. \\
+	\textbf{Precondizione}: l'utente mobile intende modificare un frame.	\\
+	\textbf{Postcondizione}: la presentazione contiene un frame modificato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item inserimento di un elemento testo \hyperref[uc1.3.2.1.1]{(UC 1.3.2.1.1)};
+		\item modifica di un elemento testo \hyperref[uc1.3.2.1.2]{(UC 1.3.2.1.2)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.3.2.1.1 - Inserimento di un elemento testo}{
+	\label{uc1.3.2.1.1}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile inserisce un elemento di tipo testo all'interno del frame. \\
+	\textbf{Precondizione}: l'utente mobile desidera inserire un nuovo elemento testo.	\\
+	\textbf{Postcondizione}: nel frame è presente un nuovo elemento testo.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente mobile seleziona l'opzione di inserimento testo;
+		\item l'utente mobile inserisce il testo desiderato.
+	\end{enumerate}
+	}
+\subsection{UC 1.3.2.1.2 - Modifica di un elemento testo}{
+	\label{uc1.3.2.1.2}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile modifica un elemento testo presente all'interno del frame. \\
+	\textbf{Precondizione}: l'utente mobile desidera modificare un elemento testo.	\\
+	\textbf{Postcondizione}: nel frame è presente un elemento testo modificato.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente mobile seleziona un elemento testo;
+		\item l'utente mobile modifica il testo selezionato.
+	\end{enumerate}
+	}	
+\subsection{UC 1.3.2.2 - Gestione mobile dei bookmark}{
+	\label{uc1.3.2.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.3.2.2}.jpg} %inserire il diagramma UML
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile ha scelto l'opzione di gestione dei bookmark. L'utente mobile può scegliere di inserire o rimuovere bookmark. \\
+	\textbf{Precondizione}: l'utente mobile intende gestire i bookmark.	\\
+	\textbf{Postcondizione}: la presentazione contiene una diversa gestione dei bookmark.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item inserimento di un nuovo bookmark \hyperref[uc1.3.2.2.1]{(UC 1.3.2.2.1)};
+		\item rimozione di un bookmark \hyperref[uc1.3.2.2.2]{(UC 1.3.2.2.2)}.
+	\end{enumerate}
+	}
+\subsection{UC 1.3.2.2.1 - Inserimento di un nuovo bookmark}{
+	\label{uc1.3.2.2.1}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile inserisce un bookmark su un frame che non ne contiene uno. \\
+	\textbf{Precondizione}: l'utente mobile intende inserire un bookmark su un frame che non contiene bookmark.	\\
+	\textbf{Postcondizione}: il frame selezionato contiene un bookmark.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente mobile seleziona un frame assegnando il bookmark.
+	\end{enumerate}
+	}
+\subsection{UC 1.3.2.2.2 - Rimozione di un bookmark}{
+	\label{uc1.3.2.2.2}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile rimuove un bookmark su un frame che ne contiene uno. \\
+	\textbf{Precondizione}: l'utente mobile intende rimuovere un bookmark da un frame che ne contiene uno.	\\
+	\textbf{Postcondizione}: il frame selezionato non contiene un bookmark.	\\
+	\textbf{Procedura principale}:
+	\begin{enumerate}
+		\item l'utente mobile seleziona un frame rimuovendo il bookmark.
+	\end{enumerate}
+	}
