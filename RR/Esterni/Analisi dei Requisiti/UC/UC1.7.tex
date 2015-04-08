@@ -277,7 +277,7 @@
 			\label{uc1.7.4.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona dal FileSystem delle presentazioni una cartella tra quelle presenti o ne crea una di nuova. \\
-			\textbf{Precondizione}: l'utente ha selezionato delle presentazioni all'interno di un percorso valido nel FileSystem delle presentazioni; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra i file immagine e le cartelle dell'utente all'interno dello spazio delle immagini.	\\
+			\textbf{Precondizione}: l'utente ha selezionato delle presentazioni all'interno di un percorso valido nel FileSystem delle presentazioni; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra le presentazioni e le cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una cartella di destinazione valida all'interno del FileSystem delle presentazioni.	\\
 			}
 		\subsection{UC 1.7.4.5 - Conferma selezione e spostamento}{
@@ -334,6 +334,114 @@
 			\label{uc1.7.5.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede all'eliminazione. \\
-			\textbf{Precondizione}: l'utente ha selezionato le presentazioni da eliminare; tali file esistono.	\\
+			\textbf{Precondizione}: l'utente ha selezionato le presentazioni da eliminare; queste esistono.	\\
 			\textbf{Postcondizione}: il sistema ha eliminato le presentazioni selezionate dalla cartella scelta.	\\
+			}
+	\subsection{UC 1.7.6 - Spostamento infografiche}{
+		\label{uc1.7.6}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.7.6}.jpg} %inserire il diagramma UML
+		\end{figure}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di selezionare delle infografiche inserite in una cartella all'interno del proprio spazio riservato alle infografiche nel server e spostarle in un'altra directory, oppure in una nuova. \\
+		\textbf{Precondizione}: l'utente desidera spostare una o più infografica esistente nel proprio spazio sul server.	\\
+		\textbf{Postcondizione}: l'utente ha spostato le infografiche che desiderava spostare dalla posizione in cui queste si trovavano, in una posizione valida.	\\
+		\textbf{Procedura principale}:
+		\begin{enumerate}
+			\item navigazione nel FileSystem delle infografiche \hyperref[uc1.7.4.1]{(UC 1.7.4.1)};
+			\item selezione cartella di lavoro \hyperref[uc1.7.4.2]{(UC 1.7.4.2)};
+			\item selezione infografiche da spostare \hyperref[uc1.7.4.3]{(UC 1.7.4.3)};
+			\item selezione cartella di destinazione \hyperref[uc1.7.4.4]{(UC 1.7.4.4)};
+			\item conferma selezione e spostamento \hyperref[uc1.7.4.5]{(UC 1.7.4.5)}.
+		\end{enumerate}
+		\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item l'operazione viene annullata e non si apportano cambiamenti.
+		\end{itemize}
+		}
+		\subsection{UC 1.7.6.1 - Navigazione nel FileSystem delle infografiche}{
+			\label{uc1.7.6.1}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle infografiche. \\
+			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
+			\textbf{Postcondizione}: l'utente si trova nella cartella con le infografiche da spostare.	\\
+			}
+		\subsection{UC 1.7.6.2 - Selezione cartella di lavoro}{
+			\label{uc1.7.6.2}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle infografiche. \\
+			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
+			\textbf{Postcondizione}: l'utente si trova nella cartella che contiene le infografiche da spostare.	\\
+			}
+		\subsection{UC 1.7.6.3 - Selezione infografiche da spostare}{
+			\label{uc1.7.6.3}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente seleziona una o più infografiche esistenti da spostare. \\
+			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le infografiche che intende spostare e si trova all'interno di tale cartella; il sistema mostra all'utente le infografiche contenute in tale cartella.	\\
+			\textbf{Postcondizione}: l'utente ha selezionato una o più infografiche esistenti da spostare.	\\
+			}				
+		\subsection{UC 1.7.6.4 - Selezione cartella di destinazione}{
+			\label{uc1.7.6.4}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente seleziona dal FileSystem delle infografiche una cartella tra quelle presenti o ne crea una di nuova. \\
+			\textbf{Precondizione}: l'utente ha selezionato delle infografiche all'interno di un percorso valido nel FileSystem delle infografiche; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra le infografiche e le cartelle dell'utente all'interno dello spazio delle infografiche.	\\
+			\textbf{Postcondizione}: l'utente ha selezionato una cartella di destinazione valida all'interno del FileSystem delle infografiche.	\\
+			}
+		\subsection{UC 1.7.6.5 - Conferma selezione e spostamento}{
+			\label{uc1.7.6.5}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede allo spostamento. \\
+			\textbf{Precondizione}: l'utente ha selezionato le infografiche da spostare e la destinazione in cui trasferirle; tali infografiche esistono.	\\
+			\textbf{Postcondizione}: il sistema ha spostato le infografiche selezionate, nella cartella selezionata dall'utente.	\\
+			}
+	\subsection{UC 1.7.7 - Eliminazione infografiche}{
+		\label{uc1.7.7}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.7.7}.jpg} %inserire il diagramma UML
+		\end{figure}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di eliminare infografiche contenute in una cartella, all'interno del proprio spazio riservato alle infografiche sul server. \\
+		\textbf{Precondizione}: l'utente desidera eliminare una o più infografica esistente nel proprio spazio sul server.	\\
+		\textbf{Postcondizione}: l'utente ha cancellato le infografiche che desiderava rimuovere.	\\
+		\textbf{Procedura principale}:
+		\begin{enumerate}
+			\item navigazione nel FileSystem delle infografiche \hyperref[uc1.7.5.1]{(UC 1.7.5.1)};
+			\item selezione cartella di lavoro \hyperref[uc1.7.5.2]{(UC 1.7.5.2)};
+			\item selezione infografiche da eliminare \hyperref[uc1.7.5.3]{(UC 1.7.5.3)};
+			\item conferma selezione ed eliminazione \hyperref[uc1.7.5.4]{(UC 1.7.5.4)}.
+		\end{enumerate}
+		\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item l'operazione viene annullata e non si apportano cambiamenti.
+		\end{itemize}
+		}
+		\subsection{UC 1.7.7.1 - Navigazione nel FileSystem delle infografiche}{
+			\label{uc1.7.7.1}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende rimuovere. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
+			\textbf{Precondizione}: l'utente ha iniziato l'operazione di cancellazione di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
+			\textbf{Postcondizione}: l'utente si trova nella cartella con le infografiche da eliminare.	\\
+			}
+		\subsection{UC 1.7.7.2 - Selezione cartella di lavoro}{
+			\label{uc1.7.7.2}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente conferma la posizione. \\
+			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le infografiche da eliminare.	\\
+			\textbf{Postcondizione}: l'utente si trova all'interno della cartella in cui sono inserite le infografiche da eliminare. 	\\
+			}
+		\subsection{UC 1.7.7.3 - Selezione infografiche da eliminare}{
+			\label{uc1.7.7.3}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente seleziona una o più infografiche esistenti da rimuovere. \\
+			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono  inserite le infografiche che intende eliminare e si trova all'interno di tale cartella; il sistema mostra all'utente le presentazioni che lì si trovano.	\\
+			\textbf{Postcondizione}: l'utente ha selezionato una o più infografica esistente da eliminare.	\\
+			}
+		\subsection{UC 1.7.7.4 - Conferma selezione ed eliminazione}{
+			\label{uc1.7.7.4}
+			\textbf{Attori}: utente autenticato. \\
+			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede all'eliminazione. \\
+			\textbf{Precondizione}: l'utente ha selezionato le infografiche da eliminare; queste esistono.	\\
+			\textbf{Postcondizione}: il sistema ha eliminato le infografiche selezionate dalla cartella scelta.	\\
 			}
