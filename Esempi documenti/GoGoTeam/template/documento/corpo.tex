@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{../stile}
+
+%posizione dei file di capitolo per il documento corrente
+%default scts (sections)
+\newcommand{\docs}{./sezioni/}
+%posizione delle immagini per il documento corrente
+\newcommand{\docsImg}{./sezioni/img/}
+
+%
+%	Dati locali del documento
+%
+%Titolo documento
+\newcommand{\titoloDocumento}{Template documenti per SWE}
+%Prima data di creazione del documento
+\newcommand{\dataCreazione}{29 novembre 2012}
+%Inserite la versione attuale del documento
+\newcommand{\versione}{1.0}
+%
+%++++	Dati rilascio documento	++++
+%
+%Stato in cui si trova il documento: Formale solo all'atto di consegna
+\newcommand{\stato}{Informale || Formale}
+%Uso del documento
+\newcommand{\uso}{Interno || Esterno}
+
+%\hyphenation{mytalk.-client.-iPresenter.-iUser.-iLogicUser}
+
+\rhead{\titoloDocumento}
+\lfoot{Versione: \versione}
+\title{\titoloDocumento}
+
+\begin{document}
+\input{\docs front.tex}
+\newpage
+
+\input{\docs regMod.tex}
+\newpage
+
+%\pagenumbering{arabic}
+\tableofcontents
+\newpage
+\listoftables
+
+\listoffigures
+\newpage
+
+\input{\docs sezione1.tex}
+\input{\docs sezioneN.tex}
+\newpage
+
+\bibliography{../bibliografia}
+
+%	Indice analitico: sequenza texmaker: f6 + f12 e poi f7
+%\newpage
+%\printindex
+\end{document}

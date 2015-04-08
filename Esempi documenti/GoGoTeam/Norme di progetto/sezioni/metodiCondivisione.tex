@@ -1,0 +1,69 @@
+\section{Metodi di condivisione} {
+	Per un migliore e più efficiente svolgimento delle attività del gruppo, si è resa necessaria l'adozione di due differenti strumenti per la condivisione delle risorse.
+
+	\subsection{Dropbox - informativi interni} {
+		Il servizio Dropbox (\url{https://www.dropbox.com/}) consente una facile condivisione di risorse tra i componenti del gruppo anche quando questi si trovano fuori sede.\\
+		Le risorse condivise tramite questo strumento hanno natura puramente informativa e non sono soggette a versionamento.\\
+		Il riferimento remoto, che si indica come \texttt{root} in seguito, è il seguente
+		\begin{center}
+			\url{https://www.dropbox.com/home/SWE-GoGoTeam}
+		\end{center}
+		La suddivisione interna della cartella remota è la seguente:
+		\begin{itemize}
+			\item \textbf{\texttt{root/documenti}:} per i documenti interni informali di riferimento;
+			\item \textbf{\texttt{root/guide}:} per tutte le guide tecniche che interesseranno lo sviluppo del prodotto;
+			\item \textbf{\texttt{root/manuali}:} per i manuali di sviluppo ed implementazione di utility\g~ e linguaggi.
+		\end{itemize}
+		L'accesso alla cartella condivisa viene inoltrata dal Responsabile che provvede, entro un giorno lavorativo, ad abilitare l'accesso all'utente.
+	}
+
+	\subsection{Repository} {
+		Per un efficiente svolgimento del lavoro interno del gruppo \`e necessario uno strumento affidabile e preciso per il supporto allo sviluppo della documentazione e di tutti i file di codifica del progetto.\\
+		Il servizio scelto per la gestione del repository\g~ è SourceForge (\url{https://sourceforge.net}).
+		\subsubsection{Struttura} {
+			\begin{itemize}
+				\item \textbf{Progetto:} si definisce come \texttt{root} l'indirizzo web\g~ di riferimento del progetto: 
+				\begin{center}
+					\url{https://sourceforge.net/p/ggt-mytalk/code/}
+				\end{center}	
+				
+				\item \textbf{Documentazione:} tutta la documentazione viene allocata nel repository\g~ nella cartella:
+				\begin{center}
+					\texttt{root/docs/}
+				\end{center}	 
+				All'interno di questa sono allocati i vari file necessari alla documentazione:
+				\begin{itemize}
+					\item \textbf{Documenti in redazione:} i documenti non formali in fase di stesura devono essere caricati in una propria cartella:  
+					\begin{center}
+						\texttt{root/docs/\{NomeDocumento\}/}
+					\end{center}
+					\item \textbf{Immagini:} tutte le immagini ad uso esclusivo del documento sono locate nella seguente posizione:
+						\begin{center}
+							\texttt{root/docs/\{NomeDocumento\}/Immagini}
+						\end{center}
+					
+					\item \textbf{Documenti di rilascio:} tutti i documenti formali identificati in versione di rilascio devono essere caricati all'interno di un'unica cartella: 
+					\begin{center}
+						\texttt{root/docs/\{TipoRevisione\}/}
+					\end{center}
+				\end{itemize}
+				
+				\item \textbf{Codice:} tutti i file di codifica sono allocati in
+				\begin{center}
+					\texttt{root/code/}
+				\end{center}	 
+				All'interno della cartella vengono smistati i vari file necessari allo sviluppo dell'applicazione eseguibile.\\
+Si lascia all'IDE\g~ Eclipse (vedi cap. \ref{IDEEclipse}) la completa gestione ed organizzazione dei file secondo la struttura definita dai package dell'applicazione.
+			\end{itemize}
+		}
+
+		\subsubsection{Utilizzo per i documenti}{
+			La documentazione all'interno del repository\g~ deve essere composta da soli documenti in formato \LaTeX.\\
+			Qualora fosse necessario visionare un qualsiasi documento, ogni utente deve procedere autonomamente alla sua compilazione per produrre un file PDF\g . 
+			Per ottenere ciò è necessario eseguire il seguente comando:
+			\begin{center}
+				\texttt{\$ pdflatex root/docs/\{NomeDocumento\}/\{NomeDocumento\}.tex}
+			\end{center}
+		}
+	}
+}

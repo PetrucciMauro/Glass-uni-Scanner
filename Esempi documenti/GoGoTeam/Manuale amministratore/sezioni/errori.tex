@@ -1,0 +1,82 @@
+\section{Errori e possibili cause} \label{errori} {
+
+Vengono descritte le situazioni di errore che possono avvenire durante l'uso dell'applicazione:
+\begin{itemize}
+	\item \textbf{E1 - Pagina bianca all'accesso dell'applicazione: }{
+		questa situazione si verifica perché nel browser\g~ che si sta attualmente usando non è abilitato l'utilizzo di Javascript\g .\\
+		Nelle varie versioni del browser\g~ Google Chrome\g~ è possibile risolvere il problema in due modi:
+		\begin{itemize}
+			\item Globale: dal menù di personalizzazione è possibile abilitare Javascript\g~ per tutti i siti web visitati;
+			\item Locale: Nella barra degli indirizzi, abilitare l'esecuzione di Javascript\g~ unicamente nel sito del servizio (figura \ref{fig:JSErr}).
+		\end{itemize}
+	}
+
+	\begin{center}
+		\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.6]{\docsImg ErroreJs.png}
+		\caption{Abilitare l'esecuzione di Javascript\g~ solo per il sito corrente.}
+		\label{fig:JSErr}
+		\end{figure}
+	\end{center}
+
+	\item \textbf{E2 - Credenziali non corrette: }{
+		questa situazione si verifica perché nella scheda di autenticazione sono stati inseriti dei dati non validi. L'errore più comune è l'inserimento di caratteri maiuscoli al posto dei minuscoli (o viceversa).\\
+		Riprovare ponendo attenzione durante la digitazione dello username e della password (figure \ref{fig:LoginErr1} e \ref{fig:LoginErr2}).
+	}
+
+\begin{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.4]{\docsImg ErroreLogin1.png}
+	\caption{Errore di login dovuto ad errori nell'inserimento di username e password.}
+	\label{fig:LoginErr1}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.4]{\docsImg ErroreLogin2.png}
+	\caption{Errore di login dovuto a username o password inesistenti.}
+	\label{fig:LoginErr2}
+\end{figure}
+\end{center}
+
+	\item \textbf{E3 - Errore di connessione al server\g~: }{
+		quando si sono verificati dei problemi nella connessione con il server\g~ viene visualizzato un messaggio d'errore:\\
+		\textit{Verificare che la propria connessione internet sia attiva e che nessun firewall\g~ impedisca la trasmissione, successivamente ricaricare la pagina.}\\
+		Verificare la propria connessione ad internet, altrimenti contattare il gestore del servizio.
+	}
+
+	\item \textbf{E4 - Parametro di filtro errato: }{
+		questa situazione si verifica perché si sono inseriti valori di filtro errati senza rispettare la formattazione richiesta.\\
+		Riprovare ponendo attenzione durante la digitazione del valore seguendo la linea guida presente per ciascun formato (figura \ref{fig:GiudizioErr}).
+	}
+
+\begin{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{\docsImg ErroreGiudizio.png}
+	\caption{Errore dovuto ad una ricerca in base ad un giudizio non valido.}
+	\label{fig:GiudizioErr}
+\end{figure}
+\end{center}
+
+\end{itemize}
+
+Tutti i form\g~ compilati dall'utente, che richiedono degli input da inserire, sono sottoposti a validazione in tempo reale. Come si vede dalla figura (figura \ref{fig:DataErr}) a fianco dei campi che superano la validazione non compare nulla mentre i campi che non la superano vengono affiancati dalla segnalazione dell'errore riscontrato.
+
+
+\begin{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{\docsImg ErroreData.png}
+	\caption{Errore dovuto ad un formato non corretto della data.}
+	\label{fig:DataErr}
+\end{figure}
+\end{center}
+
+
+
+}

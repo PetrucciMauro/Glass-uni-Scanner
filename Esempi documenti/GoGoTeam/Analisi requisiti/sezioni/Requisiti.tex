@@ -1,0 +1,374 @@
+\section{Tabella dei requisiti}
+\subsection{Requisiti funzionali}
+La forma adottata per descrivere i requisiti è quella descritta nelle \emph{\NormeDiProgetto} (cap. 6).
+\\
+\subsubsection{Ambito utente}
+\begin{longtable}{p{0.2\textwidth} p{0.5\textwidth} p{0.1\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Provenienza} \\
+\midrule
+
+\midrule
+FOB 1 & Il sistema dovrà permettere all'utente di autenticarsi inserendo le proprie credenziali & CA\\
+\midrule
+FOB 1.1 & L'utente per autenticarsi dovrà inserire il proprio username & IF\\
+\midrule
+FOB 1.2 & L'utente per autenticarsi dovrà immettere la propria password & IF\\
+
+\midrule
+FOB 2 & Il sistema dovrà permettere all'utente di registrarsi presso un server$_{|g|}$ & CA\\
+\midrule
+FOB 2.1 & L'utente per registrarsi dovrà immettere uno username che lo identifichi univocamente & IF\\
+\midrule
+FOB 2.1.1 & Lo username dovrà corrispondere ad un indirizzo di posta elettronica & IF\\
+\midrule
+FOB 2.2 & L'utente per registrarsi dovrà immettere una password & IF\\
+\midrule
+FOB 2.2.1 & La password dovrà essere formata da almeno 8 caratteri & IF\\
+\midrule
+FOB 2.3 & L'utente per registrarsi dovrà inserire il proprio nome & IF\\
+\midrule
+FOB 2.4 & L'utente per registrarsi dovrà inserire il proprio cognome & IF\\
+\midrule
+FOB 2.5 & L'utente per registrarsi, a sua discrezione, potrà inserire il nome dell'azienda in cui lavora & IF\\
+\midrule
+FOB 2.6 & L'utente per registrarsi, a sua discrezione, potrà inserire il proprio numero di telefono, che dovrà essere completamente numerico e formato da massimo 11 cifre & IF\\
+
+\midrule
+FOB 3 & Il sistema dovrà permettere all'utente autenticato di gestire il proprio account & IF\\
+\midrule
+
+FOB 3.1 & L'utente autenticato potrà visualizzare i propri dati & IF\\
+\midrule
+FOB 3.1.1 & L'utente autenticato potrà visualizzare il proprio username & IF\\
+\midrule
+FOB 3.1.2 & L'utente autenticato potrà visualizzare il proprio nome & IF\\
+\midrule
+FOB 3.1.3 & L'utente autenticato potrà visualizzare il proprio cognome & IF\\
+\midrule
+FOB 3.1.4 & L'utente autenticato potrà visualizzare il nome dell'azienda in cui lavora & IF\\
+\midrule
+FOB 3.1.5 & L'utente autenticato potrà visualizzare il proprio numero di telefono & IF\\
+
+\midrule
+FOB 3.2 & L'utente autenticato potrà modificare i propri dati & IF\\
+
+\midrule
+FOB 3.2.1 & L'utente autenticato potrà modificare il proprio username & IF\\
+
+\midrule
+FOB 3.2.2 & L'utente autenticato potrà modificare la propria password & IF\\
+\midrule
+FOB 3.2.2.1 & L'utente autenticato dovrà inserire la vecchia password & IF\\
+\midrule
+FOB 3.2.2.2 & L'utente autenticato dovrà inserire la nuova password scelta & IF\\
+
+\midrule
+FOB 3.2.3 & L'utente autenticato potrà modificare il proprio nome & IF\\
+
+\midrule
+FOB 3.2.4 & L'utente autenticato potrà modificare il proprio cognome & IF\\
+
+\midrule
+FOB 3.2.5 & L'utente autenticato potrà modificare l'azienda in cui lavora & IF\\
+
+\midrule
+FOB 3.2.6 & L'utente autenticato potrà modificare il proprio numero di telefono & IF\\
+
+\midrule
+FOB 4 & Il sistema dovrà permettere di effettuare e ricevere chiamate audio/video & CA\\
+
+\midrule
+FOB 4.1 & Il sistema dovrà permettere di gestire le chiamate in entrata & CA\\
+
+\midrule
+FOB 4.1.1 & Il sistema dovrà permettere all'utente autenticato di accettare la chiamata in entrata & CA\\
+\midrule
+FOB 4.1.1.1 & Il sistema dovrà permettere all'utente autenticato di gestire la chiamata in corso & CA\\
+
+\midrule
+FOB 4.1.1.1.1 & Il sistema durante la comunicazione dovrà permettere lo scambio del segnale audio/video & CA\\
+\midrule
+FOB 4.1.1.1.1.1 & Il sistema durante la comunicazione dovrà permettere lo scambio del segnale audio & CA\\
+\midrule
+FOB 4.1.1.1.1.2 & Il sistema durante la comunicazione dovrà permettere lo scambio del segnale video & CA\\
+
+\midrule
+FOB 4.1.1.1.2 & Il sistema permetterà all'utente autenticato di chiudere la comunicazione in corso & CA\\
+
+\midrule
+FOB 4.1.1.1.3 & Il sistema, al termine della comunicazione, chiederà all'utente autenticato di esprimere un giudizio sulla qualità della comunicazione scegliendolo in una scala da 1 a 5 & IP\\
+
+\midrule
+FOB 4.1.1.1.4 & Il sistema dovrà permettere di visualizzare statistiche sulla chiamata & CA\\
+\midrule
+FOB 4.1.1.1.4.1 & Il sistema dovrà permettere di visualizzare il numero di pacchetti inviati & CA\\
+\midrule
+FOB 4.1.1.1.4.2 & Il sistema dovrà permettere di visualizzare la latenza$_{|g|}$ della comunicazione & CA\\
+\midrule
+FOB 4.1.1.1.4.3 & Il sistema dovrà permettere di visualizzare il tempo di comunicazione & CA\\
+\midrule
+FOB 4.1.1.1.4.4 & Il sistema dovrà permettere di visualizzare il numero di byte trasmessi & CA\\
+\midrule
+FOB 4.1.1.1.4.5 & Il sistema dovrà permettere di visualizzare il numero di pacchetti persi & CA\\
+
+\midrule
+FOB 4.1.2 & Il sistema dovrà permettere all'utente autenticato di rifiutare la chiamata in entrata & CA\\
+
+\midrule
+FOB 4.2 & Il sistema dovrà permettere all'utente autenticato di effettuare chiamate & CA\\
+
+\midrule
+FOB 4.2.1 & Il sistema dovrà permettere all'utente autenticato di chiamare un singolo utente & CA\\
+
+\midrule
+FOB 4.2.1.1 & Il sistema dovrà permettere ad un utente autenticato di chiamare un altro utente registrato conoscendone lo username & CA\\
+\midrule
+FOB 4.2.1.1.1 & L'utente autenticato dovrà inserire lo username dell'utente registrato che vuole chiamare & CA\\
+
+\midrule
+FOB 4.2.1.2 & Il sistema dovrà permettere ad un utente autenticato di chiamare un altro utente registrato conoscendone l'indirizzo IP$_{|g|}$ & CA\\
+\midrule
+FOB 4.2.1.2.1 & L'utente autenticato dovrà inserire l'indirizzo IP$_{|g|}$ dell'utente registrato che vuole chiamare & CA\\
+
+\midrule
+FOB 4.2.1.3 & Il sistema dovrà permettere ad un utente autenticato di chiamare un altro utente registrato selezionandolo dalla lista & CA\\
+\midrule
+FOB 4.2.1.3.1 & Il sistema, su richiesta dell'utente autenticato, visualizzerà una lista degli utenti registrati & CA\\
+\midrule
+FOB 4.2.1.3.2 & L'utente autenticato dovrà selezionare dalla lista l'utente da chiamare & CA\\
+
+\midrule
+FOB 5 & Il sistema potrebbe non essere in grado di instaurare una comunicazione, per rifiuto della chiamata da parte del destinatario o per assenza di servizio. In tal caso il sistema dovrebbe avvisare l'utente. & CA\\
+
+\midrule
+FOB 6 & Il sistema permetterà all'utente autenticato di uscire dalla sessione autenticata & IF\\
+
+\midrule
+FDE 1 & Il sistema dovrà permettere all'utente autenticato di chiamare più utenti in videoconferenza & CA\\
+
+\midrule
+FDE 1.1 & Il sistema permetterà di aggiungere uno o più utenti da chiamare selezionandoli tramite il loro username & CA\\
+
+\midrule
+FDE 1.2 & Il sistema permetterà di aggiungere uno o più utenti da chiamare selezionandoli tramite il loro indirizzo IP$_{|g|}$ & CA\\
+
+\midrule
+FDE 1.3 & Il sistema permetterà di aggiungere uno o più utenti da chiamare selezionandoli dalla lista & CA\\
+\midrule
+FDE 1.3.1 & L'utente autenticato dovrà selezionare dalla lista uno o più utenti da aggiungere alla lista degli utenti da chiamare & CA\\
+
+\midrule
+FOP 1 & Il sistema metterà a disposizione degli utenti autenticati la comunicazione chat & CA\\
+
+\midrule
+FOP 1.1 & Il sistema permetterà all'utente autenticato di iniziare una comunicazione chat & CA\\
+
+\midrule
+FOP 1.1.1 & Il sistema permetterà all'utente autenticato di accettare una proposta di inizio chat da parte di un altro utente autenticato & CA\\
+
+\midrule
+FOP 1.1.2 & Il sistema permetterà all'utente autenticato di inviare una richiesta di comunicazione chat ad altri utenti registrati & CA\\
+
+\midrule
+FOP 1.1.2.1 & Il sistema dovrà permettere ad un utente autenticato di invitare in chat un altro utente registrato conoscendone lo username & CA\\
+\midrule
+FOP 1.1.2.1.1 & L'utente autenticato dovrà inserire lo username dell'utente registrato che vuole invitare in chat & CA\\
+
+\midrule
+FOP 1.1.2.2 & Il sistema dovrà permettere ad un utente autenticato di invitare in chat un altro utente registrato conoscendone l'indirizzo IP$_{|g|}$ & CA\\
+\midrule
+FOP 1.1.2.2.1 & L'utente autenticato dovrà inserire l'indirizzo IP$_{|g|}$ dell'utente registrato che vuole invitare in chat & CA\\
+
+\midrule
+FOP 1.1.2.3 & Il sistema dovrà permettere ad un utente autenticato di invitare un altro utente registrato selezionandolo dalla lista & CA\\
+\midrule
+FOP 1.1.2.3.1 & L'utente autenticato dovrà selezionare dalla lista l'utente da invitare in chat & CA\\
+
+\midrule
+FOP 1.2 & Il sistema permetterà all'utente autenticato di visualizzare la comunicazione chat in corso & CA\\
+
+\midrule
+FOP 1.3 & Il sistema permetterà all'utente autenticato di inserire un messaggio nella comunicazione chat in corso & CA\\
+
+\midrule
+FOP 1.4 & Il sistema permetterà all'utente autenticato di chiudere la comunicazione chat in corso & CA\\
+
+\midrule
+FOP 2 & Il sistema permetterà all'utente autenticato di effettuare delle operazioni mentre la comunicazione è in corso & CA\\
+\midrule
+FOP 2.1 & Il sistema permetterà all'utente autenticato di condividere file & IF\\
+\midrule
+FOP 2.2 & Il sistema permetterà all'utente autenticato di scaricare un file condiviso & IF\\
+\midrule
+FOP 2.3 & Il sistema permetterà la registrazione della video chiamata da parte dell'utente autenticato & CA\\
+
+\midrule
+FOP 3 & Il sistema, su richiesta dell'utente autenticato, evidenzierà gli utenti online nella lista degli utenti registrati & CA\\
+
+\midrule
+FOP 4 & Il sistema permetterà, su richiesta dell'utente autenticato, di ricercare gli utenti nella lista degli utenti registrati & IF\\
+\midrule
+FOP 4.1 & La ricerca potrà avvenire tramite username & IF\\
+\midrule
+FOP 4.2 & La ricerca potrà avvenire tramite indirizzo IP$_{|g|}$ & IF\\
+\midrule
+FOP 4.3 & La ricerca potrà avvenire tramite nome & IF\\
+\midrule
+FOP 4.4 & La ricerca potrà avvenire tramite cognome & IF\\
+\midrule
+FOP 4.5 & La ricerca potrà avvenire tramite azienda & IF\\
+
+\midrule
+FOP 5 & Il sistema, qualora non sia possibile instaurare una comunicazione, permetterà all'utente autenticato di lasciare un messaggio visualizzabile dal ricevente & CA\\
+
+\midrule
+FOP 5.1 & Il sistema permetterà all'utente autenticato di lasciare un messaggio di testo & IF\\
+\midrule
+FOP 5.1.1 & L'utente autenticato dovrà inserire il testo del messaggio & IF\\
+
+\midrule
+FOP 5.2 & Il sistema permetterà all'utente autenticato di lasciare un video messaggio & IF\\
+\midrule
+FOP 5.2.1 & L'utente autenticato dovrà registrare il video messaggio & IF\\
+
+\end{longtable}
+\newpage
+
+
+\subsubsection{Ambito amministratore}
+\begin{longtable}{p{0.2\textwidth} p{0.5\textwidth} p{0.1\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Provenienza} \\
+\midrule
+\midrule
+FAOB 0 & Il sistema dovrà permettere all'amministratore di visualizzare e filtrare le chiamate effettuate dagli utenti e anche di visualizzare le statistiche su queste chiamate & CA\\
+
+\midrule
+FAOB 1 & Il sistema dovrà permettere all'amministratore di autenticarsi inserendo le proprie credenziali & CA\\
+\midrule
+FAOB 1.1 & L'amministratore per autenticarsi dovrà inserire il proprio username & IF\\
+\midrule
+FAOB 1.2 & L'amministratore per autenticarsi dovrà immettere la propria password & IF\\
+
+\midrule
+FAOB 2 & Il sistema permetterà all'amministratore autenticato di visualizzare le chiamate effettuate dagli utenti e di visualizzare le statistiche su queste chiamate & CA\\
+
+\midrule
+FAOB 2.1 & Il sistema permetterà all'amministratore autenticato di visualizzare tutte le chiamate effettuate dagli utenti nella settimana & CA\\
+
+\midrule
+FAOB 2.1.1 & Il sistema permetterà all'amministratore autenticato di filtrare le chiamate in base al giorno di effettuazione & IF\\
+\midrule
+FAOB 2.1.1.1 & L'amministratore autenticato dovrà selezionare il giorno di cui vuole visualizzare le chiamate & IF\\
+
+\midrule
+FAOB 2.1.2 & Il sistema permetterà all'amministratore autenticato di filtrare le chiamate in base al giudizio espresso dagli utenti & IF\\
+\midrule
+FAOB 2.1.2.1 & L'amministratore autenticato dovrà selezionare il giudizio in base al quale vuole visualizzare le chiamate & IF\\
+
+\midrule
+FAOB 2.1.3 & Il sistema permetterà all'amministratore autenticato di filtrare le chiamate in base all'utente & IF\\
+\midrule
+FAOB 2.1.3.1 & L'amministratore autenticato potrà selezionare l'utente conoscendone lo username & IF\\
+\midrule
+FAOB 2.1.3.1.1 & L'amministratore autenticato dovrà inserire lo username dell'utente di cui vuole visualizzare le chiamate & IF\\
+
+\midrule
+FAOB 2.1.3.2 & L'amministratore autenticato potrà selezionare l'utente dalla lista & IF\\
+\midrule
+FAOB 2.1.3.2.1 & L'amministratore autenticato dovrà selezionare nella lista l'utente di cui vuole visualizzare le chiamate & IF\\
+\midrule
+FAOB 2.1.3.2.2 & Il sistema, su richiesta dell'amministratore autenticato, visualizzerà una lista degli utenti registrati & CA\\
+
+\midrule
+FAOB 2.2 & Il sistema permetterà all'amministratore autenticato di visualizzare le statistiche sulle chiamate & CA\\
+\midrule
+FAOB 2.2.1 & Il sistema permetterà all'amministratore autenticato di visualizzare gli username dei chiamanti & IF\\
+\midrule
+FAOB 2.2.2 & Il sistema permetterà all'amministratore autenticato di visualizzare il numero di pacchetti trasmessi & CA\\
+\midrule
+FAOB 2.2.3 & Il sistema permetterà all'amministratore autenticato di visualizzare il numero di byte trasmessi & CA\\
+\midrule
+FAOB 2.2.4 & Il sistema permetterà all'amministratore autenticato di visualizzare il giudizio sulla chiamata & IP\\
+\midrule
+FAOB 2.2.5 & Il sistema permetterà all'amministratore autenticato di visualizzare il numero di pacchetti persi & CA\\
+\midrule
+FAOB 2.2.6 & Il sistema permetterà all'amministratore autenticato di visualizzare la data in cui è avvenuta la comunicazione & IF\\
+\midrule
+FAOB 2.2.7 & Il sistema permetterà all'amministratore autenticato di visualizzare la durata della chiamata & IF\\
+
+\midrule
+FAOB 3 & Il sistema permetterà all'amministratore autenticato di uscire dalla sessione autenticata & IF\\
+
+\midrule
+FAOP 1 & Il sistema permetterà, su richiesta dell'amministratore autenticato, di ricercare gli utenti nella lista degli utenti registrati & IF\\
+\midrule
+FAOP 1.1 & La ricerca potrà avvenire tramite username & IF\\
+\midrule
+FAOP 1.2 & La ricerca potrà avvenire tramite indirizzo IP$_{|g|}$ & IF\\
+\midrule
+FAOP 2 & L'amministratore autenticato potrà selezionare l'utente conoscendone l'indirizzo IP$_{|g|}$ & IF\\
+\midrule
+FAOP 2.1 & L'amministratore autenticato dovrà inserire l'indirizzo IP$_{|g|}$ dell'utente di cui vuole visualizzare le chiamate & IF\\
+\end{longtable}
+\newpage
+
+\subsection{Requisiti di vincolo}
+\begin{longtable}{p{0.15\textwidth} p{0.6\textwidth} p{0.20\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Provenienza} \\
+\midrule
+\midrule
+VOB1 & Il sistema deve essere compatibile con il browser$_{|g|}$ Chrome$_{|g|}$ versione 27 e successive & CA\\
+\midrule
+VOB2 & Il sistema dovrà basarsi preferibilmente su componenti standard W3C$_{|g|}$ per le componenti client$_{|g|}$ & CA\\
+\midrule
+VOB3 & Il sistema non deve necessitare di alcuna installazione di plugin$_{|g|}$ oltre alle librerie WebRTC$_{|g|}$ normalmente già installate sul browser$_{|g|}$ Chrome$_{|g|}$ versione 21 e successive & CA\\
+\midrule
+VOB4 & La componente server$_{|g|}$ del sistema deve essere realizzata nel linguaggio Java$_{|g|}$ & CA\\
+\midrule
+VOB5 & La componente server$_{|g|}$ del sistema per interagire con gli utenti del sistema deve utilizzare il protocollo di comunicazione WebSocket$_{|g|}$ & CA\\
+\midrule
+VOB6 & La componente server$_{|g|}$ deve esclusivamente inizializzare la chiamata & CA\\
+\midrule
+VOB7 & L'intero sistema dovrà essere contenuto in un unica pagina web$_{|g|}$ & CA\\
+\midrule
+VOB 8 & Il prodotto si basa per lo sviluppo su server$_{|g|}$ \underline{Apache Tomcat}$_{|g|}$ & IP\\
+\midrule
+VOB 9 & Il progetto dovrà essere pubblicato sul repository$_{|g|}$ SourceForge & CA\\
+\midrule
+VOB 10 & Il sistema dovrà essere connesso alla rete web$_{|g|}$ o ad una LAN$_{|g|}$ aziendale al cui interno c'è un server$_{|g|}$ STUN$_{|g|}$ & CA\\
+\midrule
+VOB 11 & Per la parte comunicativa si devono utilizzare le librerie WebRTC$_{|g|}$ & CA\\
+
+\midrule
+VDE 1 & Dovrà essere verificata la compatibilità del sistema con il browser$_{|g|}$ Mozilla Firefox$_{|g|}$ versione 18 e successive & CA\\
+\midrule
+VDE 2 & Dovrà essere verificata la compatibilità tra il sistema e il browser$_{|g|}$ Opera$_{|g|}$ versione 12.11 e successive & CA\\
+
+\midrule
+VOP 1 & Dovrà essere verificata la compatibilità tra il sistema e il browser$_{|g|}$ \underline{Internet Explorer}$_{|g|}$ versione 10 e successive tramite l'utilizzo di \underline{Google Chrome Frame}$_{|g|}$ versione 21 e successive & CA\\
+\midrule
+VOP 2 &  Dovrà essere verificata la compatibilità tra il sistema e il browser$_{|g|}$ Safari$_{|g|}$ versione 5.1.7 e successive & CA\\
+\midrule
+VOP 3 & Dovrà essere verificata la compatibilità tra il sistema e il browser$_{|g|}$ mobile Android$_{|g|}$ & CA\\
+\midrule
+VOP 4 & Dovrà essere verificata la compatibilità tra il sistema e il browser$_{|g|}$ Safari 6 e successive, versione mobile & CA\\
+\midrule
+VOP 5 & Dovrà essere verificata la compatibilità tra il sistema e i componenti in Flash$_{|g|}$ & CA\\
+\end{longtable}
+\newpage
+
+\subsection{Requisiti di qualità}
+\begin{longtable}{p{0.15\textwidth} p{0.6\textwidth} p{0.20\textwidth} }
+\rowcolors{2}{light}{}
+\textbf{Requisito} & \textbf{Descrizione} & \textbf{Provenienza} \\
+\midrule
+QOB 1 & Il fornitore munirà il cliente di un manuale utente sia in formato multimediale (video) sia cartaceo in formato PDF & CA\\
+\midrule
+QDE 1 & Il fornitore munirà il committente di documentazione, cartacea in formato PDF, completa di ogni classe implementata durante la fase di realizzazione del sistema & IF\\
+\midrule
+QDE 2 & Il fornitore munirà il committente di documentazione, cartacea in formato PDF, completa di ogni metodo implementato durante la fase di realizzazione del sistema & IF\\
+
+\end{longtable}
