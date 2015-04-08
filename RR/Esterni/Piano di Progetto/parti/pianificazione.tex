@@ -30,12 +30,11 @@
 		\item \textbf{Lettera di Presentazione}: Lettera di Presentazione del gruppo da consegnare al committente per partecipare alla gara d'appalto.
 	\end{itemize}
 	
-	\begin{figure}
-		\includegraphics[scale=0.5]{\imgs pianoRequisiti.jpg}
+	\begin{figure}[H]
+		\includegraphics[scale=0.3]{\imgs pianoRequisiti.jpg}
 		\label{fig:pianorequisiti}
 		\caption{Piano dei Requisiti}
 	\end{figure}
-%	GRAFICO WBS
 	
 	%TABELLA RUOLI 
 	\begin{longtable} [c]{| l | l | l | l |}
@@ -50,7 +49,7 @@
 		 \hline
 		 \endfoot
 		 \hline
-		 \caption{Attivit\`{a} e ruoli}
+		 \caption{Attivit\`{a} e ruoli Piano dei Requisiti}
 		 \endlastfoot
 		Norme di Progetto & Comunicazioni & Responsabile 1 & 1\\
 		Norme di Progetto & Requisiti & Responsabile 2 & 4\\
@@ -111,7 +110,7 @@
 		\item stesura del documento \textbf{Specifica Tecnica} in cui il Progettista esporr\`{a} le scelte progettuali di alto livello del sistema e i design pattern che saranno utilizzati nel sistema. Si verificher\`{a} il tracciamento dal sistema ai requisiti e dai requisiti al sistema.
 	\end{itemize}
 
-	\begin{figure}
+	\begin{figure}[H]
 		\includegraphics[scale=0.75]{\imgs pianoProgettazione.jpg}
 		\label{fig:pianoprogettazione}
 		\caption{Piano di Progettazione}
@@ -199,27 +198,47 @@
 		\item \textbf{Incremento manualistica}: destinata all'utente finale e documentazione per il rilascio.
 	\end{itemize}
 	
-	% IMMAGINE "perLatex/pianoAccettazione.png" (da inserire)
-	
-	GRAFICO WBS
-	
-	\begin{table}[H] % TABELLA RUOLI
-	\begin{tabular}{llll}
-	Macro-Attivit\`{i} & Attivit\`{i} & Ruoli & Ore \\
-	Norme & Incremento & Responsabile1 & 2 \\
-	Norme & Verifica & Verificatore1 & 1 \\
-	Glossario & Incremento & / & 4 \\
-	Glossario & Verifica & Verificatore2 & 1 \\
-	Piano di Qualifica & Incremento Verifiche & Verificatore2 & 4 \\
-	Piano di Qualifica & Validazione Interna & \begin{tabular}[c]{@{}l@{}}Programmatore1\\ Verificatore1\\ Progettista1\\ Responsabile2\\ Amministratore\end{tabular} & \begin{tabular}[c]{@{}l@{}}9\\ 4\\ 8\\ 6\\ 4\end{tabular} \\
-	Piano di Qualifica & Verifica & Verificatore3 & 2 \\
-	Definizione Prodotto & Incremento & Progettista2 & 12 \\
-	Definizione Prodotto & Verifica & \begin{tabular}[c]{@{}l@{}}Verificatore3\\ Verificatore6\end{tabular} & \begin{tabular}[c]{@{}l@{}}2\\ 1\end{tabular} \\
-	Specifica Tecnica & Incremento & Progettista3 & 8 \\
-	Specifica Tecnica & Verifica & \begin{tabular}[c]{@{}l@{}}Verificatore4\\ Verificatore5\end{tabular} & \begin{tabular}[c]{@{}l@{}}5\\ 1\end{tabular} \\
-	Manualistica & Incremento & \begin{tabular}[c]{@{}l@{}}Progettista4\\ Progettista5\\ Amministratore\\ Responsabile1\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 4\\ 3\\ 2\end{tabular} \\
-	Manualistica & Verifica & Verificatore5Verificatore4 & 22 \\
-	Piano di Progetto & Consuntivo & Responsabile1 & 2 
-	\end{tabular}
-	\end{table}
+	\begin{figure}[H]
+		\includegraphics[scale=0.5]{\imgs pianoAccettazione.jpg}
+		\label{fig:pianoaccettazione}
+		\caption{Piano di Accettazione}
+	\end{figure}
+	\begin{longtable} [c]{| l | l | l | l |}
+	 \hline
+	 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+	 \hline
+	 \endfirsthead
+	 \hline
+	 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+	 \hline
+		\endhead
+	 \hline
+	 \endfoot
+	 \hline
+	 \caption{Attivit\`{a} e ruoli Piano di Accettazione}
+	 \endlastfoot
+		Norme & Incremento & Responsabile 1 & 2 \\
+		Norme & Verifica & Verificatore 1 & 1 \\
+		Glossario & Incremento & / & 4 \\
+		Glossario & Verifica & Verificatore 2 & 1 \\
+		Piano di Qualifica & Incremento Verifiche & Verificatore 2 & 4 \\
+		Piano di Qualifica & Validazione Interna & Programmatore 1 & 9 \\
+		&	&	Verificatore 1	&	4\\
+		&	&	Progettista 1	&	8\\
+		&	&	Responsabile 2	&	6\\
+		&	&	Amministratore	&	4\\
+		Piano di Qualifica & Verifica & Verificatore 3 & 2 \\
+		Definizione Prodotto & Incremento & Progettista 2 & 12 \\
+		Definizione Prodotto & Verifica & Verificatore 3 & 2\\
+		&	&	Verificatore 6 & 1\\
+		Specifica Tecnica & Incremento & Progettista3 & 8 \\
+		Specifica Tecnica & Verifica & Verificatore 4 & 5\\
+		&	&	Verificatore 5 & 1\\
+		Manualistica & Incremento & Progettista 4 & 6\\
+		&	&	Progettista 5 & 4\\
+		&	&	Amministratore & 3\\
+		&	&	Responsabile 1 & 2\\
+		Manualistica & Verifica & Verificatore 5, Verificatore 4 & 22 \\
+		Piano di Progetto & Consuntivo & Responsabile 1 & 2 \\
+	\end{longtable}
 }
