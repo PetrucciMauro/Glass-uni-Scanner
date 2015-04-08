@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/} %se esistono
+\newcommand{\temp}{../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Piano di Progetto}
+\newcommand{\dataCreazione}{2 marzo 2015}
+\newcommand{\versione}{1.0} % versione corrente del documento
+\newcommand{\dataUM}{2 marzo 2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\appr}{}
+\newcommand{\redaz}{}
+\newcommand{\verif}{}
+\newcommand{\sommario}{
+	Il presente documento riporta il Piano di Progetto per il capitolato \premi.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\input{\parti analisiRischi}
+	\newpage
+	\input{\parti cicloVita}
+	\newpage
+	\input{\parti pianificazione}
+	\newpage
+	\input{\parti scadenze}
+	\newpage
+	\input{\parti sudCompiti}
+\end{document}
