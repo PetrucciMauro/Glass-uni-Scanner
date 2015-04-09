@@ -2,17 +2,17 @@
 	\label{uc1.9}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.50]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
 	\end{figure}
 	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore ha effettuato il login e il programma è correttamente funzionante. L'amministratore ha la possibilità di inserire nuovi template di infografica, nuovi oggetti grafici per comporre i template ed eliminare template presenti nel server.
-	\textbf{Precondizione}: il programma è in funzione e l'amministratore ha effettuato il login.	\\
-	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state eseguite con successo.	\\
+	\textbf{Descrizione}: l'amministratore ha effettuato il login e il programma è correttamente funzionante. L'amministratore ha la possibilità di inserire nuovi template di infografica, nuovi oggetti grafici per comporre i template ed eliminare template presenti nel server.\\
+	\textbf{Precondizione}: il programma è in funzione e l'amministratore ha effettuato il login.\\
+	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state eseguite con successo.\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
 		\item caricamento di un template \hyperref[uc1.9.1]{(UC1.9.1)};
 		\item caricamento di un elemento \hyperref[uc1.9.3]{(UC1.9.3)};
-		\item eliminazione di un template \hyperref[uc1.9.5]{(UC 1.9.4)};
+		\item eliminazione di un template \hyperref[uc1.9.5]{(UC1.9.5)};
 		
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
@@ -46,7 +46,7 @@
 	\label{uc1.9.1.1}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può navigare nel filesystem per selezionare la posizione da cui caricare il file. \\
-	\textbf{Precondizione}: l'amministratore ha selezionato quale tipologia di template andrà a caricare.	\\
+	\textbf{Precondizione}: l'amministratore ha intenzione di caricare un nuovo template.	\\
 	\textbf{Postcondizione}: lo stato dell'attività di caricamento è stato completato.	\\
 	}
 \subsection{UC 1.9.1.2 - Selezione file}{
@@ -94,7 +94,7 @@
 	\label{uc1.9.4}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore elimina uno dei template. \\
-	\textbf{Precondizione}: il sistema è funzionante e l’utente non ancora autenticato vuole effettuare il login.	\\
+	\textbf{Precondizione}: il sistema è funzionante e l'amministratore decide di eliminare un template.	\\
 	\textbf{Postcondizione}: il template è stato eliminato dal sistema.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
@@ -131,7 +131,7 @@
 	\textbf{Postcondizione}: il sistema ha ripristinato lo stato precedente all'ultimo comando di modifica del template dall'amministratore, e ha memorizzato nello storico degli	annullamenti il comando annullato.	\\
 	}
 \subsection{UC 1.9.5.2 - Ripristino del comando annullato}{
-	\label{uc1.9.6.5.2}
+	\label{uc1.9.5.2}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può ripristinare l'ultimo comando presente nello	storico dei comandi annullati. \\
 	\textbf{Precondizione}: il sistema ha annullato l'ultimo comando di modifica del template
