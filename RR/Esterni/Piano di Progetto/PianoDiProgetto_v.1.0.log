@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  9 APR 2015 00:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  10 APR 2015 00:54
 entering extended mode
 **PianoDiProgetto_v.1.0.tex
 
@@ -1083,36 +1083,77 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 Package hyperref Info: Option `colorlinks' set `true' on input line 111.
 \c@subsubsubsection=\count146
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2012/10/14 v2.6b package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
+\XKV@depth=\count147
+File: xkeyval.tex 2012/10/14 v2.6b key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box40
+)
+\tc@llx=\dimen168
+\tc@lly=\dimen169
+\tc@urx=\dimen170
+\tc@ury=\dimen171
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen172
+\adjbox@Height=\dimen173
+\adjbox@Depth=\dimen174
+\adjbox@Totalheight=\dimen175
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count148
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\PianoDiProgetto_v.1.0.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.fd"
 File: lgrcmr.fd 2013/09/01 v1.0 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1150,39 +1191,39 @@ LaTeX Font Info:    ... okay on input line 28.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count147
-\scratchdimen=\dimen168
-\scratchbox=\box40
-\nofMPsegments=\count148
-\nofMParguments=\count149
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count150
-\MPscratchDim=\dimen169
-\MPnumerator=\count151
-\makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count149
+\scratchdimen=\dimen176
+\scratchbox=\box41
+\nofMPsegments=\count150
+\nofMParguments=\count151
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen177
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
+\everyMPtoPDFconversion=\toks32
 )
-\AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 28.
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring ON on input line 29.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count153
+\c@section@level=\count155
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 28.
-\c@lstlisting=\count154
+(lastpage)             ! on input line 29.
+\c@lstlisting=\count156
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1208,13 +1249,13 @@ Fiup/3° Anno/SWE/SmartGit/RR/logo.jpg>])
 rio.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 32.
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 	\newpage
+l.33 	\newpage
                [1]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\registroMod.tex"
@@ -1248,7 +1289,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 34.
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
@@ -1256,7 +1297,7 @@ tto\PianoDiProgetto_v.1.0.toc")
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 36.
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [4]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
@@ -1268,9 +1309,15 @@ tto\PianoDiProgetto_v.1.0.lot")
 \tf@lot=\write5
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 39.
+Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [5]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 40.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[6]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\analisiRischi.tex"
 Overfull \hbox (5578.54984pt too wide) in paragraph at lines 15--25
@@ -1280,9 +1327,9 @@ Overfull \hbox (5578.54984pt too wide) in paragraph at lines 15--25
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
+Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6]
+ [7]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\cicloVita.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
@@ -1294,121 +1341,131 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 43.
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7]
+ [8]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\pianificazione.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<./images/pianoRequisiti.jpg, id=196, 757.32938pt x 2239.61719pt>
+<./images/pianoRequisiti.jpg, id=209, 757.32938pt x 2239.61719pt>
 File: ./images/pianoRequisiti.jpg Graphic file (type jpg)
 
 <use ./images/pianoRequisiti.jpg>
-Package pdftex.def Info: ./images/pianoRequisiti.jpg used on input line 34.
-(pdftex.def)             Requested size: 227.20056pt x 671.89035pt.
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 38.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8]
-Overfull \vbox (22.06001pt too high) has occurred while \output is active []
+Package pdftex.def Info: ./images/pianoRequisiti.jpg used on input line 30.
+(pdftex.def)             Requested size: 483.69534pt x 625.96082pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+[][]
+ []
 
 File: ../../logo.jpg Graphic file (type jpg)
-
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 38.
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Pr
-ogetto/images/pianoRequisiti.jpg>]
+ [9]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 102.
+Package pdftex.def Info: ../../logo.jpg used on input line 69.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+ [10 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+rogetto/images/pianoRequisiti.jpg>]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 97.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-<./images/pianoProgettazione.jpg, id=220, 2045.6425pt x 618.31pt>
+<./images/pianoProgettazione.jpg, id=233, 2045.6425pt x 618.31pt>
 File: ./images/pianoProgettazione.jpg Graphic file (type jpg)
 
 <use ./images/pianoProgettazione.jpg>
-Package pdftex.def Info: ./images/pianoProgettazione.jpg used on input line 114
+Package pdftex.def Info: ./images/pianoProgettazione.jpg used on input line 109
 .
 (pdftex.def)             Requested size: 1534.22813pt x 463.73135pt.
 
-Overfull \hbox (1050.53127pt too wide) in paragraph at lines 114--116
+Overfull \hbox (1050.53127pt too wide) in paragraph at lines 109--111
 [][]
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 118.
+Package pdftex.def Info: ../../logo.jpg used on input line 113.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
+ [12]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 145.
+Package pdftex.def Info: ../../logo.jpg used on input line 159.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [13 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/pianoProgettazione.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
+ []
+
+<./images/pianoCodifica.jpg, id=250, 3871.46375pt x 779.91376pt>
+File: ./images/pianoCodifica.jpg Graphic file (type jpg)
+
+<use ./images/pianoCodifica.jpg>
+Package pdftex.def Info: ./images/pianoCodifica.jpg used on input line 174.
+(pdftex.def)             Requested size: 2903.59076pt x 584.9339pt.
+
+Overfull \hbox (2419.89389pt too wide) in paragraph at lines 174--176
+[][]
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 155.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 191.
+Package pdftex.def Info: ../../logo.jpg used on input line 178.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14]
-Overfull \vbox (7.16896pt too high) has occurred while \output is active []
-
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 191.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 213.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
-<./images/pianoAccettazione.jpg, id=260, 1014.79124pt x 549.05125pt>
+ [15 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+rogetto/images/pianoCodifica.jpg>]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 239.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [16]
+<./images/pianoAccettazione.jpg, id=273, 1014.79124pt x 549.05125pt>
 File: ./images/pianoAccettazione.jpg Graphic file (type jpg)
 
 <use ./images/pianoAccettazione.jpg>
-Package pdftex.def Info: ./images/pianoAccettazione.jpg used on input line 202.
+Package pdftex.def Info: ./images/pianoAccettazione.jpg used on input line 252.
 
 (pdftex.def)             Requested size: 507.39438pt x 274.52495pt.
 
-Overfull \hbox (23.69751pt too wide) in paragraph at lines 202--204
+Overfull \hbox (23.69751pt too wide) in paragraph at lines 252--254
 [][]
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 243.
+Package pdftex.def Info: ../../logo.jpg used on input line 294.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [17 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/pianoAccettazione.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 45.
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
+ [18]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\scadenze.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 47.
+Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18]
+ [19]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\sudCompiti.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
@@ -1440,7 +1497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 []|\T1/cmr/m/n/12 Pietro
  []
 
-<./images/sudAnalisi.jpg, id=284, 424.7067pt x 325.9377pt>
+<./images/sudAnalisi.jpg, id=297, 424.7067pt x 325.9377pt>
 File: ./images/sudAnalisi.jpg Graphic file (type jpg)
 
 <use ./images/sudAnalisi.jpg>
@@ -1480,9 +1537,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [20 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudAnalisi.jpg>]
-<./images/sudProgettazione.jpg, id=293, 456.7464pt x 350.2686pt>
+<./images/sudProgettazione.jpg, id=306, 456.7464pt x 350.2686pt>
 File: ./images/sudProgettazione.jpg Graphic file (type jpg)
 
 <use ./images/sudProgettazione.jpg>
@@ -1522,9 +1579,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 78.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [21 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudProgettazione.jpg>]
-<./images/sudCodifica.jpg, id=302, 456.5055pt x 377.2494pt>
+<./images/sudCodifica.jpg, id=315, 456.5055pt x 377.2494pt>
 File: ./images/sudCodifica.jpg Graphic file (type jpg)
 
 <use ./images/sudCodifica.jpg>
@@ -1564,9 +1621,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 106.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [22 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudCodifica.jpg>]
-<./images/sudAccettazione.jpg, id=311, 456.9873pt x 344.0052pt>
+<./images/sudAccettazione.jpg, id=324, 456.9873pt x 344.0052pt>
 File: ./images/sudAccettazione.jpg Graphic file (type jpg)
 
 <use ./images/sudAccettazione.jpg>
@@ -1606,9 +1663,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 134.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [23 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudAccettazione.jpg>]
-<./images/sudTotale.jpg, id=320, 476.5002pt x 385.9218pt>
+<./images/sudTotale.jpg, id=333, 476.5002pt x 385.9218pt>
 File: ./images/sudTotale.jpg Graphic file (type jpg)
 
 <use ./images/sudTotale.jpg>
@@ -1644,7 +1701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 []|\T1/cmr/m/n/12 Pietro
  []
 
-<./images/sudTotaleRend.jpg, id=321, 452.892pt x 367.6134pt>
+<./images/sudTotaleRend.jpg, id=334, 452.892pt x 367.6134pt>
 File: ./images/sudTotaleRend.jpg Graphic file (type jpg)
 
 <use ./images/sudTotaleRend.jpg>
@@ -1654,24 +1711,24 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 164.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [24 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudTotale.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 49.
+Package pdftex.def Info: ../../logo.jpg used on input line 50.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [25 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/sudTotaleRend.jpg>]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\parti\prospettoEconomico.tex"
-<./images/anreqore.pdf, id=339, 370.38374pt x 198.7425pt>
+<./images/anreqore.pdf, id=352, 370.38374pt x 198.7425pt>
 File: ./images/anreqore.pdf Graphic file (type pdf)
 
 <use ./images/anreqore.pdf>
 Package pdftex.def Info: ./images/anreqore.pdf used on input line 25.
 (pdftex.def)             Requested size: 277.78711pt x 149.0565pt.
 
-<./images/anreqcosti.pdf, id=340, 370.38374pt x 198.7425pt>
+<./images/anreqcosti.pdf, id=353, 370.38374pt x 198.7425pt>
 File: ./images/anreqcosti.pdf Graphic file (type pdf)
 
 <use ./images/anreqcosti.pdf>
@@ -1681,10 +1738,10 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [26 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/anreqore.pdf, page is rotated 90 degrees> <E:/Docs/Università/M
 ega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Progetto/images/anreqcosti.p
-df, page is rotated 90 degrees>] <./images/proggore.pdf, id=360, 370.38374pt x 
+df, page is rotated 90 degrees>] <./images/proggore.pdf, id=373, 370.38374pt x 
 213.79875pt>
 File: ./images/proggore.pdf Graphic file (type pdf)
 
@@ -1692,7 +1749,7 @@ File: ./images/proggore.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/proggore.pdf used on input line 57.
 (pdftex.def)             Requested size: 277.78711pt x 160.34866pt.
 
-<./images/proggcosti.pdf, id=361, 370.38374pt x 213.79875pt>
+<./images/proggcosti.pdf, id=374, 370.38374pt x 213.79875pt>
 File: ./images/proggcosti.pdf Graphic file (type pdf)
 
 <use ./images/proggcosti.pdf>
@@ -1702,10 +1759,10 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [26 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [27 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/proggore.pdf, page is rotated 90 degrees> <E:/Docs/Università/M
 ega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Progetto/images/proggcosti.p
-df, page is rotated 90 degrees>] <./images/codore.pdf, id=381, 370.38374pt x 21
+df, page is rotated 90 degrees>] <./images/codore.pdf, id=394, 370.38374pt x 21
 3.79875pt>
 File: ./images/codore.pdf Graphic file (type pdf)
 
@@ -1713,7 +1770,7 @@ File: ./images/codore.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/codore.pdf used on input line 89.
 (pdftex.def)             Requested size: 277.78711pt x 160.34866pt.
 
-<./images/codcosti.pdf, id=382, 370.38374pt x 213.79875pt>
+<./images/codcosti.pdf, id=395, 370.38374pt x 213.79875pt>
 File: ./images/codcosti.pdf Graphic file (type pdf)
 
 <use ./images/codcosti.pdf>
@@ -1723,18 +1780,18 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 119.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [28 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/codore.pdf, page is rotated 90 degrees> <E:/Docs/Università/Meg
 a Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Progetto/images/codcosti.pdf, 
 page is rotated 90 degrees>]
-<./images/verore.pdf, id=402, 370.38374pt x 213.79875pt>
+<./images/verore.pdf, id=415, 370.38374pt x 213.79875pt>
 File: ./images/verore.pdf Graphic file (type pdf)
 
 <use ./images/verore.pdf>
 Package pdftex.def Info: ./images/verore.pdf used on input line 121.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/vercosti.pdf, id=403, 370.38374pt x 213.79875pt>
+<./images/vercosti.pdf, id=416, 370.38374pt x 213.79875pt>
 File: ./images/vercosti.pdf Graphic file (type pdf)
 
 <use ./images/vercosti.pdf>
@@ -1744,18 +1801,18 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 151.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [29 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/verore.pdf, page is rotated 90 degrees> <E:/Docs/Università/Meg
 a Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Progetto/images/vercosti.pdf, 
 page is rotated 90 degrees>]
-<./images/tottotore.pdf, id=423, 370.38374pt x 213.79875pt>
+<./images/tottotore.pdf, id=436, 370.38374pt x 213.79875pt>
 File: ./images/tottotore.pdf Graphic file (type pdf)
 
 <use ./images/tottotore.pdf>
 Package pdftex.def Info: ./images/tottotore.pdf used on input line 154.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/tottotcosti.pdf, id=424, 370.38374pt x 213.79875pt>
+<./images/tottotcosti.pdf, id=437, 370.38374pt x 213.79875pt>
 File: ./images/tottotcosti.pdf Graphic file (type pdf)
 
 <use ./images/tottotcosti.pdf>
@@ -1765,16 +1822,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 164.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [30 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/tottotore.pdf, page is rotated 90 degrees>]
-<./images/totparore.pdf, id=438, 370.38374pt x 213.79875pt>
+<./images/totparore.pdf, id=452, 370.38374pt x 213.79875pt>
 File: ./images/totparore.pdf Graphic file (type pdf)
 
 <use ./images/totparore.pdf>
 Package pdftex.def Info: ./images/totparore.pdf used on input line 186.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/totparcosti.pdf, id=439, 370.38374pt x 213.79875pt>
+<./images/totparcosti.pdf, id=453, 370.38374pt x 213.79875pt>
 File: ./images/totparcosti.pdf Graphic file (type pdf)
 
 <use ./images/totparcosti.pdf>
@@ -1784,47 +1841,51 @@ Package pdftex.def Info: ./images/totparcosti.pdf used on input line 191.
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 51.
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
+ [31 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di P
 rogetto/images/tottotcosti.pdf, page is rotated 90 degrees> <E:/Docs/Universit�
 �/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Progetto/images/totparore
 .pdf, page is rotated 90 degrees>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 51.
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[31 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Pr
+[32 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Piano di Pr
 ogetto/images/totparcosti.pdf, page is rotated 90 degrees>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Piano di Proge
 tto\PianoDiProgetto_v.1.0.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
- ) 
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 1 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 12613 strings out of 493921
- 184167 string characters out of 3147280
+ 13298 strings out of 493921
+ 195011 string characters out of 3147280
  334557 words of memory out of 3000000
- 15562 multiletter control sequences out of 15000+200000
+ 16216 multiletter control sequences out of 15000+200000
  14000 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,50p,1191b,604s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
-m1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb
->
-Output written on PianoDiProgetto_v.1.0.pdf (32 pages, 2000592 bytes).
+ 51i,15n,88p,1191b,620s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
+t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfti1200.pfb>
+Output written on PianoDiProgetto_v.1.0.pdf (33 pages, 2194546 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

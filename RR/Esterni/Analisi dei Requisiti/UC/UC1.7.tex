@@ -12,7 +12,7 @@
 	\begin{enumerate}
 		\item inserimento immagini \hyperref[uc1.7.1]{(UC 1.7.1)};
 		\item cancellazione immagini \hyperref[uc1.7.2]{(UC 1.7.2)};
-		\item spostamento immagini nel FileSystem delle immagini \hyperref[uc1.7.3]{(UC 1.7.3)};
+		\item spostamento immagini nel FileSystem \hyperref[uc1.7.3]{(UC 1.7.3)};
 		\item spostamento presentazioni \hyperref[uc1.7.4]{(UC 1.7.4)};
 		\item eliminazione presentazioni \hyperref[uc1.7.5]{(UC 1.7.5)}.
 	\end{enumerate}
@@ -47,7 +47,7 @@
 		\textbf{Attori}: utente autenticato.\\
 		\textbf{Descrizione}: l'utente deve selezionare una o più immagini contenute nel proprio dispositivo. \\
 		\textbf{Precondizione}: il sistema è in attesa che l'utente specifichi un percorso da cui selezionare le immagini.	\\
-		\textbf{Postcondizione}: l'utente ha inizializzato l'attività di upload di immagini; l'utente ha a disposizione le immagini che desidera caricare.	\\
+		\textbf{Postcondizione}: l'utente ha inizializzato l'attività di upload di immagini e ha a disposizione le immagini che desidera caricare.	\\
 		\textbf{Procedura principale}:
 		\begin{enumerate}
 			\item navigazione FileSystem locale \hyperref[uc1.7.1.1.1]{(UC 1.7.1.1.1)};
@@ -59,14 +59,14 @@
 			\label{uc1.7.1.1.1}
 			\textbf{Attori}: utente autenticato.\\
 			\textbf{Descrizione}: l'utente deve selezionare una posizione esistente in cui sono contenute le immagini da caricare. \\
-			\textbf{Precondizione}: il sistema mostra all'utente le cartelle e le immagini presenti nella cartella corrente.	\\
+			\textbf{Precondizione}: il sistema mostra all'utente le cartelle e le immagini presenti nella directory corrente.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella che contiene le immagini da caricare.	\\
 			}
 		\subsection{UC 1.7.1.1.2 - Selezione immagini locali}{
 			\label{uc1.7.1.1.2}
 			\textbf{Attori}: utente \\
 			\textbf{Descrizione}: l'utente seleziona una o più immagini da caricare. \\
-			\textbf{Precondizione}: l'utente ha scelto la cartella da cui caricare le immagini; le immagini sono presenti nella cartella.
+			\textbf{Precondizione}: l'utente ha scelto la cartella da cui caricare le immagini; le immagini sono presenti nella cartella. \\
 			\textbf{Postcondizione}: l'utente ha scelto le immagini dalla cartella corrente.	\\
 			}
 		\subsection{UC 1.7.1.1.3 - Conferma selezione}{
@@ -84,7 +84,7 @@
 		\end{figure}
 		\textbf{Attori}: utente autenticato.\\
 		\textbf{Descrizione}: l'utente seleziona una directory nel server in cui inserire le immagini scelte in precedenza. \\
-		\textbf{Precondizione}: l'utente ha selezionato una o più immagini da una directory locale; il sistema mostra all'utente le sue directory nel FileSystem delle immagini all'interno del server.	\\
+		\textbf{Precondizione}: l'utente ha selezionato una o più immagini da una directory locale; il sistema mostra all'utente le proprie directory nel FileSystem delle immagini all'interno del server.	\\
 		\textbf{Postcondizione}: l'utente ha selezionato una directory in cui eseguire il salvataggio.	\\
 		\textbf{Procedura principale}:
 		\begin{enumerate}

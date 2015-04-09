@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  8 APR 2015 16:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  9 APR 2015 17:46
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.tex
 
@@ -1087,11 +1087,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\AnalisiDeiRequisiti_v.1.0.aux"
-
-LaTeX Warning: Label `uc1.14' multiply defined.
-
-)
+quisiti\AnalisiDeiRequisiti_v.1.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1106,7 +1102,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 29.
 LaTeX Font Info:    Try loading font information for LGR+cmr on input line 29.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.fd"
 File: lgrcmr.fd 2013/09/01 v1.0 Greek European Computer Regular
 )
 LaTeX Font Info:    ... okay on input line 29.
@@ -1271,44 +1268,47 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 138.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6])
+ [6]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 184.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7])
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 37.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[7]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [8]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\parti\casiduso.tex"
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.tex" <./images/UC1.jpg, id=441, 695.2374pt x 628.0263pt>
+quisiti\UC\UC1.tex" <./images/UC1.jpg, id=459, 963.6pt x 722.7pt>
 File: ./images/UC1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.jpg>
 Package pdftex.def Info: ./images/UC1.jpg used on input line 5.
-(pdftex.def)             Requested size: 521.42676pt x 471.01857pt.
+(pdftex.def)             Requested size: 578.16447pt x 433.62334pt.
 
-Overfull \hbox (37.72989pt too wide) in paragraph at lines 5--6
+Overfull \hbox (94.4676pt too wide) in paragraph at lines 5--6
  [][] 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 13.
+Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [9 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi dei
- Requisiti/images/UC1.jpg (PNG copy)>]
+ Requisiti/images/UC1.jpg>]
 
-LaTeX Warning: Hyper reference `uc1.1' on page 10 undefined on input line 15.
+LaTeX Warning: Hyper reference `uc1.5' on page 10 undefined on input line 18.
 
 
-LaTeX Warning: Hyper reference `uc1.4' on page 10 undefined on input line 23.
+LaTeX Warning: Hyper reference `uc1.15' on page 10 undefined on input line 19.
+
+
+LaTeX Warning: Hyper reference `uc1.17' on page 10 undefined on input line 23.
 
 )
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1317,18 +1317,28 @@ Package pdftex.def Info: ../../logo.jpg used on input line 4.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.2.tex" <./images/UC1.2.jpg, id=480, 356.33125pt x 174.6525pt>
+quisiti\UC\UC1.2.tex" <./images/UC1.2.jpg, id=503, 444.66125pt x 287.0725pt>
 File: ./images/UC1.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.2.jpg>
 Package pdftex.def Info: ./images/UC1.2.jpg used on input line 3.
-(pdftex.def)             Requested size: 356.33037pt x 174.65207pt.
+(pdftex.def)             Requested size: 444.66016pt x 287.0718pt.
+
+Overfull \hbox (3.1613pt too wide) in paragraph at lines 3--9
+[] \T1/cmr/bx/n/12 At-to-ri\T1/cmr/m/n/12 :
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--22
 
  []
 
-)
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 29.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [11 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+i Requisiti/images/UC1.2.jpg>])
 Underfull \hbox (badness 10000) in paragraph at lines 35--6
 
  []
@@ -1337,23 +1347,16 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 6.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.2.jpg>]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 6.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[12]
+ [12]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.3.tex" <./images/UC1.3.jpg, id=503, 407.5225pt x 222.8325pt>
+quisiti\UC\UC1.3.tex" <./images/UC1.3.jpg, id=526, 407.5225pt x 222.8325pt>
 File: ./images/UC1.3.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.jpg used on input line 5.
 (pdftex.def)             Requested size: 305.64111pt x 167.12396pt.
 
-<./images/UC1.3.1.jpg, id=506, 444.4605pt x 446.6286pt>
+<./images/UC1.3.1.jpg, id=529, 444.4605pt x 446.6286pt>
 File: ./images/UC1.3.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.jpg>
@@ -1372,7 +1375,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.3.1.jpg (PNG copy)>]
-<./images/UC1.3.1.1.jpg, id=543, 274.626pt x 178.5069pt>
+<./images/UC1.3.1.1.jpg, id=566, 274.626pt x 178.5069pt>
 File: ./images/UC1.3.1.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.1.jpg>
@@ -1419,14 +1422,14 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 315.
 
-<./images/UC1.3.1.5.jpg, id=661, 258.0039pt x 206.6922pt>
+<./images/UC1.3.1.5.jpg, id=684, 258.0039pt x 206.6922pt>
 File: ./images/UC1.3.1.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.jpg>
 Package pdftex.def Info: ./images/UC1.3.1.5.jpg used on input line 322.
 (pdftex.def)             Requested size: 193.50244pt x 155.01875pt.
 
-<./images/UC1.3.1.5.1.jpg, id=662, 302.8113pt x 307.1475pt>
+<./images/UC1.3.1.5.1.jpg, id=685, 302.8113pt x 307.1475pt>
 File: ./images/UC1.3.1.5.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.1.jpg>
@@ -1449,7 +1452,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 421.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-<./images/UC1.3.1.6.jpg, id=707, 313.6518pt x 278.9622pt>
+<./images/UC1.3.1.6.jpg, id=730, 313.6518pt x 278.9622pt>
 File: ./images/UC1.3.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.6.jpg>
@@ -1466,7 +1469,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 494.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [25]
-<./images/UC1.3.1.7.jpg, id=742, 220.4235pt x 206.6922pt>
+<./images/UC1.3.1.7.jpg, id=765, 220.4235pt x 206.6922pt>
 File: ./images/UC1.3.1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.7.jpg>
@@ -1477,7 +1480,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 533.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [26 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.3.1.7.jpg (PNG copy)>] <./images/UC1.3.1.8.jpg, id=759, 
+i Requisiti/images/UC1.3.1.7.jpg (PNG copy)>] <./images/UC1.3.1.8.jpg, id=782, 
 299.9205pt x 206.6922pt>
 File: ./images/UC1.3.1.8.jpg Graphic file (type jpg)
 
@@ -1514,7 +1517,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 613.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28]
-<./images/UC1.3.2.jpg, id=786, 566.115pt x 349.305pt>
+<./images/UC1.3.2.jpg, id=809, 566.115pt x 349.305pt>
 File: ./images/UC1.3.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.jpg>
@@ -1525,7 +1528,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 652.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [29]
-<./images/UC1.3.2.1.jpg, id=801, 518.93875pt x 364.36125pt>
+<./images/UC1.3.2.1.jpg, id=824, 518.93875pt x 364.36125pt>
 File: ./images/UC1.3.2.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.1.jpg>
@@ -1543,7 +1546,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 701.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.3.2.1.jpg>]
-<./images/UC1.3.2.2.jpg, id=827, 537.00626pt x 395.4775pt>
+<./images/UC1.3.2.2.jpg, id=850, 537.00626pt x 395.4775pt>
 File: ./images/UC1.3.2.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.2.jpg>
@@ -1561,7 +1564,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 8.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.6.tex" <./images/UC1.6.jpg, id=851, 630.10406pt x 711.4078pt>
+quisiti\UC\UC1.6.tex" <./images/UC1.6.jpg, id=874, 630.10406pt x 711.4078pt>
 File: ./images/UC1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.6.jpg>
@@ -1572,7 +1575,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 14.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [34 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.jpg (PNG copy)>] <./images/UC1.6.1.jpg, id=870, 459.96
+i Requisiti/images/UC1.6.jpg (PNG copy)>] <./images/UC1.6.1.jpg, id=893, 459.96
 844pt x 279.29344pt>
 File: ./images/UC1.6.1.jpg Graphic file (type jpg)
 
@@ -1580,7 +1583,7 @@ File: ./images/UC1.6.1.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./images/UC1.6.1.jpg used on input line 30.
 (pdftex.def)             Requested size: 344.97548pt x 209.46956pt.
 
-<./images/UC1.6.2.jpg, id=871, 609.77812pt x 342.5297pt>
+<./images/UC1.6.2.jpg, id=894, 609.77812pt x 342.5297pt>
 File: ./images/UC1.6.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.6.2.jpg>
@@ -1591,7 +1594,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [35 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.1.jpg (PNG copy)>] <./images/UC1.6.3.jpg, id=892, 633.
+i Requisiti/images/UC1.6.1.jpg (PNG copy)>] <./images/UC1.6.3.jpg, id=915, 633.
 11531pt x 374.90062pt>
 File: ./images/UC1.6.3.jpg Graphic file (type jpg)
 
@@ -1603,7 +1606,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 63.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [36 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.2.jpg (PNG copy)>] <./images/UC1.6.4.jpg, id=904, 444.
+i Requisiti/images/UC1.6.2.jpg (PNG copy)>] <./images/UC1.6.4.jpg, id=927, 444.
 15938pt x 373.395pt>
 File: ./images/UC1.6.4.jpg Graphic file (type jpg)
 
@@ -1615,7 +1618,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 79.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [37 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.3.jpg (PNG copy)>] <./images/UC1.6.5.jpg, id=916, 560.
+i Requisiti/images/UC1.6.3.jpg (PNG copy)>] <./images/UC1.6.5.jpg, id=939, 560.
 0925pt x 341.02406pt>
 File: ./images/UC1.6.5.jpg Graphic file (type jpg)
 
@@ -1627,7 +1630,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 95.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [38 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.4.jpg (PNG copy)>] <./images/UC1.6.5.2.jpg, id=928, 68
+i Requisiti/images/UC1.6.4.jpg (PNG copy)>] <./images/UC1.6.5.2.jpg, id=951, 68
 7.31781pt x 386.94562pt>
 File: ./images/UC1.6.5.2.jpg Graphic file (type jpg)
 
@@ -1645,7 +1648,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 116.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.6.5.jpg (PNG copy)>]
-<./images/UC1.6.6.jpg, id=940, 484.05844pt x 377.15906pt>
+<./images/UC1.6.6.jpg, id=963, 484.05844pt x 377.15906pt>
 File: ./images/UC1.6.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.6.6.jpg>
@@ -1656,7 +1659,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [40 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.5.2.jpg (PNG copy)>] <./images/UC1.6.7.jpg, id=954, 48
+i Requisiti/images/UC1.6.5.2.jpg (PNG copy)>] <./images/UC1.6.7.jpg, id=977, 48
 8.57532pt x 416.30531pt>
 File: ./images/UC1.6.7.jpg Graphic file (type jpg)
 
@@ -1668,7 +1671,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 160.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [41 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.6.jpg (PNG copy)>] <./images/UC1.6.8.jpg, id=966, 584.
+i Requisiti/images/UC1.6.6.jpg (PNG copy)>] <./images/UC1.6.8.jpg, id=989, 584.
 93532pt x 336.50719pt>
 File: ./images/UC1.6.8.jpg Graphic file (type jpg)
 
@@ -1680,8 +1683,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 181.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [42 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.6.7.jpg (PNG copy)>] <./images/UC1.6.9.jpg, id=980, 517.
-935pt x 328.22626pt>
+i Requisiti/images/UC1.6.7.jpg (PNG copy)>] <./images/UC1.6.9.jpg, id=1003, 517
+.935pt x 328.22626pt>
 File: ./images/UC1.6.9.jpg Graphic file (type jpg)
 
 <use ./images/UC1.6.9.jpg>
@@ -1706,14 +1709,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 10.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [45]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.7.tex" <./images/UC1.7.jpg, id=1010, 523.9575pt x 317.185pt>
+quisiti\UC\UC1.7.tex" <./images/UC1.7.jpg, id=1033, 523.9575pt x 317.185pt>
 File: ./images/UC1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.jpg>
 Package pdftex.def Info: ./images/UC1.7.jpg used on input line 5.
 (pdftex.def)             Requested size: 392.96716pt x 237.88815pt.
 
-<./images/UC1.7.1.jpg, id=1016, 459.7175pt x 265.99374pt>
+<./images/UC1.7.1.jpg, id=1039, 459.7175pt x 265.99374pt>
 File: ./images/UC1.7.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.1.jpg>
@@ -1725,7 +1728,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 26.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [46 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.7.jpg>]
-<./images/UC1.7.1.1.jpg, id=1033, 473.77pt x 298.11375pt>
+<./images/UC1.7.1.1.jpg, id=1056, 473.77pt x 298.11375pt>
 File: ./images/UC1.7.1.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.1.1.jpg>
@@ -1756,7 +1759,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
-<./images/UC1.7.1.2.jpg, id=1060, 486.81876pt x 296.10625pt>
+<./images/UC1.7.1.2.jpg, id=1083, 486.81876pt x 296.10625pt>
 File: ./images/UC1.7.1.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.1.2.jpg>
@@ -1787,7 +1790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--124
 
  []
 
-<./images/UC1.7.2.jpg, id=1075, 484.81125pt x 288.07625pt>
+<./images/UC1.7.2.jpg, id=1098, 484.81125pt x 288.07625pt>
 File: ./images/UC1.7.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.2.jpg>
@@ -1822,7 +1825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
 
  []
 
-<./images/UC1.7.3.jpg, id=1099, 504.88625pt x 315.1775pt>
+<./images/UC1.7.3.jpg, id=1122, 504.88625pt x 315.1775pt>
 File: ./images/UC1.7.3.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.3.jpg>
@@ -1862,7 +1865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--232
 
  []
 
-<./images/UC1.7.4.jpg, id=1125, 526.96875pt x 350.30875pt>
+<./images/UC1.7.4.jpg, id=1148, 526.96875pt x 350.30875pt>
 File: ./images/UC1.7.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.4.jpg>
@@ -1902,7 +1905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 285--290
 
  []
 
-<./images/UC1.7.5.jpg, id=1152, 432.61626pt x 287.0725pt>
+<./images/UC1.7.5.jpg, id=1175, 432.61626pt x 287.0725pt>
 File: ./images/UC1.7.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.5.jpg>
@@ -1928,8 +1931,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--333
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--340
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 340.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [57]
+<./images/UC1.7.6.jpg, id=1199, 480.79625pt x 410.53375pt>
+File: ./images/UC1.7.6.jpg Graphic file (type jpg)
+
+<use ./images/UC1.7.6.jpg>
+Package pdftex.def Info: ./images/UC1.7.6.jpg used on input line 344.
+(pdftex.def)             Requested size: 360.59628pt x 307.89955pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 356.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [58 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+i Requisiti/images/UC1.7.6.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 365--370
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--391
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 391.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [59]
+Underfull \hbox (badness 10000) in paragraph at lines 393--398
+
+ []
+
+<./images/UC1.7.7.jpg, id=1225, 456.70625pt x 287.0725pt>
+File: ./images/UC1.7.7.jpg Graphic file (type jpg)
+
+<use ./images/UC1.7.7.jpg>
+Package pdftex.def Info: ./images/UC1.7.7.jpg used on input line 402.
+(pdftex.def)             Requested size: 342.52884pt x 215.30383pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 417.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [60 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+i Requisiti/images/UC1.7.7.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 422--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--441
+
+ []
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 335--12
+Underfull \hbox (badness 10000) in paragraph at lines 443--12
 
  []
 
@@ -1937,14 +2016,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 12.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [57]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 12.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [58]
+ [61]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.8.tex" <./images/UC1.8.jpg, id=1183, 461.725pt x 304.13625pt>
+quisiti\UC\UC1.8.tex" <./images/UC1.8.jpg, id=1250, 461.725pt x 304.13625pt>
 File: ./images/UC1.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.8.jpg>
@@ -1954,16 +2028,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 32.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [59 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [62 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.8.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 14.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [60]
+ [63]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.9.tex" <./images/UC1.9.jpg, id=1212, 1055.945pt x 508.90125pt>
+quisiti\UC\UC1.9.tex" <./images/UC1.9.jpg, id=1278, 1055.945pt x 508.90125pt>
 File: ./images/UC1.9.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.jpg>
@@ -1975,23 +2049,23 @@ Overfull \hbox (308.25995pt too wide) in paragraph at lines 5--6
  []
 
 
-LaTeX Warning: Hyper reference `uc1.9.7.3' on page 61 undefined on input line 2
+LaTeX Warning: Hyper reference `uc1.9.7.3' on page 64 undefined on input line 2
 1.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [61 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [64 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.jpg>]
-<./images/UC1.9.1.jpg, id=1231, 505.89pt x 356.33125pt>
+<./images/UC1.9.1.jpg, id=1297, 505.89pt x 356.33125pt>
 File: ./images/UC1.9.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.1.jpg>
 Package pdftex.def Info: ./images/UC1.9.1.jpg used on input line 30.
 (pdftex.def)             Requested size: 379.41655pt x 267.24777pt.
 
-<./images/UC1.9.2.jpg, id=1232, 479.7925pt x 353.32pt>
+<./images/UC1.9.2.jpg, id=1298, 479.7925pt x 353.32pt>
 File: ./images/UC1.9.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.2.jpg>
@@ -2001,7 +2075,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [62 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [65 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
@@ -2016,9 +2090,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 76.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [63 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [66 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.2.jpg>]
-<./images/UC1.9.4.jpg, id=1255, 479.7925pt x 353.32pt>
+<./images/UC1.9.4.jpg, id=1322, 479.7925pt x 353.32pt>
 File: ./images/UC1.9.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.4.jpg>
@@ -2033,17 +2107,17 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 103.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [64 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [67 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.4.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 105--110
 
  []
 
 
-LaTeX Warning: Hyper reference `uc1.9.7.3' on page 65 undefined on input line 1
+LaTeX Warning: Hyper reference `uc1.9.7.3' on page 68 undefined on input line 1
 22.
 
-<./images/UC1.9.6.jpg, id=1269, 712.6625pt x 509.905pt>
+<./images/UC1.9.6.jpg, id=1336, 712.6625pt x 509.905pt>
 File: ./images/UC1.9.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.6.jpg>
@@ -2058,7 +2132,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 131.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [65]
+ [68]
 Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
  []
@@ -2067,7 +2141,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 152.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [66 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [69 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.6.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--159
 
@@ -2078,7 +2152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--178
 
  []
 
-<./images/UC1.9.6.5.jpg, id=1299, 575.14874pt x 403.5075pt>
+<./images/UC1.9.6.5.jpg, id=1365, 575.14874pt x 403.5075pt>
 File: ./images/UC1.9.6.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.6.5.jpg>
@@ -2088,7 +2162,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 184.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [67]
+ [70]
 Underfull \hbox (badness 10000) in paragraph at lines 184--189
 
  []
@@ -2107,7 +2181,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 203.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [68 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [71 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.6.5.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 205--210
 
@@ -2118,7 +2192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--217
 
  []
 
-<./images/UC1.9.6.7.jpg, id=1317, 522.95375pt x 347.2975pt>
+<./images/UC1.9.6.7.jpg, id=1383, 522.95375pt x 347.2975pt>
 File: ./images/UC1.9.6.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.9.6.7.jpg>
@@ -2126,21 +2200,21 @@ Package pdftex.def Info: ./images/UC1.9.6.7.jpg used on input line 221.
 (pdftex.def)             Requested size: 392.21434pt x 260.47247pt.
 
 
-LaTeX Warning: Hyper reference `uc1.9.7.1' on page 69 undefined on input line 2
+LaTeX Warning: Hyper reference `uc1.9.7.1' on page 72 undefined on input line 2
 29.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 230.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [69 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [72 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.9.6.7.jpg>]
 
-LaTeX Warning: Hyper reference `uc1.9.7.2' on page 70 undefined on input line 2
+LaTeX Warning: Hyper reference `uc1.9.7.2' on page 73 undefined on input line 2
 30.
 
 
-LaTeX Warning: Hyper reference `uc1.9.7.3' on page 70 undefined on input line 2
+LaTeX Warning: Hyper reference `uc1.9.7.3' on page 73 undefined on input line 2
 31.
 
 
@@ -2162,10 +2236,10 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 16.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [70]
+ [73]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.10.tex"
-<./images/UC1.10.jpg, id=1336, 375.4025pt x 227.85126pt>
+<./images/UC1.10.jpg, id=1403, 375.4025pt x 227.85126pt>
 File: ./images/UC1.10.jpg Graphic file (type jpg)
 
 <use ./images/UC1.10.jpg>
@@ -2175,17 +2249,17 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [71 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [74 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.10.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 18.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [72]
+ [75]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.11.tex"
-<./images/UC1.11.jpg, id=1362, 422.57875pt x 189.70876pt>
+<./images/UC1.11.jpg, id=1428, 422.57875pt x 189.70876pt>
 File: ./images/UC1.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.11.jpg>
@@ -2205,11 +2279,11 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 20.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [73 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [76 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.11.jpg>]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.12.tex"
-<./images/UC1.12.jpg, id=1375, 438.63875pt x 311.1625pt>
+<./images/UC1.12.jpg, id=1441, 438.63875pt x 311.1625pt>
 File: ./images/UC1.12.jpg Graphic file (type jpg)
 
 <use ./images/UC1.12.jpg>
@@ -2229,7 +2303,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [74 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [77 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.12.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--44
 
@@ -2244,62 +2318,50 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [75]
+ [78]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.13.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 24.
+Package pdftex.def Info: ../../logo.jpg used on input line 26.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [76]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
-quisiti\UC\UC1.14.tex")
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 28.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [77]
+ [79]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.16.tex"
-<./images/UC1.16.jpg, id=1418, 482.80376pt x 342.27875pt>
+<./images/UC1.16.jpg, id=1475, 482.80376pt x 342.27875pt>
 File: ./images/UC1.16.jpg Graphic file (type jpg)
 
 <use ./images/UC1.16.jpg>
 Package pdftex.def Info: ./images/UC1.16.jpg used on input line 5.
 (pdftex.def)             Requested size: 362.10193pt x 256.70842pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 30.
+Package pdftex.def Info: ../../logo.jpg used on input line 36.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [78 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
-i Requisiti/images/UC1.16.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 32--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 46--30
+ [80 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+i Requisiti/images/UC1.16.jpg>])
+Underfull \hbox (badness 10000) in paragraph at lines 38--28
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 30.
+Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [79]
+ [81]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.18.tex"
-<./images/UC1.18.jpg, id=1440, 665.48625pt x 314.17375pt>
+<./images/UC1.18.jpg, id=1495, 665.48625pt x 314.17375pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
@@ -2310,7 +2372,7 @@ Overfull \hbox (15.4166pt too wide) in paragraph at lines 5--6
  [][] 
  []
 
-<./images/UC1.18.1.jpg, id=1445, 527.9725pt x 350.30875pt>
+<./images/UC1.18.1.jpg, id=1500, 527.9725pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -2320,7 +2382,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [80 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [82 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.18.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 40--45
 
@@ -2330,7 +2392,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [81 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [83 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.18.1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--52
 
@@ -2351,7 +2413,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
-<./images/UC1.18.1.6.jpg, id=1478, 523.9575pt x 302.12875pt>
+<./images/UC1.18.1.6.jpg, id=1533, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
@@ -2361,7 +2423,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 79.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [82]
+ [84]
 Underfull \hbox (badness 10000) in paragraph at lines 92--97
 
  []
@@ -2375,7 +2437,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 104.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [83 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [85 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.18.1.6.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 106--111
 
@@ -2391,7 +2453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--125
 
  []
 
-<./images/UC1.18.2.jpg, id=1502, 494.84875pt x 303.1325pt>
+<./images/UC1.18.2.jpg, id=1558, 494.84875pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -2401,7 +2463,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 131.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [84]
+ [86]
 Underfull \hbox (badness 10000) in paragraph at lines 147--152
 
  []
@@ -2415,7 +2477,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 159.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [85 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [87 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.18.2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 161--166
 
@@ -2431,7 +2493,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--180
 
  []
 
-<./images/UC1.18.2.6.jpg, id=1533, 550.055pt x 354.32375pt>
+<./images/UC1.18.2.6.jpg, id=1588, 550.055pt x 354.32375pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -2441,7 +2503,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 192.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [86]
+ [88]
 Underfull \hbox (badness 10000) in paragraph at lines 200--205
 
  []
@@ -2460,7 +2522,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [87 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
+ [89 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/SmartGit/RR/Esterni/Analisi de
 i Requisiti/images/UC1.18.2.6.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 221--226
 
@@ -2482,27 +2544,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--247
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 249--32
+Underfull \hbox (badness 10000) in paragraph at lines 249--30
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 32.
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [88]
+ [90]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 32.
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [89]
+ [91]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.14.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 34.
+Package pdftex.def Info: ../../logo.jpg used on input line 32.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [90]
+ [92]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Esterni\Analisi dei Re
 quisiti\UC\UC1.5.tex")) 
 AED: lastpage setting LastPage
@@ -2510,7 +2572,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [91]
+ [93]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
 
@@ -2522,18 +2584,15 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 40.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 13622 strings out of 493921
- 196549 string characters out of 3147280
- 332546 words of memory out of 3000000
- 15979 multiletter control sequences out of 15000+200000
+ 13669 strings out of 493921
+ 196992 string characters out of 3147280
+ 332557 words of memory out of 3000000
+ 16007 multiletter control sequences out of 15000+200000
  14000 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,50p,839b,862s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,50p,839b,880s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX
@@ -2543,9 +2602,9 @@ ublic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
 super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
 m1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb
 >
-Output written on AnalisiDeiRequisiti_v.1.0.pdf (92 pages, 3110330 bytes).
+Output written on AnalisiDeiRequisiti_v.1.0.pdf (94 pages, 2836916 bytes).
 PDF statistics:
- 2299 PDF objects out of 2487 (max. 8388607)
- 633 named destinations out of 1000 (max. 500000)
- 1707 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2386 PDF objects out of 2487 (max. 8388607)
+ 652 named destinations out of 1000 (max. 500000)
+ 1789 words of extra memory for PDF output out of 10000 (max. 10000000)
 

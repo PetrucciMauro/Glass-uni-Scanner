@@ -1,22 +1,18 @@
-
 \section{Pianificazione}{
-	
-	Date le scadenze in (\ref{sec:scadenze}) si \`{è} diviso il progetto in 4 stati di sviluppo:
+	Date le scadenze in (\ref{sec:scadenze}) si \`{e} diviso il progetto in 4 stati di sviluppo:
 	\begin{itemize}
 		\item \textbf{Analisi dei Requisiti} (AN)
-		\item \textbf{Progettazione Architetturale}(PA)
-		\item \textbf{Progettazione in dettaglio e Codifica}(PDC)
-		\item \textbf{Verifica e Validazione}(VV)
+		\item \textbf{Progettazione Architetturale} (PA)
+		\item \textbf{Progettazione in dettaglio e Codifica} (PDC)
+		\item \textbf{Verifica e Validazione} (VV)
 	\end{itemize}
 	
-	Per ogni stato del progetto sono state individuate attivit\`{a} e sotto-attivit\`{a} a cui sono state associate le risorse del gruppo.
-	Per ogni stato del processo \`{e} stato riportato il Gantt(g) con evidenziato in colore rosso il cammino critico.
-	Le attivit\`{a} parte di questo cammino saranno monitorate con maggiore attenzione in quanto un ritardo su queste attivit\`{a} 
-	sarebbe dannoso per l'efficienza del gruppo e porterebbe a ritardi nell'avanzamento dello stato del progetto.
-	Si \`{e} deciso di non riportare i grafici PERT(g) poich\'{e} le attivit\`{a} critiche sono gi\`{a} state evidenziate nel GANT(g) come detto in precedenza.
-	Per ogni stato del progetto \`{e} stato riportato il diagramma WBS(g) cos\`{i} da rendere esplicita la composizione delle attivit\`{a} e rendere immediata la costruzione del prospetto economico.
+	Per ogni stato del progetto sono state individuate attivit\`{a} e sotto-attivit\`{a} a cui sono state associate le risorse del gruppo.\\
+	Per ogni stato del processo \`{e} stato riportato il Gantt con evidenziato in colore rosso il cammino critico. Le attivit\`{a} parte di questo cammino saranno monitorate con maggiore attenzione in quanto un ritardo su queste attivit\`{a}	sarebbe dannoso per l'efficienza del gruppo e porterebbe a ritardi nell'avanzamento dello stato del progetto.\\
+	Si \`{e} deciso di non riportare i grafici PERT poich\'{e} le attivit\`{a} critiche sono gi\`{a} state evidenziate nel GANT come detto in precedenza.
+	Per ogni stato del progetto \`{e} stato riportato il diagramma WBS cos\`{i} da rendere esplicita la composizione delle attivit\`{a} e rendere immediata la costruzione del prospetto economico.
 	
-	\subsection{Analisi dei Requisiti}{
+\subsection{Analisi dei Requisiti}{
 	\textbf{Periodo}: da X a 3-04-2015 \\
 	
 	I documenti redatti in questo periodo sono:
@@ -31,13 +27,13 @@
 	\end{itemize}
 	
 	\begin{figure}[H]
-		\includegraphics[scale=0.3]{\imgs pianoRequisiti.jpg}
+		\includegraphics[width=\textwidth, height=22cm]{\imgs pianoRequisiti.jpg}
 		\label{fig:pianorequisiti}
 		\caption{Piano dei Requisiti}
 	\end{figure}
 	
-	%TABELLA RUOLI 
 	\begin{longtable} [c]{| l | l | l | l |}
+		\caption{Attivit\`{a} e ruoli Piano dei Requisiti \label{tab:pianorequisiti}}\\
 		 \hline
 		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
 		 \hline
@@ -49,7 +45,6 @@
 		 \hline
 		 \endfoot
 		 \hline
-		 \caption{Attivit\`{a} e ruoli Piano dei Requisiti}
 		 \endlastfoot
 		Norme di Progetto & Comunicazioni & Responsabile 1 & 1\\
 		Norme di Progetto & Requisiti & Responsabile 2 & 4\\
@@ -109,40 +104,60 @@
 		\item incremento e verifica dei documenti portati in Revisione dei Requisiti;
 		\item stesura del documento \textbf{Specifica Tecnica} in cui il Progettista esporr\`{a} le scelte progettuali di alto livello del sistema e i design pattern che saranno utilizzati nel sistema. Si verificher\`{a} il tracciamento dal sistema ai requisiti e dai requisiti al sistema.
 	\end{itemize}
-
+	
 	\begin{figure}[H]
 		\includegraphics[scale=0.75]{\imgs pianoProgettazione.jpg}
 		\label{fig:pianoprogettazione}
 		\caption{Piano di Progettazione}
 	\end{figure}
 	
-	GRAFICO WBS
-	
-	\begin{table}[H] %TABELLA RUOLI
-	\begin{tabular}{llll}
-	Macro-Attivit\`{i} & Attivit\`{i} & Ruolo & Ore \\
-	Norme di Progetto & Incremento & \begin{tabular}[c]{@{}l@{}}Responsabile2\\ Amministratore\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 10\end{tabular} \\
-	Norme di Progetto & Verifica & Verificatore2 & 2 \\
-	Analisi dei Requisiti & Incremento & Analista & 6 \\
-	Analisi dei Requisiti & Verifica & Verificatore1 & 1 \\
-	Specifica Tecnica & Strumenti e tecnologie & Progettista5 & 6 \\
-	Specifica Tecnica & Notazione & Progettista2 & 2 \\
-	Specifica Tecnica & Architettura & \begin{tabular}[c]{@{}l@{}}Progettista2\\ Progettista3\\ Progettista4\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 6\\ 8\end{tabular} \\
-	Specifica Tecnica & Design Patterns & \begin{tabular}[c]{@{}l@{}}Progettista1\\ Progettista2\\ Progettista3\end{tabular} & \begin{tabular}[c]{@{}l@{}}8\\ 8\\ 8\end{tabular} \\
-	Specifica Tecnica & Componenti & \begin{tabular}[c]{@{}l@{}}Progettista2\\ Progettista3\\ Progettista4\end{tabular} & \begin{tabular}[c]{@{}l@{}}8\\ 8\\ 8\end{tabular} \\
-	Specifica Tecnica & Tracciamento & \begin{tabular}[c]{@{}l@{}}Verificatore1\\ Verificatore4\end{tabular} & \begin{tabular}[c]{@{}l@{}}5\\ 5\end{tabular} \\
-	Specifica Tecnica & Verifica & Verificatore3Responsabile2 & 51 \\
-	Piano di Qualifica & Incremento & Responsabile1 & 4 \\
-	Piano di Qualifica & Pianificazione Test & \begin{tabular}[c]{@{}l@{}}Progettista5\\ Verificatore1\\ Verificatore2\\ Responsabile1\\ Amministratore\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 5\\ 6\\ 4\\ 6\end{tabular} \\
-	Piano di Qualifica & Esito verifiche & Verificatore3 & 4 \\
-	Piano di Qualifica & Verifica & \begin{tabular}[c]{@{}l@{}}Verificatore3\\ Responsabile1\end{tabular} & \begin{tabular}[c]{@{}l@{}}5\\ 1\end{tabular} \\
-	Glossario & Incremento & / & 6 \\
-	Glossario & Verifica & Verificatore4 & 2 \\
-	Piano di Progetto & Consuntivo & Responsabile2 & 2 
-	\end{tabular}
-	\end{table}
+	\begin{longtable} [c]{| l | l | l | l |}
+		\caption{Attivit\`{a} e ruoli Piano di Progettazione \label{tab:pianoprogettazione}}\\
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+			\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 Norme di Progetto & Incremento & Responsabile 2 & 6\\
+		 &	&	Amministratore & 10\\
+		 Norme di Progetto & Verifica & Verificatore 2 & 2 \\
+		 Analisi dei Requisiti & Incremento & Analista & 6 \\
+		 Analisi dei Requisiti & Verifica & Verificatore 1 & 1 \\
+		 Specifica Tecnica & Strumenti e tecnologie & Progettista 5 & 6 \\
+		 Specifica Tecnica & Notazione & Progettista 2 & 2 \\
+		 Specifica Tecnica & Architettura & Progettista 2 & 6\\
+		 &	&	Progettista 3 & 6\\
+		 &	&	Progettista 4 & 8\\
+		 Specifica Tecnica & Design Patterns & Progettista 1 & 8\\
+		 &	&	Progettista 2 & 8\\
+		 &	&	Progettista 3 & 8\\
+		 Specifica Tecnica & Componenti & Progettista 2 & 8\\
+		 &	&	Progettista 3 & 8\\
+		 &	&	Progettista 4 & 8\\
+		 Specifica Tecnica & Tracciamento & Verificatore 1 & 5\\
+		 &	&	Verificatore 4 & 5\\
+		Specifica Tecnica & Verifica & Verificatore 3, Responsabile 2 & 51 \\
+		Piano di Qualifica & Incremento & Responsabile 1 & 4 \\
+		Piano di Qualifica & Pianificazione Test & Progettista 5 & 6\\
+		&	&	Verificatore 1 & 5\\
+		&	&	Verificatore 2 & 6\\
+		&	&	Responsabile 1 & 4\\
+		&	&	Amministratore & 6\\
+		Piano di Qualifica & Esito verifiche & Verificatore 3 & 4 \\
+		Piano di Qualifica & Verifica & Verificatore 3 & 5\\
+		&	&	Responsabile 1 & 1\\
+		Glossario & Incremento & / & 6 \\
+		Glossario & Verifica & Verificatore 4 & 2 \\
+		Piano di Progetto & Consuntivo & Responsabile 2 & 2\\
+	\end{longtable}
 }
-	
 \subsection{Progettazione in dettaglio e Codifica}{
 	\textbf{Periodo}: dal 4-05-2015 a 13-06-2015 \\
 	 
@@ -155,40 +170,75 @@
 		 \item \textbf{Manualistica}: verranno reddatti i documenti sul prodotto per l'utente finale.
 	 \end{itemize}
 	
-	% IMMAGINE "perLatex/pianoCodifica.png" (da inserire)
+	\begin{figure}[H]
+		\includegraphics[scale=0.75]{\imgs pianoCodifica.jpg}
+		\label{fig:pianoprogettazdettcodifica}
+		\caption{Piano di Progettazione in dettaglio e Codifica}
+	\end{figure}
 	
-	GRAFICO WBS
-	
-	\begin{table}[H] %TABELLA RUOLI
-	\begin{tabular}{llll}
-	Macro-Attivit\`{i} & Attivit\`{i} & Ruoli & Ore \\
-	Norme di Progetto & Incremento & \begin{tabular}[c]{@{}l@{}}Responsabile\\ Amministratore\end{tabular} & \begin{tabular}[c]{@{}l@{}}8\\ 2\end{tabular} \\
-	Norme di Progetto & Verifica & Verificatore4 & 1 \\
-	Piano di Progetto & Rivalutazione & Responsabile & 2 \\
-	Piano di Progetto & Verifica & Verificatore1 & 1 \\
-	Specifica Tecnica & Incremento Design Patterns & \begin{tabular}[c]{@{}l@{}}Progettista1\\ Progettista2\end{tabular} & \begin{tabular}[c]{@{}l@{}}4\\ 4\end{tabular} \\
-	Specifica Tecnica & Incremento Componenti & \begin{tabular}[c]{@{}l@{}}Progettista1\\ Progettista2\end{tabular} & \begin{tabular}[c]{@{}l@{}}8\\ 8\end{tabular} \\
-	Specifica Tecnica & Verifica & Verificatore4 & 4 \\
-	Definizione Prodotto & Specifica Componenti Base & \begin{tabular}[c]{@{}l@{}}Progettista3\\ Progettista4\\ Progettista5\\ Progettista6\end{tabular} & \begin{tabular}[c]{@{}l@{}}10\\ 10\\ 10\\ 10\end{tabular} \\
-	Definizione Prodotto & Specifica - Verifica Base & \begin{tabular}[c]{@{}l@{}}Verificatore1\\ Verificatore2\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 2\end{tabular} \\
-	Definizione Prodotto & Specifica Componenti Incremento & \begin{tabular}[c]{@{}l@{}}Progettista1\\ Progettista2\end{tabular} & \begin{tabular}[c]{@{}l@{}}10\\ 10\end{tabular} \\
-	Definizione Prodotto & Specifica - Verifica Incremento & Verificatore2 & 4 \\
-	Definizione Prodotto & Specifica - Tracciamento Base & \begin{tabular}[c]{@{}l@{}}Progettista3\\ Verificatore1\end{tabular} & \begin{tabular}[c]{@{}l@{}}4\\ 6\end{tabular} \\
-	Definizione Prodotto & Specifica - Tracciamento Incremento & \begin{tabular}[c]{@{}l@{}}Progettista1\\ Verificatore3\end{tabular} & \begin{tabular}[c]{@{}l@{}}2\\ 4\end{tabular} \\
-	Definizione Prodotto & Verifica & Verificatore2 & 4 \\
-	Codifica & Base & \begin{tabular}[c]{@{}l@{}}Programmatore1\\ Programmatore2\\ Programmatore3\\ Programmatore4\\ Programmatore5\\ Programmatore6\end{tabular} & \begin{tabular}[c]{@{}l@{}}20\\ 19\\ 17\\ 21\\ 24\\ 20\end{tabular} \\
-	Codifica & Incremento & \begin{tabular}[c]{@{}l@{}}Programmatore1\\ Programmatore2\\ Programmatore3\\ Programmatore4\end{tabular} & \begin{tabular}[c]{@{}l@{}}6\\ 7\\ 10\\ 8\end{tabular} \\
-	Codifica & Preparazione test unit\`{i} base & \begin{tabular}[c]{@{}l@{}}Verificatore1\\ Verificatore4\end{tabular} & \begin{tabular}[c]{@{}l@{}}15\\ 15\end{tabular} \\
-	Codifica & Verifica Base & \begin{tabular}[c]{@{}l@{}}Verificatore2\\ Verificatore3\end{tabular} & \begin{tabular}[c]{@{}l@{}}13\\ 11\end{tabular} \\
-	Codifica & Preparazione test unit\`{i} incremento & \begin{tabular}[c]{@{}l@{}}Verificatore5\\ Verificatore6\end{tabular} & \begin{tabular}[c]{@{}l@{}}10\\ 5\end{tabular} \\
-	Codifica & Verifica Incremento & \begin{tabular}[c]{@{}l@{}}Verificatore5\\ Verificatore6\end{tabular} & \begin{tabular}[c]{@{}l@{}}5\\ 5\end{tabular} \\
-	Piano di Progetto & Consuntivo & Responsabile & 2 \\
-	Piano di Qualifica & Resoconto attivit\`{i} verifica & \begin{tabular}[c]{@{}l@{}}Verificatore4\\ Verificatore3\end{tabular} & \begin{tabular}[c]{@{}l@{}}4\\ 4\end{tabular} \\
-	Piano di Qualifica & Verifica & Verificatore4 & 2 
-	\end{tabular}
-	\end{table}
+	\begin{longtable} [c]{| l | l | l | l |}
+		\caption{Attivit\`{a} e ruoli Piano di Progettazione in dettaglio e Codifica \label{tab:pianoprogettazdettcodifica}}\\
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+				\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 Norme di Progetto & Incremento & Responsabile & 8\\
+		 &	&	Amministratore & 2\\
+		 Norme di Progetto & Verifica & Verificatore 4 & 1 \\
+		 Piano di Progetto & Rivalutazione & Responsabile & 2 \\
+		 Piano di Progetto & Verifica & Verificatore 1 & 1 \\
+		 Specifica Tecnica & Incremento Design Patterns & Progettista 1 & 4\\
+		 &	&	Progettista 2 & 4\\
+		 Specifica Tecnica & Incremento Componenti & Progettista 1 & 8\\
+		 &	&	Progettista 2 & 8\\
+		 Specifica Tecnica & Verifica & Verificatore 4 & 4 \\
+		 Definizione Prodotto & Specifica Componenti Base & Progettista 3 & 10\\
+		 &	&	Progettista 4 & 10\\
+		 &	&	Progettista 5 & 10\\
+		 &	&	Progettista 6 & 10\\
+		 Definizione Prodotto & Specifica - Verifica Base & Verificatore 1 & 6\\
+		 &	&	Verificatore 2 & 2\\
+		 Definizione Prodotto & Specifica Componenti Incremento & Progettista 1 & 10\\
+		 &	&	Progettista 2 & 10\\
+		 Definizione Prodotto & Specifica - Verifica Incremento & Verificatore 2 & 4 \\
+		 Definizione Prodotto & Specifica - Tracciamento Base & Progettista 3 & 4\\
+		 &	&	Verificatore 1 & 6\\
+		 Definizione Prodotto & Specifica - Tracciamento Incremento & Progettista 1 & 2\\
+		 &	&	Verificatore 3 & 4\\
+		 Definizione Prodotto & Verifica & Verificatore 2 & 4 \\
+		 Codifica & Base & Programmatore 1 & 20\\
+		 &	&	Programmatore 2 & 19\\
+		 &	&	Programmatore 3 & 17\\
+		 &	&	Programmatore 4 & 21\\
+		 &	&	Programmatore 5 & 24\\
+		 &	&	Programmatore 6 & 20\\
+		 Codifica & Incremento & Programmatore 1 & 6\\
+		 &	&	Programmatore 2 & 7\\
+		 &	&	Programmatore 3 & 10\\
+		 &	&	Programmatore 4 & 8\\
+		 Codifica & Preparazione test unit\`{a} base & Verificatore 1 & 15\\
+		 &	&	Verificatore 4 & 15\\
+		 Codifica & Verifica Base & Verificatore 2 & 13\\
+		 &	&	Verificatore 3 & 11\\
+		 Codifica & Preparazione test unit\`{a} incremento & Verificatore 5 & 10\\
+		 &	&	Verificatore 6 & 5\\
+		 Codifica & Verifica Incremento & Verificatore 5 & 5\\
+		 &	&	Verificatore 6 & 5\\
+		 Piano di Progetto & Consuntivo & Responsabile & 2 \\
+		 Piano di Qualifica & Resoconto attivit\`{a} verifica & Verificatore 4 & 4\\
+		 &	&	Verificatore 3 & 4\\
+		 Piano di Qualifica & Verifica & Verificatore 4 & 2 \\
+	\end{longtable}
 }
-	\subsection{Verifica e Validazione}
+\subsection{Verifica e Validazione}{
 	\textbf{Periodo}: dal 19-06-2015 al 01-07-2015
 	
 	Le attivit\`{i} svolte in questo periodo saranno:
@@ -203,20 +253,21 @@
 		\label{fig:pianoaccettazione}
 		\caption{Piano di Accettazione}
 	\end{figure}
+	
 	\begin{longtable} [c]{| l | l | l | l |}
-	 \hline
-	 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
-	 \hline
-	 \endfirsthead
-	 \hline
-	 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
-	 \hline
-		\endhead
-	 \hline
-	 \endfoot
-	 \hline
-	 \caption{Attivit\`{a} e ruoli Piano di Accettazione}
-	 \endlastfoot
+		\caption{Attivit\`{a} e ruoli Piano di Accettazione \label{tab:pianoaccettazione}}\\
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Macro-Attivit\`{a}} & \textbf{Attivit\`{a}} & \textbf{Ruolo} & \textbf{Ore}\\
+		 \hline
+			\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
 		Norme & Incremento & Responsabile 1 & 2 \\
 		Norme & Verifica & Verificatore 1 & 1 \\
 		Glossario & Incremento & / & 4 \\
