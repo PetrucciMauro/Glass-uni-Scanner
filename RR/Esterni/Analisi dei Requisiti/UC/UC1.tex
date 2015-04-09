@@ -4,23 +4,24 @@
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1}.jpg} %inserire il diagramma UML
 	\end{figure}
-	\textbf{Attori}: utente desktop, utente mobile, amministratore di sistema \\
+	\textbf{Attori}: utente desktop, utente mobile, amministratore di sistema. \\
 	\textbf{Descrizione}: il sistema deve mettere l'utente in condizioni di raccogliere idee e materiale multimediale da essere usati in una presentazione, creare una presentazione, modificare una presentazione, creare infografiche a partire da una presentazione, salvare ciò che ha prodotto su di un server ed infine eseguire una presentazione creata con il sistema. \\
 	\textbf{Precondizione}: il sistema è avviato e pronto all'uso.	\\
 	\textbf{Postcondizione}: è stato eseguito ciò che l'utente desiderava e che il sistema è in grado di eseguire.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
 		\item l'utente si registra creando un account utente \hyperref[uc1.8]{(UC 1.8)};
-		\item l'utente può gestire il suo account \hyperref[uc1.11]{(UC 1.11)};
-		\item l'utente raccoglie idee e materiale multimediale per la presentazione \hyperref[uc1.1]{(UC 1.1)};
-		\item l'utente può sincronizzare i contenuti di preparazione sul proprio spazio a disposizione sul server dopo aver effettuato il login con il suo account \hyperref[uc1.12]{(UC 1.12)};
-		\item l'utente desktop può creare una nuova presentazione \hyperref[uc1.2]{(UC 1.2)};
-		\item l'utente desktop può caricare o ottenere una presentazione sul proprio spazio a disposizione sul server dopo aver effettuato il login con il suo account \hyperref[uc1.7]{(UC 1.7)};
-		\item l'utente può creare una infografica della presentazione \hyperref[uc1.6]{(UC 1.6)};
-		\item l'utente può caricare l'infografica sul proprio spazio a disposizione sul server \hyperref[uc1.13]{(UC 1.13)};
-		\item l'utente può ottenere una presentazione dal server tramite il suo account \hyperref[uc1.7]{(UC 1.7)};
-		\item l'utente desktop può modificare la presentazione \hyperref[uc1.3]{(UC 1.3)};
-		\item l'utente mobile può modificare  parzialmente la presentazione \hyperref[uc1.4]{(UC 1.4)};
-		\item l'utente può eseguire la presentazione \hyperref[uc1.18]{(UC 1.18)}.
+		\item l'utente può effettuare il login \hyperref[uc1.10]{(UC 1.10)} e il logout \hyperref[uc1.13]{(UC 1.13)};
+		\item l'utente può gestire il proprio account \hyperref[uc1.11]{(UC 1.11)};
+		\item l'utente può creare una nuova presentazione \hyperref[uc1.2]{(UC 1.2)};
+		\item l'utente può modificare una presentazione \hyperref[uc1.3]{(UC 1.3)};
+		\item l'utente può eseguire la presentazione \hyperref[uc1.18]{(UC 1.18)} da locale \hyperref[uc1.14]{(UC 1.14)} oppure online \hyperref[uc1.5]{(UC 1.5)};
+		\item l'utente può gestire le presentazioni in locale \hyperref[uc1.15]{(UC 1.15)};
+		\item l'utente desktop può gestire il proprio archivio sul server tramite il proprio account \hyperref[uc1.7]{(UC 1.7)};
+		\item l'utente può ottenere una presentazione dal server tramite il proprio account \hyperref[uc1.16]{(UC 1.16)};		
+		\item l'utente può creare un'infografica della presentazione \hyperref[uc1.6]{(UC 1.6)};
+		\item l'utente può modificare un'infografica \hyperref[uc1.17]{(UC 1.17)};
+		\item l'utente può caricare l'infografica sul proprio spazio a disposizione sul server \hyperref[uc1.12]{(UC 1.12)};
+		\item l'utente può gestire i propri template delle infografiche \hyperref[uc1.9]{(UC 1.9)}.
 	\end{enumerate}
 	}
