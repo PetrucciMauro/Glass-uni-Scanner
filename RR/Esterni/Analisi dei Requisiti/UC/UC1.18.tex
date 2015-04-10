@@ -6,7 +6,7 @@
 		\label{fig:uc1.18}
 		\caption{Caso d'uso 1.18}
 	\end{figure}
-	\textbf{Attori}: utente generico. \\
+	\textbf{Attori}: utente autenticato, utente non autenticato. \\
 	\textbf{Descrizione}: l'utente può eseguire una presentazione. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
 	\textbf{Precondizione}: una presentazione è già stata caricata e l'utente può avviarla nella modalità desiderata. \\
 	\textbf{Postcondizione}: la presentazione è stata eseguita secondo il metodo scelto.	\\
@@ -24,7 +24,7 @@
 			\label{fig:uc1.18.1}
 			\caption{Caso d'uso 1.18.1}
 		\end{figure}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
 		\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
 		\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
@@ -41,35 +41,35 @@
 		}
 	\subsection{UC 1.18.1.1 - Scorrimento in avanti e indietro dei frame}{
 		\label{uc1.18.1.1}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente vuole scorrere la presentazione al frame immediatamente successivo o precedente. \\
 		\textbf{Precondizione}: un frame è in presentazione.	\\
 		\textbf{Postcondizione}: il frame in presentazione è cambiato passando a quello successivo o precedente in base alla scelta dell'utente.	\\
 	}
 	\subsection{UC 1.18.1.2 - Scelta all'interno del frame}{
 		\label{uc1.18.1.2}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente deve poter scegliere come far continuare la presentazione. \\
 		\textbf{Precondizione}: il frame in presentazione presenta la possibilità di scegliere con quale percorso continuare la presentazione e l'utente deve poter effettuare tale scelta.	\\
 		\textbf{Postcondizione}: la presentazione può continuare con il primo frame del percorso che l'utente ha scelto.	\\
 	}
 	\subsection{UC 1.18.1.3 - Salto al bookmark successivo}{
 		\label{uc1.18.1.3}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente, se lo desidera, può andare a presentare un altro frame saltando una parte della presentazione. \\
 		\textbf{Precondizione}: il frame attuale presenta un bookmark ad un altro frame.	\\
 		\textbf{Postcondizione}: il frame in presentazione è quello puntato dal bookmark e la presentazione può continuare da questo punto.	\\
 	}
 	\subsection{UC 1.18.1.4 - Passaggio ad un livello superiore}{
 		\label{uc1.18.1.4}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente, se lo desidera, può salire nel frame padre appena superiore. \\
 		\textbf{Precondizione}: il frame in presentazione è figlio di almeno un frame padre (non è quindi la radice).	\\
 		\textbf{Postcondizione}: il frame in presentazione è passato al padre .	\\
 	}
 	\subsection{UC 1.18.1.18 - Possibilità di ingrandimento del contenuto}{
 		\label{uc1.18.1.18}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente, se lo desidera, può ingrandire il contenuto presente nel frame, che sia un'immagine, un video o del testo. \\
 		\textbf{Precondizione}: il frame in presentazione contiene più elementi di contenuto.	\\
 		\textbf{Postcondizione}: lo schermo presenta l'immagine, il video o il testo selezionato; l'utente può in qualsiasi momento ritornare al frame di cui il contenuto fa parte.	\\
@@ -82,7 +82,7 @@
 			\label{fig:uc1.18.1.6}
 			\caption{Caso d'uso 1.18.1.6}
 		\end{figure}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: durante una presentazione manuale l'utente potrà riprodurre un media audio o video presente nel frame. \\
 		\textbf{Precondizione}: il frame in presentazione contiene un media da riprodurre.	\\
 		\textbf{Postcondizione}: il media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
@@ -95,35 +95,35 @@
 	}
 	\subsection{UC 1.18.1.6.1 - Avvio manuale della riproduzione di un media}{
 		\label{uc1.18.1.6.1}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può avviare la riproduzione del media presente nel frame in qualsiasi momento. \\
 		\textbf{Precondizione}: il frame in presentazione contiene almeno un media.	\\
 		\textbf{Postcondizione}: il media è in riproduzione.	\\
 	}
 	\subsection{UC 1.18.1.6.2 - Sospensione della riproduzione del media}{
 		\label{uc1.18.1.6.2}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del media in corso. \\
 		\textbf{Precondizione}: è in riproduzione un media.	\\
 		\textbf{Postcondizione}: il media è in pausa.	\\
 	}
 	\subsection{UC 1.18.1.6.3 - Ripresa dell'esecuzione del media}{
 		\label{uc1.18.1.6.3}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può far riavviare la riproduzione del media. \\
 		\textbf{Precondizione}: il media in riproduzione è stato messo in pausa.	\\
 		\textbf{Postcondizione}: il media ha ripreso la sua riproduzione.	\\
 	}
 	\subsection{UC 1.18.1.6.4 - Riproduzione del media da qualsiasi punto}{
 		\label{uc1.18.1.6.4}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può può far riprodurre il media da qualsiasi minuto in qualsiasi momento. \\
 		\textbf{Precondizione}: un media è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: il media è in riproduzione dal punto scelto dall'utente.	\\
 	}
 	\subsection{UC 1.18.1.6.5 - Arresto della riproduzione in corso}{
 		\label{uc1.18.1.6.5}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può arrestare la riproduzione del media in corso. Se il media è stato ingrandito allora lo schermo tornerà a presentare il frame di cui il media faceva parte. \\
 		\textbf{Precondizione}: un media è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: il media è stato arrestato e se l'utente decidesse di riavviarne la riproduzione, essa ripartirà dall'inizio.	\\
@@ -136,7 +136,7 @@
 		\label{fig:uc1.18.2}
 		\caption{Caso d'uso 1.18.2}
 	\end{figure}
-	\textbf{Attori}: utente generico. \\
+	\textbf{Attori}: utente autenticato, utente non autenticato. \\
 	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. \\
 	\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
 	\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
@@ -152,35 +152,35 @@
 	}
 	\subsection{UC 1.18.2.1 - Avvia presentazione}{
 		\label{uc1.18.2.1}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può avviare la presentazione automatica dal primo frame o da un altro. \\
 		\textbf{Precondizione}: una presentazione è stata caricata e un frame è selezionato.	\\
 		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame scorrono automaticamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
 	}
 	\subsection{UC 1.18.2.2 - Riprendi presentazione}{
 		\label{uc1.18.2.2}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può riprendere la presentazione automatica in seguito ad una sua sospensione. \\
 		\textbf{Precondizione}: la presentazione automatica è stata temporaneamente sospesa.	\\
 		\textbf{Postcondizione}: il sistema è in presentazione automatica quindi i frame riprendono a scorrere automaticamente, richiedendo l'intervento dell'utente solo per i frame che prevedono scelte.	\\
 	}
 	\subsection{UC 1.18.2.3 - Arresta presentazione}{
 		\label{uc1.18.2.3}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può arrestare e chiudere la presentazione. \\
 		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione viene chiusa e il programma ritorna alla home.	\\
 	}
 	\subsection{UC 1.18.2.4 - Sospendi presentazione}{
 		\label{uc1.18.2.4}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può mettere in pausa la presentazione. \\
 		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione automatica è stata fermata temporaneamente e potrà essere ripresa dallo stesso punto in qualsiasi momento.	\\
 	}
 	\subsection{UC 1.18.2.5 - Imposta tempo scorrimento frame}{
 		\label{uc1.18.2.5}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può impostare un tempo di visualizzazione che vale per ogni frame. \\
 		\textbf{Precondizione}: la presentazione è in modalità manuale.	\\
 		\textbf{Postcondizione}: la presentazione automatica può essere avviata con il tempo di scorrimento impostato dall'utente e non con quello impostato al momento della creazione della presentazione.	\\
@@ -193,7 +193,7 @@
 			\label{fig:uc1.18.2.6}
 			\caption{Caso d'uso 1.18.2.6}
 		\end{figure}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: durante una presentazione automatica, se nel frame sono presenti uno o più media essi verranno avviati secondo un certo ordine in modo automatico; l'utente, se ha bisogno, può saltare la riproduzione di tali media e la presentazione automatica continua col frame successivo. \\
 		\textbf{Precondizione}: il frame in presentazione contiene dei media da riprodurre.	\\
 		\textbf{Postcondizione}: il media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
@@ -207,56 +207,56 @@
 	}
 	\subsection{UC 1.18.2.6.1 - Avvio automatico riproduzione di un media}{
 		\label{uc1.18.2.6.1}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: il media presente nel frame viene fatto riprodurre in modo automatico; se più media sono presenti allora verranno riprodotto tutti uno alla volta. \\
 		\textbf{Precondizione}: il frame in presentazione contiene un media.	\\
 		\textbf{Postcondizione}: il media è in riproduzione.	\\
 	}
 	\subsection{UC 1.18.2.6.2 - Sospensione della riproduzione del media}{
 		\label{uc1.18.2.6.2}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del media in corso. \\
 		\textbf{Precondizione}: è in riproduzione un media.	\\
 		\textbf{Postcondizione}: il media è in pausa.	\\
 	}
 	\subsection{UC 1.18.2.6.3 - Ripresa dell'esecuzione del media}{
 		\label{uc1.18.2.6.3}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente far riprendere la riproduzione del media. \\
 		\textbf{Precondizione}: il media in riproduzione è stato messo in pausa.	\\
 		\textbf{Postcondizione}: il media ha ripreso la sua riproduzione.	\\
 	}
 	\subsection{UC 1.18.2.6.4 - Riproduzione del media da qualsiasi minuto}{
 		\label{uc1.18.2.6.4}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può far riprodurre il media da qualsiasi minuto in qualsiasi momento. \\
 		\textbf{Precondizione}: un media è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: il media è in riproduzione dal minuto scelto dall'utente.	\\
 	}
 	\subsection{UC 1.18.2.6.5 - Possibilità di saltare la riproduzione in corso}{
 		\label{uc1.18.2.6.5}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente può saltare la riproduzione in corso e far proseguire normalmente la presentazione automatica. \\
 		\textbf{Precondizione}: un media è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: la presentazione automatica riprende la sua normale esecuzione.	\\
 	}
 	\subsection{UC 1.18.2.6.6 - Possibilità di ingrandimento di un video}{
 		\label{uc1.18.2.6.6}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente, se lo desidera, può ingrandire il video in riproduzione o in sospensione. \\
 		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: lo schermo presenta il video selezionato nella sua interezza; l'utente ha la possibilità in ogni momento di rimpicciolire il video tornando a presentare il frame di cui ne fa parte.	\\
 	}
 	\subsection{UC 1.18.3 - Passaggio alla presentazione automatica}{
 		\label{uc1.18.3}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente vuole passare dalla presentazione manuale a quella automatica. \\
 		\textbf{Precondizione}: la presentazione manuale è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione automatica si è avviata dal frame corrente.	\\
 	}
 	\subsection{UC 1.18.4 - Passaggio alla presentazione manuale}{
 		\label{uc1.18.4}
-		\textbf{Attori}: utente generico. \\
+		\textbf{Attori}: utente autenticato, utente non autenticato. \\
 		\textbf{Descrizione}: l'utente vuole passare dalla presentazione automatica a quella manuale. \\
 		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
 		\textbf{Postcondizione}: la presentazione automatica si è arrestata permettendo all'utente di gestirla manualmente.	\\
