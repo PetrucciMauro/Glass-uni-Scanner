@@ -22,13 +22,16 @@
 \usepackage{titlesec}
 \usepackage{bookmark}
 \usepackage{float}
+\usepackage{subfig}
+\usepackage{colortbl,booktabs,caption,float}
+\usepackage{yfonts}
 
 %\usepackage{appendix}
 
 \bibliographystyle{alpha}
 
 %	VARIABILI GLOBALI
-\newcommand{\gruppo}{}
+\newcommand{\gruppo}{LateButSafe}
 \newcommand{\mail}{latebutsafe@gmail.com}
 \newcommand{\unipd}{Universit\`{a} degli studi di Padova}
 \newcommand{\uniAA}{2014/2015}
@@ -45,28 +48,31 @@
 \newcommand{\BM}{Busetto Matteo}
 \newcommand{\PM}{Petrucci Mauro}
 
+\addto\captionsitalian{\renewcommand{\tablename}{Tab}}
+\addto\captionsitalian{\renewcommand{\figurename}{Fig}}
+
 %	nomi di tutti i file (per richiamarli nei documenti e creare link)
 \newcommand{\DefProd}{DefinizioneDiProdotto_v1.0.pdf}
 \newcommand{\SpecTec}{SpecificaTecnica_v3.0.pdf}
 \newcommand{\AR}{AnalisiDeiRequisiti_v4.0.pdf}
 \newcommand{\PianoProg}{PianoDiProgetto_v4.0.pdf}
 \newcommand{\Norme}{../Interni/NormeDiProgetto_v4.0.pdf}
-\newcommand{\PianoQual}{PianoDiQualifica_v3.0.pdf}
+\newcommand{\PianoQual}{PianoDiQualifica-v.1.0.pdf}
 \newcommand{\ManInst}{ManualeInstallatore_v2.0.pdf}
 \newcommand{\ManUser}{ManualeUtente_v2.0.pdf}
 \newcommand{\ManAdmin}{ManualeAmministratore_v2.0.pdf}
-\newcommand{\Glossario}{Glossario_v3.0.pdf}
+\newcommand{\Glossario}{Glossario-v.1.0.pdf}
 
 \newcommand{\DefProdEscape}{DefinizioneDiProdotto\_v1.0.pdf}
 \newcommand{\SpecTecEscape}{SpecificaTecnica\_v3.0.pdf}
 \newcommand{\AREscape}{AnalisiDeiRequisiti\_v4.0.pdf}
 \newcommand{\PianoProgEscape}{PianoDiProgetto\_v4.0.pdf}
 \newcommand{\NormeEscape}{../Interni/NormeDiProgetto\_v4.0.pdf}
-\newcommand{\PianoQualEscape}{PianoDiQualifica\_v3.0.pdf}
+\newcommand{\PianoQualEscape}{PianoDiQualifica-v.1.0.pdf}
 \newcommand{\ManInstEscape}{ManualeInstallatore\_v2.0.pdf}
 \newcommand{\ManUserEscape}{ManualeUtente\_v2.0.pdf}
 \newcommand{\ManAdminEscape}{ManualeAmministratore\_v2.0.pdf}
-\newcommand{\GlossarioEscape}{Glossario\_v3.0.pdf}
+\newcommand{\GlossarioEscape}{Glossario-v.1.0.pdf}
 
 %	FORMATTAZIONE STILI
 \definecolor{red}{rgb}{1.0, 0.0, 0.0} %http://latexcolor.com/
@@ -112,7 +118,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 %	Header
-\lhead{\includegraphics[width=2cm,height=2cm]{../logo}}
+\lhead{\includegraphics[width=2cm,height=2cm]{../../logo}}
 
 %	Footer
 \cfoot{
