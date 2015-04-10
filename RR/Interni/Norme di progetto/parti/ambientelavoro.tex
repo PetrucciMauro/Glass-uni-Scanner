@@ -31,7 +31,7 @@ Git \`{e} uno strumento di versionamento veloce e di facile apprendimento che
 rappresenta uno dei migliori strumenti attualmente esistenti.\\ Per lo sviluppo collaborativo abbiamo deciso di appoggiarci al servizio \textbf{Github} che fornisce non solo un repository Git, ma anche strumenti utili alla collaborazione fra pi\`{u} persone, come il servizio di \textbf{Ticket}, \textbf{Wiki} e \textbf{Milestone}.\\
 Per quanto riguarda l’uso di Git sui computer di sviluppo, si \`{e} deciso l’uso
 della versione ufficiale rilasciata dal team di sviluppo di Git(2.3.3).\\
-Per interfacciarsi con il repository viene utlizzato \textbf{SmartGit} , un client multipiattaforma che permette di utilizzare Git in maniera rapida.\\
+Per interfacciarsi con il repository viene utlizzato \textbf{SmartGit}, un client multipiattaforma che permette di utilizzare Git in maniera rapida.\\
 Si descrive ora la procedura di corretto utilizzo del programma smartgit .
 \begin{itemize}
 
@@ -39,22 +39,22 @@ Si descrive ora la procedura di corretto utilizzo del programma smartgit .
 
 \begin{itemize}
 \item Premere nel menu in alto il pulsante Repository e successivamente Clone;
-\item Nella riquadro comparso, inserire il link del repository\\ \url{https://github.com/PetrucciMauro/Premi.git}\\successivamente premere il pulsante  next;
+\item Nel riquadro comparso, inserire il link del repository\\ \url{https://github.com/PetrucciMauro/Premi.git}\\successivamente premere il pulsante  next;
 \item Tenere la schermata successiva con entrambi i box spuntati e premere next;
-\item Selezionare dove posizionare la cartella dove verr\`{a} salvato in locale il repository.
+\item Selezionare la posizione in cui verrà salvata la versione locale del repository.
 \end{itemize}
 \item \textbf{Sincronizzare il repository} : Dalla schermata principale premere il pulsante pull; 
 \item \textbf{Salvare una modifica in locale}: Dalla schermata principale premendo il pulsante commit e inserendo nell'apposita textbox un "Messaggio di commit",si salvano le modifiche effettuate ai file;
-\item \textbf{Inviare le modifiche al repository remoto}: Dalla schermata principale premere il pulsante Push e successivamente ,alla comparta del nuovo riquadro , ancora push, ci\`{o} comporter\`{a} l'invio delle modifiche ai file al repository remoto;
+\item \textbf{Inviare le modifiche al repository remoto}: Dalla schermata principale premere il pulsante Push e, successivamente alla comparsa del nuovo riquadro, ancora push, ci\`{o} comporter\`{a} l'invio delle modifiche ai file al repository remoto.
 
 \end{itemize}
 
 \subsubsection{Software di Integrazione Continua}
 
 Si \`{e} scelto di adottare \textbf{Jenkins} per applicare l’integrazione continua allo sviluppo del progetto.\\ 
-Tale software permette di pianificare ed impostare la compilazione del codice.\\
+Tale software permette di pianificare ed eseguire dei compiti da eseguire sui file sorgente.\\
 Mette inoltre a disposizione un cruscotto su cui \`{e} possibile visualizzare lo stato del codice prodotto. Tale software \`{e} infatti in grado di interagire con il software di versionamento,e se disponibile con software per l’esecuzione di test sul codice prodotto.\\ 
-Attualmente Jenkins viene utilizzato per la compilazione dei documenti \LaTeX. 
+Attualmente Jenkins non viene utilizzato, si è solo cercato di impararne il funzionamento. 
 
 
 \subsubsection{Condivisione dei file}
@@ -99,38 +99,28 @@ e non garantendo un risultato uniforme.\\
 Il grande numero di pacchetti esistenti consente di implementare funzionalit\`{a} comuni 
 in maniera semplice. L’estensibilit\`{a} di \LaTeX\ pu\`{o} essere sfruttata per creare funzioni e 
 variabili globali che rendono la scrittura del contenuto pi\`{u} corretta sotto un punto di 
-vista semantico. Un esempio \`{e} dato dal comando /role{ruolo} che identifica ogni ruolo 
+vista semantico. Un esempio \`{e} dato dal comando /role \textbraceleft ruolo\textbraceright che identifica ogni ruolo 
 all’interno del progetto.\\
 Per la scrittura di documenti \LaTeX\  l’editor consigliato \`{e} \textbf{TeXstudio}. 
 
 \subsubsection{Controllo ortografico}
 
-Il software per il controllo ortografico \`{e} \textbf{Aspell}\ .\ Il programma \`{e} accessibile tramite il \emph{Makefile} oppure tramite interfaccia grafica nell’editor consigliato TeXstudio.
+Il software per il controllo ortografico \`{e} \textbf{Aspell}\ .\ Il programma \`{e} accessibile tramite il \emph{Makefile}.
 
 
 \subsubsection{Grafici UML} 
 
-Per la stesura dei grafici UML viene utilizzato il programma \textbf{Visual Paradigm}. Il programma viene utilizzato in licenza Community Edition la quale ne permette l’uso per fini non commerciali.
+Per la stesura dei grafici UML viene utilizzato il programma \textbf{Visual Paradigm}. Il programma viene utilizzato in licenza Community Edition la quale ne permette l’uso gratuito per fini non commerciali.
 
 
 
 \subsubsection{Ambiente di verifica}
 
-Vengono qui elencati e sommariamente descritti gli strumenti automatizzati per effettuare la verifica dei documenti redatti e del codice prodotto.\\ 
-Le metriche ed i metodi per effettuare verifica sono ampiamente e dettagliatamente descritti nel \emph{Piano di Qualifica} . A tale documento si fa inoltre riferimento per le 
-caratteristiche di fondamentale importanza per la verifica degli strumenti qui riportati. 
-
-\begin{itemize}
-\item \textbf{TeXstudio}: Per la scrittura di documenti \`{e} consigliato utilizzare l’ambiente grafico TeXstudio. Tale strumento integra i dizionari di OpenOffice.org e segnala i potenziali errori ortografici presenti nel 
-testo durante la stesura del testo stesso; 
-\item \textbf{Aspell}: strumento per la correzione tipografica dei documenti redatti in \LaTeX. 
-\item \textbf{Axiom}: permette di automatizzare il tracciamento dei requisiti; 
-\end{itemize} 
-
+Si rimanda al \href{run:../../Esterni/Piano di qualifica/\PianoQual}{\PianoQualEscape} che specifica in maniera dettagliata
+le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione durante l’intero sviluppo del progetto.
 
 \subsubsection{Fogli di calcolo}
-Per l’elaborazione dei dati si utilizza il software Calc del pacchetto LibreOffice in quanto
-tale prodotto \`{e} open source.
+L'utilizzo di fogli di calcolo elettronici quali Calc,Excel e Numbers è a discrezione del singolo componente in base alla propria piattaforma utilizzata.
 
 
 \subsubsection{Codice} 
@@ -142,11 +132,12 @@ Per entrambe vengono riportati gli strumenti da utilizzare.
 
   \begin{itemize}
   \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice javascript;
-  \item \textbf{QUnit}: Framework per i test d'unit\`{a} del codice javascript.
+  \item \textbf{QUnit}: Framework per i test d'unit\`{a} del codice javascript;
+  \item \textbf{jsmeter}: Strumento per il calcolo di alcune metriche del codice javascript.
   \end{itemize}
 
 \subsubsubsection{Analisi Dinamica}
-
+Verranno utilizzati strumenti e plugin interni al browser \emph{Chrome} quali \textbf{SpeedTracer} per verificare la velocità dell'applicazione web;
 
 
 \subsubsubsection{Validazione}
@@ -190,11 +181,11 @@ I ticket possono essere di tre tipologie:
 \begin{itemize}
 
 
-\item \textbf{Ticket di pianificazione}: rappresentano le macro-attivit\`{a} di maggiore importanza. Sono organizzate in una gerarchia con vari livelli di importanza.
+\item \textbf{Ticket di pianificazione}: rappresentano le macro-attivit\`{a} di maggiore importanza. Sono organizzate in una gerarchia con vari livelli di priorità.
  Tali attivit\`{a} vengono create da: 
 \begin{itemize}
-\item \emph{Responsabile di Progetto} che durante la pianificazione identifica le attivit\`{a} pi\`{u} importati e generali; 
-\item \emph{Responsabile di Sotto-progetto} che durante lo svolgimento delle attivit\`{a} pu\`{o} scomporre in sotto-problemi l’attivit\`{a} indicata dal Responsabile di Progetto. 
+\item \emph{Responsabile di Progetto} : durante la pianificazione identifica le attivit\`{a} pi\`{u} importati e generali; 
+\item \emph{Responsabile di Sotto-progetto}: durante lo svolgimento delle attivit\`{a} pu\`{o} scomporre in sotto-problemi l’attivit\`{a} indicata dal Responsabile di Progetto. 
 \end{itemize}
 
 
@@ -211,7 +202,7 @@ rispetti tutte le norme.
 \end{itemize}
 }
 
-\phantomsection
+
 \subsubsection{Ticket di pianificazione}
 
 \begin{itemize}
@@ -310,7 +301,7 @@ Tutti i campi non segnalati sono da lasciare vuoti.
 \subsection{Aggiornamento ticket}
 
 Esistendo due tipologie di ticket, viene qui definito la procedura per effettuare l’aggiornamento di entrambe.
-\phantomsection 
+
 \subsubsection{Ticket di pianificazione}
 
 \begin{itemize}

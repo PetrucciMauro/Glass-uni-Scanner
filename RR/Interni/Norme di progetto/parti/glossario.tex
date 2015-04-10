@@ -1,9 +1,17 @@
 \section{Glossario}{
-	Il glossario \`{e} unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \ref{sec:docs}. Tutti i membri del gruppo possono modificarlo ma rispettando le seguenti regole:
-	\begin{itemize}
-		\item tutti i termini devono essere messi in ordine lessicografico;
-		\item al momento dell'inserimento di un nuovo termine, assicurarsi che esso non sia gi\`{a} presente;
-		\item i termini presenti devono dare chiarimenti su concetti che possono essere confusi quindi non devono essere inseriti termini il cui significato \`{e} gi\`{a} noto;
-	\end{itemize}
-	Il file relativo al Glossario \`{e} il seguente: glossario-v.*.pdf
-]
+ 	Il glossario \`{e} unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
+ 	I termini all'interno del glossario saranno organizzati nel seguente modo:
+ 	\begin{itemize}
+ 	\item Tutti termini saranno in ordine alfanumerico;
+ 	\item Tutti i termini devono essere in grassetto e iniziare con la lettera maiuscola , la definizione del termine sarà preceduta dal carattere '':'' ;
+ 	\item Tutti i termini devono fornire chiarimenti su concetti che possono essere confusi quindi non devono essere inseriti termini il cui significato è già noto.
+ 	\end{itemize}	
+   \subsection{Implementazione}
+      L'inserimento dei termini nel glossario viene eseguito tramite un applicazione interna al team che funziona nel seguente modo:\\
+      \begin{itemize}
+      \item Si inserisce il lemma e la descrizione del lemma negli appositi spazi;
+      \item Si salva il glossario nel formato .tex;
+      \item A tutte le parole presenti nei documenti che hanno una corrispondente definizione nel glossario  verrà aggiunto un pedice |g|, per indicare che la parola è presente nel glossario;
+      \end{itemize}       
+   L'ordine lessicografico non è importante quando si inserisce un nuovo lemma  programma dato che le parole vengono ordinate automaticamente.\\
+   Il file relativo al Glossario \`{e} il seguente: \href{run:../../Esterni/Glossario/\Glossario}{\GlossarioEscape}
