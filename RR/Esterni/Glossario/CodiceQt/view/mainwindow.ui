@@ -15,13 +15,6 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="1" column="2">
-     <widget class="QPushButton" name="btnPrint">
-      <property name="text">
-       <string>Stampa Latex</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="1" colspan="2">
      <widget class="QFrame" name="frame">
       <property name="frameShape">
@@ -81,10 +74,24 @@
       </layout>
      </widget>
     </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="btnPrint">
+      <property name="text">
+       <string>Stampa Latex</string>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="1">
      <widget class="QPushButton" name="btnSalva">
       <property name="text">
        <string>Salva</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="Pedicizza">
+      <property name="text">
+       <string>Pedicizza</string>
       </property>
      </widget>
     </item>

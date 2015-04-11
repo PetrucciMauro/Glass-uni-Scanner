@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[6];
-    char stringdata[50];
+    char stringdata[51];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,10 +34,10 @@ QT_MOC_LITERAL(1, 11, 6),
 QT_MOC_LITERAL(2, 18, 0),
 QT_MOC_LITERAL(3, 19, 4),
 QT_MOC_LITERAL(4, 24, 5),
-QT_MOC_LITERAL(5, 30, 19)
+QT_MOC_LITERAL(5, 30, 20)
     },
     "MainWindow\0insert\0\0save\0latex\0"
-    "on_btnPrint_clicked"
+    "on_Pedicizza_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -77,7 +77,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->insert(); break;
         case 1: _t->save(); break;
         case 2: _t->latex(); break;
-        case 3: _t->on_btnPrint_clicked(); break;
+        case 3: _t->on_Pedicizza_clicked(); break;
         default: ;
         }
     }

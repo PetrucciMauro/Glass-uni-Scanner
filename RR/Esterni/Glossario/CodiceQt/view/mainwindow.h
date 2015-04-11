@@ -17,7 +17,7 @@ public slots:
 		void save();
 		void latex();
 private slots:
-        void on_btnPrint_clicked();
+        void on_Pedicizza_clicked();
 
 private:
 	 Ui::MainWindow *ui;

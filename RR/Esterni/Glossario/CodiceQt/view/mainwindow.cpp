@@ -64,7 +64,7 @@ void MainWindow::latex(){
 				return;}
 	}
 
-void MainWindow::on_btnPrint_clicked()
+void MainWindow::on_Pedicizza_clicked()
 {
     QDir* dir;
 

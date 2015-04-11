@@ -168,11 +168,16 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
         QFile file(nomefile);
         if(!file.open(QIODevice::ReadWrite))
 			{return;	throw Ecc_FileNotFound;}
+        QString temp=oldw;
+        temp[0]=oldw[0].toUpper();
+        QString nuova=temp+QString("\\\\ped{(g)}");
+        QString oldwl=oldw.toLower();
 
-        QString nuova=oldw+QString("\\\\ped{(g)}");
-		QString text(file.readAll());
-        text.replace(oldw,nuova);
+        QString nuoval=oldwl+QString("\\\\ped{(g)}");
+        QString text(file.readAll());
 
+        text.replace(temp,nuova);
+        text.replace(oldwl,nuoval);
         file.resize(0); // go to the beginning of the file
 		file.write(text.toUtf8()); // write the new text back to the file
 
