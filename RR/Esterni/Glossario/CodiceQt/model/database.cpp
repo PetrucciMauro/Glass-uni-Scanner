@@ -83,10 +83,19 @@ void DataBase::save(){
 		for(;it!=db.end();++it){
 				QDomElement nlemma=xml.createElement("lemma");
 				root.appendChild(nlemma);
+
 				QDomElement par=xml.createElement("word");
 				nlemma.appendChild(par);
+
 				QString temp=it.value()->getWord();
 				temp[0]=temp[0].toUpper();
+                std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
+                for(; i!=it.value()->getPlural().end();++i){
+                    QDomElement plur=xml.createElement("plural");
+                    nlemma.appendChild(plur);
+                    QDomText ptxt=xml.createTextNode(*i);
+                    plur.appendChild(ptxt);
+                }
 				QDomText txt=xml.createTextNode(temp);
 				par.appendChild(txt);
 				QDomElement des=xml.createElement("desc");
@@ -156,19 +165,43 @@ void DataBase::inserisci(const QString& w, const QString& d){
 	}
 
 void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
-		QFile file(nomefile);
-		if(!file.open(QIODevice::ReadWrite))
+        QFile file(nomefile);
+        if(!file.open(QIODevice::ReadWrite))
 			{return;	throw Ecc_FileNotFound;}
 
-        QString nuova=oldw+"\\ped{(g)}";
+        QString nuova=oldw+QString("\\\\ped{(g)}");
 		QString text(file.readAll());
         text.replace(oldw,nuova);
 
-		file.seek(0); // go to the beginning of the file
+        file.resize(0); // go to the beginning of the file
 		file.write(text.toUtf8()); // write the new text back to the file
 
 		file.close();
 	}
+
+void DataBase::applyGlossario(const QString& nomefile){
+
+    QFile file(nomefile);
+    if(!file.open(QIODevice::ReadWrite))
+        {return;	throw Ecc_FileNotFound;}
+    QString text(file.readAll());
+    text.replace(QString("\\\\ped{(g)}"),QString(""));
+
+    file.resize(0); // go to the beginning of the file
+    file.write(text.toUtf8()); // write the new text back to the file
+
+    file.close();
+
+    QMap<QString, Lemma*>::const_iterator it=db.begin();
+    for (;it!=db.end();++it){
+        replaceFile(nomefile, it.value()->getWord());
+        std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
+        for(; i!=it.value()->getPlural().end();++i){
+            replaceFile(nomefile, *i);
+        }
+    }
+}
+
 /*
 void DataBase::substituteAll(const QString& old){
 		//NORME DI PROGETTO

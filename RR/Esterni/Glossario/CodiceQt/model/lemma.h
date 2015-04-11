@@ -10,6 +10,7 @@ public:
     QString getDesc() const;
     bool operator==(const Lemma& lem) const;
     bool operator!=(const Lemma& lem) const;
+    const std::vector<QString>& getPlural() const;
 private:
     QString word, desc;
     std::vector<QString> plural;

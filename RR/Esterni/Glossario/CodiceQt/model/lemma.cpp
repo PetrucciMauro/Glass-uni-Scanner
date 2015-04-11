@@ -9,6 +9,8 @@ bool Lemma::operator==(const Lemma& lem) const{
 bool Lemma::operator!=(const Lemma& lem) const{
 	 return !(*this==lem);
 }
-
+const std::vector<QString>& Lemma::getPlural() const{
+    return plural;
+}
 QString Lemma::getWord()const{return word;}
 QString Lemma::getDesc()const{return desc;}
