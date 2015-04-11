@@ -2,7 +2,9 @@
 #include "ui_mainwindow.h"
 #include "model/eccezione.h"
 #include <QMessageBox>
-
+#include <QDir>
+#include <QFileDialog>
+#include <iostream>
 MainWindow::MainWindow(QWidget *parent) :
 	QMainWindow(parent),ui(new Ui::MainWindow){
 		try{mydb.carica();}
@@ -61,3 +63,23 @@ void MainWindow::latex(){
 				box.exec();
 				return;}
 	}
+
+void MainWindow::on_Pedicizza_clicked()
+{
+    QDir* dir;
+
+    QFileDialog dialog(this);
+    QString dirname=dialog.getExistingDirectory();
+    std::cout<<dirname.toStdString()<<std::endl;
+    dir=new QDir(dirname);
+    QStringList files=dir->entryList(QStringList("*.tex"));
+    QStringList::ConstIterator it = files.begin();
+    for (; it!=files.end(); ++it){
+        if((it->toStdString()!=".")&&(it->toStdString()!="..")){
+
+            QString banana=dirname+QString::fromStdString("/")+*it;
+            std::cout<<banana.toStdString()<<std::endl;
+        mydb.replace(banana);
+        }
+    }
+}

@@ -16,6 +16,9 @@ public slots:
 		void insert();
 		void save();
 		void latex();
+private slots:
+        void on_Pedicizza_clicked();
+
 private:
 	 Ui::MainWindow *ui;
 	 DbController mydb;

@@ -18,3 +18,7 @@ void DbController::save(){
 void DbController::texprint(){
 	 database->texprint();
 }
+
+void DbController::replace(const QString& nomefile){
+     database->applyGlossario(nomefile);
+}

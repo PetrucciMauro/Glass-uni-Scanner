@@ -10,6 +10,7 @@ public:
 	 void inserisci(const QString& w, const QString& d);
 	 void save();
 	 void texprint();
+     void replace(const QString& nomefile);
 private:
 	 DataBase* database;
 };

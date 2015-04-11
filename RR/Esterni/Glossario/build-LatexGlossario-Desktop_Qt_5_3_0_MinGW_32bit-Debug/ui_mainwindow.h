@@ -32,7 +32,6 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
-    QPushButton *btnPrint;
     QFrame *frame;
     QGridLayout *gridLayout;
     QPushButton *btnInserisci;
@@ -42,7 +41,9 @@ public:
     QLineEdit *textWord;
     QTextEdit *textDesc;
     QLabel *labelInfo;
+    QPushButton *btnPrint;
     QPushButton *btnSalva;
+    QPushButton *Pedicizza;
     QMenuBar *menuBar;
     QStatusBar *statusBar;
 
@@ -57,11 +58,6 @@ public:
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        btnPrint = new QPushButton(centralWidget);
-        btnPrint->setObjectName(QStringLiteral("btnPrint"));
-
-        gridLayout_2->addWidget(btnPrint, 1, 2, 1, 1);
-
         frame = new QFrame(centralWidget);
         frame->setObjectName(QStringLiteral("frame"));
         frame->setFrameShape(QFrame::StyledPanel);
@@ -110,10 +106,20 @@ public:
 
         gridLayout_2->addWidget(frame, 0, 1, 1, 2);
 
+        btnPrint = new QPushButton(centralWidget);
+        btnPrint->setObjectName(QStringLiteral("btnPrint"));
+
+        gridLayout_2->addWidget(btnPrint, 1, 2, 1, 1);
+
         btnSalva = new QPushButton(centralWidget);
         btnSalva->setObjectName(QStringLiteral("btnSalva"));
 
         gridLayout_2->addWidget(btnSalva, 1, 1, 1, 1);
+
+        Pedicizza = new QPushButton(centralWidget);
+        Pedicizza->setObjectName(QStringLiteral("Pedicizza"));
+
+        gridLayout_2->addWidget(Pedicizza, 2, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
@@ -134,13 +140,14 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        btnPrint->setText(QApplication::translate("MainWindow", "Stampa Latex", 0));
         btnInserisci->setText(QApplication::translate("MainWindow", "Inserisci", 0));
         label_3->setText(QApplication::translate("MainWindow", "Inserimento nuovo lemma", 0));
         label->setText(QApplication::translate("MainWindow", "Nome", 0));
         label_2->setText(QApplication::translate("MainWindow", "Descrizione", 0));
         labelInfo->setText(QString());
+        btnPrint->setText(QApplication::translate("MainWindow", "Stampa Latex", 0));
         btnSalva->setText(QApplication::translate("MainWindow", "Salva", 0));
+        Pedicizza->setText(QApplication::translate("MainWindow", "Pedicizza", 0));
     } // retranslateUi
 
 };
