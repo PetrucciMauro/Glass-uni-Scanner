@@ -5,35 +5,10 @@
 #include "eccezione.h"
 #include <iostream>
 #include <QTextStream>
-DataBase::DataBase(){	}
+DataBase::DataBase(){
 
-const QString DataBase::norme[]={"ambientelavoro.tex",
-									 "comunicazioni.tex",
-									 "documenti.tex",
-									 "glossario.tex",
-									 "ingegneriaRequisiti.tex",
-									 "introduzione.tex",
-									 "riunioni.tex"};
+}
 
-const QString DataBase::qualifica[]={"gestioneAmministrativa.tex",
-												 "introduzione.tex",
-												 "obiettivi.tex",
-												 "pianoDiQualifica.tex",
-												 "strategiaVerifica.tex",
-												 "stumentiTecnicheMetodi.tex"};
-
-const QString DataBase::analisi[]={"UC1.tex","UC1.1.tex","UC1.2.tex",
-											  "UC1.3.tex","UC1.4.tex","UC1.5.tex",
-											  "UC1.6.tex","UC1.7.tex","UC1.8.tex",
-											  "UC1.9.tex","UC1.10.tex","UC1.11.tex",
-											  "UC1.12.tex"};
-
-const QString DataBase::filesLatex[]={"NormeDiProgetto_v.1.0.tex",
-												  "AnalisiDeiRequisiti_v.1.0.tex",
-												  "PianoDiProgetto_v.1.0.tex",
-												  "PianoDiQualifica_v.1.0.tex",
-												  "StudioDiFattibilita_v.1.0.tex",
-												  "NormeDiAmministrazione_v.1.0.tex"};
 
 void DataBase::load(){
 		QFile file("../glossario.xml");
@@ -60,16 +35,17 @@ void DataBase::load(){
 						QString parola;
 						QString descrizione;
 						// Read each child of the utente node
+                        std::vector<QString> p;
 						while (!child.isNull())
 							{
 								// Read Name and value
 								if (child.tagName()=="word") parola=child.firstChild().toText().data().simplified();
-
+                                if (child.tagName()=="plural") p.push_back(child.firstChild().toText().data().simplified());
 								// Next child
 								if (child.tagName()=="desc"){
 										descrizione=child.firstChild().toText().data().simplified();
 									}
-								Lemma* l = new Lemma(parola, descrizione);
+                                Lemma* l = new Lemma(parola, descrizione, p);
 								db[parola]=l;
 								child = child.nextSibling().toElement();
 							}//end while !child.isNull()
@@ -179,14 +155,14 @@ void DataBase::inserisci(const QString& w, const QString& d){
 			}
 	}
 
-void DataBase::substituteFile(const QString& nomefile,const QString& old){
+void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
 		QFile file(nomefile);
 		if(!file.open(QIODevice::ReadWrite))
 			{return;	throw Ecc_FileNotFound;}
 
-		QString nuova=old+"\\ped{(g)}";
+        QString nuova=oldw+"\\ped{(g)}";
 		QString text(file.readAll());
-		text.replace(old,nuova);
+        text.replace(oldw,nuova);
 
 		file.seek(0); // go to the beginning of the file
 		file.write(text.toUtf8()); // write the new text back to the file
