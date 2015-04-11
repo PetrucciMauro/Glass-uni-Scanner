@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
   <version>2.1</version>
-  <task-change-set user="pietro" date="2015-04-02T19:10:36.136Z" timestamp="2015-04-02T19:10:36.136Z">
-    <change idref="t4" attribute="effort" type="real" from="28800" to="21600" resolved="yes"/>
-    <change idref="t11" attribute="effort" type="real" from="57600" to="28800" resolved="yes"/>
-    <change idref="t12" attribute="effort" type="real" from="21600" to="7200" resolved="yes"/>
-    <change idref="t14" attribute="effort" type="real" from="36000" to="21600" resolved="yes"/>
-    <change idref="t15" attribute="effort" type="real" from="28800" to="14400" resolved="yes"/>
-    <change idref="t17" attribute="effort" type="real" from="36000" to="21600" resolved="yes"/>
-    <change idref="t18" attribute="effort" type="real" from="28800" to="14400" resolved="yes"/>
-    <change idref="t20" attribute="effort" type="real" from="72000" to="36000" resolved="yes"/>
-    <change idref="t21" attribute="effort" type="real" from="28800" to="14400" resolved="yes"/>
-    <change idref="t26" attribute="effort" type="real" from="108000" to="72000" resolved="yes"/>
+  <task-change-set user="pietro" date="2015-04-11T19:50:56.352Z" timestamp="2015-04-11T19:50:56.352Z">
+    <change idref="t2" attribute="title" type="string" from="consuntivo" to="Consuntivo" resolved="yes"/>
   </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T19:10:44.691Z" timestamp="2015-04-02T19:10:44.691Z">
-    <change idref="t4" attribute="effort" type="real" from="21600" to="14400" resolved="yes"/>
-    <change idref="t5" attribute="effort" type="real" from="7200" to="3600" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T19:11:16.287Z" timestamp="2015-04-02T19:11:16.287Z">
-    <change idref="t26" attribute="effort" type="real" from="72000" to="57600" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T19:11:38.295Z" timestamp="2015-04-02T19:11:38.295Z">
-    <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" from="2015-07-01T15:45:00.000Z" to="2015-06-29T15:00:00.000Z" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T19:19:54.661Z" timestamp="2015-04-02T19:19:54.661Z">
-    <change idref="t11" attribute="effort" type="real" from="28800" to="14400" resolved="yes"/>
-    <change idref="t26" attribute="effort" type="real" from="57600" to="72000" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T19:24:56.364Z" timestamp="2015-04-02T19:24:56.364Z">
-    <change idref="t26" attribute="effort" type="real" from="72000" to="75600" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T21:48:20.048Z" timestamp="2015-04-02T21:48:20.048Z">
-    <change idref="t26" attribute="effort" type="real" from="75600" to="100800" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T21:48:56.669Z" timestamp="2015-04-02T21:48:56.669Z">
-    <change idref="t15" attribute="effort" type="real" from="14400" to="10800" resolved="yes"/>
-  </task-change-set>
-  <task-change-set user="pietro" date="2015-04-02T21:56:02.218Z" timestamp="2015-04-02T21:56:02.218Z">
-    <change idref="t14" attribute="effort" type="real" from="21600" to="43200" resolved="yes"/>
-    <change idref="t17" attribute="effort" type="real" from="21600" to="28800" resolved="yes"/>
-    <change idref="t18" attribute="effort" type="real" from="14400" to="21600" resolved="yes"/>
-    <change idref="t20" attribute="effort" type="real" from="36000" to="54000" resolved="yes"/>
-  </task-change-set>
-  <resource-change-set user="pietro" date="2015-04-02T19:08:04.332Z" timestamp="2015-04-02T19:08:04.332Z">
-    <change idref="r-1" attribute="standardHoursString" type="string" from=";43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;" to=";50400,64800;50400,64800;50400,64800;50400,64800;50400,64800;" resolved="yes"/>
-  </resource-change-set>
 </changelog>

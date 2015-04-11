@@ -8,15 +8,15 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>422</split-view-divider-position>
-      <outline x="0" y="0" w="422" h="545">
+      <outline x="0" y="192" w="422" h="545">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="307"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t30 t9 t10 t26 t16 t28 t41 t1"/>
-        <selected-items-at-filter-time idrefs="t75 t9 t13 t50 t71 t26 t18 t2 t34 t30 t14 t10 t52 t36 t28 t49 t40 t16 t37 t29 t74 t70 t25 t17"/>
+        <expanded-items idrefs="t9 t30 t10 t26 t16 t28 t41 t1"/>
+        <selected-items-at-filter-time idrefs="t75 t9 t13 t50 t34 t26 t71 t2 t18 t30 t14 t10 t52 t36 t28 t49 t40 t16 t37 t29 t74 t70 t25 t17"/>
       </outline>
-      <gantt-view x="3567" y="0" w="859" h="545">
+      <gantt-view x="3567" y="192" w="859" h="545">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>
@@ -63,14 +63,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="306" h="545">
+      <outline x="0" y="0" w="306" h="565">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
-        <column name="Resource" width="135"/>
+        <column name="Resource" width="150"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="3506" y="0" w="947" h="545">
+      <timeline x="3506" y="0" w="947" h="565">
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>

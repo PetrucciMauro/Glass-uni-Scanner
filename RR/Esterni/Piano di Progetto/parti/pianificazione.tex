@@ -1,5 +1,5 @@
 \section{Pianificazione}{
-	Date le scadenze in (\ref{sec:scadenze}) si è diviso il progetto in 4 stati di sviluppo:
+	Date le scadenze in (\S \ref{sec:scadenze}) si è diviso il progetto in 4 stati di sviluppo:
 	\begin{itemize}
 		\item \textbf{Analisi dei Requisiti} (AN)
 		\item \textbf{Progettazione Architetturale} (PA)
@@ -9,28 +9,33 @@
 	
 	Per ogni stato del progetto sono state individuate attività e sotto-attività a cui sono state associate le risorse del gruppo.\\
 	Per ogni stato del processo è stato riportato il Gantt con evidenziato in colore rosso il cammino critico. Le attività parte di questo cammino saranno monitorate con maggiore attenzione in quanto un ritardo su queste attività	sarebbe dannoso per l'efficienza del gruppo e porterebbe a ritardi nell'avanzamento dello stato del progetto.\\
-	Si è deciso di non riportare i grafici PERT poiché le attività critiche sono già state evidenziate nel GANT come detto in precedenza.
+	Si è deciso di non riportare i diagrammi PERT poiché le attività critiche sono già state evidenziate nel GANT come detto in precedenza.
 	Per ogni stato del progetto è stato riportato il diagramma WBS così da rendere esplicita la composizione delle attività e rendere immediata la costruzione del prospetto economico.
 	
+\newpage
 \subsection{Analisi dei Requisiti}{
-	\textbf{Periodo}: da X a 3-04-2015 \\
+	\textbf{Periodo}: da 3-03-2015 a 3-04-2015 \\
 	
 	I documenti redatti in questo periodo sono:
 	\begin{itemize}
-		\item \textbf{Norme di Progetto}: il Responsabile e l'Amministratore scrivono il documento "Norme di Progetto" che norma le attività da svolgersi nel corso del progetto.
-		\item \textbf{Studio di Fattibilità}: vengono valutati ...(?)... secondo quanto previsto nelle "Norme di Progetto" sezione "X".
-		\item \textbf{Analisi dei Requisiti}: a partire dallo studio di fattibilità vengono analizzati in profondità i requisiti per il capitolato scelto con i metodi esplicitati in "Norme di Progetto" sezione "Y".
-		\item \textbf{Piano di progetto}: il responsabile di progetto durante questa fase si prende carico di definire un piano di progetto in cui vengono definite le macro-attività da svolgersi durante questo e i successivi stati di sviluppo del sistema. Successivamente alle attività saranno associate risorse così da poter redigere un prospetto economico per il proponente.
-		\item \textbf{Piano di Qualifica}: Analista, Verificatore e Responsabile redigono il piano di qualifica.
-		\item \textbf{Glossario}: scritto dai redattori dei documenti in modo incrementale.
+		\item \textbf{Norme di Progetto}: il Responsabile e l'Amministratore scrivono il documento "Norme di Progetto" che norma le attività da svolgersi nel corso del progetto;
+		\item \textbf{Studio di Fattibilità}: viene valutata la fattibilit\`a dei capitolati proposti;
+		\item \textbf{Analisi dei Requisiti}: a partire dallo studio di fattibilità vengono analizzati in profondità i requisiti per il capitolato scelto;
+		\item \textbf{Piano di progetto}: il responsabile di progetto durante questa fase si prende carico di definire un piano di progetto in cui vengono definite le macro-attivit\`a~ da svolgersi durante questo e i successivi stati di sviluppo del sistema. Successivamente alle attività saranno associate risorse così da poter redigere un prospetto economico per il proponente;
+		\item \textbf{Piano di Qualifica}: Analista, Verificatore e Responsabile redigono il piano di qualifica;
+		\item \textbf{Glossario}: scritto dai redattori dei documenti in modo incrementale;
 		\item \textbf{Lettera di Presentazione}: Lettera di Presentazione del gruppo da consegnare al committente per partecipare alla gara d'appalto.
 	\end{itemize}
+	
+	\newpage
 	
 	\begin{figure}[H]
 		\includegraphics[width=\textwidth, height=22cm]{\imgs pianoRequisiti.jpg}
 		\label{fig:pianorequisiti}
 		\caption{Piano dei Requisiti}
 	\end{figure}
+	
+	\newpage
 	
 	\renewcommand*{\arraystretch}{1.4}
 	\begin{longtable} [c]{| l | l | l | l |}
@@ -97,20 +102,26 @@
 		Glossario & Verifica & Verificatore & 1\\
 	\end{longtable}
 }
+
+\newpage
 \subsection{Progettazione}{
 	\textbf{Periodo}: dal 7-04-2015 al 30-04-2015 \\
 	
-	Le attività da svolgere in questo periodo saranno;
+	Le attività da svolgere in questo periodo saranno:
 	\begin{itemize}
 		\item incremento e verifica dei documenti portati in Revisione dei Requisiti;
 		\item stesura del documento \textbf{Specifica Tecnica} in cui il Progettista esporrà le scelte progettuali di alto livello del sistema e i design pattern che saranno utilizzati nel sistema. Si verificherà il tracciamento dal sistema ai requisiti e dai requisiti al sistema.
 	\end{itemize}
+	
+	\newpage
 	
 	\begin{figure}[H]
 		\includegraphics[scale=0.75]{\imgs pianoProgettazione.jpg}
 		\label{fig:pianoprogettazione}
 		\caption{Piano di Progettazione}
 	\end{figure}
+	
+	\newpage
 	
 	\renewcommand*{\arraystretch}{1.4}
 	\begin{longtable} [c]{| l | l | l | l |}
@@ -160,23 +171,29 @@
 		Piano di Progetto & Consuntivo & Responsabile 2 & 2\\
 	\end{longtable}
 }
+
+\newpage
 \subsection{Progettazione in dettaglio e Codifica}{
 	\textbf{Periodo}: dal 4-05-2015 a 13-06-2015 \\
 	 
 	 Le attività della parte \textbf{Progettazione in dettaglio e Codifica} sono:
 	 \begin{itemize}
-		 \item \textbf{Definizione di Prodotto}: che contiene la descrizione approfondita delle componenti del prodotto.
-		 \item \textbf{Codifica}: sviluppo del codice del prodotto da parte dei programmatori che devono seguire quanto riportato nel documento Definizione di Prodotto.
-		 \item \textbf{Esecuzione test automatici}: esecuzione automatica dei test di unità e integrazione e rapporto sul risultato.
-		 \item \textbf{Incremento Specifica Tecnica}: incremento del documento di specifica tecnica con la progettazione riguardante i requisiti non obbligatori.
+		 \item \textbf{Definizione di Prodotto}: che contiene la descrizione approfondita delle componenti del prodotto;
+		 \item \textbf{Codifica}: sviluppo del codice del prodotto da parte dei programmatori che devono seguire quanto riportato nel documento Definizione di Prodotto;
+		 \item \textbf{Esecuzione test automatici}: esecuzione automatica dei test di unità e integrazione e rapporto sul risultato;
+		 \item \textbf{Incremento Specifica Tecnica}: incremento del documento di specifica tecnica con la progettazione riguardante i requisiti non obbligatori;
 		 \item \textbf{Manualistica}: verranno reddatti i documenti sul prodotto per l'utente finale.
 	 \end{itemize}
+	
+	\newpage
 	
 	\begin{figure}[H]
 		\includegraphics[scale=0.75]{\imgs pianoCodifica.jpg}
 		\label{fig:pianoprogettazdettcodifica}
 		\caption{Piano di Progettazione in dettaglio e Codifica}
 	\end{figure}
+	
+	\newpage
 	
 	\renewcommand*{\arraystretch}{1.4}
 	\begin{longtable} [c]{| l | l | l | l |}
@@ -241,21 +258,27 @@
 		 Piano di Qualifica & Verifica & Verificatore 4 & 2 \\
 	\end{longtable}
 }
+
+\newpage
 \subsection{Verifica e Validazione}{
 	\textbf{Periodo}: dal 19-06-2015 al 01-07-2015
 	
-	Le attivitì svolte in questo periodo saranno:
+	Le attivit\`a svolte in questo periodo saranno:
 	\begin{itemize}
-		\item \textbf{Esecuzione test}: non eseguiti durante il periodo di Progettazione e Codifica.
-		\item \textbf{Validazione}: del sistema rispetto ai metodi previsti in Piano di Qualifica per ogni requisito del sistema.
+		\item \textbf{Esecuzione test}: non eseguiti durante il periodo di Progettazione e Codifica;
+		\item \textbf{Validazione}: del sistema rispetto ai metodi previsti in Piano di Qualifica per ogni requisito del sistema;
 		\item \textbf{Incremento manualistica}: destinata all'utente finale e documentazione per il rilascio.
 	\end{itemize}
+	
+	\newpage
 	
 	\begin{figure}[H]
 		\includegraphics[scale=0.5]{\imgs pianoAccettazione.jpg}
 		\label{fig:pianoaccettazione}
 		\caption{Piano di Accettazione}
 	\end{figure}
+	
+	\newpage
 	
 	\renewcommand*{\arraystretch}{1.4}
 	\begin{longtable} [c]{| l | l | l | l |}

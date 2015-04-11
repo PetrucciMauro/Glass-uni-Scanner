@@ -99,7 +99,7 @@
     <start-no-earlier-than>2015-05-04T08:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t2">
-    <title>consuntivo</title>
+    <title>Consuntivo</title>
     <effort>7200</effort>
     <start-constraint-date>2015-05-03T15:45:00.000Z</start-constraint-date>
     <recalculate>effort</recalculate>

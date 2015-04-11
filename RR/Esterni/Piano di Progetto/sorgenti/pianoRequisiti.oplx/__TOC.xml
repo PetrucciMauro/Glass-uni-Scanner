@@ -8,7 +8,7 @@
     <status-display>basic</status-display>
     <task-view>
       <split-view-divider-position>317</split-view-divider-position>
-      <outline x="0" y="309" w="317" h="490">
+      <outline x="0" y="0" w="317" h="490">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Title" width="202"/>
@@ -16,7 +16,7 @@
         <expanded-items idrefs="t1 t4 t3 t31 t14 t5"/>
         <selected-items-at-filter-time idrefs="t26 t8 t32 t9 t27 t14 t33 t20 t28 t15 t34 t21 t29 t40 t16 t35 t22 t41 t17 t36 t23 t42 t18 t3 t37 t24 t4 t19 t30 t5 t38 t25 t6 t31 t39 t7"/>
       </outline>
-      <gantt-view x="1172" y="309" w="898" h="490">
+      <gantt-view x="1090.5" y="0" w="898" h="490">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>

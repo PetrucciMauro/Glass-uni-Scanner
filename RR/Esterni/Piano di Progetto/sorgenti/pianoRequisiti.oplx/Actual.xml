@@ -194,21 +194,21 @@
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t15">
-    <title>doc Analisi</title>
+    <title>Analisi e Norme</title>
     <effort>14400</effort>
     <start-constraint-date>2015-03-17T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t36"/>
     <start-no-earlier-than>2015-03-17T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
-    <title>doc Qualifica</title>
+    <title>Piano di Qualifica</title>
     <effort>10800</effort>
     <start-constraint-date>2015-03-17T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t4"/>
     <start-no-earlier-than>2015-03-17T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t17">
-    <title>doc Piano</title>
+    <title>Piano di Progetto</title>
     <effort>10800</effort>
     <start-constraint-date>2015-03-17T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t3"/>
@@ -253,7 +253,7 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t23">
-    <title>prospetto economico</title>
+    <title>Prospetto economico</title>
     <effort>7200</effort>
     <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
@@ -261,7 +261,7 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t24">
-    <title>verifica Progg</title>
+    <title>Verifica</title>
     <effort>14400</effort>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t23"/>
@@ -290,7 +290,7 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t28">
-    <title>resoconto </title>
+    <title>Resoconto </title>
     <effort>7200</effort>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t24"/>
@@ -299,7 +299,7 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t29">
-    <title>verifica dei requisiti</title>
+    <title>Verifica dei requisiti</title>
     <effort>36000</effort>
     <effort-done>36000</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
@@ -308,14 +308,14 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t30">
-    <title>descrizione</title>
+    <title>Descrizione generale</title>
     <effort>21600</effort>
     <effort-done>21600</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t31">
-    <title>casi d&apos;uso</title>
+    <title>Casi d&apos;uso</title>
     <type>group</type>
     <start-constraint-date>2015-03-11T16:45:00.000Z</start-constraint-date>
     <child-task idref="t41"/>
@@ -324,7 +324,7 @@
     <start-no-earlier-than>2015-03-11T16:45:00.000Z</start-no-earlier-than>
   </task>
   <task id="t32">
-    <title>verifica Gloss</title>
+    <title>Verifica</title>
     <effort>3600</effort>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t16"/>
@@ -332,13 +332,13 @@
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t33">
-    <title>verifca Qual</title>
+    <title>Verifca</title>
     <effort>10800</effort>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t34">
-    <title>verifica Norme</title>
+    <title>Verifica</title>
     <effort>14400</effort>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t6"/>
@@ -352,7 +352,7 @@
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t35">
-    <title>specifica</title>
+    <title>Specifica</title>
     <effort>72000</effort>
     <effort-done>51300</effort-done>
     <start-constraint-date>2015-03-10T16:45:00.000Z</start-constraint-date>
@@ -360,7 +360,7 @@
     <start-no-earlier-than>2015-03-10T16:45:00.000Z</start-no-earlier-than>
   </task>
   <task id="t36">
-    <title>verifica Req</title>
+    <title>Verifica</title>
     <effort>21600</effort>
     <start-constraint-date>2015-03-25T16:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t35"/>
@@ -404,7 +404,7 @@
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t42">
-    <title>infografiche + download/upload</title>
+    <title>Infografiche + download/upload</title>
     <effort>90000</effort>
     <effort-done>90000</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
