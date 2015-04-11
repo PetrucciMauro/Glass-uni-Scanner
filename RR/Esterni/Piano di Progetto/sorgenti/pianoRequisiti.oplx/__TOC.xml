@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="43" y="229" w="1216" h="617">
+  <window x="79" y="35" w="1330" h="808">
     <editing-scenario>dr1JdlSPyBC</editing-scenario>
     <view>task</view>
     <change-tracking/>
     <draw-folded/>
     <status-display>basic</status-display>
     <task-view>
-      <split-view-divider-position>317</split-view-divider-position>
-      <outline x="0" y="0" w="317" h="490">
+      <split-view-divider-position>366</split-view-divider-position>
+      <outline x="0" y="0" w="366" h="701">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="202"/>
+        <column name="Title" width="237"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t1 t4 t3 t31 t14 t5"/>
+        <expanded-items idrefs="t1 t4 t3 t14 t31 t5"/>
         <selected-items-at-filter-time idrefs="t26 t8 t32 t9 t27 t14 t33 t20 t28 t15 t34 t21 t29 t40 t16 t35 t22 t41 t17 t36 t23 t42 t18 t3 t37 t24 t4 t19 t30 t5 t38 t25 t6 t31 t39 t7"/>
       </outline>
-      <gantt-view x="1090.5" y="0" w="898" h="490">
+      <gantt-view x="-37" y="0" w="963" h="700">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>
@@ -49,7 +49,7 @@
         <task-bar-label task-type="task" position="right">
           <key>Assigned</key>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="757.264">
+        <scale scale-name="Automatic" full-day-width="210.292">
           <selected/>
         </scale>
         <scale scale-name="Day" full-day-width="1215"/>
@@ -63,14 +63,14 @@
     </task-view>
     <resource-view>
       <split-view-divider-position>306</split-view-divider-position>
-      <outline x="0" y="0" w="306" h="490">
+      <outline x="0" y="0" w="306" h="681">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>
         <column name="Resource" width="150"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="-85" y="0" w="881" h="490">
+      <timeline x="-113" y="0" w="995" h="681">
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
@@ -113,7 +113,7 @@
     </resource-view>
     <calendar>
       <split-view-divider-position>290</split-view-divider-position>
-      <outline x="0" y="0" w="290" h="475">
+      <outline x="0" y="0" w="290" h="666">
         <column name="IM" width="20"/>
         <column name="Notes" width="20"/>
         <column name="Type" width="49"/>

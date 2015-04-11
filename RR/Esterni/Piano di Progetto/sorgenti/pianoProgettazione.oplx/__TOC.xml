@@ -7,16 +7,16 @@
     <draw-folded/>
     <status-display>extended</status-display>
     <task-view>
-      <split-view-divider-position>424</split-view-divider-position>
-      <outline x="0" y="0" w="424" h="629">
+      <split-view-divider-position>357</split-view-divider-position>
+      <outline x="0" y="0" w="357" h="649">
         <column name="Violations" width="20"/>
         <column name="Notes" width="20"/>
-        <column name="Title" width="311"/>
+        <column name="Title" width="244"/>
         <column name="Effort" width="68"/>
-        <expanded-items idrefs="t1 t46 t10 t43 t9"/>
-        <selected-items-at-filter-time idrefs="t30 t49 t9 t53 t36 t31 t19 t47 t20 t23 t48 t37 t32 t21 t10 t46 t15"/>
+        <expanded-items idrefs="t1 t46 t10 t9 t43"/>
+        <selected-items-at-filter-time idrefs="t30 t49 t9 t53 t36 t19 t20 t31 t47 t23 t48 t37 t32 t21 t10 t46 t15"/>
       </outline>
-      <gantt-view x="1294" y="0" w="886" h="629">
+      <gantt-view x="176.5" y="0" w="953" h="649">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>
@@ -49,7 +49,7 @@
         <task-bar-label task-type="task" position="right">
           <key>Assigned</key>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="300">
+        <scale scale-name="Automatic" full-day-width="110.962">
           <selected/>
         </scale>
         <scale scale-name="Day" full-day-width="1215"/>

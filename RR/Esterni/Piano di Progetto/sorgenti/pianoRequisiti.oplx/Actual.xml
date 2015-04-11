@@ -161,24 +161,20 @@
   <task id="t6">
     <title>Documentazione</title>
     <effort>18000</effort>
-    <effort-done>18000</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t7">
     <title>Strumenti</title>
     <effort>64800</effort>
-    <effort-done>26100</effort-done>
   </task>
   <task id="t8">
     <title>Norme ticketing</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
   </task>
   <task id="t9">
     <title>Norme repository</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
@@ -217,21 +213,18 @@
   <task id="t18">
     <title>Calendario</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t19">
     <title>Organigramma</title>
     <effort>3600</effort>
-    <effort-done>3600</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t20">
     <title>Ciclo di vita</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t18"/>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
@@ -239,7 +232,6 @@
   <task id="t21">
     <title>Analisi rischi</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t18"/>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
@@ -247,7 +239,6 @@
   <task id="t22">
     <title>Assegnamento risorse</title>
     <effort>14400</effort>
-    <effort-done>14400</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t25"/>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
@@ -255,7 +246,6 @@
   <task id="t23">
     <title>Prospetto economico</title>
     <effort>7200</effort>
-    <effort-done>7200</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t25"/>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
@@ -270,7 +260,6 @@
   <task id="t25">
     <title>Individuazione attività</title>
     <effort>21600</effort>
-    <effort-done>21600</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t20"/>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
@@ -278,14 +267,12 @@
   <task id="t26">
     <title>Visione generale</title>
     <effort>39600</effort>
-    <effort-done>39600</effort-done>
     <start-constraint-date>2015-03-24T15:45:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-24T15:45:00.000Z</start-no-earlier-than>
   </task>
   <task id="t27">
     <title>Gestione amministrativa</title>
     <effort>3600</effort>
-    <effort-done>3600</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-18T15:00:00.000Z</start-no-earlier-than>
   </task>
@@ -301,7 +288,6 @@
   <task id="t29">
     <title>Verifica dei requisiti</title>
     <effort>36000</effort>
-    <effort-done>36000</effort-done>
     <start-constraint-date>2015-03-18T15:00:00.000Z</start-constraint-date>
     <prerequisite-task idref="t26"/>
     <prerequisite-task idref="t35"/>
@@ -310,7 +296,6 @@
   <task id="t30">
     <title>Descrizione generale</title>
     <effort>21600</effort>
-    <effort-done>21600</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
@@ -354,7 +339,6 @@
   <task id="t35">
     <title>Specifica</title>
     <effort>72000</effort>
-    <effort-done>51300</effort-done>
     <start-constraint-date>2015-03-10T16:45:00.000Z</start-constraint-date>
     <prerequisite-task idref="t31"/>
     <start-no-earlier-than>2015-03-10T16:45:00.000Z</start-no-earlier-than>
@@ -369,7 +353,6 @@
   <task id="t37">
     <title>Comunicazioni e riunioni</title>
     <effort>3600</effort>
-    <effort-done>3600</effort-done>
     <locked-end-date>2015-03-03T16:00:00.000Z</locked-end-date>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
@@ -377,36 +360,31 @@
   <task id="t38">
     <title>Requisiti</title>
     <effort>14400</effort>
-    <effort-done>14400</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t39">
     <title>Progettazione</title>
     <effort>10800</effort>
-    <effort-done>10800</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t40">
     <title>Codifica</title>
     <effort>10800</effort>
-    <effort-done>10800</effort-done>
     <locked-end-date>2015-03-04T16:00:00.000Z</locked-end-date>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t41">
-    <title>Modifica + esecuzione + creazione</title>
+    <title>Parte1</title>
     <effort>90000</effort>
-    <effort-done>90000</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
   <task id="t42">
-    <title>Infografiche + download/upload</title>
+    <title>Parte2</title>
     <effort>90000</effort>
-    <effort-done>90000</effort-done>
     <start-constraint-date>2015-03-03T15:00:00.000Z</start-constraint-date>
     <start-no-earlier-than>2015-03-03T15:00:00.000Z</start-no-earlier-than>
   </task>
