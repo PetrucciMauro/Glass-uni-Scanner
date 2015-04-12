@@ -170,14 +170,45 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
 			{return;	throw Ecc_FileNotFound;}
         QString temp=oldw;
         temp[0]=oldw[0].toUpper();
-        QString nuova=temp+QString("\\\\ped{(g)}");
+        QString perreg=QString("(([/|\\s])|^)")+temp+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QRegExp exp(perreg);
+
+        QString nuova=temp+QString("\\ped{g}");
         QString oldwl=oldw.toLower();
 
-        QString nuoval=oldwl+QString("\\\\ped{(g)}");
-        QString text(file.readAll());
+        QString nuoval=oldwl+QString("\\ped{g}");
 
-        text.replace(temp,nuova);
-        text.replace(oldwl,nuoval);
+        QString text(file.readAll());
+        for (int i=0; i<text.length(); ++i){
+        int x=text.indexOf(exp, i);
+        if (x!=-1){
+            int y;
+            if (text[x]==temp[0])
+                y=x;
+            else
+                y=x+1;
+            text.remove(y,temp.length());
+            text.insert(y,nuova);
+            i+=temp.length();
+            std::cout<<temp.toStdString()<<std::endl;
+        }
+        }
+        QString perregl=QString("(([/|\\s])|^)")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QRegExp expl(perregl);
+        for (int i=0; i<text.length(); ++i){
+        int x=text.indexOf(expl, i);
+        if (x!=-1){
+            int y;
+            if (text[x]==oldwl[0])
+                y=x;
+            else
+                y=x+1;
+            text.remove(y,oldwl.length());
+            text.insert(y,nuoval);
+            i+=oldwl.length();
+            std::cout<<oldwl.toStdString()<<std::endl;
+        }
+        }
         file.resize(0); // go to the beginning of the file
 		file.write(text.toUtf8()); // write the new text back to the file
 
@@ -190,7 +221,7 @@ void DataBase::applyGlossario(const QString& nomefile){
     if(!file.open(QIODevice::ReadWrite))
         {return;	throw Ecc_FileNotFound;}
     QString text(file.readAll());
-    text.replace(QString("\\\\ped{(g)}"),QString(""));
+    text.replace(QString("\\ped{g}"),QString(""));
 
     file.resize(0); // go to the beginning of the file
     file.write(text.toUtf8()); // write the new text back to the file
@@ -199,6 +230,7 @@ void DataBase::applyGlossario(const QString& nomefile){
 
     QMap<QString, Lemma*>::const_iterator it=db.begin();
     for (;it!=db.end();++it){
+        /*std::cout<<it.value()->getWord().toStdString()<<std::endl;*/
         replaceFile(nomefile, it.value()->getWord());
         std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
         for(; i!=it.value()->getPlural().end();++i){

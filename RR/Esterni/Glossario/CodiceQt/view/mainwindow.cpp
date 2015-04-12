@@ -75,11 +75,13 @@ void MainWindow::on_Pedicizza_clicked()
     QStringList files=dir->entryList(QStringList("*.tex"));
     QStringList::ConstIterator it = files.begin();
     for (; it!=files.end(); ++it){
-        if((it->toStdString()!=".")&&(it->toStdString()!="..")){
+
+        if((it->toStdString()!=".")&&(it->toStdString()!="..")&&(it->toStdString()!="registroMod.tex")){
 
             QString banana=dirname+QString::fromStdString("/")+*it;
-            std::cout<<banana.toStdString()<<std::endl;
+           /* std::cout<<banana.toStdString()<<std::endl;*/
         mydb.replace(banana);
+            std::cout<<"Sostituzione eseguita correttamente"<<std::endl;
         }
     }
 }
