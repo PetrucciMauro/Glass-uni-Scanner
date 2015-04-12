@@ -1,26 +1,39 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {section}{\numberline {1}Ciclo di vita}{7}{section.1}
-\contentsline {section}{\numberline {2}Scadenze}{8}{section.2}
-\contentsline {section}{\numberline {3}Pianificazione}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Analisi dei Requisiti}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Progettazione}{14}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Progettazione in dettaglio e Codifica}{18}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Verifica e Validazione}{22}{subsection.3.4}
-\contentsline {section}{\numberline {4}Suddivisione del lavoro}{25}{section.4}
-\contentsline {subsection}{\numberline {4.1}Dettaglio per fase}{25}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Analisi}{25}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Progettazione}{26}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Progettazione in dettaglio e codifica}{26}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Accettazione}{27}{subsubsection.4.1.4}
-\contentsline {subsection}{\numberline {4.2}Totale}{28}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Totale con investimento}{28}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Totale rendicontabile}{29}{subsubsection.4.2.2}
-\contentsline {section}{\numberline {5}Prospetto Economico}{31}{section.5}
-\contentsline {subsection}{\numberline {5.1}Analisi dei Requisiti}{31}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Progettazione}{32}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Codifica}{32}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Verifica e Validazione}{33}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Totale}{35}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Ore totali con investimento}{35}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}Ore totali escluso l\IeC {\textquoteright }investimento}{36}{subsubsection.5.5.2}
+\contentsline {section}{\numberline {1}Introduzione}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Glossario}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Riferimenti}{7}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Normativi}{7}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Informativi}{7}{subsubsection.1.3.2}
+\contentsline {section}{\numberline {2}Organigramma}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Redazione}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Approvazione}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Accettazione dei componenti}{8}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Componenti}{8}{subsection.2.4}
+\contentsline {section}{\numberline {3}Ciclo di vita}{9}{section.3}
+\contentsline {section}{\numberline {4}Scadenze}{10}{section.4}
+\contentsline {section}{\numberline {5}Pianificazione}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Analisi dei Requisiti}{12}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Progettazione}{16}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Progettazione in dettaglio e Codifica}{20}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Verifica e Validazione}{24}{subsection.5.4}
+\contentsline {section}{\numberline {6}Suddivisione del lavoro}{27}{section.6}
+\contentsline {subsection}{\numberline {6.1}Note}{27}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Ruoli e costi}{27}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Dettaglio per fase}{27}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Analisi}{27}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Progettazione}{28}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Progettazione in dettaglio e codifica}{29}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Accettazione}{30}{subsubsection.6.3.4}
+\contentsline {subsection}{\numberline {6.4}Totale}{31}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Totale con investimento}{31}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Totale rendicontabile}{32}{subsubsection.6.4.2}
+\contentsline {section}{\numberline {7}Prospetto Economico}{34}{section.7}
+\contentsline {subsection}{\numberline {7.1}Analisi dei Requisiti}{34}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Progettazione}{35}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Codifica}{35}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Verifica e Validazione}{36}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Totale}{38}{subsection.7.5}
+\contentsline {subsubsection}{\numberline {7.5.1}Ore totali con investimento}{38}{subsubsection.7.5.1}
+\contentsline {subsubsection}{\numberline {7.5.2}Ore totali escluso l\IeC {\textquoteright }investimento}{39}{subsubsection.7.5.2}
