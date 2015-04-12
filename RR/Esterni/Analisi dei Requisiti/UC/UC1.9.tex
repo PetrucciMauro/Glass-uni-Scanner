@@ -2,7 +2,7 @@
 	\label{uc1.9}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.50]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.6]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
 		\label{fig:uc1.9}
 		\caption{Caso d'uso 1.9}
 	\end{figure}
@@ -23,7 +23,7 @@
 		\item visualizzazione di un errore nel caso vengano inseriti un oggetto o un template già presenti nel database.
 	\end{itemize}
 	}
-\subsection{UC1.9.1 - Caricamento di un template}{
+\subsubsection{UC1.9.1 - Caricamento di un template}{
 	\label{uc1.9.1}
 	\begin{figure}[H]
 		\centering
@@ -45,21 +45,21 @@
 		\item il template è già presente nel database.
 	\end{itemize}
 	}
-\subsection{UC 1.9.1.1 - Navigazione nel file system}{
+\subsubsection{UC 1.9.1.1 - Navigazione nel file system}{
 	\label{uc1.9.1.1}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può navigare nel filesystem per selezionare la posizione da cui caricare il file. \\
 	\textbf{Precondizione}: l'amministratore ha intenzione di caricare un nuovo template.	\\
 	\textbf{Postcondizione}: lo stato dell'attività di caricamento è stato completato.	\\
 	}
-\subsection{UC 1.9.1.2 - Selezione file}{
+\subsubsection{UC 1.9.1.2 - Selezione file}{
 	\label{uc1.9.1.2}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
 	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
 	\textbf{Postcondizione}: il file è stato caricato.	\\
 	}
-\subsection{UC 1.9.3 - Caricamento di un elemento}{
+\subsubsection{UC 1.9.3 - Caricamento di un elemento}{
 	\label{uc1.9.3}
 	\begin{figure}[H]
 		\centering
@@ -81,21 +81,21 @@
 		\item il file grafico è già presente nel database.
 	\end{itemize}
 	}
-\subsection{UC 1.9.3.1 - Navigazione nel file system}{
+\subsubsection{UC 1.9.3.1 - Navigazione nel filesystem}{
 	\label{uc1.9.3.1}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può navigare nel filesystem per selezionare la posizione da cui caricare il file. \\
 	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
 	\textbf{Postcondizione}: lo stato dell'attività di caricamento è stato completato.	\\
 	}
-\subsection{UC 1.9.3.2 - Selezione file}{
+\subsubsection{UC 1.9.3.2 - Selezione file}{
 	\label{uc1.9.3.2}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
 	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
 	\textbf{Postcondizione}: il file è stato caricato.	\\
 	}
-\subsection{UC 1.9.4- Eliminazione di un template}{
+\subsubsection{UC 1.9.4- Eliminazione di un template}{
 	\label{uc1.9.4}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore elimina uno dei template. \\
@@ -110,7 +110,7 @@
 		\item l'amministratore decide di ripristinare il template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}.
 	\end{itemize}
 	}
-\subsection{UC 1.9.5 - Annulla/Ripristina}{
+\subsubsection{UC 1.9.5 - Annulla/Ripristina}{
 	\label{uc1.9.5}
 	\begin{figure}[H]
 		\centering
@@ -129,14 +129,14 @@
 		\item ripristino del template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}
 	\end{enumerate}
 	}
-\subsection{UC 1.9.5.1 - Annullamento comando}{
+\subsubsection{UC 1.9.5.1 - Annullamento comando}{
 	\label{uc1.9.5.1}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può annullare l'ultimo comando di modifica del template presente nello storico. \\
 	\textbf{Precondizione}: il sistema ha registrato almeno un comando di modifica del template eseguito dall'amministratore.	\\
 	\textbf{Postcondizione}: il sistema ha ripristinato lo stato precedente all'ultimo comando di modifica del template dall'amministratore, e ha memorizzato nello storico degli	annullamenti il comando annullato.	\\
 	}
-\subsection{UC 1.9.5.2 - Ripristino del comando annullato}{
+\subsubsection{UC 1.9.5.2 - Ripristino del comando annullato}{
 	\label{uc1.9.5.2}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può ripristinare l'ultimo comando presente nello	storico dei comandi annullati. \\
@@ -144,7 +144,7 @@
 	eseguito dall'amministratore.	\\
 	\textbf{Postcondizione}: il sistema ha eseguito nuovamente l'ultimo comando di modifica	del template presente nello storico dei comandi annullati, e ha rimosso il comando eseguito nuovamente dallo storico.	\\
 	}
-\subsection{UC 1.9.5.3 - Ripristino del template eliminato}{
+\subsubsection{UC 1.9.5.3 - Ripristino del template eliminato}{
 	\label{uc1.9.5.3}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore può ripristinare il template appena eliminato. \\

@@ -1,12 +1,12 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage{../Template/format}
+\usepackage{../../Template/format}
 \usepackage{multirow}
 
 %	VARIABILI
 %	Percorsi file
 \newcommand{\parti}{./parti/}
 \newcommand{\imgs}{./images/} %se esistono
-\newcommand{\temp}{../Template/}
+\newcommand{\temp}{../../Template/}
 
 %	Informazioni documento
 \newcommand{\titoloDoc}{Piano di Progetto}
@@ -42,8 +42,8 @@
 	\input{\parti introduzione}
 	\newpage
 	\input{\parti organigramma}
-	%\input{\parti analisiRischi}
-	%\newpage
+	\newpage
+	\input{\parti analisiRischi}
 	\newpage
 	\input{\parti cicloVita}
 	\newpage

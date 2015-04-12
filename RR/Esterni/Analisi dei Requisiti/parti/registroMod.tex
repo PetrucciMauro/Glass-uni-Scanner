@@ -2,14 +2,24 @@
 \normalsize
 
 %	Ordine di inserimento: dall'ultima versione alla prima
-\label{tabVers}
-\begin{longtabu} to \textwidth {p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.4\textwidth}} 
-	\toprule
-	\textbf{Versione}	&	\textbf{Autore}	&	\textbf{Data}	&	\textbf{Descrizione}\\
-	\midrule 1.0 &  &  & Prima stesura del documento.\\
-	\bottomrule
-	\caption{Versionamento del documento}
-\end{longtabu}
+\renewcommand*{\arraystretch}{1.4}
+\begin{longtable} [c]{|>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{6cm} |}
+		\caption{Versionamento del documento \label{tab:versionamento}}\\
+		 \hline
+		 \textbf{Versione} & \textbf{Autore} & \textbf{Data} & \textbf{Descrizione}\\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Versione} & \textbf{Autore} & \textbf{Data} & \textbf{Descrizione}\\
+		 \hline
+		\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 0.5 & \BM & 10 aprile 2015 & Ordinamento del file e formattazione del testo\\
+		 0.1 & \TP, \GP, \FM, \VG, \PM, \BM & 2 marzo 2015 & Prima stesura del documento. Analisi da parte di ogni componente del gruppo di una parte dei casi d'uso trovati\\
+\end{longtable}
 
 \newpage
 \Large{\textbf{Storico }}\\
@@ -21,8 +31,8 @@
 \begin{table}[h]
 	\begin{tabular}{p{0.2\textwidth} p{0.7\textwidth}}
 		\toprule \textbf{Versione 1.0}	&	\textbf{Nominativo}\\
-		\midrule Redazione	& \\
-		\midrule Verifica &	\\
+		\midrule Redazione	& Tutti i componenti del gruppo\\
+		\midrule Verifica & \PM, \BM\\
 		\midrule Approvazione	&	\\
 		\bottomrule
 	\end{tabular}

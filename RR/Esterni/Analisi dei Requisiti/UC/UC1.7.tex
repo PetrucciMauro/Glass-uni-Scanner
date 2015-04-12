@@ -19,7 +19,7 @@
 		\item eliminazione presentazioni \hyperref[uc1.7.5]{(UC 1.7.5)}.
 	\end{enumerate}
 	}
-\subsection{UC 1.7.1 - Inserimento immagini}{
+\subsubsection{UC 1.7.1 - Inserimento immagini}{
 	\label{uc1.7.1}
 	\begin{figure}[H]
 		\centering
@@ -42,7 +42,7 @@
 		\item l'operazione viene annullata e non si apportano cambiamenti.
 	\end{itemize}
 	}
-	\subsection{UC 1.7.1.1 - Selezione immagini}{
+	\subsubsection{UC 1.7.1.1 - Selezione immagini}{
 		\label{uc1.7.1.1}
 		\begin{figure}[H]
 			\centering
@@ -61,28 +61,28 @@
 			\item conferma selezione \hyperref[uc1.7.1.1.3]{(UC 1.7.1.1.3)}.
 		\end{enumerate}
 		}
-		\subsection{UC 1.7.1.1.1 - Navigazione FileSystem locale}{
+		\subsubsection{UC 1.7.1.1.1 - Navigazione FileSystem locale}{
 			\label{uc1.7.1.1.1}
 			\textbf{Attori}: utente autenticato.\\
 			\textbf{Descrizione}: l'utente deve selezionare una posizione esistente in cui sono contenute le immagini da caricare. \\
 			\textbf{Precondizione}: il sistema mostra all'utente le cartelle e le immagini presenti nella directory corrente.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella che contiene le immagini da caricare.	\\
 			}
-		\subsection{UC 1.7.1.1.2 - Selezione immagini locali}{
+		\subsubsection{UC 1.7.1.1.2 - Selezione immagini locali}{
 			\label{uc1.7.1.1.2}
 			\textbf{Attori}: utente \\
 			\textbf{Descrizione}: l'utente seleziona una o più immagini da caricare. \\
 			\textbf{Precondizione}: l'utente ha scelto la cartella da cui caricare le immagini; le immagini sono presenti nella cartella. \\
 			\textbf{Postcondizione}: l'utente ha scelto le immagini dalla cartella corrente.	\\
 			}
-		\subsection{UC 1.7.1.1.3 - Conferma selezione}{
+		\subsubsection{UC 1.7.1.1.3 - Conferma selezione}{
 			\label{uc1.7.1.1.3}
 			\textbf{Attori}: utente autenticato.\\
 			\textbf{Descrizione}: l'utente conferma la propria scelta ed è pronto a proseguire. \\
 			\textbf{Precondizione}: l'utente ha selezionato una o più immagini presenti nella cartella corrente.	\\
 			\textbf{Postcondizione}: l'utente conferma le operazioni precedenti.	\\
 			}
-	\subsection{UC 1.7.1.2 - Navigazione nel FileSystem delle immagini}{
+	\subsubsection{UC 1.7.1.2 - Navigazione nel FileSystem delle immagini}{
 		\label{uc1.7.1.2}
 		\begin{figure}[H]
 			\centering
@@ -101,35 +101,35 @@
 			\item conferma scelta cartella \hyperref[uc1.7.1.2.3]{(UC 1.7.1.2.3)}.
 		\end{enumerate}
 		}
-		\subsection{UC 1.7.1.2.1 - Navigazione cartelle FileSystem immagini}{
+		\subsubsection{UC 1.7.1.2.1 - Navigazione cartelle FileSystem immagini}{
 			\label{uc1.7.1.2.1}
 			\textbf{Attori}: utente autenticato.	\\
 			\textbf{Descrizione}: l'utente deve selezionare la posizione in cui inserire i file selezionati; può creare una nuova cartella in cui inserirli. \\
-			\textbf{Precondizione}: il sistema mostra all'utente le cartelle dell'utente inserite nello spazio riservato alle immagini nel server.	\\
+			\textbf{Precondizione}: il sistema mostrae le cartelle dell'utente inserite nello spazio riservato alle immagini nel server.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella in cui desidera siano inserite le immagini che aveva selezionato in precedenza.	\\
 			}
-		\subsection{UC 1.7.1.2.2 - Selezione cartella di destinazione}{
+		\subsubsection{UC 1.7.1.2.2 - Selezione cartella di destinazione}{
 			\label{uc1.7.1.2.2}
 			\textbf{Attori}: utente autenticato.	\\
 			\textbf{Descrizione}: l'utente conferma la directory corrente come quella in cui eseguire il caricamento. \\
 			\textbf{Precondizione}: l'utente si trova nella directory in cui eseguire il caricamento.	\\
 			\textbf{Postcondizione}: l'utente ha confermato la scelta fatta.	\\
 			}
-		\subsection{UC 1.7.1.2.3 - Conferma scelta cartella}{
+		\subsubsection{UC 1.7.1.2.3 - Conferma scelta cartella}{
 			\label{uc1.7.1.2.3}
 			\textbf{Attori}: utente autenticato.	\\
 			\textbf{Descrizione}: il sistema memorizza la directory selezionata dall'utente per il salvataggio. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui salvare le immagini.	\\
 			\textbf{Postcondizione}: il sistema ha in memoria la directory selezionata dall'utente.	\\
 			}
-	\subsection{UC 1.7.1.3 - Conferma e caricamento}{
+	\subsubsection{UC 1.7.1.3 - Conferma e caricamento}{
 		\label{uc1.7.1.3}
 		\textbf{Attori}: utente autenticato.\\
 		\textbf{Descrizione}: il sistema scrive le immagini selezionate dall'utente all'interno della cartella indicata. \\
 		\textbf{Precondizione}: l'utente ha selezionato le immagini da caricare e la posizione in cui salvarle.	\\
 		\textbf{Postcondizione}: le immagini scelte vengono scritte nella posizione indicata.	\\
 		}
-	\subsection{UC 1.7.2 - Cancellazione immagini}{
+	\subsubsection{UC 1.7.2 - Cancellazione immagini}{
 		\label{uc1.7.2}
 		\begin{figure}[H]
 			\centering
@@ -153,35 +153,35 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.2.1 - Navigazione FileSystem immagini}{
+		\subsubsection{UC 1.7.2.1 - Navigazione FileSystem immagini}{
 			\label{uc1.7.2.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare un percorso valido all'interno del server in cui sono inserite le immagini che intende eliminare. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione d'eliminazione di immagini; il sistema è in attesa che l'utente specifichi il percorso; il server mostra i file immagine e le cartelle dell'utente all'interno dello spazio delle immagini.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con i file immagine da eliminare.	\\
 			}
-		\subsection{UC 1.7.2.2 - Selezione cartella}{
+		\subsubsection{UC 1.7.2.2 - Selezione cartella}{
 			\label{uc1.7.2.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la posizione. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le immagini da eliminare.	\\
 			\textbf{Postcondizione}: l'utente si trova all'interno della cartella in cui sono presenti le immagini da eliminare. 	\\
 			}
-		\subsection{UC 1.7.2.3 - Selezione immagini}{
+		\subsubsection{UC 1.7.2.3 - Selezione immagini}{
 			\label{uc1.7.2.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più immagini esistenti da rimuovere. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le immagini che intende eliminare e si trova all'interno di tale cartella; il sistema mostra all'utente le immagini presenti.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più immagini esistenti da eliminare.	\\
 			}
-		\subsection{UC 1.7.2.4 - Conferma selezione ed eliminazione}{
+		\subsubsection{UC 1.7.2.4 - Conferma selezione ed eliminazione}{
 			\label{uc1.7.2.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede all'eliminazione. \\
 			\textbf{Precondizione}: l'utente ha selezionato i file immagine da eliminare; tali file esistono.	\\
 			\textbf{Postcondizione}: il sistema ha eliminato i file immagini selezionati dalla cartella selezionata.	\\
 			}
-	\subsection{UC 1.7.3 - Spostamento immagini nel FileSystem delle immagini}{
+	\subsubsection{UC 1.7.3 - Spostamento immagini nel FileSystem delle immagini}{
 		\label{uc1.7.3}
 		\begin{figure}[H]
 			\centering
@@ -206,42 +206,42 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.3.1 - Navigazione nel FileSystem immagini}{
+		\subsubsection{UC 1.7.3.1 - Navigazione nel FileSystem immagini}{
 			\label{uc1.7.3.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare un percorso valido all'interno del server in cui sono inserite le immagini che intende spostare. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di immagini; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra i file immagine e le cartelle dell'utente all'interno dello spazio delle immagini.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con i file immagine da spostare.	\\
 			}
-		\subsection{UC 1.7.3.2 - Selezione Cartella di lavoro}{
+		\subsubsection{UC 1.7.3.2 - Selezione cartella di lavoro}{
 			\label{uc1.7.3.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la posizione. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le immagini da spostare.	\\
 			\textbf{Postcondizione}: l'utente si trova all'interno della cartella in cui sono presenti le immagini da spostare. 	\\
 			}
-		\subsection{UC 1.7.3.3 - Selezione immagini}{
+		\subsubsection{UC 1.7.3.3 - Selezione immagini}{
 			\label{uc1.7.3.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più immagini esistenti da spostare. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le immagini che intende spostare e si trova all'interno di tale cartella; il sistema mostra all'utente le immagini presenti.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più immagini esistenti da spostare.	\\
 			}
-		\subsection{UC 1.7.3.4 - Selezione Cartella di destinazione}{
+		\subsubsection{UC 1.7.3.4 - Selezione cartella di destinazione}{
 			\label{uc1.7.3.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona dal FileSystem immagini una cartella tra quelle presenti o ne crea una di nuova. \\
 			\textbf{Precondizione}: l'utente ha selezionato delle immagini all'interno di un percorso valido nel FileSystem delle immagini; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra i file immagine e le cartelle dell'utente all'interno dello spazio delle immagini.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una cartella di destinazione valida all'interno del FileSystem delle immagini.	\\
 			}
-		\subsection{UC 1.7.3.5 - Conferma selezione e spostamento}{
+		\subsubsection{UC 1.7.3.5 - Conferma selezione e spostamento}{
 			\label{uc1.7.3.5}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede allo spostamento. \\
 			\textbf{Precondizione}: l'utente ha selezionato i file immagine da spostare e la destinazione in cui trasferirli; tali file esistono.	\\
 			\textbf{Postcondizione}: il sistema ha spostato i file immagini selezionati nella cartella selezionata dall'utente.	\\
 			}
-	\subsection{UC 1.7.4 - Spostamento presentazioni}{
+	\subsubsection{UC 1.7.4 - Spostamento presentazioni}{
 		\label{uc1.7.4}
 		\begin{figure}[H]
 			\centering
@@ -266,42 +266,42 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.4.1 - Navigazione nel FileSystem delle presentazioni}{
+		\subsubsection{UC 1.7.4.1 - Navigazione nel FileSystem delle presentazioni}{
 			\label{uc1.7.4.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le presentazioni che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di presentazioni; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra presentazioni e cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con le presentazioni da spostare.	\\
 			}
-		\subsection{UC 1.7.4.2 - Selezione cartella di lavoro}{
+		\subsubsection{UC 1.7.4.2 - Selezione cartella di lavoro}{
 			\label{uc1.7.4.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le presentazioni che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di presentazioni; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra presentazioni e cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella che contiene le presentazioni da spostare.	\\
 			}
-		\subsection{UC 1.7.4.3 - Selezione presentazioni da spostare}{
+		\subsubsection{UC 1.7.4.3 - Selezione presentazioni da spostare}{
 			\label{uc1.7.4.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più presentazioni esistenti da spostare. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le presentazioni che intende spostare e si trova all'interno di tale cartella; il sistema mostra all'utente le presentazioni contenute in tale cartella.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più presentazioni esistenti da spostare.	\\
 			}				
-		\subsection{UC 1.7.4.4 - Selezione cartella di destinazione}{
+		\subsubsection{UC 1.7.4.4 - Selezione cartella di destinazione}{
 			\label{uc1.7.4.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona dal FileSystem delle presentazioni una cartella tra quelle presenti o ne crea una di nuova. \\
 			\textbf{Precondizione}: l'utente ha selezionato delle presentazioni all'interno di un percorso valido nel FileSystem delle presentazioni; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra le presentazioni e le cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una cartella di destinazione valida all'interno del FileSystem delle presentazioni.	\\
 			}
-		\subsection{UC 1.7.4.5 - Conferma selezione e spostamento}{
+		\subsubsection{UC 1.7.4.5 - Conferma selezione e spostamento}{
 			\label{uc1.7.4.5}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede allo spostamento. \\
 			\textbf{Precondizione}: l'utente ha selezionato le presentazioni da spostare e la destinazione in cui trasferirle; tali presentazioni esistono.	\\
 			\textbf{Postcondizione}: il sistema ha spostato le presentazioni selezionate, nella cartella selezionata dall'utente.	\\
 			}
-	\subsection{UC 1.7.5 - Eliminazione presentazioni}{
+	\subsubsection{UC 1.7.5 - Eliminazione presentazioni}{
 		\label{uc1.7.5}
 		\begin{figure}[H]
 			\centering
@@ -325,35 +325,35 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.5.1 - Navigazione nel FileSystem delle presentazioni}{
+		\subsubsection{UC 1.7.5.1 - Navigazione nel FileSystem delle presentazioni}{
 			\label{uc1.7.5.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le presentazioni che intende rimuovere. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di cancellazione di presentazioni; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra presentazioni e cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con le presentazioni da eliminare.	\\
 			}
-		\subsection{UC 1.7.5.2 - Selezione cartella di lavoro}{
+		\subsubsection{UC 1.7.5.2 - Selezione cartella di lavoro}{
 			\label{uc1.7.5.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la posizione. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le presentazioni da eliminare.	\\
 			\textbf{Postcondizione}: l'utente si trova all'interno della cartella in cui sono inserite le presentazioni da eliminare. 	\\
 			}
-		\subsection{UC 1.7.5.3 - Selezione presentazioni da eliminare}{
+		\subsubsection{UC 1.7.5.3 - Selezione presentazioni da eliminare}{
 			\label{uc1.7.5.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più presentazioni esistenti da rimuovere. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono  inserite le presentazioni che intende eliminare e si trova all'interno di tale cartella; il sistema mostra all'utente le presentazioni che lì si trovano.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più presentazioni esistenti da eliminare.	\\
 			}
-		\subsection{UC 1.7.5.4 - Conferma selezione ed eliminazione}{
+		\subsubsection{UC 1.7.5.4 - Conferma selezione ed eliminazione}{
 			\label{uc1.7.5.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede all'eliminazione. \\
 			\textbf{Precondizione}: l'utente ha selezionato le presentazioni da eliminare; queste esistono.	\\
 			\textbf{Postcondizione}: il sistema ha eliminato le presentazioni selezionate dalla cartella scelta.	\\
 			}
-	\subsection{UC 1.7.6 - Spostamento infografiche}{
+	\subsubsection{UC 1.7.6 - Spostamento infografiche}{
 		\label{uc1.7.6}
 		\begin{figure}[H]
 			\centering
@@ -378,42 +378,42 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.6.1 - Navigazione nel FileSystem delle infografiche}{
+		\subsubsection{UC 1.7.6.1 - Navigazione nel FileSystem delle infografiche}{
 			\label{uc1.7.6.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle infografiche. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con le infografiche da spostare.	\\
 			}
-		\subsection{UC 1.7.6.2 - Selezione cartella di lavoro}{
+		\subsubsection{UC 1.7.6.2 - Selezione cartella di lavoro}{
 			\label{uc1.7.6.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende spostare. Tale cartella si trova nel server, nello spazio riservato alle infografiche. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di spostamento di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella che contiene le infografiche da spostare.	\\
 			}
-		\subsection{UC 1.7.6.3 - Selezione infografiche da spostare}{
+		\subsubsection{UC 1.7.6.3 - Selezione infografiche da spostare}{
 			\label{uc1.7.6.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più infografiche esistenti da spostare. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le infografiche che intende spostare e si trova all'interno di tale cartella; il sistema mostra all'utente le infografiche contenute in tale cartella.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più infografiche esistenti da spostare.	\\
 			}				
-		\subsection{UC 1.7.6.4 - Selezione cartella di destinazione}{
+		\subsubsection{UC 1.7.6.4 - Selezione cartella di destinazione}{
 			\label{uc1.7.6.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona dal FileSystem delle infografiche una cartella tra quelle presenti o ne crea una di nuova. \\
 			\textbf{Precondizione}: l'utente ha selezionato delle infografiche all'interno di un percorso valido nel FileSystem delle infografiche; il sistema è in attesa che l'utente specifichi il percorso di destinazione; il server mostra le infografiche e le cartelle dell'utente all'interno dello spazio delle infografiche.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una cartella di destinazione valida all'interno del FileSystem delle infografiche.	\\
 			}
-		\subsection{UC 1.7.6.5 - Conferma selezione e spostamento}{
+		\subsubsection{UC 1.7.6.5 - Conferma selezione e spostamento}{
 			\label{uc1.7.6.5}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede allo spostamento. \\
 			\textbf{Precondizione}: l'utente ha selezionato le infografiche da spostare e la destinazione in cui trasferirle; tali infografiche esistono.	\\
 			\textbf{Postcondizione}: il sistema ha spostato le infografiche selezionate, nella cartella selezionata dall'utente.	\\
 			}
-	\subsection{UC 1.7.7 - Eliminazione infografiche}{
+	\subsubsection{UC 1.7.7 - Eliminazione infografiche}{
 		\label{uc1.7.7}
 		\begin{figure}[H]
 			\centering
@@ -437,28 +437,28 @@
 			\item l'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-		\subsection{UC 1.7.7.1 - Navigazione nel FileSystem delle infografiche}{
+		\subsubsection{UC 1.7.7.1 - Navigazione nel FileSystem delle infografiche}{
 			\label{uc1.7.7.1}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente deve selezionare la cartella in cui sono inserite le infografiche che intende rimuovere. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
 			\textbf{Precondizione}: l'utente ha iniziato l'operazione di cancellazione di infografiche; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
 			\textbf{Postcondizione}: l'utente si trova nella cartella con le infografiche da eliminare.	\\
 			}
-		\subsection{UC 1.7.7.2 - Selezione cartella di lavoro}{
+		\subsubsection{UC 1.7.7.2 - Selezione cartella di lavoro}{
 			\label{uc1.7.7.2}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la posizione. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono presenti le infografiche da eliminare.	\\
 			\textbf{Postcondizione}: l'utente si trova all'interno della cartella in cui sono inserite le infografiche da eliminare. 	\\
 			}
-		\subsection{UC 1.7.7.3 - Selezione infografiche da eliminare}{
+		\subsubsection{UC 1.7.7.3 - Selezione infografiche da eliminare}{
 			\label{uc1.7.7.3}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente seleziona una o più infografiche esistenti da rimuovere. \\
 			\textbf{Precondizione}: l'utente ha selezionato la cartella in cui sono  inserite le infografiche che intende eliminare e si trova all'interno di tale cartella; il sistema mostra all'utente le presentazioni che lì si trovano.	\\
 			\textbf{Postcondizione}: l'utente ha selezionato una o più infografica esistente da eliminare.	\\
 			}
-		\subsection{UC 1.7.7.4 - Conferma selezione ed eliminazione}{
+		\subsubsection{UC 1.7.7.4 - Conferma selezione ed eliminazione}{
 			\label{uc1.7.7.4}
 			\textbf{Attori}: utente autenticato. \\
 			\textbf{Descrizione}: l'utente conferma la selezione ed il sistema procede all'eliminazione. \\
