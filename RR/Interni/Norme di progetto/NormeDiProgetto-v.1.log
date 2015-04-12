@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.12)  11 APR 2015 15:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  12 APR 2015 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **NormeDiProgetto-v.1.tex
 (./NormeDiProgetto-v.1.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 8 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -1091,12 +1091,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12370 strings out of 493304
- 178961 string characters out of 6139871
- 333413 words of memory out of 5000000
- 15481 multiletter control sequences out of 15000+600000
+ 12372 strings out of 494969
+ 178944 string characters out of 6178806
+ 329433 words of memory out of 5000000
+ 15251 multiletter control sequences out of 15000+600000
  15077 words of font info for 35 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  51i,16n,50p,816b,614s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
 0.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk>
