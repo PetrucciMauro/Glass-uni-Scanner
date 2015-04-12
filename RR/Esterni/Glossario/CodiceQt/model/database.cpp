@@ -170,7 +170,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
 			{return;	throw Ecc_FileNotFound;}
         QString temp=oldw;
         temp[0]=oldw[0].toUpper();
-        QString perreg=QString("(([/|\\s])|^)")+temp+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QString perreg=QString("(([/|\\s])|[^:]^)")+temp+QString("(\\.|,|;|:|$|\\s|/|[)])");
         QRegExp exp(perreg);
 
         QString nuova=temp+QString("\\ped{g}");
@@ -193,7 +193,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
             std::cout<<temp.toStdString()<<std::endl;
         }
         }
-        QString perregl=QString("(([/|\\s])|^)")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QString perregl=QString("(([/|\\s])|[^:]^)")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
         QRegExp expl(perregl);
         for (int i=0; i<text.length(); ++i){
         int x=text.indexOf(expl, i);
