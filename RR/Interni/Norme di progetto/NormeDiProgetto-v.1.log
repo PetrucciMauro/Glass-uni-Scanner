@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  13 APR 2015 01:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  13 APR 2015 01:38
 entering extended mode
 **NormeDiProgetto-v.1.tex
 
@@ -1259,7 +1259,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 35.
 Norme di progetto\NormeDiProgetto-v.1.toc"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 43.
+Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [4])
 \tf@toc=\write3
@@ -1315,9 +1315,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
+
+Overfull \hbox (10.43419pt too wide) in paragraph at lines 33--34
+[]\T1/cmr/m/n/12 Esterno (EXT): in-con-tro ef-fet-tua-to tra i mem-bri del grup
+-po e committente$[]$ e/o proponente$[]$. 
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 38.
+Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [9]
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1331,7 +1337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 95.
+Package pdftex.def Info: ../../logo.jpg used on input line 97.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [11])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1392,19 +1398,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
+
+Overfull \hbox (9.84547pt too wide) in paragraph at lines 42--43
+[][]$\T1/cmtt/m/n/12 https : / / github \ protect$ _ {\unhbox \ voidb @ x \ hbo
+x{\protect \ afterassignment \$
+ []
+
+
+Overfull \hbox (40.71294pt too wide) in paragraph at lines 42--43
+$\T1/cmtt/m/n/12 edef12{12} \ afterassignment \ edef14 . 5pt{16 . 78757ptplus5 
+. 1654ptminus1 . 03305pt} \$
+ []
+
+
+Overfull \hbox (59.23341pt too wide) in paragraph at lines 42--43
+$\T1/cmtt/m/n/12 edef{} \ let \ def \ size @ update{\baselineskip14 . 5pt \ rel
+ax \ baselineskip \ baselineskip \$
+ []
+
+
+Overfull \hbox (102.44786pt too wide) in paragraph at lines 42--43
+$\T1/cmtt/m/n/12 normalbaselineskip \ baselineskip \ setbox \ strutbox \ hbox{\
+vruleheight . 7 \ baselineskipdepth .$
+ []
+
+
+Overfull \hbox (9.84547pt too wide) in paragraph at lines 42--43
+$\T1/cmtt/m/n/12 3 \ baselineskipwidth \ z @ } \ let \ size @ update \ relax} \
+ protect \ xdef \ T1 / cmr / m / n /$
+ []
+
+
+Overfull \hbox (40.71294pt too wide) in paragraph at lines 42--43
+$\T1/cmtt/m/n/12 8{\T1 / cmr / m / n / 12} \ T1 / cmr / m / n / 8 \ size @ upda
+te \ enc @ updateg}}$ . com / PetrucciMauro /$
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 44.
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [17]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 105.
+Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [18]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 143.
+Package pdftex.def Info: ../../logo.jpg used on input line 135.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [19]
@@ -1414,36 +1456,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--159
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 186.
+Package pdftex.def Info: ../../logo.jpg used on input line 176.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [20]
+Overfull \hbox (2.1679pt too wide) in paragraph at lines 176--177
+[]\T1/cmr/bx/n/12 Verificatore\T1/cmr/m/n/12 : crea i ticket$[]$ per se-gna-la-
+re er-ro-ri ed im-pre-ci-sio-ni tro-va-te du-ran-te il processo$[]$
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 240.
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 227.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [21]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 283.
+Package pdftex.def Info: ../../logo.jpg used on input line 276.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 320.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[22]
+[23]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 334.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 379.
+Package pdftex.def Info: ../../logo.jpg used on input line 370.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[25]
+ [25]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
 Norme di progetto\parti\glossario.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
@@ -1470,27 +1516,28 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12628 strings out of 493921
- 183179 string characters out of 3147274
+ 12630 strings out of 493921
+ 183200 string characters out of 3147274
  328976 words of memory out of 3000000
- 15567 multiletter control sequences out of 15000+200000
- 15077 words of font info for 35 fonts, out of 3000000 for 9000
+ 15568 multiletter control sequences out of 15000+200000
+ 15853 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,50p,833b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,50p,886b,603s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm12
-00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto-v.1.pdf (27 pages, 360965 bytes).
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0800.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
+er/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm08
+00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on NormeDiProgetto-v.1.pdf (27 pages, 398095 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
+ 638 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)
  502 words of extra memory for PDF output out of 10000 (max. 10000000)
 
