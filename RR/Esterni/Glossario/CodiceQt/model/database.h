@@ -18,6 +18,7 @@ public:
 
 private:
 	 QMap<QString, Lemma*> db;
+     QMap<QString, Lemma*> reservedlist;
 
 };
 

@@ -1,4 +1,5 @@
 \select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Descrizione generale}{11}{section.1}
 \contentsline {subsection}{\numberline {1.1}Funzioni del prodotto}{11}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Vincoli generali}{11}{subsection.1.2}
@@ -93,7 +94,6 @@
 \contentsline {subsubsection}{\numberline {2.6.26}UC 1.18.3 - Passaggio alla presentazione automatica}{48}{subsubsection.2.6.26}
 \contentsline {subsubsection}{\numberline {2.6.27}UC 1.18.4 - Passaggio alla presentazione manuale}{48}{subsubsection.2.6.27}
 \contentsline {subsection}{\numberline {2.7}UC 1.6 - Creazione di un'infografica}{49}{subsection.2.7}
-\contentsline {subsubsection}{\numberline {2.7.1}UC 1.6.1 - Selezione della modalit\IeC {\`a} infografica}{49}{subsubsection.2.7.1}
 \contentsline {subsection}{\numberline {2.8}UC 1.17 - Modifica di un'infografica}{50}{subsection.2.8}
 \contentsline {subsubsection}{\numberline {2.8.1}UC 1.17.1 - Selezione della presentazione}{51}{subsubsection.2.8.1}
 \contentsline {subsubsection}{\numberline {2.8.2}UC 1.17.2 - Selezione di un template}{51}{subsubsection.2.8.2}
@@ -164,10 +164,10 @@
 \contentsline {subsubsection}{\numberline {2.10.4}UC1.8.4 - Registrazione}{74}{subsubsection.2.10.4}
 \contentsline {subsection}{\numberline {2.11}UC 1.9 - Gestione template infografiche}{75}{subsection.2.11}
 \contentsline {subsubsection}{\numberline {2.11.1}UC1.9.1 - Caricamento di un template}{76}{subsubsection.2.11.1}
-\contentsline {subsubsection}{\numberline {2.11.2}UC 1.9.1.1 - Navigazione nel file system}{76}{subsubsection.2.11.2}
+\contentsline {subsubsection}{\numberline {2.11.2}UC 1.9.1.1 - Navigazione nello spazio di lavoro}{76}{subsubsection.2.11.2}
 \contentsline {subsubsection}{\numberline {2.11.3}UC 1.9.1.2 - Selezione file}{76}{subsubsection.2.11.3}
 \contentsline {subsubsection}{\numberline {2.11.4}UC 1.9.3 - Caricamento di un elemento}{77}{subsubsection.2.11.4}
-\contentsline {subsubsection}{\numberline {2.11.5}UC 1.9.3.1 - Navigazione nel filesystem}{77}{subsubsection.2.11.5}
+\contentsline {subsubsection}{\numberline {2.11.5}UC 1.9.3.1 - Navigazione nello spazio di lavoro}{77}{subsubsection.2.11.5}
 \contentsline {subsubsection}{\numberline {2.11.6}UC 1.9.3.2 - Selezione file}{77}{subsubsection.2.11.6}
 \contentsline {subsubsection}{\numberline {2.11.7}UC 1.9.4- Eliminazione di un template}{78}{subsubsection.2.11.7}
 \contentsline {subsubsection}{\numberline {2.11.8}UC 1.9.5 - Annulla/Ripristina}{78}{subsubsection.2.11.8}

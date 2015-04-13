@@ -49,7 +49,6 @@ void DataBase::load(){
 								db[parola]=l;
                                 if (parola.contains(QString(" "))){
                                     reservedlist[parola]=l;
-                                    std::cout<<parola.toStdString()<<" è inserita nella reserved list"<<std::endl;
                                 }
 
 								child = child.nextSibling().toElement();

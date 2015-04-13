@@ -1,44 +1,18 @@
 \subsection{UC 1.16 - Download presentazione}{
 	\label{uc1.16}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.16}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.16}
-		\caption{Caso d'uso 1.16}
-	\end{figure}
 	\textbf{Attori}: utente autenticato.	\\
 	\textbf{Descrizione}: l'utente ha la possibilità di scaricare una presentazione contenuta in una cartella all'interno del proprio spazio riservato alle presentazioni, sul server. \\
 	\textbf{Precondizione}: l'utente desidera scaricare una presentazione esistente nel proprio spazio sul server.	\\
 	\textbf{Postcondizione}: l'utente ha scaricato la presentazione che desiderava.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item navigazione nel FS delle presentazioni;
-		\item selezione presentazione;
-		\item conferma scaricamento.
+		\item navigazione nel proprio spazio di lavoro sul server;
+		\item selezione della presentazione tra quelle presenti;
+		\item navigazione nel proprio spazio di lavoro in locale;
+		\item conferma posizione e scaricamento della presentazione selezionata.
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
 	\begin{enumerate}
 		\item l'operazione viene annullata.
 	\end{enumerate}
 	}
-	\subsubsection{UC 1.16.1 - Navigazione nel FS delle presentazioni}{
-		\label{uc1.16.1}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente deve selezionare la cartella in cui è inserita la presentazione che intende scaricare. Tale cartella si trova nel server, nello spazio riservato alle presentazioni. \\
-		\textbf{Precondizione}: l'utente ha iniziato l'operazione di download della presentazione; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra presentazioni e cartelle dell'utente all'interno dello spazio delle presentazioni.	\\
-		\textbf{Postcondizione}: l'utente si trova nella cartella con le presentazioni da scaricare.	\\
-		}
-	\subsubsection{UC 1.16.2 - Selezione presentazione}{
-		\label{uc1.16.2}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente deve selezionare la presentazione che desidera, tra quelle inserite nel percorso fornito in precedenza. \\
-		\textbf{Precondizione}: l'utente ha iniziato l'operazione di download di presentazioni; è stato specificato il percorso di orgine.	\\
-		\textbf{Postcondizione}: l'utente ha selezionato la presentazione che desidera, tra quelle esistenti nel percorso fornito.	\\
-		}
-	\subsubsection{UC 1.16.3 - Conferma posizione e scaricamento}{
-		\label{uc1.16.3}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente conferma ed il sistema procede allo scaricamento. \\
-		\textbf{Precondizione}: l'utente ha selezionato la presentazione da salvare in locale.	\\
-		\textbf{Postcondizione}: il sistema ha salvato la presentazione selezionata.	\\
-		}

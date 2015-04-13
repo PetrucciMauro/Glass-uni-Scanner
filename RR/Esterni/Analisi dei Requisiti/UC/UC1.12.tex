@@ -1,52 +1,18 @@
 \subsection{UC1.12 - Download infografica}{
 	\label{uc1.12}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.12}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.12}
-		\caption{Caso d'uso 1.12}
-	\end{figure}
 	\textbf{Attori}: utente autenticato.\\
 	\textbf{Descrizione}: l'utente autenticato. scarica in locale un'infografica tra quelle presenti.\\
 	\textbf{Precondizione}: il programma è attivo e funzionante; l'utente ha effettuato il login e desidera scaricare in locale un'infografica tra quelle presenti nel proprio spazio riservato alle infografiche, all'interno del server.	\\
 	\textbf{Postcondizione}: l'utente ha scaricato l'infografica che desiderava.\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item navigazione nel FS infografiche \hyperref[uc1.12.1]{(UC 1.12.1)};
-		\item selezione infografica \hyperref[uc1.12.2]{(UC 1.12.2)};
-		\item navigazione FS utente \hyperref[uc1.12.3]{(UC 1.12.3)};
-		\item conferma posizione e scaricamento \hyperref[uc1.12.4]{(UC 1.12.4)}.
+		\item navigazione nel proprio spazio di lavoro sul server;
+		\item selezione dell'infografica tra quelle presenti;
+		\item navigazione nel proprio spazio di lavoro in locale;
+		\item conferma posizione e scaricamento dell'infografica selezionata.
 		\end{enumerate}	
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
 		\item l'operazione viene annullata.
 	\end{itemize}
 	}
-	\subsubsection{UC 1.12.1 - Navigazione nel FS infografiche}{
-		\label{uc1.12.1}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente deve selezionare la cartella in cui è inserita l'infografica che intende scaricare. Tale cartella si trova nel server, nello spazio riservato alle infografiche. \\
-		\textbf{Precondizione}: l'utente ha iniziato l'operazione di download di un'infografica; il sistema è in attesa che l'utente specifichi il percorso di origine; il server mostra infografiche e cartelle dell'utente all'interno dello spazio delle infografiche.	\\
-		\textbf{Postcondizione}: l'utente si trova nella cartella con l'infografica da scaricare.	\\
-		}
-	\subsubsection{UC 1.12.2 - Selezione infografica}{
-		\label{uc1.12.2}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente deve selezionare un'infografica tra quelle presenti nel percorso fornito in precedenza. \\
-		\textbf{Precondizione}: l'utente ha iniziato l'operazione di download di un'infografica; è stato specificato il percorso di orgine.	\\
-		\textbf{Postcondizione}: l'utente ha selezionato un'infografica tra quelle esistenti nel percorso fornito.	\\
-		}
-	\subsubsection{UC 1.12.3 - Navigazione FS utente}{
-		\label{uc1.12.3}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente seleziona una cartella valida nel proprio FS dove effettuare il salvataggio dell'infografica selezioanta. \\
-		\textbf{Precondizione}: l'utente ha selezionato un'infografica da scaricare.	\\
-		\textbf{Postcondizione}: l'utente ha selezionato un percorso valido dove salvare l'infografica selezionata in precedenza.	\\
-		}
-	\subsubsection{UC 1.12.4 - Conferma posizione e scaricamento}{
-		\label{uc1.12.4}
-		\textbf{Attori}: utente autenticato. \\
-		\textbf{Descrizione}: l'utente conferma la posizione ed il sistema procede allo scaricamento. \\
-		\textbf{Precondizione}: l'utente ha scelto un percorso valido, nel prorio FS, dove salvare l'infografica selezionata in precedenza.	\\
-		\textbf{Postcondizione}: il sistema ha salvato l'infografica selezionata nella cartella desiderata.	\\
-		}
