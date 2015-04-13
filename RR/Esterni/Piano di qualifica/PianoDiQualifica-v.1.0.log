@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  13 APR 2015 17:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  13 APR 2015 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -811,708 +811,36 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen184
 \l_MT_below_shortintertext_sep=\dimen185
 )
-! Too many }'s.
-l.61 ...{\SpecTec}{SpecificaTecnica_v v.3.0.pdf0}}
-                                                          d{\AR}nasiDeiRequi...
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 ...}{SpecificaTecnica_v v.3.0.pdf0}}        d
-                                                  {\AR}nasiDeiRequisiti}{\te...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-l.61 ...ecificaTecnica_v v.3.0.pdf0}}        d{\AR
-                                                  }nasiDeiRequisiti}{\textit...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Too many }'s.
-l.61 ....3.0.pdf0}}        d{\AR}nasiDeiRequisiti}
-                                                  {\textit{AnalisiD dei Requ...
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.61 ...t{AnalisiD dei Requisiti_v4.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.61 ...t{AnalisiD dei Requisiti_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.61 ...{AnalisiD dei Requisiti_v4.0.pdf v.1.0.0}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.62 ...noProg}{PianoDi dogetto_v4.0.pdf v.1.0.0}}
-                                                       Norme}{../Interni/DiP...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.62 ...noDi dogetto_v4.0.pdf v.1.0.0}}     Norme}
-                                                  {../Interni/DiProgetto}{\t...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.62 ...xtit{NormeDi di Progetto_v4.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.62 ...tit{NormeDi di Progetto_v4.0.pdf v.1.0.0}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.63 ...oQual}{PianoDi dalifica_v3.0.pdf v.1.0.0}}
-                                                        anInst}ualeDiInstall...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.63 ...i dalifica_v3.0.pdf v.1.0.0}}      anInst}
-                                                  ualeDiInstallazione}{\text...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.63 ...v.1.0.0}}      anInst}ualeDiInstallazione}
-                                                  {\textit{Manuale Installat...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.63 ...tit{Manuale Installatore_v2.0.pdf v.1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.63 ...it{Manuale Installatore_v2.0.pdf v.1.0.0}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.64 ...\ManUser}{ManualeUtente_v2.0.pdf v.1.0.0}}
-                                                           dmin}ualeAmminist...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.64 ...aleUtente_v2.0.pdf v.1.0.0}}         dmin}
-                                                  ualeAmministratore}{\texti...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.64 ...v.1.0.0}}         dmin}ualeAmministratore}
-                                                  {\textit{Manuale Amministr...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.64 ...it{Manuale Amministratore_v2.0.pdf v1.0.0}
-                                                  }
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-l.64 ...t{Manuale Amministratore_v2.0.pdf v1.0.0}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.66 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 \c@subsubsubsection=\count164
 )
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+
 (./PianoDiQualifica-v.1.0.aux)
 \openout1 = `PianoDiQualifica-v.1.0.aux'.
 
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1548,6 +876,8 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Info: Redefining \it@ocap on input line 29.
+LaTeX Info: Redefining \it@ccap on input line 29.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count165
@@ -1567,11 +897,17 @@ Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1581,304 +917,315 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count171
 )
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 29.
 \c@lstlisting=\count172
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 
-(../../Template/firstpage.tex
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+(../../Template/firstpage.tex <../../logo.jpg, id=4, 572.1375pt x 572.1375pt>
+File: ../../logo.jpg Graphic file (type jpg)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 22.
+(pdftex.def)             Requested size: 227.62pt x 227.62pt.
+ [1
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo.jpg>]) (./parti
+/registroMod.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 \begin{titlepage}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+ []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 \begin{titlepage}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 \begin{titlepage}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 \begin{titlepage}
-                      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 24.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
-                   $
-l.18 \begin{titlepage}
-                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+                   \relax 
+l.24 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ []
 
-! Missing { inserted.
-<to be read again> 
-                   $
-l.18 \begin{titlepage}
-                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
-! Missing { inserted.
-<to be read again> 
-                   $
-l.18 \begin{titlepage}
-                      
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+ []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [2] (./PianoDiQualifica-v.1.0.toc
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 42.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+[3])
+\tf@toc=\write3
+\openout3 = `PianoDiQualifica-v.1.0.toc'.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [4] (../../Template/sommario.tex)
+File: ../../logo.jpg Graphic file (type jpg)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [5] (./parti/introduzione.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 \begin{titlepage}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 16.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 32.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[6])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 39.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7] (./parti/obiettivi.tex
+<./images/ISO-IEC_9126.png, id=162, 858.95906pt x 484.05844pt>
+File: ./images/ISO-IEC_9126.png Graphic file (type png)
+
+<use ./images/ISO-IEC_9126.png>
+Package pdftex.def Info: ./images/ISO-IEC_9126.png used on input line 11.
+(pdftex.def)             Requested size: 241.84843pt x 136.28882pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 29.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [8 <./images/ISO-IEC_9126.png>] <./images/deming.png, id=172, 220.825pt x 150.
+5625pt>
+File: ./images/deming.png Graphic file (type png)
+
+<use ./images/deming.png>
+Package pdftex.def Info: ./images/deming.png used on input line 47.
+(pdftex.def)             Requested size: 241.84843pt x 164.90475pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 56.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10 <./images/deming.png>]
+(./parti/strategiaVerifica.tex
+
+Package xr Warning: 
+No file strumentiTecnicheMetodi.aux
+LABELS NOT IMPORTED.
+ on input line 1.
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 50.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [11]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 100.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [12])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[13] (./parti/strumentiTecnicheMetodi.tex
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 42.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [14]
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 75.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 106.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [16])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 45.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17]
+(./parti/gestioneAmministrativa.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 47.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [18]
+(./parti/resocontoAttivitaVerifica.tex
+! Undefined control sequence.
+l.6 ...che di analisi statica effettuando \texttit
+                                                  {walkthrough} e rispettand...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `sec:Metodi' on page 19 undefined on input line 6.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+! Undefined control sequence.
+<recently read> \PianoDiProgetto 
+                                 
+l.20 		\PianoDiProgetto
+                        & ? & ? \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \AnalisiDeiRequisiti 
+                                     
+l.21 		\AnalisiDeiRequisiti
+                            & ? & ? \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \NormeDiProgetto 
+                                 
+l.22 		\NormeDiProgetto
+                        & ? & ? \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \PianoDiQualifica 
+                                  
+l.23 		\PianoDiQualifica
+                         & ? & ? \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \StudioDiFattibilita 
+                                     
+l.24 		\StudioDiFattibilita
+                            & ? & ? \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.18 \begin{titlepage}
-                      
+l.25 		\Glossario
+                  & ? & ? \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.25 		\Glossario &
+                    ? & ? \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<template> \unskip \relax \@endpbox \egroup 
+                                            \egroup \begingroup \CT@setup \C...
+l.25 		\Glossario &
+                    ? & ? \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<template> ...ip \relax \@endpbox \egroup \egroup 
+                                                  \begingroup \CT@setup \CT@...
+l.25 		\Glossario &
+                    ? & ? \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 		\Glossario &
+                    ? & ? \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.18 \begin{titlepage}
-                      
+l.25 		\Glossario &
+                    ? & ? \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1888,16 +1235,69 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.18 \begin{titlepage}
-                      
-(That makes 100 errors; please try again.) 
+l.25 		\Glossario &
+                    ? & ? \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.25 		\Glossario &
+                    ? & ? \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) 
+AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 49.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+ (./PianoDiQualifica-v.1.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 49.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13237 strings out of 495017
- 191766 string characters out of 6181021
- 345152 words of memory out of 5000000
- 16240 multiletter control sequences out of 15000+600000
- 10098 words of font info for 31 fonts, out of 8000000 for 9000
+ 13505 strings out of 495017
+ 195779 string characters out of 6181021
+ 350562 words of memory out of 5000000
+ 16380 multiletter control sequences out of 15000+600000
+ 16527 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,44n,45p,816b,1901s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,16n,47p,816b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
 
-!  ==> Fatal error occurred, no output PDF file produced!
+Output written on PianoDiQualifica-v.1.0.pdf (20 pages, 329976 bytes).
+PDF statistics:
+ 457 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+
