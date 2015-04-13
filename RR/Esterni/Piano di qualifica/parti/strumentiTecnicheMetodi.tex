@@ -56,15 +56,15 @@ Anche in questo caso è importante tenere un rapporto delle attività svolte.
 \end{itemize}
 \end{itemize}
 \subsection{Metodi}
-
+\label{sec:Metodi}
 Il gruppo ha deciso di utilizzare i seguenti metodi per applicare le tecniche sopra descritte, aiutandosi con gli strumenti elencati:
 \begin{itemize}
 \item \textbf{Documenti \LaTeX}:
 \begin{enumerate}
-\item rilettura approfondita;
-\item controllo ortografico tramite lo strumento Aspell;
-\item controllo dell'applicazione delle regole tipografiche esposte nel documento Norme di progetto;
-\item verifica della corretta formattazione del file pdf prodotto.
+\item Rilettura approfondita;
+\item Controllo ortografico tramite lo strumento Aspell;
+\item Controllo dell'applicazione delle regole tipografiche esposte nel documento Norme di progetto;
+\item Verifica della corretta formattazione del file pdf prodotto.
 \end{enumerate}
 
 \item \textbf{Codice}: il codice verrà analizzato dagli strumenti integrati all'interno dell'IDE Aptana e dagli strumenti di sviluppo forniti dai singoli browser.
@@ -99,14 +99,14 @@ Un elevato valore indica un'ottima mantenibilità: un punteggio tra 20 e 100 ind
 \subsubsection{Metriche per i documenti}
 \label{sec:metricadocumenti}
 \begin{itemize}
-\item \textbf{indice Gulpease}: Misura l'indice di leggibilità di un testo tarato sulla lingua italiana.\\
+\item \textbf{Indice Gulpease}: Misura l'indice di leggibilità di un testo tarato sulla lingua italiana.\\
 Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico. Permette di misurare la complessità dello stile di un documento.\\
 L'indice Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\\
 L'indice è calcolato secondo la seguente formula:\\
 
-\begin{equation}
-89 + \frac{300 *(numero delle frasi) -10 *(numero delle lettere)}{numero delle parole}
-\end{equation}
+
+\[89 + \frac{300 *(numero\ delle\ frasi) -10 *(numero\ delle\ lettere)}{numero\ delle\ parole}\]
+
 I risultati sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa. In generale risulta che testi con un indice:
 
 \begin{itemize}

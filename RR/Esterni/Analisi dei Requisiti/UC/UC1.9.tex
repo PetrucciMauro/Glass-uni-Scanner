@@ -25,75 +25,35 @@
 	}
 \subsubsection{UC1.9.1 - Caricamento di un template}{
 	\label{uc1.9.1}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.9.1}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.9.1}
-		\caption{Caso d'uso 1.9.1}
-	\end{figure}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo template nel database. \\
 	\textbf{Precondizione}: il sistema  è funzionante e l'amministratore ha effettuato il login.	\\
 	\textbf{Postcondizione}: il template è stato caricato correttamente nel database.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item l'amministratore naviga nel proprio spazio di lavoro  per trovare il template da inserire \hyperref[uc1.9.1.1]{(UC 1.9.1.1)};
-		\item l'amministratore inserisce il template nel database \hyperref[uc1.9.1.2]{(UC 1.9.1.2)}.
+		\item l'amministratore naviga nel proprio spazio di lavoro  per trovare il template da inserire;
+		\item l'amministratore inserisce il template nel database.
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
 		\item il template è già presente nel database.
 	\end{itemize}
 	}
-\subsubsection{UC 1.9.1.1 - Navigazione nello spazio di lavoro}{
-	\label{uc1.9.1.1}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore può navigare nel proprio spazio di lavoro per selezionare la posizione da cui caricare il file. \\
-	\textbf{Precondizione}: l'amministratore ha intenzione di caricare un nuovo template.	\\
-	\textbf{Postcondizione}: lo stato dell'attività di caricamento è stato completato.	\\
-	}
-\subsubsection{UC 1.9.1.2 - Selezione file}{
-	\label{uc1.9.1.2}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
-	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
-	\textbf{Postcondizione}: il file è stato caricato.	\\
-	}
 \subsubsection{UC 1.9.3 - Caricamento di un elemento}{
 	\label{uc1.9.3}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.9.3}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.9.3}
-		\caption{Caso d'uso 1.9.3}
-	\end{figure}
 	\textbf{Attori}: amministratore di sistema. \\
 	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo elemento nel database. \\
 	\textbf{Precondizione}: il sistema  è funzionante e l'amministratore ha effettuato il login.	\\
 	\textbf{Postcondizione}: l'elemento grafico è stato caricato correttamente nel database.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item l'amministratore naviga nel proprio spazio di lavoro per trovare l'elemento grafico da inserire \hyperref[uc1.9.3.1]{(UC 1.9.3.1)};
-		\item l'amministratore inserisce l'elemento grafico nel database \hyperref[uc1.9.3.2]{(UC 1.9.3.2)}.
+		\item l'amministratore naviga nel proprio spazio di lavoro per trovare l'elemento grafico da inserire;
+		\item l'amministratore inserisce l'elemento grafico nel database.
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
 		\item il file grafico è già presente nel database.
 	\end{itemize}
-	}
-\subsubsection{UC 1.9.3.1 - Navigazione nello spazio di lavoro}{
-	\label{uc1.9.3.1}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore può navigare nel proprio spazio di lavoro per selezionare la posizione da cui caricare il file. \\
-	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
-	\textbf{Postcondizione}: lo stato dell'attività di caricamento è stato completato.	\\
-	}
-\subsubsection{UC 1.9.3.2 - Selezione file}{
-	\label{uc1.9.3.2}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore seleziona il file da caricare nel database. \\
-	\textbf{Precondizione}: l'amministratore ha inizializzato l'attività di caricamento di un file.	\\
-	\textbf{Postcondizione}: il file è stato caricato.	\\
 	}
 \subsubsection{UC 1.9.4- Eliminazione di un template}{
 	\label{uc1.9.4}
@@ -126,7 +86,7 @@
 	\begin{enumerate}
 		\item annullamento comando \hyperref[uc1.9.5.1]{(UC 1.9.5.1)};
 		\item ripristino del comando annullato \hyperref[uc1.9.5.2]{(UC 1.9.5.2)};
-		\item ripristino del template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}
+		\item ripristino del template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.9.5.1 - Annullamento comando}{
