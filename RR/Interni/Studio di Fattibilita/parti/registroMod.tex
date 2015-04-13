@@ -2,14 +2,23 @@
 \normalsize
 
 %	Ordine di inserimento: dall'ultima versione alla prima
-\label{tabVers}
-\begin{longtabu} to \textwidth {p{0.1\textwidth} p{0.2\textwidth} p{0.2\textwidth} p{0.4\textwidth}} 
-	\toprule
-	\textbf{Versione}	&	\textbf{Autore}	&	\textbf{Data}	&	\textbf{Descrizione}\\
-	\midrule 1.0 &  &  & Prima stesura del documento.\\
-	\bottomrule
-	\caption{Versionamento del documento}
-\end{longtabu}
+\renewcommand*{\arraystretch}{1.4}
+\begin{longtable} [c]{|>{\centering\arraybackslash}m{2cm} | >{\centering\arraybackslash}m{4cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{6cm} |}
+		\caption{Versionamento del documento \label{tab:versionamento}}\\
+		 \hline
+		 \textbf{Versione} & \textbf{Autore} & \textbf{Data} & \textbf{Descrizione}\\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Versione} & \textbf{Autore} & \textbf{Data} & \textbf{Descrizione}\\
+		 \hline
+		\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 0.1 & & 2 marzo 2015 & Prima stesura del documento\\
+\end{longtable}
 
 \newpage
 \Large{\textbf{Storico }}\\
