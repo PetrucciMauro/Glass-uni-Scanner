@@ -13,11 +13,11 @@
 	\textbf{Procedura principale}:
 	\begin{enumerate}
 		\item Modifica password \hyperref[uc1.11.1]{(UC 1.11.1)};
-		\item Conferma modifica password \hyperref[uc1.11.2]{(UC 1.11.2)}.
+		\item Conferma modifica password \hyperref[uc1.11.2]{(UC 1.11.2)};
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
 	\begin{itemize}
-		\item L'operazione viene annullata e non si apportano cambiamenti.
+		\item L'operazione viene annullata e non si apportano cambiamenti \hyperref[uc1.11.3]{(UC 1.11.3)}.
 	\end{itemize}
 	}
 	\subsubsection{UC 1.11.1 - Modifica password}{
@@ -25,12 +25,19 @@
 		\textbf{Attori}: utente autenticato.\\
 		\textbf{Descrizione}: l'utente ha la possibilità di inserire la nuova password. \\
 		\textbf{Precondizione}: l'utente ha avviato l'attività di cambiamento della password.	\\
-		\textbf{Postcondizione}: l'utente ha inserito la nuova password.	\\
+		\textbf{Postcondizione}: l'utente ha inserito la nuova password.
 		}
 	\subsubsection{UC 1.11.2 - Conferma modifica password}{
 		\label{uc1.11.2}
 		\textbf{Attori}: utente autenticato.\\
 		\textbf{Descrizione}: nel server viene memorizzata la nuova password al posto della vecchia. \\
 		\textbf{Precondizione}: è stata avviata l'attività di cambio password ed è stata inserita la nuova password.	\\
-		\textbf{Postcondizione}: nel server la password utente è stata sostituita con la nuova.	\\
+		\textbf{Postcondizione}: nel server la password utente è stata sostituita con la nuova.	
+		}
+	\subsubsection{UC 1.11.3 - Annulla}{
+		\label{uc1.11.3}
+		\textbf{Attori}: utente desktop. \\
+		\textbf{Descrizione}: permettere all’utente di annullare o ripristinare l'ultima modifica. \\
+		\textbf{Precondizione}: è stata effettuata una modifica alla password del proprio profilo.	\\
+		\textbf{Postcondizione}: è stata ripristinata la password precedente.
 		}
