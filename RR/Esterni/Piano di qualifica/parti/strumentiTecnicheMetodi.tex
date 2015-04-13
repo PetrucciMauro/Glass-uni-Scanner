@@ -85,7 +85,8 @@ Non bisogna tuttavia basarsi solamente sulle metriche, che sono solo indicatori 
 \begin{itemize}
 \item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini. 
 Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione. 
-Con “ramificazione” si intendono cicli, costrutti “if” e simili;
+Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
+Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice semplice con pochi rischi , superato questo limite il codice diventa più complesso , instabile e difficilmente manutenibile.
 
 \item \textbf{Numero di istruzioni}: rappresenta il numero di istruzioni all'interno di un metodo. 
 Un indice elevato non rappresenta necessariamento un cattivo codice ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
@@ -95,6 +96,11 @@ Un elevato valore indica un'ottima mantenibilità: un punteggio tra 20 e 100 ind
 
 \item \textbf{Copertura del codice}: è indicazione di quanto codice sorgente sia stato testato. Un elevato indice di copertura indica che il codice sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
 
+Parametri utilizzati:
+\begin{itemize}
+\item Range-accettazione: [42\%-100\%];
+\item Range-ottimale: [65\%-100\%].
+\end{itemize}
 \end{itemize}
 \subsubsection{Metriche per i documenti}
 \label{sec:metricadocumenti}
