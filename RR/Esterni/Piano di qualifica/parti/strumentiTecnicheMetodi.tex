@@ -32,9 +32,9 @@ Si esegue applicando i due seguenti metodi:
 \begin{itemize}
 \item \textbf{Inspection}: l’obiettivo di questa tecnica di analisi è l’individuazione di difetti attraverso la lettura mirata del codice. Un prerequisito per questa metodologia di verifica è la definizione di una lista di controllo che elenca le possibili sezioni o passaggi maggiormente soggetti ad errori. La verifica deve essere condotta da soggetti nettamente distinti dai programmatori. La correzione degli errori individuati va eseguita in ogni fase e documentata tramite un rapporto delle attività svolte;
 
-\item \textbf{Walkthrough}: l'obiettivo di questa tecnica di analisi è l'individuazione di difetti eseguendo una lettura integrale di tutto il codice senza l'assunzione di presupposti. Viene eseguita da gruppi misti di ispettori e sviluppatori.
-Per evitare incomprensioni è importante che al termine della lettura gli elementi coinvolti discutano i difetti trovati e che nessuna persona possa coprire entrambi i ruoli allo stesso tempo.
-Al termine della fase di discussione si applicherà la fase di correzione dei difetti che apporterà le modifiche concordate. 
+\item \textbf{Walkthrough}: l'obiettivo di questa tecnica di analisi è l'individuazione di difetti eseguendo una lettura integrale di tutto il codice senza l'assunzione di presupposti. Viene eseguita da gruppi misti di ispettori e sviluppatori. \\
+Per evitare incomprensioni è importante che al termine della lettura gli elementi coinvolti discutano i difetti trovati e che nessuna persona possa coprire entrambi i ruoli allo stesso tempo. \\
+Al termine della fase di discussione si applicherà la fase di correzione dei difetti che apporterà le modifiche concordate.  \\
 Anche in questo caso è importante tenere un rapporto delle attività svolte.
 \end{itemize}
 
@@ -61,10 +61,10 @@ Il gruppo ha deciso di utilizzare i seguenti metodi per applicare le tecniche so
 \begin{itemize}
 \item \textbf{Documenti \LaTeX}:
 \begin{enumerate}
-\item Rilettura approfondita;
-\item Controllo ortografico tramite lo strumento Aspell;
-\item Controllo dell'applicazione delle regole tipografiche esposte nel documento Norme di progetto;
-\item Verifica della corretta formattazione del file pdf prodotto.
+	\item Rilettura approfondita;
+	\item Controllo ortografico tramite lo strumento Aspell;
+	\item Controllo dell'applicazione delle regole tipografiche esposte nel documento Norme di progetto;
+	\item Verifica della corretta formattazione del file pdf prodotto.
 \end{enumerate}
 
 \item \textbf{Codice}: il codice verrà analizzato dagli strumenti integrati all'interno dell'IDE Aptana e dagli strumenti di sviluppo forniti dai singoli browser.
@@ -78,20 +78,20 @@ Il gruppo ha deciso di utilizzare i seguenti metodi per applicare le tecniche so
 \end{enumerate}
 \end{itemize}
 \subsection{Metriche}
-Il processo di verifica, per essere informativo, deve esse quantificabile. Le misure rilevate dal processo di verifica devono quindi essere basate su metriche stabilite a priori.
-Una metrica è la misura di una qualche proprietà relativa ad una porzione di un documentosoftware allo scopo di fornire informazioni significative sulla qualità del codice prodotto.
+Il processo di verifica, per essere informativo, deve esse quantificabile. Le misure rilevate dal processo di verifica devono quindi essere basate su metriche stabilite a priori. \\
+Una metrica è la misura di una qualche proprietà relativa ad una porzione di un documentosoftware allo scopo di fornire informazioni significative sulla qualità del codice prodotto. \\
 Non bisogna tuttavia basarsi solamente sulle metriche, che sono solo indicatori a posteriori della bontà del lavoro svolto: un'importanza ancora maggiore la riveste il controllo sulla qualità del processo.
 \subsubsection{Metriche per il codice}
 \begin{itemize}
-\item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini. 
-Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione. 
+\item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini.  \\
+Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione.  \\
 Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
 Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice semplice con pochi rischi , superato questo limite il codice diventa più complesso , instabile e difficilmente manutenibile.
 
 \item \textbf{Numero linee di codice}: rappresenta il numero di linee di codice all'interno di un blocco. 
 Un indice elevato non rappresenta necessariamente un cattivo codice ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
 
-\item \textbf{Indice di manutenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di manutenibilità del codice. 
+\item \textbf{Indice di manutenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di manutenibilità del codice.  \\
 Un elevato valore indica un'ottima manutenibilità: un punteggio tra 20 e 100 indica che il codice ha manutenibilità buona; tra 10 e 19, una manutenibilità moderata; un punteggio tra 0 e 9 indica bassa manutenibilità.
 
 \item \textbf{Copertura del codice}: è indicazione di quanto codice sorgente sia stato testato. Un elevato indice di copertura indica che il codice sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
@@ -116,14 +116,14 @@ L'indice è calcolato secondo la seguente formula:\\
 I risultati sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa. In generale risulta che testi con un indice:
 
 \begin{itemize}
-\item Inferiore a 80 sono difficili da leggere per chi ha la licenza elementare;
-\item Inferiore a 60 sono difficili da leggere per chi ha la licenza media;
-\item Inferiore a 40 sono difficili da leggere per chi ha un diploma superiore.
+	\item Inferiore a 80 sono difficili da leggere per chi ha la licenza elementare;
+	\item Inferiore a 60 sono difficili da leggere per chi ha la licenza media;
+	\item Inferiore a 40 sono difficili da leggere per chi ha un diploma superiore.
 \end{itemize}
 
 \textbf{Parametri utilizzati}:
 \begin{itemize}
-\item Range-accettazione: [40-100];
-\item Range-ottimale: [50-100].
+	\item Range-accettazione: [40-100];
+	\item Range-ottimale: [50-100].
 \end{itemize}
 \end{itemize}
