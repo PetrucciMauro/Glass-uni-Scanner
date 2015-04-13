@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  13 APR 2015 15:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  13 APR 2015 16:59
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.tex
 
@@ -1092,7 +1092,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
+Package hyperref Info: Option `colorlinks' set `true' on input line 124.
 \c@subsubsubsection=\count146
 )
 Package csquotes Info: Checking for multilingual support...
@@ -1235,15 +1235,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 24.
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
@@ -2799,10 +2799,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 13690 strings out of 493921
- 199338 string characters out of 3147280
- 364463 words of memory out of 3000000
- 16052 multiletter control sequences out of 15000+200000
+ 13699 strings out of 493921
+ 199505 string characters out of 3147280
+ 364726 words of memory out of 3000000
+ 16061 multiletter control sequences out of 15000+200000
  14000 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  51i,16n,47p,839b,831s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2815,7 +2815,7 @@ ublic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
 super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
 m1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb
 >
-Output written on AnalisiDeiRequisiti_v.1.0.pdf (95 pages, 1614183 bytes).
+Output written on AnalisiDeiRequisiti_v.1.0.pdf (95 pages, 1614766 bytes).
 PDF statistics:
  2344 PDF objects out of 2487 (max. 8388607)
  603 named destinations out of 1000 (max. 500000)
