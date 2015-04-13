@@ -1,4 +1,4 @@
-\subsection{UC 1.17 - Modifica di un'infografica}{
+\subsection{UC 1.17 - Gestione infografiche}{
 	\label{uc1.17}
 	\begin{figure}[H]
 		\centering
@@ -6,7 +6,7 @@
 		\label{fig:uc1.17}
 		\caption{Caso d'uso 1.17}
 	\end{figure}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di prendere gli elementi di una presentazione slide e di inserirli in un unico documento stampabile e quindi lineare. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante.	\\
 	\textbf{Postcondizione}: l'utente ha modificato un'infografica che può aver salvato in locale e online.	\\
@@ -16,175 +16,191 @@
 		\item selezione di un template di infografica \hyperref[uc1.17.2]{(UC 1.17.2)};
 		\item selezione di un elemento dell’infografica \hyperref[uc1.17.3]{(UC 1.17.3)};
 		\item modifica e rimozione di un elemento grafico o di un elemento di testo \hyperref[uc1.17.4]{(UC 1.17.4)};
-		\item rimozione di uno sfondo \hyperref[uc1.17.5]{(UC 1.17.5)};
-		\item inserimento di uno sfondo \hyperref[uc1.17.6]{(UC 1.17.6)};
-		\item inserimento di un elemento grafico \hyperref[uc1.17.7]{(UC 1.17.7)};
-		\item inserimento di un elemento di testo \hyperref[uc1.17.8]{(UC 1.17.8)};
-		\item inserimento di una slide nella sua interezza\hyperref[uc1.17.9]{(UC 1.17.9)};
-		\item salvataggio dell'infografica \hyperref[uc1.17.10]{(UC 1.17.10)}.
+		\item salvataggio dell'infografica \hyperref[uc1.17.5]{(UC 1.17.5)}.
+		\item annulla / ripristina ultima operazione \hyperref[uc1.17.6]{(UC 1.17.6)}.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.17.1 - Selezione della presentazione}{
 	\label{uc1.17.1}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di selezionare la presentazione di cui produrre l'infografica per potervi attingere elementi direttamente. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante.	\\
 	\textbf{Postcondizione}: nell'editor viene caricata una presentazione sui quali oggetti si può andare a interagire.\\
 	}
 \subsubsection{UC 1.17.2 - Selezione di un template}{
 	\label{uc1.17.2}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: permettere all'utente di selezionare il template che preferisce. \\
 	\textbf{Precondizione}: il programma è attivo e funzionante.\\
 	\textbf{Postcondizione}: l'utente ha caricato nell'editor un template che potrà modificare per creare la sua infografica.	\\
 	}
 \subsubsection{UC 1.17.3 - Selezione di un oggetto dell'infografica}{
 	\label{uc1.17.3}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli da lui inseriti. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, un template di infografica è stato caricato nell'editor.	\\
-	\textbf{Postcondizione}: l'oggetto è stato selezionato e un riquadro tratteggiato lo circonda.	\\
+	\textbf{Postcondizione}: l'oggetto è stato selezionato.	\\
 	}
-\subsubsection{UC 1.17.4 - Modifica di un oggetto dell'infografica}{
+\subsubsection{UC 1.17.4 - Modifica infografica}{
 	\label{uc1.17.4}
+\subsubsection{UC 1.17.4.1 - Modifica di un oggetto dell'infografica}{
+	\label{uc1.17.4.1}
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1.17.4}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.17.4}
-		\caption{Caso d'uso 1.17.4}
+		\label{fig:uc1.17.4.1}
+		\caption{Caso d'uso 1.17.4.1}
 	\end{figure}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli da lui inseriti. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, un oggetto della presentazione è stato selezionato.	\\
 	\textbf{Postcondizione}: l'oggetto selezionato è stato modificato.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item  se l'oggetto è un elemento grafico è possibile ingrandirne o ridurne le dimensioni \hyperref[uc1.17.4.1]{(UC 1.17.4.1)};
-		\item se l'oggetto è un elemento testuale è possibile effettuare diverse modifiche \hyperref[uc1.17.4.2]{(UC 1.17.4.2)};
-		\item in entrambi i casi è possibile cambiare la posizione dell'oggetto \hyperref[uc1.17.4.3]{(UC 1.17.4.3)}.
+		\item  se l'oggetto è un elemento grafico è possibile ingrandirne o ridurne le dimensioni \hyperref[uc1.17.4.1.1]{(UC 1.17.4.1.1)};
+		\item se l'oggetto è un elemento testuale è possibile effettuare diverse modifiche \hyperref[uc1.17.4.1.2]{(UC 1.17.4.1.2)};
+		\item in entrambi i casi è possibile cambiare la posizione dell'oggetto \hyperref[uc1.17.4.1.3]{(UC 1.17.4.1.3)}.
 	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item solo nel caso in cui venga effettuata una modifica l'utente mobile può scegliere di annullare l'ultima modifica eseguita.
+		\end{itemize}
 	}
-\subsubsection{UC 1.17.4.1 - Modifica dimensioni di un oggetto grafico}{
-	\label{uc1.17.4.1}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.1 - Modifica dimensioni di un oggetto grafico}{
+	\label{uc1.17.4.1.1}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di aumentare e ridurre le dimensioni di un oggetto grafico. \\
 	\textbf{Precondizione}: l'oggetto grafico è stato selezionato.\\
 	\textbf{Postcondizione}: l'oggetto ha cambiato le sue dimensioni.	\\
 	}
-\subsubsection{UC 1.17.4.2 - Modifica di elemento testuale}{
-	\label{uc1.17.4.2}
+\subsubsection{UC 1.17.4.1.2 - Modifica di elemento testuale}{
+	\label{uc1.17.4.1.2}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.17.4.2}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.17.4.2}
-		\caption{Caso d'uso 1.17.4.2}
+		\includegraphics[scale=0.75]{\imgs {UC1.17.4.1.2}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.17.4.1.2}
+		\caption{Caso d'uso 1.17.4.1.2}
 	\end{figure}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di modificare un elemento testuale. \\
 	\textbf{Precondizione}: un oggetto testuale della presentazione è stato selezionato.	\\
 	\textbf{Postcondizione}: l'elemento testuale è stato modificato.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item cambiare il carattere \hyperref[uc1.17.4.2.1]{(UC 1.17.4.2.1)};
-		\item modificare le dimensioni del carattere \hyperref[uc1.17.4.2.2]{(UC 1.17.4.2.2)};
-		\item una formattazione (corsivo, grassetto, sottolineato) \hyperref[uc1.17.4.2.3]{(UC 1.17.4.2.3)};
-		\item cambiare colore del carattere \hyperref[uc1.17.4.2.4]{(UC 1.17.4.2.4)};
-		\item cambiare il colore di sfondo \hyperref[uc1.17.4.2.5]{(UC 1.17.4.2.5)}.
+		\item cambiare il carattere \hyperref[uc1.17.4.1.2.1]{(UC 1.17.4.1.2.1)};
+		\item modificare le dimensioni del carattere \hyperref[uc1.17.4.1.2.2]{(UC 1.17.4.1.2.2)};
+		\item una formattazione (corsivo, grassetto, sottolineato) \hyperref[uc1.17.4.1.2.3]{(UC 1.17.4.1.2.3)};
+		\item cambiare colore del carattere \hyperref[uc1.17.4.1.2.4]{(UC 1.17.4.1.2.4)};
+		\item cambiare il colore di sfondo \hyperref[uc1.17.4.1.2.5]{(UC 1.17.4.1.2.5)}.
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
 		\item è sempre possibile annullare l'ultima modifica effettuata ed eventualmente ripristinarla.
 	\end{itemize}
 	}
-\subsubsection{UC 1.17.4.2.1 - Modifica del carattere}{
-	\label{uc1.17.4.2.1}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.2.1 - Modifica del carattere}{
+	\label{uc1.17.4.1.2.1}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare il carattere delle lettere dell’elemento testuale. \\
 	\textbf{Precondizione}: l'oggetto testuale è stato selezionato e si trova ora in modalità modifica.\\
 	\textbf{Postcondizione}: le lettere del testo hanno cambiato carattere.	\\
 	}
-\subsubsection{UC 1.17.4.2.2 - Modifica delle dimensioni del carattere}{
-	\label{uc1.17.4.2.2}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.2.2 - Modifica delle dimensioni del carattere}{
+	\label{uc1.17.4.1.2.2}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare le dimensioni delle lettere dell’elemento testuale. \\
 	\textbf{Precondizione}: l'oggetto testuale è stato selezionato e si trova ora in modalità modifica.\\
 	\textbf{Postcondizione}: le lettere del testo ha cambiato dimensione.	\\
 	}
-\subsubsection{UC 1.17.4.2.3 - Modifica della formattazione}{
-	\label{uc1.17.4.2.3}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.2.3 - Modifica della formattazione}{
+	\label{uc1.17.4.1.2.3}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare la formattazione dell’elemento testuale. \\
 	\textbf{Precondizione}: l'oggetto testuale è stato selezionato e si trova ora in modalità modifica.\\
 	\textbf{Postcondizione}: le lettere del testo hanno cambiato formato (corsivo, grassetto, sottolineato).	\\
 	}
-\subsubsection{UC 1.17.4.2.4 - Modifica del colore}{
-	\label{uc1.17.4.2.4}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.2.4 - Modifica del colore}{
+	\label{uc1.17.4.1.2.4}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare il colore delle lettere dell’elemento testuale. \\
 	\textbf{Precondizione}: l'oggetto testuale è stato selezionato e si trova ora in modalità modifica.\\
 	\textbf{Postcondizione}: le lettere del testo hanno cambiato colore.	\\
 	}
-\subsubsection{UC 1.17.4.2.5 - Modifica sfondo}{
-	\label{uc1.17.4.2.5}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.2.5 - Modifica sfondo}{
+	\label{uc1.17.4.1.2.5}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare il colore dello sfondo dell’elemento testuale (evidenziatura). \\
 	\textbf{Precondizione}: l'oggetto testuale è stato selezionato e si trova ora in modalità modifica.\\
 	\textbf{Postcondizione}: le lettere del testo sono state evidenziate.	\\
 	}
-\subsubsection{UC 1.17.4.3 - Modifica della posizione dell'oggetto}{
-	\label{uc1.17.4.3}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.1.3 - Modifica della posizione dell'oggetto}{
+	\label{uc1.17.4.1.3}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare la posizione di un oggetto. \\
 	\textbf{Precondizione}: l'oggetto grafico è stato selezionato.\\
 	\textbf{Postcondizione}: l'oggetto è stato spostato all’interno dell’infografica.	\\
 	}
-\subsubsection{UC 1.17.5 - Rimozione dello sfondo}{
-	\label{uc1.17.5}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.2 - Rimozione dello sfondo}{
+	\label{uc1.17.4.2}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di rimuovere lo sfondo dell’infografica. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
 	\textbf{Postcondizione}: lo sfondo dell'infografica è stato eliminato.	\\
 	}
-\subsubsection{UC 1.17.6 - Inserimento di uno sfondo}{
-	\label{uc1.17.6}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.3 - Inserimento di uno sfondo}{
+	\label{uc1.17.4.3}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di scegliere uno sfondo per l'infografica. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
 	\textbf{Postcondizione}: lo sfondo dell'infografica è stato cambiato.	\\
 	}
-\subsubsection{UC 1.17.7 - Inserimento di un elemento grafico}{
-	\label{uc1.17.7}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.4 - Inserimento di un elemento grafico}{
+	\label{uc1.17.4.4}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di inserire un elemento grafico. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
 	\textbf{Postcondizione}: è stato inserito un oggetto precedentemente assente nell'infografica.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item quando un elemento grafico viene inserito si entra automaticamente in modalità modifica \hyperref[uc1.17.4]{(UC 1.17.4)}.
+		\item quando un elemento grafico viene inserito si entra automaticamente in modalità modifica \hyperref[uc1.17.4.1]{(UC 1.17.4.1)}.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.17.8 - Inserimento di un elemento testuale}{
-	\label{uc1.17.8}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.5 - Inserimento di un elemento testuale}{
+	\label{uc1.17.4.5}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
 	\textbf{Postcondizione}: è stato inserito un oggetto testuale precedentemente assente nell'infografica.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item quando viene inserito un elemento testuale questo entra automaticamente in modalità modifica \hyperref[uc1.17.4.2]{(UC 1.17.4.2)}.
+		\item quando viene inserito un elemento testuale questo entra automaticamente in modalità modifica \hyperref[uc1.17.4.1.2]{(UC 1.17.4.1.2)}.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.17.9 - Inserimento di una slide}{
-	\label{uc1.17.9}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.4.6 - Inserimento di una slide}{
+	\label{uc1.17.4.6}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
 	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente, è stata caricata una presentazione di cui l'utente vuole fare l'infografica.	\\
 	\textbf{Postcondizione}: nell'infografica è stata inserita come immagine vettoriale una slide precedentemente assente.	\\
 	}
-\subsubsection{UC 1.17.10 - Salvataggio infografica}{
-	\label{uc1.17.10}
-	\textbf{Attori}: utente desktop, amministratore di sistema. \\
+\subsubsection{UC 1.17.5 - Salvataggio infografica}{
+	\label{uc1.17.5}
+	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: permettere all’utente di salvare un’infografica. \\
 	\textbf{Precondizione}: l'utente ha caricato un template.	\\
 	\textbf{Postcondizione}: l'utente ha salvato un’infografica nel suo spazio personale.	\\
+	}
+\subsubsection{UC 1.17.6 - Annulla / Ripristina}{
+	\label{uc1.17.6}
+	\textbf{Attori}: utente desktop. \\
+	\textbf{Descrizione}: permettere all’utente di annullare o ripristinare l'ultima modifica. \\
+	\textbf{Precondizione}: è stata effettuata una modifica all'infografica.	\\
+	\textbf{Postcondizione}: l'infografica è stata riportata alla situazione antecedente all'ultima operazione.	\\
+	}
+\subsubsection{UC 1.17.7 - Esportazione infografica}{
+	\label{uc1.17.7}
+	\textbf{Attori}: utente desktop. \\
+	\textbf{Descrizione}: permettere all’utente di esportare un’infografica. \\
+	\textbf{Precondizione}: l'utente ha caricato un template.	\\
+	\textbf{Postcondizione}: l'utente ha esportato l'infografica sottoforma di file immagine nel proprio dispositivo.	\\
 	}
