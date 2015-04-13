@@ -88,18 +88,18 @@ Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; ta
 Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
 Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice semplice con pochi rischi , superato questo limite il codice diventa più complesso , instabile e difficilmente manutenibile.
 
-\item \textbf{Numero di istruzioni}: rappresenta il numero di istruzioni all'interno di un metodo. 
-Un indice elevato non rappresenta necessariamento un cattivo codice ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
+\item \textbf{Numero linee di codice}: rappresenta il numero di linee di codice all'interno di un blocco. 
+Un indice elevato non rappresenta necessariamente un cattivo codice ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
 
-\item \textbf{Indice di mantenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di mantenibilità del codice. 
-Un elevato valore indica un'ottima mantenibilità: un punteggio tra 20 e 100 indica che il codice ha mantenibilità buona; tra 10 e 19, una manteniblità moderata; un punteggio tra 0 e 9 indica bassa mantenibilità.
+\item \textbf{Indice di manutenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di manutenibilità del codice. 
+Un elevato valore indica un'ottima manutenibilità: un punteggio tra 20 e 100 indica che il codice ha manutenibilità buona; tra 10 e 19, una manutenibilità moderata; un punteggio tra 0 e 9 indica bassa manutenibilità.
 
 \item \textbf{Copertura del codice}: è indicazione di quanto codice sorgente sia stato testato. Un elevato indice di copertura indica che il codice sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
 
 Parametri utilizzati:
 \begin{itemize}
-\item Range-accettazione: [42\%-100\%];
-\item Range-ottimale: [65\%-100\%].
+\item Range-sufficiente: [60\%-80\%];
+\item Range-ottimale: [80\%-95\%].
 \end{itemize}
 \end{itemize}
 \subsubsection{Metriche per i documenti}
