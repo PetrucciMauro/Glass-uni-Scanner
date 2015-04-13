@@ -1,7 +1,7 @@
 
-\subsection{Strumenti,tecniche e metodi}
+\section{Strumenti,tecniche e metodi}
 
-\subsubsection{Strumenti}
+\subsection{Strumenti}
 \label{sec:strumenti}
 Di seguito verranno elencati gli strumenti software che sono o saranno utilizzati dal gruppo per effettuare le operazioni di verifica e validazione:
 \begin{itemize}
@@ -25,7 +25,7 @@ Di seguito verranno elencati gli strumenti software che sono o saranno utilizzat
 Verranno utilizzati anche tutti gli strumenti già integrati all'interno del browser per lo sviluppo delle pagine web.
 
 \end{itemize}
-\subsubsection {Tecniche}
+\subsection {Tecniche}
 \begin{itemize}
 \item \textbf{Analisi statica}: consiste nell’analizzare il codice tramite tools e letture senza tuttavia eseguirlo. Data la natura di questo tipo di analisi, è possibile applicarla anche per il controllo di tutti i documenti testuali prodotti.
 Si esegue applicando i due seguenti metodi:
@@ -55,8 +55,8 @@ Anche in questo caso è importante tenere un rapporto delle attività svolte.
 \item \textbf{Test di collaudo}: attività formale supervisionata dal committente il cui buon esito comporta la possibilità di rilasciare il prodotto.
 \end{itemize}
 \end{itemize}
-\subsubsection{Metodi}
-\label{sec:Metodi}
+\subsection{Metodi}
+
 Il gruppo ha deciso di utilizzare i seguenti metodi per applicare le tecniche sopra descritte, aiutandosi con gli strumenti elencati:
 \begin{itemize}
 \item \textbf{Documenti \LaTeX}:
@@ -77,9 +77,11 @@ Il gruppo ha deciso di utilizzare i seguenti metodi per applicare le tecniche so
 	\item controllo che i casi d'uso soddisfino tutte le esigenze espresse nel capitolato.
 \end{enumerate}
 \end{itemize}
-\subsubsection{Metriche}
-Una metrica è la misura di una qualche proprietà relativa ad una porzione di software allo scopo di fornire informazioni significative sulla qualità del codice prodotto.
+\subsection{Metriche}
+Il processo di verifica, per essere informativo, deve esse quantificabile. Le misure rilevate dal processo di verifica devono quindi essere basate su metriche stabilite a priori.
+Una metrica è la misura di una qualche proprietà relativa ad una porzione di un documentosoftware allo scopo di fornire informazioni significative sulla qualità del codice prodotto.
 Non bisogna tuttavia basarsi solamente sulle metriche, che sono solo indicatori a posteriori della bontà del lavoro svolto: un'importanza ancora maggiore la riveste il controllo sulla qualità del processo.
+\subsubsection{Metriche per il codice}
 \begin{itemize}
 \item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini. 
 Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione. 
@@ -93,4 +95,29 @@ Un elevato valore indica un'ottima mantenibilità: un punteggio tra 20 e 100 ind
 
 \item \textbf{Copertura del codice}: è indicazione di quanto codice sorgente sia stato testato. Un elevato indice di copertura indica che il codice sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
 
+\end{itemize}
+\subsubsection{Metriche per i documenti}
+\label{sec:metricadocumenti}
+\begin{itemize}
+\item \textbf{indice Gulpease}: Misura l'indice di leggibilità di un testo tarato sulla lingua italiana.\\
+Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico. Permette di misurare la complessità dello stile di un documento.\\
+L'indice Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\\
+L'indice è calcolato secondo la seguente formula:\\
+
+\begin{equation}
+89 + \frac{300 *(numero delle frasi) -10 *(numero delle lettere)}{numero delle parole}
+\end{equation}
+I risultati sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa. In generale risulta che testi con un indice:
+
+\begin{itemize}
+\item Inferiore a 80 sono difficili da leggere per chi ha la licenza elementare;
+\item Inferiore a 60 sono difficili da leggere per chi ha la licenza media;
+\item Inferiore a 40 sono difficili da leggere per chi ha un diploma superiore.
+\end{itemize}
+
+\textbf{Parametri utilizzati}:
+\begin{itemize}
+\item Range-accettazione: [40-100];
+\item Range-ottimale: [50-100].
+\end{itemize}
 \end{itemize}
