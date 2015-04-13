@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  13 APR 2015 01:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  13 APR 2015 15:54
 entering extended mode
 **NormeDiProgetto-v.1.tex
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\NormeDiProgetto-v.1.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\NormeDiProgetto-v.1.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
-\format.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Template\format.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1081,17 +1081,25 @@ Now handling font encoding LYG ...
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box40
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 112.
+Package hyperref Info: Option `colorlinks' set `true' on input line 114.
 \c@subsubsubsection=\count146
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\NormeDiProgetto-v.1.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\NormeDiProgetto-v.1.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1191,11 +1199,10 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
-\firstpage.tex" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Template\firstpage.tex
+" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1206,10 +1213,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 29.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
-ts/Giovanni/Studio e lavoro/GitHub/Premi/RR/logo.jpg>])
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
-\sommario.tex")
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
+Fiup/3° Anno/SWE/SmartGit/RR/logo.jpg>])
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Template\sommario.tex"
+)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
@@ -1220,32 +1227,23 @@ been already used, duplicate ignored
                    \relax 
 l.33 	\newpage
                [1]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\registroMod.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-
-Overfull \hbox (1.84283pt too wide) in paragraph at lines 13--13
-[]\T1/cmr/bx/n/12 Versione| 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 13
- []
-
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 15.
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
@@ -1255,8 +1253,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\NormeDiProgetto-v.1.toc"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\NormeDiProgetto-v.1.toc"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
@@ -1264,20 +1262,20 @@ Package pdftex.def Info: ../../logo.jpg used on input line 42.
  [4])
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\introduzione.tex")
+
+[5]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\introduzione.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [6]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\comunicazioni.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\comunicazioni.tex"
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
@@ -1293,11 +1291,10 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [7]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\riunioni.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\riunioni.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -1307,10 +1304,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[8]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\documenti.tex"
+ [8]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\documenti.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
@@ -1345,8 +1341,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\ingegneriaRequisiti.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\ingegneriaRequisiti.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 14--16
 
  []
@@ -1392,8 +1388,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [16]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\ambientelavoro.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\ambientelavoro.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
@@ -1490,8 +1486,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [25]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\parti\glossario.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\parti\glossario.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
@@ -1506,8 +1502,8 @@ Package pdftex.def Info: ../../logo.jpg used on input line 51.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Interni\
-Norme di progetto\NormeDiProgetto-v.1.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
+tto\NormeDiProgetto-v.1.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
  )
@@ -1516,13 +1512,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 12630 strings out of 493921
- 183200 string characters out of 3147274
- 328976 words of memory out of 3000000
- 15568 multiletter control sequences out of 15000+200000
+ 12649 strings out of 493921
+ 183198 string characters out of 3147280
+ 334463 words of memory out of 3000000
+ 15581 multiletter control sequences out of 15000+200000
  15853 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,50p,886b,603s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,47p,886b,603s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
@@ -1535,7 +1531,7 @@ er/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm08
 00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto-v.1.pdf (27 pages, 398095 bytes).
+Output written on NormeDiProgetto-v.1.pdf (27 pages, 399092 bytes).
 PDF statistics:
  638 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)
