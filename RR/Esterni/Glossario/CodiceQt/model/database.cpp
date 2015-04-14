@@ -193,9 +193,8 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
             q=q+(*strit);
         }
     }
-    if(q!="")
-        std::cout<<q.toStdString()<<std::endl;
-    QString perreg=QString("((^)|([\\s])|[^:])")+temp+QString("(\\.|,|;|:|$|\\s|[)])");
+
+    QString perreg=QString("((^)|([\\s])|[^:a-z])")+temp+QString("(\\.|,|;|:|$|\\s|[)])");
     QRegExp exp(perreg);
 
     QString nuova=oldw+QString("\\ped{g}");
@@ -221,7 +220,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
             else
                 i=text.length();
         }
-        QString perregl=QString("((^)|([\\s])|[^:])")+oldwl+QString("(\\.|,|;|:|$|\\s|[)])");
+        QString perregl=QString("((^)|([\\s])|[^:a-z\\/]|)")+oldwl+QString("(\\.|,|;|:|$|\\s|[)])");
         QRegExp expl(perregl);
         for (int i=0; i<text.length(); ++i){
             int x=text.indexOf(expl, i);
@@ -280,7 +279,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
                 i=text.length();
         }
         if(!trovato){
-            QString perregl=QString("((^)|([/|\\s])|[^:])")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
+            QString perregl=QString("((^)|([\\s])|[^:a-z\\/])")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
             QRegExp expl(perregl);
             bool parzl=false;
             for (int i=0; i<text.length(); ++i){
@@ -297,7 +296,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
                         if (mit.value()->contains(oldw)){
                             parzl=true;
                             QString t=text.mid(y, mit.value()->getWord().length());
-                            std::cout<<"t=="<<t.toStdString()<<std::endl;
+
                            QString qt("");
                             QStringList tt=t.split(QRegularExpression(" "));
 
@@ -317,7 +316,7 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
                     }
                     if(trovato||!parzl){
                         text.remove(y,oldwl.length());
-                        text.insert(y,nuoval);
+                        text.insert(y,nuova);
                         i+=oldwl.length();
                         std::cout<<oldwl.toStdString()<<std::endl;
                     }
@@ -355,7 +354,6 @@ void DataBase::applyGlossario(const QString& nomefile){
         replaceFile(nomefile, it.value()->getWord());
         std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
         for(; i!=it.value()->getPlural().end();++i){
-            std::cout<<"provo a rimpiazzare "<<(*i).toStdString()<<std::endl;
             replaceFile(nomefile, *i);
         }
     }
