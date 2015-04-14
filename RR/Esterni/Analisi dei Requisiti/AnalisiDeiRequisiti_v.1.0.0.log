@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  14 APR 2015 10:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.13)  14 APR 2015 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,17 +983,17 @@ Package pdftex.def Info: ../../logo.jpg used on input line 35.
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 45.
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [4]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 91.
+Package pdftex.def Info: ../../logo.jpg used on input line 92.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [5]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 137.
+Package pdftex.def Info: ../../logo.jpg used on input line 138.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [6])
 \tf@toc=\write3
@@ -1033,19 +1033,19 @@ Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [9] (./parti/casiduso.tex (./UC/GerarchiaUtenti.tex
-<./images/GerarchiaUtenti.jpg, id=459, 302.12875pt x 261.97874pt>
+<./images/GerarchiaUtenti.jpg, id=451, 315.1775pt x 325.215pt>
 File: ./images/GerarchiaUtenti.jpg Graphic file (type jpg)
 
 <use ./images/GerarchiaUtenti.jpg>
 Package pdftex.def Info: ./images/GerarchiaUtenti.jpg used on input line 6.
-(pdftex.def)             Requested size: 302.128pt x 261.9781pt.
+(pdftex.def)             Requested size: 315.17673pt x 325.2142pt.
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10 <./images/GerarchiaUtenti.jpg>] (./UC/UC1.tex
-<./images/UC1.jpg, id=470, 780.9175pt x 683.55376pt>
+<./images/UC1.jpg, id=462, 780.9175pt x 683.55376pt>
 File: ./images/UC1.jpg Graphic file (type jpg)
  <use ./images/UC1.jpg>
 Package pdftex.def Info: ./images/UC1.jpg used on input line 5.
@@ -1067,13 +1067,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 9.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13] (./UC/UC1.3.tex
-<./images/UC1.3.jpg, id=528, 351.3125pt x 218.8175pt>
+<./images/UC1.3.jpg, id=520, 351.3125pt x 218.8175pt>
 File: ./images/UC1.3.jpg Graphic file (type jpg)
  <use ./images/UC1.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.jpg used on input line 5.
 (pdftex.def)             Requested size: 263.48372pt x 164.11272pt.
 
-<./images/UC1.3.1.jpg, id=531, 496.85625pt x 549.05125pt>
+<./images/UC1.3.1.jpg, id=523, 496.85625pt x 549.05125pt>
 File: ./images/UC1.3.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.jpg>
@@ -1090,7 +1090,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [15 <./images/UC1.3.1.jpg>]
-<./images/UC1.3.1.1.jpg, id=562, 304.13625pt x 222.8325pt>
+<./images/UC1.3.1.1.jpg, id=554, 304.13625pt x 222.8325pt>
 File: ./images/UC1.3.1.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.1.jpg>
@@ -1100,7 +1100,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 74.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <./images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=579, 702.625pt x 782
+ [16 <./images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=571, 702.625pt x 782
 .925pt>
 File: ./images/UC1.3.1.3.jpg Graphic file (type jpg)
 
@@ -1139,7 +1139,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 307.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [22]
-<./images/UC1.3.1.5.jpg, id=689, 303.1325pt x 256.96pt>
+<./images/UC1.3.1.5.jpg, id=681, 303.1325pt x 256.96pt>
 File: ./images/UC1.3.1.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.jpg>
@@ -1149,7 +1149,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 343.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23 <./images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=707, 385.44pt x 29
+ [23 <./images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=698, 385.44pt x 29
 3.095pt>
 File: ./images/UC1.3.1.5.1.jpg Graphic file (type jpg)
 
@@ -1177,7 +1177,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 424.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[25] <./images/UC1.3.1.6.jpg, id=742, 406.51875pt x 327.2225pt>
+[25] <./images/UC1.3.1.6.jpg, id=734, 406.51875pt x 327.2225pt>
 File: ./images/UC1.3.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.6.jpg>
@@ -1199,7 +1199,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 533.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28]
-<./images/UC1.3.1.7.jpg, id=787, 309.155pt x 211.79124pt>
+<./images/UC1.3.1.7.jpg, id=779, 309.155pt x 211.79124pt>
 File: ./images/UC1.3.1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.7.jpg>
@@ -1209,7 +1209,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 568.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29 <./images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=802, 381.425pt x 287
+ [29 <./images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=794, 381.425pt x 287
 .0725pt>
 File: ./images/UC1.3.1.8.jpg Graphic file (type jpg)
 
@@ -1225,7 +1225,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 642.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [31] <./images/UC1.3.2.jpg, id=827, 521.95pt x 349.305pt>
+ [31] <./images/UC1.3.2.jpg, id=819, 521.95pt x 349.305pt>
 File: ./images/UC1.3.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.jpg>
@@ -1236,7 +1236,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 676.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [32]
-<./images/UC1.3.2.1.jpg, id=842, 344.28625pt x 198.7425pt>
+<./images/UC1.3.2.1.jpg, id=834, 344.28625pt x 198.7425pt>
 File: ./images/UC1.3.2.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.1.jpg>
@@ -1247,7 +1247,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 698.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33 <./images/UC1.3.2.jpg>]
-<./images/UC1.3.2.2.jpg, id=854, 356.33125pt x 237.88875pt>
+<./images/UC1.3.2.2.jpg, id=846, 356.33125pt x 237.88875pt>
 File: ./images/UC1.3.2.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.2.jpg>
@@ -1274,14 +1274,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [37]
-(./UC/UC1.18.tex <./images/UC1.18.jpg, id=903, 622.325pt x 280.04625pt>
+(./UC/UC1.18.tex <./images/UC1.18.jpg, id=895, 622.325pt x 280.04625pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
 Package pdftex.def Info: ./images/UC1.18.jpg used on input line 5.
 (pdftex.def)             Requested size: 466.7426pt x 210.03415pt.
 
-<./images/UC1.18.1.jpg, id=908, 454.69875pt x 350.30875pt>
+<./images/UC1.18.1.jpg, id=900, 454.69875pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -1298,7 +1298,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39 <./images/UC1.18.1.jpg>]
-<./images/UC1.18.1.6.jpg, id=939, 523.9575pt x 302.12875pt>
+<./images/UC1.18.1.6.jpg, id=931, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 110.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [41 <./images/UC1.18.1.6.jpg>]
-<./images/UC1.18.2.jpg, id=962, 479.7925pt x 303.1325pt>
+<./images/UC1.18.2.jpg, id=954, 479.7925pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -1332,7 +1332,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 188.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]
-<./images/UC1.18.2.6.jpg, id=993, 496.85625pt x 296.10625pt>
+<./images/UC1.18.2.6.jpg, id=985, 496.85625pt x 296.10625pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -1359,7 +1359,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 19.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [47] (./UC/UC1.17.tex
-<./images/UC1.17.jpg, id=1034, 549.05125pt x 558.085pt>
+<./images/UC1.17.jpg, id=1026, 549.05125pt x 558.085pt>
 File: ./images/UC1.17.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.jpg>
@@ -1370,7 +1370,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [48 <./images/UC1.17.jpg>]
-<./images/UC1.17.4.jpg, id=1055, 618.31pt x 498.86375pt>
+<./images/UC1.17.4.jpg, id=1047, 618.31pt x 498.86375pt>
 File: ./images/UC1.17.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.jpg>
@@ -1387,7 +1387,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 65.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [50 <./images/UC1.17.4.jpg>]
-<./images/UC1.17.4.1.jpg, id=1084, 329.23pt x 312.16624pt>
+<./images/UC1.17.4.1.jpg, id=1076, 329.23pt x 312.16624pt>
 File: ./images/UC1.17.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.jpg>
@@ -1397,7 +1397,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 97.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [51 <./images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1101, 524.96124p
+ [51 <./images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1093, 524.96124p
 t x 389.455pt>
 File: ./images/UC1.17.4.1.2.jpg Graphic file (type jpg)
 
@@ -1425,7 +1425,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [55] (./UC/UC1.7.tex
-<./images/UC1.7.jpg, id=1146, 502.87875pt x 411.5375pt>
+<./images/UC1.7.jpg, id=1138, 502.87875pt x 411.5375pt>
 File: ./images/UC1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.jpg>
@@ -1452,7 +1452,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[59] (./UC/UC1.8.tex <./images/UC1.8.jpg, id=1210, 403.5075pt x 272.01625pt>
+[59] (./UC/UC1.8.tex <./images/UC1.8.jpg, id=1202, 403.5075pt x 272.01625pt>
 File: ./images/UC1.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.8.jpg>
@@ -1469,7 +1469,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [61] (./UC/UC1.9.tex
-<./images/UC1.9.jpg, id=1234, 722.7pt x 372.39125pt>
+<./images/UC1.9.jpg, id=1226, 722.7pt x 372.39125pt>
 File: ./images/UC1.9.jpg Graphic file (type jpg)
  <use ./images/UC1.9.jpg>
 Package pdftex.def Info: ./images/UC1.9.jpg used on input line 5.
@@ -1485,7 +1485,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [63]
-(./UC/UC1.10.tex <./images/UC1.10.jpg, id=1265, 358.33875pt x 174.6525pt>
+(./UC/UC1.10.tex <./images/UC1.10.jpg, id=1257, 358.33875pt x 174.6525pt>
 File: ./images/UC1.10.jpg Graphic file (type jpg)
 
 <use ./images/UC1.10.jpg>
@@ -1503,7 +1503,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [65] (./UC/UC1.11.tex
-<./images/UC1.11.jpg, id=1286, 537.00626pt x 199.74625pt>
+<./images/UC1.11.jpg, id=1278, 537.00626pt x 199.74625pt>
 File: ./images/UC1.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.11.jpg>
@@ -1916,40 +1916,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14436 strings out of 495017
- 207001 string characters out of 6181021
+ 14427 strings out of 495017
+ 206871 string characters out of 6181021
  386103 words of memory out of 5000000
- 16756 multiletter control sequences out of 15000+600000
+ 16752 multiletter control sequences out of 15000+600000
  15438 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,47p,821b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.31} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.12.7} has been referenced but does 
-not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.12.6} has been referenced but does 
-not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.12.5} has been referenced but does 
-not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{page.83} has been referenced but does not exist, re
-placed by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-frm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (82 pages, 1207139 bytes).
+ </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/
+pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/pietro/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecti1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecbx1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+2488.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (82 pages, 1181390 bytes).
 PDF statistics:
- 2022 PDF objects out of 2073 (max. 8388607)
- 1880 compressed objects within 19 object streams
- 544 named destinations out of 1000 (max. 500000)
+ 2278 PDF objects out of 2487 (max. 8388607)
+ 1876 compressed objects within 19 object streams
+ 539 named destinations out of 1000 (max. 500000)
  1338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

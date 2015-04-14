@@ -29,13 +29,13 @@
 		
 		\item \textbf{Analisi dinamica}: consiste nel verificare e validare il software o un suo componente osservandone il comportamento in esecuzione durante lo svolgimento di test. Tali test devono essere svolti in maniera ripetibile: significa che se eseguiti nello stesso ambiente e con gli stessi ingressi, devono produrre i medesimi risultati.
 		\begin{itemize}
-			\item \textbf{Test di unità}: esamina la correttezza di piccole unità di codice, generalmente prodotte da un singolo programmatore, in modo da verificare che esse rispettino i loro requisiti. È possibile svolgerlo con un alto grado di parallelismo possibilmente servendosi di un automa.			
-			\item \textbf{Test di integrazione}: verifica che l'integrazione delle unità che hanno superato il test precedente non produca problemi. Tali problemi, non potendo essere relativi alle singole unità, saranno da ricercare nell'interfaccia che le aggrega.			
-			\item \textbf{Test di sistema}: accerta la copertura dei requisiti software individuati nell'analisi dei requisiti permettendo la validazione del sistema prodotto.
-			\item \textbf{Test di regressione}: stabilisce se modifiche all'implementazione di un programma alterano elementi precedentemente funzionanti. Per far ciò si eseguono nuovamente i test di unità e integrazione sulle parti modificate.			
-			\item \textbf{Test funzionali}: mettono alla prova le funzionalità del sistema, simulando l'iterazione tra Utente e sistema.			
-			\item \textbf{Test Prestazionali}: valutano le prestazioni dell'applicazione in molti modi e da molti punti di vista. Questo tipo di test mostra ciò che proverà l'utente in termini di caricamento e velocità del sito. Le prestazioni sono importanti anche per motivi SEO, in quanto un sito lento verrà analizzato molto meno frequentemente dai web crawler dei motori di ricerca.			
-			\item \textbf{Test di collaudo}: attività formale supervisionata dal committente il cui buon esito comporta la possibilità di rilasciare il prodotto.
+			\item \textbf{Test di unità}: esamina la correttezza di piccole unità di codice, generalmente prodotte da un singolo programmatore, in modo da verificare che esse rispettino i loro requisiti. È possibile svolgerlo con un alto grado di parallelismo possibilmente servendosi di un automa;		
+			\item \textbf{Test di integrazione}: verifica che l'integrazione delle unità che hanno superato il test precedente non produca problemi. Tali problemi, non potendo essere relativi alle singole unità, saranno da ricercare nell'interfaccia che le aggrega;	
+			\item \textbf{Test di sistema}: accerta la copertura dei requisiti software individuati nell'analisi dei requisiti permettendo la validazione del sistema prodotto;
+			\item \textbf{Test di regressione}: stabilisce se modifiche all'implementazione di un programma alterano elementi precedentemente funzionanti. Per far ciò si eseguono nuovamente i test di unità e integrazione sulle parti modificate;			
+			\item \textbf{Test funzionali}: mettono alla prova le funzionalità del sistema, simulando l'iterazione tra Utente e sistema;		
+			\item \textbf{Test Prestazionali}: valutano le prestazioni dell'applicazione in molti modi e da molti punti di vista. Questo tipo di test mostra ciò che proverà l'utente in termini di caricamento e velocità del sito. Le prestazioni sono importanti anche per motivi SEO, in quanto un sito lento verrà analizzato molto meno frequentemente dai web crawler dei motori di ricerca;			
+			\item \textbf{Test di collaudo}: attività formale supervisionata dal committente il cui buon esito comporta la possibilità di rilasciare il prodotto;
 		\end{itemize}
 	\end{itemize}
 	}
@@ -73,13 +73,13 @@
 		\item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini.  \\
 		Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione.  \\
 		Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
-		Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice semplice con pochi rischi, superato questo limite il codice diventa più complesso, instabile e difficilmente manutenibile.
+		Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice semplice con pochi rischi, superato questo limite il codice diventa più complesso, instabile e difficilmente manutenibile;
 		
 		\item \textbf{Numero linee di codice}: rappresenta il numero di linee di codice all'interno di un blocco. 
 		Un indice elevato non rappresenta necessariamente un cattivo codice ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
 		
 		\item \textbf{Indice di manutenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di manutenibilità del codice.  \\
-		Un elevato valore indica un'ottima manutenibilità: un punteggio tra 20 e 100 indica che il codice ha manutenibilità buona; tra 10 e 19, una manutenibilità moderata; un punteggio tra 0 e 9 indica bassa manutenibilità.
+		Un elevato valore indica un'ottima manutenibilità: un punteggio tra 20 e 100 indica che il codice ha manutenibilità buona; tra 10 e 19, una manutenibilità moderata; un punteggio tra 0 e 9 indica bassa manutenibilità;
 		
 		\item \textbf{Copertura del codice}: è indicazione di quanto codice sorgente sia stato testato. Un elevato indice di copertura indica che il codice sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
 		
