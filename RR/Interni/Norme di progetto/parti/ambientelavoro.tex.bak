@@ -31,8 +31,8 @@ Git è uno strumento di versionamento veloce e di facile apprendimento che
 rappresenta uno dei migliori strumenti attualmente esistenti.\\ Per lo sviluppo collaborativo abbiamo deciso di appoggiarci al servizio \textbf{Github} che fornisce non solo un repository\ped{g} Git, ma anche strumenti utili alla collaborazione fra più persone, come il servizio di \textbf{Ticket}, \textbf{Wiki} e \textbf{Milestone}.\\
 Per quanto riguarda l’uso di Git sui computer di sviluppo, si è deciso l’uso
 della versione ufficiale rilasciata dal team di sviluppo di Git(2.3.3).\\
-Per interfacciarsi con il repository\ped{g} viene utlizzato \textbf{SmartGit}, un client multi piattaforma che permette di utilizzare Git in maniera rapida.\\
-Si descrive ora la procedura di corretto utilizzo del programma SmartGit .
+Per interfacciarsi con il repository\ped{g} viene utlizzato \textbf{SmartGit}, un client multipiattaforma che permette di utilizzare Git in maniera rapida.\\
+Si descrive ora la procedura di corretto utilizzo del programma smartgit .
 \begin{itemize}
 
 \item 	\textbf{Clonare il repository}: è possibile clonare il repository\ped{g} remoto in locale attraverso la seguente procedura:
@@ -368,7 +368,7 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 		stanno lavorando su tale attività. La percentuale di completamento deve 
 		essere impostata tra lo 0\% ed il 90\%; 
 		\item \textbf{Closed}: l’attività è stata conclusa. La percentuale di completamento dell’attività è al 100\%; 
-		\item \textbf{Rejected}: l’attività di verifica è stata rifiutata dal \emph{Responsabile del sotto progetto} in accordo con il \emph{Responsabile di Progetto}. 
+		\item \textbf{Rejected}: l’attività di verifica è stata rifiutata dal \emph{Responsabile del sottoprogetto} in accordo con il \emph{Responsabile di Progetto}. 
 		
 		\end{itemize}
 

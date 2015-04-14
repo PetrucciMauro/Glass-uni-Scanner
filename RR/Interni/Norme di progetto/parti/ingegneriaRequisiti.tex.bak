@@ -27,7 +27,7 @@
 			\end{enumerate}
 			Per la sintassi si rimanda a ”Dall’idea al codice\ped{g} con UML2.0, Luciano Baresi, Luigi Lavazza, Massimiliano Pianciamore”.
 			}
-			\subsubsection{Classificazione e priorità}{
+			\subsubsection{Classificazone e priorità}{
 				I requisiti\ped{g} dovranno essere classificati in:
 				\begin{enumerate}
 					\item Requisiti\ped{g} di processo\ped{g};
@@ -92,5 +92,5 @@
 				\item Stima dei costi del cambiamento considerando quante modifiche dovranno essere fatte ai requisiti\ped{g} e al progetto\ped{g} del sistema;
 				\item Decisione ed eventuale implementazione del cambiamento nei requisiti\ped{g} e nel progetto\ped{g} di sistema.
 			\end{enumerate}
-			Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sotto albero della foresta dei requisiti\ped{g} e dei test.
+			Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sottoalbero della foresta dei requisiti\ped{g} e dei test.
 			}

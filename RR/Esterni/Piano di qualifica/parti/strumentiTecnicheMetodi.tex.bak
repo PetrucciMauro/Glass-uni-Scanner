@@ -8,7 +8,7 @@
 		\item \textbf{W3C validator}: sito che controlla la validità dei markup nei documenti scritti in HTML;
 		\item \textbf{Jenkins}: sistema di per l'integrazione continua del codice e dei file latex;
 		\item \textbf{jSHint}: tool di supporto per la ricerca di eventuali errori nel codice javascript;
-		\item \textbf{Selenium IDE}: estensione di Firefox che permette di registrare test tramite browser;
+		\item \textbf{Selenium IDE}: esentione di Firefox che permette di registrare test tramite browser;
 		\item \textbf{ApacheBrench}: strumento a linea di comando utilizzato per misurare l’efficienza di un server web ed in grado di simulare situazioni di sovraccarico della rete;
 		\item \textbf{SpeedTracer}: plugin per Google Chrome che permette di verificare l’efficienza di un’applicazione web durante la sua esecuzione.
 	\end{itemize}
@@ -65,7 +65,7 @@
 \subsection{Metriche}{
 	\label{sec:metriche}
 	Il processo di verifica, per essere informativo, deve esse quantificabile. Le misure rilevate dal processo di verifica devono quindi essere basate su metriche stabilite a priori. \\
-	Una metrica è la misura di una qualche proprietà relativa ad una porzione di un documento software allo scopo di fornire informazioni significative sulla qualità del codice prodotto. \\
+	Una metrica è la misura di una qualche proprietà relativa ad una porzione di un documentosoftware allo scopo di fornire informazioni significative sulla qualità del codice prodotto. \\
 	Non bisogna tuttavia basarsi solamente sulle metriche, che sono solo indicatori a posteriori della bontà del lavoro svolto: un'importanza ancora maggiore la riveste il controllo sulla qualità del processo.
 	}
 \subsubsection{Metriche per il codice}{
