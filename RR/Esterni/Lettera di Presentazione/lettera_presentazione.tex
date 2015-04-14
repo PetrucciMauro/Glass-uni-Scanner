@@ -1,7 +1,23 @@
-\documentclass[a4paper,10pt]{letter}
-\usepackage{../../Template/format}
-\PassOptionsToPackage{a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm}{geometry}
+\documentclass{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
 
+\newcommand{\SpecificaTecnica}{\textit{Specifica Tecnica v.1.0.0}}
+\newcommand{\AnalisiDeiRequisiti}{\textit{Analisi dei Requisiti v.1.0.0}}
+\newcommand{\PianoDiProgetto}{\textit{Piano di Progetto v.1.0.0}}
+\newcommand{\NormeDiProgetto}{\textit{Norme di Progetto v.1.0.0}}
+\newcommand{\PianoDiQualifica}{\textit{Piano di Qualifica v.1.0.0}}
+\newcommand{\ManualeDiInstallazione}{\textit{Manuale Installatore v.1.0.0}}
+\newcommand{\ManualeUtente}{\textit{Manuale Utente v.1.0.0}}
+\newcommand{\ManualeAmministratore}{\textit{Manuale Amministratore v1.0.0}}
+\newcommand{\Glossario}{\textit{Glossario v.1.0.0}}
+\newcommand{\StudioDiFattibilita}{\textit{Studio di Fattibilità v.1.0.0}}
+
+\newcommand{\gruppo}{LateButSafe}
+\newcommand{\mail}{latebutsafe@gmail.com}
+\newcommand{\Cardin}{Prof. Riccardo Cardin}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega}
 %	HEADER
 \rhead{Lettera di Presentazione}
 
@@ -19,33 +35,26 @@
 	\gruppo}
  	
 \begin{document}	
-	\begin{letter}{Oggetto: \textbf{Consegna Revisione di Accettazione.}}
+	\begin{letter}{Oggetto: \textbf{Consegna Revisione dei Requisiti.}}
 	\opening {Egregio \Vardanega ,}
-	Con la presente, il gruppo \gruppo intende inviarLe i documenti necessari alla presentazione della Revisione di Accettazione prevista in data 2015-08-24.
+	Con la presente, il gruppo \gruppo intende inviarLe i documenti necessari alla presentazione della Revisione dei Requisiti prevista in data 24-04-2015.
 	Alla presente si allegano i seguenti documenti:
 			\begin{itemize}
 				\item Interni
 					\begin{itemize}
-						\item Norme di Progetto - v1.0;
-						\item Verbale riunione interna;						
+						\item \NormeDiProgetto;
+						\item Verbali riunione interna;						
 					\end{itemize}
 				\item Esterni
 					\begin{itemize}
-						\item Analisi dei Requisiti - v1.0;
-						\item Definizione di Prodotto - v1.0;
-						\item Glossario - v3.0;
-						\item Manuale Amministratore - v1.0;
-						\item Manuale Installazione - v1.0;
-						\item Manuale Utente - v1.0;
-						\item Piano di Qualifica - v1.0;
-						\item Piano di Progetto - v1.0;
-						\item Specifica Tecnica - v1.0.
+						\item \AnalisiDeiRequisiti;
+						\item \Glossario;
+						\item \PianoDiQualifica;
+						\item \PianoDiProgetto;
+						\item \StudioDiFattibilita.
 					\end{itemize}
 			\end{itemize} 
-		Il consuntivo finale del prodotto e l’esito dei test sono trattati in modo approfondito nei documenti allegati.\\
-		Oltre alla documentazione per la Revisione di Accettazione, verranno allegati anche i Javadoc, il codice sorgente e il codice dei test del prodotto.\\
-		Tutto il materiale è presente nel CD fornito in duplice copia.\\
-		Il gruppo sarà  contattabile per eventuali chiarimenti tramite l'e-mail in calce alla lettera. La ringrazio per la Sua attenzione.
+		Il gruppo sarà  contattabile per eventuali chiarimenti tramite l'e-mail del gruppo: \mail. La ringrazio per la Sua attenzione.
 		
 		\thispagestyle{fancy}
 		\closing{Distinti saluti.}

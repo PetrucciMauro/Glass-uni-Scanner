@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  13 APR 2015 15:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  14 APR 2015 03:31
 entering extended mode
-**NormeDiProgetto-v.1.tex
+**NormeDiProgetto_v.1.0.0.tex
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
-tto\NormeDiProgetto-v.1.tex"
+tto\NormeDiProgetto_v.1.0.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -1089,17 +1089,106 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count146
+\calc@Bcount=\count147
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count148
+\calc@Cskip=\skip70
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks29
+\ex@=\dimen170
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen171
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count149
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count150
+\leftroot@=\count151
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count152
+\DOTSCASE@=\count153
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen172
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count154
+\c@MaxMatrixCols=\count155
+\dotsspace@=\muskip11
+\c@parentequation=\count156
+\dspbrk@lvl=\count157
+\tag@help=\toks30
+\row@=\count158
+\column@=\count159
+\maxfields@=\count160
+\andhelp@=\toks31
+\eqnshift@=\dimen173
+\alignsep@=\dimen174
+\tagshift@=\dimen175
+\tagwidth@=\dimen176
+\totwidth@=\dimen177
+\lineht@=\dimen178
+\@envbody=\toks32
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count161
+\l_MT_multwidth_dim=\dimen179
+\origjot=\skip74
+\l_MT_shortvdotswithinadjustabove_dim=\dimen180
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen181
+\l_MT_above_intertext_sep=\dimen182
+\l_MT_below_intertext_sep=\dimen183
+\l_MT_above_shortintertext_sep=\dimen184
+\l_MT_below_shortintertext_sep=\dimen185
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
-\c@subsubsubsection=\count146
+Package hyperref Info: Option `colorlinks' set `true' on input line 124.
+\c@subsubsubsection=\count162
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
-tto\NormeDiProgetto-v.1.aux")
+tto\NormeDiProgetto_v.1.0.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1162,19 +1251,19 @@ LaTeX Font Info:    ... okay on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count147
-\scratchdimen=\dimen168
-\scratchbox=\box41
-\nofMPsegments=\count148
-\nofMParguments=\count149
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count150
-\MPscratchDim=\dimen169
-\MPnumerator=\count151
-\makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count163
+\scratchdimen=\dimen186
+\scratchbox=\box43
+\nofMPsegments=\count164
+\nofMParguments=\count165
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count166
+\MPscratchDim=\dimen187
+\MPnumerator=\count167
+\makeMPintoPDFobject=\count168
+\everyMPtoPDFconversion=\toks35
 )
-\AtBeginShipoutBox=\box42
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring ON on input line 29.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1182,7 +1271,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count153
+\c@section@level=\count169
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1194,7 +1283,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 29.
-\c@lstlisting=\count154
+\c@lstlisting=\count170
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1205,12 +1294,6 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
@@ -1254,7 +1337,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
-tto\NormeDiProgetto-v.1.toc"
+tto\NormeDiProgetto_v.1.0.0.toc"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
@@ -1262,11 +1345,11 @@ Package pdftex.def Info: ../../logo.jpg used on input line 42.
  [4])
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[5]
+ [5]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
 tto\parti\introduzione.tex")
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1324,10 +1407,10 @@ Package pdftex.def Info: ../../logo.jpg used on input line 39.
  [9]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 71.
+Package pdftex.def Info: ../../logo.jpg used on input line 70.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
@@ -1336,8 +1419,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 97.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [11])
+Underfull \hbox (badness 10000) in paragraph at lines 112--45
+
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12]
@@ -1487,12 +1574,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [25]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
-tto\parti\glossario.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-) 
+tto\parti\glossario.tex") 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
@@ -1503,35 +1585,31 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
-tto\NormeDiProgetto-v.1.aux")
+tto\NormeDiProgetto_v.1.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 1 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 12649 strings out of 493921
- 183198 string characters out of 3147280
- 334463 words of memory out of 3000000
- 15581 multiletter control sequences out of 15000+200000
- 15853 words of font info for 36 fonts, out of 3000000 for 9000
+ 13773 strings out of 493921
+ 199334 string characters out of 3147280
+ 356506 words of memory out of 3000000
+ 16678 multiletter control sequences out of 15000+200000
+ 16527 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,47p,886b,603s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
-t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx0800.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm08
-00.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto-v.1.pdf (27 pages, 399092 bytes).
+ 51i,16n,47p,890b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/cm-super/sfbx0800.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
+-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
+bx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on NormeDiProgetto_v.1.0.0.pdf (27 pages, 398965 bytes).
 PDF statistics:
  638 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)
