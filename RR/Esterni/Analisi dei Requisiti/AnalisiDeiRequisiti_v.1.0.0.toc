@@ -1,4 +1,5 @@
 \select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Descrizione generale}{9}{section.1}
 \contentsline {subsection}{\numberline {1.1}Funzioni del prodotto}{9}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Vincoli generali}{9}{subsection.1.2}
@@ -131,23 +132,20 @@
 \contentsline {subsubsection}{\numberline {2.12.1}UC1.9.1 - Caricamento di un template}{62}{subsubsection.2.12.1}
 \contentsline {subsubsection}{\numberline {2.12.2}UC 1.9.3 - Caricamento di un elemento}{63}{subsubsection.2.12.2}
 \contentsline {subsubsection}{\numberline {2.12.3}UC 1.9.4- Eliminazione di un template}{63}{subsubsection.2.12.3}
-\contentsline {subsubsection}{\numberline {2.12.4}UC 1.9.5 - Annulla/Ripristina}{64}{subsubsection.2.12.4}
-\contentsline {subsubsection}{\numberline {2.12.5}UC 1.9.5.1 - Annullamento comando}{64}{subsubsection.2.12.5}
-\contentsline {subsubsection}{\numberline {2.12.6}UC 1.9.5.2 - Ripristino del comando annullato}{64}{subsubsection.2.12.6}
-\contentsline {subsubsection}{\numberline {2.12.7}UC 1.9.5.3 - Ripristino del template eliminato}{65}{subsubsection.2.12.7}
-\contentsline {subsection}{\numberline {2.13}UC 1.10 - Login account utente}{66}{subsection.2.13}
-\contentsline {subsubsection}{\numberline {2.13.1}UC1.10.1 - Inserimento username}{66}{subsubsection.2.13.1}
-\contentsline {subsubsection}{\numberline {2.13.2}UC1.10.2 - Inserimento password}{66}{subsubsection.2.13.2}
-\contentsline {subsubsection}{\numberline {2.13.3}UC1.10.3 - Autenticazione}{67}{subsubsection.2.13.3}
-\contentsline {subsection}{\numberline {2.14}UC 1.11 - Gestione profilo}{68}{subsection.2.14}
-\contentsline {subsubsection}{\numberline {2.14.1}UC 1.11.1 - Modifica password}{68}{subsubsection.2.14.1}
-\contentsline {subsubsection}{\numberline {2.14.2}UC 1.11.2 - Conferma modifica password}{68}{subsubsection.2.14.2}
-\contentsline {subsubsection}{\numberline {2.14.3}UC 1.11.3 - Annulla}{69}{subsubsection.2.14.3}
-\contentsline {subsection}{\numberline {2.15}UC1.12 - Download infografica}{70}{subsection.2.15}
-\contentsline {subsection}{\numberline {2.16}UC1.13 - Logout}{71}{subsection.2.16}
-\contentsline {subsection}{\numberline {2.17}UC 1.15 - Eliminazione presentazione locale}{72}{subsection.2.17}
-\contentsline {subsection}{\numberline {2.18}UC 1.16 - Download presentazione}{73}{subsection.2.18}
-\contentsline {section}{\numberline {3}Requisiti}{74}{section.3}
-\contentsline {subsection}{\numberline {3.1}Requisiti Funzionali}{74}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Requisiti di Qualit\IeC {\`a}}{82}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Verifica dei Requisiti}{83}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {2.12.4}UC 1.9.5 - Ripristino template eliminato}{63}{subsubsection.2.12.4}
+\contentsline {subsection}{\numberline {2.13}UC 1.10 - Login account utente}{64}{subsection.2.13}
+\contentsline {subsubsection}{\numberline {2.13.1}UC1.10.1 - Inserimento username}{64}{subsubsection.2.13.1}
+\contentsline {subsubsection}{\numberline {2.13.2}UC1.10.2 - Inserimento password}{64}{subsubsection.2.13.2}
+\contentsline {subsubsection}{\numberline {2.13.3}UC1.10.3 - Autenticazione}{65}{subsubsection.2.13.3}
+\contentsline {subsection}{\numberline {2.14}UC 1.11 - Gestione profilo}{66}{subsection.2.14}
+\contentsline {subsubsection}{\numberline {2.14.1}UC 1.11.1 - Modifica password}{66}{subsubsection.2.14.1}
+\contentsline {subsubsection}{\numberline {2.14.2}UC 1.11.2 - Conferma modifica password}{66}{subsubsection.2.14.2}
+\contentsline {subsubsection}{\numberline {2.14.3}UC 1.11.3 - Annulla}{67}{subsubsection.2.14.3}
+\contentsline {subsection}{\numberline {2.15}UC1.12 - Download infografica}{68}{subsection.2.15}
+\contentsline {subsection}{\numberline {2.16}UC1.13 - Logout}{69}{subsection.2.16}
+\contentsline {subsection}{\numberline {2.17}UC 1.15 - Eliminazione presentazione locale}{70}{subsection.2.17}
+\contentsline {subsection}{\numberline {2.18}UC 1.16 - Download presentazione}{71}{subsection.2.18}
+\contentsline {section}{\numberline {3}Requisiti}{72}{section.3}
+\contentsline {subsection}{\numberline {3.1}Requisiti Funzionali}{72}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Requisiti di Qualit\IeC {\`a}}{80}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Verifica dei Requisiti}{81}{subsection.3.3}
