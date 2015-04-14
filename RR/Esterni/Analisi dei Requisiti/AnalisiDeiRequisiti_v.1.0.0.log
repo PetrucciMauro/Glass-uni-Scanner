@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  14 APR 2015 17:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  14 APR 2015 18:45
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.0.tex
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Template\format.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
+\format.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1187,8 +1187,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 124.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.aux"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.aux"
 
 LaTeX Warning: Label `fig:uc1' multiply defined.
 
@@ -1291,20 +1291,21 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Template\firstpage.tex"
-<../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
+\firstpage.tex" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
-Fiup/3° Anno/SWE/Premi/RR/logo.jpg>])
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Template\sommario.tex")
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
+ts/Giovanni/Studio e lavoro/GitHub/Premi/RR/logo.jpg>])
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Template
+\sommario.tex")
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -1313,8 +1314,8 @@ been already used, duplicate ignored
                    \relax 
 l.33 	\newpage
                [1]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\registroMod.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -1339,16 +1340,16 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.toc"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.toc"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4]
-File: ../../logo.jpg Graphic file (type jpg)
 
-<use ../../logo.jpg>
+[4]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [5]
@@ -1364,22 +1365,34 @@ Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [7]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.lof")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.lof")
 \tf@lof=\write4
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.lot")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.lot")
 \tf@lot=\write5
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\descrizioneGenerale.tex"
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
 
+[8]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\descrizioneGenerale.tex"
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 7.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 7.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -1392,11 +1405,11 @@ Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [9]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\casiduso.tex"
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\GerarchiaUtenti.tex"
-<./images/GerarchiaUtenti.jpg, id=448, 315.1775pt x 325.215pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\casiduso.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\GerarchiaUtenti.tex"
+<./images/GerarchiaUtenti.jpg, id=450, 315.1775pt x 325.215pt>
 File: ./images/GerarchiaUtenti.jpg Graphic file (type jpg)
 
 <use ./images/GerarchiaUtenti.jpg>
@@ -1407,43 +1420,44 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/GerarchiaUtenti.jpg>]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.tex" <./images/UC1.jpg, id=459, 780.9175pt x 683.55376pt>
+ [10 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/GerarchiaUtenti.jpg>]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.tex"
+<./images/UC1.jpg, id=460, 780.9175pt x 683.55376pt>
 File: ./images/UC1.jpg Graphic file (type jpg)
-
-<use ./images/UC1.jpg>
+ <use ./images/UC1.jpg>
 Package pdftex.def Info: ./images/UC1.jpg used on input line 5.
 (pdftex.def)             Requested size: 468.55411pt x 410.13542pt.
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 18.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.jpg>])
+ [11 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 7.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.2.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.2.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 9.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.3.tex" <./images/UC1.3.jpg, id=516, 351.3125pt x 218.8175pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.3.tex"
+<./images/UC1.3.jpg, id=517, 351.3125pt x 218.8175pt>
 File: ./images/UC1.3.jpg Graphic file (type jpg)
-
-<use ./images/UC1.3.jpg>
+ <use ./images/UC1.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.jpg used on input line 5.
 (pdftex.def)             Requested size: 263.48372pt x 164.11272pt.
 
-<./images/UC1.3.1.jpg, id=519, 496.85625pt x 549.05125pt>
+<./images/UC1.3.1.jpg, id=520, 496.85625pt x 549.05125pt>
 File: ./images/UC1.3.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.jpg>
@@ -1453,20 +1467,19 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.jpg>]
+ [14 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.jpg>]
+ [15 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.jpg>]
 
 LaTeX Warning: Hyper reference `uc1.3.1.11' on page 16 undefined on input line 
 42.
 
-<./images/UC1.3.1.1.jpg, id=549, 304.13625pt x 222.8325pt>
+<./images/UC1.3.1.1.jpg, id=550, 304.13625pt x 222.8325pt>
 File: ./images/UC1.3.1.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.1.jpg>
@@ -1476,9 +1489,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 74.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=566, 702.625pt x 78
-2.925pt>
+ [16 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=56
+7, 702.625pt x 782.925pt>
 File: ./images/UC1.3.1.3.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.3.jpg>
@@ -1494,19 +1507,19 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 116.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[18 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei Re
-quisiti/images/UC1.3.1.3.jpg>]
+[18 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Ester
+ni/Analisi dei Requisiti/images/UC1.3.1.3.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 163.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [19]
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 211.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[20]
+ [20]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 259.
@@ -1516,8 +1529,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 307.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22]
-<./images/UC1.3.1.5.jpg, id=675, 303.1325pt x 256.96pt>
+
+[22] <./images/UC1.3.1.5.jpg, id=676, 303.1325pt x 256.96pt>
 File: ./images/UC1.3.1.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.jpg>
@@ -1527,9 +1540,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 343.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=692, 385.44pt x 2
-93.095pt>
+ [23 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=
+693, 385.44pt x 293.095pt>
 File: ./images/UC1.3.1.5.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.1.jpg>
@@ -1550,14 +1563,15 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 375.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.5.1.jpg>]
+ [24 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.5.1.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 424.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[25] <./images/UC1.3.1.6.jpg, id=727, 406.51875pt x 327.2225pt>
+ [25]
+<./images/UC1.3.1.6.jpg, id=728, 406.51875pt x 327.2225pt>
 File: ./images/UC1.3.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.6.jpg>
@@ -1573,14 +1587,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 485.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[27 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei Re
-quisiti/images/UC1.3.1.6.jpg>]
+[27 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Ester
+ni/Analisi dei Requisiti/images/UC1.3.1.6.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 533.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28]
-<./images/UC1.3.1.7.jpg, id=772, 309.155pt x 211.79124pt>
+<./images/UC1.3.1.7.jpg, id=773, 309.155pt x 211.79124pt>
 File: ./images/UC1.3.1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.7.jpg>
@@ -1590,9 +1604,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 568.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=786, 381.425pt x 28
-7.0725pt>
+ [29 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=78
+7, 381.425pt x 287.0725pt>
 File: ./images/UC1.3.1.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.8.jpg>
@@ -1602,14 +1616,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 600.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.1.8.jpg>]
+ [30 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.1.8.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 642.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31]
-<./images/UC1.3.2.jpg, id=811, 521.95pt x 349.305pt>
+<./images/UC1.3.2.jpg, id=812, 521.95pt x 349.305pt>
 File: ./images/UC1.3.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.jpg>
@@ -1619,9 +1633,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 677.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [32 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.2.jpg>]
-<./images/UC1.3.2.1.jpg, id=826, 344.28625pt x 198.7425pt>
+ [32 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.2.jpg>] <./images/UC1.3.2.1.jpg, id=827,
+ 344.28625pt x 198.7425pt>
 File: ./images/UC1.3.2.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.1.jpg>
@@ -1631,9 +1645,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 714.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [33 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.2.1.jpg>] <./images/UC1.3.2.2.jpg, id=840, 356.33125pt x 
-237.88875pt>
+ [33 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.2.1.jpg>] <./images/UC1.3.2.2.jpg, id=84
+1, 356.33125pt x 237.88875pt>
 File: ./images/UC1.3.2.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.2.jpg>
@@ -1643,36 +1657,37 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 753.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [34 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.3.2.2.jpg>])
+ [34 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.3.2.2.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 11.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [35]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.14.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.14.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 13.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [36]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.5.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.5.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [37]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.18.tex" <./images/UC1.18.jpg, id=886, 622.325pt x 280.04625pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.18.tex"
+<./images/UC1.18.jpg, id=887, 622.325pt x 280.04625pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
 Package pdftex.def Info: ./images/UC1.18.jpg used on input line 5.
 (pdftex.def)             Requested size: 466.7426pt x 210.03415pt.
 
-<./images/UC1.18.1.jpg, id=891, 454.69875pt x 350.30875pt>
+<./images/UC1.18.1.jpg, id=892, 454.69875pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -1682,16 +1697,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [38 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.18.jpg>]
+ [38 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.18.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [39 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.18.1.jpg>]
-<./images/UC1.18.1.6.jpg, id=922, 523.9575pt x 302.12875pt>
+ [39 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.18.1.jpg>] <./images/UC1.18.1.6.jpg, id=92
+3, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
@@ -1707,9 +1721,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 110.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[41 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei Re
-quisiti/images/UC1.18.1.6.jpg>]
-<./images/UC1.18.2.jpg, id=945, 479.7925pt x 303.1325pt>
+[41 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Ester
+ni/Analisi dei Requisiti/images/UC1.18.1.6.jpg>]
+<./images/UC1.18.2.jpg, id=946, 479.7925pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -1719,15 +1733,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 144.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [42 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.18.2.jpg>]
+ [42 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.18.2.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 188.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]
-<./images/UC1.18.2.6.jpg, id=975, 496.85625pt x 296.10625pt>
+<./images/UC1.18.2.6.jpg, id=976, 496.85625pt x 296.10625pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -1737,8 +1750,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 215.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [44 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.18.2.6.jpg>]
+ [44 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.18.2.6.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 257.
@@ -1749,15 +1762,16 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 17.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [46]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.6.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.6.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 19.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [47]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.17.tex" <./images/UC1.17.jpg, id=1016, 549.05125pt x 558.085pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.17.tex"
+<./images/UC1.17.jpg, id=1017, 549.05125pt x 558.085pt>
 File: ./images/UC1.17.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.jpg>
@@ -1767,9 +1781,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [48 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.17.jpg>]
-<./images/UC1.17.4.jpg, id=1037, 618.31pt x 498.86375pt>
+ [48 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.17.jpg>] <./images/UC1.17.4.jpg, id=1038, 
+618.31pt x 498.86375pt>
 File: ./images/UC1.17.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.jpg>
@@ -1785,9 +1799,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 65.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[50 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei Re
-quisiti/images/UC1.17.4.jpg>]
-<./images/UC1.17.4.1.jpg, id=1065, 329.23pt x 312.16624pt>
+[50 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Ester
+ni/Analisi dei Requisiti/images/UC1.17.4.jpg>]
+<./images/UC1.17.4.1.jpg, id=1066, 329.23pt x 312.16624pt>
 File: ./images/UC1.17.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.jpg>
@@ -1797,9 +1811,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 97.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [51 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1082, 524.96124
-pt x 389.455pt>
+ [51 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.17.4.1.jpg>]
+<./images/UC1.17.4.1.2.jpg, id=1083, 524.96124pt x 389.455pt>
 File: ./images/UC1.17.4.1.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.2.jpg>
@@ -1809,8 +1823,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 120.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [52 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.17.4.1.2.jpg>]
+ [52 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.17.4.1.2.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 171.
@@ -1820,15 +1834,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 214.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [54])
-File: ../../logo.jpg Graphic file (type jpg)
 
-<use ../../logo.jpg>
+[54])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [55]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.7.tex" <./images/UC1.7.jpg, id=1127, 502.87875pt x 411.5375pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.7.tex"
+<./images/UC1.7.jpg, id=1128, 502.87875pt x 411.5375pt>
 File: ./images/UC1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.jpg>
@@ -1838,11 +1853,10 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [56 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.7.jpg>]
+ [56 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.7.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [57]
@@ -1852,13 +1866,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 116.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [58])
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[59]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.8.tex" <./images/UC1.8.jpg, id=1190, 403.5075pt x 272.01625pt>
+ [59]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.8.tex"
+<./images/UC1.8.jpg, id=1191, 403.5075pt x 272.01625pt>
 File: ./images/UC1.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.8.jpg>
@@ -1868,35 +1883,36 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [60 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.8.jpg>])
+ [60 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.8.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [61]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.9.tex" <./images/UC1.9.jpg, id=1214, 722.7pt x 372.39125pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.9.tex"
+<./images/UC1.9.jpg, id=1215, 722.7pt x 372.39125pt>
 File: ./images/UC1.9.jpg Graphic file (type jpg)
-
-<use ./images/UC1.9.jpg>
+ <use ./images/UC1.9.jpg>
 Package pdftex.def Info: ./images/UC1.9.jpg used on input line 5.
 (pdftex.def)             Requested size: 433.62334pt x 223.43646pt.
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [62 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.9.jpg>])
+ [62 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.9.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [63]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.10.tex" <./images/UC1.10.jpg, id=1244, 358.33875pt x 174.6525pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.10.tex"
+<./images/UC1.10.jpg, id=1245, 358.33875pt x 174.6525pt>
 File: ./images/UC1.10.jpg Graphic file (type jpg)
 
 <use ./images/UC1.10.jpg>
@@ -1907,16 +1923,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [64 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.10.jpg>]
+ [64 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.10.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [65]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.11.tex" <./images/UC1.11.jpg, id=1265, 537.00626pt x 199.74625pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.11.tex"
+<./images/UC1.11.jpg, id=1266, 537.00626pt x 199.74625pt>
 File: ./images/UC1.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.11.jpg>
@@ -1927,46 +1943,73 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [66 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RR/Esterni/Analisi dei R
-equisiti/images/UC1.11.jpg>]
+ [66 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RR/Este
+rni/Analisi dei Requisiti/images/UC1.11.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [67]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.12.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.12.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [68]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.13.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.13.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [69]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.15.tex")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.15.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [70]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\UC\UC1.16.tex"))
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\UC\UC1.16.tex"))
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [71]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\requisiti.tex"
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\requisitiFunz.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\requisiti.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\requisitiFunz.tex"
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 19--19
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 19--19
+\T1/cmr/m/n/12 di au-ten-ti-car-si al si-ste-ma con
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 19--19
+\T1/cmr/m/n/12 un account$[]$ va-li-do in-se-ren-do
+ []
+
+
 Underfull \hbox (badness 1715) in paragraph at lines 36--36
 \T1/cmr/m/n/12 edi-ta-re te-sto al-l'in-ter-no di un
  []
@@ -2037,11 +2080,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 86--86
-\T1/cmr/m/n/12 eli-mi-na-re un book-mark ad un
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
 []|\T1/cmr/m/n/12 UC 1.3.1.7,
  []
@@ -2071,23 +2109,23 @@ Underfull \hbox (badness 2005) in paragraph at lines 103--103
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 103--103
-\T1/cmr/m/n/12 di im-po-sta-re un book-mark da
+Underfull \hbox (badness 2662) in paragraph at lines 103--103
+\T1/cmr/m/n/12 mo-bi-le ad un frame$[]$ di una
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 103--103
-\T1/cmr/m/n/12 mo-bi-le ad un fra-me di una
+Underfull \hbox (badness 2005) in paragraph at lines 105--105
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 105--105
+\T1/cmr/m/n/12 mo-bi-le ad un frame$[]$ di una
  []
 
 
 Underfull \hbox (badness 2005) in paragraph at lines 112--112
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 112--112
-\T1/cmr/m/n/12 di or-ga-niz-za-re i fi-le im-ma-gi-ne
  []
 
 
@@ -2106,8 +2144,18 @@ Underfull \hbox (badness 5490) in paragraph at lines 116--116
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 116--116
-\T1/cmr/m/n/12 do di eli-mi-na-re dal ser-ver le
+Underfull \hbox (badness 1292) in paragraph at lines 116--116
+\T1/cmr/m/n/12 do di eli-mi-na-re dal server$[]$ le
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 120--120
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 120--120
+\T1/cmr/m/n/12 do di eli-mi-na-re dal server$[]$ le
  []
 
 
@@ -2155,13 +2203,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [74]
-Underfull \hbox (badness 5490) in paragraph at lines 150--150
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+Underfull \hbox (badness 2005) in paragraph at lines 140--140
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 150--150
-\T1/cmr/m/n/12 do di so-spen-de-re e ri-pren-de-re
+Underfull \hbox (badness 5490) in paragraph at lines 150--150
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
@@ -2200,8 +2248,8 @@ Underfull \hbox (badness 5490) in paragraph at lines 160--160
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 160--160
-\T1/cmr/m/n/12 do di so-spen-de-re e riav-via-re
+Underfull \hbox (badness 2495) in paragraph at lines 160--160
+\T1/cmr/m/n/12 do di sospendere$[]$ e riav-via-re
  []
 
 
@@ -2220,8 +2268,8 @@ Underfull \hbox (badness 2005) in paragraph at lines 164--164
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 164--164
-\T1/cmr/m/n/12 un vi-deo pre-sen-te nel fra-me
+Underfull \hbox (badness 2856) in paragraph at lines 164--164
+\T1/cmr/m/n/12 un vi-deo pre-sen-te nel frame$[]$
  []
 
 
@@ -2259,13 +2307,28 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 179.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [76]
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/cmr/m/n/12 L'utente am-mi-ni-stra-to-re de-ve
+ []
+
+
+Underfull \hbox (badness 5771) in paragraph at lines 180--180
+\T1/cmr/m/n/12 es-se-re in gra-do di eli-mi-na-re
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 184--184
+\T1/cmr/m/n/12 gra-do di ge-sti-re un'infografica$[]$
+ []
+
+
 Underfull \hbox (badness 2005) in paragraph at lines 188--188
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 188--188
-\T1/cmr/m/n/12 di se-le-zio-na-re il tem-pla-te di
+Underfull \hbox (badness 2970) in paragraph at lines 188--188
+\T1/cmr/m/n/12 di se-le-zio-na-re il template$[]$ di
  []
 
 
@@ -2359,6 +2422,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
  []
 
 
+Underfull \hbox (badness 5490) in paragraph at lines 210--210
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\T1/cmr/m/n/12 do di ri-muo-ve-re lo sfon-do
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 212--212
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+\T1/cmr/m/n/12 do di in-se-ri-re uno sfon-do
+ []
+
+
 Underfull \hbox (badness 2005) in paragraph at lines 214--214
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
@@ -2378,13 +2461,33 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [78]
+Underfull \hbox (badness 5490) in paragraph at lines 220--220
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 220--220
+\T1/cmr/m/n/12 do di eli-mi-na-re un ele-men-
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 222--222
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
 Underfull \hbox (badness 2005) in paragraph at lines 224--224
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 226--226
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+Underfull \hbox (badness 2005) in paragraph at lines 226--226
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 226--226
+\T1/cmr/m/n/12 di espor-ta-re un'infografica$[]$ in
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2403,8 +2506,21 @@ Package pdftex.def Info: ../../logo.jpg used on input line 3.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [81]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\requisitiQual.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\requisitiQual.tex"
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
 Underfull \hbox (badness 2512) in paragraph at lines 17--17
 \T1/cmr/m/n/12 ne esau-sti-va del-le fun-zio-na-li-t�
  []
@@ -2425,8 +2541,31 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [82]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\parti\requisitiVincolo.tex")) 
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\parti\requisitiVincolo.tex"
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 17--18
+[]|\T1/cmr/m/n/12 Il si-ste-ma de-ve es-se-re se-gui-re
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 17--18
+\T1/cmr/m/n/12 si-gn for-ni-te da Goo-gle e dal
+ []
+
+)) 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
@@ -2436,8 +2575,8 @@ Package pdftex.def Info: ../../logo.jpg used on input line 46.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RR\Esterni\Analisi dei Requi
-siti\AnalisiDeiRequisiti_v.1.0.0.aux")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RR\Esterni\
+Analisi dei Requisiti\AnalisiDeiRequisiti_v.1.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 46.
 
@@ -2449,25 +2588,26 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14627 strings out of 493921
- 212838 string characters out of 3147280
+ 14634 strings out of 493921
+ 214165 string characters out of 3147274
  387506 words of memory out of 3000000
- 17027 multiletter control sequences out of 15000+200000
- 15438 words of font info for 37 fonts, out of 3000000 for 9000
+ 17033 multiletter control sequences out of 15000+200000
+ 17578 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  51i,16n,47p,841b,810s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
-m0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (84 pages, 1432174 bytes).
+es/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfr
+m0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (84 pages, 1443949 bytes).
 PDF statistics:
- 2006 PDF objects out of 2073 (max. 8388607)
+ 2010 PDF objects out of 2073 (max. 8388607)
  541 named destinations out of 1000 (max. 500000)
  1338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

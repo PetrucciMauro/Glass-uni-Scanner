@@ -72,7 +72,7 @@ void MainWindow::on_Pedicizza_clicked()
     QString dirname=dialog.getExistingDirectory();
     std::cout<<dirname.toStdString()<<std::endl;
     dir=new QDir(dirname);
-    QStringList files=dir->entryList(QStringList("*.*"));
+    QStringList files=dir->entryList(QStringList("*.tex"));
     QStringList::ConstIterator it = files.begin();
     bool ok=false;
     for (; it!=files.end(); ++it){

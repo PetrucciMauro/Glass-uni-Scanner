@@ -350,7 +350,6 @@ void DataBase::applyGlossario(const QString& nomefile){
 
     QMap<QString, Lemma*>::const_iterator it=db.begin();
     for (;it!=db.end();++it){
-        /*std::cout<<it.value()->getWord().toStdString()<<std::endl;*/
         replaceFile(nomefile, it.value()->getWord());
         std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
         for(; i!=it.value()->getPlural().end();++i){
