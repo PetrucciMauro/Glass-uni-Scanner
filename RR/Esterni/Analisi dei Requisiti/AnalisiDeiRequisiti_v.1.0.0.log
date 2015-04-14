@@ -1,19 +1,14 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.29)  14 APR 2015 12:24
-=======
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.13)  14 APR 2015 13:20
->>>>>>> origin/master
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  14 APR 2015 13:56
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **AnalisiDeiRequisiti_v.1.0.0.tex
 (./AnalisiDeiRequisiti_v.1.0.0.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -29,19 +24,19 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 (../../Template/format.sty
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -191,7 +186,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -222,7 +217,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -246,22 +241,22 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -277,65 +272,64 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/03/24 3.9k The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel-italian/italian.ldf
-Language: italian 2014/03/29 v1.3k Italian support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2013/11/22 v1.3f Italian support from the babel system
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/03/24 3.9k Babel common definitions
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen111
 )
 \it@lettering=\count91
-\it@doublequoteactive=\count92
-\it@ISOcompliance=\count93
-\Virgola=\count94
+Package babel Info: Making " an active character on input line 98.
+\Virgola=\count92
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count95
+\et@xins=\count93
 )
-\etb@tempcnta=\count96
+\etb@tempcnta=\count94
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
-\csq@reset=\count97
-\csq@gtype=\count98
-\csq@glevel=\count99
-\csq@qlevel=\count100
-\csq@maxlvl=\count101
-\csq@tshold=\count102
+\csq@reset=\count95
+\csq@gtype=\count96
+\csq@glevel=\count97
+\csq@qlevel=\count98
+\csq@maxlvl=\count99
+\csq@tshold=\count100
 \csq@ltx@everypar=\toks18
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen112
 \extrarowheight=\dimen113
@@ -348,49 +342,49 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@old@col=\dimen116
 \TX@target=\dimen117
 \TX@delta=\dimen118
-\TX@cols=\count103
+\TX@cols=\count101
 \TX@ftn=\toks20
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count104
+\Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -428,24 +422,24 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen121
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count105
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
@@ -456,10 +450,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count106
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen122
-\Fld@menulength=\count109
+\Fld@menulength=\count107
 \Field@Width=\dimen123
 \Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -471,29 +465,29 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip45
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip46
 \f@ncyO@elh=\skip47
 \f@ncyO@erh=\skip48
@@ -504,54 +498,54 @@ Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count115
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count113
 \lst@gtempboxa=\box26
 \lst@token=\toks21
-\lst@length=\count116
+\lst@length=\count114
 \lst@currlwidth=\dimen125
-\lst@column=\count117
-\lst@pos=\count118
+\lst@column=\count115
+\lst@pos=\count116
 \lst@lostspace=\dimen126
 \lst@width=\dimen127
-\lst@newlines=\count119
-\lst@lineno=\count120
+\lst@newlines=\count117
+\lst@lineno=\count118
 \lst@maxwidth=\dimen128
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count121
-\lst@skipnumbers=\count122
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
 \lst@framebox=\box27
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/03/04 1.5c listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks22
 \minrowclearance=\skip55
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count123
+\rownum=\count121
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -562,7 +556,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen129
 \lightrulewidth=\dimen130
@@ -574,54 +568,54 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen136
 \cmidrulekern=\dimen137
 \defaultaddspace=\dimen138
-\@cmidla=\count124
-\@cmidlb=\count125
+\@cmidla=\count122
+\@cmidlb=\count123
 \@aboverulesep=\dimen139
 \@belowrulesep=\dimen140
-\@thisruleclass=\count126
-\@lastruleclass=\count127
+\@thisruleclass=\count124
+\@lastruleclass=\count125
 \@thisrulewidth=\dimen141
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/makeidx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip56
 \LTright=\skip57
 \LTpre=\skip58
 \LTpost=\skip59
-\LTchunksize=\count128
+\LTchunksize=\count126
 \LTcapwidth=\dimen142
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count129
-\LT@rows=\count130
-\c@LT@tables=\count131
-\c@LT@chunks=\count132
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
 \LT@p@ftn=\toks23
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen143
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tabu/tabu.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box32
-\sift@deathcycles=\count133
+\sift@deathcycles=\count131
 \@vwid@loff=\dimen144
 \@vwid@roff=\dimen145
 )
-\c@taburow=\count134
-\tabu@nbcols=\count135
-\tabu@cnt=\count136
-\tabu@Xcol=\count137
-\tabu@alloc=\count138
-\tabu@nested=\count139
+\c@taburow=\count132
+\tabu@nbcols=\count133
+\tabu@cnt=\count134
+\tabu@Xcol=\count135
+\tabu@alloc=\count136
+\tabu@nested=\count137
 \tabu@target=\dimen146
 \tabu@spreadtarget=\dimen147
 \tabu@naturalX=\dimen148
@@ -639,10 +633,10 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@vleads=\box36
 \tabu@cellskip=\skip60
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/xr.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box37
 \beforetitleunit=\skip61
@@ -654,28 +648,28 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen158
 \titlewidthfirst=\dimen159
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count140
+\BKM@id=\count138
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count141
+\c@float@type=\count139
 \float@exts=\toks27
 \float@box=\box38
 \@float@everytoks=\toks28
 \@floatcapt=\box39
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen160
@@ -686,94 +680,94 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen165
 \caption@hangindent=\dimen166
 )
-\c@ContinuedFloat=\count142
+\c@ContinuedFloat=\count140
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 ))
-\c@KVtest=\count143
+\c@KVtest=\count141
 \sf@farskip=\skip63
 \sf@captopadj=\dimen167
 \sf@capskip=\skip64
 \sf@nearskip=\skip65
-\c@subfigure=\count144
-\c@subfigure@save=\count145
-\c@lofdepth=\count146
-\c@subtable=\count147
-\c@subtable@save=\count148
-\c@lotdepth=\count149
+\c@subfigure=\count142
+\c@subfigure@save=\count143
+\c@lofdepth=\count144
+\c@subtable=\count145
+\c@subtable@save=\count146
+\c@lotdepth=\count147
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/yfonts/yfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/yfonts/yfonts.sty
 Package: yfonts 2003/01/08 v1.3 (WaS)
 Now handling font encoding LY ...
 ... no UTF-8 mapping file for font encoding LY
 Now handling font encoding LYG ...
 ... no UTF-8 mapping file for font encoding LYG
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eurosym/eurosym.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box40
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mathtools.sty
-Package: mathtools 2014/05/21 v1.14 mathematical typesetting tools
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count150
-\calc@Bcount=\count151
+\calc@Acount=\count148
+\calc@Bcount=\count149
 \calc@Adimen=\dimen168
 \calc@Bdimen=\dimen169
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count152
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count150
 \calc@Cskip=\skip70
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mhsetup.sty
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip71
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks29
 \ex@=\dimen170
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen171
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count153
+\inf@bad=\count151
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count154
-\leftroot@=\count155
+\uproot@=\count152
+\leftroot@=\count153
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count156
-\DOTSCASE@=\count157
+\classnum@=\count154
+\DOTSCASE@=\count155
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -782,15 +776,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen172
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count158
-\c@MaxMatrixCols=\count159
+\macc@depth=\count156
+\c@MaxMatrixCols=\count157
 \dotsspace@=\muskip11
-\c@parentequation=\count160
-\dspbrk@lvl=\count161
+\c@parentequation=\count158
+\dspbrk@lvl=\count159
 \tag@help=\toks30
-\row@=\count162
-\column@=\count163
-\maxfields@=\count164
+\row@=\count160
+\column@=\count161
+\maxfields@=\count162
 \andhelp@=\toks31
 \eqnshift@=\dimen173
 \alignsep@=\dimen174
@@ -807,7 +801,7 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count165
+\g_MT_multlinerow_int=\count163
 \l_MT_multwidth_dim=\dimen179
 \origjot=\skip74
 \l_MT_shortvdotswithinadjustabove_dim=\dimen180
@@ -817,11 +811,11 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen184
 \l_MT_below_shortintertext_sep=\dimen185
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 124.
-\c@subsubsubsection=\count166
+\c@subsubsubsection=\count164
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -888,23 +882,23 @@ LaTeX Font Info:    ... okay on input line 29.
 
 LaTeX Info: Redefining \it@ocap on input line 29.
 LaTeX Info: Redefining \it@ccap on input line 29.
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
+\scratchcounter=\count165
 \scratchdimen=\dimen186
 \scratchbox=\box43
-\nofMPsegments=\count168
-\nofMParguments=\count169
+\nofMPsegments=\count166
+\nofMParguments=\count167
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count170
+\MPscratchCnt=\count168
 \MPscratchDim=\dimen187
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
 \everyMPtoPDFconversion=\toks35
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -912,20 +906,20 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring ON on input line 29.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count173
+\c@section@level=\count171
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -937,7 +931,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 29.
-\c@lstlisting=\count174
+\c@lstlisting=\count172
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -950,11 +944,10 @@ Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../../l
-ogo.jpg>]) (../../Template/sommario.tex)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo.jpg>]) (../../T
+emplate/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -1028,25 +1021,19 @@ Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (./parti/descrizioneGenerale.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
 )
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [9] (./parti/casiduso.tex (./UC/GerarchiaUtenti.tex
-<./images/GerarchiaUtenti.jpg, id=451, 302.12875pt x 261.97874pt>
-=======
 
 [9] (./parti/casiduso.tex (./UC/GerarchiaUtenti.tex
-<./images/GerarchiaUtenti.jpg, id=451, 315.1775pt x 325.215pt>
->>>>>>> origin/master
+<./images/GerarchiaUtenti.jpg, id=455, 315.1775pt x 325.215pt>
 File: ./images/GerarchiaUtenti.jpg Graphic file (type jpg)
 
 <use ./images/GerarchiaUtenti.jpg>
@@ -1058,7 +1045,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10 <./images/GerarchiaUtenti.jpg>] (./UC/UC1.tex
-<./images/UC1.jpg, id=462, 780.9175pt x 683.55376pt>
+<./images/UC1.jpg, id=466, 780.9175pt x 683.55376pt>
 File: ./images/UC1.jpg Graphic file (type jpg)
  <use ./images/UC1.jpg>
 Package pdftex.def Info: ./images/UC1.jpg used on input line 5.
@@ -1080,13 +1067,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 9.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13] (./UC/UC1.3.tex
-<./images/UC1.3.jpg, id=520, 351.3125pt x 218.8175pt>
+<./images/UC1.3.jpg, id=524, 351.3125pt x 218.8175pt>
 File: ./images/UC1.3.jpg Graphic file (type jpg)
  <use ./images/UC1.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.jpg used on input line 5.
 (pdftex.def)             Requested size: 263.48372pt x 164.11272pt.
 
-<./images/UC1.3.1.jpg, id=523, 496.85625pt x 549.05125pt>
+<./images/UC1.3.1.jpg, id=527, 496.85625pt x 549.05125pt>
 File: ./images/UC1.3.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.jpg>
@@ -1103,15 +1090,11 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [15 <./images/UC1.3.1.jpg>]
-<<<<<<< HEAD
 
 LaTeX Warning: Hyper reference `uc1.3.1.11' on page 16 undefined on input line 
 42.
 
-<./images/UC1.3.1.1.jpg, id=553, 304.13625pt x 222.8325pt>
-=======
-<./images/UC1.3.1.1.jpg, id=554, 304.13625pt x 222.8325pt>
->>>>>>> origin/master
+<./images/UC1.3.1.1.jpg, id=557, 304.13625pt x 222.8325pt>
 File: ./images/UC1.3.1.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.1.jpg>
@@ -1121,11 +1104,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 74.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [16 <./images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=570, 702.625pt x 782
-=======
- [16 <./images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=571, 702.625pt x 782
->>>>>>> origin/master
+ [16 <./images/UC1.3.1.1.jpg>] <./images/UC1.3.1.3.jpg, id=574, 702.625pt x 782
 .925pt>
 File: ./images/UC1.3.1.3.jpg Graphic file (type jpg)
 
@@ -1164,11 +1143,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 307.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [22]
-<<<<<<< HEAD
-<./images/UC1.3.1.5.jpg, id=680, 303.1325pt x 256.96pt>
-=======
-<./images/UC1.3.1.5.jpg, id=681, 303.1325pt x 256.96pt>
->>>>>>> origin/master
+<./images/UC1.3.1.5.jpg, id=684, 303.1325pt x 256.96pt>
 File: ./images/UC1.3.1.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.5.jpg>
@@ -1178,11 +1153,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 343.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [23 <./images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=697, 385.44pt x 29
-=======
- [23 <./images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=698, 385.44pt x 29
->>>>>>> origin/master
+ [23 <./images/UC1.3.1.5.jpg>] <./images/UC1.3.1.5.1.jpg, id=702, 385.44pt x 29
 3.095pt>
 File: ./images/UC1.3.1.5.1.jpg Graphic file (type jpg)
 
@@ -1210,11 +1181,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 424.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-<<<<<<< HEAD
-[25] <./images/UC1.3.1.6.jpg, id=733, 406.51875pt x 327.2225pt>
-=======
-[25] <./images/UC1.3.1.6.jpg, id=734, 406.51875pt x 327.2225pt>
->>>>>>> origin/master
+[25] <./images/UC1.3.1.6.jpg, id=737, 406.51875pt x 327.2225pt>
 File: ./images/UC1.3.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.6.jpg>
@@ -1236,11 +1203,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 533.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28]
-<<<<<<< HEAD
-<./images/UC1.3.1.7.jpg, id=778, 309.155pt x 211.79124pt>
-=======
-<./images/UC1.3.1.7.jpg, id=779, 309.155pt x 211.79124pt>
->>>>>>> origin/master
+<./images/UC1.3.1.7.jpg, id=782, 309.155pt x 211.79124pt>
 File: ./images/UC1.3.1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.7.jpg>
@@ -1250,11 +1213,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 568.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [29 <./images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=793, 381.425pt x 287
-=======
- [29 <./images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=794, 381.425pt x 287
->>>>>>> origin/master
+ [29 <./images/UC1.3.1.7.jpg>] <./images/UC1.3.1.8.jpg, id=797, 381.425pt x 287
 .0725pt>
 File: ./images/UC1.3.1.8.jpg Graphic file (type jpg)
 
@@ -1270,11 +1229,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 642.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [31] <./images/UC1.3.2.jpg, id=818, 521.95pt x 349.305pt>
-=======
- [31] <./images/UC1.3.2.jpg, id=819, 521.95pt x 349.305pt>
->>>>>>> origin/master
+ [31] <./images/UC1.3.2.jpg, id=822, 521.95pt x 349.305pt>
 File: ./images/UC1.3.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.jpg>
@@ -1284,13 +1239,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 677.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
  [32 <./images/UC1.3.2.jpg>]
-<./images/UC1.3.2.1.jpg, id=833, 344.28625pt x 198.7425pt>
-=======
- [32]
-<./images/UC1.3.2.1.jpg, id=834, 344.28625pt x 198.7425pt>
->>>>>>> origin/master
+<./images/UC1.3.2.1.jpg, id=837, 344.28625pt x 198.7425pt>
 File: ./images/UC1.3.2.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.1.jpg>
@@ -1300,13 +1250,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 714.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [33 <./images/UC1.3.2.1.jpg>] <./images/UC1.3.2.2.jpg, id=847, 356.33125pt x 2
+ [33 <./images/UC1.3.2.1.jpg>] <./images/UC1.3.2.2.jpg, id=851, 356.33125pt x 2
 37.88875pt>
-=======
- [33 <./images/UC1.3.2.jpg>]
-<./images/UC1.3.2.2.jpg, id=846, 356.33125pt x 237.88875pt>
->>>>>>> origin/master
 File: ./images/UC1.3.2.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.2.2.jpg>
@@ -1332,24 +1277,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
  [37] (./UC/UC1.18.tex
-<./images/UC1.18.jpg, id=894, 622.325pt x 280.04625pt>
-=======
- [37]
-(./UC/UC1.18.tex <./images/UC1.18.jpg, id=895, 622.325pt x 280.04625pt>
->>>>>>> origin/master
+<./images/UC1.18.jpg, id=898, 622.325pt x 280.04625pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
 Package pdftex.def Info: ./images/UC1.18.jpg used on input line 5.
 (pdftex.def)             Requested size: 466.7426pt x 210.03415pt.
 
-<<<<<<< HEAD
-<./images/UC1.18.1.jpg, id=899, 454.69875pt x 350.30875pt>
-=======
-<./images/UC1.18.1.jpg, id=900, 454.69875pt x 350.30875pt>
->>>>>>> origin/master
+<./images/UC1.18.1.jpg, id=903, 454.69875pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -1366,11 +1302,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39 <./images/UC1.18.1.jpg>]
-<<<<<<< HEAD
-<./images/UC1.18.1.6.jpg, id=930, 523.9575pt x 302.12875pt>
-=======
-<./images/UC1.18.1.6.jpg, id=931, 523.9575pt x 302.12875pt>
->>>>>>> origin/master
+<./images/UC1.18.1.6.jpg, id=934, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
@@ -1387,11 +1319,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 110.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [41 <./images/UC1.18.1.6.jpg>]
-<<<<<<< HEAD
-<./images/UC1.18.2.jpg, id=953, 479.7925pt x 303.1325pt>
-=======
-<./images/UC1.18.2.jpg, id=954, 479.7925pt x 303.1325pt>
->>>>>>> origin/master
+<./images/UC1.18.2.jpg, id=957, 479.7925pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -1408,11 +1336,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 188.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]
-<<<<<<< HEAD
-<./images/UC1.18.2.6.jpg, id=984, 496.85625pt x 296.10625pt>
-=======
-<./images/UC1.18.2.6.jpg, id=985, 496.85625pt x 296.10625pt>
->>>>>>> origin/master
+<./images/UC1.18.2.6.jpg, id=988, 496.85625pt x 296.10625pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -1439,11 +1363,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 19.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [47] (./UC/UC1.17.tex
-<<<<<<< HEAD
-<./images/UC1.17.jpg, id=1025, 549.05125pt x 558.085pt>
-=======
-<./images/UC1.17.jpg, id=1026, 549.05125pt x 558.085pt>
->>>>>>> origin/master
+<./images/UC1.17.jpg, id=1029, 549.05125pt x 558.085pt>
 File: ./images/UC1.17.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.jpg>
@@ -1454,11 +1374,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [48 <./images/UC1.17.jpg>]
-<<<<<<< HEAD
-<./images/UC1.17.4.jpg, id=1046, 618.31pt x 498.86375pt>
-=======
-<./images/UC1.17.4.jpg, id=1047, 618.31pt x 498.86375pt>
->>>>>>> origin/master
+<./images/UC1.17.4.jpg, id=1050, 618.31pt x 498.86375pt>
 File: ./images/UC1.17.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.jpg>
@@ -1475,11 +1391,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 65.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [50 <./images/UC1.17.4.jpg>]
-<<<<<<< HEAD
-<./images/UC1.17.4.1.jpg, id=1075, 329.23pt x 312.16624pt>
-=======
-<./images/UC1.17.4.1.jpg, id=1076, 329.23pt x 312.16624pt>
->>>>>>> origin/master
+<./images/UC1.17.4.1.jpg, id=1079, 329.23pt x 312.16624pt>
 File: ./images/UC1.17.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.jpg>
@@ -1489,11 +1401,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 97.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-<<<<<<< HEAD
- [51 <./images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1092, 524.96124p
-=======
- [51 <./images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1093, 524.96124p
->>>>>>> origin/master
+ [51 <./images/UC1.17.4.1.jpg>] <./images/UC1.17.4.1.2.jpg, id=1096, 524.96124p
 t x 389.455pt>
 File: ./images/UC1.17.4.1.2.jpg Graphic file (type jpg)
 
@@ -1521,11 +1429,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [55] (./UC/UC1.7.tex
-<<<<<<< HEAD
-<./images/UC1.7.jpg, id=1137, 502.87875pt x 411.5375pt>
-=======
-<./images/UC1.7.jpg, id=1138, 502.87875pt x 411.5375pt>
->>>>>>> origin/master
+<./images/UC1.7.jpg, id=1141, 502.87875pt x 411.5375pt>
 File: ./images/UC1.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.7.jpg>
@@ -1552,11 +1456,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-<<<<<<< HEAD
-[59] (./UC/UC1.8.tex <./images/UC1.8.jpg, id=1201, 403.5075pt x 272.01625pt>
-=======
-[59] (./UC/UC1.8.tex <./images/UC1.8.jpg, id=1202, 403.5075pt x 272.01625pt>
->>>>>>> origin/master
+[59] (./UC/UC1.8.tex <./images/UC1.8.jpg, id=1205, 403.5075pt x 272.01625pt>
 File: ./images/UC1.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.8.jpg>
@@ -1573,11 +1473,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [61] (./UC/UC1.9.tex
-<<<<<<< HEAD
-<./images/UC1.9.jpg, id=1225, 722.7pt x 372.39125pt>
-=======
-<./images/UC1.9.jpg, id=1226, 722.7pt x 372.39125pt>
->>>>>>> origin/master
+<./images/UC1.9.jpg, id=1229, 722.7pt x 372.39125pt>
 File: ./images/UC1.9.jpg Graphic file (type jpg)
  <use ./images/UC1.9.jpg>
 Package pdftex.def Info: ./images/UC1.9.jpg used on input line 5.
@@ -1593,11 +1489,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [63]
-<<<<<<< HEAD
-(./UC/UC1.10.tex <./images/UC1.10.jpg, id=1256, 358.33875pt x 174.6525pt>
-=======
-(./UC/UC1.10.tex <./images/UC1.10.jpg, id=1257, 358.33875pt x 174.6525pt>
->>>>>>> origin/master
+(./UC/UC1.10.tex <./images/UC1.10.jpg, id=1260, 358.33875pt x 174.6525pt>
 File: ./images/UC1.10.jpg Graphic file (type jpg)
 
 <use ./images/UC1.10.jpg>
@@ -1615,11 +1507,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [65] (./UC/UC1.11.tex
-<<<<<<< HEAD
-<./images/UC1.11.jpg, id=1277, 537.00626pt x 199.74625pt>
-=======
-<./images/UC1.11.jpg, id=1278, 537.00626pt x 199.74625pt>
->>>>>>> origin/master
+<./images/UC1.11.jpg, id=1281, 537.00626pt x 199.74625pt>
 File: ./images/UC1.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.11.jpg>
@@ -1660,333 +1548,427 @@ Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [71]
 (./parti/requisiti.tex (./parti/requisitiFunz.tex
-Underfull \hbox (badness 1715) in paragraph at lines 29--29
+Underfull \hbox (badness 1715) in paragraph at lines 36--36
 \T1/cmr/m/n/12 edi-ta-re te-sto al-l'in-ter-no di un
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 39--39
-[]|\T1/cmr/m/n/12 L'utente può mo-di-fi-ca-re la di-
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 49--49
+Underfull \hbox (badness 2005) in paragraph at lines 56--56
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-[]|\T1/cmr/m/n/12 UC 1.3.5,
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+[]|\T1/cmr/m/n/12 UC 1.3.1.5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\T1/cmr/m/n/12 1.3.5.1,
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/cmr/m/n/12 1.3.1.5.1,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\T1/cmr/m/n/12 1.3.5.1.1,
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/cmr/m/n/12 1.3.1.5.1.1,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-\T1/cmr/m/n/12 1.3.5.1.3,
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\T1/cmr/m/n/12 1.3.1.5.1.3,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 63--63
+Underfull \hbox (badness 2005) in paragraph at lines 70--70
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 63--63
+Underfull \hbox (badness 2020) in paragraph at lines 70--70
 \T1/cmr/m/n/12 di in-se-ri-re un co-lo-re di sfon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-[]|\T1/cmr/m/n/12 UC 1.3.5,
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[]|\T1/cmr/m/n/12 UC 1.3.1.5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/12 1.3.5.1,
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\T1/cmr/m/n/12 1.3.1.5.1,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/12 1.3.5.1.2,
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\T1/cmr/m/n/12 1.3.1.5.1.2,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-\T1/cmr/m/n/12 1.3.5.1.3,
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+\T1/cmr/m/n/12 1.3.1.5.1.3,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 67--67
+Underfull \hbox (badness 2005) in paragraph at lines 74--74
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-[]|\T1/cmr/m/n/12 UC 1.3.7,
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]|\T1/cmr/m/n/12 UC 1.3.1.7,
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 79--79
+Underfull \hbox (badness 1210) in paragraph at lines 86--86
 \T1/cmr/m/n/12 eli-mi-na-re un book-mark ad un
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-[]|\T1/cmr/m/n/12 UC 1.3.7,
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]|\T1/cmr/m/n/12 UC 1.3.1.7,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 89--89
+Underfull \hbox (badness 2005) in paragraph at lines 95--95
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 89--89
+Underfull \hbox (badness 4001) in paragraph at lines 95--95
 \T1/cmr/m/n/12 di mo-di-fi-ca-re da mo-bi-le una
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 93--93
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 96.
+Package pdftex.def Info: ../../logo.jpg used on input line 98.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [72]
-Underfull \hbox (badness 2005) in paragraph at lines 97--97
+Underfull \hbox (badness 2005) in paragraph at lines 99--99
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 97--97
+Underfull \hbox (badness 2005) in paragraph at lines 103--103
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 103--103
 \T1/cmr/m/n/12 di im-po-sta-re un book-mark da
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 97--97
+Underfull \hbox (badness 4181) in paragraph at lines 103--103
 \T1/cmr/m/n/12 mo-bi-le ad un fra-me di una
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 113--113
+Underfull \hbox (badness 2005) in paragraph at lines 112--112
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 112--112
+\T1/cmr/m/n/12 di or-ga-niz-za-re i fi-le im-ma-gi-ne
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 114--114
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 114--114
+\T1/cmr/m/n/12 di or-ga-niz-za-re le pro-prie pre-
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 116--116
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 113--113
+Underfull \hbox (badness 2269) in paragraph at lines 116--116
 \T1/cmr/m/n/12 do di eli-mi-na-re dal ser-ver le
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 125--125
+Underfull \hbox (badness 1975) in paragraph at lines 128--128
 []|\T1/cmr/m/n/12 L'utente de-ve po-ter ri-muo-ve-re
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 127--127
+Underfull \hbox (badness 2005) in paragraph at lines 130--130
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 127--127
+Underfull \hbox (badness 4441) in paragraph at lines 130--130
 \T1/cmr/m/n/12 di ese-gui-re una pre-sen-ta-zio-ne
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 129--129
+Underfull \hbox (badness 2005) in paragraph at lines 132--132
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 129--129
+Underfull \hbox (badness 4441) in paragraph at lines 132--132
 \T1/cmr/m/n/12 di ese-gui-re una pre-sen-ta-zio-ne
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 131--131
+Underfull \hbox (badness 2005) in paragraph at lines 134--134
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 4699) in paragraph at lines 131--131
+Underfull \hbox (badness 4699) in paragraph at lines 134--134
 \T1/cmr/m/n/12 di ese-gui-re ma-nual-men-te una
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 136.
+Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [73]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 136.
+Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [74]
-Underfull \hbox (badness 5490) in paragraph at lines 147--147
+Underfull \hbox (badness 5490) in paragraph at lines 150--150
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 147--147
+Underfull \hbox (badness 1701) in paragraph at lines 150--150
 \T1/cmr/m/n/12 do di so-spen-de-re e ri-pren-de-re
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 []|\T1/cmr/m/n/12 UC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 \T1/cmr/m/n/12 1.18.1.6.2,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 151--151
+Underfull \hbox (badness 2005) in paragraph at lines 154--154
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 153--153
+Underfull \hbox (badness 2005) in paragraph at lines 156--156
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 []|\T1/cmr/m/n/12 UC 1.18.2,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 155--155
+Underfull \hbox (badness 2005) in paragraph at lines 158--158
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 157--157
+Underfull \hbox (badness 5490) in paragraph at lines 160--160
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 157--157
+Underfull \hbox (badness 4403) in paragraph at lines 160--160
 \T1/cmr/m/n/12 do di so-spen-de-re e riav-via-re
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 157--158
+Underfull \hbox (badness 5637) in paragraph at lines 160--161
 []|\T1/cmr/m/n/12 UC 1.18.2.3,
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 159--159
+Underfull \hbox (badness 5490) in paragraph at lines 162--162
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 163--163
+Underfull \hbox (badness 2005) in paragraph at lines 164--164
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 164--164
+\T1/cmr/m/n/12 un vi-deo pre-sen-te nel fra-me
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 168--168
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 163--163
+Underfull \hbox (badness 2229) in paragraph at lines 168--168
 \T1/cmr/m/n/12 do di pas-sa-re da pre-sen-ta-zio-
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 163--163
+Underfull \hbox (badness 1661) in paragraph at lines 168--168
 \T1/cmr/m/n/12 ne au-to-ma-ti-ca a pre-sen-ta-zio-ne
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 167--167
+Underfull \hbox (badness 2080) in paragraph at lines 172--172
 \T1/cmr/m/n/12 se-re in gra-do di pas-sa-re nel-
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 167--167
+Underfull \hbox (badness 1199) in paragraph at lines 172--172
 \T1/cmr/m/n/12 la mo-da-li-tà per ge-sti-re al-cu-ne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-[]|\T1/cmr/m/n/12 UC 1.9.1,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-[]|\T1/cmr/m/n/12 UC 1.9.1,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-[]|\T1/cmr/m/n/12 UC 1.9.4,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-\T1/cmr/m/n/12 1.9.4.1,
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 176.
+Package pdftex.def Info: ../../logo.jpg used on input line 179.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [75]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 176.
+Package pdftex.def Info: ../../logo.jpg used on input line 179.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [76]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
-[]|\T1/cmr/m/n/12 UC 1.9.6,
+Underfull \hbox (badness 2005) in paragraph at lines 188--188
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-[]|\T1/cmr/m/n/12 UC 1.9.6.5,
+Underfull \hbox (badness 5091) in paragraph at lines 188--188
+\T1/cmr/m/n/12 di se-le-zio-na-re il tem-pla-te di
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-\T1/cmr/m/n/12 1.9.6.5.1,
+Underfull \hbox (badness 2005) in paragraph at lines 190--190
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-\T1/cmr/m/n/12 1.9.6.5.2,
+Underfull \hbox (badness 1715) in paragraph at lines 190--190
+\T1/cmr/m/n/12 di se-le-zio-na-re gli ele-men-ti del
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
-[]|\T1/cmr/m/n/12 UC 1.9.7,
+Underfull \hbox (badness 5490) in paragraph at lines 194--194
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 1997) in paragraph at lines 194--194
+\T1/cmr/m/n/12 do di mo-di-fi-ca-re un ele-men-to
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 200--200
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+[]|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 202--202
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[]|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 204--204
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 204--204
+\T1/cmr/m/n/12 un ele-men-to te-stua-le (cor-si-vo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 206--206
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 206--206
+\T1/cmr/m/n/12 do di cam-bia-re il co-lo-re del-lo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+[]|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 214--214
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 216--216
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 194.
+Package pdftex.def Info: ../../logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [77]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 194.
+Package pdftex.def Info: ../../logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [78])
+ [78]
+Underfull \hbox (badness 2005) in paragraph at lines 224--224
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 226--226
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 229.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [79]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 229.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [80])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 3.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[79] (./parti/requisitiQual.tex
+[81] (./parti/requisitiQual.tex
 Underfull \hbox (badness 2512) in paragraph at lines 17--17
 \T1/cmr/m/n/12 ne esau-sti-va del-le fun-zio-na-li-tà
  []
@@ -2006,7 +1988,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [80] (./parti/verificaRequisiti.tex
+ [82] (./parti/requisitiVincolo.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 7.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [83] (./parti/verificaRequisiti.tex
 Underfull \hbox (badness 1983) in paragraph at lines 25--25
 \T1/cmr/m/n/12 seg-gna-re un book-mark ad un
  []
@@ -2017,7 +2005,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [81]
+ [84]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (./AnalisiDeiRequisiti_v.1.0.0.aux)
@@ -2032,49 +2020,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 14432 strings out of 493117
- 208091 string characters out of 6135433
- 392021 words of memory out of 5000000
- 17007 multiletter control sequences out of 15000+600000
-=======
- 14427 strings out of 495017
- 206871 string characters out of 6181021
+ 14439 strings out of 495017
+ 207024 string characters out of 6181021
  386103 words of memory out of 5000000
- 16752 multiletter control sequences out of 15000+600000
->>>>>>> origin/master
+ 16756 multiletter control sequences out of 15000+600000
  15438 words of font info for 37 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  51i,16n,47p,821b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
-<<<<<<< HEAD
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (82 pages, 1210532 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (85 pages, 1239243 bytes).
 PDF statistics:
- 2010 PDF objects out of 2073 (max. 8388607)
- 1868 compressed objects within 19 object streams
-=======
- </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/
-pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.te
-xmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/pietro/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecti1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecbx1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-2488.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (82 pages, 1181390 bytes).
-PDF statistics:
- 2278 PDF objects out of 2487 (max. 8388607)
- 1876 compressed objects within 19 object streams
->>>>>>> origin/master
- 539 named destinations out of 1000 (max. 500000)
- 1338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2041 PDF objects out of 2073 (max. 8388607)
+ 1896 compressed objects within 19 object streams
+ 544 named destinations out of 1000 (max. 500000)
+ 1346 words of extra memory for PDF output out of 10000 (max. 10000000)
 
