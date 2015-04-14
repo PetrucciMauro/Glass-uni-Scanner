@@ -67,47 +67,19 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item L'amministratore decide di ripristinare il template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}.
+		\item L'amministratore decide di ripristinare il template eliminato \hyperref[uc1.9.5]{(UC 1.9.5)}.
 	\end{itemize}
 	}
-\subsubsection{UC 1.9.5 - Annulla/Ripristina}{
+\subsubsection{UC 1.9.5 - Ripristino template eliminato}{
 	\label{uc1.9.5}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.9.5}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.9.5}
-		\caption{Caso d'uso 1.9.5}
-	\end{figure}
 	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore ha deciso di annullare una o più modifiche applicate o di ripristinare una modifica annullata. \\
-	\textbf{Precondizione}: lo storico delle modifiche non è vuoto.	\\
-	\textbf{Postcondizione}: la scena ha il livello di modifiche desiderato.	\\
+	\textbf{Descrizione}: l'amministratore ha deciso di ripristinare un template eliminato. \\
+	\textbf{Precondizione}: lo storico dei template eliminati non è vuoto.	\\
+	\textbf{Postcondizione}: il template è stato ripristinato.	\\
 	\textbf{Procedura principale}:
 	\begin{enumerate}
-		\item Annullamento comando \hyperref[uc1.9.5.1]{(UC 1.9.5.1)};
-		\item Ripristino del comando annullato \hyperref[uc1.9.5.2]{(UC 1.9.5.2)};
-		\item Ripristino del template eliminato \hyperref[uc1.9.5.3]{(UC 1.9.5.3)}.
+		\item Selezione template eliminato; 
+		\item Ripristino del template eliminato.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.9.5.1 - Annullamento comando}{
-	\label{uc1.9.5.1}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore può annullare l'ultimo comando di modifica del template presente nello storico. \\
-	\textbf{Precondizione}: il sistema ha registrato almeno un comando di modifica del template eseguito dall'amministratore.	\\
-	\textbf{Postcondizione}: il sistema ha ripristinato lo stato precedente all'ultimo comando di modifica del template dall'amministratore, e ha memorizzato nello storico degli	annullamenti il comando annullato.
-	}
-\subsubsection{UC 1.9.5.2 - Ripristino del comando annullato}{
-	\label{uc1.9.5.2}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore può ripristinare l'ultimo comando presente nello	storico dei comandi annullati. \\
-	\textbf{Precondizione}: il sistema ha annullato l'ultimo comando di modifica del template
-	eseguito dall'amministratore.	\\
-	\textbf{Postcondizione}: il sistema ha eseguito nuovamente l'ultimo comando di modifica	del template presente nello storico dei comandi annullati, e ha rimosso il comando eseguito nuovamente dallo storico.	
-	}
-\subsubsection{UC 1.9.5.3 - Ripristino del template eliminato}{
-	\label{uc1.9.5.3}
-	\textbf{Attori}: amministratore di sistema. \\
-	\textbf{Descrizione}: l'amministratore può ripristinare il template appena eliminato. \\
-	\textbf{Precondizione}: il sistema ha annullato il comando di cancellazione del template eseguito dall'amministratore.	\\
-	\textbf{Postcondizione}: il sistema ha ripristinato lo stato precedente alla cancellazione del template da parte dell'amministratore.	
-	}
+
