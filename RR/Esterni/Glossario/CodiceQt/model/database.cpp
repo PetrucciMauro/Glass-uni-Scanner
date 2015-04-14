@@ -5,6 +5,7 @@
 #include "eccezione.h"
 #include <iostream>
 #include <QTextStream>
+#include <QRegularExpression>
 DataBase::DataBase(){
 
 }
@@ -49,6 +50,11 @@ void DataBase::load(){
 								db[parola]=l;
                                 if (parola.contains(QString(" "))){
                                     reservedlist[parola]=l;
+
+                                std::vector<QString>::const_iterator tempit=p.begin();
+                                for(;tempit!=p.end();++tempit){
+                                    reservedlist[*tempit]=l;
+                                }
                                 }
 
 								child = child.nextSibling().toElement();
@@ -174,14 +180,30 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
 			{return;	throw Ecc_FileNotFound;}
         QString temp=oldw;
         temp[0]=oldw[0].toUpper();
-        QString perreg=QString("(([/|\\s])|[^:]^)")+temp+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QString q("");
+        if(temp.contains(" ")){
+        QStringList p=temp.split(QRegularExpression(" "));
+
+        QStringList::iterator strit=p.begin();
+        for(; strit!=p.end();++strit){
+            if (q!=""){
+                q=q+QString(" ");
+            }
+            (*strit)[0]=(*strit)[0].toUpper();
+            q=q+(*strit);
+        }
+        }
+        if(q!="")
+            std::cout<<q.toStdString()<<std::endl;
+        QString perreg=QString("((^)|([/|\\s])|[^:])")+temp+QString("(\\.|,|;|:|$|\\s|/|[)])");
         QRegExp exp(perreg);
 
         QString nuova=temp+QString("\\ped{g}");
         QString oldwl=oldw.toLower();
 
         QString nuoval=oldwl+QString("\\ped{g}");
-        bool trovato=false;
+        if(reservedlist.contains(oldw)||reservedlist.contains(q)||reservedlist.contains(temp.toLower())){
+
         QString text(file.readAll());
         for (int i=0; i<text.length(); ++i){
         int x=text.indexOf(exp, i);
@@ -191,31 +213,15 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
                 y=x;
             else
                 y=x+1;
-            if(!reservedlist.contains(oldw)){
-             QMap<QString, Lemma*>::const_iterator mit=reservedlist.begin();
-             for(;mit!=reservedlist.end(); ++mit){
-                 QString t=text.mid(y, mit.key().length());
-                 std::cout<<"t=="<<t.toStdString()<<std::endl;
-                 if(!reservedlist.contains(t)){
-                     trovato=true;
-                 }
-                 else
-                     std::cout<<"contiene"<<std::endl;
-             }
-            }
-            else{
-                trovato=true;
-            }
-            if (trovato){
             text.remove(y,temp.length());
             text.insert(y,nuova);
             i+=temp.length();
             std::cout<<temp.toStdString()<<std::endl;
-            }
         }
+        else
+            i=text.length();
         }
-        if (trovato){
-        QString perregl=QString("(([/|\\s])|[^:]^)")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
+        QString perregl=QString("((^)|([/|\\s])|[^:])")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
         QRegExp expl(perregl);
         for (int i=0; i<text.length(); ++i){
         int x=text.indexOf(expl, i);
@@ -231,12 +237,65 @@ void DataBase::replaceFile(const QString& nomefile,const QString& oldw){
             i+=oldwl.length();
             std::cout<<oldwl.toStdString()<<std::endl;
         }
+        else i=text.length();
         }
 
         file.resize(0); // go to the beginning of the file
 		file.write(text.toUtf8()); // write the new text back to the file
+        }/*if(reservedlist.contains(oldw)||reservedlist.contains(q)||reservedlist.contains(temp.toLower()))*/
+        else{
+            QString text(file.readAll());
+            for (int i=0; i<text.length(); ++i){
+            int x=text.indexOf(exp, i);
+            if (x!=-1){
+                int y;
+                if (text[x]==temp[0])
+                    y=x;
+                else
+                    y=x+1;
+                bool trovato=false;
+                QMap<QString, Lemma*>::const_iterator mit=reservedlist.begin();
+                for(;mit!=reservedlist.end()&&!trovato;++mit){
+                    if (mit.value()->contains(temp)||mit.value()->contains(oldwl)){
+                        QString t=text.mid(y, mit.value()->getWord().length());
+                        if(!mit.value()->contains(t)||!mit.value()->contains(t.toLower())){
+                            text.remove(y,temp.length());
+                            text.insert(y,nuova);
+                            i+=temp.length();
+                            std::cout<<temp.toStdString()<<std::endl;
+                            trovato=true;
+                        }
+                    }
+                }
+
+            }
+            else
+                i=text.length();
+            }
+            /*QString perregl=QString("((^)|([/|\\s])|[^:])")+oldwl+QString("(\\.|,|;|:|$|\\s|/|[)])");
+            QRegExp expl(perregl);
+            for (int i=0; i<text.length(); ++i){
+            int x=text.indexOf(expl, i);
+            if (x!=-1){
+                int y;
+                if (text[x]==oldwl[0])
+                    y=x;
+                else
+                    y=x+1;
+
+                text.remove(y,oldwl.length());
+                text.insert(y,nuoval);
+                i+=oldwl.length();
+                std::cout<<oldwl.toStdString()<<std::endl;
+            }
+            else i=text.length();
+            }*/
+
+            file.resize(0); // go to the beginning of the file
+            file.write(text.toUtf8()); // write the new text back to the file
         }
-		file.close();
+        file.close();
+
 	}
 
 void DataBase::applyGlossario(const QString& nomefile){
@@ -258,6 +317,7 @@ void DataBase::applyGlossario(const QString& nomefile){
         replaceFile(nomefile, it.value()->getWord());
         std::vector<QString>::const_iterator i=it.value()->getPlural().begin();
         for(; i!=it.value()->getPlural().end();++i){
+            std::cout<<"provo a rimpiazzare "<<(*i).toStdString()<<std::endl;
             replaceFile(nomefile, *i);
         }
     }

@@ -74,6 +74,7 @@ void MainWindow::on_Pedicizza_clicked()
     dir=new QDir(dirname);
     QStringList files=dir->entryList(QStringList("*.*"));
     QStringList::ConstIterator it = files.begin();
+    bool ok=false;
     for (; it!=files.end(); ++it){
 
         if((it->toStdString()!=".")&&(it->toStdString()!="..")&&(it->toStdString()!="registroMod.tex")){
@@ -81,7 +82,12 @@ void MainWindow::on_Pedicizza_clicked()
             QString banana=dirname+QString::fromStdString("/")+*it;
            /* std::cout<<banana.toStdString()<<std::endl;*/
         mydb.replace(banana);
-            std::cout<<"Sostituzione eseguita correttamente"<<std::endl;
+        ok=true;
         }
     }
+    if (ok)
+    std::cout<<"Sostituzione eseguita correttamente"<<std::endl;
+    else
+        std::cout<<"Sostituzione non completata"<<std::endl;
+
 }
