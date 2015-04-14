@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  14 APR 2015 12:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  14 APR 2015 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1035,46 +1035,40 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[8]
+[8] (./parti/analisiRischi.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 45.
+Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9] (./parti/analisiRischi.tex
+ [9]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[10]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 61.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11])
+[10])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12]
-(./parti/cicloVita.tex)
+ [11] (./parti/cicloVita.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13] (./parti/scadenze.tex)
-File: ../../logo.jpg Graphic file (type jpg)
 
-<use ../../logo.jpg>
+[12] (./parti/scadenze.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14] (./parti/pianificazione.tex
+ [13]
+(./parti/pianificazione.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[15]
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1083,8 +1077,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16]
-<./images/pianoRequisiti.jpg, id=320, 1171.37625pt x 875.27pt>
+ [15]
+<./images/pianoRequisiti.jpg, id=305, 1171.37625pt x 875.27pt>
 File: ./images/pianoRequisiti.jpg Graphic file (type jpg)
 
 <use ./images/pianoRequisiti.jpg>
@@ -1094,14 +1088,14 @@ Package pdftex.def Info: ./images/pianoRequisiti.jpg used on input line 39.
 Overfull \vbox (1.1034pt too high) detected at line 39
  []
 
-[17
+[16
 
  <./images/pianoRequisiti.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 106.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18
+ [17
 
 ]
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1109,7 +1103,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 109.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19]
+ [18]
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
@@ -1118,8 +1112,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 119.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20]
-<./images/pianoProgettazione.jpg, id=348, 1005.7575pt x 612.2875pt>
+ [19]
+<./images/pianoProgettazione.jpg, id=333, 1005.7575pt x 612.2875pt>
 File: ./images/pianoProgettazione.jpg Graphic file (type jpg)
 
 <use ./images/pianoProgettazione.jpg>
@@ -1131,14 +1125,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 128--128
  [][] 
  []
 
-[21
+[20
 
  <./images/pianoProgettazione.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 179.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22
+ [21
 
 ]
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1146,8 +1140,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 181.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
-<./images/wbsProgettazione.jpg, id=368, 1868.9825pt x 273.02pt>
+ [22]
+<./images/wbsProgettazione.jpg, id=353, 1868.9825pt x 273.02pt>
 File: ./images/wbsProgettazione.jpg Graphic file (type jpg)
 
 <use ./images/wbsProgettazione.jpg>
@@ -1158,7 +1152,7 @@ Overfull \hbox (6.81433pt too wide) in paragraph at lines 190--190
  [][] 
  []
 
-[24
+[23
 
  <./images/wbsProgettazione.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
@@ -1169,10 +1163,10 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 208.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25
+ [24
 
 ]
-<./images/pianoCodifica.jpg, id=382, 1271.75125pt x 759.83875pt>
+<./images/pianoCodifica.jpg, id=367, 1271.75125pt x 759.83875pt>
 File: ./images/pianoCodifica.jpg Graphic file (type jpg)
 
 <use ./images/pianoCodifica.jpg>
@@ -1183,14 +1177,14 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 217--217
  [][] 
  []
 
-[26
+[25
 
  <./images/pianoCodifica.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 282.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27
+ [26
 
 ]
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1198,8 +1192,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 284.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28]
-<./images/wbsCodifica.jpg, id=402, 2634.84375pt x 372.39125pt>
+ [27]
+<./images/wbsCodifica.jpg, id=387, 2634.84375pt x 372.39125pt>
 File: ./images/wbsCodifica.jpg Graphic file (type jpg)
 
 <use ./images/wbsCodifica.jpg>
@@ -1210,17 +1204,17 @@ Overfull \hbox (6.77832pt too wide) in paragraph at lines 293--293
  [][] 
  []
 
-[29
+[28
 
  <./images/wbsCodifica.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 309.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30
+ [29
 
 ]
-<./images/pianoAccettazione.jpg, id=416, 1014.79124pt x 549.05125pt>
+<./images/pianoAccettazione.jpg, id=400, 1014.79124pt x 549.05125pt>
 File: ./images/pianoAccettazione.jpg Graphic file (type jpg)
 
 <use ./images/pianoAccettazione.jpg>
@@ -1232,17 +1226,17 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 318--318
  [][] 
  []
 
-[31
+[30
 
  <./images/pianoAccettazione.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 363.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [32
+ [31
 
 ]
-<./images/wbsAccettazione.jpg, id=430, 1718.42pt x 276.03125pt>
+<./images/wbsAccettazione.jpg, id=414, 1718.42pt x 276.03125pt>
 File: ./images/wbsAccettazione.jpg Graphic file (type jpg)
 
 <use ./images/wbsAccettazione.jpg>
@@ -1253,7 +1247,7 @@ Overfull \hbox (6.79369pt too wide) in paragraph at lines 372--372
  [][] 
  []
 
-[33
+[32
 
  <./images/wbsAccettazione.jpg>]) (./parti/sudCompiti.tex
 Underfull \hbox (badness 10000) in paragraph at lines 39--39
@@ -1284,10 +1278,10 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [34
+ [33
 
 ]
-<./images/sudAnalisi.jpg, id=444, 424.7067pt x 325.9377pt>
+<./images/sudAnalisi.jpg, id=429, 424.7067pt x 325.9377pt>
 File: ./images/sudAnalisi.jpg Graphic file (type jpg)
 
 <use ./images/sudAnalisi.jpg>
@@ -1322,8 +1316,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [35 <./images/sudAnalisi.jpg>]
-<./images/sudProgettazione.jpg, id=453, 456.7464pt x 350.2686pt>
+ [34 <./images/sudAnalisi.jpg>]
+<./images/sudProgettazione.jpg, id=438, 456.7464pt x 350.2686pt>
 File: ./images/sudProgettazione.jpg Graphic file (type jpg)
 
 <use ./images/sudProgettazione.jpg>
@@ -1358,8 +1352,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 103.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [36 <./images/sudProgettazione.jpg>]
-<./images/sudCodifica.jpg, id=463, 456.5055pt x 377.2494pt>
+ [35 <./images/sudProgettazione.jpg>]
+<./images/sudCodifica.jpg, id=447, 456.5055pt x 377.2494pt>
 File: ./images/sudCodifica.jpg Graphic file (type jpg)
 
 <use ./images/sudCodifica.jpg>
@@ -1394,8 +1388,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 131.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [37 <./images/sudCodifica.jpg>]
-<./images/sudAccettazione.jpg, id=472, 456.9873pt x 344.0052pt>
+ [36 <./images/sudCodifica.jpg>]
+<./images/sudAccettazione.jpg, id=457, 456.9873pt x 344.0052pt>
 File: ./images/sudAccettazione.jpg Graphic file (type jpg)
 
 <use ./images/sudAccettazione.jpg>
@@ -1430,8 +1424,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 160.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [38 <./images/sudAccettazione.jpg>]
-<./images/sudTotale.jpg, id=481, 476.5002pt x 385.9218pt>
+ [37 <./images/sudAccettazione.jpg>]
+<./images/sudTotale.jpg, id=466, 476.5002pt x 385.9218pt>
 File: ./images/sudTotale.jpg Graphic file (type jpg)
 
 <use ./images/sudTotale.jpg>
@@ -1462,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 []|\T1/cmr/m/n/12 Gabelli
  []
 
-<./images/sudTotaleRend.jpg, id=482, 452.892pt x 367.6134pt>
+<./images/sudTotaleRend.jpg, id=467, 452.892pt x 367.6134pt>
 File: ./images/sudTotaleRend.jpg Graphic file (type jpg)
 
 <use ./images/sudTotaleRend.jpg>
@@ -1472,21 +1466,21 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 190.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [39 <./images/sudTotale.jpg>])
+ [38 <./images/sudTotale.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [40 <./images/sudTotaleRend.jpg>]
+ [39 <./images/sudTotaleRend.jpg>]
 (./parti/prospettoEconomico.tex
-<./images/anreqore.pdf, id=499, 370.38374pt x 198.7425pt>
+<./images/anreqore.pdf, id=484, 370.38374pt x 198.7425pt>
 File: ./images/anreqore.pdf Graphic file (type pdf)
 
 <use ./images/anreqore.pdf>
 Package pdftex.def Info: ./images/anreqore.pdf used on input line 26.
 (pdftex.def)             Requested size: 277.78711pt x 149.0565pt.
 
-<./images/anreqcosti.pdf, id=500, 370.38374pt x 198.7425pt>
+<./images/anreqcosti.pdf, id=485, 370.38374pt x 198.7425pt>
 File: ./images/anreqcosti.pdf Graphic file (type pdf)
 
 <use ./images/anreqcosti.pdf>
@@ -1496,15 +1490,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [41 <./images/anreqore.pdf, page is rotated 90 degrees>]
-<./images/proggore.pdf, id=514, 370.38374pt x 213.79875pt>
+ [40 <./images/anreqore.pdf, page is rotated 90 degrees>]
+<./images/proggore.pdf, id=499, 370.38374pt x 213.79875pt>
 File: ./images/proggore.pdf Graphic file (type pdf)
 
 <use ./images/proggore.pdf>
 Package pdftex.def Info: ./images/proggore.pdf used on input line 60.
 (pdftex.def)             Requested size: 277.78711pt x 160.34866pt.
 
-<./images/proggcosti.pdf, id=515, 370.38374pt x 213.79875pt>
+<./images/proggcosti.pdf, id=500, 370.38374pt x 213.79875pt>
 File: ./images/proggcosti.pdf Graphic file (type pdf)
 
 <use ./images/proggcosti.pdf>
@@ -1514,8 +1508,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 71.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [42 <./images/anreqcosti.pdf, page is rotated 90 degrees> <./images/proggore.p
-df, page is rotated 90 degrees>] <./images/codore.pdf, id=537, 370.38374pt x 21
+ [41 <./images/anreqcosti.pdf, page is rotated 90 degrees> <./images/proggore.p
+df, page is rotated 90 degrees>] <./images/codore.pdf, id=520, 370.38374pt x 21
 3.79875pt>
 File: ./images/codore.pdf Graphic file (type pdf)
 
@@ -1523,7 +1517,7 @@ File: ./images/codore.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/codore.pdf used on input line 94.
 (pdftex.def)             Requested size: 277.78711pt x 160.34866pt.
 
-<./images/codcosti.pdf, id=538, 370.38374pt x 213.79875pt>
+<./images/codcosti.pdf, id=521, 370.38374pt x 213.79875pt>
 File: ./images/codcosti.pdf Graphic file (type pdf)
 
 <use ./images/codcosti.pdf>
@@ -1533,16 +1527,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 105.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [43 <./images/proggcosti.pdf, page is rotated 90 degrees> <./images/codore.pdf
+ [42 <./images/proggcosti.pdf, page is rotated 90 degrees> <./images/codore.pdf
 , page is rotated 90 degrees>]
-<./images/verore.pdf, id=558, 370.38374pt x 213.79875pt>
+<./images/verore.pdf, id=543, 370.38374pt x 213.79875pt>
 File: ./images/verore.pdf Graphic file (type pdf)
 
 <use ./images/verore.pdf>
 Package pdftex.def Info: ./images/verore.pdf used on input line 128.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/vercosti.pdf, id=559, 370.38374pt x 213.79875pt>
+<./images/vercosti.pdf, id=544, 370.38374pt x 213.79875pt>
 File: ./images/vercosti.pdf Graphic file (type pdf)
 
 <use ./images/vercosti.pdf>
@@ -1552,21 +1546,21 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 137.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [44 <./images/codcosti.pdf, page is rotated 90 degrees>]
+ [43 <./images/codcosti.pdf, page is rotated 90 degrees>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 160.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [45 <./images/verore.pdf, page is rotated 90 degrees> <./images/vercosti.pdf, 
+ [44 <./images/verore.pdf, page is rotated 90 degrees> <./images/vercosti.pdf, 
 page is rotated 90 degrees>]
-<./images/tottotore.pdf, id=592, 370.38374pt x 213.79875pt>
+<./images/tottotore.pdf, id=577, 370.38374pt x 213.79875pt>
 File: ./images/tottotore.pdf Graphic file (type pdf)
 
 <use ./images/tottotore.pdf>
 Package pdftex.def Info: ./images/tottotore.pdf used on input line 163.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/tottotcosti.pdf, id=593, 370.38374pt x 213.79875pt>
+<./images/tottotcosti.pdf, id=578, 370.38374pt x 213.79875pt>
 File: ./images/tottotcosti.pdf Graphic file (type pdf)
 
 <use ./images/tottotcosti.pdf>
@@ -1576,8 +1570,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 193.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [46 <./images/tottotore.pdf, page is rotated 90 degrees> <./images/tottotcosti
-.pdf, page is rotated 90 degrees>] <./images/totparore.pdf, id=613, 370.38374pt
+ [45 <./images/tottotore.pdf, page is rotated 90 degrees> <./images/tottotcosti
+.pdf, page is rotated 90 degrees>] <./images/totparore.pdf, id=598, 370.38374pt
  x 213.79875pt>
 File: ./images/totparore.pdf Graphic file (type pdf)
 
@@ -1585,7 +1579,7 @@ File: ./images/totparore.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/totparore.pdf used on input line 197.
 (pdftex.def)             Requested size: 314.82765pt x 181.72978pt.
 
-<./images/totparcosti.pdf, id=614, 370.38374pt x 213.79875pt>
+<./images/totparcosti.pdf, id=599, 370.38374pt x 213.79875pt>
 File: ./images/totparcosti.pdf Graphic file (type pdf)
 
 <use ./images/totparcosti.pdf>
@@ -1597,13 +1591,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 57.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [47 <./images/totparore.pdf, page is rotated 90 degrees>]
+ [46 <./images/totparore.pdf, page is rotated 90 degrees>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 57.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [48 <./images/totparcosti.pdf, page is rotated 90 degrees>]
+ [47 <./images/totparcosti.pdf, page is rotated 90 degrees>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
  (./PianoDiProgetto_v.1.0.0.aux)
@@ -1615,10 +1609,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13739 strings out of 495017
- 200783 string characters out of 6181021
+ 13730 strings out of 495017
+ 200669 string characters out of 6181021
  374103 words of memory out of 5000000
- 16519 multiletter control sequences out of 15000+600000
+ 16515 multiletter control sequences out of 15000+600000
  15104 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,47p,991b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1631,10 +1625,10 @@ onts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on PianoDiProgetto_v.1.0.0.pdf (49 pages, 2209039 bytes).
+Output written on PianoDiProgetto_v.1.0.0.pdf (48 pages, 2207361 bytes).
 PDF statistics:
- 823 PDF objects out of 1000 (max. 8388607)
- 691 compressed objects within 7 object streams
- 137 named destinations out of 1000 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 669 compressed objects within 7 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
