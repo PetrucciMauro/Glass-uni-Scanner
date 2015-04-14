@@ -96,7 +96,7 @@
 			\hline
 			RF 10.1 & Obbligatorio & L'utente deve essere in grado di editare testo da mobile all'interno di un frame & UC 1.3.2.1.1\\
 			\hline
-			RF 10.4 & Obbligatorio & L'utente deve essere in grado di modificare da mobile il testo inserito all'interno di un frame & UC 1.3.2.1.2\\
+			RF 10.4 & Obbligatorio & L'utente deve essere in grado di modificare damobile il testo inserito all'interno di un frame & UC 1.3.2.1.2\\
 			\hline
 			RF 10.3 & Obbligatorio & L'utente deve essere in grado di annullare una modifica da mobile appena effettuata & UC 1.3.2.3\\
 			\hline
@@ -105,7 +105,7 @@
 			RF 10.8 & Obbligatorio & L'utente deve essere in grado di eliminare un bookmark da mobile ad un frame di una presentazione & UC 1.3.2.2.2\\
 			
 			\hline
-			RF 13 & Obbligatorio & L’utente deve poter selezionare una o più` immagini dal proprio FS e caricarla sul server all’interno della parte dedicata alle immagini & UC 1.7.1\\
+			RF 13 & Obbligatorio & L’utente deve poter selezionare una o piu` immagini dal proprio FS e caricarla sul server all’interno della parte dedicata alle immagini & UC 1.7.1\\
 			\hline
 			RF 16 & Obbligatorio & L’utente deve essere in grado di eliminare dal server le immagini caricate & UC 1.7.2\\			
 			\hline

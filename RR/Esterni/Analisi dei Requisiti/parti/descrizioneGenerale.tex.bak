@@ -8,7 +8,7 @@ Il sistema sarà implementato utilizzando tecnologie web che lo renderanno altam
 	Il sistema permetterà di :
 	\begin{itemize}
 		\item Creare una nuova presentazione da dispositivo desktop;
-		\item Modificare una presentazione da dispositivo desktop;
+		\item Modificare una presentazione da dispositivio desktop;
 		\item Modificare parzialmente la presentazione da dispositivo mobile;
 		\item Eseguire una presentazione salvata su un server;
 		\item Eseguire una presentazione locale;
@@ -25,6 +25,6 @@ Il sistema sarà implementato utilizzando tecnologie web che lo renderanno altam
 	\end{itemize}
 	
 	\noindent
-	Il sistema dovrà funzionare correttamente sui principali browser scaricabili dai rispettivi siti ufficiali.
+	Il sistema dovrà funzionare correttamente sui principali broswer scaricabili dai rispettivi siti ufficiali.
 	}
 }
