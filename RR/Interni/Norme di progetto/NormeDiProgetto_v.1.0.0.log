@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  14 APR 2015 03:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  14 APR 2015 11:53
 entering extended mode
 **NormeDiProgetto_v.1.0.0.tex
 
@@ -1430,43 +1430,33 @@ Package pdftex.def Info: ../../logo.jpg used on input line 45.
  [12]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\SmartGit\RR\Interni\Norme di proge
 tto\parti\ingegneriaRequisiti.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Underfull \hbox (badness 10000) in paragraph at lines 14--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--29
+Underfull \hbox (badness 10000) in paragraph at lines 14--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--29
+Underfull \hbox (badness 10000) in paragraph at lines 14--20
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 29.
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 69.
+Package pdftex.def Info: ../../logo.jpg used on input line 71.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 94.
+Package pdftex.def Info: ../../logo.jpg used on input line 88.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [15])
@@ -1590,13 +1580,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 13773 strings out of 493921
- 199334 string characters out of 3147280
+ 13770 strings out of 493921
+ 199313 string characters out of 3147280
  356506 words of memory out of 3000000
  16678 multiletter control sequences out of 15000+200000
  16527 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,47p,890b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,47p,863b,610s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
@@ -1609,9 +1599,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (27 pages, 398965 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (27 pages, 397694 bytes).
 PDF statistics:
- 638 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
  502 words of extra memory for PDF output out of 10000 (max. 10000000)
 
