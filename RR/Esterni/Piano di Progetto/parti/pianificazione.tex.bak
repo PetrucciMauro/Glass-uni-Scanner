@@ -19,9 +19,9 @@
 	I documenti redatti in questo periodo sono:
 	\begin{itemize}
 		\item \textbf{Norme di Progetto}: il Responsabile e l'Amministratore scrivono il documento "Norme di Progetto" che norma le attività da svolgersi nel corso del progetto;
-		\item \textbf{Studio di Fattibilità}: viene valutata la fattibilità dei capitolati proposti;
+		\item \textbf{Studio di Fattibilità}: viene valutata la fattibilit\`a dei capitolati proposti;
 		\item \textbf{Analisi dei Requisiti}: a partire dallo studio di fattibilità vengono analizzati in profondità i requisiti per il capitolato scelto;
-		\item \textbf{Piano di progetto}: il responsabile di progetto durante questa fase si prende carico di definire un piano di progetto in cui vengono definite le macro-attività da svolgersi durante questo e i successivi stati di sviluppo del sistema. Successivamente alle attività saranno associate risorse così da poter redigere un prospetto economico per il proponente;
+		\item \textbf{Piano di progetto}: il responsabile di progetto durante questa fase si prende carico di definire un piano di progetto in cui vengono definite le macro-attivit\`a~ da svolgersi durante questo e i successivi stati di sviluppo del sistema. Successivamente alle attività saranno associate risorse così da poter redigere un prospetto economico per il proponente;
 		\item \textbf{Piano di Qualifica}: Analista, Verificatore e Responsabile redigono il piano di qualifica;
 		\item \textbf{Glossario}: scritto dai redattori dei documenti in modo incrementale;
 		\item \textbf{Lettera di Presentazione}: Lettera di Presentazione del gruppo da consegnare al committente per partecipare alla gara d'appalto.
@@ -299,7 +299,7 @@
 \subsection{Verifica e Validazione}{
 	\textbf{Periodo}: dal 19-06-2015 al 01-07-2015.
 	
-	Le attività svolte in questo periodo saranno:
+	Le attivit\`a svolte in questo periodo saranno:
 	\begin{itemize}
 		\item \textbf{Esecuzione test}: non eseguiti durante il periodo di Progettazione e Codifica;
 		\item \textbf{Validazione}: del sistema rispetto ai metodi previsti in Piano di Qualifica per ogni requisito del sistema;
