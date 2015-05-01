@@ -1,63 +1,76 @@
 \select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
 \contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Glossario}{6}{subsection.1.2}
-\contentsline {section}{\numberline {2}Comunicazioni}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Interne}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Esterne}{7}{subsection.2.2}
-\contentsline {section}{\numberline {3}Riunioni}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Interne}{8}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Casi Particolari}{8}{subsubsection.3.1.1}
-\contentsline {subsection}{\numberline {3.2}Esterne}{8}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Esito}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Documenti}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Contenuto e struttura dei documenti}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Norme tipografiche}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Formati di riferimento e altro}{11}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Immagini e tabelle}{12}{subsection.4.4}
-\contentsline {section}{\numberline {5}Processi\bbl@ped {g} di ingegneria dei requisiti}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Fattibilit\IeC {\`a}}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Deduzione e analisi dei requisiti}{13}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Scoperta dei requisiti}{13}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Classificazione e priorit\IeC {\`a}}{14}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Specifica}{15}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Verifica dei requisiti}{15}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Validazione\bbl@ped {g} dei requisiti}{15}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Interna}{15}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Esterna}{16}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Gestione delle modifiche ai requisiti}{16}{subsection.5.4}
-\contentsline {section}{\numberline {6}Ambiente di lavoro}{17}{section.6}
-\contentsline {subsection}{\numberline {6.1}Sistemi Operativi}{17}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Coordinamento}{17}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Software\bbl@ped {g} di gestione del progetto}{17}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Versionamento}{17}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Software\bbl@ped {g} di Integrazione Continua}{18}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Condivisione dei file}{18}{subsubsection.6.2.4}
-\contentsline {subsubsubsection}{\numberline {6.2.4.1}Google Drive}{18}{subsubsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.5}Google Calendar}{19}{subsubsection.6.2.5}
-\contentsline {subsection}{\numberline {6.3}Strumenti per i documenti}{19}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}LATEX}{19}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Controllo ortografico}{19}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Grafici UML}{19}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}Ambiente di verifica}{19}{subsubsection.6.3.4}
-\contentsline {subsubsection}{\numberline {6.3.5}Fogli di calcolo}{19}{subsubsection.6.3.5}
-\contentsline {subsubsection}{\numberline {6.3.6}Codice}{19}{subsubsection.6.3.6}
-\contentsline {subsubsubsection}{\numberline {6.3.6.1}Analisi Statica}{20}{subsubsubsection.6.3.1}
-\contentsline {subsubsubsection}{\numberline {6.3.6.2}Analisi Dinamica}{20}{subsubsubsection.6.3.2}
-\contentsline {subsubsubsection}{\numberline {6.3.6.3}Validazione}{20}{subsubsubsection.6.3.3}
-\contentsline {section}{\numberline {7}Protocollo per lo sviluppo dell'applicazione}{20}{section.7}
-\contentsline {subsection}{\numberline {7.1}Creare un nuovo progetto}{20}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Creazione ticket}{21}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}Ticket\bbl@ped {g} di pianificazione}{21}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}Ticket\bbl@ped {g} di realizzazione e controllo}{22}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}Ticket\bbl@ped {g} di verifica}{22}{subsubsection.7.2.3}
-\contentsline {subsubsection}{\numberline {7.2.4}Dipendenze temporali}{23}{subsubsection.7.2.4}
-\contentsline {subsection}{\numberline {7.3}Aggiornamento ticket}{23}{subsection.7.3}
-\contentsline {subsubsection}{\numberline {7.3.1}Ticket\bbl@ped {g} di pianificazione}{23}{subsubsection.7.3.1}
-\contentsline {subsubsection}{\numberline {7.3.2}Ticket\bbl@ped {g} di realizzazione e controllo}{24}{subsubsection.7.3.2}
-\contentsline {subsubsection}{\numberline {7.3.3}Ticket\bbl@ped {g} di verifica}{24}{subsubsection.7.3.3}
-\contentsline {subsection}{\numberline {7.4}Consigli di utilizzo}{25}{subsection.7.4}
-\contentsline {subsubsection}{\numberline {7.4.1}Pagina personale}{25}{subsubsection.7.4.1}
-\contentsline {subsubsection}{\numberline {7.4.2}Visualizzare segnalazioni}{25}{subsubsection.7.4.2}
-\contentsline {section}{\numberline {8}Glossario}{26}{section.8}
-\contentsline {subsection}{\numberline {8.1}Implementazione}{26}{subsection.8.1}
+\contentsline {section}{\numberline {2}Collaborazione}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}Comunicazioni}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Comunicazioni interne}{7}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Comunicazioni esterne}{7}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Riunioni}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Interne}{7}{subsubsection.2.4.1}
+\contentsline {subsubsubsection}{\numberline {2.4.1.1}Casi Particolari}{7}{subsubsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Esterne}{8}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Esito}{8}{subsubsection.2.4.3}
+\contentsline {subsection}{\numberline {2.5}Repository e strumenti per la condivisione di file}{8}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Repository}{8}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Condivisione file}{9}{subsubsection.2.5.2}
+\contentsline {section}{\numberline {3}Documenti}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Template}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Contenuto e struttura dei documenti}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Norme tipografiche}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Formati di riferimento e altro}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Immagini e tabelle}{13}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Glossario}{13}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Implementazione}{14}{subsubsection.3.6.1}
+\contentsline {section}{\numberline {4}Ruoli di progetto}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Responsabile di Progetto}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Amministratore}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Analista}{16}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Progettista}{16}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Verificatore}{16}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Programmatore}{17}{subsection.4.6}
+\contentsline {section}{\numberline {5}Procedure al supporto dei processi}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Fattibilit\IeC {\`a}}{18}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Deduzione e analisi dei requisiti}{18}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Scoperta dei requisiti}{18}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Classificazione e priorit\IeC {\`a}}{19}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Specifica}{20}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Verifica dei requisiti}{20}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Validazione\bbl@it@ped {g} dei requisiti}{20}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Interna}{20}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Esterna}{21}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {5.4}Gestione delle modifiche ai requisiti}{21}{subsection.5.4}
+\contentsline {section}{\numberline {6}Ambiente di lavoro}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Sistemi Operativi}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Coordinamento}{22}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Software\bbl@it@ped {g} di gestione del progetto}{22}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Versionamento}{22}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Software\bbl@it@ped {g} di Integrazione Continua}{23}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Condivisione dei file}{23}{subsubsection.6.2.4}
+\contentsline {subsubsubsection}{\numberline {6.2.4.1}Google Drive}{23}{subsubsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.5}Google Calendar}{23}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}Strumenti per i documenti}{24}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}LATEX}{24}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Controllo ortografico}{24}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Grafici UML}{24}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Ambiente di verifica}{24}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Fogli di calcolo}{24}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Codice}{24}{subsubsection.6.3.6}
+\contentsline {subsubsubsection}{\numberline {6.3.6.1}Analisi Statica}{24}{subsubsubsection.6.3.1}
+\contentsline {subsubsubsection}{\numberline {6.3.6.2}Analisi Dinamica}{25}{subsubsubsection.6.3.2}
+\contentsline {subsubsubsection}{\numberline {6.3.6.3}Validazione}{25}{subsubsubsection.6.3.3}
+\contentsline {section}{\numberline {7}Protocollo per lo sviluppo dell'applicazione}{25}{section.7}
+\contentsline {subsection}{\numberline {7.1}Creare un nuovo progetto}{25}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Creazione ticket}{25}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Ticket\bbl@it@ped {g} di pianificazione}{26}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{27}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}Ticket\bbl@it@ped {g} di verifica}{27}{subsubsection.7.2.3}
+\contentsline {subsubsection}{\numberline {7.2.4}Dipendenze temporali}{28}{subsubsection.7.2.4}
+\contentsline {subsection}{\numberline {7.3}Aggiornamento ticket}{28}{subsection.7.3}
+\contentsline {subsubsection}{\numberline {7.3.1}Ticket\bbl@it@ped {g} di pianificazione}{28}{subsubsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{29}{subsubsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.3}Ticket\bbl@it@ped {g} di verifica}{29}{subsubsection.7.3.3}
+\contentsline {subsection}{\numberline {7.4}Consigli di utilizzo}{30}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Pagina personale}{30}{subsubsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.2}Visualizzare segnalazioni}{30}{subsubsection.7.4.2}

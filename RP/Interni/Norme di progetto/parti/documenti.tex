@@ -1,16 +1,12 @@
 \section{Documenti}{
+Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo riguardo alla stesura, verifica e approvazione della documentazione da produrre.
+\subsection{Template} 
+		Tutti i documenti devono essere realizzati utilizzando un template\ped{g} \LaTeX. Onde evitare modifiche manuali che farebbero perdere molto tempo, 
+		Il nome dei file\ped{g} deve rispondere alla seguente formattazione senza spazi: “[nome documento]-[versione]”. La parte della versione deve riportare la dicitura “v.” seguita dal numero di versione (ad es: NormeDiProgetto\_v.1.0.0.pdf”).\\
+ 		Tale modello si può trovare nel repository in documents/template.
 	\label{sec:docs}
 	\subsection{Contenuto e struttura dei documenti}{
 		\label{sub:content}
-		Tutti i documenti devono essere realizzati utilizzando un template\ped{g} \LaTeX. Onde evitare modifiche manuali che farebbero perdere molto tempo, il template\ped{g} permette di effettuare modifiche di stile le quali si riflettono in maniera automatica in tutti i documenti. In particolare, il template\ped{g} regola:
-		\begin{itemize}
-			\item pacchetti\ped{g} \LaTeX\ usati;
-			\item Variabili globali valide per ogni documento;
-			\item Formattazione stili delle pagine, degli header e dei footer.
-		\end{itemize}
-		Qualora si volessero effettuare delle modifiche al template\ped{g} sarà il responsabile di progetto\ped{g} ad applicarle.\\
-		\\
-		Il nome dei file\ped{g} deve rispondere alla seguente formattazione senza spazi: “[nome documento]-[versione]”. La parte della versione deve riportare la dicitura “v.” seguita dal numero di versione (ad es: NormeDiProgetto\_v.1.0.0.pdf”).\\
 		Ogni documento ufficiale deve essere composto dalle seguenti sezioni:
 		\begin{itemize}
 			\item Prima pagina: deve riportare titolo, logo ed informazioni del documento;
@@ -113,3 +109,21 @@
 			Ogni figura o tabella inserita deve avere una breve didascalia composta da un identificativo numerico univoco seguito, ove sia ritenuto necessario, da una breve descrizione. La numerazione di immagini e tabelle sarà attribuita da \LaTeX e dovrà essere inserito un indice che riporti tutte le figure presenti.\\			
 			}
 		}
+\subsection{Glossario}{
+ 	Il glossario è unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
+ 	I termini all'interno del glossario saranno organizzati nel seguente modo:
+ 	\begin{itemize}
+	 	\item Tutti termini saranno in ordine alfanumerico;
+	 	\item Tutti i termini devono essere in grassetto e iniziare con la lettera maiuscola , la definizione del termine sarà preceduta dal carattere '':'' ;
+	 	\item Tutti i termini devono fornire chiarimenti su concetti che possono essere confusi quindi non devono essere inseriti termini il cui significato è già noto.
+ 	\end{itemize}	
+   \subsubsection{Implementazione}
+      L'inserimento dei termini nel glossario viene eseguito tramite un applicazione interna al team che funziona nel seguente modo:
+      \begin{itemize}
+	      \item Si inserisce il lemma e la descrizione del lemma negli appositi spazi;
+	      \item Si salva il glossario nel formato .tex;
+	      \item A tutte le parole presenti nei documenti che hanno una corrispondente definizione nel glossario  verrà aggiunto un pedice (g) per indicare che la parola è presente nel glossario.
+      \end{itemize}  
+   L'ordine lessicografico non è importante quando si inseriscono nuovi lemmi nel programma\ped{g} dato che vengono ordinati automaticamente.\\
+   Il file\ped{g} relativo al Glossario è il seguente: \href{run:../../Esterni/\fGlossario}{\fEscapeGlossario}
+}
