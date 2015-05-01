@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  1 MAY 2015 14:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  1 MAY 2015 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -811,396 +811,11 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen184
 \l_MT_below_shortintertext_sep=\dimen185
 )
-(/usr/share/texlive/texmf-dist/tex/latex/qtree/qtree.sty
-Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
-Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
-(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
-Package: pict2e 2014/01/12 v0.2z Improved picture commands (HjG,RN,JT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
-File: pict2e.cfg 2011/04/05 v0.1t pict2e configuration for teTeX/TeXLive
-)
-Package pict2e Info: Driver file: pdftex.def on input line 119.
-Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
-File: p2e-pdftex.def 2011/04/05 v0.1t Driver-dependant file (RN,HjG,JT)
-)
-\pIIe@GRAPH=\toks34
-\@arclen=\dimen186
-\@arcrad=\dimen187
-\@tempdimd=\dimen188
-)
-\c@treecount=\count164
-\c@branchcount=\count165
-\parentbox=\box43
-\treebox=\box44
-\treeboxone=\box45
-\treeboxtwo=\box46
-\treeboxthree=\box47
-\treeboxfour=\box48
-\treeboxfive=\box49
-\treeboxsix=\box50
-\treeboxseven=\box51
-\treeboxeight=\box52
-\treeboxnine=\box53
-\treeboxten=\box54
-\treeboxeleven=\box55
-\treeboxtwelve=\box56
-\treeboxthirteen=\box57
-\treeboxfourteen=\box58
-\treeboxfifteen=\box59
-\treeboxsixteen=\box60
-\treeboxseventeen=\box61
-\treeboxeighteen=\box62
-\treeboxnineteen=\box63
-\treeboxtwenty=\box64
-\treeoffsetone=\skip75
-\treeoffsettwo=\skip76
-\treeoffsetthree=\skip77
-\treeoffsetfour=\skip78
-\treeoffsetfive=\skip79
-\treeoffsetsix=\skip80
-\treeoffsetseven=\skip81
-\treeoffseteight=\skip82
-\treeoffsetnine=\skip83
-\treeoffsetten=\skip84
-\treeoffseteleven=\skip85
-\treeoffsettwelve=\skip86
-\treeoffsetthirteen=\skip87
-\treeoffsetfourteen=\skip88
-\treeoffsetfifteen=\skip89
-\treeoffsetsixteen=\skip90
-\treeoffsetseventeen=\skip91
-\treeoffseteighteen=\skip92
-\treeoffsetnineteen=\skip93
-\treeoffsettwenty=\skip94
-\treeshiftone=\skip95
-\treeshifttwo=\skip96
-\treeshiftthree=\skip97
-\treeshiftfour=\skip98
-\treeshiftfive=\skip99
-\treeshiftsix=\skip100
-\treeshiftseven=\skip101
-\treeshifteight=\skip102
-\treeshiftnine=\skip103
-\treeshiftten=\skip104
-\treeshifteleven=\skip105
-\treeshifttwelve=\skip106
-\treeshiftthirteen=\skip107
-\treeshiftfourteen=\skip108
-\treeshiftfifteen=\skip109
-\treeshiftsixteen=\skip110
-\treeshiftseventeen=\skip111
-\treeshifteighteen=\skip112
-\treeshiftnineteen=\skip113
-\treeshifttwenty=\skip114
-\treewidthone=\skip115
-\treewidthtwo=\skip116
-\treewidththree=\skip117
-\treewidthfour=\skip118
-\treewidthfive=\skip119
-\treewidthsix=\skip120
-\treewidthseven=\skip121
-\treewidtheight=\skip122
-\treewidthnine=\skip123
-\treewidthten=\skip124
-\treewidtheleven=\skip125
-\treewidthtwelve=\skip126
-\treewidththirteen=\skip127
-\treewidthfourteen=\skip128
-\treewidthfifteen=\skip129
-\treewidthsixteen=\skip130
-\treewidthseventeen=\skip131
-\treewidtheighteen=\skip132
-\treewidthnineteen=\skip133
-\treewidthtwenty=\skip134
-\daughteroffsetone=\skip135
-\daughteroffsettwo=\skip136
-\daughteroffsetthree=\skip137
-\daughteroffsetfour=\skip138
-\branchwidthone=\skip139
-\branchwidthtwo=\skip140
-\branchwidththree=\skip141
-\branchwidthfour=\skip142
-\parentoffset=\skip143
-\treeoffset=\skip144
-\daughteroffset=\skip145
-\branchwidth=\skip146
-\parentwidth=\skip147
-\treewidth=\skip148
-\qta=\toks35
-\qtb=\toks36
-\nbranches=\count166
-\qroofx=\count167
-\qroofy=\count168
-\@qrscratchbox=\box65
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/tikz-qtree.sty
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks37
-)
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box66
-
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
-))
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
-
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
-
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks38
-\pgfkeys@temptoks=\toks39
-
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks40
-))
-\pgf@x=\dimen189
-\pgf@y=\dimen190
-\pgf@xa=\dimen191
-\pgf@ya=\dimen192
-\pgf@xb=\dimen193
-\pgf@yb=\dimen194
-\pgf@xc=\dimen195
-\pgf@yc=\dimen196
-\w@pgf@writea=\write3
-\r@pgf@reada=\read1
-\c@pgf@counta=\count169
-\c@pgf@countb=\count170
-\c@pgf@countc=\count171
-\c@pgf@countd=\count172
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
-)))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count173
-\pgfsyssoftpath@bigbuffer@items=\count174
-)
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
-
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen197
-\pgfmath@count=\count175
-\pgfmath@box=\box67
-\pgfmath@toks=\toks41
-\pgfmath@stack@operand=\toks42
-\pgfmath@stack@operation=\toks43
-)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count176
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen198
-\pgf@picmaxx=\dimen199
-\pgf@picminy=\dimen200
-\pgf@picmaxy=\dimen201
-\pgf@pathminx=\dimen202
-\pgf@pathmaxx=\dimen203
-\pgf@pathminy=\dimen204
-\pgf@pathmaxy=\dimen205
-\pgf@xx=\dimen206
-\pgf@xy=\dimen207
-\pgf@yx=\dimen208
-\pgf@yy=\dimen209
-\pgf@zx=\dimen210
-\pgf@zy=\dimen211
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen212
-\pgf@path@lasty=\dimen213
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen214
-\pgf@shorten@start@additional=\dimen215
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count177
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen216
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen217
-\pgf@pt@y=\dimen218
-\pgf@pt@temp=\dimen219
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen220
-\pgf@sys@shading@range@num=\count178
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
-
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box71
-))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
-)
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
-)))
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box72
-)
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
-)
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen221
-\pgf@nodesepend=\dimen222
-)
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
-))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen223
-\pgffor@skip=\dimen224
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
-))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
-
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count179
-\pgfplotmarksize=\dimen225
-)
-\tikz@lastx=\dimen226
-\tikz@lasty=\dimen227
-\tikz@lastxsaved=\dimen228
-\tikz@lastysaved=\dimen229
-\tikzleveldistance=\dimen230
-\tikzsiblingdistance=\dimen231
-\tikz@figbox=\box73
-\tikz@tempbox=\box74
-\tikztreelevel=\count180
-\tikznumberofchildren=\count181
-\tikznumberofcurrentchild=\count182
-\tikz@fig@count=\count183
-
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count184
-\pgfmatrixcurrentcolumn=\count185
-\pgf@matrix@numberofcolumns=\count186
-)
-\tikz@expandcount=\count187
-
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
-hs.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-))) (/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgftree.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgfsubpic.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgfsubpic.tex
-\pgf@subpicminx=\dimen232
-\pgf@subpicminy=\dimen233
-Normal \dimen register pool exhausted, switching to extended pool.
-\pgf@subpicmaxx=\dimen256
-\pgf@subpicmaxy=\dimen257
-))
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/pgftree.tex
-\levelsep=\dimen258
-\subtreesep=\dimen259
-\smuggle@levelsep=\dimen260
-\smuggle@subtreesep=\dimen261
-\this@levelsep=\dimen262
-\this@subtreesep=\dimen263
-\pgftree@childx=\dimen264
-\pgftree@savechildx=\dimen265
-\pgftree@childy=\dimen266
-\pgftree@savechildy=\dimen267
-\pgftree@childi=\count188
-\pgftree@savechildi=\count189
-\pgftree@level=\count190
-\pgftree@depth=\dimen268
-\pgf@subpic@hbox@children=\box75
-\pgf@subpic@minx@children=\dimen269
-\pgf@subpic@miny@children=\dimen270
-\pgf@subpic@maxx@children=\dimen271
-\pgf@subpic@maxy@children=\dimen272
-\pgftree@lastchildx=\dimen273
-\pgftree@lastchildy=\dimen274
-))
-(/usr/share/texlive/texmf-dist/tex/latex/tikz-qtree/tikz-qtree.tex
-\@result=\toks46
-\child@list=\toks47
-\root@node=\toks48
-))
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 125.
-\c@subsubsubsection=\count191
+Package hyperref Info: Option `colorlinks' set `true' on input line 124.
+\c@subsubsubsection=\count164
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1265,17 +880,17 @@ LaTeX Info: Redefining \it@ocap on input line 29.
 LaTeX Info: Redefining \it@ccap on input line 29.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
-\scratchdimen=\dimen275
-\scratchbox=\box76
-\nofMPsegments=\count193
-\nofMParguments=\count194
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count195
-\MPscratchDim=\dimen276
-\MPnumerator=\count196
-\makeMPintoPDFobject=\count197
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count165
+\scratchdimen=\dimen186
+\scratchbox=\box43
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen187
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1291,7 +906,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box77
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring ON on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1300,7 +915,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count198
+\c@section@level=\count171
 )
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
@@ -1312,21 +927,21 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 29.
-\c@lstlisting=\count199
+\c@lstlisting=\count172
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-ABD: EveryShipout initializing macros (../../Template/firstpage.tex
-<../../logo.jpg, id=7, 572.1375pt x 572.1375pt>
+(../../Template/firstpage.tex <../../logo.jpg, id=4, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo.jpg>])
-(../../Template/sommario.tex)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo.jpg>]) (../../T
+emplate/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
@@ -1367,8 +982,8 @@ Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [4])
-\tf@toc=\write4
-\openout4 = `NormeDiProgetto_v.1.0.0.toc'.
+\tf@toc=\write3
+\openout3 = `NormeDiProgetto_v.1.0.0.toc'.
 
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
@@ -1416,22 +1031,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-
-Overfull \hbox (1.76993pt too wide) in paragraph at lines 59--60
-[][] 
- []
-
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9] (./parti/documenti.tex
+ [8] (./parti/documenti.tex
 Overfull \hbox (10.43419pt too wide) in paragraph at lines 29--30
 []\T1/cmr/m/n/12 Esterno (EXT): in-con-tro ef-fet-tua-to tra i mem-bri del grup
 -po e committente$[]$ e/o proponente$[]$. 
@@ -1441,12 +1046,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10]
+ [9]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
+ [10]
 Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
@@ -1455,7 +1060,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 95.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12]
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 108--112
 
  []
@@ -1464,29 +1069,29 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 126.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13])
+ [12])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14] (./parti/ruoli.tex
+ [13] (./parti/ruoli.tex
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
+ [14]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16])
+ [15])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[17] (./parti/ingegneriaRequisiti.tex
+[16] (./parti/ingegneriaRequisiti.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--21
 
  []
@@ -1505,12 +1110,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 26.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18]
+ [17]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 69.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19]
+ [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 80.
@@ -1527,13 +1132,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 89.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [19]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 113.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [20])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21]
-(./parti/ambientelavoro.tex
+
+[21] (./parti/ambientelavoro.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
@@ -1569,166 +1179,189 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 105.
+Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-Overfull \hbox (0.79156pt too wide) in paragraph at lines 113--114
+Overfull \hbox (0.79156pt too wide) in paragraph at lines 117--118
 \T1/cmr/m/n/12 Per la ste-su-ra dei gra-fi-ci UML vie-ne uti-liz-za-to il progr
 amma$[]$ \T1/cmr/bx/n/12 Vi-sual Pa-ra-digm\T1/cmr/m/n/12 . Il programma$[]$
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 143.
+Package pdftex.def Info: ../../logo.jpg used on input line 136.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24]
-Underfull \hbox (badness 10000) in paragraph at lines 155--159
+Underfull \hbox (badness 10000) in paragraph at lines 161--165
 
  []
 
-
-Overfull \hbox (2.1679pt too wide) in paragraph at lines 176--177
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 180.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25]
+Overfull \hbox (2.1679pt too wide) in paragraph at lines 182--183
 []\T1/cmr/bx/n/12 Verificatore\T1/cmr/m/n/12 : crea i ticket$[]$ per se-gna-la-
 re er-ro-ri ed im-pre-ci-sio-ni tro-va-te du-ran-te il processo$[]$
  []
 
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 186.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
+(hyperref)                removing `math shift' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 206.
+(hyperref)                removing `subscript' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 206.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 232.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 232.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `math shift' on input line 212.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 240.
+Package pdftex.def Info: ../../logo.jpg used on input line 233.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [26]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 258.
+(hyperref)                removing `math shift' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 258.
+(hyperref)                removing `subscript' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 258.
+(hyperref)                removing `math shift' on input line 238.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 264.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 264.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 264.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 283.
+Package pdftex.def Info: ../../logo.jpg used on input line 282.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27]
+ [27]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.6.6.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.311 ...bsection{Ticket\ped{g} di pianificazione}
+                                                  
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 305.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 305.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 305.
+(hyperref)                removing `math shift' on input line 311.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 327.
+(hyperref)                removing `subscript' on input line 311.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 327.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 327.
+(hyperref)                removing `math shift' on input line 311.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 334.
+Package pdftex.def Info: ../../logo.jpg used on input line 328.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28]
+ [28]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.6.6.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.333 ...cket\ped{g} di realizzazione e controllo}
+                                                  
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 356.
+(hyperref)                removing `math shift' on input line 333.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 356.
+(hyperref)                removing `subscript' on input line 333.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 356.
+(hyperref)                removing `math shift' on input line 333.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.6.6.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \subsubsubsection{Ticket\ped{g} di verifica}
+                                                  
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 362.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 379.
+Package pdftex.def Info: ../../logo.jpg used on input line 377.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29]) 
-AED: lastpage setting LastPage
+ [29])
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+(./parti/listaControllo.texpdfTeX warning (ext4): destination with the same ide
+ntifier (name{section.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \section{Lista di controllo}
+                                ) 
+AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 51.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./NormeDiProgetto_v.1.0.0.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 49.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 22116 strings out of 494969
- 367244 string characters out of 6178806
- 507686 words of memory out of 5000000
- 24727 multiletter control sequences out of 15000+600000
+ 13627 strings out of 494969
+ 197129 string characters out of 6178806
+ 356378 words of memory out of 5000000
+ 16447 multiletter control sequences out of 15000+600000
  19353 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 70i,16n,59p,863b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.3.5.1} has been referenced but does
- not exist, replaced by a fixed one
-
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.600pk> </home/
-petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/petrucci
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/petrucci/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/petrucci/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200
-.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> 
-</home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/p
-etrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (31 pages, 245455 bytes).
+ 51i,16n,47p,863b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.600pk> </hom
+e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/petruc
+ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </home/petrucci/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/petrucci/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti12
+00.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
+> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home
+/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on NormeDiProgetto_v.1.0.0.pdf (32 pages, 248357 bytes).
 PDF statistics:
- 1098 PDF objects out of 1200 (max. 8388607)
- 696 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
- 610 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1146 PDF objects out of 1200 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 143 named destinations out of 1000 (max. 500000)
+ 678 words of extra memory for PDF output out of 10000 (max. 10000000)
 

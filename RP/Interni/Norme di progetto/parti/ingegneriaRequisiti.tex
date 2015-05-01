@@ -9,7 +9,7 @@ Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora a
 		\end{enumerate}
 		Nello stimare i benefici dovrà essere data molta importanza alle competenze che i membri del gruppo acquisirebbero nello sviluppo del sistema.
 	 }
-	\subsection{Deduzione e analisi dei requisiti}{ 
+	\subsection{Analisi dei Requisiti}{ 
 	\phantomsection
 		\subsubsection{Scoperta dei requisiti}{
 			\textbf{Interviste}\\\\
@@ -95,3 +95,34 @@ Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora a
 			\end{enumerate}
 			Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server\ped{g} e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sotto albero della foresta dei requisiti\ped{g} e dei test.
 			}
+			
+   \subsection{Progettazione}
+	\subsubsection{Specifica Tecnica}
+	I Progettisti devono descrivere la progettazione ad alto livello dell'architettura dell'applicazione e dei singoli componenti nella Specifica Tecnica e provvedere alla progettazione	di opportuni test di integrazione.
+	\subsubsubsection{Diagrammi UML}
+	Devono essere realizzati i seguenti diagrammi:
+	\begin{itemize}
+	\item Diagrammi di sequenza;
+	\item Diagrammi di attività.
+	\end{itemize}
+	\subsubsubsection{Design pattern}
+	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
+	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
+	\subsubsubsection{Tracciamento componenti}
+	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione xxx. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
+	\subsubsubsection{Test di integrazione}
+	I Progettisti devono definire delle classi di verifica necessarie per verificare che i componenti del sistema funzionino nella maniera prevista.
+	\subsubsubsection{Definizione di Prodotto}
+	I Progettisti devono produrre la Definizione di Prodotto dove viene descritta la progettazione di dettaglio del sistema ampliando quanto scritto nella Specifica Tecnica.
+	
+	\subsubsubsection{Diagrammi UML}
+	Devono essere aggiornati i seguenti diagrammi:
+	\begin{itemize}
+
+	\item Diagrammi di sequenza;
+	\item Diagrammi di attività.
+	\end{itemize}
+
+	\subsubsubsection{Test di unità}
+	I Progettisti dovranno definire i test d'unità necessari per verificare che i componenti
+	del sistema funzionino nella modo previsto.

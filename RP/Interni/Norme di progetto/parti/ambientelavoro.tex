@@ -84,7 +84,8 @@ Google Calendar viene utilizzato all’interno del gruppo per gestire le risorse
 particolare tale strumento viene utilizzato per notificare in quali giorni un determinato
 membro non può essere disponibile e per segnalare date rilevanti per il gruppo, come
 ad esempio le date delle riunioni.
-
+\subsection{Pianificazione}
+DA INTEGRARE
 
 
 \subsection{Strumenti per i documenti}
@@ -103,6 +104,9 @@ vista semantico. Un esempio è dato dal comando /role\textbraceleft ruolo\textbr
 all’interno del progetto\ped{g}.\\
 Per la scrittura di documenti \LaTeX\  l’editor\ped{g} consigliato è \textbf{TeXstudio}. 
 
+\subsubsection{LateGloss}
+Per la pedicizzazione dei documenti con
+
 \subsubsection{Controllo ortografico}
 
 Il software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il programma\ped{g} è accessibile tramite il \emph{Makefile}.
@@ -112,20 +116,22 @@ Il software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il progra
 
 Per la stesura dei grafici UML viene utilizzato il programma\ped{g} \textbf{Visual Paradigm}. Il programma\ped{g} viene utilizzato in licenza Community Edition la quale ne permette l’uso gratuito per fini non commerciali.
 
-
-
-\subsubsection{Ambiente di verifica}
-
-Si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata
-le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione\ped{g} durante l’intero sviluppo del progetto\ped{g}.
-
 \subsubsection{Fogli di calcolo}
 L'utilizzo di fogli di calcolo\ped{g} elettronici quali Calc,Excel e Numbers è a discrezione del singolo componente in base alla propria piattaforma utilizzata.
+I fogli di calcolo vengono usati per:
+\begin{itemize}
+\item Grafici a torta per l'utilizzo delle risorse;
+\item Grafici a torta per il costo dedicato a ciascuna risorsa;
+\item Istogrammi per le ore assegnate ad ogni componente del gruppo;
+\item Tabelle per il confronto tra preventivo e consuntivo;
+\item Istogrammi per il confronto tra ore preventivate e ore realmente impiegate da
+ciascuna risorsa.
+\end{itemize}
 
-
-\subsubsection{Codice} 
-
-La verifica del codice\ped{g} è suddivisa in statica e dinamica.\\ 
+\subsection{Strumenti per la codifica} 
+\subsubsection{Verifica}
+Si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata
+le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione\ped{g} durante l’intero sviluppo del progetto\ped{g}.
 Per entrambe vengono riportati gli strumenti da utilizzare. 
 
 \subsubsubsection{Analisi Statica} 
@@ -146,11 +152,11 @@ La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da
 fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
 
 
-\section{Protocollo per lo sviluppo dell'applicazione} 
+\subsection{Protocollo per lo sviluppo dell'applicazione} 
 Per procedere con uno sviluppo controllato dei documenti e del codice\ped{g} si è scelto di adottare il sistema di ticketing\ped{g} \textbf{Redmine}.\\ 
 La scelta di tale software\ped{g} è descritta nella sezione \ref{subsec:Software di gestione del prodotto}.
 
-\subsection{Creare un nuovo progetto} 
+\subsubsection{Creare un nuovo progetto} 
 
 La creazione di un progetto\ped{g} è compito del \emph{Responsabile di Progetto}.\\ 
 Un nuovo progetto\ped{g} rappresenta una macro-attività caratterizzata da molte sotto-attività 
@@ -165,7 +171,7 @@ Per creare un nuovo progetto\ped{g}:
 \item Lasciare inalterati gli altri campi. 
 \end{itemize}
  
-\subsection{Creazione ticket}
+\subsubsection{Creazione ticket}
  
   I ticket\ped{g} vengono creati da:
  \begin{itemize}
@@ -203,7 +209,7 @@ rispetti tutte le norme.
 }
 
 
-\subsubsection{Ticket\ped{g} di pianificazione}
+\subsubsubsection{Ticket\ped{g} di pianificazione}
 
 \begin{itemize}
 
@@ -229,7 +235,7 @@ padre;
 \end{itemize}  
 
 
-\subsubsection{Ticket\ped{g} di realizzazione e controllo} 
+\subsubsubsection{Ticket\ped{g} di realizzazione e controllo} 
 
 		\begin{itemize}
 		
@@ -255,7 +261,7 @@ padre;
 \item \textbf{Osservatori}: aggiungere eventuali collaboratori. 
 \end{itemize} 
 
-\subsubsection{Ticket\ped{g} di verifica}
+\subsubsubsection{Ticket\ped{g} di verifica}
 
 
 Un \emph{Verificatore} per creare un \emph{ticket\ped{g} di verifica} deve: 
@@ -284,7 +290,7 @@ Sarà poi compito del responsabile del progetto\ped{g} padre decidere a chi asse
 \end{enumerate}
 
 
-\subsubsection{Dipendenze temporali}
+\subsubsubsection{Dipendenze temporali}
 
 
 Dopo la creazione del ticket\ped{g}, per aggiungere \textbf{dipendenze temporali} tra i ticket\ped{g}:
@@ -298,11 +304,11 @@ Dopo la creazione del ticket\ped{g}, per aggiungere \textbf{dipendenze temporali
 
 Tutti i campi non segnalati sono da lasciare vuoti. 
 
-\subsection{Aggiornamento ticket}
+\subsubsection{Aggiornamento ticket}
 
 Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per effettuare l’aggiornamento di entrambe.
 
-\subsubsection{Ticket\ped{g} di pianificazione}
+\subsubsubsection{Ticket\ped{g} di pianificazione}
 
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
@@ -324,7 +330,7 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 \end{itemize}
 
 
-\subsubsection{Ticket\ped{g} di realizzazione e controllo}
+\subsubsubsection{Ticket\ped{g} di realizzazione e controllo}
 
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
@@ -353,7 +359,7 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 
 
 
-\subsubsection{Ticket\ped{g} di verifica}
+\subsubsubsection{Ticket\ped{g} di verifica}
 
 \begin{itemize}
 \item Andare sul menù \textbf{Segnalazioni}; 
@@ -386,9 +392,7 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 
 
 
-\subsection{Consigli di utilizzo}
-\phantomsection
-\subsubsection{Pagina personale}
+\subsubsection{Consigli di utilizzo}
  
 	Per avere una immediata visualizzazione dei ticket\ped{g} assegnati, è consigliato personalizzare 
 	la pagina personale: 
@@ -400,9 +404,6 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 		\item Ripetere il punto precedente per aggiungere \textbf{Segnalazioni osservate}. 
 	
 	\end{itemize}
-
-	
-\subsubsection{Visualizzare segnalazioni}
 
 	Per avere una visualizzazione più chiara delle segnalazioni si consiglia di ordinarle per 
 	oggetto. Tale risultato può essere ottenuto premendo \textbf{Oggetto} dalla pagina \textbf{Segnalazioni}.
