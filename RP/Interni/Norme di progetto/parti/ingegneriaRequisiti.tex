@@ -1,16 +1,16 @@
 \section{Procedure al supporto dei processi}{
 Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora ad elencare le procedure che essi devono seguire in modo rigoroso per convergere agli obiettivi posti nel \textit{Piano di Qualifica}.
-	\subsection{Fattibilità}{
-		A partire da informazioni preliminari sul capitolato, lo studio di fattibilità dovrà generare un rapporto che indichi la convenienza o meno del gruppo nello sviluppo del sistema. In particolare si dovrà considerare:
-		\begin{enumerate}
-			\item Sufficienza di risorse umane\ped{g};
-			\item Rapporto tra i costi ed i benefici;
-			\item Rischi individuati.
-		\end{enumerate}
-		Nello stimare i benefici dovrà essere data molta importanza alle competenze che i membri del gruppo acquisirebbero nello sviluppo del sistema.
-	 }
+
 	\subsection{Analisi dei Requisiti}{ 
-	\phantomsection
+	   \subsubsection{Fattibilità}{
+	    		A partire da informazioni preliminari sul capitolato, lo studio di fattibilità dovrà generare un rapporto che indichi la convenienza o meno del gruppo nello sviluppo del sistema. In particolare si dovrà considerare:
+	    		\begin{enumerate}
+	    			\item Sufficienza di risorse umane\ped{g};
+	    			\item Rapporto tra i costi ed i benefici;
+	    			\item Rischi individuati.
+	    		\end{enumerate}
+	    		Nello stimare i benefici dovrà essere data molta importanza alle competenze che i membri del gruppo acquisirebbero nello sviluppo del sistema.
+	    	 }
 		\subsubsection{Scoperta dei requisiti}{
 			\textbf{Interviste}\\\\
 			al fine di evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
@@ -126,3 +126,69 @@ Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora a
 	\subsubsubsection{Test di unità}
 	I Progettisti dovranno definire i test d'unità necessari per verificare che i componenti
 	del sistema funzionino nel modo previsto.
+	\subsection{Verifica}
+	La verifica di processi, documenti e prodotti è un'attività da eseguire continuamente	durante lo sviluppo del Progetto. Di conseguenza, servono modalità operative chiare 	e dettagliate per i Verificatori, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. Si descrivono ora le modalità ordinate e puntuali di verifica di processi, documenti, attività e codice alle quali ci si riferirà in questo documento e alle quali i Verificatori dovranno attenersi.
+	\subsubsection{Verifica dei documenti}
+	Il processo di verifica viene istanziato nel momento in cui l’output di un processo passa dalla versione X.0.Z alla versione X.1.0. È compito del \emph{Responsabile} notificare i \emph{Verificatori} dell'inizio dell'attività di verifica. Attraverso il diario delle modifiche è possibile focalizzare l'attenzione maggiormente sulle sezioni che hanno subito dei cambiamenti dall'ultima verifica, riducendo il tempo necessario al controllo.
+	Per eseguire un'accurata verifica dei documenti redatti è necessario seguire il seguente protocollo:
+	\begin{enumerate}
+	\item \textbf{Controllo sintattico e del periodo}: Utilizzando TeXstudio e GNU Aspell vengono evidenziati e corretti gli errori di grammatica più evidenti. Gli errori di sintassi, di sostituzione di lettere che provocano la creazione di parole grammaticalmente corrette ma sbagliate nel contesto ed i periodi di difficile comprensione necessitano dell’intervento di un verificatore umano. Per questa ragione ciascun documento dovrà essere sottoposto ad un walkthrough da parte dei verificatori per individuare tali errori;
+	\item \textbf{Rispetto delle norme di progetto}: Sono state definite norme tipografiche di carattere generale. Impongono una struttura dei documenti che non può essere verificata in maniera automatica. La verifica delle norme
+	per cui non è stato definito uno strumento automatico richiede che i Verificatori eseguano inspection sul rispetto di quelle norme in ciascun documento;
+	\item \textbf{Lista di controllo}: Il \emph{Verificatore} dovrà utilizzare la lista di controllo per i
+	documenti, descritta nell’appendice \ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
+	\item \textbf{Verifica del glossario}: Il \emph{Verificatore} si occuperà del controllo dei termini inseriti nel glossario e della corretta pedicizzazione dei termini nei vari documenti,segnalando eventuali errori;
+	\item \textbf{Calcolo dell’indice Gulpease}: Su ogni documento redatto il \emph{Verificatore} deve calcolare l’indice di leggibilità. Nel caso in cui l’indice risultasse troppo basso, sarà necessario eseguire un walkthrough del documento alla ricerca delle frasi troppo lunghe o complesse;
+	\item \textbf{Miglioramento del processo di verifica}: Per avere un miglioramento del processo di verifica, quando i \emph{Verificatori} eseguono walkthrough di un documento, dovranno riportare gli errori più frequentemente trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle verifiche future;
+	\item \textbf{Segnalazione degli errori riscontrati}: il \emph{Verificatore} deve generare ticket secondo quando descritto nella
+	sezione \ref{sec:TicketVerifica}.
+	\end{enumerate}
+	\subsubsection{Verifica diagrammi UML}
+	al \emph{Verificatore} è richiesto di fare un controllo manuale sui diagrammi UML generati per verificare che sia stato rispettato il formalismo UML 2.x
+	\subsubsection{Verifica del codice}
+	al \emph{verificatore} è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati. Di seguito un elenco degli strumenti da usare per l’analisi.
+	
+	\subsubsubsection{Analisi Statica} 
+	
+	  \begin{itemize}
+	  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
+	  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
+	  \item \textbf{jsmeter}: strumento per il calcolo di alcune metriche\ped{g} del codice\ped{g} javascript\ped{g}.
+	  \end{itemize}
+	
+	\subsubsubsection{Analisi Dinamica}
+	Verranno utilizzati strumenti e plugin interni al browser\ped{g} \emph{Chrome} quali \textbf{SpeedTracer} per verificare la velocità dell'applicazione web\ped{g};
+	
+	
+	\subsubsubsection{Validazione}
+	
+	La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
+	fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
+	
+	\subsection{Codifica}
+	Le convenzioni di codifica che tutti i membri del gruppo devono seguire sono quelle
+	specificate alla seguente pagina :\\
+	\begin{center} \url{http://www.w3schools.com/js/js_conventions.asp} \end{center}
+	\subsubsection{Nomi}
+	I nomi di variabili, classi, funzioni, metodi e commenti dovranno essere in camelCase. I nome di variabili, metodi e funzioni dovranno avere la prima lettera	minuscola.
+	I nomi di variabili globali e costanti dovranno essere in UPPERCASE.
+	\subsubsection{Documentazione}
+	I file contenenti codice dovranno essere provvisti di un'intestazione contenente:
+	\begin{lstlisting}
+    /*!
+  	* \file Nome del file
+  	* \author Autore (indirizzo email dell'autore)
+  	* \date Data di creazione
+  	* \brief Breve descrizione del file
+  	*
+  	* Descrizione dettagliata del file
+  	*/
+  	
+  	Prima di ogni metodo dovra essere presente un commento contenente:
+  	/*!
+  	* \brief Breve descrizione della funzione
+  	* \param Nome del primo parametro
+  	* \param Nome del secondo parametro
+  	* \return Valore ritornato dalla funzione
+  	*/
+    \end{lstlisting}

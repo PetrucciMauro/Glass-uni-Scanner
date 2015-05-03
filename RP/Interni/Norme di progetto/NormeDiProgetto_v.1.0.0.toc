@@ -1,86 +1,94 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
-\contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Glossario}{6}{subsection.1.2}
-\contentsline {section}{\numberline {2}Collaborazione}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Comunicazioni}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Comunicazioni interne}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Comunicazioni esterne}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Riunioni}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Interne}{7}{subsubsection.2.4.1}
-\contentsline {subsubsubsection}{\numberline {2.4.1.1}Casi Particolari}{7}{subsubsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Esterne}{8}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Esito}{8}{subsubsection.2.4.3}
-\contentsline {subsection}{\numberline {2.5}Repository e strumenti per la condivisione di file}{8}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Repository}{8}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Condivisione file}{8}{subsubsection.2.5.2}
-\contentsline {section}{\numberline {3}Documenti}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Template}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Contenuto e struttura dei documenti}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Norme tipografiche}{10}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Formati di riferimento e altro}{11}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Immagini e tabelle}{12}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Glossario}{12}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Implementazione}{13}{subsubsection.3.6.1}
-\contentsline {section}{\numberline {4}Ruoli di progetto}{14}{section.4}
-\contentsline {subsection}{\numberline {4.1}Responsabile di Progetto}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Amministratore}{14}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Analista}{15}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Progettista}{15}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Verificatore}{15}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Programmatore}{16}{subsection.4.6}
-\contentsline {section}{\numberline {5}Procedure al supporto dei processi}{17}{section.5}
-\contentsline {subsection}{\numberline {5.1}Fattibilit\IeC {\`a}}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Analisi dei Requisiti}{17}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Scoperta dei requisiti}{17}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Classificazione e priorit\IeC {\`a}}{18}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Specifica}{19}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Verifica dei requisiti}{19}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Validazione\bbl@it@ped {g} dei requisiti}{19}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Interna}{19}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Esterna}{20}{subsubsection.5.3.2}
-\contentsline {subsection}{\numberline {5.4}Gestione delle modifiche ai requisiti}{20}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Progettazione}{20}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Specifica Tecnica}{20}{subsubsection.5.5.1}
-\contentsline {subsubsubsection}{\numberline {5.5.1.1}Diagrammi UML}{20}{subsubsubsection.5.5.1}
-\contentsline {subsubsubsection}{\numberline {5.5.1.2}Design pattern}{20}{subsubsubsection.5.5.2}
-\contentsline {subsubsubsection}{\numberline {5.5.1.3}Tracciamento componenti}{21}{subsubsubsection.5.5.3}
-\contentsline {subsubsubsection}{\numberline {5.5.1.4}Test di integrazione}{21}{subsubsubsection.5.5.4}
-\contentsline {subsubsubsection}{\numberline {5.5.1.5}Definizione di Prodotto}{21}{subsubsubsection.5.5.5}
-\contentsline {subsubsubsection}{\numberline {5.5.1.6}Diagrammi UML}{21}{subsubsubsection.5.5.6}
-\contentsline {subsubsubsection}{\numberline {5.5.1.7}Test di unit\IeC {\`a}}{21}{subsubsubsection.5.5.7}
-\contentsline {section}{\numberline {6}Ambiente di lavoro}{22}{section.6}
-\contentsline {subsection}{\numberline {6.1}Sistemi Operativi}{22}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Coordinamento}{22}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Software\bbl@it@ped {g} di gestione del progetto}{22}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Versionamento}{22}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Software\bbl@it@ped {g} di Integrazione Continua}{23}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Condivisione dei file}{23}{subsubsection.6.2.4}
-\contentsline {subsubsubsection}{\numberline {6.2.4.1}Google Drive}{23}{subsubsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.5}Google Calendar}{23}{subsubsection.6.2.5}
-\contentsline {subsection}{\numberline {6.3}Pianificazione}{24}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Strumenti per i documenti}{24}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}LATEX}{24}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Controllo ortografico}{24}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}Grafici UML}{24}{subsubsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.4}Fogli di calcolo}{24}{subsubsection.6.4.4}
-\contentsline {subsection}{\numberline {6.5}Strumenti per la codifica}{25}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}Verifica}{25}{subsubsection.6.5.1}
-\contentsline {subsubsubsection}{\numberline {6.5.1.1}Analisi Statica}{25}{subsubsubsection.6.5.1}
-\contentsline {subsubsubsection}{\numberline {6.5.1.2}Analisi Dinamica}{25}{subsubsubsection.6.5.2}
-\contentsline {subsubsubsection}{\numberline {6.5.1.3}Validazione}{25}{subsubsubsection.6.5.3}
-\contentsline {subsection}{\numberline {6.6}Protocollo per lo sviluppo dell'applicazione}{25}{subsection.6.6}
-\contentsline {subsubsection}{\numberline {6.6.1}Creare un nuovo progetto}{25}{subsubsection.6.6.1}
-\contentsline {subsubsection}{\numberline {6.6.2}Creazione ticket}{26}{subsubsection.6.6.2}
-\contentsline {subsubsubsection}{\numberline {6.6.2.1}Ticket\bbl@it@ped {g} di pianificazione}{26}{subsubsubsection.6.6.1}
-\contentsline {subsubsubsection}{\numberline {6.6.2.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{27}{subsubsubsection.6.6.2}
-\contentsline {subsubsubsection}{\numberline {6.6.2.3}Ticket\bbl@it@ped {g} di verifica}{27}{subsubsubsection.6.6.3}
-\contentsline {subsubsubsection}{\numberline {6.6.2.4}Dipendenze temporali}{28}{subsubsubsection.6.6.4}
-\contentsline {subsubsection}{\numberline {6.6.3}Aggiornamento ticket}{28}{subsubsection.6.6.3}
-\contentsline {subsubsubsection}{\numberline {6.6.3.1}Ticket\bbl@it@ped {g} di pianificazione}{28}{subsubsubsection.6.6.1}
-\contentsline {subsubsubsection}{\numberline {6.6.3.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{29}{subsubsubsection.6.6.2}
-\contentsline {subsubsubsection}{\numberline {6.6.3.3}Ticket\bbl@it@ped {g} di verifica}{29}{subsubsubsection.6.6.3}
-\contentsline {subsubsection}{\numberline {6.6.4}Consigli di utilizzo}{30}{subsubsection.6.6.4}
-\contentsline {subsection}{\numberline {6.7}LateTack}{30}{subsection.6.7}
-\contentsline {section}{\numberline {A}Lista di controllo}{31}{section.1}
+\contentsline {section}{\numberline {1}Introduzione}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Glossario}{7}{subsection.1.2}
+\contentsline {section}{\numberline {2}Collaborazione}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}Comunicazioni}{8}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Comunicazioni interne}{8}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Comunicazioni esterne}{8}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Riunioni}{8}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Interne}{8}{subsubsection.2.2.1}
+\contentsline {subsubsubsection}{\numberline {2.2.1.1}Casi Particolari}{8}{subsubsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Esterne}{9}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Esito}{9}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Repository e strumenti per la condivisione di file}{9}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Repository}{9}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Condivisione file}{9}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Documentazione}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Template}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Contenuto e struttura dei documenti}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Norme tipografiche}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Formati di riferimento e altro}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Immagini e tabelle}{13}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Glossario}{13}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Implementazione}{14}{subsubsection.3.6.1}
+\contentsline {section}{\numberline {4}Ruoli di progetto}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Responsabile di Progetto}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Amministratore}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Analista}{16}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Progettista}{16}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Verificatore}{16}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Programmatore}{17}{subsection.4.6}
+\contentsline {section}{\numberline {5}Procedure al supporto dei processi}{18}{section.5}
+\contentsline {subsection}{\numberline {5.1}Analisi dei Requisiti}{18}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Fattibilit\IeC {\`a}}{18}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Scoperta dei requisiti}{18}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Classificazione e priorit\IeC {\`a}}{19}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Specifica}{20}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Verifica dei requisiti}{20}{subsubsection.5.1.5}
+\contentsline {subsection}{\numberline {5.2}Validazione\bbl@it@ped {g} dei requisiti}{20}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Interna}{20}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Esterna}{21}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Gestione delle modifiche ai requisiti}{21}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Progettazione}{21}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Specifica Tecnica}{21}{subsubsection.5.4.1}
+\contentsline {subsubsubsection}{\numberline {5.4.1.1}Diagrammi UML}{21}{subsubsubsection.5.4.1}
+\contentsline {subsubsubsection}{\numberline {5.4.1.2}Design pattern}{21}{subsubsubsection.5.4.2}
+\contentsline {subsubsubsection}{\numberline {5.4.1.3}Tracciamento componenti}{22}{subsubsubsection.5.4.3}
+\contentsline {subsubsubsection}{\numberline {5.4.1.4}Test di integrazione}{22}{subsubsubsection.5.4.4}
+\contentsline {subsubsubsection}{\numberline {5.4.1.5}Definizione di Prodotto}{22}{subsubsubsection.5.4.5}
+\contentsline {subsubsubsection}{\numberline {5.4.1.6}Diagrammi UML}{22}{subsubsubsection.5.4.6}
+\contentsline {subsubsubsection}{\numberline {5.4.1.7}Test di unit\IeC {\`a}}{22}{subsubsubsection.5.4.7}
+\contentsline {subsection}{\numberline {5.5}Verifica}{22}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Verifica dei documenti}{22}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Verifica diagrammi UML}{23}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}Verifica del codice}{23}{subsubsection.5.5.3}
+\contentsline {subsubsubsection}{\numberline {5.5.3.1}Analisi Statica}{23}{subsubsubsection.5.5.1}
+\contentsline {subsubsubsection}{\numberline {5.5.3.2}Analisi Dinamica}{24}{subsubsubsection.5.5.2}
+\contentsline {subsubsubsection}{\numberline {5.5.3.3}Validazione}{24}{subsubsubsection.5.5.3}
+\contentsline {subsection}{\numberline {5.6}Codifica}{24}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Nomi}{24}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Documentazione}{24}{subsubsection.5.6.2}
+\contentsline {section}{\numberline {6}Ambiente di lavoro}{25}{section.6}
+\contentsline {subsection}{\numberline {6.1}Sistemi Operativi}{25}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Coordinamento}{25}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Software\bbl@it@ped {g} di gestione del progetto}{25}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Versionamento}{25}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Software\bbl@it@ped {g} di Integrazione Continua}{26}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Condivisione dei file}{26}{subsubsection.6.2.4}
+\contentsline {subsubsubsection}{\numberline {6.2.4.1}Google Drive}{26}{subsubsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.5}Google Calendar}{26}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}Pianificazione}{27}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Strumenti per i documenti}{27}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}LATEX}{27}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Controllo ortografico}{27}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Grafici UML}{27}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}Fogli di calcolo}{27}{subsubsection.6.4.4}
+\contentsline {subsection}{\numberline {6.5}Strumenti per la codifica}{27}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Stesura}{27}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Verifica}{28}{subsubsection.6.5.2}
+\contentsline {subsection}{\numberline {6.6}Protocollo per lo sviluppo dell'applicazione}{28}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Creare un nuovo progetto}{28}{subsubsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.2}Creazione ticket}{28}{subsubsection.6.6.2}
+\contentsline {subsubsubsection}{\numberline {6.6.2.1}Ticket\bbl@it@ped {g} di pianificazione}{29}{subsubsubsection.6.6.1}
+\contentsline {subsubsubsection}{\numberline {6.6.2.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{29}{subsubsubsection.6.6.2}
+\contentsline {subsubsubsection}{\numberline {6.6.2.3}Ticket\bbl@it@ped {g} di verifica}{30}{subsubsubsection.6.6.3}
+\contentsline {subsubsubsection}{\numberline {6.6.2.4}Dipendenze temporali}{31}{subsubsubsection.6.6.4}
+\contentsline {subsubsection}{\numberline {6.6.3}Aggiornamento ticket}{31}{subsubsection.6.6.3}
+\contentsline {subsubsubsection}{\numberline {6.6.3.1}Ticket\bbl@it@ped {g} di pianificazione}{31}{subsubsubsection.6.6.1}
+\contentsline {subsubsubsection}{\numberline {6.6.3.2}Ticket\bbl@it@ped {g} di realizzazione e controllo}{31}{subsubsubsection.6.6.2}
+\contentsline {subsubsubsection}{\numberline {6.6.3.3}Ticket\bbl@it@ped {g} di verifica}{32}{subsubsubsection.6.6.3}
+\contentsline {subsubsection}{\numberline {6.6.4}Consigli di utilizzo}{33}{subsubsection.6.6.4}
+\contentsline {subsection}{\numberline {6.7}LateTack}{33}{subsection.6.7}
+\contentsline {section}{\numberline {A}Lista di controllo}{34}{section.1}
