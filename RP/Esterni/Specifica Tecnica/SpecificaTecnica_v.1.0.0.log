@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  2 MAY 2015 21:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  3 MAY 2015 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -986,52 +986,24 @@ Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [4] (./parti/introduzione.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (8.68976pt too wide) in paragraph at lines 21--23
-[][]$\T1/cmtt/m/n/12 http : / / www . computer . org / portal / web \ protect$ 
-_ {\unhbox \ voidb @ x \ hbox{\protect \
- []
-
-
-Overfull \hbox (28.71024pt too wide) in paragraph at lines 21--23
-\T1/cmtt/m/n/12 afterassignment \ edef12{12} \ afterassignment \ edef14 . 5pt{-
-[]5 . 0ptplus-[]1 . 5ptminus-[]1 .
- []
-
-
-Overfull \hbox (64.25119pt too wide) in paragraph at lines 21--23
-\T1/cmtt/m/n/12 0pt} \ edef{} \ let \ def \ size @ update{\baselineskip14 . 5pt
- \ relax \ baselineskip \ baselineskip \
- []
-
-
-Overfull \hbox (76.59818pt too wide) in paragraph at lines 21--23
-\T1/cmtt/m/n/12 normalbaselineskip \ baselineskip \ setbox \ strutbox \ hbox{\v
-ruleheight . 7 \ baselineskipdepth .
- []
-
-
-Overfull \hbox (21.03674pt too wide) in paragraph at lines 21--23
-\T1/cmtt/m/n/12 3 \ baselineskipwidth \ z @ } \ let \ size @ update \ relax} \ 
-protect \ xdef \ T1 / cmr / m / n / 8{\T1 /
- []
-
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 27.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5])
+
+[5])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
@@ -1057,7 +1029,7 @@ Here is how much of TeX's memory you used:
  16353 multiletter control sequences out of 15000+600000
  15751 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,15n,47p,818b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,15n,47p,818b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </hom
 e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petruc
 ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texm
@@ -1068,9 +1040,9 @@ nappen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
 c/ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm12
 00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (8 pages, 151368 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (8 pages, 148734 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
+ 487 PDF objects out of 1000 (max. 8388607)
  184 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
