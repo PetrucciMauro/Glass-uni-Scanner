@@ -4,7 +4,7 @@
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1.18}.jpg} %inserire il diagramma UML
 		\label{fig:uc1.18}
-		\caption{Caso d'uso 1.18}
+		\caption{Caso d'uso 1.18: Esecuzione della presentazione}
 	\end{figure}
 	\textbf{Attori}: utente autenticato, utente offline. \\
 	\textbf{Descrizione}: l'utente può eseguire una presentazione. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
@@ -22,7 +22,7 @@
 			\centering
 			\includegraphics[scale=0.75]{\imgs {UC1.18.1}.jpg} %inserire il diagramma UML
 			\label{fig:uc1.18.1}
-			\caption{Caso d'uso 1.18.1}
+			\caption{Caso d'uso 1.18.1: Esecuzione manuale della presentazione}
 		\end{figure}
 		\textbf{Attori}: utente autenticato, utente offline. \\
 		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
@@ -80,7 +80,7 @@
 			\centering
 			\includegraphics[scale=0.75]{\imgs {UC1.18.1.6}.jpg} %inserire il diagramma UML
 			\label{fig:uc1.18.1.6}
-			\caption{Caso d'uso 1.18.1.6}
+			\caption{Caso d'uso 1.18.1.6: Riproduzione di file media}
 		\end{figure}
 		\textbf{Attori}: utente autenticato, utente offline. \\
 		\textbf{Descrizione}: durante una presentazione manuale l'utente potrà riprodurre un media audio o video presente nel frame. \\
@@ -134,7 +134,7 @@
 		\centering
 		\includegraphics[scale=0.75]{\imgs {UC1.18.2}.jpg} %inserire il diagramma UML
 		\label{fig:uc1.18.2}
-		\caption{Caso d'uso 1.18.2}
+		\caption{Caso d'uso 1.18.2: Esecuzione automatica della presentazione}
 	\end{figure}
 	\textbf{Attori}: utente autenticato, utente offline. \\
 	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. \\
@@ -185,13 +185,13 @@
 		\textbf{Precondizione}: la presentazione è in modalità manuale.	\\
 		\textbf{Postcondizione}: la presentazione automatica può essere avviata con il tempo di scorrimento impostato dall'utente e non con quello impostato al momento della creazione della presentazione.
 	}
-	\subsubsection{UC 1.18.2.6 - Gestione media}{
+	\subsubsection{UC 1.18.2.6 - Riproduzione media}{
 		\label{uc1.18.2.6}
 		\begin{figure}
 			\centering
 			\includegraphics[scale=0.75]{\imgs {UC1.18.2.6}.jpg} %inserire il diagramma UML
 			\label{fig:uc1.18.2.6}
-			\caption{Caso d'uso 1.18.2.6}
+			\caption{Caso d'uso 1.18.2.6: Riproduzione dei file media}
 		\end{figure}
 		\textbf{Attori}: utente autenticato, utente offline. \\
 		\textbf{Descrizione}: durante una presentazione automatica, se nel frame sono presenti uno o più media essi verranno avviati secondo un certo ordine in modo automatico; l'utente, se ha bisogno, può saltare la riproduzione di tali media e la presentazione automatica continua col frame successivo. \\
