@@ -125,6 +125,7 @@ void DataBase::texprint(){
 	 if(!file.open(QIODevice::WriteOnly))
 	 {throw Ecc_FileNotFound;}
 	 QTextStream out(&file);
+	 out.setCodec("UTF-8");
 	 QMap<QString, Lemma*>::const_iterator it=db.begin();
 
 	 out<<"\\section{Glossario}{ \n";
