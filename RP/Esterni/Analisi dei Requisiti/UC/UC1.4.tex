@@ -1,0 +1,104 @@
+\subsubsection{UC 1.4 - Modifica presentazione da mobile}{
+	\label{uc1.4}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4}
+		\caption{Caso d'uso 1.4: Modifica mobile di una presentazione}
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: L'utente mobile ha scelto l'opzione di modifica della presentazione. L'utente mobile può scegliere di modificare un frame o di gestire i bookmark. \\
+	\textbf{Precondizione}: l'utente mobile intende modificare una presetazione.	\\
+	\textbf{Postcondizione}: il sistema contiene una presentazione modificata.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Modifica mobile di un frame \hyperref[uc1.4.1]{(UC 1.4.1)};
+		\item Gestione mobile dei bookmark \hyperref[uc1.4.2]{(UC 1.4.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item solo nel caso in cui venga effettuata una modifica l'utente mobile può scegliere di annullare l'ultima modifica eseguita.
+	\end{itemize}
+	}
+\subsubsection{UC 1.4.1 - Modifica mobile di un frame}{
+	\label{uc1.4.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4.1}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4.1}
+		\caption{Caso d'uso 1.4.1: Modifica mobile di un frame}
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile ha scelto l'opzione di modifica di un frame. L'utente mobile può scegliere di inserire o modificare un elemento testo. \\
+	\textbf{Precondizione}: l'utente mobile intende modificare un frame.	\\
+	\textbf{Postcondizione}: la presentazione contiene un frame modificato.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento di un elemento testo \hyperref[uc1.4.1.1]{(UC 1.4.1.1)};
+		\item Modifica di un elemento testo \hyperref[uc1.4.1.2]{(UC 1.4.1.2)}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.1.1 - Inserimento di un elemento testo}{
+	\label{uc1.4.1.1}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile inserisce un elemento di tipo testo all'interno del frame. \\
+	\textbf{Precondizione}: l'utente mobile desidera inserire un nuovo elemento testo.	\\
+	\textbf{Postcondizione}: nel frame è presente un nuovo elemento testo.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile seleziona l'opzione di inserimento testo;
+		\item L'utente mobile inserisce il testo desiderato.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.1.2 - Modifica di un elemento testo}{
+	\label{uc1.4.1.2}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile modifica un elemento testo presente all'interno del frame. \\
+	\textbf{Precondizione}: l'utente mobile desidera modificare un elemento testo.	\\
+	\textbf{Postcondizione}: nel frame è presente un elemento testo modificato.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile seleziona un elemento testo;
+		\item L'utente mobile modifica il testo selezionato.
+	\end{enumerate}
+	}	
+\subsubsection{UC 1.4.2 - Gestione mobile bookmark}{
+	\label{uc1.4.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4.2}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4.2}
+		\caption{Caso d'uso 1.4.2: Gestione mobile dei bookmark}
+	\end{figure}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile ha scelto l'opzione di gestione dei bookmark. L'utente mobile può scegliere di inserire o rimuovere bookmark. \\
+	\textbf{Precondizione}: l'utente mobile intende gestire i bookmark.	\\
+	\textbf{Postcondizione}: la presentazione contiene una diversa gestione dei bookmark.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento di un nuovo bookmark \hyperref[uc1.4.2.1]{(UC 1.4.2.1)};
+		\item Rimozione di un bookmark \hyperref[uc1.4.2.2]{(UC 1.4.2.2)}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.2.1 - Inserimento di un nuovo bookmark}{
+	\label{uc1.4.2.1}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile inserisce un bookmark su un frame che non ne contiene uno. \\
+	\textbf{Precondizione}: l'utente mobile intende inserire un bookmark su un frame che non contiene bookmark.	\\
+	\textbf{Postcondizione}: il frame selezionato contiene un bookmark.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile seleziona un frame assegnando il bookmark.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.2.2 - Rimozione di un bookmark}{
+	\label{uc1.4.2.2}
+	\textbf{Attori}: utente mobile \\
+	\textbf{Descrizione}: l'utente mobile rimuove un bookmark su un frame che ne contiene uno. \\
+	\textbf{Precondizione}: l'utente mobile intende rimuovere un bookmark da un frame che ne contiene uno.	\\
+	\textbf{Postcondizione}: il frame selezionato non contiene un bookmark.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile seleziona un frame rimuovendo il bookmark.
+	\end{enumerate}
+	}
