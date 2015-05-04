@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  4 MAY 2015 18:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  4 MAY 2015 19:07
 entering extended mode
 **PianoDiQualifica_v.1.0.0.tex
 
@@ -1322,20 +1322,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 32.
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \newpage
+l.34 \newpage
               [1]
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
@@ -1346,26 +1346,20 @@ Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Piano di qualifica\PianoDiQualifica_v.1.0.0.toc"
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3])
+Piano di qualifica\PianoDiQualifica_v.1.0.0.toc")
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4]
+ [3]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
 \sommario.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5]
+ [4]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\introduzione.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
@@ -1413,15 +1407,15 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6])
+ [5])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7]
+ [6]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\obiettivi.tex"
-<./images/ISO-IEC_9126.png, id=175, 858.95906pt x 484.05844pt>
+<./images/ISO-IEC_9126.png, id=154, 858.95906pt x 484.05844pt>
 File: ./images/ISO-IEC_9126.png Graphic file (type png)
 
 <use ./images/ISO-IEC_9126.png>
@@ -1431,8 +1425,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Ester
-ni/Piano di qualifica/images/ISO-IEC_9126.png>] <./images/deming.png, id=186, 2
+ [7 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Ester
+ni/Piano di qualifica/images/ISO-IEC_9126.png>] <./images/deming.png, id=165, 2
 20.825pt x 150.5625pt>
 File: ./images/deming.png Graphic file (type png)
 
@@ -1447,13 +1441,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 56.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9])
+ [8])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
-rni/Piano di qualifica/images/deming.png>]
+ [9 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Ester
+ni/Piano di qualifica/images/deming.png>]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\gestioneAmministrativa.tex")
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1461,7 +1455,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[11]
+[10]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\strategiaVerifica.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -1472,148 +1466,68 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 26.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 69.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 69.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 72.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 76.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 88.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 96.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 96.
-
-)
+ [11])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14]
+ [12]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\strumentiTecnicheMetodi.tex"
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 28.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[15]
-Overfull \hbox (12.35454pt too wide) in paragraph at lines 36--37
+Overfull \hbox (12.35454pt too wide) in paragraph at lines 21--22
 []\T1/cmr/bx/n/12 Test fun-zio-na-li\T1/cmr/m/n/12 : met-to-no al-la pro-va le 
 fun-zio-na-li-tà del si-ste-ma, si-mu-lan-do l'iterazione$[]$
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 58.
+Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16]
+ [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 71.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 71.
+(hyperref)                removing `math shift' on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 71.
+(hyperref)                removing `subscript' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 56.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 88.
+Package pdftex.def Info: ../../logo.jpg used on input line 62.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
+ [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 93.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 93.
+(hyperref)                removing `math shift' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 93.
+(hyperref)                removing `subscript' on input line 78.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--100
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
 
  []
 
-)
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 92.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [15])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18]
+ [16]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\resocontoAttivitaVerifica.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
@@ -1625,7 +1539,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 49.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19]
+ [17]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Piano di qualifica\parti\verificaRequisiti.tex"
 
@@ -1714,7 +1628,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 98.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20]
+ [18]
 Underfull \hbox (badness 2538) in paragraph at lines 103--103
 \T1/cmr/m/n/12 muo-ver un bookmark$[]$ ad un
  []
@@ -1753,12 +1667,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 138.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21]
+ [19]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 138.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22]
+ [20]
 Underfull \hbox (badness 3919) in paragraph at lines 145--145
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1822,7 +1736,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 178.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
+ [21]
 Underfull \hbox (badness 3838) in paragraph at lines 181--181
 \T1/cmr/m/n/12 sa-re in mo-da-li-tà mo-di-fi-ca di
  []
@@ -1886,12 +1800,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 218.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24]
+ [22]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 218.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25]
+ [23]
 Underfull \hbox (badness 3919) in paragraph at lines 219--219
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1900,12 +1814,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 221.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [26]
+ [24]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 223.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27]
+ [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 224.
@@ -1939,7 +1853,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28]
+ [26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
@@ -1949,30 +1863,33 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 13860 strings out of 493921
- 201783 string characters out of 3147274
+ 13844 strings out of 493921
+ 201618 string characters out of 3147274
  386875 words of memory out of 3000000
- 16787 multiletter control sequences out of 15000+200000
+ 16779 multiletter control sequences out of 15000+200000
  18667 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,838b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/cm-super/sfbx0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/cm-super/sfbx1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm
--super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sf
-bx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/cm-super/sftt1200.pfb>
-Output written on PianoDiQualifica_v.1.0.0.pdf (29 pages, 469907 bytes).
+ 51i,15n,60p,838b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsubsection.4.3.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfbx0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfbx1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx
+1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sftt1200.pfb>
+Output written on PianoDiQualifica_v.1.0.0.pdf (27 pages, 457162 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 500 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 
