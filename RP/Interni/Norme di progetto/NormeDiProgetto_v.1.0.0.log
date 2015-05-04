@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  4 MAY 2015 18:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  4 MAY 2015 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,7 +1157,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 143.
  [22]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 164.
+Package pdftex.def Info: ../../logo.jpg used on input line 166.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
 Underfull \hbox (badness 10000) in paragraph at lines 192--194
@@ -1166,7 +1166,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 198.
+Package pdftex.def Info: ../../logo.jpg used on input line 200.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1470,10 +1470,10 @@ texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti08
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (37 pages, 383715 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (37 pages, 383447 bytes).
 PDF statistics:
- 981 PDF objects out of 1000 (max. 8388607)
- 916 compressed objects within 10 object streams
+ 980 PDF objects out of 1000 (max. 8388607)
+ 915 compressed objects within 10 object streams
  192 named destinations out of 1000 (max. 500000)
  846 words of extra memory for PDF output out of 10000 (max. 10000000)
 
