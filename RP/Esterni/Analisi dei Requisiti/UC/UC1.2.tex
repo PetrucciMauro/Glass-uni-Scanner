@@ -1,13 +1,13 @@
 \subsection{UC 1.2 - Creazione presentazione}{
 	\label{uc1.2}
 	\textbf{Attori}: utente autenticato.	\\
-	\textbf{Descrizione}: l'utente sceglie una cartella dove inserire la nuova presentazione e procede a crearla.	\\
+	\textbf{Descrizione}: l'utente decide di creare una nuova presentazione.	\\
 	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente ha effettuato il login.	\\
-	\textbf{Postcondizione}: l'utente ha creato una presentazione vuota nella posizione desiderata.	\\
+	\textbf{Postcondizione}: l'utente ha creato una presentazione vuota con un nome associato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Navigazione tra le cartelle presenti nello spazio dedicato all'utente sul server;
-		\item Selezione della cartella su cui salvare la presentazione;
-		\item Conferma della selezione e creazione della presentazione vuota.
+		\item Selezione dell'opzione di creazione di una nuova presentazione;
+		\item Assegnazione del nome alla presentazione creata;
+		\item Una volta creata la presentazione si entra sempre in modalità modifica presentazione \hyperref[uc1.3]{(UC 1.3)}.
 	\end{enumerate}
 	}
