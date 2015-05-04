@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  4 MAY 2015 18:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  4 MAY 2015 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1160,13 +1160,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 166.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 200.
+Package pdftex.def Info: ../../logo.jpg used on input line 201.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1247,185 +1247,181 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 40.
 
-
-LaTeX Warning: Reference `sec:strumenti' on page 26 undefined on input line 41.
-
-
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.6.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.46 \subsection{Sistemi Operativi}
-                                   ]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+l.43 	     			\item S
+                     trumenti per i documenti \ref{sec:strumentiDocumenti};]
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 57.
+(hyperref)                removing `subscript' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
+(hyperref)                removing `math shift' on input line 63.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 89.
+Package pdftex.def Info: ../../logo.jpg used on input line 90.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [27]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 98.
+(hyperref)                removing `subscript' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 104.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 133.
+Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28]
-Overfull \hbox (0.79156pt too wide) in paragraph at lines 161--162
+Overfull \hbox (0.79156pt too wide) in paragraph at lines 168--169
 \T1/cmr/m/n/12 Per la ste-su-ra dei gra-fi-ci UML vie-ne uti-liz-za-to il progr
 amma$[]$ \T1/cmr/bx/n/12 Vi-sual Pa-ra-digm\T1/cmr/m/n/12 . Il programma$[]$
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 173.
+Package pdftex.def Info: ../../logo.jpg used on input line 180.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [29]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 213.
+Package pdftex.def Info: ../../logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [30]
-Overfull \hbox (2.1679pt too wide) in paragraph at lines 213--214
+Overfull \hbox (2.1679pt too wide) in paragraph at lines 219--220
 []\T1/cmr/bx/n/12 Verificatore\T1/cmr/m/n/12 : crea i ticket$[]$ per se-gna-la-
 re er-ro-ri ed im-pre-ci-sio-ni tro-va-te du-ran-te il processo$[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 243.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 243.
+(hyperref)                removing `subscript' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 243.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 269.
+(hyperref)                removing `math shift' on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 269.
+(hyperref)                removing `subscript' on input line 275.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 269.
+(hyperref)                removing `math shift' on input line 275.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 274.
+Package pdftex.def Info: ../../logo.jpg used on input line 280.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 301.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 295.
+(hyperref)                removing `subscript' on input line 301.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 295.
+(hyperref)                removing `math shift' on input line 301.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 320.
+Package pdftex.def Info: ../../logo.jpg used on input line 326.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [32]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.6.7.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.342 ...bsection{Ticket\ped{g} di pianificazione}
+l.348 ...bsection{Ticket\ped{g} di pianificazione}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 342.
+(hyperref)                removing `math shift' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 342.
+(hyperref)                removing `subscript' on input line 348.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 342.
+(hyperref)                removing `math shift' on input line 348.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.6.7.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.364 ...cket\ped{g} di realizzazione e controllo}
+l.370 ...cket\ped{g} di realizzazione e controllo}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 364.
+(hyperref)                removing `subscript' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 370.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 371.
+Package pdftex.def Info: ../../logo.jpg used on input line 377.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.6.7.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.393 \subsubsubsection{Ticket\ped{g} di verifica}
+l.399 \subsubsubsection{Ticket\ped{g} di verifica}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 393.
+(hyperref)                removing `math shift' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 393.
+(hyperref)                removing `subscript' on input line 399.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 393.
+(hyperref)                removing `math shift' on input line 399.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 416.
+Package pdftex.def Info: ../../logo.jpg used on input line 422.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [34])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1445,16 +1441,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./NormeDiProgetto_v.1.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 51.
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 14209 strings out of 495017
- 203510 string characters out of 6181021
+ 14212 strings out of 495017
+ 203593 string characters out of 6181021
  397472 words of memory out of 5000000
- 16957 multiletter control sequences out of 15000+600000
+ 16960 multiletter control sequences out of 15000+600000
  19353 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,60p,863b,1256s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1470,10 +1462,10 @@ texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti08
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (37 pages, 383447 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (37 pages, 383348 bytes).
 PDF statistics:
- 980 PDF objects out of 1000 (max. 8388607)
- 915 compressed objects within 10 object streams
+ 983 PDF objects out of 1000 (max. 8388607)
+ 918 compressed objects within 10 object streams
  192 named destinations out of 1000 (max. 500000)
  846 words of extra memory for PDF output out of 10000 (max. 10000000)
 

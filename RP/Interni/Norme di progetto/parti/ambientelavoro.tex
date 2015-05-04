@@ -38,7 +38,13 @@
 		\item Un dispositivo Raspberry Pi 2 Model B, utilizzato come server\ped{g} per programmi\ped{g} organizzativi e di testing.
 	\end{itemize}
 	\subsubsubsection{Risorse\ped{g} software}{
-		Si rimanda alla sezione Strumenti \ref{sec:strumenti}.
+	    \begin{itemize}
+	     			\item Strumenti per il coordinamento \ref{sec:strumentiCoordinamento};
+	     			\item Strumenti per i documenti \ref{sec:strumentiDocumenti};
+	     			\item Strumenti per la codifica \ref{sec:strumentiCodifica};
+	     			\item Strumenti verifica \ref{sec:strumentiVerifica}.
+	    \end{itemize}
+
 	}
 }
 }
@@ -48,7 +54,7 @@
 L’intero sviluppo del progetto\ped{g} viene svolto in ambienti Unix-Like e Windows\ped{g}, nello specifico, Ubuntu\ped{g} , Mac, Windows\ped{g} . Tale scelta è maturata dopo aver appurato che le tecnologie utilizzate per lo sviluppo del progetto\ped{g} sono indipendenti dall’ambiente di sviluppo e di impiego.
 
 \subsection{Coordinamento}
-
+\label{sec:strumentiCoordinamento}
 è stato predisposto un server\ped{g} dedicato sul quale sono installate alcune applicazioni web\ped{g}
 che facilitano la gestione del progetto\ped{g}. Per connettersi al server\ped{g}, l'indirizzo\ped{g} è il seguente:\\
 \begin{center}
@@ -135,6 +141,7 @@ DA INTEGRARE
 
 
 \subsection{Strumenti per i documenti}
+\label{sec:strumentiDocumenti}
 \subsubsection{LATEX} 
  
 Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
@@ -173,13 +180,12 @@ ciascuna risorsa.
 \end{itemize}
 
 \subsection{Strumenti per la codifica}
+\label{sec:strumentiCodifica}
 \subsubsection{Stesura}
 Per al stesura del codice HTML e javascript verrà usata l' IDE \emph{Aptana}, la scelta sull'utilizzo di questa IDE si è basata sulle necessità del gruppo di un ambiente di sviluppo per applicazioni-web completo,gratuito e multipiattaforma.
 \emph{Aptana} presenta molti strumenti già integrati, come code assistant e debugger. 
 \subsubsection{Verifica}
-Si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata
-le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione\ped{g} durante l’intero sviluppo del progetto\ped{g}.
-Per entrambe vengono riportati gli strumenti da utilizzare. 
+L’analisi statica e l’analisi dinamica integrate in Jenkins vengono lanciate automaticamente ad ogni push di codice nel repository. Al verificatore è richiesto quindi soltanto di analizzare l’output del tool, visualizzabile dalla dashboard di Jenkins.
 
 
 
