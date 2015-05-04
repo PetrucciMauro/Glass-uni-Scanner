@@ -1,4 +1,4 @@
-﻿<glossario>
+<glossario>
   <lemma>
     <word>Account</word>
     <desc>L'insieme di funzionalità, strumenti e contenuti attribuiti ad un nome utente all'interno del programma.</desc>
@@ -295,7 +295,7 @@
     <desc>Utente che risulta essere registrato e di conseguenze possiede uno spazio di lavoro nel server.</desc>
   </lemma>
   <lemma>
-    <word>Utente non autenticato</word>
+    <word>Utente offline</word>
     <desc>Utente che non è in possesso di uno spazio di lavoro nel server e che quindi non risulta essere registrato oppure che ha un account ma non è connesso alla rete.</desc>
   </lemma>
   <lemma>

@@ -127,7 +127,8 @@ void DataBase::texprint(){
 	 QTextStream out(&file);
 	 out.setCodec("UTF-8");
 	 QMap<QString, Lemma*>::const_iterator it=db.begin();
-
+	 out<<"\\newcolumntype{L}[1]{>{\\raggedright\\arraybackslash}p{#1}} \n";
+	 out<<"\\renewcommand*{\\arraystretch}{1.4} \n";
 	 out<<"\\section{Glossario}{ \n";
 	 QChar temp;
 	 bool primo=true;
@@ -144,22 +145,23 @@ void DataBase::texprint(){
 						  what=lemma[0];
 				}
 				if(lemma[0]>'9' && lemma[0]!=temp){
-					 out<<"\\end{longtabu} \n";
+					 out<<"\\end{longtable} \n";
 					 out<<"\\newpage \n";
 					 temp=lemma[0];
 					 what=lemma[0];
 				}
-				out<<"\\subsection{"<<what.toLatin1()<<"} \n";
-				out<<"\\hfill\\Huge{\\textbf{"<<what.toLatin1()<<"}} \\\\ \n";
+				out<<"\\phantomsection \n";
+				out<<"\\addcontentsline{toc}{subsection}{"<<what.toUtf8()<<"} \n";
+				out<<"\\hfill\\Huge{\\textbf{"<<what.toUtf8()<<"}} \\\\ \n";
 				out<<"\\normalsize \n";
-				out<<"\\begin{longtabu} to \\textwidth{p{3cm} p{8cm}}\n";
-				out<<"\\toprule \\\\ \n";}
-		  out<<"\\textbf{"<<lemma.toLatin1()<<"} & ";
-		  out<<descr.toLatin1()<<" \\\\ \n \\\\ \n";
+				out<<"\\begin{longtable}{L{4cm} p{10cm}}\n";
+				}
+		  out<<"\\textbf{"<<lemma.toUtf8()<<"} & ";
+		  out<<descr.toUtf8()<<" \\\\ \n \\\\ \n";
 		  if(primo)
 				primo=false;
 	 }
-	 out<<"\\end{longtabu} \n }";
+	 out<<"\\end{longtable} \n }";
 	 file.close();
 }
 
