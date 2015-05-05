@@ -12,141 +12,140 @@
 \contentsline {subsection}{\numberline {2.3}Vincoli generali}{10}{subsection.2.3}
 \contentsline {section}{\numberline {3}Casi d'uso}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}Gerarchia di utenti}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}UC 1 - Caso generale}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}UC 1.8 - Registrazione account}{17}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}UC1.8.1 - Inserimento username per la registrazione}{18}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}UC1.8.2 - Inserimento password per la registrazione}{18}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}UC1.8.3 - Reinserimento password per la registrazione}{18}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}UC1.8.4 - Registrazione}{18}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}UC 1.10 - Login account utente}{19}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}UC1.10.1 - Inserimento username}{19}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}UC1.10.2 - Inserimento password}{19}{subsubsection.3.4.2}
-\contentsline {subsection}{\numberline {3.5}UC1.13 - Logout}{20}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}UC 1.2 - Creazione presentazione}{21}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}UC 1.3 - Modifica presentazione da desktop}{22}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}UC 1.3.1 - Inserimento nuovo frame}{23}{subsubsection.3.7.1}
-\contentsline {subsubsection}{\numberline {3.7.2}UC 1.3.1.1 - Selezione frame}{23}{subsubsection.3.7.2}
-\contentsline {subsubsection}{\numberline {3.7.3}UC 1.3.1.2 - Spostamento frame nel piano della presentazione}{24}{subsubsection.3.7.3}
-\contentsline {subsubsection}{\numberline {3.7.4}UC 1.3.2 - Spostamento frame}{24}{subsubsection.3.7.4}
-\contentsline {subsubsection}{\numberline {3.7.5}UC 1.3.3 - Modifica desktop di un frame}{25}{subsubsection.3.7.5}
-\contentsline {subsubsection}{\numberline {3.7.6}UC 1.3.3.1 - Inserimento di un elemento testo}{26}{subsubsection.3.7.6}
-\contentsline {subsubsection}{\numberline {3.7.7}UC 1.3.3.2 - Inserimento di un elemento immagine}{27}{subsubsection.3.7.7}
-\contentsline {subsubsection}{\numberline {3.7.8}UC 1.3.3.3 - Inserimento di un elemento video}{27}{subsubsection.3.7.8}
-\contentsline {subsubsection}{\numberline {3.7.9}UC 1.3.3.4 - Modifica di un elemento testo}{27}{subsubsection.3.7.9}
-\contentsline {subsubsection}{\numberline {3.7.10}UC 1.3.3.5 - Modifica dimensione di un elemento immagine}{27}{subsubsection.3.7.10}
-\contentsline {subsubsection}{\numberline {3.7.11}UC 1.3.3.6 - Modifica dimensione di un elemento video}{28}{subsubsection.3.7.11}
-\contentsline {subsubsection}{\numberline {3.7.12}UC 1.3.3.7 - Spostamento di un elemento}{28}{subsubsection.3.7.12}
-\contentsline {subsubsection}{\numberline {3.7.13}UC 1.3.3.8 - Eliminazione di un elemento}{28}{subsubsection.3.7.13}
-\contentsline {subsubsection}{\numberline {3.7.14}UC 1.3.3.9 - Inserimento di un elemento scelta}{28}{subsubsection.3.7.14}
-\contentsline {subsubsection}{\numberline {3.7.15}UC 1.3.3.10 - Modifica di un elemento scelta}{29}{subsubsection.3.7.15}
-\contentsline {subsubsection}{\numberline {3.7.16}UC 1.3.3.11 - Modifica della dimensione del frame}{29}{subsubsection.3.7.16}
-\contentsline {subsubsection}{\numberline {3.7.17}UC 1.3.3.12 - Modifica della forma di un frame}{29}{subsubsection.3.7.17}
-\contentsline {subsubsection}{\numberline {3.7.18}UC 1.3.3.13 - Modifica dello spessore del bordo del frame}{29}{subsubsection.3.7.18}
-\contentsline {subsubsection}{\numberline {3.7.19}UC 1.3.3.14 - Modifica del colore del bordo del frame}{30}{subsubsection.3.7.19}
-\contentsline {subsubsection}{\numberline {3.7.20}UC 1.3.3.15 - Modifica dello sfondo del frame}{30}{subsubsection.3.7.20}
-\contentsline {subsubsection}{\numberline {3.7.21}UC 1.3.4 - Eliminazione frame}{30}{subsubsection.3.7.21}
-\contentsline {subsubsection}{\numberline {3.7.22}UC 1.3.5 - Impostazione sfondo}{31}{subsubsection.3.7.22}
-\contentsline {subsubsection}{\numberline {3.7.23}UC 1.3.5.1 - Inserimento sfondo}{32}{subsubsection.3.7.23}
-\contentsline {subsubsection}{\numberline {3.7.24}UC 1.3.5.1.1 - Selezione immagine sfondo}{32}{subsubsection.3.7.24}
-\contentsline {subsubsection}{\numberline {3.7.25}UC 1.3.5.1.2 - Selezione colore sfondo}{33}{subsubsection.3.7.25}
-\contentsline {subsubsection}{\numberline {3.7.26}UC 1.3.5.1.3.1 - Definizione area sfondo}{33}{subsubsection.3.7.26}
-\contentsline {subsubsection}{\numberline {3.7.27}UC 1.3.5.1.4 - Conferma sfondo}{33}{subsubsection.3.7.27}
-\contentsline {subsubsection}{\numberline {3.7.28}UC 1.3.5.2 - Spostamento sfondo}{33}{subsubsection.3.7.28}
-\contentsline {subsubsection}{\numberline {3.7.29}UC 1.3.5.3 - Ridimensionamento sfondo}{34}{subsubsection.3.7.29}
-\contentsline {subsubsection}{\numberline {3.7.30}UC 1.3.6 - Definizione percorsi di visualizzazione}{34}{subsubsection.3.7.30}
-\contentsline {subsubsection}{\numberline {3.7.31}UC 1.3.6.1 - Imposta frame iniziale}{35}{subsubsection.3.7.31}
-\contentsline {subsubsection}{\numberline {3.7.32}UC 1.3.6.2 - Nuova transizione}{35}{subsubsection.3.7.32}
-\contentsline {subsubsection}{\numberline {3.7.33}UC 1.3.6.3 - Togli frame dal percorso}{35}{subsubsection.3.7.33}
-\contentsline {subsubsection}{\numberline {3.7.34}UC 1.3.6.4 - Elimina transizione}{36}{subsubsection.3.7.34}
-\contentsline {subsubsection}{\numberline {3.7.35}UC 1.3.7 - Gestione desktop bookmark}{36}{subsubsection.3.7.35}
-\contentsline {subsubsection}{\numberline {3.7.36}UC 1.3.7.1 - Inserimento bookmark}{36}{subsubsection.3.7.36}
-\contentsline {subsubsection}{\numberline {3.7.37}UC 1.3.7.2 - Eliminazione bookmark}{37}{subsubsection.3.7.37}
-\contentsline {subsubsection}{\numberline {3.7.38}UC 1.3.8 - Definizione effetti di transizione}{37}{subsubsection.3.7.38}
-\contentsline {subsubsection}{\numberline {3.7.39}UC 1.3.8.1 - Selezione transizione}{38}{subsubsection.3.7.39}
-\contentsline {subsubsection}{\numberline {3.7.40}UC 1.3.8.2 - Selezione effetto}{38}{subsubsection.3.7.40}
-\contentsline {subsubsection}{\numberline {3.7.41}UC 1.3.8.3 - Conferma effetto}{38}{subsubsection.3.7.41}
-\contentsline {subsubsection}{\numberline {3.7.42}UC 1.3.8.4 - Imposta velocit\IeC {\`a} transizione}{38}{subsubsection.3.7.42}
+\contentsline {subsection}{\numberline {3.2}UC 1 - Caso generale}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}UC 1.8 - Registrazione account}{16}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}UC1.8.1 - Inserimento username per la registrazione}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}UC1.8.2 - Inserimento password per la registrazione}{17}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}UC1.8.3 - Reinserimento password per la registrazione}{17}{subsubsection.3.3.3}
+\contentsline {subsection}{\numberline {3.4}UC 1.10 - Login account utente}{18}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}UC1.10.1 - Inserimento username}{18}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}UC1.10.2 - Inserimento password}{18}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}UC1.13 - Logout}{19}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}UC 1.2 - Creazione presentazione}{20}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}UC 1.3 - Modifica presentazione da desktop}{21}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1}UC 1.3.1 - Inserimento nuovo frame}{22}{subsubsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.2}UC 1.3.1.1 - Selezione frame}{22}{subsubsection.3.7.2}
+\contentsline {subsubsection}{\numberline {3.7.3}UC 1.3.1.2 - Spostamento frame nel piano della presentazione}{23}{subsubsection.3.7.3}
+\contentsline {subsubsection}{\numberline {3.7.4}UC 1.3.2 - Spostamento frame}{23}{subsubsection.3.7.4}
+\contentsline {subsubsection}{\numberline {3.7.5}UC 1.3.3 - Modifica desktop di un frame}{24}{subsubsection.3.7.5}
+\contentsline {subsubsection}{\numberline {3.7.6}UC 1.3.3.1 - Inserimento di un elemento testo}{25}{subsubsection.3.7.6}
+\contentsline {subsubsection}{\numberline {3.7.7}UC 1.3.3.2 - Inserimento di un elemento immagine}{26}{subsubsection.3.7.7}
+\contentsline {subsubsection}{\numberline {3.7.8}UC 1.3.3.3 - Inserimento di un elemento video}{26}{subsubsection.3.7.8}
+\contentsline {subsubsection}{\numberline {3.7.9}UC 1.3.3.4 - Modifica di un elemento testo}{26}{subsubsection.3.7.9}
+\contentsline {subsubsection}{\numberline {3.7.10}UC 1.3.3.5 - Modifica dimensione di un elemento immagine}{26}{subsubsection.3.7.10}
+\contentsline {subsubsection}{\numberline {3.7.11}UC 1.3.3.6 - Modifica dimensione di un elemento video}{27}{subsubsection.3.7.11}
+\contentsline {subsubsection}{\numberline {3.7.12}UC 1.3.3.7 - Spostamento di un elemento}{27}{subsubsection.3.7.12}
+\contentsline {subsubsection}{\numberline {3.7.13}UC 1.3.3.8 - Eliminazione di un elemento}{27}{subsubsection.3.7.13}
+\contentsline {subsubsection}{\numberline {3.7.14}UC 1.3.3.9 - Inserimento di un elemento scelta}{27}{subsubsection.3.7.14}
+\contentsline {subsubsection}{\numberline {3.7.15}UC 1.3.3.10 - Modifica di un elemento scelta}{28}{subsubsection.3.7.15}
+\contentsline {subsubsection}{\numberline {3.7.16}UC 1.3.3.11 - Modifica della dimensione del frame}{28}{subsubsection.3.7.16}
+\contentsline {subsubsection}{\numberline {3.7.17}UC 1.3.3.12 - Modifica della forma di un frame}{28}{subsubsection.3.7.17}
+\contentsline {subsubsection}{\numberline {3.7.18}UC 1.3.3.13 - Modifica dello spessore del bordo del frame}{28}{subsubsection.3.7.18}
+\contentsline {subsubsection}{\numberline {3.7.19}UC 1.3.3.14 - Modifica del colore del bordo del frame}{29}{subsubsection.3.7.19}
+\contentsline {subsubsection}{\numberline {3.7.20}UC 1.3.3.15 - Modifica dello sfondo del frame}{29}{subsubsection.3.7.20}
+\contentsline {subsubsection}{\numberline {3.7.21}UC 1.3.4 - Eliminazione frame}{29}{subsubsection.3.7.21}
+\contentsline {subsubsection}{\numberline {3.7.22}UC 1.3.5 - Impostazione sfondo}{30}{subsubsection.3.7.22}
+\contentsline {subsubsection}{\numberline {3.7.23}UC 1.3.5.1 - Inserimento sfondo}{31}{subsubsection.3.7.23}
+\contentsline {subsubsection}{\numberline {3.7.24}UC 1.3.5.1.1 - Selezione immagine sfondo}{31}{subsubsection.3.7.24}
+\contentsline {subsubsection}{\numberline {3.7.25}UC 1.3.5.1.2 - Selezione colore sfondo}{32}{subsubsection.3.7.25}
+\contentsline {subsubsection}{\numberline {3.7.26}UC 1.3.5.1.3.1 - Definizione area sfondo}{32}{subsubsection.3.7.26}
+\contentsline {subsubsection}{\numberline {3.7.27}UC 1.3.5.1.4 - Conferma sfondo}{32}{subsubsection.3.7.27}
+\contentsline {subsubsection}{\numberline {3.7.28}UC 1.3.5.2 - Spostamento sfondo}{32}{subsubsection.3.7.28}
+\contentsline {subsubsection}{\numberline {3.7.29}UC 1.3.5.3 - Ridimensionamento sfondo}{33}{subsubsection.3.7.29}
+\contentsline {subsubsection}{\numberline {3.7.30}UC 1.3.6 - Definizione percorsi di visualizzazione}{33}{subsubsection.3.7.30}
+\contentsline {subsubsection}{\numberline {3.7.31}UC 1.3.6.1 - Imposta frame iniziale}{34}{subsubsection.3.7.31}
+\contentsline {subsubsection}{\numberline {3.7.32}UC 1.3.6.2 - Nuova transizione}{34}{subsubsection.3.7.32}
+\contentsline {subsubsection}{\numberline {3.7.33}UC 1.3.6.3 - Togli frame dal percorso}{34}{subsubsection.3.7.33}
+\contentsline {subsubsection}{\numberline {3.7.34}UC 1.3.6.4 - Elimina transizione}{35}{subsubsection.3.7.34}
+\contentsline {subsubsection}{\numberline {3.7.35}UC 1.3.7 - Gestione desktop bookmark}{35}{subsubsection.3.7.35}
+\contentsline {subsubsection}{\numberline {3.7.36}UC 1.3.7.1 - Inserimento bookmark}{35}{subsubsection.3.7.36}
+\contentsline {subsubsection}{\numberline {3.7.37}UC 1.3.7.2 - Eliminazione bookmark}{36}{subsubsection.3.7.37}
+\contentsline {subsubsection}{\numberline {3.7.38}UC 1.3.8 - Definizione effetti di transizione}{36}{subsubsection.3.7.38}
+\contentsline {subsubsection}{\numberline {3.7.39}UC 1.3.8.1 - Selezione transizione}{37}{subsubsection.3.7.39}
+\contentsline {subsubsection}{\numberline {3.7.40}UC 1.3.8.2 - Selezione effetto}{37}{subsubsection.3.7.40}
+\contentsline {subsubsection}{\numberline {3.7.41}UC 1.3.8.3 - Conferma effetto}{37}{subsubsection.3.7.41}
+\contentsline {subsubsection}{\numberline {3.7.42}UC 1.3.8.4 - Imposta velocit\IeC {\`a} transizione}{37}{subsubsection.3.7.42}
 \contentsline {subsubsection}{\numberline {3.7.43}UC 1.3.9 - Definizione tempo di permanenza}{38}{subsubsection.3.7.43}
-\contentsline {subsection}{\numberline {3.8}UC 1.4 - Modifica presentazione da mobile}{40}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}UC 1.4.1 - Modifica mobile di un frame}{40}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}UC 1.4.1.1 - Inserimento di un elemento testo}{41}{subsubsection.3.8.2}
-\contentsline {subsubsection}{\numberline {3.8.3}UC 1.4.1.2 - Modifica di un elemento testo}{41}{subsubsection.3.8.3}
-\contentsline {subsubsection}{\numberline {3.8.4}UC 1.4.2 - Gestione mobile bookmark}{42}{subsubsection.3.8.4}
-\contentsline {subsubsection}{\numberline {3.8.5}UC 1.4.2.1 - Inserimento di un nuovo bookmark}{42}{subsubsection.3.8.5}
-\contentsline {subsubsection}{\numberline {3.8.6}UC 1.4.2.2 - Rimozione di un bookmark}{42}{subsubsection.3.8.6}
+\contentsline {subsection}{\numberline {3.8}UC 1.4 - Modifica presentazione da mobile}{39}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}UC 1.4.1 - Modifica mobile di un frame}{39}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}UC 1.4.1.1 - Inserimento di un elemento testo}{40}{subsubsection.3.8.2}
+\contentsline {subsubsection}{\numberline {3.8.3}UC 1.4.1.2 - Modifica di un elemento testo}{40}{subsubsection.3.8.3}
+\contentsline {subsubsection}{\numberline {3.8.4}UC 1.4.2 - Gestione mobile bookmark}{41}{subsubsection.3.8.4}
+\contentsline {subsubsection}{\numberline {3.8.5}UC 1.4.2.1 - Inserimento di un nuovo bookmark}{41}{subsubsection.3.8.5}
+\contentsline {subsubsection}{\numberline {3.8.6}UC 1.4.2.2 - Rimozione di un bookmark}{41}{subsubsection.3.8.6}
 \contentsline {subsection}{\numberline {3.9}UC 1.18 - Esecuzione presentazione}{43}{subsection.3.9}
 \contentsline {subsubsection}{\numberline {3.9.1}UC 1.18.1 - Esecuzione manuale}{44}{subsubsection.3.9.1}
 \contentsline {subsubsection}{\numberline {3.9.2}UC 1.18.1.1 - Scorrimento in avanti e indietro dei frame}{45}{subsubsection.3.9.2}
 \contentsline {subsubsection}{\numberline {3.9.3}UC 1.18.1.2 - Scelta all'interno del frame}{45}{subsubsection.3.9.3}
 \contentsline {subsubsection}{\numberline {3.9.4}UC 1.18.1.3 - Salto al bookmark successivo}{45}{subsubsection.3.9.4}
 \contentsline {subsubsection}{\numberline {3.9.5}UC 1.18.1.4 - Passaggio ad un livello superiore}{45}{subsubsection.3.9.5}
-\contentsline {subsubsection}{\numberline {3.9.6}UC 1.18.1.18 - Possibilit\IeC {\`a} di ingrandimento del contenuto}{45}{subsubsection.3.9.6}
+\contentsline {subsubsection}{\numberline {3.9.6}UC 1.18.1.18 - Possibilit\IeC {\`a} di ingrandimento del contenuto}{46}{subsubsection.3.9.6}
 \contentsline {subsubsection}{\numberline {3.9.7}UC 1.18.1.6 - Riproduzione file media}{46}{subsubsection.3.9.7}
-\contentsline {subsubsection}{\numberline {3.9.8}UC 1.18.1.6.1 - Avvio manuale della riproduzione di un file media}{46}{subsubsection.3.9.8}
-\contentsline {subsubsection}{\numberline {3.9.9}UC 1.18.1.6.2 - Sospensione della riproduzione del file media}{46}{subsubsection.3.9.9}
+\contentsline {subsubsection}{\numberline {3.9.8}UC 1.18.1.6.1 - Avvio manuale della riproduzione di un file media}{47}{subsubsection.3.9.8}
+\contentsline {subsubsection}{\numberline {3.9.9}UC 1.18.1.6.2 - Sospensione della riproduzione del file media}{47}{subsubsection.3.9.9}
 \contentsline {subsubsection}{\numberline {3.9.10}UC 1.18.1.6.3 - Ripresa dell'esecuzione del file media}{47}{subsubsection.3.9.10}
 \contentsline {subsubsection}{\numberline {3.9.11}UC 1.18.1.6.4 - Riproduzione del file media da qualsiasi punto}{47}{subsubsection.3.9.11}
 \contentsline {subsubsection}{\numberline {3.9.12}UC 1.18.1.6.5 - Arresto della riproduzione in corso}{47}{subsubsection.3.9.12}
-\contentsline {subsubsection}{\numberline {3.9.13}UC 1.18.2 - Esecuzione automatica}{47}{subsubsection.3.9.13}
-\contentsline {subsubsection}{\numberline {3.9.14}UC 1.18.2.1 - Avvia presentazione}{48}{subsubsection.3.9.14}
-\contentsline {subsubsection}{\numberline {3.9.15}UC 1.18.2.2 - Riprendi presentazione}{48}{subsubsection.3.9.15}
-\contentsline {subsubsection}{\numberline {3.9.16}UC 1.18.2.3 - Arresta presentazione}{48}{subsubsection.3.9.16}
+\contentsline {subsubsection}{\numberline {3.9.13}UC 1.18.2 - Esecuzione automatica}{48}{subsubsection.3.9.13}
+\contentsline {subsubsection}{\numberline {3.9.14}UC 1.18.2.1 - Avvia presentazione}{49}{subsubsection.3.9.14}
+\contentsline {subsubsection}{\numberline {3.9.15}UC 1.18.2.2 - Riprendi presentazione}{49}{subsubsection.3.9.15}
+\contentsline {subsubsection}{\numberline {3.9.16}UC 1.18.2.3 - Arresta presentazione}{49}{subsubsection.3.9.16}
 \contentsline {subsubsection}{\numberline {3.9.17}UC 1.18.2.4 - Sospendi presentazione}{49}{subsubsection.3.9.17}
 \contentsline {subsubsection}{\numberline {3.9.18}UC 1.18.2.5 - Imposta tempo scorrimento frame}{49}{subsubsection.3.9.18}
-\contentsline {subsubsection}{\numberline {3.9.19}UC 1.18.2.6 - Riproduzione file media}{49}{subsubsection.3.9.19}
-\contentsline {subsubsection}{\numberline {3.9.20}UC 1.18.2.6.1 - Avvio automatico riproduzione di un file media}{50}{subsubsection.3.9.20}
-\contentsline {subsubsection}{\numberline {3.9.21}UC 1.18.2.6.2 - Sospensione della riproduzione del file media}{50}{subsubsection.3.9.21}
-\contentsline {subsubsection}{\numberline {3.9.22}UC 1.18.2.6.3 - Ripresa dell'esecuzione del file media}{50}{subsubsection.3.9.22}
-\contentsline {subsubsection}{\numberline {3.9.23}UC 1.18.2.6.4 - Riproduzione del file media da qualsiasi minuto}{50}{subsubsection.3.9.23}
-\contentsline {subsubsection}{\numberline {3.9.24}UC 1.18.2.6.5 - Possibilit\IeC {\`a} di saltare la riproduzione in corso}{50}{subsubsection.3.9.24}
-\contentsline {subsubsection}{\numberline {3.9.25}UC 1.18.2.6.6 - Possibilit\IeC {\`a} di ingrandimento di un video}{50}{subsubsection.3.9.25}
-\contentsline {subsubsection}{\numberline {3.9.26}UC 1.18.3 - Passaggio alla presentazione automatica}{51}{subsubsection.3.9.26}
-\contentsline {subsubsection}{\numberline {3.9.27}UC 1.18.4 - Passaggio alla presentazione manuale}{51}{subsubsection.3.9.27}
-\contentsline {subsection}{\numberline {3.10}UC 1.6 - Creazione di un'infografica}{52}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}UC 1.17 - Modifica infografica}{53}{subsection.3.11}
-\contentsline {subsubsection}{\numberline {3.11.1}UC 1.17.1 - Selezione della presentazione}{53}{subsubsection.3.11.1}
-\contentsline {subsubsection}{\numberline {3.11.2}UC 1.17.2 - Selezione di un template}{54}{subsubsection.3.11.2}
-\contentsline {subsubsection}{\numberline {3.11.3}UC 1.17.3 - Selezione di un oggetto dell'infografica}{54}{subsubsection.3.11.3}
-\contentsline {subsubsection}{\numberline {3.11.4}UC 1.17.4 - Modifica infografica}{55}{subsubsection.3.11.4}
-\contentsline {subsubsection}{\numberline {3.11.5}UC 1.17.4.1 - Modifica oggetto infografica}{56}{subsubsection.3.11.5}
-\contentsline {subsubsection}{\numberline {3.11.6}UC 1.17.4.1.1 - Modifica dimensioni di un oggetto grafico}{56}{subsubsection.3.11.6}
-\contentsline {subsubsection}{\numberline {3.11.7}UC 1.17.4.1.2 - Modifica elemento testuale}{57}{subsubsection.3.11.7}
-\contentsline {subsubsection}{\numberline {3.11.8}UC 1.17.4.1.2.1 - Modifica del carattere}{57}{subsubsection.3.11.8}
-\contentsline {subsubsection}{\numberline {3.11.9}UC 1.17.4.1.2.2 - Modifica delle dimensioni del carattere}{58}{subsubsection.3.11.9}
-\contentsline {subsubsection}{\numberline {3.11.10}UC 1.17.4.1.2.3 - Modifica della formattazione}{58}{subsubsection.3.11.10}
-\contentsline {subsubsection}{\numberline {3.11.11}UC 1.17.4.1.2.4 - Modifica del colore}{58}{subsubsection.3.11.11}
-\contentsline {subsubsection}{\numberline {3.11.12}UC 1.17.4.1.2.5 - Modifica sfondo}{58}{subsubsection.3.11.12}
-\contentsline {subsubsection}{\numberline {3.11.13}UC 1.17.4.1.3 - Modifica della posizione dell'oggetto}{58}{subsubsection.3.11.13}
-\contentsline {subsubsection}{\numberline {3.11.14}UC 1.17.4.2 - Rimozione dello sfondo}{58}{subsubsection.3.11.14}
-\contentsline {subsubsection}{\numberline {3.11.15}UC 1.17.4.3 - Inserimento di uno sfondo}{58}{subsubsection.3.11.15}
-\contentsline {subsubsection}{\numberline {3.11.16}UC 1.17.4.4 - Inserimento di un elemento grafico}{59}{subsubsection.3.11.16}
-\contentsline {subsubsection}{\numberline {3.11.17}UC 1.17.4.5 - Inserimento di un elemento testuale}{59}{subsubsection.3.11.17}
-\contentsline {subsubsection}{\numberline {3.11.18}UC 1.17.4.6 - Inserimento di una slide}{59}{subsubsection.3.11.18}
-\contentsline {subsubsection}{\numberline {3.11.19}UC 1.17.4.7 - Eliminazione di un elemento}{59}{subsubsection.3.11.19}
-\contentsline {subsubsection}{\numberline {3.11.20}UC 1.17.5 - Salvataggio infografica}{60}{subsubsection.3.11.20}
-\contentsline {subsubsection}{\numberline {3.11.21}UC 1.17.7 - Esportazione infografica}{60}{subsubsection.3.11.21}
-\contentsline {subsection}{\numberline {3.12}UC 1.5 - Annulla}{61}{subsection.3.12}
-\contentsline {subsection}{\numberline {3.13}UC 1.5 - Ripristina}{62}{subsection.3.13}
-\contentsline {subsection}{\numberline {3.14}UC 1.7 - Gestione archivio utente sul server}{63}{subsection.3.14}
-\contentsline {subsubsection}{\numberline {3.14.1}UC 1.7.1 - Inserimento file media}{64}{subsubsection.3.14.1}
-\contentsline {subsubsection}{\numberline {3.14.2}UC 1.7.2 - Cancellazione file media}{64}{subsubsection.3.14.2}
-\contentsline {subsubsection}{\numberline {3.14.3}UC 1.7.3 - Rinomina presentazione}{64}{subsubsection.3.14.3}
-\contentsline {subsubsection}{\numberline {3.14.4}UC 1.7.4 - Rinomina infografica}{65}{subsubsection.3.14.4}
-\contentsline {subsubsection}{\numberline {3.14.5}UC 1.7.5 - Eliminazione presentazioni}{65}{subsubsection.3.14.5}
-\contentsline {subsubsection}{\numberline {3.14.6}UC 1.7.6 - Eliminazione infografiche}{65}{subsubsection.3.14.6}
-\contentsline {subsection}{\numberline {3.15}UC 1.9 - Gestione template}{66}{subsection.3.15}
-\contentsline {subsubsection}{\numberline {3.15.1}UC1.9.1 - Caricamento di un template}{66}{subsubsection.3.15.1}
-\contentsline {subsubsection}{\numberline {3.15.2}UC 1.9.3 - Caricamento di un elemento}{67}{subsubsection.3.15.2}
-\contentsline {subsubsection}{\numberline {3.15.3}UC1.9.2 - Visualizza errore}{67}{subsubsection.3.15.3}
-\contentsline {subsubsection}{\numberline {3.15.4}UC 1.9.4- Eliminazione di un template}{67}{subsubsection.3.15.4}
-\contentsline {subsubsection}{\numberline {3.15.5}UC 1.9.5 - Ripristino template eliminato}{68}{subsubsection.3.15.5}
-\contentsline {subsection}{\numberline {3.16}UC 1.11 - Gestione credenziali}{69}{subsection.3.16}
-\contentsline {subsubsection}{\numberline {3.16.1}UC 1.11.1 - Modifica password}{69}{subsubsection.3.16.1}
-\contentsline {subsubsection}{\numberline {3.16.2}UC 1.11.2 - Conferma modifica password}{69}{subsubsection.3.16.2}
-\contentsline {subsection}{\numberline {3.17}UC1.12 - Download infografica}{70}{subsection.3.17}
-\contentsline {subsection}{\numberline {3.18}UC 1.15 - Eliminazione presentazione locale}{71}{subsection.3.18}
-\contentsline {subsection}{\numberline {3.19}UC 1.16 - Download presentazione}{72}{subsection.3.19}
-\contentsline {section}{\numberline {4}Requisiti}{73}{section.4}
-\contentsline {subsection}{\numberline {4.1}Requisiti\bbl@ped {g} Funzionali}{73}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Requisiti\bbl@ped {g} di Qualit\IeC {\`a}}{83}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Requisiti\bbl@ped {g} di Vincolo}{84}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {3.9.19}UC 1.18.2.6 - Riproduzione file media}{50}{subsubsection.3.9.19}
+\contentsline {subsubsection}{\numberline {3.9.20}UC 1.18.2.6.1 - Avvio automatico riproduzione di un file media}{51}{subsubsection.3.9.20}
+\contentsline {subsubsection}{\numberline {3.9.21}UC 1.18.2.6.2 - Sospensione della riproduzione del file media}{51}{subsubsection.3.9.21}
+\contentsline {subsubsection}{\numberline {3.9.22}UC 1.18.2.6.3 - Ripresa dell'esecuzione del file media}{51}{subsubsection.3.9.22}
+\contentsline {subsubsection}{\numberline {3.9.23}UC 1.18.2.6.4 - Riproduzione del file media da qualsiasi minuto}{51}{subsubsection.3.9.23}
+\contentsline {subsubsection}{\numberline {3.9.24}UC 1.18.2.6.5 - Possibilit\IeC {\`a} di saltare la riproduzione in corso}{51}{subsubsection.3.9.24}
+\contentsline {subsubsection}{\numberline {3.9.25}UC 1.18.2.6.6 - Possibilit\IeC {\`a} di ingrandimento di un video}{52}{subsubsection.3.9.25}
+\contentsline {subsubsection}{\numberline {3.9.26}UC 1.18.3 - Passaggio alla presentazione automatica}{52}{subsubsection.3.9.26}
+\contentsline {subsubsection}{\numberline {3.9.27}UC 1.18.4 - Passaggio alla presentazione manuale}{52}{subsubsection.3.9.27}
+\contentsline {subsection}{\numberline {3.10}UC 1.6 - Creazione di un'infografica}{53}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}UC 1.17 - Modifica infografica}{54}{subsection.3.11}
+\contentsline {subsubsection}{\numberline {3.11.1}UC 1.17.1 - Selezione della presentazione}{54}{subsubsection.3.11.1}
+\contentsline {subsubsection}{\numberline {3.11.2}UC 1.17.2 - Selezione di un template}{55}{subsubsection.3.11.2}
+\contentsline {subsubsection}{\numberline {3.11.3}UC 1.17.3 - Selezione di un elemento dell'infografica}{55}{subsubsection.3.11.3}
+\contentsline {subsubsection}{\numberline {3.11.4}UC 1.17.4 - Modifica infografica}{56}{subsubsection.3.11.4}
+\contentsline {subsubsection}{\numberline {3.11.5}UC 1.17.4.1 - Modifica elemento infografica}{57}{subsubsection.3.11.5}
+\contentsline {subsubsection}{\numberline {3.11.6}UC 1.17.4.1.1 - Modifica dimensioni di un elemento grafico}{57}{subsubsection.3.11.6}
+\contentsline {subsubsection}{\numberline {3.11.7}UC 1.17.4.1.2 - Modifica elemento testuale}{58}{subsubsection.3.11.7}
+\contentsline {subsubsection}{\numberline {3.11.8}UC 1.17.4.1.2.1 - Modifica del carattere}{58}{subsubsection.3.11.8}
+\contentsline {subsubsection}{\numberline {3.11.9}UC 1.17.4.1.2.2 - Modifica delle dimensioni del carattere}{59}{subsubsection.3.11.9}
+\contentsline {subsubsection}{\numberline {3.11.10}UC 1.17.4.1.2.3 - Modifica della formattazione}{59}{subsubsection.3.11.10}
+\contentsline {subsubsection}{\numberline {3.11.11}UC 1.17.4.1.2.4 - Modifica del colore}{59}{subsubsection.3.11.11}
+\contentsline {subsubsection}{\numberline {3.11.12}UC 1.17.4.1.2.5 - Modifica sfondo}{59}{subsubsection.3.11.12}
+\contentsline {subsubsection}{\numberline {3.11.13}UC 1.17.4.1.3 - Modifica della posizione dell'elemento}{59}{subsubsection.3.11.13}
+\contentsline {subsubsection}{\numberline {3.11.14}UC 1.17.4.2 - Rimozione dello sfondo}{60}{subsubsection.3.11.14}
+\contentsline {subsubsection}{\numberline {3.11.15}UC 1.17.4.3 - Inserimento di uno sfondo}{60}{subsubsection.3.11.15}
+\contentsline {subsubsection}{\numberline {3.11.16}UC 1.17.4.4 - Inserimento di un elemento grafico}{60}{subsubsection.3.11.16}
+\contentsline {subsubsection}{\numberline {3.11.17}UC 1.17.4.5 - Inserimento di un elemento testuale}{60}{subsubsection.3.11.17}
+\contentsline {subsubsection}{\numberline {3.11.18}UC 1.17.4.6 - Inserimento di una frame}{61}{subsubsection.3.11.18}
+\contentsline {subsubsection}{\numberline {3.11.19}UC 1.17.4.7 - Eliminazione di un elemento}{61}{subsubsection.3.11.19}
+\contentsline {subsubsection}{\numberline {3.11.20}UC 1.17.5 - Salvataggio infografica}{61}{subsubsection.3.11.20}
+\contentsline {subsubsection}{\numberline {3.11.21}UC 1.17.7 - Esportazione infografica}{61}{subsubsection.3.11.21}
+\contentsline {subsection}{\numberline {3.12}UC 1.5 - Annulla}{62}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}UC 1.5 - Ripristina}{63}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}UC 1.7 - Gestione archivio utente sul server}{64}{subsection.3.14}
+\contentsline {subsubsection}{\numberline {3.14.1}UC 1.7.1 - Inserimento file media}{65}{subsubsection.3.14.1}
+\contentsline {subsubsection}{\numberline {3.14.2}UC 1.7.2 - Cancellazione file media}{65}{subsubsection.3.14.2}
+\contentsline {subsubsection}{\numberline {3.14.3}UC 1.7.3 - Rinomina presentazione}{65}{subsubsection.3.14.3}
+\contentsline {subsubsection}{\numberline {3.14.4}UC 1.7.4 - Rinomina infografica}{66}{subsubsection.3.14.4}
+\contentsline {subsubsection}{\numberline {3.14.5}UC 1.7.5 - Eliminazione presentazioni}{66}{subsubsection.3.14.5}
+\contentsline {subsubsection}{\numberline {3.14.6}UC 1.7.6 - Eliminazione infografiche}{66}{subsubsection.3.14.6}
+\contentsline {subsection}{\numberline {3.15}UC 1.9 - Gestione template}{67}{subsection.3.15}
+\contentsline {subsubsection}{\numberline {3.15.1}UC1.9.1 - Caricamento di un template}{67}{subsubsection.3.15.1}
+\contentsline {subsubsection}{\numberline {3.15.2}UC 1.9.3 - Caricamento di un elemento}{68}{subsubsection.3.15.2}
+\contentsline {subsubsection}{\numberline {3.15.3}UC1.9.2 - Visualizza errore}{68}{subsubsection.3.15.3}
+\contentsline {subsubsection}{\numberline {3.15.4}UC 1.9.4- Eliminazione di un template}{68}{subsubsection.3.15.4}
+\contentsline {subsubsection}{\numberline {3.15.5}UC 1.9.5 - Ripristino template eliminato}{69}{subsubsection.3.15.5}
+\contentsline {subsection}{\numberline {3.16}UC 1.11 - Gestione credenziali}{70}{subsection.3.16}
+\contentsline {subsubsection}{\numberline {3.16.1}UC 1.11.1 - Modifica password}{70}{subsubsection.3.16.1}
+\contentsline {subsubsection}{\numberline {3.16.2}UC 1.11.2 - Conferma modifica password}{71}{subsubsection.3.16.2}
+\contentsline {subsection}{\numberline {3.17}UC1.12 - Download infografica}{72}{subsection.3.17}
+\contentsline {subsection}{\numberline {3.18}UC 1.15 - Eliminazione presentazione locale}{73}{subsection.3.18}
+\contentsline {subsection}{\numberline {3.19}UC 1.16 - Download presentazione}{74}{subsection.3.19}
+\contentsline {section}{\numberline {4}Requisiti}{75}{section.4}
+\contentsline {subsection}{\numberline {4.1}Requisiti\bbl@ped {g} Funzionali}{75}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Requisiti\bbl@ped {g} di Qualit\IeC {\`a}}{85}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Requisiti\bbl@ped {g} di Vincolo}{86}{subsection.4.3}
