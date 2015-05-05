@@ -1,12 +1,13 @@
 \subsection{UC1.13 - Logout}{
 	\label{uc1.13}
-	\textbf{Attori}: utente autenticato.\\
-	\textbf{Descrizione}: l'utente autenticato. effettua il logout dal suo profilo passando alla modalità offline del sistema.\\
-	\textbf{Precondizione}: l'utente si è autenticato.\\
-	\textbf{Postcondizione}: l'utente non è più autenticato e passa alla modalità offline del sistema.\\
+	\textbf{Attori}: utente autenticato, utente non autenticato.\\
+	\textbf{Descrizione}: l'utente autenticato effettua il logout dal suo profilo diventando utente non autenticato.\\
+	\textbf{Precondizione}: l'utente è autenticato al sistema.\\
+	\textbf{Postcondizione}: l'utente non è più autenticato al sistema.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Selezione azione di logout;
-		\item Conferma di logout.
+		\item Conferma logout;
+		\item L'utente non è più autenticato al sistema.
 	\end{enumerate}
 }

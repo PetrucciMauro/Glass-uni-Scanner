@@ -36,7 +36,7 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il template è già presente nel database.
+		\item Il template è già presente nel database e l'utente viene informato dell'errore \hyperref[uc1.9.2]{(UC 1.9.2)}.
 	\end{itemize}
 	}
 \subsubsection{UC 1.9.3 - Caricamento di un elemento}{
@@ -52,8 +52,19 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il file grafico è già presente nel database.
+		\item Il file grafico è già presente nel database e l'utente viene informato dell'errore \hyperref[uc1.9.2]{(UC 1.9.2)}.
 	\end{itemize}
+	}
+\subsubsection{UC1.9.2 - Visualizza errore}{
+	\label{uc1.9.2}
+	\textbf{Attori}: amministratore di sistema. \\
+	\textbf{Descrizione}: il sistema ha riscontrato un errore e deve renderlo noto all'utente. \\
+	\textbf{Precondizione}: un template o un elemento è in fase di caricamento.	\\
+	\textbf{Postcondizione}: l'utente ha visualizzato l'errore.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Viene visualizzato un errore.
+	\end{enumerate}
 	}
 \subsubsection{UC 1.9.4- Eliminazione di un template}{
 	\label{uc1.9.4}
