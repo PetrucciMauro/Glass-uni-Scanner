@@ -1,10 +1,10 @@
-\subsection{UC 1.8 - Registrazione account}{
-	\label{uc1.8}
+\subsection{UC 0.8 - Registrazione account}{
+	\label{uc0.8}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.8}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.8}
-		\caption{Caso d'uso 1.8: Registrazione nuovo account}
+		\includegraphics[scale=0.75]{\imgs {UC0.8}.jpg} %inserire il diagramma UML
+		\label{fig:uc0.8}
+		\caption{Caso d'uso 0.8: Registrazione nuovo account}
 	\end{figure}
 	\textbf{Attori}: utente non autenticato. \\
 	\textbf{Descrizione}: l'utente non autenticato desidera registrarsi al sistema, inserisce username alfanumerico e password alfanumerica di almeno sei caratteri. Dopo aver ricevuto conferma dal sistema l'utente viene registrato. \\
@@ -12,9 +12,9 @@
 	\textbf{Postcondizione}: la registrazione è stata effettuata, il sistema è al punto iniziale.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Inserimento username per la registrazione \hyperref[uc1.8.1]{(UC 1.8.1)};
-		\item Inserimento password per la registrazione \hyperref[uc1.8.2]{(UC 1.8.2)};
-		\item Reinserimento password per la registrazione \hyperref[uc1.8.3]{(UC 1.8.3)};
+		\item Inserimento username per la registrazione \hyperref[uc0.8.1]{(UC 0.8.1)};
+		\item Inserimento password per la registrazione \hyperref[uc0.8.2]{(UC 0.8.2)};
+		\item Reinserimento password per la registrazione \hyperref[uc0.8.3]{(UC 0.8.3)};
 		\item L'utente viene registrato nel sistema.
 	\end{enumerate}
 	\textbf{Scenario alternativo}: 
@@ -24,8 +24,8 @@
 		\item La password risulta non conforme ai vincoli adottati dal sistema e l'utente viene avvisato dell'errore.
 	\end{itemize}
 	}
-	\subsubsection{UC1.8.1 - Inserimento username per la registrazione}{
-		\label{uc1.8.1}
+	\subsubsection{UC0.8.1 - Inserimento username per la registrazione}{
+		\label{uc0.8.1}
 		\textbf{Attori}: utente non autenticato. \\
 		\textbf{Descrizione}: l'utente non autenticato inserisce il proprio username.	\\
 		\textbf{Precondizione}: l'utente non autenticato è pronto ad inserire lo username scelto.	\\
@@ -35,8 +35,8 @@
 			\item L'utente inserisce il proprio username.
 		\end{enumerate}
 		}
-	\subsubsection{UC1.8.2 - Inserimento password per la registrazione} {
-		\label{uc1.8.2}
+	\subsubsection{UC0.8.2 - Inserimento password per la registrazione} {
+		\label{uc0.8.2}
 		\textbf{Attori}: utente non autenticato \\
 		\textbf{Descrizione}: l'utente non autenticato inserisce la propria password	\\
 		\textbf{Precondizione}: l'utente non autenticato chiede d'effettuare la registrazione è pronto ad inserire la password scelta.	\\
@@ -46,8 +46,8 @@
 			\item L'utente inserisce la propria password.
 		\end{enumerate}
 		}
-	\subsubsection{UC1.8.3 - Reinserimento password per la registrazione} {
-		\label{uc1.8.3}
+	\subsubsection{UC0.8.3 - Reinserimento password per la registrazione} {
+		\label{uc0.8.3}
 		\textbf{Attori}: utente non autenticato. \\
 		\textbf{Descrizione}: l'utente non autenticato reinserisce la propria password.	\\
 		\textbf{Precondizione}: l'utente non autenticato richiede d'effettuare la registrazione è pronto a reinserire la password scelta per confermarla.	\\

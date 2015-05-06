@@ -1,10 +1,10 @@
-\subsection{UC 1.7 - Gestione archivio utente sul server}{
-	\label{uc1.7}
+\subsection{UC 0.7 - Gestione archivio utente sul server}{
+	\label{uc0.7}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC1.7}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.7}
-		\caption{Caso d'uso 1.7: Gestione dell'archivio dati utente sul server}
+		\includegraphics[scale=0.75]{\imgs {UC0.7}.jpg} %inserire il diagramma UML
+		\label{fig:uc0.7}
+		\caption{Caso d'uso 0.7: Gestione dell'archivio dati utente sul server}
 	\end{figure}
 	\textbf{Attori}: utente autenticato. \\
 	\textbf{Descrizione}: l'utente può modificare i contenuti (file media presentazioni e infografiche) presenti nel proprio account, inserendone di nuovi, rinominando o eliminando quelli presenti. \\
@@ -12,16 +12,16 @@
 	\textbf{Postcondizione}: l'utente ha eseguito l'operazione voluta sul contenuto che desiderava: ha inserito un nuovo file media nel proprio spazio, altrimenti ha rinominato una presentazione o una infografica oppure eliminato una presentazione, infografica o file media.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Inserimento file media \hyperref[uc1.7.1]{(UC 1.7.1)};
-		\item Eliminazione file media \hyperref[uc1.7.2]{(UC 1.7.2)};
-		\item Rinomina presentazione \hyperref[uc1.7.3]{(UC 1.7.3)};
-		\item Rinomina infografica \hyperref[uc1.7.4]{(UC 1.7.4)};
-		\item Eliminazione presentazioni \hyperref[uc1.7.5]{(UC 1.7.5)};
-		\item Eliminazione infografica \hyperref[uc1.7.6]{(UC 1.7.6)}.
+		\item Inserimento file media \hyperref[uc0.7.1]{(UC 0.7.1)};
+		\item Eliminazione file media \hyperref[uc0.7.2]{(UC 0.7.2)};
+		\item Rinomina presentazione \hyperref[uc0.7.3]{(UC 0.7.3)};
+		\item Rinomina infografica \hyperref[uc0.7.4]{(UC 0.7.4)};
+		\item Eliminazione presentazioni \hyperref[uc0.7.5]{(UC 0.7.5)};
+		\item Eliminazione infografica \hyperref[uc0.7.6]{(UC 0.7.6)}.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.7.1 - Inserimento file media}{
-	\label{uc1.7.1}
+\subsubsection{UC 0.7.1 - Inserimento file media}{
+	\label{uc0.7.1}
 	\textbf{Attori}: utente autenticato. \\
 	\textbf{Descrizione}: l'utente ha la possibilità di caricare un file media (audio, video, immagini) contenuto nel proprio computer o dispositivo. \\
 	\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera caricare sul server un file media esistente in locale.	\\
@@ -37,8 +37,8 @@
 		\item L'operazione viene annullata e non si apportano cambiamenti.
 	\end{itemize}
 	}
-	\subsubsection{UC 1.7.2 - Cancellazione file media}{
-		\label{uc1.7.2}
+	\subsubsection{UC 0.7.2 - Cancellazione file media}{
+		\label{uc0.7.2}
 		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare file media tra quelli presenti all'interno del proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare file media esistenti nel proprio spazio di lavoro sul server.	\\
@@ -54,8 +54,8 @@
 			\item L'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-	\subsubsection{UC 1.7.3 - Rinomina presentazione}{
-		\label{uc1.7.3}
+	\subsubsection{UC 0.7.3 - Rinomina presentazione}{
+		\label{uc0.7.3}
 		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di rinominare una presentazione salvata nel proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera rinominare una presentazione.	\\
@@ -67,8 +67,8 @@
 			\item Conferma rinominazione della presentazione.
 		\end{enumerate}
 		}
-	\subsubsection{UC 1.7.4 - Rinomina infografica}{
-		\label{uc1.7.4}
+	\subsubsection{UC 0.7.4 - Rinomina infografica}{
+		\label{uc0.7.4}
 		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di rinominare una infografica salvata nel proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera rinominare una infografica.	\\
@@ -80,8 +80,8 @@
 			\item Conferma rinominazione dell'infografica.
 		\end{enumerate}
 		}
-	\subsubsection{UC 1.7.5 - Eliminazione presentazioni}{
-		\label{uc1.7.5}
+	\subsubsection{UC 0.7.5 - Eliminazione presentazioni}{
+		\label{uc0.7.5}
 		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare presentazioni contenute all'interno del proprio spazio di lavoro sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più presentazioni esistenti nel proprio spazio sul server.	\\
@@ -97,8 +97,8 @@
 			\item L'operazione viene annullata e non si apportano cambiamenti.
 		\end{itemize}
 		}
-	\subsubsection{UC 1.7.6 - Eliminazione infografiche}{
-		\label{uc1.7.6}
+	\subsubsection{UC 0.7.6 - Eliminazione infografiche}{
+		\label{uc0.7.6}
 		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare infografiche contenute nel proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più infografiche.	\\

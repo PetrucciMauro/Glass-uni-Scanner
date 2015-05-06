@@ -1,10 +1,10 @@
-\subsection{UC 1.9 - Gestione template}{
-	\label{uc1.9}
+\subsection{UC 0.9 - Gestione template}{
+	\label{uc0.9}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{\imgs {UC1.9}.jpg} %inserire il diagramma UML
-		\label{fig:uc1.9}
-		\caption{Caso d'uso 1.9: Gestione template}
+		\includegraphics[scale=0.6]{\imgs {UC0.9}.jpg} %inserire il diagramma UML
+		\label{fig:uc0.9}
+		\caption{Caso d'uso 0.9: Gestione template}
 	\end{figure}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: l'amministratore ha effettuato il login e il programma è correttamente funzionante. L'amministratore ha la possibilità di inserire nuovi template di infografica o di presentazione, nuovi oggetti grafici per comporre i template ed eliminare template presenti nel server.\\
@@ -12,19 +12,19 @@
 	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state eseguite con successo.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Caricamento di un template di infografica o di presentazione \hyperref[uc1.9.1]{(UC1.9.1)};
-		\item Caricamento di un elemento \hyperref[uc1.9.3]{(UC1.9.3)};
-		\item Eliminazione di un template \hyperref[uc1.9.5]{(UC1.9.5)};
+		\item Caricamento di un template di infografica o di presentazione \hyperref[uc0.9.1]{(UC0.9.1)};
+		\item Caricamento di un elemento \hyperref[uc0.9.3]{(UC0.9.3)};
+		\item Eliminazione di un template \hyperref[uc0.9.5]{(UC0.9.5)};
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item L'amministratore può ripristinare un template eliminato \hyperref[uc1.9.5]{(UC1.9.5)};
+		\item L'amministratore può ripristinare un template eliminato \hyperref[uc0.9.5]{(UC0.9.5)};
 		\item L'amministratore può ripristinare le modifiche eseguite;
 		\item Visualizzazione di un errore nel caso vengano inseriti un oggetto o un template già presenti nel database.
 	\end{itemize}
 	}
-\subsubsection{UC1.9.1 - Caricamento di un template}{
-	\label{uc1.9.1}
+\subsubsection{UC0.9.1 - Caricamento di un template}{
+	\label{uc0.9.1}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo template nel database. \\
 	\textbf{Precondizione}: il sistema  è funzionante e l'amministratore ha effettuato il login.	\\
@@ -36,11 +36,11 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il template è già presente nel database e l'utente viene informato dell'errore \hyperref[uc1.9.2]{(UC 1.9.2)}.
+		\item Il template è già presente nel database e l'utente viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
 	\end{itemize}
 	}
-\subsubsection{UC 1.9.3 - Caricamento di un elemento}{
-	\label{uc1.9.3}
+\subsubsection{UC 0.9.3 - Caricamento di un elemento}{
+	\label{uc0.9.3}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: l'amministratore esegue il caricamento di un nuovo elemento nel database. \\
 	\textbf{Precondizione}: il sistema  è funzionante e l'amministratore ha effettuato il login.	\\
@@ -52,11 +52,11 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il file grafico è già presente nel database e l'utente viene informato dell'errore \hyperref[uc1.9.2]{(UC 1.9.2)}.
+		\item Il file grafico è già presente nel database e l'utente viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
 	\end{itemize}
 	}
-\subsubsection{UC1.9.2 - Visualizza errore}{
-	\label{uc1.9.2}
+\subsubsection{UC0.9.2 - Visualizza errore}{
+	\label{uc0.9.2}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: il sistema ha riscontrato un errore e deve renderlo noto all'utente. \\
 	\textbf{Precondizione}: un template o un elemento è in fase di caricamento.	\\
@@ -66,8 +66,8 @@
 		\item Viene visualizzato un errore.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.9.4- Eliminazione di un template}{
-	\label{uc1.9.4}
+\subsubsection{UC 0.9.4- Eliminazione di un template}{
+	\label{uc0.9.4}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: l'amministratore elimina uno dei template. \\
 	\textbf{Precondizione}: il sistema è funzionante e l'amministratore decide di eliminare un template.	\\
@@ -78,11 +78,11 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item L'amministratore decide di ripristinare il template eliminato \hyperref[uc1.9.5]{(UC 1.9.5)}.
+		\item L'amministratore decide di ripristinare il template eliminato \hyperref[uc0.9.5]{(UC 0.9.5)}.
 	\end{itemize}
 	}
-\subsubsection{UC 1.9.5 - Ripristino template eliminato}{
-	\label{uc1.9.5}
+\subsubsection{UC 0.9.5 - Ripristino template eliminato}{
+	\label{uc0.9.5}
 	\textbf{Attori}: amministratore. \\
 	\textbf{Descrizione}: l'amministratore ha deciso di ripristinare un template eliminato. \\
 	\textbf{Precondizione}: lo storico dei template eliminati non è vuoto.	\\
