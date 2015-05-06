@@ -1,6 +1,41 @@
 \section{Procedure al supporto dei processi}{
 Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora ad elencare le procedure che essi devono seguire in modo rigoroso per convergere agli obiettivi posti nel \textit{Piano di Qualifica}.
+\subsection{Gestione di progetto}
+Le responsabilità di gestione dell’intero progetto, dalla nascita alla conclusione, sono da
+attribuire al \emph{Responsabile di Progetto}.
+Quest’ultimo dovrà garantire un corretto sviluppo delle attività utilizzando, qualora sia possibile, degli strumenti che gli consentano di:
+\begin{itemize}
+\item Pianificare, coordinare e controllare le attività;
+\item Gestire e controllare le risorse;
+\item Analizzare e gestire i rischi;
+\item Elaborare i dati.
+\end{itemize}
+\subsubsection{Pianificazione delle attività}
+Per pianificare le attività il \emph{Responsabile di Progetto} deve realizzare un diagramma di
+Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando omniplan come descritto nella sezione \ref{sec:Pianificazione}.
+\subsubsection{Coordinazione e controllo delle attività}
+Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con omniplan in Redmine sfruttando il suo sistema di ticketing
+come descritto nella sezione \ref{sec:protocolloSviluppo}.
+In questo modo ciascun componente del gruppo sarà avvisato delle attività ad esso assegnate e potrà inserire lo stato delle stesse permettendo al Responsabile di verificare immediatamente l’avanzamento del progetto.
 
+\subsubsection{Gestione e controllo delle risorse}
+Per gestire e controllare le risorse il Responsabile di Progetto deve utilizzare Redmine come indicato nella sezione \ref{sec:protocolloSviluppo} che gli consente anche di verificare l’avanzamento di ogni processo come riportato nel \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} .
+\subsubsection{Analisi e Gestione dei rischi}
+Durante l’avanzamento del progetto il \emph{Responsabile di Progetto} deve monitorare costantemente il verificarsi dei rischi descritti nel \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} ed eventuali nuovi rischi, attuando le contromisure descritte e riportando gli effettivi riscontri.
+
+\subsubsection{Elaborazione dati}
+Il Responsabile di Progetto deve sfruttare i fogli di calcolo elettronico, come descritto nella sezione \ref{sec:fogliDiCalcolo}, per elaborare i dati raccolti durante lo sviluppo del progetto e riportarli nel \emph{Piano di Progetto}.
+
+\subsubsection{Delega}
+\label{sec:delega}
+Il \emph{Responsabile di Progetto}, nel caso in cui abbia redatto una parte di un documento, può delegare l'approvazione di tale documento ad un Verificatore.
+\subsubsection{Responsabilità di sotto-progetto}
+Ogni macroattività può essere assegnata dal Responsabile ad un responsabile di sottoprogetto, i cui compiti saranno l’assegnazione delle singole attività alle risorse rese disponibili e la gestione dei cambiamenti.
+\subsubsubsection{Assegnazione attività}
+Per assegnare attività alle risorse disponibili, il responsabile di sotto-progetto dovrà seguire le procedure di ticketing descritte in \ref{sec:realizzazioneControllo}.
+\subsubsubsection{Gestione dei cambiamenti}
+In caso di errori, in seguito alla notifica da parte del \emph{Verificatore} tramite ticket, il responsabile di sotto-progetto dovrà assegnare la correzione mediante la procedura di ticketing descritta in \ref{sec:realizzazioneControllo}. Al termine della correzione, sarà compito del responsabile di sotto-progetto accettare o respingere la modifica, e richiederne di conseguenza il rifacimento.
+Nel caso la correzione riguardi un’attività di codifica, sarà compito del responsabile di sotto-progetto programmare una nuova esecuzione dei test di unità e di integrazione correlati al modulo modificato.
 	\subsection{Analisi dei Requisiti}{ 
 	   \subsubsection{Fattibilità}{
 	    		A partire da informazioni preliminari sul capitolato, lo studio di fattibilità dovrà generare un rapporto che indichi la convenienza o meno del gruppo nello sviluppo del sistema. In particolare si dovrà considerare:
@@ -111,7 +146,7 @@ Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora a
 	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
 	\subsubsubsection{Tracciamento componenti}
-	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione xxx. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
+	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
 	\subsubsubsection{Test di integrazione}
 	I Progettisti devono definire delle classi di verifica necessarie per verificare che i componenti del sistema funzionino nella maniera prevista.
 	\subsubsubsection{Definizione di Prodotto}
@@ -173,7 +208,7 @@ Dopo aver descritto i ruoli di progetto e le relative funzioni, si procede ora a
 	
 	  \begin{itemize}
 	  \item \textbf{Mocha}: framework per eseguire test sul codice node.js;
-	  \item \textbf{Jasmine}: framework per eseguire test su codice javascript;
+	  \item \textbf{Protractor}: framework per eseguire test end to end su angular.jst;
 	  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
 	  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
 	  \item \textbf{jsmeter}: strumento per il calcolo di alcune metriche\ped{g} del codice\ped{g} javascript\ped{g}.

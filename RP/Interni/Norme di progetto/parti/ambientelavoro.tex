@@ -103,10 +103,10 @@ successivamente premere il pulsante  next;
 
 \subsubsection{Software\ped{g} di Integrazione Continua}
 
-Si è scelto di adottare \textbf{Jenkins} per applicare l’integrazione continua allo sviluppo del progetto\ped{g}.\\ 
+Si è scelto di adottare \textbf{Travis} per applicare l’integrazione continua allo sviluppo del progetto\ped{g}.\\ 
 Tale software\ped{g} permette di pianificare ed eseguire dei compiti da eseguire sui file\ped{g} sorgente.\\
 Mette inoltre a disposizione un cruscotto su cui è possibile visualizzare lo stato del codice\ped{g} prodotto. Tale software\ped{g} è infatti in grado di interagire con il software\ped{g} di versionamento,e se disponibile con software\ped{g} per l’esecuzione di test sul codice\ped{g} prodotto.\\ 
-Attualmente Jenkins non viene utilizzato, si è solo cercato di impararne il funzionamento. 
+
 
 
 \subsubsection{Condivisione dei file}
@@ -137,6 +137,7 @@ particolare tale strumento viene utilizzato per notificare in quali giorni un de
 membro non può essere disponibile e per segnalare date rilevanti per il gruppo, come
 ad esempio le date delle riunioni.
 \subsection{Pianificazione}
+\label{sec:Pianificazione}
 Per pianificare le attività legate allo sviluppo del progetto e la gestione delle risorse si è scelto di utilizzare OmniPlan.
 OmniPlan è un programma  per il project management. Tale software è stato scelto in quanto possiede le seguenti caratteristiche:
 \begin{itemize}
@@ -175,6 +176,7 @@ Il software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il progra
 Per la stesura dei grafici UML viene utilizzato il programma\ped{g} \textbf{Visual Paradigm}. Il programma\ped{g} viene utilizzato in licenza Community Edition la quale ne permette l’uso gratuito per fini non commerciali.
 
 \subsubsection{Fogli di calcolo}
+\label{sec:fogliDiCalcolo}
 L'utilizzo di fogli di calcolo\ped{g} elettronici quali Calc,Excel e Numbers è a discrezione del singolo componente in base alla propria piattaforma utilizzata.
 I fogli di calcolo vengono usati per:
 \begin{itemize}
@@ -192,12 +194,13 @@ ciascuna risorsa.
 Per al stesura del codice HTML e javascript verrà usata l' IDE \emph{Aptana}, la scelta sull'utilizzo di questa IDE si è basata sulle necessità del gruppo di un ambiente di sviluppo per applicazioni-web completo,gratuito e multipiattaforma.
 \emph{Aptana} presenta molti strumenti già integrati, come code assistant e debugger. 
 \subsubsection{Verifica}
-L’analisi statica e l’analisi dinamica integrate in Jenkins vengono lanciate automaticamente ad ogni push di codice nel repository. Al verificatore è richiesto quindi soltanto di analizzare l’output del tool, visualizzabile dalla dashboard di Jenkins.
+L’analisi statica e l’analisi dinamica integrate in Travis vengono lanciate automaticamente ad ogni push di codice nel repository. Al verificatore è richiesto quindi soltanto di analizzare l’output del tool, visualizzabile dalla dashboard di Travis.
 
 
 
 
-\subsection{Protocollo per lo sviluppo dell'applicazione} 
+\subsection{Protocollo per lo sviluppo dell'applicazione}
+\label{sec:protocolloSviluppo} 
 Per procedere con uno sviluppo controllato dei documenti e del codice\ped{g} si è scelto di adottare il sistema di ticketing\ped{g} \textbf{Redmine}.\\ 
 La scelta di tale software\ped{g} è descritta nella sezione \ref{subsec:Software di gestione del prodotto}.
 
@@ -280,7 +283,7 @@ padre;
 
 
 \subsubsubsection{Ticket\ped{g} di realizzazione e controllo} 
-
+\label{sec:realizzazioneControllo}
 		\begin{itemize}
 		
 		\item Selezionare \textbf{Nuova segnalazione} da menù principale; 
@@ -466,6 +469,7 @@ Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per ef
 	oggetto. Tale risultato può essere ottenuto premendo \textbf{Oggetto} dalla pagina \textbf{Segnalazioni}.
 
 \subsection{LateTack}
+\label{sec:lateTrack}
 Per semplificare il tracciamento dei requisiti è stato realizzato internamente il software
 LateTrack, un’applicazione web accessibile tramite browser ed ospitata sul server dedicato.
 Quest’applicazione consente di gestire il tracciamento dei requisiti
