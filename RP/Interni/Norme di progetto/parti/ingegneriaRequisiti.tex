@@ -12,9 +12,9 @@ Quest’ultimo dovrà garantire un corretto sviluppo delle attività utilizzando
 \end{itemize}
 \subsubsection{Pianificazione delle attività}
 Per pianificare le attività il \emph{Responsabile di Progetto} deve realizzare un diagramma di
-Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando omniplan come descritto nella sezione \ref{sec:Pianificazione}.
+Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando OmniPlan come descritto nella sezione \ref{sec:Pianificazione}.
 \subsubsection{Coordinazione e controllo delle attività}
-Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con omniplan in Redmine sfruttando il suo sistema di ticketing
+Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con OmniPlan in Redmine sfruttando il suo sistema di ticketing
 come descritto nella sezione \ref{sec:protocolloSviluppo}.
 In questo modo ciascun componente del gruppo sarà avvisato delle attività ad esso assegnate e potrà inserire lo stato delle stesse permettendo al Responsabile di verificare immediatamente l’avanzamento del progetto.
 
@@ -48,7 +48,7 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	    	 }
 		\subsubsection{Scoperta dei requisiti}{
 			\subsubsection{Interviste}
-			al fine udi evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
+			al fine di evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
 			Le richieste di interviste al proponente\ped{g} avverranno con le modalità descritte in ”comunicazioni esterne”. Durante ogni intervista dovrà essere scritta una minuta che sarà confermata dal proponente\ped{g}, eventualmente con le opportune modifiche. La minuta sarà confermata al termine dell’incontro. Quando non fosse un problema per il proponente\ped{g} l’audio dell’intervista dovrà essere registrato per favorire la futura fase di analisi.
 			\subsubsection{Riunioni interne e casi d'uso}
 			Individualente e durante le riunioni interne gli analisti dovranno analizzare le informazioni raccolte dalle interviste con il proponente\ped{g} per individuare problemi e fonti da cui attingere i requisiti\ped{g}.\\
@@ -147,8 +147,6 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
 	\subsubsubsection{Tracciamento componenti}
 	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
-	\subsubsubsection{Test di integrazione}
-	I Progettisti devono definire delle classi di verifica necessarie per verificare che i componenti del sistema funzionino nella maniera prevista.
 	\subsubsubsection{Definizione di Prodotto}
 	I Progettisti devono produrre la Definizione di Prodotto dove viene descritta la progettazione di dettaglio del sistema ampliando quanto scritto nella Specifica Tecnica.
 	
@@ -161,8 +159,9 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	\end{itemize}
 
 	\subsubsubsection{Test di unità}
-	I Progettisti dovranno definire i test d'unità necessari per verificare che i componenti
-	del sistema funzionino nel modo previsto.
+	I Progettisti dovranno definire i test d'unità necessari per verificare che le componenti del sistema funzionino nel modo previsto.
+	\subsubsubsection{Test di integrazione}
+	I Progettisti devono definire delle classi di verifica necessarie per verificare che le componenti del sistema funzionino nella maniera prevista.
 	\subsection{Verifica}
 	L'obiettivo delle attività di verifica è quello di trovare e rimuovere i problemi presenti. Un problema può verificarsi a vari livelli, e per ogni livello assume un nome diverso:
 		\begin{itemize}

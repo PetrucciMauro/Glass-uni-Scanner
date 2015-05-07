@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  6 MAY 2015 23:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  7 MAY 2015 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1089,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 125.
+Package pdftex.def Info: ../../logo.jpg used on input line 126.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1155,24 +1155,24 @@ Package pdftex.def Info: ../../logo.jpg used on input line 137.
  [22]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 166.
+Package pdftex.def Info: ../../logo.jpg used on input line 165.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 193.
+Package pdftex.def Info: ../../logo.jpg used on input line 192.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
+Package pdftex.def Info: ../../logo.jpg used on input line 225.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [25]
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
@@ -1522,7 +1522,7 @@ c/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti12
 /petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (42 pages, 611829 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (42 pages, 611779 bytes).
 PDF statistics:
  1476 PDF objects out of 1728 (max. 8388607)
  1032 compressed objects within 11 object streams
