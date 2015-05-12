@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  8 MAY 2015 17:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  12 MAY 2015 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,7 +1024,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[7] (./parti/collaborazione.tex
+[7] (./parti/ruoli.tex
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 27.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [8]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 66.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9])
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10] (./parti/collaborazione.tex
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1038,7 +1054,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8]
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
@@ -1056,9 +1072,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9] (./parti/documentazione.tex
+ [12] (./parti/documentazione.tex
 Overfull \hbox (10.43419pt too wide) in paragraph at lines 30--31
 []\T1/cmr/m/n/12 Esterno (EXT): in-con-tro ef-fet-tua-to tra i mem-bri del grup
 -po e committente$[]$ e/o proponente$[]$. 
@@ -1068,12 +1084,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10]
+ [13]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
@@ -1082,7 +1098,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 95.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12]
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 110--114
 
  []
@@ -1091,29 +1107,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 126.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13])
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 43.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14] (./parti/ruoli.tex
-File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 27.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 66.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [16])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[17] (./parti/ingegneriaRequisiti.tex
+ [17]
+(./parti/ingegneriaRequisiti.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
@@ -1521,7 +1521,7 @@ texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti08
 00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/t
 exmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto_v.1.0.0.pdf (42 pages, 717175 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (42 pages, 717191 bytes).
 PDF statistics:
  1096 PDF objects out of 1200 (max. 8388607)
  1021 compressed objects within 11 object streams
