@@ -12,16 +12,16 @@ Quest’ultimo dovrà garantire un corretto sviluppo delle attività utilizzando
 \end{itemize}
 \subsubsection{Pianificazione delle attività}
 Per pianificare le attività il \emph{Responsabile di Progetto} deve realizzare un diagramma di
-Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando OmniPlan come descritto nella sezione \ref{sec:Pianificazione}.
+Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando OmniPlan come descritto nella sezione \ref{sec:Pianificazione}.
 \subsubsection{Coordinazione e controllo delle attività}
 Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con OmniPlan in Redmine sfruttando il suo sistema di ticketing
 come descritto nella sezione \ref{sec:protocolloSviluppo}.
 In questo modo ciascun componente del gruppo sarà avvisato delle attività ad esso assegnate e potrà inserire lo stato delle stesse permettendo al Responsabile di verificare immediatamente l’avanzamento del progetto.
 
 \subsubsection{Gestione e controllo delle risorse}
-Per gestire e controllare le risorse il Responsabile di Progetto deve utilizzare Redmine come indicato nella sezione \ref{sec:protocolloSviluppo} che gli consente anche di verificare l’avanzamento di ogni processo come riportato nel \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} .
+Per gestire e controllare le risorse il Responsabile di Progetto deve utilizzare Redmine come indicato nella sezione \ref{sec:protocolloSviluppo} che gli consente anche di verificare l’avanzamento di ogni processo come riportato nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} .
 \subsubsection{Analisi e Gestione dei rischi}
-Durante l’avanzamento del progetto il \emph{Responsabile di Progetto} deve monitorare costantemente il verificarsi dei rischi descritti nel \href{run:../../Interni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} ed eventuali nuovi rischi, attuando le contromisure descritte e riportando gli effettivi riscontri.
+Durante l’avanzamento del progetto il \emph{Responsabile di Progetto} deve monitorare costantemente il verificarsi dei rischi descritti nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} ed eventuali nuovi rischi, attuando le contromisure descritte e riportando gli effettivi riscontri.
 
 \subsubsection{Elaborazione dati}
 Il Responsabile di Progetto deve sfruttare i fogli di calcolo elettronico, come descritto nella sezione \ref{sec:fogliDiCalcolo}, per elaborare i dati raccolti durante lo sviluppo del progetto e riportarli nel \emph{Piano di Progetto}.
@@ -48,10 +48,10 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	    	 }
 		\subsubsection{Scoperta dei requisiti}{
 			\subsubsection{Interviste}
-			al fine di evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
+			Al fine di evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
 			Le richieste di interviste al proponente\ped{g} avverranno con le modalità descritte in ”comunicazioni esterne”. Durante ogni intervista dovrà essere scritta una minuta che sarà confermata dal proponente\ped{g}, eventualmente con le opportune modifiche. La minuta sarà confermata al termine dell’incontro. Quando non fosse un problema per il proponente\ped{g} l’audio dell’intervista dovrà essere registrato per favorire la futura fase di analisi.
 			\subsubsection{Riunioni interne e casi d'uso}
-			Individualente e durante le riunioni interne gli analisti dovranno analizzare le informazioni raccolte dalle interviste con il proponente\ped{g} per individuare problemi e fonti da cui attingere i requisiti\ped{g}.\\
+			Individualmente e durante le riunioni interne gli analisti dovranno analizzare le informazioni raccolte dalle interviste con il proponente\ped{g} per individuare problemi e fonti da cui attingere i requisiti\ped{g}.\\
 			L’individuazione dei requisiti\ped{g} funzionali sarà guidata dai casi d’uso. I casi d’uso potranno avere rappresentazione a diagrammi ma ogni caso d’uso dovrà avere anche la rappresentazione testuale. In particolare nella rappresentazione testuale si definirà:
 			\begin{enumerate}
 				\item Identificativo;
@@ -59,7 +59,7 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 				\item Precondizioni;
 				\item Postcondizioni;
 				\item Scenario principale;
-				\item estensioni\ped{g}.
+				\item Estensioni\ped{g}.
 			\end{enumerate}
 			Per la sintassi si rimanda a ”Dall’idea al codice\ped{g} con UML2.0, Luciano Baresi, Luigi Lavazza, Massimiliano Pianciamore”.
 			}
@@ -77,9 +77,9 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 				\end{enumerate}
 				Dove i gradi di importanza saranno:
 				\begin{itemize}
-						\item \{\textbf{Obbligatorio}\}: requisito\ped{g} obbligatorio;
-						\item \{\textbf{Desiderabile}\}: requisito\ped{g} desiderabile;
-						\item \{\textbf{Opzionale}\}: requisito\ped{g} opzionale.
+						\item \{\textbf{Obbligatorio}\}: requisito da considerarsi \textbf{irrinunciabile} per il cliente. Senza di esso l’applicazione è da considerarsi non soddisfacente per il cliente;
+						\item \{\textbf{Desiderabile}\}: requisiti non strettamente necessari, ma che apportano valore aggiunto importante al prodotto;
+						\item \{\textbf{Opzionale}\}: requisito relativamente utile/importante o che potrebbe essere soggetto di ulteriore contrattazione.
 				\end{itemize}
 				La provenienza può essere:
 				\begin{itemize}
@@ -89,9 +89,9 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 				\end{itemize}
 				Mentre le tipologie saranno:
 				\begin{itemize}
-					\item \{\textbf{RF}\}: requisito\ped{g} funzionale;
-					\item \{\textbf{RQ}\}: requisito\ped{g} di qualità;
-					\item \{\textbf{RV}\}: requisito\ped{g} di vincolo.
+					\item \{\textbf{RF}\}: requisito funzionale, determina le capacità richieste al sistema;
+					\item \{\textbf{RQ}\}: requisito\ped{g} di qualità, requisito volto a portare valore aggiunto al sistema;
+					\item \{\textbf{RV}\}: requisito\ped{g} di vincolo, requisiti espressamente indicati nel capitolato d’appalto o nei verbali d'incontro con il Proponente o Committente.
 				\end{itemize}
 			}
 			\subsubsection{Specifica}{
@@ -118,7 +118,7 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 				rispetto ai requisiti\ped{g}. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e metodi di verifica.
 			}
 				\subsubsection{Esterna}{
-					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione dei cambiamenti”.
+					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione delle modifiche ai requisiti”.
 				}
 		}
 		\subsection{Gestione delle modifiche ai requisiti}{
@@ -132,16 +132,50 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 			}
 			
    \subsection{Progettazione}
-	\subsubsection{Specifica Tecnica}
-	I Progettisti devono descrivere la progettazione ad alto livello dell'architettura dell'applicazione e dei singoli componenti nella \emph{Specifica Tecnica} e provvedere alla progettazione	di opportuni test di integrazione.
-	\subsubsubsection{Diagrammi UML}
-	Devono essere realizzati i seguenti diagrammi:
-	\begin{itemize}
-	\item Diagrammi dei package;
-	\item Diagrammi delle classi;
-	\item Diagrammi di sequenza;
-	\item Diagrammi di attività.
-	\end{itemize}
+	\subsubsection{Progettazione architetturale}
+
+\subsubsubsection{Attività}
+Lo scopo di questa attività è quello di realizzare una visione globale di ciò che dovrà essere il sistema a fronte dei requisiti ricavati dall’attività di analisi.
+Terminata l’attività di progettazione architetturale si deve produrre un documento completo ed esplicativo: la \emph{Specifica Tecnica}.
+Le attività necessarie alla redazione del documento sono:
+\begin{itemize}
+\item Definizione dell’architettura di prodotto a partire dall’Analisi dei Requisiti;
+\item Individuazione e studio dei design pattern applicabili;
+\item Individuazione della struttura dei package;
+\item Individuazione delle classi che compongono il sistema e delle relazioni tra esse;
+\item Analisi delle tecnologie da adottare;
+\item Studio di fattibilità;
+\item Tracciamento componenti-requisiti.
+\end{itemize}
+Si deve inoltre definire, in un documento specifico  (\href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica}), vari
+test da eseguire sulle parti del sistema per verificarne la corretta interazione:
+\begin{itemize}
+\item \textbf{Input}: Analisi dei Requisiti;
+\item \textbf{Output}: Specifica Tecnica, test di integrazione;
+\item \textbf{Risorse}: Progettisti, documentazione, strumentazione;
+\item \textbf{Misurazioni}: avanzamento dell’elaborazione del documento \emph{Specifica Tecnica} rispetto alla totalità dei requisiti definiti nel documento di Analisi dei Requisiti;
+\item \textbf{Norme}: descritte in seguito.
+\end{itemize}
+
+		\subsubsubsection{Diagrammi UML}
+		Data la visione a livello medio-alto di dettaglio richiesta per questo documento si dovranno utilizzare schemi UML 2.x in grado di descrivere formalmente i vari componenti	del sistema.
+		In particolare si andrà ad utilizzare i seguenti tipi di diagrammi:
+		\begin{itemize}
+		
+		
+		\item \textbf{Diagrammi di package}: saranno utilizzati per raggruppare più elementi UML aventi funzionalità simili. Ogni package dovrà essere identificato da un	nome che risulti completamente qualificato e univoco all’interno dello spazio
+		dei nomi. Schemi di questo tipo sono utili per individuare le dipendenze tra classi e per stimare la complessità strutturale del sistema.
+		\item \textbf{Diagrammi di classe}: utilizzati per descrivere i tipi di oggetti che fanno parte di un sistema e le relazioni che vi sono tra di essi. Nella prima fase di progettazione non è richiesto l'elenco di tutti gli attributi e i metodi. Durante
+		la progettazione di dettaglio si consiglia di riportare nei diagrammi da inserire nei documenti anche tutti gli attributi e i metodi. Per garantire una buona	leggibilità dello schema si consiglia di valutare l'inserimento degli elementi di una classe in base al loro numero. E' possibile omettere gli elementi di una classe anche nel caso in cui lo schema debba riportare un numero elevato di classi. Anche il livello di dettaglio della segnatura dei metodi è a discrezione	del progettista con l’indicazione di considerare la seguente lista di priorità:
+		\begin{itemize}		
+		\item Nome del metodo;
+		\item Livello di accessibilità;
+		\item Tipo di ritorno, tipo dei parametri in ingresso ed eccezioni lanciabili;
+		\item Nome dei parametri in ingresso.
+		\end{itemize}
+		\item \textbf{Diagrammi di sequenza}: utilizzati per descrivere la collaborazione tra più oggetti che hanno lo scopo di implementare collettivamente un comportamento. Non sono adatti per la modellazione della logica di controllo e vanno preferiti i diagrammi di attività se si intende modellare dei cicli o delle condizioni;
+		\item \textbf{Diagrammi di attività}: descrivono la procedura logica con la quale vengono eseguite delle operazioni. Vanno utilizzati quando si vuole descrivere	l’esecuzione di flussi paralleli.
+        \end{itemize}
 	\subsubsubsection{Design pattern}
 	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
@@ -150,18 +184,18 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	\subsubsubsection{Definizione di Prodotto}
 	I Progettisti devono produrre la Definizione di Prodotto dove viene descritta la progettazione di dettaglio del sistema ampliando quanto scritto nella Specifica Tecnica.
 	
-	\subsubsubsection{Diagrammi UML}
-	Devono essere aggiornati i seguenti diagrammi:
-	\begin{itemize}
-    \item Diagrammi delle classi;
-	\item Diagrammi di sequenza;
-	\item Diagrammi di attività.
-	\end{itemize}
 
-	\subsubsubsection{Test di unità}
-	I Progettisti dovranno definire i test d'unità necessari per verificare che le componenti del sistema funzionino nel modo previsto.
-	\subsubsubsection{Test di integrazione}
-	I Progettisti devono definire delle classi di verifica necessarie per verificare che le componenti del sistema funzionino nella maniera prevista.
+	\subsubsubsection{Test}
+	\begin{itemize}
+	
+	
+\item \textbf{Test di unità}: test che si effettuano per ogni unità del software con il massimo grado di parallelismo;
+\item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
+\item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto;
+\item \textbf{Test di regressione}: nel caso di una modifica ad un singolo componente,
+andranno effettuati nuovamente tutti i test di unità e, se necessario, di
+integrazione riferiti a quel componente.
+\end{itemize}
 	\subsection{Verifica}
 	L'obiettivo delle attività di verifica è quello di trovare e rimuovere i problemi presenti. Un problema può verificarsi a vari livelli, e per ogni livello assume un nome diverso:
 		\begin{itemize}
@@ -199,15 +233,20 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	\end{enumerate}
 	\subsubsection{Verifica diagrammi UML}
 	\label{sec:strumentiVerifica}
-	al \emph{Verificatore} è richiesto di fare un controllo manuale sui diagrammi UML generati per verificare che sia stato rispettato il formalismo UML 2.x
+Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
+\begin{itemize}
+
+\item \textbf{Diagrammi di caso d’uso}: Il controllo dei diagrammi di caso d’uso deve avvenire manualmente, controllando il rispetto delle specifiche UML 2.x e il corretto uso delle relazioni di inclusione ed estensione. Il diagramma di caso d’uso deve rappresentare fedelmente quanto descritto dal caso d’uso;
+\item \textbf{Diagrammi delle classi}: Al Verificatore è chiestoil controllo del formalismo delle specifiche UML 2.x e di controllare la corrispondenza tra progettazione e diagrammi delle classi.
+
+\end{itemize}
+
 	\subsubsection{Verifica del codice}
-	al \emph{Verificatore} è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati. Di seguito un elenco degli strumenti da usare per l’analisi.
+	Al \emph{Verificatore} è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati. Di seguito un elenco degli strumenti da usare per l’analisi.
 	
 	\subsubsubsection{Analisi Statica} 
 	
 	  \begin{itemize}
-	  \item \textbf{Mocha}: framework per eseguire test sul codice node.js;
-	  \item \textbf{Protractor}: framework per eseguire test end to end su angular.jst;
 	  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
 	  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
 	  \item \textbf{jsmeter}: strumento per il calcolo di alcune metriche\ped{g} del codice\ped{g} javascript\ped{g}.
@@ -216,6 +255,15 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	\subsubsubsection{Analisi Dinamica}
 	Verranno utilizzati strumenti e plugin interni al browser\ped{g} \emph{Chrome} quali \textbf{SpeedTracer} per verificare la velocità dell'applicazione web\ped{g};
 	
+	\subsubsubsection{Test}
+	\begin{itemize}
+	
+    \item \textbf{Jasmine}: framework per behavior-driven per il test sul codice javascript;
+	\item \textbf{Mocha}: framework per eseguire test sul codice javascript;
+	\item \textbf{Protractor}: framework per eseguire test end to end su angular.js;
+	\item \textbf{Karma}: tool per l'automatizzazione dei test javascript;
+	\item \textbf{Selenium}: tool per l'automatizzazione dei test sui browser.
+   \end{itemize}
 	
 	\subsubsubsection{Validazione}
 	
@@ -227,8 +275,11 @@ Nel caso la correzione riguardi un’attività di codifica, sarà compito del re
 	specificate alla seguente pagina :\\
 	\begin{center} \url{http://www.w3schools.com/js/js_conventions.asp} \end{center}
 	\subsubsection{Nomi}
-	I nomi di variabili, classi, funzioni, metodi e commenti dovranno essere in camelCase. I nome di variabili, metodi e funzioni dovranno avere la prima lettera	minuscola.
-	I nomi di variabili globali e costanti dovranno essere in UPPERCASE.
+	\begin{itemize}
+	\item I nomi di variabili, metodi e funzioni dovranno essere espressi in dromedaryCase;
+	\item I nomi delle classi dovranno essere espressi in CamelCase;
+	\item nomi di variabili globali e costanti dovranno essere in UPPERCASE.
+	\end{itemize}
 	\subsubsection{Documentazione}
 	I file contenenti codice dovranno essere provvisti di un'intestazione contenente:
 	\begin{lstlisting}
