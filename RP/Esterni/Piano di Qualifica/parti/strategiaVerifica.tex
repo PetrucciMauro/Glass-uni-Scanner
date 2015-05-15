@@ -1,0 +1,69 @@
+\section{Visione generale delle strategie di verifica}{
+\subsection{Organizzazione}{
+	Ogni qualvolta avvenga un cambiamento sostanziale nello sviluppo del prodotto, si istanzierà il processo\ped{g} di verifica. \\
+	Nello specifico durante ogni fase (Analisi, Progettazione, Realizzazione e Validazione\ped{g}) saranno applicate le tecniche di verifica qui descritte nei seguenti casi:
+	\begin{itemize}
+		\item Conclusione della prima redazione di un documento;
+		\item Conclusione della prima redazione di un file\ped{g} di codice\ped{g};
+		\item Conclusione della modifica sostanziale di un documento: quando il versionamento passa da .x.y.z a .x.y+1.0 oppure a .x+1.0.0. Si veda per approfondimento il paragrafo relativo al versionamento nel documento \href{run:../../Esterni/\fNormeDiProgetto}{\fEscapeNormeDiProgetto};
+		\item Conclusione della modifica sostanziale di un file\ped{g} di codice\ped{g}, quando cioè il versionamento passa da .x.y.z a .x.y +1.0 oppure a .x+1.0.0. Si veda per approfondimento il paragrafo relativo al versionamento nel documento \href{run:../../Esterni/\fNormeDiProgetto}{\fEscapeNormeDiProgetto}.
+	\end{itemize}
+	L'obiettivo delle attività di verifica è quello di trovare e rimuovere i problemi presenti. Un problema può verificarsi a vari livelli, e per ogni livello assume un nome diverso:
+	\begin{itemize}
+		\item Fault (difetto): è l'origine del problema, ciò che fa scaturire il malfunzionamento;
+		\item Error (errore): è lo stato per cui il software\ped{g} si trova in un punto sbagliato del flusso di esecuzione o con valori sbagliati rispetto a quanto previsto dalla specifica;
+		\item Failure (fallimento, guasto): è un comportamento difforme dalla specifica, cioè la manifestazione dell'errore all'utente del software\ped{g}.
+	\end{itemize}
+	Esiste una relazione di causa-effetto fra questi tre termini:\\
+	\[DIFETTO\longrightarrow ERRORE\longrightarrow FALLIMENTO\]\\
+	Non sempre un errore dà origine ad un fallimento: ad esempio potrebbero esserci alcune variabili che si trovano in stato erroneo ma non vengono lette, o non viene percorso\ped{g} il ramo di codice\ped{g} che le contiene.\\
+	E' necessario prestare particolare attenzione a questo tipo di errori (detti anche quiescenti), avvalendosi anche di strumenti per il rilevamento dei bug.
+}
+\subsection{Pianificazione strategica e temporale}{
+	Ai fini di rendere sistematica l'attività di verifica, per poter rispettare le scadenze fissate nel Piano di Progetto\ped{g} ed evitare la propagazione di errori all'interno dei documenti o di file\ped{g} di codice\ped{g} prima della loro verifica, la loro redazione sarà anticipata da una fase di studio preliminare. \\
+	Questa fase permetterà di ridurre la necessità di intervenire con grossi interventi a posteriori, quando la correzione di imprecisioni concettuali e tecniche potrebbe risultare particolarmente gravosa. \\
+	Come da Piano di Progetto\ped{g} di seguito si riportano le quattro milestone\ped{g} prefissate prima delle quali si effettuerà una verifica del prodotto:
+	\begin{itemize}
+		\item Revisioni formali:
+		\begin{itemize}
+			\item Revisione dei Requisiti\ped{g} (27/04/2015)
+			\item Revisione di Accettazione (06/07/2015)
+		\end{itemize}
+		\item Revisioni di progresso:
+		\begin{itemize}
+			\item Revisione di Progettazione (29/05/2015)
+			\item Revisione di Qualifica (18/07/2015)
+		\end{itemize}
+		Sarà necessario, infine, assicurarsi che ogni requisito\ped{g} sia tracciato consistentemente nel documento di Analisi dei Requisiti\ped{g}.
+	\end{itemize}
+	}
+\subsection{Responsabilità}{
+I principali ruoli di responsabilità individuati sono:
+\begin{itemize}
+	\item Amministratore di Progetto\ped{g}:
+	\begin{itemize}
+		\item Assicura la funzionalità dell'ambiente di lavoro;
+		\item Redige i piani di gestione della qualità e ne verifica l'applicazione.
+	\end{itemize}
+	\item Responsabile del progetto\ped{g}:
+	\begin{itemize}
+		\item Assicura lo svolgimento delle attività di verifica;
+		\item Assicura il rispetto dei ruoli e delle competenze come descritti nel Piano di Progetto\ped{g};
+		\item Approva e sancisce la distribuzione di un documento o di un file\ped{g} di codice\ped{g};
+		\item Assicura il rispetto delle scadenze.
+	\end{itemize}
+\end{itemize}
+}
+}
+\subsection{Risorse}{
+Per assicurare che gli obiettivi qualitativi vengano raggiunti è necessario l’utilizzo di
+risorse sia umane che tecnologiche. 
+Per una dettagliata descrizione dei ruoli e delle loro responsabilità fare riferimento alle
+Norme di Progetto.
+Per risorse tecniche e tecnologiche sono da intendersi tutti gli strumenti software e
+hardware che il gruppo intende utilizzare per attuare le attività di verifica su processi e
+prodotti. Affinché il lavoro dei Verificatori venga agevolato si sono predisposti numerosi
+strumenti automatici che eseguono controlli sistematici sui prodotti generati. Tali
+strumenti sono descritti in modo accurato nelle Norme di Progetto.
+
+}
