@@ -209,6 +209,94 @@ integrazione riferiti a quel componente.
 		E' necessario prestare particolare attenzione a questo tipo di errori (detti anche quiescenti), avvalendosi anche di strumenti per il rilevamento dei bug.
 	}
 	
+
+	\subsubsection{Metriche per gli errori riscontrati e gestione dei cambiamenti}
+Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potranno trovare, fornendo criteri per la quantificazione dell’impatto sul prodotto o sul processo e per la definizione delle priorità di intervento. In questo modo si potrà agire prima nella risoluzione di errori a gravità maggiore.
+
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+
+ \hline
+ \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \hline
+ Indici fuori range & Alta & Urgente & Ticket\\
+ \hline
+ Ritardi superiori a 2 giorni nelle attività & Alta & Urgente & Ticket\\
+ \hline
+ Errato tracciamento di requisiti e casi d'uso & Alta & Urgente & Ticket\\ 
+ \hline
+ Errore di progettazione & Alta & Urgente & Ticket\\
+ \hline
+		\caption{Errori nei processi: gravità e procedure di gestione \label{tab:ErroriProcessi}}\\
+\end{longtable}
+
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+ 
+ \hline
+ \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \hline
+ Errore ortografico o di formattazione & Bassa & Breve & Correzione immediata\\
+ \hline
+ Errore sistematico di ortografia o formattazione & Media & Breve & Aggiunta alla checklist\\
+ \hline
+ Compilazione fallita del documento & Alta & Urgente & Correzione immediata\\ 
+ \hline
+ Valori Gulpease fuori range & Media & Breve & Aggiunta alla checklist\\
+ \hline
+ Errore di concetto nel testo & Alta & Urgente & Aggiunta alla checklist\\
+ \hline
+ Errore di formalismo  UML  2.x & Bassa & Breve & Aggiunta alla checklist\\
+ \hline
+ Mancata compilazione del codice & Alta & Urgente & Correzione immediata\\ 
+ \hline
+ Mancato rispetto delle norme di codifica & Medio & Breve & Aggiunta alla checklist\\
+ \hline
+		\caption{Errori nei documenti e nel codice: gravità e procedure di gestione \label{tab:ErroriDocumentiCodice}}\\
+\end{longtable}
+
+La gravità dell’errore può essere:
+\begin{itemize}
+\item \textbf{Bassa} se l’errore ha impatto su aspetti marginali del prodotto o provoca un basso aumento dei costi o dei tempi del processo;
+\item \textbf{Media} se l’errore ha impatto significativo sul prodotto o provoca un aumento percepibile di tempi e costi;
+\item \textbf{Alta} se l’errore rende il prodotto inutilizzabile o provoca un forte aumento dei tempi o dei costi.
+\end{itemize}
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+ 
+ \hline
+ \textbf{Ambito} & \textbf{Gravità bassa} & \textbf{Gravità media} & \textbf{Gravità alta}\\
+ \hline
+ Errore nel prodotto & Impatto su aspetti marginali & Impatto su aspetti visibili & Prodotto inutilizzabile\\
+ \hline
+ Errore nei processi & Aumento costi o tempi < 10\% & Aumento costi o tempi < 25\% & Aumento costi o tempi > 25\%\\
+ \hline
+		\caption{Gravità dell’errore e impatto su processi e prodotti \label{tab:GravitaErrori}}\\
+\end{longtable}
+
+La priorità di risoluzione può essere:
+\begin{itemize}
+\item \textbf{Breve}: indica che l’errore deve essere risolto entro 4-5 giorni;
+\item \textbf{Urgente}: indica che l’errore deve essere risolto appena possibile.
+\end{itemize}
+Le modalità operative per il \emph{Verificatore} sono le seguenti:
+\begin{itemize}
+\item \textbf{Correzione immediata}: è richiesto che il \emph{Verificatore} proceda autonomamente alla correzione dell’errore;
+\item \textbf{Aggiunta alla checklist}: è richiesto che il Verificatore aggiunga l’errore riscontrato a checklist appropriata che poi verrà assegnata a un correttore che apporterà le modifiche riportate.
+\end{itemize}
+\subsubsection{Verifica dei processi}
+Ai Verificatori è richiesto di effettuare quanto segue:
+\begin{itemize}
+\item \textbf{Controllo delle metriche}: Alla conclusione di ogni fase del progetto, per ogni
+macro-attività, definita nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , si calcolano gli indici definiti
+nella sezione Metriche per i processi del \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} . Al fine di avere
+un indice complessivo di fase dovrà essere inoltre calcolato il valore medio di tali indici.
+
+\item \textbf{Grafico PDCA}: Alla conclusione di ogni fase del progetto il \emph{Verificatore} dovrà esportare i dati dal sistema di ticketing utilizzando l’esportazione mediante foglio
+di calcolo nel formato CSV. I dati esportati devono essere inseriti nel modello del foglio di calcolo per la generazione del grafico PDCA.\\
+Dopo aver ottenuto il grafico il \emph{Verificatore} con la supervisione del \emph{Responsabile di Progetto} dovrà trarre delle conclusioni generali sulla velocità con cui sono stati portati avanti i processi.
+\end{itemize}
+
 	\subsubsection{Verifica dei documenti}
 	\label{sec:VerificaDocumenti}
 	Ogni qualvolta avvenga un cambiamento sostanziale nello sviluppo del prodotto, si istanzierà il processo\ped{g} di verifica. \\
