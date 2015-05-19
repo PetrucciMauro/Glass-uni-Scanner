@@ -197,18 +197,8 @@ andranno effettuati nuovamente tutti i test di unità e, se necessario, di
 integrazione riferiti a quel componente.
 \end{itemize}
 	\subsection{Verifica}
-	L'obiettivo delle attività di verifica è quello di trovare e rimuovere i problemi presenti. Un problema può verificarsi a vari livelli, e per ogni livello assume un nome diverso:
-		\begin{itemize}
-			\item Fault (difetto): è l'origine del problema, ciò che fa scaturire il malfunzionamento;
-			\item Error (errore): è lo stato per cui il software\ped{g} si trova in un punto sbagliato del flusso di esecuzione o con valori sbagliati rispetto a quanto previsto dalla specifica;
-			\item Failure (fallimento, guasto): è un comportamento difforme dalla specifica, cioè la manifestazione dell'errore all'utente del software\ped{g}.
-		\end{itemize}
-		Esiste una relazione di causa-effetto fra questi tre termini:\\
-		\[DIFETTO\longrightarrow ERRORE\longrightarrow FALLIMENTO\]\\
-		Non sempre un errore dà origine ad un fallimento: ad esempio potrebbero esserci alcune variabili che si trovano in stato erroneo ma non vengono lette, o non viene percorso\ped{g} il ramo di codice\ped{g} che le contiene.\\
-		E' necessario prestare particolare attenzione a questo tipo di errori (detti anche quiescenti), avvalendosi anche di strumenti per il rilevamento dei bug.
-	}
-	
+La verifica di processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del Progetto. Di conseguenza, servono modalità operative chiare
+e dettagliate per i \emph{Verificatori}, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. Si descrivono ora le modalità ordinate e puntuali di verifica di processi, documenti, attività e codice alle quali ci si riferirà in questo documento e alle quali i \emph{Verificatori} dovranno attenersi.
 
 	\subsubsection{Metriche per gli errori riscontrati e gestione dei cambiamenti}
 Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potranno trovare, fornendo criteri per la quantificazione dell’impatto sul prodotto o sul processo e per la definizione delle priorità di intervento. In questo modo si potrà agire prima nella risoluzione di errori a gravità maggiore.
