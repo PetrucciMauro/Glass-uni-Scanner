@@ -7,7 +7,7 @@
 		\caption{Caso d'uso 0.8: Registrazione nuovo account}
 	\end{figure}
 	\textbf{Attori}: utente non autenticato. \\
-	\textbf{Descrizione}: l'utente non autenticato desidera registrarsi al sistema, inserisce username alfanumerico e password alfanumerica di almeno sei caratteri. Dopo aver ricevuto conferma dal sistema l'utente viene registrato. \\
+	\textbf{Descrizione}: l'utente non autenticato desidera registrarsi al sistema, inserisce uno username alfanumerico e password alfanumerica di almeno sei caratteri. Dopo aver ricevuto conferma dal sistema l'utente viene registrato. \\
 	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente non autenticato chiede d'effettuare la registrazione.	\\
 	\textbf{Postcondizione}: la registrazione è stata effettuata, il sistema è al punto iniziale.	\\
 	\textbf{Scenario principale}:
@@ -17,11 +17,11 @@
 		\item Reinserimento password per la registrazione \hyperref[uc0.8.3]{(UC 0.8.3)};
 		\item L'utente viene registrato nel sistema.
 	\end{enumerate}
-	\textbf{Scenario alternativo}: 
+	\textbf{Scenari alternativi}: 
 	\begin{itemize}
-		\item Lo username scelto risulta essere appartenente ad un altro utente; l'utente non ancora autenticato che si sta registrando, viene avvisato dell'errore e può scegliere un altro username;
+		\item Lo username scelto risulta essere appartenente ad un altro utente; l'utente non ancora autenticato che si sta registrando viene avvisato dell'errore e può sceglierne un altro;
 		\item La password e la sua conferma risultano essere diverse; l'utente non ancora autenticato viene avvisato dell'errore e può reinserire i dati;
-		\item La password risulta non conforme ai vincoli adottati dal sistema e l'utente viene avvisato dell'errore.
+		\item La password risulta non conforme ai vincoli adottati dal sistema; l'utente non ancora autenticato viene avvisato dell'errore e può reinserire i dati.
 	\end{itemize}
 	}
 	\subsubsection{UC0.8.1 - Inserimento username per la registrazione}{
@@ -37,8 +37,8 @@
 		}
 	\subsubsection{UC0.8.2 - Inserimento password per la registrazione} {
 		\label{uc0.8.2}
-		\textbf{Attori}: utente non autenticato \\
-		\textbf{Descrizione}: l'utente non autenticato inserisce la propria password	\\
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l'utente non autenticato inserisce la propria password.	\\
 		\textbf{Precondizione}: l'utente non autenticato chiede d'effettuare la registrazione è pronto ad inserire la password scelta.	\\
 		\textbf{Postcondizione}: è stata inserita la password.\\
 		\textbf{Scenario principale}:
@@ -50,7 +50,7 @@
 		\label{uc0.8.3}
 		\textbf{Attori}: utente non autenticato. \\
 		\textbf{Descrizione}: l'utente non autenticato reinserisce la propria password.	\\
-		\textbf{Precondizione}: l'utente non autenticato richiede d'effettuare la registrazione è pronto a reinserire la password scelta per confermarla.	\\
+		\textbf{Precondizione}: l'utente non autenticato richiede di effettuare la registrazione ed è pronto a reinserire la password di conferma.	\\
 		\textbf{Postcondizione}: è stata inserita la conferma della password.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}

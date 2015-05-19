@@ -28,9 +28,9 @@
 			\caption{Caso d'uso 1.18.1: Esecuzione manuale della presentazione}
 		\end{figure}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a punti precedenti o passare alla presentazione automatica \\
-		\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
-		\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
+		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a frame precedenti anche attraverso l'utilizzo dei bookmark o passare alla presentazione automatica \\
+		\textbf{Precondizione}: il sistema è funzionante e l'utente ha avviato la presentazione in manuale. \\
+		\textbf{Postcondizione}: l'utente ha avviato la presentazione nel modo desiderato.	\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente scorre la presentazione \hyperref[uc1.18.1.1]{(UC 1.18.1.1)};
@@ -40,7 +40,7 @@
 			\item L'utente può ingrandire il contenuto \hyperref[uc1.18.1.18]{(UC 1.18.1.18)};
 			\item L'utente può riprodurre file media \hyperref[uc1.18.1.6]{(UC 1.18.1.6)}.
 		\end{enumerate}
-		\textbf{Scenari alternativi}: 
+		\textbf{Scenario alternativo}: 
 		\begin{itemize}
 			\item L'utente può avviare la presentazione automatica da qualsiasi frame \hyperref[uc1.18.3]{(UC 1.18.3)}.
 		\end{itemize}
@@ -48,7 +48,7 @@
 	\subsubsection{UC 1.18.1.1 - Scorrimento in avanti e indietro dei frame}{
 		\label{uc1.18.1.1}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente vuole scorrere la presentazione al frame immediatamente successivo o precedente. \\
+		\textbf{Descrizione}: l'utente vuole scorrere la presentazione al frame successivo o precedente rispetto a quello in presentazione. \\
 		\textbf{Precondizione}: un frame è in presentazione.	\\
 		\textbf{Postcondizione}: il frame in presentazione è cambiato passando a quello successivo o precedente in base alla scelta dell'utente.\\
 		\textbf{Scenario principale}:
@@ -81,9 +81,9 @@
 	\subsubsection{UC 1.18.1.4 - Passaggio ad un livello superiore}{
 		\label{uc1.18.1.4}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente, se lo desidera, può salire nel frame padre appena superiore. \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può salire al frame padre appena superiore. \\
 		\textbf{Precondizione}: il frame in presentazione è figlio di almeno un frame padre (non è quindi la radice).	\\
-		\textbf{Postcondizione}: il frame in presentazione è passato al padre.\\
+		\textbf{Postcondizione}: il frame in presentazione è passata al frame padre.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente passa al livello superiore della presentazione.
@@ -133,7 +133,7 @@
 	\subsubsection{UC 1.18.1.6.2 - Sospensione della riproduzione del file media}{
 		\label{uc1.18.1.6.2}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del file media in corso. \\
+		\textbf{Descrizione}: l'utente può mettere in pausa il file media in esecuzione. \\
 		\textbf{Precondizione}: è in riproduzione un file media.	\\
 		\textbf{Postcondizione}: il file media è in pausa.\\
 		\textbf{Scenario principale}:
@@ -144,7 +144,7 @@
 	\subsubsection{UC 1.18.1.6.3 - Ripresa dell'esecuzione del file media}{
 		\label{uc1.18.1.6.3}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente può far riavviare la riproduzione del file media. \\
+		\textbf{Descrizione}: l'utente può riprendere la riproduzione del file media. \\
 		\textbf{Precondizione}: il file media in riproduzione è stato messo in pausa.	\\
 		\textbf{Postcondizione}: il file media ha ripreso la sua riproduzione.\\
 		\textbf{Scenario principale}:
@@ -188,13 +188,13 @@
 	\textbf{Postcondizione}: l'utente ha avviato la propria presentazione nel modo desiderato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente avvia la presentazione \hyperref[uc1.18.2.1]{(UC 1.18.2.1)};
-		\item L'utente mette in pausa la presentazione \hyperref[uc1.18.2.4]{(UC 1.18.2.4)}  e riprenderla successivamente  \hyperref[uc1.18.2.2]{(UC 1.18.2.2)};
-		\item L'utente arresta la presentazione \hyperref[uc1.18.2.3]{(UC 1.18.2.3)};
+		\item L'utente avvia l'esecuzione della presentazione \hyperref[uc1.18.2.1]{(UC 1.18.2.1)};
+		\item L'utente mette in pausa l'esecuzione della presentazione \hyperref[uc1.18.2.4]{(UC 1.18.2.4)}  e può riprenderla successivamente  \hyperref[uc1.18.2.2]{(UC 1.18.2.2)};
+		\item L'utente arresta l'esecuzione della presentazione \hyperref[uc1.18.2.3]{(UC 1.18.2.3)};
 		\item L'utente può decidere il tempo di scorrimento frame \hyperref[uc1.18.2.5]{(UC 1.18.2.5)};
-		\item L'utente può gestire i file media \hyperref[uc1.18.2.6]{(UC 1.18.2.6)}.
+		\item L'utente può gestire i file media durante l'esecuzione \hyperref[uc1.18.2.6]{(UC 1.18.2.6)}.
 	\end{enumerate}
-	\textbf{Scenari alternativi}: 
+	\textbf{Scenaro alternativo}: 
 	\begin{itemize}
 		\item L'utente decide di passare alla modalità manuale \hyperref[uc1.18.4]{(UC 1.18.4)}.
 	\end{itemize}
@@ -329,16 +329,20 @@
 			\item L'utente salta la riproduzione in corso.
 		\end{enumerate}						
 	}
-	\subsubsection{UC 1.18.2.6.6 - Possibilità di ingrandimento di un video}{
+	\subsubsection{UC 1.18.2.6.6 - Visualizzazione a schermo intero di un video}{
 		\label{uc1.18.2.6.6}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente, se lo desidera, può ingrandire il video in riproduzione o in sospensione. \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può riprodurre il video a schermo intero. \\
 		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
-		\textbf{Postcondizione}: lo schermo presenta il video selezionato nella sua interezza; l'utente ha la possibilità in ogni momento di rimpicciolire il video tornando a presentare il frame di cui ne fa parte.\\
+		\textbf{Postcondizione}: lo schermo presenta il video selezionato a schermo intero.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente allarga le dimensioni del video.
-		\end{enumerate}						
+		\end{enumerate}	
+		\textbf{Scenario alternativo}:
+		\begin{itemize}
+			\item L'utente può uscire dalla visualizzazione a schermo intero in qualsiasi momento.
+		\end{itemize}
 	}
 	\subsubsection{UC 1.18.3 - Passaggio alla presentazione automatica}{
 		\label{uc1.18.3}

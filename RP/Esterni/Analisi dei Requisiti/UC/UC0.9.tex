@@ -7,9 +7,9 @@
 		\caption{Caso d'uso 0.9: Gestione template}
 	\end{figure}
 	\textbf{Attori}: amministratore. \\
-	\textbf{Descrizione}: l'amministratore ha effettuato il login e il programma è correttamente funzionante. L'amministratore ha la possibilità di inserire nuovi template di infografica o di presentazione, nuovi oggetti grafici per comporre i template ed eliminare template presenti nel server.\\
-	\textbf{Precondizione}: il programma è in funzione e l'amministratore ha effettuato il login.\\
-	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state eseguite con successo.\\
+	\textbf{Descrizione}: l'amministratore ha effettuato il login e il sistema è correttamente funzionante. L'amministratore ha la possibilità di inserire nuovi template di infografica o di presentazione, nuovi oggetti grafici per comporre i template ed eliminare template presenti nel server.\\
+	\textbf{Precondizione}: il sistema è in funzione e l'amministratore ha effettuato il login.\\
+	\textbf{Postcondizione}: le operazioni svolte dall'amministratore sono state portate a termine con successo.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Caricamento di un template di infografica o di presentazione \hyperref[uc0.9.1]{(UC0.9.1)};
@@ -36,7 +36,7 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il template è già presente nel database e l'utente viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
+		\item Il template è già presente nel database e l'amministratore viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
 	\end{itemize}
 	}
 \subsubsection{UC 0.9.3 - Caricamento di un elemento}{
@@ -52,18 +52,18 @@
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item Il file grafico è già presente nel database e l'utente viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
+		\item Il file grafico è già presente nel database e l'amministratore viene informato dell'errore \hyperref[uc0.9.2]{(UC 0.9.2)}.
 	\end{itemize}
 	}
 \subsubsection{UC0.9.2 - Visualizza errore}{
 	\label{uc0.9.2}
 	\textbf{Attori}: amministratore. \\
-	\textbf{Descrizione}: il sistema ha riscontrato un errore e deve renderlo noto all'utente. \\
+	\textbf{Descrizione}: il sistema ha riscontrato un errore e deve renderlo noto all'amministratore. \\
 	\textbf{Precondizione}: un template o un elemento è in fase di caricamento.	\\
-	\textbf{Postcondizione}: l'utente ha visualizzato l'errore.	\\
+	\textbf{Postcondizione}: l'amministratore ha visualizzato l'errore.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Viene visualizzato un errore.
+		\item Viene visualizzato l'errore riscontrato dal sistema.
 	\end{enumerate}
 	}
 \subsubsection{UC 0.9.4- Eliminazione di un template}{
@@ -93,4 +93,3 @@
 		\item Ripristino del template eliminato.
 	\end{enumerate}
 	}
-

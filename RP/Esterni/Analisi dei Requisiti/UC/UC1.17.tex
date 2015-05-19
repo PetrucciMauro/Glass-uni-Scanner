@@ -7,15 +7,15 @@
 		\caption{Caso d'uso 1.17: Gestione delle infografiche}
 	\end{figure}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di prendere gli elementi di una presentazione frame e di inserirli in un unico documento stampabile e quindi lineare. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante.	\\
-	\textbf{Postcondizione}: l'utente ha modificato un'infografica che può aver salvato in locale e online.	\\
+	\textbf{Descrizione}: l'utente è in grado di prendere i frame di una presentazione e di inserirli in un unico documento stampabile. \\
+	\textbf{Precondizione}: il sistema è acceso e funzionante.	\\
+	\textbf{Postcondizione}: l'utente ha modificato un'infografica che può aver salvato in locale o online.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Selezione della presentazione di cui produrre l’infografica \hyperref[uc1.17.1]{(UC 1.17.1)};
 		\item Selezione di un template di infografica \hyperref[uc1.17.2]{(UC 1.17.2)};
 		\item Selezione di un elemento dell’infografica \hyperref[uc1.17.3]{(UC 1.17.3)};
-		\item Modifica e rimozione di un elemento grafico o di un elemento di testo \hyperref[uc1.17.4]{(UC 1.17.4)};
+		\item Modifica e rimozione di un elemento grafico o di testo \hyperref[uc1.17.4]{(UC 1.17.4)};
 		\item Salvataggio dell'infografica \hyperref[uc1.17.5]{(UC 1.17.5)}.
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
@@ -27,8 +27,8 @@
 \subsubsection{UC 1.17.1 - Selezione della presentazione}{
 	\label{uc1.17.1}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di selezionare la presentazione di cui produrre l'infografica per potervi attingere elementi direttamente. \\
-	\textbf{Precondizione}: il sistema è attivo e funzionante.	\\
+	\textbf{Descrizione}: l'utente è in grado di selezionare la presentazione da cui produrre l'infografica. \\
+	\textbf{Precondizione}: il sistema è attivo e funzionante e mostra all'utente le presentazioni disponibili.	\\
 	\textbf{Postcondizione}: nell'editor viene caricata una presentazione sui quali oggetti si può andare a interagire.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -50,7 +50,7 @@
 	\label{uc1.17.3}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli da lui inseriti. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, un template di infografica è stato caricato nell'editor.	\\
+	\textbf{Precondizione}: il sistema è acceso e funzionante, un template di infografica è stato caricato nell'editor.	\\
 	\textbf{Postcondizione}: l'elemento è stato selezionato.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -66,9 +66,9 @@
 		\caption{Caso d'uso 1.17.4: Modifica di un'infografica}
 	\end{figure}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli da lui inseriti. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è attiva un'infografica.	\\
-	\textbf{Postcondizione}: l'infografica attiva è stata modificata.	\\
+	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici dell'infografica. \\
+	\textbf{Precondizione}: il sistema è acceso e funzionante e un'infografica è stata caricata in modalità modifica.	\\
+	\textbf{Postcondizione}: l'infografica è stata modificata.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Modifica di un elemento dell'infografica \hyperref[uc1.17.4.1]{(UC 1.17.4.1)};
@@ -77,7 +77,7 @@
 		\item Inserimento di un elemento grafico \hyperref[uc1.17.4.4]{(UC 1.17.4.4)};
 		\item Inserimento di un elemento di testo \hyperref[uc1.17.4.5]{(UC 1.17.4.5)};
 		\item Inserimento frame \hyperref[uc1.17.4.6]{(UC 1.17.4.6)};
-		\item Eliminazione di un elemento \hyperref[uc1.17.4.7]{(UC 1.17.4.7)};
+		\item Eliminazione di un elemento \hyperref[uc1.17.4.7]{(UC 1.17.4.7)}.
 	\end{enumerate}
 }
 \subsubsection{UC 1.17.4.1 - Modifica elemento infografica}{
@@ -89,12 +89,12 @@
 		\caption{Caso d'uso 1.17.4.1: Modifica di un elemento dell'infografica}
 	\end{figure}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici del template dell'infografica o di quelli da lui inseriti. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, un elemento della presentazione è stato selezionato.	\\
+	\textbf{Descrizione}: l'utente è in grado di selezionare elementi specifici dell'infografica. \\
+	\textbf{Precondizione}: il sistema è acceso e funzionante ed un elemento dell'infografica  è stato selezionato.	\\
 	\textbf{Postcondizione}: l'elemento selezionato è stato modificato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item Per un elemento grafico è possibile ingrandirne o ridurne le dimensioni \hyperref[uc1.17.4.1.1]{(UC 1.17.4.1.1)};
+		\item Per un elemento grafico è possibile ingrandire o ridurre le dimensioni \hyperref[uc1.17.4.1.1]{(UC 1.17.4.1.1)};
 		\item Per un elemento testuale è possibile effettuare diverse modifiche \hyperref[uc1.17.4.1.2]{(UC 1.17.4.1.2)};
 		\item In entrambi i casi è possibile cambiare la posizione dell'elemento \hyperref[uc1.17.4.1.3]{(UC 1.17.4.1.3)}.
 	\end{enumerate}
@@ -103,8 +103,8 @@
 	\label{uc1.17.4.1.1}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di aumentare e ridurre le dimensioni di un elemento grafico. \\
-	\textbf{Precondizione}: l'elemento grafico è stato selezionato.\\
-	\textbf{Postcondizione}: l'elemento ha cambiato le sue dimensioni.\\
+	\textbf{Precondizione}: è stato selezionato un elemento grafico.\\
+	\textbf{Postcondizione}: l'elemento selezionato ha cambiato le sue dimensioni.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente modifica le dimensioni dell'elemento selezionato.
@@ -120,8 +120,8 @@
 	\end{figure}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di modificare un elemento testuale. \\
-	\textbf{Precondizione}: un elemento testuale della presentazione è stato selezionato.	\\
-	\textbf{Postcondizione}: l'elemento testuale è stato modificato.	\\
+	\textbf{Precondizione}: un elemento testuale dell'infografica è stato selezionato.	\\
+	\textbf{Postcondizione}: l'elemento selezionato testuale è stato modificato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Cambiare il carattere \hyperref[uc1.17.4.1.2.1]{(UC 1.17.4.1.2.1)};
@@ -134,9 +134,9 @@
 \subsubsection{UC 1.17.4.1.2.1 - Modifica del carattere}{
 	\label{uc1.17.4.1.2.1}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di cambiare il carattere delle lettere dell’elemento testuale. \\
+	\textbf{Descrizione}: l'utente è in grado di cambiare il carattere del testo nell’elemento testuale. \\
 	\textbf{Precondizione}: l'elemento testuale è stato selezionato e si trova ora in modalità modifica.\\
-	\textbf{Postcondizione}: le lettere del testo hanno cambiato carattere.\\
+	\textbf{Postcondizione}: è stato cambiato il carattere dell'elemento testo selezionato.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente modifica il carattere dell'elemento testuale.
@@ -147,29 +147,29 @@
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare le dimensioni delle lettere dell’elemento testuale. \\
 	\textbf{Precondizione}: l'elemento testuale è stato selezionato e si trova ora in modalità modifica.\\
-	\textbf{Postcondizione}: le lettere del testo ha cambiato dimensione.\\
+	\textbf{Postcondizione}: il testo ha cambiato le dimensioni del carattere.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente modifica le dimensioni del carattere nell'elemento testuale.
-	\end{enumerate}			
+		\item L'utente modifica le dimensioni del testo nell'elemento testuale.
+	\end{enumerate}	
 	}
 \subsubsection{UC 1.17.4.1.2.3 - Modifica della formattazione}{
 	\label{uc1.17.4.1.2.3}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di cambiare la formattazione dell’elemento testuale. \\
+	\textbf{Descrizione}: l'utente è in grado di cambiare la formattazione dell’elemento testuale tra quelli disponibili (corsivo, grassetto, sottolineato) oppure tornare al testo non formattato. \\
 	\textbf{Precondizione}: l'elemento testuale è stato selezionato e si trova ora in modalità modifica.\\
-	\textbf{Postcondizione}: le lettere del testo hanno cambiato formato (corsivo, grassetto, sottolineato).\\
+	\textbf{Postcondizione}: il testo ha cambiato formato.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente modifica il formato del testo nell'elemento testuale.
+		\item L'utente modifica la formattazione dell'elemento testuale.
 	\end{enumerate}			
 	}
 \subsubsection{UC 1.17.4.1.2.4 - Modifica del colore}{
 	\label{uc1.17.4.1.2.4}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di cambiare il colore delle lettere dell’elemento testuale. \\
+	\textbf{Descrizione}: l'utente è in grado di cambiare il colore del testo contenuto nell’elemento testuale. \\
 	\textbf{Precondizione}: l'elemento testuale è stato selezionato e si trova ora in modalità modifica.\\
-	\textbf{Postcondizione}: le lettere del testo hanno cambiato colore.\\
+	\textbf{Postcondizione}: è stato cambiato il colore dei caratteri dell'elemento testuale.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente modifica il colore del testo nell'elemento testuale.
@@ -183,14 +183,14 @@
 	\textbf{Postcondizione}: le lettere del testo sono state evidenziate.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente modifica l'evidenziazione del testo nell'elemento testuale.
+		\item L'utente evidenzia il testo nell’elemento testuale.
 	\end{enumerate}			
 	}
 \subsubsection{UC 1.17.4.1.3 - Modifica della posizione dell'elemento}{
 	\label{uc1.17.4.1.3}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di cambiare la posizione di un elemento. \\
-	\textbf{Precondizione}: l'elemento grafico è stato selezionato.\\
+	\textbf{Precondizione}: l'elemento è stato selezionato.\\
 	\textbf{Postcondizione}: l'elemento è stato spostato all’interno dell’infografica.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -201,7 +201,7 @@
 	\label{uc1.17.4.2}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di rimuovere lo sfondo dell’infografica. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
+	\textbf{Precondizione}: il sistema è acceso e funzionante ed è stata caricata un'infografica.	\\
 	\textbf{Postcondizione}: lo sfondo dell'infografica è stato eliminato.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -212,7 +212,7 @@
 	\label{uc1.17.4.3}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di scegliere uno sfondo per l'infografica. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
+	\textbf{Precondizione}: il sistema è acceso e funzionante ed è stata caricata un'infografica.	\\
 	\textbf{Postcondizione}: lo sfondo dell'infografica è stato cambiato.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -223,8 +223,8 @@
 	\label{uc1.17.4.4}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di inserire un elemento grafico. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
-	\textbf{Postcondizione}: è stato inserito un elemento precedentemente assente nell'infografica.\\
+	\textbf{Precondizione}: il sistema è acceso e funzionante ed è stata caricata un'infografica.	\\
+	\textbf{Postcondizione}: è stato inserito un nuovo elemento nell'infografica.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Quando un elemento grafico viene inserito si entra automaticamente in modalità modifica \hyperref[uc1.17.4.1]{(UC 1.17.4.1)}.
@@ -234,30 +234,30 @@
 	\label{uc1.17.4.5}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente.	\\
+	\textbf{Precondizione}: il programma è acceso e funzionanteed è stata caricata un'infografica.	\\
 	\textbf{Postcondizione}: è stato inserito un elemento testuale precedentemente assente nell'infografica.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item Quando viene inserito un elemento testuale questo entra automaticamente in modalità modifica \hyperref[uc1.17.4.1.2]{(UC 1.17.4.1.2)}.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.17.4.6 - Inserimento di una frame}{
+\subsubsection{UC 1.17.4.6 - Inserimento di un frame}{
 	\label{uc1.17.4.6}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: l'utente è in grado di inserire un elemento testuale nell'infografica. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente, è stata caricata una presentazione di cui l'utente vuole fare l'infografica.	\\
-	\textbf{Postcondizione}: nell'infografica è stata inserita come immagine vettoriale un frame precedentemente assente.\\
+	\textbf{Descrizione}: l'utente è in grado di inserire un frame come immagine vettoriale nell'infografica. \\
+	\textbf{Precondizione}: il programma è acceso e funzionante, è stata caricata un'infografica ed una presentazione di cui l'utente vuole fare l'infografica.	\\
+	\textbf{Postcondizione}: nell'infografica è stato inserito un nuovo frame.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente inserisce un frame nell'infografica.
+		\item L'utente inserisce un nuovo frame nell'infografica.
 	\end{enumerate}			
 	}
 \subsubsection{UC 1.17.4.7 - Eliminazione di un elemento}{
 	\label{uc1.17.4.7}
 	\textbf{Attori}: utente desktop. \\
 	\textbf{Descrizione}: l'utente è in grado di eliminare un elemento dell'infografica. \\
-	\textbf{Precondizione}: il programma è acceso e funzionante, è stato caricato un template o un'infografica personale dell'utente, è stato selezionato un elemento dell'infografica.	\\
-	\textbf{Postcondizione}: nell'infografica è stato rimosso un elemento.\\
+	\textbf{Precondizione}: il sistema è acceso e funzionante, è stata caricata un'infografica ed è stato selezionato un elemento dell'infografica.	\\
+	\textbf{Postcondizione}: è stato rimosso un elemento dall'infografica.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente elimina un elemento dall'infografica.
@@ -266,9 +266,9 @@
 \subsubsection{UC 1.17.5 - Salvataggio infografica}{
 	\label{uc1.17.5}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: permettere all’utente di salvare un’infografica. \\
-	\textbf{Precondizione}: l'utente ha caricato un template.	\\
-	\textbf{Postcondizione}: l'utente ha salvato un’infografica nel suo spazio personale.\\
+	\textbf{Descrizione}: l'utente può salvare l'infografica su cui stava lavorando. \\
+	\textbf{Precondizione}: il sistema è acceso e funzionante e l'utente ha caricato un'infografica.	\\
+	\textbf{Postcondizione}: l'utente ha salvato l’infografica su cui stava lavorando nel proprio spazio personale.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente salva l'infografica nel proprio spazio personale.
@@ -277,9 +277,9 @@
 \subsubsection{UC 1.17.7 - Esportazione infografica}{
 	\label{uc1.17.7}
 	\textbf{Attori}: utente desktop. \\
-	\textbf{Descrizione}: permettere all’utente di esportare un’infografica. \\
-	\textbf{Precondizione}: l'utente ha caricato un template.	\\
-	\textbf{Postcondizione}: l'utente ha esportato l'infografica sottoforma di file immagine nel proprio dispositivo.\\
+	\textbf{Descrizione}: l'utente può esportare un'infografica come file immagine nel proprio dispositivo. \\
+	\textbf{Precondizione}: il sistema è acceso e funzionante e l'utente ha caricato un'infografica.	\\
+	\textbf{Postcondizione}: l'utente ha esportato l'infografica sotto forma di file immagine nel proprio dispositivo.\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente esporta l'infografica come immagine nel proprio dispositivo.

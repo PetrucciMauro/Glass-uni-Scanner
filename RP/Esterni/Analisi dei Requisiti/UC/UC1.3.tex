@@ -7,7 +7,7 @@
 		\caption{Caso d'uso 1.3: Modifica desktop della presentazione}
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente ha la possibilità di modificare una presentazione. \\
+	\textbf{Descrizione}: l'utente ha la possibilità di modificare una presentazione presente nel proprio spazio sul server. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
 	\textbf{Postcondizione}: l'utente ha modificato la presentazione selezionata e salvato le modifiche in locale.	\\
 	\textbf{Scenario principale}:
@@ -20,7 +20,7 @@
 		\item L'utente può definire i percorsi della presentazione \hyperref[uc1.3.6]{(UC 1.3.6)};
 		\item L'utente può inserire e cancellare bookmark \hyperref[uc1.3.7]{(UC 1.3.7)};
 		\item L'utente può impostare le opzioni di esecuzione della presentazione \hyperref[uc1.3.8]{(UC 1.3.8)};
-		\item L'utente può definire i tempi di permanenza \hyperref[uc1.3.9]{(UC 1.3.9)};
+		\item L'utente può definire i tempi di permanenza sui frame \hyperref[uc1.3.9]{(UC 1.3.9)};
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
 	\begin{itemize}
@@ -38,7 +38,7 @@
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può inserire un nuovo frame nel piano della presentazione. \\
 	\textbf{Precondizione}: il sistema è pronto per l'inserimento di un nuovo frame.	\\
-	\textbf{Postcondizione}: l'utente ha inserito nel piano di modifica un nuovo frame.	\\
+	\textbf{Postcondizione}: l'utente ha inserito nel piano della presentazione un nuovo frame.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona un frame nel menu a lato del piano della presentazione;
@@ -54,8 +54,8 @@
 	\textbf{Postcondizione}: l'utente ha selezionato dal menu il frame desiderato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente seleziona l'icona "nuovo frame" nel menu a sinistra del piano della presentazione;
-		\item L'utente seleziona uno dei frame ora selezionabili nel menu a sinistra del piano della presentazione.
+		\item L'utente seleziona l'azione "nuovo frame";
+		\item L'utente seleziona uno dei frame disponibili.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.1.2 - Spostamento frame nel piano della presentazione}{
@@ -92,7 +92,7 @@
 		\caption{Caso d'uso 1.3.3: Modifica desktop di un frame}
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop ha scelto l'opzione di modifica di un frame. L'utente desktop può scegliere di inserire o modificare un elemento (che può essere del testo, un'immagine, o un video), di spostare un elemento, di eliminare un elemento, di inserire o eliminare una scelta. Inoltre può modificare la dimensione e la forma del frame, lo spessore e il colore del bordo, e modificare lo sfondo. \\
+	\textbf{Descrizione}: l'utente desktop ha scelto l'opzione di modifica di un frame: può scegliere di inserire o modificare un elemento (che può essere del testo, un'immagine, o un video), di spostare un elemento, di eliminare un elemento, di inserire o eliminare una scelta, di modificare la dimensione o la forma del frame, lo spessore o il colore del bordo e lo sfondo. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
 	\textbf{Postcondizione}: nella presentazione è presente un frame modificato.	\\
 	\textbf{Scenario principale}:
@@ -135,7 +135,7 @@
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona l'opzione di inserimento immagine;
-		\item L'utente desktop inserisce l'immagine desiderata.
+		\item L'utente desktop inserisce l'immagine desiderata tra quelle rese disponibili dal sistema oppure tra quelle presenti in locale.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.3 - Inserimento di un elemento video}{
@@ -147,14 +147,14 @@
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona l'opzione di inserimento video;
-		\item L'utente desktop inserisce il video desiderato.
+		\item L'utente desktop inserisce il video desiderato tra quelli presenti in locale oppure come link ad uno presente in rete.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.4 - Modifica di un elemento testo}{
 	\label{uc1.3.3.4}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica un elemento testo presente all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento testo selezionato e l'utente desidera modificarne il contenuto.	\\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera modificare il contenuto di un elemento testo.	\\
 	\textbf{Postcondizione}: nel frame è presente un elemento testo modificato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -165,43 +165,44 @@
 \subsubsection{UC 1.3.3.5 - Modifica dimensione di un elemento immagine}{
 	\label{uc1.3.3.5}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop modifica la dimensione di un elemento immagine presente all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento immagine selezionato e l'utente desidera modificarne la dimensione.	\\
-	\textbf{Postcondizione}: nel frame è presente un elemento immagine con una dimensione modificata.	\\
+	\textbf{Descrizione}: l'utente desktop ridimensiona un elemento immagine presente all'interno del frame. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera modificare la dimensione di un elemento immagine.	\\
+	\textbf{Postcondizione}: nel frame è presente un elemento immagine ridimensionato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona un elemento immagine;
-		\item L'utente desktop modifica la dimensione dell'elemento immagine.
+		\item L'utente desktop ridimensiona l'elemento immagine.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.6 - Modifica dimensione di un elemento video}{
 	\label{uc1.3.3.6}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop modifica la dimensione di un elemento video presente all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento video selezionato e l'utente desidera modificarne la dimensione.	\\
-	\textbf{Postcondizione}: nel frame è presente un elemento video con una dimensione modificata.	\\
+	\textbf{Descrizione}: l'utente desktop ridimensiona un elemento video presente all'interno del frame. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera modificare la dimensione di un elemento video.	\\
+	\textbf{Postcondizione}: nel frame è presente un elemento video ridimensionato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona un elemento video;
-		\item L'utente desktop modifica la dimensione dell'elemento video.
+		\item L'utente desktop ridimensiona l'elemento video.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.7 - Spostamento di un elemento}{
 	\label{uc1.3.3.7}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop sposta un elemento qualsiasi all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento selezionato e l'utente desidera modificarne la posizione.	\\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera modificare la posizione di un elemento.	\\
 	\textbf{Postcondizione}: nel frame è presente un elemento spostato.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente desktop seleziona un elemento e lo trascina all'interno del frame.
+		\item L'utente destop seleziona un elemento;
+		\item L'utente desktop trascina l'elemento selezionato all'interno del frame.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.8 - Eliminazione di un elemento}{
 	\label{uc1.3.3.8}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop elimina un elemento qualsiasi all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento selezionato e l'utente desidera eliminarlo.	\\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera eliminare un elemento.	\\
 	\textbf{Postcondizione}: l'utente desktop ha eliminato un elemento.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -212,7 +213,7 @@
 \subsubsection{UC 1.3.3.9 - Inserimento di un elemento scelta}{
 	\label{uc1.3.3.9}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop inserisce all'interno di un frame un elemento scelta verso un altro frame non appartenente allo stesso percorso del frame. \\
+	\textbf{Descrizione}: l'utente desktop inserisce all'interno di un frame un elemento scelta verso un altro frame non appartenente allo stesso percorso di presentazione del frame. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera aggiungere un elemento scelta.	\\
 	\textbf{Postcondizione}: l'utente desktop ha inserito una nuova scelta.	\\
 	\textbf{Scenario principale}:
@@ -226,7 +227,7 @@
 	\label{uc1.3.3.10}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica il testo assegnato ad un elemento scelta presente all'interno del frame. \\
-	\textbf{Precondizione}: il sistema presenta un elemento scelta selezionato e l'utente desidera modificarne il nome assegnato.	\\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera modificare il nome assegnato ad un elemento a scelta.	\\
 	\textbf{Postcondizione}: l'utente desktop ha modificato il nome di un elemento scelta.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -237,7 +238,7 @@
 \subsubsection{UC 1.3.3.11 - Modifica della dimensione del frame}{
 	\label{uc1.3.3.11}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop modifica la dimensione del frame. \\
+	\textbf{Descrizione}: l'utente desktop ridimensiona il frame. \\
 	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificarne la dimensione.	\\
 	\textbf{Postcondizione}: la presentazione contiene un frame con una nuova dimensione.	\\
 	\textbf{Scenario principale}:
@@ -250,20 +251,19 @@
 	\label{uc1.3.3.12}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica la forma del frame. \\
-	\textbf{Precondizione}: il sistema presenta frame selezionato e l'utente desidera modificarne la forma.	\\
+	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificarne la forma.	\\
 	\textbf{Postcondizione}: la presentazione contiene un frame con una nuova forma.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona l'opzione per la modifica della forma del frame;
 		\item L'utente desktop seleziona la nuova forma del frame.
-	\end{enumerate}
-	}
+	\end{enumerate}}
 \subsubsection{UC 1.3.3.13 - Modifica dello spessore del bordo del frame}{
 	\label{uc1.3.3.13}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica lo spessore del bordo del frame. \\
-	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificare lo spessore del bordo.	\\
-	\textbf{Postcondizione}: la presentazione contiene un frame con un bordo con un nuovo spessore.	\\
+	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificarne lo spessore del bordo.	\\
+	\textbf{Postcondizione}: la presentazione contiene un frame con un bordo dal nuovo spessore.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente desktop seleziona l'opzione per la modifica dello spessore del bordo del frame;
@@ -274,7 +274,7 @@
 	\label{uc1.3.3.14}
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente desktop modifica il colore del bordo del frame. \\
-	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificare il colore del bordo.	\\
+	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera modificarne il colore del bordo.	\\
 	\textbf{Postcondizione}: la presentazione contiene un frame con un bordo con un nuovo colore.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -304,7 +304,7 @@
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona un frame nel piano della presentazione;
-		\item L'utente seleziona l'icona "cancella frame";
+		\item L'utente seleziona l'azione di cancellazione del frame;
 		\item L'utente conferma la cancellazione del frame.
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
@@ -364,7 +364,7 @@
 	\textbf{Postcondizione}: l'utente ha selezionato un'immagine per lo sfondo.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente scorre i file immagine nelle cartelle locali dell'applicazione;
+		\item L'utente scorre i file immagine resi disponibili dal sistema oppure può scegliere di caricare un'immagine presente in locale;
 		\item L'utente seleziona un'immagine;
 		\item L'utente conferma la selezione.
 	\end{enumerate}
@@ -426,7 +426,7 @@
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona l'area dello sfondo;
-		\item L'utente seleziona l'icona 'ridimensianamento';
+		\item L'utente seleziona l'azione 'ridimensianamento';
 		\item L'utente ridefinisce l'area dello sfondo;
 		\item L'utente conferma la nuova area.
 	\end{enumerate}
@@ -457,11 +457,11 @@
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può impostare il primo frame visualizzato in fase di esecuzione di una presentazione. \\
 	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera impostarlo come primo frame.	\\
-	\textbf{Postcondizione}: l'utente ha impostato il primo frame visualizzato in fase di esecuzione della presentazione aperta.	\\
+	\textbf{Postcondizione}: l'utente ha impostato il primo frame da visualizzare in fase di esecuzione della presentazione aperta.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona un frame sul piano della presentazione;
-		\item L'utente seleziona l'icona "inizio" a lato del frame.
+		\item L'utente seleziona l'azione "inizio" a lato del frame.
 	\end{enumerate}
 }
 \subsubsection{UC 1.3.6.2 - Nuova transizione}{
@@ -473,20 +473,20 @@
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona una frame nel piano della presentazione;
-		\item L'utente seleziona l'icona "aggiungi transizione";
+		\item L'utente seleziona l'azione "aggiungi transizione";
 		\item L'utente seleziona il frame destinazione.
 	\end{enumerate}
 }
-\subsubsection{UC 1.3.6.3 - Togli frame dal percorso}{
+\subsubsection{UC 1.3.6.3 - Escludi frame dal percorso}{
 	\label{uc1.3.6.3}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può togliere la visualizzazione di un frame dal percorso. \\
-	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera rimuovere dal percorso di visualizzazione.	\\
+	\textbf{Descrizione}: l'utente può escludere la visualizzazione di un frame dal percorso. \\
+	\textbf{Precondizione}: il sistema presenta un frame selezionato e l'utente desidera escluderlo dal percorso di presentazione.	\\
 	\textbf{Postcondizione}: l'utente ha rimosso un frame dal percorso di visualizzazione.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona un frame nel piano della presentazione;
-		\item L'utente seleziona l'azione "togli frame" a lato del numero indicante la visualizzazione associata al frame selezionato;
+		\item L'utente seleziona l'azione per l'esclusione del frame dal percorso di presentazione;
 		\item L'utente conferma l'eliminazione del frame.
 	\end{enumerate}
 }
@@ -511,37 +511,37 @@
 		\caption{Caso d'uso 1.3.7: Gestione desktop dei bookmark}
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può inserire e cancellare bookmark ai frame. \\
+	\textbf{Descrizione}: l'utente può inserire e cancellare bookmark da un frame. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
-	\textbf{Postcondizione}: l'utente ha inserito o eliminato i bookmark ai frame.	\\
+	\textbf{Postcondizione}: l'utente ha inserito o eliminato bookmark da un frame.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente può inserire un nuovo bookmark ad un frame;
+		\item L'utente può inserire un nuovo bookmark in un frame;
 		\item L'utente può eliminare un bookmark da un frame.
 	\end{enumerate}
 }
 \subsubsection{UC 1.3.7.1 - Inserimento bookmark}{
 	\label{uc1.3.7.1}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può inserire bookmark ai frame. \\
+	\textbf{Descrizione}: l'utente può inserire un nuovo bookmark su un frame. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera aggiungere un nuovo bookmark.	\\
 	\textbf{Postcondizione}: l'utente ha inserito un bookmark ad un frame.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona un frame associato al frame in cui inserire il bookmark;
-		\item L'utente selezione l'icona inserisci bookmark a lato del numero del frame corrispondente.
+		\item L'utente selezione l'azione inserisci bookmark a lato del numero del frame corrispondente.
 	\end{enumerate}
 }
 \subsubsection{UC 1.3.7.2 - Eliminazione bookmark}{
 	\label{uc1.3.7.2}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può cancellare bookmark al frame. \\
+	\textbf{Descrizione}: l'utente può cancellare bookmark da un frame. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera rimuovere un bookmark.	\\
 	\textbf{Postcondizione}: l'utente ha eliminato un bookmark da un frame.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona il frame associato al frame da cui eliminare il bookmark;
-		\item L'utente seleziona l'icona "elimina bookmark" a lato del frame e del numero del frame a cui è associato il bookmark da eliminare.
+		\item L'utente seleziona l'azione "elimina bookmark" a lato del frame e del numero del frame a cui è associato il bookmark da eliminare.
 	\end{enumerate}
 }
 \subsubsection{UC 1.3.8 - Definizione effetti di transizione}{
@@ -553,13 +553,13 @@
 		\caption{Caso d'uso 1.3.8: Definizione degli effetti di transizione tra frame}
 	\end{figure}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può definire gli effetti di transizione tra un frame e la successiva. \\
+	\textbf{Descrizione}: l'utente può definire gli effetti di transizione da un frame ad un altro; l'effetto verrà attribuito al frame selezionato e verrà applicato nel momento in cui si passerà da quel frame a quello successivo nel percorso di presentazione. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica; l'utente ha selezionato l'opzione per la definizione degli effetti di transizione.	\\
-	\textbf{Postcondizione}: l'utente ha modificato l'effetto di transizione per le transizioni desiderate.	\\
+	\textbf{Postcondizione}: l'utente ha modificato l'effetto di transizione per le quelle desiderate.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente seleziona la transizione a cui modificare l'effetto di transizione;
-		\item L'utente seleziona l'icona "effetto transizione";
+		\item L'utente seleziona il frame a cui modificare l'effetto di transizione;
+		\item L'utente seleziona l'azione "effetto transizione";
 		\item L'utente seleziona un effetto tra quelli definiti;
 		\item L'utente può selezionare la velocità di transizione;
 		\item L'utente conferma il cambiamento.
@@ -572,19 +572,19 @@
 \subsubsection{UC 1.3.8.1 - Selezione transizione}{
 	\label{uc1.3..8.1}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente vuole selezionare una transizione tra due frame consecutivi in un percorso. \\
+	\textbf{Descrizione}: l'utente vuole selezionare una transizione da applicare ad un frame. \\
 	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione effetti transazioni.	\\
 	\textbf{Postcondizione}: l'utente ha selezionato una transizione.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente seleziona una transizione tra due frame consecutivi.
+		\item L'utente seleziona una transizione per il frame selezionato.
 	\end{enumerate}
 }
 \subsubsection{UC 1.3.8.2 - Selezione effetto}{
 	\label{uc1.3.8.2}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente può selezionare un effetto grafico di transizione da associare ad una transizione tra due frame. \\
-	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione effetti transazioni, l'utente ha selezionato una transizione.	\\
+	\textbf{Descrizione}: l'utente può selezionare un effetto grafico di transizione da associare ad una transizione. \\
+	\textbf{Precondizione}: l'utente ha aperto una presentazione in modalità modifica e ha selezionato l'opzione effetti transazioni, l'utente ha selezionato una transizione tra quelle presenti.	\\
 	\textbf{Postcondizione}: l'utente ha selezionato un effetto di transizione per una transizione.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
@@ -618,15 +618,15 @@
 	\textbf{Attori}: utente desktop \\
 	\textbf{Descrizione}: l'utente può definire il temo di permanenza per ogni frame in modalità esecuzione automatica di una presentazione. \\
 	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
-	\textbf{Postcondizione}: l'utente ha modificato il tempo di permanenza ai frame in modalità esecuzione automatica di una presentazione.	\\
+	\textbf{Postcondizione}: l'utente ha modificato il tempo di permanenza sui frame in modalità esecuzione automatica della presentazione.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
 		\item L'utente seleziona la voce in menu "tempo di permanenza";
-		\item L'utente scrive il tempo di permanenza nella casella comparsa dall'azione precedente in secondi;
-		\item L'utente conferma la modifica.
+		\item L'utente sceglie il tempo di permanenza in secondi;
+		\item L'utente conferma la scelta.
 	\end{enumerate}
 	\textbf{Scenari alternativi}:
 	\begin{itemize}
-		\item L'utente non conferma la modifica  e si ritorna alla precondizione.
+		\item L'utente non conferma la scelta  e si ritorna alla precondizione.
 	\end{itemize}
 }
