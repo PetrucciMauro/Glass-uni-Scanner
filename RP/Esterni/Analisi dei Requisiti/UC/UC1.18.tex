@@ -152,15 +152,15 @@
 			\item L'utente riprende la riproduzione del file media.
 		\end{enumerate}		
 	}
-	\subsubsection{UC 1.18.1.6.4 - Riproduzione del file media da qualsiasi punto}{
+	\subsubsection{UC 1.18.1.6.4 - Riproduzione del file media da qualsiasi minuto}{
 		\label{uc1.18.1.6.4}
 		\textbf{Attori}: utente. \\
 		\textbf{Descrizione}: l'utente può far riprodurre il file media da un qualsiasi minuto. \\
 		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
-		\textbf{Postcondizione}: il file media è in riproduzione dal punto scelto dall'utente.\\
+		\textbf{Postcondizione}: il file media è in riproduzione dal minuto scelto dall'utente.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente riproduce la riproduzione del file media da un punto qualsiasi.
+			\item L'utente riproduce il file media da un minuto qualsiasi. 
 		\end{enumerate}		
 	}
 	\subsubsection{UC 1.18.1.6.5 - Arresto della riproduzione in corso}{
@@ -290,7 +290,7 @@
 		\textbf{Attori}: utente. \\
 		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del file media in corso. \\
 		\textbf{Precondizione}: è in riproduzione un file media.	\\
-		\textbf{Postcondizione}: è stata sospesa l'esecuzione del file media.\\
+		\textbf{Postcondizione}: è stata sospesa la riprode del file media.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente sospende la riproduzione del file media.
@@ -299,9 +299,8 @@
 	\subsubsection{UC 1.18.2.6.3 - Ripresa dell'esecuzione del file media}{
 		\label{uc1.18.2.6.3}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente far riprendere la riproduzione del file media. \\
-		\textbf{Precondizione}: il file media in riproduzione è stato messo in pausa.	\\
-		\textbf{Postcondizione}: il file media ha ripreso la sua riproduzione.\\
+		\textbf{Descrizione}: l'utente ende la produzione del file media dopo averla sospesa. \\
+		\textbf{Precondizione}: è stata sospesa la riproduzione del file media nel frame correnteecuzione del file media nel frame corrente.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente riprende la riproduzione del file media.
@@ -310,29 +309,29 @@
 	\subsubsection{UC 1.18.2.6.4 - Riproduzione del file media da qualsiasi minuto}{
 		\label{uc1.18.2.6.4}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente può far riprodurre il file media da qualsiasi minuto in qualsiasi momento. \\
+		\textbf{Descrizione}: l'utente può far riprodurre il file media da qualsiasi minuto
 		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: il file media è in riproduzione dal minuto scelto dall'utente.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente riproduce la riproduzione del file media da un punto qualsiasi.
+			\item L'utente riproduce il file media da un minuto qualsiasi. 
 		\end{enumerate}				
 	}
-	\subsubsection{UC 1.18.2.6.5 - Possibilità di saltare la riproduzione in corso}{
+	\subsubsection{UC 1.18.2.6.5 - Salto della riproduzione in corso}{
 		\label{uc1.18.2.6.5}
 		\textbf{Attori}: utente. \\
 		\textbf{Descrizione}: l'utente può saltare la riproduzione in corso e far proseguire normalmente la presentazione automatica. \\
 		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
-		\textbf{Postcondizione}: la presentazione automatica riprende la sua normale esecuzione.\\
+		\textbf{Postcondizione}: l'esecuzione automatica della presentazione riproduce un altro file media audio/video se presente oppure riprende la sua normale esecuzione.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
-			\item L'utente salta la riproduzione in corso.
+			\item L'utente salta la riproduzione del file media.
 		\end{enumerate}						
 	}
 	\subsubsection{UC 1.18.2.6.6 - Visualizzazione a schermo intero di un video}{
 		\label{uc1.18.2.6.6}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente, se lo desidera, può riprodurre il video a schermo intero. \\
+		\textbf{Descrizione}: l'utente può riprodurre il video a schermo intero. \\
 		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
 		\textbf{Postcondizione}: lo schermo presenta il video selezionato a schermo intero.\\
 		\textbf{Scenario principale}:
@@ -344,23 +343,23 @@
 			\item L'utente può uscire dalla visualizzazione a schermo intero in qualsiasi momento.
 		\end{itemize}
 	}
-	\subsubsection{UC 1.18.3 - Passaggio alla presentazione automatica}{
+	\subsubsection{UC 1.18.3 - Passaggio alla modalità di esecuzione automatica}{
 		\label{uc1.18.3}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente vuole passare dalla presentazione manuale a quella automatica. \\
-		\textbf{Precondizione}: la presentazione manuale è in esecuzione.	\\
-		\textbf{Postcondizione}: la presentazione automatica si è avviata dal frame corrente.\\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione in modalità manuale a quella in modalità automatica. \\
+		\textbf{Precondizione}: la presentazione è in modalità esecuzione manuale.	\\
+		\textbf{Postcondizione}: la presentazione è stata avviata in modalità automatica partendo dal frame corrente.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente passa alla riproduzione automatica della presentazione.
 		\end{enumerate}						
 	}
-	\subsubsection{UC 1.18.4 - Passaggio alla presentazione manuale}{
+	\subsubsection{UC 1.18.4 - Passaggio alla modalità di esecuzione manuale}{
 		\label{uc1.18.4}
 		\textbf{Attori}: utente. \\
-		\textbf{Descrizione}: l'utente vuole passare dalla presentazione automatica a quella manuale. \\
-		\textbf{Precondizione}: la presentazione automatica è in esecuzione.	\\
-		\textbf{Postcondizione}: la presentazione automatica si è arrestata permettendo all'utente di gestirla manualmente.\\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione in modalità automatica a quella in modalità manuale. \\
+		\textbf{Precondizione}: la presentazione è in modalità esecuzione automatica.	\\
+		\textbf{Postcondizione}: la presentazione è stata avviata in modalità manuale partendo dal frame corrente.\\
 		\textbf{Scenario principale}:
 		\begin{enumerate}
 			\item L'utente passa alla riproduzione manuale della presentazione.
