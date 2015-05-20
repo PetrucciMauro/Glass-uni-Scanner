@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  19 MAY 2015 17:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  20 MAY 2015 03:28
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.0.tex
 
@@ -1207,9 +1207,6 @@ siti\AnalisiDeiRequisiti_v.1.0.0.aux"
 
 LaTeX Warning: Label `fig:uc1' multiply defined.
 
-
-LaTeX Warning: Label `uc1.5' multiply defined.
-
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -1660,12 +1657,12 @@ Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei R
 equisiti/images/UC1.3.1.jpg>]
-<./images/UC1.3.3.jpg, id=799, 702.625pt x 782.925pt>
+<./images/UC1.3.3.jpg, id=799, 704.6325pt x 803.0pt>
 File: ./images/UC1.3.3.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.3.jpg used on input line 90.
-(pdftex.def)             Requested size: 421.57825pt x 469.75862pt.
+(pdftex.def)             Requested size: 422.78278pt x 481.80373pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 94.
@@ -1673,44 +1670,45 @@ Package pdftex.def Info: ../../logo.jpg used on input line 94.
  [34]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 101.
+Package pdftex.def Info: ../../logo.jpg used on input line 100.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [35 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei Re
 quisiti/images/UC1.3.3.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 141.
+Package pdftex.def Info: ../../logo.jpg used on input line 139.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [36]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 185.
+Package pdftex.def Info: ../../logo.jpg used on input line 175.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [37]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 233.
+Package pdftex.def Info: ../../logo.jpg used on input line 221.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [38]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 280.
+Package pdftex.def Info: ../../logo.jpg used on input line 268.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39]
-<./images/UC1.3.5.jpg, id=907, 303.1325pt x 256.96pt>
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 309.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[40] <./images/UC1.3.5.jpg, id=920, 303.1325pt x 256.96pt>
 File: ./images/UC1.3.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.5.jpg>
 Package pdftex.def Info: ./images/UC1.3.5.jpg used on input line 319.
 (pdftex.def)             Requested size: 227.34882pt x 192.71951pt.
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 323.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [40]
-<./images/UC1.3.5.1.jpg, id=926, 385.44pt x 293.095pt>
+
+<./images/UC1.3.5.1.jpg, id=924, 385.44pt x 293.095pt>
 File: ./images/UC1.3.5.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.5.1.jpg>
@@ -1722,11 +1720,8 @@ Package pdftex.def Info: ../../logo.jpg used on input line 347.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [41 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei R
 equisiti/images/UC1.3.5.jpg>]
-
-LaTeX Warning: Hyper reference `uc1.3.5.1.3' on page 42 undefined on input line
- 355.
-
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 370.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
@@ -1737,7 +1732,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 417.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[43] <./images/UC1.3.6.jpg, id=969, 406.51875pt x 292.09125pt>
+[43] <./images/UC1.3.6.jpg, id=970, 406.51875pt x 292.09125pt>
 File: ./images/UC1.3.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.6.jpg>
@@ -1755,7 +1750,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 500.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [45]
-<./images/UC1.3.7.jpg, id=1003, 309.155pt x 211.79124pt>
+<./images/UC1.3.7.jpg, id=1004, 309.155pt x 211.79124pt>
 File: ./images/UC1.3.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.7.jpg>
@@ -1767,7 +1762,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 535.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [46 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei R
 equisiti/images/UC1.3.7.jpg>]
-<./images/UC1.3.8.jpg, id=1016, 381.425pt x 287.0725pt>
+<./images/UC1.3.8.jpg, id=1017, 381.425pt x 287.0725pt>
 File: ./images/UC1.3.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.8.jpg>
@@ -1791,14 +1786,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [49]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
-siti\UC\UC1.4.tex" <./images/UC1.4.jpg, id=1054, 358.33875pt x 250.9375pt>
+siti\UC\UC1.4.tex" <./images/UC1.4.jpg, id=1055, 358.33875pt x 250.9375pt>
 File: ./images/UC1.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.jpg>
 Package pdftex.def Info: ./images/UC1.4.jpg used on input line 5.
 (pdftex.def)             Requested size: 268.7534pt x 188.20265pt.
 
-<./images/UC1.4.1.jpg, id=1058, 344.28625pt x 198.7425pt>
+<./images/UC1.4.1.jpg, id=1059, 344.28625pt x 198.7425pt>
 File: ./images/UC1.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.1.jpg>
@@ -1817,7 +1812,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [51 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei R
 equisiti/images/UC1.4.1.jpg>]
-<./images/UC1.4.2.jpg, id=1081, 356.33125pt x 237.88875pt>
+<./images/UC1.4.2.jpg, id=1082, 356.33125pt x 237.88875pt>
 File: ./images/UC1.4.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.2.jpg>
@@ -1836,14 +1831,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [53]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
-siti\UC\UC1.18.tex" <./images/UC1.18.jpg, id=1104, 585.18625pt x 316.18124pt>
+siti\UC\UC1.18.tex" <./images/UC1.18.jpg, id=1105, 585.18625pt x 316.18124pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
 Package pdftex.def Info: ./images/UC1.18.jpg used on input line 5.
 (pdftex.def)             Requested size: 409.62758pt x 221.32535pt.
 
-<./images/UC1.18.1.jpg, id=1109, 454.69875pt x 350.30875pt>
+<./images/UC1.18.1.jpg, id=1110, 454.69875pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -1867,7 +1862,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 99.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[56] <./images/UC1.18.1.6.jpg, id=1150, 523.9575pt x 302.12875pt>
+[56] <./images/UC1.18.1.6.jpg, id=1151, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
@@ -1884,7 +1879,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 175.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [58]
-<./images/UC1.18.2.jpg, id=1178, 479.7925pt x 303.1325pt>
+<./images/UC1.18.2.jpg, id=1179, 479.7925pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -1902,7 +1897,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [60]
-<./images/UC1.18.2.6.jpg, id=1213, 512.91624pt x 342.27875pt>
+<./images/UC1.18.2.6.jpg, id=1214, 512.91624pt x 342.27875pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -1932,7 +1927,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [64]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
-siti\UC\UC1.17.tex" <./images/UC1.17.jpg, id=1265, 518.93875pt x 432.61626pt>
+siti\UC\UC1.17.tex" <./images/UC1.17.jpg, id=1266, 518.93875pt x 432.61626pt>
 File: ./images/UC1.17.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.jpg>
@@ -1944,7 +1939,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [65 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei R
 equisiti/images/UC1.17.jpg>]
-<./images/UC1.17.4.jpg, id=1284, 618.31pt x 498.86375pt>
+<./images/UC1.17.4.jpg, id=1285, 618.31pt x 498.86375pt>
 File: ./images/UC1.17.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.jpg>
@@ -1962,14 +1957,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 81.
 
 [67 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Analisi dei Re
 quisiti/images/UC1.17.4.jpg>]
-<./images/UC1.17.4.1.jpg, id=1315, 329.23pt x 312.16624pt>
+<./images/UC1.17.4.1.jpg, id=1316, 329.23pt x 312.16624pt>
 File: ./images/UC1.17.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.jpg>
 Package pdftex.def Info: ./images/UC1.17.4.1.jpg used on input line 87.
 (pdftex.def)             Requested size: 246.92189pt x 234.1241pt.
 
-<./images/UC1.17.4.1.2.jpg, id=1319, 524.96124pt x 389.455pt>
+<./images/UC1.17.4.1.2.jpg, id=1320, 524.96124pt x 389.455pt>
 File: ./images/UC1.17.4.1.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.2.jpg>
@@ -2005,11 +2000,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 39.
 
 [72]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
-siti\UC\UC1.5.tex"
-
-LaTeX Warning: Hyper reference `uc1.14' on page 73 undefined on input line 13.
-
-)
+siti\UC\UC1.5.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
@@ -2036,13 +2027,13 @@ Underfull \hbox (badness 1715) in paragraph at lines 32--32
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 34--34
+Underfull \hbox (badness 2005) in paragraph at lines 38--38
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 34--34
-\T1/cmr/m/n/12 di mo-di-fi-ca-re il te-sto pre-sen-te
+Underfull \hbox (badness 1590) in paragraph at lines 46--46
+\T1/cmr/m/n/12 ma-gi-ne, vi-deo, au-dio o scel-ta
  []
 
 
@@ -2056,16 +2047,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 66--66
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 2020) in paragraph at lines 66--66
-\T1/cmr/m/n/12 di in-se-ri-re un co-lo-re di sfon-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 \T1/cmr/m/n/12 1.3.5.1, UC
  []
@@ -2076,8 +2057,18 @@ Underfull \hbox (badness 2005) in paragraph at lines 70--70
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 82--82
+Underfull \hbox (badness 1210) in paragraph at lines 80--80
 \T1/cmr/m/n/12 eli-mi-na-re un book-mark ad un
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 82--82
+[]|\T1/cmr/m/n/12 L'utente pu� im-po-sta-re la ve-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 82--82
+\T1/cmr/m/n/12 lo-ci-t� di tran-si-zio-ne tra fra-me
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2085,12 +2076,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [75]
-Underfull \hbox (badness 2005) in paragraph at lines 90--90
+Underfull \hbox (badness 2005) in paragraph at lines 88--88
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 90--90
+Underfull \hbox (badness 4001) in paragraph at lines 88--88
 \T1/cmr/m/n/12 di mo-di-fi-ca-re da mo-bi-le una
  []
 
@@ -2100,58 +2091,53 @@ Underfull \hbox (badness 2005) in paragraph at lines 92--92
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 96--96
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 98--98
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 1132) in paragraph at lines 98--98
-\T1/cmr/m/n/12 di im-po-sta-re un book-mark da
- []
-
-
-Underfull \hbox (badness 4181) in paragraph at lines 98--98
-\T1/cmr/m/n/12 mo-bi-le ad un fra-me di una
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 106--106
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 106--106
-\T1/cmr/m/n/12 di or-ga-niz-za-re i fi-le im-ma-gi-ne
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 108--108
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 108--108
-\T1/cmr/m/n/12 di or-ga-niz-za-re le pro-prie pre-
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 112--112
+Underfull \hbox (badness 5490) in paragraph at lines 94--94
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 112--112
-\T1/cmr/m/n/12 do di eli-mi-na-re dal ser-ver le
+Underfull \hbox (badness 2469) in paragraph at lines 98--98
+[]|\T1/cmr/m/n/12 L'utente de-ve po-ter se-le-zio-na-
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 122--122
+Underfull \hbox (badness 2799) in paragraph at lines 98--98
+\T1/cmr/m/n/12 re un fi-le me-dia dal pro-prio
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 102--102
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 102--102
+\T1/cmr/m/n/12 di ri-no-mi-na-re le pre-sen-ta-zio-ni
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 102--102
+\T1/cmr/m/n/12 pre-sen-ti sul pro-prio spa-zio sul
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 104--104
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 104--104
+\T1/cmr/m/n/12 pre-sen-ti sul pro-prio spa-zio sul
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 116--116
 []|\T1/cmr/m/n/12 L'utente de-ve po-ter ri-muo-ve-re
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 118--118
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
@@ -2160,18 +2146,8 @@ Underfull \hbox (badness 2005) in paragraph at lines 124--124
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 124--124
-\T1/cmr/m/n/12 di ese-gui-re una pre-sen-ta-zio-ne
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 126--126
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 126--126
-\T1/cmr/m/n/12 di ese-gui-re una pre-sen-ta-zio-ne
+Underfull \hbox (badness 4699) in paragraph at lines 124--124
+\T1/cmr/m/n/12 di ese-gui-re ma-nual-men-te una
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2184,98 +2160,88 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [77]
-Underfull \hbox (badness 2005) in paragraph at lines 130--130
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 4699) in paragraph at lines 130--130
-\T1/cmr/m/n/12 di ese-gui-re ma-nual-men-te una
- []
-
-
-Underfull \hbox (badness 5490) in paragraph at lines 146--146
+Underfull \hbox (badness 5490) in paragraph at lines 136--136
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 146--146
-\T1/cmr/m/n/12 do di so-spen-de-re e ri-pren-de-re
+Underfull \hbox (badness 2205) in paragraph at lines 136--136
+\T1/cmr/m/n/12 do di ri-pro-dur-re dei fi-le me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 5490) in paragraph at lines 138--138
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 []|\T1/cmr/m/n/12 UC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 \T1/cmr/m/n/12 1.18.1.6.2,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 150--150
+Underfull \hbox (badness 2005) in paragraph at lines 146--146
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 152--152
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 []|\T1/cmr/m/n/12 UC 1.18.2,
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 154--154
+Underfull \hbox (badness 2005) in paragraph at lines 148--148
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 156--156
+Underfull \hbox (badness 5490) in paragraph at lines 150--150
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 4403) in paragraph at lines 156--156
+Underfull \hbox (badness 4403) in paragraph at lines 150--150
 \T1/cmr/m/n/12 do di so-spen-de-re e riav-via-re
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 156--157
-[]|\T1/cmr/m/n/12 UC 1.18.2.3,
+Underfull \hbox (badness 5637) in paragraph at lines 150--151
+[]|\T1/cmr/m/n/12 UC 1.18.2.2,
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 158--158
+Underfull \hbox (badness 5490) in paragraph at lines 152--152
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 160--160
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+[]|\T1/cmr/m/n/12 UC
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 160--160
-\T1/cmr/m/n/12 un vi-deo pre-sen-te nel fra-me
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+\T1/cmr/m/n/12 1.18.2.6.2,
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 164--164
+Underfull \hbox (badness 5490) in paragraph at lines 166--166
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 164--164
-\T1/cmr/m/n/12 do di pas-sa-re da pre-sen-ta-zio-
+Underfull \hbox (badness 3396) in paragraph at lines 166--166
+\T1/cmr/m/n/12 do di pas-sa-re dal-la mo-da-li-t�
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 164--164
-\T1/cmr/m/n/12 ne au-to-ma-ti-ca a pre-sen-ta-zio-ne
+Underfull \hbox (badness 1558) in paragraph at lines 166--166
+\T1/cmr/m/n/12 di ese-cu-zio-ne au-to-ma-ti-ca del-la
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2288,53 +2254,28 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [79]
-Underfull \hbox (badness 2080) in paragraph at lines 168--168
-\T1/cmr/m/n/12 se-re in gra-do di pas-sa-re nel-
- []
-
-
-Underfull \hbox (badness 1199) in paragraph at lines 168--168
-\T1/cmr/m/n/12 la mo-da-li-t� per ge-sti-re al-cu-ne
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 184--184
+Underfull \hbox (badness 2005) in paragraph at lines 186--186
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 184--184
+Underfull \hbox (badness 5091) in paragraph at lines 186--186
 \T1/cmr/m/n/12 di se-le-zio-na-re il tem-pla-te di
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 188--188
+Underfull \hbox (badness 5490) in paragraph at lines 190--190
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 1997) in paragraph at lines 188--188
+Underfull \hbox (badness 1997) in paragraph at lines 190--190
 \T1/cmr/m/n/12 do di mo-di-fi-ca-re un ele-men-to
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 190--190
+Underfull \hbox (badness 2005) in paragraph at lines 192--192
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
-[]|\T1/cmr/m/n/12 RF
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 194--194
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-[]|\T1/cmr/m/n/12 UC
  []
 
 
@@ -2363,11 +2304,6 @@ Underfull \hbox (badness 2005) in paragraph at lines 198--198
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 198--198
-\T1/cmr/m/n/12 un ele-men-to te-stua-le (cor-si-vo,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
 []|\T1/cmr/m/n/12 UC
  []
@@ -2375,6 +2311,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
 Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 200--200
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 200--200
+\T1/cmr/m/n/12 un ele-men-to te-stua-le (cor-si-vo,
  []
 
 
@@ -2388,17 +2334,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--202
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 202--202
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+[]|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 204--204
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 202--202
+Underfull \hbox (badness 1168) in paragraph at lines 204--204
 \T1/cmr/m/n/12 do di cam-bia-re il co-lo-re del-lo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 []|\T1/cmr/m/n/12 UC
  []
 
@@ -2407,23 +2363,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 207.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [80]
-Underfull \hbox (badness 2005) in paragraph at lines 210--210
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 207.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [81]
 Underfull \hbox (badness 2005) in paragraph at lines 212--212
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 218--218
+Underfull \hbox (badness 2005) in paragraph at lines 214--214
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 218--218
-\T1/cmr/m/n/12 di sal-va-re l'in-fo-gra-fi-ca nel suo
  []
 
 
@@ -2432,31 +2383,36 @@ Underfull \hbox (badness 2005) in paragraph at lines 220--220
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 222--222
+Underfull \hbox (badness 1320) in paragraph at lines 220--220
+\T1/cmr/m/n/12 di sal-va-re l'in-fo-gra-fi-ca nel suo
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 222--222
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 224--224
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [81]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
+Package pdftex.def Info: ../../logo.jpg used on input line 228.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [82]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
+Package pdftex.def Info: ../../logo.jpg used on input line 228.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[83])
+ [83])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 4.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [84]
+
+[84]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
 siti\parti\requisitiQual.tex"
 Underfull \hbox (badness 2600) in paragraph at lines 10--10
@@ -2468,6 +2424,16 @@ Underfull \hbox (badness 2941) in paragraph at lines 10--10
 \T1/cmr/m/n/12 rat-ti-vo per la crea-zio-ne del-le
  []
 
+
+Underfull \hbox (badness 6220) in paragraph at lines 12--12
+[]|\T1/cmr/m/n/12 Sar� for-ni-to il Ma-nua-le per
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 12--12
+\T1/cmr/m/n/12 l'u-ti-liz-zo del si-ste-ma da par-te
+ []
+
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
@@ -2475,7 +2441,12 @@ Package pdftex.def Info: ../../logo.jpg used on input line 6.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [85]
 ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Analisi dei Requi
-siti\parti\requisitiVincolo.tex")
+siti\parti\requisitiVincolo.tex"
+Underfull \hbox (badness 1838) in paragraph at lines 10--10
+\T1/cmr/m/n/12 di-spo-si-ti-vi de-sk-top e am-bien-te
+ []
+
+)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 8.
@@ -2497,18 +2468,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [87]
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []|\T1/cmr/m/n/12 UC 1.18.1.6.2, UC
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 []|\T1/cmr/m/n/12 UC 1.18.2, UC
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+[]|\T1/cmr/m/n/12 UC 1.18.2.2, UC
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 156--156
-[]|\T1/cmr/m/n/12 UC 1.18.2.3, UC
+[]|\T1/cmr/m/n/12 UC 1.18.2.6.2, UC
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2518,7 +2494,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 167.
  [88]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
+Package pdftex.def Info: ../../logo.jpg used on input line 228.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [89])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -2544,17 +2520,14 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14841 strings out of 493921
- 216861 string characters out of 3147280
+ 14840 strings out of 493921
+ 216846 string characters out of 3147280
  390875 words of memory out of 3000000
- 17162 multiletter control sequences out of 15000+200000
+ 17161 multiletter control sequences out of 15000+200000
  17891 words of font info for 44 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  51i,16n,60p,841b,780s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2569,9 +2542,9 @@ m0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (92 pages, 1390731 bytes).
+Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (92 pages, 1398423 bytes).
 PDF statistics:
- 2145 PDF objects out of 2487 (max. 8388607)
+ 2147 PDF objects out of 2487 (max. 8388607)
  592 named destinations out of 1000 (max. 500000)
  1370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
