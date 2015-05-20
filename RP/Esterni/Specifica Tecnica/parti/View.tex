@@ -1,0 +1,49 @@
+	\begin{figure}
+	%(figura 1)
+	%	\centering
+	%	\includegraphics[scale=0.6]{\imgs {fig1}.jpg} %inserire il diagramma UML
+	%	\label{fig:fig1}
+	%	\caption{Fig1}
+	\end{figure}
+\subsection{View}{
+	\subsubsection{Web View}{
+		\textbf{\tipo}: questo livello costituisce l'interfaccia del software utilizzabile dagli utenti mediante pagine web.\\
+		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Controller per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso.\\
+		\subsubsubsection{Premi.WebView.Pages.IndexPage}{
+			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema e di passare alla visualizzazione della classe Loader.\\
+			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe [[[[[[[[[[[[[[[[[[CONTROLLER LOGIN]]]]]]]]]]]]]]]]]], contenuta nel package Controller, per verificare i dati inseriti durante la fase di autenticazione e per inviare i dati relativi alla registrazione.\\
+			\textbf{\interfacce}: la classe viene utilizzata dalla classe [[[[[[[[[[[[[[CONTROLLER LOGIN]]]]]]]]]]]]]] per visualizzare uno o più errori emersi nella fase di autenticazione/registrazione da parte di un utente\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi e registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione o la registrazione al sistema  oppure che l'utente decida di andare nella pagina Loader; il controllo poi passerà alla classe [[[[[[[[CONTROLLER LOGIN]]]]]]]].\\
+		}
+		\subsubsubsection{Premi.WebView.Pages.Loader}{
+			\textbf{\tipo}: la classe Loader definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra all'utente non autenticato le presentazioni scaricate precedentemente in locale permettondogli di eseguirle, eliminarle e modificarle e all'utente autenticato tutte le proprie presentazioni presenti sul proprio spazio nel server dandogli la possibilità di eseguirle, modificarle, eliminarle o scaricarle in locale.\\
+			\textbf{\relaz}: la classe Loader utilizza i metodi messi a disposizione dalla classe Loader contenuta nel package control, che permette il caricamento delle presentazioni che l'utente vuole aprire. Questo vale sia per l'esecuzione che per la modifica della presentazione.\\
+			\textbf{\interfacce}: \\
+			\textbf{\attivita}: \\
+		}
+		\subsubsubsection{Premi.WebView.Pages.Home}{
+			\textbf{\tipo}: \\
+			\textbf{\relaz}: \\
+			\textbf{\interfacce}: \\
+			\textbf{\attivita}: \\
+		}
+		\subsubsubsection{Premi.WebView.Pages.ProfileEditing}{
+			\textbf{\tipo}: \\
+			\textbf{\relaz}: \\
+			\textbf{\interfacce}: \\
+			\textbf{\attivita}: \\
+		}
+		\subsubsubsection{Premi.WebView.Pages.Execution}{
+			\textbf{\tipo}: \\
+			\textbf{\relaz}: \\
+			\textbf{\interfacce}: \\
+			\textbf{\attivita}: \\
+		}
+		\subsubsubsection{Premi.WebView.Pages.Editing}{
+			\textbf{\tipo}: \\
+			\textbf{\relaz}: \\
+			\textbf{\interfacce}: \\
+			\textbf{\attivita}: \\
+		}
+	
+

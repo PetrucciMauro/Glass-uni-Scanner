@@ -1,18 +1,37 @@
 \section{Descrizione architetturale}
 
-\subsection{Metodo e formalismi}
-
-Si progetter� l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione pi� astratta sul sistema ed aumentando di concretezza nelle iterazioni successive.
-Si passer\`a quindi alla definizione dei package e successivamente dei componenti di questi.
-Infine si andr\`a definire le singole classi e interfacce specificando per ognuna:
-\begin{itemize}
-\item tipo;
-\item funzione;
-\item classi o interfacce estese;
-\item interfacce implementate;
-\item relazioni con altre classi.
-\end{itemize}
-
-Verranno quindi illustrati i Design pattern usati nella progettazione architetturale del sistema rimandano la spiegazione all'appendice (A1).
-Per i diagrammi di Package, classi e attivit\`a verr\`a usata la notazione UML 2.(DA AGGIUNGERE INDICE).
+\subsection{Metodo e formalismi}{
+	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle iterazioni successive.
+	Si passerà quindi alla definizione dei package e successivamente dei componenti di questi. Infine si andranno a definire le singole classi e interfacce specificando per ognuna:
+	\begin{itemize}
+	\item Tipo;
+	\item Funzione;
+	\item Classi o interfacce estese;
+	\item Interfacce implementate;
+	\item Relazioni con altre classi.
+	\end{itemize}
+	
+	Verranno quindi illustrati i Design Pattern usati nella progettazione architetturale del sistema rimandano la spiegazione all'appendice (A1).\\
+	Per i diagrammi di Package, classi e attività verrà usata la notazione UML 2.(DA AGGIUNGERE INDICE).
+}
+\subsection{Architettura generale}{
+	Il prodotto si presenta suddiviso in tre parti distinte: Model, View e ViewModel. Si è quindi cercato di implementare il design pattern architetturale MVVM in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
+	
+	\begin{figure}
+	%(figura 1)
+	%	\centering
+	%	\includegraphics[scale=0.6]{\imgs {fig1}.jpg} %inserire il diagramma UML
+	%	\label{fig:fig1}
+	%	\caption{Fig1}
+	\end{figure}
+	\subsubsection{Model}{
+		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del software e risulta di fatto totalmente indipendente dagli altri due strati.
+		}
+	\subsubsection{View}{	
+		Contiene tutti gli elementi della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Controller, demandandone a quest'ultimo la	gestione.
+		}
+	\subsubsection{ViewModel}{
+		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
+		}
+}
 
