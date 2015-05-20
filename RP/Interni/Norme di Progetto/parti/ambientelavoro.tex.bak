@@ -1,0 +1,410 @@
+\section{Ambiente di lavoro} 
+
+\subsection{Sistemi Operativi}
+
+L’intero sviluppo del progetto\ped{g} viene svolto in ambienti Unix-Like e Windows\ped{g}, nello specifico, Ubuntu\ped{g} , Mac, Windows\ped{g} . Tale scelta è maturata dopo aver appurato che le tecnologie utilizzate per lo sviluppo del progetto\ped{g} sono indipendenti dall’ambiente di sviluppo e di impiego.
+
+\subsection{Coordinamento}
+
+è stato predisposto un server\ped{g} dedicato sul quale sono installate alcune applicazioni web\ped{g}
+che facilitano la gestione del progetto\ped{g}. Per connettersi al server\ped{g}, l'indirizzo\ped{g} è il seguente:\\
+\begin{center}
+\url{http://gioberry.no-ip.org/}
+\end{center}
+\subsubsection{Software\ped{g} di gestione del progetto} 
+\label{subsec:Software di gestione del prodotto}
+Come piattaforma di gestione del progetto\ped{g} è stato scelto \textbf{Redmine}. Redmine fornisce:
+\begin{itemize}
+\item Un sistema flessibile di gestione dei ticket\ped{g};
+\item Il grafico Gantt delle attività;
+\item Un calendario per organizzare i compiti;
+\item La visualizzazione del repository\ped{g} associato al progetto\ped{g};
+\item Un sistema di rendicontazione del tempo.
+\end{itemize}
+
+
+\subsubsection{Versionamento}
+
+
+Come strumento di versionamento si è deciso di utilizzare \textbf{Git}.
+Git è uno strumento di versionamento veloce e di facile apprendimento che
+rappresenta uno dei migliori strumenti attualmente esistenti.\\ Per lo sviluppo collaborativo abbiamo deciso di appoggiarci al servizio \textbf{Github} che fornisce non solo un repository\ped{g} Git, ma anche strumenti utili alla collaborazione fra più persone, come il servizio di \textbf{Ticket}, \textbf{Wiki} e \textbf{Milestone}.\\
+Per quanto riguarda l’uso di Git sui computer di sviluppo, si è deciso l’uso
+della versione ufficiale rilasciata dal team di sviluppo di Git(2.3.3).\\
+Per interfacciarsi con il repository\ped{g} viene utlizzato \textbf{SmartGit}, un client multipiattaforma che permette di utilizzare Git in maniera rapida.\\
+Si descrive ora la procedura di corretto utilizzo del programma\ped{g} smartgit .
+\begin{itemize}
+
+\item 	\textbf{Clonare il repository}: è possibile clonare il repository\ped{g} remoto in locale attraverso la seguente procedura:
+
+\begin{itemize}
+\item Premere nel menu in alto il pulsante Repository\ped{g} e successivamente Clone;
+\item Nel riquadro comparso, inserire il link\ped{g} del repository\\ \url{https://github\ped{g}.com/PetrucciMauro/Premi.git}\\successivamente premere il pulsante  next;
+\item Tenere la schermata successiva con entrambi i box spuntati e premere next;
+\item Selezionare la posizione in cui verrà salvata la versione locale del repository\ped{g}.
+\end{itemize}
+\item \textbf{Sincronizzare il repository} : Dalla schermata principale premere il pulsante pull; 
+\item \textbf{Salvare una modifica in locale}: Dalla schermata principale premendo il pulsante commit\ped{g} e inserendo nell'apposita textbox un "Messaggio di commit",si salvano le modifiche effettuate ai file\ped{g};
+\item \textbf{Inviare le modifiche al repository\ped{g} remoto}: Dalla schermata principale premere il pulsante Push e, successivamente alla comparsa del nuovo riquadro, ancora push, ciò comporterà l'invio delle modifiche ai file\ped{g} al repository\ped{g} remoto.
+
+\end{itemize}
+
+\subsubsection{Software\ped{g} di Integrazione Continua}
+
+Si è scelto di adottare \textbf{Jenkins} per applicare l’integrazione continua allo sviluppo del progetto\ped{g}.\\ 
+Tale software\ped{g} permette di pianificare ed eseguire dei compiti da eseguire sui file\ped{g} sorgente.\\
+Mette inoltre a disposizione un cruscotto su cui è possibile visualizzare lo stato del codice\ped{g} prodotto. Tale software\ped{g} è infatti in grado di interagire con il software\ped{g} di versionamento,e se disponibile con software\ped{g} per l’esecuzione di test sul codice\ped{g} prodotto.\\ 
+Attualmente Jenkins non viene utilizzato, si è solo cercato di impararne il funzionamento. 
+
+
+\subsubsection{Condivisione dei file}
+
+  Si è inoltre scelto di utilizzare degli strumenti online che permettono di condividere file\ped{g}
+  in modo semplice e veloce e che consentono di organizzare gli appuntamenti personali
+  dei singoli componenti del gruppo.
+\subsubsubsection{Google Drive}
+  In questa piattaforma di condivisione file\ped{g} verranno salvati i documenti che:
+  \begin{itemize}
+  
+  
+  \item Non necessitano di controllo di versione ;
+  \item Hanno bisogno di grande interattività tra i componenti del gruppo;
+  \item Possono essere acceduti tramite l’uso di un semplice browser\ped{g}.
+   \end{itemize}
+  Questo strumento dovrebbe permettere a 2 o più componenti del gruppo di interagire
+  lavorando sugli stessi documenti contemporaneamente. Google Drive viene utilizzato
+  come strumento di supporto allo sviluppo della documentazione e del software\ped{g} presente
+  su Git .
+  
+
+
+\subsubsection{Google Calendar}
+ 
+Google Calendar viene utilizzato all’interno del gruppo per gestire le risorse umane\ped{g}. In
+particolare tale strumento viene utilizzato per notificare in quali giorni un determinato
+membro non può essere disponibile e per segnalare date rilevanti per il gruppo, come
+ad esempio le date delle riunioni.
+
+
+
+\subsection{Strumenti per i documenti}
+\subsubsection{LATEX} 
+ 
+Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
+Il motivo 
+principale dietro a questa scelta è la facilità di separazione tra contenuto e formattazione: 
+con \LaTeX\ è possibile definire l’aspetto delle pagine in un file\ped{g} template\ped{g} condiviso da tutti i documenti. Altre soluzioni come Microsoft Office, LibreOffice o Google Docs non 
+avrebbero consentito questa separazione, duplicando il lavoro di formattazione del testo 
+e non garantendo un risultato uniforme.\\
+Il grande numero di pacchetti\ped{g} esistenti consente di implementare funzionalità comuni 
+in maniera semplice. L’estensibilità\ped{g} di \LaTeX\ può essere sfruttata per creare funzioni\ped{g} e 
+variabili globali che rendono la scrittura del contenuto più corretta sotto un punto di 
+vista semantico. Un esempio è dato dal comando /role\textbraceleft ruolo\textbraceright\ che identifica ogni ruolo 
+all’interno del progetto\ped{g}.\\
+Per la scrittura di documenti \LaTeX\  l’editor\ped{g} consigliato è \textbf{TeXstudio}. 
+
+\subsubsection{Controllo ortografico}
+
+Il software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il programma\ped{g} è accessibile tramite il \emph{Makefile}.
+
+
+\subsubsection{Grafici UML} 
+
+Per la stesura dei grafici UML viene utilizzato il programma\ped{g} \textbf{Visual Paradigm}. Il programma\ped{g} viene utilizzato in licenza Community Edition la quale ne permette l’uso gratuito per fini non commerciali.
+
+
+
+\subsubsection{Ambiente di verifica}
+
+Si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata
+le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione\ped{g} durante l’intero sviluppo del progetto\ped{g}.
+
+\subsubsection{Fogli di calcolo}
+L'utilizzo di fogli di calcolo\ped{g} elettronici quali Calc,Excel e Numbers è a discrezione del singolo componente in base alla propria piattaforma utilizzata.
+
+
+\subsubsection{Codice} 
+
+La verifica del codice\ped{g} è suddivisa in statica e dinamica.\\ 
+Per entrambe vengono riportati gli strumenti da utilizzare. 
+
+\subsubsubsection{Analisi Statica} 
+
+  \begin{itemize}
+  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
+  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
+  \item \textbf{jsmeter}: strumento per il calcolo di alcune metriche\ped{g} del codice\ped{g} javascript\ped{g}.
+  \end{itemize}
+
+\subsubsubsection{Analisi Dinamica}
+Verranno utilizzati strumenti e plugin interni al browser\ped{g} \emph{Chrome} quali \textbf{SpeedTracer} per verificare la velocità dell'applicazione web\ped{g};
+
+
+\subsubsubsection{Validazione}
+
+La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
+fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
+
+
+\section{Protocollo per lo sviluppo dell'applicazione} 
+Per procedere con uno sviluppo controllato dei documenti e del codice\ped{g} si è scelto di adottare il sistema di ticketing\ped{g} \textbf{Redmine}.\\ 
+La scelta di tale software\ped{g} è descritta nella sezione \ref{subsec:Software di gestione del prodotto}.
+
+\subsection{Creare un nuovo progetto} 
+
+La creazione di un progetto\ped{g} è compito del \emph{Responsabile di Progetto}.\\ 
+Un nuovo progetto\ped{g} rappresenta una macro-attività caratterizzata da molte sotto-attività 
+supervisionate da un responsabile.\\\\ 
+Per creare un nuovo progetto\ped{g}:
+\begin{itemize}
+\item Aprire \textbf{Progetti}; 
+\item Selezionare \textbf{Nuovo progetto}; 
+\item Assegnare un \textbf{Nome} breve ma significativo; 
+\item Nel caso in cui si voglia creare un sotto-progetto\ped{g} indicare il nome del progetto\ped{g} padre dall’omonimo campo; 
+\item \textbf{Identificativo}: scrivere in minuscolo ed indicare codice\ped{g} della fase a cui si riferisce ;
+\item Lasciare inalterati gli altri campi. 
+\end{itemize}
+ 
+\subsection{Creazione ticket}
+ 
+  I ticket\ped{g} vengono creati da:
+ \begin{itemize}
+ 
+
+    \item \textbf{Responsabile di Progetto}: crea i ticket\ped{g} più importanti che rappresentano le macro fasi evidenziate dalla pianificazione; 
+	\item \textbf{Responsabile di Sotto-progetto}: crea i ticket\ped{g} per i processi\ped{g} non pianificati inizialmente, che si evidenziano necessari per l’avanzamento del sotto-progetto\ped{g} assegnato; 
+	\item \textbf{Verificatore}: crea i ticket\ped{g} per segnalare errori ed imprecisioni trovate durante il processo\ped{g} di verifica. 
+ \end{itemize}
+
+
+I ticket\ped{g} possono essere di tre tipologie:
+\begin{itemize}
+
+
+\item \textbf{Ticket\ped{g} di pianificazione}: rappresentano le macro-attività di maggiore importanza. Sono organizzate in una gerarchia con vari livelli di priorità.
+ Tali attività vengono create da: 
+\begin{itemize}
+\item \emph{Responsabile di Progetto}: durante la pianificazione identifica le attività più importati e generali; 
+\item \emph{Responsabile di Sotto-progetto}: durante lo svolgimento delle attività può scomporre in sotto-problemi l’attività indicata dal Responsabile di Progetto\ped{g}. 
+\end{itemize}
+
+
+\item \textbf{Ticket\ped{g} di realizzazione e controllo}: tutti i documenti redatti, durante la stesura attraversano due stadi: 
+\begin{itemize}
+\item \textbf{Realizzazione}: un redattore del documento effettua una prima stesura; 
+\item \textbf{Controllo}: un redattore, diverso da quello della precedente fase, esegue un primo controllo sui contenuti della parte scritta. 
+\end{itemize}
+
+
+\item \textbf{Ticket\ped{g} di verifica}: rappresentano gli errori identificati dai Verificatori durante 
+il controllo che la realizzazione dell’attività sia conforme a quanto richiesto e che 
+rispetti tutte le norme.
+\end{itemize}
+}
+
+
+\subsubsection{Ticket\ped{g} di pianificazione}
+
+\begin{itemize}
+
+
+\item Selezionare \textbf{Nuova segnalazione} da menù principale; 
+\item \textbf{Tracker}: indicare la natura del ticket\ped{g}: 
+	\begin{itemize}
+	\item \textbf{Documento}: stesura di un documento. Il tipo di attività svolta dal redattore del documento viene definito durante la rendicontazione; 
+	\item \textbf{Codifica}: stesura di codice\ped{g}; 
+	\item \textbf{Verifica}: macro-attività di verifica sul prodotto dei sotto-processi\ped{g}. 
+
+
+	\end{itemize}
+
+\item \textbf{Oggetto}: descrizione breve e significativa; 
+\item \textbf{Descrizione}: descrizione comprensibile e con riferimenti esterni mediante link\ped{g} se necessario; 
+\item \textbf{Stato}: Plan; 
+\item \textbf{Attività principale}: se si vuole creare una \textbf{sotto-attività} indicare l’id del ticket\ped{g} 
+padre; 
+\item \textbf{Categoria}: PDCA, solo se il ticket\ped{g} viene creato dal \emph{Responsabile di Progetto}; 
+\item \textbf{Assegnato a}: inserire il nome del responsabile; 
+\item \textbf{Osservatori}: aggiungere eventuali collaboratori.
+\end{itemize}  
+
+
+\subsubsection{Ticket\ped{g} di realizzazione e controllo} 
+
+		\begin{itemize}
+		
+		\item Selezionare \textbf{Nuova segnalazione} da menù principale; 
+		\item \textbf{Tracker}: indicare la natura del ticket\ped{g}: 
+		\begin{itemize}
+	\item \textbf{Documento}: stesura di un documento. Il tipo di attività svolta dal redattore del documento viene definito durante la rendicontazione; 
+	\item \textbf{Codifica}: stesura di codice\ped{g}; 
+	\item \textbf{Verifica}: attività di verifica sui prodotti dei processi\ped{g}. 
+
+	\end{itemize}
+
+\item \textbf{Oggetto}: descrizione breve e significativa secondo il principio: nome ticket\ped{g} padre attività da svolgere (realizzazione o controllo); 
+\item \textbf{Descrizione}: descrizione comprensibile e con riferimenti esterni mediante link\ped{g} se 
+necessario; 
+
+\item \textbf{Stato}: New; 
+\item \textbf{Attività principale}: se si vuole creare una \textbf{sotto-attività} indicare l’id del ticket\ped{g} 
+padre; 
+\item \textbf{Inizio}: dare una data di inizio presunta; 
+\item \textbf{Scadenza}: dare una data di fine presunta; 
+\item \textbf{Assegnato a}: inserire il nome del responsabile; 
+\item \textbf{Osservatori}: aggiungere eventuali collaboratori. 
+\end{itemize} 
+
+\subsubsection{Ticket\ped{g} di verifica}
+
+
+Un \emph{Verificatore} per creare un \emph{ticket\ped{g} di verifica} deve: 
+\begin{enumerate}
+\item Assicurarsi che esista all’interno del progetto\ped{g} l’attività \emph{Verifica}.
+Su tale attività vi devono essere due sotto-attività: “Verifica - realizzazione”, 
+“Verifica - approvazione”.\\
+Tutti i ticket\ped{g} creati devono essere sotto-attività di: “Verifica - realizzazione”; 
+\item Creare quindi il ticket\ped{g} secondo le seguenti direttive: 
+		\begin{itemize}
+		
+		
+		\item Selezionare \textbf{Nuova segnalazione} da menù principale; 
+		\item \textbf{Tracker}: Bug; 
+		\item \textbf{Oggetto}: descrizione breve e significativa dell’errore incontrato; 
+		\item \textbf{Descrizione}: descrivere in modo dettagliato e chiaro: la natura e la posizione dell’errore; 
+		\item \textbf{Stato}: New; 
+		\item \textbf{Attività principale}: tutti i ticket\ped{g} devono essere figli del ticket\ped{g} “Verifica - realizzazione” del progetto\ped{g} su cui si sta eseguendo la verifica; 
+		\item \textbf{Assegnato a}: inserire il nome del responsabile del progetto\ped{g} padre (es. 
+		responsabile delle \emph{Norme di Progetto}). 
+		\end{itemize}
+Tutti i campi non segnalati sono da lasciare vuoti. 
+Sarà poi compito del responsabile del progetto\ped{g} padre decidere a chi assegnare la correzione dell’errore. Nel caso in cui l’errore segnalato non sia considerato valido dal 
+\emph{Responsabile del sotto-progetto} verrà confermato il rifiuto dal \emph{Responsabile di Progetto}. 
+
+\end{enumerate}
+
+
+\subsubsection{Dipendenze temporali}
+
+
+Dopo la creazione del ticket\ped{g}, per aggiungere \textbf{dipendenze temporali} tra i ticket\ped{g}:
+\begin{itemize}
+\item Andare su \textbf{segnalazioni}; 
+\item Aprire il link\ped{g} alla segnalazione a cui aggiungere la dipendenza; 
+\item Nella sezione \textbf{segnalazioni correlate} premere \textbf{aggiungi}; 
+\item Scegliere \textbf{segue} e indicare il numero della segnalazione che lo blocca ed eventuali giorni di slack. 
+
+\end{itemize} 
+
+Tutti i campi non segnalati sono da lasciare vuoti. 
+
+\subsection{Aggiornamento ticket}
+
+Esistendo due tipologie di ticket\ped{g}, viene qui definito la procedura per effettuare l’aggiornamento di entrambe.
+
+\subsubsection{Ticket\ped{g} di pianificazione}
+
+\begin{itemize}
+\item Andare sul menù \textbf{Segnalazioni}; 
+\item Selezionare il ticket\ped{g} di interesse; 
+\item Cliccare il link\ped{g} \textbf{Aggiorna}; 
+\item Commentare ciò che si è fatto sulla form \textbf{Note}; 
+\item Cambiare lo stato del ticket\ped{g} secondo la seguente logica:
+		\begin{itemize}
+		\item \textbf{Do}: quando un ticket\ped{g} è in questo stato indica che una o più persone stanno 
+		lavorando su tale attività; 
+		\item \textbf{Check}: quando un ticket\ped{g} è in questo stato indica che una o più persone 
+		stanno lavorando sulla verifica di tale attività; 
+		\item \textbf{Act}: l’attività è stata conclusa e verificata, e ne sono state tratte le conclusioni adeguate. 
+		
+		\end{itemize} 
+
+\item Se viene concluso, aggiornare lo stato del ticket\ped{g} di pianificazione padre. 
+
+\end{itemize}
+
+
+\subsubsection{Ticket\ped{g} di realizzazione e controllo}
+
+\begin{itemize}
+\item Andare sul menù \textbf{Segnalazioni}; 
+\item Selezionare il ticket\ped{g} di interesse; 
+\item Cliccare il link\ped{g} \textbf{Aggiorna}; 
+\item Indicare il tempo impiegato in ore; 
+\item Indicare il tipo di attività svolta; 
+\item Commentare ciò che si è fatto sulla form \textbf{Note}; 
+\item Cambiare lo stato del ticket\ped{g} secondo la seguente logica: 
+		\begin{itemize}
+		\item \textbf{In Progress}: quando un ticket\ped{g} è in questo stato indica che una o più persone 
+		stanno lavorando su tale attività. La percentuale di completamento deve 
+		essere impostata tra lo 0\% ed il 90\%; 
+		\item \textbf{Closed}: l’attività è stata conclusa. La percentuale di completamento dell’attività è al 100\%. 
+		 
+		\end{itemize} 
+\item Aggiornare lo stato del ticket\ped{g} di pianificazione padre secondo tali principi: 
+		\begin{itemize}
+		\item Ticket\ped{g} figlio passa da New a In Progress: il ticket\ped{g} padre passa da Plan a Do, 
+		o da Do a Check; 
+		\item Ticket\ped{g} figlio passa a Closed: il ticket\ped{g} padre deve essere in Do o Check; 
+		\item Tutti i ticket\ped{g} figli vengono chiusi: il ticket\ped{g} padre passa ad Act.
+		\end{itemize}
+
+\end{itemize}
+
+
+
+\subsubsection{Ticket\ped{g} di verifica}
+
+\begin{itemize}
+\item Andare sul menù \textbf{Segnalazioni}; 
+\item Selezionare il ticket\ped{g} di interesse; 
+\item Cliccare il link\ped{g} \textbf{Aggiorna}; 
+\item Indicare il tempo impiegato in ore; 
+\item Indicare Verifica come tipo di attività svolta; 
+\item Commentare le correzione nella form \textbf{Note}; 
+\item Cambiare lo stato del ticket\ped{g} secondo la seguente logica:
+		\begin{itemize}
+		\item \textbf{In Progress}: quando un ticket\ped{g} è in questo stato indica che una o più persone 
+		stanno lavorando su tale attività. La percentuale di completamento deve 
+		essere impostata tra lo 0\% ed il 90\%; 
+		\item \textbf{Closed}: l’attività è stata conclusa. La percentuale di completamento dell’attività è al 100\%; 
+		\item \textbf{Rejected}: l’attività di verifica è stata rifiutata dal \emph{Responsabile del sottoprogetto} in accordo con il \emph{Responsabile di Progetto}. 
+		
+		\end{itemize}
+
+\item Aggiornare lo stato del ticket\ped{g} di pianificazione padre secondo tali principi:
+		\begin{itemize}
+		\item Ticket\ped{g} figlio passa da New a In Progress: il ticket\ped{g} padre passa da Plan a Do, 
+		o da Do a Check; 
+		\item Ticket\ped{g} figlio passa a Closed: il ticket\ped{g} padre deve essere in Do o Check; 
+		\item Tutti i ticket\ped{g} figli vengono chiusi: il ticket\ped{g} padre passa ad Act. 
+		
+		\end{itemize} 
+
+\end{itemize} 
+
+
+
+
+\subsection{Consigli di utilizzo}
+\phantomsection
+\subsubsection{Pagina personale}
+ 
+	Per avere una immediata visualizzazione dei ticket\ped{g} assegnati, è consigliato personalizzare 
+	la pagina personale: 
+	\begin{itemize}
+		\item Andare alla \textbf{Pagina personale}; 
+		\item Cliccare il link\ped{g} \textbf{Personalizza la pagina}; 
+		\item Dal menù a tendina \textbf{La mia pagina di blocco}, selezionare \textbf{Le mie segnalazioni} 
+		e premere il pulsante verde +; 
+		\item Ripetere il punto precedente per aggiungere \textbf{Segnalazioni osservate}. 
+	
+	\end{itemize}
+
+	
+\subsubsection{Visualizzare segnalazioni}
+
+	Per avere una visualizzazione più chiara delle segnalazioni si consiglia di ordinarle per 
+	oggetto. Tale risultato può essere ottenuto premendo \textbf{Oggetto} dalla pagina \textbf{Segnalazioni}.
+
+

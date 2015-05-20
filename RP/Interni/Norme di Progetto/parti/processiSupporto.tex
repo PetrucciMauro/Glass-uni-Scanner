@@ -1,0 +1,344 @@
+\section{Processi di supporto}{
+
+\subsection{Gestione di progetto}
+Le responsabilità di gestione dell’intero progetto, dalla nascita alla conclusione, sono da
+attribuire al \emph{Responsabile di Progetto}.
+Quest’ultimo dovrà garantire un corretto sviluppo delle attività utilizzando, qualora sia possibile, degli strumenti che gli consentano di:
+\begin{itemize}
+\item Pianificare, coordinare e controllare le attività;
+\item Gestire e controllare le risorse;
+\item Analizzare e gestire i rischi;
+\item Elaborare i dati.
+\end{itemize}
+\subsubsection{Pianificazione delle attività}
+Per pianificare le attività il \emph{Responsabile di Progetto} deve realizzare un diagramma di
+Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando OmniPlan come descritto nella sezione \ref{sec:Pianificazione}.
+\subsubsection{Coordinazione e controllo delle attività}
+Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con OmniPlan in Redmine sfruttando il suo sistema di ticketing
+come descritto nella sezione \ref{sec:protocolloSviluppo}.
+In questo modo ciascun componente del gruppo sarà avvisato delle attività ad esso assegnate e potrà inserire lo stato delle stesse permettendo al Responsabile di verificare immediatamente l’avanzamento del progetto.
+
+\subsubsection{Gestione e controllo delle risorse}
+Per gestire e controllare le risorse il Responsabile di Progetto deve utilizzare Redmine come indicato nella sezione \ref{sec:protocolloSviluppo} che gli consente anche di verificare l’avanzamento di ogni processo come riportato nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} .
+\subsubsection{Analisi e Gestione dei rischi}
+Durante l’avanzamento del progetto il \emph{Responsabile di Progetto} deve monitorare costantemente il verificarsi dei rischi descritti nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} ed eventuali nuovi rischi, attuando le contromisure descritte e riportando gli effettivi riscontri.
+
+\subsubsection{Elaborazione dati}
+Il Responsabile di Progetto deve sfruttare i fogli di calcolo elettronico, come descritto nella sezione \ref{sec:fogliDiCalcolo}, per elaborare i dati raccolti durante lo sviluppo del progetto e riportarli nel \emph{Piano di Progetto}.
+
+\subsubsection{Delega}
+\label{sec:delega}
+Il \emph{Responsabile di Progetto}, nel caso in cui abbia redatto una parte di un documento, può delegare l'approvazione di tale documento ad un Verificatore.
+\subsubsection{Responsabilità di sotto-progetto}
+Ogni macroattività può essere assegnata dal Responsabile ad un responsabile di sottoprogetto, i cui compiti saranno l’assegnazione delle singole attività alle risorse rese disponibili e la gestione dei cambiamenti.
+\subsubsubsection{Assegnazione attività}
+Per assegnare attività alle risorse disponibili, il responsabile di sotto-progetto dovrà seguire le procedure di ticketing descritte in \ref{sec:realizzazioneControllo}.
+\subsubsubsection{Gestione dei cambiamenti}
+In caso di errori, in seguito alla notifica da parte del \emph{Verificatore} tramite ticket, il responsabile di sotto-progetto dovrà assegnare la correzione mediante la procedura di ticketing descritta in \ref{sec:realizzazioneControllo}. Al termine della correzione, sarà compito del responsabile di sotto-progetto accettare o respingere la modifica, e richiederne di conseguenza il rifacimento.
+Nel caso la correzione riguardi un’attività di codifica, sarà compito del responsabile di sotto-progetto programmare una nuova esecuzione dei test di unità e di integrazione correlati al modulo modificato.
+
+
+\subsection{Documentazione}{
+Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ riguardo alla stesura, verifica e approvazione della documentazione da produrre.
+\subsubsection{Template} 
+		Tutti i documenti devono essere realizzati utilizzando un template\ped{g} \LaTeX. Onde evitare modifiche manuali che farebbero perdere molto tempo, 
+		Il nome dei file\ped{g} deve rispondere alla seguente formattazione senza spazi: “[nome documento]-[versione]”. La parte della versione deve riportare la dicitura “v.” seguita dal numero di versione (ad es: NormeDiProgetto\_v.1.0.0.pdf”).\\
+ 		Tale modello si può trovare nel repository in documents/template.
+	\label{sec:docs}
+	\subsubsection{Contenuto e struttura dei documenti}{
+		\label{sub:content}
+		Ogni documento ufficiale deve essere composto dalle seguenti sezioni:
+		\begin{itemize}
+			\item Prima pagina: deve riportare titolo, logo ed informazioni del documento;
+			\item Breve prefazione;
+			\item Registro delle modifiche;
+			\item Indice del documento;
+			\item Indice di figure e tabelle (se presenti);
+			\item Introduzione;
+			\item Corpo.
+		\end{itemize}
+		Ogni pagina deve avere un'intestazione e un piè di pagina:
+		\begin{itemize}
+			\item \textbf{Intestazione}: logo del gruppo e nome del documento;
+			\item \textbf{Piè di pagina}: versione documento, università e anno accademico, numeri di pagina e licenza.
+		\end{itemize}
+		\subsubsubsection{Verbali}
+		Per quanto riguarda i verbali degli incontri, essi devono essere redatti dal Responsabile di Progetto\ped{g} ad ogni riunione. Esso deve rispettare la formattazione regolata alla sezione \ref{sub:typo} e successive ma è da considerarsi solo come promemoria per il gruppo.\\
+		Il nome di ogni Verbale deve rispettare la seguente dicitura: “Verbale\_[tipo incontro]-[data]” dove il tipo incontro può essere di due tipi:
+		\begin{itemize}
+			\item Interno (INT): incontro effettuato tra i membri del gruppo;
+			\item Esterno (EXT): incontro effettuato tra i membri del gruppo e committente\ped{g} e/o proponente\ped{g}.
+		\end{itemize}
+		La prima pagina di ogni verbale deve obbligatoriamente contenere i seguenti campi, in ordine:
+		\begin{itemize}
+			\item Data;
+			\item Luogo secondo il formato “[città],[provincia],[sede]”;
+			\item Ora\ped{g} secondo il formato “dalle ore [hh]:[mm] alle ore [hh]:[mm]” dove hh indica le ore e mm i minuti i quali vanno espressi nel formato 24 ore secondo lo standard ISO\ped{g} 8601:2004;
+			\item Partecipanti interni al gruppo elencandoli rispettando il formato “[nome] [cognome][,[...]]”;
+			\item Partecipanti esterni al gruppo rispettando il formato “[nome] [cognome][ruolo][,[...]]” in cui il ruolo può essere Committente\ped{g} oppure Proponente\ped{g};
+			\item Contenuto dell'incontro;
+			\item Firme: devono essere comprese quelle di tutti i partecipanti del gruppo \gruppo a conferma della presa visione del documento.
+		\end{itemize}
+	 \subsubsubsection{Lettera di presentazione}
+	  La lettera di presentazione deve contenere
+		\begin{itemize}
+			\item Logo del gruppo;
+			\item Intestazione nel seguente formato:\\
+					Prof. Tullio Vardanega\\
+					Università degli Studi di Padova\\
+					Via Trieste 63\\
+					35121 Padova (PD)
+			\item Breve introduzione (facoltativa);
+			\item Elenco di tutti i documenti in consegna;
+			\item Varie ed eventuali, osservazioni (facoltative);
+			\item Firma del responsabile nel seguente formato:\\
+					{Nome} {Cognome}\\
+					il Responsabile del gruppo \gruppo \\
+					{Firma del responsabile}
+		\end{itemize}		
+	}
+		\subsubsection{Norme tipografiche}{
+			\label{sub:typo}
+			Per rendere la documentazione organizzata, leggibile e standard abbiamo adottato le forme testuali riportate di seguito.
+			\begin{itemize}
+				\item \textbf{Carattere}: il carattere dovrà avere come dimensione minima 12. Per l'inserimento di linee di codice\ped{g} il carattere da utilizzare dovrà essere di tipo Monospace;
+				\item \textbf{Grassetto}: da utilizzare maggiormente per definire i titoli e dare una panoramica generale del testo ed in maniera minore per sottolineare passaggi importanti e parole chiave;
+				\item \textbf{Corsivo}: da utilizzare per riportare citazioni da fonti esterne o riferimenti;
+				\item \textbf{Sottolineato}: da utilizzare all'interno del testo per dare importanza a determinati concetti;
+				\item \textbf{Maiuscolo}: deve essere limitato all’indicazione di acronimi e nei casi specificati nei Formati di Riferimento (\ref{sub:rif});
+				\item \textbf{Punteggiatura}: adottare la formattazione standard ossia la punteggiatura deve precedere sempre un carattere di spazio e non viceversa;
+				\item \textbf{Lettera maiuscola}: deve seguire esclusivamente un punto, un punto esclamativo o un punto interrogativo;
+				\item \textbf{Parentesi}: una qualsiasi frase racchiusa fra parentesi non deve iniziare con un carattere di spaziatura e non deve chiudersi con un carattere di punteggiatura e/o di spaziatura;
+				\item \textbf{Elenchi puntati o numerati}: ogni elemento dell’elenco deve terminare con un punto e virgola, tranne l’ultimo che deve terminare con un punto. La prima parola deve avere la lettera maiuscola, a meno di casi particolari (es. nome di un file\ped{g});
+				\item \textbf{Glossario}: le parole accompagnate da (g) in pedice sono quelle che presentano una corrispondenza nel Glossario;
+				\item \textbf{Pagine}: è obbligatorio porre i numeri di pagina in ogni documento nel formato {n} di {totale pagine} e mantenere i margini fissati dal template\ped{g} di cui sopra (\ref{sub:content}).
+			\end{itemize}
+		}
+		\subsubsection{Formati di riferimento e altro}{
+			\label{sub:rif}
+			Per quanto riguarda i riferimenti, è opportuno rispettare le seguenti indicazioni:
+			\begin{itemize}
+				\item percorsi\ped{g}: per gli indirizzi\ped{g} web\ped{g} completi e indirizzi\ped{g} e-mail deve essere utilizzato il comando appositamente fornito da \LaTeX:\\ \textbackslash url\ped{g} \textbraceleft Percorso\textbraceright;
+				\item Ancore: i riferimenti alle sezioni interne del medesimo documento devono essere scritte utilizzando il comando fornito da \LaTeX: \textbackslash ref \textbraceleft label da riferire\textbraceright .
+			\end{itemize}
+			La \textbf{Data} deve essere espressa, seguendo lo standard ISO\ped{g} 8601:2004, nel formato: AAAA-MM-GG (AAAA rappresenta l'anno in quattro cifre, MM il mese in due cifre e GG il giorno in due cifre).\\
+			\\
+			Le \textbf{Abbreviazioni} ammesse sono le seguenti e valgono per tutti i documenti:
+			\begin{itemize}
+				\item \textbf{AR}: Analisi dei Requisiti\ped{g};
+				\item \textbf{GL}: Glossario;
+				\item \textbf{NP}: Norme di Progetto\ped{g};
+				\item \textbf{PQ}: Piano di Qualifica;
+				\item \textbf{PP}: Piano di Progetto\ped{g};
+				\item \textbf{SF}: Studio di Fattibilità;
+				\item \textbf{RR}: Revisione dei Requisiti\ped{g};
+				\item \textbf{RP}: Revisione di Progettazione;
+				\item \textbf{RQ}: Revisione di Qualifica;
+				\item \textbf{RA}: Revisione di Accettazione.
+			\end{itemize}
+			I \textbf{Nomi ricorrenti} nei vari documenti devono rispettare le seguenti indicazioni:
+			\begin{itemize}
+				\item Ruoli di progetto\ped{g} e nomi dei documenti: devono essere formattati utilizzando la prima lettera maiuscola di ogni parola che non sia una preposizione (es. Responsabile di Progetto\ped{g});
+				\item Nomi dei file\ped{g}: il riferimento deve essere comprensivo dell’estensione\ped{g} del file\ped{g} e formattato in corsivo;
+				\item Nomi propri: l’utilizzo dei nomi propri deve seguire il formalismo Cognome Nome;
+				\item Nome del gruppo: deve essere sempre espresso nel formato: \gruppo;
+				\item Nome del progetto\ped{g}: deve essere sempre espresso nel formato: \premi.
+			\end{itemize}
+			}
+		\subsubsection{Immagini e tabelle}{
+			\label{sub:img}
+			Tutte le immagini devono essere in formato JPG, PNG o PDF mentre ogni tabella deve rispettare il formato \LaTeX.\\
+			Ogni figura o tabella inserita deve avere una breve didascalia composta da un identificativo numerico univoco seguito, ove sia ritenuto necessario, da una breve descrizione. La numerazione di immagini e tabelle sarà attribuita da \LaTeX.\\			
+			}
+		}
+\subsubsection{Glossario}{
+ 	Il glossario è unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
+ 	I termini all'interno del glossario saranno organizzati nel seguente modo:
+ 	\begin{itemize}
+	 	\item Tutti termini saranno in ordine alfanumerico;
+	 	\item Tutti i termini devono essere in grassetto e iniziare con la lettera maiuscola , la definizione del termine sarà preceduta dal carattere '':'' ;
+	 	\item Tutti i termini devono fornire chiarimenti su concetti che possono essere confusi quindi non devono essere inseriti termini il cui significato è già noto.
+ 	\end{itemize}	
+   \subsubsubsection{Implementazione}
+      L'inserimento dei termini nel glossario viene eseguito tramite un applicazione interna al team che funziona nel seguente modo:
+      \begin{itemize}
+	      \item Si inserisce il lemma e la descrizione del lemma negli appositi spazi;
+	      \item Si salva il glossario nel formato .tex;
+	      \item A tutte le parole presenti nei documenti che hanno una corrispondente definizione nel glossario  verrà aggiunto un pedice (g) per indicare che la parola è presente nel glossario.
+      \end{itemize}  
+   L'ordine lessicografico non è importante quando si inseriscono nuovi lemmi nel programma\ped{g} dato che vengono ordinati automaticamente.\\
+   Il file\ped{g} relativo al Glossario è il seguente: \href{run:../../Esterni/\fGlossario}{\fEscapeGlossario}
+}
+
+
+	\subsection{Verifica}
+La verifica di processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del Progetto. Di conseguenza, servono modalità operative chiare
+e dettagliate per i \emph{Verificatori}, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. Si descrivono ora le modalità ordinate e puntuali di verifica di processi, documenti, attività e codice alle quali ci si riferirà in questo documento e alle quali i \emph{Verificatori} dovranno attenersi.
+
+	\subsubsection{Metriche per gli errori riscontrati e gestione dei cambiamenti}
+Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potranno trovare, fornendo criteri per la quantificazione dell’impatto sul prodotto o sul processo e per la definizione delle priorità di intervento. In questo modo si potrà agire prima nella risoluzione di errori a gravità maggiore.
+
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+
+ \hline
+ \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \hline
+ Indici fuori range & Alta & Urgente & Ticket\\
+ \hline
+ Ritardi superiori a 2 giorni nelle attività & Alta & Urgente & Ticket\\
+ \hline
+ Errato tracciamento di requisiti e casi d'uso & Alta & Urgente & Ticket\\ 
+ \hline
+ Errore di progettazione & Alta & Urgente & Ticket\\
+ \hline
+		\caption{Errori nei processi: gravità e procedure di gestione \label{tab:ErroriProcessi}}\\
+\end{longtable}
+
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+ 
+ \hline
+ \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \hline
+ Errore ortografico o di formattazione & Bassa & Breve & Correzione immediata\\
+ \hline
+ Errore sistematico di ortografia o formattazione & Media & Breve & Aggiunta alla checklist\\
+ \hline
+ Compilazione fallita del documento & Alta & Urgente & Correzione immediata\\ 
+ \hline
+ Valori Gulpease fuori range & Media & Breve & Aggiunta alla checklist\\
+ \hline
+ Errore di concetto nel testo & Alta & Urgente & Aggiunta alla checklist\\
+ \hline
+ Errore di formalismo  UML  2.x & Bassa & Breve & Aggiunta alla checklist\\
+ \hline
+ Mancata compilazione del codice & Alta & Urgente & Correzione immediata\\ 
+ \hline
+ Mancato rispetto delle norme di codifica & Medio & Breve & Aggiunta alla checklist\\
+ \hline
+		\caption{Errori nei documenti e nel codice: gravità e procedure di gestione \label{tab:ErroriDocumentiCodice}}\\
+\end{longtable}
+
+La gravità dell’errore può essere:
+\begin{itemize}
+\item \textbf{Bassa} se l’errore ha impatto su aspetti marginali del prodotto o provoca un basso aumento dei costi o dei tempi del processo;
+\item \textbf{Media} se l’errore ha impatto significativo sul prodotto o provoca un aumento percepibile di tempi e costi;
+\item \textbf{Alta} se l’errore rende il prodotto inutilizzabile o provoca un forte aumento dei tempi o dei costi.
+\end{itemize}
+
+\begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
+ 
+ \hline
+ \textbf{Ambito} & \textbf{Gravità bassa} & \textbf{Gravità media} & \textbf{Gravità alta}\\
+ \hline
+ Errore nel prodotto & Impatto su aspetti marginali & Impatto su aspetti visibili & Prodotto inutilizzabile\\
+ \hline
+ Errore nei processi & Aumento costi o tempi < 10\% & Aumento costi o tempi < 25\% & Aumento costi o tempi > 25\%\\
+ \hline
+		\caption{Gravità dell’errore e impatto su processi e prodotti \label{tab:GravitaErrori}}\\
+\end{longtable}
+
+La priorità di risoluzione può essere:
+\begin{itemize}
+\item \textbf{Breve}: indica che l’errore deve essere risolto entro 4-5 giorni;
+\item \textbf{Urgente}: indica che l’errore deve essere risolto appena possibile.
+\end{itemize}
+Le modalità operative per il \emph{Verificatore} sono le seguenti:
+\begin{itemize}
+\item \textbf{Correzione immediata}: è richiesto che il \emph{Verificatore} proceda autonomamente alla correzione dell’errore;
+\item \textbf{Aggiunta alla checklist}: è richiesto che il Verificatore aggiunga l’errore riscontrato a checklist appropriata che poi verrà assegnata a un correttore che apporterà le modifiche riportate.
+\end{itemize}
+\subsubsection{Verifica dei processi}
+Ai Verificatori è richiesto di effettuare quanto segue:
+\begin{itemize}
+\item \textbf{Controllo delle metriche}: Alla conclusione di ogni fase del progetto, per ogni
+macro-attività, definita nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , si calcolano gli indici definiti
+nella sezione Metriche per i processi del \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} . Al fine di avere
+un indice complessivo di fase dovrà essere inoltre calcolato il valore medio di tali indici.
+
+\item \textbf{Grafico PDCA}: Alla conclusione di ogni fase del progetto il \emph{Verificatore} dovrà esportare i dati dal sistema di ticketing utilizzando l’esportazione mediante foglio
+di calcolo nel formato CSV. I dati esportati devono essere inseriti nel modello del foglio di calcolo per la generazione del grafico PDCA.\\
+Dopo aver ottenuto il grafico il \emph{Verificatore} con la supervisione del \emph{Responsabile di Progetto} dovrà trarre delle conclusioni generali sulla velocità con cui sono stati portati avanti i processi.
+\end{itemize}
+
+	\subsubsection{Verifica dei documenti}
+	\label{sec:VerificaDocumenti}
+	Ogni qualvolta avvenga un cambiamento sostanziale nello sviluppo del prodotto, si istanzierà il processo\ped{g} di verifica. \\
+		Nello specifico durante ogni fase (Analisi, Progettazione, Realizzazione e Validazione\ped{g}) saranno applicate le tecniche di verifica qui descritte nei seguenti casi:
+		\begin{itemize}
+			\item Conclusione della prima redazione di un documento;
+			\item Conclusione della prima redazione di un file\ped{g} di codice\ped{g};
+			\item Conclusione della modifica sostanziale di un documento: quando il versionamento passa da .x.y.z a .x.y+1.0 oppure a .x+1.0.0.
+		\end{itemize}
+	Per eseguire un'accurata verifica dei documenti redatti è necessario seguire il seguente protocollo:
+	\begin{enumerate}
+	\item \textbf{Controllo sintattico e del periodo}: Utilizzando TeXstudio e GNU Aspell vengono evidenziati e corretti gli errori di grammatica più evidenti. Gli errori di sintassi, di sostituzione di lettere che provocano la creazione di parole grammaticalmente corrette ma sbagliate nel contesto ed i periodi di difficile comprensione necessitano dell’intervento di un verificatore umano. Per questa ragione ciascun documento dovrà essere sottoposto ad un walkthrough da parte dei verificatori per individuare tali errori;
+	\item \textbf{Rispetto delle norme di progetto}: Sono state definite norme tipografiche di carattere generale. Impongono una struttura dei documenti che non può essere verificata in maniera automatica. La verifica delle norme
+	per cui non è stato definito uno strumento automatico richiede che i Verificatori eseguano inspection sul rispetto di quelle norme in ciascun documento;
+	\item \textbf{Lista di controllo}: Il \emph{Verificatore} dovrà utilizzare la lista di controllo per i
+	documenti, descritta nell’appendice \ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
+	\item \textbf{Verifica del glossario}: Il \emph{Verificatore} si occuperà del controllo dei termini inseriti nel glossario e della corretta pedicizzazione dei termini nei vari documenti,segnalando eventuali errori;
+	\item \textbf{Calcolo dell’indice Gulpease}: Su ogni documento redatto il \emph{Verificatore} deve calcolare l’indice di leggibilità. Nel caso in cui l’indice risultasse troppo basso, sarà necessario eseguire un walkthrough del documento alla ricerca delle frasi troppo lunghe o complesse;
+	\item \textbf{Miglioramento del processo di verifica}: Per avere un miglioramento del processo di verifica, quando i \emph{Verificatori} eseguono walkthrough di un documento, dovranno riportare gli errori più frequentemente trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle verifiche future;
+	\item \textbf{Segnalazione degli errori riscontrati}: il \emph{Verificatore} deve generare ticket secondo quando descritto nella
+	sezione \ref{sec:TicketVerifica}.
+	\end{enumerate}
+	\subsubsubsection{Verifica diagrammi UML}
+	\label{sec:strumentiVerifica}
+Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
+\begin{itemize}
+
+\item \textbf{Diagrammi di caso d’uso}: Il controllo dei diagrammi di caso d’uso deve avvenire manualmente, controllando il rispetto delle specifiche UML 2.x e il corretto uso delle relazioni di inclusione ed estensione. Il diagramma di caso d’uso deve rappresentare fedelmente quanto descritto dal caso d’uso;
+\item \textbf{Diagrammi delle classi}: Al Verificatore è chiestoil controllo del formalismo delle specifiche UML 2.x e di controllare la corrispondenza tra progettazione e diagrammi delle classi.
+
+\end{itemize}
+
+	\subsubsection{Verifica del codice}
+	Al \emph{Verificatore} è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati. Di seguito un elenco degli strumenti da usare per l’analisi.
+	
+	\subsubsubsection{Analisi Statica} 
+	
+	  \begin{itemize}
+	  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
+	  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
+	  \item \textbf{jsmeter}: strumento per il calcolo di alcune metriche\ped{g} del codice\ped{g} javascript\ped{g}.
+	  \end{itemize}
+	
+	\subsubsubsection{Analisi Dinamica}
+	Verranno utilizzati strumenti e plugin interni al browser\ped{g} \emph{Chrome} quali \textbf{SpeedTracer} per verificare la velocità dell'applicazione web\ped{g};
+	
+	\subsubsubsection{Test}
+	\begin{itemize}
+	
+    \item \textbf{Jasmine}: framework per behavior-driven per il test sul codice javascript;
+	\item \textbf{Mocha}: framework per eseguire test sul codice javascript;
+	\item \textbf{Protractor}: framework per eseguire test end to end su angular.js;
+	\item \textbf{Karma}: tool per l'automatizzazione dei test javascript;
+	\item \textbf{Selenium}: tool per l'automatizzazione dei test sui browser.
+   \end{itemize}
+	
+	\subsubsubsection{Validazione}
+	
+	La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
+	fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
+		\subsection{Validazione\ped{g} dei requisiti}{
+		 				Per ogni requisito\ped{g} di processo\ped{g} specificato dovrà essere presente in ”Piano di qualifica” un riferimento alle sezioni di ”Norme di progetto” in cui viene assicurato il soddisfacimento del requisito\ped{g}. Per ogni requisito\ped{g} di prodotto specificato dovrà essere descritto brevemente il metodo che verrà usato per verificarne il soddisfacimento.\\Per favorire la tracciabilità tra requisiti\ped{g} e metodi di verifica dovrà essere presente in ”Piano di qualifica” una tabella in cui si definiscono: codice\ped{g} di requisito\ped{g}, codice\ped{g} di verifica e modalità di verifica. Se il requisito\ped{g} è di processo\ped{g}, la modalità di verifica conterrà i riferimenti alle sezioni corrispondenti in ”Norme di progetto”.
+			\subsubsection{Interna}{
+				Saranno verificate la correttezza e la completezza dei requisiti\ped{g} rispetto ai bisogni. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e bisogni individuati.\\Saranno verificate la correttezza e la completezza dei metodi di verifica dei requisiti\ped{g}
+				rispetto ai requisiti\ped{g}. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e metodi di verifica.
+			}
+				\subsubsection{Esterna}{
+					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione delle modifiche ai requisiti”.
+				}
+		}
+				\subsubsection{Gestione delle modifiche ai requisiti}{
+					A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:
+					\begin{enumerate}
+						\item Deduzione, analisi e specifica dei cambiamenti;
+						\item Stima dei costi del cambiamento considerando quante modifiche dovranno essere fatte ai requisiti\ped{g} e al progetto\ped{g} del sistema;
+						\item Decisione ed eventuale implementazione del cambiamento nei requisiti\ped{g} e nel progetto\ped{g} di sistema.
+					\end{enumerate}
+					Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server\ped{g} e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sotto albero della foresta dei requisiti\ped{g} e dei test.
+					}
+					
