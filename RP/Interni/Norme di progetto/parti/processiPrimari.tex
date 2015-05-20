@@ -71,33 +71,13 @@
 				\end{enumerate}
 				I requisiti\ped{g} dovranno essere specificati in un documento ”Analisi dei requisiti” secondo la struttura definita nello standard IEEE 830-1998. La specifica dei requisiti\ped{g} dovrà essere documentata in forma tabellare per evitare ambiguità. Per ogni requisito\ped{g} dovranno essere definiti un codice\ped{g}, una descrizione, un riferimento alla fonte e un riferimento alla verifica. Al fine di rendere meno ambigui i requisiti\ped{g} sara redatto un ”Glossario” contenente la definizione di tutti i termini non ovvi usati in fase di analisi.
 			}
-			\subsubsection{Verifica dei requisiti}{
-				Per ogni requisito\ped{g} di processo\ped{g} specificato dovrà essere presente in ”Piano di qualifica” un riferimento alle sezioni di ”Norme di progetto” in cui viene assicurato il soddisfacimento del requisito\ped{g}. Per ogni requisito\ped{g} di prodotto specificato dovrà essere descritto brevemente il metodo che verrà usato per verificarne il soddisfacimento.\\Per favorire la tracciabilità tra requisiti\ped{g} e metodi di verifica dovrà essere presente in ”Piano di qualifica” una tabella in cui si definiscono: codice\ped{g} di requisito\ped{g}, codice\ped{g} di verifica e modalità di verifica. Se il requisito\ped{g} è di processo\ped{g}, la modalità di verifica conterrà i riferimenti alle sezioni corrispondenti in ”Norme di progetto”.
-			}
-		}
-		\subsection{Validazione\ped{g} dei requisiti}{
-			\subsubsection{Interna}{
-				Saranno verificate la correttezza e la completezza dei requisiti\ped{g} rispetto ai bisogni. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e bisogni individuati.\\Saranno verificate la correttezza e la completezza dei metodi di verifica dei requisiti\ped{g}
-				rispetto ai requisiti\ped{g}. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e metodi di verifica.
-			}
-				\subsubsection{Esterna}{
-					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione delle modifiche ai requisiti”.
-				}
-		}
-		\subsection{Gestione delle modifiche ai requisiti}{
-			A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:
-			\begin{enumerate}
-				\item Deduzione, analisi e specifica dei cambiamenti;
-				\item Stima dei costi del cambiamento considerando quante modifiche dovranno essere fatte ai requisiti\ped{g} e al progetto\ped{g} del sistema;
-				\item Decisione ed eventuale implementazione del cambiamento nei requisiti\ped{g} e nel progetto\ped{g} di sistema.
-			\end{enumerate}
-			Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server\ped{g} e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sotto albero della foresta dei requisiti\ped{g} e dei test.
-			}
-			
-   \subsection{Progettazione}
-	\subsubsection{Progettazione architetturale}
 
-\subsubsubsection{Attività}
+		}
+
+
+   \subsection{Progettazione architetturale}
+
+\subsubsection{Attività}
 Lo scopo di questa attività è quello di realizzare una visione globale di ciò che dovrà essere il sistema a fronte dei requisiti ricavati dall’attività di analisi.
 Terminata l’attività di progettazione architetturale si deve produrre un documento completo ed esplicativo: la \emph{Specifica Tecnica}.
 Le attività necessarie alla redazione del documento sono:
@@ -120,7 +100,7 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 \item \textbf{Norme}: descritte in seguito.
 \end{itemize}
 
-		\subsubsubsection{Diagrammi UML}
+		\subsubsection{Diagrammi UML}
 		Data la visione a livello medio-alto di dettaglio richiesta per questo documento si dovranno utilizzare schemi UML 2.x in grado di descrivere formalmente i vari componenti	del sistema.
 		In particolare si andrà ad utilizzare i seguenti tipi di diagrammi:
 		\begin{itemize}
@@ -139,27 +119,14 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 		\item \textbf{Diagrammi di sequenza}: utilizzati per descrivere la collaborazione tra più oggetti che hanno lo scopo di implementare collettivamente un comportamento. Non sono adatti per la modellazione della logica di controllo e vanno preferiti i diagrammi di attività se si intende modellare dei cicli o delle condizioni;
 		\item \textbf{Diagrammi di attività}: descrivono la procedura logica con la quale vengono eseguite delle operazioni. Vanno utilizzati quando si vuole descrivere	l’esecuzione di flussi paralleli.
         \end{itemize}
-	\subsubsubsection{Design pattern}
+	\subsubsection{Design pattern}
 	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
-	\subsubsubsection{Tracciamento componenti}
+	\subsubsection{Tracciamento componenti}
 	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
-	\subsubsubsection{Definizione di Prodotto}
+	\subsubsection{Definizione di Prodotto}
 	I Progettisti devono produrre la Definizione di Prodotto dove viene descritta la progettazione di dettaglio del sistema ampliando quanto scritto nella Specifica Tecnica.
 	
-
-	\subsubsubsection{Test}
-	\begin{itemize}
-	
-	
-\item \textbf{Test di unità}: test che si effettuano per ogni unità del software con il massimo grado di parallelismo;
-\item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
-\item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto;
-\item \textbf{Test di regressione}: nel caso di una modifica ad un singolo componente,
-andranno effettuati nuovamente tutti i test di unità e, se necessario, di
-integrazione riferiti a quel componente.
-\end{itemize}
-
 	
 	\subsection{Codifica}
 	Le convenzioni di codifica che tutti i membri del gruppo devono seguire sono quelle
@@ -191,3 +158,16 @@ integrazione riferiti a quel componente.
   	* \return Valore ritornato dalla funzione
   	*/
     \end{lstlisting}
+    
+  	\subsection{Test}
+  	\begin{itemize}
+  	
+  	
+  \item \textbf{Test di unità}: test che si effettuano per ogni unità del software con il massimo grado di parallelismo;
+  \item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
+  \item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto;
+  \item \textbf{Test di regressione}: nel caso di una modifica ad un singolo componente,
+  andranno effettuati nuovamente tutti i test di unità e, se necessario, di
+  integrazione riferiti a quel componente.
+  \end{itemize}
+  

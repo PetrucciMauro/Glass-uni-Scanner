@@ -322,3 +322,23 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 	
 	La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
 	fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
+		\subsection{Validazione\ped{g} dei requisiti}{
+		 				Per ogni requisito\ped{g} di processo\ped{g} specificato dovrà essere presente in ”Piano di qualifica” un riferimento alle sezioni di ”Norme di progetto” in cui viene assicurato il soddisfacimento del requisito\ped{g}. Per ogni requisito\ped{g} di prodotto specificato dovrà essere descritto brevemente il metodo che verrà usato per verificarne il soddisfacimento.\\Per favorire la tracciabilità tra requisiti\ped{g} e metodi di verifica dovrà essere presente in ”Piano di qualifica” una tabella in cui si definiscono: codice\ped{g} di requisito\ped{g}, codice\ped{g} di verifica e modalità di verifica. Se il requisito\ped{g} è di processo\ped{g}, la modalità di verifica conterrà i riferimenti alle sezioni corrispondenti in ”Norme di progetto”.
+			\subsubsection{Interna}{
+				Saranno verificate la correttezza e la completezza dei requisiti\ped{g} rispetto ai bisogni. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e bisogni individuati.\\Saranno verificate la correttezza e la completezza dei metodi di verifica dei requisiti\ped{g}
+				rispetto ai requisiti\ped{g}. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e metodi di verifica.
+			}
+				\subsubsection{Esterna}{
+					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione delle modifiche ai requisiti”.
+				}
+		}
+				\subsubsection{Gestione delle modifiche ai requisiti}{
+					A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:
+					\begin{enumerate}
+						\item Deduzione, analisi e specifica dei cambiamenti;
+						\item Stima dei costi del cambiamento considerando quante modifiche dovranno essere fatte ai requisiti\ped{g} e al progetto\ped{g} del sistema;
+						\item Decisione ed eventuale implementazione del cambiamento nei requisiti\ped{g} e nel progetto\ped{g} di sistema.
+					\end{enumerate}
+					Per gestire i cambiamenti e per facilitare il tracciamento dei requisiti\ped{g} verrà usato un software\ped{g} appositamente creato dal gruppo. L’amministratore avrà il compito di gestire il server\ped{g} e amministrare i diritti di accesso degli utenti alle funzionalità fornite. In particolare gli analisti dovranno usare i modelli definiti all’inizio della fase di analisi. Per evitare problemi dovuti a modifiche concorrenti alla base dati l’amministratore dovrà garantire che ad ogni istante solo un analista possa modificare un certo sotto albero della foresta dei requisiti\ped{g} e dei test.
+					}
+					
