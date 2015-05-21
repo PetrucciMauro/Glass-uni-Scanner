@@ -1,94 +1,33 @@
 \section{C4 - Premi}{
  \subsection{Descrizione}
-   Lo scopo del progetto è la realizzazione di un software di presentazione di “slide” non basato sul modello di PowerPoint, che funzioni sia su desktop che su dispositivo mobile.Devono essere realizzati effetti grafici a supporto dello  “storytelling” che siano di livello comparabile con Prezi.
+   Il capitolato scelto prevede la realizzazione di un software di presentazione di\ “slide” non basato sul modello di PowerPoint, che funzioni sia su desktop che su dispositivo mobile. Devono essere realizzati effetti grafici a supporto dello  “storytelling” che siano di livello comparabile con Prezi.
    Il software dovrà coprire i due momenti fondamentali per questo tipo di attività:\\
    La creazione da parte dell' autore e la presentazione al pubblico, sia in presenza diretta che via web;\\
-   Il progetto vuole essere fortemente sperimentale, indagando su nuove possibilità  offerte dai sistemi moderni con tecnologie web sia nel campo degli effetti durante
-   le presentazioni che sullo svolgimento non lineare delle stesse.\\
+   Il progetto vuole essere fortemente sperimentale, indagando su nuove possibilità  offerte dai sistemi moderni con tecnologie web sia nel campo degli effetti durante le presentazioni che sullo svolgimento non lineare delle stesse.\\
    Le presentazioni create con Prezi facilmente sconfinano nel terreno delle infografiche.
-	\subsection{Elementi di valutazione}{
-		Elementi a favore:
-		\begin{itemize}
-			\item Sviluppo di una web\ped{g} application;
-			\item Fase di analisi in cui sono richieste idee creative;
-			\item Studio e utilizzo di tecnologie web\ped{g} ritenute interessanti professionalmente;
-			\item Libertà nella scelta delle tecnologie per lo sviluppo.
-		\end{itemize}
-		
-		Elementi a sfavore:
-		\begin{itemize}
-			\item Difficoltà di verifica di un'applicazione web\ped{g}.
-		\end{itemize}
-	}
-	\subsection{Criticità}{
-		Pur attirati dal Capitolato, riconosciamo che il prodotto che s'andrà a sviluppare mira più ad esplorare i limiti delle tecnologie web\ped{g}.
-	}
-}
 
+\subsection{Dominio tecnologico}
+Non ci sono vincoli per l'utilizzo di specifiche tecnologie ,tuttavia, dopo un attenta analisi si è potuto osservare come sia meglio creare una applicazione web basata su linguaggi e tecnologie moderne e dinamiche e quindi si andranno ad utilizzare le seguenti tecnologie:
+\begin{itemize}
+\item \textbf{Node.js}  per la realizzazione della componente server;
+\item \textbf{Express}  per la realizzazione dell'infrastruttura della web application generata;
+\item \textbf{MongoDB}  per il recupero dei dati;
+\item Conoscenza di framework per la componente \emph{front-end}, come Angular.js;
 
-
-
-Capitolato C1 - MaaP
-Descrizione
-Il capitolato scelto prevede la realizzazione di un framework G per generare interfacce web di amministra-
-zione dei dati di business G . In particolare, l’amministrazione dei dati deve essere disponibile a livello di
-Studio di fattibilità
-
-database G , nel quale vengono effettuate operazioni direttamente sugli oggetti che lo rappresentano (ta-
-belle, indici, viste) in modo tale da permettere un accesso veloce e consistente ai dati. Questa tipologia
-di amministrazione non si preoccupa di interpretare le informazioni in dati di business G , ma si limita a
-interagire in modo agnostico con le entità del database G .
-Inoltre, deve essere possibile l’amministrazione a livello di dati di business G , in cui vengono effettuate
-operazioni su una o più di tali entità, le quali vengono interpretate nel modello di business G richiesto.
-La realizzazione delle pagine web di visualizzazione deve essere svolta in maniera semplice e veloce da
-parte dello sviluppatore G , e le modalità di fruizione delle pagine generate devono essere adeguate ad un
-esperto di business G .
-2.2
-2.2.1
-Studio del dominio
-Dominio applicativo
-Il contesto operativo in cui si inserisce il progetto è strettamente legato alla persistenza dei dati tramite
-l’utilizzo di basi di dati G distribuite di tipo non-relazionale(NoSQL G ), nel particolare MongoDB G .
-MongoDB G è un database NoSQL G adottato in maniera crescente soprattutto in contesti, come quello
-Ruby On Rails G e Node.js G , dove l’attenzione maggiore è rivolta ad una modellazione agile G , alla ricerca
-della possibilità di rimodulare continuamente la definizione degli schema G di database G , e alla produtti-
-vità.
-MaaP si inserisce in questo contesto venendo in contro all’esigenza sia da parte degli esperti di business G
-sia dagli sviluppatori G che operano su questa tecnologia, di avere uno strumento che permetta la gene-
-razione in modo rapido di pagine gestionali, al fine di amministrare e interagire con le entità e i dati
-presenti in MongoDB G .
-In particolare, gli utenti interessati nel dominio applicativo saranno lo sviluppatore G , che utilizzerà MaaP
-per generare le pagine, e l’ esperto di business G , che non dev’essere necessariamente un esperto di
-informatica, il quale usufruisce delle pagine generate per poter amministrare facilmente le entità di
-business G interagendo con la base di dati G .
-Si dovrà quindi implementare un framework G che permetta allo sviluppatore di creare e personalizzare,
-per mezzo di un linguaggio DSL G definito, le suddette interfacce web.
-2.2.2
-Dominio tecnologico
-• Node.js G per la realizzazione della componente server G ;
-• Express G per la realizzazione dell’infrastruttura della web application G generata;
-• Mongoose.js G per l’interfacciamento con il database;
-• MongoDB G per il recupero dei dati;
-• conoscenza di framework G per la componente front-end G (i.e. Angular.js G , Ember.js G );
-• conoscenze nella definizione di linguaggi astratti DSL G per la generazione delle pagine da parte
-dello sviluppatore G .
-2.3
-Valutazione
+\end{itemize}
+\subsection{Valutazione}
 Vengono di seguito elencati gli aspetti positivi che hanno determinato la scelta del capitolato:
-Studio di fattibilità
-v 1.3.1
-Pagina 4 di 7SteakHolders
-Progetto MaaP
-2
-CAPITOLATO C1 - MAAP
-• Apprendimento di tecnologie innovative che portano un bagaglio di conoscenze ritenuto importan-
-te dato il grande uso di quest’ultime nella panoramica delle tecnologie presenti attualmente nel
+
+\begin{itemize}
+
+\item Apprendimento di tecnologie innovative che portano un bagaglio di conoscenze ritenuto importante dato il grande uso di quest’ultime nella panoramica delle tecnologie presenti attualmente nel
 mercato;
-• Interesse del gruppo a vedere la propria applicazione dare vita ad una community dato che non
-esiste attualmente,con lo stack tecnologico G proposto, un applicativo simile;
-• Requisiti richiesti dal proponente sono ben delineati.
+\item Interesse del gruppo a vedere la propria applicazione dare vita alla fantasia degli utenti nella creazione di presentazioni sempre più coinvolgenti;
+\item Libertà nella definizione dei requisiti.
+\end{itemize}
 Similmente, il gruppo ha trovato aspetti negativi:
-• Le tecnologie utilizzate nello sviluppo del progetto non sono conosciute da nessun membro del
-gruppo SteakHolders e quindi richiederanno un tempo di formazione per il loro apprendimento
+\begin{itemize}
+\item Le tecnologie utilizzate nello sviluppo del progetto non sono conosciute da nessun membro del gruppo \gruppo e quindi richiederanno un tempo di formazione per il loro apprendimento
 considerevole;
-• La mole di lavoro per lo sviluppo del progetto al gruppo sembra notevole.
+\item La mole di lavoro per lo sviluppo del progetto al gruppo sembra notevole.
+\end{itemize}
