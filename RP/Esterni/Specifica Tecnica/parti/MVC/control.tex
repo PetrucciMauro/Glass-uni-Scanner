@@ -1,0 +1,35 @@
+\subsection{Controller}{
+	\textbf{\tipo}: fanno parte di questo livello i package che gestiscono i segnali e le chiamate effettuati dalla view verso la struttura dati.\\
+	\textbf{\relaz}: il componente è costituito dai package Presentazione e Utente, comunica con il Model per rendere possibile la gestione del profilo e la gestione delle presentazioni da parte dell'utente.\\
+	\textbf{Package contenuti}: 
+	\begin{itemize}
+	\item Premi::Controller::Presentazione
+    \item Premi::Controller::Utente
+	\end{itemize}
+	\subsubsection{Premi::Controller::Presentazione}{
+		\textbf{\tipo}: fanno parte di questo package tutte le classi di controller con cui interagiscono le pagine dedicate alla gestione delle presentazioni.\\
+		\textbf{\relaz}: il package comunica con la view ricevendo chiamate da Premi::View::Pages::MobileEdit, Premi::View::Pages::DesktopEdit, Premi::View::Pages::Execution e Premi::View::Pages::Home. Comunica, invece, con il model inviando segnali e chiamate ai package Premi::Model::Inserimento, Premi::Model::Eliminazione, Premi::Model::Modifica, Premi::Model::Command, Premi::Model::Builder e alle classi Premi::Model::Invoker, Premi::Model::MongoHandler.\\
+	
+	\subsubsubsection{Premi::Controller::Presentazione::EditController}{
+		\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali delle pagine Premi::View::Pages::DesktopEdit e Premi::View::Pages::MobileEdit verso il model.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi.View.Pages.DesktopEdit e Premi.View.Pages.MobileEdit -> costruiscono EditController, ne invocano i metodi passando i parametri degli oggetti modificati;
+			\item Premi::Model::Command <- EditController costruisce un comando e lo dà in pasto a Premi::Model:Invoker;
+			\item Premi::Model::Invoker <- EditController costruisce l’oggetto di classe Invoker. Invoca il metodo execute() di Invoker, passando come paramentro un oggetto di classe Command oppure invoca il metodo unexecute() di Invoker.
+			
+		\end{itemize} 
+		\textbf{\interfacce}: La pagina DesktopEdit o la pagina MobileEdit invia a EditController un segnale comunicando l’avvenuta modifica o la rimozione di un elemento della presentazione, oppure l’inserimento di un nuovo elemento. EditController istanzia un oggetto di classe Premi::Model::Command e lo dà in pasto a Premi::Model::Invoker. Eventualmente EditController può semplicemente annullare il comando appena eseguito invocando il metodo unexecute di Invoker.\\
+	}
+	\subsubsubsection{Premi::Controller::Presentazione::HomeController}{
+				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali della pagina Premi::View::Pages::Home verso la struttura dati.\\	
+				\textbf{\relaz}:
+				\begin{itemize}
+					\item Premi.View.Pages.Home -> costruisce HomeController, ne invoca i metodi passando i parametri dell’utente;
+					\item Premi::Model::MongoHandler <- HomeController invoca un metodo di MongoHandler che restituisce l’elenco dei titoli delle presentazioni dell’utente;					
+				\end{itemize} 
+				\textbf{\interfacce}: La pagina Home costruisce HomeController e richiede l’elenco delle presentazioni dell’utente.\\
+			}
+	}
+}
+	

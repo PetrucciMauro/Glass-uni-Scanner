@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  21 MAY 2015 17:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  21 MAY 2015 23:53
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\SpecificaTecnica_v.1.0.0.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\SpecificaTecnica_v.1.0.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\format.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
+\format.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1202,8 +1202,8 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\SpecificaTecnica_v.1.0.0.aux")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\SpecificaTecnica_v.1.0.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1303,18 +1303,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\firstpage.tex"
-<../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
+\firstpage.tex" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
-Fiup/3° Anno/SWE/Premi/RP/logo.jpg>])
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\registroMod.tex"
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
+ts/Giovanni/Studio e lavoro/GitHub/Premi/RP/logo.jpg>])
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -1344,71 +1345,85 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\SpecificaTecnica_v.1.0.0.toc")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\SpecificaTecnica_v.1.0.0.toc"
+Overfull \hbox (11.75842pt too wide) in paragraph at lines 35--35
+ [][] [][][]\T1/cmr/m/n/12 Premi::Controller::Presentazione::Inserimento::Concr
+eteTextInserter[][] [][]  
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [3])
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\sommario.tex")
+ [4]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
+\sommario.tex")
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\introduzione.tex"
+ [5]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\introduzione.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5])
+
+[6])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\strumenti.tex")
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [7]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\strumenti.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [8]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\pattern.tex"
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\pattern.tex"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9])
+ [10])
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\presentazione.tex"
-<./images/PresentazioneArchitettura.jpg, id=183, 1364.09625pt x 788.9475pt>
+ [11]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\presentazione.tex"
+<./images/PresentazioneArchitettura.jpg, id=225, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -1425,29 +1440,148 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
+ [12]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
-nica/images/PresentazioneArchitettura.jpg>]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\componenti.tex"
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\MVC\model.tex")
+ [13 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
+rni/Specifica Tecnica/images/PresentazioneArchitettura.jpg>]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\componenti.tex"
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\MVC\model.tex"
+Overfull \hbox (0.93553pt too wide) in paragraph at lines 16--18
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :. Il pa
+c-ka-ge � in re-la-zio-ne con Pre-mi::Model::Command
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 31.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [14]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 9.
+Package pdftex.def Info: ../../logo.jpg used on input line 71.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13]
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\MVC\control.tex")
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\parti\MVC\view.tex" <./images/view.png, id=207, 371.88937pt x 195.73125pt>
-File: ./images/view.png Graphic file (type png)
+ [15]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 112.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-<use ./images/view.png>
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.120 ...tion{Premi::Model::Eliminazione::Remover}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.2}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.138 ...odel::Eliminazione:: ConcreteTextRemover}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 144.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[17]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 ...del::Eliminazione:: ConcreteFrameRemover}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.4}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.164 ...odel::Eliminazione:: ConcreteSVGtRemover}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.5}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.177 ...del::Eliminazione:: ConcreteImageRemover}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 188.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[18]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.190 ...del::Eliminazione:: ConcreteVideoRemover}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.7}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.203 ...del::Eliminazione:: ConcreteAudioRemover}
+                                                  {)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 11.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[19]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\MVC\control.tex"
+Overfull \hbox (17.93304pt too wide) in paragraph at lines 10--12
+\T1/cmr/m/n/12 Pre-mi::View::Pages::MobileEdit, Pre-mi::View::Pages::DesktopEdi
+t, Pre-mi::View::Pages::Execution
+ []
+
+
+Overfull \hbox (81.7591pt too wide) in paragraph at lines 10--12
+\T1/cmr/m/n/12 mi::Model::Command, Pre-mi::Model::Builder e al-le clas-si Pre-m
+i::Model::Invoker, Pre-mi::Model::MongoHandler. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 27.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 13.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [21]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\parti\MVC\view.tex"
+<./images/view.png, id=299, 371.88937pt x 195.73125pt>
+File: ./images/view.png Graphic file (type png)
+ <use ./images/view.png>
 Package pdftex.def Info: ./images/view.png used on input line 4.
 (pdftex.def)             Requested size: 223.13533pt x 117.43964pt.
 
@@ -1464,8 +1598,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
-nica/images/view.png (PNG copy)>]
+ [22 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
+rni/Specifica Tecnica/images/view.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
@@ -1484,7 +1618,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
+ [23]
 Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
@@ -1500,27 +1634,27 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16]
+ [24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
-("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
-\SpecificaTecnica_v.1.0.0.aux")
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
+Specifica Tecnica\SpecificaTecnica_v.1.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 7 ({)
+### simple group (level 1) entered at line 9 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13811 strings out of 493921
- 200811 string characters out of 3147280
- 354875 words of memory out of 3000000
- 16765 multiletter control sequences out of 15000+200000
+ 13863 strings out of 493921
+ 202054 string characters out of 3147274
+ 355875 words of memory out of 3000000
+ 16795 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,15n,60p,838b,574s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,838b,647s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -1531,9 +1665,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (17 pages, 338826 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (25 pages, 374656 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
- 312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

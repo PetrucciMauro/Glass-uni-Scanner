@@ -1,38 +1,59 @@
 \select@language {italian}
-\contentsline {section}{\numberline {1}Introduzione}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Scopo del documento}{5}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{5}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Glossario}{5}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Riferimenti}{5}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{5}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{5}{subsubsection.1.4.2}
-\contentsline {section}{\numberline {2}Strumenti}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}HTML}{7}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}JavaScript}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}jQuery}{8}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Angular.js}{8}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Node.js}{8}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}MongoDB}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Impress.js}{8}{subsection.2.7}
-\contentsline {section}{\numberline {3}Design Pattern}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Singleton}{9}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Utility}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Builder}{9}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Command}{9}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Iterator}{9}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Template Method}{9}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Strategy}{10}{subsection.3.7}
-\contentsline {section}{\numberline {4}Descrizione architetturale}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Architettura generale}{11}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Model}{11}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}View}{11}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{11}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}View}{14}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Premi.View.Pages.IndexPage}{14}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Premi.View.Pages.Home}{14}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Premi.View.Pages.Profile}{15}{subsubsection.5.1.3}
-\contentsline {subsubsection}{\numberline {5.1.4}Premi.View.Pages.Execution}{15}{subsubsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.5}Premi.View.Pages.DesktopEdit}{15}{subsubsection.5.1.5}
-\contentsline {subsubsection}{\numberline {5.1.6}Premi.View.Pages.MobileEdit}{16}{subsubsection.5.1.6}
+\contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{6}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{6}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{6}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{6}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Strumenti}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{8}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}JavaScript}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}jQuery}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Angular.js}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Node.js}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}MongoDB}{9}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Impress.js}{9}{subsection.2.7}
+\contentsline {section}{\numberline {3}Design Pattern}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Singleton}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Utility}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Builder}{10}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Command}{10}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Iterator}{10}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Template Method}{10}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Strategy}{11}{subsection.3.7}
+\contentsline {section}{\numberline {4}Descrizione architetturale}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architettura generale}{12}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Model}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}View}{12}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{12}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Model}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Premi::Controller::Inserimento}{14}{subsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.1.1}Premi::Model::Inserimento::Inserter}{14}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.1.2}Premi::Controller::Presentazione::Inserimento::ConcreteTextInserter}{15}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.1.3}Premi::Model::Inserimento::ConcreteFrameInserter}{15}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.1.4}Premi::Model::Inserimento::ConcreteSvgInserter}{15}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.1.5}Premi::Model::Inserimento::ConcreteImageInserter}{16}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.1.6}Premi::Model::Inserimento:: ConcreteVideoInserter}{16}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.1.7}Premi::Model::Inserimento:: ConcreteAudioInserter}{16}{subsubsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.2}Premi::Controller::Eliminazione}{17}{subsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.2.1}Premi::Model::Eliminazione::Remover}{17}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.2.2}Premi::Model::Eliminazione:: ConcreteTextRemover}{17}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.2.3}Premi::Model::Eliminazione:: ConcreteFrameRemover}{18}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.2.4}Premi::Model::Eliminazione:: ConcreteSVGtRemover}{18}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.2.5}Premi::Model::Eliminazione:: ConcreteImageRemover}{18}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.2.6}Premi::Model::Eliminazione:: ConcreteVideoRemover}{19}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.2.7}Premi::Model::Eliminazione:: ConcreteAudioRemover}{19}{subsubsubsection.5.1.7}
+\contentsline {subsection}{\numberline {5.2}Controller}{20}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Premi::Controller::Presentazione}{20}{subsubsection.5.2.1}
+\contentsline {subsubsubsection}{\numberline {5.2.1.1}Premi::Controller::Presentazione::EditController}{20}{subsubsubsection.5.2.1}
+\contentsline {subsubsubsection}{\numberline {5.2.1.2}Premi::Controller::Presentazione::HomeController}{21}{subsubsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}View}{22}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Premi.View.Pages.IndexPage}{22}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Premi.View.Pages.Home}{22}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Premi.View.Pages.Profile}{23}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Premi.View.Pages.Execution}{23}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Premi.View.Pages.DesktopEdit}{23}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Premi.View.Pages.MobileEdit}{24}{subsubsection.5.3.6}

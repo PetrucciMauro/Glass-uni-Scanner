@@ -1,0 +1,218 @@
+\subsection{Model}{
+	\textbf{\tipo}: è la parte Model dell'architettura MVC.\\
+	\textbf{\relaz}: ??????????????????????.\\
+	\textbf{Package contenuti}: 
+	\begin{itemize}
+	\item Premi::Model::Inserimento;
+    \item Premi::Model::Rimozione;
+    \item Premi::Model::Modifica;
+    \item Premi::Model::Command;
+    \item Premi::Model::Invoker;
+    \item Premi::Model::Builder;
+    \item Premi::Model::Presentazione;
+    \item Premi::Model::MongoHandler.
+	\end{itemize}
+	\subsubsection{Premi::Controller::Inserimento}{
+		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern template per l’inserimento di nuovi elementi nella presentazione.\\
+		\textbf{\relaz}:. Il package è in relazione con Premi::Model::Command da cui riceve i segnali e i parametri di inserimento dell’elemento. Inoltre comunica con il package Premi::Model::Presentazione, istanziando gli oggetti delle sottoclassi di SlideShowElement e inserendoli in SlideShow.\\
+	
+	\subsubsubsection{Premi::Model::Inserimento::Inserter}{
+		\textbf{\tipo}: Classe astratta definita per l’implementazione del Design Pattern template, per l’inserimento di elementi all’interno di una presentazione.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi::Model::Command::ConcreteConcreteInsertCommand -> utilizza i metodi messi a disposizione da Inserter e concretizzati dalle sue sottoclassi che a loro volta invocano le funzioni della classe Premi::Model::Presentazione::SlideShow per l’impostazione dei campi relativi. 
+		\end{itemize} 
+		\textbf{\interfacce}: Definisce le operazioni primitive astratte che le classi concrete sottostanti andranno a sovraccaricare e implementa il metodo template che rappresenta lo scheletro dell'algoritmo per l’inserimento di un elemento nella presentazione.
+È il componente receiver del Design Pattern Command.\\
+        \textbf{\figli}: 
+        \begin{itemize}
+            \item Premi::Model::Inserimento::ConcreteTextInserter;
+            \item Premi::Model::Inserimento::ConcreteFrameInserter;
+            \item Premi::Model::Inserimento::ConcreteSvgInserter;
+            \item Premi::Model::Inserimento::ConcreteImageInserter;
+            \item Premi::Model::Inserimento::ConcreteVideoInserter;
+            \item Premi::Model::Inserimento::ConcreteAudioInserter.
+        \end{itemize}
+	}
+	\subsubsubsection{Premi::Controller::Presentazione::Inserimento::ConcreteTextInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento testuale all’interno di una presentazione. È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo testo nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per inserire elementi testuali in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+    \subsubsubsection{Premi::Model::Inserimento::ConcreteFrameInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento frame all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo Frame nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo frame in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+       \subsubsubsection{Premi::Model::Inserimento::ConcreteSvgInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento svg all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo SVG nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per inserire elementi svg in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+       \subsubsubsection{Premi::Model::Inserimento::ConcreteImageInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento immagine all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo immagine nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo immagine in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+            \subsubsubsection{Premi::Model::Inserimento:: ConcreteVideoInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento video all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo video nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}:Viene invocato per inserire elementi di tipo video in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+            \subsubsubsection{Premi::Model::Inserimento:: ConcreteAudioInserter}{
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento di tipo audio all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo audio nella presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo audio in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Inserimento::Inserter.
+                    \end{itemize}
+			}
+	}
+    
+    	\subsubsection{Premi::Controller::Eliminazione}{
+		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern template per l’eliminazione di elementi dalla presentazione.\\
+		\textbf{\relaz}:Il package è in relazione con Premi::Model::Command da cui riceve i segnali e i parametri di eliminazione dell’elemento. Inoltre comunica con il package Premi::Model::Presentazione, rimuovendo dall’oggetto di classe SlideShow gli oggetti delle sottoclassi di SlideShowElement e distruggendoli.\\
+	
+	\subsubsubsection{Premi::Model::Eliminazione::Remover}{
+		\textbf{\tipo}: Classe astratta definita per l’implementazione del Design Pattern template, per l’eliminazione di elementi all’interno di una presentazione.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi::Model::Command::ConcreteConcreteRemoveCommand -> utilizza i metodi messi a disposizione da Remover e concretizzati dalle sue sottoclassi che a loro volta invocano le funzioni della classe.
+		\end{itemize} 
+		\textbf{\interfacce}: Definisce le operazioni primitive astratte che le classi concrete sottostanti andranno a sovraccaricare o definire e implementa il metodo template che rappresenta lo scheletro dell'algoritmo per l’eliminazione di un elemento nella presentazione.\\
+È il componente receiver del Design Pattern Command.\\
+        \textbf{\figli}: 
+        \begin{itemize}
+            \item Premi::Model::Eliminazione::ConcreteTextRemover;
+            \item Premi::Model::Eliminazione::ConcreteFrameRemover;
+            \item Premi::Model::Eliminazione::ConcreteSvgRemover;
+            \item Premi::Model::Eliminazione::ConcreteImageRemover;
+            \item Premi::Model::Eliminazione::ConcreteVideoRemover;
+            \item Premi::Model::Eliminazione::ConcreteAudioRemover.
+        \end{itemize}
+	}
+	\subsubsubsection{Premi::Model::Eliminazione:: ConcreteTextRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento testuale all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo testo dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi testuali in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+    \subsubsubsection{Premi::Model::Eliminazione:: ConcreteFrameRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento di tipo frame all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo frame dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo frame da una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+       \subsubsubsection{Premi::Model::Eliminazione:: ConcreteSVGtRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento di tipo SVG all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo SVG dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi SVG da una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+       \subsubsubsection{Premi::Model::Eliminazione:: ConcreteImageRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento immagine all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo immagine dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi immagine in una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+            \subsubsubsection{Premi::Model::Eliminazione:: ConcreteVideoRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento di tipo video all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo video dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo video da una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+            \subsubsubsection{Premi::Model::Eliminazione:: ConcreteAudioRemover}{
+				\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione di un elemento di tipo audio all’interno di una presentazione.
+È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo audio dalla presentazione.
+				\end{itemize} 
+				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo audio da una presentazione.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Eliminazione::Remover.
+                    \end{itemize}
+			}
+	}
+}
+	
