@@ -1,0 +1,43 @@
+	\subsection{View}{
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.6]{\imgs {view}.png} %inserire il diagramma UML
+			\label{fig:view}
+			\caption{View}
+		\end{figure}
+		\textbf{\tipo}: questo livello costituisce l'interfaccia del software utilizzabile dagli utenti mediante pagine web.\\
+		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Controller per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso.\\
+		\subsubsection{Premi.View.Pages.IndexPage}{
+			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema e di passare alla visualizzazione della classe Loader.\\
+			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe [[[[[[[[[[[[[[[[[[CONTROLLER LOGIN]]]]]]]]]]]]]]]]]], contenuta nel package Controller, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi e registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione o la registrazione al sistema oppure che l'utente decida di andare nella pagina Loader.\\
+		}
+		\subsubsection{Premi.View.Pages.Home}{
+			\textbf{\tipo}: la classe Home definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni presenti sul server e i comandi principali di gestione del profilo e gestione presentazioni.\\	
+			\textbf{\relaz}: la classe Home, utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER ELIMINAZIONE PRESENT.]]]]]]]]] per l'eliminazione delle presentazioni dal server e [[[[[[[[[[CONTROLLER SCARICAMENTO MANIFEST]]]]]]]]]] per scaricare una presentazione in locale; utilizza inoltre il metodo [[[[[[[[[[CONTROLLER LOGOUT]]]]]]]]] per effettuare il logout, tutti presenti nel package Controller.\\
+			\textbf{\interfacce}: la classe Home manda a alla pagina Execution l'id della presentazione da eseguire, mentre manda alla pagina DesktopEditing (o mobileEditing) l'id della presentazione da modificare.
+			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, crearne di nuove, modificarle, eliminarle, scaricarle in locale e andare alla pagina Profile, effettuare il logout.\\
+		}
+		\subsubsection{Premi.View.Pages.Profile}{
+			\textbf{\tipo}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo, i propri file caricati e la possibilità di modificarli. \\
+			\textbf{\relaz}: la classe Profile utilizza i metodi messi a disposzione dalle classi, presenti nel package Controller, [[[[[[[[[CONTROLLER MODIFICA DATI]]]]]]]]] per modificare i propri dati di profilo. Inoltre, vengono utilizzati i metodi delle classi, sempre presenti in Controller, [[[[[[CONTROLLER INSERIMENTO FILE MEDIA]]]]]] per il caricamento di file media nel server, [[[[[[CONTROLLER ELIMINAZ. FILE MEDIA]]]]]] per la loro eliminazione dal server e [[[[[[CONTROLLER RINOMINA FILE MEDIA]]]]]] per rinominarli.\\
+			\textbf{\attivita}: la classe Profile definisce la struttura della pagina web che consente agli utenti di modificare i propri dati di profilo e gestire i file media caricati nel server.\\
+		}
+		\subsubsection{Premi.View.Pages.Execution}{
+			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
+			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js utilizzato; utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER ESECUZIONE PRESENTAZIONE.]]]]]]]]] per creare la pagina che verrà eseguita da Impress.js.\\
+			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo percorso.\\
+		}
+		\subsubsection{Premi.View.Pages.DesktopEdit}{
+			\textbf{\tipo}: la classe DesktopEdit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'editor di modifica di una presentazione.\\
+			\textbf{\relaz}: mandi principali di gestione del profilo e gestione presentazioni.\\	
+			\textbf{\relaz}: la classe Home, utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER CARICA EDITOR]]]]]]]]] per caricare la presentazione da modificare, [[[[[[[[[CONTROLLER INSERIMENTO]]]]]]]]] per l'inserimento di nuovi elementi, [[[[[[[[[CONTROLLER SPOSTAMENTO]]]]]]]]] per lo spostamento di nuovi elementi, [[[[[[[[[CONTROLLER ELIMINAZIONE]]]]]]]]] per l'eliminazione elementi e [[[[[[[[[CONTROLLER MODIFICA ELEMENTI]]]]]]]]] per le modifiche effettuate agli elementi e cambiare il percorso agli elementi con i metodi di [[[[[[[[[CONTROLLER MODIFICA ELEMENTI]]]]]]]]].\\\\
+			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi), cambiare il percorso, assegnare bookmark ai frame e inserire elementi scelta.\\
+		}
+		\subsubsection{Premi.View.Pages.MobileEdit}{
+			\textbf{\tipo}: la classe MobileEdit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente mobile l'editor di modifica mobile di una presentazione. \\
+			\textbf{\relaz}: la classe MobileEdit utilizza i metodi messi a disposzione dalle classi, presenti nel package Controller, [[[[[[[[[CONTROLLER CARICA EDITOR MOBILE]]]]]]]]] per caricare la presentazione da modificare, [[[[[[[[CONTROLLER INSERIMENTO TESTO]]]]]]]] per l'inserimento di un elemento testuale, [[[[[CONTROLLER MODIFICA TESTO]]]]] per la modifica di un elemento testuale, [[[[[CONTROLLER INSERIMENTO BOOKMARK]]]]] per l'inserimento di un nuovo bookmark, [[[[[CONTROLLER REMOVE BOOKMARK]]]]] per rimuovere un bookmark.\\
+			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (modificando un elemento testo) e assegnare bookmark ai frame..\\
+		}
+	
+
