@@ -1,5 +1,4 @@
-\section{Descrizione architetturale}
-
+\section{Descrizione architetturale}{
 \subsection{Metodo e formalismi}{
 	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle iterazioni successive.
 	Si passerà quindi alla definizione dei package e successivamente dei componenti di questi. Infine si andranno a definire le singole classi e interfacce specificando per ognuna:
@@ -18,11 +17,10 @@
 	Il prodotto si presenta suddiviso in tre parti distinte: Model, View e ViewModel. Si è quindi cercato di implementare il design pattern architetturale MVVM in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
 	
 	\begin{figure}
-	%(figura 1)
-	%	\centering
-	%	\includegraphics[scale=0.6]{\imgs {fig1}.jpg} %inserire il diagramma UML
-	%	\label{fig:fig1}
-	%	\caption{Fig1}
+		\centering
+		\includegraphics[scale=0.6]{\imgs {PresentazioneArchitettura}.jpg} %inserire il diagramma UML
+		\label{fig:architettura}
+		\caption{Architettura generale del sistema}
 	\end{figure}
 	\subsubsection{Model}{
 		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del software e risulta di fatto totalmente indipendente dagli altri due strati.
@@ -33,5 +31,5 @@
 	\subsubsection{ViewModel}{
 		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
 		}
+	}
 }
-
