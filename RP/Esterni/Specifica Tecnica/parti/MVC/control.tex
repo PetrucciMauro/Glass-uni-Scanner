@@ -16,10 +16,13 @@
 		\begin{itemize}
 			\item Premi.View.Pages.DesktopEdit e Premi.View.Pages.MobileEdit -> costruiscono EditController, ne invocano i metodi passando i parametri degli oggetti modificati;
 			\item Premi::Model::Command <- EditController costruisce un comando e lo dà in pasto a Premi::Model:Invoker;
-			\item Premi::Model::Invoker <- EditController costruisce l’oggetto di classe Invoker. Invoca il metodo execute() di Invoker, passando come paramentro un oggetto di classe Command oppure invoca il metodo unexecute() di Invoker.
+			\item Premi::Model::Invoker <- EditController costruisce l’oggetto di classe Invoker. Invoca il metodo execute() di Invoker, passando come paramentro un oggetto di classe Command oppure invoca il metodo unexecute() di Invoker;
+			\item Premi::Model::Presentazione::Loader <- EditController costruisce l’oggetto di classe Loader, passando come parametro i riferimenti alla presentazione da caricare.
 			
 		\end{itemize} 
-		\textbf{\interfacce}: La pagina DesktopEdit o la pagina MobileEdit invia a EditController un segnale comunicando l’avvenuta modifica o la rimozione di un elemento della presentazione, oppure l’inserimento di un nuovo elemento. EditController istanzia un oggetto di classe Premi::Model::Command e lo dà in pasto a Premi::Model::Invoker. Eventualmente EditController può semplicemente annullare il comando appena eseguito invocando il metodo unexecute di Invoker.\\
+		\textbf{\interfacce}: La pagina DesktopEdit o la pagina MobileEdit invia a EditController un segnale comunicando l’avvenuta modifica o la rimozione di un elemento della presentazione o l’inserimento di un nuovo elemento. EditController istanzia un oggetto di classe Premi::Model::Command e lo dà in pasto a Premi::Model::Invoker. Eventualmente EditController può semplicemente annullare il comando appena eseguito invocando il metodo unexecute di Invoker.
+		La pagina web può, inoltre richiedere il caricamento di una presentazione o la creazione di una nuova presentazione a EditController, che, tramite invocazione di Premi::Model::Presentazione::Loader, caricherà dal database.
+		\\
 	}
 	\subsubsubsection{Premi::Controller::Presentazione::HomeController}{
 				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali della pagina Premi::View::Pages::Home verso la struttura dati.\\	
@@ -30,6 +33,14 @@
 				\end{itemize} 
 				\textbf{\interfacce}: La pagina Home costruisce HomeController e richiede l’elenco delle presentazioni dell’utente.\\
 			}
-	}
+		\subsubsubsection{Premi::Controller::Presentazione::ExecutionController}{
+				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali delle pagine Premi::View::Pages::Execution verso il model.\\	
+				\textbf{\relaz}:
+					\begin{itemize}
+						\item Premi.View.Pages.Execution -> costruiscono ExecutionController, ne invocano i metodi passando i parametri della presentazione da caricare;
+						\item Premi::Model::Presentazione::Loader <- ExecutionController passa i parametri di caricamento al Loader che istanzia un oggetto di classe Premi::Model::Presentazione::SlideShow e lo restituisce a Loader.
+					\end{itemize}
+				\textbf{\interfacce}: La pagina Execution costruisce ExecutionController per caricare la presentazione.\\
+		}
 }
 	

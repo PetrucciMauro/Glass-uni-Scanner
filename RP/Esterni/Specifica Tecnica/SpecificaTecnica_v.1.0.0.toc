@@ -1,73 +1,94 @@
 \select@language {italian}
-\contentsline {section}{\numberline {1}Introduzione}{6}{section.1}
-\contentsline {subsection}{\numberline {1.1}Scopo del documento}{6}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Glossario}{6}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Riferimenti}{6}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{6}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{6}{subsubsection.1.4.2}
-\contentsline {section}{\numberline {2}Strumenti}{8}{section.2}
-\contentsline {subsection}{\numberline {2.1}HTML}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}JavaScript}{8}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}jQuery}{9}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Angular.js}{9}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Node.js}{9}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}MongoDB}{9}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Impress.js}{9}{subsection.2.7}
-\contentsline {section}{\numberline {3}Design Pattern}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Singleton}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Utility}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Builder}{10}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Command}{10}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Iterator}{10}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Template Method}{10}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Strategy}{11}{subsection.3.7}
-\contentsline {section}{\numberline {4}Descrizione architetturale}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{12}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Architettura generale}{12}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Model}{12}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}View}{12}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{12}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{14}{section.5}
-\contentsline {subsection}{\numberline {5.1}Model}{14}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Premi::Model::Inserimento}{14}{subsubsection.5.1.1}
-\contentsline {subsubsubsection}{\numberline {5.1.1.1}Premi::Model::Inserimento::Inserter}{14}{subsubsubsection.5.1.1}
-\contentsline {subsubsubsection}{\numberline {5.1.1.2}Premi::Controller::Presentazione::Inserimento::ConcreteTextInserter}{15}{subsubsubsection.5.1.2}
-\contentsline {subsubsubsection}{\numberline {5.1.1.3}Premi::Model::Inserimento::ConcreteFrameInserter}{15}{subsubsubsection.5.1.3}
-\contentsline {subsubsubsection}{\numberline {5.1.1.4}Premi::Model::Inserimento::ConcreteSvgInserter}{15}{subsubsubsection.5.1.4}
-\contentsline {subsubsubsection}{\numberline {5.1.1.5}Premi::Model::Inserimento::ConcreteImageInserter}{16}{subsubsubsection.5.1.5}
-\contentsline {subsubsubsection}{\numberline {5.1.1.6}Premi::Model::Inserimento:: ConcreteVideoInserter}{16}{subsubsubsection.5.1.6}
-\contentsline {subsubsubsection}{\numberline {5.1.1.7}Premi::Model::Inserimento:: ConcreteAudioInserter}{16}{subsubsubsection.5.1.7}
-\contentsline {subsubsection}{\numberline {5.1.2}Premi::Model::Eliminazione}{17}{subsubsection.5.1.2}
-\contentsline {subsubsubsection}{\numberline {5.1.2.1}Premi::Model::Eliminazione::Remover}{17}{subsubsubsection.5.1.1}
-\contentsline {subsubsubsection}{\numberline {5.1.2.2}Premi::Model::Eliminazione:: ConcreteTextRemover}{17}{subsubsubsection.5.1.2}
-\contentsline {subsubsubsection}{\numberline {5.1.2.3}Premi::Model::Eliminazione:: ConcreteFrameRemover}{18}{subsubsubsection.5.1.3}
-\contentsline {subsubsubsection}{\numberline {5.1.2.4}Premi::Model::Eliminazione:: ConcreteSVGtRemover}{18}{subsubsubsection.5.1.4}
-\contentsline {subsubsubsection}{\numberline {5.1.2.5}Premi::Model::Eliminazione:: ConcreteImageRemover}{18}{subsubsubsection.5.1.5}
-\contentsline {subsubsubsection}{\numberline {5.1.2.6}Premi::Model::Eliminazione:: ConcreteVideoRemover}{19}{subsubsubsection.5.1.6}
-\contentsline {subsubsubsection}{\numberline {5.1.2.7}Premi::Model::Eliminazione:: ConcreteAudioRemover}{19}{subsubsubsection.5.1.7}
-\contentsline {subsubsection}{\numberline {5.1.3}Premi::Model::Modifica}{19}{subsubsection.5.1.3}
-\contentsline {subsubsubsection}{\numberline {5.1.3.1}Premi::Model::Modifica::Editor}{20}{subsubsubsection.5.1.1}
-\contentsline {subsubsubsection}{\numberline {5.1.3.2}Premi::Model::Modifica::EditorPosition}{20}{subsubsubsection.5.1.2}
-\contentsline {subsubsubsection}{\numberline {5.1.3.3}Premi::Model::Modifica::EditorSize}{21}{subsubsubsection.5.1.3}
-\contentsline {subsubsubsection}{\numberline {5.1.3.4}Premi::Model::Modifica::EditorRotate}{21}{subsubsubsection.5.1.4}
-\contentsline {subsubsubsection}{\numberline {5.1.3.5}Premi::Model::Modifica::EditorContent}{22}{subsubsubsection.5.1.5}
-\contentsline {subsubsubsection}{\numberline {5.1.3.6}Premi::Model::Modifica::EditorShape}{22}{subsubsubsection.5.1.6}
-\contentsline {subsubsubsection}{\numberline {5.1.3.7}Premi::Model::Modifica::EditorColor}{23}{subsubsubsection.5.1.7}
-\contentsline {subsubsection}{\numberline {5.1.4}Premi::Model::Command}{23}{subsubsection.5.1.4}
-\contentsline {subsubsubsection}{\numberline {5.1.4.1}Premi::Model:: Invoker}{23}{subsubsubsection.5.1.1}
-\contentsline {subsubsubsection}{\numberline {5.1.4.2}Premi::Model::Command::AbstractCommand}{24}{subsubsubsection.5.1.2}
-\contentsline {subsubsubsection}{\numberline {5.1.4.3}Premi::Model::Command::ConcreteInsertCommand}{24}{subsubsubsection.5.1.3}
-\contentsline {subsubsubsection}{\numberline {5.1.4.4}Premi::Model::Command::ConcreteRemoveCommand}{25}{subsubsubsection.5.1.4}
-\contentsline {subsubsubsection}{\numberline {5.1.4.5}Premi::Model::Command::ConcreteEditCommand}{25}{subsubsubsection.5.1.5}
-\contentsline {subsection}{\numberline {5.2}Controller}{26}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Premi::Controller::Presentazione}{26}{subsubsection.5.2.1}
-\contentsline {subsubsubsection}{\numberline {5.2.1.1}Premi::Controller::Presentazione::EditController}{26}{subsubsubsection.5.2.1}
-\contentsline {subsubsubsection}{\numberline {5.2.1.2}Premi::Controller::Presentazione::HomeController}{27}{subsubsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}View}{28}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Premi.View.Pages.IndexPage}{28}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Premi.View.Pages.Home}{28}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Premi.View.Pages.Profile}{29}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}Premi.View.Pages.Execution}{29}{subsubsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}Premi.View.Pages.DesktopEdit}{29}{subsubsection.5.3.5}
-\contentsline {subsubsection}{\numberline {5.3.6}Premi.View.Pages.MobileEdit}{30}{subsubsection.5.3.6}
+\contentsline {section}{\numberline {1}Introduzione}{7}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{7}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{7}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{7}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{7}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Strumenti}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{9}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}JavaScript}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}jQuery}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Angular.js}{10}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Node.js}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}MongoDB}{10}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Impress.js}{10}{subsection.2.7}
+\contentsline {section}{\numberline {3}Design Pattern}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Singleton}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Utility}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Builder}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Command}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Iterator}{11}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Template Method}{11}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Strategy}{12}{subsection.3.7}
+\contentsline {section}{\numberline {4}Descrizione architetturale}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architettura generale}{13}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Model}{13}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}View}{13}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{13}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{15}{section.5}
+\contentsline {subsection}{\numberline {5.1}Model}{15}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Premi::Model::Inserimento}{15}{subsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.1.1}Premi::Model::Inserimento::Inserter}{15}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.1.2}Premi::Controller::Presentazione::Inserimento::ConcreteTextInserter}{16}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.1.3}Premi::Model::Inserimento::ConcreteFrameInserter}{16}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.1.4}Premi::Model::Inserimento::ConcreteSvgInserter}{16}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.1.5}Premi::Model::Inserimento::ConcreteImageInserter}{17}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.1.6}Premi::Model::Inserimento:: ConcreteVideoInserter}{17}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.1.7}Premi::Model::Inserimento:: ConcreteAudioInserter}{17}{subsubsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.2}Premi::Model::Eliminazione}{18}{subsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.2.1}Premi::Model::Eliminazione::Remover}{18}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.2.2}Premi::Model::Eliminazione:: ConcreteTextRemover}{18}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.2.3}Premi::Model::Eliminazione:: ConcreteFrameRemover}{19}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.2.4}Premi::Model::Eliminazione:: ConcreteSVGtRemover}{19}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.2.5}Premi::Model::Eliminazione:: ConcreteImageRemover}{19}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.2.6}Premi::Model::Eliminazione:: ConcreteVideoRemover}{20}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.2.7}Premi::Model::Eliminazione:: ConcreteAudioRemover}{20}{subsubsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.3}Premi::Model::Modifica}{20}{subsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.3.1}Premi::Model::Modifica::Editor}{21}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.3.2}Premi::Model::Modifica::EditorPosition}{21}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.3.3}Premi::Model::Modifica::EditorSize}{22}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.3.4}Premi::Model::Modifica::EditorRotate}{22}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.3.5}Premi::Model::Modifica::EditorContent}{23}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.3.6}Premi::Model::Modifica::EditorShape}{23}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.3.7}Premi::Model::Modifica::EditorColor}{24}{subsubsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.4}Premi::Model::Command}{24}{subsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.4.1}Premi::Model:: Invoker}{24}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.4.2}Premi::Model::Command::AbstractCommand}{25}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.4.3}Premi::Model::Command::ConcreteInsertCommand}{25}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.4.4}Premi::Model::Command::ConcreteRemoveCommand}{26}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.4.5}Premi::Model::Command::ConcreteEditCommand}{26}{subsubsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.5}Premi::Model::Presentazione}{26}{subsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.5.1}Premi::Model::Presentazione::Loader}{27}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.5.2}Premi::Model::Presentazione::SlideShow}{27}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.5.3}Premi::Model::Presentazione::SlideShowElement}{28}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.5.4}Premi::Model::Presentazione::Text}{28}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.5.5}Premi::Model::Presentazione::Frame}{29}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.5.6}Premi::Model::Presentazione::Image}{29}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.5.7}Premi::Model::Presentazione::SVG}{30}{subsubsubsection.5.1.7}
+\contentsline {subsubsubsection}{\numberline {5.1.5.8}Premi::Model::Presentazione::Audio}{30}{subsubsubsection.5.1.8}
+\contentsline {subsubsubsection}{\numberline {5.1.5.9}Premi::Model::Presentazione::Video}{31}{subsubsubsection.5.1.9}
+\contentsline {subsubsection}{\numberline {5.1.6}Premi::Model::Builder}{31}{subsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.6.1}Premi::Model::Builder::Director}{31}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.6.2}Premi::Model::Builder::AbstractBuilder}{32}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.6.3}Premi::Model::Builder::ConcreteTextBuilder}{32}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.6.4}Premi::Model::Builder::ConcreteFrameBuilder}{32}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.6.5}Premi::Model::Builder::ConcreteImageBuilder}{33}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.6.6}Premi::Model::Builder::ConcreteSVGBuilder}{33}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.6.7}Premi::Model::Builder::ConcreteAudioBuilder}{34}{subsubsubsection.5.1.7}
+\contentsline {subsubsubsection}{\numberline {5.1.6.8}Premi::Model::Builder::ConcreteVideoBuilder}{34}{subsubsubsection.5.1.8}
+\contentsline {subsection}{\numberline {5.2}Controller}{35}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Premi::Controller::Presentazione}{35}{subsubsection.5.2.1}
+\contentsline {subsubsubsection}{\numberline {5.2.1.1}Premi::Controller::Presentazione::EditController}{35}{subsubsubsection.5.2.1}
+\contentsline {subsubsubsection}{\numberline {5.2.1.2}Premi::Controller::Presentazione::HomeController}{36}{subsubsubsection.5.2.2}
+\contentsline {subsubsubsection}{\numberline {5.2.1.3}Premi::Controller::Presentazione::ExecutionController}{36}{subsubsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}View}{37}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Premi.View.Pages.IndexPage}{37}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Premi.View.Pages.Home}{38}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Premi.View.Pages.Manifest}{38}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Premi.View.Pages.Profile}{39}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Premi.View.Pages.Execution}{39}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Premi.View.Pages.DesktopEdit}{39}{subsubsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.7}Premi.View.Pages.MobileEdit}{40}{subsubsection.5.3.7}

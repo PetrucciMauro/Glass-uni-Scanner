@@ -384,5 +384,246 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \item Premi::Model::Command::AbstractCommand.
                     \end{itemize}
                     }
+                    
+                    
+                    
+                     \subsubsection{Premi::Model::Presentazione}{
+		\textbf{\tipo}:Di questo package fanno parte le classi degli elementi della presentazione e la classe che definisce la presentazione stessa. Sì tratta del package centrale del software.\\
+		\textbf{\relaz}:.Premi::Model::Presentazione è in comunicazione con 
+        \begin{itemize}
+        \item Premi::Model::Inserimento, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
+        \item Premi::Model::Eliminazione, i cui oggetti rimuovono da SlideShow gli oggetti di tipo SlideShowElement e li distruggono;
+        \item Premi::Model::Modifica, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
+        \item Premi::Controller::Presentazione::EditController o Premi::Controller::Presentazione::ExecutionController invocano il costruttore di Loader;
+  		\item al momento del caricamento della presentazione gli oggetti di Premi::Model::Presentazione::SlideShowElement sono invece costruiti dalle classi del package Premi::Model::Builder.\\
+  		\end{itemize}
+	\subsubsubsection{Premi::Model::Presentazione::Loader}{
+		\textbf{\tipo}: Questa classe si occupa della costruzione dell’oggetto SlideShow quando l’utente carica una presentazione o quando l’utente crea una nuova presentazione.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi::Controller::EditController-> costruisce Loader;
+            \item Premi::Controller::ExecutionController-> costruisce Loader;
+            \item Premi::Model::SlideShow <- costruisce un oggetto di classe SlideShow ed eventualmente invoca le sue funzioni per inserire gli oggetti delle sottoclassi di SlideShowElement;
+            \item Premi::Model::Builder::Director <- Loader passa a Director i parametri degli oggetti da costruire.
+		\end{itemize} 
+		\textbf{\interfacce}: il controller invoca il costruttore di Loader. Quando non passa alcun argomento Loader costruisce un oggetto di classe Premi::Model::SlideShow; altrimenti passa l’id dell’oggetto json che descrive la presentazione, Loader recupera i dati e costruisce un oggetto SlideShow, passa a Premi::Model::Builder::Director i parametri degli oggetti da istanziare contenuti dentro all’oggetto json che descrive la presentazione. Director restituisce gli oggetti istanziati e Loader invoca i metodi di SlideShow per inserire tali oggetti nei rispettivi contenitori.\\
+	}
+	\subsubsubsection{Premi::Model::Presentazione::SlideShow}{
+				\textbf{\tipo}: Classe implementata con il Design Pattern Singleton, contiene tutte le impostazioni della presentazione caricata, gli oggetti in essa presenti e i metodi per settarli o inserirne di nuovi. Gli oggetti della presentazione si trovano all’interno di contenitori divisi per classe. Tramite un iteratore è possibile scorrere detti contenitori.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+                    \item Premi::Model::Presentazione::Loader -> invoca il costruttore di SlideShow.
+				\end{itemize}	
+                \textbf{\interfacce}:Viene utilizzata dalla view tramite Premi::Controller::EditController e  Premi::Controller::ExecutionController per creare gli oggetti html sia in fase di esecuzione che in fase di modifica. È la classe principale del software.\\
+                    }
+    \subsubsubsection{Premi::Model::Presentazione::SlideShowElement}{
+				\textbf{\tipo}: Gli oggetti della classe SlideShowElement rappresentano gli elementi della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::Inserter-> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Modifica:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
+                    \item Premi::Model::Eliminazione::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
+				\end{itemize}	
+                \textbf{\interfacce}: Premi::Model::Inserimento::Inserter instanzia oggetti di sottoclassi di SlideShowElement e li inserisce nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow\\
+                \textbf{\figli}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione:: Text;
+                    \item Premi::Model::Presentazione:: Frame;
+                    \item Premi::Model::Presentazione:: Image;
+                    \item Premi::Model::Presentazione::SVG;
+                    \item Premi::Model::Presentazione::Audio;
+                    \item Premi::Model::Presentazione::Video.
+                    \end{itemize}
+                    }
+     \subsubsubsection{Premi::Model::Presentazione::Text}{
+				\textbf{\tipo}: Gli oggetti della classe Text rappresentano gli elementi di tipo testuale della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteTextInserter -> invoca il costruttore di Text e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteTextRemover -> rimuove l’oggetto Text dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteTextEditor -> invoca i metodi che impostano i campi dell’oggetto Text.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Premi::Model::Inserimento::ConcreteTextInserter  o da Premi::Model::Builder::ConcreteTextBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }
+           \subsubsubsection{Premi::Model::Presentazione::Frame}{
+				\textbf{\tipo}: Gli oggetti della classe Frame rappresentano gli elementi di tipo frame della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteFrameInserter -> invoca il costruttore di Frame e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteFrameRemover -> rimuove l’oggetto Frame dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteFrameEditor -> invoca i metodi che impostano i campi dell’oggetto Frame.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Premi::Model::Inserimento::ConcreteFrameInserter  o da Premi::Model::Builder::ConcreteFrameBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }
+                    \subsubsubsection{Premi::Model::Presentazione::Image}{
+				\textbf{\tipo}: Gli oggetti della classe Image rappresentano gli elementi di tipo immagine della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteImageInserter -> invoca il costruttore di Image e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteImageRemover -> rimuove l’oggetto Image dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteFrameEditor -> invoca i metodi che impostano i campi dell’oggetto Image.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Premi::Model::Inserimento::ConcreteImageInserter  o da Premi::Model::Builder::ConcreteImageBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }
+                    \subsubsubsection{Premi::Model::Presentazione::SVG}{
+				\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi di tipo SVG della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteSVGInserter -> invoca il costruttore di SVG e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteImageRemover -> rimuove l’oggetto SVG dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteFrameEditor -> invoca i metodi che impostano i campi dell’oggetto SVG.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Premi::Model::Inserimento::ConcreteSVGInserter  o da Premi::Model::Builder::ConcreteSVGBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }
+                    \subsubsubsection{Premi::Model::Presentazione::Audio}{
+				\textbf{\tipo}: Gli oggetti della classe Audio rappresentano gli elementi di tipo audio della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteAudioInserter -> invoca il costruttore di Audio e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteAudioRemover -> rimuove l’oggetto Audio dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteFrameEditor -> invoca i metodi che impostano i campi dell’oggetto Audio.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Premi::Model::Inserimento::ConcreteAudioInserter  o da Premi::Model::Builder::ConcreteAudioBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }
+                    \subsubsubsection{Premi::Model::Presentazione::Video}{
+				\textbf{\tipo}: Gli oggetti della classe Video rappresentano gli elementi di tipo video della presentazione.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Inserimento::ConcreteVideoInserter -> invoca il costruttore di Video e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                    \item Premi::Model::Eliminazione::ConcreteVideoRemover -> rimuove l’oggetto Video dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                    \item Premi::Model::Modifica::ConcreteFrameEditor -> invoca i metodi che impostano i campi dell’oggetto Video.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Premi::Model::Inserimento::ConcreteVideoInserter  o da Premi::Model::Builder::ConcreteVideoBuilder e inseriti nei membri contenitori all’interno di Premi::Model::Presentazione::SlideShow.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Presentazione::SlideShowElement.
+                    \end{itemize}
+                    }              
+}
+
+ \subsubsection{Premi::Model::Builder}{
+		\textbf{\tipo}:Il package Premi::Model::Builder implementa il Design Pattern builder. Il package ha come scopo principale la creazione degli oggetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement al momento del caricamento della presentazione nel programma.\\
+		\textbf{\relaz}:È in relazione con il package Premi::Model::Presentazione che ne costruisce il Director, e con il package Premi::Model::Presentazione, delle cui classi, sottoclassi di SlideShowElement, costruisce gli oggetti.
+
+	\subsubsubsection{Premi::Model::Builder::Director}{
+				\textbf{\tipo}: Implementazione della parte Director del Design Pattern Builder. Fornisce a Premi::Model::Presentazione::Loader gli oggetti della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+                    \item Premi::Model::Presentazione::Loader -> costruisce Director, passandogli i parametri per la costruizione degli offetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement e dell'oggetto Premi::Model::Presentazione::SlideShow.
+                    \item Premi::Model::Builder::AbstractBuilder <- invoca il costruttore degli oggetti delle sottoclassi di AbstractBuilder che genereranno i file delle sottoclassi di Premi::Model::Presentazione::SlideShowElement.
+				\end{itemize}	
+                \textbf{\interfacce}:Viene invocato da Premi::Model::Presentazione::Loader. È costruito con design pattern singleton. Restituisce gli oggetti di tipo Premi::Model::Presentazione::SlideShowElement a Premi::Model::Presentazione::Loader.\\
+                    }
+    \subsubsubsection{Premi::Model::Builder::AbstractBuilder}{
+				\textbf{\tipo}: Classe astratta del Design Pattern Builder.\\	
+                \textbf{\interfacce}: Gli oggetti delle sottoclassi della classe AbstractBuilder vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement.\\
+                \textbf{\figli}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::ConcreteTextBuilder
+                    \item Premi::Model::Builder::ConcreteFrameBuilder
+                    \item Premi::Model::Builder::ConcreteImageBuilder
+                    \item Premi::Model::Builder::ConcreteSVGBuilder
+                    \item Premi::Model::Builder::ConcreteAudioBuilder
+                    \item Premi::Model::Builder::ConcreteVideoBuilder
+                    \end{itemize}
+                    }
+     \subsubsubsection{Premi::Model::Builder::ConcreteTextBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Text al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::Text <- istanza gli oggetti della classe Text e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteTextBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Text e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
+                         \subsubsubsection{Premi::Model::Builder::ConcreteFrameBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Frame al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::Frame <- istanza gli oggetti della classe Frame e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteFrameBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Frame e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
+                         \subsubsubsection{Premi::Model::Builder::ConcreteImageBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Image al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::Image <- istanza gli oggetti della classe Image e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteImageBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Image e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
+                         \subsubsubsection{Premi::Model::Builder::ConcreteSVGBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::SVG al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::SVG <- istanza gli oggetti della classe SVG e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteSVGBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::SVG e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
+                         \subsubsubsection{Premi::Model::Builder::ConcreteAudioBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Audio al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::Audio <- istanza gli oggetti della classe Audio e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteAudioBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Audio e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
+                         \subsubsubsection{Premi::Model::Builder::ConcreteVideoBuilder}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Video al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Builder::Director -> istanzia gli oggetti passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                    \item Premi::Model::Presentazione::Video <- istanza gli oggetti della classe Video e li restituisce al director.
+				\end{itemize}	
+                \textbf{\interfacce}: Gli oggetti della classe ConcreteVideoBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Video e di passarli al Director.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Builder::AbstractBuilder.
+                    \end{itemize}
+                    }
 }
 	
