@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  21 MAY 2015 23:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  22 MAY 2015 12:33
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 
@@ -1423,7 +1423,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 43.
  [11]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Specifica Tecnica\parti\presentazione.tex"
-<./images/PresentazioneArchitettura.jpg, id=225, 1364.09625pt x 788.9475pt>
+<./images/PresentazioneArchitettura.jpg, id=241, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -1532,13 +1532,202 @@ nation with the same identifier (name{subsubsubsection.5.1.7}) has been already
 <to be read again> 
                    \relax 
 l.203 ...del::Eliminazione:: ConcreteAudioRemover}
+                                                  {
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.221 ...ubsection{Premi::Model::Modifica::Editor}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 226.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[19]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240 ...n{Premi::Model::Modifica::EditorPosition}
+                                                  {
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 247--249
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.253 ...ction{Premi::Model::Modifica::EditorSize}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 256.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[20]
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 260--262
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 ...ion{Premi::Model::Modifica::EditorRotate}
+                                                  {
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 273--275
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 ...on{Premi::Model::Modifica::EditorContent}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 284.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[21]
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 286--288
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+
+Overfull \hbox (80.35268pt too wide) in paragraph at lines 286--288
+\T1/cmr/m/n/12 che-rà quin-di i me-to-di di mo-di-fi-ca del con-te-nu-to for-ni
+-ti al-l'in-ter-no del-la clas-se Pre-mi::Model::Presentazione::Text. 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 ...tion{Premi::Model::Modifica::EditorShape}
+                                                  {
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 299--301
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+
+Overfull \hbox (69.66083pt too wide) in paragraph at lines 299--301
+\T1/cmr/m/n/12 che-rà quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti
+ al-l'in-ter-no del-la clas-se Pre-mi::Model::Presentazione::SVG. 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.305 ...tion{Premi::Model::Modifica::EditorColor}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 310.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[22]
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 312--314
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
+ []
+
+
+Overfull \hbox (15.81982pt too wide) in paragraph at lines 312--314
+\T1/cmr/m/n/12 che-rà quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti
+ dal-la clas-se Pre-mi::Model::Presentazione::SVG. 
+ []
+
+
+Overfull \hbox (124.17807pt too wide) in paragraph at lines 319--321
+\T1/cmr/m/n/12 co-mu-ni-ca, inol-tre, con il con-trol-ler, in-fat-ti le sue cla
+s-si so-no ge-ne-ra-te da Pre-mi::Controller::Presentazione::EditController. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 	\subsubsubsection{Premi::Model:: Invoker}
+                                                {
+Overfull \hbox (204.14873pt too wide) in paragraph at lines 325--326
+[]\T1/cmr/m/n/12 Premi::Controller::Inserimento::InsertController->crea un og-g
+et-to del-la clas-se Pre-mi::Model::Command::ConcreteInsertCommand
+ []
+
+
+Overfull \hbox (231.206pt too wide) in paragraph at lines 326--327
+[]\T1/cmr/m/n/12 Premi::Controller::Eliminazione::RemoveController->crea un og-
+get-to del-la clas-se Pre-mi::Model::Command::ConcreteRemoveCommand
+ []
+
+
+Overfull \hbox (199.6193pt too wide) in paragraph at lines 327--328
+[]\T1/cmr/m/n/12 Premi::Controller::Presentazione::EditController->crea un og-g
+et-to del-la clas-se Pre-mi::Model::Command::ConcreteEditCommand
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 328.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.331 ...n{Premi::Model::Command::AbstractCommand}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.3}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.345 ...i::Model::Command::ConcreteInsertCommand}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.4}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.359 ...i::Model::Command::ConcreteRemoveCommand}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 362.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[24]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.373 ...emi::Model::Command::ConcreteEditCommand}
                                                   {)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 11.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[19]
+[25]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Specifica Tecnica\parti\MVC\control.tex"
 Overfull \hbox (17.93304pt too wide) in paragraph at lines 10--12
@@ -1566,7 +1755,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20]
+ [26]
 Underfull \hbox (badness 10000) in paragraph at lines 31--35
 
  []
@@ -1576,10 +1765,10 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 13.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21]
+ [27]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Specifica Tecnica\parti\MVC\view.tex"
-<./images/view.png, id=299, 371.88937pt x 195.73125pt>
+<./images/view.png, id=358, 371.88937pt x 195.73125pt>
 File: ./images/view.png Graphic file (type png)
  <use ./images/view.png>
 Package pdftex.def Info: ./images/view.png used on input line 4.
@@ -1598,7 +1787,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
+ [28 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
 rni/Specifica Tecnica/images/view.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
@@ -1618,7 +1807,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
+ [29]
 Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
@@ -1634,7 +1823,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24]
+ [30]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
@@ -1643,18 +1832,20 @@ Specifica Tecnica\SpecificaTecnica_v.1.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
  )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 3)
 
+### simple group (level 3) entered at line 217 ({)
+### simple group (level 2) entered at line 1 ({)
 ### simple group (level 1) entered at line 9 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13863 strings out of 493921
- 202054 string characters out of 3147274
+ 13885 strings out of 493921
+ 202218 string characters out of 3147274
  355875 words of memory out of 3000000
- 16795 multiletter control sequences out of 15000+200000
+ 16809 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,838b,647s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,838b,721s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -1665,9 +1856,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (25 pages, 374656 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (31 pages, 400569 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 480 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 651 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 592 words of extra memory for PDF output out of 10000 (max. 10000000)
 

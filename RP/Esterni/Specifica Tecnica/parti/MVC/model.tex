@@ -12,7 +12,7 @@
     \item Premi::Model::Presentazione;
     \item Premi::Model::MongoHandler.
 	\end{itemize}
-	\subsubsection{Premi::Controller::Inserimento}{
+	\subsubsection{Premi::Model::Inserimento}{
 		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern template per l’inserimento di nuovi elementi nella presentazione.\\
 		\textbf{\relaz}:. Il package è in relazione con Premi::Model::Command da cui riceve i segnali e i parametri di inserimento dell’elemento. Inoltre comunica con il package Premi::Model::Presentazione, istanziando gli oggetti delle sottoclassi di SlideShowElement e inserendoli in SlideShow.\\
 	
@@ -113,7 +113,7 @@
 			}
 	}
     
-    	\subsubsection{Premi::Controller::Eliminazione}{
+    	\subsubsection{Premi::Model::Eliminazione}{
 		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern template per l’eliminazione di elementi dalla presentazione.\\
 		\textbf{\relaz}:Il package è in relazione con Premi::Model::Command da cui riceve i segnali e i parametri di eliminazione dell’elemento. Inoltre comunica con il package Premi::Model::Presentazione, rimuovendo dall’oggetto di classe SlideShow gli oggetti delle sottoclassi di SlideShowElement e distruggendoli.\\
 	
@@ -214,5 +214,175 @@
                     \end{itemize}
 			}
 	}
+   \subsubsection{Premi::Model::Modifica}{
+		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern strategy per la modifica di elementi della presentazione.\\
+		\textbf{\relaz}:Il package è in relazione con Premi::Model::Command da cui riceve i segnali e i parametri di modifica dell’elemento. Inoltre comunica con il package Premi::Model::Presentazione, modificando nell’oggetto di classe SlideShow gli oggetti delle sottoclassi di SlideShowElement.\\
+	
+	\subsubsubsection{Premi::Model::Modifica::Editor}{
+		\textbf{\tipo}: Interfaccia per la componente strategy del Design Pattern Strategy per la selezione dell'algoritmo di modifica della presentazione.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi::Model::Command::ConcreteEditCommand -> Invoca i costruttori delle sottoclassi di Editor; 
+            \item Premi::Model::Presentazione::SlideShow <- scorre gli elementi dei membri contenitori all’interno di SlideShow per trovare l’elemento da modificare;
+            \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi dell’elemento.
+		\end{itemize} 
+		\textbf{\interfacce}: Permette di selezionare dinamicamente ed in modo estensibile l'algoritmo di modifica della presentazione.\\
+        \textbf{\figli}: 
+        \begin{itemize}
+            \item Premi::Model::Modifica::Editor::EditorPosition;
+            \item Premi::Model::Modifica::Editor::EditorSize;
+            \item Premi::Model::Modifica::Editor::EditorContent;
+            \item Premi::Model::Modifica::Editor::EditorRotate;
+            \item Premi::Model::Modifica::Editor::EditorColor;
+            \item Premi::Model::Modifica::Editor::EditorShape.
+        \end{itemize}
+	}
+	\subsubsubsection{Premi::Model::Modifica::EditorPosition}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti alla posizione di un elemento della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorPosition;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi dei membri contenitori all’interno di SlideShow per trovare l’elemento da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi alla posizione dell’elemento.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorPosition invocherà quindi i metodi di modifica delle coordinate forniti all’interno della sottoclasse di Premi::Model::Presentazione::SlideShowElement di cui fa parte l’oggetto da modificare.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+    \subsubsubsection{Premi::Model::Modifica::EditorSize}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti alla dimensione di un elemento della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorSize;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi dei membri contenitori all’interno di SlideShow per trovare l’elemento da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi alla dimensione dell’elemento.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorSize invocherà quindi i metodi di modifica delle dimensioni forniti all’interno della sottoclasse di Premi::Model::Presentazione::SlideShowElement di cui fa parte l’oggetto da modificare.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+       \subsubsubsection{Premi::Model::Modifica::EditorRotate}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti all'inclinazione di un elemento della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorRotate;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi dei membri contenitori all’interno di SlideShow per trovare l’elemento da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi all'inclinazione dell’elemento.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorPosition invocherà quindi i metodi di modifica dell'inclinazione forniti all’interno della sottoclasse di Premi::Model::Presentazione::SlideShowElement di cui fa parte l’oggetto da modificare.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+       \subsubsubsection{Premi::Model::Modifica::EditorContent}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti al contenuto di un elemento di tipo testuale della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorContent;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi del membro contenitore all’interno di SlideShow per trovare l’elemento testuale da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi alla contenuto dell’elemento testuale.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorContent invocherà quindi i metodi di modifica del contenuto forniti all’interno della classe Premi::Model::Presentazione::Text.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+            \subsubsubsection{Premi::Model::Modifica::EditorShape}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti alla forma di un elemento SVG della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorShape;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi dei membri contenitori all’interno di SlideShow per trovare l’elemento SVG da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi alla forma dell’elemento SVG.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorShape invocherà quindi i metodi di modifica della forma forniti all’interno della classe Premi::Model::Presentazione::SVG.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+            \subsubsubsection{Premi::Model::Modifica::EditorColor}{
+				\textbf{\tipo}: Classe concreta del Design Pattern Strategy per la modifica dei campi inerenti al colore di un elemento SVG della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Model::Command::ConcreteEditCommand -> Invoca il costruttore di EditorColor;
+                    \item Premi::Model::Presentazione::SlideShow<- scorre gli elementi del membro contenitore all’interno di SlideShow per trovare l’elemento SVG da modificare; 
+                    \item Premi::Model::Presentazione::SlideShowElement <- invoca le funzioni della classe SlideShowElement per modificare opportunamente i campi relativi alla forma dell’elemento SVG.
+				\end{itemize}	\textbf{\interfacce}:Premi::Model::Command::ConcreteEditCommand invoca il costruttore e la funzione di esecuzione dell’operazione di modifica, EditorShape invocherà quindi i metodi di modifica della forma forniti dalla classe Premi::Model::Presentazione::SVG.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Modifica::Editor.
+                    \end{itemize}
+                    }
+   \subsubsection{Premi::Model::Command}{
+		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
+		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Premi::Model::Inserimento, Premi::Model::Eliminazione e Premi::Model::Modifica. Il package comunica, inoltre, con il controller, infatti le sue classi sono generate da Premi::Controller::Presentazione::EditController.\\
+	\subsubsubsection{Premi::Model:: Invoker}{
+		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Premi::Controller::Inserimento::InsertController->crea un oggetto della classe Premi::Model::Command::ConcreteInsertCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”;
+            \item Premi::Controller::Eliminazione::RemoveController->crea un oggetto della classe Premi::Model::Command::ConcreteRemoveCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo” , richiama il metodo che svuota lo stack “redo”;
+            \item Premi::Controller::Presentazione::EditController->crea un oggetto della classe Premi::Model::Command::ConcreteEditCommand passandolo all’Invoker che lo esegue (execute) e lo inserisce nello stack “undo” , richiama il metodo che svuota lo stack “redo”. Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”.
+		\end{itemize} 
+		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Premi::Model::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
+	}
+	\subsubsubsection{Premi::Model::Command::AbstractCommand}{
+				\textbf{\tipo}: È interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+                    \item Premi::Model:: Invoker -> esegue materialmente il comando, richiamandone i metodi di esecuzione; inoltre provvede ad annullare l’ultima operazione 
+				\end{itemize}	
+                \textbf{\interfacce}:Viene utilizzata per applicare un generico parametro di trasformazione ad un oggetto della presentazione, questo parametro verrà poi specificato dalle classi concrete.\\
+                \textbf{\figli}: 
+                    \begin{itemize}
+                    \item Premi::Model::Command::ConcreteInsertCommand;
+                    \item Premi::Model::Command::ConcreteRemoveCommand;
+                    \item Premi::Model::Command::ConcreteEditCommand.
+                    \end{itemize}
+                    }
+    \subsubsubsection{Premi::Model::Command::ConcreteInsertCommand}{
+				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento nell’oggetto presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Controller::Presentazione::EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento;
+                    \item Premi::Model::Inserimento::Inserter <- invoca la classe concreta del  template per l’inserimento di un elemento.
+				\end{itemize}	
+                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti l’inserimento di un nuovo elemento ed invocare i corretti metodi del Model;\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Command::AbstractCommand.
+                    \end{itemize}
+                    }
+     \subsubsubsection{Premi::Model::Command::ConcreteRemoveCommand}{
+				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento dall’oggetto SlideShow.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Controller::Presentazione::EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento;
+                    \item Premi::Model::Eliminazione::Remover <- invoca la classe concreta del  template per l’eliminazione di un elemento.
+				\end{itemize}	
+                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti l’eliminazione di un elemento ed invocare i corretti metodi del Model.\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Command::AbstractCommand.
+                    \end{itemize}
+                    }
+                        \subsubsubsection{Premi::Model::Command::ConcreteEditCommand}{
+				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare un elemento elemento nell’oggetto SlideShow.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item Premi::Controller::Presentazione::EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento;
+                    \item Premi::Model::Modifica::Editor <- invoca la classe concreta del design pattern Strategy per la modifica di un elemento.
+				\end{itemize}	
+                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti la modifica di un nuovo elemento ed invocare i corretti metodi del Model;\\
+                \textbf{\base}: 
+                    \begin{itemize}
+                    \item Premi::Model::Command::AbstractCommand.
+                    \end{itemize}
+                    }
 }
 	
