@@ -7,18 +7,18 @@
 			\item \textbf{Inspection}: l’obiettivo di questa tecnica di analisi è l’individuazione di difetti attraverso la lettura mirata del codice\ped{g}. Un prerequisito per questa metodologia di verifica è la definizione di una lista di controllo che elenca le possibili sezioni o passaggi maggiormente soggetti ad errori. La verifica deve essere condotta da soggetti nettamente distinti dai programmatori. La correzione degli errori individuati va eseguita in ogni fase e documentata tramite un rapporto delle attività svolte;
 			
 			\item \textbf{Walkthrough}: l'obiettivo di questa tecnica di analisi è l'individuazione di difetti eseguendo una lettura integrale di tutto il codice\ped{g} senza l'assunzione di presupposti. Viene eseguita da gruppi misti di ispettori e sviluppatori. \\
-			Per evitare incomprensioni è importante che al termine della lettura gli elementi coinvolti discutano i difetti trovati e che nessuna persona possa coprire entrambi i ruoli allo stesso tempo. \\
-			Al termine della fase di discussione si applicherà la fase di correzione dei difetti che apporterà le modifiche concordate.  \\
+			Per evitare incomprensioni, è importante che al termine della lettura gli elementi coinvolti discutano i difetti trovati e che non sia possibile coprire entrambi i ruoli allo stesso tempo. \\
+			Al termine della fase di discussione si correggeranno i difetti trovati e si apporteranno le modifiche concordate.  \\
 			Anche in questo caso è importante tenere un rapporto delle attività svolte.
 		\end{itemize}
 		
 		\item \textbf{Analisi dinamica}: consiste nel verificare e validare il software\ped{g} o un suo componente osservandone il comportamento in esecuzione durante lo svolgimento di test. Tali test devono essere svolti in maniera ripetibile: significa che se eseguiti nello stesso ambiente e con gli stessi ingressi, devono produrre i medesimi risultati.
 		\begin{itemize}
-			\item \textbf{Test di unità}: esamina la correttezza di piccole unità di codice\ped{g}, generalmente prodotte da un singolo programmatore, in modo da verificare che esse rispettino i loro requisiti\ped{g}. È possibile svolgerlo con un alto grado di parallelismo possibilmente servendosi di un automa;		
+			\item \textbf{Test di unità}: esamina la correttezza di piccole unità di codice\ped{g}, generalmente prodotte da un singolo programmatore, in modo da verificare che  rispettino i requisiti\ped{g}. Può essere svolto con un alto grado di parallelismo servendosi di un automa;		
 			\item \textbf{Test di integrazione}: verifica che l'integrazione delle unità che hanno superato il test precedente non produca problemi. Tali problemi, non potendo essere relativi alle singole unità, saranno da ricercare nell'interfaccia che le aggrega;	
 			\item \textbf{Test di sistema}: accerta la copertura dei requisiti\ped{g} software\ped{g} individuati nell'analisi dei requisiti\ped{g} permettendo la validazione\ped{g} del sistema prodotto;
 			\item \textbf{Test di regressione}: stabilisce se modifiche all'implementazione di un programma\ped{g} alterano elementi precedentemente funzionanti. Per far ciò si eseguono nuovamente i test di unità e integrazione sulle parti modificate;			
-			\item \textbf{Test funzionali}: mettono alla prova le funzionalità del sistema, simulando l'iterazione\ped{g} tra Utente e sistema;		
+			\item \textbf{Test funzionali}: mettono alla prova le funzionalità del sistema, simulando l'iterazione\ped{g} tra utente e sistema;		
 			\item \textbf{Test Prestazionali}: valutano le prestazioni dell'applicazione in molti modi e da molti punti di vista. Questo tipo di test mostra ciò che proverà l'utente in termini di caricamento e velocità del sito. Le prestazioni sono importanti anche per motivi SEO\ped{g}, in quanto un sito lento verrà analizzato molto meno frequentemente dai web\ped{g} crawler\ped{g} dei motori di ricerca;			
 			\item \textbf{Test di collaudo}: attività formale supervisionata dal committente\ped{g} il cui buon esito comporta la possibilità di rilasciare il prodotto;
 		\end{itemize}
@@ -32,7 +32,7 @@
 		\begin{enumerate}
 			\item Rilettura approfondita;
 			\item Controllo ortografico tramite lo strumento Aspell;
-			\item Controllo dell'applicazione delle regole tipografiche esposte nel documento Norme di progetto\ped{g};
+			\item Controllo dell'applicazione delle regole tipografiche esposte nel documento  \href{run:../../Interni/\fNormeDiProgetto}{\fEscapeNormeDiProgetto};
 			\item Verifica della corretta formattazione del file\ped{g} pdf prodotto.
 		\end{enumerate}
 		
@@ -49,14 +49,14 @@
 	}
 \subsection{Metriche}{
 	\label{sec:metriche}
-	Il processo\ped{g} di verifica, per essere informativo, deve esse quantificabile. Le misure rilevate dal processo\ped{g} di verifica devono quindi essere basate su metriche\ped{g} stabilite a priori. \\
-	Una metrica\ped{g} è la misura di una qualche proprietà relativa ad una porzione di un documento software\ped{g} allo scopo di fornire informazioni significative sulla qualità del codice\ped{g} prodotto. \\
-	Non bisogna tuttavia basarsi solamente sulle metriche\ped{g}, che sono solo indicatori a posteriori della bontà del lavoro svolto: un'importanza ancora maggiore la riveste il controllo sulla qualità del processo\ped{g}.
+	Il processo\ped{g} di verifica, per essere informativo, deve essere quantificabile. Le misure rilevate dal processo\ped{g} di verifica devono quindi essere basate su metriche\ped{g} stabilite a priori. \\
+	Una metrica\ped{g} è la misura di una proprietà relativa ad una porzione di un documento software\ped{g}, allo scopo di fornire informazioni significative sulla qualità del codice\ped{g} prodotto. \\
+	Per valutare la bontà del lavoro svolto non è sufficiente basarsi solo sulle metriche\ped{g}, che sono solamente degli indicatori valutati a posteriori, perché un'importanza ancora maggiore la riveste il controllo sulla qualità del processo\ped{g}.
 	}
 \subsubsection{Metriche\ped{g} per la progettazione}{
 	\begin{itemize}
-		\item \textbf{Numero di classi, coesione tra di esse e peso}: il peso di una	classe è identificato dalla somma della complessità ciclomatica di tutti i metodi appartenenti alla classe;
-	 	\item \textbf{Complessità di flusso}: misura la quantità di informazioni in	entrata ed uscita da una funzione (fan in e fan out).\\
+		\item \textbf{Numero di classi, coesione tra di esse e peso}: il peso di una classe è identificato dalla somma della complessità ciclomatica di tutti i metodi appartenenti alla classe;
+	 	\item \textbf{Complessità di flusso}: misura la quantità di informazioni in	entrata ed uscita da una funzione (fan-in e fan-out).\\
 	 	\begin{itemize}
 	 	 \item \textbf{Fan-in}: numero di moduli che passano informazioni dentro al modulo in esame;
 	 	 \item \textbf{Fan-out}: numero di moduli a cui il modulo in esame passa informazioni.
@@ -67,15 +67,35 @@
 \subsubsection{Metriche\ped{g} per il codice}{
 	\begin{itemize}
 		\item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice\ped{g} senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini.  \\
-		Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogni qualvolta si incontra una ramificazione.  \\
+		Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogniqualvolta si incontra una ramificazione.  \\
 		Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
 		Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice\ped{g} semplice con pochi rischi, superato questo limite il codice\ped{g} diventa più complesso, instabile e difficilmente manutenibile;
 		
 		\item \textbf{Numero linee di codice}: rappresenta il numero di linee di codice\ped{g} all'interno di un blocco. 
 		Un indice elevato non rappresenta necessariamente un cattivo codice\ped{g} ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
 		
-		\item \textbf{Indice di manutenibilità}: calcola un indice dal valore compreso tra 0 e 100 che rappresenta la facilità di manutenibilità del codice\ped{g}.  \\
-		Un elevato valore indica un'ottima manutenibilità: un punteggio tra 20 e 100 indica che il codice\ped{g} ha manutenibilità buona; tra 10 e 19, una manutenibilità moderata; un punteggio tra 0 e 9 indica bassa manutenibilità;
+		\item \textbf{Volume di Halstead}: identifica proprietà misurabili del software, e la relazione tra esse. Questi valori sono statisticamente ricavabili dal codice sorgente.\\\\
+		Calcolo:\\
+		Prima di tutto bisogna ricavare, dal codice sorgente, i seguenti valori:
+		\begin{itemize}		
+		\item n1 = numero distinti operatori;
+		\item n2 = numero distinti operandi;
+		\item N1 = numero totale operatori;
+		\item N2 = numero totale operandi.
+		
+	    \end{itemize}
+	    Successivamente possono essere calcolati tutti i valori necesassari per il Volume di Halstead:
+	    \begin{itemize}
+		\item Program length: \[N = N1 + N2\]
+		\item Program vocabulary: \[n = n1 + n2\]
+	    \item Volume: \[V= N \times \log_2(n)\]
+		\end{itemize}
+		\item \textbf{Indice di manutenibilità}: rappresenta quanto manutenibile è il codice\ped{g}, ossia quanto facile è da supportare e migliorare.\\
+		L'indice di manutenibilità è calcolato tramite una fattorizzazione di altre metriche come Linee di Codice(LOC), Complessità Ciclomatica(CC), volume di Halstead(VH) e percentuale di commenti(COM).\\
+		Un elevato valore indica un'ottima manutenibilità, bassi valori al contrario indicheranno una difficoltà nella fasi di manutenzione e incremento del codice:
+		
+		\[M= 171 -5.2\ln(HV) -0.23(CC) -16.2\ln(LOC) +50.0\sin(\sqrt{2.46*COM})\]
+
 		
 		\item \textbf{Copertura del codice}: è indicazione di quanto codice\ped{g} sorgente sia stato testato. Un elevato indice di copertura indica che il codice\ped{g} sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
 		
@@ -89,8 +109,8 @@
 \subsubsection{Metriche\ped{g} per i documenti}{
 	\label{sec:metricadocumenti}
 	\begin{itemize}
-		\item \textbf{Indice Gulpease}: misura l'indice di leggibilità di un testo tarato sulla lingua italiana.\\
-		Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico. Permette di misurare la complessità dello stile di un documento.\\
+		\item \textbf{Indice Gulpease}: misura l'indice di leggibilità di un testo; è tarato sulla lingua italiana.\\
+		Rispetto ad altri indici ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico. Permette di misurare la complessità dello stile di un documento.\\
 		L'indice Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\\
 		L'indice è calcolato secondo la seguente formula:\\
 		
