@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  22 MAY 2015 16:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  23 MAY 2015 00:39
 entering extended mode
 **AnalisiDeiRequisiti_v.1.0.0.tex
 
@@ -2283,13 +2283,18 @@ Underfull \hbox (badness 2005) in paragraph at lines 196--196
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
-[]|\T1/cmr/m/n/12 RF
+Underfull \hbox (badness 2005) in paragraph at lines 198--198
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 200--200
-[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
+Underfull \hbox (badness 4303) in paragraph at lines 198--198
+\T1/cmr/m/n/12 di ap-por-ta-re mo-di-fi-che a un
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
+[]|\T1/cmr/m/n/12 RF
  []
 
 
@@ -2369,6 +2374,11 @@ Underfull \hbox (badness 1168) in paragraph at lines 208--208
 
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 []|\T1/cmr/m/n/12 UC
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 210--210
+[]|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
 
 
@@ -2541,7 +2551,7 @@ m0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0800.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (92 pages, 1398609 bytes).
+Output written on AnalisiDeiRequisiti_v.1.0.0.pdf (92 pages, 1398582 bytes).
 PDF statistics:
  2149 PDF objects out of 2487 (max. 8388607)
  592 named destinations out of 1000 (max. 500000)
