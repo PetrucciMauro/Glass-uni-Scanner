@@ -11,6 +11,12 @@
 		\subsubsection{Premi.View.Pages.IndexPage}{
 			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema e di passare alla visualizzazione della classe Loader.\\
 			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe [[[[[[[[[[[[[[[[[[CONTROLLER LOGIN]]]]]]]]]]]]]]]]]], contenuta nel package Controller, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
+			\textbf{\interfacce}: i metodi implementati nella classe IndexPage sono i seguenti:
+			\begin{itemize}
+				\item IndexPage::Login invia al controller i dati della login e, se corretti, manda alla pagina Home;
+				\item IndexPage::Subscribe invia al controller i dati della registrazione e, se corretti, manda alla pagina Home;
+				\item IndexPage::Manifest manda alla pagina Manifest.
+			\end{itemize} 
 			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi e registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione o la registrazione al sistema oppure che l'utente decida di andare nella pagina Loader.\\
 		}
 		\subsubsection{Premi.View.Pages.Home}{
@@ -21,8 +27,25 @@
 				\item [[[[[[[[[[CONTROLLER SCARICAMENTO MANIFEST]]]]]]]]]] per scaricare una presentazione in locale;
 				\item [[[[[[[[[[CONTROLLER LOGOUT]]]]]]]]] per effettuare il logout.
 			\end{itemize} 
-			\textbf{\interfacce}: la classe Home manda a alla pagina Execution l'id della presentazione da eseguire, mentre manda alla pagina DesktopEditing (o mobileEditing) l'id della presentazione da modificare.
-			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, crearne di nuove, modificarle, eliminarle, scaricarle in locale e andare alla pagina Profile, effettuare il logout.\\
+			\textbf{\interfacce}: i metodi implementati nella classe Home sono i seguenti:
+			\begin{itemize}
+				\item Home::Delete invia al controller l'id della presentazione da eliminare;
+				\item Home::Download invia al controller l'id della presetazione da scaricare in locale;
+				\item Home::Execute manda alla pagina Execution con l'id della presentazione da eseguire
+				\item Home::NewSlideShow manda alla pagina SlideShowEdit con la richiesta di una nuova presentazione;
+				\item Home::EditSlideShow manda alla pagina SlideShowEdit con l'id della presentazione da modificare;
+				\item Home::Logout manda al controller la richiesta di logout e 				
+			\end{itemize} 
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, crearne di nuove, modificarle, eliminarle, scaricarle in locale e andare alla pagina Profile, effettuare il logout.\\
+		}
+		\subsubsection{Premi.View.Pages.Manifest}{
+			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni scaricate in locale e da la possibilità di eseguirle.\\
+			\textbf{\interfacce}: i meto di implementati nella classe Manifest sono i seguenti:
+			\begin{itemize}
+				\item Manifest::ExecuteManifest esegue la presentazione selezionata utilizzando la pagina html già presente in locale e il framework impress.js;
+				\item Manifest::DeleteManifest elimina la presentazione salvate in locale;
+			\end{itemize} 
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, eseguirle e eliminarle dalla posizione in locale.\\\\
 		}
 		\subsubsection{Premi.View.Pages.Profile}{
 			\textbf{\tipo}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo, i propri file caricati e la possibilità di modificarli. \\
