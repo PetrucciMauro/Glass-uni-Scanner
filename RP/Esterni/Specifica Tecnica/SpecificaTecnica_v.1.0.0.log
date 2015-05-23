@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  23 MAY 2015 18:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  23 MAY 2015 19:03
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 
@@ -1512,7 +1512,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 43.
  [14]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Specifica Tecnica\parti\presentazione.tex"
-<./images/PresentazioneArchitettura.jpg, id=311, 1364.09625pt x 788.9475pt>
+<./images/PresentazioneArchitettura.jpg, id=313, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -2221,7 +2221,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 13.
  [41]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
 Specifica Tecnica\parti\MVC\view.tex"
-<./images/view.png, id=506, 371.88937pt x 195.73125pt>
+<./images/view.png, id=508, 371.88937pt x 195.73125pt>
 File: ./images/view.png Graphic file (type png)
  <use ./images/view.png>
 Package pdftex.def Info: ./images/view.png used on input line 4.
@@ -2261,36 +2261,42 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--66
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 77.
+Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [44]
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 105.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [45]))
 
- []
-
-)) 
 AED: lastpage setting LastPage
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--47
-
- []
-
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [45]
+ [46]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 47.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [47]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
@@ -2308,13 +2314,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
 ### simple group (level 1) entered at line 9 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13948 strings out of 493921
- 202804 string characters out of 3147274
+ 13952 strings out of 493921
+ 202844 string characters out of 3147274
  357875 words of memory out of 3000000
- 16843 multiletter control sequences out of 15000+200000
+ 16844 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,838b,845s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,838b,857s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -2325,9 +2331,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (46 pages, 466361 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (48 pages, 473204 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 864 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 936 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 872 words of extra memory for PDF output out of 10000 (max. 10000000)
 
