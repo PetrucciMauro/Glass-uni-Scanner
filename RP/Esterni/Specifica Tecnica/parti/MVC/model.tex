@@ -318,13 +318,14 @@
    \subsubsection{Premi::Model::Command}{
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
 		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Premi::Model::Inserimento, Premi::Model::Eliminazione e Premi::Model::Modifica. Il package comunica, inoltre, con il controller, infatti le sue classi sono generate da Premi::Controller::Presentazione::EditController.\\
-	\subsubsubsection{Premi::Model:: Invoker}{
+	\subsubsubsection{Premi::Model::Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Premi::Controller::Inserimento::InsertController->crea un oggetto della classe Premi::Model::Command::ConcreteInsertCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”;
-            \item Premi::Controller::Eliminazione::RemoveController->crea un oggetto della classe Premi::Model::Command::ConcreteRemoveCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo” , richiama il metodo che svuota lo stack “redo”;
-            \item Premi::Controller::Presentazione::EditController->crea un oggetto della classe Premi::Model::Command::ConcreteEditCommand passandolo all’Invoker che lo esegue (execute) e lo inserisce nello stack “undo” , richiama il metodo che svuota lo stack “redo”. Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”.
+			\item Premi::Controller::MobileEdit->crea un oggetto di una sottoclasse di Premi::Model::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
+			Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”;
+			\item Premi::Controller::DesktopEdit->si comporta in modo analogo a MobileEdit;
+			\item Premi::Model::Command::AbstractCommand <- Invoker invoca il metodo execute() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undo().
 		\end{itemize} 
 		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Premi::Model::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
 	}

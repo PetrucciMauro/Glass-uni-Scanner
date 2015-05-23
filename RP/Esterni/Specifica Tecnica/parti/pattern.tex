@@ -10,18 +10,23 @@
 			\begin{itemize}
 				\item \textbf{Scopo dell’utilizzo}: è stato scelto il pattern MVC per separare la logica dell'applicazione dalla rappresentazione grafica;
 				\item \textbf{Contesto d’utilizzo}: Il pattern MVC viene utilizzato per l'architettura generale dell'applicazione.//
-				Ogni modifica effettuata dall'utente sulla View viene inviata al Controller che invoca i metodi delle classi presenti nel Model. Il Model notifica ogni cambiamento al controller che la comunica alla View.
+				Ogni modifica effettuata dall'utente sulla View viene inviata al Controller che invoca i metodi delle classi presenti nel Model.
 			\end{itemize}
 		}
 		
 	\subsection{Singleton}{
 		\begin{itemize}
+			\item \textbf{Descrizione}: è un design pattern di tipo creazionale utilizzato per imporre ad alcune classi di avere solamente un'istanza. Questo design pattern garantisce la consistenza dello stato dell'applicazione che si andrà a sviluppare.\\
+			Quando una classe implementa il pattern Singleton, la classe stessa si occupa di controllare il numero di istanze costruite (di solito tramite campi dati statici) e di fornire l'accesso ad esse tramite metodi appositi.\\
 			\item \textbf{Scopo dell’utilizzo}: viene usato il pattern Singleton per le classi che devono avere un'unica istanza durante l'esecuzione dell'applicazione;
 			\item \textbf{Contesto d’utilizzo}: le classi che devono avere un’unica istanza sono:
 			\begin{itemize}
 				\item Invoker;
 				\item SlideShow.
 			\end{itemize}
+			\subsubsection{Premi::Model::Command::Invoker}{
+				Premi::Controller::Inserimento::InsertController
+			}
 		\end{itemize}
 	}
 	\subsection{Utility}{
