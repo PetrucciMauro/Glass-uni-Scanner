@@ -25,8 +25,11 @@
 				\item SlideShow.
 			\end{itemize}
 			\subsubsection{Premi::Model::Command::Invoker}{
-				Premi::Controller::Inserimento::InsertController
+				La prima volta in cui avviene una modifica al piano della presentazione Premi::Controller::Edit invoca il metodo Invoker::getInstance() che, tramite costruttore privato, costruisce Invoker e lo restituisce al controller che può quindi dargli in pasto i comandi per l'implementazione del Design Pattern Command.\\  
 			}
+			\subsubsection{Premi::Model::Presentazione::SlideShow}{
+							La prima volta in cui viene caricata una presentazione, Premi::Model::Presentazione::Loader invoca il metodo SlideShow::getInstace() che, tramite costruttore privato, costruisce SlideShow.\\  
+						}
 		\end{itemize}
 	}
 	\subsection{Utility}{
@@ -36,15 +39,34 @@
 	}
 	\subsection{Builder}{
 		\begin{itemize}
+			\item \textbf{Descrizione}:Il design pattern Builder separa la costruzione di un oggetto complesso dalla sua rappresentazione cosicché il processo di costruzione stesso possa creare diverse rappresentazioni.\\			
+			L'algoritmo per la creazione di un oggetto complesso è indipendente dalle varie parti che costituiscono l'oggetto e da come vengono assemblate.	Ciò ha l'effetto immediato di rendere più semplice la classe, permettendo a una classe builder separata di focalizzarsi sulla corretta costruzione di un'istanza e lasciando che la classe originale si concentri sul funzionamento degli oggetti. Un builder permette anche di costruire un oggetto passo-passo, cosa che si può verificare quando si fa il parsing di un testo o si ottengono i parametri da un'interfaccia interattiva.
 			\item \textbf{Scopo dell’utilizzo}: viene usato il pattern Builder per separare la costruzione di un oggetto dalla sua rappresentazione e poter riusare il processo di costruzione per creare rappresentazioni differenti;
-			\item \textbf{Contesto d’utilizzo}: viene utilizzato per il caricamento delle presentazioni.
+			\item \textbf{Contesto d’utilizzo}: viene utilizzato per il caricamento delle presentazioni e degli oggetti in essi presenti.
 		\end{itemize}
+		\subsubsection{Premi::Model::Builder}{
+			Il package Premi::Model::Builder implementa il Design Pattern Builder. Premi::Model::Presentazione::Loader costruisce il Premi::Model::Builder::Director che ricopre il ruolo di director del Design Pattern.
+			Loader passa a Director i parametri di istanziazione dell'oggetto di una sottoclasse di Premi::Model::Presentazione::SlideShowElement.
+			Director invoca il costruttore della classe concreta di AbstractBuilder per istanziare un oggetto della sottoclasse di SlideShowElement, invoca quindi i metodi di build  per settarne i campi.
+		}
 	}
 	\subsection{Command}{
+	
 		\begin{itemize}
-			\item \textbf{Scopo dell’utilizzo}: il pattern Command viene usato per separare il codice di un’azione dal codice che richiede l’esecuzione dello stesso;
-			\item \textbf{Contesto d’utilizzo}: Viene utilizzato per il caricamento delle presentazioni.
+			\item \textbf{Descrizione}: viene utilizzato quando c'è la necessità di disaccoppiare l’invocazione di un comando dai suoi dettagli implementativi, separando colui che invoca il comando da colui che esegue l’operazione.
+			
+			Tale operazione viene realizzata attraverso questa catena: Client->Invocatore->Ricevitore
+			
+			Il Client non è tenuto a conoscere i dettagli del comando ma il suo compito è solo quello di chiamare il metodo dell’ Invocatore che si occuperà di intermediare l’operazione.
+			L’Invocatore ha l’obiettivo di incapsulare, nascondere i dettagli della chiamata come nome del metodo e parametri.
+			Il Ricevitore utilizza i parametri ricevuti per eseguire l’operazione
+			\item \textbf{Scopo dell’utilizzo}: si è scelto di utilizzare il pattern Command perché poter accodare o mantenere uno storico delle operazioni e	gestire operazioni cancellabili;
+			\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
 		\end{itemize}
+		\subsubsection{Premi::Model::Command}{
+			Il package Premi::Model::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe Premi::Controller::Presentazione::Edit, che invoca il costruttore delle sottoclassi di Premi::Model::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
+			Premi::Controller::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Controller::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
+		}
 	}
 	\subsection{Iterator}{
 		\begin{itemize}
@@ -54,14 +76,35 @@
 	}
 	\subsection{Template Method}{
 		\begin{itemize}
+			\item \textbf{Descrizione}: il Design Pattern Template Method è utilizzato per descrivere un algoritmo in cui alcuni passi possono essere sovrascritti da sottoclassi al fine di differenziare il comportamento e allo stesso tempo assicurare che l'algoritmo sovrastante sia sempre seguito.\\
+			
+			Prima viene creata una classe che fornisce i passi base di un algoritmo. Questi passi sono implementati usando metodi astratti. Successivamente, le sottoclassi cambiano i metodi astratti per implementare l'algoritmo. Così facendo l'algoritmo generale è mantenuto valido, ma i passi concreti possono essere cambiati dalle sottoclassi.\\
+			
+			Template Method viene utilizzato frequentemente nei linguaggi orientati agli oggetti. Quando si ricorre al polimorfismo in generale, questo design pattern potrebbe essere definito come sua naturale conseguenza. Questo perché un metodo che invoca una funzione astratta o polimorfa è semplicemente il motivo d'essere del metodo astratto o polimorfo;\\
 			\item \textbf{Scopo dell’utilizzo}: il pattern Template Method viene usato per definire la struttura di un algoritmo e lasciare alle sottoclassi la definizione di alcune parti usate;
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato per l’inserimento e la rimozione degli elementi.
+			\subsubsection{Premi::Model::Inserimento}{
+				Le classi del package Premi::Model::Inserimento implementano il pattern Template. La classe astratta Premi::Model::Inserimento::Inserter definisce i metodi astratti per l'inserimento di elementi nella presentazione e descrive i passi dell'algoritmo comuni per l'inserimento di tutti i tipi di elementi.
+				Le sottoclassi di Inserter specificano i metodi:
+				\begin{itemize}
+					\item createElement che invoca il costruttore della sottoclasse di Premi::Model::Presentazione::SlideShowElement a cui appartiene l'elemento da inserire;
+					\item insertElement che inserisce l'oggetto nel membro contenitore all'interno dell'oggetto di classe Premi::Model::Presentazione::SlideShow.
+				\end{itemize} 
+			}
+			In maniera del tutto simile al package Inserimento è organizzato il package Premi::Model::Eliminazione.
 		\end{itemize}
 	}
 	\subsection{Strategy}{
 		\begin{itemize}
+			\item \textbf{Descrizione}: Strategy è un Design Pattern che permette che il comportamento di un algoritmo sia deciso a runtime.
+			Il pattern Strategy definisce una famiglia di algoritmi, incapsula ogni algoritmo e rende gli algoritmi intercambiabili all'interno di quella famiglia.
+			Strategy permette all'algoritmo di cambiare indipendentemente dal client che lo utilizza;\\
 			\item \textbf{Scopo dell’utilizzo}: il pattern Strategy viene usato per isolare più algoritmi che svolgono la stessa funzione dal codice che esegue la funzione;
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato per la modifica degli elementi.
+			\subsubsection{Premi::Model::Modifica}{
+			Il package Premi::Model::Modifica implementa il design pattern Strategy.
+			Premi::Model::Modifica::Editor fornisce un metodo astratto editElement che viene definito in modo diverso in ognuna delle sue sottoclassi e invocato al momento della costruzione.
+			}
 		\end{itemize}
 	}
 }

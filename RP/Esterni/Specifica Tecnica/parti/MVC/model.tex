@@ -404,7 +404,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 		\begin{itemize}
 			\item Premi::Controller::EditController-> costruisce Loader;
             \item Premi::Controller::ExecutionController-> costruisce Loader;
-            \item Premi::Model::SlideShow <- costruisce un oggetto di classe SlideShow ed eventualmente invoca le sue funzioni per inserire gli oggetti delle sottoclassi di SlideShowElement;
+            \item Premi::Model::SlideShow <- invoca il metodo di SlideShow::getInstance che chiama il costruttore privato di SlideShow, eventualmente invoca le funzioni dell'oggetto SlideShow per inserire gli oggetti delle sottoclassi di SlideShowElement restituiti da Premi::Model::Builder::Director;
             \item Premi::Model::Builder::Director <- Loader passa a Director i parametri degli oggetti da costruire.
 		\end{itemize} 
 		\textbf{\interfacce}: il controller invoca il costruttore di Loader. Quando non passa alcun argomento Loader costruisce un oggetto di classe Premi::Model::SlideShow; altrimenti passa l’id dell’oggetto json che descrive la presentazione, Loader recupera i dati e costruisce un oggetto SlideShow, passa a Premi::Model::Builder::Director i parametri degli oggetti da istanziare contenuti dentro all’oggetto json che descrive la presentazione. Director restituisce gli oggetti istanziati e Loader invoca i metodi di SlideShow per inserire tali oggetti nei rispettivi contenitori.\\
@@ -413,7 +413,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 				\textbf{\tipo}: Classe implementata con il Design Pattern Singleton, contiene tutte le impostazioni della presentazione caricata, gli oggetti in essa presenti e i metodi per settarli o inserirne di nuovi. Gli oggetti della presentazione si trovano all’interno di contenitori divisi per classe. Tramite un iteratore è possibile scorrere detti contenitori.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-                    \item Premi::Model::Presentazione::Loader -> invoca il costruttore di SlideShow.
+                    \item Premi::Model::Presentazione::Loader -> invoca il metodo SlideShow::getInstance(), che a sua volta invoca il costruttore privato di SlideShow.
 				\end{itemize}	
                 \textbf{\interfacce}:Viene utilizzata dalla view tramite Premi::Controller::EditController e  Premi::Controller::ExecutionController per creare gli oggetti html sia in fase di esecuzione che in fase di modifica. È la classe principale del software.\\
                     }
@@ -530,7 +530,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 				\textbf{\tipo}: Implementazione della parte Director del Design Pattern Builder. Fornisce a Premi::Model::Presentazione::Loader gli oggetti della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-                    \item Premi::Model::Presentazione::Loader -> costruisce Director, passandogli i parametri per la costruizione degli offetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement e dell'oggetto Premi::Model::Presentazione::SlideShow.
+                    \item Premi::Model::Presentazione::Loader -> costruisce Director, passandogli i parametri per la costruizione degli oggetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement.
                     \item Premi::Model::Builder::AbstractBuilder <- invoca il costruttore degli oggetti delle sottoclassi di AbstractBuilder che genereranno i file delle sottoclassi di Premi::Model::Presentazione::SlideShowElement.
 				\end{itemize}	
                 \textbf{\interfacce}:Viene invocato da Premi::Model::Presentazione::Loader. È costruito con design pattern singleton. Restituisce gli oggetti di tipo Premi::Model::Presentazione::SlideShowElement a Premi::Model::Presentazione::Loader.\\
