@@ -40,7 +40,7 @@
 		}
 		\subsubsection{Premi.View.Pages.Manifest}{
 			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni scaricate in locale e da la possibilità di eseguirle.\\
-			\textbf{\interfacce}: i meto di implementati nella classe Manifest sono i seguenti:
+			\textbf{\interfacce}: i metodi implementati nella classe Manifest sono i seguenti:
 			\begin{itemize}
 				\item Manifest::ExecuteManifest esegue la presentazione selezionata utilizzando la pagina html già presente in locale e il framework impress.js;
 				\item Manifest::DeleteManifest elimina la presentazione salvate in locale;
@@ -56,19 +56,31 @@
 				\item [[[[[[CONTROLLER PASSWORD]]]]]] per la modifica della password;
 				\item [[[[[[CONTROLLER RINOMINA FILE MEDIA]]]]]] per rinominarli.
 			\end{itemize}
+			\textbf{\interfacce}: i metodi implementati nella classe Profile sono i seguenti:
 			\begin{itemize}
-				\item Profile::Change invia al controller la nuova password;
-				\item Profile::
+				\item Profile::ChangePassword invia al controller la nuova password;
+				\item Profile::UploadMedia invia al controller le informazioni sul nuovo file media caricato sul server;
+				\item Profile::DeleteMedia invia al controller l'id del file media da eliminare;
+				\item Profile::RenameMedia invia al controller l'id e il nuovo nome del file media.
 			\end{itemize}
 			\textbf{\attivita}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo, i propri file caricati e la possibilità di modificarli.\\
 		}
 		\subsubsection{Premi.View.Pages.Execution}{
 			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
 			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js utilizzato; utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER ESECUZIONE PRESENTAZIONE.]]]]]]]]] per creare la pagina che verrà eseguita da Impress.js.\\
+			\textbf{\interfacce}: i metodi implementati nella classe Execution sono gestiti dal framework Impress.js con l'aggiunta e la modifica delle seguenti 4 funzioni all'interno del framework:
+			\begin{itemize}
+				\item Execution::Next va al frame successivo della presentazione;
+				\item Execution::Prev va al frame precedente;
+				\item Execution::Bookmark va al frame con bookmark successivo.
+			\end{itemize}
 			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo percorso.\\
 		}
-		\subsubsection{Premi.View.Pages.DesktopEdit}{
-			\textbf{\tipo}: la classe DesktopEdit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'editor di modifica di una presentazione.\\
+		\subsubsection{Premi.View.Pages.Edit}{
+			\textbf{\tipo}: la classe Edit è divisa in due sottoclassi, che sono visualizzazioni di pagine web diverse a seconda del dispositivo dalla quale viene visualizzata, Desktop o Mobile.\\
+		}
+		\subsubsection{Premi.View.Pages.Edit.Desktop}{
+			\textbf{\tipo}: la classe Edit.Desktop definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra da dispositivo desktop ad un utente  l'editor di modifica di una presentazione.\\
 			\textbf{\relaz}: mandi principali di gestione del profilo e gestione presentazioni.\\	
 			\textbf{\relaz}: la classe Home, utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
 			\begin{itemize}
@@ -79,10 +91,26 @@
 				\item [[[[[[[[[CONTROLLER MODIFICA ELEMENTI]]]]]]]]] per le modifiche  effettuate agli elementi ;
 				\item [[[[[[[[[CONTROLLER MODIFICA PERCORSO]]]]]]]]] per cambiare il percorso della presentazione.
 			\end{itemize}
+			\textbf{\interfacce}: i metodi implementati nella classe Edit.Desktop sono i seguenti:
+			\begin{itemize}
+				\item Edit.Desktop::InsertFrame invia al controller la richiesta di inserimento di un nuovo frame e le coordinate di posizione;
+				\item Edit.Desktop::InsertMedia invia al controller la richiesta di inserimento di un nuovo file media, le sue informazioni e le coordinate di posizione;
+				\item Edit.Desktop::MoveElement invia al controller l'id dell'elemento spostato e le sue nuove coordinate;
+				\item Edit.Desktop::InsertText invia al controller la richiesta di inserimento di un nuovo elemento di testo, il suo contenuto, la sua formattazione e le sue coordinate;
+				\item Edit.Desktop::TextEdit invia al controller l'id dell'elemento di testo e il suo nuovo contenuto;
+				\item Edit.Desktop::DeleteElement invia al controller l'id dell'elemento eliminato;
+				\item Edit.Desktop::InsertChoice invia al controller la richiesta di inserimento di una nuova scelta e l'id del frame a cui è indirizzata la scelta;
+				\item Edit.Desktop::Bookmark invia al controller l'id del frame al quale viene associato o rimosso (a seconda dello stato in quel momento) un bookmark;
+				\item Edit.Desktop::ChangeSize invia al controller l'id dell'elemento al quale vengono cambiate le dimensioni e le nuove misure;
+				\item Edit.Desktop::ChangeRotation invia al controller l'id dell'elemento al quale viene cambiata la rotazione la percentuale di rotazione;
+				\item Edit.Desktop::ChangePath invia al controller l'id del percorso modificato e il nuovo ordine dei frame.
+				\item Edit.Desktop::FrameBackground invia al controller la richiesta di inserimento di un nuovo sfondo ad un frame, l'id del frame e le informazioni dell'immagine;
+				\item Edit.Desktop::Background invia al controller la richiesta di inserimento di un nuovo sfondo alla presentazione e le informazioni dell'immagine.
+			\end{itemize}
 			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi), cambiare il percorso, assegnare bookmark ai frame e inserire elementi scelta.\\
 		}
-		\subsubsection{Premi.View.Pages.MobileEdit}{
-			\textbf{\tipo}: la classe MobileEdit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente mobile l'editor di modifica mobile di una presentazione. \\
+		\subsubsection{Premi.View.Pages.Edit.Mobile}{
+			\textbf{\tipo}: la classe Edit.Mobile. definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra  da dispositivo mobile ad un utente l'editor di modifica mobile di una presentazione. \\
 			\textbf{\relaz}: la classe MobileEdit utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
 			\begin{itemize}
 				\item [[[[[[[[[CONTROLLER CARICA EDITOR MOBILE]]]]]]]]] per caricare la presentazione da modificare;
@@ -90,6 +118,13 @@
 				\item [[[[[CONTROLLER MODIFICA TESTO]]]]] per la modifica di un elemento testuale;
 				\item [[[[[CONTROLLER INSERIMENTO BOOKMARK]]]]] per l'inserimento di un nuovo bookmark;
 				\item [[[[[CONTROLLER REMOVE BOOKMARK]]]]] per rimuovere un bookmark.
-			\end{itemize}
+			\end{itemize}\\
+		\end{itemize}
+		\textbf{\interfacce}: i metodi implementati nella classe Edit.Mobile sono i seguenti:
+		\begin{itemize}
+			\item Edit.Desktop::InsertText invia al controller la richiesta di inserimento di un nuovo elemento di testo, il suo contenuto, la sua formattazione e le sue coordinate;
+			\item Edit.Desktop::TextEdit invia al controller l'id dell'elemento di testo e il suo nuovo contenuto;
+			\item Edit.Desktop::Bookmark invia al controller l'id del frame al quale viene associato o rimosso (a seconda dello stato in quel momento) un bookmark;
+		\end{itemize}
 			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (modificando un elemento testo) e assegnare bookmark ai frame..\\
 		}
