@@ -1,43 +1,5 @@
 \section{Processi di supporto}{
 
-\subsection{Gestione di progetto}
-Le responsabilità di gestione dell’intero progetto, dalla nascita alla conclusione, sono da
-attribuire al \emph{Responsabile di Progetto}.
-Quest’ultimo dovrà garantire un corretto sviluppo delle attività utilizzando, qualora sia possibile, degli strumenti che gli consentano di:
-\begin{itemize}
-\item Pianificare, coordinare e controllare le attività;
-\item Gestire e controllare le risorse;
-\item Analizzare e gestire i rischi;
-\item Elaborare i dati.
-\end{itemize}
-\subsubsection{Pianificazione delle attività}
-Per pianificare le attività il \emph{Responsabile di Progetto} deve realizzare un diagramma di
-Gantt  per ciascuna fase indicata nella sezione Pianificazione del \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} , utilizzando OmniPlan come descritto nella sezione \ref{sec:Pianificazione}.
-\subsubsection{Coordinazione e controllo delle attività}
-Per coordinare e controllare le attività il Responsabile di Progetto deve riportare la struttura creata con OmniPlan in Redmine sfruttando il suo sistema di ticketing
-come descritto nella sezione \ref{sec:protocolloSviluppo}.
-In questo modo ciascun componente del gruppo sarà avvisato delle attività ad esso assegnate e potrà inserire lo stato delle stesse permettendo al Responsabile di verificare immediatamente l’avanzamento del progetto.
-
-\subsubsection{Gestione e controllo delle risorse}
-Per gestire e controllare le risorse il Responsabile di Progetto deve utilizzare Redmine come indicato nella sezione \ref{sec:protocolloSviluppo} che gli consente anche di verificare l’avanzamento di ogni processo come riportato nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} .
-\subsubsection{Analisi e Gestione dei rischi}
-Durante l’avanzamento del progetto il \emph{Responsabile di Progetto} deve monitorare costantemente il verificarsi dei rischi descritti nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto} ed eventuali nuovi rischi, attuando le contromisure descritte e riportando gli effettivi riscontri.
-
-\subsubsection{Elaborazione dati}
-Il Responsabile di Progetto deve sfruttare i fogli di calcolo elettronico, come descritto nella sezione \ref{sec:fogliDiCalcolo}, per elaborare i dati raccolti durante lo sviluppo del progetto e riportarli nel \emph{Piano di Progetto}.
-
-\subsubsection{Delega}
-\label{sec:delega}
-Il \emph{Responsabile di Progetto}, nel caso in cui abbia redatto una parte di un documento, può delegare l'approvazione di tale documento ad un Verificatore.
-\subsubsection{Responsabilità di sotto-progetto}
-Ogni macroattività può essere assegnata dal Responsabile ad un responsabile di sottoprogetto, i cui compiti saranno l’assegnazione delle singole attività alle risorse rese disponibili e la gestione dei cambiamenti.
-\subsubsubsection{Assegnazione attività}
-Per assegnare attività alle risorse disponibili, il responsabile di sotto-progetto dovrà seguire le procedure di ticketing descritte in \ref{sec:realizzazioneControllo}.
-\subsubsubsection{Gestione dei cambiamenti}
-In caso di errori, in seguito alla notifica da parte del \emph{Verificatore} tramite ticket, il responsabile di sotto-progetto dovrà assegnare la correzione mediante la procedura di ticketing descritta in \ref{sec:realizzazioneControllo}. Al termine della correzione, sarà compito del responsabile di sotto-progetto accettare o respingere la modifica, e richiederne di conseguenza il rifacimento.
-Nel caso la correzione riguardi un’attività di codifica, sarà compito del responsabile di sotto-progetto programmare una nuova esecuzione dei test di unità e di integrazione correlati al modulo modificato.
-
-
 \subsection{Documentazione}{
 Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ riguardo alla stesura, verifica e approvazione della documentazione da produrre.
 \subsubsection{Template} 
@@ -86,6 +48,7 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 			\item Intestazione nel seguente formato:\\
 					Prof. Tullio Vardanega\\
 					Università degli Studi di Padova\\
+					Dipartimento di Matematica\\
 					Via Trieste 63\\
 					35121 Padova (PD)
 			\item Breve introduzione (facoltativa);
@@ -172,8 +135,7 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 
 
 	\subsection{Verifica}
-La verifica di processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del Progetto. Di conseguenza, servono modalità operative chiare
-e dettagliate per i \emph{Verificatori}, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. Si descrivono ora le modalità ordinate e puntuali di verifica di processi, documenti, attività e codice alle quali ci si riferirà in questo documento e alle quali i \emph{Verificatori} dovranno attenersi.
+La verifica di processi, documenti e prodotti è un'attività da eseguire continuamente durante lo sviluppo del Progetto. Di conseguenza, servono modalità operative chiare e dettagliate per i \emph{Verificatori}, in modo da uniformare le attività di verifica svolte ed ottenere il miglior risultato possibile. Si descrivono ora le modalità ordinate e puntuali di verifica di processi, documenti, attività e codice alle quali ci si riferirà in questo documento e alle quali i \emph{Verificatori} dovranno attenersi.
 
 	\subsubsection{Metriche per gli errori riscontrati e gestione dei cambiamenti}
 Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potranno trovare, fornendo criteri per la quantificazione dell’impatto sul prodotto o sul processo e per la definizione delle priorità di intervento. In questo modo si potrà agire prima nella risoluzione di errori a gravità maggiore.
@@ -182,11 +144,11 @@ Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potra
 \begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
 
  \hline
- \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \textbf{Errore} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
  \hline
  Indici fuori range & Alta & Urgente & Ticket\\
  \hline
- Ritardi superiori a 2 giorni nelle attività & Alta & Urgente & Ticket\\
+ Ritardi superiori a 4-5 giorni nelle attività & Alta & Urgente & Ticket\\
  \hline
  Errato tracciamento di requisiti e casi d'uso & Alta & Urgente & Ticket\\ 
  \hline
@@ -199,7 +161,7 @@ Si definiscono ora delle metriche per gli errori che i \emph{Verificatori} potra
 \begin{longtable}[c]{|>{\centering\arraybackslash}m{6cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} | >{\centering\arraybackslash}m{3cm} |}
  
  \hline
- \textbf{Errore trovato} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
+ \textbf{Errore} & \textbf{Gravità} & \textbf{Priorità risoluzione} & \textbf{Modalità operative}\\
  \hline
  Errore ortografico o di formattazione & Bassa & Breve & Correzione immediata\\
  \hline
@@ -298,7 +260,7 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 	Al \emph{Verificatore} è richiesto l’avvio dei test statici e dinamici e l’analisi dei risultati. Di seguito un elenco degli strumenti da usare per l’analisi.
 	
 	\subsubsubsection{Analisi Statica} 
-	
+	\label{sec:analisiStatica}
 	  \begin{itemize}
 	  \item \textbf{jSHint}: tool che permette di rilevare potenziali errori nel codice\ped{g} javascript\ped{g};
 	  \item \textbf{QUnit}: framework\ped{g} per i test d'unità del codice\ped{g} javascript\ped{g};
@@ -310,7 +272,7 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 	
 	\subsubsubsection{Test}
 	\begin{itemize}
-	
+	\label{sec:strumentiTest}
     \item \textbf{Jasmine}: framework per behavior-driven per il test sul codice javascript;
 	\item \textbf{Mocha}: framework per eseguire test sul codice javascript;
 	\item \textbf{Protractor}: framework per eseguire test end to end su angular.js;
@@ -322,17 +284,9 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 	
 	La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
 	fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
-		\subsection{Validazione\ped{g} dei requisiti}{
-		 				Per ogni requisito\ped{g} di processo\ped{g} specificato dovrà essere presente in ”Piano di qualifica” un riferimento alle sezioni di ”Norme di progetto” in cui viene assicurato il soddisfacimento del requisito\ped{g}. Per ogni requisito\ped{g} di prodotto specificato dovrà essere descritto brevemente il metodo che verrà usato per verificarne il soddisfacimento.\\Per favorire la tracciabilità tra requisiti\ped{g} e metodi di verifica dovrà essere presente in ”Piano di qualifica” una tabella in cui si definiscono: codice\ped{g} di requisito\ped{g}, codice\ped{g} di verifica e modalità di verifica. Se il requisito\ped{g} è di processo\ped{g}, la modalità di verifica conterrà i riferimenti alle sezioni corrispondenti in ”Norme di progetto”.
-			\subsubsection{Interna}{
-				Saranno verificate la correttezza e la completezza dei requisiti\ped{g} rispetto ai bisogni. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e bisogni individuati.\\Saranno verificate la correttezza e la completezza dei metodi di verifica dei requisiti\ped{g}
-				rispetto ai requisiti\ped{g}. Ciò verrà fatto tramite tracciamento tra specifica dei requisiti\ped{g} e metodi di verifica.
-			}
-				\subsubsection{Esterna}{
-					Terminata la validazione\ped{g} interna verranno presentati al proponente\ped{g} i documenti ”Analisi dei requisiti” e ”Piano di qualifica”, se accettati costituiranno una baseline per la fase successiva del progetto\ped{g} altrimenti verranno gestite le richieste di modifica secondo i metodi descritti in ”Gestione delle modifiche ai requisiti”.
-				}
-		}
-				\subsubsection{Gestione delle modifiche ai requisiti}{
+
+				
+		\subsection{Gestione delle modifiche ai requisiti}{
 					A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:
 					\begin{enumerate}
 						\item Deduzione, analisi e specifica dei cambiamenti;

@@ -76,17 +76,44 @@
 
 
    \subsection{Progettazione architetturale}
+   
+    \subsubsection{Struttura del documento}
+        Il documento in questione deve rispettare la seguente struttura:
+        \begin{enumerate}
+        
+        
+        \item Introduzione;
+        \item Definizione di prodotto;
+        \begin{enumerate}
+        \item Metodo e formalismo di specifica;
+        \item Architettura generale;
+        \end{enumerate}
+        \item Descrizione dei singoli componenti;
+        \begin{itemize}
+        \item Tipo, obiettivo e funzione del componente;
+        \item Relazioni d’uso di altre componenti;
+        \item Interfacce con e relazioni di uso da altre componenti;
+        \item Attivit`a svolte e dati trattati;
+        \item Logica di progettazione;
+        \item Descrizione delle classi;
+        \end{itemize}
+        \item Diagramma di attività;
+        \item Prototipi di interfaccia utente;
+        \item Stime di fattibilità e bisogno di risorse;
+        \item Tracciamento.
+        \end{enumerate}
+        Nella sezione di descrizione del metodo e formalismo di specifica è necessario  indicare quali design pattern verranno utilizzati, quale metodo di progettazione verrà adottato e quali librerie o strumenti sono necessari per lo sviluppo del sistema progettato durante questa fase. La descrizione dei singoli componenti deve operare in modo ricorsivo partendo da una visione ad alto livello, nel caso di un’analisi \emph{top-down}, fino a giungere ad un grado di dettaglio coerente con quello richiesto, specificato nel \emph{Piano di Progetto}  per questa fase. Nel caso di un’analisi di tipo \emph{bottom-up} la progettazione procederà nel senso inverso.  
 
-\subsubsection{Attività}
-Lo scopo di questa attività è quello di realizzare una visione globale di ciò che dovrà essere il sistema a fronte dei requisiti ricavati dall’attività di analisi.
+\subsubsection{Task}
+Lo scopo di questo attività è quello di realizzare una visione globale di ciò che dovrà essere il sistema a fronte dei requisiti ricavati dall’attività di analisi.
 Terminata l’attività di progettazione architetturale si deve produrre un documento completo ed esplicativo: la \emph{Specifica Tecnica}.
 Le attività necessarie alla redazione del documento sono:
 \begin{itemize}
 \item Definizione dell’architettura di prodotto a partire dall’Analisi dei Requisiti;
+\item Analisi delle tecnologie da adottare;
 \item Individuazione e studio dei design pattern applicabili;
 \item Individuazione della struttura dei package;
 \item Individuazione delle classi che compongono il sistema e delle relazioni tra esse;
-\item Analisi delle tecnologie da adottare;
 \item Studio di fattibilità;
 \item Tracciamento componenti-requisiti.
 \end{itemize}
@@ -94,12 +121,29 @@ Si deve inoltre definire, in un documento specifico  (\href{run:../../Esterni/\f
 test da eseguire sulle parti del sistema per verificarne la corretta interazione:
 \begin{itemize}
 \item \textbf{Input}: Analisi dei Requisiti;
-\item \textbf{Output}: Specifica Tecnica, test di integrazione;
+\item \textbf{Output}: Specifica Tecnica, pianificazione test di integrazione e di sistema;
 \item \textbf{Risorse}: Progettisti, documentazione, strumentazione;
 \item \textbf{Misurazioni}: avanzamento dell’elaborazione del documento \emph{Specifica Tecnica} rispetto alla totalità dei requisiti definiti nel documento di Analisi dei Requisiti;
 \item \textbf{Norme}: descritte in seguito.
 \end{itemize}
+       
+    \subsubsection{Direttive di progettazione}
+     Per garantire una buona qualità del software prodotto in fase di codifica è necessario prevedere alcuni accorgimenti durante la progettazione in modo da evitare descrizioni del sistema errate o inutilmente complicate. Durante la fase di progettazione si richiede il soddisfacimento di alcune proprietà che vengono riportate di seguito:
+     \begin{itemize}
+     
+     
+     \item \textbf{Semplicità:} viene ribadita da un principio, noto con il nome di “rasoio di Occam”, il quale afferma che tra tutte le soluzioni che portano al medesimo risultato è utile considerare quella più semplice. È difficile definire criteri precisi per il conseguimento di questa proprietà. Una buona pratica prevede la  descrizione, per ogni vista del documento di progetto, delle scelte progettuali
+     effettuate e delle alternative scartate;
+     \item \textbf{Incapsulazione:} consiste nel fornire pubblicamente solamente l’interfaccia e  nascondere tutti i caratteri implementativi come gli algoritmi e la struttura  dati interna di una classe. Questa proprietà garantisce la produzione di codice più facilmente manutenibile e con ridotto numero di dipendenze da altri componenti. La produzione di codice incapsulato deriva da una buona progettazione dei metodi e degli attributi delle classi, la quale verrà affrontata più dettagliatamente nella fase successiva, e un accurato studio delle interfacce e dei package;
+     \item \textbf{Coesione:} riguarda il grado di decomposizione di componenti in parti più piccole. La modularità spinge a dividere il più possibile i componenti ma non sempre è una scelta efficace. Nella fase di progettazione questa proprietà fondamentale in quanto andrà ad influire, in fase di codifica, sulle metriche di  qualità del codice. Per garantire la produzione di componenti coese è necessario chiedersi ogni volta che si struttura una classe se gli attributi e i metodi in essa definiti sono direttamente correlati con la sua entità o se è conveniente raggrupparli in un’ulteriore classe;
+     \item \textbf{Accoppiamento:} indica l’utilità di un componente e la dipendenza da altri moduli. L’accoppiamento è caratterizzato da due valori:
+     \begin{itemize}
 
+     \item \textbf{Fan-in:} indica il grado di riuso del codice. Maggiore è questo valore più alto è il grado di riuso e quindi maggiore è l’utilità del metodo;
+     \item \textbf{Fan-out:} indica il grado di accoppiamento e di dipendenza da altre porzioni di codice. Un valore elevato denota una maggiore complessità nella fase di esecuzione e di test
+     Entrambi questi valori vanno a influenzare le metriche di bontà del codice quindi bisognerà prestare attenzione a tracciare e minimizzare le dipendenze tra classi e ad evitare dipendenze circolari a livello di package.
+     \end{itemize}
+     \end{itemize}
 		\subsubsection{Diagrammi UML}
 		Data la visione a livello medio-alto di dettaglio richiesta per questo documento si dovranno utilizzare schemi UML 2.x in grado di descrivere formalmente i vari componenti	del sistema.
 		In particolare si andrà ad utilizzare i seguenti tipi di diagrammi:
@@ -108,8 +152,7 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 		
 		\item \textbf{Diagrammi di package}: saranno utilizzati per raggruppare più elementi UML aventi funzionalità simili. Ogni package dovrà essere identificato da un	nome che risulti completamente qualificato e univoco all’interno dello spazio
 		dei nomi. Schemi di questo tipo sono utili per individuare le dipendenze tra classi e per stimare la complessità strutturale del sistema.
-		\item \textbf{Diagrammi di classe}: utilizzati per descrivere i tipi di oggetti che fanno parte di un sistema e le relazioni che vi sono tra di essi. Nella prima fase di progettazione non è richiesto l'elenco di tutti gli attributi e i metodi. Durante
-		la progettazione di dettaglio si consiglia di riportare nei diagrammi da inserire nei documenti anche tutti gli attributi e i metodi. Per garantire una buona	leggibilità dello schema si consiglia di valutare l'inserimento degli elementi di una classe in base al loro numero. E' possibile omettere gli elementi di una classe anche nel caso in cui lo schema debba riportare un numero elevato di classi. Anche il livello di dettaglio della segnatura dei metodi è a discrezione	del progettista con l’indicazione di considerare la seguente lista di priorità:
+		\item \textbf{Diagrammi di classe}: utilizzati per descrivere i tipi di oggetti che fanno parte di un sistema e le relazioni che vi sono tra di essi. Per garantire una buona leggibilità dello schema si consiglia di valutare l'inserimento degli elementi di una classe in base al loro numero. E' possibile omettere gli elementi di una classe anche nel caso in cui lo schema debba riportare un numero elevato di classi. Anche il livello di dettaglio della segnatura dei metodi è a discrezione	del progettista con l’indicazione di considerare la seguente lista di priorità:
 		\begin{itemize}		
 		\item Nome del metodo;
 		\item Livello di accessibilità;
@@ -119,15 +162,12 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 		\item \textbf{Diagrammi di sequenza}: utilizzati per descrivere la collaborazione tra più oggetti che hanno lo scopo di implementare collettivamente un comportamento. Non sono adatti per la modellazione della logica di controllo e vanno preferiti i diagrammi di attività se si intende modellare dei cicli o delle condizioni;
 		\item \textbf{Diagrammi di attività}: descrivono la procedura logica con la quale vengono eseguite delle operazioni. Vanno utilizzati quando si vuole descrivere	l’esecuzione di flussi paralleli.
         \end{itemize}
+ 
 	\subsubsection{Design pattern}
 	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
 	\subsubsection{Tracciamento componenti}
 	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
-	\subsubsection{Definizione di Prodotto}
-	I Progettisti devono produrre la Definizione di Prodotto dove viene descritta la progettazione di dettaglio del sistema ampliando quanto scritto nella Specifica Tecnica.
-	
-	
 	\subsection{Codifica}
 	Le convenzioni di codifica che tutti i membri del gruppo devono seguire sono quelle
 	specificate alla seguente pagina :\\
@@ -150,13 +190,8 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
   	* Descrizione dettagliata del file
   	*/
   	
-  	Prima di ogni metodo dovra essere presente un commento contenente:
-  	/*!
-  	* \brief Breve descrizione della funzione
-  	* \param Nome del primo parametro
-  	* \param Nome del secondo parametro
-  	* \return Valore ritornato dalla funzione
-  	*/
+  	Qui verranno riportate da ogni programmatoreo tutte le informazioni necessarie per una semplice comprensione del listato.
+    
     \end{lstlisting}
     
   	\subsection{Test}
@@ -165,9 +200,44 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
   	
   \item \textbf{Test di unità}: test che si effettuano per ogni unità del software con il massimo grado di parallelismo;
   \item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
-  \item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto;
-  \item \textbf{Test di regressione}: nel caso di una modifica ad un singolo componente,
-  andranno effettuati nuovamente tutti i test di unità e, se necessario, di
-  integrazione riferiti a quel componente.
+  \item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto.
   \end{itemize}
+  \subsubsection{Definizione dei test}
+  Per agevolare la fase di verifica tramite test è necessario definire una lista di prove da eseguire nelle varie fasi del ciclo di sviluppo del software.
+  La lista dei test da eseguire è riportata nel documento di \emph{Piano di Qualifica}. Ogni test va accompagnato da un identificativo il quale verrà utilizzato per riferire
+  la singola attività all’interno degli altri documenti.  L’identificativo dei test è composto da due caratteri maiuscoli, da un numero e da un carattere minuscolo. Il primo è il carattere T e viene utilizzato per indicare che si tratta di un elemento inerente all’attività di test. Il secondo carattere è uno tra i seguenti:
+  \begin{itemize} 
+  \item \textbf{S:} test di sistema;
+  \item \textbf{I:} test di integrazione;
+  \item \textbf{U:} test di unità.
+  \end{itemize}
+  Il numero posto dopo i due caratteri è incrementale e non gerarchico. L’ultimo carattere identifica i possibili esiti delle operazioni svolte dall’utente, parte dal carattere a e procede in ordine alfabetico crescente. Si consiglia di dare precedenza agli esiti positivi per poi passare a quelli di rifiuto di input non valido o di scatenamento di errori.
+  Nel Piano di Progetto si dovrà inserire una tabella riportante l’identificativo e la descrizione dell’attività di test.
   
+  \subsubsection{Codifica dei test di unità e di integrazione}
+  Per l’automazione dei test di unità e di integrazione il gruppo di sviluppo utilizzeranno gli strumenti elencati nella sezione \ref{sec:strumentiTest}. Questi strumenti permettono di definire delle classi di test
+  e dei metodi appositi per verificare il corretto funzionamento delle procedure sotto esame per poi generare un rapporto sul risultato delle attività.
+  Per ogni unità da testare saràa necessario creare una nuova classe di test avente come nome quello dell’elemento da esaminare seguito dalla parola “Test”. Nel caso di test di integrazione il nome dovrà essere indicativo dei componenti coinvolti e del tipo di interazione sotto esame. Il formalismo da adottare per la stesura del codice di test è equivalente a quello indicato per il resto del codice dell’applicativo fatta eccezione per l’inserimento dei commenti che è a discrezione del \emph{Verificatore}. Si consiglia, tuttavia, di inserire una breve descrizione dello scopo dei metodi di test.
+  
+  \subsubsection{Rapporto dell’analisi svolta sul codice}
+  Durante le attività di verifica statica e dinamica sul codice i verificatori sono tenuti a compilare un rapporto che descriva i test e le analisi svolte, accompagnate dai rispettivi risultati. Tutte queste informazioni andranno inserite in un documento, in forma tabellare, suddiviso nelle seguenti sezioni:
+  \begin{itemize}
+ \item \textbf{Rapporto dell’analisi statica:} riassunto dei risultati ottenuti dall’analisi del codice con gli strumenti di debugging consigliati nella sezione \ref{sec:analisiStatica};
+  
+  \item \textbf{Valutazione delle metriche:} rapporto dei valori delle metriche del codice misurate con \emph{jsmeter} ed eventuali considerazioni sui risultati;
+  \item \textbf{Descrizione dei test}: elenco completo dei test di unità, di integrazione e di sistema. La definizione dei test verrà inserita di pari passo con la loro progettazione.
+  Ogni definizione deve comprendere il nome della classe di test, il nome della classe da testare e l’elenco delle funzioni di verifica accompagnate da una descrizione esplicativa;
+  \item \textbf{Rapporto delle sessione di test:} elenco delle sessioni di test eseguite dai verificatori. Ogni sessione di test deve riportare la data di esecuzione, il nome dei verificatori incaricati e una lista contenente i metodi di test eseguiti e i risultati ottenuti. Per ogni metodo di test eseguito è necessario riportare la dicitura “SUPERATO” o “FALLITO” in base al risultato ottenuto. In caso
+  di fallimento è richiesto l’inserimento di una breve descrizione del problema riscontrato e l’apertura di un ticket di segnalazione. A discrezione dei verificatori sarà possibile inserire un rapporto sul coverage ottenuto durante la  sessione.
+ \end{itemize} 
+  Se durante la fase di test vengono riscontrati degli errori nel codice è necessario comunicare il problema attraverso lo strumento di ticketing \emph{redmine}.
+  L’aggiunta dei risultati dei test prevede l’inserimento dei seguenti dati nella  descrizione:
+  \begin{itemize}
+  \item Identificativo dell’attività di test;
+  \item Nome dell’elemento testato;
+  \item Descrizione dell’errore;
+  \item Ora del rilevamento;
+  \item Nome del verificatore che ha trovato l’errore;
+  \item Codice di un errore precedentemente rilevato, se in presenza di un duplicato.
+ \end{itemize}
+  Successivamente si procederà alla valutazione della gravità dei vari errori e, se considerati risolvibili, il Responsabile assegnerà le correzioni da apportare ai programmatori tramite lo strumento di ticketing.
