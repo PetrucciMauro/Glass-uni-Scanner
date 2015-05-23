@@ -48,15 +48,19 @@
 			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, eseguirle e eliminarle dalla posizione in locale.\\\\
 		}
 		\subsubsection{Premi.View.Pages.Profile}{
-			\textbf{\tipo}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo, i propri file caricati e la possibilità di modificarli. \\
+			\textbf{\tipo}: la classe Profile definisce la struttura della pagina web che consente agli utenti di modificare i propri dati di profilo e gestire i file media caricati nel server \\
 			\textbf{\relaz}: la classe Profile utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
 			\begin{itemize}
-				\item [[[[[[[[[CONTROLLER MODIFICA DATI]]]]]]]]] per modificare i propri dati di profilo;
 				\item [[[[[[CONTROLLER INSERIMENTO FILE MEDIA]]]]]] per il caricamento di file media nel server;
 				\item [[[[[[CONTROLLER ELIMINAZ. FILE MEDIA]]]]]] per la loro eliminazione dal server;
+				\item [[[[[[CONTROLLER PASSWORD]]]]]] per la modifica della password;
 				\item [[[[[[CONTROLLER RINOMINA FILE MEDIA]]]]]] per rinominarli.
 			\end{itemize}
-			\textbf{\attivita}: la classe Profile definisce la struttura della pagina web che consente agli utenti di modificare i propri dati di profilo e gestire i file media caricati nel server.\\
+			\begin{itemize}
+				\item Profile::Change invia al controller la nuova password;
+				\item Profile::
+			\end{itemize}
+			\textbf{\attivita}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo, i propri file caricati e la possibilità di modificarli.\\
 		}
 		\subsubsection{Premi.View.Pages.Execution}{
 			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
