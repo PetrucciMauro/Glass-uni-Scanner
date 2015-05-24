@@ -24,14 +24,13 @@
 				\item Invoker;
 				\item SlideShow.
 			\end{itemize}
-			\end{itemize}
 			\subsubsection{Premi::Model::Command::Invoker}{
-				La prima volta in cui avviene una modifica al piano della presentazione Premi::Controller::Edit invoca il metodo Invoker::getInstance() che, tramite costruttore privato, costruisce Invoker e lo restituisce al controller che può quindi dargli in pasto i comandi per l'implementazione del Design Pattern Command.
+				La prima volta in cui avviene una modifica al piano della presentazione Premi::Controller::Edit invoca il metodo Invoker::getInstance() che, tramite costruttore privato, costruisce Invoker e lo restituisce al controller che può quindi dargli in pasto i comandi per l'implementazione del Design Pattern Command.\\  
 			}
 			\subsubsection{Premi::Model::Presentazione::SlideShow}{
-							La prima volta in cui viene caricata una presentazione, Premi::Model::Presentazione::Loader invoca il metodo SlideShow::getInstace() che, tramite costruttore privato, costruisce SlideShow.
+							La prima volta in cui viene caricata una presentazione, Premi::Model::Presentazione::Loader invoca il metodo SlideShow::getInstace() che, tramite costruttore privato, costruisce SlideShow.\\  
 						}
-		
+		\end{itemize}
 	}
 	\subsection{Utility}{
 		\begin{itemize}
@@ -78,8 +77,10 @@
 	\subsection{Template Method}{
 		\begin{itemize}
 			\item \textbf{Descrizione}: il Design Pattern Template Method è utilizzato per descrivere un algoritmo in cui alcuni passi possono essere sovrascritti da sottoclassi al fine di differenziare il comportamento e allo stesso tempo assicurare che l'algoritmo sovrastante sia sempre seguito.\\
+			
 			Prima viene creata una classe che fornisce i passi base di un algoritmo. Questi passi sono implementati usando metodi astratti. Successivamente, le sottoclassi cambiano i metodi astratti per implementare l'algoritmo. Così facendo l'algoritmo generale è mantenuto valido, ma i passi concreti possono essere cambiati dalle sottoclassi.\\
-			Template Method viene utilizzato frequentemente nei linguaggi orientati agli oggetti. Quando si ricorre al polimorfismo in generale, questo design pattern potrebbe essere definito come sua naturale conseguenza. Questo perché un metodo che invoca una funzione astratta o polimorfa è semplicemente il motivo d'essere del metodo astratto o polimorfo;
+			
+			Template Method viene utilizzato frequentemente nei linguaggi orientati agli oggetti. Quando si ricorre al polimorfismo in generale, questo design pattern potrebbe essere definito come sua naturale conseguenza. Questo perché un metodo che invoca una funzione astratta o polimorfa è semplicemente il motivo d'essere del metodo astratto o polimorfo;\\
 			\item \textbf{Scopo dell’utilizzo}: il pattern Template Method viene usato per definire la struttura di un algoritmo e lasciare alle sottoclassi la definizione di alcune parti usate;
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato per l’inserimento e la rimozione degli elementi.
 			\subsubsection{Premi::Model::Inserimento}{
@@ -100,12 +101,11 @@
 			Strategy permette all'algoritmo di cambiare indipendentemente dal client che lo utilizza;\\
 			\item \textbf{Scopo dell’utilizzo}: il pattern Strategy viene usato per isolare più algoritmi che svolgono la stessa funzione dal codice che esegue la funzione;
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato per la modifica degli elementi.
-		\end{itemize}
-	\subsubsection{Premi::Model::Modifica}{
+			\subsubsection{Premi::Model::Modifica}{
 			Il package Premi::Model::Modifica implementa il design pattern Strategy.
 			Premi::Model::Modifica::Editor fornisce un metodo astratto editElement che viene definito in modo diverso in ognuna delle sue sottoclassi e invocato al momento della costruzione.
 			}
 			In maniera del tutto simile a Premi::Model::Modifica è organizzato il package Premi::Model::Caricamento.
-		
+		\end{itemize}
 	}
 }
