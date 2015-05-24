@@ -649,12 +649,11 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
         \end{itemize}
 	}
        \subsubsubsection{Premi::Model::Caricamento::ConcreteSvgUploader}{
-				\textbf{\tipo}: Classe che rappresenta un algoritmo di caricamento di un elemento svg all’interno dello spazio personale di un utente.
-È uno dei componenti concreti del Design Pattern Strategy.\\	
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di caricamento di un elemento svg all’interno dello spazio personale di un utente. È uno dei componenti concreti del Design Pattern Strategy.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Premi::Controller::MobileEdit e Premi::Controller::DesktopEdit -> costruiscono un oggetto di classe ConcreteSvgUploader e utilizzano i metodi da questo messi a disposizione per caricare il file nel server, inoltre costruiscono un oggetto della classe Premi::Model::Command::InsertCommand e lo danno in pasto Premi::Model::Command::Invoker;
-                    \item [[ControllerUtente]] -> costruisce un oggetto di classe ConcreteSvgUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
+                    \item (()ControllerUtente)) -> costruisce un oggetto di classe ConcreteSvgUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per caricare elementi SVG nello spazio personale di un utente ed eventualmente inserirlo automaticamente nello spazio personale di un utente ed eventualmente inserirlo automaticamente in una presentazione..\\
                 \textbf{\base}: 
@@ -663,12 +662,11 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \end{itemize}
 			}
        \subsubsubsection{Premi::Model::Caricamento::ConcreteImageUploader}{
-				\textbf{\tipo}: Classe che rappresenta un algoritmo di caricamento di un elemento immagine all’interno dello spazio personale di un utente.
-È uno dei componenti concreti del Design Pattern Strategy.\\	
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di caricamento di un elemento immagine all’interno dello spazio personale di un utente. È uno dei componenti concreti del Design Pattern Strategy.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Premi::Controller::MobileEdit e Premi::Controller::DesktopEdit -> costruiscono un oggetto di classe ConcreteImageUploader e utilizzano i metodi da questo messi a disposizione per caricare il file nel server, inoltre costruiscono un oggetto della classe Premi::Model::Command::InsertCommand e lo danno in pasto Premi::Model::Command::Invoker;
-                    \item [[ControllerUtente]] -> costruisce un oggetto di classe ConcreteImageUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
+                    \item (ControllerUtente) -> costruisce un oggetto di classe ConcreteImageUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per caricare elementi di tipo immagine nello spazio personale di un utente ed eventualmente inserirlo automaticamente in una presentazione..\\
                 \textbf{\base}: 
@@ -682,7 +680,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Premi::Controller::MobileEdit e Premi::Controller::DesktopEdit -> costruiscono un oggetto di classe ConcreteVideoUploader e utilizzano i metodi da questo messi a disposizione per caricare il file nel server, inoltre costruiscono un oggetto della classe Premi::Model::Command::InsertCommand e lo danno in pasto Premi::Model::Command::Invoker;
-                    \item [[ControllerUtente]] -> costruisce un oggetto di classe ConcreteVideoUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
+                    \item ((ControllerUtente)) -> costruisce un oggetto di classe ConcreteVideoUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
 				\end{itemize} 
 				\textbf{\interfacce}:Viene invocato per caricare elementi di tipo video nello spazio personale di un utente ed eventualmente inserirlo automaticamente in una presentazione.\\
                 \textbf{\base}: 
@@ -696,7 +694,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Premi::Controller::MobileEdit e Premi::Controller::DesktopEdit -> costruiscono un oggetto di classe ConcreteAudioUploader e utilizzano i metodi da questo messi a disposizione per caricare il file nel server, inoltre costruiscono un oggetto della classe Premi::Model::Command::InsertCommand e lo danno in pasto Premi::Model::Command::Invoker;
-                    \item [[ControllerUtente]] -> costruisce un oggetto di classe ConcreteImageUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
+                    \item ((ControllerUtente)) -> costruisce un oggetto di classe ConcreteImageUploader e utilizza i metodi da questi messi a disposizione per caricare il file nel server.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per caricare elementi di tipo audio nello spazio personale di un utente ed eventualmente inserirlo automaticamente in una presentazione..\\
                 \textbf{\base}: 
