@@ -32,13 +32,16 @@
             \item Premi::Model::Inserimento::ConcreteImageInserter;
             \item Premi::Model::Inserimento::ConcreteVideoInserter;
             \item Premi::Model::Inserimento::ConcreteAudioInserter.
+            \item Premi::Model::Eliminazione::ConcreteBackgroundInserter.
         \end{itemize}
 	}
 	\subsubsubsection{Premi::Controller::Presentazione::Inserimento::ConcreteTextInserter}{
-				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento testuale all’interno di una presentazione. È uno dei componenti concreti del Design Pattern Template.\\	
+				\textbf{\tipo}: Classe che rappresenta un algoritmo di creazione e inserimento di un elemento testuale all’interno di una presentazione. È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo testo nella presentazione.
+					\item Premi::Model::Presentazione::Text <- costruisce un oggetto di classe Text.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo testo nella presentazione.
+					
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per inserire elementi testuali in una presentazione.\\
                 \textbf{\base}: 
@@ -51,7 +54,8 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo Frame nella presentazione.
+				\item Premi::Model::Presentazione::Frame <- costruisce un oggetto di classe Frame.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo Frame nella presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo frame in una presentazione.\\
                 \textbf{\base}: 
@@ -64,7 +68,8 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo SVG nella presentazione.
+				\item Premi::Model::Presentazione::SVG <- costruisce un oggetto di classe SVG.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo SVG nella presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per inserire elementi svg in una presentazione.\\
                 \textbf{\base}: 
@@ -77,7 +82,8 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo immagine nella presentazione.
+				\item Premi::Model::Presentazione::Image <- costruisce un oggetto di classe Image.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo immagine nella presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo immagine in una presentazione.\\
                 \textbf{\base}: 
@@ -86,11 +92,13 @@
                     \end{itemize}
 			}
             \subsubsubsection{Premi::Model::Inserimento:: ConcreteVideoInserter}{
+
 				\textbf{\tipo}: Classe che rappresenta un algoritmo di inserimento di un elemento video all’interno di una presentazione.
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo video nella presentazione.
+            		\item Premi::Model::Presentazione::Video <- costruisce un oggetto di classe Video.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo video nella presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}:Viene invocato per inserire elementi di tipo video in una presentazione.\\
                 \textbf{\base}: 
@@ -103,7 +111,8 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo audio nella presentazione.
+				\item Premi::Model::Presentazione::Audio <- costruisce un oggetto di classe Audio.
+					\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo elemento di tipo audio nella presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per inserire elementi di tipo audio in una presentazione.\\
                 \textbf{\base}: 
@@ -111,6 +120,20 @@
                     \item Premi::Model::Inserimento::Inserter.
                     \end{itemize}
 			}
+			\subsubsubsection{Premi::Controller::Presentazione::Inserimento::ConcreteBackgroundInserter}{
+							\textbf{\tipo}: Classe che rappresenta un algoritmo di creazione e inserimento di un elemento di classe Background in una Presentazione. È uno dei componenti concreti del Design Pattern Template.\\
+			                \textbf{\relaz}: 
+							\begin{itemize}
+								\item Premi::Model::Presentazione::Background <- invoca il metodo getInstance di classe Background.
+								\item Premi::Model::Command::ConcreteInsertCommand -> invoca i metodi per inserire un nuovo sfondo nella presentazione.
+								
+							\end{itemize} 
+							\textbf{\interfacce}: Viene invocato per inserire elementi sfondo in una presentazione.\\
+			                \textbf{\base}: 
+			                    \begin{itemize}
+			                    \item Premi::Model::Inserimento::Inserter.
+			                    \end{itemize}
+						}
 	}
     
     	\subsubsection{Premi::Model::Eliminazione}{
@@ -132,7 +155,8 @@
             \item Premi::Model::Eliminazione::ConcreteSvgRemover;
             \item Premi::Model::Eliminazione::ConcreteImageRemover;
             \item Premi::Model::Eliminazione::ConcreteVideoRemover;
-            \item Premi::Model::Eliminazione::ConcreteAudioRemover.
+            \item Premi::Model::Eliminazione::ConcreteAudioRemover;
+            \item Premi::Model::Eliminazione::ConcreteBackgroundRemover.
         \end{itemize}
 	}
 	\subsubsubsection{Premi::Model::Eliminazione:: ConcreteTextRemover}{
@@ -140,7 +164,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo testo dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo testo dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi testuali in una presentazione.\\
                 \textbf{\base}: 
@@ -153,7 +177,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo frame dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo frame dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo frame da una presentazione.\\
                 \textbf{\base}: 
@@ -166,7 +190,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo SVG dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo SVG dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi SVG da una presentazione.\\
                 \textbf{\base}: 
@@ -179,7 +203,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo immagine dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo immagine dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi immagine in una presentazione.\\
                 \textbf{\base}: 
@@ -192,7 +216,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo video dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo video dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo video da una presentazione.\\
                 \textbf{\base}: 
@@ -205,7 +229,7 @@
 È uno dei componenti concreti del Design Pattern Template.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo audio dalla presentazione.
+					\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare un elemento di tipo audio dalla presentazione.
 				\end{itemize} 
 				\textbf{\interfacce}: Viene invocato per eliminare elementi di tipo audio da una presentazione.\\
                 \textbf{\base}: 
@@ -213,6 +237,19 @@
                     \item Premi::Model::Eliminazione::Remover.
                     \end{itemize}
 			}
+			 \subsubsubsection{Premi::Model::Eliminazione:: ConcreteBackgroundRemover}{
+							\textbf{\tipo}: Classe che implementa un algoritmo di eliminazione dello sfondo dellaa presentazione.
+			È uno dei componenti concreti del Design Pattern Template.\\	
+							\textbf{\relaz}: 
+							\begin{itemize}
+								\item Premi::Model::Command::ConcreteRemoveCommand -> invoca i metodi per eliminare lo sfondo dalla presentazione.
+							\end{itemize} 
+							\textbf{\interfacce}: Viene invocato per eliminare lo sfondo dlla presentazione.\\
+			                \textbf{\base}: 
+			                    \begin{itemize}
+			                    \item Premi::Model::Eliminazione::Remover.
+			                    \end{itemize}
+						}
 	}
    \subsubsection{Premi::Model::Modifica}{
 		\textbf{\tipo}: All’interno di questo Package viene implementato il Design Pattern strategy per la modifica di elementi della presentazione.\\
@@ -433,7 +470,8 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \item Premi::Model::Presentazione:: Image;
                     \item Premi::Model::Presentazione::SVG;
                     \item Premi::Model::Presentazione::Audio;
-                    \item Premi::Model::Presentazione::Video.
+                    \item Premi::Model::Presentazione::Video;
+                    \item Premi::Model::Presentazione::Background.
                     \end{itemize}
                     }
      \subsubsubsection{Premi::Model::Presentazione::Text}{
@@ -519,7 +557,21 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \begin{itemize}
                     \item Premi::Model::Presentazione::SlideShowElement.
                     \end{itemize}
-                    }              
+                    }     
+                 \subsubsubsection{Premi::Model::Presentazione::Background}{
+                				\textbf{\tipo}: Gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
+                				\textbf{\relaz}: 
+                				\begin{itemize}
+                					\item Premi::Model::Inserimento::ConcreteBackgroundInserter -> invoca il costruttore di Background e inserisce l’oggetto nel membro contenitore all’interno dell’oggetto della classe Premi::Model::Presentazione::SlideShow;
+                                    \item Premi::Model::Eliminazione::ConcreteBackgroundRemover -> rimuove l’oggetto Video dal membro contenitore all’interno di Premi::Model::Presentazione::SlideShow, ne invoca quindi il distruttore;
+                                    \item 
+                				\end{itemize}	
+                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Premi::Model::Inserimento::ConcreteBacgroundInserter  o da Premi::Model::Builder::ConcreteBackgroundBuilder e inseriti nel membro contenitore all’interno di Premi::Model::Presentazione::SlideShow.\\
+                                \textbf{\base}: 
+                                    \begin{itemize}
+                                    \item Premi::Model::Presentazione::SlideShowElement.
+                                    \end{itemize}
+                                    }              
 }
 
  \subsubsection{Premi::Model::Builder}{
@@ -540,12 +592,13 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                 \textbf{\interfacce}: Gli oggetti delle sottoclassi della classe AbstractBuilder vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::SlideShowElement.\\
                 \textbf{\figli}: 
                     \begin{itemize}
-                    \item Premi::Model::Builder::ConcreteTextBuilder
-                    \item Premi::Model::Builder::ConcreteFrameBuilder
-                    \item Premi::Model::Builder::ConcreteImageBuilder
-                    \item Premi::Model::Builder::ConcreteSVGBuilder
-                    \item Premi::Model::Builder::ConcreteAudioBuilder
-                    \item Premi::Model::Builder::ConcreteVideoBuilder
+                    \item Premi::Model::Builder::ConcreteTextBuilder;
+                    \item Premi::Model::Builder::ConcreteFrameBuilder;
+                    \item Premi::Model::Builder::ConcreteImageBuilder;
+                    \item Premi::Model::Builder::ConcreteSVGBuilder;
+                    \item Premi::Model::Builder::ConcreteAudioBuilder;
+                    \item Premi::Model::Builder::ConcreteVideoBuilder;
+                    \item Premi::Model::Builder::ConcreteBackgroundBuilder.
                     \end{itemize}
                     }
      \subsubsubsection{Premi::Model::Builder::ConcreteTextBuilder}{
@@ -626,6 +679,19 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \item Premi::Model::Builder::AbstractBuilder.
                     \end{itemize}
                     }
+                                         \subsubsubsection{Premi::Model::Builder::ConcreteBackgroundBuilder}{
+                    				\textbf{\tipo}: Classe concreta del Design Pattern Builder. Ha lo scopo di istanziare gli oggetti di classe Premi::Model::Presentazione::Background al momento del caricamento della presentazione e di passarli all’oggetto di classe Director.\\
+                    				\textbf{\relaz}: 
+                    				\begin{itemize}
+                    					\item Premi::Model::Builder::Director -> istanzia l'oggetto passando i parametri ricevuti da Premi::Model::Presentazione::Loader;
+                                        \item Premi::Model::Presentazione::Background <- istanza l'oggetto della classe Background e lo restituisce al director.
+                    				\end{itemize}	
+                                    \textbf{\interfacce}: Gli oggetti della classe ConcreteBackgroundBuilder  vengono istanziati da Premi::Model::Builder::Director e hanno lo scopo di istanziare gli oggetti delle sottoclassi di Premi::Model::Presentazione::Background e di passarli al Director.\\
+                                    \textbf{\base}: 
+                                        \begin{itemize}
+                                        \item Premi::Model::Builder::AbstractBuilder.
+                                        \end{itemize}
+                                        }
 }
 
 \subsubsection{Premi::Model::Caricamento}{
