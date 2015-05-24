@@ -25,7 +25,7 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 			\item \textbf{Piè di pagina}: versione documento, università e anno accademico, numeri di pagina e licenza.
 		\end{itemize}
 		\subsubsubsection{Verbali}
-		Per quanto riguarda i verbali degli incontri, essi devono essere redatti dal Responsabile di Progetto\ped{g} ad ogni riunione. Esso deve rispettare la formattazione regolata alla sezione \ref{sub:typo} e successive ma è da considerarsi solo come promemoria per il gruppo.\\
+		Per quanto riguarda i verbali degli incontri, essi devono essere redatti dal Responsabile di Progetto\ped{g} ad ogni riunione. Esso deve rispettare la formattazione regolata alla sezione \S\ref{sub:typo} e successive ma è da considerarsi solo come promemoria per il gruppo.\\
 		Il nome di ogni Verbale deve rispettare la seguente dicitura: “Verbale\_[tipo incontro]-[data]” dove il tipo incontro può essere di due tipi:
 		\begin{itemize}
 			\item Interno (INT): incontro effettuato tra i membri del gruppo;
@@ -68,13 +68,13 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 				\item \textbf{Grassetto}: da utilizzare maggiormente per definire i titoli e dare una panoramica generale del testo ed in maniera minore per sottolineare passaggi importanti e parole chiave;
 				\item \textbf{Corsivo}: da utilizzare per riportare citazioni da fonti esterne o riferimenti;
 				\item \textbf{Sottolineato}: da utilizzare all'interno del testo per dare importanza a determinati concetti;
-				\item \textbf{Maiuscolo}: deve essere limitato all’indicazione di acronimi e nei casi specificati nei Formati di Riferimento (\ref{sub:rif});
+				\item \textbf{Maiuscolo}: deve essere limitato all’indicazione di acronimi e nei casi specificati nei Formati di Riferimento (\S\ref{sub:rif});
 				\item \textbf{Punteggiatura}: adottare la formattazione standard ossia la punteggiatura deve precedere sempre un carattere di spazio e non viceversa;
 				\item \textbf{Lettera maiuscola}: deve seguire esclusivamente un punto, un punto esclamativo o un punto interrogativo;
 				\item \textbf{Parentesi}: una qualsiasi frase racchiusa fra parentesi non deve iniziare con un carattere di spaziatura e non deve chiudersi con un carattere di punteggiatura e/o di spaziatura;
 				\item \textbf{Elenchi puntati o numerati}: ogni elemento dell’elenco deve terminare con un punto e virgola, tranne l’ultimo che deve terminare con un punto. La prima parola deve avere la lettera maiuscola, a meno di casi particolari (es. nome di un file\ped{g});
 				\item \textbf{Glossario}: le parole accompagnate da (g) in pedice sono quelle che presentano una corrispondenza nel Glossario;
-				\item \textbf{Pagine}: è obbligatorio porre i numeri di pagina in ogni documento nel formato {n} di {totale pagine} e mantenere i margini fissati dal template\ped{g} di cui sopra (\ref{sub:content}).
+				\item \textbf{Pagine}: è obbligatorio porre i numeri di pagina in ogni documento nel formato {n} di {totale pagine} e mantenere i margini fissati dal template\ped{g} di cui sopra (\S\ref{sub:content}).
 			\end{itemize}
 		}
 		\subsubsection{Formati di riferimento e altro}{
@@ -115,7 +115,7 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 			}
 		}
 \subsubsection{Glossario}{
- 	Il glossario è unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
+ 	Il glossario è unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \S\ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
  	I termini all'interno del glossario saranno organizzati nel seguente modo:
  	\begin{itemize}
 	 	\item Tutti termini saranno in ordine alfanumerico;
@@ -239,12 +239,12 @@ Dopo aver ottenuto il grafico il \emph{Verificatore} con la supervisione del \em
 	\item \textbf{Rispetto delle norme di progetto}: Sono state definite norme tipografiche di carattere generale. Impongono una struttura dei documenti che non può essere verificata in maniera automatica. La verifica delle norme
 	per cui non è stato definito uno strumento automatico richiede che i Verificatori eseguano inspection sul rispetto di quelle norme in ciascun documento;
 	\item \textbf{Lista di controllo}: Il \emph{Verificatore} dovrà utilizzare la lista di controllo per i
-	documenti, descritta nell’appendice \ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
+	documenti, descritta nell’appendice \S\ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
 	\item \textbf{Verifica del glossario}: Il \emph{Verificatore} si occuperà del controllo dei termini inseriti nel glossario e della corretta pedicizzazione dei termini nei vari documenti,segnalando eventuali errori;
 	\item \textbf{Calcolo dell’indice Gulpease}: Su ogni documento redatto il \emph{Verificatore} deve calcolare l’indice di leggibilità. Nel caso in cui l’indice risultasse troppo basso, sarà necessario eseguire un walkthrough del documento alla ricerca delle frasi troppo lunghe o complesse;
 	\item \textbf{Miglioramento del processo di verifica}: Per avere un miglioramento del processo di verifica, quando i \emph{Verificatori} eseguono walkthrough di un documento, dovranno riportare gli errori più frequentemente trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle verifiche future;
 	\item \textbf{Segnalazione degli errori riscontrati}: il \emph{Verificatore} deve generare ticket secondo quando descritto nella
-	sezione \ref{sec:TicketVerifica}.
+	sezione \S\ref{sec:TicketVerifica}.
 	\end{enumerate}
 	\subsubsubsection{Verifica diagrammi UML}
 	\label{sec:strumentiVerifica}
@@ -280,12 +280,24 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 	\item \textbf{Selenium}: tool per l'automatizzazione dei test sui browser.
    \end{itemize}
 	
-	\subsubsubsection{Validazione}
+	\subsubsubsection{Validazione codice}
 	
 	La validazione\ped{g} del codice\ped{g} HTML e CSS\ped{g} dell’applicazione da noi sviluppata verrà
 	fatta tramite il servizio W3C\ped{g} Validator32 del W3C\ped{g}.
 
-				
+		\subsection{Validazione requisiti}
+		L'attività di validazione consiste nei seguenti task:
+		\begin{itemize}
+		\item Preparare i test dei singoli requisiti e la specifica dei test per l'analisi dei risultati;
+		\item Assicurari che i requisiti testati riflettano uno specifico uso dell'applicazione;
+		\item Condurre i test include include:
+		\begin{itemize}
+		\item Stress test e casi limite;
+		\item Testare il prodotto software per la sua abilità di isolare e minimizzare l'effetto degli errori; questo implica che il software è robusto ed affidabile anche negli stress test e casi limite;
+		\item Testare che il prodotto software sia in grado di far svolgere all'utente tutti i suoi task.
+		\end{itemize}
+		\item Validare che il software soddisfi gli scopi per cui è stato creato.
+		\end{itemize}		
 		\subsection{Gestione delle modifiche ai requisiti}{
 					A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:
 					\begin{enumerate}

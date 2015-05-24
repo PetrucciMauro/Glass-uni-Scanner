@@ -167,7 +167,7 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
 	\subsubsection{Tracciamento componenti}
-	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
+	Ogni requisito deve essere tracciato al componente che lo soddisfa. Il software LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \S\ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni requisito venga soddisfatto.
 	\subsection{Codifica}
 	Le convenzioni di codifica che tutti i membri del gruppo devono seguire sono quelle
 	specificate alla seguente pagina :\\
@@ -193,16 +193,33 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
   	Qui verranno riportate da ogni programmatoreo tutte le informazioni necessarie per una semplice comprensione del listato.
     
     \end{lstlisting}
-    
-  	\subsection{Test}
+   
+   \subsection{Procedura di verifica}
+   Per rendere uniforme la procedura di verifica, vengono qui elencate le norme che regolano la verifica del codice prodotto , si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata le tecniche e le modalità con cui verranno condotte le attività di verifica e validazione durante l’intero  sviluppo del progetto.
+   
+   \subsubsection{Verifica statica}
+   \begin{itemize}
+   
+   \item \textbf{Analisi del flusso di controllo:} si accerta che il codice segua il flusso
+   aspettato, che non si possa entrare in porzioni di codice che possano non
+   terminare, che non esista codice non raggiungibile;
+   
+   \item \textbf{Analisi del flusso dei dati:} si accerta che il software non acceda mai
+   a variabili non inizializzate o scriva inutilmente più volte prima di usare;
+   una variabile
+   \item \textbf{Analisi del flusso di informazione:} verifica che gli input e gli output di
+   ogni unità di codice o di più unità rientrino nelle specifiche del programma.
+   
+  
+   \end{itemize}
+   
+   \subsubsection{Verifica dinamica}  
   	\begin{itemize}
-  	
-  	
   \item \textbf{Test di unità}: test che si effettuano per ogni unità del software con il massimo grado di parallelismo;
   \item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
   \item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il software rispetti i requisiti richiesti, o che il software riesca ad adattarsi correttamente al contesto dell’azienda proponente. Il collaudo sarà sul software installato, finito il quale avverrà il rilascio del prodotto.
   \end{itemize}
-  \subsubsection{Definizione dei test}
+  \subsubsubsection{Definizione dei test}
   Per agevolare la fase di verifica tramite test è necessario definire una lista di prove da eseguire nelle varie fasi del ciclo di sviluppo del software.
   La lista dei test da eseguire è riportata nel documento di \emph{Piano di Qualifica}. Ogni test va accompagnato da un identificativo il quale verrà utilizzato per riferire
   la singola attività all’interno degli altri documenti.  L’identificativo dei test è composto da due caratteri maiuscoli, da un numero e da un carattere minuscolo. Il primo è il carattere T e viene utilizzato per indicare che si tratta di un elemento inerente all’attività di test. Il secondo carattere è uno tra i seguenti:
@@ -214,15 +231,15 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
   Il numero posto dopo i due caratteri è incrementale e non gerarchico. L’ultimo carattere identifica i possibili esiti delle operazioni svolte dall’utente, parte dal carattere a e procede in ordine alfabetico crescente. Si consiglia di dare precedenza agli esiti positivi per poi passare a quelli di rifiuto di input non valido o di scatenamento di errori.
   Nel Piano di Progetto si dovrà inserire una tabella riportante l’identificativo e la descrizione dell’attività di test.
   
-  \subsubsection{Codifica dei test di unità e di integrazione}
-  Per l’automazione dei test di unità e di integrazione il gruppo di sviluppo utilizzeranno gli strumenti elencati nella sezione \ref{sec:strumentiTest}. Questi strumenti permettono di definire delle classi di test
+  \subsubsubsection{Codifica dei test di unità e di integrazione}
+  Per l’automazione dei test di unità e di integrazione il gruppo di sviluppo utilizzeranno gli strumenti elencati nella sezione \S\ref{sec:strumentiTest}. Questi strumenti permettono di definire delle classi di test
   e dei metodi appositi per verificare il corretto funzionamento delle procedure sotto esame per poi generare un rapporto sul risultato delle attività.
-  Per ogni unità da testare saràa necessario creare una nuova classe di test avente come nome quello dell’elemento da esaminare seguito dalla parola “Test”. Nel caso di test di integrazione il nome dovrà essere indicativo dei componenti coinvolti e del tipo di interazione sotto esame. Il formalismo da adottare per la stesura del codice di test è equivalente a quello indicato per il resto del codice dell’applicativo fatta eccezione per l’inserimento dei commenti che è a discrezione del \emph{Verificatore}. Si consiglia, tuttavia, di inserire una breve descrizione dello scopo dei metodi di test.
+  Per ogni unità da testare sarà necessario creare una nuova classe di test avente come nome quello dell’elemento da esaminare seguito dalla parola “Test”. Nel caso di test di integrazione il nome dovrà essere indicativo dei componenti coinvolti e del tipo di interazione sotto esame. Il formalismo da adottare per la stesura del codice di test è equivalente a quello indicato per il resto del codice dell’applicativo fatta eccezione per l’inserimento dei commenti che è a discrezione del \emph{Verificatore}. Si consiglia, tuttavia, di inserire una breve descrizione dello scopo dei metodi di test.
   
-  \subsubsection{Rapporto dell’analisi svolta sul codice}
+  \subsubsubsection{Rapporto dell’analisi svolta sul codice}
   Durante le attività di verifica statica e dinamica sul codice i verificatori sono tenuti a compilare un rapporto che descriva i test e le analisi svolte, accompagnate dai rispettivi risultati. Tutte queste informazioni andranno inserite in un documento, in forma tabellare, suddiviso nelle seguenti sezioni:
   \begin{itemize}
- \item \textbf{Rapporto dell’analisi statica:} riassunto dei risultati ottenuti dall’analisi del codice con gli strumenti di debugging consigliati nella sezione \ref{sec:analisiStatica};
+ \item \textbf{Rapporto dell’analisi statica:} riassunto dei risultati ottenuti dall’analisi del codice con gli strumenti di debugging consigliati nella sezione \S\ref{sec:analisiStatica};
   
   \item \textbf{Valutazione delle metriche:} rapporto dei valori delle metriche del codice misurate con \emph{jsmeter} ed eventuali considerazioni sui risultati;
   \item \textbf{Descrizione dei test}: elenco completo dei test di unità, di integrazione e di sistema. La definizione dei test verrà inserita di pari passo con la loro progettazione.
