@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  25 MAY 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  25 MAY 2015 18:09
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 (SpecificaTecnica_v.1.0.0.tex
@@ -954,10 +954,6 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 32.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 32.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -978,33 +974,40 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 33.
-
-[2]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
-\tf@toc=\write3
+ [2] (SpecificaTecnica_v.1.0.0.toc
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 35.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
+[3]
+Overfull \hbox (11.75842pt too wide) in paragraph at lines 45--45
+ [][] [][][]\T1/cmr/m/n/12 Premi::Controller::Presentazione::Inserimento::Concr
+eteTextInserter[][] [][]  
+ []
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 35.
 
-[3] (../../Template/sommario.tex)
+Overfull \hbox (49.44502pt too wide) in paragraph at lines 51--51
+ [][] [][][]\T1/cmr/m/n/12 Premi::Controller::Presentazione::Inserimento::Concr
+eteBackgroundInserter[][] [][]  
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 88.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [4])
+\tf@toc=\write3
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [5] (../../Template/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 37.
-
-[4] (parti/introduzione.tex
+ [6] (parti/introduzione.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -1022,46 +1025,28 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 30.
-
-[5])
+[7])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 39.
-
-[6] (parti/strumenti.tex
+ [8] (parti/strumenti.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 28.
-
-[7]
+[9]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 46.
-
-[8])
+ [10])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 41.
-
-[9] (parti/pattern.tex
+ [11] (parti/pattern.tex
 
 LaTeX Warning: File `./images/{Modifica_Presentazione}.svg' not found on input 
 line 5.
@@ -1109,11 +1094,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 33.
-
-[10]
+ [12]
 Overfull \hbox (69.06331pt too wide) in paragraph at lines 48--53
 \T1/cmr/m/n/12 Il pac-ka-ge Pre-mi::Model::Builder im-ple-men-ta il De-si-gn Pa
 t-tern Buil-der. Pre-mi::Model::Presentazione::Loader
@@ -1129,11 +1110,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 64.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 64.
-
-[11]
+ [13]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -1152,11 +1129,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 85.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 85.
-
-[12]
+ [14]
 Overfull \hbox (112.86182pt too wide) in paragraph at lines 90--91
 []\T1/cmr/m/n/12 createElement che in-vo-ca il co-strut-to-re del-la sot-to-cla
 s-se di Pre-mi::Model::Presentazione::SlideShowElement
@@ -1184,12 +1157,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 43.
-
-[13] (parti/presentazione.tex
-<./images/PresentazioneArchitettura.jpg, id=151, 1364.09625pt x 788.9475pt>
+ [15] (parti/presentazione.tex
+<./images/PresentazioneArchitettura.jpg, id=331, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -1206,21 +1175,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 45.
-
-[14]
+ [16]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 45.
-
-[15 <./images/PresentazioneArchitettura.jpg>] (parti/componenti.tex
-(parti//MVC/model.tex
+ [17 <./images/PresentazioneArchitettura.jpg>] (parti/componenti.tex (parti//MV
+C/model.tex
 Overfull \hbox (0.93553pt too wide) in paragraph at lines 16--18
 \T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :. Il pa
 c-ka-ge è in re-la-zio-ne con Pre-mi::Model::Command
@@ -1235,29 +1196,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 31.
-
-[16]
+ [18]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 71.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 71.
-
-[17]
+ [19]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 113.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 113.
-
-[18]
+[20]
 Overfull \hbox (15.38507pt too wide) in paragraph at lines 123--123
  |[]\T1/cmr/bx/n/12 Premi::Controller::Presentazione::Inserimento::ConcreteBack
 groundInserter| 
@@ -1279,10 +1229,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 148.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 148.
-
-[19]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[21]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1299,10 +1246,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 181.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 181.
-
-[20]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[22]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1325,10 +1269,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 220.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 220.
-
-[21]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[23]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1348,12 +1289,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 257.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 257.
-
-[22]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.1}) has been already used, duplicate ignored
+ [24]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.258 ...ubsection{Premi::Model::Modifica::Editor}
@@ -1369,10 +1306,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 284.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 284.
-
-[23]
+[25]
 Overfull \hbox (80.39844pt too wide) in paragraph at lines 284--286
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
@@ -1404,12 +1338,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 313.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 313.
-
-[24]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.5}) has been already used, duplicate ignored
+ [26]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.316 ...on{Premi::Model::Modifica::EditorContent}
@@ -1453,10 +1383,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 345.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 345.
-
-[25]
+[27]
 Overfull \hbox (80.39844pt too wide) in paragraph at lines 349--351
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
@@ -1494,11 +1421,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 366.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 366.
-
-[26]
+ [28]
 Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
@@ -1526,10 +1449,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 400.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 400.
-
-[27]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[29]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1544,11 +1464,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 436.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 436.
-
-[28]
+ [30]
 Overfull \hbox (99.70775pt too wide) in paragraph at lines 436--437
 []\T1/cmr/m/n/12 al mo-men-to del ca-ri-ca-men-to del-la pre-sen-ta-zio-ne gli 
 og-get-ti di Pre-mi::Model::Presentazione::SlideShowElement
@@ -1590,10 +1506,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 457.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 457.
-
-[29]
+[31]
 Overfull \hbox (52.78441pt too wide) in paragraph at lines 461--462
 \T1/cmr/m/n/12 wE-le-ment e li in-se-ri-sce nei mem-bri con-te-ni-to-ri al-l'in
 -ter-no di Pre-mi::Model::Presentazione::SlideShow; 
@@ -1620,11 +1533,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 484.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 484.
-
-[30]
+ [32]
 Overfull \hbox (111.988pt too wide) in paragraph at lines 485--487
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteTextIn
 serter o da Pre-mi::Model::Builder::ConcreteTextBuilder
@@ -1687,10 +1596,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 522.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 522.
-
-[31]
+[33]
 Overfull \hbox (114.36104pt too wide) in paragraph at lines 523--524
 \T1/cmr/m/n/12 sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no del-l
 'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
@@ -1741,11 +1647,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 553.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 553.
-
-[32]
+ [34]
 Overfull \hbox (122.42157pt too wide) in paragraph at lines 555--557
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteVideoI
 nserter o da Pre-mi::Model::Builder::ConcreteVideoBuilder
@@ -1773,12 +1675,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 580.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 580.
-
-[33]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.1}) has been already used, duplicate ignored
+ [35]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.581 ...bsection{Premi::Model::Builder::Director}
@@ -1828,10 +1726,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 607.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 607.
-
-[34]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[36]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1848,10 +1743,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 639.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 639.
-
-[35]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[37]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1874,10 +1766,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 672.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 672.
-
-[36]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[38]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1904,10 +1793,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 704.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 704.
-
-[37]
+[39]
 Overfull \hbox (20.73242pt too wide) in paragraph at lines 705--706
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
@@ -1935,10 +1821,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 735.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 735.
-
-[38]
+[40]
 Overfull \hbox (20.73242pt too wide) in paragraph at lines 736--737
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
@@ -1970,20 +1853,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 765.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 765.
-
-[39])
+ [41])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 11.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 11.
-
-[40] (parti//MVC/control.tex
+ [42] (parti//MVC/control.tex
 Overfull \hbox (17.93304pt too wide) in paragraph at lines 10--12
 \T1/cmr/m/n/12 Pre-mi::View::Pages::MobileEdit, Pre-mi::View::Pages::DesktopEdi
 t, Pre-mi::View::Pages::Execution
@@ -2009,11 +1884,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 41 undefined on input line 27.
-
-[41]
+ [43]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -2028,11 +1899,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 13.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 42 undefined on input line 13.
-
-[42] (parti//MVC/view.tex
+ [44] (parti//MVC/view.tex
 
 LaTeX Warning: File `./images/{view}.png' not found on input line 4.
 
@@ -2063,11 +1930,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 43 undefined on input line 27.
-
-[43]
+ [45]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
@@ -2086,11 +1949,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 44 undefined on input line 55.
-
-[44]
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
@@ -2109,51 +1968,30 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 45 undefined on input line 82.
-
-[45]
+ [47]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 105.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 46 undefined on input line 105.
-
-[46]))
-
-Package lastpage Warning: Rerun to get the references right on input line 47.
-
+ [48]))
 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 47 undefined on input line 47.
-
-[47]
+ [49]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 48 undefined on input line 47.
-
-[48]
+ [50]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
- (SpecificaTecnica_v.1.0.0.aux)
+
+(SpecificaTecnica_v.1.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -2168,13 +2006,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 9 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13667 strings out of 493698
- 197251 string characters out of 3144409
- 359832 words of memory out of 3000000
+ 13671 strings out of 493698
+ 197321 string characters out of 3144409
+ 362832 words of memory out of 3000000
  16595 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 51i,15n,60p,885b,857s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,885b,857s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -2185,9 +2023,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (49 pages, 445826 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (51 pages, 481393 bytes).
 PDF statistics:
- 811 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
+ 987 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
  915 words of extra memory for PDF output out of 10000 (max. 10000000)
 
