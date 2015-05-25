@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  23 MAY 2015 19:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  25 MAY 2015 11:44
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\SpecificaTecnica_v.1.0.0.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
-\format.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\format.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1202,8 +1202,8 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\SpecificaTecnica_v.1.0.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1303,19 +1303,18 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
-\firstpage.tex" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\firstpage.tex"
+<../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
-ts/Giovanni/Studio e lavoro/GitHub/Premi/RP/logo.jpg>])
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\registroMod.tex"
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
+Fiup/3° Anno/SWE/Premi/RP/logo.jpg>])
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -1345,8 +1344,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\SpecificaTecnica_v.1.0.0.toc"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.toc"
 Overfull \hbox (11.75842pt too wide) in paragraph at lines 42--42
  [][] [][][]\T1/cmr/m/n/12 Premi::Controller::Presentazione::Inserimento::Concr
 eteTextInserter[][] [][]  
@@ -1368,54 +1367,73 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[5]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Template
-\sommario.tex")
+[5] ("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\sommario.tex
+")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [6]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\introduzione.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\introduzione.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[7])
+ [7])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [8]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\strumenti.tex")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\strumenti.tex"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
+Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [9]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\pattern.tex"
+ [11]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\pattern.tex"
+
+LaTeX Warning: File `./images/{Modifica_Presentazione}.svg' not found on input 
+line 5.
+
+
+! LaTeX Error: Unknown graphics extension: .svg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...le=0.6]{\imgs {Modifica_Presentazione}.svg}
+                                                   %inserire il diagramma UML
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
@@ -1444,9 +1462,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 38.
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
+ [12]
 Overfull \hbox (69.06331pt too wide) in paragraph at lines 48--53
 \T1/cmr/m/n/12 Il pac-ka-ge Pre-mi::Model::Builder im-ple-men-ta il De-si-gn Pa
 t-tern Buil-der. Pre-mi::Model::Presentazione::Loader
@@ -1460,9 +1478,9 @@ ca-te-na: Client->Invocatore->Ricevitore
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 71.
+Package pdftex.def Info: ../../logo.jpg used on input line 64.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12]
+ [13]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
@@ -1479,9 +1497,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 89.
+Package pdftex.def Info: ../../logo.jpg used on input line 85.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13]
+ [14]
 Overfull \hbox (112.86182pt too wide) in paragraph at lines 90--91
 []\T1/cmr/m/n/12 createElement che in-vo-ca il co-strut-to-re del-la sot-to-cla
 s-se di Pre-mi::Model::Presentazione::SlideShowElement
@@ -1509,10 +1527,10 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\presentazione.tex"
-<./images/PresentazioneArchitettura.jpg, id=313, 1364.09625pt x 788.9475pt>
+ [15]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\presentazione.tex"
+<./images/PresentazioneArchitettura.jpg, id=324, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -1529,17 +1547,17 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
+ [16]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
-rni/Specifica Tecnica/images/PresentazioneArchitettura.jpg>]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\componenti.tex"
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\MVC\model.tex"
+ [17 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/PresentazioneArchitettura.jpg>]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\componenti.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\model.tex"
 Overfull \hbox (0.93553pt too wide) in paragraph at lines 16--18
 \T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :. Il pa
 c-ka-ge � in re-la-zio-ne con Pre-mi::Model::Command
@@ -1554,19 +1572,25 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
+ [18]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 71.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18]
+ [19]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 112.
+Package pdftex.def Info: ../../logo.jpg used on input line 113.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+[20]
+Overfull \hbox (15.38507pt too wide) in paragraph at lines 123--123
+ |[]\T1/cmr/bx/n/12 Premi::Controller::Presentazione::Inserimento::ConcreteBack
+groundInserter| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
@@ -1574,76 +1598,92 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 ...tion{Premi::Model::Eliminazione::Remover}
-                                                  {pdfTeX warning (ext4): desti
-nation with the same identifier (name{subsubsubsection.5.1.2}) has been already
- used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.138 ...odel::Eliminazione:: ConcreteTextRemover}
+l.143 ...tion{Premi::Model::Eliminazione::Remover}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 144.
+Package pdftex.def Info: ../../logo.jpg used on input line 148.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[20]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.3}) has been already used, duplicate ignored
+[21]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.151 ...del::Eliminazione:: ConcreteFrameRemover}
+l.162 ...odel::Eliminazione:: ConcreteTextRemover}
                                                   {pdfTeX warning (ext4): desti
-nation with the same identifier (name{subsubsubsection.5.1.4}) has been already
+nation with the same identifier (name{subsubsubsection.5.1.3}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 ...odel::Eliminazione:: ConcreteSVGtRemover}
+l.175 ...del::Eliminazione:: ConcreteFrameRemover}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 181.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[22]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188 ...odel::Eliminazione:: ConcreteSVGtRemover}
                                                   {pdfTeX warning (ext4): desti
 nation with the same identifier (name{subsubsubsection.5.1.5}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 ...del::Eliminazione:: ConcreteImageRemover}
-                                                  {
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 188.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[21]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.190 ...del::Eliminazione:: ConcreteVideoRemover}
+l.201 ...del::Eliminazione:: ConcreteImageRemover}
                                                   {pdfTeX warning (ext4): desti
-nation with the same identifier (name{subsubsubsection.5.1.7}) has been already
+nation with the same identifier (name{subsubsubsection.5.1.6}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.203 ...del::Eliminazione:: ConcreteAudioRemover}
-                                                  {
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
-ion.5.1.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.221 ...ubsection{Premi::Model::Modifica::Editor}
+l.214 ...del::Eliminazione:: ConcreteVideoRemover}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
+Package pdftex.def Info: ../../logo.jpg used on input line 220.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[22]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.2}) has been already used, duplicate ignored
+[23]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.240 ...n{Premi::Model::Modifica::EditorPosition}
+l.227 ...del::Eliminazione:: ConcreteAudioRemover}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.8}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240 ...Eliminazione:: ConcreteBackgroundRemover}
                                                   {
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 247--249
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 257.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.258 ...ubsection{Premi::Model::Modifica::Editor}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.2}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.277 ...n{Premi::Model::Modifica::EditorPosition}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 284.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[25]
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 284--286
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
@@ -1652,15 +1692,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 ...ction{Premi::Model::Modifica::EditorSize}
+l.290 ...ction{Premi::Model::Modifica::EditorSize}
                                                   {
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 256.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[23]
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 260--262
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 297--299
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
@@ -1669,32 +1703,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.266 ...ion{Premi::Model::Modifica::EditorRotate}
+l.303 ...ion{Premi::Model::Modifica::EditorRotate}
                                                   {
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 273--275
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 310--312
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
-ion.5.1.5}) has been already used, duplicate ignored
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 313.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.279 ...on{Premi::Model::Modifica::EditorContent}
+l.316 ...on{Premi::Model::Modifica::EditorContent}
                                                   {
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 284.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[24]
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 286--288
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 323--325
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
 
 
-Overfull \hbox (80.35268pt too wide) in paragraph at lines 286--288
+Overfull \hbox (80.35268pt too wide) in paragraph at lines 323--325
 \T1/cmr/m/n/12 che-r� quin-di i me-to-di di mo-di-fi-ca del con-te-nu-to for-ni
 -ti al-l'in-ter-no del-la clas-se Pre-mi::Model::Presentazione::Text. 
  []
@@ -1703,15 +1735,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.292 ...tion{Premi::Model::Modifica::EditorShape}
+l.329 ...tion{Premi::Model::Modifica::EditorShape}
                                                   {
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 299--301
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 336--338
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
 
 
-Overfull \hbox (69.66083pt too wide) in paragraph at lines 299--301
+Overfull \hbox (69.66083pt too wide) in paragraph at lines 336--338
 \T1/cmr/m/n/12 che-r� quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti
  al-l'in-ter-no del-la clas-se Pre-mi::Model::Presentazione::SVG. 
  []
@@ -1720,33 +1752,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.305 ...tion{Premi::Model::Modifica::EditorColor}
+l.342 ...tion{Premi::Model::Modifica::EditorColor}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 310.
+Package pdftex.def Info: ../../logo.jpg used on input line 345.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[25]
-Overfull \hbox (80.39844pt too wide) in paragraph at lines 312--314
+[27]
+Overfull \hbox (80.39844pt too wide) in paragraph at lines 349--351
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Premi::Model::Command::ConcreteEditCommand
  []
 
 
-Overfull \hbox (15.81982pt too wide) in paragraph at lines 312--314
+Overfull \hbox (15.81982pt too wide) in paragraph at lines 349--351
 \T1/cmr/m/n/12 che-r� quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti
  dal-la clas-se Pre-mi::Model::Presentazione::SVG. 
  []
 
 
-Overfull \hbox (124.17807pt too wide) in paragraph at lines 319--321
+Overfull \hbox (124.17807pt too wide) in paragraph at lines 356--358
 \T1/cmr/m/n/12 co-mu-ni-ca, inol-tre, con il con-trol-ler, in-fat-ti le sue cla
 s-si so-no ge-ne-ra-te da Pre-mi::Controller::Presentazione::EditController. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--321
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
 
  []
 
@@ -1754,19 +1786,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.321 	\subsubsubsection{Premi::Model::Invoker}
+l.358 	\subsubsubsection{Premi::Model::Invoker}
                                                {
-Overfull \hbox (127.89235pt too wide) in paragraph at lines 325--327
+Overfull \hbox (127.89235pt too wide) in paragraph at lines 362--364
 []\T1/cmr/m/n/12 Premi::Controller::MobileEdit->crea un og-get-to di una sot-to
 -clas-se di Pre-mi::Model::Command::AbstractCommand
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 329.
+Package pdftex.def Info: ../../logo.jpg used on input line 366.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [26]
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
+ [28]
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
@@ -1774,48 +1806,48 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.332 ...n{Premi::Model::Command::AbstractCommand}
+l.369 ...n{Premi::Model::Command::AbstractCommand}
                                                   {pdfTeX warning (ext4): desti
 nation with the same identifier (name{subsubsubsection.5.1.3}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346 ...i::Model::Command::ConcreteInsertCommand}
+l.383 ...i::Model::Command::ConcreteInsertCommand}
                                                   {pdfTeX warning (ext4): desti
 nation with the same identifier (name{subsubsubsection.5.1.4}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.360 ...i::Model::Command::ConcreteRemoveCommand}
+l.397 ...i::Model::Command::ConcreteRemoveCommand}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 363.
+Package pdftex.def Info: ../../logo.jpg used on input line 400.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[27]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+[29]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.374 ...emi::Model::Command::ConcreteEditCommand}
+l.411 ...emi::Model::Command::ConcreteEditCommand}
                                                   {
-Overfull \hbox (79.63745pt too wide) in paragraph at lines 398--399
+Overfull \hbox (79.63745pt too wide) in paragraph at lines 435--436
 []\T1/cmr/m/n/12 Premi::Controller::Presentazione::EditController o Pre-mi::Con
 troller::Presentazione::ExecutionController
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 399.
+Package pdftex.def Info: ../../logo.jpg used on input line 436.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28]
-Overfull \hbox (99.70775pt too wide) in paragraph at lines 399--400
+ [30]
+Overfull \hbox (99.70775pt too wide) in paragraph at lines 436--437
 []\T1/cmr/m/n/12 al mo-men-to del ca-ri-ca-men-to del-la pre-sen-ta-zio-ne gli 
 og-get-ti di Pre-mi::Model::Presentazione::SlideShowElement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
@@ -1823,9 +1855,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.401 ...tion{Premi::Model::Presentazione::Loader}
+l.438 ...tion{Premi::Model::Presentazione::Loader}
                                                   {
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 447--449
 
  []
 
@@ -1833,9 +1865,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.412 ...n{Premi::Model::Presentazione::SlideShow}
+l.449 ...n{Premi::Model::Presentazione::SlideShow}
                                                   {
-Underfull \hbox (badness 10000) in paragraph at lines 418--420
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 
  []
 
@@ -1843,21 +1875,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.420 ...::Model::Presentazione::SlideShowElement}
+l.457 ...::Model::Presentazione::SlideShowElement}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 420.
+Package pdftex.def Info: ../../logo.jpg used on input line 457.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[29]
-Overfull \hbox (52.78441pt too wide) in paragraph at lines 424--425
+[31]
+Overfull \hbox (52.78441pt too wide) in paragraph at lines 461--462
 \T1/cmr/m/n/12 wE-le-ment e li in-se-ri-sce nei mem-bri con-te-ni-to-ri al-l'in
 -ter-no di Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (10.85568pt too wide) in paragraph at lines 428--430
+Overfull \hbox (10.85568pt too wide) in paragraph at lines 465--467
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 : Pre-mi::Model::Inserimento::Inserter
  []
@@ -1866,42 +1898,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.439 ...ection{Premi::Model::Presentazione::Text}
+l.477 ...ection{Premi::Model::Presentazione::Text}
                                                   {
-Overfull \hbox (114.36104pt too wide) in paragraph at lines 443--444
+Overfull \hbox (114.36104pt too wide) in paragraph at lines 481--482
 \T1/cmr/m/n/12 sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no del-l
 'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
-
-Overfull \hbox (111.988pt too wide) in paragraph at lines 447--449
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 484.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [32]
+Overfull \hbox (111.988pt too wide) in paragraph at lines 485--487
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteTextIn
 serter o da Pre-mi::Model::Builder::ConcreteTextBuilder
  []
 
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 449.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
-bsection.5.1.5}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.453 ...ction{Premi::Model::Presentazione::Frame}
+l.491 ...ction{Premi::Model::Presentazione::Frame}
                                                   {
-Overfull \hbox (132.04698pt too wide) in paragraph at lines 457--458
+Overfull \hbox (132.04698pt too wide) in paragraph at lines 495--496
 \T1/cmr/m/n/12 se-ri-sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no
  del-l'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (6.9012pt too wide) in paragraph at lines 458--459
+Overfull \hbox (6.9012pt too wide) in paragraph at lines 496--497
 []\T1/cmr/m/n/12 Premi::Model::Eliminazione::ConcreteFrameRemover -> ri-muo-ve 
 l'og-get-to Fra-me dal mem-
  []
 
 
-Overfull \hbox (129.27823pt too wide) in paragraph at lines 461--463
+Overfull \hbox (129.27823pt too wide) in paragraph at lines 499--501
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteFrameI
 nserter o da Pre-mi::Model::Builder::ConcreteFrameBuilder
  []
@@ -1910,21 +1942,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.467 ...ction{Premi::Model::Presentazione::Image}
+l.505 ...ction{Premi::Model::Presentazione::Image}
                                                   {
-Overfull \hbox (132.04698pt too wide) in paragraph at lines 471--472
+Overfull \hbox (132.04698pt too wide) in paragraph at lines 509--510
 \T1/cmr/m/n/12 se-ri-sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no
  del-l'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (4.61287pt too wide) in paragraph at lines 472--473
+Overfull \hbox (4.61287pt too wide) in paragraph at lines 510--511
 []\T1/cmr/m/n/12 Premi::Model::Eliminazione::ConcreteImageRemover -> ri-muo-ve 
 l'og-get-to Ima-ge dal mem-
  []
 
 
-Overfull \hbox (126.9899pt too wide) in paragraph at lines 475--477
+Overfull \hbox (126.9899pt too wide) in paragraph at lines 513--515
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteImageI
 nserter o da Pre-mi::Model::Builder::ConcreteImageBuilder
  []
@@ -1933,102 +1965,123 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 ...section{Premi::Model::Presentazione::SVG}
+l.519 ...section{Premi::Model::Presentazione::SVG}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 484.
+Package pdftex.def Info: ../../logo.jpg used on input line 522.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[31]
-Overfull \hbox (114.36104pt too wide) in paragraph at lines 485--486
+[33]
+Overfull \hbox (114.36104pt too wide) in paragraph at lines 523--524
 \T1/cmr/m/n/12 sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no del-l
 'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (113.44598pt too wide) in paragraph at lines 489--491
+Overfull \hbox (113.44598pt too wide) in paragraph at lines 527--529
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteSVGIns
 erter o da Pre-mi::Model::Builder::ConcreteSVGBuilder
  []
 
-
-Overfull \hbox (132.04698pt too wide) in paragraph at lines 499--500
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
+ion.5.1.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.533 ...ction{Premi::Model::Presentazione::Audio}
+                                                  {
+Overfull \hbox (132.04698pt too wide) in paragraph at lines 537--538
 \T1/cmr/m/n/12 se-ri-sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no
  del-l'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (4.61284pt too wide) in paragraph at lines 500--501
+Overfull \hbox (4.61284pt too wide) in paragraph at lines 538--539
 []\T1/cmr/m/n/12 Premi::Model::Eliminazione::ConcreteAudioRemover -> ri-muo-ve 
 l'og-get-to Au-dio dal mem-
  []
 
 
-Overfull \hbox (126.98987pt too wide) in paragraph at lines 503--505
+Overfull \hbox (126.98987pt too wide) in paragraph at lines 541--543
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteAudioI
 nserter o da Pre-mi::Model::Builder::ConcreteAudioBuilder
  []
 
 
-Overfull \hbox (122.19244pt too wide) in paragraph at lines 513--514
+Overfull \hbox (122.19244pt too wide) in paragraph at lines 551--552
 \T1/cmr/m/n/12 ri-sce l'og-get-to nel mem-bro con-te-ni-to-re al-l'in-ter-no de
 l-l'og-get-to del-la clas-se Pre-mi::Model::Presentazione::SlideShow; 
  []
 
 
-Overfull \hbox (1.02347pt too wide) in paragraph at lines 514--515
+Overfull \hbox (1.02347pt too wide) in paragraph at lines 552--553
 []\T1/cmr/m/n/12 Premi::Model::Eliminazione::ConcreteVideoRemover -> ri-muo-ve 
 l'og-get-to Vi-deo dal mem-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 515.
+Package pdftex.def Info: ../../logo.jpg used on input line 553.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [32]
-Overfull \hbox (122.42157pt too wide) in paragraph at lines 517--519
+ [34]
+Overfull \hbox (122.42157pt too wide) in paragraph at lines 555--557
 \T1/cmr/m/n/12 go-no istan-zia-ti da Pre-mi::Model::Inserimento::ConcreteVideoI
 nserter o da Pre-mi::Model::Builder::ConcreteVideoBuilder
  []
 
 
-Overfull \hbox (12.20279pt too wide) in paragraph at lines 526--528
+Overfull \hbox (2.16757pt too wide) in paragraph at lines 566--568
+[]\T1/cmr/m/n/12 Premi::Model::Eliminazione::ConcreteBackgroundRemover -> ri-mu
+o-ve l'og-get-to Vi-deo dal
+ []
+
+
+Overfull \hbox (3.15485pt too wide) in paragraph at lines 566--568
+\T1/cmr/m/n/12 mem-bro con-te-ni-to-re al-l'in-ter-no di Pre-mi::Model::Present
+azione::SlideShow, ne in-vo-ca quin-
+ []
+
+
+Overfull \hbox (12.20279pt too wide) in paragraph at lines 578--580
 \T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :� in re
 -la-zio-ne con il pac-ka-ge Pre-mi::Model::Presentazione
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
-ion.5.1.1}) has been already used, duplicate ignored
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 580.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [35]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.529 ...bsection{Premi::Model::Builder::Director}
+l.581 ...bsection{Premi::Model::Builder::Director}
                                                   {
-Overfull \hbox (29.42058pt too wide) in paragraph at lines 533--534
+Overfull \hbox (29.42058pt too wide) in paragraph at lines 585--586
 \T1/cmr/m/n/12 la co-strui-zio-ne de-gli og-get-ti del-le sot-to-clas-si di Pre
 -mi::Model::Presentazione::SlideShowElement. 
  []
 
 
-Overfull \hbox (124.0114pt too wide) in paragraph at lines 534--535
+Overfull \hbox (124.0114pt too wide) in paragraph at lines 586--587
 \T1/cmr/m/n/12 clas-si di Ab-stract-Buil-der che ge-ne-re-ran-no i fi-le del-le
  sot-to-clas-si di Pre-mi::Model::Presentazione::SlideShowElement. 
  []
 
 
-Overfull \hbox (108.03058pt too wide) in paragraph at lines 536--538
+Overfull \hbox (108.03058pt too wide) in paragraph at lines 588--590
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 :Viene in-vo-ca-to da Pre-mi::Model::Presentazione::Loader.
  []
 
 
-Overfull \hbox (117.46825pt too wide) in paragraph at lines 536--538
+Overfull \hbox (117.46825pt too wide) in paragraph at lines 588--590
 \T1/cmr/m/n/12 � co-strui-to con de-si-gn pat-tern sin-gle-ton. Re-sti-tui-sce 
 gli og-get-ti di ti-po Pre-mi::Model::Presentazione::SlideShowElement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--538
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
 
  []
 
@@ -2036,66 +2089,72 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.538 ...n{Premi::Model::Builder::AbstractBuilder}
-                                                  {
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 542.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[33]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.551 ...emi::Model::Builder::ConcreteTextBuilder}
+l.590 ...n{Premi::Model::Builder::AbstractBuilder}
                                                   {pdfTeX warning (ext4): desti
-nation with the same identifier (name{subsubsubsection.5.1.4}) has been already
+nation with the same identifier (name{subsubsubsection.5.1.3}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.564 ...mi::Model::Builder::ConcreteFrameBuilder}
+l.604 ...emi::Model::Builder::ConcreteTextBuilder}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 573.
+Package pdftex.def Info: ../../logo.jpg used on input line 607.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[34]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.5}) has been already used, duplicate ignored
+[36]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.577 ...mi::Model::Builder::ConcreteImageBuilder}
+l.617 ...mi::Model::Builder::ConcreteFrameBuilder}
                                                   {pdfTeX warning (ext4): desti
-nation with the same identifier (name{subsubsubsection.5.1.6}) has been already
+nation with the same identifier (name{subsubsubsection.5.1.5}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.590 ...remi::Model::Builder::ConcreteSVGBuilder}
+l.630 ...mi::Model::Builder::ConcreteImageBuilder}
+                                                  {
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 639.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[37]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.643 ...remi::Model::Builder::ConcreteSVGBuilder}
                                                   {pdfTeX warning (ext4): desti
 nation with the same identifier (name{subsubsubsection.5.1.7}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.603 ...mi::Model::Builder::ConcreteAudioBuilder}
+l.656 ...mi::Model::Builder::ConcreteAudioBuilder}
+                                                  {pdfTeX warning (ext4): desti
+nation with the same identifier (name{subsubsubsection.5.1.8}) has been already
+ used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.669 ...mi::Model::Builder::ConcreteVideoBuilder}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 606.
+Package pdftex.def Info: ../../logo.jpg used on input line 672.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[35]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.8}) has been already used, duplicate ignored
+[38]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
+section.5.1.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.616 ...mi::Model::Builder::ConcreteVideoBuilder}
+l.682 ...odel::Builder::ConcreteBackgroundBuilder}
                                                   {
-Overfull \hbox (28.50653pt too wide) in paragraph at lines 632--634
+Overfull \hbox (28.50653pt too wide) in paragraph at lines 698--700
 \T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :. Il pa
 c-ka-ge � in re-la-zio-ne con Pre-mi::Controller::MobileEdit,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 632--634
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
  []
 
@@ -2103,15 +2162,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.635 ...tion{Premi::Model::Caricamento::Uploader}
+l.701 ...tion{Premi::Model::Caricamento::Uploader}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 638.
+Package pdftex.def Info: ../../logo.jpg used on input line 704.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[36]
-Overfull \hbox (20.73242pt too wide) in paragraph at lines 639--640
+[39]
+Overfull \hbox (20.73242pt too wide) in paragraph at lines 705--706
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
  []
@@ -2120,9 +2179,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.651 ...:Model::Caricamento::ConcreteSvgUploader}
+l.717 ...:Model::Caricamento::ConcreteSvgUploader}
                                                   {
-Overfull \hbox (20.73242pt too wide) in paragraph at lines 656--657
+Overfull \hbox (20.73242pt too wide) in paragraph at lines 722--723
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
  []
@@ -2131,15 +2190,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.665 ...odel::Caricamento::ConcreteImageUploader}
+l.731 ...odel::Caricamento::ConcreteImageUploader}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 669.
+Package pdftex.def Info: ../../logo.jpg used on input line 735.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[37]
-Overfull \hbox (20.73242pt too wide) in paragraph at lines 670--671
+[40]
+Overfull \hbox (20.73242pt too wide) in paragraph at lines 736--737
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
  []
@@ -2148,9 +2207,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.679 ...del::Caricamento:: ConcreteVideoUploader}
+l.745 ...del::Caricamento:: ConcreteVideoUploader}
                                                   {
-Overfull \hbox (20.73242pt too wide) in paragraph at lines 684--685
+Overfull \hbox (20.73242pt too wide) in paragraph at lines 750--751
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
  []
@@ -2159,25 +2218,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.693 ...del::Caricamento:: ConcreteAudioUploader}
+l.759 ...del::Caricamento:: ConcreteAudioUploader}
                                                   {
-Overfull \hbox (20.73242pt too wide) in paragraph at lines 698--699
+Overfull \hbox (20.73242pt too wide) in paragraph at lines 764--765
 \T1/cmr/m/n/12 mi::Model::Command::InsertCommand e lo dan-no in pa-sto Pre-mi::
 Model::Command::Invoker; 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 699.
+Package pdftex.def Info: ../../logo.jpg used on input line 765.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [38])
+ [41])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 11.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [39]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\MVC\control.tex"
+ [42]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\control.tex"
 Overfull \hbox (17.93304pt too wide) in paragraph at lines 10--12
 \T1/cmr/m/n/12 Pre-mi::View::Pages::MobileEdit, Pre-mi::View::Pages::DesktopEdi
 t, Pre-mi::View::Pages::Execution
@@ -2203,7 +2262,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [40]
+ [43]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -2218,12 +2277,12 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 13.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [41]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\parti\MVC\view.tex"
-<./images/view.png, id=508, 371.88937pt x 195.73125pt>
+ [44]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\view.tex" <./images/view.png, id=535, 371.88937pt x 195.73125pt>
 File: ./images/view.png Graphic file (type png)
- <use ./images/view.png>
+
+<use ./images/view.png>
 Package pdftex.def Info: ./images/view.png used on input line 4.
 (pdftex.def)             Requested size: 223.13533pt x 117.43964pt.
 
@@ -2240,8 +2299,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [42 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RP/Este
-rni/Specifica Tecnica/images/view.png (PNG copy)>]
+ [45 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/view.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
@@ -2260,7 +2319,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [43]
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
@@ -2279,48 +2338,52 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [44]
+ [47]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 105.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [45]))
+ [48]))
 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [46]
+ [49]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [47]
+ [50]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RP\Esterni\
-Specifica Tecnica\SpecificaTecnica_v.1.0.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 47.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  )
 (\end occurred inside a group at level 5)
 
 ### simple group (level 5) entered at line 1 ({)
-### simple group (level 4) entered at line 318 ({)
-### simple group (level 3) entered at line 217 ({)
+### simple group (level 4) entered at line 355 ({)
+### simple group (level 3) entered at line 254 ({)
 ### simple group (level 2) entered at line 1 ({)
 ### simple group (level 1) entered at line 9 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13952 strings out of 493921
- 202844 string characters out of 3147274
+ 13968 strings out of 493921
+ 202395 string characters out of 3147280
  357875 words of memory out of 3000000
- 16844 multiletter control sequences out of 15000+200000
+ 16852 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,838b,857s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,885b,857s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -2331,9 +2394,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (48 pages, 473272 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (51 pages, 487102 bytes).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 872 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 982 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 920 words of extra memory for PDF output out of 10000 (max. 10000000)
 
