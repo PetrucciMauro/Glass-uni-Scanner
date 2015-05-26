@@ -835,3 +835,133 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                                     \end{itemize}
                                     }              
 }
+
+
+\subsection{Premi::Model::ServerRelations}{
+		\textbf{\tipo}: il package racchiude le funzionalità del sistema che interagiscono direttamente con i servizi web esposti dalla interfaccia nodeApi.\\
+		\textbf{\relaz}: i componenti del package serverRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’e’ dipenda tra il package serverRelations ed altri package del model.\\
+}
+
+\subsection{Premi::Model::ServerRelations::Loader}{
+		\textbf{\tipo}: il package racchiude le funzioni di recupero di una presentazione dal server attraversi i servizi nodeApi e traduzione della presentazione in elementi html che compongono la view della presentazione recuperata.\\
+		\textbf{\relaz}: relazione di dipendenza con l’interfaccia dei servizi nodeApi per il recupero della presentazione.\\
+
+\subsubsection{Premi::Model::ServerRelations::Loader::Costruttore}{
+				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto o creare una nuova presentazione,  caricare la presentazione in formato html così da poter essere modificata o eseguita dall’utente.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item nodeAPI <- dipendenza nei confronti del package nodeApi di cui chiama i servizi http in modo sincrono.
+				\end{itemize}	
+                    }
+}
+
+\subsection{Premi::Model::ServerRelations::AccessControl}{
+		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token aio servizi nodeApi.\\
+		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
+        \subsubsection{Premi::Model::ServerRelations::AccessControll::Autenticazione}{
+				\textbf{\tipo}: Classe che fornisce funzionalità di autenticazione e deautenticazione ai servizi offerti da nodeApi attraverso passaggio di token.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
+                    \item Premi::Controller::Pagine::IndexController -> invoca i metodi di Autenticazione per permettere all'utente di effettuare il login.
+				\end{itemize}	
+                    }
+        \subsubsection{Premi::Model::ServerRelations::AccessControll::Registrazione}{
+				\textbf{\tipo}: Classe, fornisce funzionalità di registrazione all’utente.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
+                    \item Premi::Controller::Pagine::IndexController -> invoca i metodi di Registrazione per permettere all'utente di registrarsi al servizio.
+				\end{itemize}	
+            }
+}
+
+\subsection{Premi::Model::ServerRelations::DbConsistency}{
+		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern observer e chiamate asincrone ai servizi di nodeApi\\
+		\textbf{\relaz}:dipendenza con il package nodeApi; dipendenza nei confronti di altri package in Model per il recupero dello stato degli elementi della presentazione.\\
+       
+       \subsubsection{Premi::Model::ServerRelations::DbConsistency::Observer}{
+				\textbf{\tipo}: Interfaccia, espone il metodo update(), utile per l’implementazione del design pattern “Observer”.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item associazione con Subject per rendere effettiva la notify(); realizzata da ConcreteObserver che definisce il metodo update().
+				\end{itemize}	
+            }
+            
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::ConcreteObserver}{
+				\textbf{\tipo}: Classe, concretizza l’interfaccia Observer, utile ad implementare il pattern “Observer”.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item realizza l’interfaccia Observer definendone il metodo update(); associazione verso Subject.
+				\end{itemize}	
+            }
+            
+             \subsubsection{Premi::Model::ServerRelations::DbConsistency::Subject}{
+				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per implementare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item associazione da ConcreteObserver; classe astratta realizzata dalle classi: SubjectAudio, SubjectVideo, SubjectText, SubjectFrame, SubjectSvg, SubjectImg che definiscono il metodo getElement() utilizzato da ConcreteObserver per ottenere l’oggetto modificato.
+				\end{itemize}	
+            }
+            
+             \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectVideo}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectText}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectFrame}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectImg}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectSVG}{
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
+				\end{itemize}	
+            }
+            
+        }
+
+
+	
