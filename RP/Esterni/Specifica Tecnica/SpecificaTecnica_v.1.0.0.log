@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  26 MAY 2015 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  26 MAY 2015 19:00
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 (SpecificaTecnica_v.1.0.0.tex
@@ -924,23 +924,1497 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 29.
+\c@lstlisting=\count177
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 
-! I can't write on file `SpecificaTecnica_v.1.0.0.pdf'.
-Please type another file name for output
-! Emergency stop.
+(../../Template/firstpage.tex <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 22.
+(pdftex.def)             Requested size: 227.62pt x 227.62pt.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <../../logo.jpg>]) (parti/
+registroMod.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 32.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
-                   \edef 
-l.29 \begin{document}
-                     
-*** (job aborted, file error in nonstop mode)
+                   \relax 
+l.32 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [2] (SpecificaTecnica_v.1.0.0.toc
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[3]
+Overfull \hbox (1.63438pt too wide) in paragraph at lines 49--49
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::C
+oncreteFrameInserter[][] [][]  
+ []
+
+
+Overfull \hbox (0.49022pt too wide) in paragraph at lines 51--51
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::C
+oncreteImageInserter[][] [][]  
+ []
+
+
+Overfull \hbox (0.4902pt too wide) in paragraph at lines 53--53
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::C
+oncreteAudioInserter[][] [][]  
+ []
+
+
+Overfull \hbox (8.85208pt too wide) in paragraph at lines 57--57
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteTextRemover[][] [][]  
+ []
+
+
+Overfull \hbox (17.4972pt too wide) in paragraph at lines 58--58
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteFrameRemover[][] [][]  
+ []
+
+
+Overfull \hbox (14.1494pt too wide) in paragraph at lines 59--59
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteSVGtRemover[][] [][]  
+ []
+
+
+Overfull \hbox (16.35303pt too wide) in paragraph at lines 60--60
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteImageRemover[][] [][]  
+ []
+
+
+Overfull \hbox (14.06886pt too wide) in paragraph at lines 61--61
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteVideoRemover[][] [][]  
+ []
+
+
+Overfull \hbox (16.35301pt too wide) in paragraph at lines 62--62
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteAudioRemover[][] [][]  
+ []
+
+
+Overfull \hbox (46.53868pt too wide) in paragraph at lines 63--63
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::C
+oncreteBackgroundRemover[][] [][]  
+ []
+
+
+Overfull \hbox (1.7343pt too wide) in paragraph at lines 68--68
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditEleme
+nts::RotationEditor[][] [][]  
+ []
+
+
+Overfull \hbox (5.00159pt too wide) in paragraph at lines 74--74
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+AbstractCommand[][] [][]  
+ []
+
+
+Overfull \hbox (59.16895pt too wide) in paragraph at lines 75--75
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteTextInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (67.81406pt too wide) in paragraph at lines 76--76
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteFrameInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (66.66989pt too wide) in paragraph at lines 77--77
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteImageInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (59.89793pt too wide) in paragraph at lines 78--78
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteSVGInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (66.66988pt too wide) in paragraph at lines 79--79
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteAudioInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (64.38573pt too wide) in paragraph at lines 80--80
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteVideoInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (96.85555pt too wide) in paragraph at lines 81--81
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteBackgroundInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (69.71083pt too wide) in paragraph at lines 82--82
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteTextRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (78.35594pt too wide) in paragraph at lines 83--83
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteFrameRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (77.21178pt too wide) in paragraph at lines 84--84
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteImageRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (70.43982pt too wide) in paragraph at lines 85--85
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteSVGRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (77.21176pt too wide) in paragraph at lines 86--86
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteAudioRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (74.92761pt too wide) in paragraph at lines 87--87
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteVideoRemoveCommand[][] [][]  
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 88.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [4]
+Overfull \hbox (107.39743pt too wide) in paragraph at lines 88--88
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteBackgroundRemoveCommand[][] [][]  
+ []
+
+
+Overfull \hbox (48.5007pt too wide) in paragraph at lines 89--89
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditSizeCommand[][] [][]  
+ []
+
+
+Overfull \hbox (69.9371pt too wide) in paragraph at lines 90--90
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditPositionCommand[][] [][]  
+ []
+
+
+Overfull \hbox (56.33212pt too wide) in paragraph at lines 91--91
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditColorCommand[][] [][]  
+ []
+
+
+Overfull \hbox (89.45041pt too wide) in paragraph at lines 92--92
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditBackgroundCommand[][] [][]  
+ []
+
+
+Overfull \hbox (73.46126pt too wide) in paragraph at lines 93--93
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditRotationCommand[][] [][]  
+ []
+
+
+Overfull \hbox (51.59856pt too wide) in paragraph at lines 94--94
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteEditFontCommand[][] [][]  
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 134.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [5])
+\tf@toc=\write3
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [6] (../../Template/sommario.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7] (parti/introduzione.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[8])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 39.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9] (parti/strumenti.tex
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 28.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[10]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [11])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [12] (parti/pattern.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+
+Overfull \hbox (19.37454pt too wide) in paragraph at lines 28--30
+\T1/cmr/m/n/12 La pri-ma vol-ta in cui av-vie-ne una mo-di-fi-ca al pia-no del-
+la pre-sen-ta-zio-ne Pre-mi::Controller::Edit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Overfull \hbox (9.08955pt too wide) in paragraph at lines 31--33
+\T1/cmr/m/n/12 La pri-ma vol-ta in cui vie-ne ca-ri-ca-ta una pre-sen-ta-zio-ne
+, Pre-mi::Model::Presentazione::Loader
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--33
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [13]
+Overfull \hbox (69.06331pt too wide) in paragraph at lines 48--53
+\T1/cmr/m/n/12 Il pac-ka-ge Pre-mi::Model::Builder im-ple-men-ta il De-si-gn Pa
+t-tern Buil-der. Pre-mi::Model::Presentazione::Loader
+ []
+
+
+Overfull \hbox (1.49275pt too wide) in paragraph at lines 58--59
+[]\T1/cmr/m/n/12 Tale ope-ra-zio-ne vie-ne rea-liz-za-ta at-tra-ver-so que-sta 
+ca-te-na: Client->Invocatore->Ricevitore 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 64.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 85.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [15]
+Overfull \hbox (112.86182pt too wide) in paragraph at lines 90--91
+[]\T1/cmr/m/n/12 createElement che in-vo-ca il co-strut-to-re del-la sot-to-cla
+s-se di Pre-mi::Model::Presentazione::SlideShowElement
+ []
+
+
+Overfull \hbox (63.97052pt too wide) in paragraph at lines 94--95
+[]\T1/cmr/m/n/12 In ma-nie-ra del tut-to si-mi-le al pac-ka-ge In-se-ri-men-to 
+è or-ga-niz-za-to il pac-ka-ge Pre-mi::Model::Eliminazione. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
+
+Overfull \hbox (77.6541pt too wide) in paragraph at lines 105--109
+\T1/cmr/m/n/12 Il pac-ka-ge Pre-mi::Model::Modifica im-ple-men-ta il de-si-gn p
+at-tern Stra-te-gy. Pre-mi::Model::Modifica::Editor
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [16] (parti/presentazione.tex
+<./images/PresentazioneArchitettura.jpg, id=418, 1364.09625pt x 788.9475pt>
+File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
+
+<use ./images/PresentazioneArchitettura.jpg>
+Package pdftex.def Info: ./images/PresentazioneArchitettura.jpg used on input l
+ine 21.
+(pdftex.def)             Requested size: 818.46408pt x 473.37215pt.
+
+Overfull \hbox (334.76721pt too wide) in paragraph at lines 21--23
+ [][] 
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 45.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 45.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [18 <./images/PresentazioneArchitettura.jpg>] (parti/componenti.tex (parti//MV
+C/model.tex
+Overfull \hbox (37.76033pt too wide) in paragraph at lines 11--14
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 : il pac
+-ka-ge è in re-la-zio-ne con Pre-mi::Controller::EditController
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+
+Overfull \hbox (37.76033pt too wide) in paragraph at lines 15--18
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 : il pac
+-ka-ge è in re-la-zio-ne con Pre-mi::Controller::EditController
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+
+ []
+
+
+Overfull \hbox (151.8643pt too wide) in paragraph at lines 19--22
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 : il pac
+-ka-ge è in re-la-zio-ne con Pre-mi::Model::SlideShow::SlideShowActions::Comman
+d
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
+Overfull \hbox (147.29597pt too wide) in paragraph at lines 24--27
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :il pac-
+ka-ge è in re-la-zio-ne con Pre-mi::Model::SlideShow::SlideShowActions::Command
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 27.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [19]
+Overfull \hbox (10.2947pt too wide) in paragraph at lines 32--33
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteCo
+ncreteInsertCommand
+ []
+
+
+Overfull \hbox (6.09158pt too wide) in paragraph at lines 52--53
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::Text <- co-strui-s
+ce un og-get-to di clas-se Text. 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 58.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [20]
+Overfull \hbox (3.29088pt too wide) in paragraph at lines 61--61
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::Concrete
+FrameInserter| 
+ []
+
+
+Overfull \hbox (2.19394pt too wide) in paragraph at lines 89--89
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::Concrete
+ImageInserter| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 96.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [21]
+Overfull \hbox (2.13841pt too wide) in paragraph at lines 117--117
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::Concrete
+AudioInserter| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 135.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22]
+Overfull \hbox (1.81064pt too wide) in paragraph at lines 135--136
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::Background <- in-v
+o-ca il me-to-do ge-tIn-stan-
+ []
+
+
+Overfull \hbox (147.29597pt too wide) in paragraph at lines 147--149
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :il pac-
+ka-ge è in re-la-zio-ne con Pre-mi::Model::SlideShow::SlideShowActions::Command
+
+ []
+
+
+Overfull \hbox (20.83658pt too wide) in paragraph at lines 154--155
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteCo
+ncreteRemoveCommand
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 167.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23]
+Overfull \hbox (11.05566pt too wide) in paragraph at lines 169--169
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+TextRemover| 
+ []
+
+
+Overfull \hbox (5.17374pt too wide) in paragraph at lines 174--175
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTe
+xtRemoveCommand -
+ []
+
+
+Overfull \hbox (21.10182pt too wide) in paragraph at lines 183--183
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+FrameRemover| 
+ []
+
+
+Overfull \hbox (7.29265pt too wide) in paragraph at lines 188--189
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFr
+ameRemoveCommand
+ []
+
+
+Overfull \hbox (17.43608pt too wide) in paragraph at lines 197--197
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+SVGtRemover| 
+ []
+
+
+Overfull \hbox (5.90273pt too wide) in paragraph at lines 202--203
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSV
+GRemoveCommand -
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 207.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24]
+Overfull \hbox (20.00488pt too wide) in paragraph at lines 211--211
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+ImageRemover| 
+ []
+
+
+Overfull \hbox (6.14848pt too wide) in paragraph at lines 216--217
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteIm
+ageRemoveCommand
+ []
+
+
+Overfull \hbox (17.48466pt too wide) in paragraph at lines 225--225
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+VideoRemover| 
+ []
+
+
+Overfull \hbox (19.94936pt too wide) in paragraph at lines 239--239
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+AudioRemover| 
+ []
+
+
+Overfull \hbox (7.13158pt too wide) in paragraph at lines 244--245
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteRe
+moveCommand -> in-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 245.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25]
+Overfull \hbox (54.67001pt too wide) in paragraph at lines 253--253
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::Concrete
+BackgroundRemover| 
+ []
+
+
+Overfull \hbox (7.13158pt too wide) in paragraph at lines 258--259
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteRe
+moveCommand -> in-
+ []
+
+
+Overfull \hbox (5.00851pt too wide) in paragraph at lines 259--260
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::Background <- Con-
+cre-te-Back-groun-dRe-mo-
+ []
+
+
+Overfull \hbox (147.29597pt too wide) in paragraph at lines 269--271
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 :il pac-
+ka-ge è in re-la-zio-ne con Pre-mi::Model::SlideShow::SlideShowActions::Command
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 277.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26]
+Overfull \hbox (1.58012pt too wide) in paragraph at lines 295--296
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEd
+itCommand -> In-vo-
+ []
+
+
+Overfull \hbox (6.3179pt too wide) in paragraph at lines 297--298
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::SlideShowElement <
+- in-vo-ca le fun-zio-ni del-
+ []
+
+
+Overfull \hbox (235.78258pt too wide) in paragraph at lines 298--300
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+Command
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 307.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [27]
+Overfull \hbox (6.3179pt too wide) in paragraph at lines 310--311
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::SlideShowElement <
+- in-vo-ca le fun-zio-ni del-
+ []
+
+
+Overfull \hbox (235.78258pt too wide) in paragraph at lines 311--313
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+Command
+ []
+
+
+Overfull \hbox (0.88326pt too wide) in paragraph at lines 317--317
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Ro
+tationEditor| 
+ []
+
+
+Overfull \hbox (2.39796pt too wide) in paragraph at lines 321--322
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEd
+itRotationCommand
+ []
+
+
+Overfull \hbox (6.3179pt too wide) in paragraph at lines 323--324
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::SlideShowElement <
+- in-vo-ca le fun-zio-ni del-
+ []
+
+
+Overfull \hbox (280.97429pt too wide) in paragraph at lines 324--326
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+RotationCommand
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 334.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [28]
+Overfull \hbox (3.86847pt too wide) in paragraph at lines 334--335
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEd
+itShapeCommand ->
+ []
+
+
+Overfull \hbox (276.89755pt too wide) in paragraph at lines 337--339
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+ContentCommand
+ []
+
+
+Overfull \hbox (167.15086pt too wide) in paragraph at lines 337--339
+\T1/cmr/m/n/12 che-rà quin-di i me-to-di di mo-di-fi-ca del con-te-nu-to for-ni
+-ti al-l'in-ter-no del-la clas-se Pre-mi::Model::SlideShow::SlideShowElements::
+Text. 
+ []
+
+
+Overfull \hbox (0.93167pt too wide) in paragraph at lines 347--348
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEd
+itColorCommand ->
+ []
+
+
+Overfull \hbox (6.3179pt too wide) in paragraph at lines 349--350
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::SlideShowElement <
+- in-vo-ca le fun-zio-ni del-
+ []
+
+
+Overfull \hbox (263.84515pt too wide) in paragraph at lines 350--352
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+ColorCommand
+ []
+
+
+Overfull \hbox (225.5907pt too wide) in paragraph at lines 350--352
+\T1/cmr/m/n/12 rà quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti dal
+-la sot-to-clas-se clas-se di Pre-mi::Model::SlideShow::SlideShowElements::Slid
+eShowElement. 
+ []
+
+
+Overfull \hbox (13.48833pt too wide) in paragraph at lines 360--361
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEd
+itFontCommand -> In-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 362.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [29]
+Overfull \hbox (6.3179pt too wide) in paragraph at lines 362--363
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowElements::SlideShowElement <
+- in-vo-ca le fun-zio-ni del-
+ []
+
+
+Overfull \hbox (259.11159pt too wide) in paragraph at lines 363--365
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 :Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEdit
+FontCommand
+ []
+
+
+Overfull \hbox (85.24725pt too wide) in paragraph at lines 363--365
+\T1/cmr/m/n/12 rà quin-di i me-to-di di mo-di-fi-ca del-la for-ma for-ni-ti dal
+-la clas-se Pre-mi::Model::SlideShow::SlideShowElements::Text. 
+ []
+
+
+Overfull \hbox (213.78369pt too wide) in paragraph at lines 371--373
+\T1/cmr/m/n/12 Pre-mi::Model::SlideShow::SlideShowActions::Insert, Pre-mi::Mode
+l::Remove e Pre-mi::Model::SlideShow::SlideShowActions::EditElements.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--373
+
+ []
+
+
+Overfull \hbox (283.27649pt too wide) in paragraph at lines 377--379
+[]\T1/cmr/m/n/12 Premi::Controller::MobileEdit->crea un og-get-to di una sot-to
+-clas-se di Pre-mi::Model::SlideShow::SlideShowActions::Command::AbstractComman
+d
+ []
+
+
+Overfull \hbox (6.37476pt too wide) in paragraph at lines 380--381
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::AbstractCo
+mmand <- In-vo-ker in-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 381.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [30]
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
+
+ []
+
+
+Overfull \hbox (4.85454pt too wide) in paragraph at lines 384--384
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Abstrac
+tCommand| 
+ []
+
+
+Overfull \hbox (29.05533pt too wide) in paragraph at lines 399--400
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBa
+ckgroundInsertCommand; 
+ []
+
+
+Overfull \hbox (1.91061pt too wide) in paragraph at lines 400--401
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTe
+xtRemoveCommand; 
+ []
+
+
+Overfull \hbox (10.55573pt too wide) in paragraph at lines 401--402
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFr
+ameRemoveCommand; 
+ []
+
+
+Overfull \hbox (9.41156pt too wide) in paragraph at lines 402--403
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteIm
+ageRemoveCommand; 
+ []
+
+
+Overfull \hbox (2.6396pt too wide) in paragraph at lines 403--404
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSV
+GRemoveCommand; 
+ []
+
+
+Overfull \hbox (9.41154pt too wide) in paragraph at lines 404--405
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAu
+dioRemoveCommand; 
+ []
+
+
+Overfull \hbox (7.1274pt too wide) in paragraph at lines 405--406
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVi
+deoRemoveCommand; 
+ []
+
+
+Overfull \hbox (39.59721pt too wide) in paragraph at lines 406--407
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBa
+ckgroundRemoveCommand; 
+ []
+
+
+Overfull \hbox (67.90155pt too wide) in paragraph at lines 410--410
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eTextInsertCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 413.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [31]
+Overfull \hbox (77.94771pt too wide) in paragraph at lines 424--424
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eFrameInsertCommand| 
+ []
+
+
+Overfull \hbox (3.14217pt too wide) in paragraph at lines 430--431
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::FrameInsert
+er <- in-vo-ca la clas-se con-
+ []
+
+
+Overfull \hbox (76.85077pt too wide) in paragraph at lines 438--438
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eImageInsertCommand| 
+ []
+
+
+Overfull \hbox (1.998pt too wide) in paragraph at lines 444--445
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::ImageInsert
+er <- in-vo-ca la clas-se con-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 450.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [32]
+Overfull \hbox (69.03325pt too wide) in paragraph at lines 452--452
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eSVGInsertCommand| 
+ []
+
+
+Overfull \hbox (76.79524pt too wide) in paragraph at lines 466--466
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eAudioInsertCommand| 
+ []
+
+
+Overfull \hbox (1.99799pt too wide) in paragraph at lines 472--473
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::AudioInsert
+er <- in-vo-ca la clas-se con-
+ []
+
+
+Overfull \hbox (74.33055pt too wide) in paragraph at lines 480--480
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eVideoInsertCommand| 
+ []
+
+
+Overfull \hbox (0.69276pt too wide) in paragraph at lines 486--487
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::VideoInsert
+er <- in-vo-ca la clas-se con-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 487.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [33]
+Overfull \hbox (111.5159pt too wide) in paragraph at lines 494--494
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eBackgroundInsertCommand| 
+ []
+
+
+Overfull \hbox (0.69276pt too wide) in paragraph at lines 500--501
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::VideoInsert
+er <- in-vo-ca la clas-se con-
+ []
+
+
+Overfull \hbox (86.63448pt too wide) in paragraph at lines 508--508
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eTextRemoveCommand| 
+ []
+
+
+Overfull \hbox (0.44011pt too wide) in paragraph at lines 514--515
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteTex
+tRemover <- in-vo-ca la
+ []
+
+
+Overfull \hbox (96.68063pt too wide) in paragraph at lines 522--522
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eFrameRemoveCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 525.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [34]
+Overfull \hbox (95.5837pt too wide) in paragraph at lines 536--536
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eImageRemoveCommand| 
+ []
+
+
+Overfull \hbox (87.76617pt too wide) in paragraph at lines 550--550
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eSVGRemoveCommand| 
+ []
+
+
+Overfull \hbox (1.1691pt too wide) in paragraph at lines 556--557
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteSVG
+Remover <- in-vo-ca la
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 561.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [35]
+Overfull \hbox (95.52817pt too wide) in paragraph at lines 564--564
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eAudioRemoveCommand| 
+ []
+
+
+Overfull \hbox (93.06348pt too wide) in paragraph at lines 578--578
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eVideoRemoveCommand| 
+ []
+
+
+Overfull \hbox (130.24883pt too wide) in paragraph at lines 592--592
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eBackgroundRemoveCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 598.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [36]
+Overfull \hbox (8.75893pt too wide) in paragraph at lines 598--599
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteBac
+kgroundRemover <- co-
+ []
+
+
+Overfull \hbox (61.8489pt too wide) in paragraph at lines 606--606
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditSizeCommand| 
+ []
+
+
+Overfull \hbox (86.35542pt too wide) in paragraph at lines 620--620
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditPositionCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 630.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [37]
+Overfull \hbox (70.95085pt too wide) in paragraph at lines 634--634
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditColorCommand| 
+ []
+
+
+Overfull \hbox (1.71054pt too wide) in paragraph at lines 640--641
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Color
+Editor <- in-vo-ca la clas-
+ []
+
+
+Overfull \hbox (108.8513pt too wide) in paragraph at lines 648--648
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditBackgroundCommand| 
+ []
+
+
+Overfull \hbox (90.3142pt too wide) in paragraph at lines 662--662
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditRotationCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 666.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [38]
+Overfull \hbox (64.92456pt too wide) in paragraph at lines 676--676
+ |[]\T1/cmr/bx/n/12 Premi::Model::SlideShow::SlideShowActions::Command::Concret
+eEditFontCommand| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 697.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [39]
+Overfull \hbox (135.89307pt too wide) in paragraph at lines 708--710
+\T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
+T1/cmr/m/n/12 : Pre-mi::Model::SlideShow::SlideShowActions::Insert::Inserter
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 725.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [40]
+Overfull \hbox (86.39426pt too wide) in paragraph at lines 725--726
+\T1/cmr/m/n/12 l'og-get-to Text dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-no di
+ Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 727--728
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 728--729
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (4.90846pt too wide) in paragraph at lines 729--730
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Conte
+ntEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 732--734
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (108.74437pt too wide) in paragraph at lines 743--744
+\T1/cmr/m/n/12 ve l'og-get-to Fra-me dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-
+no di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 745--746
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 746.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [41]
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 746--747
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 749--751
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (107.6002pt too wide) in paragraph at lines 760--761
+\T1/cmr/m/n/12 ve l'og-get-to Ima-ge dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-
+no di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 762--763
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 763--764
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 765--767
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (0.3165pt too wide) in paragraph at lines 775--776
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteSVG
+Inserter -> in-vo-ca il co-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 776.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [42]
+Overfull \hbox (100.82695pt too wide) in paragraph at lines 776--777
+\T1/cmr/m/n/12 ve l'og-get-to SVG dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-no 
+di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 778--779
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 779--780
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 782--784
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (107.60019pt too wide) in paragraph at lines 793--794
+\T1/cmr/m/n/12 ve l'og-get-to Au-dio dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-
+no di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 795--796
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 796--797
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 797.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [43]
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 798--800
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (4.80429pt too wide) in paragraph at lines 808--809
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteVid
+eoInserter -> in-vo-ca il co-
+ []
+
+
+Overfull \hbox (106.29497pt too wide) in paragraph at lines 809--810
+\T1/cmr/m/n/12 ve l'og-get-to Vi-deo dal mem-bro pre-sen-ta-zio-ne al-l'in-ter-
+no di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 811--812
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 812--813
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (80.90538pt too wide) in paragraph at lines 814--816
+\T1/cmr/m/n/12 in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l'i
+n-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Overfull \hbox (3.01169pt too wide) in paragraph at lines 824--825
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteBac
+kgroundInserter -> in-vo-
+ []
+
+
+Overfull \hbox (5.49583pt too wide) in paragraph at lines 825--826
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteBac
+kgroundRemover -> ri-
+ []
+
+
+Overfull \hbox (127.83138pt too wide) in paragraph at lines 825--826
+\T1/cmr/m/n/12 muo-ve l'og-get-to Vi-deo dal mem-bro pre-sen-ta-zio-ne al-l'in-
+ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore,
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 827.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [44]
+Overfull \hbox (5.46104pt too wide) in paragraph at lines 827--828
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Posit
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (8.9852pt too wide) in paragraph at lines 828--829
+[]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::EditElements::Rotat
+ionEditor -> in-vo-ca i me-
+ []
+
+
+Overfull \hbox (71.92134pt too wide) in paragraph at lines 831--833
+\T1/cmr/m/n/12 ground ven-go-no istan-zia-ti da Pre-mi::Model::SlideShow::Slide
+ShowActions::Insert::ConcreteBacgroundInserter
+ []
+
+
+Overfull \hbox (88.73683pt too wide) in paragraph at lines 831--833
+\T1/cmr/m/n/12 e in-se-ri-ti nel mem-bro con-te-ni-to-re pre-sen-ta-zio-ne al-l
+'in-ter-no di Pre-mi::Model::ServerRelations::Loader::Costruttore. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--844
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--848
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--861
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 861.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [45]
+Underfull \hbox (badness 10000) in paragraph at lines 880--882
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 895.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [46]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 937.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [47])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 11.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[48] (parti//MVC/control.tex
+Overfull \hbox (17.93304pt too wide) in paragraph at lines 10--12
+\T1/cmr/m/n/12 Pre-mi::View::Pages::MobileEdit, Pre-mi::View::Pages::DesktopEdi
+t, Pre-mi::View::Pages::Execution
+ []
+
+
+Overfull \hbox (81.7591pt too wide) in paragraph at lines 10--12
+\T1/cmr/m/n/12 mi::Model::Command, Pre-mi::Model::Builder e al-le clas-si Pre-m
+i::Model::Invoker, Pre-mi::Model::MongoHandler. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 27.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [49]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 13.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [50] (parti//MVC/view.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 29.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [51]
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 87.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [53]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 106.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [54]))
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 47.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[55]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 47.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [56] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+(SpecificaTecnica_v.1.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 49.
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 1 ({)
+### simple group (level 1) entered at line 9 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 13068 strings out of 493698
- 189978 string characters out of 3144409
- 350832 words of memory out of 3000000
- 16197 multiletter control sequences out of 15000+200000
- 4702 words of font info for 16 fonts, out of 3000000 for 9000
+ 13754 strings out of 493698
+ 198603 string characters out of 3144409
+ 362832 words of memory out of 3000000
+ 16613 multiletter control sequences out of 15000+200000
+ 15751 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 51i,0n,60p,818b,220s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 51i,16n,60p,885b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
+t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on SpecificaTecnica_v.1.0.0.pdf (57 pages, 517582 bytes).
+PDF statistics:
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 1067 words of extra memory for PDF output out of 10000 (max. 10000000)
+
