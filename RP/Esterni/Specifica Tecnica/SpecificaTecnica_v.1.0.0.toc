@@ -120,21 +120,23 @@
 \contentsline {subsubsection}{\numberline {5.12.10}Premi::Model::ServerRelations::DbConsistency::SubjectSVG}{49}{subsubsection.5.12.10}
 \contentsline {subsection}{\numberline {5.13}Premi::Model::Manifest}{49}{subsection.5.13}
 \contentsline {subsubsection}{\numberline {5.13.1}Premi::Model::Manifest::GestoreManifest}{49}{subsubsection.5.13.1}
-\contentsline {subsection}{\numberline {5.14}Controller}{50}{subsection.5.14}
-\contentsline {subsubsection}{\numberline {5.14.1}Premi::Controller::Presentazione}{50}{subsubsection.5.14.1}
-\contentsline {subsubsubsection}{\numberline {5.14.1.1}Premi::Controller::Presentazione::EditController}{50}{subsubsubsection.5.14.1}
-\contentsline {subsubsubsection}{\numberline {5.14.1.2}Premi::Controller::Presentazione::HomeController}{51}{subsubsubsection.5.14.2}
-\contentsline {subsubsubsection}{\numberline {5.14.1.3}Premi::Controller::Presentazione::ExecutionController}{51}{subsubsubsection.5.14.3}
-\contentsline {subsubsection}{\numberline {5.14.2}Premi::Controller::ApacheManager}{51}{subsubsection.5.14.2}
-\contentsline {subsection}{\numberline {5.15}View}{53}{subsection.5.15}
-\contentsline {subsubsection}{\numberline {5.15.1}Premi::View::Pages::IndexPage}{53}{subsubsection.5.15.1}
-\contentsline {subsubsection}{\numberline {5.15.2}Premi::View::Pages::Home}{53}{subsubsection.5.15.2}
-\contentsline {subsubsection}{\numberline {5.15.3}Premi::View::Pages::Manifest}{54}{subsubsection.5.15.3}
-\contentsline {subsubsection}{\numberline {5.15.4}Premi::View::Pages::Profile}{54}{subsubsection.5.15.4}
-\contentsline {subsubsection}{\numberline {5.15.5}Premi::View::Pages::Execution}{55}{subsubsection.5.15.5}
-\contentsline {subsubsection}{\numberline {5.15.6}Premi::View::Pages::Edit}{56}{subsubsection.5.15.6}
-\contentsline {subsubsection}{\numberline {5.15.7}Premi::View::Pages::EditDesktop}{56}{subsubsection.5.15.7}
-\contentsline {subsubsection}{\numberline {5.15.8}Premi::View::Pages::EditMobile}{57}{subsubsection.5.15.8}
+\contentsline {subsection}{\numberline {5.14}Premi::Model::GestioneFileServer}{50}{subsection.5.14}
+\contentsline {subsubsection}{\numberline {5.14.1}Premi::Model::GestioneFileServer::GestioneFile}{50}{subsubsection.5.14.1}
+\contentsline {subsection}{\numberline {5.15}Controller}{51}{subsection.5.15}
+\contentsline {subsubsection}{\numberline {5.15.1}Premi::Controller::Presentazione}{51}{subsubsection.5.15.1}
+\contentsline {subsubsubsection}{\numberline {5.15.1.1}Premi::Controller::Presentazione::EditController}{51}{subsubsubsection.5.15.1}
+\contentsline {subsubsubsection}{\numberline {5.15.1.2}Premi::Controller::Presentazione::HomeController}{52}{subsubsubsection.5.15.2}
+\contentsline {subsubsubsection}{\numberline {5.15.1.3}Premi::Controller::Presentazione::ExecutionController}{52}{subsubsubsection.5.15.3}
+\contentsline {subsubsection}{\numberline {5.15.2}Premi::Controller::ApacheManager}{52}{subsubsection.5.15.2}
+\contentsline {subsection}{\numberline {5.16}View}{54}{subsection.5.16}
+\contentsline {subsubsection}{\numberline {5.16.1}Premi::View::Pages::IndexPage}{54}{subsubsection.5.16.1}
+\contentsline {subsubsection}{\numberline {5.16.2}Premi::View::Pages::Home}{54}{subsubsection.5.16.2}
+\contentsline {subsubsection}{\numberline {5.16.3}Premi::View::Pages::Manifest}{55}{subsubsection.5.16.3}
+\contentsline {subsubsection}{\numberline {5.16.4}Premi::View::Pages::Profile}{55}{subsubsection.5.16.4}
+\contentsline {subsubsection}{\numberline {5.16.5}Premi::View::Pages::Execution}{56}{subsubsection.5.16.5}
+\contentsline {subsubsection}{\numberline {5.16.6}Premi::View::Pages::Edit}{56}{subsubsection.5.16.6}
+\contentsline {subsubsection}{\numberline {5.16.7}Premi::View::Pages::EditDesktop}{56}{subsubsection.5.16.7}
+\contentsline {subsubsection}{\numberline {5.16.8}Premi::View::Pages::EditMobile}{58}{subsubsection.5.16.8}
 \contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{59}{section.6}
 \contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{59}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{59}{subsubsection.6.1.1}

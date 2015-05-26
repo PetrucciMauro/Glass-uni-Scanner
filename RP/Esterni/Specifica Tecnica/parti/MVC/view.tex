@@ -10,7 +10,7 @@
 		
 		\subsubsection{Premi::View::Pages::IndexPage}{
 			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema e di passare alla visualizzazione della classe Loader.\\
-			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe [[[[[[[[[[[[[[[[[[CONTROLLER LOGIN]]]]]]]]]]]]]]]]]], contenuta nel package Controller, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
+			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe Presenter::Index, contenuta nel package Presenter, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
 			\textbf{\interfacce}: i metodi implementati nella classe IndexPage sono i seguenti:
 			\begin{itemize}
 				\item IndexPage::Login invia al controller i dati della login e, se corretti, manda alla pagina Home;
@@ -21,12 +21,7 @@
 		}
 		\subsubsection{Premi::View::Pages::Home}{
 			\textbf{\tipo}: la classe Home definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni presenti sul server e i comandi principali di gestione del profilo e gestione presentazioni.\\	
-			\textbf{\relaz}: la classe Home, utilizza i metodi messi a disposizione delle seguenti classi contenute nel package Controller: 
-			\begin{itemize}
-				\item [[CONTROLLER ELIMINAZIONE PRESENT.]] per l'eliminazione delle presentazioni dal server;
-				\item [[[[[[[[[[CONTROLLER SCARICAMENTO MANIFEST]]]]]]]]]] per scaricare una presentazione in locale;
-				\item [[[[[[[[[[CONTROLLER LOGOUT]]]]]]]]] per effettuare il logout.
-			\end{itemize} 
+			\textbf{\relaz}: la classe Home utilizza i metodi messi a disposizione dalla classe Presenter::Home per l'eliminazione delle presentazioni dal server, per scaricare una presentazione in locale e per effettuare il logout.\\
 			\textbf{\interfacce}: i metodi implementati nella classe Home sono i seguenti:
 			\begin{itemize}
 				\item Home::Delete invia al controller l'id della presentazione da eliminare;
@@ -50,13 +45,7 @@
 		}
 		\subsubsection{Premi::View::Pages::Profile}{
 			\textbf{\tipo}: la classe Profile definisce la struttura della pagina web che consente agli utenti di modificare i propri dati di profilo e gestire i file media caricati nel server \\
-			\textbf{\relaz}: la classe Profile utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
-			\begin{itemize}
-				\item [[[[[[CONTROLLER INSERIMENTO FILE MEDIA]]]]]] per il caricamento di file media nel server;
-				\item [[[[[[CONTROLLER ELIMINAZ. FILE MEDIA]]]]]] per la loro eliminazione dal server;
-				\item [[[[[[CONTROLLER PASSWORD]]]]]] per la modifica della password;
-				\item [[[[[[CONTROLLER RINOMINA FILE MEDIA]]]]]] per rinominarli.
-			\end{itemize}
+			\textbf{\relaz}: la classe Profile utilizza i metodi messi a disposizione dalla classe Presenter::Profile, per il caricamento di file media nel server, per la loro eliminazione dal server, per la modifica della password e per rinominarli.\\
 			\textbf{\interfacce}: i metodi implementati nella classe Profile sono i seguenti:
 			\begin{itemize}
 				\item Profile::ChangePassword invia al controller la nuova password;
@@ -68,7 +57,7 @@
 		}
 		\subsubsection{Premi::View::Pages::Execution}{
 			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
-			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js utilizzato; utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER ESECUZIONE PRESENTAZIONE.]]]]]]]]] per creare la pagina che verrà eseguita da Impress.js.\\
+			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js utilizzato; utilizza i metodi messi a disposizione della classe Presenter::Execution per creare la pagina che verrà eseguita da Impress.js.\\
 			\textbf{\interfacce}: i metodi implementati nella classe Execution sono gestiti dal framework Impress.js con l'aggiunta e la modifica delle seguenti 3 funzioni all'interno del framework:
 			\begin{itemize}
 				\item Execution::Next va al frame successivo della presentazione;
@@ -83,15 +72,7 @@
 		\subsubsection{Premi::View::Pages::EditDesktop}{
 			\textbf{\tipo}: la classe EditDesktop definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra da dispositivo desktop ad un utente  l'editor di modifica di una presentazione.\\
 			\textbf{\relaz}: mandi principali di gestione del profilo e gestione presentazioni.\\	
-			\textbf{\relaz}: la classe Home, utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
-			\begin{itemize}
-				\item [[[[[[[[[CONTROLLER CARICA EDITOR]]]]]]]]] per caricare la presentazione da modificare;
-				\item [[[[[[[[[CONTROLLER INSERIMENTO]]]]]]]]] per l'inserimento di nuovi elementi;
-				\item [[[[[[[[[CONTROLLER SPOSTAMENTO]]]]]]]]] per lo spostamento di nuovi elementi;
-				\item [[[[[[[[[CONTROLLER ELIMINAZIONE]]]]]]]]] per l'eliminazione elementi;
-				\item [[[[[[[[[CONTROLLER MODIFICA ELEMENTI]]]]]]]]] per le modifiche  effettuate agli elementi ;
-				\item [[[[[[[[[CONTROLLER MODIFICA PERCORSO]]]]]]]]] per cambiare il percorso della presentazione.
-			\end{itemize}
+			\textbf{\relaz}: la classe EditDesktop utilizza i metodi messi a disposizione dalla classe Presenter::Edit per caricare la presentazione da modificare, per l'inserimento di nuovi elementi, per lo spostamento di nuovi elementi, per l'eliminazione elementi, per le modifiche  effettuate agli elementi e per cambiare il percorso della presentazione.\\
 			\textbf{\interfacce}: i metodi implementati nella classe EditDesktop sono i seguenti:
 			\begin{itemize}
 				\item EditDesktop::InsertFrame invia al controller la richiesta di inserimento di un nuovo frame, la sua forma, le coordinate di posizione;
@@ -114,14 +95,7 @@
 		}
 		\subsubsection{Premi::View::Pages::EditMobile}{
 			\textbf{\tipo}: la classe EditMobile. definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra  da dispositivo mobile ad un utente l'editor di modifica mobile di una presentazione. \\
-			\textbf{\relaz}: la classe MobileEdit utilizza i metodi messi a disposizione dalle seguenti classi presenti nel package Controller:
-			\begin{itemize}
-				\item [[[[[[[[[CONTROLLER CARICA EDITOR MOBILE]]]]]]]]] per caricare la presentazione da modificare;
-				\item [[[[[[[[CONTROLLER INSERIMENTO TESTO]]]]]]]] per l'inserimento di un elemento testuale;
-				\item [[[[[CONTROLLER MODIFICA TESTO]]]]] per la modifica di un elemento testuale;
-				\item [[[[[CONTROLLER INSERIMENTO BOOKMARK]]]]] per l'inserimento di un nuovo bookmark;
-				\item [[[[[CONTROLLER REMOVE BOOKMARK]]]]] per rimuovere un bookmark.
-			\end{itemize}
+			\textbf{\relaz}: la classe EditMobile utilizza i metodi messi a disposizione dalla classe Presenter::Edit per caricare la presentazione da modificare, per l'inserimento di un elemento testuale, per la modifica di un elemento testuale, per l'inserimento di un nuovo bookmark, per rimuovere un bookmark.\\
 		\textbf{\interfacce}: i metodi implementati nella classe EditMobile sono i seguenti:
 		\begin{itemize}
 			\item EditDesktop::InsertText invia al controller la richiesta di inserimento di un nuovo elemento di testo, il suo contenuto, la sua formattazione e le sue coordinate;
