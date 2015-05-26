@@ -30,7 +30,8 @@
 			\textbf{\interfacce}: i metodi implementati nella classe Home sono i seguenti:
 			\begin{itemize}
 				\item Home::Delete invia al controller l'id della presentazione da eliminare;
-				\item Home::Download invia al controller l'id della presetazione da scaricare in locale;
+				\item Home::Download invia al controller l'id della presentazione da scaricare in locale;
+				item Home::Rename invia al controller l'id della presentazione da rinominare e il su nuovo titolo;
 				\item Home::Execute manda alla pagina Execution con l'id della presentazione da eseguire
 				\item Home::NewSlideShow manda alla pagina Edit con la richiesta di una nuova presentazione;
 				\item Home::EditSlideShow manda alla pagina Edit con l'id della presentazione da modificare;
@@ -68,7 +69,7 @@
 		\subsubsection{Premi::View::Pages::Execution}{
 			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
 			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js utilizzato; utilizza i metodi messi a disposizione delle classi [[[[[[[[[CONTROLLER ESECUZIONE PRESENTAZIONE.]]]]]]]]] per creare la pagina che verrà eseguita da Impress.js.\\
-			\textbf{\interfacce}: i metodi implementati nella classe Execution sono gestiti dal framework Impress.js con l'aggiunta e la modifica delle seguenti 4 funzioni all'interno del framework:
+			\textbf{\interfacce}: i metodi implementati nella classe Execution sono gestiti dal framework Impress.js con l'aggiunta e la modifica delle seguenti 3 funzioni all'interno del framework:
 			\begin{itemize}
 				\item Execution::Next va al frame successivo della presentazione;
 				\item Execution::Prev va al frame precedente;
