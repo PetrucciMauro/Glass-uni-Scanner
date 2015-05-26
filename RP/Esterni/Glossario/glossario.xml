@@ -403,4 +403,170 @@ Essa consiste nel valutare ogni requisito focalizzandosi sugli attori che intera
 <plural>elementi</plural>
 <desc>Elemento presente all'interno di un frame il quale può essere un file media, un svg o un testo .</desc>
 </lemma>
+
+<lemma>
+<word>Material Design</word>
+<desc>L’obiettivo del Material Design è di creare un linguaggio visivo che sintetizzi i principi classici di buon design con l’innovazione e le possibilità  della scienza, ovvero offrire un’esperienza unificata tra diverse piattaforme. Spazio, scala, colore, font, grassetti creeranno una gerarchia che guiderà l’utente nella navigazione. Le linee guida si possono trovare alla pagina: \url{http://www.google.com/design/spec}.</desc>
+</lemma>
+
+<lemma>
+<word>Halstead</word>
+<desc>Metriche software introdotte da Maurice Howard Halstead nel 1977.</desc>
+</lemma>
+
+<lemma>
+<word>Back-end</word>
+<desc>Parte di un software che elabora i dati generati dal front end e non interagisce con
+l’utente. Spesso si trova in una macchina diversa da quella del front-end.</desc>
+</lemma>
+<lemma>
+<word>Bottom-up</word>  
+<desc>Il bottom up prende corpo dal punto di partenza (bottom) ovvero dalla situazione
+iniziale; considera l’obiettivo finale, induce a costruire un percorso sequenziale organizzato in
+passaggi successivi in cui l’ancoraggio tra traguardi intermedi e obiettivo finale è generalmente
+ricercato in modo intuitivo (euristico).</desc>
+<lemma>
+<word>Broken windows theory</word>
+<desc>Teoria sociale per cui non vengono tollerate le piccole trasgressioni
+che, se trascurate, potrebbero generare fenomeni di emulazione.</desc>
+</lemma>
+<lemma>
+<word>CamelCase</word>	
+<desc>Metodo per scrivere parole composte o frasi unendo tutte le parole tra loro, ma
+lasciando le loro iniziali maiuscole.</desc>
+</lemma>
+
+<lemma>
+<word>CSV</word>
+<desc>Acronimo per Comma-Separated Values, è un formato di file basato su file di testo
+utilizzato per l’importazione ed esportazione di una tabella di dati.</desc>
+</lemma>
+
+<lemma>
+<word>Design pattern</word>
+<desc>Soluzione progettuale generale per la risoluzione di un problema ricorrente.</desc>
+</lemma>
+
+<lemma>
+<word>Express</word>
+<desc>Framework per Node.js</desc>
+</lemma>
+
+<lemma>
+<word>Event-driven</word>
+<desc>Paradigma di programmazione, nei programmi scritti utilizzando la tecnica a
+eventi il flusso del programma è largamente determinato dal verificarsi di eventi esterni.</desc>
+</lemma>
+
+<lemma>
+<word>Facade</word>
+<desc>Nella programmazione ad oggetti indica un oggetto che permette, attraverso un’inter
+faccia più semplice, l’accesso a sottosistemi che espongono interfacce complesse e molto diverse tra loro, nonché a blocchi di codice complessi.</desc>
+</lemma>
+
+<lemma>
+<word>Factory</word>
+<desc>Design pattern creazionale che fornisce un interfaccia per creare una famiglia di
+oggetti senza specificare classi concrete.</desc>
+</lemma>
+
+<lemma>
+<word>Front-end</word>
+<desc>Parte di un sistema software che gestisce l’interazione con l’utente o con sistemi
+esterni che producono dati di ingresso.
+</desc>
+</lemma>
+
+<lemma>
+<word>Incapsulamento</word>
+<desc>Nell’ambito della programmazione, si definisce incapsulamento (o encapsulation) la tecnica di nascondere il funzionamento interno - deciso in fase di progetto - di una parte
+di un programma, in modo da proteggere le altre parti del programma dai cambiamenti che si
+produrrebbero in esse nel caso che questo funzionamento fosse difettoso, oppure si decidesse di implementarlo in modo diverso. Per avere una protezione completa è necessario disporre di una robusta interfaccia che protegga il resto del programma dalla modifica delle funzionalità soggette a più frequenti cambiamenti.</desc>
+</lemma>
+
+<lemma>
+<word>JSON</word>
+<desc>Acronimo di JavaScript Object Notation, è un formato adatto per lo scambio dei dati
+in applicazioni client-server basato sul linguaggio JavaScript.</desc>
+</lemma>
+
+<lemma>
+<word>Travis</word>
+<desc>È un servizio di integrazione continua online. Travis è integrato con GitHub.</desc>
+</lemma>
+
+
+<lemma>
+<word>Markup</word>
+<desc>Linguaggio basato su un meccanismo sintattico che consente di definire e controllare
+il significato degli elementi contenuti in un documento o in un testo.</desc>
+</lemma>
+<lemma>
+<word>MongoDB</word>
+<desc> Sistema gestionale di basi di dati non relazionale, orientato ai documenti, di tipo
+NoSQL. Il linguaggio utilizzato per la gestione dei dati è JavaScript, del quale sfrutta in particolare la notazione BSON.</desc>
+</lemma>
+<lemma>
+<word>MVC</word>
+<desc>Acronimo di Model View Controller, è un Design Pattern G architetturale che divide
+l’applicazione in tre parti interconnesse, separando l’interfaccia utente, la logica e i dati.</desc>
+</lemma>
+
+<lemma>
+<word>MVW</word>
+<desc>Acronimo di Model View Whatever Design Pattern architetturale derivato da MVC 
+ed utilizzato dal framework Angular.js. Il significato del termine Whatever dichiarato dagli sviluppatori è Whatever works for you.</desc>
+</lemma>
+
+<lemma>
+<word>MVVW</word>
+<desc>Acronimo di Model View View-Controller, è un Design Pattern  derivato da MVC,
+in cui la view non comunica direttamente con il model.</desc>
+</lemma>
+<lemma>
+<word>NoSQL</word>
+<desc>NoSQL è un movimento che promuove sistemi software dove la persistenza dei
+dati caratterizzata dal fatto di non utilizzare il modello relazionale, tipicamente usato dai
+database G tradizionali. L’espressione NoSQL fa riferimento al linguaggio SQL, che è il più
+comune linguaggio di interrogazione dei dati nei database G relazionali, qui preso a simbolo
+dell’intero paradigma relazionale. Questi archivi di dati tipicamente non richiedono uno
+schema G fisso, evitano spesso le operazioni di unione e puntano a scalare orizzontalmente.</desc>
+</lemma>
+<lemma>
+<word>Node Package Manager</word>
+<desc> Node Package Manager è il package manager ufficiale per Node.js,
+gestisce le dipendenze e permette di installare le applicazioni registrate nel sistema Node
+Package Manager. Viene eseguito tramite il comando npm.</desc>
+</lemma>
+
+<lemma>
+<word>LateTrack</word>
+<desc> Software sviluppato da LateButSafe per il tracciamento dei requisiti e relativi
+casi d’uso, è raggiungibile all’indirizzo http://gioberry.no-ip.org/analisirequisiti/login.php</desc>
+</lemma>
+
+<lemma>
+<word>Singleton</word>
+<desc> Design Pattern G creazionale che assicura l’esistenza di una sola istanza di una
+classe, e ne fornisce un punto di accesso globale.</desc>
+</lemma>
+
+<lemma>
+<word>Strategy</word> Design pattern comportamentale il cui compito è isolare un algoritmo all’interno di un oggetto.
+</lemma>
+
+<lemma>
+<word>Top-down</word>
+<desc> Il nome top down significa dall’alto verso il basso: in alto viene posto il problema
+e in basso i sottoproblemi che lo compongono. Il nome ricorda anche una raffigurazione a
+piramide: l’obiettivo finale è la cima della piramide, e i sottoproblemi che lo compongono
+formano la base.</desc>
+</lemma>
+<lemma>
+<word>Angular.js</word>
+<desc>Angular.js è un framework open source Javascript, mantenuto da Google,
+utilizzato per creare componenti front-end</desc>
+</lemma>
 </glossario>
+
+
