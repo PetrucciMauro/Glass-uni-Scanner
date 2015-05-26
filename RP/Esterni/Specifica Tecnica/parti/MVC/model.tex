@@ -435,17 +435,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
         \item Premi::Controller::Presentazione::EditController o Premi::Controller::Presentazione::ExecutionController invocano il costruttore di Loader;
   		\item al momento del caricamento della presentazione gli oggetti di Premi::Model::Presentazione::SlideShowElement sono invece costruiti dalle classi del package Premi::Model::Builder.\\
   		\end{itemize}
-	\subsubsubsection{Premi::Model::Presentazione::Loader}{
-		\textbf{\tipo}: Questa classe si occupa della costruzione dell’oggetto SlideShow quando l’utente carica una presentazione o quando l’utente crea una nuova presentazione.\\	
-		\textbf{\relaz}:
-		\begin{itemize}
-			\item Premi::Controller::EditController-> costruisce Loader;
-            \item Premi::Controller::ExecutionController-> costruisce Loader;
-            \item Premi::Model::SlideShow <- invoca il metodo di SlideShow::getInstance che chiama il costruttore privato di SlideShow, eventualmente invoca le funzioni dell'oggetto SlideShow per inserire gli oggetti delle sottoclassi di SlideShowElement restituiti da Premi::Model::Builder::Director;
-            \item Premi::Model::Builder::Director <- Loader passa a Director i parametri degli oggetti da costruire.
-		\end{itemize} 
-		\textbf{\interfacce}: il controller invoca il costruttore di Loader. Quando non passa alcun argomento Loader costruisce un oggetto di classe Premi::Model::SlideShow; altrimenti passa l’id dell’oggetto json che descrive la presentazione, Loader recupera i dati e costruisce un oggetto SlideShow, passa a Premi::Model::Builder::Director i parametri degli oggetti da istanziare contenuti dentro all’oggetto json che descrive la presentazione. Director restituisce gli oggetti istanziati e Loader invoca i metodi di SlideShow per inserire tali oggetti nei rispettivi contenitori.\\
-	}
+
 	\subsubsubsection{Premi::Model::Presentazione::SlideShow}{
 				\textbf{\tipo}: Classe implementata con il Design Pattern Singleton, contiene tutte le impostazioni della presentazione caricata, gli oggetti in essa presenti e i metodi per settarli o inserirne di nuovi. Gli oggetti della presentazione si trovano all’interno di contenitori divisi per classe. Tramite un iteratore è possibile scorrere detti contenitori.\\	
 				\textbf{\relaz}: 
