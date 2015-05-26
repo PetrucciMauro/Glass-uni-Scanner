@@ -960,6 +960,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
 				\end{itemize}	
             }
+}
 \subsection{Premi::Model::Manifest}{
    	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate al server Apache.
    	\textbf{\relaz}:
@@ -968,12 +969,23 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
    	\end{itemize}
 }
 	\subsubsection{Premi::Model::Manifest::GestoreManifest}{
-		\textbf{\tipo}: classe, fornisce un'implementazione di permettendo di applicare il pattern "Observer"
+		\textbf{\tipo}: classe, fornisce un'implementazione del package
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item definisce il metodo insertElement(), addPage(), update().
+			\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
 		\end{itemize}
         }
 
+\subsection{Premi::Model::GestioneFileServer} {
+   	\textbf{\tipo}: Questo package gestisce l'upload della gestione dei file dell'utente sul server Apache
+   	\textbf{\relaz}:
+   	\begin{itemize}
+   		\item 
+   	\end{itemize}
+   	\textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti l’inserimento di un nuovo elemento testuale.\\
+	}
+	\subsubsection{Premi::Model::GestioneFileServer::GestioneFile}{
+		\textbf{\tipo}: 
+	}
 
 	
