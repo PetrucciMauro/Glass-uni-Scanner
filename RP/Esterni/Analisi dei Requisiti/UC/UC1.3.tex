@@ -630,3 +630,58 @@
 		\item L'utente non conferma la scelta  e si ritorna alla precondizione.
 	\end{itemize}
 }
+\subsubsection{UC 1.3.10 - Inserimento di un elemento svg}{
+	\label{uc1.3.10}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente desktop inserisce un elemento di tipo svg nel piano della presentazione o all'interno di un frame. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera aggiungere un elemento svg.	\\
+	\textbf{Postcondizione}: nel piano della presentazione o all'interno di un frame è presente un nuovo elemento svg.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente desktop seleziona l'opzione di inserimento elemento svg;
+		\item L'utente desktop inserisce l'elemento svg desiderato tra quelli presenti in locale.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.3.11 - Modifica di un elemento svg}{
+	\label{uc1.3.11}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.3.11}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.3.11}
+		\caption{Caso d'uso 1.3.11: Modifica di un elemento svg}
+	\end{figure}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente desktop può modificare dimensione e colore di un elemento svg. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera modificare un elemento svg.	\\
+	\textbf{Postcondizione}: l'elemento svg è stato modificato come l'utente desiderava.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente desktop può modificare le dimensioni di un elemento svg \S\hyperref[uc1.3.11.1]{(UC 1.3.11.1)};
+		\item L'utente desktop può modificare il colore di un elemento svg \S\hyperref[uc1.3.11.2]{(UC 1.3.11.2)}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.3.11.1 - Modifica dimensioni di un elemento svg}{
+	\label{uc1.3.11.1}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente desktop può modificare le dimensioni di un elemento svg. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera modificare le dimensioni di un elemento svg.	\\
+	\textbf{Postcondizione}: le dimensioni dell'elemento svg sono state modificate.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente desktop seleziona un elemento svg;
+		\item L'utente desktop ridimensiona l'elemento svg.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.3.11.2 - Modifica colore di un elemento svg}{
+	\label{uc1.3.11.2}
+	\textbf{Attori}: utente desktop \\
+	\textbf{Descrizione}: l'utente desktop può modificare il colore di un elemento svg. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera modificare il colore di un elemento svg.	\\
+	\textbf{Postcondizione}: il colore dell'elemento svg è stato cambiato.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente desktop seleziona un elemento svg;
+		\item L'utente desktop seleziona l'opzione per la modifica del colore;
+		\item L'utente desktop modifica il colore con quello desiderato.
+	\end{enumerate}
+	}

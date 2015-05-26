@@ -328,11 +328,6 @@
     <desc>piano nel quale sono visualizzati tutti gli elementi di una presentazione.</desc>
   </lemma>
   <lemma>
-    <word>Elemento Scelta</word>
-    <plural>elementi scelta</plural>
-    <desc>Icona che permette di visualizzare il frame associato alla scelta</desc>
-  </lemma>
-  <lemma>
     <word>Bookmark</word>
     <desc>Segnalibro che permette di spostarsi rapidamente da un frame ad un altro al livello più esterno.</desc>
   </lemma>
@@ -401,5 +396,11 @@ Essa consiste nel valutare ogni requisito focalizzandosi sugli attori che intera
 <word>Elemento scelta</word>
 <plural>elementi scelta</plural>
 <desc>Elemento presente all'interno di un frame che, selezionandolo, permette di spostarsi in un nuovo percorso di presentazione.</desc>
+</lemma>
+
+<lemma>
+<word>Elemento</word>
+<plural>elementi</plural>
+<desc>Elemento presente all'interno di un frame il quale può essere un file media, un svg o un testo .</desc>
 </lemma>
 </glossario>
