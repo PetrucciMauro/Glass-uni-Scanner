@@ -82,6 +82,7 @@
   <top-task idref="t-1"/>
   <task id="t-1">
     <type>group</type>
+    <child-task idref="t79"/>
     <child-task idref="t1"/>
     <child-task idref="t2"/>
     <child-task idref="t50"/>
@@ -330,6 +331,12 @@
     <prerequisite-task idref="t40"/>
     <prerequisite-task idref="t70"/>
     <start-no-earlier-than>2015-06-08T08:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t79">
+    <title>Pianificazione test</title>
+    <effort>97200</effort>
+    <start-constraint-date>2015-06-07T15:30:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-06-07T15:30:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="true" resources="false">
     <color r="1" g="0.5" b="0.5"/>

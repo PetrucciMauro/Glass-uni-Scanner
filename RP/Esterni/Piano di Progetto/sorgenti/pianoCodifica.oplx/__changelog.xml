@@ -42,4 +42,11 @@
     <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
     <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="pietro" date="2015-05-26T22:03:34.656Z" timestamp="2015-05-26T22:03:34.656Z">
+    <change idref="t79" to="t-1" to-position="0" resolved="yes">
+      <change idref="t79" attribute="effort" type="real" from="28800" to="97200"/>
+      <change idref="t79" attribute="noEarlierThanConstraintDate" type="date" to="2015-06-07T15:30:00.000Z"/>
+      <change idref="t79" attribute="title" type="string" to="Pianificazione test"/>
+    </change>
+  </task-change-set>
 </changelog>

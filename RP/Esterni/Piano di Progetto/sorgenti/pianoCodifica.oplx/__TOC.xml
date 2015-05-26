@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <omniplan xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
-  <window x="60" y="205" w="1282" h="672">
+  <window x="89" y="94" w="1282" h="672">
     <editing-scenario>mW1-NFrAj9m</editing-scenario>
     <view>task</view>
     <change-tracking/>
@@ -14,9 +14,9 @@
         <column name="Title" width="307"/>
         <column name="Effort" width="70"/>
         <expanded-items idrefs="t41 t1 t30 t16 t26"/>
-        <selected-items-at-filter-time idrefs="t75 t9 t50 t13 t71 t26 t18 t34 t2 t30 t14 t10 t52 t36 t28 t49 t40 t16 t74 t29 t37 t70 t25 t17"/>
+        <selected-items-at-filter-time idrefs="t75 t9 t50 t13 t71 t26 t18 t2 t76 t30 t34 t14 t10 t52 t36 t28 t49 t40 t78 t16 t37 t74 t29 t70 t25 t17"/>
       </outline>
-      <gantt-view x="1392.5" y="0" w="859" h="565">
+      <gantt-view x="1528" y="0" w="859" h="565">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>
@@ -70,7 +70,7 @@
         <column name="Resource" width="150"/>
         <column name="#" width="75"/>
       </outline>
-      <timeline x="3506" y="0" w="947" h="545">
+      <timeline x="7009" y="0" w="947" h="545">
         <show-project-end/>
         <task-bar-label task-type="group" position="left">
           <key>Title</key>
@@ -124,7 +124,7 @@
     </calendar>
   </window>
   <project>
-    <next-task-id>76</next-task-id>
+    <next-task-id>80</next-task-id>
     <next-resource-id>2</next-resource-id>
     <scenario id="mW1-NFrAj9m" name="Actual" filename="Actual.xml"/>
     <date-display dates="true" times="true" seconds="false"/>
