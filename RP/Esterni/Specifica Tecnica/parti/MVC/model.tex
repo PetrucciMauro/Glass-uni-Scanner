@@ -667,7 +667,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
                     \item Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento;
                     \item Premi::Model::SlideShow::SlideShowActions::EditElements::RotationEditor <- invoca la classe concreta del design pattern Strategy per la modifica dell'orientamento di un elemento.
 				\end{itemize}	
-                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti la modifica dellorientamento di un elemento;\\
+                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti la modifica dell'orientamento di un elemento;\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
@@ -856,7 +856,7 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 }
 
 \subsection{Premi::Model::ServerRelations::AccessControl}{
-		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token aio servizi nodeApi.\\
+		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
 		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
         \subsubsection{Premi::Model::ServerRelations::AccessControll::Autenticazione}{
 				\textbf{\tipo}: Classe che fornisce funzionalità di autenticazione e deautenticazione ai servizi offerti da nodeApi attraverso passaggio di token.\\	
@@ -960,7 +960,19 @@ Premi::Model::Invoker -> esegue il comando o ne invoca il metodo di annullamento
 					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
 				\end{itemize}	
             }
-            
+\subsection{Premi::Model::Manifest}{
+   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate al server Apache.
+   	\textbf{\relaz}:
+   	\begin{itemize}
+   		\item definisce il metodo GestoreManifest()
+   	\end{itemize}
+}
+	\subsubsection{Premi::Model::Manifest::GestoreManifest}{
+		\textbf{\tipo}: classe, fornisce un'implementazione di permettendo di applicare il pattern "Observer"
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item definisce il metodo insertElement(), addPage(), update().
+		\end{itemize}
         }
 
 

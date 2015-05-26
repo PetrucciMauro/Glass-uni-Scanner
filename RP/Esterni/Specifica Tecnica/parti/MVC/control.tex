@@ -42,5 +42,16 @@
 					\end{itemize}
 				\textbf{\interfacce}: La pagina Execution costruisce ExecutionController per caricare la presentazione.\\
 		}
+	\subsubsection{Premi::Controller::ApacheManager}{
+			\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali della pagina Premi::View::Pages::Profile per l'inserimento, cancellazione e rinominazione di file sul server Apache.\\
+			\textbf{\relaz}:
+			\begin{itemize}
+			 	\item Premi::View::Pages::Profile:UploadMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i parametri del file da caricare; 
+			 	\item Premi::View::Pages::Profile::DeleteMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i e l'id del file media da eliminare;
+			 	\item Premi::View::Pages::Profile::RenameMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente, l'id e il nuovo nome del file media da rinominare; 
+			 	\item Premi::Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
+			\end{itemize}
+		\textbf{\interfacce}: La pagine Profile costruisce ApacheManager per fare modifiche ai file.
+	}
 }
 	
