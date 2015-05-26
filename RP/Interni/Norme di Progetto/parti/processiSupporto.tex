@@ -4,7 +4,7 @@
 Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ riguardo alla stesura, verifica e approvazione della documentazione da produrre.
 \subsubsection{Template} 
 		Tutti i documenti devono essere realizzati utilizzando un template\ped{g} \LaTeX. Onde evitare modifiche manuali che farebbero perdere molto tempo, 
-		Il nome dei file\ped{g} deve rispondere alla seguente formattazione senza spazi: “[nome documento]-[versione]”. La parte della versione deve riportare la dicitura “v.” seguita dal numero di versione (ad es: NormeDiProgetto\_v.1.0.0.pdf”).\\
+		il nome dei file\ped{g} deve rispondere alla seguente formattazione senza spazi: “[nome documento]-[versione]”. La parte della versione deve riportare la dicitura “v.” seguita dal numero di versione (ad es: NormeDiProgetto\_v.1.0.0.pdf”).\\
  		Tale modello si può trovare nel repository in documents/template.
 	\label{sec:docs}
 	\subsubsection{Contenuto e struttura dei documenti}{
@@ -19,14 +19,14 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 			\item Introduzione;
 			\item Corpo.
 		\end{itemize}
-		Ogni pagina deve avere un'intestazione e un piè di pagina:
+		Ogni pagina avrà come intestazione e come piè di pagina:
 		\begin{itemize}
 			\item \textbf{Intestazione}: logo del gruppo e nome del documento;
 			\item \textbf{Piè di pagina}: versione documento, università e anno accademico, numeri di pagina e licenza.
 		\end{itemize}
 		\subsubsubsection{Verbali}
 		Per quanto riguarda i verbali degli incontri, essi devono essere redatti dal Responsabile di Progetto\ped{g} ad ogni riunione. Esso deve rispettare la formattazione regolata alla sezione \S\ref{sub:typo} e successive ma è da considerarsi solo come promemoria per il gruppo.\\
-		Il nome di ogni Verbale deve rispettare la seguente dicitura: “Verbale\_[tipo incontro]-[data]” dove il tipo incontro può essere di due tipi:
+		Il nome di ogni verbale deve rispettare la seguente dicitura: “Verbale\_[tipo incontro]-[data]” dove il tipo incontro può essere di due tipi:
 		\begin{itemize}
 			\item Interno (INT): incontro effettuato tra i membri del gruppo;
 			\item Esterno (EXT): incontro effettuato tra i membri del gruppo e committente\ped{g} e/o proponente\ped{g}.
@@ -116,14 +116,14 @@ Questo capitolo descrive tutte le convenzioni scelte ed adottate dai \gruppo\ ri
 		}
 \subsubsection{Glossario}{
  	Il glossario è unico per tutti i documenti e deve essere organizzato come definito nella sezione Documenti \S\ref{sec:docs}. Tutti i membri del gruppo possono modificarlo.\\
- 	I termini all'interno del glossario saranno organizzati nel seguente modo:
+ 	I termini all'interno del glossario avranno le seguenti caratteristiche:
  	\begin{itemize}
-	 	\item Tutti termini saranno in ordine alfanumerico;
+	 	\item Tutti i termini saranno in ordine alfanumerico;
 	 	\item Tutti i termini devono essere in grassetto e iniziare con la lettera maiuscola , la definizione del termine sarà preceduta dal carattere '':'' ;
 	 	\item Tutti i termini devono fornire chiarimenti su concetti che possono essere confusi quindi non devono essere inseriti termini il cui significato è già noto.
  	\end{itemize}	
    \subsubsubsection{Implementazione}
-      L'inserimento dei termini nel glossario viene eseguito tramite un applicazione interna al team che funziona nel seguente modo:
+      L'inserimento dei termini nel glossario viene eseguito tramite un applicazione interna al team, LateGloss, che funziona nel seguente modo:
       \begin{itemize}
 	      \item Si inserisce il lemma e la descrizione del lemma negli appositi spazi;
 	      \item Si salva il glossario nel formato .tex;
@@ -209,7 +209,7 @@ La priorità di risoluzione può essere:
 Le modalità operative per il \emph{Verificatore} sono le seguenti:
 \begin{itemize}
 \item \textbf{Correzione immediata}: è richiesto che il \emph{Verificatore} proceda autonomamente alla correzione dell’errore;
-\item \textbf{Aggiunta alla checklist}: è richiesto che il Verificatore aggiunga l’errore riscontrato a checklist appropriata che poi verrà assegnata a un correttore che apporterà le modifiche riportate.
+\item \textbf{Aggiunta alla checklist}: è richiesto che il Verificatore aggiunga l’errore riscontrato ad una checklist appropriata che poi verrà assegnata a un correttore che apporterà le modifiche riportate.
 \end{itemize}
 \subsubsection{Verifica dei processi}
 Ai Verificatori è richiesto di effettuare quanto segue:
@@ -219,15 +219,13 @@ macro-attività, definita nel \href{run:../../Esterni/\fPianoDiProgetto}{\fEscap
 nella sezione Metriche per i processi del \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} . Al fine di avere
 un indice complessivo di fase dovrà essere inoltre calcolato il valore medio di tali indici.
 
-\item \textbf{Grafico PDCA}: Alla conclusione di ogni fase del progetto il \emph{Verificatore} dovrà esportare i dati dal sistema di ticketing utilizzando l’esportazione mediante foglio
-di calcolo nel formato CSV. I dati esportati devono essere inseriti nel modello del foglio di calcolo per la generazione del grafico PDCA.\\
+\item \textbf{Grafico PDCA}: Alla conclusione di ogni fase del progetto il \emph{Verificatore} dovrà esportare i dati dal sistema di ticketing utilizzando l’esportazione mediante foglio di calcolo nel formato CSV. I dati esportati devono essere inseriti in un foglio di calcolo ed importarti nel template per la generazione del grafico PDCA.\\
 Dopo aver ottenuto il grafico il \emph{Verificatore} con la supervisione del \emph{Responsabile di Progetto} dovrà trarre delle conclusioni generali sulla velocità con cui sono stati portati avanti i processi.
 \end{itemize}
 
 	\subsubsection{Verifica dei documenti}
 	\label{sec:VerificaDocumenti}
-	Ogni qualvolta avvenga un cambiamento sostanziale nello sviluppo del prodotto, si istanzierà il processo\ped{g} di verifica. \\
-		Nello specifico durante ogni fase (Analisi, Progettazione, Realizzazione e Validazione\ped{g}) saranno applicate le tecniche di verifica qui descritte nei seguenti casi:
+	Il processo di verifica sarà applicato indipendentemente dalla fase di sviluppo del prodotto (Analisi, Progettazione, Validazione) ogni qual volta avvenga un cambiamento sostanziale nello sviluppo del prodotto, ovvero nei seguenti casi:
 		\begin{itemize}
 			\item Conclusione della prima redazione di un documento;
 			\item Conclusione della prima redazione di un file\ped{g} di codice\ped{g};
@@ -238,8 +236,7 @@ Dopo aver ottenuto il grafico il \emph{Verificatore} con la supervisione del \em
 	\item \textbf{Controllo sintattico e del periodo}: Utilizzando TeXstudio e GNU Aspell vengono evidenziati e corretti gli errori di grammatica più evidenti. Gli errori di sintassi, di sostituzione di lettere che provocano la creazione di parole grammaticalmente corrette ma sbagliate nel contesto ed i periodi di difficile comprensione necessitano dell’intervento di un verificatore umano. Per questa ragione ciascun documento dovrà essere sottoposto ad un walkthrough da parte dei verificatori per individuare tali errori;
 	\item \textbf{Rispetto delle norme di progetto}: Sono state definite norme tipografiche di carattere generale. Impongono una struttura dei documenti che non può essere verificata in maniera automatica. La verifica delle norme
 	per cui non è stato definito uno strumento automatico richiede che i Verificatori eseguano inspection sul rispetto di quelle norme in ciascun documento;
-	\item \textbf{Lista di controllo}: Il \emph{Verificatore} dovrà utilizzare la lista di controllo per i
-	documenti, descritta nell’appendice \S\ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
+	\item \textbf{Lista di controllo}: Il \emph{Verificatore} dovrà utilizzare la lista di controllo per i documenti, descritta nell’appendice \S\ref{sec:ListaControllo}, e verificare che gli errori tipici non siano	presenti;
 	\item \textbf{Verifica del glossario}: Il \emph{Verificatore} si occuperà del controllo dei termini inseriti nel glossario e della corretta pedicizzazione dei termini nei vari documenti,segnalando eventuali errori;
 	\item \textbf{Calcolo dell’indice Gulpease}: Su ogni documento redatto il \emph{Verificatore} deve calcolare l’indice di leggibilità. Nel caso in cui l’indice risultasse troppo basso, sarà necessario eseguire un walkthrough del documento alla ricerca delle frasi troppo lunghe o complesse;
 	\item \textbf{Miglioramento del processo di verifica}: Per avere un miglioramento del processo di verifica, quando i \emph{Verificatori} eseguono walkthrough di un documento, dovranno riportare gli errori più frequentemente trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle verifiche future;
@@ -252,7 +249,7 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 \begin{itemize}
 
 \item \textbf{Diagrammi di caso d’uso}: Il controllo dei diagrammi di caso d’uso deve avvenire manualmente, controllando il rispetto delle specifiche UML 2.x e il corretto uso delle relazioni di inclusione ed estensione. Il diagramma di caso d’uso deve rappresentare fedelmente quanto descritto dal caso d’uso;
-\item \textbf{Diagrammi delle classi}: Al Verificatore è chiestoil controllo del formalismo delle specifiche UML 2.x e di controllare la corrispondenza tra progettazione e diagrammi delle classi.
+\item \textbf{Diagrammi delle classi}: Al \emph{Verificatore} è chiesto il controllo del formalismo delle specifiche UML 2.x e di controllare la corrispondenza tra progettazione e diagrammi delle classi.
 
 \end{itemize}
 
@@ -293,10 +290,10 @@ Al \emph{Verificatore} è richiesto il controllo dei diagrammi UML prodotti:
 		\item Esecuzione dei test la quale a sua volta include:
 			\begin{itemize}
 				\item Stress test e casi limite;
-				\item Testare il prodotto software per la sua abilità di isolare e minimizzare l'effetto degli errori; questo implica che il software è robusto ed affidabile anche negli stress test e casi limite;
+				\item Testare il prodotto software per la sua abilità di isolare e minimizzare l'effetto degli errori; questo per verificare la robustezza e l’affidabilità del software anche negli stress test e casi limite;
 				\item Testare che il prodotto software sia in grado di far svolgere all'utente tutti i suoi task.
 			\end{itemize}
-		\item Assicurarsi che il software soddisfi gli scopi per cui è stato creato.
+		\item Assicurarsi che il software Premi soddisfi gli scopi per cui è stato creato.
 		\end{itemize}		
 		\subsection{Gestione delle modifiche ai requisiti}{
 					A tutte le proposte di modifica dei requisiti\ped{g} dovrà essere applicata la seguente procedura:

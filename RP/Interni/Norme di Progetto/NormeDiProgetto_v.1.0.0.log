@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  25 MAY 2015 11:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  26 MAY 2015 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1065,32 +1065,32 @@ Package pdftex.def Info: ../../logo.jpg used on input line 135.
 [14]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 155.
+Package pdftex.def Info: ../../logo.jpg used on input line 153.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 172--174
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 174.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 172.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 180.
+Package pdftex.def Info: ../../logo.jpg used on input line 178.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [16]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 220.
+Package pdftex.def Info: ../../logo.jpg used on input line 213.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [17]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 244.
+Package pdftex.def Info: ../../logo.jpg used on input line 238.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [18])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1160,12 +1160,12 @@ Package pdftex.def Info: ../../logo.jpg used on input line 208.
  [25]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 241.
+Package pdftex.def Info: ../../logo.jpg used on input line 239.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [26]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 273.
+Package pdftex.def Info: ../../logo.jpg used on input line 270.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [27pdfTeX warning (ext4): destination with the same identifier (name{subsubsubs
@@ -1173,11 +1173,11 @@ ection.4.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.273 	\subsubsubsection{Test}
+l.270 	\subsubsubsection{Test}
                               ]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 310.
+Package pdftex.def Info: ../../logo.jpg used on input line 307.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1189,55 +1189,55 @@ Package pdftex.def Info: ../../logo.jpg used on input line 45.
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 30.
+Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [30]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 57.
+Package pdftex.def Info: ../../logo.jpg used on input line 56.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 83.
+Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [32]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.5.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 		\subsubsubsection{Casi Particolari}
+l.86 		\subsubsubsection{Casi Particolari}
                                           {pdfTeX warning (ext4): destination w
 ith the same identifier (name{subsubsubsection.5.3.1}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.101 \subsubsubsection{Repository}
+l.100 \subsubsubsection{Repository}
                                    
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 109.
+Package pdftex.def Info: ../../logo.jpg used on input line 108.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.109 \item s
-             ource.git : disponibile all’indirizzo\\]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+l.108 \item s
+             ource.git disponibile all’indirizzo:\\]
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
@@ -1245,7 +1245,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \subsubsubsection{Condivisione file}
+l.118 \subsubsubsection{Condivisione file}
                                           )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
@@ -1376,177 +1376,177 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--109
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 139.
+Package pdftex.def Info: ../../logo.jpg used on input line 136.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [37]
-Overfull \hbox (0.79156pt too wide) in paragraph at lines 169--170
+Overfull \hbox (0.79156pt too wide) in paragraph at lines 160--161
 \T1/cmr/m/n/12 Per la ste-su-ra dei gra-fi-ci UML vie-ne uti-liz-za-to il progr
 amma$[]$ \T1/cmr/bx/n/12 Vi-sual Pa-ra-digm\T1/cmr/m/n/12 . Il programma$[]$
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 180.
+Package pdftex.def Info: ../../logo.jpg used on input line 171.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [38]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 221.
+Package pdftex.def Info: ../../logo.jpg used on input line 212.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39]
-Overfull \hbox (2.1679pt too wide) in paragraph at lines 222--223
+Overfull \hbox (2.1679pt too wide) in paragraph at lines 212--213
 []\T1/cmr/bx/n/12 Verificatore\T1/cmr/m/n/12 : crea i ticket$[]$ per se-gna-la-
 re er-ro-ri ed im-pre-ci-sio-ni tro-va-te du-ran-te il processo$[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 242.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 252.
+(hyperref)                removing `subscript' on input line 242.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 242.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 273.
+Package pdftex.def Info: ../../logo.jpg used on input line 263.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 278.
+(hyperref)                removing `math shift' on input line 268.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 278.
+(hyperref)                removing `subscript' on input line 268.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 278.
+(hyperref)                removing `math shift' on input line 268.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
+(hyperref)                removing `math shift' on input line 294.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 304.
+(hyperref)                removing `subscript' on input line 294.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
+(hyperref)                removing `math shift' on input line 294.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 322.
+Package pdftex.def Info: ../../logo.jpg used on input line 312.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [41]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.6.7.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.351 ...bsection{Ticket\ped{g} di pianificazione}
+l.341 ...bsection{Ticket\ped{g} di pianificazione}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 351.
+(hyperref)                removing `math shift' on input line 341.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 351.
+(hyperref)                removing `subscript' on input line 341.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 351.
+(hyperref)                removing `math shift' on input line 341.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 368.
+Package pdftex.def Info: ../../logo.jpg used on input line 358.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [42]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.6.7.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.373 ...cket\ped{g} di realizzazione e controllo}
+l.363 ...cket\ped{g} di realizzazione e controllo}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 363.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 373.
+(hyperref)                removing `subscript' on input line 363.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 373.
+(hyperref)                removing `math shift' on input line 363.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.6.7.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \subsubsubsection{Ticket\ped{g} di verifica}
+l.392 \subsubsubsection{Ticket\ped{g} di verifica}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 392.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 402.
+(hyperref)                removing `subscript' on input line 392.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 402.
+(hyperref)                removing `math shift' on input line 392.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 417.
+Package pdftex.def Info: ../../logo.jpg used on input line 405.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]
 <./images/CreazioneTicket.jpg, id=677, 809.0225pt x 1606.0pt>
 File: ./images/CreazioneTicket.jpg Graphic file (type jpg)
 
 <use ./images/CreazioneTicket.jpg>
-Package pdftex.def Info: ./images/CreazioneTicket.jpg used on input line 433.
+Package pdftex.def Info: ./images/CreazioneTicket.jpg used on input line 421.
 (pdftex.def)             Requested size: 290.22107pt x 576.12561pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 437.
+Package pdftex.def Info: ../../logo.jpg used on input line 425.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [44]
 <./images/AggiornamentoTicket.jpg, id=686, 1049.9225pt x 1333.98375pt>
 File: ./images/AggiornamentoTicket.jpg Graphic file (type jpg)
 
 <use ./images/AggiornamentoTicket.jpg>
-Package pdftex.def Info: ./images/AggiornamentoTicket.jpg used on input line 44
-0.
+Package pdftex.def Info: ./images/AggiornamentoTicket.jpg used on input line 42
+8.
 (pdftex.def)             Requested size: 362.77264pt x 460.91696pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 444.
+Package pdftex.def Info: ../../logo.jpg used on input line 432.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [45 <./images/CreazioneTicket.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 464.
+Package pdftex.def Info: ../../logo.jpg used on input line 452.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [46 <./images/AggiornamentoTicket.jpg>]
 <./images/LateTrack.png, id=703, 1732.4725pt x 972.63374pt>
 File: ./images/LateTrack.png Graphic file (type png)
 
 <use ./images/LateTrack.png>
-Package pdftex.def Info: ./images/LateTrack.png used on input line 471.
+Package pdftex.def Info: ./images/LateTrack.png used on input line 459.
 (pdftex.def)             Requested size: 483.69687pt x 271.54901pt.
 
 <./images/CreazioneRequisito.jpg, id=705, 339.2675pt x 775.89874pt>
 File: ./images/CreazioneRequisito.jpg Graphic file (type jpg)
 
 <use ./images/CreazioneRequisito.jpg>
-Package pdftex.def Info: ./images/CreazioneRequisito.jpg used on input line 479
+Package pdftex.def Info: ./images/CreazioneRequisito.jpg used on input line 467
 .
 (pdftex.def)             Requested size: 241.84843pt x 553.09407pt.
 )
@@ -1578,7 +1578,7 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 ### bottom level 
 Here is how much of TeX's memory you used:
  14312 strings out of 495017
- 205161 string characters out of 6181021
+ 205159 string characters out of 6181021
  385472 words of memory out of 5000000
  17021 multiletter control sequences out of 15000+600000
  17213 words of font info for 40 fonts, out of 8000000 for 9000
@@ -1596,7 +1596,7 @@ b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/
 fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on NormeDiProgetto_v.1.0.0.pdf (50 pages, 729781 bytes).
+Output written on NormeDiProgetto_v.1.0.0.pdf (50 pages, 730047 bytes).
 PDF statistics:
  1198 PDF objects out of 1200 (max. 8388607)
  1115 compressed objects within 12 object streams
