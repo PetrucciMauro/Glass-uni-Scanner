@@ -13,10 +13,10 @@
         <column name="Notes" width="20"/>
         <column name="Title" width="307"/>
         <column name="Effort" width="70"/>
-        <expanded-items idrefs="t30 t9 t10 t26 t16 t41 t28 t1"/>
-        <selected-items-at-filter-time idrefs="t75 t9 t13 t50 t71 t26 t18 t2 t34 t30 t14 t10 t52 t36 t28 t49 t40 t16 t74 t37 t29 t70 t25 t17"/>
+        <expanded-items idrefs="t41 t1 t30 t16 t26"/>
+        <selected-items-at-filter-time idrefs="t75 t9 t50 t13 t71 t26 t18 t34 t2 t30 t14 t10 t52 t36 t28 t49 t40 t16 t74 t29 t37 t70 t25 t17"/>
       </outline>
-      <gantt-view x="758" y="0" w="859" h="565">
+      <gantt-view x="1392.5" y="0" w="859" h="565">
         <view-mode>actual</view-mode>
         <critical-path/>
         <dependency-lines/>

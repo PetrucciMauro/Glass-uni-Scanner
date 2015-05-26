@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
   <version>2.1</version>
-  <task-change-set user="pietro" date="2015-04-11T19:50:56.352Z" timestamp="2015-04-11T19:50:56.352Z">
-    <change idref="t2" attribute="title" type="string" from="consuntivo" to="Consuntivo" resolved="yes"/>
+  <task-change-set user="pietro" date="2015-05-26T20:18:41.471Z" timestamp="2015-05-26T20:18:41.471Z">
+    <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" from="2015-06-19T06:15:00.000Z" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-27T14:15:00.000Z" resolved="yes"/>
+    <change idref="t3" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t4" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t5" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-16T12:15:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t7" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T14:15:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t12" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-27T12:15:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t14" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t15" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-20T12:15:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t18" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-17T12:15:00.000Z" resolved="yes"/>
+    <change idref="t19" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t20" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-15T12:15:00.000Z" resolved="yes"/>
+    <change idref="t21" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-20T15:15:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" to="2015-07-16T12:15:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" from="2015-06-29T15:00:00.000Z" to="2015-07-28T12:15:00.000Z" resolved="yes"/>
   </task-change-set>
 </changelog>

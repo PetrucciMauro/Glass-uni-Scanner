@@ -16,7 +16,30 @@
     <change idref="t70" attribute="noEarlierThanConstraintDate" type="date" from="2015-06-02T09:15:00.000Z" to="2015-06-01T14:45:00.000Z"/>
     <change idref="t71" attribute="noEarlierThanConstraintDate" type="date" from="2015-06-12T11:15:00.000Z" to="2015-06-10T13:30:00.000Z"/>
   </task-change-set>
-  <task-change-set user="pietro" date="2015-04-11T19:58:08.142Z" timestamp="2015-04-11T19:58:08.142Z">
-    <change idref="t2" attribute="title" type="string" from="consuntivo" to="Consuntivo" resolved="yes"/>
+  <task-change-set user="pietro" date="2015-05-26T19:41:50.259Z" timestamp="2015-05-26T19:41:50.259Z">
+    <change idref="t1" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-05-26T19:47:12.973Z" timestamp="2015-05-26T19:47:12.973Z">
+    <change idref="t2" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t9" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t25" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t28" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t30" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t35" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-04T08:00:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t41" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t42" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t43" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t50" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t52" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t63" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t70" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t71" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t74" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
+    <change idref="t75" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-03T15:45:00.000Z" to="2015-06-08T08:15:00.000Z" resolved="yes"/>
   </task-change-set>
 </changelog>

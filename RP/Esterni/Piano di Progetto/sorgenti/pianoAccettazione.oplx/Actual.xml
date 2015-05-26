@@ -104,123 +104,163 @@
   <task id="t1">
     <title>Verifica e validazione</title>
     <type>group</type>
-    <start-constraint-date>2015-06-19T06:15:00.000Z</start-constraint-date>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t3"/>
     <child-task idref="t6"/>
     <child-task idref="t10"/>
     <child-task idref="t13"/>
     <child-task idref="t16"/>
     <child-task idref="t19"/>
-    <start-no-earlier-than>2015-06-19T06:15:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t2">
     <title>Consuntivo</title>
     <effort>7200</effort>
+    <start-constraint-date>2015-07-27T14:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t1"/>
+    <start-no-earlier-than>2015-07-27T14:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t3">
     <title>Glossario</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t4"/>
     <child-task idref="t5"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t4">
     <title>Incremento</title>
     <effort>14400</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t5">
     <title>Verifica</title>
     <effort>3600</effort>
+    <start-constraint-date>2015-07-16T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t4"/>
+    <start-no-earlier-than>2015-07-16T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t6">
     <title>Norme</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t7"/>
     <child-task idref="t8"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t7">
     <title>Incremento</title>
     <effort>7200</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t8">
     <title>Verifica</title>
     <effort>3600</effort>
+    <start-constraint-date>2015-07-15T14:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t7"/>
+    <start-no-earlier-than>2015-07-15T14:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t10">
     <title>Piano di qulifica</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t11"/>
     <child-task idref="t26"/>
     <child-task idref="t12"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t11">
     <title>Incremento Verifiche</title>
     <effort>14400</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t12">
     <title>Verifica</title>
     <effort>7200</effort>
+    <start-constraint-date>2015-07-27T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t11"/>
     <prerequisite-task idref="t26"/>
+    <start-no-earlier-than>2015-07-27T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t13">
     <title>Definizione prodotto</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t14"/>
     <child-task idref="t15"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t14">
     <title>Incremento</title>
     <effort>43200</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t15">
     <title>Verifica</title>
     <effort>10800</effort>
+    <start-constraint-date>2015-07-20T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t14"/>
+    <start-no-earlier-than>2015-07-20T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t16">
     <title>Specifica tecnica</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t17"/>
     <child-task idref="t18"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t17">
     <title>Incremento</title>
     <effort>28800</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t18">
     <title>Verifica</title>
     <effort>21600</effort>
+    <start-constraint-date>2015-07-17T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t17"/>
+    <start-no-earlier-than>2015-07-17T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t19">
     <title>Manualistica</title>
     <type>group</type>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
     <child-task idref="t20"/>
     <child-task idref="t21"/>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t20">
     <title>Incremento</title>
     <effort>54000</effort>
+    <start-constraint-date>2015-07-15T12:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2015-07-15T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t21">
     <title>Verifica</title>
     <effort>14400</effort>
+    <start-constraint-date>2015-07-20T15:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t20"/>
+    <start-no-earlier-than>2015-07-20T15:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t26">
     <title>Validazione interna</title>
     <effort>100800</effort>
+    <start-constraint-date>2015-07-16T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t11"/>
+    <start-no-earlier-than>2015-07-16T12:15:00.000Z</start-no-earlier-than>
   </task>
   <task id="t28">
     <title>Accettazione</title>
     <type>milestone</type>
-    <start-constraint-date>2015-06-29T15:00:00.000Z</start-constraint-date>
+    <start-constraint-date>2015-07-28T12:15:00.000Z</start-constraint-date>
     <prerequisite-task idref="t2"/>
-    <start-no-earlier-than>2015-06-29T15:00:00.000Z</start-no-earlier-than>
+    <start-no-earlier-than>2015-07-28T12:15:00.000Z</start-no-earlier-than>
   </task>
   <critical-path root="-1" enabled="true" resources="false">
     <color r="1" g="0.5" b="0.5"/>
