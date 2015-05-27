@@ -17,10 +17,6 @@
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
-\subsection{Premi::Model::SlideShow::ModificaSlideShow}{
-		\textbf{\tipo}: All’interno di questo Package si trovano le classi che definiscono gli algoritmi di modifica, inserimento e rimozione degli elementi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Premi::Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
-    }
 \subsection{Premi::Model::SlideShow::SlideShowActions}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
@@ -595,12 +591,6 @@
 }
 
 \subsection{Premi::Model::ServerRelations::AccessControl}{
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.6]{\imgs {AccessControl}.pdf}
-		\label{fig:accCnt}
-		\caption{AccessControl}
-	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
 		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
         \subsubsection{Premi::Model::ServerRelations::AccessControll::Autenticazione}{
@@ -722,25 +712,15 @@
 
 }
 
-
-\subsection{Premi::Model::Manifest}{
-   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
-   	\textbf{\relaz}:
-   	\begin{itemize}
-   		\item definisce il metodo GestoreManifest(); relazione di dipendenza 
-   	\end{itemize}
-
-	\subsubsection{Premi::Model::Manifest::GestoreManifest}{
-		\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
-		\textbf{\relaz}:
+\subsubsection{Premi::Model::ApacheRelations}{
+		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
 		\begin{itemize}
-			\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
+			\item Il package comunica con la view ricevendo chiamate da Premi::View::Pages::Profile.
+			\item I componenti del package ApacheRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’è dipenda tra il package ApacheRelations ed il package ServerRelations.\\
 		\end{itemize}
-        }
-}
 
 \subsubsection{Premi::Model::ApacheRelations::ApacheServerManager}{
-		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
+		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache per le operazioni di modifica dei files.\\
 		\textbf{\relaz}:
 		\begin{itemize}
 			\item Il package comunica con la view ricevendo chiamate da Premi::View::Pages::Profile.
@@ -758,7 +738,7 @@
 			\end{itemize}
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
 			
-			\subsection{Premi::ApacheRelations::::ApacheServerManager::Manifest}{
+			\subsection{Premi::ApacheRelations::Manifest}{
 			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
 			   	\textbf{\relaz}:
 			   	\begin{itemize}
@@ -769,7 +749,7 @@
 					\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
 					\textbf{\relaz}:
 					\begin{itemize}
-						\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
+						\item definisce il metodo insertElement(), addPage(), update()
 					\end{itemize}
 			        }
 			}
