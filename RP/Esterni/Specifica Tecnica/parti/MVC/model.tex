@@ -1,4 +1,10 @@
 \subsection{Model}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {Model}.pdf}
+		\label{fig:model}
+		\caption{Model}
+	\end{figure}
 	\textbf{\tipo}: è la parte Model dell'architettura MVC.\\
 	\textbf{\relaz}: è in relazione con il package Presenter e con NodeAPI.\\
 	\textbf{Package contenuti}: 
@@ -11,19 +17,48 @@
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
-
+\subsection{Premi::Model::SlideShow::ModificaSlideShow}{
+		\textbf{\tipo}: All’interno di questo Package si trovano le classi che definiscono gli algoritmi di modifica, inserimento e rimozione degli elementi della presentazione.\\
+        \textbf{\relaz}: il package è in relazione con Premi::Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+    }
 \subsection{Premi::Model::SlideShow::SlideShowActions}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
     
 	\subsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove}{
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{\imgs {inserteditremove}.pdf}
+			\label{fig:ier}
+			\caption{InsertEditRemove}
+		\end{figure}
 		\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
 		\textbf{\relaz}:il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.//
         Inoltre Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Premi::Model::SlideShow::SlideShowElements.
-	\subsubsection{Classi}{
-	Di seguito sono descritte le classi facenti parte del package Premi::Model::SlideShow::SlideShowActions::InsertEditRemove.
-	\subsubsubsection{Inserter}{
+    }
+		\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor}{
+			\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
+			\textbf{\relaz}:
+			\begin{itemize}
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da Editor;
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da Editor;
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da Editor;
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da Editor;
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da Editor;
+				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da Remover;
+				
+				\item Premi::Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
+				\item Premi::Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+				\item Premi::Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+				\item Premi::Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+				\item Premi::Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+				\item Premi::Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+				\item Premi::Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+			\end{itemize} 
+			\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
+		}
+	\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter}{
 		\textbf{\tipo}: Classe statica che offre dei metodi per l’inserimento di elementi all’interno di una presentazione.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
@@ -46,7 +81,7 @@
 		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 	}
 	
-	\subsubsubsection{Remover}{
+	\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover}{
 		\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
@@ -75,13 +110,16 @@
 		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 	}	
 	}
-	}
    \subsection{Premi::Model::SlideShow::SlideShowActions::Command}{
+	   	\begin{figure}[H]
+	   		\centering
+	   		\includegraphics[scale=0.6]{\imgs {CommandPackage}.pdf}
+	   		\label{fig:cp}
+	   		\caption{Command Package}
+	   	\end{figure}
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
 		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Insert, Premi::Model::Remove e Premi::Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Premi::Presenter::SlideShow::EditPresenter.\\
-	\subsubsection{Classi}{
-	Di seguito sono descritte le classi facenti parte del package Premi::Model::SlideShow::SlideShowActions::Command.
-	\subsubsubsection{Invoker}{
+	\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
@@ -92,7 +130,7 @@
 		\end{itemize} 
 		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Premi::Model::SlideShow::SlideShowActions::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
 	}
-	\subsubsubsection{AbstractCommand}{
+	\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand}{
 				\textbf{\tipo}: È interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -124,7 +162,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditContentCommand.
                     \end{itemize}
                     }
-    \subsubsubsection{ConcreteTextInsertCommand}{
+    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento testuale nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -137,7 +175,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteFrameInsertCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento frame nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -150,7 +188,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteImageInsertCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento immagine nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -163,7 +201,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteSVGInsertCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento SVG nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -176,7 +214,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsubsection{ConcreteAudioInsertCommand}{
+                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento audio nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -190,7 +228,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsubsection{ConcreteVideoInsertCommand}{
+                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento video nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -203,7 +241,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsubsection{ConcreteBackgroundInsertCommand}{
+                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento video nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -216,7 +254,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }        
-     \subsubsubsection{ConcreteTextRemoveCommand}{
+     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -229,7 +267,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-        \subsubsubsection{ConcreteFrameRemoveCommand}{
+        \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento frame dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -242,7 +280,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }                   
-                    \subsubsubsection{ConcreteImageRemoveCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento immagine dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -255,7 +293,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }               
-                    \subsubsubsection{ConcreteSVGRemoveCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento SVG dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -268,7 +306,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteAudioRemoveCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento audio dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -281,7 +319,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteVideoRemoveCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento video dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -294,7 +332,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteBackgroundRemoveCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere lo sfondo della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -307,7 +345,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                        \subsubsubsection{ConcreteEditSizeCommand}{
+                        \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare le dimensioni di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -320,7 +358,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteEditPositionCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare la posizione di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -333,7 +371,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteEditColorCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare il colore di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -346,7 +384,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                     \subsubsubsection{ConcreteEditBackgroundCommand}{
+                     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare lo sfondo di un elemento frame della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -359,7 +397,7 @@
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                     \subsubsubsection{ConcreteEditRotationCommand}{
+                     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare l'orientamento di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -367,12 +405,16 @@
 					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
                     \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editRotation() della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione.
 				\end{itemize}	
+<<<<<<< e88e6bcbe29175cd959243ec0f79391e3cae0b11
+                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti la modifica dell'orientamento di un elemento;\\
+=======
+>>>>>>> 5d4b765697ecf4c596dcad1eb3d4f52bf617fc3d
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsubsection{ConcreteEditFontCommand}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare il carattere di un elemento testuale della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -386,8 +428,13 @@
                     \end{itemize}
                     }
                     }
-                    }
                      \subsubsection{Premi::Model::SlideShow::SlideShowElements}{
+                     		\begin{figure}[H]
+                     			\centering
+                     			\includegraphics[scale=0.6]{\imgs {slideshowelements}.pdf}
+                     			\label{fig:sse}
+                     			\caption{SlideShowElements}
+                     		\end{figure}
 		\textbf{\tipo}:Di questo package fanno parte le classi degli elementi della presentazione e la classe che definisce la presentazione stessa. Sì tratta del package centrale del software.\\
 		\textbf{\relaz}:.Premi::Model::SlideShow::SlideShowElements è in comunicazione con 
         \begin{itemize}
@@ -395,9 +442,8 @@
         \item Premi::Model::Remove, i cui oggetti rimuovono da Premi::ServerRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
         \item Premi::Model::SlideShow::SlideShowActions::EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
   		\end{itemize}
-	\subsubsection{Classi}{
-	Di seguito sono descritte le classi facenti parte del package Premi::Model::SlideShow::SlideShowElements.
-    \subsubsubsection{SlideShowElement}{
+
+    \subsubsection{Premi::Model::SlideShow::SlideShowElements::SlideShowElement}{
 				\textbf{\tipo}: Gli oggetti della classe SlideShowElement rappresentano gli elementi della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -417,7 +463,7 @@
                     \item Premi::Model::SlideShow::Background.
                     \end{itemize}
                     }
-     \subsubsubsection{Text}{
+     \subsubsection{Premi::Model::SlideShow::SlideShowElements::Text}{
 				\textbf{\tipo}: Gli oggetti della classe Text rappresentano gli elementi di tipo testuale della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -431,7 +477,7 @@
                     \item Premi::Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-           \subsubsubsection{Frame}{
+           \subsubsection{Premi::Model::SlideShow::SlideShowElements::Frame}{
 				\textbf{\tipo}: Gli oggetti della classe Frame rappresentano gli elementi di tipo frame della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -445,7 +491,7 @@
                     \item Premi::Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsubsection{Image}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Image}{
 				\textbf{\tipo}: Gli oggetti della classe Image rappresentano gli elementi di tipo immagine della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -459,7 +505,7 @@
                     \item Premi::Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsubsection{SVG}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::SVG}{
 				\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi di tipo SVG della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -473,7 +519,7 @@
                     \item Premi::Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsubsection{Audio}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Audio}{
 				\textbf{\tipo}: Gli oggetti della classe Audio rappresentano gli elementi di tipo audio della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -487,7 +533,7 @@
                     \item Premi::Model::SlideShow::SlideShowElements::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsubsection{Video}{
+                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Video}{
 				\textbf{\tipo}: Gli oggetti della classe Video rappresentano gli elementi di tipo video della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -501,7 +547,7 @@
                     \item Premi::Model::SlideShow::SlideShowElements::SlideShowElement.
                     \end{itemize}
                     }     
-                 \subsubsubsection{Background}{
+                 \subsubsection{Premi::Model::SlideShow::Background}{
                 				\textbf{\tipo}: Gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
                 				\textbf{\relaz}: 
                 				\begin{itemize}
@@ -516,14 +562,26 @@
                                     \end{itemize}
                                     }              
 }
-}
 
-\subsection{Premi::Model::ServerRelations}{
+
+\subsection{Premi::Model::ServerRelations}{\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {ServerRelations}.pdf}
+		\label{fig:sr}
+		\caption{ServerRelations}
+	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzionalità del sistema che interagiscono direttamente con i servizi web esposti dalla interfaccia nodeApi.\\
 		\textbf{\relaz}: i componenti del package serverRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’e’ dipenda tra il package serverRelations ed altri package del model.\\
 }
 
 \subsection{Premi::Model::ServerRelations::Loader}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {serverrelationsloader}.pdf}
+		\label{fig:srl}
+		\caption{ServerRelationsLoader}
+	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzioni di recupero di una presentazione dal server attraversi i servizi nodeApi e traduzione della presentazione in elementi html che compongono la view della presentazione recuperata.\\
 		\textbf{\relaz}: relazione di dipendenza con l’interfaccia dei servizi nodeApi per il recupero della presentazione.\\
 
@@ -537,6 +595,12 @@
 }
 
 \subsection{Premi::Model::ServerRelations::AccessControl}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {AccessControl}.pdf}
+		\label{fig:accCnt}
+		\caption{AccessControl}
+	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
 		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
         \subsubsection{Premi::Model::ServerRelations::AccessControll::Autenticazione}{
@@ -558,6 +622,12 @@
 }
 
 \subsection{Premi::Model::ServerRelations::DbConsistency}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {ClassDiagram1}.pdf}
+		\label{fig:cd}
+		\caption{DbConsistency}
+	\end{figure}
 		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern observer e chiamate asincrone ai servizi di nodeApi\\
 		\textbf{\relaz}:dipendenza con il package nodeApi; dipendenza nei confronti di altri package in Model per il recupero dello stato degli elementi della presentazione.\\
        

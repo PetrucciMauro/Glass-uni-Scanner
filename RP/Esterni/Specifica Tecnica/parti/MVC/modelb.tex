@@ -1,4 +1,10 @@
 \subsection{Model}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {Model}.pdf}
+		\label{fig:model}
+		\caption{Model}
+	\end{figure}
 	\textbf{\tipo}: è la parte Model dell'architettura MVC.\\
 	\textbf{\relaz}: è in relazione con il package Controller e con NodeAPI.\\
 	\textbf{Package contenuti}: 
@@ -11,16 +17,17 @@
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Controller::EditController da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
-\subsection{Premi::Model::SlideShow::ModificaSlideShow}{
-		\textbf{\tipo}: All’interno di questo Package si trovano le classi che definiscono gli algoritmi di modifica, inserimento e rimozione degli elementi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Premi::Controller::EditController da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
-    }
 \subsection{Premi::Model::SlideShow::SlideShowActions}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
         \textbf{\relaz}: il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
-    
-	\subsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove}{
+    \subsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove}{\\
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.6]{\imgs {inserteditremove}.pdf}
+    		\label{fig:ier}
+    		\caption{InsertEditRemove}
+    	\end{figure}
 		\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
 		\textbf{\relaz}:il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.//
         Inoltre Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Premi::Model::SlideShow::SlideShowElements.
