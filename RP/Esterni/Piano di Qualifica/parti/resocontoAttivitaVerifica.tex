@@ -34,22 +34,25 @@ Viene qui riportata una tabella riassuntiva che riporta il calcolo dei parametri
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{p{\dimexpr 0.4\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
-			p{\dimexpr 0.2\linewidth-2\tabcolsep}}
+	\begin{tabular}{p{\dimexpr 0.7\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-1\tabcolsep}
+			p{\dimexpr 0.1\linewidth-1\tabcolsep}}
 		\toprule Componente & Afferente& Efferente \\
 		\midrule
 		Premi::Model & 4 & 5 \\
 		Premi::Model::SlideShow & 1 & 3 \\
-		Premi::Model::SlideShow::InsertEditRemove & 21 & 6 \\
-		\PianoDiQualifica & 82 & \textcolor{green}{Superato} \\
-		\StudioDiFattibilita & 82 & \textcolor{green}{Superato} \\
-		\SpecificaTecnica & & \textcolor{green}{Superato}\\
-		\Glossario & 97 & \textcolor{green}{Superato} \\
+		Premi::Model::SlideShow::SlideShowActions::InsertEditRemove & 21 & 6 \\
+		Premi::Model::SlideShow::SlideShowElements & 3 & 7 \\
+		Premi::Model::SlideShow::SlideShowActions::Command & 2 & 21 \\
+		Premi::Model::ServerRelations & 12 & 3\\
+		Premi::Model::ServerRelations::Loader & 3 & 1 \\
+		Premi::Model::ServerRelations::AccessControl & 4 & 1 \\
+		Premi::Model::ServerRelations::DBConsistency & 0 & 2\\
+		Premi::Model::ServerRelations::Presenter & 5 & 4 \\
 		\bottomrule
 	\end{tabular}
-	\label{tab:costorequisiti}
-	\caption{Esiti verifica documenti, Analisi}
+	\label{tab:accoppiamentoAffEff}
+	\caption{Tabella accoppiamento afferente ed efferente delle componenti}
 \end{table}
 
-
+Come si può vedere dalla tabella, l’accoppiamento efferente è generalmente molto basso e quindi positivo, ad eccezione del package Command, per il quale però questo è accettato a causa della natura intrinseca di tale componente. L’accoppiamento afferente mostra invece la stabilità richiesta dalle classi del Model.
 }
