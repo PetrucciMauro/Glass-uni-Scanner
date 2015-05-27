@@ -8,7 +8,7 @@
 			\end{figure}
 			\begin{itemize}
 				\item \textbf{Scopo dell’utilizzo}: è stato scelto il pattern MVP per separare la logica dell'applicazione dalla rappresentazione grafica;
-				\item \textbf{Contesto d’utilizzo}: Il pattern MVP viene utilizzato per l'architettura generale dell'applicazione.//
+				\item \textbf{Contesto d’utilizzo}: Il pattern MVP viene utilizzato per l'architettura generale dell'applicazione.
 				Ogni modifica effettuata dall'utente sulla View viene inviata al Presenter che invoca i metodi delle classi presenti nel Model.
 			\end{itemize}
 		}	
@@ -30,11 +30,25 @@
 			\item \textbf{Scopo dell’utilizzo}: si è scelto di utilizzare il pattern Command perché poter accodare o mantenere uno storico delle operazioni e	gestire operazioni cancellabili;
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
 		\end{itemize}
-		\subsubsection{Premi::Model::Command}{
-			Il package Premi::Model::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe Premi::Presenter::Presentazione::Edit, che invoca il costruttore delle sottoclassi di Premi::Model::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
+		\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command}{
+			Il package Premi::Model::SlideShow::SlideShowActions::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe Premi::Presenter::Presentazione::Edit, che invoca il costruttore delle sottoclassi di Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::SlideShow::SlideShowActions::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
 			Premi::Presenter::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Presenter::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
 		}
 	}
 	\subsection{Observer}{
-		(Mancante)
-}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{\imgs {Observer}.jpg}
+			\label{fig:observer}
+			\caption{Observer}
+		\end{figure}
+		item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti. Sostanzialmente il pattern si basa su uno o più oggetti, chiamati osservatori o listener, che vengono registrati per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
+		Oltre all'observer esiste il concrete Observer che si differenzia dal primo perché implementa direttamente le azioni da compiere in risposta ad un messaggio; riepilogando il primo è una classe astratta, il secondo no.\\
+		
+		\item \textbf{Scopo dell’utilizzo}: Nel nostro caso il pattern viene utilizzato per garantire update automatici alle presentazioni dell'utente presenti consistentemente nel database MongoDB attraverso chiamate ai servizi offerti dalla web-api nodeApi.\\
+		\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.\\
+		\subsubsection{Premi::Model::ServerRelations::dbConsinstency}{
+			    Il package Premi::Model::ServerRelations::dbConsinstency contiene le classi che costituiscono il pattern observer, in particolare le classi ConcreteSubjects definiscono metodi getElement() che ritornano l'elemento presente nel campo presentazione di Model::ServerRelations::Loader::Costruttore che riferiscono. 
+		}
+		
+		
