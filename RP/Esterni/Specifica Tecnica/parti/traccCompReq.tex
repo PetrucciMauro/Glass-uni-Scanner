@@ -1,0 +1,590 @@
+\subsection{Tracciamento Componenti-Requisiti}{ 
+\renewcommand*{\arraystretch}{1.4} 
+\begin{longtable} [c]{| p{7cm} | p{5cm} |} 
+\caption{Tracciamento Componenti-Requisiti \label{tab:traccCompReq}}\\ \hline\textbf{Componente} & \textbf{Requisiti} \\ 
+\hline \endfirsthead \hline 
+\textbf{Componente} & \textbf{Requisiti} \\ 
+\hline \endhead \hline \endfoot \hline \endlastfoot 
+Model & \\ 
+ \hline 
+Model::ApacheRelations & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager::FileManager & \\ 
+ \hline 
+Model::ApacheRelations::Manifest & \\ 
+ \hline 
+Model::ApacheRelations::Manifest::GestoreManifest & \\ 
+ \hline 
+Model::ServerRelations & \\ 
+ \hline 
+Model::ServerRelations::AccessControl & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Autenticazione & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Registrazione & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::ConcreteObserver & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Observer & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject::SubjectBackground & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectAudio & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectFrame & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectImg & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectSVG & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectText & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectVideo & \\ 
+ \hline 
+Model::ServerRelations::Loader & \\ 
+ \hline 
+Model::ServerRelations::Loader::Costruttore & \\ 
+ \hline 
+Model::SlideShow & \\ 
+ \hline 
+Model::SlideShow::Background & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::AbstractCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::Invoker & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Editor & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Remover & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Audio & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Frame & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Image & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SlideShowElement & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SVG & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Text & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Video & \\ 
+ \hline 
+Presenter & \\ 
+ \hline 
+Presenter::EditPresenter & \\ 
+ \hline 
+Presenter::ExecutionPresenter & \\ 
+ \hline 
+Presenter::HomePresenter & \\ 
+ \hline 
+Presenter::IndexPresenter & \\ 
+ \hline 
+Presenter::ProfilePresenter & \\ 
+ \hline 
+View & \\ 
+ \hline 
+View::Pages & \\ 
+ \hline 
+View::Pages::Edit & \\ 
+ \hline 
+View::Pages::EditDesktop & \\ 
+ \hline 
+View::Pages::EditMobile & \\ 
+ \hline 
+View::Pages::Execution & \\ 
+ \hline 
+View::Pages::Home & \\ 
+ \hline 
+View::Pages::IndexPage & \\ 
+ \hline 
+View::Pages::Manifest & \\ 
+ \hline 
+View::Pages::Profile & \\ 
+ \hline 
+View::Pages & \\ 
+ \hline 
+View::Pages::Edit & \\ 
+ \hline 
+View::Pages::EditDesktop & \\ 
+ \hline 
+View::Pages::EditMobile & \\ 
+ \hline 
+View::Pages::Execution & \\ 
+ \hline 
+View::Pages::Home & \\ 
+ \hline 
+View::Pages::IndexPage & \\ 
+ \hline 
+View::Pages::Manifest & \\ 
+ \hline 
+View::Pages::Profile & \\ 
+ \hline 
+View::Pages::Edit & \\ 
+ \hline 
+View::Pages::EditDesktop & \\ 
+ \hline 
+View::Pages::EditMobile & \\ 
+ \hline 
+View::Pages::Execution & \\ 
+ \hline 
+View::Pages::Home & \\ 
+ \hline 
+View::Pages::IndexPage & \\ 
+ \hline 
+View::Pages::Manifest & \\ 
+ \hline 
+View::Pages::Profile & \\ 
+ \hline 
+Model::ApacheRelations & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager::FileManager & \\ 
+ \hline 
+Model::ApacheRelations::Manifest & \\ 
+ \hline 
+Model::ApacheRelations::Manifest::GestoreManifest & \\ 
+ \hline 
+Model::ServerRelations & \\ 
+ \hline 
+Model::ServerRelations::AccessControl & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Autenticazione & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Registrazione & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::ConcreteObserver & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Observer & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject::SubjectBackground & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectAudio & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectFrame & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectImg & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectSVG & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectText & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectVideo & \\ 
+ \hline 
+Model::ServerRelations::Loader & \\ 
+ \hline 
+Model::ServerRelations::Loader::Costruttore & \\ 
+ \hline 
+Model::SlideShow & \\ 
+ \hline 
+Model::SlideShow::Background & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::AbstractCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::Invoker & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Editor & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Remover & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Audio & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Frame & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Image & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SlideShowElement & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SVG & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Text & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Video & \\ 
+ \hline 
+Model::SlideShow::Background & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::AbstractCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::Invoker & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Editor & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Remover & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Audio & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Frame & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Image & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SlideShowElement & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SVG & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Text & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Video & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::AbstractCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::Invoker & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Editor & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Remover & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Editor & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::InsertEditRemove::Remover & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::AbstractCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand & \\ 
+ \hline 
+Model::SlideShow::SlideShowActions::Command::Invoker & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Audio & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Frame & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Image & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SlideShowElement & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::SVG & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Text & \\ 
+ \hline 
+Model::SlideShow::SlideShowElements::Video & \\ 
+ \hline 
+Model::ServerRelations::AccessControl & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Autenticazione & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Registrazione & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::ConcreteObserver & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Observer & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject::SubjectBackground & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectAudio & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectFrame & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectImg & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectSVG & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectText & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectVideo & \\ 
+ \hline 
+Model::ServerRelations::Loader & \\ 
+ \hline 
+Model::ServerRelations::Loader::Costruttore & \\ 
+ \hline 
+Model::ServerRelations::Loader::Costruttore & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Autenticazione & \\ 
+ \hline 
+Model::ServerRelations::AccessControl::Registrazione & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::ConcreteObserver & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Observer & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject::SubjectBackground & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectAudio & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectFrame & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectImg & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectSVG & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectText & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::SubjectVideo & \\ 
+ \hline 
+Model::ServerRelations::DbConsistency::Subject::SubjectBackground & \\ 
+ \hline 
+Presenter::EditPresenter & \\ 
+ \hline 
+Presenter::ExecutionPresenter & \\ 
+ \hline 
+Presenter::HomePresenter & \\ 
+ \hline 
+Presenter::IndexPresenter & \\ 
+ \hline 
+Presenter::ProfilePresenter & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager::FileManager & \\ 
+ \hline 
+Model::ApacheRelations::Manifest & \\ 
+ \hline 
+Model::ApacheRelations::Manifest::GestoreManifest & \\ 
+ \hline 
+Model::ApacheRelations::ApacheServerManager::FileManager & \\ 
+ \hline 
+Model::ApacheRelations::Manifest::GestoreManifest & \\ 
+ \hline 
+\end{longtable}}

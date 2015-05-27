@@ -6,7 +6,7 @@
 		\label{fig:uc0.7}
 		\caption{Caso d'uso 0.7: Gestione dell'archivio dati utente sul server}
 	\end{figure}
-	\textbf{Attori}: utente desktop. \\
+	\textbf{Attori}: utente autenticato. \\
 	\textbf{Descrizione}: l'utente può modificare i contenuti (file media, presentazioni e infografiche) presenti nel proprio account, inserendone di nuovi, rinominando o eliminando quelli presenti. \\
 	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente ha effettuato il login e desidera effettuare modifiche ai propri file nel proprio account.	\\
 	\textbf{Postcondizione}: l'utente ha eseguito l'operazione voluta sul contenuto che desiderava: ha inserito un nuovo file media nel proprio spazio oppure ha rinominato una presentazione o una infografica altrimenti eliminato una presentazione, infografica o file media.	\\
@@ -27,7 +27,7 @@
 	}
 \subsubsection{UC 0.7.1 - Inserimento file media}{
 	\label{uc0.7.1}
-	\textbf{Attori}: utente desktop. \\
+	\textbf{Attori}: utente autenticato. \\
 	\textbf{Descrizione}: l'utente ha la possibilità di caricare un file media (audio, video, immagine) contenuto nel proprio computer o dispositivo. \\
 	\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media dell'utente e l'utente desidera caricare sul server un file media esistente in locale.	\\
 	\textbf{Postcondizione}: l'utente ha caricato sul server i file media selezionati.	\\
@@ -44,7 +44,7 @@
 	}
 	\subsubsection{UC 0.7.2 - Cancellazione file media}{
 		\label{uc0.7.2}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare file media tra quelli presenti all'interno del proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media dell'utente e l'utente desidera eliminare file media esistenti nel proprio spazio di lavoro sul server.	\\
 		\textbf{Postcondizione}: l'utente ha cancellato i file media che desiderava rimuovere.	\\
@@ -61,7 +61,7 @@
 		}
 	\subsubsection{UC 0.7.3 - Rinomina presentazione}{
 		\label{uc0.7.3}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di rinominare una presentazione salvata nel proprio account. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle presentazioni e l'utente desidera rinominarne una.	\\
 		\textbf{Postcondizione}: l'utente ha rinominato la presentazione desiderata.	\\
@@ -74,7 +74,7 @@
 		}
 	\subsubsection{UC 0.7.4 - Rinomina infografica}{
 		\label{uc0.7.4}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di rinominare un'infografica salvata nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle infografiche e l'utente desidera rinominare una infografica.	\\
 		\textbf{Postcondizione}: l'utente ha rinominato l'infografica desiderata.	\\
@@ -87,7 +87,7 @@
 		}
 	\subsubsection{UC 0.7.5 - Eliminazione presentazioni}{
 		\label{uc0.7.5}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare presentazioni contenute all'interno del proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più presentazioni esistenti nel proprio spazio sul server.	\\
 		\textbf{Postcondizione}: l'utente ha cancellato le presentazioni che desiderava rimuovere.	\\
@@ -104,7 +104,7 @@
 		}
 	\subsubsection{UC 0.7.6 - Eliminazione infografiche}{
 		\label{uc0.7.6}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di eliminare infografiche contenute nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più infografiche.	\\
 		\textbf{Postcondizione}: l'utente ha cancellato le infografiche che desiderava rimuovere.	\\
@@ -121,7 +121,7 @@
 		}
 	\subsubsection{UC 0.7.7 - Rinomina file media}{
 		\label{uc0.7.7}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di rinominare un file media salvato nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera rinominarne uno.	\\
 		\textbf{Postcondizione}: l'utente ha rinominato il file media desiderato.	\\
@@ -134,7 +134,7 @@
 		}
 	\subsubsection{UC 0.7.8 - Visualizzazione presentazioni}{
 		\label{uc0.7.8}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco delle presentazioni salvate nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle presentazioni e l'utente desidera visualizzarle.	\\
 		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco delle presentazioni.	\\
@@ -145,7 +145,7 @@
 		}
 	\subsubsection{UC 0.7.9 - Visualizzazione infografiche}{
 		\label{uc0.7.9}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco delle infografiche salvate nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle infografiche e l'utente desidera visualizzarle.	\\
 		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco delle infografiche.	\\
@@ -156,7 +156,7 @@
 		}
 	\subsubsection{UC 0.7.10 - Visualizzazione presentazioni}{
 		\label{uc0.7.10}
-		\textbf{Attori}: utente desktop.	\\
+		\textbf{Attori}: utente autenticato.	\\
 		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco dei file media salvati nel proprio spazio sul server. \\
 		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera visualizzarli.	\\
 		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei file media.	\\
