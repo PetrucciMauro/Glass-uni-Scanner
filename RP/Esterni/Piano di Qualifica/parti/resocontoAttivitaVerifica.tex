@@ -29,4 +29,27 @@ Vengono qui riportati i valori dell’indice Gulpease per ogni documento durante
 
 Come si può notare dalla tabella, tutti gli indici Gulpease dei documenti rientrano nel range ottimale precedentemente definito e quindi i documenti redatti hanno raggiunto la leggibilità desiderata.
 }
+\subsection{Progettazione}
+Viene qui riportata una tabella riassuntiva che riporta il calcolo dei parametri di accoppiamento afferente ed efferente per i componenti individuati nella progettazione.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{\dimexpr 0.4\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
+			p{\dimexpr 0.2\linewidth-2\tabcolsep}}
+		\toprule Componente & Afferente& Efferente \\
+		\midrule
+		Premi::Model & 4 & 5 \\
+		Premi::Model::SlideShow & 1 & 3 \\
+		Premi::Model::SlideShow::InsertEditRemove & 21 & 6 \\
+		\PianoDiQualifica & 82 & \textcolor{green}{Superato} \\
+		\StudioDiFattibilita & 82 & \textcolor{green}{Superato} \\
+		\SpecificaTecnica & & \textcolor{green}{Superato}\\
+		\Glossario & 97 & \textcolor{green}{Superato} \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:costorequisiti}
+	\caption{Esiti verifica documenti, Analisi}
+\end{table}
+
+
 }
