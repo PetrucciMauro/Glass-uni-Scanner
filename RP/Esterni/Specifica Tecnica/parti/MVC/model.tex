@@ -653,35 +653,35 @@
 
 }
 \subsection{Premi::Model::Manifest}{
-   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate al server Apache.
+   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
    	\textbf{\relaz}:
    	\begin{itemize}
-   		\item definisce il metodo GestoreManifest()
+   		\item definisce il metodo GestoreManifest(); relazione di dipendenza 
    	\end{itemize}
-}
+
 	\subsubsection{Premi::Model::Manifest::GestoreManifest}{
-		\textbf{\tipo}: classe, fornisce un'implementazione del package;
+		\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
 		\textbf{\relaz}:
 		\begin{itemize}
 			\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
 		\end{itemize}
         }
-
+}
 \subsection{Premi::Model::GestioneFileServer} {
-   	\textbf{\tipo}: Questo package gestisce della gestione dei file dell'utente sul server Apache; istanzia il la classe GestioneFile per 
+   	\textbf{\tipo}: Questo package racchiude le funzioni che permettono all'utente di interfacciarsi coi propri file presenti sul server Apache.
    	\textbf{\relaz}:
    	\begin{itemize}
-   		\item 
+   		\item relazione di dipendenza con l'interfaccia dei servizi di Apache.
    	\end{itemize}
-   	\textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti l’inserimento di un nuovo elemento testuale.\\
-	}
+   	\textbf{\interfacce}: Viene utilizzata per gestire le chiamate asincrone verso il server, per realizzare le operazioni di inserimento, cancellazione, cambio del nome di un file.\\
+	
 	\subsubsection{Premi::Model::GestioneFileServer::GestioneFile}{
-		\textbf{\tipo}: classe; fornisce un'implementazione del package;
+		\textbf{\tipo}: classe che fornisce un'implementazione del package, per permettere il caricamento di file sul server, eliminazione di file dal server e rinominazione di file presenti sul server; \\
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Premi::Presenter::EditPresenter, Premi::View::Pages::Profile;
-			\item definisce il metodo inserisciFile(), eliminaFile(), rinominaFile().
+			\item Premi::Presenter::EditPresenter, Premi::View::Pages::Profile, interfaccia del server Apache;
 		\end{itemize}
 	}
+}
 
 	
