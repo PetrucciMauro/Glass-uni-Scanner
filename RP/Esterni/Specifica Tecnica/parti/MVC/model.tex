@@ -1,10 +1,4 @@
 \subsection{Model}{
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.6]{\imgs {Model}.pdf}
-		\label{fig:model}
-		\caption{Model}
-	\end{figure}
 	\textbf{\tipo}: è la parte Model dell'architettura MVC.\\
 	\textbf{\relaz}: è in relazione con il package Presenter e con NodeAPI.\\
 	\textbf{Package contenuti}: 
@@ -19,19 +13,19 @@
     }
 \subsubsection{Model::SlideShow::SlideShowActions}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+        \textbf{\relaz}: il package è in relazione con\\ Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
     
 	\subsubsection{Model::SlideShow::SlideShowActions::InsertEditRemove}{
 		Tutti i componenti seguenti appartengono al package InsertEditRemove, quindi lo scope sarà Model::SlideShow::SlideShowActions::InsertEditRemove::<componente>.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[scale=0.6]{\imgs {inserteditremove}.pdf}
+			\includegraphics[scale=0.3]{\imgs {inserteditremove}.pdf}
 			\label{fig:ier}
 			\caption{InsertEditRemove}
 		\end{figure}
 		\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
-		\textbf{\relaz}:il package è in relazione con Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.//
+		\textbf{\relaz}:il package è in relazione con\\ Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.
         Inoltre Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Model::SlideShow::SlideShowElements.
     }
 		\subsubsubsection{Editor}{
@@ -111,17 +105,17 @@
    		Tutti i componenti seguenti appartengono al package Command, quindi lo scope sarà Model::SlideShow::SlideShowActions::Command::<componente>.
 	   	\begin{figure}[H]
 	   		\centering
-	   		\includegraphics[scale=0.6]{\imgs {CommandPackage}.pdf}
+	   		\includegraphics[scale=0.3]{\imgs {CommandPackage}.pdf}
 	   		\label{fig:cp}
 	   		\caption{Command Package}
 	   	\end{figure}
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
-		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Model::SlideShow::SlideShowActions::Insert, Model::Remove e Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
+		\textbf{\relaz}:. All’interno del Model, il package è in relazione con \\Model::SlideShow::SlideShowActions::Insert, Model::Remove e Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
 	\subsubsubsection{Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Presenter::MobileEdit->crea un oggetto di una sottoclasse di Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
+			\item Presenter::MobileEdit->crea un oggetto di una sottoclasse di\\ Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
 			Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”;
 			\item Presenter::DesktopEdit->si comporta in modo analogo a MobileEdit;
 			\item Model::SlideShow::SlideShowActions::Command::AbstractCommand <- Invoker invoca il metodo execute() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undo().
@@ -426,7 +420,7 @@
      	Tutti i componenti seguenti appartengono al package SlideShowElements, quindi lo scope sarà Model::SlideShow::SlideShowElements::<componente>.
                	\begin{figure}[H]
            			\centering
-          			\includegraphics[scale=0.6]{\imgs {slideshowelements}.pdf}
+          			\includegraphics[scale=0.28]{\imgs {slideshowelements}.pdf}
          			\label{fig:sse}
     				\caption{SlideShowElements}
                	\end{figure}
@@ -446,7 +440,7 @@
                     \item Model::SlideShow::SlideShowActions::EditElements:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
                     \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
 				\end{itemize}	
-                \textbf{\interfacce}: Model::SlideShow::SlideShowActions::Insert::Inserter instanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Model:Costruttore\\
+                \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::Insert::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Model:Costruttore\\
                 \textbf{\figli}: 
                     \begin{itemize}
                     \item Model::SlideShow::Text;
@@ -466,7 +460,7 @@
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -480,7 +474,7 @@
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -494,7 +488,7 @@
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -508,7 +502,7 @@
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -518,11 +512,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Audio rappresentano gli elementi di tipo audio della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe\\ Model::ServerRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}:  
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -536,7 +530,7 @@
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                      \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -574,7 +568,7 @@
 	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà Model::ServerRelations::Loader::<componente>.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{\imgs {serverrelationsloader}.pdf}
+		\includegraphics[scale=0.4]{\imgs {serverrelationsloader}.pdf}
 		\label{fig:srl}
 		\caption{ServerRelationsLoader}
 	\end{figure}
@@ -616,7 +610,7 @@
 	Tutti i componenti seguenti appartengono al package DbConsistency, quindi lo scope sarà Model::ServerRelations::DbConsistency::<componente>.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{\imgs {ClassDiagram1}.pdf}
+		\includegraphics[scale=0.4]{\imgs {ClassDiagram1}.pdf}
 		\label{fig:cd}
 		\caption{DbConsistency}
 	\end{figure}
@@ -734,7 +728,7 @@
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
 			}}
 			\subsubsection{Premi::ApacheRelations::Manifest}{
-				Il componente seguente appartiene al package ApacheServerManager, quindi lo scope sarà Model::ApacheRelations::Manifest::<componente>.
+				Il componente seguente appartiene al package ApacheServerManager, quindi lo scope sarà \\Model::ApacheRelations::Manifest::<componente>.
 			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader.  \\
 			   	\textbf{\relaz}:
 			   	\begin{itemize}

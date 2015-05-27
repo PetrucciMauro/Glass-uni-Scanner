@@ -45,7 +45,7 @@
 				\textbf{\relaz}:
 				\begin{itemize}
 					\item View::Pages::Home -> costruisce HomePresenter, ne invoca i metodi passando i parametri dell’utente;
-					\item Model::ServerRelations::Loader::Costruttore <- HomePresenter invoca un metodo di Costruttore che restituisce l’elenco dei titoli delle presentazioni dell’utente(??????);
+					\item Model::ServerRelations::Loader::Costruttore <- HomePresenter invoca un metodo di Costruttore che restituisce l’elenco dei titoli delle presentazioni dell’utente;
 					\item Model::ServerRelations::Loader::Autenticazione <- Quando la view invia una richiesta di logout, HomePresenter invoca il metodo deAuthenticate() fornito da Autenticazione, che termina la sessione;
 					\item Model::Manifest::ManifestManager <- la classe della view invoca il metodo save() presente in  HomePresenter passando per parametro un array di id di presentazioni che l'utente intende scaricare in locale, a sua volta HomePresenter invoca il metodo update() di ManifestManager che controlla se esiste già un file manifest dopodiché lo aggiorna con tutti i riferimenti alle pagine da scaricare e lo ricarica. 					
 				\end{itemize} 
