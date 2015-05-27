@@ -1,152 +1,130 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {section}{\numberline {1}Introduzione}{9}{section.1}
-\contentsline {subsection}{\numberline {1.1}Scopo del documento}{9}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{9}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Glossario}{9}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Riferimenti}{9}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{9}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{9}{subsubsection.1.4.2}
-\contentsline {section}{\numberline {2}Strumenti}{11}{section.2}
-\contentsline {subsection}{\numberline {2.1}HTML}{11}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}JavaScript}{11}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}jQuery}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}MEAN}{12}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}MongoDB}{12}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Express.js}{12}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}AngularJS}{12}{subsubsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.4}Node.js}{12}{subsubsection.2.4.4}
-\contentsline {subsection}{\numberline {2.5}Impress.js}{13}{subsection.2.5}
-\contentsline {section}{\numberline {3}Design Pattern}{14}{section.3}
-\contentsline {subsection}{\numberline {3.1}MVC}{14}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Singleton}{14}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Premi::Model::Command::Invoker}{14}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}Premi::Model::Presentazione::SlideShow}{14}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Utility}{15}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Builder}{15}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Premi::Model::Builder}{15}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Command}{15}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Premi::Model::Command}{16}{subsubsection.3.5.1}
-\contentsline {subsection}{\numberline {3.6}Iterator}{16}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Template Method}{16}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Premi::Model::Inserimento}{17}{subsubsection.3.7.1}
-\contentsline {subsection}{\numberline {3.8}Strategy}{17}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Premi::Model::Modifica}{17}{subsubsection.3.8.1}
-\contentsline {section}{\numberline {4}Descrizione architetturale}{18}{section.4}
-\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{18}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Architettura generale}{18}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Model}{18}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}View}{18}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{18}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Model}{20}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Premi::Model::SlideShow}{20}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Premi::Model::SlideShow::ModificaSlideShow}{20}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Premi::Model::SlideShow::SlideShowActions}{20}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Premi::Model::SlideShow::SlideShowActions::Insert}{21}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Premi::Model::SlideShow::SlideShowActions::Insert::Inserter}{21}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}Premi::Controller::SlideShow::Insert::ConcreteTextInserter}{21}{subsubsection.5.5.2}
-\contentsline {subsubsection}{\numberline {5.5.3}Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteFrameInserter}{22}{subsubsection.5.5.3}
-\contentsline {subsubsection}{\numberline {5.5.4}Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteSvgInserter}{22}{subsubsection.5.5.4}
-\contentsline {subsubsection}{\numberline {5.5.5}Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteImageInserter}{22}{subsubsection.5.5.5}
-\contentsline {subsubsection}{\numberline {5.5.6}Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteVideoInserter}{23}{subsubsection.5.5.6}
-\contentsline {subsubsection}{\numberline {5.5.7}Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteAudioInserter}{23}{subsubsection.5.5.7}
-\contentsline {subsubsection}{\numberline {5.5.8}Premi::Controller::SlideShow::Insert::ConcreteBackgroundInserter}{24}{subsubsection.5.5.8}
-\contentsline {subsection}{\numberline {5.6}Premi::Model::SlideShow::SlideShowActions::Remove}{24}{subsection.5.6}
-\contentsline {subsubsection}{\numberline {5.6.1}Premi::Model::SlideShow::SlideShowActions::Remove::Remover}{24}{subsubsection.5.6.1}
-\contentsline {subsubsection}{\numberline {5.6.2}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteTextRemover}{25}{subsubsection.5.6.2}
-\contentsline {subsubsection}{\numberline {5.6.3}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteFrameRemover}{25}{subsubsection.5.6.3}
-\contentsline {subsubsection}{\numberline {5.6.4}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteSVGtRemover}{25}{subsubsection.5.6.4}
-\contentsline {subsubsection}{\numberline {5.6.5}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteImageRemover}{26}{subsubsection.5.6.5}
-\contentsline {subsubsection}{\numberline {5.6.6}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteVideoRemover}{26}{subsubsection.5.6.6}
-\contentsline {subsubsection}{\numberline {5.6.7}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteAudioRemover}{27}{subsubsection.5.6.7}
-\contentsline {subsubsection}{\numberline {5.6.8}Premi::Model::SlideShow::SlideShowActions::Remove::ConcreteBackgroundRemover}{27}{subsubsection.5.6.8}
-\contentsline {subsection}{\numberline {5.7}Premi::Model::SlideShow::SlideShowActions::EditElements}{27}{subsection.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Premi::Model::SlideShow::SlideShowActions::EditElements::Editor}{28}{subsubsection.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.2}Premi::Model::SlideShow::SlideShowActions::EditElements::PositionEditor}{28}{subsubsection.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.3}Premi::Model::SlideShow::SlideShowActions::EditElements::SizeEditor}{29}{subsubsection.5.7.3}
-\contentsline {subsubsection}{\numberline {5.7.4}Premi::Model::SlideShow::SlideShowActions::EditElements::RotationEditor}{29}{subsubsection.5.7.4}
-\contentsline {subsubsection}{\numberline {5.7.5}Premi::Model::SlideShow::SlideShowActions::EditElements::ContentEditor}{30}{subsubsection.5.7.5}
-\contentsline {subsubsection}{\numberline {5.7.6}Premi::Model::SlideShow::SlideShowActions::EditElements::ColorEditor}{30}{subsubsection.5.7.6}
-\contentsline {subsubsection}{\numberline {5.7.7}Premi::Model::SlideShow::SlideShowActions::EditElements::EditorFont}{31}{subsubsection.5.7.7}
-\contentsline {subsection}{\numberline {5.8}Premi::Model::SlideShow::SlideShowActions::Command}{31}{subsection.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}Premi::Model::Invoker}{31}{subsubsection.5.8.1}
-\contentsline {subsubsection}{\numberline {5.8.2}Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand}{32}{subsubsection.5.8.2}
-\contentsline {subsubsection}{\numberline {5.8.3}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand}{33}{subsubsection.5.8.3}
-\contentsline {subsubsection}{\numberline {5.8.4}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand}{33}{subsubsection.5.8.4}
-\contentsline {subsubsection}{\numberline {5.8.5}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand}{33}{subsubsection.5.8.5}
-\contentsline {subsubsection}{\numberline {5.8.6}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand}{34}{subsubsection.5.8.6}
-\contentsline {subsubsection}{\numberline {5.8.7}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand}{34}{subsubsection.5.8.7}
-\contentsline {subsubsection}{\numberline {5.8.8}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand}{34}{subsubsection.5.8.8}
-\contentsline {subsubsection}{\numberline {5.8.9}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand}{35}{subsubsection.5.8.9}
-\contentsline {subsubsection}{\numberline {5.8.10}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand}{35}{subsubsection.5.8.10}
-\contentsline {subsubsection}{\numberline {5.8.11}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand}{36}{subsubsection.5.8.11}
-\contentsline {subsubsection}{\numberline {5.8.12}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand}{36}{subsubsection.5.8.12}
-\contentsline {subsubsection}{\numberline {5.8.13}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand}{36}{subsubsection.5.8.13}
-\contentsline {subsubsection}{\numberline {5.8.14}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand}{37}{subsubsection.5.8.14}
-\contentsline {subsubsection}{\numberline {5.8.15}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand}{37}{subsubsection.5.8.15}
-\contentsline {subsubsection}{\numberline {5.8.16}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand}{38}{subsubsection.5.8.16}
-\contentsline {subsubsection}{\numberline {5.8.17}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand}{38}{subsubsection.5.8.17}
-\contentsline {subsubsection}{\numberline {5.8.18}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand}{38}{subsubsection.5.8.18}
-\contentsline {subsubsection}{\numberline {5.8.19}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand}{39}{subsubsection.5.8.19}
-\contentsline {subsubsection}{\numberline {5.8.20}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand}{39}{subsubsection.5.8.20}
-\contentsline {subsubsection}{\numberline {5.8.21}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand}{40}{subsubsection.5.8.21}
-\contentsline {subsubsection}{\numberline {5.8.22}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand}{40}{subsubsection.5.8.22}
-\contentsline {subsubsection}{\numberline {5.8.23}Premi::Model::SlideShow::SlideShowElements}{40}{subsubsection.5.8.23}
-\contentsline {subsubsection}{\numberline {5.8.24}Premi::Model::SlideShow::SlideShowElements::SlideShowElement}{41}{subsubsection.5.8.24}
-\contentsline {subsubsection}{\numberline {5.8.25}Premi::Model::SlideShow::Text}{42}{subsubsection.5.8.25}
-\contentsline {subsubsection}{\numberline {5.8.26}Premi::Model::SlideShow::Frame}{42}{subsubsection.5.8.26}
-\contentsline {subsubsection}{\numberline {5.8.27}Premi::Model::SlideShow::Image}{43}{subsubsection.5.8.27}
-\contentsline {subsubsection}{\numberline {5.8.28}Premi::Model::SlideShow::SVG}{44}{subsubsection.5.8.28}
-\contentsline {subsubsection}{\numberline {5.8.29}Premi::Model::SlideShow::Audio}{44}{subsubsection.5.8.29}
-\contentsline {subsubsection}{\numberline {5.8.30}Premi::Model::SlideShow::Video}{45}{subsubsection.5.8.30}
-\contentsline {subsubsection}{\numberline {5.8.31}Premi::Model::SlideShow::Background}{45}{subsubsection.5.8.31}
-\contentsline {subsection}{\numberline {5.9}Premi::Model::ServerRelations}{46}{subsection.5.9}
-\contentsline {subsection}{\numberline {5.10}Premi::Model::ServerRelations::Loader}{46}{subsection.5.10}
-\contentsline {subsubsection}{\numberline {5.10.1}Premi::Model::ServerRelations::Loader::Costruttore}{46}{subsubsection.5.10.1}
-\contentsline {subsection}{\numberline {5.11}Premi::Model::ServerRelations::AccessControl}{47}{subsection.5.11}
-\contentsline {subsubsection}{\numberline {5.11.1}Premi::Model::ServerRelations::AccessControll::Autenticazione}{47}{subsubsection.5.11.1}
-\contentsline {subsubsection}{\numberline {5.11.2}Premi::Model::ServerRelations::AccessControll::Registrazione}{47}{subsubsection.5.11.2}
-\contentsline {subsection}{\numberline {5.12}Premi::Model::ServerRelations::DbConsistency}{47}{subsection.5.12}
-\contentsline {subsubsection}{\numberline {5.12.1}Premi::Model::ServerRelations::DbConsistency::Observer}{47}{subsubsection.5.12.1}
-\contentsline {subsubsection}{\numberline {5.12.2}Premi::Model::ServerRelations::DbConsistency::ConcreteObserver}{48}{subsubsection.5.12.2}
-\contentsline {subsubsection}{\numberline {5.12.3}Premi::Model::ServerRelations::DbConsistency::Subject}{48}{subsubsection.5.12.3}
-\contentsline {subsubsection}{\numberline {5.12.4}Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{48}{subsubsection.5.12.4}
-\contentsline {subsubsection}{\numberline {5.12.5}Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{48}{subsubsection.5.12.5}
-\contentsline {subsubsection}{\numberline {5.12.6}Premi::Model::ServerRelations::DbConsistency::SubjectVideo}{48}{subsubsection.5.12.6}
-\contentsline {subsubsection}{\numberline {5.12.7}Premi::Model::ServerRelations::DbConsistency::SubjectText}{49}{subsubsection.5.12.7}
-\contentsline {subsubsection}{\numberline {5.12.8}Premi::Model::ServerRelations::DbConsistency::SubjectFrame}{49}{subsubsection.5.12.8}
-\contentsline {subsubsection}{\numberline {5.12.9}Premi::Model::ServerRelations::DbConsistency::SubjectImg}{49}{subsubsection.5.12.9}
-\contentsline {subsubsection}{\numberline {5.12.10}Premi::Model::ServerRelations::DbConsistency::SubjectSVG}{49}{subsubsection.5.12.10}
-\contentsline {subsection}{\numberline {5.13}Premi::Model::Manifest}{49}{subsection.5.13}
-\contentsline {subsubsection}{\numberline {5.13.1}Premi::Model::Manifest::GestoreManifest}{49}{subsubsection.5.13.1}
-\contentsline {subsection}{\numberline {5.14}Premi::Model::GestioneFileServer}{50}{subsection.5.14}
-\contentsline {subsubsection}{\numberline {5.14.1}Premi::Model::GestioneFileServer::GestioneFile}{50}{subsubsection.5.14.1}
-\contentsline {subsection}{\numberline {5.15}Controller}{51}{subsection.5.15}
-\contentsline {subsubsection}{\numberline {5.15.1}Premi::Controller::Presentazione}{51}{subsubsection.5.15.1}
-\contentsline {subsubsubsection}{\numberline {5.15.1.1}Premi::Controller::Presentazione::EditController}{51}{subsubsubsection.5.15.1}
-\contentsline {subsubsubsection}{\numberline {5.15.1.2}Premi::Controller::Presentazione::HomeController}{52}{subsubsubsection.5.15.2}
-\contentsline {subsubsubsection}{\numberline {5.15.1.3}Premi::Controller::Presentazione::ExecutionController}{52}{subsubsubsection.5.15.3}
-\contentsline {subsubsection}{\numberline {5.15.2}Premi::Controller::ApacheManager}{52}{subsubsection.5.15.2}
-\contentsline {subsection}{\numberline {5.16}View}{54}{subsection.5.16}
-\contentsline {subsubsection}{\numberline {5.16.1}Premi::View::Pages::IndexPage}{54}{subsubsection.5.16.1}
-\contentsline {subsubsection}{\numberline {5.16.2}Premi::View::Pages::Home}{54}{subsubsection.5.16.2}
-\contentsline {subsubsection}{\numberline {5.16.3}Premi::View::Pages::Manifest}{55}{subsubsection.5.16.3}
-\contentsline {subsubsection}{\numberline {5.16.4}Premi::View::Pages::Profile}{55}{subsubsection.5.16.4}
-\contentsline {subsubsection}{\numberline {5.16.5}Premi::View::Pages::Execution}{56}{subsubsection.5.16.5}
-\contentsline {subsubsection}{\numberline {5.16.6}Premi::View::Pages::Edit}{56}{subsubsection.5.16.6}
-\contentsline {subsubsection}{\numberline {5.16.7}Premi::View::Pages::EditDesktop}{56}{subsubsection.5.16.7}
-\contentsline {subsubsection}{\numberline {5.16.8}Premi::View::Pages::EditMobile}{58}{subsubsection.5.16.8}
-\contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{59}{section.6}
-\contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{59}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{59}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Caricare File}{60}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Modificare Presentazione da Desktop}{61}{subsubsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.4}Modificare Presentazione da Mobile}{61}{subsubsection.6.1.4}
-\contentsline {subsubsection}{\numberline {6.1.5}Gestire Sfondo}{62}{subsubsection.6.1.5}
-\contentsline {subsubsection}{\numberline {6.1.6}Inserire Elemento}{62}{subsubsection.6.1.6}
-\contentsline {subsubsection}{\numberline {6.1.7}Modificare Elemento}{63}{subsubsection.6.1.7}
-\contentsline {subsubsection}{\numberline {6.1.8}Modificare Frame}{63}{subsubsection.6.1.8}
-\contentsline {subsubsection}{\numberline {6.1.9}Modificare SVG}{64}{subsubsection.6.1.9}
-\contentsline {subsubsection}{\numberline {6.1.10}Modificare Testo}{65}{subsubsection.6.1.10}
-\contentsline {section}{\numberline {7}Stime di fattibilit\IeC {\`a} e di bisogno di risorse}{66}{section.7}
+\contentsline {section}{\numberline {1}Introduzione}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{8}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{8}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{8}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Strumenti}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}JavaScript}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}jQuery}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}MEAN}{11}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}MongoDB}{11}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Express.js}{11}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}AngularJS}{11}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Node.js}{11}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}Impress.js}{12}{subsection.2.5}
+\contentsline {section}{\numberline {3}Design Pattern}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}MVC}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Singleton}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Premi::Model::Command::Invoker}{13}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Premi::Model::Presentazione::SlideShow}{13}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Utility}{14}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Builder}{14}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Premi::Model::Builder}{14}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}Command}{14}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Premi::Model::Command}{15}{subsubsection.3.5.1}
+\contentsline {subsection}{\numberline {3.6}Iterator}{15}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Template Method}{15}{subsection.3.7}
+\contentsline {subsubsection}{\numberline {3.7.1}Premi::Model::Inserimento}{16}{subsubsection.3.7.1}
+\contentsline {subsection}{\numberline {3.8}Strategy}{16}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Premi::Model::Modifica}{16}{subsubsection.3.8.1}
+\contentsline {section}{\numberline {4}Descrizione architetturale}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architettura generale}{17}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Model}{17}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}View}{17}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}ViewModel}{17}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Model}{19}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Premi::Model::SlideShow}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Premi::Model::SlideShow::ModificaSlideShow}{19}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Premi::Model::SlideShow::SlideShowActions}{19}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Premi::Model::SlideShow::SlideShowActions::InsertEditRemove}{20}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter}{20}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover}{21}{subsubsection.5.5.2}
+\contentsline {subsection}{\numberline {5.6}Premi::Model::SlideShow::SlideShowActions::Command}{22}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Premi::Model::Invoker}{22}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand}{23}{subsubsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.3}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand}{24}{subsubsection.5.6.3}
+\contentsline {subsubsection}{\numberline {5.6.4}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand}{24}{subsubsection.5.6.4}
+\contentsline {subsubsection}{\numberline {5.6.5}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand}{25}{subsubsection.5.6.5}
+\contentsline {subsubsection}{\numberline {5.6.6}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand}{25}{subsubsection.5.6.6}
+\contentsline {subsubsection}{\numberline {5.6.7}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand}{26}{subsubsection.5.6.7}
+\contentsline {subsubsection}{\numberline {5.6.8}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand}{26}{subsubsection.5.6.8}
+\contentsline {subsubsection}{\numberline {5.6.9}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand}{26}{subsubsection.5.6.9}
+\contentsline {subsubsection}{\numberline {5.6.10}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand}{27}{subsubsection.5.6.10}
+\contentsline {subsubsection}{\numberline {5.6.11}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand}{27}{subsubsection.5.6.11}
+\contentsline {subsubsection}{\numberline {5.6.12}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand}{28}{subsubsection.5.6.12}
+\contentsline {subsubsection}{\numberline {5.6.13}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand}{28}{subsubsection.5.6.13}
+\contentsline {subsubsection}{\numberline {5.6.14}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand}{28}{subsubsection.5.6.14}
+\contentsline {subsubsection}{\numberline {5.6.15}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand}{29}{subsubsection.5.6.15}
+\contentsline {subsubsection}{\numberline {5.6.16}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand}{29}{subsubsection.5.6.16}
+\contentsline {subsubsection}{\numberline {5.6.17}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand}{30}{subsubsection.5.6.17}
+\contentsline {subsubsection}{\numberline {5.6.18}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand}{30}{subsubsection.5.6.18}
+\contentsline {subsubsection}{\numberline {5.6.19}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand}{30}{subsubsection.5.6.19}
+\contentsline {subsubsection}{\numberline {5.6.20}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand}{31}{subsubsection.5.6.20}
+\contentsline {subsubsection}{\numberline {5.6.21}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand}{31}{subsubsection.5.6.21}
+\contentsline {subsubsection}{\numberline {5.6.22}Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand}{32}{subsubsection.5.6.22}
+\contentsline {subsubsection}{\numberline {5.6.23}Premi::Model::SlideShow::SlideShowElements}{32}{subsubsection.5.6.23}
+\contentsline {subsubsection}{\numberline {5.6.24}Premi::Model::SlideShow::SlideShowElements::SlideShowElement}{32}{subsubsection.5.6.24}
+\contentsline {subsubsection}{\numberline {5.6.25}Premi::Model::SlideShow::SlideShowElements::Text}{33}{subsubsection.5.6.25}
+\contentsline {subsubsection}{\numberline {5.6.26}Premi::Model::SlideShow::SlideShowElements::Frame}{34}{subsubsection.5.6.26}
+\contentsline {subsubsection}{\numberline {5.6.27}Premi::Model::SlideShow::SlideShowElements::Image}{34}{subsubsection.5.6.27}
+\contentsline {subsubsection}{\numberline {5.6.28}Premi::Model::SlideShow::SlideShowElements::SVG}{35}{subsubsection.5.6.28}
+\contentsline {subsubsection}{\numberline {5.6.29}Premi::Model::SlideShow::SlideShowElements::Audio}{35}{subsubsection.5.6.29}
+\contentsline {subsubsection}{\numberline {5.6.30}Premi::Model::SlideShow::SlideShowElements::Video}{36}{subsubsection.5.6.30}
+\contentsline {subsubsection}{\numberline {5.6.31}Premi::Model::SlideShow::Background}{36}{subsubsection.5.6.31}
+\contentsline {subsection}{\numberline {5.7}Premi::Model::ServerRelations}{37}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}Premi::Model::ServerRelations::Loader}{37}{subsection.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}Premi::Model::ServerRelations::Loader::Costruttore}{37}{subsubsection.5.8.1}
+\contentsline {subsection}{\numberline {5.9}Premi::Model::ServerRelations::AccessControl}{37}{subsection.5.9}
+\contentsline {subsubsection}{\numberline {5.9.1}Premi::Model::ServerRelations::AccessControll::Autenticazione}{37}{subsubsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.9.2}Premi::Model::ServerRelations::AccessControll::Registrazione}{38}{subsubsection.5.9.2}
+\contentsline {subsection}{\numberline {5.10}Premi::Model::ServerRelations::DbConsistency}{38}{subsection.5.10}
+\contentsline {subsubsection}{\numberline {5.10.1}Premi::Model::ServerRelations::DbConsistency::Observer}{38}{subsubsection.5.10.1}
+\contentsline {subsubsection}{\numberline {5.10.2}Premi::Model::ServerRelations::DbConsistency::ConcreteObserver}{38}{subsubsection.5.10.2}
+\contentsline {subsubsection}{\numberline {5.10.3}Premi::Model::ServerRelations::DbConsistency::Subject}{38}{subsubsection.5.10.3}
+\contentsline {subsubsection}{\numberline {5.10.4}Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{39}{subsubsection.5.10.4}
+\contentsline {subsubsection}{\numberline {5.10.5}Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{39}{subsubsection.5.10.5}
+\contentsline {subsubsection}{\numberline {5.10.6}Premi::Model::ServerRelations::DbConsistency::SubjectVideo}{39}{subsubsection.5.10.6}
+\contentsline {subsubsection}{\numberline {5.10.7}Premi::Model::ServerRelations::DbConsistency::SubjectText}{39}{subsubsection.5.10.7}
+\contentsline {subsubsection}{\numberline {5.10.8}Premi::Model::ServerRelations::DbConsistency::SubjectFrame}{39}{subsubsection.5.10.8}
+\contentsline {subsubsection}{\numberline {5.10.9}Premi::Model::ServerRelations::DbConsistency::SubjectImg}{39}{subsubsection.5.10.9}
+\contentsline {subsubsection}{\numberline {5.10.10}Premi::Model::ServerRelations::DbConsistency::SubjectSVG}{40}{subsubsection.5.10.10}
+\contentsline {subsubsection}{\numberline {5.10.11}Premi::Model::ServerRelations::DbConsistency::SubjectBackground}{40}{subsubsection.5.10.11}
+\contentsline {subsection}{\numberline {5.11}Premi::Model::Manifest}{40}{subsection.5.11}
+\contentsline {subsubsection}{\numberline {5.11.1}Premi::Model::Manifest::GestoreManifest}{40}{subsubsection.5.11.1}
+\contentsline {subsection}{\numberline {5.12}Premi::Model::GestioneFileServer}{40}{subsection.5.12}
+\contentsline {subsubsection}{\numberline {5.12.1}Premi::Model::GestioneFileServer::GestioneFile}{41}{subsubsection.5.12.1}
+\contentsline {subsection}{\numberline {5.13}Presenter}{42}{subsection.5.13}
+\contentsline {subsubsection}{\numberline {5.13.1}Premi::Presenter::EditPresenter}{42}{subsubsection.5.13.1}
+\contentsline {subsubsection}{\numberline {5.13.2}Premi::Presenter::HomePresenter}{44}{subsubsection.5.13.2}
+\contentsline {subsubsection}{\numberline {5.13.3}Premi::Presenter::ExecutionPresenter}{44}{subsubsection.5.13.3}
+\contentsline {subsubsection}{\numberline {5.13.4}Premi::Presenter::IndexPresenter}{45}{subsubsection.5.13.4}
+\contentsline {subsubsection}{\numberline {5.13.5}Premi::Presenter::ProfilePresenter}{45}{subsubsection.5.13.5}
+\contentsline {subsection}{\numberline {5.14}View}{46}{subsection.5.14}
+\contentsline {subsubsection}{\numberline {5.14.1}Premi::View::Pages::IndexPage}{46}{subsubsection.5.14.1}
+\contentsline {subsubsection}{\numberline {5.14.2}Premi::View::Pages::Home}{46}{subsubsection.5.14.2}
+\contentsline {subsubsection}{\numberline {5.14.3}Premi::View::Pages::Manifest}{47}{subsubsection.5.14.3}
+\contentsline {subsubsection}{\numberline {5.14.4}Premi::View::Pages::Profile}{47}{subsubsection.5.14.4}
+\contentsline {subsubsection}{\numberline {5.14.5}Premi::View::Pages::Execution}{48}{subsubsection.5.14.5}
+\contentsline {subsubsection}{\numberline {5.14.6}Premi::View::Pages::Edit}{48}{subsubsection.5.14.6}
+\contentsline {subsubsection}{\numberline {5.14.7}Premi::View::Pages::EditDesktop}{49}{subsubsection.5.14.7}
+\contentsline {subsubsection}{\numberline {5.14.8}Premi::View::Pages::EditMobile}{50}{subsubsection.5.14.8}
+\contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{51}{section.6}
+\contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{51}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{51}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Caricare File}{52}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Modificare Presentazione da Desktop}{53}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Modificare Presentazione da Mobile}{53}{subsubsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.5}Gestire Sfondo}{54}{subsubsection.6.1.5}
+\contentsline {subsubsection}{\numberline {6.1.6}Inserire Elemento}{54}{subsubsection.6.1.6}
+\contentsline {subsubsection}{\numberline {6.1.7}Modificare Elemento}{55}{subsubsection.6.1.7}
+\contentsline {subsubsection}{\numberline {6.1.8}Modificare Frame}{55}{subsubsection.6.1.8}
+\contentsline {subsubsection}{\numberline {6.1.9}Modificare SVG}{56}{subsubsection.6.1.9}
+\contentsline {subsubsection}{\numberline {6.1.10}Modificare Testo}{57}{subsubsection.6.1.10}
+\contentsline {section}{\numberline {7}Stime di fattibilit\IeC {\`a} e di bisogno di risorse}{58}{section.7}
