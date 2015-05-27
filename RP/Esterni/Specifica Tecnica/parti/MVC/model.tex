@@ -564,7 +564,7 @@
 }
 
 
-\subsection{Premi::Model::ServerRelations}{\\
+\subsection{Premi::Model::ServerRelations}{
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{\imgs {ServerRelations}.pdf}
@@ -721,6 +721,8 @@
             }
 
 }
+
+
 \subsection{Premi::Model::Manifest}{
    	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
    	\textbf{\relaz}:
@@ -735,22 +737,6 @@
 			\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
 		\end{itemize}
         }
-}
-\subsection{Premi::Model::GestioneFileServer} {
-   	\textbf{\tipo}: Questo package racchiude le funzioni che permettono all'utente di interfacciarsi coi propri file presenti sul server Apache.
-   	\textbf{\relaz}:
-   	\begin{itemize}
-   		\item relazione di dipendenza con l'interfaccia dei servizi di Apache.
-   	\end{itemize}
-   	\textbf{\interfacce}: Viene utilizzata per gestire le chiamate asincrone verso il server, per realizzare le operazioni di inserimento, cancellazione, cambio del nome di un file.\\
-	
-	\subsubsection{Premi::Model::GestioneFileServer::GestioneFile}{
-		\textbf{\tipo}: classe che fornisce un'implementazione del package, per permettere il caricamento di file sul server, eliminazione di file dal server e rinominazione di file presenti sul server; \\
-		\textbf{\relaz}:
-		\begin{itemize}
-			\item Premi::Presenter::EditPresenter, Premi::View::Pages::Profile, interfaccia del server Apache;
-		\end{itemize}
-	}
 }
 
 \subsubsection{Premi::Model::ApacheRelations::ApacheServerManager}{
@@ -770,7 +756,23 @@
 			 	\item Premi::Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
 			 	\item Premi::Presenter::EditPresenter <- ApacheManager passa lo username dell'utente che sta svolgendo operazioni sul file, il file ed il tipo del file al server Apache; questo se l'operazione è andata a buon fine, ritorna un segnale ad ApacheManager, che lo trasmette ad EditController.
 			\end{itemize}
-		\textbf{\interfacce}: La pagina Profile costruisce ApacheManager per fare modifiche ai file. 
+			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
+			
+			\subsection{Premi::ApacheRelations::::ApacheServerManager::Manifest}{
+			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
+			   	\textbf{\relaz}:
+			   	\begin{itemize}
+			   		\item definisce il metodo GestoreManifest(); relazione di dipendenza 
+			   	\end{itemize}
+			
+				\subsubsection{Premi::Model::Manifest::GestoreManifest}{
+					\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
+					\textbf{\relaz}:
+					\begin{itemize}
+						\item definisce il metodo insertElement(), addPage(), update(), associazione con la classe Premi::Model::ServerRelation::Loader.
+					\end{itemize}
+			        }
+			}
 	}
 }
 	
