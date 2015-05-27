@@ -733,15 +733,16 @@
 			\end{itemize}
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
 			}
-			\subsubsection{Model::ApacheRelations::Manifest}{
-				Il seguente componente appartiene al package Manifest, quindi lo scope sarà Model::ApacheRelations::Manifest::<componente>.
-			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Model::ServerRelation::Loader. \\
+			\subsection{Premi::ApacheRelations::Manifest}{
+			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
 			   	\textbf{\relaz}:
 			   	\begin{itemize}
-			   		\item definisce il metodo GestoreManifest(); relazione di dipendenza 
+			   		\item dipendenza con Premi::Model::ServerRelations::Loader
+			   		\item 
+			   		\item definisce il metodo GestoreManifest();
 			   	\end{itemize}
 			
-				\subsubsubsection{GestoreManifest}{
+				\subsubsection{Premi::Model::Manifest::GestoreManifest}{
 					\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
 					\textbf{\relaz}:
 					\begin{itemize}
@@ -751,4 +752,3 @@
 			}
 	}
 }
-	
