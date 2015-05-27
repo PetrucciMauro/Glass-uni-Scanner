@@ -1,13 +1,24 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  27 MAY 2015 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  27 MAY 2015 16:16
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
-(SpecificaTecnica_v.1.0.0.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -21,21 +32,21 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(../../Template/format.sty
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\format.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -185,7 +196,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -216,7 +227,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -243,7 +254,7 @@ Now handling font encoding U ...
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
@@ -271,8 +282,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks17
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.sty"
-Package: babel 2014/09/25 3.9l The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
@@ -280,36 +291,386 @@ Package: babel 2014/09/25 3.9l The Babel package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-italian\italian.ldf"
-Language: italian 2014/03/29 v1.3k Italian support from the babel system
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\italian.ldf"
+Language: italian 2008/03/14 v1.2t Italian support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.def"
-File: babel.def 2014/09/25 3.9l Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen111
 )
-\it@lettering=\count91
-\it@doublequoteactive=\count92
-\it@ISOcompliance=\count93
-\Virgola=\count94
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2015/03/10 v2.1b e-TeX tools for LaTeX (JAW)
+Package babel Info: Making " an active character on input line 94.
+Now handling font encoding LGR ...
+... processing UTF-8 mapping file for font encoding LGR
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
-Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count95
-)
-\etb@tempcnta=\count96
-)
+("C:\Program Files\MiKTeX 2.9\tex\latex\greek-inputenc\lgrenc.dfu"
+File: lgrenc.dfu 2013/07/18 1.4.1 UTF-8 support for Greek
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0259 (decimal 601)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+0374 (decimal 884)
+   defining Unicode char U+0375 (decimal 885)
+   defining Unicode char U+037A (decimal 890)
+   defining Unicode char U+037E (decimal 894)
+   defining Unicode char U+0384 (decimal 900)
+   defining Unicode char U+0385 (decimal 901)
+   defining Unicode char U+0386 (decimal 902)
+   defining Unicode char U+0387 (decimal 903)
+   defining Unicode char U+0388 (decimal 904)
+   defining Unicode char U+0389 (decimal 905)
+   defining Unicode char U+038A (decimal 906)
+   defining Unicode char U+038C (decimal 908)
+   defining Unicode char U+038E (decimal 910)
+   defining Unicode char U+038F (decimal 911)
+   defining Unicode char U+0390 (decimal 912)
+   defining Unicode char U+0391 (decimal 913)
+   defining Unicode char U+0392 (decimal 914)
+   defining Unicode char U+0393 (decimal 915)
+   defining Unicode char U+0394 (decimal 916)
+   defining Unicode char U+0395 (decimal 917)
+   defining Unicode char U+0396 (decimal 918)
+   defining Unicode char U+0397 (decimal 919)
+   defining Unicode char U+0398 (decimal 920)
+   defining Unicode char U+0399 (decimal 921)
+   defining Unicode char U+039A (decimal 922)
+   defining Unicode char U+039B (decimal 923)
+   defining Unicode char U+039C (decimal 924)
+   defining Unicode char U+039D (decimal 925)
+   defining Unicode char U+039E (decimal 926)
+   defining Unicode char U+039F (decimal 927)
+   defining Unicode char U+03A0 (decimal 928)
+   defining Unicode char U+03A1 (decimal 929)
+   defining Unicode char U+03A3 (decimal 931)
+   defining Unicode char U+03A4 (decimal 932)
+   defining Unicode char U+03A5 (decimal 933)
+   defining Unicode char U+03A6 (decimal 934)
+   defining Unicode char U+03A7 (decimal 935)
+   defining Unicode char U+03A8 (decimal 936)
+   defining Unicode char U+03A9 (decimal 937)
+   defining Unicode char U+03AA (decimal 938)
+   defining Unicode char U+03AB (decimal 939)
+   defining Unicode char U+03AC (decimal 940)
+   defining Unicode char U+03AD (decimal 941)
+   defining Unicode char U+03AE (decimal 942)
+   defining Unicode char U+03AF (decimal 943)
+   defining Unicode char U+03B0 (decimal 944)
+   defining Unicode char U+03B1 (decimal 945)
+   defining Unicode char U+03B2 (decimal 946)
+   defining Unicode char U+03B3 (decimal 947)
+   defining Unicode char U+03B4 (decimal 948)
+   defining Unicode char U+03B5 (decimal 949)
+   defining Unicode char U+03B6 (decimal 950)
+   defining Unicode char U+03B7 (decimal 951)
+   defining Unicode char U+03B8 (decimal 952)
+   defining Unicode char U+03B9 (decimal 953)
+   defining Unicode char U+03BA (decimal 954)
+   defining Unicode char U+03BB (decimal 955)
+   defining Unicode char U+03BC (decimal 956)
+   defining Unicode char U+03BD (decimal 957)
+   defining Unicode char U+03BE (decimal 958)
+   defining Unicode char U+03BF (decimal 959)
+   defining Unicode char U+03C0 (decimal 960)
+   defining Unicode char U+03C1 (decimal 961)
+   defining Unicode char U+03C2 (decimal 962)
+   defining Unicode char U+03C3 (decimal 963)
+   defining Unicode char U+03C4 (decimal 964)
+   defining Unicode char U+03C5 (decimal 965)
+   defining Unicode char U+03C6 (decimal 966)
+   defining Unicode char U+03C7 (decimal 967)
+   defining Unicode char U+03C8 (decimal 968)
+   defining Unicode char U+03C9 (decimal 969)
+   defining Unicode char U+03CA (decimal 970)
+   defining Unicode char U+03CB (decimal 971)
+   defining Unicode char U+03CC (decimal 972)
+   defining Unicode char U+03CD (decimal 973)
+   defining Unicode char U+03CE (decimal 974)
+   defining Unicode char U+03D8 (decimal 984)
+   defining Unicode char U+03D9 (decimal 985)
+   defining Unicode char U+03DA (decimal 986)
+   defining Unicode char U+03DB (decimal 987)
+   defining Unicode char U+03DC (decimal 988)
+   defining Unicode char U+03DD (decimal 989)
+   defining Unicode char U+03DF (decimal 991)
+   defining Unicode char U+03E0 (decimal 992)
+   defining Unicode char U+03E1 (decimal 993)
+   defining Unicode char U+1F00 (decimal 7936)
+   defining Unicode char U+1F01 (decimal 7937)
+   defining Unicode char U+1F02 (decimal 7938)
+   defining Unicode char U+1F03 (decimal 7939)
+   defining Unicode char U+1F04 (decimal 7940)
+   defining Unicode char U+1F05 (decimal 7941)
+   defining Unicode char U+1F06 (decimal 7942)
+   defining Unicode char U+1F07 (decimal 7943)
+   defining Unicode char U+1F08 (decimal 7944)
+   defining Unicode char U+1F09 (decimal 7945)
+   defining Unicode char U+1F0A (decimal 7946)
+   defining Unicode char U+1F0B (decimal 7947)
+   defining Unicode char U+1F0C (decimal 7948)
+   defining Unicode char U+1F0D (decimal 7949)
+   defining Unicode char U+1F0E (decimal 7950)
+   defining Unicode char U+1F0F (decimal 7951)
+   defining Unicode char U+1F10 (decimal 7952)
+   defining Unicode char U+1F11 (decimal 7953)
+   defining Unicode char U+1F12 (decimal 7954)
+   defining Unicode char U+1F13 (decimal 7955)
+   defining Unicode char U+1F14 (decimal 7956)
+   defining Unicode char U+1F15 (decimal 7957)
+   defining Unicode char U+1F18 (decimal 7960)
+   defining Unicode char U+1F19 (decimal 7961)
+   defining Unicode char U+1F1A (decimal 7962)
+   defining Unicode char U+1F1B (decimal 7963)
+   defining Unicode char U+1F1C (decimal 7964)
+   defining Unicode char U+1F1D (decimal 7965)
+   defining Unicode char U+1F20 (decimal 7968)
+   defining Unicode char U+1F21 (decimal 7969)
+   defining Unicode char U+1F22 (decimal 7970)
+   defining Unicode char U+1F23 (decimal 7971)
+   defining Unicode char U+1F24 (decimal 7972)
+   defining Unicode char U+1F25 (decimal 7973)
+   defining Unicode char U+1F26 (decimal 7974)
+   defining Unicode char U+1F27 (decimal 7975)
+   defining Unicode char U+1F28 (decimal 7976)
+   defining Unicode char U+1F29 (decimal 7977)
+   defining Unicode char U+1F2A (decimal 7978)
+   defining Unicode char U+1F2B (decimal 7979)
+   defining Unicode char U+1F2C (decimal 7980)
+   defining Unicode char U+1F2D (decimal 7981)
+   defining Unicode char U+1F2E (decimal 7982)
+   defining Unicode char U+1F2F (decimal 7983)
+   defining Unicode char U+1F30 (decimal 7984)
+   defining Unicode char U+1F31 (decimal 7985)
+   defining Unicode char U+1F32 (decimal 7986)
+   defining Unicode char U+1F33 (decimal 7987)
+   defining Unicode char U+1F34 (decimal 7988)
+   defining Unicode char U+1F35 (decimal 7989)
+   defining Unicode char U+1F36 (decimal 7990)
+   defining Unicode char U+1F37 (decimal 7991)
+   defining Unicode char U+1F38 (decimal 7992)
+   defining Unicode char U+1F39 (decimal 7993)
+   defining Unicode char U+1F3A (decimal 7994)
+   defining Unicode char U+1F3B (decimal 7995)
+   defining Unicode char U+1F3C (decimal 7996)
+   defining Unicode char U+1F3D (decimal 7997)
+   defining Unicode char U+1F3E (decimal 7998)
+   defining Unicode char U+1F3F (decimal 7999)
+   defining Unicode char U+1F40 (decimal 8000)
+   defining Unicode char U+1F41 (decimal 8001)
+   defining Unicode char U+1F42 (decimal 8002)
+   defining Unicode char U+1F43 (decimal 8003)
+   defining Unicode char U+1F44 (decimal 8004)
+   defining Unicode char U+1F45 (decimal 8005)
+   defining Unicode char U+1F48 (decimal 8008)
+   defining Unicode char U+1F49 (decimal 8009)
+   defining Unicode char U+1F4A (decimal 8010)
+   defining Unicode char U+1F4B (decimal 8011)
+   defining Unicode char U+1F4C (decimal 8012)
+   defining Unicode char U+1F4D (decimal 8013)
+   defining Unicode char U+1F50 (decimal 8016)
+   defining Unicode char U+1F51 (decimal 8017)
+   defining Unicode char U+1F52 (decimal 8018)
+   defining Unicode char U+1F53 (decimal 8019)
+   defining Unicode char U+1F54 (decimal 8020)
+   defining Unicode char U+1F55 (decimal 8021)
+   defining Unicode char U+1F56 (decimal 8022)
+   defining Unicode char U+1F57 (decimal 8023)
+   defining Unicode char U+1F59 (decimal 8025)
+   defining Unicode char U+1F5B (decimal 8027)
+   defining Unicode char U+1F5D (decimal 8029)
+   defining Unicode char U+1F5F (decimal 8031)
+   defining Unicode char U+1F60 (decimal 8032)
+   defining Unicode char U+1F61 (decimal 8033)
+   defining Unicode char U+1F62 (decimal 8034)
+   defining Unicode char U+1F63 (decimal 8035)
+   defining Unicode char U+1F64 (decimal 8036)
+   defining Unicode char U+1F65 (decimal 8037)
+   defining Unicode char U+1F66 (decimal 8038)
+   defining Unicode char U+1F67 (decimal 8039)
+   defining Unicode char U+1F68 (decimal 8040)
+   defining Unicode char U+1F69 (decimal 8041)
+   defining Unicode char U+1F6A (decimal 8042)
+   defining Unicode char U+1F6B (decimal 8043)
+   defining Unicode char U+1F6C (decimal 8044)
+   defining Unicode char U+1F6D (decimal 8045)
+   defining Unicode char U+1F6E (decimal 8046)
+   defining Unicode char U+1F6F (decimal 8047)
+   defining Unicode char U+1F70 (decimal 8048)
+   defining Unicode char U+1F71 (decimal 8049)
+   defining Unicode char U+1F72 (decimal 8050)
+   defining Unicode char U+1F73 (decimal 8051)
+   defining Unicode char U+1F74 (decimal 8052)
+   defining Unicode char U+1F75 (decimal 8053)
+   defining Unicode char U+1F76 (decimal 8054)
+   defining Unicode char U+1F77 (decimal 8055)
+   defining Unicode char U+1F78 (decimal 8056)
+   defining Unicode char U+1F79 (decimal 8057)
+   defining Unicode char U+1F7A (decimal 8058)
+   defining Unicode char U+1F7B (decimal 8059)
+   defining Unicode char U+1F7C (decimal 8060)
+   defining Unicode char U+1F7D (decimal 8061)
+   defining Unicode char U+1F80 (decimal 8064)
+   defining Unicode char U+1F81 (decimal 8065)
+   defining Unicode char U+1F82 (decimal 8066)
+   defining Unicode char U+1F83 (decimal 8067)
+   defining Unicode char U+1F84 (decimal 8068)
+   defining Unicode char U+1F85 (decimal 8069)
+   defining Unicode char U+1F86 (decimal 8070)
+   defining Unicode char U+1F87 (decimal 8071)
+   defining Unicode char U+1F88 (decimal 8072)
+   defining Unicode char U+1F89 (decimal 8073)
+   defining Unicode char U+1F8A (decimal 8074)
+   defining Unicode char U+1F8B (decimal 8075)
+   defining Unicode char U+1F8C (decimal 8076)
+   defining Unicode char U+1F8D (decimal 8077)
+   defining Unicode char U+1F8E (decimal 8078)
+   defining Unicode char U+1F8F (decimal 8079)
+   defining Unicode char U+1F90 (decimal 8080)
+   defining Unicode char U+1F91 (decimal 8081)
+   defining Unicode char U+1F92 (decimal 8082)
+   defining Unicode char U+1F93 (decimal 8083)
+   defining Unicode char U+1F94 (decimal 8084)
+   defining Unicode char U+1F95 (decimal 8085)
+   defining Unicode char U+1F96 (decimal 8086)
+   defining Unicode char U+1F97 (decimal 8087)
+   defining Unicode char U+1F98 (decimal 8088)
+   defining Unicode char U+1F99 (decimal 8089)
+   defining Unicode char U+1F9A (decimal 8090)
+   defining Unicode char U+1F9B (decimal 8091)
+   defining Unicode char U+1F9C (decimal 8092)
+   defining Unicode char U+1F9D (decimal 8093)
+   defining Unicode char U+1F9E (decimal 8094)
+   defining Unicode char U+1F9F (decimal 8095)
+   defining Unicode char U+1FA0 (decimal 8096)
+   defining Unicode char U+1FA1 (decimal 8097)
+   defining Unicode char U+1FA2 (decimal 8098)
+   defining Unicode char U+1FA3 (decimal 8099)
+   defining Unicode char U+1FA4 (decimal 8100)
+   defining Unicode char U+1FA5 (decimal 8101)
+   defining Unicode char U+1FA6 (decimal 8102)
+   defining Unicode char U+1FA7 (decimal 8103)
+   defining Unicode char U+1FA8 (decimal 8104)
+   defining Unicode char U+1FA9 (decimal 8105)
+   defining Unicode char U+1FAA (decimal 8106)
+   defining Unicode char U+1FAB (decimal 8107)
+   defining Unicode char U+1FAC (decimal 8108)
+   defining Unicode char U+1FAD (decimal 8109)
+   defining Unicode char U+1FAE (decimal 8110)
+   defining Unicode char U+1FAF (decimal 8111)
+   defining Unicode char U+1FB0 (decimal 8112)
+   defining Unicode char U+1FB1 (decimal 8113)
+   defining Unicode char U+1FB2 (decimal 8114)
+   defining Unicode char U+1FB3 (decimal 8115)
+   defining Unicode char U+1FB4 (decimal 8116)
+   defining Unicode char U+1FB6 (decimal 8118)
+   defining Unicode char U+1FB7 (decimal 8119)
+   defining Unicode char U+1FB8 (decimal 8120)
+   defining Unicode char U+1FB9 (decimal 8121)
+   defining Unicode char U+1FBA (decimal 8122)
+   defining Unicode char U+1FBB (decimal 8123)
+   defining Unicode char U+1FBC (decimal 8124)
+   defining Unicode char U+1FBD (decimal 8125)
+   defining Unicode char U+1FBE (decimal 8126)
+   defining Unicode char U+1FBF (decimal 8127)
+   defining Unicode char U+1FC0 (decimal 8128)
+   defining Unicode char U+1FC1 (decimal 8129)
+   defining Unicode char U+1FC2 (decimal 8130)
+   defining Unicode char U+1FC3 (decimal 8131)
+   defining Unicode char U+1FC4 (decimal 8132)
+   defining Unicode char U+1FC6 (decimal 8134)
+   defining Unicode char U+1FC7 (decimal 8135)
+   defining Unicode char U+1FC8 (decimal 8136)
+   defining Unicode char U+1FC9 (decimal 8137)
+   defining Unicode char U+1FCA (decimal 8138)
+   defining Unicode char U+1FCB (decimal 8139)
+   defining Unicode char U+1FCC (decimal 8140)
+   defining Unicode char U+1FCD (decimal 8141)
+   defining Unicode char U+1FCE (decimal 8142)
+   defining Unicode char U+1FCF (decimal 8143)
+   defining Unicode char U+1FD0 (decimal 8144)
+   defining Unicode char U+1FD1 (decimal 8145)
+   defining Unicode char U+1FD2 (decimal 8146)
+   defining Unicode char U+1FD3 (decimal 8147)
+   defining Unicode char U+1FD6 (decimal 8150)
+   defining Unicode char U+1FD7 (decimal 8151)
+   defining Unicode char U+1FD8 (decimal 8152)
+   defining Unicode char U+1FD9 (decimal 8153)
+   defining Unicode char U+1FDA (decimal 8154)
+   defining Unicode char U+1FDB (decimal 8155)
+   defining Unicode char U+1FDD (decimal 8157)
+   defining Unicode char U+1FDE (decimal 8158)
+   defining Unicode char U+1FDF (decimal 8159)
+   defining Unicode char U+1FE0 (decimal 8160)
+   defining Unicode char U+1FE1 (decimal 8161)
+   defining Unicode char U+1FE2 (decimal 8162)
+   defining Unicode char U+1FE3 (decimal 8163)
+   defining Unicode char U+1FE4 (decimal 8164)
+   defining Unicode char U+1FE5 (decimal 8165)
+   defining Unicode char U+1FE6 (decimal 8166)
+   defining Unicode char U+1FE7 (decimal 8167)
+   defining Unicode char U+1FE8 (decimal 8168)
+   defining Unicode char U+1FE9 (decimal 8169)
+   defining Unicode char U+1FEA (decimal 8170)
+   defining Unicode char U+1FEB (decimal 8171)
+   defining Unicode char U+1FEC (decimal 8172)
+   defining Unicode char U+1FED (decimal 8173)
+   defining Unicode char U+1FEE (decimal 8174)
+   defining Unicode char U+1FEF (decimal 8175)
+   defining Unicode char U+1FF2 (decimal 8178)
+   defining Unicode char U+1FF3 (decimal 8179)
+   defining Unicode char U+1FF4 (decimal 8180)
+   defining Unicode char U+1FF6 (decimal 8182)
+   defining Unicode char U+1FF7 (decimal 8183)
+   defining Unicode char U+1FF8 (decimal 8184)
+   defining Unicode char U+1FF9 (decimal 8185)
+   defining Unicode char U+1FFA (decimal 8186)
+   defining Unicode char U+1FFB (decimal 8187)
+   defining Unicode char U+1FFC (decimal 8188)
+   defining Unicode char U+1FFD (decimal 8189)
+   defining Unicode char U+1FFE (decimal 8190)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+10144 (decimal 65860)
+   defining Unicode char U+10145 (decimal 65861)
+   defining Unicode char U+10146 (decimal 65862)
+   defining Unicode char U+10147 (decimal 65863)
+)))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
 Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
-\csq@reset=\count97
-\csq@gtype=\count98
-\csq@glevel=\count99
-\csq@qlevel=\count100
-\csq@maxlvl=\count101
-\csq@tshold=\count102
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count91
+)
+\etb@tempcnta=\count92
+)
+\csq@reset=\count93
+\csq@gtype=\count94
+\csq@glevel=\count95
+\csq@qlevel=\count96
+\csq@maxlvl=\count97
+\csq@tshold=\count98
 \csq@ltx@everypar=\toks18
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
@@ -333,10 +694,10 @@ File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
-Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen112
 \extrarowheight=\dimen113
 \NC@list=\toks19
@@ -348,7 +709,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@old@col=\dimen116
 \TX@target=\dimen117
 \TX@delta=\dimen118
-\TX@cols=\count103
+\TX@cols=\count99
 \TX@ftn=\toks20
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
@@ -356,10 +717,10 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -378,7 +739,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count104
+\Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
@@ -435,15 +796,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen121
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\Hy@linkcounter=\count101
+\Hy@pagecounter=\count102
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count103
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -456,10 +817,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count104
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen122
-\Fld@menulength=\count109
+\Fld@menulength=\count105
 \Field@Width=\dimen123
 \Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -471,17 +832,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count106
+\c@Item=\count107
+\c@Hfootnote=\count108
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
+\Fld@listcount=\count109
+\c@bookmark@seq@number=\count110
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -505,37 +866,37 @@ Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 \f@ncyO@orf=\skip54
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count115
+\lst@mode=\count111
 \lst@gtempboxa=\box26
 \lst@token=\toks21
-\lst@length=\count116
+\lst@length=\count112
 \lst@currlwidth=\dimen125
-\lst@column=\count117
-\lst@pos=\count118
+\lst@column=\count113
+\lst@pos=\count114
 \lst@lostspace=\dimen126
 \lst@width=\dimen127
-\lst@newlines=\count119
-\lst@lineno=\count120
+\lst@newlines=\count115
+\lst@lineno=\count116
 \lst@maxwidth=\dimen128
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count121
-\lst@skipnumbers=\count122
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count117
+\lst@skipnumbers=\count118
 \lst@framebox=\box27
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
-File: listings.cfg 2014/09/06 1.5e listings configuration
+File: listings.cfg 2013/08/26 1.5b listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -551,7 +912,7 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \minrowclearance=\skip55
 )
 LaTeX Info: Redefining \color on input line 702.
-\rownum=\count123
+\rownum=\count119
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -574,33 +935,33 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen136
 \cmidrulekern=\dimen137
 \defaultaddspace=\dimen138
-\@cmidla=\count124
-\@cmidlb=\count125
+\@cmidla=\count120
+\@cmidlb=\count121
 \@aboverulesep=\dimen139
 \@belowrulesep=\dimen140
-\@thisruleclass=\count126
-\@lastruleclass=\count127
+\@thisruleclass=\count122
+\@lastruleclass=\count123
 \@thisrulewidth=\dimen141
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip56
 \LTright=\skip57
 \LTpre=\skip58
 \LTpost=\skip59
-\LTchunksize=\count128
+\LTchunksize=\count124
 \LTcapwidth=\dimen142
 \LT@head=\box28
 \LT@firsthead=\box29
 \LT@foot=\box30
 \LT@lastfoot=\box31
-\LT@cols=\count129
-\LT@rows=\count130
-\c@LT@tables=\count131
-\c@LT@chunks=\count132
+\LT@cols=\count125
+\LT@rows=\count126
+\c@LT@tables=\count127
+\c@LT@chunks=\count128
 \LT@p@ftn=\toks23
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
@@ -612,16 +973,16 @@ Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box32
-\sift@deathcycles=\count133
+\sift@deathcycles=\count129
 \@vwid@loff=\dimen144
 \@vwid@roff=\dimen145
 )
-\c@taburow=\count134
-\tabu@nbcols=\count135
-\tabu@cnt=\count136
-\tabu@Xcol=\count137
-\tabu@alloc=\count138
-\tabu@nested=\count139
+\c@taburow=\count130
+\tabu@nbcols=\count131
+\tabu@cnt=\count132
+\tabu@Xcol=\count133
+\tabu@alloc=\count134
+\tabu@nested=\count135
 \tabu@target=\dimen146
 \tabu@spreadtarget=\dimen147
 \tabu@naturalX=\dimen148
@@ -659,11 +1020,11 @@ Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def"
 File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count140
+\BKM@id=\count136
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count141
+\c@float@type=\count137
 \float@exts=\toks27
 \float@box=\box38
 \@float@everytoks=\toks28
@@ -686,7 +1047,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen165
 \caption@hangindent=\dimen166
 )
-\c@ContinuedFloat=\count142
+\c@ContinuedFloat=\count138
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -695,17 +1056,17 @@ Package caption Info: longtable package is loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 ))
-\c@KVtest=\count143
+\c@KVtest=\count139
 \sf@farskip=\skip63
 \sf@captopadj=\dimen167
 \sf@capskip=\skip64
 \sf@nearskip=\skip65
-\c@subfigure=\count144
-\c@subfigure@save=\count145
-\c@lofdepth=\count146
-\c@subtable=\count147
-\c@subtable@save=\count148
-\c@lotdepth=\count149
+\c@subfigure=\count140
+\c@subfigure@save=\count141
+\c@lofdepth=\count142
+\c@subtable=\count143
+\c@subtable@save=\count144
+\c@lotdepth=\count145
 \sf@top=\skip66
 \sf@bottom=\skip67
 )
@@ -728,23 +1089,23 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
-Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count150
-\calc@Bcount=\count151
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count146
+\calc@Bcount=\count147
 \calc@Adimen=\dimen168
 \calc@Bdimen=\dimen169
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count152
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count148
 \calc@Cskip=\skip70
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
@@ -767,13 +1128,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count153
+\inf@bad=\count149
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count154
-\leftroot@=\count155
+\uproot@=\count150
+\leftroot@=\count151
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count156
-\DOTSCASE@=\count157
+\classnum@=\count152
+\DOTSCASE@=\count153
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -782,15 +1143,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen172
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count158
-\c@MaxMatrixCols=\count159
+\macc@depth=\count154
+\c@MaxMatrixCols=\count155
 \dotsspace@=\muskip11
-\c@parentequation=\count160
-\dspbrk@lvl=\count161
+\c@parentequation=\count156
+\dspbrk@lvl=\count157
 \tag@help=\toks30
-\row@=\count162
-\column@=\count163
-\maxfields@=\count164
+\row@=\count158
+\column@=\count159
+\maxfields@=\count160
 \andhelp@=\toks31
 \eqnshift@=\dimen173
 \alignsep@=\dimen174
@@ -807,7 +1168,7 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count165
+\g_MT_multlinerow_int=\count161
 \l_MT_multwidth_dim=\dimen179
 \origjot=\skip74
 \l_MT_shortvdotswithinadjustabove_dim=\dimen180
@@ -819,47 +1180,55 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count166
-\c@@ppsavesec=\count167
-\c@@ppsaveapp=\count168
+\c@@pps=\count162
+\c@@ppsavesec=\count163
+\c@@ppsaveapp=\count164
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 125.
-\c@subsubsubsection=\count169
+\c@subsubsubsection=\count165
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(SpecificaTecnica_v.1.0.0.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 36.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cbfonts-fd\lgrcmr.fd"
+File: lgrcmr.fd 2013/09/01 v1.0 Greek European Computer Regular
+)
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -895,57 +1264,57 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 29.
-LaTeX Info: Redefining \it@ccap on input line 29.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count170
+\scratchcounter=\count166
 \scratchdimen=\dimen186
 \scratchbox=\box43
-\nofMPsegments=\count171
-\nofMParguments=\count172
+\nofMPsegments=\count167
+\nofMParguments=\count168
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count173
+\MPscratchCnt=\count169
 \MPscratchDim=\dimen187
-\MPnumerator=\count174
-\makeMPintoPDFobject=\count175
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
 \everyMPtoPDFconversion=\toks35
 )
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 36.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count176
+\c@section@level=\count172
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 29.
-\c@lstlisting=\count177
+(lastpage)             ! on input line 36.
+\c@lstlisting=\count173
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(../../Template/firstpage.tex <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\firstpage.tex"
+<../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <../../logo.jpg>]) (parti/
-registroMod.tex
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
+Fiup/3° Anno/SWE/Premi/RP/logo.jpg>])
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\registroMod.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
@@ -954,10 +1323,6 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 34.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -976,109 +1341,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 33.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 33.
-
-[2] (SpecificaTecnica_v.1.0.0.toc)
-\tf@toc=\write3
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 35.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 35.
-
-[3] (SpecificaTecnica_v.1.0.0.lof)
-\tf@lof=\write4
- (SpecificaTecnica_v.1.0.0.lot)
-\tf@lot=\write5
-File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 38.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 38.
-
-[4] (../../Template/sommario.tex)
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 40.
-
-[5] (parti/introduzione.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+ [2]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.toc"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 30.
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [3]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 89.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 30.
-
-[6])
+[4])
+\tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [5]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.lof")
+\tf@lof=\write4
 
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.lot")
+\tf@lot=\write5
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 45.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [6]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Template\sommario.tex")
+File: ../../logo.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 42.
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 47.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\introduzione.tex"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+File: ../../logo.jpg Graphic file (type jpg)
 
-[7] (parti/strumenti.tex
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [8])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 49.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\strumenti.tex"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 28.
-
-[8]
+ [10]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 46.
-
-[9])
+ [11])
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 44.
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 44.
-
-[10] (parti/pattern.tex <./images/MVP.png, id=116, 411.78844pt x 277.78781pt>
+ [12]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\pattern.tex" <./images/MVP.png, id=398, 411.78844pt x 277.78781pt>
 File: ./images/MVP.png Graphic file (type png)
 
 <use ./images/MVP.png>
 Package pdftex.def Info: ./images/MVP.png used on input line 5.
 (pdftex.def)             Requested size: 247.07495pt x 166.67395pt.
 
-<./images/Command.pdf, id=117, 515.9275pt x 388.45125pt>
+<./images/Command.pdf, id=399, 515.9275pt x 388.45125pt>
 File: ./images/Command.pdf Graphic file (type pdf)
 
 <use ./images/Command.pdf>
@@ -1088,11 +1441,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 25.
-
-[11 <./images/MVP.png> <./images/Command.pdf>]
+ [13 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/MVP.png> <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Ester
+ni/Specifica Tecnica/images/Command.pdf>]
 Overfull \hbox (1.49275pt too wide) in paragraph at lines 25--26
 []\T1/cmr/m/n/12 Tale ope-ra-zio-ne vie-ne rea-liz-za-ta at-tra-ver-so que-sta 
 ca-te-na: Client->Invocatore->Ricevitore 
@@ -1116,7 +1467,7 @@ Overfull \hbox (2.78273pt too wide) in paragraph at lines 34--38
 lideShowActions::Command::Invoker,
  []
 
-<./images/Observer.jpg, id=162, 807.015pt x 562.1pt>
+<./images/Observer.jpg, id=440, 807.015pt x 562.1pt>
 File: ./images/Observer.jpg Graphic file (type jpg)
 
 <use ./images/Observer.jpg>
@@ -1131,11 +1482,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 46.
-
-[12]
+ [14]
 Overfull \hbox (29.84018pt too wide) in paragraph at lines 53--55
 \T1/cmr/m/n/12 ri-tor-na-no l'e-le-men-to pre-sen-te nel cam-po pre-sen-ta-zio-
 ne di Mo-del::ServerRelations::Loader::Costruttore
@@ -1144,23 +1491,18 @@ ne di Mo-del::ServerRelations::Loader::Costruttore
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
+Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 46.
-
-[13 <./images/Observer.jpg>]
+ [15 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/Observer.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
+Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 46.
-
-[14] (parti/presentazione.tex
-<./images/PresentazioneArchitettura.jpg, id=186, 1364.09625pt x 788.9475pt>
+ [16]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\presentazione.tex"
+<./images/PresentazioneArchitettura.jpg, id=462, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -1172,26 +1514,38 @@ Overfull \hbox (334.76721pt too wide) in paragraph at lines 21--23
  [][] 
  []
 
-)
+<./images/nodeAPI.pdf, id=463, 861.2175pt x 530.98375pt>
+File: ./images/nodeAPI.pdf Graphic file (type pdf)
+
+<use ./images/nodeAPI.pdf>
+Package pdftex.def Info: ./images/nodeAPI.pdf used on input line 38.
+(pdftex.def)             Requested size: 516.73448pt x 318.5927pt.
+
+Overfull \hbox (33.03761pt too wide) in paragraph at lines 38--40
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 48.
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 48.
-
-[15]
+ [18 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/PresentazioneArchitettura.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 48.
+Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 48.
-
-[16 <./images/PresentazioneArchitettura.jpg>] (parti/componenti.tex
-(parti//MVC/model.tex <./images/Model.pdf, id=206, 1276.77pt x 470.75874pt>
+ [19 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/nodeAPI.pdf>]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\componenti.tex")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\model.tex" <./images/Model.pdf, id=582, 1276.77pt x 470.75874pt>
 File: ./images/Model.pdf Graphic file (type pdf)
 
 <use ./images/Model.pdf>
@@ -1222,12 +1576,9 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 24.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 24.
-
-[17 <./images/Model.pdf>]
-<./images/inserteditremove.pdf, id=261, 1392.20125pt x 594.22pt>
+ [20 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/Model.pdf>]
+<./images/inserteditremove.pdf, id=633, 1392.20125pt x 594.22pt>
 File: ./images/inserteditremove.pdf Graphic file (type pdf)
 
 <use ./images/inserteditremove.pdf>
@@ -1265,11 +1616,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 37.
-
-[18 <./images/inserteditremove.pdf>]
+ [21 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/inserteditremove.pdf>]
 Overfull \hbox (0.11795pt too wide) in paragraph at lines 41--42
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeC
 ommand -> in-vo-ca il
@@ -1284,11 +1632,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 61.
-
-[19]
+ [22]
 Overfull \hbox (2.78958pt too wide) in paragraph at lines 63--64
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteFrameInse
 rtCommand -> in-vo-
@@ -1321,11 +1665,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 84.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 84.
-
-[20]
+ [23]
 Overfull \hbox (1.91066pt too wide) in paragraph at lines 86--87
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemo
 veCommand -> in-
@@ -1353,16 +1693,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 102.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 102.
-
-[21]
+ [24]
 Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
-<./images/CommandPackage.pdf, id=383, 1575.8875pt x 1074.0125pt>
+<./images/CommandPackage.pdf, id=754, 1575.8875pt x 1074.0125pt>
 File: ./images/CommandPackage.pdf Graphic file (type pdf)
 
 <use ./images/CommandPackage.pdf>
@@ -1377,11 +1713,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 118.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 118.
-
-[22]
+ [25]
 Overfull \vbox (9.08214pt too high) has occurred while \output is active []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1389,11 +1721,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 118.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 118.
-
-[23 <./images/CommandPackage.pdf>]
+ [26 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/CommandPackage.pdf>]
 Overfull \hbox (101.70282pt too wide) in paragraph at lines 118--120
 \T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Insert, Mo-del::Remove e Mo
 -del::SlideShow::SlideShowActions::EditElements.
@@ -1430,11 +1759,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 141.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 141.
-
-[24]
+ [27]
 Overfull \hbox (2.23692pt too wide) in paragraph at lines 153--154
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteBackgroun
 dRemoveCommand; 
@@ -1451,28 +1776,17 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 170.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 170.
-
-[25]
+[28]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 200.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 200.
-
-[26]
+ [29]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 236.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 236.
-
-[27]
+ [30]
 Overfull \hbox (0.50122pt too wide) in paragraph at lines 261--262
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::InsertEditRemove::Remover 
 <- in-vo-ca il me-to-do re-
@@ -1482,11 +1796,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 273.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 273.
-
-[28]
+ [31]
 Overfull \hbox (0.50122pt too wide) in paragraph at lines 274--275
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::InsertEditRemove::Remover 
 <- in-vo-ca il me-to-do re-
@@ -1520,11 +1830,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 305.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 305.
-
-[29]
+ [32]
 Overfull \hbox (8.10626pt too wide) in paragraph at lines 312--313
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::Invoker -> In-vo-
 ker in-vo-ca il me-to-do doac-
@@ -1558,11 +1864,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 339.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 339.
-
-[30]
+ [33]
 Overfull \hbox (0.50122pt too wide) in paragraph at lines 339--340
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::InsertEditRemove::Remover 
 <- in-vo-ca il me-to-do re-
@@ -1584,11 +1886,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 369.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 369.
-
-[31]
+ [34]
 Overfull \hbox (8.10626pt too wide) in paragraph at lines 377--378
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::Invoker -> In-vo-
 ker in-vo-ca il me-to-do doac-
@@ -1604,11 +1902,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 403.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 403.
-
-[32]
+ [35]
 Overfull \hbox (8.10626pt too wide) in paragraph at lines 403--404
 []\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::Invoker -> In-vo-
 ker in-vo-ca il me-to-do doac-
@@ -1620,7 +1914,7 @@ Overfull \hbox (8.10626pt too wide) in paragraph at lines 416--417
 ker in-vo-ca il me-to-do doac-
  []
 
-<./images/slideshowelements.pdf, id=694, 1677.26625pt x 572.1375pt>
+<./images/slideshowelements.pdf, id=1055, 1677.26625pt x 572.1375pt>
 File: ./images/slideshowelements.pdf Graphic file (type pdf)
 
 <use ./images/slideshowelements.pdf>
@@ -1636,12 +1930,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 433.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 433.
-
-[33]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.1}) has been already used, duplicate ignored
+ [36]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.441     \subsubsubsection{SlideShowElement}
@@ -1650,11 +1940,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 446.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 446.
-
-[34 <./images/slideshowelements.pdf>]
+ [37 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/slideshowelements.pdf>]
 Overfull \hbox (98.53278pt too wide) in paragraph at lines 449--451
 \T1/cmr/bx/n/12 Interfacce con e re-la-zio-ni d'u-so e da al-tre com-po-nen-ti\
 T1/cmr/m/n/12 : Mo-del::SlideShow::SlideShowActions::Insert::Inserter
@@ -1687,11 +1974,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 478.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 478.
-
-[35]
+ [38]
 Overfull \hbox (25.70073pt too wide) in paragraph at lines 480--481
 \T1/cmr/m/n/12 Fra-me dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mo-d
 el::ServerRelations::Loader::Costruttore,
@@ -1730,11 +2013,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 508.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 508.
-
-[36]
+ [39]
 Overfull \hbox (17.78331pt too wide) in paragraph at lines 508--509
 \T1/cmr/m/n/12 SVG dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mo-del:
 :ServerRelations::Loader::Costruttore,
@@ -1774,10 +2053,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 536.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 536.
-
-[37]
+[40]
 Overfull \hbox (23.25133pt too wide) in paragraph at lines 536--537
 \T1/cmr/m/n/12 Vi-deo dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mo-d
 el::ServerRelations::Loader::Costruttore,
@@ -1801,7 +2077,7 @@ Overfull \hbox (114.41943pt too wide) in paragraph at lines 553--555
 n-ta-zio-ne al-l'in-ter-no di Mo-del::ServerRelations::Loader::Costruttore. 
  []
 
-<./images/ServerRelations.pdf, id=858, 800.9925pt x 415.5525pt>
+<./images/ServerRelations.pdf, id=1221, 800.9925pt x 415.5525pt>
 File: ./images/ServerRelations.pdf Graphic file (type pdf)
 
 <use ./images/ServerRelations.pdf>
@@ -1811,16 +2087,12 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 569.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 569.
-
-[38]
+ [41]
 Underfull \hbox (badness 10000) in paragraph at lines 569--572
 
  []
 
-<./images/serverrelationsloader.pdf, id=867, 1134.2375pt x 788.9475pt>
+<./images/serverrelationsloader.pdf, id=1229, 1134.2375pt x 788.9475pt>
 File: ./images/serverrelationsloader.pdf Graphic file (type pdf)
 
 <use ./images/serverrelationsloader.pdf>
@@ -1843,11 +2115,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 581.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 581.
-
-[39 <./images/ServerRelations.pdf>]
+ [42 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/ServerRelations.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 581--583
 
  []
@@ -1862,11 +2131,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 587.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 587.
-
-[40 <./images/serverrelationsloader.pdf>]
+ [43 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/serverrelationsloader.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 594--597
 
  []
@@ -1883,7 +2149,7 @@ ed, duplicate ignored
                    \relax 
 l.605         \subsubsubsection{Registrazione}
                                               {
-<./images/ClassDiagram1.pdf, id=998, 1344.02126pt x 562.1pt>
+<./images/ClassDiagram1.pdf, id=1360, 1344.02126pt x 562.1pt>
 File: ./images/ClassDiagram1.pdf Graphic file (type pdf)
 
 <use ./images/ClassDiagram1.pdf>
@@ -1898,11 +2164,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 623.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 41 undefined on input line 623.
-
-[41]
+ [44]
 Underfull \hbox (badness 10000) in paragraph at lines 623--625
 
  []
@@ -1924,12 +2186,10 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 640.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 42 undefined on input line 640.
-
-[42 <./images/ClassDiagram1.pdf>]pdfTeX warning (ext4): destination with the sa
-me identifier (name{subsubsubsection.5.1.3}) has been already used, duplicate i
-gnored
+[45 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tecn
+ica/images/ClassDiagram1.pdf>]pdfTeX warning (ext4): destination with the same 
+identifier (name{subsubsubsection.5.1.3}) has been already used, duplicate igno
+red
 <to be read again> 
                    \relax 
 l.643              \subsubsubsection{Subject}
@@ -1968,12 +2228,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 686.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 43 undefined on input line 686.
-
-[43]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.9}) has been already used, duplicate ignored
+ [46]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.691             \subsubsubsection{SubjectSVG}
@@ -2003,68 +2259,1033 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 727.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 44 undefined on input line 727.
-
-[44]pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
-section.5.1.1}) has been already used, duplicate ignored
+ [47]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
+bsection.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.745 				\subsubsubsection{GestoreManifest}
                                             {)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 12.
+Package pdftex.def Info: ../../logo.jpg used on input line 58.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [48]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\control.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 2--4
+
+ []
+
+
+Overfull \hbox (3.9296pt too wide) in paragraph at lines 11--12
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteFrameInse
+rtCommand <- Edit-
+ []
+
+
+Overfull \hbox (2.78543pt too wide) in paragraph at lines 12--13
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteImageInse
+rtCommand <- Edit-
+ []
+
+
+Overfull \hbox (2.78542pt too wide) in paragraph at lines 14--15
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteAudioInse
+rtCommand <- Edit-
+ []
+
+
+Overfull \hbox (0.50127pt too wide) in paragraph at lines 15--16
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteVideoInse
+rtCommand <- Edit-
+ []
+
+
+Overfull \hbox (4.0948pt too wide) in paragraph at lines 16--17
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteBackgroun
+dInsertCommand <-
+ []
+
+
+Overfull \hbox (5.82637pt too wide) in paragraph at lines 17--18
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteTextRemov
+eCommand <- Edit-
+ []
+
+
+Overfull \hbox (14.47148pt too wide) in paragraph at lines 18--19
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemo
+veCommand <- Edit-
+ []
+
+
+Overfull \hbox (13.32732pt too wide) in paragraph at lines 19--20
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteImageRemo
+veCommand <- Edit-
+ []
+
+
+Overfull \hbox (6.55536pt too wide) in paragraph at lines 20--21
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemove
+Command <- Edit-
+ []
+
+
+Overfull \hbox (13.3273pt too wide) in paragraph at lines 21--22
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemo
+veCommand <- Edit-
+ []
+
+
+Overfull \hbox (11.04315pt too wide) in paragraph at lines 22--23
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemo
+veCommand <- Edit-
+ []
+
+
+Overfull \hbox (14.63669pt too wide) in paragraph at lines 23--24
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteBackgroun
+dRemoveCommand <-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 24.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [49]
+Overfull \hbox (2.39803pt too wide) in paragraph at lines 24--25
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeC
+ommand <- Edit-Pre-
+ []
+
+
+Overfull \hbox (6.05264pt too wide) in paragraph at lines 25--26
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditPosit
+ionCommand <- Edit-
+ []
+
+
+Overfull \hbox (9.5768pt too wide) in paragraph at lines 26--27
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditRotat
+ionCommand <- Edit-
+ []
+
+
+Overfull \hbox (5.49588pt too wide) in paragraph at lines 29--30
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditFontC
+ommand <- Edit-Pre-
+ []
+
+
+Overfull \hbox (5.50006pt too wide) in paragraph at lines 30--31
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditConte
+ntCommand <- Edit-
+ []
+
+
+Overfull \hbox (2.75482pt too wide) in paragraph at lines 31--32
+[]\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::Invoker <- Edit-P
+re-sen-ter co-strui-sce l'og-
+ []
+
+
+Overfull \hbox (18.01926pt too wide) in paragraph at lines 39--43
+\T1/cmr/m/n/12 del::SlideShow::SlideShowActions::Command::AbstractCommand e lo 
+d� in pa-sto a Mo-del::Invoker.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 67.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [51]
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 60.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [52]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\MVC\view.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [53]
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 55.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+
+Overfull \hbox (8.70807pt too wide) in paragraph at lines 59--62
+\T1/cmr/m/n/12 press.js uti-liz-za-to; uti-liz-za i me-to-di mes-si a di-spo-si
+-zio-ne del-la clas-se Pre-sen-ter::ExecutionPresenter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 78.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [55]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 100.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [56])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 62.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
+[57]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\diagrammiAttivita.tex"
+<./images/AttivitaPrincipali.pdf, id=1559, 1577.895pt x 1162.3425pt>
+File: ./images/AttivitaPrincipali.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `LastPage' on page 45 undefined on input line 12.
+<use ./images/AttivitaPrincipali.pdf>
+Package pdftex.def Info: ./images/AttivitaPrincipali.pdf used on input line 7.
+(pdftex.def)             Requested size: 473.37216pt x 348.70544pt.
 
-[45]
-! Undefined control sequence.
-<argument> \mvc 
-                control
-l.13 	\input{\mvc control}
-                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<./images/CaricarePresentazione.pdf, id=1560, 703.62875pt x 666.49pt>
+File: ./images/CaricarePresentazione.pdf Graphic file (type pdf)
 
-! Undefined control sequence.
-<argument> \mvc 
-                control
-l.13 	\input{\mvc control}
-                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<use ./images/CaricarePresentazione.pdf>
+Package pdftex.def Info: ./images/CaricarePresentazione.pdf used on input line 
+16.
+(pdftex.def)             Requested size: 281.4465pt x 266.59128pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 21.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [58 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/AttivitaPrincipali.pdf>]
+<./images/CaricareFile.pdf, id=1691, 1063.975pt x 591.20876pt>
+File: ./images/CaricareFile.pdf Graphic file (type pdf)
+
+<use ./images/CaricareFile.pdf>
+Package pdftex.def Info: ./images/CaricareFile.pdf used on input line 25.
+(pdftex.def)             Requested size: 425.58246pt x 236.47931pt.
+
+<./images/ModificarePresentazione.pdf, id=1692, 1359.0775pt x 682.55pt>
+File: ./images/ModificarePresentazione.pdf Graphic file (type pdf)
+
+<use ./images/ModificarePresentazione.pdf>
+Package pdftex.def Info: ./images/ModificarePresentazione.pdf used on input lin
+e 34.
+(pdftex.def)             Requested size: 516.45482pt x 259.37169pt.
+
+Overfull \hbox (32.75795pt too wide) in paragraph at lines 34--36
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [59 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/CaricarePresentazione.pdf> <E:/Docs/Università/Mega Fiup/3° Anno/
+SWE/Premi/RP/Esterni/Specifica Tecnica/images/CaricareFile.pdf>]
+<./images/ModificaPresentazioneMobile.pdf, id=1793, 654.445pt x 447.6725pt>
+File: ./images/ModificaPresentazioneMobile.pdf Graphic file (type pdf)
+
+<use ./images/ModificaPresentazioneMobile.pdf>
+Package pdftex.def Info: ./images/ModificaPresentazioneMobile.pdf used on input
+ line 43.
+(pdftex.def)             Requested size: 261.77336pt x 179.06583pt.
+
+<./images/GestireSfondo.pdf, id=1794, 584.1825pt x 847.165pt>
+File: ./images/GestireSfondo.pdf Graphic file (type pdf)
+
+<use ./images/GestireSfondo.pdf>
+Package pdftex.def Info: ./images/GestireSfondo.pdf used on input line 52.
+(pdftex.def)             Requested size: 233.66885pt x 338.85999pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 55.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [60 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/ModificarePresentazione.pdf> <E:/Docs/Università/Mega Fiup/3° Ann
+o/SWE/Premi/RP/Esterni/Specifica Tecnica/images/ModificaPresentazioneMobile.pdf
 
 
-! LaTeX Error: File `control.tex' not found.
+pdfTeX warning: pdflatex.exe (file E:/Docs/Università/Mega Fiup/3° Anno/SWE/P
+remi/RP/Esterni/Specifica Tecnica/images/ModificaPresentazioneMobile.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+>] <./images/InserireElemento.pdf, id=1907, 786.94pt x 519.9425pt>
+File: ./images/InserireElemento.pdf Graphic file (type pdf)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+<use ./images/InserireElemento.pdf>
+Package pdftex.def Info: ./images/InserireElemento.pdf used on input line 61.
+(pdftex.def)             Requested size: 314.77042pt x 207.97331pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 66.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [61 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/GestireSfondo.pdf>] <./images/ModificareElemento.pdf, id=1953, 662.
+475pt x 530.98375pt>
+File: ./images/ModificareElemento.pdf Graphic file (type pdf)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.13 	\input{\mvc control}
-                          
-*** (cannot \read from terminal in nonstop modes)
+<use ./images/ModificareElemento.pdf>
+Package pdftex.def Info: ./images/ModificareElemento.pdf used on input line 70.
 
- 
+(pdftex.def)             Requested size: 264.9853pt x 212.38972pt.
+
+<./images/ModificareFrame.pdf, id=1954, 1358.07375pt x 585.18625pt>
+File: ./images/ModificareFrame.pdf Graphic file (type pdf)
+
+<use ./images/ModificareFrame.pdf>
+Package pdftex.def Info: ./images/ModificareFrame.pdf used on input line 79.
+(pdftex.def)             Requested size: 516.0734pt x 222.37308pt.
+
+Overfull \hbox (32.37653pt too wide) in paragraph at lines 79--81
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 84.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [62 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/InserireElemento.pdf> <E:/Docs/Università/Mega Fiup/3° Anno/SWE/P
+remi/RP/Esterni/Specifica Tecnica/images/ModificareElemento.pdf>] <./images/Mod
+ificareSVG.pdf, id=2043, 974.64125pt x 645.41125pt>
+File: ./images/ModificareSVG.pdf Graphic file (type pdf)
+
+<use ./images/ModificareSVG.pdf>
+Package pdftex.def Info: ./images/ModificareSVG.pdf used on input line 88.
+(pdftex.def)             Requested size: 389.8496pt x 258.15993pt.
+
+<./images/ModificareTesto.pdf, id=2044, 1422.31375pt x 467.7475pt>
+File: ./images/ModificareTesto.pdf Graphic file (type pdf)
+
+<use ./images/ModificareTesto.pdf>
+Package pdftex.def Info: ./images/ModificareTesto.pdf used on input line 97.
+(pdftex.def)             Requested size: 497.81728pt x 163.71407pt.
+
+Overfull \hbox (14.1204pt too wide) in paragraph at lines 97--99
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 100.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [63 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/ModificareFrame.pdf> <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Pr
+emi/RP/Esterni/Specifica Tecnica/images/ModificareSVG.pdf>])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 64.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [64 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RP/Esterni/Specifica Tec
+nica/images/ModificareTesto.pdf>]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\stime.tex")
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 66.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [65]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\tracciamento.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\traccCompReq.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+\T1/cmr/m/n/12 7.7.19, RF 7.7.16, RF
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 108--109
+\T1/cmr/m/n/12 RF 7.40.4, RF 7.46, RF
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 127.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [66]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.7.25, RF 7.7.16, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.7.28, RF 7.7.31, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.7.34, RF 7.7.37, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.7.40, RF 7.7.43, RF
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.10, RF 7.16, RF 7.19,
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 132--133
+\T1/cmr/m/n/12 7.19.10, RF 7.19.13, RF
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 132--133
+\T1/cmr/m/n/12 RF 7.40, RF 7.40.1, RF
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 134--135
+\T1/cmr/m/n/12 61.1.10, RF 61.1.13, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+\T1/cmr/m/n/12 61.1.16.4, RF 61.1.16.7,
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 134--135
+\T1/cmr/m/n/12 RF 61.1.16.10, RF 61.4,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+\T1/cmr/m/n/12 7.7.25, RF 7.7.16, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+\T1/cmr/m/n/12 7.7.28, RF 7.7.31, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+\T1/cmr/m/n/12 7.7.34, RF 7.7.37, RF
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 148--149
+\T1/cmr/m/n/12 7.19.10, RF 7.19.13, RF
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 152--153
+\T1/cmr/m/n/12 61.1.10, RF 61.1.13, RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\T1/cmr/m/n/12 61.1.16.4, RF 61.1.16.7,
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 152--153
+\T1/cmr/m/n/12 RF 61.1.16.10, RF 61.4,
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 161.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [67]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 161.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [68]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 161.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[69])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 3.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [70]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\parti\traccReqComp.tex"
+Overfull \hbox (33.34178pt too wide) in paragraph at lines 8--9
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Registrazione,
+ []
+
+
+Overfull \hbox (33.34178pt too wide) in paragraph at lines 10--11
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Registrazione,
+ []
+
+
+Overfull \hbox (33.34178pt too wide) in paragraph at lines 12--13
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Registrazione,
+ []
+
+
+Overfull \hbox (40.94272pt too wide) in paragraph at lines 14--15
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Autenticazione,
+ []
+
+
+Overfull \hbox (40.94272pt too wide) in paragraph at lines 16--17
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Autenticazione,
+ []
+
+
+Overfull \hbox (40.94272pt too wide) in paragraph at lines 18--19
+[]|\T1/cmr/m/n/12 View::Pages::IndexPage, Mo-del::ServerRelations::AccessContro
+l::Autenticazione,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+[]|\T1/cmr/m/n/12 View::Pages::Home, View::Pages::EditDesktop,
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 24--25
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (47.0899pt too wide) in paragraph at lines 24--25
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteFrameInser
+tCommand,
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 26--27
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (47.0899pt too wide) in paragraph at lines 26--27
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteFrameInser
+tCommand,
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 32--33
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (38.4448pt too wide) in paragraph at lines 32--33
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteTextInsert
+Command,
+ []
+
+
+Overfull \hbox (174.18098pt too wide) in paragraph at lines 34--35
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditColorCommand,
+ []
+
+
+Overfull \hbox (30.8744pt too wide) in paragraph at lines 34--35
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteEditFontCo
+mmand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 34--35
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 36--37
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (45.94574pt too wide) in paragraph at lines 36--37
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteImageInser
+tCommand,
+ []
+
+
+Overfull \hbox (166.34956pt too wide) in paragraph at lines 38--39
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditSizeCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 38--39
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 40--41
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (45.94572pt too wide) in paragraph at lines 40--41
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteAudioInser
+tCommand,
+ []
+
+
+Overfull \hbox (43.66158pt too wide) in paragraph at lines 40--41
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteVideoInser
+tCommand,
+ []
+
+
+Overfull \hbox (166.34956pt too wide) in paragraph at lines 42--43
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditSizeCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 42--43
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (187.78596pt too wide) in paragraph at lines 44--45
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditPositionCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 44--45
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (174.18098pt too wide) in paragraph at lines 56--57
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditColorCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 56--57
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (207.29927pt too wide) in paragraph at lines 58--59
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditBackgroundCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 58--59
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (52.7371pt too wide) in paragraph at lines 60--61
+[]|\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditRota
+tionCommand,
+ []
+
+
+Overfull \hbox (109.62868pt too wide) in paragraph at lines 62--63
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Remover,
+ []
+
+
+Overfull \hbox (57.63179pt too wide) in paragraph at lines 62--63
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteFrameRemov
+eCommand,
+ []
+
+
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 64--65
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (72.86832pt too wide) in paragraph at lines 64--65
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteBackground
+InsertCommand| 
+ []
+
+
+Overfull \hbox (174.18098pt too wide) in paragraph at lines 66--67
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditColorCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 66--67
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 87.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [71]
+Overfull \hbox (104.30775pt too wide) in paragraph at lines 88--89
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::InsertEditRemove::Inserter,
+ []
+
+
+Overfull \hbox (39.17378pt too wide) in paragraph at lines 88--89
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteSVGInsertC
+ommand,
+ []
+
+
+Overfull \hbox (174.18098pt too wide) in paragraph at lines 94--95
+[]|\T1/cmr/m/n/12 View::Pages::EditDesktop, Mo-del::SlideShow::SlideShowActions
+::Command::ConcreteEditColorCommand,
+ []
+
+
+Overfull \hbox (87.11761pt too wide) in paragraph at lines 94--95
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Mo-del::SlideShow::SlideShowActions:
+:InsertEditRemove::Editor| 
+ []
+
+
+Overfull \hbox (32.02278pt too wide) in paragraph at lines 96--97
+\T1/cmr/m/n/12 del::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCom
+mand,
+ []
+
+
+Overfull \hbox (56.48763pt too wide) in paragraph at lines 96--97
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteImageRemov
+eCommand,
+ []
+
+
+Overfull \hbox (49.71567pt too wide) in paragraph at lines 96--97
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveC
+ommand,
+ []
+
+
+Overfull \hbox (56.48761pt too wide) in paragraph at lines 96--97
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteAudioRemov
+eCommand,
+ []
+
+
+Overfull \hbox (54.20346pt too wide) in paragraph at lines 96--97
+\T1/cmr/m/n/12 Mo-del::SlideShow::SlideShowActions::Command::ConcreteVideoRemov
+eCommand,
+ []
+
+
+Overfull \hbox (52.7371pt too wide) in paragraph at lines 98--99
+[]|\T1/cmr/m/n/12 Model::SlideShow::SlideShowActions::Command::ConcreteEditRota
+tionCommand,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[]|\T1/cmr/m/n/12 View::Pages::Profile, Pre-sen-ter::ProfilePresenter,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+[]|\T1/cmr/m/n/12 View::Pages::Profile, Pre-sen-ter::ProfilePresenter,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+[]|\T1/cmr/m/n/12 View::Pages::Profile, Pre-sen-ter::ProfilePresenter,
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 127.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [72]
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+[]|\T1/cmr/m/n/12 View::Pages::Home, Pre-sen-ter::HomePresenter,
+ []
+
+
+Overfull \hbox (52.633pt too wide) in paragraph at lines 140--141
+[]|\T1/cmr/m/n/12 Presenter::EditPresenter, Mo-del::SlideShow::SlideShowActions
+::Command::Invoker| 
+ []
+
+
+Overfull \hbox (52.633pt too wide) in paragraph at lines 142--143
+[]|\T1/cmr/m/n/12 Presenter::EditPresenter, Mo-del::SlideShow::SlideShowActions
+::Command::Invoker| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+[]|\T1/cmr/m/n/12 View::Pages::Manifest, View::Pages::Execution, Mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--160
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--184
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Overfull \hbox (17.2874pt too wide) in paragraph at lines 190--191
+[]|\T1/cmr/m/n/12 View::Pages::Home, Mo-del::ServerRelations::AccessControl::Au
+tenticazione,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+\T1/cmr/m/n/12 Pre-sen-ter::EditPresenter, Pre-sen-ter::HomePresenter,
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 207.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [73]
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Overfull \hbox (3.13533pt too wide) in paragraph at lines 226--226
+\T1/cmr/m/n/12 70.10.1.4.10| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Overfull \hbox (3.13533pt too wide) in paragraph at lines 228--228
+\T1/cmr/m/n/12 70.10.1.4.13| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]|\T1/cmr/m/n/12 RF
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
+[]|\T1/cmr/m/n/12 RF
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 247.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [74]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 249.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [75]))
+
+AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 68.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RP\Esterni\Specifica Tecnica
+\SpecificaTecnica_v.1.0.0.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 68.
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 1 ({)
+### simple group (level 1) entered at line 1 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 13703 strings out of 493698
- 198660 string characters out of 3144409
- 361832 words of memory out of 3000000
- 16622 multiletter control sequences out of 15000+200000
+ 14204 strings out of 493921
+ 208451 string characters out of 3147280
+ 374875 words of memory out of 3000000
+ 16972 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 51i,16n,60p,885b,700s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 841 hyphenation exceptions out of 8191
+ 51i,16n,60p,885b,728s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
+t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on SpecificaTecnica_v.1.0.0.pdf (77 pages, 2702604 bytes).
+PDF statistics:
+ 2717 PDF objects out of 2984 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
+ 1105 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,124 @@
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{8}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{8}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{8}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{8}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{8}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{8}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{8}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Strumenti}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}HTML}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}JavaScript}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}jQuery}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}MEAN}{11}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}MongoDB}{11}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Express.js}{11}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}AngularJS}{11}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Node.js}{11}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}Impress.js}{12}{subsection.2.5}
+\contentsline {section}{\numberline {3}Design Pattern e Pattern Architetturali}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}MVP}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Command}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Premi::Model::SlideShow::SlideShowActions::Command}{14}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Observer}{15}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Premi::Model::ServerRelations::dbConsinstency}{15}{subsubsection.3.3.1}
+\contentsline {section}{\numberline {4}Descrizione architetturale}{17}{section.4}
+\contentsline {subsection}{\numberline {4.1}Metodo e formalismi}{17}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architettura generale}{17}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Model}{17}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}View}{17}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Presenter}{17}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Servizi Api nodeAPI}{19}{subsection.4.3}
+\contentsline {section}{\numberline {5}Descrizione dei singoli componenti}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Model}{20}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Model::SlideShow}{20}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Model::SlideShow::SlideShowActions}{21}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Model::SlideShow::SlideShowActions::InsertEditRemove}{21}{subsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.3.1}Editor}{22}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.3.2}Inserter}{23}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.3.3}Remover}{24}{subsubsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Model::SlideShow::SlideShowActions::Command}{25}{subsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.4.1}Invoker}{27}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.4.2}AbstractCommand}{27}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.4.3}ConcreteTextInsertCommand}{29}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.4.4}ConcreteFrameInsertCommand}{29}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.4.5}ConcreteImageInsertCommand}{29}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.4.6}ConcreteSVGInsertCommand}{30}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.4.7}ConcreteAudioInsertCommand}{30}{subsubsubsection.5.1.7}
+\contentsline {subsubsubsection}{\numberline {5.1.4.8}ConcreteVideoInsertCommand}{30}{subsubsubsection.5.1.8}
+\contentsline {subsubsubsection}{\numberline {5.1.4.9}ConcreteBackgroundInsertCommand}{31}{subsubsubsection.5.1.9}
+\contentsline {subsubsubsection}{\numberline {5.1.4.10}ConcreteTextRemoveCommand}{31}{subsubsubsection.5.1.10}
+\contentsline {subsubsubsection}{\numberline {5.1.4.11}ConcreteFrameRemoveCommand}{32}{subsubsubsection.5.1.11}
+\contentsline {subsubsubsection}{\numberline {5.1.4.12}ConcreteImageRemoveCommand}{32}{subsubsubsection.5.1.12}
+\contentsline {subsubsubsection}{\numberline {5.1.4.13}ConcreteSVGRemoveCommand}{32}{subsubsubsection.5.1.13}
+\contentsline {subsubsubsection}{\numberline {5.1.4.14}ConcreteAudioRemoveCommand}{33}{subsubsubsection.5.1.14}
+\contentsline {subsubsubsection}{\numberline {5.1.4.15}ConcreteVideoRemoveCommand}{33}{subsubsubsection.5.1.15}
+\contentsline {subsubsubsection}{\numberline {5.1.4.16}ConcreteBackgroundRemoveCommand}{34}{subsubsubsection.5.1.16}
+\contentsline {subsubsubsection}{\numberline {5.1.4.17}ConcreteEditSizeCommand}{34}{subsubsubsection.5.1.17}
+\contentsline {subsubsubsection}{\numberline {5.1.4.18}ConcreteEditPositionCommand}{34}{subsubsubsection.5.1.18}
+\contentsline {subsubsubsection}{\numberline {5.1.4.19}ConcreteEditColorCommand}{35}{subsubsubsection.5.1.19}
+\contentsline {subsubsubsection}{\numberline {5.1.4.20}ConcreteEditBackgroundCommand}{35}{subsubsubsection.5.1.20}
+\contentsline {subsubsubsection}{\numberline {5.1.4.21}ConcreteEditRotationCommand}{36}{subsubsubsection.5.1.21}
+\contentsline {subsubsubsection}{\numberline {5.1.4.22}ConcreteEditFontCommand}{36}{subsubsubsection.5.1.22}
+\contentsline {subsubsection}{\numberline {5.1.5}Model::SlideShow::SlideShowElements}{36}{subsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.5.1}SlideShowElement}{37}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.5.2}Text}{38}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.5.3}Frame}{39}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.5.4}Image}{39}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.5.5}SVG}{40}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.5.6}Audio}{40}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.5.7}Video}{41}{subsubsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.6}Model::SlideShow::Background}{41}{subsubsection.5.1.6}
+\contentsline {subsubsection}{\numberline {5.1.7}Model::ServerRelations}{42}{subsubsection.5.1.7}
+\contentsline {subsubsection}{\numberline {5.1.8}Model::ServerRelations::Loader}{42}{subsubsection.5.1.8}
+\contentsline {subsubsubsection}{\numberline {5.1.8.1}Costruttore}{44}{subsubsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.9}Model::ServerRelations::AccessControl}{44}{subsubsection.5.1.9}
+\contentsline {subsubsubsection}{\numberline {5.1.9.1}Autenticazione}{44}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.9.2}Registrazione}{44}{subsubsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.10}Model::ServerRelations::DbConsistency}{44}{subsubsection.5.1.10}
+\contentsline {subsubsubsection}{\numberline {5.1.10.1}Observer}{45}{subsubsubsection.5.1.1}
+\contentsline {subsubsubsection}{\numberline {5.1.10.2}ConcreteObserver}{45}{subsubsubsection.5.1.2}
+\contentsline {subsubsubsection}{\numberline {5.1.10.3}Subject}{46}{subsubsubsection.5.1.3}
+\contentsline {subsubsubsection}{\numberline {5.1.10.4}SubjectAudio}{46}{subsubsubsection.5.1.4}
+\contentsline {subsubsubsection}{\numberline {5.1.10.5}SubjectVideo}{46}{subsubsubsection.5.1.5}
+\contentsline {subsubsubsection}{\numberline {5.1.10.6}SubjectText}{46}{subsubsubsection.5.1.6}
+\contentsline {subsubsubsection}{\numberline {5.1.10.7}SubjectFrame}{46}{subsubsubsection.5.1.7}
+\contentsline {subsubsubsection}{\numberline {5.1.10.8}SubjectImg}{47}{subsubsubsection.5.1.8}
+\contentsline {subsubsubsection}{\numberline {5.1.10.9}SubjectSVG}{47}{subsubsubsection.5.1.9}
+\contentsline {subsubsubsection}{\numberline {5.1.10.10}SubjectBackground}{47}{subsubsubsection.5.1.10}
+\contentsline {subsubsection}{\numberline {5.1.11}Model::ApacheRelations}{47}{subsubsection.5.1.11}
+\contentsline {subsubsection}{\numberline {5.1.12}Model::ApacheRelations::ApacheServerManager}{47}{subsubsection.5.1.12}
+\contentsline {subsubsubsection}{\numberline {5.1.12.1}FileManager}{48}{subsubsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.13}Premi::ApacheRelations::Manifest}{48}{subsubsection.5.1.13}
+\contentsline {subsubsubsection}{\numberline {5.1.13.1}GestoreManifest}{48}{subsubsubsection.5.1.1}
+\contentsline {subsection}{\numberline {5.2}Presenter}{49}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Presenter::EditPresenter}{49}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Presenter::HomePresenter}{51}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Presenter::ExecutionPresenter}{51}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Presenter::IndexPresenter}{52}{subsubsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.5}Presenter::ProfilePresenter}{52}{subsubsection.5.2.5}
+\contentsline {subsection}{\numberline {5.3}View}{53}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}View::Pages::IndexPage}{53}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}View::Pages::Home}{53}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}View::Pages::Manifest}{54}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}View::Pages::Profile}{54}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}View::Pages::Execution}{55}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}View::Pages::Edit}{55}{subsubsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.7}View::Pages::EditDesktop}{55}{subsubsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.8}View::Pages::EditMobile}{57}{subsubsection.5.3.8}
+\contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{58}{section.6}
+\contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{58}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{58}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Caricare File}{59}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Modificare Presentazione da Desktop}{60}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Modificare Presentazione da Mobile}{60}{subsubsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.5}Gestire Sfondo}{61}{subsubsection.6.1.5}
+\contentsline {subsubsection}{\numberline {6.1.6}Inserire Elemento}{61}{subsubsection.6.1.6}
+\contentsline {subsubsection}{\numberline {6.1.7}Modificare Elemento}{62}{subsubsection.6.1.7}
+\contentsline {subsubsection}{\numberline {6.1.8}Modificare Frame}{62}{subsubsection.6.1.8}
+\contentsline {subsubsection}{\numberline {6.1.9}Modificare SVG}{63}{subsubsection.6.1.9}
+\contentsline {subsubsection}{\numberline {6.1.10}Modificare Testo}{64}{subsubsection.6.1.10}
+\contentsline {section}{\numberline {7}Stime di fattibilit\IeC {\`a} e di bisogno di risorse}{65}{section.7}
+\contentsline {section}{\numberline {8}Tracciamento dei Componenti coi Requisiti}{66}{section.8}
+\contentsline {subsection}{\numberline {8.1}Tracciamento Componenti-Requisiti}{66}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Tracciamento Requisiti-Componenti}{71}{subsection.8.2}
