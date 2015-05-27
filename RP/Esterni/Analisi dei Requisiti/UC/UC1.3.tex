@@ -23,6 +23,8 @@
 		\item L'utente può definire i tempi di permanenza sui frame \S\hyperref[uc1.3.9]{(UC 1.3.9)};
 		\item L'utente può inserire un elemento SVG \S\hyperref[uc1.3.10]{(UC 1.3.10)};
 		\item L'utente può modifica un elemento SVG \S\hyperref[uc1.3.11]{(UC 1.3.11)};
+		\item L'utente può eliminare un elemento \S\hyperref[uc1.3.12]{(UC 1.3.12)};
+		\item L'utente può modificare la rotazione di un elemento \S\hyperref[uc1.3.13]{(UC 1.3.13)};
 	\end{enumerate}
 	\textbf{Scenari alternativi}: 
 	\begin{itemize}
@@ -106,7 +108,7 @@
 		\item Modifica di un elemento immagine \S\hyperref[uc1.3.3.5]{(UC 1.3.3.5)};
 		\item Modifica di un elemento video \S\hyperref[uc1.3.3.6]{(UC 1.3.3.6)};
 		\item Spostamento di un elemento \S\hyperref[uc1.3.3.7]{(UC 1.3.3.7)};
-		\item Eliminazione di un elemento \S\hyperref[uc1.3.3.8]{(UC 1.3.3.8)};
+		\item Modifica rotazione di un frame \S\hyperref[uc1.3.3.8]{(UC 1.3.3.8)};
 		\item Inserimento di un elemento scelta \S\hyperref[uc1.3.3.9]{(UC 1.3.3.9)};
 		\item Modifica di un elemento scelta \S\hyperref[uc1.3.3.10]{(UC 1.3.3.10)};
 		\item Modifica della dimensione del frame \S\hyperref[uc1.3.3.11]{(UC 1.3.3.11)};
@@ -200,16 +202,16 @@
 		\item L'utente desktop trascina l'elemento selezionato all'interno del frame.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.3.3.8 - Eliminazione di un elemento}{
+\subsubsection{UC 1.3.3.8 - Modifica rotazione di un frame}{
 	\label{uc1.3.3.8}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop elimina un elemento qualsiasi all'interno del frame. \\
-	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera eliminare un elemento.	\\
-	\textbf{Postcondizione}: l'utente desktop ha eliminato un elemento.	\\
+	\textbf{Descrizione}: l'utente desktop modifica la rotazione di un frame. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera modificare la rotazione di un frame.	\\
+	\textbf{Postcondizione}: il frame ha cambiato la propria rotazione.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente desktop seleziona un elemento;
-		\item L'utente desktop elimina l'elemento selezionato.
+		\item L'utente destop seleziona un frame;
+		\item L'utente desktop ne modifica la rotazione.
 	\end{enumerate}
 	}
 \subsubsection{UC 1.3.3.9 - Inserimento di un elemento scelta}{
@@ -687,15 +689,27 @@
 		\item L'utente desktop modifica il colore con quello desiderato.
 	\end{enumerate}
 	}
-\subsubsection{UC 1.3.12 - Eliminazione di un elemento SVG}{
-	\label{uc1.3.12}
+\subsubsection{UC 1.3.12 - Eliminazione di un elemento}{
+		\label{uc1.3.12}
+		\textbf{Attori}: utente desktop \\
+		\textbf{Descrizione}: l'utente desktop elimina un elemento qualsiasi dal piano della presentazione. \\
+		\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera eliminare un elemento.	\\
+		\textbf{Postcondizione}: l'utente desktop ha eliminato un elemento.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente desktop seleziona un elemento;
+			\item L'utente desktop elimina l'elemento selezionato.
+		\end{enumerate}
+		}
+\subsubsection{UC 1.3.13 - Modifica rotazione di un elemento}{
+	\label{uc1.3.13}
 	\textbf{Attori}: utente desktop \\
-	\textbf{Descrizione}: l'utente desktop elimina un elemento SVG dalla presentazione. \\
-	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera eliminare un elemento SVG.	\\
-	\textbf{Postcondizione}: l'utente desktop ha eliminato un elemento SVG.	\\
+	\textbf{Descrizione}: l'utente desktop modifica la rotazione di un elemento. \\
+	\textbf{Precondizione}: il sistema ha una presentazione aperta in modalità modifica e l'utente desidera modificare la rotazione di un elemento.	\\
+	\textbf{Postcondizione}: l'utente desktop ha cambiato la rotazione di un elemento.	\\
 	\textbf{Scenario principale}:
 	\begin{enumerate}
-		\item L'utente desktop seleziona un elemento SVG;
-		\item L'utente desktop elimina l'elemento SVG selezionato.
+		\item L'utente destop seleziona un elemento;
+		\item L'utente desktop ne modifica la rotazione.
 	\end{enumerate}
 	}
