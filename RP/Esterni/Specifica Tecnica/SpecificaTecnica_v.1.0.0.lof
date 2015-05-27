@@ -1,18 +1,23 @@
 \select@language {italian}
-\select@language {italian}
 \contentsline {figure}{\numberline {1}{\ignorespaces Model View Presenter\relax }}{13}{figure.caption.3}
 \contentsline {figure}{\numberline {2}{\ignorespaces Command\relax }}{13}{figure.caption.4}
 \contentsline {figure}{\numberline {3}{\ignorespaces Observer\relax }}{15}{figure.caption.5}
-\contentsline {figure}{\numberline {4}{\ignorespaces Architettura generale del sistema\relax }}{17}{figure.caption.6}
-\contentsline {figure}{\numberline {5}{\ignorespaces View\relax }}{46}{figure.caption.7}
-\contentsline {figure}{\numberline {6}{\ignorespaces Attivit\IeC {\`a} Principali\relax }}{51}{figure.caption.8}
-\contentsline {figure}{\numberline {7}{\ignorespaces Gestione Presentazioni\relax }}{52}{figure.caption.9}
-\contentsline {figure}{\numberline {8}{\ignorespaces Caricare File\relax }}{52}{figure.caption.10}
-\contentsline {figure}{\numberline {9}{\ignorespaces Modificare Presentazione da Desktop\relax }}{53}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces Modificare Presentazione da Mobile\relax }}{53}{figure.caption.12}
-\contentsline {figure}{\numberline {11}{\ignorespaces Gestire Sfondo\relax }}{54}{figure.caption.13}
-\contentsline {figure}{\numberline {12}{\ignorespaces Inserire Elemento\relax }}{55}{figure.caption.14}
-\contentsline {figure}{\numberline {13}{\ignorespaces Modificare Elemento\relax }}{55}{figure.caption.15}
-\contentsline {figure}{\numberline {14}{\ignorespaces Modificare Frame\relax }}{56}{figure.caption.16}
-\contentsline {figure}{\numberline {15}{\ignorespaces Modificare SVG\relax }}{56}{figure.caption.17}
-\contentsline {figure}{\numberline {16}{\ignorespaces Modificare Testo\relax }}{57}{figure.caption.18}
+\contentsline {figure}{\numberline {4}{\ignorespaces Architettura generale del sistema\relax }}{18}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Model\relax }}{19}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces InsertEditRemove\relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Command Package\relax }}{25}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces SlideShowElements\relax }}{36}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces ServerRelations\relax }}{41}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces ServerRelationsLoader\relax }}{42}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces DbConsistency\relax }}{44}{figure.caption.13}
+\contentsline {figure}{\numberline {12}{\ignorespaces Attivit\IeC {\`a} Principali\relax }}{57}{figure.caption.14}
+\contentsline {figure}{\numberline {13}{\ignorespaces Gestione Presentazioni\relax }}{58}{figure.caption.15}
+\contentsline {figure}{\numberline {14}{\ignorespaces Caricare File\relax }}{58}{figure.caption.16}
+\contentsline {figure}{\numberline {15}{\ignorespaces Modificare Presentazione da Desktop\relax }}{59}{figure.caption.17}
+\contentsline {figure}{\numberline {16}{\ignorespaces Modificare Presentazione da Mobile\relax }}{59}{figure.caption.18}
+\contentsline {figure}{\numberline {17}{\ignorespaces Gestire Sfondo\relax }}{60}{figure.caption.19}
+\contentsline {figure}{\numberline {18}{\ignorespaces Inserire Elemento\relax }}{61}{figure.caption.20}
+\contentsline {figure}{\numberline {19}{\ignorespaces Modificare Elemento\relax }}{61}{figure.caption.21}
+\contentsline {figure}{\numberline {20}{\ignorespaces Modificare Frame\relax }}{62}{figure.caption.22}
+\contentsline {figure}{\numberline {21}{\ignorespaces Modificare SVG\relax }}{62}{figure.caption.23}
+\contentsline {figure}{\numberline {22}{\ignorespaces Modificare Testo\relax }}{63}{figure.caption.24}

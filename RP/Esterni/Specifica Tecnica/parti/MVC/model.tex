@@ -9,20 +9,21 @@
 	\textbf{\relaz}: è in relazione con il package Presenter e con NodeAPI.\\
 	\textbf{Package contenuti}: 
 	\begin{itemize}
-	\item Premi::Model::SlideShow;
-    \item Premi::Model::ServerRelations;
+	\item Model::SlideShow;
+    \item Model::ServerRelations;
 	\end{itemize}
 }
-\subsection{Premi::Model::SlideShow}{
+\subsubsection{Model::SlideShow}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Premi::Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+        \textbf{\relaz}: il package è in relazione con Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
-\subsection{Premi::Model::SlideShow::SlideShowActions}{
+\subsubsection{Model::SlideShow::SlideShowActions}{
 		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Premi::Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+        \textbf{\relaz}: il package è in relazione con Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
     
-	\subsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove}{
+	\subsubsection{Model::SlideShow::SlideShowActions::InsertEditRemove}{
+		Tutti i componenti seguenti appartengono al package InsertEditRemove, quindi lo scope sarà Model::SlideShow::SlideShowActions::InsertEditRemove::<componente>.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.6]{\imgs {inserteditremove}.pdf}
@@ -30,83 +31,84 @@
 			\caption{InsertEditRemove}
 		\end{figure}
 		\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
-		\textbf{\relaz}:il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.//
-        Inoltre Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Premi::Model::SlideShow::SlideShowElements.
+		\textbf{\relaz}:il package è in relazione con Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.//
+        Inoltre Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Model::SlideShow::SlideShowElements.
     }
-		\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor}{
+		\subsubsubsection{Editor}{
 			\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
 			\textbf{\relaz}:
 			\begin{itemize}
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da Editor;
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da Editor;
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da Editor;
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da Editor;
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da Editor;
-				\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da Remover;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da Editor;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da Editor;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da Editor;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da Editor;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da Editor;
+				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da Remover;
 				
-				\item Premi::Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-				\item Premi::Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-				\item Premi::Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-				\item Premi::Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-				\item Premi::Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-				\item Premi::Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-				\item Premi::Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+				\item Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
+				\item Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+				\item Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+				\item Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+				\item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+				\item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+				\item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
 			\end{itemize} 
 			\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 		}
-	\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter}{
+	\subsubsubsection{Inserter}{
 		\textbf{\tipo}: Classe statica che offre dei metodi per l’inserimento di elementi all’interno di una presentazione.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da Inserter;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da Inserter;
-            \item Premi::Model::SlideShow::SlideShowElements::Text <- Inserter costruisce gli oggetti di classe Text;
-            \item Premi::Model::SlideShow::SlideShowElements::Frame <- Inserter costruisce gli oggetti di classe Frame;
-            \item Premi::Model::SlideShow::SlideShowElements::Image <- Inserter costruisce gli oggetti di classe Image;
-            \item Premi::Model::SlideShow::SlideShowElements::SVG <- Inserter costruisce gli oggetti di classe SVG;
-            \item Premi::Model::SlideShow::SlideShowElements::Audio <- Inserter costruisce gli oggetti di classe Audio;
-            \item Premi::Model::SlideShow::SlideShowElements::Video <- Inserter costruisce gli oggetti di classe Video;
-            \item Premi::Model::SlideShow::SlideShowElements::Background <- Inserter costruisce gli oggetti di classe Background;
-            \item Premi::Model::ServerRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da Inserter;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da Inserter;
+            \item Model::SlideShow::SlideShowElements::Text <- Inserter costruisce gli oggetti di classe Text;
+            \item Model::SlideShow::SlideShowElements::Frame <- Inserter costruisce gli oggetti di classe Frame;
+            \item Model::SlideShow::SlideShowElements::Image <- Inserter costruisce gli oggetti di classe Image;
+            \item Model::SlideShow::SlideShowElements::SVG <- Inserter costruisce gli oggetti di classe SVG;
+            \item Model::SlideShow::SlideShowElements::Audio <- Inserter costruisce gli oggetti di classe Audio;
+            \item Model::SlideShow::SlideShowElements::Video <- Inserter costruisce gli oggetti di classe Video;
+            \item Model::SlideShow::SlideShowElements::Background <- Inserter costruisce gli oggetti di classe Background;
+            \item Model::ServerRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
 		\end{itemize} 
 		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 	}
 	
-	\subsubsection{Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover}{
+	\subsubsubsection{Remover}{
 		\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da Remover;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand -> invoca il metodo removeBackground() messo a disposizione da Remover;
-           \item Premi::Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-           \item Premi::Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-           \item Premi::Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-           \item Premi::Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-           \item Premi::Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-           \item Premi::Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-           \item Premi::Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
-           \item Premi::Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-           \item Premi::Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-           \item Premi::Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-           \item Premi::Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-           \item Premi::Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-           \item Premi::Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-           \item Premi::Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da Remover;
+			\item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand -> invoca il metodo removeBackground() messo a disposizione da Remover;
+           \item Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
+           \item Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+           \item Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+           \item Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+           \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+           \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+           \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+           \item Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
+           \item Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+           \item Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+           \item Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+           \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+           \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+           \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
 		\end{itemize} 
 		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 	}	
 	}
-   \subsection{Premi::Model::SlideShow::SlideShowActions::Command}{
+   \subsubsection{Model::SlideShow::SlideShowActions::Command}{
+   		Tutti i componenti seguenti appartengono al package Command, quindi lo scope sarà Model::SlideShow::SlideShowActions::Command::<componente>.
 	   	\begin{figure}[H]
 	   		\centering
 	   		\includegraphics[scale=0.6]{\imgs {CommandPackage}.pdf}
@@ -114,453 +116,450 @@
 	   		\caption{Command Package}
 	   	\end{figure}
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
-		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Premi::Model::SlideShow::SlideShowActions::Insert, Premi::Model::Remove e Premi::Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Premi::Presenter::SlideShow::EditPresenter.\\
-	\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::Invoker}{
+		\textbf{\relaz}:. All’interno del Model, il package è in relazione con Model::SlideShow::SlideShowActions::Insert, Model::Remove e Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
+	\subsubsubsection{Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Premi::Presenter::MobileEdit->crea un oggetto di una sottoclasse di Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
+			\item Presenter::MobileEdit->crea un oggetto di una sottoclasse di Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
 			Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”;
-			\item Premi::Presenter::DesktopEdit->si comporta in modo analogo a MobileEdit;
-			\item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand <- Invoker invoca il metodo execute() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undo().
+			\item Presenter::DesktopEdit->si comporta in modo analogo a MobileEdit;
+			\item Model::SlideShow::SlideShowActions::Command::AbstractCommand <- Invoker invoca il metodo execute() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undo().
 		\end{itemize} 
-		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Premi::Model::SlideShow::SlideShowActions::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
+		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Model::SlideShow::SlideShowActions::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
 	}
-	\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand}{
+	\subsubsubsection{AbstractCommand}{
 				\textbf{\tipo}: È interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-                    \item Premi::Model::Invoker -> esegue materialmente il comando, richiamandone i metodi di esecuzione; inoltre provvede ad annullare l’ultima operazione 
+                    \item Model::Invoker -> esegue materialmente il comando, richiamandone i metodi di esecuzione; inoltre provvede ad annullare l’ultima operazione 
 				\end{itemize}	
                 \textbf{\interfacce}:Viene utilizzata per applicare un generico parametro di trasformazione ad un oggetto della presentazione, questo parametro verrà poi specificato dalle classi concrete.\\
                 \textbf{\figli}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand;
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditContentCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand;
+                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditContentCommand.
                     \end{itemize}
                     }
-    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand}{
+    \subsubsubsection{ConcreteTextInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento testuale nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertText() della classe statica per l’inserimento di un elemento.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertText() della classe statica per l’inserimento di un elemento.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand}{
+                    \subsubsubsection{ConcreteFrameInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento frame nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertFrame() della classe statica per l’inserimento di un elemento frame nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertFrame() della classe statica per l’inserimento di un elemento frame nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand}{
+                    \subsubsubsection{ConcreteImageInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento immagine nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertImage() della classe statica per l’inserimento di un elemento immagine nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertImage() della classe statica per l’inserimento di un elemento immagine nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand}{
+                    \subsubsubsection{ConcreteSVGInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento SVG nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertSVG() della classe statica per l’inserimento di un elemento SVG nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertSVG() della classe statica per l’inserimento di un elemento SVG nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand}{
+                \subsubsubsection{ConcreteAudioInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento audio nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertAudio() della classe statica per l’inserimento di un elemento audio nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertAudio() della classe statica per l’inserimento di un elemento audio nella presentazione.
 				\end{itemize}	
                 \textbf{\interfacce}: Viene utilizzata per gestire le richieste di inserimento di un nuovo elemento Audio.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand}{
+                \subsubsubsection{ConcreteVideoInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento video nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertVideo() della classe statica per l’inserimento di un elemento video nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertVideo() della classe statica per l’inserimento di un elemento video nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand}{
+                \subsubsubsection{ConcreteBackgroundInsertCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo elemento video nella presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertBackground() della classe statica per l’inserimento di un elemento sfondo nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertBackground() della classe statica per l’inserimento di un elemento sfondo nella presentazione.
 				\end{itemize}
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }        
-     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand}{
+     \subsubsubsection{ConcreteTextRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeText() della classe statica per la rimozione di un elemento testuale nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeText() della classe statica per la rimozione di un elemento testuale nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-        \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand}{
+        \subsubsubsection{ConcreteFrameRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento frame dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeFrame() della classe statica per la rimozione di un elemento frame dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeFrame() della classe statica per la rimozione di un elemento frame dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }                   
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand}{
+                    \subsubsubsection{ConcreteImageRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento immagine dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeImage() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeImage() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }               
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand}{
+                    \subsubsubsection{ConcreteSVGRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento SVG dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeSVG() della classe statica per l’eliminazione di un elemento SVG dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeSVG() della classe statica per l’eliminazione di un elemento SVG dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand}{
+                    \subsubsubsection{ConcreteAudioRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento audio dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeAudio() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeAudio() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand}{
+                    \subsubsubsection{ConcreteVideoRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un elemento video dalla presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeVideo() della classe statica per l’eliminazione di un elemento video dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeVideo() della classe statica per l’eliminazione di un elemento video dalla presentazione.
 				\end{itemize}
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand}{
+                    \subsubsubsection{ConcreteBackgroundRemoveCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per rimuovere lo sfondo della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeBackground() della classe statica per l’eliminazione dell'elemento sfondo dalla presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeBackground() della classe statica per l’eliminazione dell'elemento sfondo dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                        \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand}{
+                        \subsubsubsection{ConcreteEditSizeCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare le dimensioni di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editSize() della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editSize() della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand}{
+                    \subsubsubsection{ConcreteEditPositionCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare la posizione di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editPosition() della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editPosition() della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand}{
+                    \subsubsubsection{ConcreteEditColorCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare il colore di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand}{
+                     \subsubsubsection{ConcreteEditBackgroundCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare lo sfondo di un elemento frame della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editBackground() della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editBackground() della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                     \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand}{
+                     \subsubsubsection{ConcreteEditRotationCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare l'orientamento di un elemento della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editRotation() della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editRotation() della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione.
 				\end{itemize}	
-<<<<<<< e88e6bcbe29175cd959243ec0f79391e3cae0b11
-                \textbf{\interfacce}: Viene utilizzata per gestire i Signal riguardanti la modifica dell'orientamento di un elemento;\\
-=======
->>>>>>> 5d4b765697ecf4c596dcad1eb3d4f52bf617fc3d
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand}{
+                    \subsubsubsection{ConcreteEditFontCommand}{
 				\textbf{\tipo}: È classe concreta del Design Pattern Command, rappresenta un comando per modificare il carattere di un elemento testuale della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Premi::Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione.
+					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand.
+                    \item Model::SlideShow::SlideShowActions::Command::AbstractCommand.
                     \end{itemize}
                     }
                     }
-                     \subsubsection{Premi::Model::SlideShow::SlideShowElements}{
-                     		\begin{figure}[H]
-                     			\centering
-                     			\includegraphics[scale=0.6]{\imgs {slideshowelements}.pdf}
-                     			\label{fig:sse}
-                     			\caption{SlideShowElements}
-                     		\end{figure}
+     \subsubsection{Model::SlideShow::SlideShowElements}{
+     	Tutti i componenti seguenti appartengono al package SlideShowElements, quindi lo scope sarà Model::SlideShow::SlideShowElements::<componente>.
+               	\begin{figure}[H]
+           			\centering
+          			\includegraphics[scale=0.6]{\imgs {slideshowelements}.pdf}
+         			\label{fig:sse}
+    				\caption{SlideShowElements}
+               	\end{figure}
 		\textbf{\tipo}:Di questo package fanno parte le classi degli elementi della presentazione e la classe che definisce la presentazione stessa. Sì tratta del package centrale del software.\\
-		\textbf{\relaz}:.Premi::Model::SlideShow::SlideShowElements è in comunicazione con 
+		\textbf{\relaz}:.Model::SlideShow::SlideShowElements è in comunicazione con 
         \begin{itemize}
-        \item Premi::Model::SlideShow::SlideShowActions::Insert, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
-        \item Premi::Model::Remove, i cui oggetti rimuovono da Premi::ServerRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
-        \item Premi::Model::SlideShow::SlideShowActions::EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
+        \item Model::SlideShow::SlideShowActions::Insert, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
+        \item Model::Remove, i cui oggetti rimuovono da ServerRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
+        \item Model::SlideShow::SlideShowActions::EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
   		\end{itemize}
 
-    \subsubsection{Premi::Model::SlideShow::SlideShowElements::SlideShowElement}{
+    \subsubsubsection{SlideShowElement}{
 				\textbf{\tipo}: Gli oggetti della classe SlideShowElement rappresentano gli elementi della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::Insert::Inserter-> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nei campi dati contenitori all’interno di Premi::Model::SlideShow::SlideShow;
-                    \item Premi::Model::SlideShow::SlideShowActions::EditElements:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
-                    \item Premi::Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
+					\item Model::SlideShow::SlideShowActions::Insert::Inserter-> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nei campi dati contenitori all’interno di Model::SlideShow::SlideShow;
+                    \item Model::SlideShow::SlideShowActions::EditElements:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
+                    \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
 				\end{itemize}	
-                \textbf{\interfacce}: Premi::Model::SlideShow::SlideShowActions::Insert::Inserter instanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Model:Costruttore\\
+                \textbf{\interfacce}: Model::SlideShow::SlideShowActions::Insert::Inserter instanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Model:Costruttore\\
                 \textbf{\figli}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::Text;
-                    \item Premi::Model::SlideShow::Frame;
-                    \item Premi::Model::SlideShow::Image;
-                    \item Premi::Model::SlideShow::SVG;
-                    \item Premi::Model::SlideShow::Audio;
-                    \item Premi::Model::SlideShow::Video;
-                    \item Premi::Model::SlideShow::Background.
+                    \item Model::SlideShow::Text;
+                    \item Model::SlideShow::Frame;
+                    \item Model::SlideShow::Image;
+                    \item Model::SlideShow::SVG;
+                    \item Model::SlideShow::Audio;
+                    \item Model::SlideShow::Video;
+                    \item Model::SlideShow::Background.
                     \end{itemize}
                     }
-     \subsubsection{Premi::Model::SlideShow::SlideShowElements::Text}{
+     \subsubsubsection{Text}{
 				\textbf{\tipo}: Gli oggetti della classe Text rappresentano gli elementi di tipo testuale della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Premi::Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-           \subsubsection{Premi::Model::SlideShow::SlideShowElements::Frame}{
+           \subsubsubsection{Frame}{
 				\textbf{\tipo}: Gli oggetti della classe Frame rappresentano gli elementi di tipo frame della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Image}{
+                    \subsubsubsection{Image}{
 				\textbf{\tipo}: Gli oggetti della classe Image rappresentano gli elementi di tipo immagine della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::SVG}{
+                    \subsubsubsection{SVG}{
 				\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi di tipo SVG della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Audio}{
+                    \subsubsubsection{Audio}{
 				\textbf{\tipo}: Gli oggetti della classe Audio rappresentano gli elementi di tipo audio della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}:  
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElements::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElements::SlideShowElement.
                     \end{itemize}
                     }
-                    \subsubsection{Premi::Model::SlideShow::SlideShowElements::Video}{
+                    \subsubsubsection{Video}{
 				\textbf{\tipo}: Gli oggetti della classe Video rappresentano gli elementi di tipo video della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                     \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                 \textbf{\base}: 
                     \begin{itemize}
-                    \item Premi::Model::SlideShow::SlideShowElements::SlideShowElement.
+                    \item Model::SlideShow::SlideShowElements::SlideShowElement.
                     \end{itemize}
                     }     
-                 \subsubsection{Premi::Model::SlideShow::Background}{
+                 \subsubsection{Model::SlideShow::Background}{
                 				\textbf{\tipo}: Gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
                 				\textbf{\relaz}: 
                 				\begin{itemize}
-                					\item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Premi::Model::ServerRelations::Loader::Caricatore;
-                                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
-                                    \item Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+                					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
+                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
                 				\end{itemize}	
-                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Premi::Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Premi::Model::ServerRelations::Loader::Costruttore.\\
+                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
                                 \textbf{\base}: 
                                     \begin{itemize}
-                                    \item Premi::Model::SlideShow::SlideShowElements::SlideShowElement.
+                                    \item Model::SlideShow::SlideShowElements::SlideShowElement.
                                     \end{itemize}
                                     }              
 }
 
 
-\subsection{Premi::Model::ServerRelations}{
+\subsubsection{Model::ServerRelations}{
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{\imgs {ServerRelations}.pdf}
@@ -571,7 +570,8 @@
 		\textbf{\relaz}: i componenti del package serverRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’e’ dipenda tra il package serverRelations ed altri package del model.\\
 }
 
-\subsection{Premi::Model::ServerRelations::Loader}{
+\subsubsection{Model::ServerRelations::Loader}{
+	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà Model::ServerRelations::Loader::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{\imgs {serverrelationsloader}.pdf}
@@ -581,7 +581,7 @@
 		\textbf{\tipo}: il package racchiude le funzioni di recupero di una presentazione dal server attraversi i servizi nodeApi e traduzione della presentazione in elementi html che compongono la view della presentazione recuperata.\\
 		\textbf{\relaz}: relazione di dipendenza con l’interfaccia dei servizi nodeApi per il recupero della presentazione.\\
 
-\subsubsection{Premi::Model::ServerRelations::Loader::Costruttore}{
+\subsubsubsection{Costruttore}{
 				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto o creare una nuova presentazione,  caricare la presentazione in formato html così da poter essere modificata o eseguita dall’utente.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -590,28 +590,30 @@
                     }
 }
 
-\subsection{Premi::Model::ServerRelations::AccessControl}{
+\subsubsection{Model::ServerRelations::AccessControl}{
+	Tutti i componenti seguenti appartengono al package AccessControl, quindi lo scope sarà Model::ServerRelations::AccessControl::<componente>.
 		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
 		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
-        \subsubsection{Premi::Model::ServerRelations::AccessControll::Autenticazione}{
+        \subsubsubsection{Autenticazione}{
 				\textbf{\tipo}: Classe che fornisce funzionalità di autenticazione e deautenticazione ai servizi offerti da nodeApi attraverso passaggio di token.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
-                    \item Premi::Presenter::Pagine::IndexPresenter -> invoca i metodi di Autenticazione per permettere all'utente di effettuare il login.
+                    \item Presenter::Pagine::IndexPresenter -> invoca i metodi di Autenticazione per permettere all'utente di effettuare il login.
 				\end{itemize}	
                     }
-        \subsubsection{Premi::Model::ServerRelations::AccessControll::Registrazione}{
+        \subsubsubsection{Registrazione}{
 				\textbf{\tipo}: Classe, fornisce funzionalità di registrazione all’utente.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
-                    \item Premi::Presenter::Pagine::IndexPresenter -> invoca i metodi di Registrazione per permettere all'utente di registrarsi al servizio.
+                    \item Presenter::Pagine::IndexPresenter -> invoca i metodi di Registrazione per permettere all'utente di registrarsi al servizio.
 				\end{itemize}	
             }
 }
 
-\subsection{Premi::Model::ServerRelations::DbConsistency}{
+\subsubsection{Model::ServerRelations::DbConsistency}{
+	Tutti i componenti seguenti appartengono al package DbConsistency, quindi lo scope sarà Model::ServerRelations::DbConsistency::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{\imgs {ClassDiagram1}.pdf}
@@ -621,7 +623,7 @@
 		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern observer e chiamate asincrone ai servizi di nodeApi\\
 		\textbf{\relaz}:dipendenza con il package nodeApi; dipendenza nei confronti di altri package in Model per il recupero dello stato degli elementi della presentazione.\\
        
-       \subsubsection{Premi::Model::ServerRelations::DbConsistency::Observer}{
+       \subsubsubsection{Observer}{
 				\textbf{\tipo}: Interfaccia, espone il metodo update(), utile per l’implementazione del design pattern “Observer”.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -630,7 +632,7 @@
             }
             
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::ConcreteObserver}{
+            \subsubsubsection{ConcreteObserver}{
 				\textbf{\tipo}: Classe, concretizza l’interfaccia Observer, utile ad implementare il pattern “Observer”.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -638,7 +640,7 @@
 				\end{itemize}	
             }
             
-             \subsubsection{Premi::Model::ServerRelations::DbConsistency::Subject}{
+             \subsubsubsection{Subject}{
 				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per implementare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -646,106 +648,100 @@
 				\end{itemize}	
             }
             
-             \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{
+             \subsubsubsection{SubjectAudio}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectAudio}{
+            \subsubsubsection{SubjectVideo}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectVideo}{
+            \subsubsubsection{SubjectText}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectText}{
+            \subsubsubsection{SubjectFrame}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectFrame}{
+            \subsubsubsection{SubjectImg}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectImg}{
+            \subsubsubsection{SubjectSVG}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
 				\end{itemize}	
             }
             
-            \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectSVG}{
+             \subsubsubsection{SubjectBackground}{
 				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-             \subsubsection{Premi::Model::ServerRelations::DbConsistency::SubjectBackground}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione con la classe Premi::Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
 				\end{itemize}	
             }
 
 }
 
-\subsubsection{Premi::Model::ApacheRelations}{
+\subsubsection{Model::ApacheRelations}{
 		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
 		\begin{itemize}
-			\item Il package comunica con la view ricevendo chiamate da Premi::View::Pages::Profile.
+			\item Il package comunica con la view ricevendo chiamate da View::Pages::Profile.
 			\item I componenti del package ApacheRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’è dipenda tra il package ApacheRelations ed il package ServerRelations.\\
 		\end{itemize}
 
-\subsubsection{Premi::Model::ApacheRelations::ApacheServerManager}{
+\subsubsection{Model::ApacheRelations::ApacheServerManager}{
+	Il componente seguente appartiene al package ApacheServerManager, quindi lo scope sarà Model::ApacheRelations::ApacheServerManager::<componente>.
 		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache per le operazioni di modifica dei files.\\
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Il package comunica con la view ricevendo chiamate da Premi::View::Pages::Profile.
+			\item Il package comunica con la view ricevendo chiamate da View::Pages::Profile.
 		\end{itemize}
 
-			\subsubsection{Premi::Model::ApacheRelations::::ApacheServerManager::FileManager}{
-			\textbf{\tipo}: Lo scopo di questa classe è di gestire le chiamate della pagina Premi::View::Pages::Profile per l'inserimento, cancellazione e rinominazione di file sul server Apache.\\
+			\subsubsubsection{FileManager}{
+			\textbf{\tipo}: Lo scopo di questa classe è di gestire le chiamate della pagina View::Pages::Profile per l'inserimento, cancellazione e rinominazione di file sul server Apache.\\
 			\textbf{\relaz}:
 			\begin{itemize}
-			 	\item Premi::View::Pages::Profile:UploadMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i parametri del file da caricare; 
-			 	\item Premi::View::Pages::Profile::DeleteMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i e l'id del file media da eliminare;
-			 	\item Premi::View::Pages::Profile::RenameMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente, l'id e il nuovo nome del file media da rinominare; 
-			 	\item Premi::Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
-			 	\item Premi::Presenter::EditPresenter <- ApacheManager passa lo username dell'utente che sta svolgendo operazioni sul file, il file ed il tipo del file al server Apache; questo se l'operazione è andata a buon fine, ritorna un segnale ad ApacheManager, che lo trasmette ad EditController.
+			 	\item View::Pages::Profile:UploadMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i parametri del file da caricare; 
+			 	\item View::Pages::Profile::DeleteMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i e l'id del file media da eliminare;
+			 	\item View::Pages::Profile::RenameMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente, l'id e il nuovo nome del file media da rinominare; 
+			 	\item Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
+			 	\item Presenter::EditPresenter <- ApacheManager passa lo username dell'utente che sta svolgendo operazioni sul file, il file ed il tipo del file al server Apache; questo se l'operazione è andata a buon fine, ritorna un segnale ad ApacheManager, che lo trasmette ad EditController.
 			\end{itemize}
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
-			
-			\subsection{Premi::ApacheRelations::Manifest}{
-			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader. \\
+			}
+			\subsubsection{Model::ApacheRelations::Manifest}{
+				Il seguente componente appartiene al package Manifest, quindi lo scope sarà Model::ApacheRelations::Manifest::<componente>.
+			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Model::ServerRelation::Loader. \\
 			   	\textbf{\relaz}:
 			   	\begin{itemize}
 			   		\item definisce il metodo GestoreManifest(); relazione di dipendenza 
 			   	\end{itemize}
 			
-				\subsubsection{Premi::Model::Manifest::GestoreManifest}{
+				\subsubsubsection{GestoreManifest}{
 					\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
 					\textbf{\relaz}:
 					\begin{itemize}
