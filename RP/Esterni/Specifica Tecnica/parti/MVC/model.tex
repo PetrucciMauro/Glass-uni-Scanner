@@ -753,4 +753,24 @@
 	}
 }
 
+\subsubsection{Premi::Model::ApacheRelations::ApacheServerManager}{
+		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Il package comunica con la view ricevendo chiamate da Premi::View::Pages::Profile.
+		\end{itemize}
+
+			\subsubsection{Premi::Model::ApacheRelations::::ApacheServerManager::FileManager}{
+			\textbf{\tipo}: Lo scopo di questa classe è di gestire le chiamate della pagina Premi::View::Pages::Profile per l'inserimento, cancellazione e rinominazione di file sul server Apache.\\
+			\textbf{\relaz}:
+			\begin{itemize}
+			 	\item Premi::View::Pages::Profile:UploadMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i parametri del file da caricare; 
+			 	\item Premi::View::Pages::Profile::DeleteMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente ed i e l'id del file media da eliminare;
+			 	\item Premi::View::Pages::Profile::RenameMedia -> costruisce ApacheManager, ne invoca i metodi passando i parametri dell'utente, l'id e il nuovo nome del file media da rinominare; 
+			 	\item Premi::Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
+			 	\item Premi::Presenter::EditPresenter <- ApacheManager passa lo username dell'utente che sta svolgendo operazioni sul file, il file ed il tipo del file al server Apache; questo se l'operazione è andata a buon fine, ritorna un segnale ad ApacheManager, che lo trasmette ad EditController.
+			\end{itemize}
+		\textbf{\interfacce}: La pagina Profile costruisce ApacheManager per fare modifiche ai file. 
+	}
+}
 	
