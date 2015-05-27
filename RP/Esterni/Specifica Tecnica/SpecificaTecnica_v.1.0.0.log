@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  27 MAY 2015 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  27 MAY 2015 11:14
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 (SpecificaTecnica_v.1.0.0.tex
@@ -975,15 +975,21 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2] (SpecificaTecnica_v.1.0.0.toc
-Overfull \hbox (5.00159pt too wide) in paragraph at lines 42--42
+Overfull \hbox (5.00159pt too wide) in paragraph at lines 41--41
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 AbstractCommand[][] [][]  
  []
 
 
-Overfull \hbox (59.16895pt too wide) in paragraph at lines 43--43
+Overfull \hbox (59.16895pt too wide) in paragraph at lines 42--42
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteTextInsertCommand[][] [][]  
+ []
+
+
+Overfull \hbox (67.81406pt too wide) in paragraph at lines 43--43
+ [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
+ConcreteFrameInsertCommand[][] [][]  
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
@@ -991,115 +997,109 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3]
-Overfull \hbox (67.81406pt too wide) in paragraph at lines 44--44
- [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
-ConcreteFrameInsertCommand[][] [][]  
- []
-
-
-Overfull \hbox (66.66989pt too wide) in paragraph at lines 45--45
+Overfull \hbox (66.66989pt too wide) in paragraph at lines 44--44
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteImageInsertCommand[][] [][]  
  []
 
 
-Overfull \hbox (59.89793pt too wide) in paragraph at lines 46--46
+Overfull \hbox (59.89793pt too wide) in paragraph at lines 45--45
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteSVGInsertCommand[][] [][]  
  []
 
 
-Overfull \hbox (66.66988pt too wide) in paragraph at lines 47--47
+Overfull \hbox (66.66988pt too wide) in paragraph at lines 46--46
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteAudioInsertCommand[][] [][]  
  []
 
 
-Overfull \hbox (64.38573pt too wide) in paragraph at lines 48--48
+Overfull \hbox (64.38573pt too wide) in paragraph at lines 47--47
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteVideoInsertCommand[][] [][]  
  []
 
 
-Overfull \hbox (96.85555pt too wide) in paragraph at lines 49--49
+Overfull \hbox (96.85555pt too wide) in paragraph at lines 48--48
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteBackgroundInsertCommand[][] [][]  
  []
 
 
-Overfull \hbox (69.71083pt too wide) in paragraph at lines 50--50
+Overfull \hbox (69.71083pt too wide) in paragraph at lines 49--49
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteTextRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (78.35594pt too wide) in paragraph at lines 51--51
+Overfull \hbox (78.35594pt too wide) in paragraph at lines 50--50
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteFrameRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (77.21178pt too wide) in paragraph at lines 52--52
+Overfull \hbox (77.21178pt too wide) in paragraph at lines 51--51
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteImageRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (70.43982pt too wide) in paragraph at lines 53--53
+Overfull \hbox (70.43982pt too wide) in paragraph at lines 52--52
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteSVGRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (77.21176pt too wide) in paragraph at lines 54--54
+Overfull \hbox (77.21176pt too wide) in paragraph at lines 53--53
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteAudioRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (74.92761pt too wide) in paragraph at lines 55--55
+Overfull \hbox (74.92761pt too wide) in paragraph at lines 54--54
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteVideoRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (107.39743pt too wide) in paragraph at lines 56--56
+Overfull \hbox (107.39743pt too wide) in paragraph at lines 55--55
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteBackgroundRemoveCommand[][] [][]  
  []
 
 
-Overfull \hbox (48.5007pt too wide) in paragraph at lines 57--57
+Overfull \hbox (48.5007pt too wide) in paragraph at lines 56--56
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditSizeCommand[][] [][]  
  []
 
 
-Overfull \hbox (69.9371pt too wide) in paragraph at lines 58--58
+Overfull \hbox (69.9371pt too wide) in paragraph at lines 57--57
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditPositionCommand[][] [][]  
  []
 
 
-Overfull \hbox (56.33212pt too wide) in paragraph at lines 59--59
+Overfull \hbox (56.33212pt too wide) in paragraph at lines 58--58
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditColorCommand[][] [][]  
  []
 
 
-Overfull \hbox (89.45041pt too wide) in paragraph at lines 60--60
+Overfull \hbox (89.45041pt too wide) in paragraph at lines 59--59
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditBackgroundCommand[][] [][]  
  []
 
 
-Overfull \hbox (73.46126pt too wide) in paragraph at lines 61--61
+Overfull \hbox (73.46126pt too wide) in paragraph at lines 60--60
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditRotationCommand[][] [][]  
  []
 
 
-Overfull \hbox (51.59856pt too wide) in paragraph at lines 62--62
+Overfull \hbox (51.59856pt too wide) in paragraph at lines 61--61
  [][] [][][]\T1/cmr/m/n/12 Premi::Model::SlideShow::SlideShowActions::Command::
 ConcreteEditFontCommand[][] [][]  
  []
@@ -1170,13 +1170,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12] (parti/pattern.tex
-<./images/Command.pdf, id=399, 515.9275pt x 388.45125pt>
+<./images/MVP.png, id=397, 411.78844pt x 277.78781pt>
+File: ./images/MVP.png Graphic file (type png)
+ <use ./images/MVP.png>
+Package pdftex.def Info: ./images/MVP.png used on input line 5.
+(pdftex.def)             Requested size: 247.07495pt x 166.67395pt.
+
+<./images/Command.pdf, id=398, 515.9275pt x 388.45125pt>
 File: ./images/Command.pdf Graphic file (type pdf)
 
 <use ./images/Command.pdf>
 Package pdftex.def Info: ./images/Command.pdf used on input line 18.
 (pdftex.def)             Requested size: 257.96312pt x 194.22514pt.
-
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 25.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [13 <./images/MVP.png> <./images/Command.pdf>]
 Overfull \hbox (1.49275pt too wide) in paragraph at lines 25--26
 []\T1/cmr/m/n/12 Tale ope-ra-zio-ne vie-ne rea-liz-za-ta at-tra-ver-so que-sta 
 ca-te-na: Client->Invocatore->Ricevitore 
@@ -1187,14 +1197,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13 <./images/Command.pdf>]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[14] (parti/presentazione.tex
-<./images/PresentazioneArchitettura.jpg, id=447, 1364.09625pt x 788.9475pt>
+ [14] (parti/presentazione.tex
+<./images/PresentazioneArchitettura.jpg, id=446, 1364.09625pt x 788.9475pt>
 File: ./images/PresentazioneArchitettura.jpg Graphic file (type jpg)
 
 <use ./images/PresentazioneArchitettura.jpg>
@@ -2213,14 +2217,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 50.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [49] (parti/diagrammiAttivita.tex
-<./images/AttivitaPrincipali.pdf, id=699, 1577.895pt x 1162.3425pt>
+<./images/AttivitaPrincipali.pdf, id=698, 1577.895pt x 1162.3425pt>
 File: ./images/AttivitaPrincipali.pdf Graphic file (type pdf)
 
 <use ./images/AttivitaPrincipali.pdf>
 Package pdftex.def Info: ./images/AttivitaPrincipali.pdf used on input line 7.
 (pdftex.def)             Requested size: 473.37216pt x 348.70544pt.
 
-<./images/CaricarePresentazione.pdf, id=700, 703.62875pt x 666.49pt>
+<./images/CaricarePresentazione.pdf, id=699, 703.62875pt x 666.49pt>
 File: ./images/CaricarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/CaricarePresentazione.pdf>
@@ -2232,14 +2236,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [50 <./images/AttivitaPrincipali.pdf>]
-<./images/CaricareFile.pdf, id=831, 1063.975pt x 591.20876pt>
+<./images/CaricareFile.pdf, id=830, 1063.975pt x 591.20876pt>
 File: ./images/CaricareFile.pdf Graphic file (type pdf)
 
 <use ./images/CaricareFile.pdf>
 Package pdftex.def Info: ./images/CaricareFile.pdf used on input line 25.
 (pdftex.def)             Requested size: 425.58246pt x 236.47931pt.
 
-<./images/ModificarePresentazione.pdf, id=832, 1359.0775pt x 682.55pt>
+<./images/ModificarePresentazione.pdf, id=831, 1359.0775pt x 682.55pt>
 File: ./images/ModificarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/ModificarePresentazione.pdf>
@@ -2256,7 +2260,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [51 <./images/CaricarePresentazione.pdf> <./images/CaricareFile.pdf>]
-<./images/ModificaPresentazioneMobile.pdf, id=933, 654.445pt x 447.6725pt>
+<./images/ModificaPresentazioneMobile.pdf, id=932, 654.445pt x 447.6725pt>
 File: ./images/ModificaPresentazioneMobile.pdf Graphic file (type pdf)
 
 <use ./images/ModificaPresentazioneMobile.pdf>
@@ -2264,7 +2268,7 @@ Package pdftex.def Info: ./images/ModificaPresentazioneMobile.pdf used on input
  line 43.
 (pdftex.def)             Requested size: 261.77336pt x 179.06583pt.
 
-<./images/GestireSfondo.pdf, id=934, 584.1825pt x 847.165pt>
+<./images/GestireSfondo.pdf, id=933, 584.1825pt x 847.165pt>
 File: ./images/GestireSfondo.pdf Graphic file (type pdf)
 
 <use ./images/GestireSfondo.pdf>
@@ -2279,7 +2283,7 @@ le.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/ModificaPresentazioneMobile.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <./images/InserireElemento.pdf, id=1046, 786.94pt x 519.9425pt>
+>] <./images/InserireElemento.pdf, id=1045, 786.94pt x 519.9425pt>
 File: ./images/InserireElemento.pdf Graphic file (type pdf)
 
 <use ./images/InserireElemento.pdf>
@@ -2290,7 +2294,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [53 <./images/GestireSfondo.pdf>]
-<./images/ModificareElemento.pdf, id=1092, 662.475pt x 530.98375pt>
+<./images/ModificareElemento.pdf, id=1091, 662.475pt x 530.98375pt>
 File: ./images/ModificareElemento.pdf Graphic file (type pdf)
 
 <use ./images/ModificareElemento.pdf>
@@ -2298,7 +2302,7 @@ Package pdftex.def Info: ./images/ModificareElemento.pdf used on input line 70.
 
 (pdftex.def)             Requested size: 264.9853pt x 212.38972pt.
 
-<./images/ModificareFrame.pdf, id=1093, 1358.07375pt x 585.18625pt>
+<./images/ModificareFrame.pdf, id=1092, 1358.07375pt x 585.18625pt>
 File: ./images/ModificareFrame.pdf Graphic file (type pdf)
 
 <use ./images/ModificareFrame.pdf>
@@ -2314,14 +2318,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 84.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [54 <./images/InserireElemento.pdf> <./images/ModificareElemento.pdf>] <./imag
-es/ModificareSVG.pdf, id=1183, 974.64125pt x 645.41125pt>
+es/ModificareSVG.pdf, id=1182, 974.64125pt x 645.41125pt>
 File: ./images/ModificareSVG.pdf Graphic file (type pdf)
 
 <use ./images/ModificareSVG.pdf>
 Package pdftex.def Info: ./images/ModificareSVG.pdf used on input line 88.
 (pdftex.def)             Requested size: 389.8496pt x 258.15993pt.
 
-<./images/ModificareTesto.pdf, id=1184, 1422.31375pt x 467.7475pt>
+<./images/ModificareTesto.pdf, id=1183, 1422.31375pt x 467.7475pt>
 File: ./images/ModificareTesto.pdf Graphic file (type pdf)
 
 <use ./images/ModificareTesto.pdf>
@@ -2370,39 +2374,34 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 54.
  )
-(\end occurred inside a group at level 3)
+(\end occurred inside a group at level 4)
 
+### simple group (level 4) entered at line 1 ({)
 ### simple group (level 3) entered at line 1 ({)
-### simple group (level 2) entered at line 1 ({)
-### simple group (level 1) entered at line 9 ({)
+### simple group (level 2) entered at line 9 ({)
+### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13821 strings out of 493698
- 200628 string characters out of 3144409
+ 13826 strings out of 493698
+ 200705 string characters out of 3144409
  362832 words of memory out of 3000000
- 16654 multiletter control sequences out of 15000+200000
+ 16659 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 51i,16n,60p,885b,682s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsubsection.3.3.1} has been refer
-enced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-su
-per/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0
-800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (58 pages, 1572402 bytes).
+ 51i,16n,60p,885b,755s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
+t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfbx2488.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on SpecificaTecnica_v.1.0.0.pdf (58 pages, 1583644 bytes).
 PDF statistics:
- 1764 PDF objects out of 2073 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 1023 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1766 PDF objects out of 2073 (max. 8388607)
+ 196 named destinations out of 1000 (max. 500000)
+ 1036 words of extra memory for PDF output out of 10000 (max. 10000000)
 
