@@ -43,14 +43,13 @@
 			\caption{Observer}
 		\end{figure}
 		\begin{itemize}
-		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti. Sostanzialmente il pattern si basa su uno o più oggetti, chiamati osservatori o listener, che vengono registrati per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
-		Oltre all'observer esiste il concrete Observer che si differenzia dal primo perché implementa direttamente le azioni da compiere in risposta ad un messaggio; riepilogando il primo è una classe astratta, il secondo no.
+		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti.  Il pattern si basa su uno o più oggetti, chiamati listerei, che vengono registrati presso un oggetto subject per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
 		
-		\item \textbf{Scopo dell’utilizzo}: Nel nostro caso il pattern viene utilizzato per garantire update automatici alle presentazioni dell'utente presenti consistentemente nel database MongoDB attraverso chiamate ai servizi offerti dalla web-api nodeApi.
+		\item \textbf{Scopo dell’utilizzo}: I questo sistema il pattern viene utilizzato per aggiornare automaticamente la rappresentazione, persistente sul database MongoDB, della presentazione che l'utente sta modificando localmente.
 		\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
 		\end{itemize}
-		\subsubsection{Premi::Model::ServerRelations::dbConsinstency}{
-			    Il package Premi::Model::ServerRelations::dbConsinstency contiene le classi che costituiscono il pattern observer, in particolare le classi ConcreteSubjects definiscono metodi getElement() che ritornano l'elemento presente nel campo presentazione di Model::ServerRelations::Loader::Costruttore che riferiscono. 
+		\subsubsection{Premi::Model::MongoRelations::DBSynch}{
+			    Il package Premi::Model::MongoRelations::DBSynch contiene le classi che costituiscono il pattern observer, in particolare le classi ConcreteSubjects non sono le classi degli oggetti che vengono modificati(che sono invece definite in Model::SlideShow::SlideShowElements) ma fungono da tramite tra questi e gli oggetti ConcreteObserver. Questo permette di avere il pattern Observer e la gerarchia di definizione degli elementi in package differenti.
 		}
 		\begin{figure}[H]
 			\centering
