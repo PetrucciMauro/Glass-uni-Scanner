@@ -1,19 +1,19 @@
 \subsection{Model}{
-	\textbf{\tipo}: è la parte Model dell'architettura MVC.\\
+	\textbf{\tipo}: Questo Package è la parte Model dell'architettura MVC.\\
 	\textbf{\relaz}: è in relazione con il package Presenter e con NodeAPI.\\
 	\textbf{Package contenuti}: 
 	\begin{itemize}
 	\item Model::SlideShow;
-    \item Model::ServerRelations;
+    \item Model::MongoRelations;
 	\end{itemize}
 }
 \subsubsection{Model::SlideShow}{
-		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con Presenter::EditPresenter da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, alla distruzione e alla modifica degli elementi della presentazione oltre alle classi che rappresentano gli elementi stessi della presentazione.\\
+        \textbf{\relaz}: il package è in relazione con Presenter da cui riceve le chiamate relative a inserimento, eliminazione e modifica degli elementi. Inoltre comunica con il package Model::MongoRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database e inserendo gli oggetti che rappresentano gli elementi nel campo dati presentazione presente all'interno di Model::MongoRelations::Loader::LoaderClass.\\
     }
 \subsubsection{Model::SlideShow::SlideShowActions}{
-		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si riferiscono alla costruzione, all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
-        \textbf{\relaz}: il package è in relazione con\\ Model::SlideShow::SlideShowActions::Command da cui riceve i segnali e i parametri di inserimento e modifica degli elementi. Inoltre comunica con il package Model::ServerRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
+		\textbf{\tipo}: All’interno di questo Package si trovano le classi che si occupano della costruzione, dell'inserimento, della rimozione e della modifica degli elementi della presentazione.\\
+        \textbf{\relaz}: il package è in relazione con\\ Model::SlideShow::SlideShowActions::Command che ne invoca le funzioni passando i relativi parametri per l'inserimento, la rimozione e la modifica degli elementi. Inoltre comunica con il package Model::MongoRelations, inviando a questi i segnali per la modifica in tempo reale dei dati presenti nel database.\\
     }
     
 	\subsubsection{Model::SlideShow::SlideShowActions::InsertEditRemove}{
@@ -27,9 +27,11 @@
 		\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione.\\
 		\textbf{\relaz}:il package è in relazione con\\ Model::SlideShow::SlideShowActions::Command che invoca i metodi delle classi del package.
         Inoltre Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter si occupa di costruire gli oggetti presenti nelle classi del package Model::SlideShow::SlideShowElements.
+        InsertEditRemove è in relazione, infine, con il package Model::MongoRelations::DBSynch, infatti tramite chiamate asincrone la classe Inserter costruisce un oggetto Observer e un ConcreteSubject a esso associato.
     }
 		\subsubsubsection{Editor}{
-			\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
+			\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\
+			 È il componente receiver del Design Pattern Command.\\
 			\textbf{\relaz}:
 			\begin{itemize}
 				\item Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da Editor;
@@ -47,10 +49,10 @@
 				\item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
 				\item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
 			\end{itemize} 
-			\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 		}
 	\subsubsubsection{Inserter}{
-		\textbf{\tipo}: Classe statica che offre dei metodi per l’inserimento di elementi all’interno di una presentazione.\\	
+		\textbf{\tipo}: Classe statica che offre dei metodi per l’inserimento di elementi all’interno di una presentazione.\\
+		 È il componente receiver del Design Pattern Command.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
 			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da Inserter;
@@ -67,13 +69,15 @@
             \item Model::SlideShow::SlideShowElements::Audio <- Inserter costruisce gli oggetti di classe Audio;
             \item Model::SlideShow::SlideShowElements::Video <- Inserter costruisce gli oggetti di classe Video;
             \item Model::SlideShow::SlideShowElements::Background <- Inserter costruisce gli oggetti di classe Background;
-            \item Model::ServerRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
+            \item Model::MongoRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
+            \item Model::MongoRelations::DBSynch <- Inserter costruisce un ConcreteSubject e un ConcreteObserver. L'elemento costruito da Inserter ha un riferimento al ConcreteSubject così creato.
 		\end{itemize} 
-		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
+
 	}
 	
 	\subsubsubsection{Remover}{
 		\textbf{\tipo}: Classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
+		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 		\textbf{\relaz}:
 		\begin{itemize}
 			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da Remover;
@@ -97,8 +101,8 @@
            \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
            \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
            \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+           [[[Observer]]]
 		\end{itemize} 
-		\textbf{\interfacce}: È il componente receiver del Design Pattern Command.\\
 	}	
 	}
    \subsubsection{Model::SlideShow::SlideShowActions::Command}{
@@ -110,7 +114,13 @@
 	   		\caption{Command Package}
 	   	\end{figure}
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
-		\textbf{\relaz}:. All’interno del Model, il package è in relazione con \\Model::SlideShow::SlideShowActions::Insert, Model::Remove e\\ Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
+		\textbf{\relaz}:. All’interno del Model, il package è in relazione con
+		\begin{itemize}
+		\item Model::SlideShow::SlideShowActions::Insert;
+		\item Model::Remove;
+		\item Model::SlideShow::SlideShowActions::EditElements.
+		\end{itemize}
+		Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
 	\subsubsubsection{Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
@@ -428,7 +438,7 @@
 		\textbf{\relaz}:.Model::SlideShow::SlideShowElements è in comunicazione con 
         \begin{itemize}
         \item Model::SlideShow::SlideShowActions::Insert, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
-        \item Model::Remove, i cui oggetti rimuovono da ServerRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
+        \item Model::Remove, i cui oggetti rimuovono da MongoRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
         \item Model::SlideShow::SlideShowActions::EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
   		\end{itemize}
 
@@ -440,7 +450,7 @@
                     \item Model::SlideShow::SlideShowActions::EditElements:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
                     \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
 				\end{itemize}	
-                \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::Insert::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Model:Costruttore\\
+                \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::Insert::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Model:LoaderClass\\
                 \textbf{\figli}: 
                     \begin{itemize}
                     \item Model::SlideShow::Text;
@@ -456,11 +466,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Text rappresentano gli elementi di tipo testuale della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -470,11 +480,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Frame rappresentano gli elementi di tipo frame della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -484,11 +494,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Image rappresentano gli elementi di tipo immagine della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -498,11 +508,11 @@
 				\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi di tipo SVG della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElement.
@@ -512,11 +522,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Audio rappresentano gli elementi di tipo audio della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe\\ Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe\\ Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}:  
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -526,11 +536,11 @@
 				\textbf{\tipo}: Gli oggetti della classe Video rappresentano gli elementi di tipo video della presentazione.\\
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                      \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
-                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::ServerRelations::Loader::Costruttore.\\
+                \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -540,11 +550,11 @@
                 				\textbf{\tipo}: Gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
                 				\textbf{\relaz}: 
                 				\begin{itemize}
-                					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::ServerRelations::Loader::Caricatore;
-                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
+                					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
+                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
                 				\end{itemize}	
-                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Loader::Costruttore.\\
+                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                                 \textbf{\base}: 
                                     \begin{itemize}
                                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -553,29 +563,29 @@
 }
 
 
-\subsubsection{Model::ServerRelations}{
+\subsubsection{Model::MongoRelations}{
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{\imgs {ServerRelations}.pdf}
+		\includegraphics[scale=0.6]{\imgs {MongoRelations}.pdf}
 		\label{fig:sr}
-		\caption{ServerRelations}
+		\caption{MongoRelations}
 	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzionalità del sistema che interagiscono direttamente con i servizi web esposti dalla interfaccia nodeApi.\\
 		\textbf{\relaz}: i componenti del package serverRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’e’ dipenda tra il package serverRelations ed altri package del model.\\
 }
 
-\subsubsection{Model::ServerRelations::Loader}{
-	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà\\ Model::ServerRelations::Loader::<componente>.
+\subsubsection{Model::MongoRelations::Loader}{
+	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà\\ Model::MongoRelations::Loader::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{\imgs {loader}.pdf}
 		\label{fig:srl}
-		\caption{ServerRelationsLoader}
+		\caption{MongoRelationsLoader}
 	\end{figure}
 		\textbf{\tipo}: il package racchiude le funzioni di recupero di una presentazione dal server attraversi i servizi nodeApi e traduzione della presentazione in elementi html che compongono la view della presentazione recuperata.\\
 		\textbf{\relaz}: relazione di dipendenza con l’interfaccia dei servizi nodeApi per il recupero della presentazione.\\
 
-\subsubsubsection{Costruttore}{
+\subsubsubsection{LoaderClass}{
 				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto o creare una nuova presentazione,  caricare la presentazione in formato html così da poter essere modificata o eseguita dall’utente.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -584,10 +594,10 @@
                     }
 }
 
-\subsubsection{Model::ServerRelations::AccessControl}{
-	Tutti i componenti seguenti appartengono al package AccessControl, quindi lo scope sarà Model::ServerRelations::AccessControl::<componente>.
+\subsubsection{Model::MongoRelations::AccessControl}{
+	Tutti i componenti seguenti appartengono al package AccessControl, quindi lo scope sarà Model::MongoRelations::AccessControl::<componente>.
 		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
-		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in ServerRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
+		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in MongoRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
         \subsubsubsection{Autenticazione}{
 				\textbf{\tipo}: Classe che fornisce funzionalità di autenticazione e deautenticazione ai servizi offerti da nodeApi attraverso passaggio di token.\\	
 				\textbf{\relaz}: 
@@ -606,8 +616,8 @@
             }
 }
 
-\subsubsection{Model::ServerRelations::DbConsistency}{
-	Tutti i componenti seguenti appartengono al package DbConsistency, quindi lo scope sarà Model::ServerRelations::DbConsistency::<componente>.
+\subsubsection{Model::MongoRelations::DBSynch}{
+	Tutti i componenti seguenti appartengono al package DBSynch, quindi lo scope sarà Model::MongoRelations::DBSynch::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{\imgs {ClassDiagram1}.pdf}
@@ -704,7 +714,7 @@
 		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
 		\begin{itemize}
 			\item Il package comunica con la view ricevendo chiamate da View::Pages::Profile.
-			\item I componenti del package ApacheRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’è dipenda tra il package ApacheRelations ed il package ServerRelations.\\
+			\item I componenti del package ApacheRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’è dipenda tra il package ApacheRelations ed il package MongoRelations.\\
 		\end{itemize}
 
 \subsubsection{Model::ApacheRelations::ApacheServerManager}{
@@ -732,7 +742,7 @@
 			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader.  \\
 			   	\textbf{\relaz}:
 			   	\begin{itemize}
-			   		\item dipendenza con Premi::Model::ServerRelations::Loader;
+			   		\item dipendenza con Premi::Model::MongoRelations::Loader;
 			   		\item definisce il metodo GestoreManifest();
 			   	\end{itemize}
 			
