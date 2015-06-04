@@ -1,5 +1,5 @@
 \subsection{Model}{
-	\textbf{\tipo}: Questo Package è la parte Model dell'architettura MVC.\\
+	\textbf{\tipo}: Questo Package è la parte Model dell'architettura MVP.\\
 	\textbf{\relaz}: è in relazione con il package Presenter e con NodeAPI.\\
 	\textbf{Package contenuti}: 
 	\begin{itemize}
@@ -819,7 +819,7 @@
 						   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate a funzioni o servizi del server Apache.    \\
 						   	\textbf{\relaz}:
 						   	\begin{itemize}
-						   		\item dipendenza con Premi::Model::MongoRelations::Loader;
+						   		\item dipendenza con Premi::Model::MongoRelations::Loader::LoaderClass <- ResourceGetter invoca i metodi forniti da LoaderClass che restituiscono ;
 						   		\item definisce il metodo getResources();
 						   	\end{itemize}
 	}
