@@ -101,6 +101,7 @@
            \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
            \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
            \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+           [[[Observer]]]
 		\end{itemize} 
 	}	
 	}
@@ -115,25 +116,27 @@
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
 		\textbf{\relaz}:. All’interno del Model, il package è in relazione con
 		\begin{itemize}
-		\item Model::SlideShow::SlideShowActions::InsertEditRemove;
+		\item Model::SlideShow::SlideShowActions::Insert;
+		\item Model::Remove;
+		\item Model::SlideShow::SlideShowActions::EditElements.
 		\end{itemize}
-		Presenter::SlideShow::EditPresenter costruisce gli oggetti delle sottoclassi di AbstractCommand, inoltre quando viene invocato il metodo "undo()" di un comando concreto, questo invoca il metodo update() di EditPresenter.\\
+		Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
 	\subsubsubsection{Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Presenter::MobileEdit->crea un oggetto di una sottoclasse di\\ Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che ne invoca il metodo execute() e lo inserisce nello stack “undostack”, richiama il metodo che svuota lo stack “redostack”.\\
-			Può inoltre invocare il  metodo “undo()” dell’Invoker che provvede a richiamare il metodo "undoaction()" del comando sulla cima dello stack “undostack” e a spostarlo quindi nello stack “redostack”. Alternativamente invoca il  metodo “redo()” dell’Invoker che provvede a invocare il metodo "doaction()" del comando sulla cima dello stack “redostack” e a spostarlo quindi nello stack “undostack”;
+			\item Presenter::MobileEdit->crea un oggetto di una sottoclasse di\\ Model::SlideShow::SlideShowActions::Command::AbstractCommand passandolo all’Invoker che lo esegue e lo inserisce nello stack “undo”, richiama il metodo che svuota lo stack “redo”.\\
+			Può inoltre invocare il  metodo “unexecute” dell’Invoker che provvede a richiamare il metodo undo del comando sulla cima dello stack “undo” e a spostarlo quindi nello stack “redo”. Alternativamente invoca il  metodo “redo” dell’Invoker che provvede a eseguire il comando sulla cima dello stack “redo” e a spostarlo quindi nello stack “undo”;
 			\item Presenter::DesktopEdit->si comporta in modo analogo a MobileEdit;
-			\item Model::SlideShow::SlideShowActions::Command::AbstractCommand <- Invoker invoca il metodo doaction() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undoaction().
+			\item Model::SlideShow::SlideShowActions::Command::AbstractCommand <- Invoker invoca il metodo execute() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undo().
 		\end{itemize} 
-		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca i metodi doaction() o undoaction() di una classe derivata da Model::SlideShow::SlideShowActions::Command::AbstractCommand per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undostack[ ].\\
+		\textbf{\interfacce}: Viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca una classe derivata da Model::SlideShow::SlideShowActions::Command per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undo[ ], insieme ai parametri necessari a riportare la presentazione allo stato precedente.\\
 	}
 	\subsubsubsection{AbstractCommand}{
 				\textbf{\tipo}: È interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-                    \item Model::Invoker -> esegue materialmente il comando, richiamandone il metodo doaction(); inoltre provvede ad annullare l’ultima operazione invocandone il metodo undoaction().
+                    \item Model::Invoker -> esegue materialmente il comando, richiamandone i metodi di esecuzione; inoltre provvede ad annullare l’ultima operazione 
 				\end{itemize}	
                 \textbf{\interfacce}:Viene utilizzata per applicare un generico parametro di trasformazione ad un oggetto della presentazione, questo parametro verrà poi specificato dalle classi concrete.\\
                 \textbf{\figli}: 
@@ -166,9 +169,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertText(...) della classe statica per l’inserimento di un elemento;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertText() della classe statica per l’inserimento di un elemento.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -180,9 +182,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertFrame(...) della classe statica per l’inserimento di un elemento frame nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertFrame() della classe statica per l’inserimento di un elemento frame nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -194,9 +195,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertImage(...) della classe statica per l’inserimento di un elemento immagine nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertImage() della classe statica per l’inserimento di un elemento immagine nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -208,9 +208,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertSVG(...) della classe statica per l’inserimento di un elemento SVG nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertSVG() della classe statica per l’inserimento di un elemento SVG nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -222,9 +221,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertAudio(...) della classe statica per l’inserimento di un elemento audio nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertAudio() della classe statica per l’inserimento di un elemento audio nella presentazione.
 				\end{itemize}	
                 \textbf{\interfacce}: Viene utilizzata per gestire le richieste di inserimento di un nuovo elemento Audio.\\
                 \textbf{\base}: 
@@ -237,9 +235,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando  e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertVideo(...) della classe statica per l’inserimento di un elemento video nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertVideo() della classe statica per l’inserimento di un elemento video nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -251,9 +248,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertBackground(...) della classe statica per l’inserimento di un elemento sfondo nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter <- invoca il metodo insertBackground() della classe statica per l’inserimento di un elemento sfondo nella presentazione.
 				\end{itemize}
                 \textbf{\base}: 
                     \begin{itemize}
@@ -265,9 +261,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeText(...) della classe statica per la rimozione di un elemento testuale nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeText() della classe statica per la rimozione di un elemento testuale nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -279,9 +274,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeFrame(...) della classe statica per la rimozione di un elemento frame dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeFrame() della classe statica per la rimozione di un elemento frame dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -293,9 +287,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeImage(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeImage() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -307,9 +300,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeSVG(...) della classe statica per l’eliminazione di un elemento SVG dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeSVG() della classe statica per l’eliminazione di un elemento SVG dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -321,9 +313,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeAudio(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeAudio() della classe statica per l’eliminazione di un elemento immagine dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -335,9 +326,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeVideo(...) della classe statica per l’eliminazione di un elemento video dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeVideo() della classe statica per l’eliminazione di un elemento video dalla presentazione.
 				\end{itemize}
                 \textbf{\base}: 
                     \begin{itemize}
@@ -349,9 +339,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeBackground(...) della classe statica per l’eliminazione dell'elemento sfondo dalla presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover <- invoca il metodo removeBackground() della classe statica per l’eliminazione dell'elemento sfondo dalla presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -363,9 +352,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editSize(...) della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editSize() della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -377,9 +365,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editPosition(...) della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editPosition() della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -391,9 +378,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editColor(...) della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -405,9 +391,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editBackground(...) della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editBackground() della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -419,9 +404,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editRotation(...) della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editRotation() della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -433,9 +417,8 @@
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item Presenter::SlideShow::EditPresenter -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- il comando invoca il metodo editColor(...) della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione;
-                    \item Premi::Presenter::EditPresenter <- l'oggetto invoca il metodo update() di EditPresenter quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\item Model::SlideShow::SlideShowActions::Command::Invoker -> Invoker invoca il metodo doaction() del comando o ne invoca il metodo di annullamento;
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor <- invoca il metodo editColor() della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione.
 				\end{itemize}	
                 \textbf{\base}: 
                     \begin{itemize}
@@ -451,25 +434,23 @@
          			\label{fig:sse}
     				\caption{SlideShowElements}
                	\end{figure}
-		\textbf{\tipo}:Di questo package fanno parte le classi degli elementi della presentazione e la classe che definisce la presentazione stessa.\\
-		\textbf{\relaz}:Model::SlideShow::SlideShowElements è in comunicazione con 
+		\textbf{\tipo}:Di questo package fanno parte le classi degli elementi della presentazione e la classe che definisce la presentazione stessa. Sì tratta del package centrale del software.\\
+		\textbf{\relaz}:.Model::SlideShow::SlideShowElements è in comunicazione con 
         \begin{itemize}
         \item Model::SlideShow::SlideShowActions::Insert, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
         \item Model::Remove, i cui oggetti rimuovono da MongoRelations::Caricatore gli oggetti di tipo SlideShowElement e li distruggono;
         \item Model::SlideShow::SlideShowActions::EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi;
-        \item Model::DBSynch, i metodi di set degli oggetti delle classi del package SlideShowElements, infatti, invocano il metodo notify dell'observer contenuto nel package DBSynch a cui l'oggetto è associato.
   		\end{itemize}
 
     \subsubsubsection{SlideShowElement}{
 				\textbf{\tipo}: Gli oggetti della classe SlideShowElement rappresentano gli elementi della presentazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nel campo dati "presentazione" all'interno di Model::MongoRelations::Loader::LoaderClass;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
-                    \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set degli oggetti delle sottoclassi di SlideShowElements invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto tiene un riferimento.
+					\item Model::SlideShow::SlideShowActions::Insert::Inserter-> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nei campi dati contenitori all’interno di Model::SlideShow::SlideShow;
+                    \item Model::SlideShow::SlideShowActions::EditElements:Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
+                    \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
 				\end{itemize}	
-                \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Model:LoaderClass\\
+                \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::Insert::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Model:LoaderClass\\
                 \textbf{\figli}: 
                     \begin{itemize}
                     \item Model::SlideShow::Text;
@@ -487,8 +468,7 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -502,8 +482,8 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.\end{itemize}	
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
@@ -516,8 +496,7 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -531,8 +510,7 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -546,8 +524,7 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe\\ Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}:  
@@ -561,8 +538,7 @@
 				\begin{itemize}
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -576,8 +552,7 @@
                 				\begin{itemize}
                 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
-                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                                    \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
                 				\end{itemize}	
                                 \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                                 \textbf{\base}: 
@@ -589,179 +564,147 @@
 
 
 \subsubsection{Model::MongoRelations}{
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[scale=0.6]{\imgs {MongoRelations}.pdf}
-	%	\label{fig:sr}
-	%	\caption{MongoRelations}
-	%\end{figure}
-		\textbf{\tipo}: package, racchiude le funzionalità del sistema che interagiscono con i servizi di interazione con il database MongoDB esposti dall' interfaccia nodeApi.\\
-		\textbf{\relaz}:
-		\begin{itemize}
-		\item relazioni verso \textbf{nodeApi} del quale si utilizzano i servizi dalla interfaccia;
-		\item relazioni da \textbf{Presenter} per il recupero o la creazione di una presentazione dal database MongoDB;
-		\item relazioni da \textbf{Model::SlideShow} che utilizza la rappresentazione locale della presentazione e i servizi per l'interazione a nodeApi.
-		\end{itemize} 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {MongoRelations}.pdf}
+		\label{fig:sr}
+		\caption{MongoRelations}
+	\end{figure}
+		\textbf{\tipo}: il package racchiude le funzionalità del sistema che interagiscono direttamente con i servizi web esposti dalla interfaccia nodeApi.\\
+		\textbf{\relaz}: i componenti del package serverRelations hanno relazioni di dipendenza nei confronti del package nodeApi del quale utilizzano i servizi esposti dall’interfaccia; c’e’ dipenda tra il package serverRelations ed altri package del model.\\
 }
 
 \subsubsection{Model::MongoRelations::Loader}{
+	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà\\ Model::MongoRelations::Loader::<componente>.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.4]{\imgs {Loader}.pdf}
+		\includegraphics[scale=0.4]{\imgs {loader}.pdf}
 		\label{fig:srl}
 		\caption{MongoRelationsLoader}
 	\end{figure}
-		\textbf{\tipo}: package, racchiude le funzioni di recupero o creazione di una presentazione dal server attraverso i servizi nodeApi, una volta ottenuta la presentazione e' esposta per le modifiche provenienti da altri package nel Model 
-		\textbf{\relaz}: 
-		\begin{itemize}
-		\item relazione verso \textbf{nodeApi} per il recupero della presentazione dal database MongoDB
-		\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
-		\end{itemize}
+		\textbf{\tipo}: il package racchiude le funzioni di recupero di una presentazione dal server attraversi i servizi nodeApi e traduzione della presentazione in elementi html che compongono la view della presentazione recuperata.\\
+		\textbf{\relaz}: relazione di dipendenza con l’interfaccia dei servizi nodeApi per il recupero della presentazione.\\
 
 \subsubsubsection{LoaderClass}{
-				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto ed esporla alle modifiche da parte di altri metodi definiti nel model, creare una nuova presentazione\\	
+				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto o creare una nuova presentazione,  caricare la presentazione in formato html così da poter essere modificata o eseguita dall’utente.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-				\item relazione verso \textbf{nodeApi} per il recupero della presentazione dal database MongoDB
-				\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
+					\item nodeAPI <- dipendenza nei confronti del package nodeApi di cui chiama i servizi http in modo sincrono.
 				\end{itemize}	
                     }
 }
 
 \subsubsection{Model::MongoRelations::AccessControl}{
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.5]{\imgs {accessControll}.pdf}
-		\label{fig:cd}
-		\caption{DbSync}
-	\end{figure}
-
-		\textbf{\tipo}: package, racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi esposti da nodeApi.\\
-		\textbf{\relaz}: 
-		\begin{itemize}
-		\item relazioni verso \textbf{nodeApi} a cui vengono passati i parametri per la registrazione e l'autenticazione dell'utente
-		\item relazioni da \textbf{Presenter} da cui si ricevono i parametri in input dell'utente
-		\item relazioni da \textbf{DBSynch} a cui viene esposto il token ricevuto da nodeApi dopo la autenticazione
-		\end{itemize}
-		
+	Tutti i componenti seguenti appartengono al package AccessControl, quindi lo scope sarà Model::MongoRelations::AccessControl::<componente>.
+		\textbf{\tipo}: il package racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi nodeApi.\\
+		\textbf{\relaz}: dipendenza nei confronti dei servizi resi disponibili dall’interfaccia nodeApi; altri package in MongoRelations utilizzano questo package per recuperare il token per accedere ai servizi nodeApi di interazione con le presentazioni in remoto.\\
         \subsubsubsection{Autenticazione}{
-				\textbf{\tipo}: Classe, fornisce le funzionalità di autenticazione e deautenticazione.\\	
+				\textbf{\tipo}: Classe che fornisce funzionalità di autenticazione e deautenticazione ai servizi offerti da nodeApi attraverso passaggio di token.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item relazione verso \textbf{nodeApi} per il recupero del token passando i parametri di autenticazione dell'utente
-                    			\item relazione da \textbf{Presenter} da cui riceve in input i parametri dell'utente per la autenticazione 
-					\item relazione da \textbf{Model::MongoRelations::BDSynch} a cui espone il token per poter usare i servizi di nodeApi
+					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
+                    \item Presenter::Pagine::IndexPresenter -> invoca i metodi di Autenticazione per permettere all'utente di effettuare il login.
 				\end{itemize}	
                     }
         \subsubsubsection{Registrazione}{
-				\textbf{\tipo}: Classe, fornisce le unzionalità di registrazione.\\	
+				\textbf{\tipo}: Classe, fornisce funzionalità di registrazione all’utente.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item relazione verso \textbf{nodeApi} per il la registrazione dell'utente presso il database MongoDB
-                    			\item relazione da \textbf{Presenter} da cui riceve in input i parametri dell'utente per la registrazione
+					\item nodeAPI <- dipendenza nei confronti di nodeApi di cui chiama in modo sincrono i servizi.
+                    \item Presenter::Pagine::IndexPresenter -> invoca i metodi di Registrazione per permettere all'utente di registrarsi al servizio.
 				\end{itemize}	
             }
 }
 
 \subsubsection{Model::MongoRelations::DBSynch}{
-
+	Tutti i componenti seguenti appartengono al package DBSynch, quindi lo scope sarà Model::MongoRelations::DBSynch::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{\imgs {ClassDiagram1}.pdf}
 		\label{fig:cd}
 		\caption{DbSync}
 	\end{figure}
-	
 		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern observer e chiamate asincrone ai servizi di nodeApi\\
-		\textbf{\relaz}:
-		\begin{itemize}
-		\item relazioni da e verso \textbf{Model::SlideShow::SlideShowElements} in cui si detiene un riferimento nei confronti dei ConcreteSubjects e viceversa
-		\item relazioni verso \textbf{Model::MongoRelations::AccessControll} da cui riceve il token per accedere ai servizi nodeApi
-		\item relazioni verso \textbf{nodeApi} verso cui inoltra le chiamate di update degli elementi della presentazione modificata
-		\end{itemize}
+		\textbf{\relaz}:dipendenza con il package nodeApi; dipendenza nei confronti di altri package in Model per il recupero dello stato degli elementi della presentazione.\\
        
        \subsubsubsection{Observer}{
-				\textbf{\tipo}: Interfaccia, espone il metodo update() che una volta recuperato l'elemento modificato chiama il metodo in nodeApi per l'aggiornamento della presentazione nel database MongoDB\\	
+				\textbf{\tipo}: Interfaccia, espone il metodo update(), utile per l’implementazione del design pattern “Observer”.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item associazione con Subject che detiene un riferimento dell'Observer
-					\item interfaccia realizzata da ConcreteObserver che definisce il metodo update()
+					\item associazione con Subject per rendere effettiva la notify(); realizzata da ConcreteObserver che definisce il metodo update().
 				\end{itemize}	
             }
             
+            
             \subsubsubsection{ConcreteObserver}{
-				\textbf{\tipo}: Classe, concretizza l’interfaccia Observer\\	
+				\textbf{\tipo}: Classe, concretizza l’interfaccia Observer, utile ad implementare il pattern “Observer”.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item realizza l’interfaccia Observer definendone il metodo update()
-					\item detiene un riferimento a Subject
-					\item relazione verso nodeApi di cui ne chiama i servizi per l'aggiornamento di una presentazione
+					\item realizza l’interfaccia Observer definendone il metodo update(); associazione verso Subject.
 				\end{itemize}	
             }
             
              \subsubsubsection{Subject}{
-				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per aggiungere, togliere e notificare il ConcreteObserver associato.\\	
+				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per implementare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item associazione da ConcreteObserver che ne detiene un riferimento; 
-					\item realizzata dalle classi: SubjectAudio, SubjectVideo, SubjectText, SubjectFrame, SubjectSvg, SubjectImg che definiscono il metodo getElement() utilizzato da ConcreteObserver per ottenere l’oggetto modificato.
+					\item associazione da ConcreteObserver; classe astratta realizzata dalle classi: SubjectAudio, SubjectVideo, SubjectText, SubjectFrame, SubjectSvg, SubjectImg che definiscono il metodo getElement() utilizzato da ConcreteObserver per ottenere l’oggetto modificato.
 				\end{itemize}	
             }
             
              \subsubsubsection{SubjectAudio}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
 				\end{itemize}	
             }
             
             \subsubsubsection{SubjectVideo}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
 				\end{itemize}	
             }
             
             \subsubsubsection{SubjectText}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
 				\end{itemize}	
             }
             
             \subsubsubsection{SubjectFrame}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
 				\end{itemize}	
             }
             
             \subsubsubsection{SubjectImg}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
 				\end{itemize}	
             }
             
             \subsubsubsection{SubjectSVG}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
 				\end{itemize}	
             }
             
              \subsubsubsection{SubjectBackground}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\		
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer".\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
+					\item implementa Subject definendo il metodo getElement(), associazione con la classe Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
 				\end{itemize}	
             }
 
@@ -794,9 +737,6 @@
 			\end{itemize}
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
 			}}
-			
-			---------------togliere da qui----------
-			
 			\subsubsection{Premi::ApacheRelations::Manifest}{
 				Il componente seguente appartiene al package ApacheServerManager, quindi lo scope sarà \\Model::ApacheRelations::Manifest::<componente>.
 			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader.  \\
@@ -814,14 +754,5 @@
 					\end{itemize}
 			        }
 			}
-			---------------togliere fino a qui----------
-			\subsubsection{Premi::ApacheRelations::ResourceGetter}{
-							La seguente classe appartiene al package ApacheRelations, quindi lo scope sarà \\Model::ApacheRelations::<componente>.
-						   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate a funzioni o servizi del server Apache.    \\
-						   	\textbf{\relaz}:
-						   	\begin{itemize}
-						   		\item dipendenza con Premi::Model::MongoRelations::Loader;
-						   		\item definisce il metodo getResources();
-						   	\end{itemize}
 	}
 }
