@@ -449,7 +449,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore delle sottoclassi di SlideShowElement e li inserisce nel campo dati "presentazione" all'interno di Model::MongoRelations::Loader::LoaderClass;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
                     \item Model::SlideShow::SlideShowActions::Remove::Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set degli oggetti delle sottoclassi di SlideShowElements invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set degli oggetti delle sottoclassi di SlideShowElements invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}:\\ Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter istanzia oggetti di sottoclassi di SlideShowElement e li inserisce nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Model:LoaderClass\\
                 \textbf{\figli}: 
@@ -470,7 +470,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Text e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Text dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Text vengono istanziati da Model::SlideShow::SlideShowActions::Insert::ConcreteTextInserter e inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -485,7 +485,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Frame dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.\end{itemize}	
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Frame vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
                     \begin{itemize}
@@ -499,7 +499,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Image e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Image dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor ->  invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Image vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter  inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -514,7 +514,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto SVG dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -529,7 +529,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe\\ Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Audio dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Audio vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}:  
@@ -544,7 +544,7 @@
 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Video e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                      \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
 				\end{itemize}	
                 \textbf{\interfacce}: Gli oggetti della classe Video vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di \\Model::MongoRelations::Loader::LoaderClass.\\
                 \textbf{\base}: 
@@ -559,7 +559,7 @@
                 					\item Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter -> invoca il costruttore di Background e inserisce l’oggetto nel campo dati contenitore all’interno dell’oggetto della classe Model::MongoRelations::Loader::Caricatore;
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::MongoRelations::Loader::LoaderClass, ne invoca quindi il distruttore;
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto;
-                    \item Model::DBSynch::ConcreteObserver i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
+                    \item Model::DBSynch::ConcreteObserver <- i metodi di set della classe invocano il metodo notify() dell'observer contenuto nel package DBSynch di cui l'oggetto della classe tiene un riferimento.
                 				\end{itemize}	
                                 \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::MongoRelations::Loader::LoaderClass.\\
                                 \textbf{\base}: 
