@@ -110,7 +110,7 @@
 	   		\caption{Command Package}
 	   	\end{figure}
 		\textbf{\tipo}:All’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni di annullamento e ripristino.\\
-		\textbf{\relaz}:. All’interno del Model, il package è in relazione con \\Model::SlideShow::SlideShowActions::Insert, Model::Remove e Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
+		\textbf{\relaz}:. All’interno del Model, il package è in relazione con \\Model::SlideShow::SlideShowActions::Insert, Model::Remove e\\ Model::SlideShow::SlideShowActions::EditElements. Il package comunica, inoltre, con il presenter, infatti le sue classi sono generate da Presenter::SlideShow::EditPresenter.\\
 	\subsubsubsection{Invoker}{
 		\textbf{\tipo}: È componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di elemento, eliminazione di elemento e inserimento di elemento) per poter implementare le funzioni di annulla/ripristina.\\	
 		\textbf{\relaz}:
@@ -544,7 +544,7 @@
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Remover -> rimuove l’oggetto Video dal campo dati presentazione all’interno di Model::ServerRelations::Loader::Costruttore, ne invoca quindi il distruttore;
                                     \item Model::SlideShow::SlideShowActions::InsertEditRemove::Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
                 				\end{itemize}	
-                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di Model::ServerRelations::Loader::Costruttore.\\
+                                \textbf{\interfacce}: Gli oggetti della classe Background vengono istanziati da Model::SlideShow::SlideShowActions::InsertEditRemove::Inserter e da questi inseriti nel campo dati contenitore presentazione all’interno di\\ Model::ServerRelations::Loader::Costruttore.\\
                                 \textbf{\base}: 
                                     \begin{itemize}
                                     \item Model::SlideShow::SlideShowElements::SlideShowElement.
@@ -565,7 +565,7 @@
 }
 
 \subsubsection{Model::ServerRelations::Loader}{
-	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà Model::ServerRelations::Loader::<componente>.
+	Tutti i componenti seguenti appartengono al package Loader, quindi lo scope sarà\\ Model::ServerRelations::Loader::<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{\imgs {serverrelationsloader}.pdf}
