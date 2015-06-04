@@ -99,27 +99,30 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Presenter::IndexPresenter}{49}{subsubsection.5.2.4}
 \contentsline {subsubsection}{\numberline {5.2.5}Presenter::ProfilePresenter}{49}{subsubsection.5.2.5}
 \contentsline {subsection}{\numberline {5.3}View}{50}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}View::Pages::IndexPage}{50}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}View::Pages::Home}{50}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}View::Pages::Manifest}{51}{subsubsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.4}View::Pages::Profile}{51}{subsubsection.5.3.4}
-\contentsline {subsubsection}{\numberline {5.3.5}View::Pages::Execution}{52}{subsubsection.5.3.5}
-\contentsline {subsubsection}{\numberline {5.3.6}View::Pages::Edit}{52}{subsubsection.5.3.6}
-\contentsline {subsubsection}{\numberline {5.3.7}View::Pages::EditDesktop}{52}{subsubsection.5.3.7}
-\contentsline {subsubsection}{\numberline {5.3.8}View::Pages::EditMobile}{54}{subsubsection.5.3.8}
-\contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{55}{section.6}
-\contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{55}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{55}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Caricare File}{56}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Modificare Presentazione da Desktop}{57}{subsubsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.4}Modificare Presentazione da Mobile}{57}{subsubsection.6.1.4}
-\contentsline {subsubsection}{\numberline {6.1.5}Gestire Sfondo}{58}{subsubsection.6.1.5}
-\contentsline {subsubsection}{\numberline {6.1.6}Inserire Elemento}{58}{subsubsection.6.1.6}
-\contentsline {subsubsection}{\numberline {6.1.7}Modificare Elemento}{59}{subsubsection.6.1.7}
-\contentsline {subsubsection}{\numberline {6.1.8}Modificare Frame}{59}{subsubsection.6.1.8}
-\contentsline {subsubsection}{\numberline {6.1.9}Modificare SVG}{60}{subsubsection.6.1.9}
-\contentsline {subsubsection}{\numberline {6.1.10}Modificare Testo}{61}{subsubsection.6.1.10}
-\contentsline {section}{\numberline {7}Stime di fattibilit\IeC {\`a} e di bisogno di risorse}{62}{section.7}
-\contentsline {section}{\numberline {8}Tracciamento dei Componenti coi Requisiti}{63}{section.8}
-\contentsline {subsection}{\numberline {8.1}Tracciamento Componenti-Requisiti}{63}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Tracciamento Requisiti-Componenti}{67}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {5.3.1}View::Pages}{50}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}View::Pages::IndexPage}{50}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}View::Pages::Home}{51}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}View::Pages::Manifest}{52}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}View::Pages::Profile}{52}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}View::Pages::Execution}{52}{subsubsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.7}View::Pages::Edit}{53}{subsubsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.8}View::Pages::EditDesktop}{53}{subsubsection.5.3.8}
+\contentsline {subsubsection}{\numberline {5.3.9}View::Pages::EditMobile}{54}{subsubsection.5.3.9}
+\contentsline {subsubsection}{\numberline {5.3.10}View::ViewJavascript}{55}{subsubsection.5.3.10}
+\contentsline {subsubsection}{\numberline {5.3.11}View::ViewJavascript::UserFunctions}{55}{subsubsection.5.3.11}
+\contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{56}{section.6}
+\contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{56}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Gestione presentazioni}{56}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Caricare File}{57}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}Modificare Presentazione da Desktop}{58}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Modificare Presentazione da Mobile}{58}{subsubsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.5}Gestire Sfondo}{59}{subsubsection.6.1.5}
+\contentsline {subsubsection}{\numberline {6.1.6}Inserire Elemento}{59}{subsubsection.6.1.6}
+\contentsline {subsubsection}{\numberline {6.1.7}Modificare Elemento}{60}{subsubsection.6.1.7}
+\contentsline {subsubsection}{\numberline {6.1.8}Modificare Frame}{60}{subsubsection.6.1.8}
+\contentsline {subsubsection}{\numberline {6.1.9}Modificare SVG}{61}{subsubsection.6.1.9}
+\contentsline {subsubsection}{\numberline {6.1.10}Modificare Testo}{62}{subsubsection.6.1.10}
+\contentsline {section}{\numberline {7}Stime di fattibilit\IeC {\`a} e di bisogno di risorse}{63}{section.7}
+\contentsline {section}{\numberline {8}Tracciamento dei Componenti coi Requisiti}{64}{section.8}
+\contentsline {subsection}{\numberline {8.1}Tracciamento Componenti-Requisiti}{64}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Tracciamento Requisiti-Componenti}{68}{subsection.8.2}

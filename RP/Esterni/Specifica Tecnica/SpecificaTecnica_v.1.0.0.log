@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  4 JUN 2015 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.20)  4 JUN 2015 14:14
 entering extended mode
 **SpecificaTecnica_v.1.0.0.tex
 (SpecificaTecnica_v.1.0.0.tex
@@ -1047,13 +1047,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12] (parti/pattern.tex
-<./images/MVP.png, id=398, 411.78844pt x 277.78781pt>
+<./images/MVP.png, id=406, 411.78844pt x 277.78781pt>
 File: ./images/MVP.png Graphic file (type png)
  <use ./images/MVP.png>
 Package pdftex.def Info: ./images/MVP.png used on input line 5.
 (pdftex.def)             Requested size: 247.07495pt x 166.67395pt.
 
-<./images/Command.pdf, id=399, 515.9275pt x 429.605pt>
+<./images/Command.pdf, id=407, 515.9275pt x 429.605pt>
 File: ./images/Command.pdf Graphic file (type pdf)
 
 <use ./images/Command.pdf>
@@ -1096,7 +1096,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 50.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14]
-<./images/SequenceObserver.pdf, id=447, 721.69624pt x 560.0925pt>
+<./images/SequenceObserver.pdf, id=455, 721.69624pt x 560.0925pt>
 File: ./images/SequenceObserver.pdf Graphic file (type pdf)
 
 <use ./images/SequenceObserver.pdf>
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [15 <./images/SequenceObserver.pdf>]
 (parti/presentazione.tex
-<./images/General.pdf, id=502, 2105.8675pt x 910.40125pt>
+<./images/General.pdf, id=510, 2105.8675pt x 910.40125pt>
 File: ./images/General.pdf Graphic file (type pdf)
 
 <use ./images/General.pdf>
@@ -1126,7 +1126,7 @@ Overfull \hbox (42.76872pt too wide) in paragraph at lines 21--23
  [][] 
  []
 
-<./images/nodeAPI.pdf, id=503, 861.2175pt x 530.98375pt>
+<./images/nodeAPI.pdf, id=511, 861.2175pt x 530.98375pt>
 File: ./images/nodeAPI.pdf Graphic file (type pdf)
 
 <use ./images/nodeAPI.pdf>
@@ -1165,7 +1165,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-<./images/inserteditremove.pdf, id=764, 1392.20125pt x 594.22pt>
+<./images/inserteditremove.pdf, id=772, 1392.20125pt x 594.22pt>
 File: ./images/inserteditremove.pdf Graphic file (type pdf)
 
 <use ./images/inserteditremove.pdf>
@@ -1256,7 +1256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
-<./images/CommandPackage.pdf, id=884, 1699.34875pt x 1168.365pt>
+<./images/CommandPackage.pdf, id=892, 1699.34875pt x 1168.365pt>
 File: ./images/CommandPackage.pdf Graphic file (type pdf)
 
 <use ./images/CommandPackage.pdf>
@@ -1456,7 +1456,7 @@ Overfull \hbox (8.10626pt too wide) in paragraph at lines 410--411
 ker in-vo-ca il me-to-do doac-
  []
 
-<./images/slideshowelements.pdf, id=1180, 1677.26625pt x 572.1375pt>
+<./images/slideshowelements.pdf, id=1188, 1677.26625pt x 572.1375pt>
 File: ./images/slideshowelements.pdf Graphic file (type pdf)
 
 <use ./images/slideshowelements.pdf>
@@ -1567,7 +1567,7 @@ Overfull \hbox (23.25133pt too wide) in paragraph at lines 544--545
 el::ServerRelations::Loader::Costruttore,
  []
 
-<./images/ServerRelations.pdf, id=1346, 886.31125pt x 474.77374pt>
+<./images/ServerRelations.pdf, id=1354, 886.31125pt x 474.77374pt>
 File: ./images/ServerRelations.pdf Graphic file (type pdf)
 
 <use ./images/ServerRelations.pdf>
@@ -1588,7 +1588,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 566.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39 <./images/ServerRelations.pdf>]
-<./images/loader.pdf, id=1416, 1193.45876pt x 842.14626pt>
+<./images/loader.pdf, id=1424, 1193.45876pt x 842.14626pt>
 File: ./images/loader.pdf Graphic file (type pdf)
 
 <use ./images/loader.pdf>
@@ -1626,7 +1626,7 @@ ed, duplicate ignored
                    \relax 
 l.599         \subsubsubsection{Registrazione}
                                               {
-<./images/ClassDiagram1.pdf, id=1479, 1342.01375pt x 649.42625pt>
+<./images/ClassDiagram1.pdf, id=1487, 1342.01375pt x 649.42625pt>
 File: ./images/ClassDiagram1.pdf Graphic file (type pdf)
 
 <use ./images/ClassDiagram1.pdf>
@@ -1907,83 +1907,114 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 60.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [49] (parti//MVC/view.tex
+<./images/view.jpg, id=1657, 1318.9275pt x 673.51625pt>
+File: ./images/view.jpg Graphic file (type jpg)
+
+<use ./images/view.jpg>
+Package pdftex.def Info: ./images/view.jpg used on input line 4.
+(pdftex.def)             Requested size: 527.56166pt x 269.40172pt.
+
+Overfull \hbox (43.86479pt too wide) in paragraph at lines 4--6
+ [][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Overfull \hbox (33.41411pt too wide) in paragraph at lines 12--14
+\T1/cmr/bx/n/12 Relazioni d'u-so di al-tre com-po-nen-ti\T1/cmr/m/n/12 : il com
+-po-nen-te co-mu-ni-ca con il pac-ka-ge View::ViewJavascript
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 30.
+Package pdftex.def Info: ../../logo.jpg used on input line 18.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [50]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+ [50 <./images/view.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 55.
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [51]
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 
-Overfull \hbox (8.70807pt too wide) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Overfull \hbox (8.70807pt too wide) in paragraph at lines 61--64
 \T1/cmr/m/n/12 press.js uti-liz-za-to; uti-liz-za i me-to-di mes-si a di-spo-si
 -zio-ne del-la clas-se Pre-sen-ter::ExecutionPresenter
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 64.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 78.
+Package pdftex.def Info: ../../logo.jpg used on input line 86.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [52]
+ [53]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 100.
+Package pdftex.def Info: ../../logo.jpg used on input line 110.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [53])
+ [54]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 62.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[54] (parti/diagrammiAttivita.tex
-<./images/AttivitaPrincipali.pdf, id=1685, 1577.895pt x 1162.3425pt>
+ [55] (parti/diagrammiAttivita.tex
+<./images/AttivitaPrincipali.pdf, id=1701, 1577.895pt x 1162.3425pt>
 File: ./images/AttivitaPrincipali.pdf Graphic file (type pdf)
 
 <use ./images/AttivitaPrincipali.pdf>
 Package pdftex.def Info: ./images/AttivitaPrincipali.pdf used on input line 7.
 (pdftex.def)             Requested size: 473.37216pt x 348.70544pt.
 
-<./images/CaricarePresentazione.pdf, id=1686, 703.62875pt x 666.49pt>
+<./images/CaricarePresentazione.pdf, id=1702, 703.62875pt x 666.49pt>
 File: ./images/CaricarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/CaricarePresentazione.pdf>
@@ -1994,15 +2025,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [55 <./images/AttivitaPrincipali.pdf>]
-<./images/CaricareFile.pdf, id=1817, 1063.975pt x 591.20876pt>
+ [56 <./images/AttivitaPrincipali.pdf>]
+<./images/CaricareFile.pdf, id=1833, 1063.975pt x 591.20876pt>
 File: ./images/CaricareFile.pdf Graphic file (type pdf)
 
 <use ./images/CaricareFile.pdf>
 Package pdftex.def Info: ./images/CaricareFile.pdf used on input line 25.
 (pdftex.def)             Requested size: 425.58246pt x 236.47931pt.
 
-<./images/ModificarePresentazione.pdf, id=1818, 1359.0775pt x 682.55pt>
+<./images/ModificarePresentazione.pdf, id=1834, 1359.0775pt x 682.55pt>
 File: ./images/ModificarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/ModificarePresentazione.pdf>
@@ -2018,8 +2049,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [56 <./images/CaricarePresentazione.pdf> <./images/CaricareFile.pdf>]
-<./images/ModificaPresentazioneMobile.pdf, id=1919, 654.445pt x 447.6725pt>
+ [57 <./images/CaricarePresentazione.pdf> <./images/CaricareFile.pdf>]
+<./images/ModificaPresentazioneMobile.pdf, id=1935, 654.445pt x 447.6725pt>
 File: ./images/ModificaPresentazioneMobile.pdf Graphic file (type pdf)
 
 <use ./images/ModificaPresentazioneMobile.pdf>
@@ -2027,7 +2058,7 @@ Package pdftex.def Info: ./images/ModificaPresentazioneMobile.pdf used on input
  line 43.
 (pdftex.def)             Requested size: 261.77336pt x 179.06583pt.
 
-<./images/GestireSfondo.pdf, id=1920, 584.1825pt x 847.165pt>
+<./images/GestireSfondo.pdf, id=1936, 584.1825pt x 847.165pt>
 File: ./images/GestireSfondo.pdf Graphic file (type pdf)
 
 <use ./images/GestireSfondo.pdf>
@@ -2037,12 +2068,12 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [57 <./images/ModificarePresentazione.pdf> <./images/ModificaPresentazioneMobi
+ [58 <./images/ModificarePresentazione.pdf> <./images/ModificaPresentazioneMobi
 le.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/ModificaPresentazioneMobile.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <./images/InserireElemento.pdf, id=2032, 786.94pt x 519.9425pt>
+>] <./images/InserireElemento.pdf, id=2048, 786.94pt x 519.9425pt>
 File: ./images/InserireElemento.pdf Graphic file (type pdf)
 
 <use ./images/InserireElemento.pdf>
@@ -2052,8 +2083,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [58 <./images/GestireSfondo.pdf>]
-<./images/ModificareElemento.pdf, id=2078, 662.475pt x 530.98375pt>
+ [59 <./images/GestireSfondo.pdf>]
+<./images/ModificareElemento.pdf, id=2094, 662.475pt x 530.98375pt>
 File: ./images/ModificareElemento.pdf Graphic file (type pdf)
 
 <use ./images/ModificareElemento.pdf>
@@ -2061,7 +2092,7 @@ Package pdftex.def Info: ./images/ModificareElemento.pdf used on input line 70.
 
 (pdftex.def)             Requested size: 264.9853pt x 212.38972pt.
 
-<./images/ModificareFrame.pdf, id=2079, 1358.07375pt x 585.18625pt>
+<./images/ModificareFrame.pdf, id=2095, 1358.07375pt x 585.18625pt>
 File: ./images/ModificareFrame.pdf Graphic file (type pdf)
 
 <use ./images/ModificareFrame.pdf>
@@ -2076,15 +2107,15 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 84.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [59 <./images/InserireElemento.pdf> <./images/ModificareElemento.pdf>] <./imag
-es/ModificareSVG.pdf, id=2168, 974.64125pt x 645.41125pt>
+ [60 <./images/InserireElemento.pdf> <./images/ModificareElemento.pdf>] <./imag
+es/ModificareSVG.pdf, id=2185, 974.64125pt x 645.41125pt>
 File: ./images/ModificareSVG.pdf Graphic file (type pdf)
 
 <use ./images/ModificareSVG.pdf>
 Package pdftex.def Info: ./images/ModificareSVG.pdf used on input line 88.
 (pdftex.def)             Requested size: 389.8496pt x 258.15993pt.
 
-<./images/ModificareTesto.pdf, id=2169, 1422.31375pt x 467.7475pt>
+<./images/ModificareTesto.pdf, id=2186, 1422.31375pt x 467.7475pt>
 File: ./images/ModificareTesto.pdf Graphic file (type pdf)
 
 <use ./images/ModificareTesto.pdf>
@@ -2099,40 +2130,40 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 100.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [60 <./images/ModificareFrame.pdf> <./images/ModificareSVG.pdf>])
+ [61 <./images/ModificareFrame.pdf> <./images/ModificareSVG.pdf>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 64.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [61 <./images/ModificareTesto.pdf>]
+ [62 <./images/ModificareTesto.pdf>]
 (parti/stime.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [62] (parti/tracciamento.tex
+ [63] (parti/tracciamento.tex
 (parti/traccCompReq.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [63]
+ [64]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 162.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [64]
+ [65]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 162.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [65])
+ [66])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 4.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [66] (parti/traccReqComp.tex
+ [67] (parti/traccReqComp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 []|\T1/cmr/m/n/12 View::Pages::-IndexPage, Model::ServerRelations::AccessContro
 l::-
@@ -2312,7 +2343,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [67]
+ [68]
 Overfull \hbox (36.96312pt too wide) in paragraph at lines 88--89
 []|\T1/cmr/m/n/12 View::Pages::-EditDesktop, Model::SlideShow::SlideShowActions
 ::InsertEditRemove::-
@@ -2392,7 +2423,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [68]
+ [69]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 []|\T1/cmr/m/n/12 View::Pages::-Home, Presenter::-HomePresenter,
  []
@@ -2438,7 +2469,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [69]
+ [70]
 Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 RF
  []
@@ -2473,7 +2504,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 207.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [70]
+ [71]
 Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []|\T1/cmr/m/n/12 RF
  []
@@ -2547,32 +2578,35 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 250.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [71])) 
+ [72])) 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [72]
+ [73]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (SpecificaTecnica_v.1.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 68.
  )
-(\end occurred inside a group at level 2)
+(\end occurred inside a group at level 5)
 
-### simple group (level 2) entered at line 1 ({)
+### simple group (level 5) entered at line 1 ({)
+### simple group (level 4) entered at line 112 ({)
+### simple group (level 3) entered at line 110 ({)
+### simple group (level 2) entered at line 11 ({)
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13901 strings out of 493698
- 202114 string characters out of 3144409
+ 13914 strings out of 493698
+ 202319 string characters out of 3144409
  377832 words of memory out of 3000000
- 16713 multiletter control sequences out of 15000+200000
+ 16721 multiletter control sequences out of 15000+200000
  15751 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 51i,16n,60p,885b,728s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,885b,876s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Progra
@@ -2583,9 +2617,9 @@ pe1/public/cm-super/sfrm0600.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/cm-super/sfrm0800.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti120
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.1.0.0.pdf (73 pages, 2749673 bytes).
+Output written on SpecificaTecnica_v.1.0.0.pdf (74 pages, 2818348 bytes).
 PDF statistics:
- 2836 PDF objects out of 2984 (max. 8388607)
- 199 named destinations out of 1000 (max. 500000)
- 1100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2861 PDF objects out of 2984 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
+ 1129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

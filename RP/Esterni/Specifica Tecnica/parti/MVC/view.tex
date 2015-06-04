@@ -1,23 +1,25 @@
 	\subsection{View}{
-%		\begin{figure}[h]
-%			\centering
-%			\includegraphics[scale=0.6]{\imgs {view}.pdf} %inserire il diagramma UML
-%			\label{fig:view}
-%			\caption{View}
-%		\end{figure}
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.4]{\imgs {view}.jpg}
+			\label{fig:view}
+			\caption{View}
+		\end{figure}
 		\textbf{\tipo}: questo livello costituisce l'interfaccia del software utilizzabile dagli utenti mediante pagine web.\\
 		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Presenter per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso.\\
 		
+		\subsubsection{View::Pages}{
+			\textbf{\tipo}: questo package costituisce le pagine fisiche del sistema, realizzate in Html.\\
+			\textbf{\relaz}: il componente comunica con il package View::ViewJavascript per l'utilizzo delle funzioni presenti all'interno dello stesso per l'interazione dell'utente con il sito.\\
 		\subsubsection{View::Pages::IndexPage}{
-			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema e di passare alla visualizzazione della classe Loader.\\
+			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema.\\
 			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe Presenter::IndexPresenter, contenuta nel package Presenter, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
 			\textbf{\interfacce}: i metodi implementati nella classe IndexPage sono i seguenti:
 			\begin{itemize}
 				\item IndexPage::Login invia al controller i dati della login e, se corretti, manda alla pagina Home;
-				\item IndexPage::Subscribe invia al controller i dati della registrazione e, se corretti, manda alla pagina Home;
-				\item IndexPage::Manifest manda alla pagina Manifest.
+				\item IndexPage::Subscribe invia al controller i dati della registrazione e, se corretti, manda alla pagina Home.
 			\end{itemize} 
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi e registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione o la registrazione al sistema oppure che l'utente decida di andare nella pagina Loader.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi e registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione o la registrazione al sistema.\\
 		}
 		\subsubsection{View::Pages::Home}{
 			\textbf{\tipo}: la classe Home definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni presenti sul server e i comandi principali di gestione del profilo e gestione presentazioni.\\	
@@ -102,6 +104,12 @@
 			\item EditDesktop::TextEdit invia al controller l'id dell'elemento di testo e il suo nuovo contenuto;
 			\item EditDesktop::Bookmark invia al controller l'id del frame al quale viene associato o rimosso (a seconda dello stato in quel momento) un bookmark;
 		\end{itemize}
-			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (modificando un elemento testo) e assegnare bookmark ai frame..\\
+			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (modificando un elemento testo) e assegnare bookmark ai frame.\\
 			\textbf{\base}: View::Pages::Edit.
 		}
+		\subsubsection{View::ViewJavascript}{
+			\textbf{\attivita}: rappresenta il lato javascript del sito web.\\
+		\subsubsection{View::ViewJavascript::UserFunctions}{
+			\textbf{\tipo}: il componente UserFunctions contiene tutte le funzioni javascript utilizzato dal package pages. \\
+			\textbf{\relaz}: comunica con il presenter per tutte le chiamate javascript effettuate dall'utente.\\
+			\textbf{\interfacce}: i metodi presenti nel package Pages che utilizzano le funzioni javascript presenti nella classe UserFunctions sono relativi a tutte i metodi presenti nella classe Pages per gestire la corretta interazione dell'utente con il sito.
