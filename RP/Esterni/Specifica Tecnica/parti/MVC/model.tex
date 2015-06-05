@@ -56,19 +56,19 @@
 		\textbf{\relaz}:
 		\begin{itemize}
 			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da Inserter;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da Inserter;
+			\item ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da Inserter;
+			\item ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da Inserter;
+			\item ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da Inserter;
+			\item ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da Inserter;
+			\item ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da Inserter;
+			\item ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da Inserter;
             \item Model::SlideShow::SlideShowElements::Text <- Inserter costruisce gli oggetti di classe Text;
-            \item Model::SlideShow::SlideShowElements::Frame <- Inserter costruisce gli oggetti di classe Frame;
-            \item Model::SlideShow::SlideShowElements::Image <- Inserter costruisce gli oggetti di classe Image;
-            \item Model::SlideShow::SlideShowElements::SVG <- Inserter costruisce gli oggetti di classe SVG;
-            \item Model::SlideShow::SlideShowElements::Audio <- Inserter costruisce gli oggetti di classe Audio;
-            \item Model::SlideShow::SlideShowElements::Video <- Inserter costruisce gli oggetti di classe Video;
-            \item Model::SlideShow::SlideShowElements::Background <- Inserter costruisce gli oggetti di classe Background;
+            \item Frame <- Inserter costruisce gli oggetti di classe Frame;
+	         \item Image <- Inserter costruisce gli oggetti di classe Image;
+	         \item SVG <- Inserter costruisce gli oggetti di classe SVG;
+	         \item Audio <- Inserter costruisce gli oggetti di classe Audio;
+	         \item Video <- Inserter costruisce gli oggetti di classe Video;
+	         \item Background <- Inserter costruisce gli oggetti di classe Background;
             \item Model::MongoRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
             \item Model::MongoRelations::DBSynch <- Inserter costruisce un ConcreteSubject e un ConcreteObserver. L'elemento costruito da Inserter ha un riferimento al ConcreteSubject così creato.
 		\end{itemize} 
@@ -82,25 +82,25 @@
 		\begin{itemize}
 			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da Remover;
 			\item Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da Remover;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da Remover;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da Remover;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da Remover;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da Remover;
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand -> invoca il metodo removeBackground() messo a disposizione da Remover;
+			\item ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da Remover;
+			\item ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da Remover;
+			\item ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da Remover;
+			\item ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da Remover;
+			\item ConcreteBackgroundRemoveCommand -> invoca il metodo removeBackground() messo a disposizione da Remover;
            \item Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-           \item Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-           \item Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-           \item Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-           \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-           \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-           \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
-           \item Model::SlideShow::SlideShowElements::Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-           \item Model::SlideShow::SlideShowElements::Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-           \item Model::SlideShow::SlideShowElements::Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-           \item Model::SlideShow::SlideShowElements::SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-           \item Model::SlideShow::SlideShowElements::Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-           \item Model::SlideShow::SlideShowElements::Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-           \item Model::SlideShow::SlideShowElements::Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+           \item Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+			\item Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+			\item SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+			\item Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+			\item Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+			\item Background <- Editor invoca i metodi di set degli oggetti di classe Background;
+			\item Text <- Editor invoca i metodi di set degli oggetti di classe Text;
+			\item Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
+			\item Image <- Editor invoca i metodi di set degli oggetti di classe Image;
+			\item SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
+			\item Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
+			\item Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+			\item Background <- Editor invoca i metodi di set degli oggetti di classe Background;
 		\end{itemize} 
 	}	
 	}
@@ -138,27 +138,27 @@
                 \textbf{\interfacce}:Viene utilizzata per applicare un generico parametro di trasformazione ad un oggetto della presentazione, questo parametro verrà poi specificato dalle classi concrete.\\
                 \textbf{\figli}: 
                     \begin{itemize}
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteImageInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteAudioInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteVideoInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteTextRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteFrameRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteImageRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteSVGRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteAudioRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteVideoRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundRemoveCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditColorCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditFontCommand;
-                    \item Model::SlideShow::SlideShowActions::Command::ConcreteEditContentCommand.
+                    \item ConcreteTextInsertCommand;
+                    \item ConcreteFrameInsertCommand;
+                    \item ConcreteImageInsertCommand;
+                    \item ConcreteSVGInsertCommand;
+                    \item ConcreteAudioInsertCommand;
+                    \item ConcreteVideoInsertCommand;
+                    \item ConcreteBackgroundInsertCommand;
+                    \item ConcreteTextRemoveCommand;
+                    \item ConcreteFrameRemoveCommand;
+                    \item ConcreteImageRemoveCommand;
+                    \item ConcreteSVGRemoveCommand;
+                    \item ConcreteAudioRemoveCommand;
+                    \item ConcreteVideoRemoveCommand;
+                    \item ConcreteBackgroundRemoveCommand;
+                    \item ConcreteEditSizeCommand;
+                    \item ConcreteEditPositionCommand;
+                    \item ConcreteEditRotationCommand;
+                    \item ConcreteEditColorCommand;
+                    \item ConcreteEditBackgroundCommand;
+                    \item ConcreteEditFontCommand;
+                    \item ConcreteEditContentCommand.
                     \end{itemize}
                     }
     \subsubsubsection{ConcreteTextInsertCommand}{
