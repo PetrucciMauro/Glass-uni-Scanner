@@ -1,0 +1,59 @@
+\section{Descrizione architetturale}{
+\subsection{Metodo e formalismi}{
+	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle iterazioni successive.
+	Si passerà quindi alla definizione dei package e successivamente dei componenti di questi. Infine si andranno a definire le singole classi e interfacce specificando per ognuna:
+	\begin{itemize}
+	\item Tipo;
+	\item Funzione;
+	\item Classi o interfacce estese;
+	\item Interfacce implementate;
+	\item Relazioni con altre classi.
+	\end{itemize}
+	
+	Verranno quindi illustrati i Design Pattern usati nella progettazione architetturale del sistema rimandano la spiegazione all'appendice (A1).\\
+	Per i diagrammi di Package, classi e attività verrà usata la notazione UML 2.0.
+}
+\subsection{Architettura generale}{
+	Il prodotto si presenta suddiviso in tre parti distinte: Model, View e ViewModel. Si è quindi cercato di implementare il design pattern architetturale MVVM in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.25]{\imgs {General}.pdf} %inserire il diagramma UML
+		\label{fig:architettura}
+		\caption{Architettura generale del sistema}
+	\end{figure}
+	\subsubsection{Model}{
+		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del software e risulta di fatto totalmente indipendente dagli altri due strati.
+		}
+	\subsubsection{View}{	
+		Contiene tutti gli elementi della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Presenter, demandandone a quest'ultimo la	gestione.
+		}
+	\subsubsection{Presenter}{
+		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
+		}
+	}
+	
+	\subsection{Servizi Api nodeAPI}{
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{\imgs {nodeAPI}.pdf}
+			\label{fig:nodeAPI}
+			\caption{Servizio Api nodeApI}
+		\end{figure}
+		\begin{itemize}
+			
+			\item \textbf{NodeApiServer:} radice dei servizi offerti da nodeApi, ovvero servizi di autenticazione e di interazione con il database MongoDb per salvare in modo persistente le presentazioni degli utenti in remoto
+			
+			\item \textbf{User:} servizi disponibili al path /users, offre funzionalità di registrazione e autenticazione di un utente attraverso token scambiati dal client al server ad ogni richiesta di servizio
+			
+			\item \textbf{apiMiddleware:} al path /api è presente un middleware per proteggere i servizi Presentations, Presentation ed Element da accessi di utenti non autenticati
+			
+			\item \textbf{Presentations:} al path /api/presentations è disponibile un servizio per ottenere meta-informazioni sulle presentazioni create dall'utente 
+			
+			\item \textbf{Presentation:} al path /api/presentations/presentation sono disponibili servizi per creare una nuova presentazione e per recuperare o eliminare una presentazione dell'utente
+			
+			\item \textbf{Element:} al path /api/presentations/presentation/element sono disponibili servizi per inserire, sostituire o eliminare un elemento in una presentazione dell'utente
+		\end{itemize}
+	}
+	
+}

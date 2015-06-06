@@ -1,0 +1,283 @@
+\section{Pianificazione dei test}{
+Si descrivono di seguito tutti i test di Validazione\ped{g}, sistema ed integrazione previsti,prevedendo un aggiornamento futuro per i test di unità. Per le tempistiche di esecuzione
+dei test si faccia riferimento al  \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto}.
+\subsection{Test di sistema}{
+In questa sezione vengono descritti i test di sistema che permettono di verificare il
+comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descritti nell’ \href{run:../../Esterni/\fAnalisiDeiRequisiti}{\fEscapeAnalisiDeiRequisiti}.
+	I test di sistema riportati sono quelli relativi ai Requisiti\ped{g} Software\ped{g} individuati e pertanto
+	meritevoli di un test.
+	
+	
+		\renewcommand*{\arraystretch}{1.4}
+		\begin{longtable} [c]{| p{3cm} | p{6cm} |p{3cm}|}
+			\caption{Descrizione dei test di sistema per i Requisiti\ped{g} Funzionali
+			 \label{tab:verReqFunz}}\\
+			 \hline
+			 \textbf{Test} & \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			 \endfirsthead
+			 \hline
+			 \textbf{Test} & \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			\endhead
+			 \hline
+			 \endfoot
+			 \hline
+			 \endlastfoot
+			TS 1 & Viene verificato che ci si possa registrare al sistema inserendo username e password & RF 1\\
+			\hline
+			TS 1.1 & Viene verificato che si possa immettere uno username univoco & RF 1.1\\
+			\hline
+			TS 1.2 & Viene verificato che si possa immettere una password valida & RF 1.2\\
+			\hline
+			TS 3 & Viene verificato che ci si possa autenticare con username e password & RF 3\\
+			\hline
+			TS 3.1 & Viene verificato che si possa immettere uno username & RF 3.1\\
+			\hline
+			TS 3.2 & Viene verificato che si possa immettere una password & RF 3.2\\
+			\hline
+			TS 4 & Viene verificato che si possa creare una nuova presentazione vuota & RF 4\\
+			\hline
+			TS 7 & Viene verificato che si possa passare in modalità modifica di una presentazione da Desktop\ped{g} & RF 7\\
+			\hline
+			TS 7.1 & Viene verificato che si possa inserire un nuovo Frame\ped{g} nel piano della presentazione\ped{g} & RF 7.1\\
+			\hline
+			TS 7.1.1 & Viene verificato che si possa scegliere il tipo di Frame\ped{g} da inserire & RF 7.1.1\\
+			\hline
+			TS 7.4 & Viene verificato che si possa spostare un Frame\ped{g} in modalità modifica & RF 7.4\\
+			\hline
+			TS 7.7 & Viene verificato che si possa passare in modalità modifica di un Frame\ped{g} & RF 7.7\\
+			\hline
+			TS 7.7.1 & Viene verificato che si possa inserire del testo all'interno di un Frame\ped{g} & RF 7.7.1\\
+			\hline
+			TS 7.7.4 & Viene verificato che si possa modificare del testo già presente all'interno di un Frame\ped{g} & RF 7.7.4\\
+			\hline
+			TS 7.7.7 & Viene verificato che si possa inserire un'immagine all'interno del Frame\ped{g} & RF 7.7.7\\
+			\hline
+			TS 7.7.10 & Viene verificato che si possa modificare la dimensione di un'immagine & RF 7.7.10\\
+			\hline
+			TS 7.7.13 & Viene verificato che si possa inserire un video o un audio all'interno di un Frame\ped{g} & RF 7.7.13\\
+			\hline
+			TS 7.7.16 & Viene verificato che si possa modificare la dimensione di un video all'interno di un Frame\ped{g} & RF 7.7.16\\
+			\hline
+			TS 7.7.19 & Viene verificato che si possa spostare un Elemento\ped{g} all'interno del Frame\ped{g} & RF 7.7.19\\
+			\hline
+			TS 7.7.25 & Verificare che si possa inserire un Elemento scelta\ped{g} in un Frame\ped{g} & RF 7.7.25\\
+			\hline
+			TS 7.7.28 & Viene verificato che si possa modificare un Elemento scelta\ped{g} & RF 7.7.28\\
+			\hline
+			TS 7.7.31 & Viene verificato che si possa modificare la forma di un Frame\ped{g} & RF 7.7.31\\
+			\hline
+			TS 7.7.34 & Viene verificato che si possa modificare la dimensione di un Frame\ped{g} & RF 7.7.34\\
+			\hline
+			TS 7.7.37 & Viene verificato che si possa modificare  lo spessore del bordo di un Frame\ped{g} & RF 7.7.37\\
+			\hline
+			TS 7.7.40 & Viene verificato che si possa modificare il colore del bordo di un Frame\ped{g} & RF 7.7.40\\
+			\hline
+			TS 7.7.43 & Viene verificato che si possa modificare lo sfondo di un Frame\ped{g} & RF 7.7.43\\
+			\hline
+			TS 7.7.46 & Viene verificato che si possa ruotare un Frame\ped{g} & RF 7.7.46 \\
+			\hline
+			TS 7.10 & Viene verificato che si possa eliminare un Frame\ped{g} dal piano di una presentazione & RF 7.10\\
+			\hline
+			TS 7.13 & Viene verificato che si possa inserire un'immagine di sfondo in un'area della presentazione & RF 7.13 \\
+			\hline
+			TS 7.16 & Viene verificato che si possa inserire un colore di sfondo in un'area della presentazione & RF 7.16\\
+			\hline
+			TS 7.19 & Viene verificato che si possa definire un Percorso\ped{g} di visualizzazione & RF 7.19\\
+			\hline				
+			TS 7.19.1 & Viene verificato che si possa impostare un Frame\ped{g} iniziale per il Percorso\ped{g} di presentazione & RF7.19.1\\
+			\hline
+			TS 7.19.4 & Viene verificato che si possa definire una transizione tra due Frame\ped{g} & RF 7.19.4\\
+			\hline
+			TS 7.19.10 & Viene verificato che si possa eliminare una transizione tra due Frame\ped{g} & RF 7.19.10\\
+			\hline
+			TS 7.19.13 & Viene verificato che si possa togliere un Frame\ped{g} dal Percorso\ped{g} di presentazione & RF 7.19.13\\
+			\hline
+			TS 7.22 & Viene verificato che si possa assegnare un Bookmark\ped{g} ad un Frame\ped{g} & RF 7.22\\
+			\hline
+			TS 7.25 & Viene verificato che si possa rimuovere un Bookmark\ped{g} da un Frame\ped{g} & RF 7.25\\
+			\hline
+			TS 7.28 & Viene verificato che si possa modificare la velocità di transizione tra due Frame\ped{g} consecutivi & RF 7.28\\
+			\hline
+			TS 7.31 & Viene verificato che si possa impostare un effetto di transizione tra due Frame\ped{g} consecutivi & RF 7.31\\
+			\hline
+			TS 7.34 & Viene verificato che si possa impostare il tempo di attesa tra due Frame\ped{g} consecutivi durante la "riproduzione automatica" & RF 7.34\\
+			\hline
+			TS 7.37 & Viene verificato che si possa inserire un Elemento\ped{g} SVG in un Frame\ped{g} o nel piano della presentazione\ped{g} & RF 7.37\\
+			\hline
+			TS 7.40.1 & Viene verificato che si possa modificare le dimensioni di un Elemento\ped{g} SVG  & RF 7.40.1\\
+			\hline
+			TS 7.40.2 & Viene verificato che si possa modificare il colore di un Elemento\ped{g} SVG  & RF 7.40.2\\
+			\hline
+			TS 7.43 & Viene verificato che si possa eliminare un Elemento\ped{g} & RF 7.43 \\
+			\hline
+			TS 7.46 & Viene verificato che si possa ruotare un Elemento\ped{g} & RF 7.46 \\
+			\hline			 
+			TS 10 & Viene verificato il poter passare in modalità modifica di una presentazione da mobile & RF 10\\
+			\hline
+			TS 10.1 & Viene verificato che si possa editare da mobile il testo all'interno di un Frame\ped{g} & RF 10.1\\
+			\hline
+			TS 10.4 & Viene verificato che si possa modificare da mobile il testo presente all'interno di un Frame\ped{g} & RF 10.4\\
+			\hline
+			TS 10.5 & Viene verificato che si possa assegnare un Bookmark\ped{g} ad un Frame\ped{g} da mobile & RF 10.5\\
+			\hline
+			TS 10.8 & Viene verificato che si possa rimuovere un Bookmark\ped{g} ad un Frame\ped{g} da mobile & RF 10.8\\
+			\hline
+			TS 13 & Viene verificato che si possa caricare un File\ped{g} media presente in locale nel Server\ped{g} & RF 13\\
+			\hline
+			TS 16 & Viene verificato che si possano eliminare dal Server\ped{g} i File\ped{g} media caricati & RF 16\\
+			\hline
+			TS 17 & Viene verificato che si possano rinominare i File\ped{g} media presenti sul Server\ped{g} & RF 17\\
+			\hline
+			TS 19 & Viene verificato che si possano rinominare le presentazioni salvate nel Server\ped{g} & RF 19\\
+			\hline
+			TS 25 & Viene verificato che si possano rinominare le Infografiche\ped{g} salvate nel Server\ped{g} & RF 25\\
+			\hline
+			TS 31 & Viene verificato che si possa eliminare dal Server\ped{g} un'Infografica\ped{g} creata & RF 31\\
+			\hline
+			TS 34 & Viene verificato che si possa eliminare dal Server\ped{g} una presentazione creata & RF 34\\
+			\hline
+			TS 35 & Viene verificato che si possano visualizzare le presentazioni salvate sul Server\ped{g} & RF 35\\
+			\hline
+			TS 36 & Viene verificato che si possano visualizzare le Infografiche\ped{g} salvate sul Server\ped{g} & RF 36\\
+			\hline
+			TS 37 & Viene verificato che si possano visualizzare i File\ped{g} media salvati sul Server\ped{g} & RF 37\\						
+			\hline
+			TS 43 & Viene verificato che si possa modificare la propria password di accesso al sistema & RF 43\\
+			\hline
+			TS 46 & Viene verificato che si possa scaricare in locale un'Infografica\ped{g} creata sul Server\ped{g} & RF 46\\
+			\hline
+			TS 49 & Viene verificato che si possa salvare in locale una presentazione creata sul Server\ped{g} & RF 49\\
+			\hline
+			TS 52 & Viene verificato che si possa rimuovere una presentazione salvata in locale & RF 52\\
+			\hline
+			TS 55 & Viene verificato che si possa annullare una modifica non voluta & RF 55\\
+			\hline
+			TS 58 & Viene verificato che si possa ripristinare una modifica annullata precedentemente  & RF 58\\
+			\hline
+			TS 61.1 & Viene verificato che si possa eseguire una presentazione in modalità manuale & RF 61.1\\
+			\hline
+			TS 61.1.1 & Viene verificato che durante la presentazione si possa passare al Frame\ped{g} successivo o al precedente & RF 61.1.1\\
+			\hline
+			TS 61.1.4 & Viene verificato che si possa selezionare un Elemento scelta\ped{g} se presente nel Frame\ped{g} & RF 61.1.4\\
+			\hline
+			TS 61.1.7 & Viene verificato che si possa passare al Frame\ped{g} con Bookmark\ped{g} successivo o precedente & RF 61.1.7\\
+			\hline
+			TS 61.1.10 & Viene verificato che si possa passare da un Frame\ped{g} visualizzato al suo Frame\ped{g} contenitore & RF 61.1.10\\
+			\hline
+			TS 61.1.13 & Viene verificato che si possa zoomare in una parte qualsiasi del Frame\ped{g} & RF 61.1.13\\
+			\hline
+			TS 61.1.16.1 & Viene verificato che si possa iniziare l’esecuzione di un video/audio all'interno di un Frame\ped{g} & RF 61.1.16.1\\
+			\hline
+			TS 61.1.16.4 & Viene verificato che si possa Sospendere\ped{g} e poi riprendere l'esecuzione di un video/audio all'interno di un Frame\ped{g} & RF 61.1.16.4\\
+			\hline
+			TS 61.1.16.7 & Viene verificato che si possa eseguire un video/audio da un punto qualsiasi dello stesso & RF 61.1.16.7\\
+			\hline
+			TS 61.1.16.10 & Viene verificato che si possa interrompere l'esecuzione di un video/audio & RF 61.1.16.10\\
+			\hline
+			TS 61.4 & Viene verificato che si possa eseguire una presentazione in modalità automatica & RF 61.4\\
+			\hline
+			TS 61.4.1 & Viene verificato che si possa chiudere una presentazione in esecuzione automatica & RF 61.4.1\\
+			\hline
+			TS 61.4.4 & Viene verificato che si possa Sospendere\ped{g} e riavviare una presentazione in esecuzione automatica & RF 61.4.4\\
+			\hline
+			TS 61.4.7 & Viene verificato che si possa impostare la velocità di riproduzione della presentazione & RF 61.4.7\\
+			\hline
+			TS 61.4.10.1 & Viene verificato che si possa Sospendere\ped{g} la riproduzione di un video/audio e riprenderla successivamente & RF 61.4.10.1\\
+			\hline
+			TS 61.4.10.4 & Viene verificato che si possa riprodurre un File\ped{g} video/audio da un punto qualsiasi dello stesso & RF 61.4.10.4\\
+			\hline
+			TS 61.4.10.7 & Viene verificato che si possa saltare la riproduzione di un video/audio nel Frame\ped{g} visualizzato & RF 61.4.10.7\\
+			\hline
+			TS 61.4.10.10 & Viene verificato che si possa visualizzare la riproduzione del video a schermo intero & RF 61.4.10.10\\
+			\hline
+			TS 61.7 & Viene verificato che si possa passare da presentazione automatica a presentazione manuale e viceversa & RF 61.7, RF 61.10\\
+			\hline
+			TS 64 & Viene verificato che si possa effettuare il Logout\ped{g} dal Server\ped{g} & RF 64\\
+			\hline
+			TS 67.1 & Viene verificato che l'amministratore possa inserire dei Template\ped{g} di presentazioni & RF 67.1\\
+			\hline
+			TS 67.4 & Viene verificato che l'amministratore possa inserire Template\ped{g} di Infografiche\ped{g} & RF 67.4\\
+			\hline
+			TS 67.7 & Viene verificato che l'amministratore possa inserire elementi\ped{g} grafici & RF 67.7\\
+			\hline
+			TS 67.10 & Viene verificato che l'amministratore possa eliminare un Template\ped{g} & RF 67.10\\
+			\hline
+			TS 67.13 & Viene verificato che l'amministratore possa ripristinare un Template\ped{g} eliminato & RF 67.13\\
+			\hline
+			TS 70.1 & Viene verificato che si possa selezionare una presentazione da cui produrre l'Infografica\ped{g}  & RF 70.1\\
+			\hline
+			TS 70.4 & Viene verificato che si possa selezionare Template\ped{g} di Infografica\ped{g} & RF 70.4\\
+			\hline
+			TS 70.5 & Viene verificato che si possano selezionare gli elementi\ped{g} dell'Infografica\ped{g}  & RF 70.5\\
+			\hline
+			TS 70.10 & Viene verificato che si possa passare in modalità modifica di un'Infografica\ped{g} & RF 70.10\\
+			\hline
+			TS 70.10.1 & Viene verificato che si possa modificare un Elemento\ped{g} di un'Infografica\ped{g} & RF 70.10.1\\
+			\hline
+			TS 70.10.1.1 & Viene verificato che si possano modificare le dimensioni di un Elemento\ped{g} grafico & RF 70.10.1.1\\
+			\hline
+			TS 70.10.1.4 & Viene verificato che si possa modificare un Elemento\ped{g} testuale  & RF 70.10.1.4\\
+			\hline
+			TS 70.10.1.4.1 & Viene verificato che si possa modificare il Font\ped{g} di un Elemento\ped{g} testuale & RF 70.10.1.4.1\\
+			\hline
+			TS 70.10.1.4.4 & Viene verificato che si possa modificare la dimensione del carattere di un Elemento\ped{g} testuale & RF 70.10.1.4.4\\
+			\hline
+			TS 70.10.1.4.7 & Viene verificato che si possa modificare lo stile del testo & RF 70.10.1.4.7\\
+			\hline
+			TS 70.10.1.4.10 & Viene verificato che si possa modificare il colore della scritta del testo & RF 70.10.1.4.10\\
+			\hline
+			TS 70.10.1.4.13 & Viene verificato che si possa modificare il colore di sfondo del testo & RF 70.10.1.4.13\\
+			\hline
+			TS 70.10.1.7 & Viene verificato che si possa cambiare la posizione di un Elemento\ped{g} & RF 70.10.1.7\\
+			\hline
+			TS 70.10.4 & Viene verificato che si possa rimuovere lo sfondo dell'Infografica\ped{g} & RF 70.4.4\\
+			\hline
+			TS 70.10.7 & Viene verificato che si possa inserire uno sfondo nell'Infografica\ped{g} & RF 70.10.7\\
+			\hline
+			TS 70.10.10 & Viene verificato che si possa inserire un Elemento\ped{g} immagine nell'Infografica\ped{g} & RF 70.10.10\\
+			\hline
+			TS 70.10.13 & Viene verificato che si possa inserire del testo nell'Infografica\ped{g} & RF 70.10.13\\
+			\hline
+			TS 70.10.16 & Viene verificato che si possa inserire un Frame\ped{g} nella sua interezza presente nella presentazione & RF 70.10.16\\
+			\hline
+			TS 70.10.19 & Viene verificato che si possano eliminare elementi\ped{g} grafici o testuali & RF 70.10.19\\
+			\hline
+			TS 70.13 & Viene verificato che si possa salvare l'Infografica\ped{g} nel suo spazio & RF 70.13\\
+			\hline
+			TS 70.16 & Viene verificato che si possa annullare e ripristinare una modifica appena effettuata & RF 70.16\\
+			\hline
+			TS 70.19 & Viene verificato che si possa esportare un'Infografica\ped{g} in formato stampabile & RF 70.19\\
+			\hline
+			TS 73 & Viene verificato che si possa creare un'Infografica\ped{g} & RF 73\\
+			\hline
+\end{longtable}
+
+		\renewcommand*{\arraystretch}{1.4}
+		\begin{longtable} [c]{| p{7cm} |p{4cm}|}
+			\caption{
+			Descrizione dei test di sistema
+			per i Requisiti\ped{g} di Qualità e Vincoli \label{tab:verReqQualVinc}}\\
+			 \hline
+			 \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			 \endfirsthead
+			 \hline
+			 \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			\endhead
+			 \hline
+			 \endfoot
+			 \hline
+			 \endlastfoot
+			Viene verificato che ogni funzionalità dell'applicazione sia documentata & RQ\ped{g} 1, 7\\
+			\hline
+			Viene verificato che sia disponibile un tutorial per la creazione delle presentazioni & RQ\ped{g} 4\\
+			\hline
+			Viene verificato che sia disponibile la documentazione sui test eseguiti & RQ\ped{g} 10\\
+			\hline
+			Viene verificato che il sistema offra la possibilità di eseguire offline le presentazioni & RQ\ped{g} 13\\
+\end{longtable}
+}
+}

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="pietro" date="2015-03-23T23:39:46.843Z" timestamp="2015-03-23T23:39:46.843Z">
+    <change idref="t6" attribute="noEarlierThanConstraintDate" type="date" from="2015-03-18T14:15:00.000Z" to="2015-03-18T16:15:00.000Z"/>
+    <change idref="t6" attribute="internalEffortDone" type="real" from="12600" to="18000"/>
+    <change idref="t9" attribute="internalEffortDone" type="real" from="0" to="7200"/>
+    <change idref="t22" attribute="effort" type="real" from="21600" to="14400"/>
+    <change idref="t34" attribute="effort" type="real" from="7200" to="14400"/>
+    <change idref="t35" attribute="effort" type="real" from="57600" to="72000"/>
+    <change idref="t41" attribute="internalEffortDone" type="real" from="0" to="90000"/>
+    <change idref="t42" attribute="internalEffortDone" type="real" from="0" to="63000"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-03-28T11:23:03.136Z" timestamp="2015-03-28T11:23:03.136Z">
+    <change idref="t6" attribute="internalAssignments" type="string" from="5" to=""/>
+    <change idref="t9" attribute="internalAssignments" type="string" from="3" to=""/>
+    <change idref="t26" attribute="isGroup" type="real" from="0" to="1"/>
+    <change idref="t26" attribute="isSplittableTask" type="real" from="1"/>
+    <change idref="t26" attribute="taskType" type="real" from="0" to="2"/>
+    <change idref="t26" attribute="resourceAssignmentType" type="real" from="0"/>
+    <change idref="t26" attribute="staticCost" type="real" from="0"/>
+    <change idref="t26" attribute="effort" type="real" from="28800"/>
+    <change idref="t26" attribute="isSplitChunk" type="real" from="0"/>
+    <change idref="t26" attribute="scheduleType" type="real" from="0"/>
+    <change idref="t26" attribute="noEarlierThanConstraintDate" type="date" from="2015-03-18T15:00:00.000Z" to="2015-03-29T15:00:00.000Z"/>
+    <change idref="t26" attribute="internalAssignments" type="string" from=""/>
+    <change idref="t26" attribute="isSplitTask" type="real" from="0"/>
+    <change idref="t26" attribute="internalEffortDone" type="real" from="0"/>
+    <change idref="t66" to="t26" to-position="0">
+      <change idref="t66" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t66" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-27T17:45:00.000Z"/>
+      <change idref="t66" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0"/>
+      <change idref="t66" attribute="title" type="string" to="Task 1"/>
+    </change>
+    <change idref="t67" to="t26" to-position="1">
+      <change idref="t67" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t67" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-28T15:00:00.000Z"/>
+      <change idref="t67" attribute="title" type="string" to="Task 2"/>
+    </change>
+    <change idref="t68" to="t26" to-position="2">
+      <change idref="t68" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t68" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-28T15:00:00.000Z"/>
+      <change idref="t68" attribute="title" type="string" to="Task 3"/>
+    </change>
+    <change idref="t29" attribute="effort" type="real" from="43200" to="36000"/>
+    <change idref="t34" attribute="noEarlierThanConstraintDate" type="date" from="2015-03-18T15:00:00.000Z" to="2015-03-21T15:15:00.000Z"/>
+    <change idref="t39" attribute="internalEffortDone" type="real" from="0" to="10800"/>
+    <change idref="t40" attribute="noEarlierThanConstraintDate" type="date" from="2015-03-18T15:00:00.000Z" to="2015-03-17T16:45:00.000Z"/>
+    <change idref="t40" attribute="internalEffortDone" type="real" from="0" to="10800"/>
+    <change idref="t41" attribute="noEarlierThanConstraintDate" type="date" from="2015-03-18T15:00:00.000Z" to="2015-03-16T16:00:00.000Z"/>
+    <change idref="t41" attribute="internalAssignments" type="string" from="7" to=""/>
+    <change idref="t42" attribute="internalAssignments" type="string" from="11" to=""/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T20:02:00.456Z" timestamp="2015-04-11T20:02:00.456Z">
+    <change idref="t15" to="t5" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t15" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t15" attribute="internalPrerequisitesString" type="string" to="36FS"/>
+      <change idref="t15" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t15" attribute="title" type="string" to="Analisi e Norme"/>
+    </change>
+    <change idref="t17" to="t5" to-position="1" resurrection="yes" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t17" attribute="internalPrerequisitesString" type="string" to="3FS"/>
+      <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="Piano di Progetto"/>
+    </change>
+    <change idref="t16" to="t5" to-position="2" resurrection="yes" resolved="yes">
+      <change idref="t16" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t16" attribute="internalPrerequisitesString" type="string" to="4FS"/>
+      <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t16" attribute="title" type="string" to="Piano di Qualifica"/>
+    </change>
+    <change idref="t32" to="t5" to-position="3" resurrection="yes" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t32" attribute="internalPrerequisitesString" type="string" to="16FS, 17FS"/>
+      <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-18T15:00:00.000Z"/>
+      <change idref="t32" attribute="title" type="string" to="Verifica Gloss"/>
+    </change>
+    <change idref="t15" attribute="title" type="string" from="doc Analisi" to="Analisi e Norme" resolved="yes"/>
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" to="36FS" resolved="yes"/>
+    <change idref="t16" attribute="title" type="string" from="doc Qualifica" to="Piano di Qualifica" resolved="yes"/>
+    <change idref="t16" attribute="internalPrerequisitesString" type="string" to="4FS" resolved="yes"/>
+    <change idref="t17" attribute="title" type="string" from="doc Piano" to="Piano di Progetto" resolved="yes"/>
+    <change idref="t17" attribute="internalPrerequisitesString" type="string" to="3FS" resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="verifica Gloss" to="Verifica Gloss" resolved="yes"/>
+    <change idref="t32" attribute="internalPrerequisitesString" type="string" to="16FS, 17FS" resolved="yes"/>
+    <change idref="t15" to="t5" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t15" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t15" attribute="internalPrerequisitesString" type="string" to="36FS"/>
+      <change idref="t15" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t15" attribute="title" type="string" to="Analisi e Norme"/>
+    </change>
+    <change idref="t17" to="t5" to-position="1" resurrection="yes" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t17" attribute="internalPrerequisitesString" type="string" to="3FS"/>
+      <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="Piano di Progetto"/>
+    </change>
+    <change idref="t16" to="t5" to-position="2" resurrection="yes" resolved="yes">
+      <change idref="t16" attribute="effort" type="real" from="28800" to="10800"/>
+      <change idref="t16" attribute="internalPrerequisitesString" type="string" to="4FS"/>
+      <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-17T15:00:00.000Z"/>
+      <change idref="t16" attribute="title" type="string" to="Piano di Qualifica"/>
+    </change>
+    <change idref="t32" to="t5" to-position="3" resurrection="yes" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="3600"/>
+      <change idref="t32" attribute="internalPrerequisitesString" type="string" to="16FS, 17FS"/>
+      <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" to="2015-03-18T15:00:00.000Z"/>
+      <change idref="t32" attribute="title" type="string" to="Verifica Gloss"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T20:02:58.391Z" timestamp="2015-04-11T20:02:58.391Z">
+    <change idref="t28" attribute="title" type="string" from="resoconto " to="Resoconto " resolved="yes"/>
+    <change idref="t29" attribute="title" type="string" from="verifica dei requisiti" to="Verifica dei requisiti" resolved="yes"/>
+    <change idref="t32" attribute="title" type="string" from="Verifica Gloss" to="Verifica" resolved="yes"/>
+    <change idref="t33" attribute="title" type="string" from="verifca Qual" to="Verifca" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T20:03:10.584Z" timestamp="2015-04-11T20:03:10.584Z">
+    <change idref="t23" attribute="title" type="string" from="prospetto economico" to="Prospetto economico" resolved="yes"/>
+    <change idref="t24" attribute="title" type="string" from="verifica Progg" to="Verifica" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T20:03:43.253Z" timestamp="2015-04-11T20:03:43.253Z">
+    <change idref="t30" attribute="title" type="string" from="descrizione" to="Descrizione generale" resolved="yes"/>
+    <change idref="t31" attribute="title" type="string" from="casi d&apos;uso" to="Casi d&apos;uso" resolved="yes"/>
+    <change idref="t35" attribute="title" type="string" from="specifica" to="Specifica" resolved="yes"/>
+    <change idref="t36" attribute="title" type="string" from="verifica Req" to="Verifica" resolved="yes"/>
+    <change idref="t42" attribute="title" type="string" from="infografiche + download/upload" to="Infografiche + download/upload" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T20:03:54.258Z" timestamp="2015-04-11T20:03:54.258Z">
+    <change idref="t34" attribute="title" type="string" from="verifica Norme" to="Verifica" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T21:41:31.630Z" timestamp="2015-04-11T21:41:31.630Z">
+    <change idref="t41" attribute="title" type="string" from="Modifica + esecuzione + creazione" to="Parte1" resolved="yes"/>
+    <change idref="t42" attribute="title" type="string" from="Infografiche + download/upload" to="Parte2" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-11T22:01:49.203Z" timestamp="2015-04-11T22:01:49.203Z">
+    <change idref="t6" attribute="internalEffortDone" type="real" from="18000" to="0" resolved="yes"/>
+    <change idref="t7" attribute="internalEffortDone" type="real" from="26100" to="0" resolved="yes"/>
+    <change idref="t8" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t9" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t18" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t19" attribute="internalEffortDone" type="real" from="3600" to="0" resolved="yes"/>
+    <change idref="t20" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t21" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t22" attribute="internalEffortDone" type="real" from="14400" to="0" resolved="yes"/>
+    <change idref="t23" attribute="internalEffortDone" type="real" from="7200" to="0" resolved="yes"/>
+    <change idref="t25" attribute="internalEffortDone" type="real" from="21600" to="0" resolved="yes"/>
+    <change idref="t26" attribute="internalEffortDone" type="real" from="39600" to="0" resolved="yes"/>
+    <change idref="t27" attribute="internalEffortDone" type="real" from="3600" to="0" resolved="yes"/>
+    <change idref="t29" attribute="internalEffortDone" type="real" from="36000" to="0" resolved="yes"/>
+    <change idref="t30" attribute="internalEffortDone" type="real" from="21600" to="0" resolved="yes"/>
+    <change idref="t35" attribute="internalEffortDone" type="real" from="51300" to="0" resolved="yes"/>
+    <change idref="t37" attribute="internalEffortDone" type="real" from="3600" to="0" resolved="yes"/>
+    <change idref="t38" attribute="internalEffortDone" type="real" from="14400" to="0" resolved="yes"/>
+    <change idref="t39" attribute="internalEffortDone" type="real" from="10800" to="0" resolved="yes"/>
+    <change idref="t40" attribute="internalEffortDone" type="real" from="10800" to="0" resolved="yes"/>
+    <change idref="t41" attribute="internalEffortDone" type="real" from="90000" to="0" resolved="yes"/>
+    <change idref="t42" attribute="internalEffortDone" type="real" from="90000" to="0" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="pietro" date="2015-03-18T12:37:34.510Z" timestamp="2015-03-18T12:37:34.510Z">
+    <change idref="r7" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to="43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800"/>
+    <change idref="r11" attribute="standardHoursString" type="string" from="62100,64800;62100,64800;62100,64800;62100,64800;62100,64800;62100,64800;62100,64800" to="43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800"/>
+  </resource-change-set>
+  <resource-change-set user="pietro" date="2015-03-28T11:23:03.136Z" timestamp="2015-03-28T11:23:03.136Z">
+    <change idref="r-1" attribute="overtimeString" type="string" from="YnBsaXN0MDCgCAAAAAAAAAEBAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAJ" to="YnBsaXN0MDChAdQCAwQFBgcICVJlZFJzdFJldFJzZBEUUCJHfSAAIkeFmAARFE4IChMWGRwfIicsAAAAAAAAAQEAAAAAAAAACgAAAAAAAAAAAAAAAAAAAC8="/>
+    <change idref="r-1" attribute="standardHoursString" type="string" from="43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800" to="57600,64800;57600,64800;57600,64800;57600,64800;57600,64800;57600,64800;57600,64800"/>
+    <change idref="r11" from="r-1" from-position="1">
+      <change idref="r11" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="r11" attribute="name" type="string" to="Group 2"/>
+      <change idref="r11" attribute="resourceTypeRank" type="real" from="0" to="3"/>
+    </change>
+    <change idref="r7" from="r-1" from-position="0">
+      <change idref="r7" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="r7" attribute="name" type="string" to="Group 1"/>
+      <change idref="r7" attribute="resourceTypeRank" type="real" from="0" to="3"/>
+      <change idref="r7" attribute="standardHoursString" type="string" from="-;-;-;-;-;-;-" to="43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800;43200,64800"/>
+    </change>
+    <change idref="r12" to="r-1" to-position="0" resurrection="yes">
+      <change idref="r12" attribute="name" type="string" to="Pietro Tollot"/>
+    </change>
+    <change idref="r13" to="r-1" to-position="1" resurrection="yes">
+      <change idref="r13" attribute="name" type="string" to="Pietro Gabelli"/>
+    </change>
+    <change idref="r14" to="r-1" to-position="2" resurrection="yes">
+      <change idref="r14" attribute="name" type="string" to="Manuel"/>
+    </change>
+    <change idref="r15" to="r-1" to-position="3" resurrection="yes">
+      <change idref="r15" attribute="name" type="string" to="Mauro"/>
+    </change>
+    <change idref="r16" to="r-1" to-position="4" resurrection="yes">
+      <change idref="r16" attribute="name" type="string" to="Matteo"/>
+    </change>
+  </resource-change-set>
+</changelog>

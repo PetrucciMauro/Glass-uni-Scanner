@@ -1,0 +1,189 @@
+%	PACCHETTI INCLUSI
+\usepackage[utf8]{inputenc}
+\usepackage[top=2cm,bottom=4cm,left=2cm,right=2cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{booktabs,tabularx}
+\usepackage{makeidx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{tabu}
+\usepackage{xr}
+\usepackage{titlesec}
+\usepackage{bookmark}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{colortbl,booktabs,caption,float}
+\usepackage{yfonts}
+\usepackage{eurosym}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{mathtools}
+\usepackage[titletoc]{appendix}
+
+%\usepackage{appendix}
+
+\bibliographystyle{alpha}
+
+%	VARIABILI GLOBALI
+\newcommand{\gruppo}{LateButSafe}
+\newcommand{\mail}{latebutsafe@gmail.com}
+\newcommand{\unipd}{Universit\`{a} degli studi di Padova}
+\newcommand{\uniAA}{2014/2015}
+\newcommand{\Cardin}{Prof. Riccardo Cardin}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega}
+\newcommand{\Zucchetti}{Zucchetti S.p.a.}
+\newcommand{\premi}{Premi}
+\newcommand{\licenza}{Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.}
+
+\newcommand{\TP}{Tollot Pietro}
+\newcommand{\GP}{Gabelli Pietro}
+\newcommand{\VG}{Venturelli Giovanni}
+\newcommand{\FM}{Fossa Manuel}
+\newcommand{\BM}{Busetto Matteo}
+\newcommand{\PM}{Petrucci Mauro}
+
+\addto\captionsitalian{\renewcommand{\tablename}{Tab}}
+\addto\captionsitalian{\renewcommand{\figurename}{Fig}}
+
+%	nomi di tutti i file (per richiamarli nei documenti e creare link)
+\newcommand{\SpecificaTecnica}{\textit{Specifica Tecnica v.1.0.0}}
+\newcommand{\AnalisiDeiRequisiti}{\textit{Analisi dei Requisiti v.2.0.0}}
+\newcommand{\PianoDiProgetto}{\textit{Piano di Progetto v.2.0.0}}
+\newcommand{\NormeDiProgetto}{\textit{Norme di Progetto v.2.0.0}}
+\newcommand{\PianoDiQualifica}{\textit{Piano di Qualifica v.2.0.0}}
+\newcommand{\ManualeDiInstallazione}{\textit{Manuale Installatore v.2.0.0}}
+\newcommand{\ManualeUtente}{\textit{Manuale Utente v.2.0.0}}
+\newcommand{\ManualeAmministratore}{\textit{Manuale Amministratore v1.0.0}}
+\newcommand{\Glossario}{\textit{Glossario v.2.0.0}}
+\newcommand{\StudioDiFattibilita}{\textit{Studio di Fattibilità v.2.0.0}}
+
+\newcommand{\fSpecificaTecnica}{Specifica Tecnica/SpecificaTecnica_v.1.0.0.0.pdf}
+\newcommand{\fAnalisiDeiRequisiti}{Analisi dei Requisiti/AnalisiDeiRequisiti_v.2.0.0.pdf}
+\newcommand{\fPianoDiProgetto}{Piano di Progetto/PianoDiProgetto_v.2.0.0.pdf}
+\newcommand{\fNormeDiProgetto}{Norme di Progetto/NormeDiProgetto_v.2.0.0.pdf}
+\newcommand{\fPianoDiQualifica}{Piano di Qualifica/PianoDiQualifica_v.2.0.0.pdf}
+\newcommand{\fManualeDiInstallazione}{Manuale Installatore/ManualeInstallatore_v.2.0.0.pdf}
+\newcommand{\fManualeUtente}{Manuale Utente/ManualeUtente_v.2.0.0.pdf}
+\newcommand{\fManualeAmministratore}{Manuale Amministratore/ManualeAmministratore_v.2.0.0.pdf}
+\newcommand{\fGlossario}{Glossario/Glossario_v.2.0.0.pdf}
+
+\newcommand{\fEscapeSpecificaTecnica}{SpecificaTecnica\_v.1.0.0.pdf}
+\newcommand{\fEscapeAnalisiDeiRequisiti}{AnalisiDeiRequisiti\_v.2.0.0.pdf}
+\newcommand{\fEscapePianoDiProgetto}{PianoDiProgetto\_v.2.0.0.pdf}
+\newcommand{\fEscapeNormeDiProgetto}{NormeDiProgetto\_v.2.0.0.pdf}
+\newcommand{\fEscapePianoDiQualifica}{PianoDiQualifica\_v.2.0.0.pdf}
+\newcommand{\fEscapeManualeDiInstallazione}{ManualeInstallatore\_v.2.0.0.pdf}
+\newcommand{\fEscapeManualeUtente}{ManualeUtente\_v.2.0.0.pdf}
+\newcommand{\fEscapeManualeAmministratore}{ManualeAmministratore\_v.2.0.0.pdf}
+\newcommand{\fEscapeGlossario}{Glossario\_v.2.0.0.pdf}
+
+%	FORMATTAZIONE STILI
+\definecolor{red}{rgb}{1.0, 0.0, 0.0} %http://latexcolor.com/
+
+%	LSTSET: serve per riportare porzioni di codice. vedere il manuale
+\lstset{ 
+	language=Java,
+ 	basicstyle=\fontfamily{pcr}\selectfont,
+ 	numbers=left,
+ 	numberstyle=\tiny\color{gray},
+ 	numbersep=5pt,
+ 	backgroundcolor=\color{white},
+ 	showspaces=false,
+ 	showstringspaces=false,
+ 	showtabs=false,
+ 	frame=single,
+ 	rulecolor=\color{black},
+ 	tabsize=2,
+ 	captionpos=b,
+ 	breaklines=true,
+ 	breakatwhitespace=false,
+ 	keywordstyle=\color{blue}, 
+ 	commentstyle=\color{dkgreen},
+ 	stringstyle=\color{mauve},
+	escapeinside={\%*}{*)},
+	morekeywords={*,...}, 
+	deletekeywords={...}
+	}
+
+%	FORMATTAZIONE PAGINA
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+	citecolor=blue
+	}
+
+%	FORMATTAZIONE HEADER E FOOTER
+\pagestyle{fancy}
+\setlength{\headheight}{2.5cm}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%	Header
+\lhead{\includegraphics[width=2cm,height=2cm]{../../logo}}
+
+%	Footer
+\cfoot{
+	\unipd \ - \uniAA \\
+	\href{mailto:\mail}{\mail}\\
+	\tiny Questo documento è distribuito sotto licenza \href{http://http://creativecommons.org/licenses/by-nc-sa/3.0/}{\licenza}}
+\rfoot{
+	\thepage\ di \pageref{LastPage}}
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}}
+\renewcommand\thesubparagraph{\theparagraph.\arabic{subparagraph}}
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\@addtoreset{subsubsubsection}{section}
+\@addtoreset{subsubsubsection}{subsection}
+\@addtoreset{paragraph}{subsubsubsection}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
+    \lstset{language=C++,
+                    basicstyle=\ttfamily,
+                    keywordstyle=\color{blue}\ttfamily,
+                    stringstyle=\color{red}\ttfamily,
+                    commentstyle=\color{green}\ttfamily,
+                    morecomment=[l][\color{magenta}]{\#}
+    }
+

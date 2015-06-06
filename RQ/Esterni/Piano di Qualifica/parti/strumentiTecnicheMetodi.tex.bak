@@ -1,0 +1,119 @@
+\subsection{Tecniche di analisi }{
+      \label{sec:tecnicheAnalisi}
+	\begin{itemize}
+		\item \textbf{Analisi statica}: consiste nell’analizzare il codice\ped{g} tramite tools e letture senza tuttavia eseguirlo. Data la natura di questo tipo di analisi, è possibile applicarla anche per il controllo di tutti i documenti testuali prodotti.
+		Si esegue applicando i due seguenti metodi:
+		\begin{itemize}
+		   	\item \textbf{Walkthrough}: Si svolge effettuando una lettura critica a largo spettro. È una tecnica che viene utilizzata soprattutto nelle prime attività del progetto, quando ancora non è presente 	una adeguata esperienza da parte dei membri del gruppo, che permetta di attuare una	verifica più mirata e precisa.
+		   	Con l’utilizzo di questa tecnica, il \emph{Verificatore} sarà in grado di stilare una lista di	controllo con gli errori più frequenti in modo da favorire il miglioramento di tale attività nelle fasi future.	Questa è un’attività onerosa e collaborativa che richiede l’intervento di più persone per essere efficace ed efficiente. Dopo una prima fase di lettura e individuazione degli errori, segue una fase di discussione con la finalità di esaminare i difetti riscontrati e di proporre le dovute correzioni. L’ultima fase consiste nel correggere gli errori rilevati e	nello scrivere un rapporto che elenchi le modifiche effettuate.
+		   
+			\item \textbf{Inspection}:Questa tecnica consiste nell’analisi mirata di alcune parti del documento o del codice che sono ritenute fonti maggiori di errore. La \emph{lista di controllo}, che deve essere seguita per svolgere efficacemente questo processo, deve essere redatta anticipatamente ed è frutto dell’esperienza maturata dai verificatori attraverso la tecnica di walkthrough. L’inspection è una strategia più rapida del walkthrough in quanto consente l’analisi di alcune parti dei prodotti ritenute critiche dalla checklist e non necessità della lettura	integrale dei documenti in oggetto.	Diversamente dal walkthrough, tale tecnica viene svolta esclusivamente dai verificatori	che dopo aver individuato gli errori procedono alla loro correzione e alla redazione di un rapporto di verifica che tenga traccia del lavoro svolto.
+			Durante l’applicazione del walkthrough ai documenti, sono state riportate le tipologie di errori più frequenti.\\
+			 La \emph{lista di controllo} risultante è in appendice delle \NormeDiProgetto.
+			
+		\end{itemize}
+		
+		\item \textbf{Analisi dinamica}: consiste nel verificare e validare il software\ped{g} o un suo componente osservandone il comportamento in esecuzione durante lo svolgimento di test. Tali test devono essere svolti in maniera ripetibile: significa che se eseguiti nello stesso ambiente e con gli stessi ingressi, devono produrre i medesimi risultati.
+		\begin{itemize}
+			\item \textbf{Test di unità}: esamina la correttezza di piccole unità di codice\ped{g}, generalmente prodotte da un singolo programmatore, in modo da verificare che  rispettino i requisiti\ped{g}. Può essere svolto con un alto grado di parallelismo servendosi di un automa;		
+			\item \textbf{Test di integrazione}: verifica che l'integrazione delle unità che hanno superato il test precedente non produca problemi. Tali problemi, non potendo essere relativi alle singole unità, saranno da ricercare nell'interfaccia che le aggrega;	
+			\item \textbf{Test di sistema}: accerta la copertura dei requisiti\ped{g} software\ped{g} individuati nell'analisi dei requisiti\ped{g} permettendo la validazione\ped{g} del sistema prodotto;
+			\item \textbf{Test di regressione}: stabilisce se modifiche all'implementazione di un programma\ped{g} alterano elementi precedentemente funzionanti. Per far ciò si eseguono nuovamente i test di unità e integrazione sulle parti modificate;			
+			\item \textbf{Test funzionali}: mettono alla prova le funzionalità del sistema, simulando l'iterazione\ped{g} tra utente e sistema;				
+			\item \textbf{Test di collaudo}: attività formale supervisionata dal committente\ped{g} il cui buon esito comporta la possibilità di rilasciare il prodotto;
+		\end{itemize}
+	\end{itemize}
+	}
+\subsection{Metriche}{
+	\label{sec:metriche}
+	Il processo\ped{g} di verifica, per essere informativo, deve essere quantificabile. Le misure rilevate dal processo\ped{g} di verifica devono quindi essere basate su metriche\ped{g} stabilite a priori. \\
+	Una metrica\ped{g} è la misura di una proprietà relativa ad una porzione di un documento software\ped{g}, allo scopo di fornire informazioni significative sulla qualità del codice\ped{g} prodotto. \\
+	Per valutare la bontà del lavoro svolto non è sufficiente basarsi solo sulle metriche\ped{g}, che sono solamente degli indicatori valutati a posteriori, perché un'importanza ancora maggiore la riveste il controllo sulla qualità del processo\ped{g}.
+\subsubsection{Metriche\ped{g} per la progettazione}{
+	\begin{itemize}
+		\item \textbf{Numero di classi, coesione tra di esse e peso}: il peso di una classe è identificato dalla somma della complessità ciclomatica di tutti i metodi appartenenti alla classe;
+	 	\item \textbf{Complessità di flusso}: misura la quantità di informazioni in	entrata ed uscita da una funzione (fan-in e fan-out).\\
+	 	\begin{itemize}
+	 	 \item \textbf{Fan-in}: numero di moduli che passano informazioni dentro al modulo in esame;
+	 	 \item \textbf{Fan-out}: numero di moduli a cui il modulo in esame passa informazioni.
+	 	\end{itemize}
+	 	Il valore è calcolato come:\\
+	 	$(lunghezzafunzione)^2\times fan-in \times fan-out.$\\
+	 	Un Fan-in elevato indica un buon design strutturale: significa che il modulo in esame viene usato frequentemente, con conseguente riuso del modulo e riduzione della ridondanza del codice.\\
+	 	Un Fan-out elevato indica un elevato accoppiamento tra moduli: significa che un modulo ha molte dipendenze da altri moduli e ciò mostra un povero design stutturale;
+	 	implica anche un aumento dei costi di manutenibilità: ogni cambiamento di un modulo scatenza la manutenzione dei moduli dipendenti.
+	\end{itemize}
+	}
+\subsubsection{Metriche\ped{g} per il codice}{
+	\begin{itemize}
+		\item \textbf{Complessità Ciclomatica di McCabe}: è indicazione del numero di segmenti lineari in un metodo (ad esempio sezioni di codice\ped{g} senza ramificazioni), può quindi essere usato per determinare il numero di test necessari per ottenere una copertura completa dei possibili cammini.  \\
+		Un metodo senza ramificazioni ha Complessità Ciclomatica di McCabe pari a 1; tale valore è incrementato ogniqualvolta si incontra una ramificazione.  \\
+		Con “ramificazione” si intendono cicli, costrutti “if” e simili;\\
+		Secondo McCabe una complessità ciclomatica nel range 1-10 individua un codice\ped{g} semplice con pochi rischi, superato questo limite il codice\ped{g} diventa più complesso, instabile e difficilmente manutenibile;
+		
+		\item \textbf{Numero linee di codice}: rappresenta il numero di linee di codice\ped{g} all'interno di un blocco. 
+		Un indice elevato non rappresenta necessariamente un cattivo codice\ped{g} ma suggerisce la possibilità di estrarre metodi contenenti gruppi di istruzioni correlate, aumentando il livello di astrazione;
+		
+		\item \textbf{Halstead}: la metrica di Halstead non è solamente un indice di complessità, ma identifica le proprietà misurabili del software e le relative relazioni. Si basa sull’osservazione che una metrica dovrebbe	valutare l’implementazione di un algoritmo in linguaggi differenti ed essere indipendente dal esecuzione su una specifica piattaforma.\\\\
+		Calcolo:\\
+		Prima di tutto bisogna ricavare, dal codice sorgente, i seguenti valori:
+		\begin{itemize}		
+		\item n1 = numero distinti operatori;
+		\item n2 = numero distinti operandi;
+		\item N1 = numero totale operatori;
+		\item N2 = numero totale operandi.
+		
+	    \end{itemize}
+	    Successivamente possono essere calcolati i seguenti valori:
+	    \begin{itemize}
+		\item \textbf{Program length:} \[N = N1 + N2\]
+		\item \textbf{Program vocabulary:} \[n = n1 + n2\]
+	    \item \textbf{Volume:} il volume descrive la dimensione dell’implementazione di un algoritmo e si basa sul numero di operazioni eseguite e sugli operandi di una funzione. Il volume di una function senza parametri composta da una sola linea è 20, mentre un indice superiore a 1000 indica che probabilmente la funzione esegue troppe operazioni. \[V= N \times \log_2(n)\]
+	      \textbf{Parametri utilizzati}
+	      \begin{itemize}
+	       \item Range-accettazione: [20-1500];
+	       \item Range-ottimale: [20-1000];
+	      \end{itemize}
+		\end{itemize}
+		\item \textbf{Indice di manutenibilità}: Questa metrica è una scala logaritmica con valore massimo 171. Rappresenta quanto manutenibile è il codice\ped{g}, ossia quanto facile è da supportare e migliorare.\\
+		L'indice di manutenibilità è calcolato tramite una fattorizzazione di altre metriche come Linee di Codice(LOC), Complessità Ciclomatica(CC), volume di Halstead(VH) e percentuale di commenti(COM).\\
+		Un elevato valore indica un'ottima manutenibilità, bassi valori al contrario indicheranno una difficoltà nella fasi di manutenzione e incremento del codice:
+		
+		\[M= 171 -5.2\ln(HV) -0.23(CC) -16.2\ln(LOC) +50.0\sin(\sqrt{2.46*COM})\]
+
+		
+		\item \textbf{Copertura del codice}: è indicazione di quanto codice\ped{g} sorgente sia stato testato. Un elevato indice di copertura indica che il codice\ped{g} sorgente è stato testato in profondità e che difficilmente può contenere dei bug.
+		
+		Parametri utilizzati:
+		\begin{itemize}
+		\item Range-sufficiente: [60\%-80\%];
+		\item Range-ottimale: [80\%-100\%].
+		\end{itemize}
+	\end{itemize}
+	}
+\subsubsection{Metriche\ped{g} per i documenti}{
+	\label{sec:metricadocumenti}
+	\begin{itemize}
+		\item \textbf{Indice Gulpease}: misura l'indice di leggibilità di un testo; è tarato sulla lingua italiana.\\
+		Rispetto ad altri indici ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico. Permette di misurare la complessità dello stile di un documento.\\
+		L'indice Gulpease considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero delle lettere.\\
+		L'indice è calcolato secondo la seguente formula:\\
+		
+		\[89 + \frac{300 *(numero\ delle\ frasi) -10 *(numero\ delle\ lettere)}{numero\ delle\ parole}\]
+		
+		I risultati sono compresi tra 0 e 100, dove il valore 100 indica la leggibilità più alta e 0 la leggibilità più bassa. In generale risulta che testi con un indice:
+		
+		\begin{itemize}
+			\item Inferiore a 80 sono difficili da leggere per chi ha la licenza elementare;
+			\item Inferiore a 60 sono difficili da leggere per chi ha la licenza media;
+			\item Inferiore a 40 sono difficili da leggere per chi ha un diploma superiore.
+		\end{itemize}
+		
+		\textbf{Parametri utilizzati}:
+		\begin{itemize}
+			\item Range-accettazione: [40-100];
+			\item Range-ottimale: [50-100].
+		\end{itemize}
+	\end{itemize}
+	}
+}

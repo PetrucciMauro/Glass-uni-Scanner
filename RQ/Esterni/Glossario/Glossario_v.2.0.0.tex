@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\temp}{../../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Glossario}
+\newcommand{\dataCreazione}{2 marzo 2015}
+\newcommand{\versione}{2.0.0} % versione corrente del documento
+\newcommand{\dataUM}{25 maggio 2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\redaz}{\BM, \VG}
+\newcommand{\verif}{\PM}
+\newcommand{\appr}{\BM}
+\newcommand{\sommario}{
+	Il presente documento contiene i significati di tutte le parole presenti all'interno dei vari documenti le quali possono creare confusione o ambiguità.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+\inputencoding{utf8}
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\input{\parti glossario}
+\end{document}

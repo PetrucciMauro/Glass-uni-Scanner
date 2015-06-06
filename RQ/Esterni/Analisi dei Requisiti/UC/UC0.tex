@@ -1,0 +1,24 @@
+\subsection{UC 0 - Gestione account}{
+	\label{uc0}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.5]{\imgs {UC0}.jpg} %inserire il diagramma UML
+		\label{fig:uc0}
+		\caption{Caso d'uso 0: Gestione account}
+	\end{figure}
+	\textbf{Attori}: utente, utente non autenticato, utente autenticato, amministratore. \\
+	\textbf{Descrizione}: il sistema deve permettere all'utente di registrare il proprio account, accedervi e gestirlo. \\
+	\textbf{Precondizione}: il sistema è funzionante.	\\
+	\textbf{Postcondizione}: l'utente ha eseguito le operazioni desiderate per gestire il proprio account.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item l'utente si registra creando un nuovo account utente \S\hyperref[uc0.8]{(UC 0.8)};
+		\item l'utente non autenticato può effettuare il login \S\hyperref[uc0.10]{(UC 0.10)} e il logout \S\hyperref[uc0.13]{(UC 0.13)};
+		\item l'utente autenticato può gestire il proprio account \S\hyperref[uc0.11]{(UC 0.11)};
+		\item l'utente può eliminare le presentazioni salvate in locale \S\hyperref[uc0.15]{(UC 0.15)};
+		\item l'utente autenticato può gestire il proprio archivio sul server \S\hyperref[uc0.7]{(UC 0.7)};
+		\item l'utente autenticato può scaricare in locale una presentazione dal server \S\hyperref[uc0.16]{(UC 0.16)};
+		\item l'utente autenticato può scaricare un'infografica nel proprio dispositivo \S\hyperref[uc0.12]{(UC 0.12)};
+		\item l'amministratore può gestire i template delle infografiche \S\hyperref[uc0.9]{(UC 0.9)}.
+	\end{enumerate}
+	}

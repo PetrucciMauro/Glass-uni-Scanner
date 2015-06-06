@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/}
+\newcommand{\temp}{../../Template/}
+\newcommand{\tipo}{Tipo, obiettivo e funzione del componente}
+\newcommand{\relaz}{Relazioni d'uso di altre componenti}
+\newcommand{\interfacce}{Interfacce con e relazioni d'uso e da altre componenti}
+\newcommand{\attivita}{Attività svolte e dati trattati}
+\newcommand{\mvc}{\parti/MVC/}
+\newcommand{\base}{Classi ereditate}
+\newcommand{\figli}{Sottoclassi}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Specifica Tecnica}
+\newcommand{\dataCreazione}{18-05-2015}
+\newcommand{\versione}{1.0.0} % versione corrente del documento
+\newcommand{\dataUM}{18-05-2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\appr}{\TP}
+\newcommand{\redaz}{\FM, \PM}
+\newcommand{\verif}{\GP}
+\newcommand{\sommario}{
+	Il presente documento contiene la specifica tecnica delle componenti che costituiscono il prodotto software \premi .
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\listoffigures
+	\listoftables
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti introduzione}
+	\newpage
+    \input{\parti strumenti}
+    \newpage
+    \input{\parti pattern}
+    \newpage
+    \input{\parti presentazione}
+    \newpage
+	\input{\parti componenti}
+	\input{\mvc view}
+       \newpage
+    \input{\mvc control}
+    \newpage
+     \input{\mvc model}
+        \newpage
+   \input{\parti diagrammiAttivita}
+    \newpage
+   \input{\parti stime}
+    \newpage
+    \input{\parti tracciamento}
+\end{document}

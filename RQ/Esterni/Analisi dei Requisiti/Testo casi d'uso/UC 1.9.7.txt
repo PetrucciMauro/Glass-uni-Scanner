@@ -1,0 +1,39 @@
+UC 1.9.7 Annulla/Ripristina
+
+• Scopo e descrizione: L’Amministratore ha deciso di annullare una o più modifiche
+applicate o di ripristinare una modifica annullata;
+• Precondizione: Lo storico delle modifiche non è vuoto;
+• Flusso principale degli eventi:
+
+1. Annullamento comando (UC1.9.7.1);
+2. Ripristino del comando annullato (UC1.9.7.2);
+
+
+• Postcondizione: La scena ha il livello di modifiche desiderato.
+
+UC 1.9.7.1 : Annullamento comando
+• Attori: Amministratore;
+• Scopo e descrizione: L’amministratore può annullare l’ultimo comando di modifica
+ del template presente nello storico;
+• Precondizione: Il sistema ha registrato almeno un comando di modifica del template eseguito dall’amministratore;
+• Postcondizione: Il sistema ha ripristinato lo stato precedente all’ultimo co-
+mando di modifica del template dall'amministratore, e ha memorizzato nello storico degli
+annullamenti il comando annullato.
+
+UC 1.9.7.2 : Ripristino del comando annullato
+• Attori: Amministratore;
+• Scopo e descrizione: L’amministratore può ripristinare l’ultimo comando presente nello
+storico dei comandi annullati;
+• Precondizione: Il sistema ha annullato l’ultimo comando di modifica del template
+eseguito dall’amministratore;
+• Postcondizione: Il sistema ha eseguito nuovamente l’ultimo comando di modifica
+del template presente nello storico dei comandi annullati, e ha rimosso il comando
+eseguito nuovamente dallo storico.
+
+
+UC 1.9.7.3 : Ripristino del template eliminato
+• Attori: Amministratore;
+• Scopo e descrizione: L’amministratore può ripristinare il template appena eliminato;
+• Precondizione: Il sistema ha annullato il comando di cancellazione del template eseguito dall'amministratore;
+• Postcondizione: Il sistema ha riprisitinato lo stato precedente alla cancellazione del template da parte dell'amministratore.
+

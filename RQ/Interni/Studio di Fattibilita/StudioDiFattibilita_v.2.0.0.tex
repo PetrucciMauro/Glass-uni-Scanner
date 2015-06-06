@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/}
+\newcommand{\temp}{../../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Studio di Fattibilità}
+\newcommand{\dataCreazione}{28 Febbraio 2015}
+\newcommand{\versione}{2.0.0} % versione corrente del documento
+\newcommand{\dataUM}{25 Maggio 2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Interno}
+\newcommand{\redaz}{\TP}
+\newcommand{\verif}{\BM}
+\newcommand{\appr}{\VG}
+\newcommand{\sommario}{
+	Descrizione dello studio di fattibilità dei capitolati proposti.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti introduzione}
+	\newpage
+	\input{\parti premi}
+	\newpage
+	\input{\parti altriCapitolati}
+\end{document}

@@ -1,0 +1,167 @@
+\subsection{UC 0.7 - Gestione archivio utente sul server}{
+	\label{uc0.7}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC0.7}.jpg} %inserire il diagramma UML
+		\label{fig:uc0.7}
+		\caption{Caso d'uso 0.7: Gestione dell'archivio dati utente sul server}
+	\end{figure}
+	\textbf{Attori}: utente autenticato. \\
+	\textbf{Descrizione}: l'utente può modificare i contenuti (file media, presentazioni e infografiche) presenti nel proprio account, inserendone di nuovi, rinominando o eliminando quelli presenti. \\
+	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente ha effettuato il login e desidera effettuare modifiche ai propri file nel proprio account.	\\
+	\textbf{Postcondizione}: l'utente ha eseguito l'operazione voluta sul contenuto che desiderava: ha inserito un nuovo file media nel proprio spazio oppure ha rinominato una presentazione o una infografica altrimenti eliminato una presentazione, infografica o file media.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento file media \S\hyperref[uc0.7.1]{(UC 0.7.1)};
+		\item Eliminazione file media \S\hyperref[uc0.7.2]{(UC 0.7.2)};
+		\item Rinomina presentazione \S\hyperref[uc0.7.3]{(UC 0.7.3)};
+		\item Rinomina infografica \S\hyperref[uc0.7.4]{(UC 0.7.4)};
+		\item Rinomina file media \S\hyperref[uc0.7.7]{(UC 0.7.7)};
+		\item Eliminazione presentazioni \S\hyperref[uc0.7.5]{(UC 0.7.5)};
+		\item Eliminazione infografica \S\hyperref[uc0.7.6]{(UC 0.7.6)};
+		\item Rinomina file media \S\hyperref[uc0.7.7]{(UC 0.7.7)};
+		\item Visualizzazione delle proprie presentazioni \S\hyperref[uc0.7.8]{(UC 0.7.8)};
+		\item Visualizzazione delle proprie infografiche \S\hyperref[uc0.7.9]{(UC 0.7.9)};
+		\item Visualizzazione dei propri file media \S\hyperref[uc0.7.10]{(UC 0.7.10)};
+	\end{enumerate}
+	}
+\subsubsection{UC 0.7.1 - Inserimento file media}{
+	\label{uc0.7.1}
+	\textbf{Attori}: utente autenticato. \\
+	\textbf{Descrizione}: l'utente ha la possibilità di caricare un file media (audio, video, immagine) contenuto nel proprio computer o dispositivo. \\
+	\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media dell'utente e l'utente desidera caricare sul server un file media esistente in locale.	\\
+	\textbf{Postcondizione}: l'utente ha caricato sul server i file media selezionati.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Navigazione nello spazio di lavoro;
+		\item Selezione file media;
+		\item Conferma e caricamento.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item L'operazione viene annullata e non si apportano cambiamenti.
+	\end{itemize}
+	}
+	\subsubsection{UC 0.7.2 - Cancellazione file media}{
+		\label{uc0.7.2}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di eliminare file media tra quelli presenti all'interno del proprio account. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media dell'utente e l'utente desidera eliminare file media esistenti nel proprio spazio di lavoro sul server.	\\
+		\textbf{Postcondizione}: l'utente ha cancellato i file media che desiderava rimuovere.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione file media;
+			\item Conferma selezione ed eliminazione.
+		\end{enumerate}
+		\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item L'operazione viene annullata e non si apportano cambiamenti.
+		\end{itemize}
+		}
+	\subsubsection{UC 0.7.3 - Rinomina presentazione}{
+		\label{uc0.7.3}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di rinominare una presentazione salvata nel proprio account. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle presentazioni e l'utente desidera rinominarne una.	\\
+		\textbf{Postcondizione}: l'utente ha rinominato la presentazione desiderata.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione presentazione;
+			\item Conferma rinominazione della presentazione.
+		\end{enumerate}
+		}
+	\subsubsection{UC 0.7.4 - Rinomina infografica}{
+		\label{uc0.7.4}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di rinominare un'infografica salvata nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle infografiche e l'utente desidera rinominare una infografica.	\\
+		\textbf{Postcondizione}: l'utente ha rinominato l'infografica desiderata.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione infografica;
+			\item Conferma rinominazione dell'infografica.
+		\end{enumerate}
+		}
+	\subsubsection{UC 0.7.5 - Eliminazione presentazioni}{
+		\label{uc0.7.5}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di eliminare presentazioni contenute all'interno del proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più presentazioni esistenti nel proprio spazio sul server.	\\
+		\textbf{Postcondizione}: l'utente ha cancellato le presentazioni che desiderava rimuovere.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione presentazioni da eliminare;
+			\item Conferma selezione ed eliminazione.
+		\end{enumerate}
+		\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item L'operazione viene annullata e non si apportano cambiamenti.
+		\end{itemize}
+		}
+	\subsubsection{UC 0.7.6 - Eliminazione infografiche}{
+		\label{uc0.7.6}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di eliminare infografiche contenute nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera eliminare una o più infografiche.	\\
+		\textbf{Postcondizione}: l'utente ha cancellato le infografiche che desiderava rimuovere.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione infografiche da eliminare;
+			\item Conferma selezione ed eliminazione.
+		\end{enumerate}
+		\textbf{Scenari alternativi}: 
+		\begin{itemize}
+			\item L'operazione viene annullata e non si apportano cambiamenti.
+		\end{itemize}
+		}
+	\subsubsection{UC 0.7.7 - Rinomina file media}{
+		\label{uc0.7.7}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di rinominare un file media salvato nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera rinominarne uno.	\\
+		\textbf{Postcondizione}: l'utente ha rinominato il file media desiderato.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Navigazione nello spazio di lavoro;
+			\item Selezione file media;
+			\item Conferma rinominazione del file media.
+		\end{enumerate}
+		}
+	\subsubsection{UC 0.7.8 - Visualizzazione presentazioni}{
+		\label{uc0.7.8}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco delle presentazioni salvate nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle presentazioni e l'utente desidera visualizzarle.	\\
+		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco delle presentazioni.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sceglie di visualizzare le proprie presentazioni.
+		\end{enumerate}
+		}
+	\subsubsection{UC 0.7.9 - Visualizzazione infografiche}{
+		\label{uc0.7.9}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco delle infografiche salvate nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato alle infografiche e l'utente desidera visualizzarle.	\\
+		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco delle infografiche.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sceglie di visualizzare le proprie infografiche.
+		\end{enumerate}
+		}
+	\subsubsection{UC 0.7.10 - Visualizzazione presentazioni}{
+		\label{uc0.7.10}
+		\textbf{Attori}: utente autenticato.	\\
+		\textbf{Descrizione}: l'utente ha la possibilità di visualizzare un elenco dei file media salvati nel proprio spazio sul server. \\
+		\textbf{Precondizione}: il sistema ha caricato lo spazio dedicato ai file media e l'utente desidera visualizzarli.	\\
+		\textbf{Postcondizione}: l'utente ha visualizzato l'elenco dei file media.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sceglie di visualizzare i propri file media.
+		\end{enumerate}
+		}

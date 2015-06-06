@@ -1,0 +1,65 @@
+\section{Design Pattern e Pattern Architetturali}{
+	\subsection{MVP}{
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.6]{\imgs {MVP}.png}
+				\label{fig:mvp}
+				\caption{Model View Presenter}
+			\end{figure}
+			\begin{itemize}
+				\item \textbf{Scopo dell’utilizzo}: è stato scelto il pattern MVP per separare la logica dell'applicazione dalla rappresentazione grafica;
+				\item \textbf{Contesto d’utilizzo}: Il pattern MVP viene utilizzato per l'architettura generale dell'applicazione.
+				Ogni modifica effettuata dall'utente sulla View viene inviata al Model tramite il Presenter e viceversa.
+			\end{itemize}
+		}	
+	\subsection{Command}{
+			\begin{figure}[H]
+				\centering
+				\includegraphics[scale=0.38]{\imgs {CommandPackagePattern}.pdf}
+				\label{fig:commandclassdiagram}
+				\caption{Diagramma delle classi del package Command}
+			\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{\imgs {Command}.pdf}
+			\label{fig:commandsequencediagram}
+			\caption{diagramma di sequenza del Pattern Command}
+		\end{figure}
+		\begin{itemize}
+			\item \textbf{Descrizione}: viene utilizzato quando c'è la necessità di disaccoppiare l’invocazione di un comando dai suoi dettagli implementativi, separando colui che invoca il comando da colui che esegue l’operazione.
+			
+			Tale operazione viene realizzata attraverso questa catena: Client->Invocatore->Ricevitore
+			
+			Il Client non è tenuto a conoscere i dettagli del comando ma il suo compito è solo quello di chiamare il metodo dell’ Invocatore che si occuperà di intermediare l’operazione.
+			L’Invocatore ha l’obiettivo di incapsulare, nascondere i dettagli della chiamata come nome del metodo e parametri.
+			Il Ricevitore utilizza i parametri ricevuti per eseguire l’operazione
+			\item \textbf{Scopo dell’utilizzo}: si è scelto di utilizzare il pattern Command perché poter accodare o mantenere uno storico delle operazioni e	gestire operazioni cancellabili;
+			\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
+		\end{itemize}
+		\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command}{
+			Il package Premi::Model::SlideShow::SlideShowActions::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe\\ Premi::Presenter::Presentazione::Edit, che invoca il costruttore delle sottoclassi di\\ Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::SlideShow::SlideShowActions::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
+			Premi::Presenter::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Presenter::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
+		}
+	}
+	\subsection{Observer}{
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{\imgs {Observer}.pdf}
+			\label{fig:observer}
+			\caption{Observer}
+		\end{figure}
+		\begin{itemize}
+		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti.  Il pattern si basa su uno o più oggetti, chiamati listerei, che vengono registrati presso un oggetto subject per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
+		
+		\item \textbf{Scopo dell’utilizzo}: I questo sistema il pattern viene utilizzato per aggiornare automaticamente la rappresentazione, persistente sul database MongoDB, della presentazione che l'utente sta modificando localmente.
+		\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
+		\end{itemize}
+		\subsubsection{Premi::Model::MongoRelations::DBSynch}{
+			    Il package Premi::Model::MongoRelations::DBSynch contiene le classi che costituiscono il pattern observer, in particolare le classi ConcreteSubjects non sono le classi degli oggetti che vengono modificati(che sono invece definite in Model::SlideShow::SlideShowElements) ma fungono da tramite tra questi e gli oggetti ConcreteObserver. Questo permette di avere il pattern Observer e la gerarchia di definizione degli elementi in package differenti.
+		}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.6]{\imgs {SequenceObserver}.pdf}
+			\label{fig:diaobserver}
+			\caption{Diagramma di sequenza Observer}
+		\end{figure}

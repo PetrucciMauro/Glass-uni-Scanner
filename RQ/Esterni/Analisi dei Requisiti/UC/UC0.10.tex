@@ -1,0 +1,44 @@
+\subsection{UC 0.10 - Login account utente}{
+	\label{uc0.10}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC0.10}.jpg} %inserire il diagramma UML
+		\label{fig:uc0.10}
+		\caption{Caso d'uso 0.10: Login account utente}
+	\end{figure}
+	\textbf{Attori}: utente non autenticato. \\
+	\textbf{Descrizione}: l'utente inserisce il proprio username e la propria password, se queste risultano corrette l'utente viene autenticato. \\
+	\textbf{Precondizione}: il sistema è attivo e funzionante; l'utente non ancora autenticato vuole effettuare il login.	\\
+	\textbf{Postcondizione}: l'utente viene autenticato ed entra nel sistema.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento username \S\hyperref[uc0.10.1]{(UC 0.10.1)};
+		\item Inserimento password \S\hyperref[uc0.10.2]{(UC 0.10.2)};
+	\end{enumerate}
+	\textbf{Scenario alternativo}:
+	\begin{itemize}
+		\item Le credenziali non risultano corrette, ne viene data comunicazione all'utente che potrà reinserirle.
+	\end{itemize}
+	}
+	\subsubsection{UC0.10.1 - Inserimento username}{
+		\label{uc0.10.1}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l'utente inserisce il proprio username.	\\
+		\textbf{Precondizione}: l'utente  è pronto ad inserire il proprio username per effettuare il login.	\\
+		\textbf{Postcondizione}: l'utente  ha inserito il proprio username per effettuare il login.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente inserisce il proprio username.
+		\end{enumerate}
+		}
+	\subsubsection{UC0.10.2 - Inserimento password}{
+		\label{uc0.10.2}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l'utente  inserisce la propria password.	\\
+		\textbf{Precondizione}: l'utente  è pronto ad inserire la propria password per effettuare il login.	\\
+		\textbf{Postcondizione}: l'utente  ha inserito la propria password per effettuare il login.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente inserisce la propria password.
+		\end{enumerate}
+		}

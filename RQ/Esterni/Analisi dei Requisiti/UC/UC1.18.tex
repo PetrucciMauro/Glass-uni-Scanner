@@ -1,0 +1,367 @@
+\subsection{UC 1.18 - Esecuzione presentazione}{
+	\label{uc1.18}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.70]{\imgs {UC1.18}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.18}
+		\caption{Caso d'uso 1.18: Esecuzione della presentazione}
+	\end{figure}
+	\textbf{Attori}: utente. \\
+	\textbf{Descrizione}: l'utente non autenticato può eseguire una presentazione salvata in locale mentre un utente autenticato può eseguire una presentazione salvata nel proprio account. L'esecuzione può avvenire in maniera automatica oppure controllandone manualmente l'avanzamento. \\
+	\textbf{Precondizione}: una presentazione è già stata caricata e l'utente può avviarla nella modalità desiderata. \\
+	\textbf{Postcondizione}: la presentazione è stata eseguita secondo il metodo scelto.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Scelta del metodo con cui eseguirla: automatica \S\hyperref[uc1.18.2]{(UC 1.18.2)} o manuale \S\hyperref[uc1.18.1]{(UC 1.18.1)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item Possibilità di passare da manuale ad automatico e viceversa \S\hyperref[uc1.18.3]{(UC 1.18.3)}  \S\hyperref[uc1.18.4]{(UC 1.18.4)}.
+	\end{itemize}
+	}
+\subsubsection{UC 1.18.1 - Esecuzione manuale}{
+		\label{uc1.18.1}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.18.1}.jpg} %inserire il diagramma UML
+			\label{fig:uc1.18.1}
+			\caption{Caso d'uso 1.18.1: Esecuzione manuale della presentazione}
+		\end{figure}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può scorrere la presentazione, scegliere il percorso da intraprendere a run-time, cambiare livello di visualizzazione, tornare a frame precedenti anche attraverso l'utilizzo dei bookmark o passare alla presentazione automatica \\
+		\textbf{Precondizione}: il sistema è funzionante e l'utente ha avviato la presentazione in manuale. \\
+		\textbf{Postcondizione}: l'utente ha avviato la presentazione nel modo desiderato.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente scorre la presentazione \S\hyperref[uc1.18.1.1]{(UC 1.18.1.1)};
+			\item L'utente può scegliere il percorso su cui continuare \S\hyperref[uc1.18.1.2]{(UC 1.18.1.2)};
+			\item L'utente può saltare al bookmark successivo \S\hyperref[uc1.18.1.3]{(UC 1.18.1.3)};
+			\item L'utente può cambiare il livello di visualizzazione \S\hyperref[uc1.18.1.4]{(UC 1.18.1.4)};
+			\item L'utente può ingrandire il contenuto \S\hyperref[uc1.18.1.18]{(UC 1.18.1.18)};
+			\item L'utente può riprodurre file media \S\hyperref[uc1.18.1.6]{(UC 1.18.1.6)}.
+		\end{enumerate}
+		\textbf{Scenario alternativo}: 
+		\begin{itemize}
+			\item L'utente può avviare la presentazione automatica da qualsiasi frame \S\hyperref[uc1.18.3]{(UC 1.18.3)}.
+		\end{itemize}
+		}
+	\subsubsection{UC 1.18.1.1 - Scorrimento in avanti e indietro dei frame}{
+		\label{uc1.18.1.1}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente vuole scorrere la presentazione al frame successivo o precedente rispetto a quello in presentazione. \\
+		\textbf{Precondizione}: un frame è in presentazione.	\\
+		\textbf{Postcondizione}: il frame in presentazione è cambiato passando a quello successivo o precedente in base alla scelta dell'utente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente fa avanzare o retrocedere la presentazione al frame successivo o al frame precendente.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.2 - Scelta all'interno del frame}{
+		\label{uc1.18.1.2}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: il frame su cui si trova l’utente permette di scegliere con quale percorso continuare e l'utente sceglie come far continuare la presentazione. \\
+		\textbf{Precondizione}: il frame in presentazione presenta più d'una scelta possibile per il frame successivo.	\\
+		\textbf{Postcondizione}: la presentazione può continuare con il primo frame del percorso che l'utente ha scelto.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sceglie il percorso con cui proseguire la presentazione.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.3 - Salto al bookmark successivo}{
+		\label{uc1.18.1.3}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può andare a presentare un altro frame saltando una parte della presentazione. \\
+		\textbf{Precondizione}: il frame attuale presenta un bookmark ad un altro frame.	\\
+		\textbf{Postcondizione}: la presentazione continua dal frame puntato dal bookmark.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente salta al bookmark successivo.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.4 - Passaggio ad un livello superiore}{
+		\label{uc1.18.1.4}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente, se lo desidera, può salire al frame padre appena superiore. \\
+		\textbf{Precondizione}: il frame in presentazione è figlio di almeno un frame padre (non è quindi la radice).	\\
+		\textbf{Postcondizione}: il frame in presentazione è passata al frame padre.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente passa al livello superiore della presentazione.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.5 - Possibilità di ingrandimento del contenuto}{
+		\label{uc1.18.1.18}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può ingrandire il contenuto presente nel frame, che sia un'immagine, un video o del testo. \\
+		\textbf{Precondizione}: il frame in presentazione contiene uno o più elementi di contenuto.	\\
+		\textbf{Postcondizione}: viene inquadrato lo zoom dell'immagine, del video o del testo selezionato; l'utente può in qualsiasi momento ritornare al frame di cui il contenuto fa parte.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente allarga il contenuto voluto.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.6 - Riproduzione file media audio/video}{
+		\label{uc1.18.1.6}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.18.1.6}.jpg} %inserire il diagramma UML
+			\label{fig:uc1.18.1.6}
+			\caption{Caso d'uso 1.18.1.6: Riproduzione di file media audio/video}
+		\end{figure}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: durante una presentazione manuale il frame corrente contiene un file media audio o video che l'utente può riprodurre. \\
+		\textbf{Precondizione}: il frame in presentazione contiene un file media da riprodurre.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente può avviare la riproduzione di un file media, dall'inizio \S\hyperref[uc1.18.1.6.1]{(UC 1.18.1.6.1)} o da un punto specifico  \S\hyperref[uc1.18.1.6.4]{(UC 1.18.1.6.4)};
+			\item L'utente può mettere in pausa la riproduzione del file media \S\hyperref[uc1.18.1.6.2]{(UC 1.18.1.6.2)} e riprenderla successivamente  \S\hyperref[uc1.18.1.6.3]{(UC 1.18.1.6.3)};
+			\item L'utente può arrestare la riproduzione del file media \S\hyperref[uc1.18.1.6.5]{(UC 1.18.1.6.5)}.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.6.1 - Avvio manuale della riproduzione di un file media}{
+		\label{uc1.18.1.6.1}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può avviare la riproduzione del file media presente nel frame in qualsiasi momento. \\
+		\textbf{Precondizione}: il frame in presentazione contiene almeno un file media.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente avvia la riproduzione del file media.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.1.6.2 - Sospensione della riproduzione del file media}{
+		\label{uc1.18.1.6.2}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può mettere in pausa il file media in esecuzione. \\
+		\textbf{Precondizione}: è in riproduzione un file media.	\\
+		\textbf{Postcondizione}: il file media è in pausa.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sospende la riproduzione del file media.
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.1.6.3 - Ripresa dell'esecuzione del file media}{
+		\label{uc1.18.1.6.3}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può riprendere la riproduzione del file media. \\
+		\textbf{Precondizione}: il file media in riproduzione è stato messo in pausa.	\\
+		\textbf{Postcondizione}: il file media ha ripreso la sua riproduzione.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente riprende la riproduzione del file media.
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.1.6.4 - Riproduzione del file media da qualsiasi minuto}{
+		\label{uc1.18.1.6.4}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può far riprodurre il file media da un qualsiasi minuto. \\
+		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione dal minuto scelto dall'utente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente riproduce il file media da un minuto qualsiasi. 
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.1.6.5 - Arresto della riproduzione in corso}{
+		\label{uc1.18.1.6.5}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può arrestare la riproduzione del file media in corso. Se il file media è stato ingrandito allora la presentazione ritorna al frame di cui il file media faceva parte; se l'utente decidesse di riavviarne la riproduzione, essa ripartirà dall'inizio.\\
+		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: è stata arrestata l'esecuzione del file media e la presentazione è tornata al frame di partenza.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente arresta la riproduzione del file media.
+		\end{enumerate}		
+	}
+\subsubsection{UC 1.18.2 - Esecuzione automatica}{
+	\label{uc1.18.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.18.2}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.18.2}
+		\caption{Caso d'uso 1.18.2: Esecuzione automatica della presentazione}
+	\end{figure}
+	\textbf{Attori}: utente. \\
+	\textbf{Descrizione}: l'utente può avviare la presentazione, metterla in pausa, arrestarla o passare alla modalità manuale in ogni momento. Nel caso in cui ci fossero frame contenenti delle scelte allora la presentazione rimane in attesa della decisione dell'utente, se entrare in una delle scelte o proseguire con il percorso normale. Quando l'utente avrà preso la sua decisione, l'esecuzione riprenderà in maniera automatica. \\
+	\textbf{Precondizione}: il sistema è funzionante e attende la scelta dell'utente. \\
+	\textbf{Postcondizione}: l'utente ha avviato la presentazione in modalità automatica.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente avvia l'esecuzione della presentazione \S\hyperref[uc1.18.2.1]{(UC 1.18.2.1)};
+		\item L'utente mette in pausa l'esecuzione della presentazione \S\hyperref[uc1.18.2.4]{(UC 1.18.2.4)}  e può riprenderla successivamente  \S\hyperref[uc1.18.2.2]{(UC 1.18.2.2)};
+		\item L'utente arresta l'esecuzione della presentazione \S\hyperref[uc1.18.2.3]{(UC 1.18.2.3)};
+		\item L'utente può decidere il tempo di durata presentazione dei frame \S\hyperref[uc1.18.2.5]{(UC 1.18.2.5)};
+		\item L'utente può gestire i file media durante l'esecuzione \S\hyperref[uc1.18.2.6]{(UC 1.18.2.6)}.
+	\end{enumerate}
+	\textbf{Scenaro alternativo}: 
+	\begin{itemize}
+		\item L'utente decide di passare alla modalità manuale \S\hyperref[uc1.18.4]{(UC 1.18.4)}.
+	\end{itemize}
+	}
+	\subsubsection{UC 1.18.2.1 - Avvia presentazione}{
+		\label{uc1.18.2.1}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può avviare la presentazione automatica dal primo frame o da un altro. \\
+		\textbf{Precondizione}: una presentazione è stata caricata e un frame è selezionato.	\\
+		\textbf{Postcondizione}: la presentazione passa da un frame all'altro, fermandosi in ognuno per il tempo impostato e arrestandosi sui frame che presentano scelte.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente avvia la presentazione in modalità automatica.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.2.2 - Riprendi presentazione}{
+		\label{uc1.18.2.2}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può riprendere la presentazione automatica in seguito ad una sua sospensione. \\
+		\textbf{Precondizione}: l'esecuzione automatica della presentazione automatica è stata temporaneamente sospesa.	\\
+		\textbf{Postcondizione}: la presentazione riprende dal frame in cui era stata sospesa.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente riprende l'esecuzione della presentazione in modalità automatica.
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.2.3 - Arresta presentazione}{
+		\label{uc1.18.2.3}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può arrestare e chiudere la presentazione. \\
+		\textbf{Precondizione}: la presentazione è in esecuzione in modalità automatica.	\\
+		\textbf{Postcondizione}: la presentazione viene chiusa e il sistema ritorna alla pagina principale.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente arresta l'esecuzione della presentazione in modalità automatica.
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.2.4 - Sospendi presentazione}{
+		\label{uc1.18.2.4}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può mettere in pausa l'esecuzione automatica della presentazione e potrà riprenderla dallo stesso punto in qualsiasi momento. \\
+		\textbf{Precondizione}: è in esecuzione la presentazione in modalità automatica.	\\
+		\textbf{Postcondizione}: l'esecuzione automatica della presentazione è stata sospesa e viene mostrato il frame che era in esecuzione al momento della sospensione.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sospende l'esecuzione della presentazione in modalità automatica;
+			\item L'utente può riprendere l'esecuzione automatica della presentazione \S\hyperref[uc1.18.2.2]{(UC 1.18.2.2)}.
+		\end{enumerate}		
+	}
+	\subsubsection{UC 1.18.2.5 - Imposta tempo scorrimento frame}{
+		\label{uc1.18.2.5}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può impostare un tempo di visualizzazione che vale per ogni frame nell'esecuzione corrente della presentazione; tale tempo sovrascrive quello impostato durante la modifica della presentazione. \\
+		\textbf{Precondizione}: la presentazione è in modalità manuale.	\\
+		\textbf{Postcondizione}: la presentazione automatica può essere avviata con il tempo di scorrimento impostato dall'utente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente imposta il tempo di scorrimento dei frame per l'esecuzione corrente della presentazione.
+		\end{enumerate}		}
+	\subsubsection{UC 1.18.2.6 - Riproduzione file media audio/video}{
+		\label{uc1.18.2.6}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.75]{\imgs {UC1.18.2.6}.jpg} %inserire il diagramma UML
+			\label{fig:uc1.18.2.6}
+			\caption{Caso d'uso 1.18.2.6: Riproduzione dei file media}
+		\end{figure}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: durante una presentazione automatica, se nel frame sono presenti uno o più file media essi verranno avviati da sinistra verso destra e dall'alto verso il basso in modo automatico; l'utente può saltare la riproduzione di tali file media e la presentazione automatica continua col frame successivo. \\
+		\textbf{Precondizione}: la presentazione è in esecuzione automatica e il frame in presentazione contiene uno o più file media  audio/video.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione o l'utente ha deciso di proseguire coi frame successivi.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item La presentazione automatica avvia la riproduzione del file media \S\hyperref[uc1.18.2.6.1]{(UC 1.18.2.6.1)};
+			\item L'utente può saltare la riproduzione del file media \S\hyperref[uc1.18.2.6.5]{(UC 1.18.2.6.5)};
+			\item L'utente può mettere in pausa la riproduzione del file media \S\hyperref[uc1.18.2.6.2]{(UC 1.18.2.6.2)} e riprenderla dal punto in cui l'aveva sospesa \S\hyperref[uc1.18.2.6.3]{(UC 1.18.2.6.3)} o da punti diversi \S\hyperref[uc1.18.2.6.4]{(UC 1.18.2.6.4)};
+			\item L'utente ha la possibilità di ingrandire un video \S\hyperref[uc1.18.2.6.6]{(UC 1.18.2.6.6)}.
+		\end{enumerate}
+	}
+	\subsubsection{UC 1.18.2.6.1 - Avvio automatico riproduzione di un file media}{
+		\label{uc1.18.2.6.1}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: il file media presente nel frame viene riprodotto automaticamente; se più file media sono presenti allora verranno riprodotti tutti uno alla volta (ordine: da sinistra a destra e dall'alto al basso). \\
+		\textbf{Precondizione}: la presentazione è in modalità esecuzione automatica e il frame in presentazione contiene uno o più file media audio/video.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'esecuzione automatica del file media ne riproduce i contenuti.
+		\end{enumerate}				
+	}
+	\subsubsection{UC 1.18.2.6.2 - Sospensione della riproduzione del file media}{
+		\label{uc1.18.2.6.2}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può mettere in pausa la riproduzione del file media in corso. \\
+		\textbf{Precondizione}: è in riproduzione un file media.	\\
+		\textbf{Postcondizione}: è stata sospesa la riprode del file media.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente sospende la riproduzione del file media.
+		\end{enumerate}				
+	}
+	\subsubsection{UC 1.18.2.6.3 - Ripresa dell'esecuzione del file media}{
+		\label{uc1.18.2.6.3}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente ende la produzione del file media dopo averla sospesa. \\
+		\textbf{Precondizione}: è stata sospesa la riproduzione del file media nel frame correnteecuzione del file media nel frame corrente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente riprende la riproduzione del file media.
+		\end{enumerate}				
+	}
+	\subsubsection{UC 1.18.2.6.4 - Riproduzione del file media da qualsiasi minuto}{
+		\label{uc1.18.2.6.4}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può far riprodurre il file media da qualsiasi minuto
+		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: il file media è in riproduzione dal minuto scelto dall'utente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente riproduce il file media da un minuto qualsiasi. 
+		\end{enumerate}				
+	}
+	\subsubsection{UC 1.18.2.6.5 - Salto della riproduzione in corso}{
+		\label{uc1.18.2.6.5}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può saltare la riproduzione in corso e far proseguire normalmente la presentazione automatica. \\
+		\textbf{Precondizione}: un file media è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: l'esecuzione automatica della presentazione riproduce un altro file media audio/video se presente oppure riprende la sua normale esecuzione.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente salta la riproduzione del file media.
+		\end{enumerate}						
+	}
+	\subsubsection{UC 1.18.2.6.6 - Visualizzazione a schermo intero di un video}{
+		\label{uc1.18.2.6.6}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente può riprodurre il video a schermo intero. \\
+		\textbf{Precondizione}: un video è in riproduzione o è stato sospeso.	\\
+		\textbf{Postcondizione}: lo schermo presenta il video selezionato a schermo intero.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente allarga le dimensioni del video.
+		\end{enumerate}	
+		\textbf{Scenario alternativo}:
+		\begin{itemize}
+			\item L'utente può uscire dalla visualizzazione a schermo intero in qualsiasi momento.
+		\end{itemize}
+	}
+	\subsubsection{UC 1.18.3 - Passaggio alla modalità di esecuzione automatica}{
+		\label{uc1.18.3}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione in modalità manuale a quella in modalità automatica. \\
+		\textbf{Precondizione}: la presentazione è in modalità esecuzione manuale.	\\
+		\textbf{Postcondizione}: la presentazione è stata avviata in modalità automatica partendo dal frame corrente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente passa alla riproduzione automatica della presentazione.
+		\end{enumerate}						
+	}
+	\subsubsection{UC 1.18.4 - Passaggio alla modalità di esecuzione manuale}{
+		\label{uc1.18.4}
+		\textbf{Attori}: utente. \\
+		\textbf{Descrizione}: l'utente vuole passare dalla presentazione in modalità automatica a quella in modalità manuale. \\
+		\textbf{Precondizione}: la presentazione è in modalità esecuzione automatica.	\\
+		\textbf{Postcondizione}: la presentazione è stata avviata in modalità manuale partendo dal frame corrente.\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item L'utente passa alla riproduzione manuale della presentazione.
+		\end{enumerate}						
+	}
