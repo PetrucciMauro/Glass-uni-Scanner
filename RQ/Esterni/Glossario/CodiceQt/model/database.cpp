@@ -129,7 +129,6 @@ void DataBase::texprint(){
 	 QMap<QString, Lemma*>::const_iterator it=db.begin();
 	 out<<"\\newcolumntype{L}[1]{>{\\raggedright\\arraybackslash}p{#1}} \n";
 	 out<<"\\renewcommand*{\\arraystretch}{1.4} \n";
-	 out<<"\\section{Glossario}{ \n";
 	 QChar temp;
 	 bool primo=true;
 	 for(;it!=db.end();++it){
@@ -161,7 +160,7 @@ void DataBase::texprint(){
 		  if(primo)
 				primo=false;
 	 }
-	 out<<"\\end{longtable} \n }";
+	 out<<"\\end{longtable} \n ";
 	 file.close();
 }
 
