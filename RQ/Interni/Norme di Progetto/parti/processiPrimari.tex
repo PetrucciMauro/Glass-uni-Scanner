@@ -251,3 +251,69 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
   \item Codice\ped{g} di un errore precedentemente rilevato, se in presenza di un duplicato.
  \end{itemize}
   Successivamente si procederà alla valutazione della gravità dei vari errori e, se considerati risolvibili, il \emph{Responsabile} assegnerà le correzioni da apportare ai programmatori tramite lo strumento di Ticketing\ped{g}.
+  \subsection{Strumenti}
+  \subsubsection{Strumenti per i documenti}
+  \label{sec:strumentiDocumenti}
+  \subsubsubsection{LATEX} 
+   
+  Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
+  Il motivo principale dietro a questa scelta è la facilità nel separare il contenuto dalla formattazione: 
+  con \LaTeX\ è possibile definire l’aspetto delle pagine in un File\ped{g} Template\ped{g} condiviso da tutti i documenti. Altre soluzioni come Microsoft Office, LibreOffice o Google Docs non avrebbero consentito questa separazione, duplicando il lavoro di formattazione del testo e non garantendo un risultato uniforme.\\
+  Il grande numero di pacchetti\ped{g} esistenti consente di implementare funzionalità comuni in maniera semplice. L’Estensibilità\ped{g} di \LaTeX\ può essere sfruttata per creare funzioni\ped{g} e variabili globali che rendono la scrittura del contenuto più corretta da un punto di vista semantico. Un esempio è dato dal comando /role\textbraceleft ruolo\textbraceright\ che identifica ogni ruolo 
+  all’interno del Progetto\ped{g}.\\
+  Per la scrittura di documenti \LaTeX\  l’Editor\ped{g} consigliato è \textbf{TeXstudio}. 
+  
+  
+  \subsubsubsection{Controllo ortografico}
+  
+  Il Software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il Programma\ped{g} viene richiamato da linea di comando.
+  
+  
+  \subsubsubsection{Grafici UML} 
+  
+  Per la stesura dei grafici UML viene utilizzato il Programma\ped{g} \textbf{Visual Paradigm}. Il Programma\ped{g} viene utilizzato in licenza Community Edition che ne permette l’uso gratuito per fini non commerciali.
+  
+  \subsubsubsection{Fogli di calcolo}
+  \label{sec:fogliDiCalcolo}
+  L'utilizzo di fogli di calcolo\ped{g} quali Calc, Excel e Numbers è a discrezione del singolo componente.
+  I fogli di calcolo\ped{g} vengono usati per:
+  \begin{itemize}
+  \item Grafici a torta per l'utilizzo delle Risorse\ped{g};
+  \item Grafici a torta per il costo dedicato a ciascuna Risorsa\ped{g};
+  \item Istogrammi per le ore assegnate ad ogni componente del gruppo;
+  \item Tabelle per il confronto tra preventivo e consuntivo;
+  \item Istogrammi per il confronto tra ore preventivate e ore realmente impiegate da ciascuna Risorsa\ped{g}.
+  \end{itemize}
+  
+  \subsubsection{Strumenti per la codifica}
+  \label{sec:strumentiCodifica}
+  \subsubsubsection{Stesura}
+  Per al stesura del Codice\ped{g} HTML e JavaScript\ped{g} verrà usata l'IDE\ped{g} \emph{Aptana}, si è scelto d'utilizzarla perché fornisce un ambiente di sviluppo per applicazioni WEB\ped{g} completo, gratuito e multi-piattaforma.
+  \emph{Aptana} presenta molti strumenti già integrati, come code-assistant e debugger. 
+  \subsubsubsection{Verifica}
+  L’analisi statica\ped{g} e dinamica integrate in Travis vengono lanciate automaticamente ad ogni push di Codice\ped{g} nel Repository\ped{g}. Al verificatore è richiesto quindi soltanto di analizzare l’output del tool, visualizzabile dalla dashboard di Travis.
+  
+  
+  \subsection{LateTack}
+  \label{sec:lateTrack}
+  Per semplificare il tracciamento dei Requisiti\ped{g} è stato realizzato internamente il Software\ped{g}
+  \emph{LateTrack}, un’applicazione WEB\ped{g} accessibile tramite Browser\ped{g} ed ospitata sul Server\ped{g} dedicato.
+  Quest’applicazione consente di gestire il tracciamento dei Requisiti\ped{g}.
+  
+  \begin{figure}[H]
+  	\centering
+  \includegraphics[width=1\textwidth]{\imgs LateTrack.png}
+    \caption{ScreenShot del Programma\ped{g} LateTrack}
+    \label{fig:lateTrack}
+  \end{figure}
+  \subsubsection{Aggiunta nuovo requisito}
+  Per aggiungere un nuovo Requisito\ped{g} al Progetto\ped{g} è necessario eseguire i passi descritti nel
+  diagramma in figura \S\ref{fig:CreazioneRequisito}.
+  \begin{figure}
+  	\centering
+  	\includegraphics[width=0.5\textwidth]{\imgs CreazioneRequisito}
+   	 \caption{Creazione nuovo requisito}
+    	\label{fig:CreazioneRequisito}
+  \end{figure}
+  
+  
