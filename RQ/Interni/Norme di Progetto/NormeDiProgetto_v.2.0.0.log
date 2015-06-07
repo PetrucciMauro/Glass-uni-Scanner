@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  27 MAY 2015 16:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  6 JUN 2015 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **NormeDiProgetto_v.2.0.0.tex
 (./NormeDiProgetto_v.2.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+Babel <3.9h> and hyphenation patterns for 8 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -973,15 +973,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 51.
+Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
@@ -1271,12 +1271,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--28
+
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 29.
+Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [30]
-Overfull \hbox (1.32506pt too wide) in paragraph at lines 55--56
+Overfull \hbox (1.32506pt too wide) in paragraph at lines 64--65
 \T1/cmr/m/n/12 Ogni macro-attività può es-se-re as-se-gna-ta dal \T1/cmr/m/it/1
 2 Re-spon-sa-bi-le \T1/cmr/m/n/12 ad un re-spon-sa-bi-le di sotto-Progetto$[]$,
 
@@ -1284,62 +1294,62 @@ Overfull \hbox (1.32506pt too wide) in paragraph at lines 55--56
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 56.
+Package pdftex.def Info: ../../logo.jpg used on input line 65.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31]
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 82.
+Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [32]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.5.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.86 		\subsubsubsection{Casi Particolari}
+l.95 		\subsubsubsection{Casi Particolari}
                                           {
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 98.
+(hyperref)                removing `subscript' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 98.
+(hyperref)                removing `math shift' on input line 107.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 \subsubsubsection{Repository}
+l.109 \subsubsubsection{Repository}
                                    
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 108.
+Package pdftex.def Info: ../../logo.jpg used on input line 117.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{subsubsub
 section.5.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.108 \item s
+l.117 \item s
              ource.git disponibile allâ€™Indirizzo\ped{g}:\\]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
@@ -1347,7 +1357,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 \subsubsubsection{Condivisione file}
+l.127 \subsubsubsection{Condivisione file}
                                           )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
@@ -1679,29 +1689,30 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14326 strings out of 495017
- 205363 string characters out of 6181021
- 393472 words of memory out of 5000000
- 17032 multiletter control sequences out of 15000+600000
+ 14326 strings out of 494969
+ 205324 string characters out of 6178806
+ 393747 words of memory out of 5000000
+ 17046 multiletter control sequences out of 15000+600000
  20491 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,60p,817b,1248s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on NormeDiProgetto_v.2.0.0.pdf (50 pages, 744474 bytes).
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti080
+0.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk>
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
+petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/petrucci/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488
+.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on NormeDiProgetto_v.2.0.0.pdf (50 pages, 639613 bytes).
 PDF statistics:
- 1203 PDF objects out of 1440 (max. 8388607)
- 1119 compressed objects within 12 object streams
+ 1596 PDF objects out of 1728 (max. 8388607)
+ 1130 compressed objects within 12 object streams
  228 named destinations out of 1000 (max. 500000)
  1010 words of extra memory for PDF output out of 10000 (max. 10000000)
 
