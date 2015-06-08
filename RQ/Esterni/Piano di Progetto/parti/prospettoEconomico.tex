@@ -4,8 +4,8 @@
 	Le ore di lavoro della fase di Analisi dei Requisiti\ped{g} sono suddivise secondo la seguente tabella:
 	\begin{table}[H]
 		\centering
-	  \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}
-		    							p{\dimexpr 0.1\linewidth-2\tabcolsep}}
+	  \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
+		    							p{\dimexpr 0.2\linewidth-2\tabcolsep}}
 		   \toprule Ruolo & Ore & Costi \\
 		   \midrule
 		   Responsabile & 55 & 1650 \\
@@ -14,6 +14,7 @@
 		   Programmatore & 0 & 0 \\
 		   Progettista & 0 & 0 \\
 		   Verificatore & 32 & 480 \\
+		   \hline
 		   Totale & 179 & 4350 \\
 		   \bottomrule
 	 \end{tabular}
@@ -48,6 +49,7 @@
 		  Programmatore & 0   & 0 \\
 		  Progettista & 82(-6)  & 1804(-132) \\
 		  Verificatore & 40(-11)  & 585(-165) \\
+		  \hline
 		  Totale & 172(-27)  & 3564(-537) \\
 		  \bottomrule
 	  \end{tabular}
@@ -72,8 +74,8 @@
 	Le ore di lavoro della fase di Codifica\ped{g} sono suddivise secondo la seguente tabella:
 	\begin{table}[H]
 		 \centering
-		\begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}
-			  		  				p{\dimexpr 0.1\linewidth-2\tabcolsep}}
+		\begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
+			  		  				p{\dimexpr 0.2\linewidth-2\tabcolsep}}
 			  \toprule Ruolo & Ore  & Costi \\
 			  \midrule
 			  Responsabile & 16  & 480 \\
@@ -82,6 +84,7 @@
 			  Programmatore & 152  & 2280 \\
 			  Progettista & 96  & 2112 \\
 			  Verificatore & 122  & 1830 \\
+			  \hline
 			  Totale & 367(+27)  & 6325(+537) \\
 			  \bottomrule
 		  \end{tabular}
@@ -106,8 +109,8 @@
 	Le ore di lavoro della fase di Verifica e Validazione\ped{g} sono suddivise secondo la seguente tabella:
 	\begin{table}[H]
 		 \centering
-		 \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}
-		 	  		  				p{\dimexpr 0.1\linewidth-2\tabcolsep}}
+		 \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
+		 	  		  				p{\dimexpr 0.2\linewidth-2\tabcolsep}}
 			  \toprule Ruolo & Ore  & Costi \\
 			  \midrule
 			  Responsabile & 10  & 300 \\
@@ -116,6 +119,7 @@
 			  Programmatore & 9   & 135 \\
 			  Progettista & 38  & 836 \\
 			  Verificatore & 25  & 375 \\
+			  \hline
 			  Totale & 89  & 1786 \\
 			  \bottomrule
 		 \end{tabular}
@@ -136,47 +140,12 @@
 		\caption{Costi per ruoli, fase di Verifica e Validazione}
 	\end{figure}
 }
-\subsection{Totale}{
-	\subsubsection{Ore totali con investimento}{
-		Le ore di lavoro totali comprese quelle di investimento, previste per la realizzazione dell’intero Progetto\ped{g}, sono suddivise secondo la seguente tabella:
+\subsection{Totale ore}{
+		Le ore di lavoro totali escluse quelle di investimento, previste per la realizzazione dell’intero Progetto\ped{g}, sono suddivise secondo la seguente tabella (per il totale ore con investimento si rimanda all'appendice \ref{totOreInvest}):
 		\begin{table}[H]
 			 \centering
-			 \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}
-			  	  		  				p{\dimexpr 0.1\linewidth-2\tabcolsep}}
-				  \toprule Ruolo & Ore  & Costi \\
-				  \midrule
-				  Responsabile & 105  & 3150 \\
-				  Amministratore & 43  & 860 \\
-				  Analista & 82  & 2050 \\
-				  Programmatore & 161  & 2415 \\
-				  Progettista & 210  & 4620 \\
-				  Verificatore & 217  & 3255 \\
-				  Totale & 818  & 16350 \\
-				  \bottomrule
-			 \end{tabular}
-			 \label{tab:costoinvestimento}
-			 \caption{Costo per ruolo previsto per l’intera realizzazione del progetto}
-		\end{table}
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.85]{\imgs tottotore.pdf}
-			\label{fig:oreinvestimento}
-			\caption{Ore per ruoli, intero Processo\ped{g}, compreso l’investimento}
-		\end{figure}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.85]{\imgs tottotcosti.pdf}
-			\label{fig:costoinvestimento}
-			\caption{Costi per ruoli, intero Processo\ped{g}, compreso l’investimento}
-		\end{figure}
-	}
-	\subsubsection{Ore totali escluso l’investimento}{
-		Le ore di lavoro totali escluse quelle di investimento, previste per la realizzazione dell’intero Progetto\ped{g}, sono suddivise secondo la seguente tabella:
-		\begin{table}[H]
-			 \centering
-			 \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}
-				  		  				p{\dimexpr 0.1\linewidth-2\tabcolsep}}
+			 \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
+				  		  				p{\dimexpr 0.2\linewidth-2\tabcolsep}}
 				  \toprule Ruolo & Ore  & Costi \\
 				  \midrule
 				  Responsabile & 40  & 1200 \\
@@ -185,6 +154,7 @@
 				  Programmatore & 161  & 2415 \\
 				  Progettista & 210  & 4620 \\
 				  Verificatore & 186  & 2790 \\
+				  \hline
 				  Totale & 628  & 11675 \\
 				  \bottomrule
 			 \end{tabular}
@@ -204,6 +174,5 @@
 			\label{fig:costonoinvestimento}
 			\caption{Costi per ruoli, intero Processo\ped{g}, escluso l’investimento}
 		\end{figure}
-	}
 }
 }
