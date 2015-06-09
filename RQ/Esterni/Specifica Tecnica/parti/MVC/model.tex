@@ -793,27 +793,6 @@
 			\end{itemize}
 			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
 			}}
-			
-			---------------togliere da qui----------
-			
-			\subsubsection{Premi::ApacheRelations::Manifest}{
-				Il componente seguente appartiene al package ApacheServerManager, quindi lo scope sarà \\Model::ApacheRelations::Manifest::<componente>.
-			   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate ai servizi di nodeApi e ai metodi definiti in Premi::Model::ServerRelation::Loader.  \\
-			   	\textbf{\relaz}:
-			   	\begin{itemize}
-			   		\item dipendenza con Premi::Model::MongoRelations::Loader;
-			   		\item definisce il metodo GestoreManifest();
-			   	\end{itemize}
-			
-				\subsubsubsection{GestoreManifest}{
-					\textbf{\tipo}: classe, fornisce i servizi raccolti nel package;\\
-					\textbf{\relaz}:
-					\begin{itemize}
-						\item definisce il metodo insertElement(), addPage(), update().
-					\end{itemize}
-			        }
-			}
-			---------------togliere fino a qui----------
 			\subsubsection{Premi::ApacheRelations::ResourceGetter}{
 							La seguente classe appartiene al package ApacheRelations, quindi lo scope sarà \\Model::ApacheRelations::<componente>.
 						   	\textbf{\tipo}: Questo package ha lo scopo di rendere disponibili le presentazioni in locale tramite chiamate a funzioni o servizi del server Apache.    \\
