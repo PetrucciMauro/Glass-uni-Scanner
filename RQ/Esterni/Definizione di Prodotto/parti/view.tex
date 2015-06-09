@@ -4,7 +4,26 @@
 		\textbf{\attivita}: rappresenta l'intera GUI del nostro sistema.
 		\subsection{Premi::View::Pages}{
 			\textbf{\tipo}: contiene le pagine in Html, rappresentano l'interfaccia grafica vera e propria.
-			\textbf{\relaz}: .
-			\textbf{\attivita}: rappresenta l'intera GUI del nostro sistema.
+			\textbf{\relaz}: utilizza le classi contenute nel package Premi::ViewJavascript per attivare le funzioni javascript associate a degli eventi e le classi contenute nel package ApacheServer::PhpFunctions per le chiamate Php al server.
+			\textbf{\attivita}: rappresenta le pagine fisiche del software.
 			}
+			\subsection{Premi::View::Pages::Index}{
+					\textbf{Funzione}\\
+						Questa classe si occuperà di mostrare all'utente la possibilità di effettuare il login oppure di registrarsi al sistema.
+					\textbf{Relazioni d'uso con altri moduli}\\
+						Questa classe utilizzerà le seguenti classi:
+					\begin{itemize}
+						\item Premi::View::ViewJavascript::UserFunctions
+						\item Premi::ApacheServer::PhpFunctions
+					\end{itemize}
+					\textbf{Attributi}\\
+						Al momento non sono stati previsti degli attributi.
+					\textbf{Metodi}\\
+						+Index()\\
+						costruttore che dovrà inizializzare gli attibuti\\
+						+login(string name, string password)\\
+						metodo che invia alla classe Premi::View::ViewJavascript::UserFunctions le due stringhe passate 
+						
+					
+				}
 		
