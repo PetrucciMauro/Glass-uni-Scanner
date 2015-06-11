@@ -280,4 +280,54 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 			Viene verificato che il sistema offra la possibilità di eseguire offline le presentazioni & RQ\ped{g} 13\\
 \end{longtable}
 }
+\subsection{Test d'integrazione}{
+	Vengono descritti i test di integrazione che permettono di verificare la corretta integrazione e comunicazione tra parti distinte di sistema.	\\
+	Verrà utilizzata la strategia di integrazione incrementale per una più semplice individuazione dei difetti, per assemblare il sistema in passi di integrazione reversibili e per avere corretti flussi di controllo da parti “consumatore” verso parti “produttore”. In particolare per limitare il numero di stub richiesti verrà adottato un approccio Bottom-up integrando prima le parti con minore dipendenza funzionale. \\
+	Di seguito viene riportato il diagramma per chiarire l'albero dei test d'integrazione.	\\
+	
+	\begin{figure}[h]
+	  \centering
+	    \includegraphics[width=0.5\textwidth]{\imgs {IntegrazioneDiagramma}.pdf}
+	  \caption{Sequenza d’integrazione delle componenti}
+	  \label{fig:Sequenza d’integrazione delle componenti}
+	\end{figure}
+	
+	\renewcommand*{\arraystretch}{1.4}
+			\begin{longtable} [c]{| p{3cm} | p{6cm} |p{3cm}|}
+				\caption{Descrizione dei test di Integrazione
+				 \label{tab:verReqInteg}}\\
+				 \hline
+				 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti aggiuntive}& \textbf{Stato} \\
+				 \hline
+				 \endfirsthead
+				 \hline
+				 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti aggiuntive}& \textbf{Stato} \\
+				 \hline
+				\endhead
+				 \hline
+				 \endfoot
+				 \hline
+				 \endlastfoot
+				TIA1 & Si verifica che NodeApi si integri correttamente con le classi che compongono AccessControll & NodeApi, AccessControll & N.E.\\
+				\hline
+				TIA2 & Si verifica che il Loader interagisca correttamente con NodeApi e AccessControll  & Loader & N.E.\\
+				\hline
+				TIA3 & Si verifica che DBSynch interagisca correttamente con le NodeApi, Loader e AccessControll & DbSynch & N.E.\\
+				\hline
+				TIB1 & Si verifica che ApacheServerManager utilizzi correttamente le PhpFunctions & ApacheServermanager, PhpFunctions & N.E.\\
+				\hline
+				TIC1 & Si  verifica che la classe Manifest dialoghi correttamente con le classi di ServerApaches e di MongoRelations & Manifest & N.E.\\
+				\hline
+				TIC2 & Si verifica che I compontenti di SlideShowElements dialoghino correttamente con MongoRelations &  & N.E.\\
+				\hline
+				TIC3 & Si verifica che le classi che compongono InseritEditRemove interagiscano correttamente con SlideShowElements e MongoRelations & SlideshowActions & N.E.\\
+				\hline
+				TIC4 & Si verifica che le classi che compongono Command si integrino con InsertEditRemove &  & N.E.\\
+				\hline
+				TID1 & Si verifica che il Presenter ed il Model dialoghino correttamente & Presenter & N.E.\\
+				\hline
+				TID2 & Si verifica che la View si integri correttamente con il Presenter e con le classi di ApacheRelations & View & N.E.\\
+				\hline
+				\end{longtable}			
+}
 }
