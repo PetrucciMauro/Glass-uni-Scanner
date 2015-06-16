@@ -1,8 +1,10 @@
-\section{Glossario}{ 
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} 
+\renewcommand*{\arraystretch}{1.4} 
+\phantomsection 
+\addcontentsline{toc}{subsection}{A} 
 \hfill\Huge{\textbf{A}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Account} & L'insieme di funzionalità, strumenti e contenuti attribuiti ad un nome utente all'interno del programma. \\ 
  \\ 
 \textbf{Analisi Dinamica} & Analisi del software svolta eseguendo il programma. \\ 
@@ -13,22 +15,28 @@
  \\ 
 \textbf{Arrestare} & Interruzione permanente di un’attività. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{B} 
 \hfill\Huge{\textbf{B}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
+\textbf{Back-end} & Parte di un software che elabora i dati generati dal front end e non interagisce con l’utente. Spesso si trova in una macchina diversa da quella del front-end. \\ 
+ \\ 
 \textbf{Bookmark} & Segnalibro che permette di spostarsi rapidamente da un frame ad un altro al livello più esterno. \\ 
+ \\ 
+\textbf{Bottom-up} & Il bottom up prende corpo dal punto di partenza (bottom) ovvero dalla situazione iniziale; considera l’obiettivo finale, induce a costruire un percorso sequenziale organizzato in passaggi successivi in cui l’ancoraggio tra traguardi intermedi e obiettivo finale è generalmente ricercato in modo intuitivo (euristico). \\ 
  \\ 
 \textbf{Browser} & Un browser è un programma che consente di usufruire dei servizi di connettività in Rete e di navigare sul World Wide Web. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{C} 
 \hfill\Huge{\textbf{C}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{CSS} & (Cascading Style Sheets, in italiano fogli di stile), linguaggio usato per descrivere l’aspetto e la formattazione di un documento scritto con un linguaggio di marcatura. \\ 
  \\ 
 \textbf{Caso d'Uso} & Tecnica utilizzata al fine di effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità. Essa consiste nel valutare ogni requisito focalizzandosi sugli attori che interagiscono col sistema, valutandone le varie interazioni. \\ 
@@ -45,38 +53,43 @@
  \\ 
 \textbf{Crawler} & Detto anche Web Spider, Ant, Automatic Indexer; software che naviga in maniera metodica ed automatizzata il World Wide Web. Viene usato dai motori di ricerca per aggiornare i propri contenuti o per indicizzare i contenuti di altri siti. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{D} 
 \hfill\Huge{\textbf{D}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Desktop} & Si intende una tipologia di computer contraddistinto dall’essere general purpose, monoutente, destinato ad un utilizzo non in mobilità e principalmente produttivo e di dimensioni tali per cui l’installazione in una scrivania risulta la più appropriata per un comodo utilizzo. \\ 
  \\ 
 \textbf{Diagramma di Gantt} & Strumento di supporto alla gestione de progetti; usato principalmente nelle attività di project management, è costruito partendo da un asse orizzontale - a rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) - e da un asse verticale - a rappresentazione delle mansioni o attività che costituiscono il progetto. Delle barre orizzontali di lunghezza variabile rappresentano le sequenze, la durata e l'arco temporale di ogni singola attività del progetto (l'insieme di tutte le attività del progetto ne costituisce la work breakdown structure). Queste barre possono sovrapporsi durante il medesimo arco temporale ad indicare la possibilità dello svolgimento in parallelo di alcune delle attività. Man mano che il progetto progredisce, delle barre secondarie, delle frecce o delle barre colorate possono essere aggiunte al diagramma, per indicare le attività sottostanti completate o una porzione completata di queste. Una linea verticale è utilizzata per indicare la data di riferimento. \\ 
  \\ 
 \textbf{Dispositivo Mobile} & Dispositivo portatile che permette di ricevere, elaborare ed esportare dati senza usare una connessione Internet cablata. Di norma si usa per indicare sia smartphone che tablet. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{E} 
 \hfill\Huge{\textbf{E}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Editor} & Programma per la composizione di testi. Un semplice editor è generalmente incluso in ogni sistema operativo. \\ 
  \\ 
-\textbf{Elemento Scelta} & Icona che permette di visualizzare il frame associato alla scelta \\ 
+\textbf{Elemento} & Elemento presente all'interno di un frame il quale può essere un file media, un svg o un testo . \\ 
+ \\ 
+\textbf{Elemento scelta} & Elemento presente all'interno di un frame che, selezionandolo, permette di spostarsi in un nuovo percorso di presentazione. \\ 
  \\ 
 \textbf{Estensibilità} & va definita seriamente \\ 
  \\ 
 \textbf{Estensione} & Breve sequenza di caratteri alfanumerici (tipicamente tre), posta alla fine del nome di un file e separata dalla parte precedente con un punto. Attraverso l’estensione del file il sistema operativo riesce a distinguere il tipo di contenuto (testo, musica, immagine...) e il formato utilizzato e aprirlo, di conseguenza, con la corrispondente applicazione. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{F} 
 \hfill\Huge{\textbf{F}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{File} & Contenitore di informazioni in forma digitale che si basa su un sistema di archiviazione durevole, è cioè a disposizione di altri programmi anche quando il programma che l’ha creato termina la sua esecuzione. \\ 
  \\ 
 \textbf{File Sorgente} & File di testo contenente una serie di istruzioni (dette codice sorgente) scritte in un certo linguaggio di programmazione (normalmente ad alto livello) pronto per essere trasformato da un apposito compilatore in un programma eseguibile o per essere interpretato da un apposito interprete. \\ 
@@ -95,20 +108,31 @@
  \\ 
 \textbf{Funzione} & Particolare costrutto sintattico, utilizzato all’interno del codice di un programma, che permette di raggruppare una sequenza di istruzioni in un unico blocco espletando così una determinata e in generale più complessa operazione, azione o elaborazione sui dati del programma stesso. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{G} 
 \hfill\Huge{\textbf{G}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{GitHub} & Servizio web di hosting per lo sviluppo di progetti software, che usa il sistema di controllo di versione Git . \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{H} 
+\hfill\Huge{\textbf{H}} \\ 
+\normalsize 
+\begin{longtable}{L{4cm} p{10cm}}
+\textbf{Halstead} & Metriche software introdotte da Maurice Howard Halstead nel 1977. \\ 
+ \\ 
+\end{longtable} 
+\newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{I} 
 \hfill\Huge{\textbf{I}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{IDE} & (Integrated Development Environment o Integrated Design Environment o Integrated Debugging Environment, rispettivamente ambiente integrato di progettazione e ambiente integrato di debugging), traducibile con: Ambiente di sviluppo integrato. Software che aiuta i programmatori nello sviluppo del codice sorgente in fase di programmazione. \\ 
  \\ 
 \textbf{IOS} & Sistema operativo per dispositivi mobile di Apple. \\ 
@@ -123,20 +147,22 @@
  \\ 
 \textbf{Iterazione} & Ripetizioni. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{J} 
 \hfill\Huge{\textbf{J}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{JavaScript} & In informatica JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{L} 
 \hfill\Huge{\textbf{L}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Link} & Rinvio da un'unità informativa su supporto digitale ad un'altra. È ciò che caratterizza la non linearità dell'informazione propria di un ipertesto. \\ 
  \\ 
 \textbf{Linux} & Famiglia di sistemi operativi di tipo Unix-like, rilasciati sotto varie possibili distribuzioni, aventi la caratteristica comune di utilizzare come nucleo il kernel Linux. \\ 
@@ -145,24 +171,28 @@
  \\ 
 \textbf{Logout} & Uscita dal sistema da parte dell’utente. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{M} 
 \hfill\Huge{\textbf{M}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Mac OS} & Famiglia di sistemi operativi creati per computer Macintosh, prodotti da Apple. \\ 
+ \\ 
+\textbf{Material Design} & L’obiettivo del Material Design è di creare un linguaggio visivo che sintetizzi i principi classici di buon design con l’innovazione e le possibilità della scienza, ovvero offrire un’esperienza unificata tra diverse piattaforme. Spazio, scala, colore, font, grassetti creeranno una gerarchia che guiderà l’utente nella navigazione. Le linee guida si possono trovare alla pagina: \url{http://www.google.com/design/spec}. \\ 
  \\ 
 \textbf{Metrica} & Standard per la misura di alcune proprietà del software o delle sue specifiche. \\ 
  \\ 
 \textbf{Milestone} & Importante traguardo intermedio nello svolgimento del progetto, viene evidenziata in maniera diversa dalle altre attività nell'ambito dei documenti di progetto. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{P} 
 \hfill\Huge{\textbf{P}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{PC} & Personal Computer \\ 
  \\ 
 \textbf{Pacchetto} & Insieme di programmi distribuiti congiuntamente. In senso più specifico, un pacchetto indica un software per computer compresso in un formato archivio per essere installato da un sistema di gestione dei pacchetti o da unprogramma d'installazione autonomo. \\ 
@@ -181,12 +211,13 @@
  \\ 
 \textbf{Proponente} & Colui che ha proposto al committente il proprio capitolato d’appalto. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{R} 
 \hfill\Huge{\textbf{R}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{RA} & Revisione di Accettazione. \\ 
  \\ 
 \textbf{RP} & Revisione di Progettazione. \\ 
@@ -203,12 +234,13 @@
  \\ 
 \textbf{Risorsa Umana} & Personale che lavora al progetto. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{S} 
 \hfill\Huge{\textbf{S}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{SEO} & (Search Engine Optimization) attività finalizzate ad ottenere un miglior posizionamento nelle pagine dei risultati dei motori di ricerca. In generale, più alto appare il sito tra i risultati, maggiori saranno gli utenti di quel motore di ricerca che lo andranno a visitare. \\ 
  \\ 
 \textbf{SPICE} & Acronimo di Simulation Program with Integrated Circuit Emphasis, è un insieme di documenti tecnici per il processo di sviluppo software e le relative funzioni di gestione delle risorse. \\ 
@@ -221,12 +253,13 @@
  \\ 
 \textbf{Sospendere} & Interruzione temporanea di un’attività. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{T} 
 \hfill\Huge{\textbf{T}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Tablet} & Dispositivo mobile con dimensioni dello schermo maggiori ai 7”, con potenza di calcolo e numero di porte di comunicazione simili a quelle di uno smartphone. \\ 
  \\ 
 \textbf{Tag} & Etichetta. \\ 
@@ -237,12 +270,13 @@
  \\ 
 \textbf{Ticketing} & Servizio basato sull’utilizzo dei ticket. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{U} 
 \hfill\Huge{\textbf{U}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{URL} & Uniform Resource Locator: sequenza di caratteri che identifica univocamente l'indirizzo di una risorsa in Internet, tipicamente presente su un host server, come ad esempio un documento, un'immagine, un video. \\ 
  \\ 
 \textbf{Ubuntu} & Sistema operativo basato su kernel Linux. \\ 
@@ -253,22 +287,24 @@
  \\ 
 \textbf{Utente mobile} & Utente che sta lavorando con Premi attraverso un dispositivo mobile, quali smartphone o tablet. \\ 
  \\ 
-\textbf{Utente offline} & Utente che non è in possesso di uno spazio di lavoro nel server e che quindi non risulta essere registrato oppure che ha un account ma non è connesso alla rete. \\ 
+\textbf{Utente non autenticato} & Utente che non è in possesso di uno spazio di lavoro nel server e che quindi non risulta essere registrato oppure che ha un account ma non è connesso alla rete. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{V} 
 \hfill\Huge{\textbf{V}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{Validazione} & Conferma attraverso l’esame e l'apporto di evidenza oggettiva che i requisiti particolari per l'utilizzo previsto di file, documenti e programmi siano soddisfatti. \\ 
  \\ 
-\end{longtabu} 
+\end{longtable} 
 \newpage 
+\phantomsection 
+\addcontentsline{toc}{subsection}{W} 
 \hfill\Huge{\textbf{W}} \\ 
 \normalsize 
-\begin{longtabu} to \textwidth{p{4cm} p{9cm}} 
-\toprule \\ 
+\begin{longtable}{L{4cm} p{10cm}}
 \textbf{W3C} & Il W3C ( World Wide Web Consortium) è un’associazione nata nel 1994 con lo scopo di migliorare gli esistenti protocolli e linguaggi per il World Wide Web e di aiutare il web a sviluppare tutte le sue potenzialità. Sono membri di questa associazione importanti aziende informatiche, compagnie telefoniche, societa interessate alla crescita del Web, organizzazioni no-prot, università e istituzioni per la ricerca. \\ 
  \\ 
 \textbf{WBS} & (work breakdown structure) detta anche struttura di scomposizione del lavoro (traduzione letterale) o struttura analitica di progetto; elenco di tutte le attività di un progetto. \\ 
@@ -277,5 +313,5 @@
  \\ 
 \textbf{Windows} & Sistema operativo di Microsoft per computer desktop e laptop. Windows Phone: Sistema operativo per dispositivi mobile di Microsoft. \\ 
  \\ 
-\end{longtabu} 
- }
+\end{longtable} 
+ 

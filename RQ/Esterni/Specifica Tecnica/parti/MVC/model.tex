@@ -69,7 +69,7 @@
 	         \item Audio <- Inserter costruisce gli oggetti di classe Audio;
 	         \item Video <- Inserter costruisce gli oggetti di classe Video;
 	         \item Background <- Inserter costruisce gli oggetti di classe Background;
-            \item Model::MongoRelations::Loader::Caricatore <- Inserter inserisce gli oggetti json nel campo dati contenitore presentazione.
+            \item Model::MongoRelations::Loader::Caricatore <- Inserter inserisce gli oggetti JSON nel campo dati contenitore presentazione.
             \item Model::MongoRelations::DBSynch <- Inserter costruisce un ConcreteSubject e un ConcreteObserver. L'elemento costruito da Inserter ha un riferimento al ConcreteSubject così creato.
 		\end{itemize} 
 
@@ -650,11 +650,11 @@
 				\begin{itemize}
 					\item relazione verso \textbf{nodeApi} per il recupero del token passando i parametri di autenticazione dell'utente
                     			\item relazione da \textbf{Presenter} da cui riceve in input i parametri dell'utente per la autenticazione 
-					\item relazione da \textbf{Model::MongoRelations::BDSynch} a cui espone il token per poter usare i servizi di nodeApi
+					\item relazione da \textbf{Model::MongoRelations::DBSynch} a cui espone il token per poter usare i servizi di nodeApi
 				\end{itemize}	
                     }
         \subsubsubsection{Registrazione}{
-				\textbf{\tipo}: Classe, fornisce le unzionalità di registrazione.\\	
+				\textbf{\tipo}: Classe, fornisce le funzionalità di registrazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item relazione verso \textbf{nodeApi} per il la registrazione dell'utente presso il database MongoDB
@@ -672,7 +672,7 @@
 		\caption{DbSync}
 	\end{figure}
 	
-		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern observer e chiamate asincrone ai servizi di nodeApi\\
+		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern Observer e chiamate asincrone ai servizi di nodeApi\\
 		\textbf{\relaz}:
 		\begin{itemize}
 		\item relazioni da e verso \textbf{Model::SlideShow::SlideShowElements} in cui si detiene un riferimento nei confronti dei ConcreteSubjects e viceversa
@@ -700,7 +700,7 @@
             }
             
              \subsubsubsection{Subject}{
-				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per aggiungere, togliere e notificare il ConcreteObserver associato.\\	
+				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di Subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per aggiungere, togliere e notificare il ConcreteObserver associato.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item associazione da ConcreteObserver che ne detiene un riferimento; 
@@ -709,7 +709,7 @@
             }
             
              \subsubsubsection{SubjectAudio}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
@@ -717,7 +717,7 @@
             }
             
             \subsubsubsection{SubjectVideo}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
@@ -725,7 +725,7 @@
             }
             
             \subsubsubsection{SubjectText}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
@@ -733,7 +733,7 @@
             }
             
             \subsubsubsection{SubjectFrame}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
@@ -741,7 +741,7 @@
             }
             
             \subsubsubsection{SubjectImg}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
@@ -749,7 +749,7 @@
             }
             
             \subsubsubsection{SubjectSVG}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\	
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
@@ -757,7 +757,7 @@
             }
             
              \subsubsubsection{SubjectBackground}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un'altro package.\\		
+				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\		
 				\textbf{\relaz}: 
 				\begin{itemize}
 					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
@@ -791,7 +791,7 @@
 			 	\item Model::Caricamento::Uploader <- ApacheManager passa i parametri di caricamento ad Uploader che istanzia l'oggetto sul server.
 			 	\item Presenter::EditPresenter <- ApacheManager passa lo username dell'utente che sta svolgendo operazioni sul file, il file ed il tipo del file al server Apache; questo se l'operazione è andata a buon fine, ritorna un segnale ad ApacheManager, che lo trasmette ad EditPresenter.
 			\end{itemize}
-			\textbf{\interfacce}: La pagina Profile costruisce Filemanager per fare modifiche ai file. 
+			\textbf{\interfacce}: La pagina Profile costruisce FileManager per fare modifiche ai file. 
 			}}
 			\subsubsection{Premi::ApacheRelations::ResourceGetter}{
 							La seguente classe appartiene al package ApacheRelations, quindi lo scope sarà \\Model::ApacheRelations::<componente>.

@@ -49,13 +49,13 @@
 			\caption{Observer}
 		\end{figure}
 		\begin{itemize}
-		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti.  Il pattern si basa su uno o più oggetti, chiamati listerei, che vengono registrati presso un oggetto subject per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
+		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti.  Il pattern si basa su uno o più oggetti, chiamati listerei, che vengono registrati presso un oggetto Subject per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
 		
 		\item \textbf{Scopo dell’utilizzo}: I questo sistema il pattern viene utilizzato per aggiornare automaticamente la rappresentazione, persistente sul database MongoDB, della presentazione che l'utente sta modificando localmente.
 		\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
 		\end{itemize}
 		\subsubsection{Premi::Model::MongoRelations::DBSynch}{
-			    Il package Premi::Model::MongoRelations::DBSynch contiene le classi che costituiscono il pattern observer, in particolare le classi ConcreteSubjects non sono le classi degli oggetti che vengono modificati(che sono invece definite in Model::SlideShow::SlideShowElements) ma fungono da tramite tra questi e gli oggetti ConcreteObserver. Questo permette di avere il pattern Observer e la gerarchia di definizione degli elementi in package differenti.
+			    Il package Premi::Model::MongoRelations::DBSynch contiene le classi che costituiscono il pattern Observer, in particolare le classi ConcreteSubjects non sono le classi degli oggetti che vengono modificati(che sono invece definite in Model::SlideShow::SlideShowElements) ma fungono da tramite tra questi e gli oggetti ConcreteObserver. Questo permette di avere il pattern Observer e la gerarchia di definizione degli elementi in package differenti.
 		}
 		\begin{figure}[H]
 			\centering

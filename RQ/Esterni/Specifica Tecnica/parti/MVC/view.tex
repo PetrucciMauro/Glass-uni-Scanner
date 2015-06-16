@@ -6,13 +6,13 @@
 			\caption{View}
 		\end{figure}
 		\textbf{\tipo}: questo livello costituisce l'interfaccia del software utilizzabile dagli utenti mediante pagine web.\\
-		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Presenter per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso e la comunicazione con il presenter.\\
+		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Presenter per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso e la comunicazione con il Presenter.\\
 		
 		\subsubsection{View::Pages}{
-			\textbf{\tipo}: questo package costituisce le pagine fisiche del sistema, realizzate in Html.\\
+			\textbf{\tipo}: questo package costituisce le pagine fisiche del sistema, realizzate in HTML.\\
 			\textbf{\relaz}: il componente comunica con il package View::ViewJavascript per l'utilizzo delle funzioni presenti all'interno dello stesso per l'interazione dell'utente con il sito.\\
 		\subsubsection{View::Pages::IndexPage}{
-			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema.\\
+			\textbf{\tipo}: la classe IndexPage definisce la struttura, e la conseguente visualizzazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema.\\
 			\textbf{\relaz}: la classe IndexPage utilizza i metodi messi a disposizione dalla classe Presenter::IndexPresenter, contenuta nel package Presenter, per verificare i dati inseriti durante la fase di autenticazione, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori emersi nella fase di autenticazione/registrazione.\\
 			\textbf{\interfacce}: i metodi implementati nella classe IndexPage sono i seguenti:
 			\begin{itemize}
@@ -40,7 +40,7 @@
 			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni scaricate in locale e da la possibilità di eseguirle.\\
 			\textbf{\interfacce}: i metodi implementati nella classe Manifest sono i seguenti:
 			\begin{itemize}
-				\item Manifest::ExecuteManifest esegue la presentazione selezionata utilizzando la pagina html già presente in locale e il framework impress.js;
+				\item Manifest::ExecuteManifest esegue la presentazione selezionata utilizzando la pagina HTML già presente in locale e il framework impress.js;
 				\item Manifest::DeleteManifest elimina la presentazione salvate in locale;
 			\end{itemize} 
 			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visualizzare le anteprime delle proprie presentazioni, eseguirle e eliminarle dalla posizione in locale.\\\\
@@ -108,8 +108,8 @@
 			\textbf{\base}: View::Pages::Edit.
 		}
 		\subsubsection{View::ViewJavascript}{
-			\textbf{\attivita}: rappresenta il lato javascript del sito web.\\
+			\textbf{\attivita}: rappresenta il lato JavaScript del sito web.\\
 		\subsubsection{View::ViewJavascript::UserFunctions}{
-			\textbf{\tipo}: il componente UserFunctions contiene tutte le funzioni javascript utilizzato dal package pages. \\
-			\textbf{\relaz}: comunica con il presenter per tutte le chiamate javascript effettuate dall'utente.\\
-			\textbf{\interfacce}: i metodi presenti nel package Pages che utilizzano le funzioni javascript presenti nella classe UserFunctions sono relativi a tutte i metodi presenti nella classe Pages per gestire la corretta interazione dell'utente con il sito.
+			\textbf{\tipo}: il componente UserFunctions contiene tutte le funzioni JavaScript utilizzato dal package pages. \\
+			\textbf{\relaz}: comunica con il Presenter per tutte le chiamate JavaScript effettuate dall'utente.\\
+			\textbf{\interfacce}: i metodi presenti nel package Pages che utilizzano le funzioni JavaScript presenti nella classe UserFunctions sono relativi a tutte i metodi presenti nella classe Pages per gestire la corretta interazione dell'utente con il sito.
