@@ -1,0 +1,80 @@
+\subsubsection{View::Pages::Manifest}{
+	\textbf{\descrizione}: Classe che salva in locale una lista di presentazioni di un utente.
+	\textbf{\utilizzo}: Questa classe viene usata per generare le pagine relative ad una lista di presentazioni che l'utente desidera salvare per visualizzarle offline.
+	\textbf{\relazioni}: utilizza le classi:
+		\begin{itemize}
+		\item Controller::ExecutionPresenter
+		\item ApacheRelations::ResourceGetter
+		\end{itemize}
+	\textbf{\attributi}: 
+		\begin{itemize}
+		\item collection:JSON \\Questo campo dati rappresenta le presentazioni dell'utente. 
+		\item toSave:JSON \\Questo campo dati rappresenta le presentazioni da salvare in locale.
+		\end{itemize}
+	\textbf{\metodi}:
+		\begin{itemize}
+		\item SelectPres(collection :JSON, toSave: JSON)
+		\item CreateManifest(toSave: JSON) \\Questo metodo si occupa di passare la lista delle presentazioni da scaricare e generare le pagine corrispondenti
+		\item ExecuteManifest(presId :String) \\Questo metodo si occupa di eseguire la presentazione di id presId salvata in locale.
+		\item DeleteManifest(presId :String) \\Questo metodo si occupa di rimuovere la presentazione di id presId presente in locale.
+		\end{itemize}
+		}
+		
+\subsubsubsection{Model::ApacheRelations::ApacheServerManager::FileManager}{
+				\textbf{\descrizione}: Classe che sa
+				\textbf{\utilizzo}: Questa classe
+				\textbf{\relazioni}: utilizza le classi:
+				\begin{itemize}
+					\item Model::MongoRelations::Loader
+					\item ApacheRelations::PhpFunctions
+					\item NodeApi
+				\end{itemize}
+				\textbf{\attributi}: assenti
+				\textbf{\metodi}:
+				\begin{itemize}
+					\item UploadMedia(username :String, path :String, type :String)) \\
+						Questo metodo prende in input il percorso di un file locale e lo inserisce nella cartella dell'utente.
+						\begin{\itemize}
+							\item username :String \\Rappresenta il nome dell'utente
+							\item path :String \\Rappresenta la cartella in cui andare a salvare il file
+							\item type :String \\Rappresenta il tipo del file
+						\end{\itemize}
+					\item DeleteMedia(username :String, id :String, type :String) \\
+						Questo metodo prende in input l'id di un file caricato dall'utente e lo rimuove dal server.
+						\begin{\itemize}
+							\item username :String \\Rappresenta il nome dell'utente;
+							\item id :String \\Rappresenta il nome univoco del file da eliminare;
+							\item type :String \\Rappresenta il tipo del file da eliminare.
+						\end{\itemize}
+					\item RenameMedia(username :String, newname :String, id :String, type :String) \\
+						Questo metodo rinomina un file caricato dall'utente nel server.
+						\begin{\itemize}
+							\item username :String \\Rappresenta il nome dell'utente;
+							\item newname :String \\Rappresenta il nuovo nome del file da rinominare;
+							\item id :String \\Rappresenta il nome univoco del file da rinominare;
+							\item type :String \\Rappresenta il tipo del file da eliminare.
+						\end{\itemize}
+				\end{itemize}
+			}
+			
+
+\subsubsection{Model::ApacheRelations::ResourceGetter}{
+	\textbf{\descrizione}: Classe che rende disponibili le presentazioni in locale tramite chiamate a funzioni o servizi del server Apache.
+	\textbf{\utilizzo}: Questa classe viene chiamata dal Presenter passando un JSON contenente una lista di presentazioni da rendere disponibili in locale. Si occupa di prendere i file JSON delle presentazioni corrispondenti, fare il parsing alla ricerca delle risorse e riportare i percorsi di queste all'interno di un file Manifest, generare i file HTML delle presentazioni selezionate ed un file Index con i collegamenti alle presentazioni selezionate.
+	\textbf{\relazioni}: utilizza le classi:
+	\begin{itemize}
+	\item
+	\end{itemize}
+	\textbf{\attributi}:
+	\begin{itemize}
+		\item toSave:JSON \\Questo campo dati rappresenta le presentazioni da salvare in locale.
+	\end{itemize}
+	\textbf{\metodi}:
+	\begin{\itemize}
+	\item getResources(toSave(JSON))
+	\item createIndex(toSave(JSON))
+	\item addPresentation()
+	\item createManifest()
+	\item addResource()
+	\end{\itemize}
+}
