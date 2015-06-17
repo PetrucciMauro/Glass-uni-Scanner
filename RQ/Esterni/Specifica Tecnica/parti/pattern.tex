@@ -1,15 +1,15 @@
 \section{Design Pattern e Pattern Architetturali}{
-	\subsection{MVP}{
+	\subsection{MVC}{
 			\begin{figure}[H]
 				\centering
-				\includegraphics[scale=0.6]{\imgs {MVP}.png}
-				\label{fig:mvp}
-				\caption{Model View Presenter}
+				\includegraphics[scale=0.6]{\imgs {MVC}.png}
+				\label{fig:MVC}
+				\caption{Model View Controller}
 			\end{figure}
 			\begin{itemize}
-				\item \textbf{Scopo dell’utilizzo}: è stato scelto il pattern MVP per separare la logica dell'applicazione dalla rappresentazione grafica;
-				\item \textbf{Contesto d’utilizzo}: Il pattern MVP viene utilizzato per l'architettura generale dell'applicazione.
-				Ogni modifica effettuata dall'utente sulla View viene inviata al Model tramite il Presenter e viceversa.
+				\item \textbf{Scopo dell’utilizzo}: è stato scelto il pattern MVC per separare la logica dell'applicazione dalla rappresentazione grafica;
+				\item \textbf{Contesto d’utilizzo}: Il pattern MVC viene utilizzato per l'architettura generale dell'applicazione.
+				Ogni modifica effettuata dall'utente sulla View viene inviata al Model tramite il Controller e viceversa.
 			\end{itemize}
 		}	
 	\subsection{Command}{
@@ -37,8 +37,8 @@
 			\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
 		\end{itemize}
 		\subsubsection{Premi::Model::SlideShow::SlideShowActions::Command}{
-			Il package Premi::Model::SlideShow::SlideShowActions::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe\\ Premi::Presenter::Presentazione::Edit, che invoca il costruttore delle sottoclassi di\\ Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::SlideShow::SlideShowActions::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
-			Premi::Presenter::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Presenter::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
+			Il package Premi::Model::SlideShow::SlideShowActions::Command implementa il pattern Command, tuttavia il client è esterno al package ed è individuabile nella classe\\ Premi::Controller::Presentazione::Edit, che invoca il costruttore delle sottoclassi di\\ Premi::Model::SlideShow::SlideShowActions::Command::AbstractCommand e dà l'oggetto creato in pasto a Premi::Model::SlideShow::SlideShowActions::Command::Invoker, che rappresenta, appunto, la componente invoker del pattern e che mette l'oggetto della sottoclasse di AbstractCommand in un contenitore denominato undo, invoca quindi il metodo Invoker::execute() che a sua volta esegue concretamente il comando.\\
+			Premi::Controller::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Controller::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
 		}
 	}
 	\subsection{Observer}{

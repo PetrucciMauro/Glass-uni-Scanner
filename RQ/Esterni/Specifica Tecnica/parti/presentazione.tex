@@ -14,7 +14,7 @@
 	Per i diagrammi di Package, classi e attività verrà usata la notazione UML 2.0.
 }
 \subsection{Architettura generale}{
-	Il prodotto si presenta suddiviso in tre parti distinte: Model, View e ViewModel. Si è quindi cercato di implementare il design pattern architetturale MVVM in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
+	Il prodotto si presenta suddiviso in tre parti distinte: Model, View e Controller. Si è quindi cercato di implementare il design pattern architetturale MVC in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
 	
 	\begin{figure}
 		\centering
@@ -26,9 +26,9 @@
 		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del software e risulta di fatto totalmente indipendente dagli altri due strati.
 		}
 	\subsubsection{View}{	
-		Contiene tutti gli elementi della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Presenter, demandandone a quest'ultimo la	gestione.
+		Contiene tutti gli elementi della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Controller, demandandone a quest'ultimo la	gestione.
 		}
-	\subsubsection{Presenter}{
+	\subsubsection{Controller}{
 		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
 		}
 	}
