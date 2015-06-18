@@ -9,34 +9,35 @@
 			}
 			\subsection{Premi::View::Pages::Index}{
 					\textbf{Funzione}\\
-						\indent Questa classe si occuperà di mostrare all'utente la possibilità di effettuare il login oppure di registrarsi al sistema.\\\\
+						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di effettuare il login oppure di registrarsi al sistema.\\\\
 					\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa classe utilizzerà le seguenti classi:
+						\indent Questa pagina utilizzerà le seguenti classi:
 					\begin{itemize}
 						\item Premi::Controller::IndexController
 					\end{itemize}
 					\textbf{Attributi}\\
 						\indent Al momento non sono stati previsti degli attributi.\\\\
-					\textbf{Metodi}
+					\textbf{Input utente}
 						\begin{itemize}
-						\item +Index(): costruttore che dovrà inizializzare gli eventuali attibuti ed inizializzare la pagina;
-						\item +login(string username, string password): metodo che invia alla classe Premi::Controller::IndexController le due stringhe passate, se l'operazione è andata a buon fine reindirizza alla pagina Premi::View::Pages::Home tramite il metodo goHome() altrimetti mostra a schermo un segnale di errore;
-						\item +subscription(string username, string password, string confirm): metodo che invia ai package Premi::Controller::IndexController e le due stringhe passate, se l'operazione è andata a buon fine reindirizza alla pagina Premi::View::Pages::Home tramite il metodo goHome() passando lo username altrimetti mostra a schermo un segnale di errore;
-						\item +goHome(): metodo che reindirizza alla pagina Premi::View::Pages::Home.
+						\item bottoneLogin(): attiva il metodo Premi::Controller::IndexController::login(username,password), se non sono compilati entrambi i campi restituisce errore;
+						\item bottoneSubscription(): attiva il metodo Premi::Controller::IndexController::subscription(username,password), se non sono compilati entrambi i campi restituisce errore;
+						\item bottoneHome(): reindirizza Premi::Controller::IndexController::goHome().
 					\end{itemize}
 				}
 				\subsection{Premi::View::Pages::Home}{
 						\textbf{Funzione}\\
-						\indent Questa classe si occuperà di mostrare all'utente le presentazioni presenti sul proprio database e per ognuno di esse darà la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle, crearne una nuova o effettuare il logout.\\\\
+						\indent Questa pagina si occuperà di mostrare all'utente le presentazioni presenti sul proprio database e per ognuno di esse darà la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle, crearne una nuova o effettuare il logout.\\\\
 						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa classe utilizzerà le seguenti classi:
+						\indent Questa pagina utilizzerà le seguenti classi:
 						\begin{itemize}
 							\item Premi::Controller::HomeController
 						\end{itemize}
 						\textbf{Attributi}\\
 						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Metodi}
+						\textbf{Input utente}
 						\begin{itemize}
+							\item bottoneDeleteSlideShow()
+							
 							\item +Home(): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id del token dell'utente attivo, dialogando con Premi::Controller::HomeController otterrà le presentazioni da visualizzare e controllerà la presenza o meno del token usando il metodo goIndex() in caso negativo;
 							\item +deleteSlideShow(string id): metodo che fa scomparire la miniatura della presentazione dalla schermata e manda al Premi::Controller::HomeController l'id della presentazione da rimuovere dal database;
 							\item +download(string id): metodo che manda al Premi::Controller::HomeController l'id della presentazione da scaricare nel Manifest e mostra a schermo un segnale di avvenuto scaricamento della presentazione;
@@ -51,15 +52,15 @@
 					}
 					\subsection{Premi::View::Pages::Profile}{
 						\textbf{Funzione}\\
-						\indent Questa classe si occuperà di mostrare all'utente la possibilità di cambiare i propri dati personali, caricare, eliminare o rinominare i propri file media.\\\\
+						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di cambiare i propri dati personali, caricare, eliminare o rinominare i propri file media.\\\\
 						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa classe utilizzerà le seguenti classi:
+						\indent Questa pagina utilizzerà le seguenti classi:
 						\begin{itemize}
 							\item Premi::Controller::ProfileController
 						\end{itemize}
 						\textbf{Attributi}\\
 						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Metodi}
+						\textbf{Input utente}
 						\begin{itemize}
 							\item +Profile(): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id del token dell'utente attivo, dialogando con Premi::Controller::ProfileController otterrà i dati personali e i file media da visualizzare e controllerà la presenza o meno del token usando il metodo goIndex() in caso negativo;
 							\item +changePassword(string password): metodo che invia al Premi::Controller::ProfileController la stringa della nuova password da sostituire con quella vecchia;
@@ -72,15 +73,15 @@
 					}
 					\subsection{Premi::View::Pages::Execution}{
 						\textbf{Funzione}\\
-						\indent Questa classe si occuperà di gestire l'esecuzione di una presentazione utilizzando il framework Impress.js associato alla pagina.\\\\
+						\indent Questa pagina si occuperà di gestire l'esecuzione di una presentazione utilizzando il framework Impress.js associato alla pagina.\\\\
 						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa classe utilizzerà le seguenti classi:
+						\indent Questa pagina utilizzerà le seguenti classi:
 						\begin{itemize}
 							\item Premi::Controller::ExecutionController
 						\end{itemize}
 						\textbf{Attributi}\\
 						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Metodi}
+						\textbf{Input utente}
 						\begin{itemize}
 							\item Execution(string id): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id della presentazione che gli è stato passato dialogando con Premi::Controller::ExecutionController e controllerà la presenza o meno del token di sessione usando il metodo goIndex() in caso negativo;
 							\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del framework Impress.js e che visualizzerà il frame successivo della presentazione;
@@ -92,15 +93,15 @@
 					}
 					\subsection{Premi::View::Pages::Edit}{
 						\textbf{Funzione}\\
-						\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
+						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
 						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa classe utilizzerà le seguenti classi:
+						\indent Questa pagina utilizzerà le seguenti classi:
 						\begin{itemize}
 							\item Premi::Controller::EditController
 						\end{itemize}
 						\textbf{Attributi}\\
 						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Metodi}
+						\textbf{Input utente}
 						\begin{itemize}
 							\item +Edit(string id): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id della presentazione che gli è stato passato dialogando con Premi::Controller::EditController e controllerà la presenza o meno del token di sessione usando il metodo goIndex() in caso negativo;
 							\item +insertFrame(string shape, int posX, int posY): metodo che invia al Premi::Controller::EditController le informazioni di inserimento di un nuovo frame, la sua forma e le sue coordinate;
