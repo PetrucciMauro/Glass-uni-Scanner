@@ -19,9 +19,8 @@
 						\indent Al momento non sono stati previsti degli attributi.\\\\
 					\textbf{Input utente}
 						\begin{itemize}
-						\item bottoneLogin(): attiva il metodo Premi::Controller::IndexController::login(username,password), se non sono compilati entrambi i campi restituisce errore;
-						\item bottoneSubscription(): attiva il metodo Premi::Controller::IndexController::subscription(username,password), se non sono compilati entrambi i campi restituisce errore;
-						\item bottoneHome(): reindirizza Premi::Controller::IndexController::goHome().
+						\item bottoneLogin(): attiva il metodo Premi::Controller::IndexController::login(username,password), se non sono compilati entrambi i campi restituisce errore, se va tutto bene reindirizza alla pagina Premi::View::Pages::Home;
+						\item bottoneSubscription(): attiva il metodo Premi::Controller::IndexController::subscription(username,password), se non sono compilati entrambi i campi restituisce errore, se va tutto bene reindirizza alla pagina Premi::View::Pages::Home.
 					\end{itemize}
 				}
 				\subsection{Premi::View::Pages::Home}{
@@ -36,18 +35,12 @@
 						\indent Al momento non sono stati previsti degli attributi.\\\\
 						\textbf{Input utente}
 						\begin{itemize}
-							\item bottoneDeleteSlideShow()
-							
-							\item +Home(): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id del token dell'utente attivo, dialogando con Premi::Controller::HomeController otterrà le presentazioni da visualizzare e controllerà la presenza o meno del token usando il metodo goIndex() in caso negativo;
-							\item +deleteSlideShow(string id): metodo che fa scomparire la miniatura della presentazione dalla schermata e manda al Premi::Controller::HomeController l'id della presentazione da rimuovere dal database;
-							\item +download(string id): metodo che manda al Premi::Controller::HomeController l'id della presentazione da scaricare nel Manifest e mostra a schermo un segnale di avvenuto scaricamento della presentazione;
-							\item +renameSlideShow(string id, string name): metodo che manda al Premi::Controller::HomeController l'id della presentazione da rinominare e il suo nuovo nome e mostra a schermo la modifica effettiva del nome;
-							\item +execute(string id): metodo che richiama la funzione goExecute(id);
-							\item +EditSlideShow(): metodo che richiama la funzione goEdit(id,name); l'id passato sarà quello della presentazione da modificare e name sarà il nome assegnato (se si tratta di un template o di una nuova presentazione vuota) presentazione;
-							\item +logout(): metodo che invia alle classi Premi::Controller::IndexControllers la richiesta di logout, e reindirizza alla pagina Premi::View::Pages::Index tramite il metodo goIndex();
-							\item +goExecute(string id): reindirizza alla pagina Premi::View::Pages::Execute passando l'id della presentazione da eseguire;		
-							\item +goIndex(): metodo che reindirizza alla pagina Premi::View::Pages::Index;
-							\item +goEdit(string id, string name=""): metodo che reindirizza alla pagina Premi::View::Pages::Edit passando l'id della presentazione da modificare e il nome (se si tratta di un template oppure di una nuova presentazione);
+							\item bottoneDeleteSlideShow(): bottone che fa scomparire il riferimento alla presentazione di cui il bottone fa riferimento, attiva il metodo di Premi::Controller::HomeController che si occuperà dell'eliminazione della presentazione dal database;
+							\item bottoneDownload(): bottone che attiva il Premi::Controller::HomeController che si occuperà dello scaricamento della presentazione nel Manifest e manda a schermo un segnale di avvenuto scaricamento della presentazione;
+							\item bottoneRenameSlideShow(): bottone che attiva il Premi::Controller::HomeController che si occuperà della rinominazione della presentazione nel database e manda a schermo l'effettva modifica del nome della presentazione;
+							\item bottoneExecute(): bottone che reindirizza alla pagina Premi::View::Pages::Execution e attiva il controller Premi::Controller::HomeController che si prende l'id della presentazione alla quale il bottone fa riferimento per la creazione della prossima pagina;
+							\item bottoneEdit(): bottone che reindirizza alla pagina Premi::View::Pages::Edit e attiva il controller Premi::Controller::HomeController che si prende l'id della presentazione alla quale il bottone fa riferimento per la creazione della prossima pagina;
+							\item bottoneLogout(): bottone che attiva il Premi::Controller::HomeController che si occuperà della distruzione del token di sessione e reindirizza alla pagina Premi::View::Pages::Index.
 						\end{itemize}
 					}
 					\subsection{Premi::View::Pages::Profile}{
@@ -62,13 +55,10 @@
 						\indent Al momento non sono stati previsti degli attributi.\\\\
 						\textbf{Input utente}
 						\begin{itemize}
-							\item +Profile(): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id del token dell'utente attivo, dialogando con Premi::Controller::ProfileController otterrà i dati personali e i file media da visualizzare e controllerà la presenza o meno del token usando il metodo goIndex() in caso negativo;
-							\item +changePassword(string password): metodo che invia al Premi::Controller::ProfileController la stringa della nuova password da sostituire con quella vecchia;
-							\item +uploadMedia(string percorso): metodo che invia al Premi::Controller::ProfileController il percorso del file media da caricare sul proprio spazio sul server, restituisce la schermata aggiornata con la nuova miniatura del file media;
-							\item deleteMedia(string id): metodo che fa scomparire la miniatura del file media dalla schermata e manda al Premi::Controller::ProfileController l'id del file media da rimuovere dal database;
-							\item +renameSlideShow(string id, string name): metodo che manda al Premi::Controller::ProfileController l'id del file media da rinominare e il suo nuovo nome e mostra a schermo la modifica effettiva del nome;
-							\item +goHome(): metodo che reindirizza alla pagina Premi::View::Pages::Home;
-							\item +goIndex(): metodo che reindirizza alla pagina Premi::View::Pages::Index.
+							\item bottoneChangePassword(): bottone che, se i campi sono compilati erroneamente restituisce errore, altrimenti attiva il metodo in Premi::Controller::ProfileController che si occupa di cambiare la password dell'account e restituisce un messaggio a schermo di avvenuto cambiamento;
+							\item bottoneUploadMedia(): bottone che attiva il metodo in Premi::Controller::ProfileController che caricherà il file richiesto nel server, se l'operazione va a buon fine la schermata si aggiorna con la nuova miniatura del file media;
+							\item bottoneDeleteMedia(): bottone che fa scomparire il riferimento al file media di cui il bottone fa riferimento, attiva il metodo di Premi::Controller::ProfileController che si occuperà dell'eliminazione del file media dal server;
+							\item bottoneRenameMedia(): bottone che attiva il Premi::Controller::ProfileController che si occuperà della rinominazione del file media presente nel server e manda a schermo l'effettva modifica del nome del file media.
 						\end{itemize}
 					}
 					\subsection{Premi::View::Pages::Execution}{
@@ -83,12 +73,9 @@
 						\indent Al momento non sono stati previsti degli attributi.\\\\
 						\textbf{Input utente}
 						\begin{itemize}
-							\item Execution(string id): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id della presentazione che gli è stato passato dialogando con Premi::Controller::ExecutionController e controllerà la presenza o meno del token di sessione usando il metodo goIndex() in caso negativo;
 							\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del framework Impress.js e che visualizzerà il frame successivo della presentazione;
 							\item +prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del framework Impress.js e che visualizzerà il frame precedente della presentazione;
-							\item +bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del framework Impress.js e che visualizzerà il frame con bookmark successivo;
-							\item +goHome(): metodo che reindirizza alla pagina Premi::View::Pages::Home;
-							\item +goIndex(): metodo che reindirizza alla pagina Premi::View::Pages::Index.
+							\item +bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del framework Impress.js e che visualizzerà il frame con bookmark successivo.
 						\end{itemize}
 					}
 					\subsection{Premi::View::Pages::Edit}{
@@ -103,25 +90,21 @@
 						\indent Al momento non sono stati previsti degli attributi.\\\\
 						\textbf{Input utente}
 						\begin{itemize}
-							\item +Edit(string id): costruttore che dovrà inizializzare gli eventuali attibuti e che dovrà inizializzare la pagina in base all'id della presentazione che gli è stato passato dialogando con Premi::Controller::EditController e controllerà la presenza o meno del token di sessione usando il metodo goIndex() in caso negativo;
-							\item +insertFrame(string shape, int posX, int posY): metodo che invia al Premi::Controller::EditController le informazioni di inserimento di un nuovo frame, la sua forma e le sue coordinate;
-							\item +insertMedia(string path, int posX, int posY): metodo che invia al Premi::Controller::EditController la richiesta di inserimento di un nuovo file media, il suo percorso sul file system per essere caricato sul server, e le sue coordinate posizione sul piano della presentazione;
-							\item +moveElement(string id, int posX, int posY): metodo che invia al Premi::Controller::EditController l'id dell'elemento spostato e le sue nuove coordinate di posizione;
-							\item +insertText(string text, int posX, int posY): metodo che invia al Premi::Controller::EditController la richiesta di inserimento di un nuovo testo all'interno della presentazione, il contenuto e le coordinate di posizione;
-							\item +textEdit(string id, string text): metodo che invia al Premi::Controller::EditController la richiesta di modifica di un elemento di testo, il suo id e il suo nuovo contenuto;
-							\item +deleteElement(string id): metodo che invia al Premi::Controller::EditController la richiesta di eliminazione di un elemento e il suo id;
-							\item +insertChoice(string id, string choiceId): metodo che invia al Premi::Controller::EditController la richiesta di inserimento di una nuova scelta, l'id del frame da cui parte la scelta e l'id del frame che sarà indirizzo della scelta; 
-							\item +bookmark(string id): metodo che invia al Premi::Controller::EditController l'id del frame al quale viene associato o rimosso un bookmark;
-							\item +changeSize(string id, int zoom): metodo che invia al Premi::Controller::EditController la nuova dimensione (intesa come zoom) dell'elemento corrispondente all'id passato; 
-							\item +changeRotation(string id, int rotation): metodo che invia al Premi::Controller::EditController il nuovo grado di rotazione dell'elemento corrispondente all'id passato;
-							\item +changePath(array id): metodo che invia al Premi::Controller::EditController il nuovo ordine di id che deve seguire la presentazione in fase di esecuzione;
-							\item +frameBackground(strin id, string path): metodo che invia al Premi::Controller::EditController l'id del frame e il percorso della nuova immagine che verrà impostata come sfondo del relativo frame;
-							\item +background(string path): metodo che invia al Premi::Controller::EditController il percorso nel nuovo sfondo della presentazione;
-							\item +insertSvg(string shape, string color, int posX, int posY): metodo che invia al Premi::Controller::EditController i dettagli sull'inserimento di un nuovo Svg, la sua forma, il suo colore, e le sue coordinate;
-							\item +esegui(string id): metodo che richiama la funzione goExecute(id);
-							\item +goExecute(string id): reindirizza alla pagina Premi::View::Pages::Execute passando l'id della presentazione da eseguire;
-							\item +goHome(): metodo che reindirizza alla pagina Premi::View::Pages::Home;
-							\item +goIndex(): metodo che reindirizza alla pagina Premi::View::Pages::Index.
+							\item bottoneInsertFrame(): bottone che fa comparire nel piano della presentazione il nuovo frame in base alla forma selezionata, e attiva il metodo in Premi::Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
+							\item bottoneInsertMedia(): bottone che fa comparire nel piano della presentazione il nuovo file media e attiva il metodo in Premi::Controller::EditController che aggiornerà le informazioni della presentazione e caricherà il file richiesto nel server;
+							\item dropMove(): evento che si attiva al rilascio dello spostamento di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+							\item bottoneInsertText(): bottone che fa comparire nel piano della presentazione il nuovo elemento testuale e attiva il metodo in Premi::Controller::EditController che aggiornerà le informazioni della presentazione;
+							\item bottoneTextEdit(): bottone che modifica il testo selezionato e attiva il metodo in Premi::Controller::EditController che si occupa dell'aggiornamento dell'elemento testuale modificato; 
+							\item bottoneDeleteElement(): bottone che fa scomparire l'elemento dal piano della presentazione e attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+							\item bottoneInsertChoice(): bottone che fa inserire all'utente il testo della scelta e fa scegliere il frame al quale farà riferimento, attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+							\item bottoneBookmark(): bottone che assegna o rimuove il bookmark al frame, attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+							\item dropSize(): evento che si attiva al rilascio del ridimensionamento di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+							\item dropRotation(): evento che si attiva al rilascio della rotazione di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+							\item bottonePath(): bottone che mostra all'utente l'ordine dei frame e da la possibilità di modificarlo, se viene modificato attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+							\item bottoneFrameBackground(): bottone assegna l'immagine caricata come sfondo del frame e che attiva il metodo in Premi::Controller::EditController per caricare il file nel server e lo imposta come sfondo del frame;
+							\item bottoneBackground(): bottone che assegna l'immagine caricata come sfondo della presentazione e attiva il metodo in Premi::Controller::EditController per caricare il file nel server e lo imposta come sfondo della presentazione;
+							\item bottoneInsertSvg(): bottone che fa comparire nel piano della presentazione il nuovo elemento svg selezionato e attiva il metodo in Premi::Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
+							\item bottoneExecute(): bottone che reindirizza alla pagina Premi::View::Pages::Execute e attiva il metodo in Premi::Controller::EditController che salverà l'id della presentazione da eseguire nella pagina successiva;
 						\end{itemize}
 					}
 					
