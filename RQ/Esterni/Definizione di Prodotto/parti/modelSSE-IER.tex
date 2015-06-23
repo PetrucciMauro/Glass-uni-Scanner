@@ -1,0 +1,702 @@
+	\subsection{Classe SlideShowElements}{
+		\textbf{Funzione}\\
+			\indent Classe astratta, base delle classi usate per rappresentare gli elementi della presentazione.\\
+		\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements.\\
+		\textbf{Utilizzo}\\
+			\indent Contiene gli attributi e i metodi comuni degli oggetti che rappresentano gli elementi della presentazione.\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{id}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Integer;
+				\item \textbf{Descrizione}: indica l’identificativo univoco dell’elemento.
+			\end{itemize}
+			\item \textbf{yIndex}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Double;
+				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle y dell’elemento rispetto alla presentazione.
+			\end{itemize}
+			\item \textbf{xIndex}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Double;
+				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle x dell’elemento rispetto alla presentazione.
+			\end{itemize}
+			\item \textbf{rotation}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Double;
+				\item \textbf{Descrizione}: rappresenta il grado di rotazione dell’oggetto.
+			\end{itemize}
+			\item \textbf{height}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Double;
+				\item \textbf{Descrizione}: rappresenta l’altezza dell’oggetto.
+			\end{itemize}
+			\item \textbf{width}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Double;
+				\item \textbf{Descrizione}: rappresenta la larghezza dell’oggetto.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{setSize}(newHeight:double, newWidth:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta i campi height e width dell’oggetto.
+			\end{itemize}
+			\item \textbf{setPosition}(posX:double, posY:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta i campi xIndex e yIndex dell’oggetto.
+			\end{itemize}
+			\item \textbf{getSize}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array;
+				\item \textbf{Descrizione}: restituisce un array contenente i valori di height e width.
+			\end{itemize}
+			\item \textbf{getWidth}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array;
+				\item \textbf{Descrizione}: restituisce un array contenente i valori di xIndex e yIndex.
+			\end{itemize}
+			\item \textbf{getRotation}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Double;
+				\item \textbf{Descrizione}: restituisce il valore di rotation.
+			\end{itemize}
+		\end{itemize}
+		
+		\noindent{\textbf{Ereditata da}:}
+		\begin{itemize}
+			\item Text (\S\ref{Text});
+			\item Image (\S\ref{Image});
+			\item Frame (\S\ref{Frame});
+			\item SVG (\S\ref{SVG});
+			\item Background (\S\ref{Background});
+			\item Audio (\S\ref{Audio});
+			\item Video (\S\ref{Video}).
+		\end{itemize}
+		
+		\subsubsection{Classe Text}{
+			\label{Text}
+			\textbf{Funzione}\\
+				\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo testo.\\
+		   	\textbf{Scope}\\
+				\indent Model::SlideShow::SlideShowElements::Text.\\
+			\textbf{Utilizzo}\\
+				\indent Il costruttore viene invocato da Inserter::insertText().\\
+			\textbf{Attributi}
+			\begin{itemize}
+				\item \textbf{font}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: String;
+					\item \textbf{Descrizione}: rappresenta il font dell’oggetto.
+				\end{itemize}
+				\item \textbf{content}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: String;
+					\item \textbf{Descrizione}: rappresenta il contenuto del testo.
+				\end{itemize}
+				\item \textbf{color}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: String;
+					\item \textbf{Descrizione}: rappresenta il colore dell’oggetto.
+				\end{itemize}
+			\end{itemize}
+			
+			\noindent{\textbf{Metodi}}
+			\begin{itemize}
+				\item \textbf{Text}(id:integer, posX:double, posY:double, degrees:double)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation.
+				\end{itemize}
+				\item \textbf{setFont}(newFont:string)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: imposta il campo content dell’oggetto.
+				\end{itemize}
+				\item \textbf{setColor}(newColor:string)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: imposta il campo color dell’oggetto.
+				\end{itemize}
+				\item \textbf{getFont}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: restituisce il valore di font.
+				\end{itemize}
+				\item \textbf{getColor}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: restituisce il valore di color.
+				\end{itemize}
+				\item \textbf{getContent}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: restituisce il valore di content.
+				\end{itemize}
+			\end{itemize}
+		}
+	\subsubsection{Classe Image}{
+		\label{Image}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo immagine.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::Image.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertImage().\\
+		\textbf{Attributi}
+		\begin{itemize}
+				\item \textbf{url}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: String;
+					\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+				\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{Image}(id:integer, posX:double, posY:double, degrees:double, ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation e url.
+			\end{itemize}
+			\item \textbf{getUrl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: restituisce il valore di url.
+			\end{itemize}
+		\end{itemize}
+		}
+		
+	\subsubsection{Classe Frame}{
+		\label{Frame}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo frame.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::Frame.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertFrame().\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{prev}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Integer;
+				\item \textbf{Descrizione}: rappresenta l’id del frame precedente.
+			\end{itemize}
+			\item \textbf{next}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Integer;
+				\item \textbf{Descrizione}: rappresenta l’id del frame successivo.
+			\end{itemize}
+			\item \textbf{bookmark}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Bool;
+				\item \textbf{Descrizione}: è a 1 se il frame è un bookmark, 0 altrimenti.
+			\end{itemize}
+			\item \textbf{choices}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Array;
+				\item \textbf{Descrizione}: contiene i riferimenti agli id dei frame scelta selezionabili dal frame.
+			\end{itemize}
+			\item \textbf{backgroundimage}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: contiene il riferimento dell’immagine di sfondo frame.
+			\end{itemize}
+			\item \textbf{backgroundcolor}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il colore dello sfondo del frame.
+			\end{itemize}
+		\end{itemize}
+		
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{Frame}(id:integer, posX:double, posY:double, degrees:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation.
+			\end{itemize}
+			\item \textbf{setPrev}(prevId: integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo prev.
+			\end{itemize}
+			\item \textbf{setNext}(nextId: integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo next.
+			\end{itemize}
+			\item \textbf{setBackgroundImage}(ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo BackgroundImage.
+			\end{itemize}
+			\item \textbf{setBackgroundColor}(newColor:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo BackgroundColor.
+			\end{itemize}
+			\item \textbf{isBookmark}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Bool;
+				\item \textbf{Descrizione}: ritorna il valore del campo bookmark.
+			\end{itemize}
+			\item \textbf{setBookmark}(value: bool = 1)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo bookmark.
+			\end{itemize}
+			\item \textbf{addChoice}(frameId:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: aggiunge una scelta all’array choices.
+			\end{itemize}
+			\item \textbf{removeChoice}(frameId:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: rimuove una scelta dall’array choices.
+			\end{itemize}
+			\item \textbf{getBackgroundImage}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di backgroundImage.
+			\end{itemize}
+			\item \textbf{getBackgroundColor}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di backgroundColor.
+			\end{itemize}
+			\item \textbf{getPrev}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: restituisce il valore di prev.
+			\end{itemize}
+			\item \textbf{getNext}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: restituisce il valore di next.
+			\end{itemize}
+			\item \textbf{getCoices}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array;
+				\item \textbf{Descrizione}: restituisce il valore di choiches.
+			\end{itemize}
+		\end{itemize}
+		}
+	\subsubsection{Classe SVG}{
+		\label{SVG}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo SVG.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::SVG.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertSVG().\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{color}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il colore dell’oggetto.
+			\end{itemize}
+			\item \textbf{shape}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Array;
+				\item \textbf{Descrizione}: rappresenta le coordinate della forma dell’oggetto.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{SVG}(id:integer, posX:double, posY:double, degrees:double, color:string, shape:array)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation, color, shape.
+			\end{itemize}
+			\item \textbf{setColor}(newColor:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo color dell’oggetto.
+			\end{itemize}
+			\item \textbf{setShape}(newShape:array)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo shape dell’oggetto.
+			\end{itemize}
+			\item \textbf{getColor}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di color.
+			\end{itemize}
+			\item \textbf{getShape}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array;
+				\item \textbf{Descrizione}: restituisce il valore di shape.
+			\end{itemize}
+		\end{itemize}
+		}
+	\subsubsection{Classe Audio}{
+		\label{Audio}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo immagina.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::Audio.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertAudio().\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{url}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{Audio}(id:integer, posX:double, posY:double, degrees:double, ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation e url.
+			\end{itemize}
+			\item \textbf{getUrl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di url.
+			\end{itemize}
+		\end{itemize}
+		}
+	
+	\subsubsection{Classe Video}{
+		\label{Video}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo video.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::Video.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertVideo().\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{url}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{Video(id:integer, posX:double, posY:double, degrees:double, ref:string)}
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation e url.
+			\end{itemize}
+			\item \textbf{getUrl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di url.
+			\end{itemize}
+		\end{itemize}
+		}
+
+	\subsubsection{Classe Background}{
+		\label{Background}
+		\textbf{Funzione}\\
+			\indent Classe concreta, i suoi elementi rappresentano lo sfondo.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowElements::Background.\\
+		\textbf{Utilizzo}\\
+			\indent Il costruttore viene invocato da Inserter::insertBackground().\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{url}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il riferimento dell’immagine dello sfondo.
+			\end{itemize}
+			\item \textbf{color}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: rappresenta il colore dello sfondo.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{Background}(id:integer, color:string, ref:string=”undefined”)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto, imposta i campi id, xIndex, yIndex, rotation, color e url.
+			\end{itemize}
+			\item \textbf{setColor}(newColor:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo color dell’oggetto.
+			\end{itemize}
+			\item \textbf{setUrl}(ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo url dell’oggetto.
+			\end{itemize}
+			\item \textbf{getUrl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di url.
+			\end{itemize}
+			\item \textbf{getColor}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: restituisce il valore di color.
+			\end{itemize}
+		\end{itemize}
+		}
+	}
+\subsection{Classe InsertEditRemove}{
+	\subsubsection{Classe Inserter}{
+		\textbf{Funzione}\\
+			\indent Classe statica in cui vengono implementati gli algoritmi di inserimento di elementi nella presentazione.\\
+	   	\textbf{Scope}\\
+			\indent Model::SlideShow::SlideShowActions::InsertEditRemove.\\
+		\textbf{Utilizzo}\\
+			\indent Viene utilizzata dalla classe command per eseguire i comandi di inserimento.\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{Presentazione}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Descrizione}: oggetto json che contiene gli oggetti delle classi che rappresentano gli elementi della presentazione.
+			\end{itemize}
+			\item \textbf{id =0}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Descrizione}: attributo statico, indica gli id univoci degli oggetti generati.
+			\end{itemize}
+		\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{insertText}(posX:double, posY:double, degrees:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: costruisce un oggetto newText di tipo Text (id:integer, posX:double, posY:double, degrees:double) invocandone il costruttore passando come parametri id:integer, posX, posY e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertText}(oldText:Text)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{setUrl}(ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: imposta il campo url dell’oggetto.
+			\end{itemize}
+			\item \textbf{insertFrame}(posX:double, posY:double, degrees:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: costruisce un oggetto di tipo Frame(id:integer, posX:double, posY:double, degrees:double) invocandone il costruttore passando come parametri id:integer, posX, posY e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertImage}(posX, posY, rotation, ref)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: costruisce un oggetto di tipo Image(id:integer, posX:double, posY:double, degrees:double, ref:string) invocandone il costruttore passando come parametri id:integer, posX, posY, degrees e ref. Copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertImage}(oldImage:Image)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{insertSVG}(posX:double, posY:double, rotation:double, shape:string, color:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto SVG(id:integer, posX:double, posY:double, degrees:double, shape:string, color:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertSVG}(oldSVG:SVG)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{insertAudio}(posX:double, posY:double, degrees:double, ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Audio(id:integer, posX:double, posY:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertAudio}(oldAudio:Audio)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{insertVideo}(posX:double, posY:double, degrees:double, ref:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Video(id:integer, posX:double, posY:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertVideo}(oldVideo:Video)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{insertBackground}(ref:string, color:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Integer;
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Background(id:integer, ref:string, color:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+			\end{itemize}
+			\item \textbf{insertBackground}(oldBackground:Background)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
+			\end{itemize}
+			\item \textbf{removeText}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Text;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeFrame}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Frame;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente, accede al suo campo prev e ne identifica i predecessore, pone prev.next=next. Rimuove l’oggetto dall’oggetto Presentazione e restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeImage}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Image;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeSVG}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: SVG;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeAudio}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Audio;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeVideo}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Video;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{removeBackground}(id:integer)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Background;
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+			\end{itemize}
+			\item \textbf{editPosition}(id:integer, tipo:string,  posX, posY)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array[2] di double; [[[[[[[[[[[[[E' CORRETTO?]]]]]]]]]]]]]
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente, crea una coppia oldPosition di double settati con il valore di xIndex e di yIndex dell’oggetto trovato e imposta xIndex con il valore di posX e yIndex con il valore di posY. Restituisce oldPosition.
+			\end{itemize}
+			\item \textbf{editRotation}(id:integer, tipo:string,  degrees)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Double;
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente, crea un double oldRotation settato con il valore di rotation dell’oggetto trovato e imposta rotation con il valore di degrees. Restituisce oldRotation.
+			\end{itemize}
+			\item \textbf{editSize}(id:integer, tipo:string,  newHeight:double, newWidth:double)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array[2] di double; [[[[[[[[[[[[[E' CORRETTO?]]]]]]]]]]]]];
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo tipo in Presentazione per trovare l’oggetto con il campo id corrispondente, crea una coppia oldSize di double settati con il valore di height e di width dell’oggetto trovato e imposta height con il valore di newHeight e width con il valore di newWidth. Restituisce oldSize.
+			\end{itemize}
+			\item \textbf{editBackground}(id:integer, tipo:string, newColor:string,  newRef:string=”undefined”)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array[2] di double; [[[[[[[[[[[[[E' CORRETTO?]]]]]]]]]]]]];
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova crea una coppia oldBackground di string settati con il valore di color e di ref dell’oggetto trovato e imposta color con il valore di newColor e ref con il valore di newRef. Restituisce oldBackground.
+			\end{itemize}
+			\item \textbf{editColor}(id:integer, tipo:string, newColor:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia il campo color in una string oldColor e imposta color con il valore di newColor. Restituisce oldColor.
+			\end{itemize}
+			\item \textbf{editShape}(id:integer, tipo:string, newShape:string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Array di integer;
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowelements in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia il campo shape in un array oldShape e imposta shape con il valore di newShape. Restituisce oldShape.
+			\end{itemize}
+		\end{itemize}
+		}
+	}

@@ -14,9 +14,9 @@
 \newcommand{\dataUM}{09-06-2015} % data dell'ultima modifica
 \newcommand{\stato}{Formale}
 \newcommand{\uso}{Esterno}
-\newcommand{\redaz}{\FM, \BM}
-\newcommand{\verif}{\GP}
-\newcommand{\appr}{\VG}
+\newcommand{\redaz}{\FM, \VG, \TP, \BM}
+\newcommand{\verif}{\PM}
+\newcommand{\appr}{\BM}
 \newcommand{\tipo}{Tipo, obiettivo e funzione del componente}
 \newcommand{\relaz}{Relazioni d'uso di altre componenti}
 \newcommand{\interfacce}{Interfacce con e relazioni d'uso e da altre componenti}
@@ -50,7 +50,11 @@
 	\newpage
 	\input{\parti specificaClassi}
 	\newpage
-%	\input{\parti view}
+	\input{\parti model}
+	\newpage
+	\input{\parti controller}
+	\newpage
+	\input{\parti view}
 	\newpage
 	\input{\parti diagrammiDiSequenza}
 	\newpage
