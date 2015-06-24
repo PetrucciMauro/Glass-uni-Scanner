@@ -115,8 +115,7 @@
 			\item ConcreteEditRotationCommand (\S\ref{EditRotationCommand});
 			\item ConcreteEditColorCommand (\S\ref{EditColorCommand});
 			\item ConcreteEditBackgroundCommand (\S\ref{EditBackgroundCommand});
-			\item ConcreteEditFontCommand (\S\ref{EditFontCommand});
-			\item ConcreteEditContentCommand (\S\ref{EditContentCommand}).
+			\item ConcreteEditFontCommand (\S\ref{EditFontCommand}).
 		\end{itemize}
 	}
 \subsubsubsection{Classe ConcreteTextInsertCommand}{
@@ -160,13 +159,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertText(posX, posY, degrees) passando come parametri i  campi dati posX, posY e rotation. insertText restituisce un int che rappresenta l’id dell’oggetto. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditPresenter.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertText(posX, posY, degrees) passando come parametri i  campi dati posX, posY e rotation. insertText restituisce un int che rappresenta l’id dell’oggetto. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeText(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditPresenter.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeText(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
