@@ -166,6 +166,62 @@ test da eseguire sulle parti del sistema per verificarne la corretta interazione
 	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
 	\subsubsection{Tracciamento componenti}
 	Ogni Requisito\ped{g} deve essere tracciato al componente che lo soddisfa. Il Software\ped{g} LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \S\ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni Requisito\ped{g} venga soddisfatto.
+	\subsection{Progettazione di dettaglio}
+	
+	Dopo una progettazione di livello medio si passa alla produzione di un documento che descrive nei minimi dettagli le caratteristiche delle classi, delle procedure, delle attività ed eventualmente degli oggetti. Il documento prodotto in questa fase è
+	chiamato \emph{Definizione di Prodotto} e consiste in un raffinamento del documento di	\emph{Specifica Tecnica}.
+	\subsubsection{Struttura del documento}
+	Il documento in questione deve rispettare la seguente struttura:
+	\begin{enumerate}
+	\item Introduzione;
+	\item Descrizione generale;
+	\item Standard di progetto;
+	\begin{enumerate}
+	\item Standard di progettazione architetturale;
+	\item Standard di documentazione del codice;
+	\item Standard di denominazione di entità e relazioni;
+	\item Standard di programmazione;
+	\item Strumenti di lavoro;
+	\end{enumerate}
+	\item Specifica delle componenti;
+	\item Codice sorgente;
+	\item Tracciamento.
+	\end{enumerate}
+	In questa ultima fase di progettazione si utilizzeranno ancora i diagrammi UML indicati nella fase precedente ma con particolare attenzione per quelli a più basso livello come i diagrammi di classe e di sequenza.
+	Per ogni singola classe descritta è necessario riportare i seguenti dettagli:
+	\begin{itemize}
+	\item \textbf{Funzione:} una descrizione del compito svolto dalla classe;
+	\item \textbf{Relazione d’uso}:
+	\begin{itemize}
+	\item \textbf{la classe utilizza:} lista delle entità che sono necessarie per l’esecuzione della classe;
+	\item \textbf{la classe è utilizzata da:} lista delle entità che utilizzano la classe;
+	\item \textbf{la classe implementa:} lista delle interfacce implementate dalla classe;
+	\item \textbf{la classe è implementata da:} lista delle classi che implementano l’interfaccia;
+	\item \textbf{la classe estende:} nome della classe che viene estesa dalla classe corrente;
+	\end{itemize}
+	\item \textbf{Attributi:} lista degli attributi contenuti nella classe accompagnati da una descrizione. Viene omessa nella descrizione delle interfacce in quanto prive di attributi;
+	\item \textbf{Metodi:} lista dei metodi con la segnatura completa e descrizione delle funzionalità Nelle liste riportanti gli attributi e i metodi verranno specificati i modificatori di accesso con i seguenti simboli:\\
+    
+	+ per entità pubbliche\\
+    $-$  per entità private (comando \LaTeX \ \verb|$-$| ) \\
+	\#  per entità protette (comando \LaTeX  \ \verb|$\#$|)\\
+	$\sim$ per entità di package (comando \LaTeX  \  \verb|$\sim$| ) \\\\
+	Nel caso si faccia riferimento a classi, metodi o attributi presenti in librerie esterne è necessario qualificare totalmente il nome ed evidenziarlo utilizzando il	colore bbrick nel comando\\\\
+	 
+	\verb|\textcolor{bbrick}{testo}| 
+	
+
+	\end{itemize}
+	\subsubsection{Tracciamento}
+	In questa fase della progettazione il tracciamento verrà inserito in tabelle riportanti	per ogni requisito le classi che andranno a soddisfarlo e per ogni classe il requisito da soddisfare.
+	Una completa tracciabilità comporta l’assenza di mancate corrispondenze tra	classe e requisito.	Se un requisito funzionale non è associato a nessuna classe non è stata prevista l’implementazione di quest’ultimo mentre se ad una classe non è associato almeno un requisito vuol dire che è del tutto superflua e se ne può considerare l’eliminazione.
+	
+	
+	
+	
+	
+	
+	
 	\subsection{Codifica}
 	Le convenzioni di Codifica\ped{g} che tutti i membri del gruppo devono seguire sono quelle
 	specificate alla seguente pagina :\\
