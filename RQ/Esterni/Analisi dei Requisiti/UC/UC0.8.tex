@@ -2,7 +2,7 @@
 	\label{uc0.8}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.75]{\imgs {UC0.8}.jpg} %inserire il diagramma UML
+		\includegraphics[scale=0.75]{\imgs {UC0.8}.jpg}
 		\label{fig:uc0.8}
 		\caption{Caso d'uso 0.8: Registrazione nuovo account}
 	\end{figure}
@@ -34,6 +34,10 @@
 		\begin{enumerate}
 			\item L'utente inserisce il proprio username.
 		\end{enumerate}
+		\textbf{Scenario alternativo}:
+		\begin{enumerate}
+			\item Se lo username  inserito è già in uso nel sistema l'utente visualizza un messaggio di errore (UC0.8.4)
+		\end{enumerate}
 		}
 	\subsubsection{UC0.8.2 - Inserimento password per la registrazione} {
 		\label{uc0.8.2}
@@ -57,3 +61,42 @@
 			\item L'utente reinserisce la propria password.
 		\end{enumerate}
 		}
+		\textbf{Scenario alternativo}:
+		\begin{enumerate}
+			\item Se la password e la sua conferma sono diverse l'utente visualizza un messaggio di errore(UC0.8.5)
+		\end{enumerate}
+	\subsubsection{UC0.8.4 - Visualizza errore utente già in uso} {
+		\label{uc0.8.4}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l?utente non autenticato ha inserito uno username già registrato e richiesto la registrazione	\\
+		\textbf{Precondizione}:  l?utente non autenticato ha inserito username, password e la sua conferma e richiesto la registrazione	\\
+		\textbf{Postcondizione}: l?utente non autenticato ha visualizzato l?errore e può reinserire i dati per la registrazione  \\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Viene visualizzato un messaggio di errore in cui viene detto che  lo username inserito dall?utente è già stato registrato
+		\end{enumerate}
+		}
+	\subsubsection{UC0.8.5 - Visualizza errore password inserite diverse} {
+		\label{uc0.8.5}
+		\textbf{Attori}: utente non autenticato. \\
+		\textbf{Descrizione}: l?utente non autenticato ha inserito valori diversi in password e nella sua conferma	\\
+		\textbf{Precondizione}: l?utente non autenticato ha inserito username, password e la sua conferma e richiesto la registrazione	\\
+		\textbf{Postcondizione}: l?utente non autenticato ha visualizzato l?errore e può reinserire i dati per la registrazione  \\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item Viene visualizzato un messaggio di errore in cui viene detto che  la password inserita non è la stessa inserita nella sua conferma
+		\end{enumerate}
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
