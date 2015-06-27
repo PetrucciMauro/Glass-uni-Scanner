@@ -1,0 +1,108 @@
+\subsection{serverRelation}{
+
+	\subsubsection{Registration}{
+	
+	\begin{figure}[H]
+		\includegraphics[scale=0.8]{\imgs {registration}.pdf}
+		\label{fig:nodeAPI}
+		\caption{Diagramma classe Model::serverRelation::accessControll::Registration}
+	\end{figure}
+		\textbf{Attributi:}
+			\begin{itemize}
+			\item \textbf{-messageState}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} string
+				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al server
+				\end{itemize}
+			\end{itemize}
+	
+		\textbf{Metodi:}
+			\begin{itemize}
+			\item \textbf{register(user : string, password : string) : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} chiama il servizio /account/register POST con passando i parametri attuali, scrive in messageState lo stato ritornato dalla chiamata a nodeApi, ritorna true solo se la chiamata va a buon fine
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+			
+			\item \textbf{getMessage() : string}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} ritorna il contenuto di messageState
+				\item \textbf{Tipo di ritorno:} string
+				\end{itemize}
+
+			\end{itemize}
+	}
+	
+	\subsubsection{Authentication}{
+	
+	\begin{figure}[H]
+		\includegraphics[scale=0.8]{\imgs {authentication}.pdf}
+		\label{fig:nodeAPI}
+		\caption{Diagramma classe Model::serverRelation::accessControll::Authentication}
+	\end{figure}
+	
+	\textbf{Attributi:}
+			\begin{itemize}
+			\item \textbf{-messageState}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} string
+				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al server
+				\end{itemize}
+				
+			\item \textbf{-token}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} string
+				\item \textbf{Descrizione:} stringa per l?autenticazione ai servizi Server nodeJs
+				\item \textbf{Note:} valore ?empty? se non \`{e} ancora stato richiesto il token, \`{e} stato cancellato, oppure l? autenticazione \`{e} fallita
+				\end{itemize}
+			\end{itemize}
+	
+		\textbf{Metodi:}
+		\begin{itemize}
+		\item \textbf{authenticate(user : string, password : string) : bool}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} chiama il servizo account/authenticate, ritorna true se la chiamata \`{e} andata a buon fine, in questo caso mette nel campo token il token ritornato dal server nodeJs
+
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{deAuthenticate() : bool}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} de-autentica l?utente dai servizi server cancellando il contenuto del campo dati token, ritorna true se l?operazione va a buon fine
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{getToken() : string}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} ritorna il contenuto del campo dati token
+			\item \textbf{Tipo di ritorno:} string
+			\end{itemize}
+			
+		\item \textbf{getMessage() : string}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} ritorna il contenuto di messageState
+			\item \textbf{Tipo di ritorno:} string
+			\end{itemize}
+
+		\end{itemize}
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

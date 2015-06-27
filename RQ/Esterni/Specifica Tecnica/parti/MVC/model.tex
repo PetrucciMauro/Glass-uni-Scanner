@@ -587,51 +587,32 @@
                                     }              
 }
 
-\subsubsection{Model::MongoRelations}{
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[scale=0.6]{\imgs {MongoRelations}.pdf}
-	%	\label{fig:sr}
-	%	\caption{MongoRelations}
-	%\end{figure}
-		\textbf{\tipo}: package, racchiude le funzionalità del sistema che interagiscono con i servizi di interazione con il database MongoDB esposti dall' interfaccia nodeApi.\\
+
+%====================================
+% 			serverRelations
+%====================================
+
+\subsubsection{Model::serverRelations}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{\imgs {serverRelation}.pdf}
+		\label{fig:sr}
+		\caption{diagramma package Model::serverRelations}
+	\end{figure}
+		\textbf{\tipo}: package, racchiude le funzionalità del sistema che interagiscono con i servizi offerti dal server nodeJs per l'interazione con la base dati MongoDB e la gestione dei file multimediali in cloud\\
 		\textbf{\relaz}:
 		\begin{itemize}
-		\item relazioni verso \textbf{nodeApi} del quale si utilizzano i servizi dalla interfaccia;
-		\item relazioni da \textbf{Controller} per il recupero o la creazione di una presentazione dal database MongoDB;
-		\item relazioni da \textbf{Model::SlideShow} che utilizza la rappresentazione locale della presentazione e i servizi per l'interazione a nodeApi.
+		\item relazioni verso \textbf{Server} del quale si utilizzano i servizi RESTfull;
+		\item relazioni da \textbf{Controller} per il recupero o la creazione di una nuova presentazione dal database MongoDB al caricamento delle pagine HTML;
+		\item relazioni da \textbf{Model::SlideShow} che utilizza la rappresentazione locale della presentazione.
 		\end{itemize} 
 }
-
-\subsubsection{Model::MongoRelations::Loader}{
-	\begin{figure}[H]
-		\centering
-		\includegraphics[scale=0.4]{\imgs {Loader}.pdf}
-		\label{fig:srl}
-		\caption{MongoRelationsLoader}
-	\end{figure}
-		\textbf{\tipo}: package, racchiude le funzioni di recupero o creazione di una presentazione dal server attraverso i servizi nodeApi, una volta ottenuta la presentazione e' esposta per le modifiche provenienti da altri package nel Model 
-		\textbf{\relaz}: 
-		\begin{itemize}
-		\item relazione verso \textbf{nodeApi} per il recupero della presentazione dal database MongoDB
-		\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
-		\end{itemize}
-
-\subsubsubsection{LoaderClass}{
-				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto ed esporla alle modifiche da parte di altri metodi definiti nel model, creare una nuova presentazione\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-				\item relazione verso \textbf{nodeApi} per il recupero della presentazione dal database MongoDB
-				\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
-				\end{itemize}	
-                    }
-}
-
-\subsubsection{Model::MongoRelations::AccessControl}{
+% AccessControll
+\subsubsection{Model::serverRelations::accessControl}{
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.5]{\imgs {accessControll}.pdf}
+		\includegraphics[scale=0.6]{\imgs {accessControll}.pdf}
 		\label{fig:cd}
 		\caption{DbSync}
 	\end{figure}
@@ -639,132 +620,83 @@
 		\textbf{\tipo}: package, racchiude le funzioni di registrazione dell’utente e autenticazione tramite token ai servizi esposti da nodeApi.\\
 		\textbf{\relaz}: 
 		\begin{itemize}
-		\item relazioni verso \textbf{nodeApi} a cui vengono passati i parametri per la registrazione e l'autenticazione dell'utente
+		\item relazioni verso \textbf{Server} a cui vengono passati i parametri per la registrazione e l'autenticazione dell'utente
 		\item relazioni da \textbf{Controller} da cui si ricevono i parametri in input dell'utente
-		\item relazioni da \textbf{DBSynch} a cui viene esposto il token ricevuto da nodeApi dopo la autenticazione
+		\item relazioni da \textbf{loader, fileServerRelation, mongoRelation} a cui viene esposto il token ricevuto dal Server dopo la autenticazione
 		\end{itemize}
 		
         \subsubsubsection{Autenticazione}{
 				\textbf{\tipo}: Classe, fornisce le funzionalità di autenticazione e deautenticazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item relazione verso \textbf{nodeApi} per il recupero del token passando i parametri di autenticazione dell'utente
+					\item relazione verso \textbf{Server} per il recupero del token passando i parametri di autenticazione dell'utente
                     			\item relazione da \textbf{Controller} da cui riceve in input i parametri dell'utente per la autenticazione 
-					\item relazione da \textbf{Model::MongoRelations::DBSynch} a cui espone il token per poter usare i servizi di nodeApi
+					\item relazione da \textbf{loader, fileServerRelation, mongoRelation} a cui espone il token per poter usare i servizi del Server
 				\end{itemize}	
                     }
         \subsubsubsection{Registrazione}{
 				\textbf{\tipo}: Classe, fornisce le funzionalità di registrazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item relazione verso \textbf{nodeApi} per il la registrazione dell'utente presso il database MongoDB
+					\item relazione verso \textbf{Server} per il la registrazione dell'utente presso il database MongoDB
                     			\item relazione da \textbf{Controller} da cui riceve in input i parametri dell'utente per la registrazione
 				\end{itemize}	
             }
 }
 
-\subsubsection{Model::MongoRelations::DBSynch}{
-
+% Loader
+\subsubsection{Model::serverRelations:loader}{
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{\imgs {ClassDiagram1}.pdf}
-		\label{fig:cd}
-		\caption{DbSync}
+		\includegraphics[scale=0.8]{\imgs {loader}.pdf}
+		\label{fig:srl}
+		\caption{MongoRelationsLoader}
 	\end{figure}
-	
-		\textbf{\tipo}: il package ha lo scopo di raccogliere le funzionalità di aggiornamento delle presentazioni in remoto tramite un pattern Observer e chiamate asincrone ai servizi di nodeApi\\
-		\textbf{\relaz}:
+		\textbf{\tipo}: package, racchiude le funzioni di recupero o creazione di una presentazione dal server attraverso i servizi offerti dalla Api, una volta ottenuta la presentazione e' esposta per le modifiche provenienti da altri package nel Model 
+		\textbf{\relaz}: 
 		\begin{itemize}
-		\item relazioni da e verso \textbf{Model::SlideShow::SlideShowElements} in cui si detiene un riferimento nei confronti dei ConcreteSubjects e viceversa
-		\item relazioni verso \textbf{Model::MongoRelations::AccessControll} da cui riceve il token per accedere ai servizi nodeApi
-		\item relazioni verso \textbf{nodeApi} verso cui inoltra le chiamate di update degli elementi della presentazione modificata
+		\item relazione verso \textbf{Server} per il recupero della presentazione dal database MongoDB
+		\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
 		\end{itemize}
-       
-       \subsubsubsection{Observer}{
-				\textbf{\tipo}: Interfaccia, espone il metodo update() che una volta recuperato l'elemento modificato chiama il metodo in nodeApi per l'aggiornamento della presentazione nel database MongoDB\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item associazione con Subject che detiene un riferimento dell'Observer
-					\item interfaccia realizzata da ConcreteObserver che definisce il metodo update()
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{ConcreteObserver}{
-				\textbf{\tipo}: Classe, concretizza l’interfaccia Observer\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item realizza l’interfaccia Observer definendone il metodo update()
-					\item detiene un riferimento a Subject
-					\item relazione verso nodeApi di cui ne chiama i servizi per l'aggiornamento di una presentazione
-				\end{itemize}	
-            }
-            
-             \subsubsubsection{Subject}{
-				\textbf{\tipo}: Classe astratta, definisce una classe astratta per i diversi tipi di Subject a seconda degli elementi da osservare. Definisce i metodi attach(Observer), detach(Observer) e notify() per aggiungere, togliere e notificare il ConcreteObserver associato.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item associazione da ConcreteObserver che ne detiene un riferimento; 
-					\item realizzata dalle classi: SubjectAudio, SubjectVideo, SubjectText, SubjectFrame, SubjectSvg, SubjectImg che definiscono il metodo getElement() utilizzato da ConcreteObserver per ottenere l’oggetto modificato.
-				\end{itemize}	
-            }
-            
-             \subsubsubsection{SubjectAudio}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Audio di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{SubjectVideo}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Video di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{SubjectText}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Text di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{SubjectFrame}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Frame di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{SubjectImg}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Image di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-            \subsubsubsection{SubjectSVG}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\	
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::SVG di cui detiene un riferimento.
-				\end{itemize}	
-            }
-            
-             \subsubsubsection{SubjectBackground}{
-				\textbf{\tipo}: Classe, fornisce un’implementazione di Subject permettendo di applicare il pattern "Observer" e mantenere gli oggetti le cui modifiche sono da notificare in un altro package.\\		
-				\textbf{\relaz}: 
-				\begin{itemize}
-					\item implementa Subject definendo il metodo getElement(), associazione da e verso la classe Model::SlideShow::SlideShowElements::Background di cui detiene un riferimento.
-				\end{itemize}	
-            }
 
+\subsubsubsection{Loader}{
+				\textbf{\tipo}: Classe la cui funzione è recuperare una presentazione dal database remoto ed esporla alle modifiche da parte di altri metodi definiti nel model, creare una nuova presentazione\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item relazione verso \textbf{Server} per il recupero della presentazione dal database MongoDB
+				\item relazione da \textbf{Model::SlideShow::InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
+				\end{itemize}	
+                    }
 }
+
+%fileServerRelations
+\subsubsubsection{FileServerRelation}{
+				\textbf{\tipo}: Classe che si interfaccia con il server per l'upload, la gestione e il recupero di informazioni dei file multimediali presenti nello spazio dell'utente
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item dipendenza verso \textbf{Server} per recupero informazioni sui file e upload e gestione di nuovi file verso nello spazio utente 
+				\item dipendenza verso \textbf{accessControll} per il recupero del token per accedere ai servizi protetti del Server
+				\item dipendenza da \textbf{Controller} da cui vengono chiamati i metodi esposti
+				\end{itemize}	
+                    }
+                    
+%mongoRelation
+\subsubsubsection{MongoRelation}{
+				\textbf{\tipo}: Classe che si interfaccia con il server per la gestione delle presentazioni salvate in formato json su un database MongoDB
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item dipendenza verso \textbf{Server} per l'interazione con il database MongoDB
+				\item dipendenza verso \textbf{accessControll} per il recupero del token per accedere ai servizi protetti del Server
+				\item dipendenza da \textbf{Loader} da cui vengono chiamati i metodi esposti
+				\end{itemize}
+                    }
+
+
+%==============================================================================================================
+%==============================================================================================================
+
+
+
 
 \subsubsection{Model::ApacheRelations}{
 		\textbf{\tipo}: Compito di questo package è di gestire l'interazione con il server Apache.\\
