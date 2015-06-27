@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  27 JUN 2015 11:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  27 JUN 2015 18:33
 entering extended mode
 **PianoDiQualifica_v.2.0.0.tex
 
@@ -1315,89 +1315,37 @@ Package pdftex.def Info: ../../logo.jpg used on input line 22.
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
 ts/Giovanni/Studio e lavoro/GitHub/Premi/RQ/logo.jpg>])
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\registroMod.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
-
- []
-
-! Undefined control sequence.
-l.20  		 2.0.0 & \PG
-                     & 11-06-2015 & Inseriti test d'Integrazione\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 41.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 41.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 \newpage
-              [1]
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-)
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 33.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 33.
-
-[2]
+Piano di Qualifica\PianoDiQualifica_v.2.0.0.toc")
 \tf@toc=\write3
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 35.
-
-[3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 	\newpage
+               [1]
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
+Piano di Qualifica\PianoDiQualifica_v.2.0.0.lof")
 \tf@lof=\write4
 
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
+Piano di Qualifica\PianoDiQualifica_v.2.0.0.lot")
 \tf@lot=\write5
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 38.
-
-[4]
+ [2]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Template
 \sommario.tex")
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 40.
-
-[5]
+ [3]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
 Piano di Qualifica\parti\introduzione.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
@@ -1417,97 +1365,62 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 30.
-
-[6])
+[4])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 42.
-
-[7]
+ [5]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
 Piano di Qualifica\parti\obiettivi.tex"
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 36.
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 36.
-
-[8]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 55.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 55.
-
-[9] <./images/ISO-IEC_9126.png, id=105, 858.95906pt x 484.05844pt>
+ [7]
+<./images/ISO-IEC_9126.png, id=159, 858.95906pt x 484.05844pt>
 File: ./images/ISO-IEC_9126.png Graphic file (type png)
 
 <use ./images/ISO-IEC_9126.png>
-Package pdftex.def Info: ./images/ISO-IEC_9126.png used on input line 61.
+Package pdftex.def Info: ./images/ISO-IEC_9126.png used on input line 62.
 (pdftex.def)             Requested size: 338.58632pt x 190.80582pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 73.
+Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 73.
-
-[10 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Ester
+ [8 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Ester
 ni/Piano di Qualifica/images/ISO-IEC_9126.png>]
-
-LaTeX Warning: Reference `sec:metriche' on page 11 undefined on input line 85.
-
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 93.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 93.
-
-[11] <./images/deming.png, id=128, 220.825pt x 150.5625pt>
+ [9]
+<./images/deming.png, id=176, 220.825pt x 150.5625pt>
 File: ./images/deming.png Graphic file (type png)
 
 <use ./images/deming.png>
-Package pdftex.def Info: ./images/deming.png used on input line 96.
+Package pdftex.def Info: ./images/deming.png used on input line 101.
 (pdftex.def)             Requested size: 241.84843pt x 164.90475pt.
-)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 113.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Este
+rni/Piano di Qualifica/images/deming.png>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 44.
-
-[12 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Ester
-ni/Piano di Qualifica/images/deming.png>]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\gestioneAmministrativa.tex")
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 46.
-
-[13]
+ [11]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
 Piano di Qualifica\parti\strategiaVerifica.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -1518,20 +1431,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 27.
-
-[14])
+ [12])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 48.
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 48.
-
-[15]
+ [13]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
 Piano di Qualifica\parti\strumentiTecnicheMetodi.tex"
 Overfull \hbox (13.3293pt too wide) in paragraph at lines 22--23
@@ -1543,11 +1448,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 23.
-
-[16]
+ [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 32.
@@ -1581,11 +1482,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 54.
-
-[17]
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
@@ -1594,11 +1491,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 18 undefined on input line 82.
-
-[18]
+ [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 94.
@@ -1621,25 +1514,12 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 19 undefined on input line 52.
-
-[19]
+ [17]
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
 Piano di Qualifica\parti\resocontoAttivitaVerifica.tex"
-
-LaTeX Warning: Reference `sec:tecnicheAnalisi' on page 20 undefined on input li
-ne 4.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
-
-
-LaTeX Warning: Reference `sec:metricadocumenti' on page 20 undefined on input l
-ine 9.
 
 
 Overfull \hbox (4.28546pt too wide) in paragraph at lines 39--39
@@ -1655,647 +1535,30 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 56.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 56.
-
-[20])
+ [18])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 21 undefined on input line 54.
-
-[21]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\pianificazioneTest.tex"
-Underfull \hbox (badness 3919) in paragraph at lines 29--29
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 31--31
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 35--35
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 37--37
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 39--39
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 45--45
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 45--45
-\T1/cmr/m/n/12 sce-glie-re il ti-po di Frame$[]$ da
- []
-
-
-Underfull \hbox (badness 3281) in paragraph at lines 47--47
-\T1/cmr/m/n/12 sta-re un Frame$[]$ in mo-da-li-tà
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 53--53
-\T1/cmr/m/n/12 di-fi-ca-re del te-sto già pre-sen-te
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 59--59
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 2035) in paragraph at lines 59--59
-\T1/cmr/m/n/12 in-se-ri-re un vi-deo o un au-dio
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 67--67
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 69--69
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 71--71
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 77--77
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 79--79
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 91--91
-\T1/cmr/m/n/12 fi-ni-re una tran-si-zio-ne tra due
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 97--97
-\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 106.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 22 undefined on input line 106.
-
-[22]
-Underfull \hbox (badness 3919) in paragraph at lines 107--107
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 107--107
-\T1/cmr/m/n/12 in-se-ri-re un Elemento$[]$ SVG in
- []
-
-
-Underfull \hbox (badness 2359) in paragraph at lines 107--107
-\T1/cmr/m/n/12 un Frame$[]$ o nel pia-no del-la
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 109--109
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 113--113
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 115--115
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 123--123
-\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 146.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 146.
-
-[23]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 146.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 146.
-
-[24]
-Underfull \hbox (badness 2088) in paragraph at lines 149--149
-\T1/cmr/m/n/12 ri-ca-re in lo-ca-le un'Infografica$[]$
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 159--159
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 159--159
-\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 173--173
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 177--177
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 179--179
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 179--179
-\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 181--181
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3168) in paragraph at lines 181--181
-\T1/cmr/m/n/12 chiu-de-re una pre-sen-ta-zio-ne in
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 183--183
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 186.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 186.
-
-[25]
-Underfull \hbox (badness 3919) in paragraph at lines 187--187
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1303) in paragraph at lines 187--187
-\T1/cmr/m/n/12 Sospendere$[]$ la ri-pro-du-zio-ne di
- []
-
-
-Underfull \hbox (badness 6428) in paragraph at lines 187--187
-\T1/cmr/m/n/12 un vi-deo/au-dio e ri-pren-der-la
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 193--193
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 195--195
-\T1/cmr/m/n/12 sa-re da pre-sen-ta-zio-ne au-to-ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
-[]|\T1/cmr/m/n/12 RF 61.7, RF
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 197--197
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 203--203
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-
- []
-
-
-Underfull \hbox (badness 4819) in paragraph at lines 205--205
-\T1/cmr/m/n/12 ni-stra-to-re pos-sa eli-mi-na-re un
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 207--207
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
- []
-
-
-Underfull \hbox (badness 4779) in paragraph at lines 207--207
-\T1/cmr/m/n/12 stra-to-re pos-sa ri-pri-sti-na-re un
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 213--213
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 213--213
-\T1/cmr/m/n/12 sa-no se-le-zio-na-re gli elementi$[]$
- []
-
-
-Underfull \hbox (badness 3838) in paragraph at lines 215--215
-\T1/cmr/m/n/12 sa-re in mo-da-li-tà mo-di-fi-ca di
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 217--217
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 221--221
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 226.
-
-[26]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 226.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 27 undefined on input line 226.
-
-[27]
-Underfull \hbox (badness 3919) in paragraph at lines 227--227
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 233--233
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 5802) in paragraph at lines 233--233
-\T1/cmr/m/n/12 cam-bia-re la po-si-zio-ne di un
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 235--235
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 235--235
-\T1/cmr/m/n/12 sa ri-muo-ve-re lo sfon-do
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 239--239
-\T1/cmr/m/n/12 se-ri-re un Elemento$[]$ im-ma-gi-ne
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 241--241
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-
-Underfull \hbox (badness 2435) in paragraph at lines 245--245
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa-
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 251--251
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 251--251
-\T1/cmr/m/n/12 sa espor-ta-re un'Infografica$[]$ in
- []
-
-
-Underfull \hbox (badness 3919) in paragraph at lines 253--253
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 255.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 255.
-
-[28]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 255.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 255.
-
-[29]
-Underfull \hbox (badness 3838) in paragraph at lines 276--276
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che sia di-spo-ni-bi-
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 280--280
-[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che il si-ste-ma of-
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 281.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 281.
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
-
- []
-
-<./images/IntegrazioneDiagramma.pdf, id=281, 751.60799pt x 1320.935pt>
-File: ./images/IntegrazioneDiagramma.pdf Graphic file (type pdf)
-
-<use ./images/IntegrazioneDiagramma.pdf>
-Package pdftex.def Info: ./images/IntegrazioneDiagramma.pdf used on input line 
-290.
-(pdftex.def)             Requested size: 241.84843pt x 425.04591pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--300
-[]|\T1/cmr/bx/n/12 Componenti
- []
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.300 ...izione} & \textbf{Componenti aggiuntive}&
-                                                   \textbf{Stato} \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
-[]|\T1/cmr/bx/n/12 Componenti
- []
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.304 ...izione} & \textbf{Componenti aggiuntive}&
-                                                   \textbf{Stato} \\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.311 ...ccessControll & NodeApi, AccessControll &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.313 ... con NodeApi e AccessControll  & Loader &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.315 ...eApi, Loader e AccessControll & DbSynch &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Underfull \hbox (badness 2158) in paragraph at lines 317--317
-\T1/cmr/m/n/12 na-ger uti-liz-zi cor-ret-ta-men-te le
- []
-
-
-Overfull \hbox (31.45628pt too wide) in paragraph at lines 317--317
-[]|\T1/cmr/m/n/12 ApacheServermanager,
- []
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.317 ...ons & ApacheServermanager, PhpFunctions &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.319 ...rApaches e di MongoRelations & Manifest &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.321 ...ino correttamente con MongoRelations &  &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 323--323
-\T1/cmr/m/n/12 de-Sho-wE-le-men-ts e Mon-go-Re-la-
- []
-
-
-Overfull \hbox (3.19781pt too wide) in paragraph at lines 323--323
-[]|\T1/cmr/m/n/12 SlideshowActions| 
- []
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.323 ...nts e MongoRelations & SlideshowActions &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.325 ...nd si integrino con InsertEditRemove &  &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.327 ...el dialoghino correttamente & Presenter &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Extra alignment tab has been changed to \cr.
-<template> ... width\arrayrulewidth }\endtemplate 
-                                                  
-l.329 ...con le classi di ApacheRelations & View &
-                                                   N.E.\\
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 331.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 331.
-
-[31])
-
-Package lastpage Warning: Rerun to get the references right on input line 57.
-
+ [19]
 
 AED: lastpage setting LastPage
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 57.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 57.
-
-[32]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 57.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 57.
-
-[33 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Ester
-ni/Piano di Qualifica/images/IntegrazioneDiagramma.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 
 ("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.aux"
-! Missing \endcsname inserted.
-<to be read again> 
-                   \T1\textquoteright 
-l.139 ...e componenti\relax }{figure.caption.8}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
-                                                  \def \bbl@tempb {#3}\@safe...
-l.139 ...e componenti\relax }{figure.caption.8}{}}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-)
+Piano di Qualifica\PianoDiQualifica_v.2.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 13858 strings out of 493921
- 201652 string characters out of 3147274
- 384875 words of memory out of 3000000
- 16783 multiletter control sequences out of 15000+200000
+ 13806 strings out of 493921
+ 201006 string characters out of 3147274
+ 356875 words of memory out of 3000000
+ 16761 multiletter control sequences out of 15000+200000
  16527 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,950b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,950b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
@@ -2310,9 +1573,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files
 .9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sftt1200.pfb>
-Output written on PianoDiQualifica_v.2.0.0.pdf (34 pages, 511228 bytes).
+Output written on PianoDiQualifica_v.2.0.0.pdf (20 pages, 430487 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 91 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

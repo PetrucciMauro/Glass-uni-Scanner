@@ -3,6 +3,7 @@
 
 Al fine di garantire la qualità del prodotto in ogni fase di realizzazione, si deve garantire la qualità dei Processi\ped{g} che lo definiscono; per questo motivo si è deciso di utilizzare lo standard ISO/IEC 15504 denominato SPICE\ped{g}, che rende disponibili strumenti adatti a valutarli.
 
+Per applicare correttamente questo modello si deve utilizzare il ciclo di Deming (ciclo PDCA) il quale definisce una metodologia di controllo dei processi durante il loro ciclo di vita che consente di migliorarne in modo continuativo la qualità.
 
 Tutti i Processi\ped{g} dovranno quindi essere sottoposti a valutazione in modo da verificarne la qualità ed eventualmente facilitarne il miglioramento. A tale scopo lo SPICE\ped{g} definisce nove attributi di Processo\ped{g} per effettuare una migliore valutazione:
 \begin{enumerate}
@@ -66,27 +67,31 @@ Per garantire la qualità del prodotto si è deciso di seguire le indicazioni fo
 
 \subsubsection{Funzionalità}
 È un Requisito\ped{g} funzionale che indica la capacità del Software\ped{g} di soddisfare le esigenze esposte dal capitolato ed individuate durante l’analisi dei Requisiti\ped{g}. Per valutare questa caratteristica si considerano l'appropriatezza e l'accuratezza delle funzioni\ped{g} offerte, l'interoperabilità del prodotto rispetto ai diversi sistemi e la sicurezza offerta per la protezione dei dati.\\ 
-Si sarà ottenuto un buon risultato in questo settore quando il Software\ped{g} avrà superato in maniera positiva tutti i test e assicurerà copertura a tutti i Requisiti\ped{g} obbligatori.
+\textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} la misurazione
+del raggiungimento di questo obiettivo si calcolerà verificando la quantità
+di requisiti soddisfatti che avranno un riscontro in elementi funzionanti
+nell’applicazione prodotta. La soglia di sufficienza sarà quindi data dal soddisfacimento
+di tutti i requisiti obbligatori previsti dal capitolato d’appalto.
 
 \subsubsection{Affidabilità}
-È un Requisito\ped{g} non funzionale che indica la capacità del Software\ped{g} di svolgere correttamente il suo compito, mantenendo delle buone prestazioni anche al variare dell'ambiente nel tempo; vengono considerate la sua tolleranza agli errori, la capacità di evitare fallimenti nell’esecuzione a seguito di malfunzionamenti (detta maturità) e la recuperabilità dei dati e delle prestazioni nell'eventualità di un malfunzionamento inevitabile. Il prodotto può considerarsi affidabile se il numero di esecuzioni andate a buon fine è sufficientemente grande rispetto al numero di esecuzioni totali.
+È un Requisito\ped{g} non funzionale che indica la capacità del Software\ped{g} di svolgere correttamente il suo compito, mantenendo delle buone prestazioni anche al variare dell'ambiente nel tempo; vengono considerate la sua tolleranza agli errori, la capacità di evitare fallimenti nell’esecuzione a seguito di malfunzionamenti (detta maturità) e la recuperabilità dei dati e delle prestazioni nell'eventualità di un malfunzionamento inevitabile.\\ \textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} la misurazione del raggiungimento di questo obiettivo si calcolerà confrontando il numero di esecuzioni totale con quelle andate a buon fine e che hanno mantenuto un livello di prestazioni tali da poter permettere l’utilizzo previsto del prodotto
 
 \subsubsection{Efficienza}
 È un Requisito\ped{g} non funzionale che indica il rapporto tra le prestazioni e le Risorse\ped{g} disponibili.
 Si valuta se il Software\ped{g} utilizza al meglio le Risorse\ped{g} a sua disposizione per fornire le funzionalità richieste, considerando il suo comportamento rispetto al tempo, ossia la velocità di risposta e d'elaborazione in determinate condizioni, che rispetto all’uso delle Risorse\ped{g}, data dalla capacità d'utilizzarne una quantità adeguata ad eseguire le funzioni\ped{g} richieste. \\
-Un modo per valutare l’efficienza di un Software\ped{g} è calcolarne i tempi di attesa in seguito all’esecuzione di un comando, tuttavia, nel caso del prodotto Premi l'efficienza è limitata anche dallo stato della rete e dall'utilizzo di componenti grafiche quali video o immagini; per questo motivo il gruppo non può garantire tempi di risposta brevi per ogni azione compiuta dall’utente, ma si impegna a non appesantire ulteriormente tali componenti.
+\textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} Un modo per valutare l’efficienza di un Software\ped{g} è calcolarne i tempi di attesa in seguito all’esecuzione di un comando, tuttavia, nel caso del prodotto Premi l'efficienza è limitata anche dallo stato della rete e dall'utilizzo di componenti grafiche quali video o immagini; per questo motivo il gruppo non può garantire tempi di risposta brevi per ogni azione compiuta dall’utente, ma si impegna a non appesantire ulteriormente tali componenti.
 
 \subsubsection{Usabilità}
 È un Requisito\ped{g} non funzionale che indica la capacità del Software\ped{g} di essere compreso, appreso ed usato con soddisfazione dall'utente. \\
-Per far ciò il prodotto deve soddisfare condizioni di comprensibilità, apprendibilità ed operabilità; deve inoltre avere una certa attrattiva nei confronti dell'utente allo scopo di rendergliene piacevole l’utilizzo. Questa caratteristica non è facilmente misurabile in quanto non esistono metriche\ped{g} per quantificarla, perciò si farà affidamento alle linee guida del material design\ped{g} fornite da Google, dato l'alto tasso di adozione rispetto ad altre linee guida.
+Per far ciò il prodotto deve soddisfare condizioni di comprensibilità, apprendibilità ed operabilità; deve inoltre avere una certa attrattiva nei confronti dell'utente allo scopo di rendergliene piacevole l’utilizzo.\\ \textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} Questa caratteristica non è facilmente misurabile in quanto non esistono metriche\ped{g} per quantificarla, perciò si farà affidamento alle linee guida del material design\ped{g} fornite da Google, dato l'alto tasso di adozione rispetto ad altre linee guida.
 
 \subsubsection{Manutenibilità}
 È un Requisito\ped{g} non funzionale che indica la capacità del Software\ped{g} di essere corretto, migliorato o adattato con impegno contenuto; a tale scopo esso deve essere facilmente analizzabile e modificabile, deve garantire stabilità a seguito di modifiche e la testabilità di tali modifiche.  \\
-Per misurare questa caratteristica esistono una serie di metriche\ped{g} descritte nella sezione \ref{sec:metriche}.
+\textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} Per la misurazione di questo requisito si fa riferimento alle metriche\ped{g} descritte nella sezione \ref{sec:metriche}.
 
 \subsubsection{Portabilità}
 È un Requisito\ped{g} non funzionale che indica la capacità del Software\ped{g} di adattarsi al cambio di dispositivo e sistema operativo, limitando la necessità di apportare cambiamenti.\\
-Per soddisfare questa caratteristica, come espresso dal capitolato, è necessario che il Software\ped{g} funzioni\ped{g} sia su computer (indipendentemente dal loro sistema operativo) e su dispositivi mobile\ped{g} Android\ped{g}, iOS e Windows\ped{g} Phone.
+\textbf{Quantificazione del raggiungimento dell’obbiettivo di qualità:} Per soddisfare questa caratteristica, come espresso dal capitolato, è necessario che il Software\ped{g} funzioni\ped{g} sia su computer (indipendentemente dal loro sistema operativo) e su dispositivi mobile\ped{g} Android\ped{g}, iOS e Windows\ped{g} Phone.
 
 \subsection{Procedure di controllo di qualità di processo}
 Per applicare il modello SPICE\ped{g} si utilizzerà il ciclo di Deming. Il ciclo di Deming è un sistema iterativo per il miglioramento continuo della qualità dei Processi\ped{g} e dei prodotti da essi risultanti, che permette di riconoscere lo stato di avanzamento di un Progetto\ped{g} fornendo un metodo di lavoro logico e sistematico.
