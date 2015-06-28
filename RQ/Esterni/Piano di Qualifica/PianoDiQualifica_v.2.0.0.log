@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.8)  27 JUN 2015 18:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.2)  28 JUN 2015 23:06
 entering extended mode
 **PianoDiQualifica_v.2.0.0.tex
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.tex"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -32,8 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Template
-\format.sty" ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Template\format.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -1202,8 +1202,8 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
@@ -1303,81 +1303,104 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Template
-\firstpage.tex" <../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Template\firstpage.tex"
+<../../logo.jpg, id=3, 572.1375pt x 572.1375pt>
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Giovanni/Documen
-ts/Giovanni/Studio e lavoro/GitHub/Premi/RQ/logo.jpg>])
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.toc")
-\tf@toc=\write3
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Docs/Università/Mega 
+Fiup/3° Anno/SWE/Premi/RQ/logo.jpg>])
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\registroMod.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 35.
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 	\newpage
-               [1]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.lof")
+l.41 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [2]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.toc")
+\tf@toc=\write3
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [3]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.lof")
 \tf@lof=\write4
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.lot")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.lot")
 \tf@lot=\write5
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [2]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Template
-\sommario.tex")
+ [4]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Template\sommario.tex")
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\introduzione.tex"
+ [5]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\introduzione.tex"
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[4])
+ [6])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\obiettivi.tex"
+ [7]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\obiettivi.tex"
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6]
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -1386,8 +1409,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7]
-<./images/ISO-IEC_9126.png, id=159, 858.95906pt x 484.05844pt>
+ [9]
+<./images/ISO-IEC_9126.png, id=193, 858.95906pt x 484.05844pt>
 File: ./images/ISO-IEC_9126.png Graphic file (type png)
 
 <use ./images/ISO-IEC_9126.png>
@@ -1397,14 +1420,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Ester
-ni/Piano di Qualifica/images/ISO-IEC_9126.png>]
+ [10 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RQ/Esterni/Piano di Qual
+ifica/images/ISO-IEC_9126.png>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9]
-<./images/deming.png, id=176, 220.825pt x 150.5625pt>
+ [11]
+<./images/deming.png, id=210, 220.825pt x 150.5625pt>
 File: ./images/deming.png Graphic file (type png)
 
 <use ./images/deming.png>
@@ -1414,15 +1437,16 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 113.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10 <C:/Users/Giovanni/Documents/Giovanni/Studio e lavoro/GitHub/Premi/RQ/Este
-rni/Piano di Qualifica/images/deming.png>])
+ [12 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RQ/Esterni/Piano di Qual
+ifica/images/deming.png>])
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\strategiaVerifica.tex"
+ [13]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\strategiaVerifica.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1431,14 +1455,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12])
+ [14])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\strumentiTecnicheMetodi.tex"
+ [15]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\strumentiTecnicheMetodi.tex"
 Overfull \hbox (13.3293pt too wide) in paragraph at lines 22--23
 []\T1/cmr/bx/n/12 Test fun-zio-na-li\T1/cmr/m/n/12 : met-to-no al-la pro-va le 
 fun-zio-na-li-t� del si-ste-ma, si-mu-lan-do l'Iterazione$[]$
@@ -1448,7 +1472,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14]
+ [16]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 32.
@@ -1482,7 +1506,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
+ [17]
 Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
@@ -1491,7 +1515,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 82.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16]
+ [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 94.
@@ -1514,9 +1538,9 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\parti\resocontoAttivitaVerifica.tex"
+ [19]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\resocontoAttivitaVerifica.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
@@ -1535,30 +1559,453 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 56.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18])
+ [20])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19]
+ [21]
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\parti\pianificazioneTest.tex"
+Underfull \hbox (badness 3919) in paragraph at lines 29--29
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 31--31
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 35--35
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 37--37
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 39--39
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 45--45
+\T1/cmr/m/n/12 sce-glie-re il ti-po di Frame$[]$ da
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 47--47
+\T1/cmr/m/n/12 sta-re un Frame$[]$ in mo-da-li-t�
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 53--53
+\T1/cmr/m/n/12 di-fi-ca-re del te-sto gi� pre-sen-te
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 59--59
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 59--59
+\T1/cmr/m/n/12 in-se-ri-re un vi-deo o un au-dio
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 69--69
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 71--71
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 77--77
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 79--79
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 91--91
+\T1/cmr/m/n/12 fi-ni-re una tran-si-zio-ne tra due
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 97--97
+\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 106.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22]
+Underfull \hbox (badness 3919) in paragraph at lines 107--107
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 107--107
+\T1/cmr/m/n/12 in-se-ri-re un Elemento$[]$ SVG in
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 107--107
+\T1/cmr/m/n/12 un Frame$[]$ o nel pia-no del-la
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 109--109
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 113--113
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 115--115
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 123--123
+\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 146.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 146.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24]
+Underfull \hbox (badness 2088) in paragraph at lines 149--149
+\T1/cmr/m/n/12 ri-ca-re in lo-ca-le un'Infografica$[]$
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 159--159
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 159--159
+\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 173--173
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 177--177
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 179--179
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 179--179
+\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 181--181
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 181--181
+\T1/cmr/m/n/12 chiu-de-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 183--183
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 186.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25]
+Underfull \hbox (badness 3919) in paragraph at lines 187--187
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 187--187
+\T1/cmr/m/n/12 Sospendere$[]$ la ri-pro-du-zio-ne di
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 187--187
+\T1/cmr/m/n/12 un vi-deo/au-dio e ri-pren-der-la
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 193--193
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 195--195
+\T1/cmr/m/n/12 sa-re da pre-sen-ta-zio-ne au-to-ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+[]|\T1/cmr/m/n/12 RF 61.7, RF
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 203--203
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 205--205
+\T1/cmr/m/n/12 ni-stra-to-re pos-sa eli-mi-na-re un
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 207--207
+\T1/cmr/m/n/12 stra-to-re pos-sa ri-pri-sti-na-re un
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 213--213
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 213--213
+\T1/cmr/m/n/12 sa-no se-le-zio-na-re gli elementi$[]$
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 215--215
+\T1/cmr/m/n/12 sa-re in mo-da-li-t� mo-di-fi-ca di
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 217--217
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 221--221
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 226.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 226.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [27]
+Underfull \hbox (badness 3919) in paragraph at lines 227--227
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 233--233
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 233--233
+\T1/cmr/m/n/12 cam-bia-re la po-si-zio-ne di un
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 235--235
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
+\T1/cmr/m/n/12 sa ri-muo-ve-re lo sfon-do
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 239--239
+\T1/cmr/m/n/12 se-ri-re un Elemento$[]$ im-ma-gi-ne
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 241--241
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 245--245
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa-
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 251--251
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 251--251
+\T1/cmr/m/n/12 sa espor-ta-re un'Infografica$[]$ in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 253--253
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [28]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [29]
+Underfull \hbox (badness 3838) in paragraph at lines 274--274
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che sia di-spo-ni-bi-
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 278--278
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che il si-ste-ma of-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 279.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [30]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 281.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [31]
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+<./images/IntegrazioneDiagramma.pdf, id=367, 751.60799pt x 1320.935pt>
+File: ./images/IntegrazioneDiagramma.pdf Graphic file (type pdf)
+
+<use ./images/IntegrazioneDiagramma.pdf>
+Package pdftex.def Info: ./images/IntegrazioneDiagramma.pdf used on input line 
+289.
+(pdftex.def)             Requested size: 263.06673pt x 462.33418pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]|\T1/cmr/bx/n/12 Componenti
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+[]|\T1/cmr/bx/n/12 Componenti
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 314--314
+\T1/cmr/m/n/12 na-ger uti-liz-zi cor-ret-ta-men-te le
+ []
+
+
+Overfull \hbox (31.45628pt too wide) in paragraph at lines 314--314
+[]|\T1/cmr/m/n/12 ApacheServermanager,
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 320--320
+\T1/cmr/m/n/12 de-Sho-wE-le-men-ts e Mon-go-Re-la-
+ []
+
+
+Overfull \hbox (3.19781pt too wide) in paragraph at lines 320--320
+[]|\T1/cmr/m/n/12 SlideshowActions| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 327.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [32 <E:/Docs/Università/Mega Fiup/3° Anno/SWE/Premi/RQ/Esterni/Piano di Qual
+ifica/images/IntegrazioneDiagramma.pdf>])
 
 AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [33]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 
-("C:\Users\Giovanni\Documents\Giovanni\Studio e lavoro\GitHub\Premi\RQ\Esterni\
-Piano di Qualifica\PianoDiQualifica_v.2.0.0.aux")
+("E:\Docs\Università\Mega Fiup\3° Anno\SWE\Premi\RQ\Esterni\Piano di Qualific
+a\PianoDiQualifica_v.2.0.0.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 13806 strings out of 493921
- 201006 string characters out of 3147274
- 356875 words of memory out of 3000000
- 16761 multiletter control sequences out of 15000+200000
+ 13857 strings out of 493921
+ 201496 string characters out of 3147280
+ 384875 words of memory out of 3000000
+ 16781 multiletter control sequences out of 15000+200000
  16527 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 51i,16n,60p,950b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,60p,950b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
@@ -1573,9 +2020,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files
 .9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/cm-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/cm-super/sftt1200.pfb>
-Output written on PianoDiQualifica_v.2.0.0.pdf (20 pages, 430487 bytes).
+Output written on PianoDiQualifica_v.2.0.0.pdf (34 pages, 525341 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

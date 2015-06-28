@@ -52,7 +52,7 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: imposta i campi height e width dell’oggetto.
 			\end{itemize}
-			\item \textbf{setPosition}(posX:double, posY:double)
+			\item \textbf{setPosition}(xIndex:double, yIndex:double)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -121,7 +121,7 @@
 			
 			\noindent{\textbf{Metodi}}
 			\begin{itemize}
-				\item \textbf{Text}(id:integer, posX:double, posY:double, degrees:double)
+				\item \textbf{Text}(id:integer, xIndex:double, yIndex:double, degrees:double)
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
@@ -178,7 +178,7 @@
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{Image}(id:integer, posX:double, posY:double, degrees:double, ref:string)
+			\item \textbf{Image}(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -243,7 +243,7 @@
 		
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{Frame}(id:integer, posX:double, posY:double, degrees:double)
+			\item \textbf{Frame}(id:integer, xIndex:double, yIndex:double, degrees:double)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -354,7 +354,7 @@
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{SVG}(id:integer, posX:double, posY:double, degrees:double, color:string, shape:array)
+			\item \textbf{SVG}(id:integer, xIndex:double, yIndex:double, degrees:double, color:string, shape:array)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -405,7 +405,7 @@
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{Audio}(id:integer, posX:double, posY:double, degrees:double, ref:string)
+			\item \textbf{Audio}(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -439,7 +439,7 @@
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{Video(id:integer, posX:double, posY:double, degrees:double, ref:string)}
+			\item \textbf{Video(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string)}
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -535,11 +535,11 @@
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
-			\item \textbf{insertText}(posX:double, posY:double, degrees:double)
+			\item \textbf{insertText}(xIndex:double, yIndex:double, degrees:double)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: costruisce un oggetto newText di tipo Text (id:integer, posX:double, posY:double, degrees:double) invocandone il costruttore passando come parametri id:integer, posX, posY e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: costruisce un oggetto newText di tipo Text (id:integer, xIndex:double, yIndex:double, degrees:double) invocandone il costruttore passando come parametri id:integer, xIndex, yIndex e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
 			\item \textbf{insertText}(oldText:Text)
 			\begin{itemize}
@@ -553,17 +553,17 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: imposta il campo url dell’oggetto.
 			\end{itemize}
-			\item \textbf{insertFrame}(posX:double, posY:double, degrees:double)
+			\item \textbf{insertFrame}(xIndex:double, yIndex:double, degrees:double)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: costruisce un oggetto di tipo Frame(id:integer, posX:double, posY:double, degrees:double) invocandone il costruttore passando come parametri id:integer, posX, posY e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: costruisce un oggetto di tipo Frame(id:integer, xIndex:double, yIndex:double, degrees:double) invocandone il costruttore passando come parametri id:integer, xIndex, yIndex e degrees. Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
-			\item \textbf{insertImage}(posX, posY, rotation, ref)
+			\item \textbf{insertImage}(xIndex, yIndex, rotation, ref)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: costruisce un oggetto di tipo Image(id:integer, posX:double, posY:double, degrees:double, ref:string) invocandone il costruttore passando come parametri id:integer, posX, posY, degrees e ref. Copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: costruisce un oggetto di tipo Image(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string) invocandone il costruttore passando come parametri id:integer, xIndex, yIndex, degrees e ref. Copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
 			\item \textbf{insertImage}(oldImage:Image)
 			\begin{itemize}
@@ -571,11 +571,11 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
 			\end{itemize}
-			\item \textbf{insertSVG}(posX:double, posY:double, rotation:double, shape:string, color:string)
+			\item \textbf{insertSVG}(xIndex:double, yIndex:double, rotation:double, shape:string, color:string)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: invoca il costruttore di un oggetto SVG(id:integer, posX:double, posY:double, degrees:double, shape:string, color:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto SVG(id:integer, xIndex:double, yIndex:double, degrees:double, shape:string, color:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
 			\item \textbf{insertSVG}(oldSVG:SVG)
 			\begin{itemize}
@@ -583,11 +583,11 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
 			\end{itemize}
-			\item \textbf{insertAudio}(posX:double, posY:double, degrees:double, ref:string)
+			\item \textbf{insertAudio}(xIndex:double, yIndex:double, degrees:double, ref:string)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Audio(id:integer, posX:double, posY:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Audio(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
 			\item \textbf{insertAudio}(oldAudio:Audio)
 			\begin{itemize}
@@ -595,11 +595,11 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: inserisce l’oggetto passato per parametro nell’oggetto Presentazione.
 			\end{itemize}
-			\item \textbf{insertVideo}(posX:double, posY:double, degrees:double, ref:string)
+			\item \textbf{insertVideo}(xIndex:double, yIndex:double, degrees:double, ref:string)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Video(id:integer, posX:double, posY:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
+				\item \textbf{Descrizione}: invoca il costruttore di un oggetto Video(id:integer, xIndex:double, yIndex:double, degrees:double, ref:string). Inserisce l’oggetto così costruito nell’oggetto Presentazione, copia id in un intero tempid, esegue id++ e restituisce tempid.
 			\end{itemize}
 			\item \textbf{insertVideo}(oldVideo:Video)
 			\begin{itemize}
@@ -661,11 +661,11 @@
 				\item \textbf{Tipo di ritorno}: Background;
 				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
 			\end{itemize}
-			\item \textbf{editPosition}(id:integer, tipo:string,  posX, posY)
+			\item \textbf{editPosition}(id:integer, tipo:string,  xIndex: double, yIndex: double)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array[2] di double; [[[[[[[[[[[[[E' CORRETTO?]]]]]]]]]]]]]
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente, crea una coppia oldPosition di double settati con il valore di xIndex e di yIndex dell’oggetto trovato e imposta xIndex con il valore di posX e yIndex con il valore di posY. Restituisce oldPosition.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo id corrispondente, crea una coppia oldPosition di double settati con il valore di xIndex e di yIndex dell’oggetto trovato e imposta xIndex con il valore di xIndex e yIndex con il valore di yIndex. Restituisce oldPosition.
 			\end{itemize}
 			\item \textbf{editRotation}(id:integer, tipo:string,  degrees)
 			\begin{itemize}
