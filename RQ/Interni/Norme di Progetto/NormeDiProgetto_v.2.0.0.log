@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  29 JUN 2015 11:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  29 JUN 2015 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1387,31 +1387,31 @@ l.269 	\subsubsubsection{Test}
                               ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 280.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 279.
+(hyperref)                removing `subscript' on input line 280.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 279.
+(hyperref)                removing `math shift' on input line 280.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 284.
+(hyperref)                removing `subscript' on input line 285.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 284.
+(hyperref)                removing `math shift' on input line 285.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 306.
+Package pdftex.def Info: ../../logo.jpg used on input line 307.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [35])
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1754,7 +1754,7 @@ ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488
 .600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on NormeDiProgetto_v.2.0.0.pdf (53 pages, 646008 bytes).
+Output written on NormeDiProgetto_v.2.0.0.pdf (53 pages, 646067 bytes).
 PDF statistics:
  1656 PDF objects out of 1728 (max. 8388607)
  1185 compressed objects within 12 object streams
