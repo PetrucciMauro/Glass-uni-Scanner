@@ -1,6 +1,6 @@
-//=========================
-// get the packages we need
-// ========================
+//=================
+// get the packages
+// ================
 var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev')); // log to console
 
 var MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID
 
 //===============
 // authentication
@@ -527,18 +528,310 @@ filesRoutes.post('/video/[^/]+/[^/]+', function(req, res){
 																	});
 
 
+//=====================
+// presentations_server
+//=====================
+
+var presentationRoutes = express.Router();
+app.use('/private/api/presentations', presentationRoutes);
+
+presentationRoutes.get('/', function(req, res){
+																							
+																							MongoClient.connect(app.get('database'), function(err, db) {
+																																											if(err) throw err;
+																																											
+																																											db.collection('presentations'+req.user).find().toArray(function(err, doc){
+																																																																																																		if(err) throw err;
+																																																																																																		message = [];
+																																																																																																		doc.forEach(function(pres){
+																																																																																																														message.push(pres.meta);
+																																																																																																														});
+																																																																																																		
+																																																																																																		res.json({
+																																																																																																											success: true,
+																																																																																																											message: message
+																																																																																																											});
+																																																																																																		db.close();
+
+																																																																																																		});
+																																											});
+																							});
+
+
+presentationRoutes.get('/[^/]+', function(req, res){
+																							
+																							MongoClient.connect(app.get('database'), function(err, db) {
+																																											if(err) throw err;
+																																											var id_pres = req.originalUrl.split("/")[4];
+																																											var objectId = new ObjectID(id_pres);
+																																											db.collection('presentations'+req.user).findOne({ '_id': objectId }, function(err, doc){
+																																																																																											if(err) throw err;
+																																																																																											
+																																																																																											res.json({
+																																																																																																				success: true,
+																																																																																																				message: doc
+																																																																																																				});
+																																																																																											db.close();
+																																																																																											
+																																																																																											});
+																																											});
+																							});
+
+presentationRoutes.delete('/[^/]+', function(req, res){
+																							
+																							MongoClient.connect(app.get('database'), function(err, db) {
+																																											if(err) throw err;
+																																											var id_pres = req.originalUrl.split("/")[4];
+																																											var objectId = new ObjectID(id_pres);
+																																											db.collection('presentations'+req.user).remove({ '_id': objectId }, function(err, removed){
+																																																																																										if(err) throw err;
+																																																																																										
+																																																																																										res.json({
+																																																																																																			success: true,
+																																																																																																			message: 'removed presentation _id: '+id_pres
+																																																																																																			});
+																																																																																										db.close();
+																																																																																										
+																																																																																										});
+																																											});
+																										});
+
+presentationRoutes.post('/new/[^/]+', function(req, res){
+																										
+																										MongoClient.connect(app.get('database'), function(err, db) {
+																																														if(err) throw err;
+																																														var name_pres = req.originalUrl.split("/")[5];
+																																														var new_presentation = {'meta': {'name': name_pres}, 'proper': {} };
+																																														db.collection('presentations'+req.user).insert(new_presentation, function(err, result){
+																																																																																													if(err) throw err;
+																																																																																													res.json({
+																																																																																																						success: true,
+																																																																																																						message: 'inserted presentation',
+																																																																																																						id_pres: result.ops[0]._id.toString()
+																																																																																																						});
+																																																																																													db.close();
+																																																																																													});
+																																														});
+																								});
+
+presentationRoutes.post('/new/[^/]+/[^/]+', function(req, res){
+																								
+																								MongoClient.connect(app.get('database'), function(err, db) {
+																																												if(err) throw err;
+																																												var name_pres = req.originalUrl.split("/")[5];
+																																												var id_tocopy = req.originalUrl.split("/")[6];
+																																												var objectId = new ObjectID(id_tocopy);
+																																												db.collection('presentations'+req.user).findOne({ '_id': objectId }, function(err, doc){
+																																																																																												if(err) throw err;
+																																																																																												var new_presentation = doc;
+																																																																																												new_presentation.meta.name = name_pres;
+																																																																																												delete new_presentation._id;
+																																																																																												db.collection('presentations'+req.user).insert(new_presentation, function(err, result){
+																																																																																																																																											if(err) throw err;
+																																																																																																																																											res.json({
+																																																																																																																																																				success: true,
+																																																																																																																																																				message: 'inserted presentation',
+																																																																																																																																																				id_pres: result.ops[0]._id.toString()
+																																																																																																																																																				});
+																																																																																																																																											db.close();
+																																																																																																																																											});
+																																																																																												});
+
+																																																																																												
+																																												
+																																																																																												
+																																												});
+																								});
+
+presentationRoutes.post('/[^/]+/[^/]+', function(req, res){
+																										
+																										MongoClient.connect(app.get('database'), function(err, db) {
+																																														if(err) throw err;
+																																														var id_pres = req.originalUrl.split("/")[4];
+																																														var name_pres = req.originalUrl.split("/")[5];
+
+																																														var objectId = new ObjectID(id_pres);
+																																														db.collection('presentations'+req.user).update({ '_id': objectId }, {$set: { 'meta.name' : name_pres }}, function(err, doc){
+																																																																																													if(err) throw err;
+
+																																																																																													res.json({
+																																																																																																						success: true,
+																																																																																																						message: 'renamed presentation: '+name_pres
+																																																																																																						});
+																																																																																													db.close();
+																																																																																													
+																																																																																													});
+																																														});
+																								});
+
+presentationRoutes.delete('/[^/]+/delete/[^/]+/[^/]+', function(req, res){
+																								
+																								MongoClient.connect(app.get('database'), function(err, db) {
+																																												if(err) throw err;
+																																												var id_pres = req.originalUrl.split("/")[4];
+																																												var type_element = req.originalUrl.split("/")[6];
+																																												var id_element = req.originalUrl.split("/")[7];
+																																												
+																																												var objectId_pres = new ObjectID(id_pres);
+																																												var field_path;
+																																												
+																																												switch(type_element) {
+																																												case 'text':
+																																												field_path = 'proper.texts';
+																																												break;
+																																												case 'frame':
+																																												field_path = 'proper.frames';
+																																												case 'image':
+																																												field_path = 'proper.images';
+																																												break;
+																																												case 'SVG':
+																																												field_path = 'proper.SVGs;
+																																												break;
+																																												case 'audio':
+																																												field_path = 'proper.audios';
+																																												break;
+																																												case 'video':
+																																												field_path = 'proper.videos';
+																																												break;
+																																												case 'background':
+																																												field_path = 'proper.background';
+																																												break;
+																																												default:
+																																												res.json({
+																																																					success: true,
+																																																					message: 'element type: '+type_element+' not known'
+																																																					});
+																																												return;
+																																												}
+																																												
+																																												db.collection('presentations'+req.user).update({'_id': objectId_pres}, {$pull : {field_path : {"id" : id_element}}}, function(err, doc){
+																																																																																											if(err) throw err;
+																																																																																											res.json({
+																																																																																																				success: true,
+																																																																																																				message: 'deleted element'
+																																																																																																				});
+																																																																																											db.close();
+																																																																																											});
+																																												});
+																								});
+
+//to test
+presentationRoutes.put('/[^/]+/element', function(req, res){
+																										
+																										MongoClient.connect(app.get('database'), function(err, db) {
+																																														if(err) throw err;
+																																														var id_pres = req.originalUrl.split("/")[4];
+																																														var id_element req.body.id;
+																																														
+																																														var objectId_pres = new ObjectID(id_pres);
+																																														var new_element = req.body.element;
+																																														
+																																														var field_path;
+																																														
+																																														switch(new_element.type) {
+																																														case 'text':
+																																														field_path = 'proper.texts';
+																																														break;
+																																														case 'frame':
+																																														field_path = 'proper.frames';
+																																														case 'image':
+																																														field_path = 'proper.images';
+																																														break;
+																																														case 'SVG':
+																																														field_path = 'proper.SVGs;
+																																														break;
+																																														case 'audio':
+																																														field_path = 'proper.audios';
+																																														break;
+																																														case 'video':
+																																														field_path = 'proper.videos';
+																																														break;
+																																														case 'background':
+																																														field_path = 'proper.background';
+																																														break;
+																																														default:
+																																														res.json({
+																																																							success: true,
+																																																							message: 'element type: '+type_element+' not known'
+																																																							});
+																																														return;
+																																														}
+																																														
+																																														db.collection('presentations'+req.user).update({'_id': objectId_pres, field_path+'.id': id_element}, {$set: {field_path+'.$' : new_element}}, function(err, doc){
+																																																																																													if(err) throw err;
+																																																																																													
+																																																																																													res.json({
+																																																																																																						success: true,
+																																																																	 																																					message: 'element replaced'
+																																																																																																						});
+																																																																																													db.close();
+																																																																																													});
+																																														});
+																							});
+
+
+//to test
+
+presentationRoutes.post('/[^/]+/element', function(req, res){
+																							
+																							MongoClient.connect(app.get('database'), function(err, db) {
+																																											if(err) throw err;
+																																											var id_pres = req.originalUrl.split("/")[4];
+																																											var id_element req.body.id;
+																																											
+																																											var objectId_pres = new ObjectID(id_pres);
+																																											var new_element = req.body.element;
+																																											
+																																											var field_path;
+																																											
+																																											switch(new_element.type) {
+																																											case 'text':
+																																											field_path = 'proper.texts';
+																																											break;
+																																											case 'frame':
+																																											field_path = 'proper.frames';
+																																											case 'image':
+																																											field_path = 'proper.images';
+																																											break;
+																																											case 'SVG':
+																																											field_path = 'proper.SVGs;
+																																											break;
+																																											case 'audio':
+																																											field_path = 'proper.audios';
+																																											break;
+																																											case 'video':
+																																											field_path = 'proper.videos';
+																																											break;
+																																											case 'background':
+																																											field_path = 'proper.background';
+																																											break;
+																																											default:
+																																											res.json({
+																																																				success: true,
+																																																				message: 'element type: '+type_element+' not known'
+																																																				});
+																																											return;
+																																											}
+																																											
+																																											db.collection('presentations'+req.user).update({'_id': objectId_pres}, {$push: {field_path : new_element}}, function(err, doc){
+																																																																																										if(err) throw err;
+																																																																																										
+																																																																																										res.json({
+																																																																																																			success: true,
+																																																																																																			message: 'element inserted '+type_element
+																																																																																																			});
+																																																																																										db.close();
+																																																																																										});
+																																											});
+																							});
+
+
+
 //==================
 // start the server
 //==================
 
 app.listen(port);
 console.log('Server listening at http//localhost: ' + port );
-
-
-
-
-
-
-
 
 
