@@ -1,17 +1,15 @@
-//=================
-// get the packages
-// ================
+//============
+// get modules
+// ===========
+
 var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
 var morgan     = require('morgan');
-
 var jwt    = require('jsonwebtoken');
 var config = require('./config');
-var User   = require('./models/user');
-var multer  = require('multer')
+var multer  = require('multer');
 var fs = require('fs');
-
 
 //==============
 // configuration
@@ -24,7 +22,7 @@ app.set('SuperSecret', config.secret);
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
 
-app.use(morgan('dev')); // log to console
+app.use(morgan('dev'));
 
 var MongoClient = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID
@@ -32,6 +30,10 @@ var ObjectID = require('mongodb').ObjectID
 //===============
 // authentication
 //===============
+
+var Authenticate = require('./source/account/Authenticate.js');
+var Register = require('./source/account/Register.js');
+var Changepassword = require('./source/account/ChangePassword.js');
 
 app.get('/', function(req, res) {
         res.send('Wellcome! to get a public file: /publicpages, account staff: /account, private services: /private'
@@ -42,112 +44,11 @@ app.get('/account', function(req, res) {
 								res.send('to register: ~/register, to authenticate: ~/authenticate, to change password: ~/changepassword');
 								});
 
-app.get('/account/authenticate', function(req, res) {
-        var header=req.headers['authorization']||'null';
-        parts=header.split(/:/);
-        user=parts[0];
-        pass=parts[1];
-        
-        MongoClient.connect(app.get('database'), function(err, db) {
-                            if(err) throw err;
-                            
-                            db.collection('users').findOne({'username': user, 'password': pass}, function(err, doc) {
-                                                           if(err) throw err;
-                                                           if(doc == null){
-                                                           db.close();
-                                                           res.status(400);
-                                                           res.json({
-																																																																				success: false,
-																																																																				message: 'Username or password incorrect'
-																																																																				});
-                                                           }
-                                                           else{
-                                                           var token = jwt.sign({user: user}, app.get('SuperSecret'), {
-                                                                                expiresInMinutes: 1440 // expires in 24 hours
-                                                                                });
-                                                           
-                                                           res.writeHead(200, {"Content-Type": "application/json", "authorization": token});
-                                                           var json = JSON.stringify({
-                                                                                     success: true,
-                                                                                     message: 'Enjoy your token!',
-                                                                                     });
-                                                           res.end(json);
-                                                           }
-																																																											});
-                            
-                            console.dir('called findOne()');
-																												});
+app.get('/account/authenticate', Authenticate.get );
 
-								});
+app.post('/account/register', Register.post );
 
-app.post('/account/register', function(req, res) {
-         var header=req.headers['authorization']||'null';
-         parts=header.split(/:/);
-         user=parts[0];
-         pass=parts[1];
-         
-         MongoClient.connect(app.get('database'), function(err, db) {
-																													if(err) throw err;
-																													db.collection('users').findOne({'username': user}, function(err, doc) {
-																																																												if(err) throw err;
-																																																												if(doc == null){
-																																																												db.collection('users').insert({'username': user, 'password': pass}, function(err, doc){
-																																																																																										if(err) throw err;
-																																																																																										console.dir('called insert()');
-																																																																																										res.json({
-																																																																																																			success: true,
-																																																																																																			message: 'User '+user+' registered'
-																																																																																																			});
-																																																																																										fs.mkdirSync(__dirname+'/files/'+user);
-																																																																																										fs.mkdirSync(__dirname+'/files/'+user+'/image');
-																																																																																										fs.mkdirSync(__dirname+'/files/'+user+'/video');
-																																																																																										fs.mkdirSync(__dirname+'/files/'+user+'/audio');
-																																																																																										});
-																																																												}
-																																																												else{
-																																																												res.status(400);
-																																																												res.json({
-																																																																					success: false,
-																																																																					message: 'Username already registered'
-																																																																					});
-																																																												}
-																																																												
-																																																												});
-																													});
-									});
-
-app.post('/account/changepassword', function(req, res) {
-         var header=req.headers['authorization']||'null';
-         parts=header.split(/:/);
-         user=parts[0];
-         pass=parts[1];
-									passNew=parts[2];
-         
-         MongoClient.connect(app.get('database'), function(err, db) {
-																													if(err) throw err;
-																													db.collection('users').findOne({'username': user, 'password': pass}, function(err, doc) {
-																																																												if(err) throw err;
-																																																												if(doc != null){
-																																																												db.collection('users').update({'username': user}, {$set: {'password' : passNew }}, function(err, doc){
-																																																																																										if(err) throw err;
-																																																																																										console.dir('called udpate()');
-																																																																																										res.json({
-																																																																																																			success: true,
-																																																																																																			message: 'Password updated'
-																																																																																																			});
-																																																																																										});
-																																																												}
-																																																												else{
-																																																												res.status(400);
-																																																												res.json({
-																																																																					success: false,
-																																																																					message: 'Username or password not correct'
-																																																																					});
-																																																												}
-																																																												
-																																																												});
-																													});
-									});
+app.post('/account/changepassword', Changepassword.post );
 
 //==================
 // htmlpages_server
@@ -162,678 +63,134 @@ app.use('/private/htdocs', express.static('private_html'));
 // token_middleware
 //==================
 
+var Middleware = require('./source/private/tokenMiddleware.js');
+
 var privateRoutes = express.Router();
 app.use('/private', privateRoutes);
 
-privateRoutes.use(function(req, res, next) {
-																		
-																		var token=req.headers['authorization'];
-																		if (token) {
-																		
-																		// verifies secret and checks exp
-																		jwt.verify(token, app.get('SuperSecret'), function(err, decoded) {
-																													if (err) {
-																													res.status(400);
-																													return res.json({ success: false, message: 'Failed to authenticate token' });
-																													} else {
-																													// save the token
-																													req.user = decoded.user;
-																													next();
-																													}
-																													});
-																		} else {
-																		return res.status(403).send({
-																																														success: false,
-																																														message: 'No token provided.'
-																																														});
-																		}
-																		});
-
+privateRoutes.use(Middleware.use);
 
 //==================
 // files_server
 //==================
 
-
 var filesRoutes = express.Router();
 app.use('/private/api/files', filesRoutes);
 
-filesRoutes.get('/image', function(req, res){ // scorri tutti i file nella cartella e ritorna una json dei nomi
-																var file_names = fs.readdirSync(__dirname+'/files/'+req.user+'/image');
-																res.json({
-																									success: true,
-																									message: 'correctly get files names',
-																									names: file_names
-																									});
-																});
+var ImagesMeta = require('./source/private/files/images/ImagesMeta.js');
+filesRoutes.get('/image', ImagesMeta.get);
 
-filesRoutes.get('/video', function(req, res){
-																var file_names = fs.readdirSync(__dirname+'/files/'+req.user+'/video');
-																res.json({
-																									success: true,
-																									message: 'correctly get files names',
-																									names: file_names
-																									});
-																});
+var VideosMeta = require('./source/private/files/videos/VideosMeta.js');
+filesRoutes.get('/video', VideosMeta.get);
 
-filesRoutes.get('/audio', function(req, res){
-																var file_names = fs.readdirSync(__dirname+'/files/'+req.user+'/audio');
-																res.json({
-																									success: true,
-																									message: 'correctly get files names',
-																									names: file_names
-																									});
-																});
+var AudiosMeta = require('./source/private/files/audios/AudiosMeta.js');
+filesRoutes.get('/audio', AudiosMeta.get );
+
 //======
-//delete
+// Image
 
-filesRoutes.delete('/image/[^/]+', function(req, res){
-																			var dir= __dirname+'/files/'+req.user+'/image/';
-																			var name = req.originalUrl.split("/")[5];
-																			var there_is = fs.existsSync(dir+name);
-																			
-																			if(there_is){
-																			fs.unlinkSync(dir+name);
-																			res.json({
-																												success: true,
-																												message: 'correctly delete file '+dir+name
-																												});
+var Image = require('./source/private/files/images/Image.js');
 
-																			}
-																			else{
-																			res.json({
-																												success: false,
-																												message: 'file '+dir+name+' does not exists'
-																												});
-																			}
-																			
-																			});
+filesRoutes.delete('/image/[^/]+', Image.delete);
 
-filesRoutes.delete('/video/[^/]+', function(req, res){
-																			var dir= __dirname+'/files/'+req.user+'/video/';
-																			var name = req.originalUrl.split("/")[5];
-																			var there_is = fs.existsSync(dir+name);
-																			
-																			if(there_is){
-																			fs.unlinkSync(dir+name);
-																			res.json({
-																												success: true,
-																												message: 'correctly delete file '+dir+name
-																												});
-																			
-																			}
-																			else{
-																			res.json({
-																												success: false,
-																												message: 'file '+dir+name+' does not exists'
-																												});
-																			}
-																			
-																			});
+filesRoutes.get('/image/[^/]+', Image.get );
 
-filesRoutes.delete('/audio/[^/]+', function(req, res){
-																			var dir= __dirname+'/files/'+req.user+'/audio/';
-																			var name = req.originalUrl.split("/")[5];
-																			var there_is = fs.existsSync(dir+name);
-																			
-																			if(there_is){
-																			fs.unlinkSync(dir+name);
-																			res.json({
-																												success: true,
-																												message: 'correctly delete file '+dir+name
-																												});
-																			
-																			}
-																			else{
-																			res.json({
-																												success: false,
-																												message: 'file '+dir+name+' does not exists'
-																												});
-																			}
-																			
-																			});
-//====
-// get
+filesRoutes.post('/image/[^/]+', Image.post );
 
-filesRoutes.get('/image/[^/]+', function (req, res) {
-																
-																var options = {
-																root: __dirname + '/files/'+req.user+'/image',
-																dotfiles: 'deny',
-																headers: {
-																'x-timestamp': Date.now(),
-																'x-sent': true
-																}
-																};
-								
-																var file_name = req.originalUrl.split("/")[5];
-																var there_is = fs.existsSync(__dirname+'/files/'+req.user+'/image/'+file_name);
+//======
+// Video
 
-																if(there_is == false){
-																res.status(404).send({
-																																					success: false,
-																																					message: 'File not found'
-																																					});
-																}
-																else{
-																res.sendFile(file_name, options, function (err) {
-																													if (err) {
-																													console.log(err);
-																													res.status(err.status).end();
-																													}
-																													else {
-																													console.log('Sent:', file_name);
-																													}
-																													});
-																}
-																});
+var Video = require('./source/private/files/videos/Video.js');
+
+filesRoutes.delete('/video/[^/]+', Video.delete );
+
+filesRoutes.get('/video/[^/]+', Video.get );
+
+filesRoutes.post('/video/[^/]+', Video.post );
+
+//======
+// Audio
+
+var Audio = require('./source/private/files/audios/Audio.js');
+
+filesRoutes.delete('/audio/[^/]+', Audio.delete );
+
+filesRoutes.get('/audio/[^/]+', Audio.get );
+
+filesRoutes.post('/audio/[^/]+', Audio.post );
+
+//============
+// RenameImage
+
+var RenameImage = require('./source/private/files/images/RenameImage.js');
+
+filesRoutes.post('/image/[^/]+/[^/]+', RenameImage.post );
+
+//============
+// RenameAudio
+
+var RenameAudio = require('./source/private/files/audios/RenameAudio.js');
+
+filesRoutes.post('/audio/[^/]+/[^/]+', RenameAudio.post );
+
+//============
+// RenameVideo
+
+var RenameVideo = require('./source/private/files/videos/RenameVideo.js');
+
+filesRoutes.post('/video/[^/]+/[^/]+', RenameVideo.post );
 
 
-filesRoutes.get('/audio/[^/]+', function (req, res) {
-																
-																var options = {
-																root: __dirname + '/files/'+req.user+'/audio',
-																dotfiles: 'deny',
-																headers: {
-																'x-timestamp': Date.now(),
-																'x-sent': true
-																}
-																};
-																
-																var file_name = req.originalUrl.split("/")[5];
-																var there_is = fs.existsSync(__dirname+'/files/'+req.user+'/audio/'+file_name);
-																
-																if(there_is == false){
-																res.status(404).send({
-																																					success: false,
-																																					message: 'File not found'
-																																					});
-																}
-																else{
-																res.sendFile(file_name, options, function (err) {
-																													if (err) {
-																													console.log(err);
-																													res.status(err.status).end();
-																													}
-																													else {
-																													console.log('Sent:', file_name);
-																													}
-																													});
-																}
-																});
-
-
-filesRoutes.get('/video/[^/]+', function (req, res) {
-																
-																var options = {
-																root: __dirname + '/files/'+req.user+'/video',
-																dotfiles: 'deny',
-																headers: {
-																'x-timestamp': Date.now(),
-																'x-sent': true
-																}
-																};
-																
-																var file_name = req.originalUrl.split("/")[5];
-																var there_is = fs.existsSync(__dirname+'/files/'+req.user+'/video/'+file_name);
-																
-																if(there_is == false){
-																res.status(404).send({
-																																					success: false,
-																																					message: 'File not found'
-																																					});
-																}
-																else{
-																res.sendFile(file_name, options, function (err) {
-																													if (err) {
-																													console.log(err);
-																													res.status(err.status).end();
-																													}
-																													else {
-																													console.log('Sent:', file_name);
-																													}
-																													});
-																}
-																});
-
-
-//=====
-// post
-
-filesRoutes.post('/image/[^/]+',[ multer({
-																																									dest: __dirname+'/files/',
-																																									
-																																									changeDest: function(dest, req, res) {
-																																									var newDestination = dest + req.user + '/image';
-																																									return newDestination;
-																																									},
-																																									
-																																									rename: function (fieldname, filename, req, res) {
-																																									var new_name = req.originalUrl.split("/")[5];
-																																									return new_name; }
-																																									
-																																									}),
-																																	function(req, res){
-																																	console.log(req.body) // form fields
-																																	console.log(req.files) // form files
-																																	res.status(204).end()
-																																	}]);
-
-filesRoutes.post('/audio/[^/]+',[ multer({
-																																									dest: __dirname+'/files/',
-																																									
-																																									changeDest: function(dest, req, res) {
-																																									var newDestination = dest + req.user + '/audio';
-																																									return newDestination;
-																																									},
-																																									
-																																									rename: function (fieldname, filename, req, res) {
-																																									var new_name = req.originalUrl.split("/")[5];
-																																									return new_name; }
-																																									
-																																									}),
-																																	function(req, res){
-																																	console.log(req.body) // form fields
-																																	console.log(req.files) // form files
-																																	res.status(204).end()
-																																	}]);
-
-filesRoutes.post('/video/[^/]+',[ multer({
-																																									dest: __dirname+'/files/',
-																																									
-																																									changeDest: function(dest, req, res) {
-																																									var newDestination = dest + req.user + '/video';
-																																									return newDestination;
-																																									},
-																																									
-																																									
-																																									rename: function (fieldname, filename, req, res) {
-																																									var new_name = req.originalUrl.split("/")[5];
-																																									return new_name; }
-																																									
-																																									}),
-																																	function(req, res){
-																																	console.log(req.body) // form fields
-																																	console.log(req.files) // form files
-																																	res.status(204).end()
-																																	}]);
-
-//=======
-// rename
-
-filesRoutes.post('/image/[^/]+/[^/]+', function(req, res){
-								
-									var dir= __dirname+'/files/'+req.user+'/image/';
-									var name = req.originalUrl.split("/")[5];
-									var new_name = req.originalUrl.split("/")[6];
-									var there_is = fs.existsSync(dir+name);
-									if(there_is){
-									fs.renameSync(dir+name, dir+new_name);
-									res.json({
-																		success: true,
-																		message: 'correctly renamed file '+dir+name+' in '+dir+new_name
-																		});
-									
-									}
-									else{
-									res.json({
-																		success: false,
-																		message: 'file '+dir+name+' does not exists'
-																		});
-									}
-									});
-
-filesRoutes.post('/audio/[^/]+/[^/]+', function(req, res){
-																	
-																	var dir= __dirname+'/files/'+req.user+'/audio/';
-																	var name = req.originalUrl.split("/")[5];
-																	var new_name = req.originalUrl.split("/")[6];
-																	var there_is = fs.existsSync(dir+name);
-																	if(there_is){
-																	fs.renameSync(dir+name, dir+new_name);
-																	res.json({
-																										success: true,
-																										message: 'correctly renamed file '+dir+name+' in '+dir+new_name
-																										});
-																	
-																	}
-																	else{
-																	res.json({
-																										success: false,
-																										message: 'file '+dir+name+' does not exists'
-																										});
-																	}
-																	});
-
-filesRoutes.post('/video/[^/]+/[^/]+', function(req, res){
-																	
-																	var dir= __dirname+'/files/'+req.user+'/video/';
-																	var name = req.originalUrl.split("/")[5];
-																	var new_name = req.originalUrl.split("/")[6];
-																	var there_is = fs.existsSync(dir+name);
-																	if(there_is){
-																	fs.renameSync(dir+name, dir+new_name);
-																	res.json({
-																										success: true,
-																										message: 'correctly renamed file '+dir+name+' in '+dir+new_name
-																										});
-																	
-																	}
-																	else{
-																	res.json({
-																										success: false,
-																										message: 'file '+dir+name+' does not exists'
-																										});
-																	}
-																	});
-
-
-//=====================
+//=====================//////////////////////////////////////////////////////////////////////////////////////////
 // presentations_server
-//=====================
+//=====================///////////////////////////////////////////////////////////////////////////////////////////
 
 var presentationRoutes = express.Router();
 app.use('/private/api/presentations', presentationRoutes);
 
-presentationRoutes.get('/', function(req, res){
-																							
-																							MongoClient.connect(app.get('database'), function(err, db) {
-																																											if(err) throw err;
-																																											
-																																											db.collection('presentations'+req.user).find().toArray(function(err, doc){
-																																																																																																		if(err) throw err;
-																																																																																																		message = [];
-																																																																																																		doc.forEach(function(pres){
-																																																																																																														message.push(pres.meta);
-																																																																																																														});
-																																																																																																		
-																																																																																																		res.json({
-																																																																																																											success: true,
-																																																																																																											message: message
-																																																																																																											});
-																																																																																																		db.close();
+var PresentationMeta = require('./source/private/presentations/PresentationMeta.js');
 
-																																																																																																		});
-																																											});
-																							});
+presentationRoutes.get('/', PresentationMeta.get );
 
+var NewPresentation = require('./source/private/presentations/new/NewPresentation.js');
 
-presentationRoutes.get('/[^/]+', function(req, res){
-																							
-																							MongoClient.connect(app.get('database'), function(err, db) {
-																																											if(err) throw err;
-																																											var id_pres = req.originalUrl.split("/")[4];
-																																											var objectId = new ObjectID(id_pres);
-																																											db.collection('presentations'+req.user).findOne({ '_id': objectId }, function(err, doc){
-																																																																																											if(err) throw err;
-																																																																																											
-																																																																																											res.json({
-																																																																																																				success: true,
-																																																																																																				message: doc
-																																																																																																				});
-																																																																																											db.close();
-																																																																																											
-																																																																																											});
-																																											});
-																							});
+presentationRoutes.post('/new/[^/]+', NewPresentation.post );
 
-presentationRoutes.delete('/[^/]+', function(req, res){
-																							
-																							MongoClient.connect(app.get('database'), function(err, db) {
-																																											if(err) throw err;
-																																											var id_pres = req.originalUrl.split("/")[4];
-																																											var objectId = new ObjectID(id_pres);
-																																											db.collection('presentations'+req.user).remove({ '_id': objectId }, function(err, removed){
-																																																																																										if(err) throw err;
-																																																																																										
-																																																																																										res.json({
-																																																																																																			success: true,
-																																																																																																			message: 'removed presentation _id: '+id_pres
-																																																																																																			});
-																																																																																										db.close();
-																																																																																										
-																																																																																										});
-																																											});
-																										});
+var NewCopyPresentation = require('./source/private/presentations/new/NewCopyPresentation.js');
 
-presentationRoutes.post('/new/[^/]+', function(req, res){
-																										
-																										MongoClient.connect(app.get('database'), function(err, db) {
-																																														if(err) throw err;
-																																														var name_pres = req.originalUrl.split("/")[5];
-																																														var new_presentation = {'meta': {'name': name_pres}, 'proper': {} };
-																																														db.collection('presentations'+req.user).insert(new_presentation, function(err, result){
-																																																																																													if(err) throw err;
-																																																																																													res.json({
-																																																																																																						success: true,
-																																																																																																						message: 'inserted presentation',
-																																																																																																						id_pres: result.ops[0]._id.toString()
-																																																																																																						});
-																																																																																													db.close();
-																																																																																													});
-																																														});
-																								});
+presentationRoutes.post('/new/[^/]+/[^/]+', NewCopyPresentation.post );
 
-presentationRoutes.post('/new/[^/]+/[^/]+', function(req, res){
-																								
-																								MongoClient.connect(app.get('database'), function(err, db) {
-																																												if(err) throw err;
-																																												var name_pres = req.originalUrl.split("/")[5];
-																																												var id_tocopy = req.originalUrl.split("/")[6];
-																																												var objectId = new ObjectID(id_tocopy);
-																																												db.collection('presentations'+req.user).findOne({ '_id': objectId }, function(err, doc){
-																																																																																												if(err) throw err;
-																																																																																												var new_presentation = doc;
-																																																																																												new_presentation.meta.name = name_pres;
-																																																																																												delete new_presentation._id;
-																																																																																												db.collection('presentations'+req.user).insert(new_presentation, function(err, result){
-																																																																																																																																											if(err) throw err;
-																																																																																																																																											res.json({
-																																																																																																																																																				success: true,
-																																																																																																																																																				message: 'inserted presentation',
-																																																																																																																																																				id_pres: result.ops[0]._id.toString()
-																																																																																																																																																				});
-																																																																																																																																											db.close();
-																																																																																																																																											});
-																																																																																												});
+//=============
+// presentation
 
-																																																																																												
-																																												
-																																																																																												
-																																												});
-																								});
+var Presentation = require('./source/private/presentations/presentation/Presentation.js');
 
-presentationRoutes.post('/[^/]+/rename/[^/]+', function(req, res){
-																										
-																										MongoClient.connect(app.get('database'), function(err, db) {
-																																														if(err) throw err;
-																																														var id_pres = req.originalUrl.split("/")[4];
-																																														var name_pres = req.originalUrl.split("/")[5];
+presentationRoutes.get('/[^/]+', Presentation.get );
 
-																																														var objectId = new ObjectID(id_pres);
-																																														db.collection('presentations'+req.user).update({ '_id': objectId }, {$set: { 'meta.name' : name_pres }}, function(err, doc){
-																																																																																													if(err) throw err;
+presentationRoutes.delete('/[^/]+', Presentation.delete );
 
-																																																																																													res.json({
-																																																																																																						success: true,
-																																																																																																						message: 'renamed presentation: '+name_pres
-																																																																																																						});
-																																																																																													db.close();
-																																																																																													
-																																																																																													});
-																																														});
-																								});
+//=======
+// rename
 
-presentationRoutes.delete('/[^/]+/delete/[^/]+/[^/]+', function(req, res){
-																								
-																								MongoClient.connect(app.get('database'), function(err, db) {
-																																												if(err) throw err;
-																																												var id_pres = req.originalUrl.split("/")[4];
-																																												var type_element = req.originalUrl.split("/")[6];
-																																												var id_element = req.originalUrl.split("/")[7];
-																																												
-																																												var objectId_pres = new ObjectID(id_pres);
-																																												var field_path;
-																																												
-																																												switch(type_element) {
-																																												case 'text':
-																																												field_path = 'proper.texts';
-																																												break;
-																																												case 'frame':
-																																												field_path = 'proper.frames';
-																																												case 'image':
-																																												field_path = 'proper.images';
-																																												break;
-																																												case 'SVG':
-																																												field_path = 'proper.SVGs';
-																																												break;
-																																												case 'audio':
-																																												field_path = 'proper.audios';
-																																												break;
-																																												case 'video':
-																																												field_path = 'proper.videos';
-																																												break;
-																																												case 'background':
-																																												field_path = 'proper.background';
-																																												break;
-																																												default:
-																																												res.json({
-																																																					success: true,
-																																																					message: 'element type: '+type_element+' not known'
-																																																					});
-																																												return;
-																																												}
-																																												
-																																												db.collection('presentations'+req.user).update({'_id': objectId_pres}, {$pull : {field_path : {"id" : id_element}}}, function(err, doc){
-																																																																																											if(err) throw err;
-																																																																																											res.json({
-																																																																																																				success: true,
-																																																																																																				message: 'deleted element'
-																																																																																																				});
-																																																																																											db.close();
-																																																																																											});
-																																												});
-																								});
+var RenamePresentation = require('./source/private/presentations/presentation/RenamePresentation.js');
 
-//to test
-presentationRoutes.put('/[^/]+/element', function(req, res){
-																										
-																										MongoClient.connect(app.get('database'), function(err, db) {
-																																														if(err) throw err;
-																																														var id_pres = req.originalUrl.split("/")[4];
-																																														var id_element = req.body.id;
-																																														
-																																														var objectId_pres = new ObjectID(id_pres);
-																																														var new_element = req.body.element;
-																																														
-																																														var field_path;
-																																														
-																																														switch(new_element.type) {
-																																														case 'text':
-																																														field_path = 'proper.texts';
-																																														break;
-																																														case 'frame':
-																																														field_path = 'proper.frames';
-																																														case 'image':
-																																														field_path = 'proper.images';
-																																														break;
-																																														case 'SVG':
-																																														field_path = 'proper.SVGs';
-																																														break;
-																																														case 'audio':
-																																														field_path = 'proper.audios';
-																																														break;
-																																														case 'video':
-																																														field_path = 'proper.videos';
-																																														break;
-																																														case 'background':
-																																														field_path = 'proper.background';
-																																														break;
-																																														default:
-																																														res.json({
-																																																							success: true,
-																																																							message: 'element type: '+type_element+' not known'
-																																																							});
-																																														return;
-																																														}
-																																														var path_to_id_element = field_path+'.id';
-																																														var path_to_element = field_path/*+'.$'*/;
-																																														var to_set = {};
-																																														to_set[path_to_element] = new_element;
-																																														
-																																														db.collection('presentations'+req.user).update({'_id': objectId_pres, path_to_id_element : id_element}, {$set: to_set }, function(err, doc){
-																																																																																													if(err) throw err;
-																																																																																													
-																																																																																													res.json({
-																																																																																																						success: true,
-																																																																	 																																					message: 'element replaced'
-																																																																																																						});
-																																																																																													db.close();
-																																																																																													});
-																																														});
-																							});
+presentationRoutes.post('/[^/]+/rename/[^/]+', RenamePresentation.post );
 
+//===============
+// delete element
 
-presentationRoutes.post('/[^/]+/element', function(req, res){
-																							
-																							MongoClient.connect(app.get('database'), function(err, db) {
-																																											if(err) throw err;
-																																											var id_pres = req.originalUrl.split("/")[4];
-																																											var id_element = req.body.id;
-																																											
-																																											var objectId_pres = new ObjectID(id_pres);
-																																											var new_element = req.body.element;
-																																											if(new_element == null){ res.json({
-																																																																												success: false,
-																																																																												message: 'body.element not sent'
-																																																																												});
-																																											return;
-																																											}
-																																											
-																																											var field_path;
-																																											
-																																											switch(new_element.type) {
-																																											case 'text':
-																																											field_path = 'proper.texts';
-																																											break;
-																																											case 'frame':
-																																											field_path = 'proper.frames';
-																																											case 'image':
-																																											field_path = 'proper.images';
-																																											break;
-																																											case 'SVG':
-																																											field_path = 'proper.SVGs';
-																																											break;
-																																											case 'audio':
-																																											field_path = 'proper.audios';
-																																											break;
-																																											case 'video':
-																																											field_path = 'proper.videos';
-																																											break;
-																																											case 'background':
-																																											field_path = 'proper.background';
-																																											break;
-																																											default:
-																																											res.json({
-																																																				success: true,
-																																																				message: 'element type: '+type_element+' not known'
-																																																				});
-																																											return;
-																																											}
-																																											var to_push = {};
-																																											to_push[field_path] = new_element;
-																																											
-																																											db.collection('presentations'+req.user).update({'_id': objectId_pres}, {$push : to_push},{'upsert' : true},  function(err, doc){
-																																																																																										if(err) throw err;
-																																																																																										
-																																																																																										res.json({
-																																																																																																			success: true,
-																																																																																																			message: 'element inserted '+new_element.type																																																																																																			});
-																																																																																										db.close();
-																																																																																										});
-																																											});
-																							});
+var DeleteElement = require('./source/private/presentations/presentation/DeleteElement.js');
 
+presentationRoutes.delete('/[^/]+/delete/[^/]+/[^/]+', DeleteElement.delete );
+
+//===============
+// PresentationElement
+
+var PresentationElement = require('./source/private/presentations/presentation/PresentationElement.js');
+
+presentationRoutes.put('/[^/]+/element', PresentationElement.put );
+
+presentationRoutes.post('/[^/]+/element', PresentationElement.post );
 
 
 //==================
