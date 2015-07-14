@@ -9,7 +9,7 @@ var fs = require('fs');
 //=========
 var post = function(req, res){
 	
-	var dir= __dirname+'/files/'+req.user+'/image/';
+	var dir= __dirname+'/../../../../files/'+req.user+'/image/';
 	var name = req.originalUrl.split("/")[5];
 	var new_name = req.originalUrl.split("/")[6];
 	var there_is = fs.existsSync(dir+name);

@@ -10,7 +10,7 @@ var multer  = require('multer')
 //=========
 
 var del = function(req, res){
-	var dir= __dirname+'/files/'+req.user+'/video/';
+	var dir= __dirname+'/../../../../files/'+req.user+'/video/';
 	var name = req.originalUrl.split("/")[5];
 	var there_is = fs.existsSync(dir+name);
 	
@@ -34,7 +34,7 @@ var del = function(req, res){
 var get = function (req, res) {
 	
 	var options = {
-	root: __dirname + '/files/'+req.user+'/video',
+	root: __dirname + '/../../../../files/'+req.user+'/video',
 	dotfiles: 'deny',
 	headers: {
 		'x-timestamp': Date.now(),

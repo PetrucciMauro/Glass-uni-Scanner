@@ -8,7 +8,7 @@ var fs = require('fs');
 // resource
 //=========
 var get = function(req, res){
-	var file_names = fs.readdirSync(__dirname+'/files/'+req.user+'/audio');
+	var file_names = fs.readdirSync(__dirname+'/../../../../files/'+req.user+'/audio');
 	res.json({
 										success: true,
 										message: 'correctly get files names',

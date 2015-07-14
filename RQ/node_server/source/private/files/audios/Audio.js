@@ -10,7 +10,7 @@ var multer  = require('multer')
 //=========
 
 var del = function(req, res){
-	var dir= __dirname+'/files/'+req.user+'/audio/';
+	var dir= __dirname+'/../../../../files/'+req.user+'/audio/';
 	var name = req.originalUrl.split("/")[5];
 	var there_is = fs.existsSync(dir+name);
 	
