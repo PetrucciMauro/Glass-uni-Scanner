@@ -77,24 +77,6 @@
 				\item \textbf{Tipo}: Boolean;
 				\item \textbf{Descrizione}: è settata a false di default, indica se il comando è stato eseguito.
 			\end{itemize}
-			\item \textbf{xIndex}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle x in cui si deve inserire l'oggetto.
-			\end{itemize}
-			\item \textbf{yIndex}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle y in cui si deve inserire il testo.
-			\end{itemize}
-			\item \textbf{rotation}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: rappresenta i gradi di rotazione che deve avere l’oggetto inserito.
-			\end{itemize}
 		\end{itemize}
 		
 		\noindent{\textbf{Metodi}}
@@ -1099,5 +1081,171 @@
 			\end{itemize}
 		\end{itemize}
 }
+\subsubsubsection{Classe ConcreteAddToMainPathCommand}{
+	\label{addFrameToMainPathCommand}
+	\textbf{Funzione}\\
+		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+   	\textbf{Scope}\\
+		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteAddToMainPathCommand.\\
+	\textbf{Utilizzo}\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id del frame da inserire nella presentazione e la sua posizione all'interno del percorso principale.\\
+			
+			\noindent{\textbf{Metodi}}
+			\begin{itemize}
+				\item \textbf{concreteAddToMainPathCommand}(spec)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: costruisce l’oggetto concreteAddToMainPathCommand.
+				\end{itemize}
+				\item \textbf{doAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(spec) passando come parametro l'oggetto spec. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateMainPath().
+				\end{itemize}
+				\item \textbf{undoAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameToMainPath(id) passando come parametro il campo id del parametro spec. Invoca il metodo updateMainPath() di EditController.
+				\end{itemize}
+			\end{itemize}
+			}
+			
+\subsubsubsection{Classe concreteRemoveFromMainPathCommand}{
+	\label{addFrameToMainPathCommand}
+	\textbf{Funzione}\\
+		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+   	\textbf{Scope}\\
+		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteRemoveFromMainPathCommand.\\
+	\textbf{Utilizzo}\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id del frame da rimuovere dal percorso principale della presentazione.\\
+			\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{oldFrame}
+			\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Oggetto;
+			\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri che indicano la posizione del frame all'interno del percorso originale prima della rimozione:
+			\begin{itemize}
+			\item \textbf{id}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Int;
+				\item \textbf{Descrizione}: indica l'id del frame da rimuovere all'interno del percorso principale.
+			\end{itemize}
+			\item \textbf{pos}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Integer;
+				\item \textbf{Descrizione}: indica la posizione del frame nel percorso principale, prima dell'avvenuta rimozione.
+			\end{itemize}
+		\end{itemize}
+			\end{itemize}
+			\end{itemize}
+			\noindent{\textbf{Metodi}}
+			\begin{itemize}
+				\item \textbf{concreteRemoveFromMainPathCommand}(spec)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: costruisce l’oggetto concreteRemoveFromMainPathCommand.
+				\end{itemize}
+				\item \textbf{doAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameFromMainPath(spec) passando come parametro l'oggetto spec.  removeFrameFromMainPath ritorna un oggetto a cui concreteRemoveFromMainPathCommand inizializza oldFrame. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateMainPath().
+				\end{itemize}
+				\item \textbf{undoAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(id) passando come parametro l'oggetto oldFrame. Invoca il metodo updateMainPath() di EditController.
+				\end{itemize}
+			\end{itemize}
+			}
+\subsubsubsection{Classe concreteNewChoicePathCommand}{
+	\label{addFrameToMainPathCommand}
+	\textbf{Funzione}\\
+		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+   	\textbf{Scope}\\
+		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteNewChoicePathCommand.\\
+	\textbf{Utilizzo}\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da cui parte il nuovo percorso scelta.\\
+			\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{PathId}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Int;
+				\item \textbf{Descrizione}: indica l'id del percorso.
+			\end{itemize}
+			\noindent{\textbf{Metodi}}
+			\begin{itemize}
+				\item \textbf{concreteNewChoicePathCommand}(id: integer)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: costruisce l’oggetto concreteNewChoicePathCommand.
+				\end{itemize}
+				\item \textbf{doAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addChoicePath(spec) passando come parametro il valore id ricevuto come parametro.  addChoicePath ritorna il valore a cui viene inizializzato pathId. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateChoicePath(pathId).
+				\end{itemize}
+				\item \textbf{undoAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::deleteChoicePath(pathId) passando come parametro il valore pathId. Invoca il metodo deleteChoicePath(pathId) di EditController.
+				\end{itemize}
+			\end{itemize}
+			}
+
+\subsubsubsection{Classe concreteDeleteChoicePathCommand}{
+	\label{addFrameToMainPathCommand}
+	\textbf{Funzione}\\
+		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+   	\textbf{Scope}\\
+		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteDeleteChoicePathCommand.\\
+	\textbf{Utilizzo}\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da cui parte il nuovo percorso scelta.\\
+			\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{oldPath}
+			\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Oggetto;
+			\item \textbf{Descrizione}: copia del percorso eliminato.
+			\end{itemize}
+			\end{itemize}
+			\noindent{\textbf{Metodi}}
+			\begin{itemize}
+				\item \textbf{concreteDeleteChoicePathCommand}(spec: object)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: costruisce l’oggetto concreteDeleteChoicePathCommand.
+				\end{itemize}
+				\item \textbf{doAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::deleteChoicePath(pathId) passando come parametro il valore spec.pathId.  deleteChoicePath ritorna la copia del percorso rimosso, a cui viene inizializzato oldPath. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateChoicePath(pathId).
+				\end{itemize}
+				\item \textbf{undoAction}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addChoicePath(spec) passando come parametro l'oggetto oldPath. Invoca il metodo addChoicePath(spec) di EditController.
+				\end{itemize}
+			\end{itemize}
+			}
+
+
+
 }
 }
