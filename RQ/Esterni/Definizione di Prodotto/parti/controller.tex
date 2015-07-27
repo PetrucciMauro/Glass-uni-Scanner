@@ -1,9 +1,22 @@
-\section{Package Premi::Controller}{
+\section {Specifica classi del front-end}
+\subsection {Package Premi::Services}
+\label{sec:services}
+\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, compito che poi sarà utilizzato all’interno di una o più parti dell’applicazione.\\\\
+\textbf{\relaz}: Comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.\\\\
+\subsubsection{Services::Main}
+\subsubsection{Services::Utils}
+\subsubsection{Services::SharedData}
+\subsubsection{Services::ToPages}
+
+
+\subsection{Package Premi::Controller}{
 		\label{sec:controller}
 		Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::[nome package].\\\\
 		\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
 		\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
-		\subsection{Controller::IndexController}{
+		\subsubsection{Controller::HeaderController}
+		
+		\subsubsection{Controller::AccessController}{
 				\label{sub:indexcontroller}
 				\textbf{Funzione}\\
 					\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
@@ -24,7 +37,7 @@
 					\item +goHome(): metodo che reindirizza alla pagina View::Pages::Home.
 				\end{itemize}
 			}
-			\subsection{Controller::HomeController}{
+			\subsubsection{Controller::HomeController}{
 					\label{sub:homecontroller}
 					\textbf{Funzione}\\
 					\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina View::Pages::Home.\\
@@ -54,29 +67,25 @@
 						\item +newSlideShow(): metodo che richiama [[[[[[[[[[METODO MODEL CREAZIONE PRESENTAZIONE]]]]]]]]]] per la creazione di una nuova presentazione del database; se la creazione è andata a buon fine richiamerà il metodo goEdit(string id), passando l'id della nuova presentazione, in modo da entrare in modalità modifica.
 					\end{itemize}
 				}
-				\subsection{Controller::ProfileController}{
+				\subsubsection{Controller::ProfileController}{
 					\textbf{Funzione}\\
-					\indent Questa classe consentirà la modifica dei dati personali dell'utente.\\\\
+					\indent Questa classe gestirà le operazioni e la logica applicativa riguardante la pagina profilo di un utente..\\\\
 					\textbf{Relazioni d'uso con altri moduli}\\
 					\indent Questa classe utilizzerà le seguenti classi:
 					\begin{itemize}
-						\item Model::ApacheRelations::FileManager; [[[[[[[[[[NOOOOOOO]]]]]]]]]]
-						\item Model::MongoRelations::AccessControl::Authentication.
+						\item Model::MongoRelations::AccessControl::Authentication((DA COMPLETARE)).
 					\end{itemize}
 					\textbf{Attributi}\\
 					\indent Al momento non sono stati previsti degli attributi.\\\\
 					\textbf{Metodi}
 					\begin{itemize}
-						\item +Profile(): costruttore che dovrà inizializzare gli eventuali attibuti e la pagina View::Pages::Profile in base all'id del token dell'utente attivo e nel caso in cui nessun token risultasse attivo richiamerà il metodo goIndex(). Profile() dialogherà con Model::ApacheRelations::FileManager [[[[[[[[[NOOOOO]]]]]]]]] per recuperare tutti i file media dell'utente caricati sul server e con Model::MongoRelations::AccessControl::Authentication per ottenere i dati personali dell'utente [[[[[[[[[I DATI PERSONALI ARRIVANO DA AUTHENTICATION??]]]]]]]]];
 						\item +changePassword(string password): metodo che dialoga con Model::MongoRelations::AccessControl::Authentication inviandogli la stringa della nuova password da sostituire con quella vecchia. In caso di errore, esso verrà mostrato tramite la pagina View::Pages::Profile;
 						\item +uploadMedia(string percorso): metodo che invia a Model::ApacheRelations::FileManager il percorso del file media da caricare sul proprio spazio sul server, restituisce la schermata aggiornata con la nuova miniatura del file media se il caricamento è andato a buon fine, altrimenti restituisce un errore;
 						\item deleteMedia(string id): metodo che invia l'id del file media a Model::ApacheRelations::FileManager per rimuoverlo dal database;
-						\item +renameSlideShow(string id, string name): metodo che invia l'id del file media e una stringa a Model::ApacheRelations::FileManager per rinominarlo;
-						\item +goHome(): metodo che reindirizza alla pagina View::Pages::Home;
-						\item +goIndex(): metodo che reindirizza alla pagina View::Pages::Index.
+						\item getData
 					\end{itemize}
 				}
-				\subsection{View::Pages::Execution}{
+				\subsubsection{View::Pages::Execution}{
 					\textbf{Funzione}\\
 					\indent Questa classe si occuperà di gestire i segnali che arrivano da View::Pages::Execution.\\\\
 					\textbf{Relazioni d'uso con altri moduli}\\
@@ -95,7 +104,7 @@
 						\item +goEdit(): metodo che reindirizza alla pagina View::Pages::Edit.
 					\end{itemize}
 				}
-				\subsection{Controller::EditController}{
+				\subsubsection{Controller::EditController}{
 					\textbf{Funzione}\\
 					\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
 					\textbf{Relazioni d'uso con altri moduli}\\
