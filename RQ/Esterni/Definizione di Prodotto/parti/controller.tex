@@ -1,4 +1,6 @@
 \section {Specifica classi del front-end}
+\subsection{Package Premi::App}
+
 \subsection {Package Premi::Services}
 \label{sec:services}
 \textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, compito che poi sarà utilizzato all’interno di una o più parti dell’applicazione.\\\\
@@ -15,9 +17,36 @@
 		\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
 		\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
 		\subsubsection{Controller::HeaderController}
-		
-		\subsubsection{Controller::AccessController}{
-				\label{sub:indexcontroller}
+		\label{sub:HeaderController}
+		\textbf{Funzione}\\
+		\indent Questa classe si occuperà di controllare l'Header dell'applicazione.\\
+		\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
+		\begin{itemize}
+		\item Services::Utils;
+		\item Services::Main;
+		\item Services::toPages.
+		\end{itemize}
+		\textbf{Attributi}\\
+		\begin{itemize}
+		\item scope:Object\\
+		Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+		\item rootScope:Object\\
+		Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope	discendono da questo.
+		\end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+		\item +error()
+		\item +who()
+		\item +isToken()
+		\item +goLogin()
+		\item +goRegistrazione()
+		\item +goHome()
+		\item +goProfile()
+		\item +logout()
+		\end{itemize}
+\subsubsection{Controller::AccessController}{
+				\label{sub:AccessController}
 				\textbf{Funzione}\\
 					\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
 				\textbf{Relazioni d'uso con altri moduli}\\
@@ -26,15 +55,21 @@
 					\item View::Pages::Index;
 					\item Model::MongoRelations::AccessControl::Authentication;
 					\item Model::MongoRelations::AccessControl::Registration.
+					\item Services::Utils;
+					\item Services::Main;
+					\item Services::toPages.
 				\end{itemize}
 				\textbf{Attributi}\\
-					\indent Al momento non sono stati previsti degli attributi.\\
+	            \begin{itemize}
+	            \item scope:Object\\
+	            Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+	            \end{itemize}
 				\textbf{Metodi}
 					\begin{itemize}
-					\item +index(): costruttore che dovrà inizializzare gli eventuali attributi ed inizializzare la pagina View::Pages::Index;
-					\item +login(): metodo che richiama Model::MongoRelations::AccessControl::Authentication per effettuare l'autenticazione al sistema: se l'operazione va a buon fine, login() reindirizza alla pagina View::Pages::Home tramite il metodo goHome() altrimetti invia un segnale di errore che verrà visualizzato in View::Pages::Index;
-					\item +subscription(): metodo che richiama Model::MongoRelations::AccessControl::Registration per registrare un nuovo utente nel sistema: se l'operazione va a buon fine, Subscription() reindirizza alla pagina View::Pages::Home tramite il metodo goHome() altrimetti segnala un errore che verrà visualizzato in View::Pages::Index;
-					\item +goHome(): metodo che reindirizza alla pagina View::Pages::Home.
+                    \item +getData()
+                    \item +reset()
+                    \item +login()
+                    \item +registration()
 				\end{itemize}
 			}
 			\subsubsection{Controller::HomeController}{
@@ -47,42 +82,54 @@
 						\item View::Pages::Home;
 						\item Model::MongoRelations::AccessControl::LoaderClass;
 						\item Model::MongoRelations::AccessControl::Authentication;
-						\item Model::ApacheRelations::ResourceGetter. [[[[[[[[[[[[[[NOOOOOO]]]]]]]]]]]]]]
+						\item Services::Utils;
+						\item Services::Main;
+						\item Services::toPages.
 					\end{itemize}
 					\textbf{Attributi}\\
-					\indent Al momento non sono stati previsti degli attributi.\\\\
+				    \begin{itemize}
+					\item scope:Object\\
+				    Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+				    \item window::Object\\
+					\end{itemize}
 					\textbf{Metodi}
 					\begin{itemize}
-						\item +home(): costruttore che dovrà inizializzare gli eventuali attributi e che dovrà inizializzare la pagina View::Pages::Home in base all'id del token dell'utente attivo e riportando l'elenco delle presentazioni dell'utente richiamando Model::MongoRelations::AccessControl::LoaderClass. Nel caso in cui il token risultasse non valido o scaduto, verrà invocato il metodo goIndex() che riporterà alla pagina di autenticazione;
-						\item +goExecute(string id): metodo che reindirizza alla pagina View::Pages::Execute passando l'id della presentazione da eseguire;
-						\item +goIndex(): metodo che reindirizza alla pagina View::Pages::Index;
-						\item +goProfile(): metodo che reindirizza alla pagina View::Pages::Profile per la gestione del profilo utente;
-						\item +goEdit(string id): metodo che reindirizza alla pagina View::Pages::Edit passando l'id della presentazione da modificare;
-						\item +deleteSlideShow(string id): metodo per l'eliminazione di una presentazione. Esso riceve l'id della presentazione dalla pagina View::Pages::Home e chiama il metodo [[[[[[[[[[[METODO ELIMINAZIONE PRESENTAZIONE]]]]]]]]]]] che rimuoverà la presentazione dal database e comunicherà alla pagina View::Pages::Home l'avvenuta eliminazione con conseguente rimozione dalla pagina della miniatura della presentazione in oggetto. In caso di errore esso verrà visulizzato da View::Pages::Home; 
-						\item +download(string id): metodo che riceve l'id della presentazione da View::Pages::Home e permette di poterla scaricare in locale. Il metodo richiama [[[[[[[[[[METODO DOWNLOAD PRESENTAZIONE]]]]]]]]]];
-						\item +renameSlideShow(string id): metodo che riceve da View::Pages::Home l'id della presentazione e una stringa con cui rinominarlo. Il metodo richiamerà [[[[[[[[[[[METODO RINOMINA PRESENTAZIONE]]]]]]]]]]] che si preoccuperà di rinominarla nel database e, se l'operazione è andata a buon fine, renameSlideShow() lo comunicherà a View::Pages::Home, altrimenti segnalerà un errore;
-						\item +execute(string id): metodo che richiama la funzione goExecute();
-						\item +editSlideShow(): metodo che richiama la funzione goEdit(id); l'id passato sarà quello della presentazione da modificare;
-						\item +logout(): metodo che richiama deAuthenticate() fornito da Model::MongoRelations::AccessControl::Authentication permettendo di effettuare il logout dal sistema; dopo il logout HomeController reindirizzerà alla pagina View::Pages::Index tramite il metodo goIndex();
-						\item +newSlideShow(): metodo che richiama [[[[[[[[[[METODO MODEL CREAZIONE PRESENTAZIONE]]]]]]]]]] per la creazione di una nuova presentazione del database; se la creazione è andata a buon fine richiamerà il metodo goEdit(string id), passando l'id della nuova presentazione, in modo da entrare in modalità modifica.
+					\item +update():
+					\item +goEdit(slideId):
+					\item +goExecute(slideId):
+					\item +goProfile():
+					\item +getSS():
+					\item +deleteSlideShow(slideId):
+					\item +renameSlideShow(nameSS):
+					\item +createSlideShow():
+					\item +createSlideShow()
+                    
 					\end{itemize}
 				}
 				\subsubsection{Controller::ProfileController}{
 					\textbf{Funzione}\\
-					\indent Questa classe gestirà le operazioni e la logica applicativa riguardante la pagina profilo di un utente..\\\\
+					\indent Questa classe gestirà le operazioni e la logica applicativa riguardante la pagina profilo di un utente.\\\\
 					\textbf{Relazioni d'uso con altri moduli}\\
 					\indent Questa classe utilizzerà le seguenti classi:
 					\begin{itemize}
 						\item Model::MongoRelations::AccessControl::Authentication((DA COMPLETARE)).
+						\item Services::Utils;
+						\item Services::Main;
+						\item Services::toPages;
+						\item Services::Upload.
 					\end{itemize}
 					\textbf{Attributi}\\
-					\indent Al momento non sono stati previsti degli attributi.\\\\
+					\begin{itemize}
+					\item scope:Object\\
+					Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+					\item formData\\
+					Questo campo dati rappresenta
+					\end{itemize}
 					\textbf{Metodi}
 					\begin{itemize}
-						\item +changePassword(string password): metodo che dialoga con Model::MongoRelations::AccessControl::Authentication inviandogli la stringa della nuova password da sostituire con quella vecchia. In caso di errore, esso verrà mostrato tramite la pagina View::Pages::Profile;
-						\item +uploadMedia(string percorso): metodo che invia a Model::ApacheRelations::FileManager il percorso del file media da caricare sul proprio spazio sul server, restituisce la schermata aggiornata con la nuova miniatura del file media se il caricamento è andato a buon fine, altrimenti restituisce un errore;
-						\item deleteMedia(string id): metodo che invia l'id del file media a Model::ApacheRelations::FileManager per rimuoverlo dal database;
-						\item getData
+                    \item +getData()
+                    \item +changepassword()
+                    \item +uploadpedia(files)
 					\end{itemize}
 				}
 				\subsubsection{View::Pages::Execution}{
@@ -113,57 +160,72 @@
 						\item View::Pages::Edit;
 						\item Model::SlideShow::SlideShowActions::Command:
 						\begin{itemize}
-							\item ConcreteTextInsertCommand;
-							\item ConcreteFrameInsertCommand;
-							\item ConcreteImageInsertCommand;
-							\item ConcreteSVGInsertCommand;
-							\item ConcreteAudioInsertCommand;
-							\item ConcreteVideoInsertCommand;
-							\item ConcreteBackgroundInsertCommand;
-							\item ConcreteTextRemoveCommand;
-							\item ConcreteFrameRemoveCommand;
-							\item ConcreteImageRemoveCommand;
-							\item ConcreteSVGRemoveCommand;
-							\item ConcreteAudioRemoveCommand;
-							\item ConcreteVideoRemoveCommand;
-							\item ConcreteBackgroundRemoveCommand;
-							\item ConcreteEditSizeCommand;
-							\item ConcreteEditPositionCommand;
-							\item ConcreteEditRotationCommand;
-							\item ConcreteEditColorCommand;
-							\item ConcreteEditBackgroundCommand;
-							\item ConcreteEditFontCommand;
-							\item ConcreteEditContentCommand; [[[[[[[[[[[[[[[[ESISTE????]]]]]]]]]]]]]]]]
-							\item Invoker;
-						\end{itemize}
-						\item Model::ApacheManager::FileManager;
-						\item Model::ApacheRelations::ResourceGetter;
+													\item ConcreteTextInsertCommand;
+													\item ConcreteFrameInsertCommand;
+													\item ConcreteImageInsertCommand;
+													\item ConcreteSVGInsertCommand;
+													\item ConcreteAudioInsertCommand;
+													\item ConcreteVideoInsertCommand;
+													\item ConcreteBackgroundInsertCommand;
+													\item ConcreteTextRemoveCommand;
+													\item ConcreteFrameRemoveCommand;
+													\item ConcreteImageRemoveCommand;
+													\item ConcreteSVGRemoveCommand;
+													\item ConcreteAudioRemoveCommand;
+													\item ConcreteVideoRemoveCommand;
+													\item ConcreteBackgroundRemoveCommand;
+													\item ConcreteEditSizeCommand;
+													\item ConcreteEditPositionCommand;
+													\item ConcreteEditRotationCommand;
+													\item ConcreteEditColorCommand;
+													\item ConcreteEditBackgroundCommand;
+													\item ConcreteEditFontCommand;
+													\item ConcreteEditContentCommand; [[[[[[[[[[[[[[[[ESISTE????]]]]]]]]]]]]]]]]
+													\item Invoker;
+					\end{itemize}
+						\item Services::Main;
+						\item Services::toPages;
+						\item Services::Utils;
+						\item Services::SaredData;
+						\item Services::Upload;
 						\item Model::MongoRelations::Loader::Autenticazione;
 						\item Model::MongoRelations::Loader::Loaderclass;
 					\end{itemize}
 					\textbf{Attributi}\\
-					\indent Al momento non sono stati previsti degli attributi.\\\\
+					\begin{itemize}
+					\item scope:Object\\
+					Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+					\item q::Object\\
+					\item mdSideNav::Object
+					\item mdBottomSheet::Object
+				    \end{itemize}
 					\textbf{Metodi}
 					\begin{itemize}
-						\item +Edit(string id):  costruttore che dovrà inizializzare gli eventuali attibuti e la pagina View::Pages::Edit in base all'id della presentazione. Edit(string id) controllerà la presenza del token di sessione, usando il metodo goIndex() in caso negativo, e dialogherà con Model::MongoRelations::Loader::LoaderClass per caricare la presentazione dal database;
-						\item +insertFrame(string shape, int posX, int posY): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteFrameInsertCommand passandogli le informazioni per l'inserimento di un nuovo frame e le sue coordinate. Se l'inserimento avviene correttamente, View::Pages::Edit verrà aggiornata col nuovo frame inserito, altrimenti verrà segnalato un errore;
-						\item +insertMedia(string path, int posX, int posY): metodo che dialoga con ConcreteImageInsertCommand, ConcreteVideoInsertCommand e ConcreteAudioInsertCommand (facenti parte di Model::SlideShow::SlideShowActions::Command) comunicando il percorso del file media in locale in modo da caricarlo sul server e le sue coordinate di posizione sul piano della presentazione. Se l'inserimento avviene correttamente, View::Pages::Edit verrà aggiornata col nuovo file media inserito, altrimenti verrà segnalato un errore;
-						\item +moveElement(string id, int posX, int posY): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteEditPositionCommand passando l'id dell'elemento spostato e le sue nuove coordinate di posizione. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con l'elemento nella nuova posizione, altrimenti verrà segnalato un errore;
-						\item +insertText(string text, int posX, int posY): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand comunicando la stringa del testo e le coordinate di posizione sul piano della presentazione. Se l'inserimento avviene correttamente, View::Pages::Edit verrà aggiornata col nuovo elemento testo inserito, altrimenti verrà segnalato un errore;
-						\item +textEdit(string id, string text): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteEditContentCommand passando l'id dell'elemento di testo e la nuova stringa associata. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con l'elemento di testo aggiornato con la nuova stringa, altrimenti verrà segnalato un errore;
-						\item +deleteElement(string id): metodo che dialoga con ConcreteTextRemoveCommand, ConcreteFrameRemoveCommand, ConcreteImageRemoveCommand, ConcreteSVGRemoveCommand, ConcreteAudioRemoveCommand e ConcreteVideoRemoveCommand (facenti parte di Model::SlideShow::SlideShowActions::Command) comunicando l'id dell'elemento da rimuovere dal piano della presentazione. Se la rimozione avviene correttamente, View::Pages::Edit verrà aggiornata col nuovo file media inserito, altrimenti verrà segnalato un errore;
-						\item +insertChoice(string id, string choiceId): [[[[[[[[[[[[[[[[[[[[VEDEREEEEEEE]]]]]]]]]]]]]]]]]]]];
-						\item +bookmark(string id): [[[[[[[[[[[[[[[[[[[VEDEREEEEEE]]]]]]]]]]]]]]]]]]];
-						\item +changeSize(string id, int zoom): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteEditSizeCommand passando l'id dell'elemento da ingrandire e il nuovo valore di zoom da applicare. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con l'elemento zoomato al valore indicato, altrimenti verrà segnalato un errore;
-						\item +changeRotation(string id, int rotation): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteEditRotationCommand passando l'id dell'elemento da ruotare e il nuovo valore di rotazione da applicare. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con l'elemento ruotato al valore indicato, altrimenti verrà segnalato un errore;
-						\item +changePath(array id): [[[[[[[[[[[[[[[VEDEREEEEEE]]]]]]]]]]]]]]];
-						\item +frameBackground(string id, string path): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteBackgroundInsertCommand passando l'id del frame e il percorso dell'immagine da impostare come nuovo sfondo del frame. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con lo sfondo nuovo, altrimenti verrà segnalato un errore;
-						\item +slideshowBackground(string path): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteEditBackgroundCommand passando il percorso dell'immagine da impostare come nuovo sfondo della presentazione. Se la modifica avviene correttamente, View::Pages::Edit verrà aggiornata con lo sfondo nuovo, altrimenti verrà segnalato un errore;
-						\item +insertSvg(string shape, string color, int posX, int posY): metodo che dialoga con Model::SlideShow::SlideShowActions::Command::ConcreteSVGInsertCommand comunicando il tipo di SVG da inserire, le sue coordinate di posizione sul piano della presentazione e il suo colore. Se l'inserimento avviene correttamente, View::Pages::Edit verrà aggiornata col nuovo SVG, altrimenti verrà segnalato un errore;
-						\item +esegui(string id): metodo che richiama la funzione goExecute(id);
-						\item +goExecute(string id): reindirizza alla pagina View::Pages::Execute passando l'id della presentazione da eseguire;
-						\item +goHome(): metodo che reindirizza alla pagina View::Pages::Home;
-						\item +goIndex(): metodo che reindirizza alla pagina View::Pages::Index.
+					\item goEdit(slideId):
+					\item goExecute(slideId):
+					\item toggleList():
+					\item backgroundManage(bool):
+					\item slideShowBackgroundManage(bool):
+					\item pathsManage(bool):
+					\item rotation(bool):
+					\item show(id):
+					\item mainPath()
+					\item showPathBottomSheet(event)
+					\item inserisciFrame()
+					\item inserisciTesto()
+					\item uploadmedia(files)
+					\item inserisciImmagine(files)
+					\item inserisciAudio(files)
+					\item inserisciVideo(files)
+					\item rimuoviFrame(id)
+					\item rimuoviSfondo()
+					\item cambiaColoreSfondo(color)
+					\item cambiaColoreSfondoFrame(color)
+					\item mediaControl()
+					\item announceClick(index)
+					\item setRotation(new_rotation)
+					\item addToMain()
 					\end{itemize}
 				}
+				\subsection{Controller::BottomSheetController}
 				}
