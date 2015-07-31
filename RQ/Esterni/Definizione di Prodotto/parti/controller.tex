@@ -3,140 +3,289 @@
 
 \subsection {Package Premi::Services}
 \label{sec:services}
-\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, compito che poi sarà utilizzato all’interno di una o più parti dell’applicazione.\\\\
-\textbf{\relaz}: Comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.\\\\
-\subsubsection{Services::Main}
+\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
+\textbf{\relaz}: comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.\\
+\subsubsection{Services::Main}{
 		\label{sub:servicesMain}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire la maggior parte delle funzioni richiamate dai controller.\\
+		\indent Questa classe si occuperà di eseguire le funzioni base dell'applicazione, in particolare autenticazione e registrazione al server degli utenti.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-		\item Services::Utils;
+			\item Services::Utils;
+			\item localStorage:Object\\
+				\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
 		\end{itemize}
-		\textbf{Attributi}\\
+		\textbf{Attributi}
 		\begin{itemize}
-		\item localStorage:Object\\
-		Questo campo dati rappresenta l’oggetto che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione
+			\item \textbf{login}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Oggetto;
+				\item \textbf{Descrizione}: oggetto che mantiene la sessione corrente.
+			\end{itemize}
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-		\item +value()
-		\item +register(formData,success,error)
-		\item +login(formData,success,error)
-		\item +me(success,error)
-		\item +logout(success,error)
-		\item +changepassword(formData,success,error)
-		\item +getToken()
-		\item +getUser()
-
+			\item \textbf{value}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che controlla se è stato effettuato un refresh della pagina, in tal caso ripristina login.
+			\end{itemize}
+			\item \textbf{register}(formData, success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua la registrazione al server di un nuovo utente. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{login}(formData, success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua l'autenticazione al server di un utente. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{logout}(success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che effettua il logout dal server. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{changepassword}(formData, success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso e la nuova password, effettua il cambio della password di un utente. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{getToken}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: JSONWebToken;
+				\item \textbf{Descrizione}: metodo che ritorna il token di sessione.
+			\end{itemize}
+			\item \textbf{getUser}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna l'utente attualmente autenticato con il server.
+			\end{itemize}
 		\end{itemize} 
-\subsubsection{Services::Upload}
-		\label{sub:servicesMain}
+}
+\subsubsection{Services::Upload}{
+		\label{sub:servicesUpload}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire la maggior parte delle funzioni richiamate dai controller.\\
+		\indent Questa classe si occuperà di eseguire l'upload di file media nel database.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-		\item Services::Utils;
+			\item Services::Main;
+			\item Services::Utils;
 		\end{itemize}
-		\textbf{Attributi}\\
+		\textbf{Attributi}
 		\begin{itemize}
-		\item localStorage:Object\\
-		Questo campo dati rappresenta l’oggetto che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione
+			\item \textbf{image}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Array;
+				\item \textbf{Descrizione}: array contenente i formati immagini accettati per l'upload.
+			\end{itemize}
+			\item \textbf{audio}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Array;
+				\item \textbf{Descrizione}: array contenente i formati audio accettati per l'upload.
+			\end{itemize}
+			\item \textbf{video}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Array;
+				\item \textbf{Descrizione}: array contenente i formati video accettati per l'upload.
+			\end{itemize}
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-		\item +value()
-		\item +register(formData,success,error)
-		\item +login(formData,success,error)
-		\item +me(success,error)
-		\item +logout(success,error)
-		\item +changepassword(formData,success,error)
-		\item +getToken()
-		\item +getUser()
-
+			\item \textbf{uploadmedia}(files, success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che effettua l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{isImage}(files)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Bool;
+				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array image, altrimenti ritorna false.
+			\end{itemize}
+			\item \textbf{isAudio}(files)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Bool;
+				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array audio, altrimenti ritorna false.
+			\end{itemize}
+			\item \textbf{isVideo}(files)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Bool;
+				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
+			\end{itemize}
+			\item \textbf{getFileUrl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Stringa;
+				\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio dei file dell'utente corrente.
+			\end{itemize}
 		\end{itemize} 
+}
 
-\subsubsection{Services::Utils}
-		\label{sub:servicesMain}
+\subsubsection{Services::Utils}{
+		\label{sub:servicesUtils}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire la maggior parte delle funzioni richiamate dai controller.\\
+		\indent Questa classe si occuperà di eseguire piccole funzionalità utili ad ogni parte dell'applicazione.\\
+		\textbf{Metodi}
+		\begin{itemize}
+			\item \textbf{decodeToken}(token)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che decodifica token, passato come parametro, e ritorna l'oggetto utente corrispondente.
+			\end{itemize}
+			\item \textbf{grade}(password)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: metodo che determina la robustezza del parametro password. La lunghezza minima di una password è stata impostata a sei caratteri.
+			\end{itemize}
+			\item \textbf{hostname}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: metodo che ritorna il dominio dell'applicazione.
+			\end{itemize}
+			\item \textbf{isUndefined}(object)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Bool;
+				\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta indefinito, altrimento ritorna false.
+			\end{itemize}
+			\item \textbf{isObject}(object)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta definito, altrimento ritorna false.
+			\end{itemize}
+			\item \textbf{encrypt}(string)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: metodo che ritorna il parametro string criptato. Il metodo di criptaggio scelto è lo SHA-1.
+			\end{itemize}
+		\end{itemize}
+}
+
+\subsubsection{Services::SharedData}{
+		\label{sub:servicesSharedData}
+		\textbf{Funzione}\\
+		\indent Questa classe mantiene in memoria la presentazione sulla quale l'utente sta lavorando.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-		\item Services::Utils;
+			\item Services::Utils;
+			\item Services::Main;
+			\item localStorage:Object\\
+				\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
 		\end{itemize}
 		\textbf{Attributi}\\
 		\begin{itemize}
-		\item localStorage:Object\\
-		Questo campo dati rappresenta l’oggetto che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione
+			\item \textbf{idExecution}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione in esecuzione.
+			\end{itemize}
+			\item \textbf{idEdit}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione aperta in modalità modifica.
+			\end{itemize}
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-		\item +value()
-		\item +register(formData,success,error)
-		\item +login(formData,success,error)
-		\item +me(success,error)
-		\item +logout(success,error)
-		\item +changepassword(formData,success,error)
-		\item +getToken()
-		\item +getUser()
-
-		\end{itemize} 
-\subsubsection{Services::SharedData}
-		\label{sub:servicesMain}
+			\item \textbf{forExecution}(idSlideShow)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a idExecution. In ogni caso idExecution viene ritornato.
+			\end{itemize}
+			\item \textbf{forEdit}(idSlideShow)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a idEdit. In ogni caso idEdit viene ritornato.
+			\end{itemize}
+		\end{itemize}
+}
+\subsubsection{Services::toPages}{
+		\label{sub:servicestoPages}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire la maggior parte delle funzioni richiamate dai controller.\\
+		\indent Questa classe si occuperà di eseguire i reindirizzamenti alle pagine corrette.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-		\item Services::Utils;
-		\end{itemize}
-		\textbf{Attributi}\\
-		\begin{itemize}
-		\item localStorage:Object\\
-		Questo campo dati rappresenta l’oggetto che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione
-		\end{itemize}
-		\textbf{Metodi}
-		\begin{itemize}
-		\item +value()
-		\item +register(formData,success,error)
-		\item +login(formData,success,error)
-		\item +me(success,error)
-		\item +logout(success,error)
-		\item +changepassword(formData,success,error)
-		\item +getToken()
-		\item +getUser()
-
-		\end{itemize} 
-\subsubsection{Services::ToPages}
-		\label{sub:servicesMain}
-		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire la maggior parte delle funzioni richiamate dai controller.\\
-		\textbf{Relazioni d'uso con altri moduli}\\
-		\indent Questa classe utilizzerà le seguenti classi:
-		\begin{itemize}
-		\item Services::Utils;
-		\end{itemize}
-		\textbf{Attributi}\\
-		\begin{itemize}
-		\item localStorage:Object\\
-		Questo campo dati rappresenta l’oggetto che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione
+			\item Services::Utils;
+			\item Services::Main;
+			\item Services::SharedData;
+			\item \$ http:Object\\
+				\indent Servizio Angular che permette la comunicazione in remoto con un server.
+			\item \$ location:Object\\
+				\indent Servizio Angular che gestisce gli indirizzi URL.
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-		\item +value()
-		\item +register(formData,success,error)
-		\item +login(formData,success,error)
-		\item +me(success,error)
-		\item +logout(success,error)
-		\item +changepassword(formData,success,error)
-		\item +getToken()
-		\item +getUser()
-
+			\item \textbf{sendRequest}(dest, success, error)
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna una richiesta http all'indirizzo definito dal parametro dest. Se l'operazione ha successo viene invocato success altrimenti error.
+			\end{itemize}
+			\item \textbf{loginpage}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Login. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+			\end{itemize}
+			\item \textbf{registrazionepage}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Registrazione. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+			\end{itemize}
+			\item \textbf{homepage}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Home. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+			\end{itemize}
+			\item \textbf{profilepage}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Profile. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+			\end{itemize}
+			\item \textbf{editpage}(slideId)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Edit. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
+			\end{itemize}
+			\item \textbf{executionpage}(slideId)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Execution. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
+			\end{itemize}
 		\end{itemize} 
-
+}
 
 \subsection{Package Premi::Controller}{
 		\label{sec:controller}
