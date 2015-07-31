@@ -1,5 +1,36 @@
 \section {Specifica classi del front-end}
-\subsection{Package Premi::App}
+\subsection{Premi::App}
+\label{sec:premiapp}
+		\textbf{Funzione}\\
+		\indent Questa classe si occuperà di fare il boostrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari.\\
+		\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
+		\begin{itemize}
+		\item Services::Utils;
+		\item Services::Main;
+		\item Services::toPages.
+		\end{itemize}
+		\textbf{Attributi}\\
+		\begin{itemize}
+		\item scope:Object\\
+		Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+		\item rootScope:Object\\
+		Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope	discendono da questo;
+		\item \textdollar routeProvider::Object\\
+		Questo campo dati rappresenta il servizio che collega tra loro controller, view e l'URL corrente nel browser;
+		\item \textdollar mdIconProvider\\
+		\item \textdollar mdThemingProvider\\
+		\item \textdollar httpProvider\\
+		\item \textdollar provide\\
+		\item \textdollar locationProvider\\
+		\end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+		\item run
+		\item config
+		\item interceptors
+		\item decorator
+		\end{itemize}
 
 \subsection {Package Premi::Services}
 \label{sec:services}
