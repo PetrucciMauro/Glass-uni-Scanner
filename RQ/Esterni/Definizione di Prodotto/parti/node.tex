@@ -19,258 +19,281 @@
 	
 	\begin{itemize}
 			
-		\item \textbf{NodeServer:} radice dei servizi offerti dal server node:
+		\item \textbf{NodeServer:} radice dei servizi offerti dal server:
 			\begin{enumerate}
-				\item server per pagine html, css e javascript associati
+				\item server per pagine html e file statici associati
 				\item servizi di autenticazione stateless
-				\item file server per salvare sul server file statici multimediali(immagini, audio, video), richiedono autenticazione
-				\item servizi di interazione con un database MongoDB dove sono persistentemente salvate le presentaizoni, richiedono autenticazione
+				\item servizi di upload e reperimento file statici multimediali per utente
+				\item servizi di interazione con MongoDB per salvataggio persistente delle presentazioni
 			\end{enumerate}	
 				
 		\item \textbf{Register:}
 			\begin{itemize}
-			\item  /account/register POST
+			\item  \textbf{POST} /account/register 
 				\begin{itemize} 
-				\item \textbf{descrizione:} verifica la presenza dello username nella collezione in mongoDB relativa agli account, se non \`{e} gi\`{a} presente inserisce username e password ricevuti altrimenti annulla l'operazione di inserimento e ritorna un messaggio di errore
-				\item \textbf{parametri input body(application/json):} username : string, password : string
-				\item \textbf{parametri output body(application/json):} success : boolean, message : string
+				\item \textbf{descrizione:} inserisce nuovo utente in MongoDB, crea una nuova collezione 'presentations'+username, crea le cartelle per i file utente
+				\item \textbf{input:} header campo Authorization: "username:password"
+				\item \textbf{output:} body in formato application/json, success : boolean
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{Authenticate:}
 			\begin{itemize}
-			\item  /account/authenticate GET
+			\item  \textbf{GET} /account/authenticate 
 				\begin{itemize} 
-				\item \textbf{descrizione:} verifica username e password ricevuti e se presenti nella opportuna collezione in mongoDB ritorna un token per l'accesso ai servizi protetti, altrimenti ritorna solo un messaggio d'errore
-				\item \textbf{parametri input header:} username : string, password : string
-				\item \textbf{parametri output body(application/json):} success : boolean, message : string, token : string
+				\item \textbf{descrizione:} verifica se username e password sono corretti e ritorna un token per l'accesso ai servizi protetti
+				\item \textbf{input:} header campo Authorization: "username:password"
+				\item \textbf{output:}  body in formato application/json, success : boolean; in header campo Authorisation ritorna il token per l'accesso ai servizi protetti 
 				\end{itemize}
 			\end{itemize}
 				
 		\item \textbf{ChangePassword:}
 			\begin{itemize}
-			\item  /account/changepassword POST
+			\item  \textbf{POST} /account/changepassword 
 				\begin{itemize} 
-				\item \textbf{descrizione:} verifica username e password ricevuti e se presenti nella opportuna collezione in mongoDB e modifica la password con newpassword, altrimenti ritorna solo un messaggio d'errore
-				\item \textbf{parametri input body(application/json):} username : string, password : string, new password : string
-				\item \textbf{parametri output body(application/json):} success : boolean, message : string
+				\item \textbf{descrizione:} verifica la correttezza di username e password e modifica questa'ultima con la nuova 
+				\item \textbf{input:} in header campo Authorization: "username:password:newpassword"
+				\item \textbf{output:} body in formato application/json, success : boolean  
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{PublicPages:}
 			\begin{itemize}
-			\item  /publicpages/[file] GET
+			\item  \textbf{GET} /publicpages/[file] 
 				\begin{itemize} 
-				%\item \textbf{descrizione:} se presente il file [file] nella cartella /public_htdocs del server ritorna il file stesso 
-				\item \textbf{parametri input body:} /
-				\item \textbf{output body:} fileStatico
+				\item \textbf{descrizione:} se presente [file] nella cartella /public\_html del server ritorna il file stesso 
+				\item \textbf{input} /
+				\item \textbf{output:} fileStatico
 				\end{itemize}
 			\end{itemize}
 			
-		\item \textbf{tokenMiddleware:} verifica che il token passato nel campo Authorization dell' Header sia valido, ne estrae lo username dell'utente e permette l'accesso ai servizi richiesti
+		\item \textbf{tokenMiddleware:} verifica che il token passato nel campo Authorization dell' Header sia valido, dal token ricava lo username dell'utente
+		
 		\item \textbf{PrivatePages:}
 			\begin{itemize}
-			\item  /private/htdocs/[file] GET
+			\item  \textbf{GET} /private/htdocs/[file] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} se presente il file [file] nella cartella /private/htdocs del server ritorna il file stesso
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body:} fileStatico
+				\item \textbf{descrizione:} se presente [file] nella cartella /private\_html del server ritorna il file stesso
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} fileStatico
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{PresentationMeta:}
 			\begin{itemize}
-			\item  /private/api/presentations GET
+			\item  \textbf{GET} /private/api/presentations 
 				\begin{itemize} 
-				\item \textbf{descrizione:} cerca in mongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono array associativi con le meta-informazioni riguardanti le presentazioni
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, presentationMetas : array
+				\item \textbf{descrizione:} cerca in mongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono i campi meta delle presentazioni dell'utente
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean, presentationMetas : array
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{NewPresentation:}
 			\begin{itemize}
-			\item  /private/api/presentations/[presentationName] POST
+			\item  \textbf{POST} /private/api/presentations/new/[presentationName] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} crea una nuova presentazione con il nome [presentatioNname] se il nome non \`{e} gi\`{a} stato usata per un'altra presentazione dello stesso utente
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} se non esiste gi\`{a} crea una nuova presentazione con il nome [presentatioNname]
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:}  body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
+		\item \textbf{NewCopyPresentation:}
+			\begin{itemize}
+			\item  \textbf{POST} /private/api/presentations/new/[presentationName]/[copied\_id]
+				\begin{itemize} 
+				\item \textbf{descrizione:} crea una nuova presentazione con nome [presentationName] dalla presentazione con id [copied\_id]
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:}  body in formato application/json; success : boolean
+				\end{itemize}
+			\end{itemize}
+
+			
 		\item \textbf{Presentation:}
 			\begin{itemize}
-			\item  /private/api/presentations/[presentationName] GET
+			\item  \textbf{GET} /private/api/presentations/[id\_presentation] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} recupera la presentazione se esistente associata al nome passato come ultima parte dell'url
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, presentation : object
+				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata all'id passato nell'url
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean, presentation : object
 				\end{itemize}
-			\item  /private/api/presentations/[presentationName] DELETE
+				
+			\item  \textbf{DELETE} /private/api/presentations/[id\_presentation] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina la associazione dell'utente con nome il valore di [presentationName]
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata all'id passato nell'url
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 
 		\item \textbf{RenamePresentation:}
 			\begin{itemize}
-			\item  /private/api/presentations/[presentationName]/[newname] POST
+			\item  \textbf{POST} /private/api/presentations/[id\_presentation]/rename/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina la presentazione con il nome [presentatioNname] con il nome [newname]
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
-				\end{itemize}
-			\end{itemize}
-			
-		\item \textbf{CreateElement:}
-			\begin{itemize}
-			\item   /private/api/presentations/[presentationName]/[createElementPOST
-				\begin{itemize} 
-				\item \textbf{descrizione:} crea nella presentazione [presentationName] dell'utente un nuovo elemento, ovvero l'oggetto element passato in input nel corpo della chiamata
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{input body(application/json):}  element : object
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata all'id passato nell'url con il nome [newname]
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{PresentationElement:}
 			\begin{itemize}
-			\item    /private/api/presentations/[presentationName]/[idElement] PUT
+			\item   \textbf{POST} /private/api/presentations/[id\_presentation]/element
 				\begin{itemize} 
-				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'elemento con identificativo [idElement] con l'oggetto passato nel corpo in formato son						\item \textbf{parametri input header:} token : string
-				\item \textbf{input body(application/json):}  element : object
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} inserisce nella presentazione dell'utente individuata da [id\_persentation] l'oggetto element passato nel body della richiesta
+				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
-			\item    /private/api/presentations/[presentationName]/[idElement] DELETE
+				
+			\item  \textbf{PUT} /private/api/presentations/[id\_presentation]/element
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina dalla presentazione con nome [presentationName] l'elemento con identificativo [idElement]						
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'elemento passato nel body della richiesta
+				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
+				\item \textbf{output:} body in formato application/json; success : boolean
+				\end{itemize}
+			\end{itemize}
+				
+		\item \textbf{PresentationElement:}
+			\begin{itemize}
+			\item   \textbf{DELETE} /private/api/presentations/[id\_presentation]/delete/[type/[id\_element]]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina dalla presentazione con identificativo [id\_presentation] l'elemento con identificativo [idElement]						
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
-		\item \textbf{ImagesMeta:}
-			\begin{itemize}
-			\item   /private/api/files/image GET
-				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con oggetti rappresentanti informazioni sui file immagine dell'utente sul server
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, imageMetas : array
-				\end{itemize}
-			\end{itemize}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  FILE_SERVER
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
 		\item \textbf{ImagesMeta:}
 			\begin{itemize}
-			\item   /private/api/files/image GET
+			\item   \textbf{GET} /private/api/files/image 
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con oggetti rappresentanti informazioni sui file immagine dell'utente sul server
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, imageMetas : array
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file immagine dell'utente
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean, names : array
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{Image:}
 			\begin{itemize}
-			\item    /private/api/files/image/[imagename] POST
+			\item    \textbf{GET} /private/api/files/image/[imagename]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [imagename] nella cartella /users/[username]/images					
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
+				\end{itemize}
+			\item    \textbf{POST} /private/api/files/image/[imagename]
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/images					
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{input body(multipart/form-data):} file   
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; file da caricare
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
-			\item    /private/api/files/image/[imagename] DELETE
+			\item   \textbf{DELETE} /private/api/files/image/[imagename]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file immagine [imagename] dalla cartella /users/[username]/images nel server				
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
-				\end{itemize}
-			\end{itemize}
-			
-		\item \textbf{RenameImage:}
-			\begin{itemize}
-			\item   /private/api/files/image/[imagename]/[newname] POST
-				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file immagine [imagename] con il nuovo nome passato come valore di [newname] nella cartella /users/[username]/images
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
-				\end{itemize}
-			\end{itemize}
-			
-		\item \textbf{VideosMeta:}
-			\begin{itemize}
-			\item   /private/api/files/video GET
-				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con oggetti rappresentanti informazioni sui file video dell'utente sul server
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, videoMetas : array
-				\end{itemize}
-			\end{itemize}
-			
-		\item \textbf{Video:}
-			\begin{itemize}
-			\item    /private/api/files/video/[videoname] POST
-				\begin{itemize} 
-				\item \textbf{descrizione:} caricare da locale un nuovo file video nella cartella /users/[username]/videos					
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{input body(multipart/form-data):} file   
-				\item \textbf{output body(application/json):}  success : boolean, message : string
-				\end{itemize}
-			\item    /private/api/files/video/[videoname] DELETE
-				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file video [videoname] dalla cartella /users/[username]/videos nel server				
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} elimina il file immagine [imagename] dalla cartella /users/[username]/images			
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{RenameImage:}
 			\begin{itemize}
-			\item   /private/api/files/video/[videoname]/[newname] POST
+			\item   \textbf{POST} /private/api/files/image/[imagename]/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file video [videoname] con il nuovo nome passato come valore di [newname] nella cartella /users/[username]/videos
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} rinomina il file immagine [imagename] con [newname] nella cartella /users/[username]/images
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{AudiosMeta:}
 			\begin{itemize}
-			\item   /private/api/files/audio GET
+			\item   \textbf{GET} /private/api/files/audio
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con oggetti rappresentanti informazioni sui file audio dell'utente sul server
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string, audioMetas : array
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file audio dell'utente
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean, names : array
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{Audio:}
 			\begin{itemize}
-			\item    /private/api/files/audio/[audioname] POST
+			\item    \textbf{GET} /private/api/files/audio/audioname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} caricare da locale un nuovo file video nella cartella /users/[username]/videos					
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{input body(multipart/form-data):} file   
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} ritorna il file [audioname] nella cartella /users/[username]/audios					
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
 				\end{itemize}
-			\item    /private/api/files/audio/[audioname] DELETE
+			\item    \textbf{POST} /private/api/files/audio/[audioname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file audio [audioname] dalla cartella /users/[username]/audios nel server				
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/audios					
+				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; file da caricare
+				\item \textbf{output:} body in formato application/json; success : boolean
+				\end{itemize}
+			\item   \textbf{DELETE} /private/api/files/audio/[audioname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina il file audio [audioname] dalla cartella /users/[username]/audios			
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{RenameAudio:}
 			\begin{itemize}
-			\item   /private/api/files/audio/[audioname]/[newname] POST
+			\item   \textbf{POST} /private/api/files/audio/[audioname]/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file video [videoname] con il nuovo nome passato come valore di [newname] nella cartella /users/[username]/audios
-				\item \textbf{parametri input header:} token : string
-				\item \textbf{output body(application/json):}  success : boolean, message : string
+				\item \textbf{descrizione:} rinomina il file audio [audioname] con [newname] nella cartella /users/[username]/audios
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 			\end{itemize}
+						
+		\item \textbf{VideosMeta:}
+			\begin{itemize}
+			\item   \textbf{GET} /private/api/files/video
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file video dell'utente
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} body in formato application/json; success : boolean, names : array
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{Video:}
+			\begin{itemize}
+			\item    \textbf{GET} /private/api/files/video/videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [videoname] nella cartella /users/[username]/videos					
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
+				\end{itemize}
+			\item    \textbf{POST} /private/api/files/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/videos					
+				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; file da caricare
+				\item \textbf{output:} body in formato application/json; success : boolean
+				\end{itemize}
+			\item   \textbf{DELETE} /private/api/files/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina il file video [videoname] dalla cartella /users/[username]/videos			
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{RenameVideo:}
+			\begin{itemize}
+			\item   \textbf{POST} /private/api/files/video/[videoname]/[newname] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} rinomina il file video [videoname] con [newname] nella cartella /users/[username]/videos
+				\item \textbf{input:} in header campo Authorization il token di autenticazione;
+				\item \textbf{output:} body in formato application/json; success : boolean
+				\end{itemize}
+			\end{itemize}
+
 			
 	\end{itemize}
 	}
