@@ -17,10 +17,17 @@
 			\item \textbf{Tipo di ritorno:} object
 			\end{itemize}
 		
-		\item \textbf{newPresentation(name : string) : object}
+		\item \textbf{newPresentation(name : string) : void}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[name] POST" per creare una nuova presentazione sul database MongoDB, una volta creata la presentazione in formato son \`{e} ritornata dal metodo
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/new/[name] POST" per creare una nuova presentazione sul database MongoDB
+			\item \textbf{Tipo di ritorno:} object
+			\end{itemize}
+			
+		\item \textbf{newCopyPresentation(nameOldPresentation : string, nameNewPresentation : string) : void}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/new/[nameOldPresentation]/[nameNewPresentation] POST" per creare una nuova presentazione sul database MongoDB
 			\item \textbf{Tipo di ritorno:} object
 			\end{itemize}
 			
@@ -41,28 +48,28 @@
 		\item \textbf{renamePresentation(name : string, newName : string) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[name]/[newName] POST" per rinominare la presentazione [name] dell'utente in [newName] 
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[name]/rename/[newName] POST" per rinominare la presentazione [name] dell'utente in [newName] 
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
 		\item \textbf{updateElement(namePresentation: string, element : object) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/[idElement] PUT" per aggiornare l'elemento passato come parametro
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element PUT" per aggiornare l'elemento passato come parametro
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
-		\item \textbf{deleteElement(namePresentation: string, idElement : string) : bool}
+		\item \textbf{deleteElement(namePresentation: string, typeObj : string, idElement : string) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/[idElement] DELETE" per eliminare l'elemento con identificativo [idElement] dalla presentazione nel database MongoDB
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/[typeObj]/[idElement] DELETE" per eliminare l'elemento con identificativo [idElement] dalla presentazione nel database MongoDB
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
 		\item \textbf{newElement(namePresentation: string, element : object) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation] POST" per inserire un nuovo elemento nella presentazione dell'utente(element) nella base dati MongoDB
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element POST" per inserire un nuovo elemento nella presentazione dell'utente(element) nella base dati MongoDB
  			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 
