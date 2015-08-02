@@ -101,9 +101,9 @@
 			
 		\item \textbf{NewCopyPresentation:}
 			\begin{itemize}
-			\item  \textbf{POST} /private/api/presentations/new/[presentationName]/[copied\_id]
+			\item  \textbf{POST} /private/api/presentations/new/[newPresentationName]/[oldPresentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} crea una nuova presentazione con nome [presentationName] dalla presentazione con id [copied\_id]
+				\item \textbf{descrizione:} crea una nuova presentazione con nome [newPresentationName] dalla presentazione con titolo [oldPresentationName]
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
 				\item \textbf{output:}  body in formato application/json; success : boolean
 				\end{itemize}
@@ -112,16 +112,16 @@
 			
 		\item \textbf{Presentation:}
 			\begin{itemize}
-			\item  \textbf{GET} /private/api/presentations/[id\_presentation] 
+			\item  \textbf{GET} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata all'id passato nell'url
+				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'url
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
 				\item \textbf{output:} body in formato application/json; success : boolean, presentation : object
 				\end{itemize}
 				
-			\item  \textbf{DELETE} /private/api/presentations/[id\_presentation] 
+			\item  \textbf{DELETE} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata all'id passato nell'url
+				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'url
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
 				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
@@ -129,9 +129,9 @@
 
 		\item \textbf{RenamePresentation:}
 			\begin{itemize}
-			\item  \textbf{POST} /private/api/presentations/[id\_presentation]/rename/[newname] 
+			\item  \textbf{POST} /private/api/presentations/[presentationName]/rename/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata all'id passato nell'url con il nome [newname]
+				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'url con il nome [newname]
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
 				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
@@ -139,14 +139,14 @@
 			
 		\item \textbf{PresentationElement:}
 			\begin{itemize}
-			\item   \textbf{POST} /private/api/presentations/[id\_presentation]/element
+			\item   \textbf{POST} /private/api/presentations/[presentationName]/element
 				\begin{itemize} 
-				\item \textbf{descrizione:} inserisce nella presentazione dell'utente individuata da [id\_persentation] l'oggetto element passato nel body della richiesta
+				\item \textbf{descrizione:} inserisce nella presentazione dell'utente individuata da [presentationName] l'oggetto element passato nel body della richiesta
 				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
 				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
 				
-			\item  \textbf{PUT} /private/api/presentations/[id\_presentation]/element
+			\item  \textbf{PUT} /private/api/presentations/[presentationName]/element
 				\begin{itemize} 
 				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'elemento passato nel body della richiesta
 				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
@@ -156,9 +156,9 @@
 				
 		\item \textbf{PresentationElement:}
 			\begin{itemize}
-			\item   \textbf{DELETE} /private/api/presentations/[id\_presentation]/delete/[type/[id\_element]]
+			\item   \textbf{DELETE} /private/api/presentations/[presentationName]/delete/[type/[id\_element]]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina dalla presentazione con identificativo [id\_presentation] l'elemento con identificativo [idElement]						
+				\item \textbf{descrizione:} elimina dalla presentazione con il titolo [presentationName] l'elemento con identificativo [idElement]						
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
 				\item \textbf{output:} body in formato application/json; success : boolean
 				\end{itemize}
