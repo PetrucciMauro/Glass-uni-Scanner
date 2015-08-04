@@ -52,24 +52,24 @@
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
-		\item \textbf{updateElement(namePresentation: string, element : object) : bool}
+		\item \textbf{updateElement(namePresentation: string, element : object, callback) }
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element PUT" per aggiornare l'elemento passato come parametro
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element PUT" per aggiornare l'elemento passato come parametro, esegue la funzione callback
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
-		\item \textbf{deleteElement(namePresentation: string, typeObj : string, idElement : string) : bool}
+		\item \textbf{deleteElement(namePresentation: string, typeObj : string, idElement : string, callback) }
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/[typeObj]/[idElement] DELETE" per eliminare l'elemento con identificativo [idElement] dalla presentazione nel database MongoDB
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/[typeObj]/[idElement] DELETE" per eliminare l'elemento con identificativo [idElement] dalla presentazione nel database MongoDB, esegue la funzione callback
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
-		\item \textbf{newElement(namePresentation: string, element : object) : bool}
+		\item \textbf{newElement(namePresentation: string, element : object, callback)}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element POST" per inserire un nuovo elemento nella presentazione dell'utente(element) nella base dati MongoDB
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element POST" per inserire un nuovo elemento nella presentazione dell'utente(element) nella base dati MongoDB, esegue la funzione callback
  			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 
