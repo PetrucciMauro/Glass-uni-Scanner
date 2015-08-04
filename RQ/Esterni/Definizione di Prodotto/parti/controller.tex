@@ -1,17 +1,17 @@
 \section {Specifica classi del front-end}
 \subsection{Premi::App}
-\label{sec:premiapp}
-		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di fare il boostrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari.\\
-		\textbf{Relazioni d'uso con altri moduli}\\
-		\indent Questa classe utilizzerà le seguenti classi:
-		\begin{itemize}
+	\label{sec:premiapp}
+	\textbf{Funzione}\\
+	\indent Questa classe si occuperà di fare il boostrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
 		\item Services::Utils;
 		\item Services::Main;
 		\item Services::toPages.
-		\end{itemize}
-		\textbf{Attributi}\\
-		\begin{itemize}
+	\end{itemize}
+	\textbf{Attributi}\\
+	\begin{itemize}
 		\item scope:Object\\
 		Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
 		\item rootScope:Object\\
@@ -23,14 +23,14 @@
 		\item \textdollar httpProvider\\
 		\item \textdollar provide\\
 		\item \textdollar locationProvider\\
-		\end{itemize}
-		\textbf{Metodi}
-		\begin{itemize}
-		\item run
-		\item config
-		\item interceptors
-		\item decorator
-		\end{itemize}
+	\end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item run;
+		\item config;
+		\item interceptors;
+		\item decorator.
+	\end{itemize}
 
 \subsection {Package Premi::Services}
 \label{sec:services}
@@ -139,7 +139,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che effettua l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene invocato success altrimenti error.
+				\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-?????????????????????????????????????????????????????????????????????????????????? effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene invocato success altrimenti error.
 			\end{itemize}
 			\item \textbf{isImage}(files)
 			\begin{itemize}
@@ -227,32 +227,20 @@
 		\end{itemize}
 		\textbf{Attributi}\\
 		\begin{itemize}
-			\item \textbf{idExecution}
+			\item \textbf{myPresentation}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
-				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione in esecuzione.
-			\end{itemize}
-			\item \textbf{idEdit}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Object;
-				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione aperta in modalità modifica.
+				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione aperta.
 			\end{itemize}
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{forExecution}(idSlideShow)
+			\item \textbf{getPresentazione}(idSlideShow)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a idExecution. In ogni caso idExecution viene ritornato.
-			\end{itemize}
-			\item \textbf{forEdit}(idSlideShow)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a idEdit. In ogni caso idEdit viene ritornato.
+				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a myPresentation. In ogni caso myPresentation viene ritornato.
 			\end{itemize}
 		\end{itemize}
 }
@@ -319,220 +307,508 @@
 }
 
 \subsection{Package Premi::Controller}{
-		\label{sec:controller}
-		Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::[nome package].\\\\
-		\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
-		\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
-		\subsubsection{Controller::HeaderController}
-		\label{sub:HeaderController}
-		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di controllare l'Header dell'applicazione.\\
-		\textbf{Relazioni d'uso con altri moduli}\\
-		\indent Questa classe utilizzerà le seguenti classi:
-		\begin{itemize}
+\label{sec:controller}
+Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::[nome package].\\\\
+\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
+\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
+
+\subsubsection{Controller::HeaderController}
+	\label{sub:HeaderController}
+	\textbf{Funzione}\\
+	\indent Questa classe si occuperà di controllare l'Header dell'applicazione.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item View::Pages::Index;
 		\item Services::Utils;
 		\item Services::Main;
 		\item Services::toPages.
-		\end{itemize}
-		\textbf{Attributi}\\
+		\item \$ scope:Object\\
+			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+		\item \$ rootScope:Object\\
+			\indent Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope discendono da questo.
+	\end{itemize}
+
+	\textbf{Metodi}
+	\begin{itemize}
+		\item \textbf{goLogin}()
 		\begin{itemize}
-		\item scope:Object\\
-		Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-		\item rootScope:Object\\
-		Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope	discendono da questo.
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-loginpage() per effettuare il reindirizzamento alla pagina di login.
 		\end{itemize}
-		\textbf{Metodi}
+		\item \textbf{goRegistrazione}()
 		\begin{itemize}
-		\item +error()
-		\item +who()
-		\item +isToken()
-		\item +goLogin()
-		\item +goRegistrazione()
-		\item +goHome()
-		\item +goProfile()
-		\item +logout()
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-registrazionepage() per effettuare il reindirizzamento alla pagina di registrazione.
 		\end{itemize}
+		\item \textbf{goHome}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-homepage() per effettuare il reindirizzamento alla pagina home.
+		\end{itemize}
+		\item \textbf{goProfile}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-profilepage() per effettuare il reindirizzamento alla pagina profile.
+		\end{itemize}
+		\item \textbf{who}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: String;
+			\item \textbf{Descrizione}: metodo che ritorna lo username dell'utente attualmente autenticato.
+		\end{itemize}
+		\item \textbf{isToken}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Boolean;
+			\item \textbf{Descrizione}: metodo che verifica l'effettiva autenticazione dell'utente.
+		\end{itemize}
+		\item \textbf{logout}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-Main::\-logout() per effettuare il logout dal server. Se l'operazione va a buon fine, viene effettuato il reindirizzamento alla pagina di login richiamando Services::\-toPages::\-loginpage().
+		\end{itemize}
+		\item \textbf{error}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: String;
+			\item \textbf{Descrizione}: metodo che ritorna l'errore individuato; esso deve essere posto all'interno di \$ rootScope.error.
+		\end{itemize}
+	\end{itemize}
+
+%CONTROLLER
 \subsubsection{Controller::AccessController}{
-				\label{sub:AccessController}
-				\textbf{Funzione}\\
-					\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
-				\textbf{Relazioni d'uso con altri moduli}\\
-					\indent Questa classe utilizzerà le seguenti classi:
-				\begin{itemize}
-					\item View::Pages::Index;
-					\item Model::MongoRelations::AccessControl::Authentication;
-					\item Model::MongoRelations::AccessControl::Registration.
-					\item Services::Utils;
-					\item Services::Main;
-					\item Services::toPages.
-				\end{itemize}
-				\textbf{Attributi}\\
-	            \begin{itemize}
-	            \item scope:Object\\
-	            Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-	            \end{itemize}
-				\textbf{Metodi}
-					\begin{itemize}
-                    \item +getData()
-                    \item +reset()
-                    \item +login()
-                    \item +registration()
-				\end{itemize}
-			}
-			\subsubsection{Controller::HomeController}{
-					\label{sub:homecontroller}
-					\textbf{Funzione}\\
-					\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina View::Pages::Home.\\
-					\textbf{Relazioni d'uso con altri moduli}\\
-					\indent Questa classe utilizzerà le seguenti classi:
-					\begin{itemize}
-						\item View::Pages::Home;
-						\item Model::MongoRelations::AccessControl::LoaderClass;
-						\item Model::MongoRelations::AccessControl::Authentication;
-						\item Services::Utils;
-						\item Services::Main;
-						\item Services::toPages.
-					\end{itemize}
-					\textbf{Attributi}\\
-				    \begin{itemize}
-					\item scope:Object\\
-				    Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-				    \item window::Object\\
-					\end{itemize}
-					\textbf{Metodi}
-					\begin{itemize}
-					\item +update():
-					\item +goEdit(slideId):
-					\item +goExecute(slideId):
-					\item +goProfile():
-					\item +getSS():
-					\item +deleteSlideShow(slideId):
-					\item +renameSlideShow(nameSS):
-					\item +createSlideShow():
-					\item +createSlideShow()
-                    
-					\end{itemize}
-				}
-				\subsubsection{Controller::ProfileController}{
-					\textbf{Funzione}\\
-					\indent Questa classe gestirà le operazioni e la logica applicativa riguardante la pagina profilo di un utente.\\\\
-					\textbf{Relazioni d'uso con altri moduli}\\
-					\indent Questa classe utilizzerà le seguenti classi:
-					\begin{itemize}
-						\item Model::MongoRelations::AccessControl::Authentication((DA COMPLETARE)).
-						\item Services::Utils;
-						\item Services::Main;
-						\item Services::toPages;
-						\item Services::Upload.
-					\end{itemize}
-					\textbf{Attributi}\\
-					\begin{itemize}
-					\item scope:Object\\
-					Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-					\item formData\\
-					Questo campo dati rappresenta
-					\end{itemize}
-					\textbf{Metodi}
-					\begin{itemize}
-                    \item +getData()
-                    \item +changepassword()
-                    \item +uploadpedia(files)
-					\end{itemize}
-				}
-				\subsubsection{View::Pages::Execution}{
-					\textbf{Funzione}\\
-					\indent Questa classe si occuperà di gestire i segnali che arrivano da View::Pages::Execution.\\\\
-					\textbf{Relazioni d'uso con altri moduli}\\
-					\indent Questa classe utilizzerà le seguenti classi:
-					\begin{itemize}
-						\item View::Pages::Execution;
-						\item Model::MongoRelations::Loader::LoaderClass;
-					\end{itemize}
-					\textbf{Attributi}\\
-					\indent Al momento non sono stati previsti degli attributi.\\\\
-					\textbf{Metodi}
-					\begin{itemize}
-						\item Execution(string id): costruttore che dovrà inizializzare gli eventuali attibuti e la pagina View::Pages::Execution in base all'id della presentazione. Execution(string id) controllerà la presenza del token di sessione, usando il metodo goIndex() in caso negativo, e dialogherà con Model::MongoRelations::Loader::LoaderClass per caricare la presentazione dal database;
-						\item +goHome(): metodo che reindirizza alla pagina View::Pages::Home;
-						\item +goIndex(): metodo che reindirizza alla pagina View::Pages::Index;
-						\item +goEdit(): metodo che reindirizza alla pagina View::Pages::Edit.
-					\end{itemize}
-				}
-				\subsubsection{Controller::EditController}{
-					\textbf{Funzione}\\
-					\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
-					\textbf{Relazioni d'uso con altri moduli}\\
-					\indent Questa classe utilizzerà le seguenti classi:
-					\begin{itemize}
-						\item View::Pages::Edit;
-						\item Model::SlideShow::SlideShowActions::Command:
-						\begin{itemize}
-													\item ConcreteTextInsertCommand;
-													\item ConcreteFrameInsertCommand;
-													\item ConcreteImageInsertCommand;
-													\item ConcreteSVGInsertCommand;
-													\item ConcreteAudioInsertCommand;
-													\item ConcreteVideoInsertCommand;
-													\item ConcreteBackgroundInsertCommand;
-													\item ConcreteTextRemoveCommand;
-													\item ConcreteFrameRemoveCommand;
-													\item ConcreteImageRemoveCommand;
-													\item ConcreteSVGRemoveCommand;
-													\item ConcreteAudioRemoveCommand;
-													\item ConcreteVideoRemoveCommand;
-													\item ConcreteBackgroundRemoveCommand;
-													\item ConcreteEditSizeCommand;
-													\item ConcreteEditPositionCommand;
-													\item ConcreteEditRotationCommand;
-													\item ConcreteEditColorCommand;
-													\item ConcreteEditBackgroundCommand;
-													\item ConcreteEditFontCommand;
-													\item ConcreteEditContentCommand; [[[[[[[[[[[[[[[[ESISTE????]]]]]]]]]]]]]]]]
-													\item Invoker;
-					\end{itemize}
-						\item Services::Main;
-						\item Services::toPages;
-						\item Services::Utils;
-						\item Services::SaredData;
-						\item Services::Upload;
-						\item Model::MongoRelations::Loader::Autenticazione;
-						\item Model::MongoRelations::Loader::Loaderclass;
-					\end{itemize}
-					\textbf{Attributi}\\
-					\begin{itemize}
-					\item scope:Object\\
-					Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-					\item q::Object\\
-					\item mdSideNav::Object
-					\item mdBottomSheet::Object
-				    \end{itemize}
-					\textbf{Metodi}
-					\begin{itemize}
-					\item goEdit(slideId):
-					\item goExecute(slideId):
-					\item toggleList():
-					\item backgroundManage(bool):
-					\item slideShowBackgroundManage(bool):
-					\item pathsManage(bool):
-					\item rotation(bool):
-					\item show(id):
-					\item mainPath()
-					\item showPathBottomSheet(event)
-					\item inserisciFrame()
-					\item inserisciTesto()
-					\item uploadmedia(files)
-					\item inserisciImmagine(files)
-					\item inserisciAudio(files)
-					\item inserisciVideo(files)
-					\item rimuoviFrame(id)
-					\item rimuoviSfondo()
-					\item cambiaColoreSfondo(color)
-					\item cambiaColoreSfondoFrame(color)
-					\item mediaControl()
-					\item announceClick(index)
-					\item setRotation(new rotation)
-					\item addToMain()
-					\end{itemize}
-				}
-				\subsection{Controller::BottomSheetController}
-				}
+	\label{sub:AccessController}
+	\textbf{Funzione}\\
+		\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item View::Pages::Login;
+		\item View::Pages::Registrazione;
+		\item Model::\-serverRelation::\-Authentication;
+		\item Model::\-serverRelation::\-Registration.
+		\item Services::Utils;
+		\item Services::Main;
+		\item Services::toPages;
+		\item \$ scope:Object\\
+    		\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+	\end{itemize}
+	\textbf{Attributi}\\
+    \begin{itemize}
+    	\item \textbf{user}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: oggetto contenente username e password derivanti dal form della pagina html.
+		\end{itemize}
+    	\item \textbf{getData}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$ scope. La password viene criptata grazie a Services::\-Utils::\-encrypt(password).
+		\end{itemize}
+    \end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item \textbf{reset}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che cancella i valori delle variabili all'interno di \$ scope.
+		\end{itemize}
+		\item \textbf{login}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Services::\-Main::\-login(data) per effettuare il login al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando Services::\-toPages::\-homepage().
+		\end{itemize}
+        \item \textbf{registration}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Services::\-Main::\-register(data) per effettuare la registrazione al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando Services::\-toPages::\-homepage().
+		\end{itemize}
+	\end{itemize}
+}
+\subsubsection{Controller::HomeController}{
+	\label{sub:homecontroller}
+	\textbf{Funzione}\\
+	\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina Home.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item View::Pages::Home;
+		\item Model::\-serverRelation::\-MongoRelation;
+		\item Services::Utils;
+		\item Services::Main;
+		\item Services::toPages;
+		\item \$ scope:Object\\
+			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+	\end{itemize}
+	\textbf{Attributi}\\
+	\begin{itemize}
+		\item \textbf{mongo}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-serverRelation::\-MongoRelation.
+		\end{itemize}
+    \end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item \textbf{update}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che aggiorna i contenuti della pagina home.
+		\end{itemize}
+		\item \textbf{goProfile}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-profilepage() per effettuare il reindirizzamento alla pagina profile.
+		\end{itemize}
+		\item \textbf{goEdit}(slideId)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-edipage(slideId) per effettuare il reindirizzamento alla pagina di edit.
+		\end{itemize}
+		\item \textbf{goExecute}(slideId)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage(slideId) per effettuare il reindirizzamento alla pagina di esecuzione.
+		\end{itemize}
+		\item \textbf{getSS}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Object;
+			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-getPresentationsMeta() per visualizzare le presentazioni dell'utente corrente.
+		\end{itemize}
+		\item \textbf{deleteSlideShow}(slideId)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-deletePresentation(slideId) per eliminare la presentazione slideId dal database. Se l'operazione ha successo, viene richiamato il metodo update().
+		\end{itemize}
+		\item \textbf{renameSlideShow}(nameSS, rename)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-renamePresentation(nameSS, rename) per rinominare la presentazione slideId. Se l'operazione ha successo, viene richiamato il metodo update().
+		\end{itemize}
+		\item \textbf{createSlideShow}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-newPresentation() per creare una nuova presentazione. Se l'operazione ha successo, viene richiamato il metodo update().
+		\end{itemize}
+		\item \textbf{salvaManifest}(slideId)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Model::\-??????????????????????????????????????????????????????????????????????????????????????????????? per salvare nel manifest la presentazione slideId.
+		\end{itemize}
+	\end{itemize}
+	}
+\subsubsection{Controller::ProfileController}{
+	\textbf{Funzione}\\
+	\indent Questa classe si occupa di gestire i segnali e le chiamate provenienti dalla pagina profilo di un utente.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Model::\-serverRelation::\-?????????????????????????????????????????????????????????????????????????????.
+		\item Services::Utils;
+		\item Services::Main;
+		\item Services::toPages;
+		\item Services::Upload;
+		\item \$ scope:Object\\
+			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+	\end{itemize}
+	\textbf{Attributi}\\
+    \begin{itemize}
+    	\item \textbf{user}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: oggetto contenente username, password e nuova password derivanti dal form della pagina html.
+		\end{itemize}
+    	\item \textbf{getData}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$ scope. Le password vengono criptate grazie a Services::\-Utils::\-encrypt(password).
+		\end{itemize}
+    \end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item \textbf{changepassword}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Model::\-serverRelation::\-??????????????????????????????????????????????????????????????????????????????????????????????? per cambiare la password dell'utente.
+		\end{itemize}
+	\end{itemize}
+}
+\subsubsection{View::Pages::Execution}{
+	\textbf{Funzione}\\
+	\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina di esecuzione.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item View::Pages::Execution;
+		\item Services::SharedData;
+		\item Services::Main;
+		\item Services::toPages;
+		\item Services::Utils;
+		\item \$ scope:Object\\
+			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+		\item \$ route:Object\\
+			\indent Servizio angular che permette la gestione del routing all'interno dell'applicazione.
+	\end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item Execution(string id): costruttore che dovrà inizializzare gli eventuali attibuti e la pagina View::Pages::Execution in base all'id della presentazione. Execution(string id) controllerà la presenza del token di sessione, usando il metodo goIndex() in caso negativo, e dialogherà con Model::MongoRelations::Loader::LoaderClass per caricare la presentazione dal database;
+		\item \textbf{on \$ locationChangeSuccess}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: evento che permette l'interazione tra Angular.js e Impress.js. Dato che il framework Impress.js cambia l'url della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
+		\end{itemize}
+		\item \textbf{translateImpress}(json)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, passato come parametro, in html eseguibile dal framework Impress.js.
+		\end{itemize}
+		\item \textbf{goHome}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-homepage() per effettuare il reindirizzamento alla pagina home.
+		\end{itemize}
+		\item \textbf{goEdit}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-editpage() per effettuare il reindirizzamento alla pagina di edit.
+		\end{itemize}
+	\end{itemize}
+}
+\subsubsection{Controller::EditController}{
+	\textbf{Funzione}\\
+	\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa classe utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item View::Pages::Edit;
+		\item Model::SlideShow::SlideShowActions::Command:
+		\begin{itemize}
+			\item ConcreteTextInsertCommand;
+			\item ConcreteFrameInsertCommand;
+			\item ConcreteImageInsertCommand;
+			\item ConcreteSVGInsertCommand;
+			\item ConcreteAudioInsertCommand;
+			\item ConcreteVideoInsertCommand;
+			\item ConcreteBackgroundInsertCommand;
+			\item ConcreteTextRemoveCommand;
+			\item ConcreteFrameRemoveCommand;
+			\item ConcreteImageRemoveCommand;
+			\item ConcreteSVGRemoveCommand;
+			\item ConcreteAudioRemoveCommand;
+			\item ConcreteVideoRemoveCommand;
+			\item ConcreteEditSizeCommand;
+			\item ConcreteEditPositionCommand;
+			\item ConcreteEditRotationCommand;
+			\item ConcreteEditColorCommand;
+			\item ConcreteEditBackgroundCommand;
+			\item ConcreteEditFontCommand;
+			\item ConcreteEditContentCommand;
+			\item Invoker;
+		\end{itemize}
+		\item Services::Main;
+		\item Services::toPages;
+		\item Services::Utils;
+		\item Services::SaredData;
+		\item Services::Upload;
+		\item Model::\-serverRelation::\-MongoRelation::\-Loader;
+		\item \$ scope:Object\\
+			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+		\item \$ q::Object\\
+			\indent Servizio Angular che permette di eseguire funzioni in modo asincrono;
+		\item \$ mdSideNav::Object\\
+			\indent Servizio Angular Material per il controllo della barra laterale;
+		\item \$ mdBottomSheet::Object\\
+			\indent Servizio Angular Material per il controllo del'oggetto mdBottomsSheet.
+	\end{itemize}
+	\textbf{Attributi}\\
+	\begin{itemize}
+		\item \textbf{inv}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-Command::\-Invoker.
+		\end{itemize}
+		\item \textbf{mongo}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Object;
+			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-serverRelation::\-MongoRelation.
+		\end{itemize}
+    \end{itemize}
+	\textbf{Metodi}
+	\begin{itemize}
+		\item \textbf{translateEdit}(json)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, passato come parametro, in html permettendo all'utente di modificare la presentazione.
+		\end{itemize}
+		\item \textbf{goExecute}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage() per effettuare il reindirizzamento alla pagina di execution.
+		\end{itemize}
+		\item \textbf{toggleList}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che gestisce \$ mdBottomSheet e \$ mdSidenav.
+		\end{itemize}
+		\item \textbf{showPathBottomSheet}(\$ event)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che fa apparire \$ mdBottomSheet per la visualizzazione dei percorsi.
+		\end{itemize}
+		\item \textbf{show}(id)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'elemento html cliccato.
+		\end{itemize}
+		\item \textbf{inserisciFrame}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand(spec) passandogli le specifiche del frame inserito.
+		\end{itemize}
+		\item \textbf{inserisciTesto}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand(spec) passandogli le specifiche dell'elemento testo inserito.
+		\end{itemize}
+		\item \textbf{inserisciImmagini}(files)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file immagine. Se l'operazione ha successo, inserisce ogni immagine nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand(spec) passandogli le specifiche degli elementi immagine inseriti.
+		\end{itemize}
+		\item \textbf{inserisciAudio}(files)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file audio. Se l'operazione ha successo,  inserisce ogni audio nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand(spec) passandogli le specifiche degli elementi audio inseriti.
+		\end{itemize}
+		\item \textbf{inserisciVideo}(files)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file video. Se l'operazione ha successo,  inserisce ogni video nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand(spec) passandogli le specifiche degli elementi video inseriti.
+		\end{itemize}
+		\item \textbf{rimuoviElemento}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+			\begin{itemize}
+				\item ConcreteTextRemoveCommand;
+				\item ConcreteFrameRemoveCommand;
+				\item ConcreteImageRemoveCommand;
+				\item ConcreteAudioRemoveCommand;
+				\item ConcreteVideoRemoveCommand.
+			\end{itemize}
+		\end{itemize}
+		\item \textbf{cambiaColoreSfondo}(color)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+		\end{itemize}
+		\item \textbf{cambiaImmagineSfondo}(files)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+		\end{itemize}
+		\item \textbf{rimuoviSfondo}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+		\end{itemize}
+		\item \textbf{cambiaColoreSfondoFrame}(color)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background del frame.
+		\end{itemize}
+		\item \textbf{cambiaImmagineSfondoFrame}(files)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background.
+		\end{itemize}
+		\item \textbf{rimuoviSfondoFrame}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background.
+		\end{itemize}
+		\item \textbf{mediaControl}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un file media.
+		\end{itemize}
+		\item \textbf{ruotaElemento}(value)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand(spec) passandogli le specifiche della nuova rotazione.
+		\end{itemize}
+		\item \textbf{muoviElemento}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand(spec) passandogli le specifiche della nuova posizione.
+		\end{itemize}
+		\item \textbf{ridimensionaElemento}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand(spec) passandogli le specifiche della nuova dimensione.
+		\end{itemize}
+		\item \textbf{aggiungiMainPath}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand(spec) passandogli le specifiche del frame da aggiungere al percorso principale.
+		\end{itemize}
+		\item \textbf{rimuoviMainPath}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand(spec) passandogli le specifiche del frame da togliere dal percorso principale.
+		\end{itemize}
+	\end{itemize}
+}
