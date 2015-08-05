@@ -72,6 +72,13 @@
 			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/element POST" per inserire un nuovo elemento nella presentazione dell'utente(element) nella base dati MongoDB, esegue la funzione callback
  			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
+			
+		\item \textbf{updatePaths(namePresentation: string, element : object, callback) }
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server nodeJs al servizio "/private/api/presentations/[namePresentation]/paths PUT" per aggiornare il campo paths della presentazione con l'elemento passato come parametro, esegue la funzione callback
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
 
 		\end{itemize}
 	}
