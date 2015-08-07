@@ -135,11 +135,11 @@
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{uploadmedia}(files, success, error)
+			\item \textbf{uploadmedia}(files, callback)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-?????????????????????????????????????????????????????????????????????????????????? effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene invocato success altrimenti error.
+				\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
 			\end{itemize}
 			\item \textbf{isImage}(files)
 			\begin{itemize}
@@ -159,11 +159,11 @@
 				\item \textbf{Tipo di ritorno}: Bool;
 				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
 			\end{itemize}
-			\item \textbf{getFileUrl}()
+			\item \textbf{getFileUrl}(file)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Stringa;
-				\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio dei file dell'utente corrente.
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio del parametro file rispetto all'utente corrente.
 			\end{itemize}
 		\end{itemize} 
 }
@@ -254,9 +254,9 @@
 			\item Services::Utils;
 			\item Services::Main;
 			\item Services::SharedData;
-			\item \$ http:Object\\
+			\item \$http:Object\\
 				\indent Servizio Angular che permette la comunicazione in remoto con un server.
-			\item \$ location:Object\\
+			\item \$location:Object\\
 				\indent Servizio Angular che gestisce gli indirizzi URL.
 		\end{itemize}
 		\textbf{Metodi}
@@ -323,9 +323,9 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::Utils;
 		\item Services::Main;
 		\item Services::toPages.
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
 			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-		\item \$ rootScope:Object\\
+		\item \$rootScope:Object\\
 			\indent Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope discendono da questo.
 	\end{itemize}
 
@@ -377,11 +377,10 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: String;
-			\item \textbf{Descrizione}: metodo che ritorna l'errore individuato; esso deve essere posto all'interno di \$ rootScope.error.
+			\item \textbf{Descrizione}: metodo che ritorna l'errore individuato; esso deve essere posto all'interno di \$rootScope.error.
 		\end{itemize}
 	\end{itemize}
 
-%CONTROLLER
 \subsubsection{Controller::AccessController}{
 	\label{sub:AccessController}
 	\textbf{Funzione}\\
@@ -396,7 +395,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::Utils;
 		\item Services::Main;
 		\item Services::toPages;
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
     		\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
 	\end{itemize}
 	\textbf{Attributi}\\
@@ -411,7 +410,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$ scope. La password viene criptata grazie a Services::\-Utils::\-encrypt(password).
+			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$scope. La password viene criptata grazie a Services::\-Utils::\-encrypt(password).
 		\end{itemize}
     \end{itemize}
 	\textbf{Metodi}
@@ -420,7 +419,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che cancella i valori delle variabili all'interno di \$ scope.
+			\item \textbf{Descrizione}: metodo che cancella i valori delle variabili all'interno di \$scope.
 		\end{itemize}
 		\item \textbf{login}()
 		\begin{itemize}
@@ -448,7 +447,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::Utils;
 		\item Services::Main;
 		\item Services::toPages;
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
 			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
 	\end{itemize}
 	\textbf{Attributi}\\
@@ -529,7 +528,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::Main;
 		\item Services::toPages;
 		\item Services::Upload;
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
 			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
 	\end{itemize}
 	\textbf{Attributi}\\
@@ -544,7 +543,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$ scope. Le password vengono criptate grazie a Services::\-Utils::\-encrypt(password).
+			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$scope. Le password vengono criptate grazie a Services::\-Utils::\-encrypt(password).
 		\end{itemize}
     \end{itemize}
 	\textbf{Metodi}
@@ -557,7 +556,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\end{itemize}
 	\end{itemize}
 }
-\subsubsection{View::Pages::Execution}{
+\subsubsection{Controller::Execution}{
 	\textbf{Funzione}\\
 	\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina di esecuzione.\\
 	\textbf{Relazioni d'uso con altri moduli}\\
@@ -568,15 +567,14 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::Main;
 		\item Services::toPages;
 		\item Services::Utils;
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
 			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
-		\item \$ route:Object\\
+		\item \$route:Object\\
 			\indent Servizio angular che permette la gestione del routing all'interno dell'applicazione.
 	\end{itemize}
 	\textbf{Metodi}
 	\begin{itemize}
-		\item Execution(string id): costruttore che dovrà inizializzare gli eventuali attibuti e la pagina View::Pages::Execution in base all'id della presentazione. Execution(string id) controllerà la presenza del token di sessione, usando il metodo goIndex() in caso negativo, e dialogherà con Model::MongoRelations::Loader::LoaderClass per caricare la presentazione dal database;
-		\item \textbf{on \$ locationChangeSuccess}()
+		\item \textbf{on \$locationChangeSuccess}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
@@ -639,13 +637,15 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\item Services::SaredData;
 		\item Services::Upload;
 		\item Model::\-serverRelation::\-MongoRelation::\-Loader;
-		\item \$ scope:Object\\
+		\item \$scope:Object\\
 			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-		\item \$ q::Object\\
+		\item \$interval:Object\\
+			\indent servizio Angular che permette di eseguire determinate operazioni ad ogni intervallo di tempo T.
+		\item \$q::Object\\
 			\indent Servizio Angular che permette di eseguire funzioni in modo asincrono;
-		\item \$ mdSideNav::Object\\
+		\item \$mdSideNav::Object\\
 			\indent Servizio Angular Material per il controllo della barra laterale;
-		\item \$ mdBottomSheet::Object\\
+		\item \$mdBottomSheet::Object\\
 			\indent Servizio Angular Material per il controllo del'oggetto mdBottomsSheet.
 	\end{itemize}
 	\textbf{Attributi}\\
@@ -675,19 +675,19 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage() per effettuare il reindirizzamento alla pagina di execution.
+			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage() per effettuare il reindirizzamento alla pagina di execution, passando il titolo della presentazione.
 		\end{itemize}
 		\item \textbf{toggleList}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che gestisce \$ mdBottomSheet e \$ mdSidenav.
+			\item \textbf{Descrizione}: metodo che gestisce \$mdBottomSheet e \$mdSidenav.
 		\end{itemize}
-		\item \textbf{showPathBottomSheet}(\$ event)
+		\item \textbf{showPathBottomSheet}(\$event)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che fa apparire \$ mdBottomSheet per la visualizzazione dei percorsi.
+			\item \textbf{Descrizione}: metodo che fa apparire \$mdBottomSheet per la visualizzazione dei percorsi.
 		\end{itemize}
 		\item \textbf{show}(id)
 		\begin{itemize}
@@ -695,37 +695,43 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 			\item \textbf{Tipo di ritorno}: Void;
 			\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'elemento html cliccato.
 		\end{itemize}
-		\item \textbf{inserisciFrame}()
+		\item \textbf{salvaPresentazione}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand(spec) passandogli le specifiche del frame inserito.
+			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-Loader::\-update() per salvare la presentazione nel database. Questo metodo viene utilizzato in congiunta ad \$interval in modo da assicurare un salvataggio continuo della presentazione ma senza creare troppo traffico in rete.
 		\end{itemize}
-		\item \textbf{inserisciTesto}()
+		\item \textbf{inserisciFrame}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand(spec) passandogli le specifiche dell'elemento testo inserito.
+			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso un'opportuna funzione javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand() passandogli le specifiche del frame inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{inserisciImmagini}(files)
+		\item \textbf{inserisciTesto}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file immagine. Se l'operazione ha successo, inserisce ogni immagine nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand(spec) passandogli le specifiche degli elementi immagine inseriti.
+			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand() passandogli le specifiche dell'elemento testo inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{inserisciAudio}(files)
+		\item \textbf{inserisciImmagini}(files, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file audio. Se l'operazione ha successo,  inserisce ogni audio nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand(spec) passandogli le specifiche degli elementi audio inseriti.
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file immagine. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand() passandogli le specifiche degli elementi immagine inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{inserisciVideo}(files)
+		\item \textbf{inserisciAudio}(files, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files) per l'upload dei file video. Se l'operazione ha successo,  inserisce ogni video nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand(spec) passandogli le specifiche degli elementi video inseriti.
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file audio. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand() passandogli le specifiche degli elementi audio inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{rimuoviElemento}()
+		\item \textbf{inserisciVideo}(files, spec)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file video. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand() passandogli le specifiche degli elementi video inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+		\end{itemize}
+		\item \textbf{rimuoviElemento}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
@@ -737,42 +743,55 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 				\item ConcreteAudioRemoveCommand;
 				\item ConcreteVideoRemoveCommand.
 			\end{itemize}
+			 Infine, richiama Model::\-serverRelation::\-Loader::\-addDelete() passandogli l'identificativo dell'elemento eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+		\end{itemize}
+		\item \textbf{updateSfondo}(spec)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background della presentazione nella view.
 		\end{itemize}
 		\item \textbf{cambiaColoreSfondo}(color)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+			\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
 		\end{itemize}
 		\item \textbf{cambiaImmagineSfondo}(files)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+			\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
 		\end{itemize}
 		\item \textbf{rimuoviSfondo}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand(spec) passandogli le specifiche del background.
+			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
+		\end{itemize}
+		\item \textbf{updateSfondoFrame}(spec)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background del frame spec.id nella view.
 		\end{itemize}
 		\item \textbf{cambiaColoreSfondoFrame}(color)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background del frame.
+			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background del frame. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
 		\end{itemize}
 		\item \textbf{cambiaImmagineSfondoFrame}(files)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background.
+			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
 		\end{itemize}
 		\item \textbf{rimuoviSfondoFrame}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand(spec) passandogli le specifiche del background.
+			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
 		\end{itemize}
 		\item \textbf{mediaControl}()
 		\begin{itemize}
@@ -780,35 +799,65 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 			\item \textbf{Tipo di ritorno}: Void;
 			\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un file media.
 		\end{itemize}
-		\item \textbf{ruotaElemento}(value)
+		\item \textbf{ruotaElemento}(value, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand(spec) passandogli le specifiche della nuova rotazione.
+			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand() passandogli le specifiche della nuova rotazione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{muoviElemento}()
+		\item \textbf{muoviElemento}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand(spec) passandogli le specifiche della nuova posizione.
+			\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand() passandogli le specifiche della nuova posizione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{ridimensionaElemento}()
+		\item \textbf{ridimensionaElemento}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand(spec) passandogli le specifiche della nuova dimensione.
+			\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand(spec) passandogli le specifiche della nuova dimensione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{aggiungiMainPath}()
+		\item \textbf{aggiungiMainPath}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand(spec) passandogli le specifiche del frame da aggiungere al percorso principale.
+			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand() passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
-		\item \textbf{rimuoviMainPath}()
+		\item \textbf{rimuoviMainPath}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand(spec) passandogli le specifiche del frame da togliere dal percorso principale.
+			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand() passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+		\end{itemize}
+		\item \textbf{portaAvanti}(id)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
+		\end{itemize}
+		\item \textbf{portaDietro}(id)
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
+		\end{itemize}
+		\item \textbf{impostaPrimoSfondo}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che viene richiamato nel caso in cui la presentazione sia vuota, oppure se il valore background non è impostato. Esso richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le dimensioni del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
+		\end{itemize}
+		\item \textbf{annullaModifica}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che annulla una modifica effettuata richiamando il metodo undo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete, addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con l'undo.
+		\end{itemize}
+		\item \textbf{ripristinaModifica}()
+		\begin{itemize}
+			\item \textbf{Accesso}: Public;
+			\item \textbf{Tipo di ritorno}: Void;
+			\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete, addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con il redo.
 		\end{itemize}
 	\end{itemize}
 }

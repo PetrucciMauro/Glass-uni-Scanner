@@ -1,111 +1,131 @@
-\section{Package Premi::View}{
-		\textbf{\tipo}: contiene le classi che istanzieranno gli oggetti per l'interfaccia grafica del software.\\\\
-		\textbf{\relaz}: utilizza le classi contenute nel package Premi::Controller per le comunicazioni con il Model.\\\\
-		\textbf{\attivita}: rappresenta l'intera GUI del nostro sistema.
-		\subsection{Premi::View::Pages}{
-			\textbf{\tipo}: contiene le pagine in Html, rappresentano l'interfaccia grafica vera e propria.\\\\
-			\textbf{\relaz}: utilizza le classi contenute nel package Premi::Controller.\\\\
-			\textbf{\attivita}: rappresenta le pagine fisiche del software.
-			}
-			\subsection{Premi::View::Pages::Index}{
-					\textbf{Funzione}\\
-						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di effettuare il login oppure di registrarsi al sistema.\\\\
-					\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa pagina utilizzerà le seguenti classi:
-					\begin{itemize}
-						\item Premi::Controller::IndexController
-					\end{itemize}
-					\textbf{Attributi}\\
-						\indent Al momento non sono stati previsti degli attributi.\\\\
-					\textbf{Input utente}
-						\begin{itemize}
-						\item bottoneLogin(): attiva il metodo Premi::Controller::IndexController::login(), se non sono compilati entrambi i campi restituisce errore, se va tutto bene reindirizza alla pagina Premi::View::Pages::Home;
-						\item bottoneSubscription(): attiva il metodo Premi::Controller::IndexController::\-subscription(), se non sono compilati entrambi i campi restituisce errore, se va tutto bene reindirizza alla pagina Premi::View::Pages::Home.
-					\end{itemize}
-				}
-				\subsection{Premi::View::Pages::Home}{
-						\textbf{Funzione}\\
-						\indent Questa pagina si occuperà di mostrare all'utente le presentazioni presenti sul proprio database e per ognuno di esse darà la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle, crearne una nuova o effettuare il logout.\\\\
-						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa pagina utilizzerà le seguenti classi:
-						\begin{itemize}
-							\item Premi::Controller::HomeController
-						\end{itemize}
-						\textbf{Attributi}\\
-						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Input utente}
-						\begin{itemize}
-							\item bottoneDeleteSlideShow(): bottone che fa scomparire il riferimento alla presentazione di cui il bottone fa riferimento, attiva il metodo di Premi::Controller::HomeController che si occuperà dell'eliminazione della presentazione dal database;
-							\item bottoneDownload(): bottone che attiva il Premi::Controller::HomeController che si occuperà dello scaricamento della presentazione nel Manifest e manda a schermo un segnale di avvenuto scaricamento della presentazione;
-							\item bottoneRenameSlideShow(): bottone che attiva il Premi::Controller::HomeController che si occuperà della rinominazione della presentazione nel database e manda a schermo l'effettva modifica del nome della presentazione;
-							\item bottoneExecute(): bottone che reindirizza alla pagina Premi::View::Pages::Execution e attiva il controller Premi::Controller::HomeController che si prende l'id della presentazione alla quale il bottone fa riferimento per la creazione della prossima pagina;
-							\item bottoneEdit(): bottone che reindirizza alla pagina Premi::View::Pages::Edit e attiva il controller Premi::Controller::HomeController che si prende l'id della presentazione alla quale il bottone fa riferimento per la creazione della prossima pagina;
-							\item bottoneLogout(): bottone che attiva il Premi::Controller::HomeController che si occuperà della distruzione del token di sessione e reindirizza alla pagina Premi::View::Pages::Index.
-						\end{itemize}
-					}
-					\subsection{Premi::View::Pages::Profile}{
-						\textbf{Funzione}\\
-						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di cambiare i propri dati personali, caricare, eliminare o rinominare i propri file media.\\\\
-						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa pagina utilizzerà le seguenti classi:
-						\begin{itemize}
-							\item Premi::Controller::ProfileController
-						\end{itemize}
-						\textbf{Attributi}\\
-						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Input utente}
-						\begin{itemize}
-							\item bottoneChangePassword(): bottone che, se i campi sono compilati erroneamente restituisce errore, altrimenti attiva il metodo in Premi::Controller::ProfileController che si occupa di cambiare la password dell'account e restituisce un messaggio a schermo di avvenuto cambiamento;
-							\item bottoneUploadMedia(): bottone che attiva il metodo in Premi::Controller::ProfileController che caricherà il file richiesto nel server, se l'operazione va a buon fine la schermata si aggiorna con la nuova miniatura del file media;
-							\item bottoneDeleteMedia(): bottone che fa scomparire il riferimento al file media di cui il bottone fa riferimento, attiva il metodo di Premi::Controller::ProfileController che si occuperà dell'eliminazione del file media dal server;
-							\item bottoneRenameMedia(): bottone che attiva il Premi::Controller::ProfileController che si occuperà della rinominazione del file media presente nel server e manda a schermo l'effettva modifica del nome del file media.
-						\end{itemize}
-					}
-					\subsection{Premi::View::Pages::Execution}{
-						\textbf{Funzione}\\
-						\indent Questa pagina si occuperà di gestire l'esecuzione di una presentazione utilizzando il framework Impress.js associato alla pagina.\\\\
-						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa pagina utilizzerà le seguenti classi:
-						\begin{itemize}
-							\item Premi::Controller::ExecutionController
-						\end{itemize}
-						\textbf{Attributi}\\
-						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Input utente}
-						\begin{itemize}
-							\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del framework Impress.js e che visualizzerà il frame successivo della presentazione;
-							\item +prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del framework Impress.js e che visualizzerà il frame precedente della presentazione;
-							\item +bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del framework Impress.js e che visualizzerà il frame con bookmark successivo.
-						\end{itemize}
-					}
-					\subsection{Premi::View::Pages::Edit}{
-						\textbf{Funzione}\\
-						\indent Questa pagina si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
-						\textbf{Relazioni d'uso con altri moduli}\\
-						\indent Questa pagina utilizzerà le seguenti classi:
-						\begin{itemize}
-							\item Premi::Controller::EditController
-						\end{itemize}
-						\textbf{Attributi}\\
-						\indent Al momento non sono stati previsti degli attributi.\\\\
-						\textbf{Input utente}
-						\begin{itemize}
-							\item bottoneInsertFrame(): bottone che fa comparire nel piano della presentazione il nuovo frame in base alla forma selezionata, e attiva il metodo in Premi::Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
-							\item bottoneInsertMedia(): bottone che fa comparire nel piano della presentazione il nuovo file media e attiva il metodo in Premi::Controller::EditController che aggiornerà le informazioni della presentazione e caricherà il file richiesto nel server;
-							\item dropMove(): evento che si attiva al rilascio dello spostamento di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-							\item bottoneInsertText(): bottone che fa comparire nel piano della presentazione il nuovo elemento testuale e attiva il metodo in Premi::Controller::EditController che aggiornerà le informazioni della presentazione;
-							\item bottoneTextEdit(): bottone che modifica il testo selezionato e attiva il metodo in Premi::Controller::EditController che si occupa dell'aggiornamento dell'elemento testuale modificato; 
-							\item bottoneDeleteElement(): bottone che fa scomparire l'elemento dal piano della presentazione e attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
-							\item bottoneInsertChoice(): bottone che fa inserire all'utente il testo della scelta e fa scegliere il frame al quale farà riferimento, attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
-							\item bottoneBookmark(): bottone che assegna o rimuove il bookmark al frame, attiva il metodo di Premi::Controller::EditController che si occuperà dell'aggiornamento della presentazione;
-							\item dropSize(): evento che si attiva al rilascio del ridimensionamento di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-							\item dropRotation(): evento che si attiva al rilascio della rotazione di un elemento, attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-							\item bottonePath(): bottone che mostra all'utente l'ordine dei frame e da la possibilità di modificarlo, se viene modificato attiva il metodo in Premi::Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-							\item bottoneFrameBackground(): bottone assegna l'immagine caricata come sfondo del frame e che attiva il metodo in Premi::Controller::EditController per caricare il file nel server e lo imposta come sfondo del frame;
-							\item bottoneBackground(): bottone che assegna l'immagine caricata come sfondo della presentazione e attiva il metodo in Premi::Controller::EditController per caricare il file nel server e lo imposta come sfondo della presentazione;
-							\item bottoneInsertSvg(): bottone che fa comparire nel piano della presentazione il nuovo elemento svg selezionato e attiva il metodo in Premi::Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
-							\item bottoneExecute(): bottone che reindirizza alla pagina Premi::View::Pages::Execute e attiva il metodo in Premi::Controller::EditController che salverà l'id della presentazione da eseguire nella pagina successiva;
-						\end{itemize}
-					}
-					
-		
+\section{Package View}{
+	\textbf{\tipo}: contiene le classi che istanzieranno gli oggetti per l'interfaccia grafica del software.\\
+	\textbf{\relaz}: utilizza le classi contenute nel package Controller per le comunicazioni con il Model.\\
+	\textbf{\attivita}: rappresenta l'intera GUI del nostro sistema.
+\subsection{View::Pages}{
+\textbf{\tipo}: contiene le pagine in Html, rappresentano l'interfaccia grafica vera e propria.\\
+\textbf{\relaz}: utilizza le classi contenute nel package Controller.\\
+\textbf{\attivita}: rappresenta le pagine fisiche del software.
+}
+\subsection{View::Pages::Index}{
+	\textbf{Funzione}\\
+		\indent Questa pagina si occuperà di mostrare all'utente header e footer validi per ogni pagina html e permettendogli di accedere alle pagine Login, Registrazione, Home e Profile e di poter effettuare il logout dal sistema .\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::HeaderController.
+	\end{itemize}
+	\textbf{Input utente}
+		\begin{itemize}
+		\item bottoneAccedi(): richiama Controller::HeaderController::goLogin() che reindirizza alla pagina View::Pages::Login;
+		\item bottoneRegistrati(): richiama Controller::HeaderController::goRegistrazione() che reindirizza alla pagina View::Pages::Registrazione;
+		\item bottoneHome(): richiama Controller::HeaderController::goHome() che reindirizza alla pagina View::Pages::Home;
+		\item bottoneProfilo(): richiama Controller::HeaderController::goProfile() che reindirizza alla pagina View::Pages::Profilo;
+	\end{itemize}
+	}
+\subsection{View::Pages::Login}{
+	\textbf{Funzione}\\
+		\indent Questa pagina si occuperà di mostrare all'utente la possibilità di effettuare il login.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::AccessController.
+	\end{itemize}
+	\textbf{Input utente}
+		\begin{itemize}
+		\item bottoneLogin(): attiva il metodo Controller::AccessController::login() che controlla se i campi della form sono stati compilati correttamente. Se l'operazione ha successo, viene effettuato il reindirizzamento alla pagina View::Pages::Home;
+	\end{itemize}
+	}
+	\subsection{View::Pages::Registrazione}{
+	\textbf{Funzione}\\
+		\indent Questa pagina si occuperà di mostrare all'utente la possibilità di effettuare la registrazione al sistema.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::AccessController.
+	\end{itemize}
+	\textbf{Input utente}
+		\begin{itemize}
+		\item bottoneRegistrati(): attiva il metodo Controller::AccessController::registration() che controlla se i campi della form sono stati compilati correttamente. Se l'operazione ha successo, viene effettuato il reindirizzamento alla pagina View::Pages::Home;
+	\end{itemize}
+	}
+\subsection{View::Pages::Home}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di mostrare all'utente le presentazioni presenti sul proprio database dando la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle o crearne di nuove.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::HomeController
+	\end{itemize}
+	\textbf{Input utente}
+	\begin{itemize}
+		\item bottoneNuovaPresentazione(): bottone che richiama il metodo di Controller::HomeController::createSlideShow();
+		\item bottoneElimina(): bottone che richiama il metodo di Controller::HomeController::deleteSlideShow() passandogli il nome della presentazione da eliminare;
+		\item bottoneRinomina(): bottone che richiama il metodo di Controller::HomeController::renameSlideShow() passandogli il nome della presentazione da rinominare;
+		\item bottoneEsegui(): bottone che richiama il metodo di Controller::HomeController::goExecute() passandogli il nome della presentazione da eseguire;
+		\item bottoneEdit(): bottone che richiama il metodo di Controller::HomeController::goEdit() passandogli il nome della presentazione da modificare;
+		\item bottoneSalva(): bottone che richiama il metodo di Controller::HomeController::salvaManifest() passandogli il nome della presentazione da salvare in locale.
+	\end{itemize}
+	}
+\subsection{View::Pages::Profile}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di mostrare all'utente la possibilità di cambiare i propri dati personali.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::ProfileController
+	\end{itemize}
+	\textbf{Attributi}\\
+	\indent Al momento non sono stati previsti degli attributi.\\
+	\textbf{Input utente}
+	\begin{itemize}
+		\item bottoneCambiaPassword(): bottone che richiama il metodo di Controller::ProfileController::changePassword(). Il risultato dell'operazione viene in ogni caso comunicato all'utente.
+	\end{itemize}
+}
+\subsection{View::Pages::Execution}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di gestire l'esecuzione di una presentazione utilizzando il framework Impress.js associato alla pagina.\\\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::ExecutionController
+	\end{itemize}
+	\textbf{Attributi}\\
+	\indent Al momento non sono stati previsti degli attributi.\\\\
+	\textbf{Input utente}
+	\begin{itemize}
+		\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del framework Impress.js e che visualizzerà il frame successivo della presentazione;
+		\item +prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del framework Impress.js e che visualizzerà il frame precedente della presentazione;
+		\item +bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del framework Impress.js e che visualizzerà il frame con bookmark successivo.
+	\end{itemize}
+}
+\subsection{View::Pages::Edit}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::EditController
+	\end{itemize}
+	\textbf{Attributi}\\
+	\indent Al momento non sono stati previsti degli attributi.\\\\
+	\textbf{Input utente}
+	\begin{itemize}
+		\item bottoneInsertFrame(): bottone che fa comparire nel piano della presentazione il nuovo frame in base alla forma selezionata, e attiva il metodo in Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
+		\item bottoneInsertMedia(): bottone che fa comparire nel piano della presentazione il nuovo file media e attiva il metodo in Controller::EditController che aggiornerà le informazioni della presentazione e caricherà il file richiesto nel server;
+		\item dropMove(): evento che si attiva al rilascio dello spostamento di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+		\item bottoneInsertText(): bottone che fa comparire nel piano della presentazione il nuovo elemento testuale e attiva il metodo in Controller::EditController che aggiornerà le informazioni della presentazione;
+		\item bottoneTextEdit(): bottone che modifica il testo selezionato e attiva il metodo in Controller::EditController che si occupa dell'aggiornamento dell'elemento testuale modificato; 
+		\item bottoneDeleteElement(): bottone che fa scomparire l'elemento dal piano della presentazione e attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+		\item bottoneInsertChoice(): bottone che fa inserire all'utente il testo della scelta e fa scegliere il frame al quale farà riferimento, attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+		\item bottoneBookmark(): bottone che assegna o rimuove il bookmark al frame, attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+		\item dropSize(): evento che si attiva al rilascio del ridimensionamento di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+		\item dropRotation(): evento che si attiva al rilascio della rotazione di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+		\item bottonePath(): bottone che mostra all'utente l'ordine dei frame e da la possibilità di modificarlo, se viene modificato attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
+		\item bottoneFrameBackground(): bottone assegna l'immagine caricata come sfondo del frame e che attiva il metodo in Controller::EditController per caricare il file nel server e lo imposta come sfondo del frame;
+		\item bottoneBackground(): bottone che assegna l'immagine caricata come sfondo della presentazione e attiva il metodo in Controller::EditController per caricare il file nel server e lo imposta come sfondo della presentazione;
+		\item bottoneInsertSvg(): bottone che fa comparire nel piano della presentazione il nuovo elemento svg selezionato e attiva il metodo in Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
+		\item bottoneExecute(): bottone che reindirizza alla pagina View::Pages::Execute e attiva il metodo in Controller::EditController che salverà l'id della presentazione da eseguire nella pagina successiva;
+	\end{itemize}
+}
+
