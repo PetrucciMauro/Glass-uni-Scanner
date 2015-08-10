@@ -669,7 +669,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, passato come parametro, in html permettendo all'utente di modificare la presentazione.
+			\item \textbf{Descrizione}: metodo che permette la traduzione dell'oggetto json, passato come parametro, in html permettendo all'utente di modificare la presentazione.
 		\end{itemize}
 		\item \textbf{goExecute}()
 		\begin{itemize}
@@ -705,37 +705,37 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso un'opportuna funzione javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand() passandogli le specifiche del frame inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand() passandogli le specifiche del frame inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{inserisciTesto}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso un'opportuna funziona javascript, e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand() passandogli le specifiche dell'elemento testo inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciTesto(spec), e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand() passandogli le specifiche dell'elemento testo inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{inserisciImmagini}(files, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file immagine. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand() passandogli le specifiche degli elementi immagine inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file immagine. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciImmagine(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand() passandogli le specifiche degli elementi immagine inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{inserisciAudio}(files, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file audio. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand() passandogli le specifiche degli elementi audio inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file audio. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciAudio(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand() passandogli le specifiche degli elementi audio inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{inserisciVideo}(files, spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file video. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso un'opportuna funziona javascript, e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand() passandogli le specifiche degli elementi video inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file video. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciVideo(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand() passandogli le specifiche degli elementi video inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{rimuoviElemento}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+			\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando View::Pages::Edit::elimina(id_elemento) e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
 			\begin{itemize}
 				\item ConcreteTextRemoveCommand;
 				\item ConcreteFrameRemoveCommand;
@@ -803,7 +803,7 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand() passandogli le specifiche della nuova rotazione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando View::Pages::Edit::rotate(id_elemento, value). Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand() passandogli le specifiche della nuova rotazione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{muoviElemento}(spec)
 		\begin{itemize}
@@ -821,25 +821,25 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand() passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che aggiunge il frame selezionato al percorso principale salvato in View::Pages::Edit::mainPath, e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand() passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{rimuoviMainPath}(spec)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand() passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item \textbf{Descrizione}: metodo che rimuove il frame selezionato dal percorso principale salvato in View::Pages::Edit::mainPath, e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand() passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 		\end{itemize}
 		\item \textbf{portaAvanti}(id)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
+			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento id attraverso la funzione View::Pages::Edit::portaAvanti(id), e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
 		\end{itemize}
 		\item \textbf{portaDietro}(id)
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
+			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento id attraverso la funzione View::Pages::Edit::mandaDietro(id), e che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
 		\end{itemize}
 		\item \textbf{impostaPrimoSfondo}()
 		\begin{itemize}
@@ -851,13 +851,13 @@ Tutti i package seguenti appartengono al package Premi, quindi per ognuno di ess
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che annulla una modifica effettuata richiamando il metodo undo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete, addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con l'undo.
+			\item \textbf{Descrizione}: metodo che annulla una modifica effettuata richiamando il metodo undo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con l'undo.
 		\end{itemize}
 		\item \textbf{ripristinaModifica}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete, addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con il redo.
+			\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con il redo.
 		\end{itemize}
 	\end{itemize}
 }

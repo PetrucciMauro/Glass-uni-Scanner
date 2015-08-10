@@ -75,8 +75,6 @@
 	\begin{itemize}
 		\item Controller::ProfileController
 	\end{itemize}
-	\textbf{Attributi}\\
-	\indent Al momento non sono stati previsti degli attributi.\\
 	\textbf{Input utente}
 	\begin{itemize}
 		\item bottoneCambiaPassword(): bottone che richiama il metodo di Controller::ProfileController::changePassword(). Il risultato dell'operazione viene in ogni caso comunicato all'utente.
@@ -90,8 +88,6 @@
 	\begin{itemize}
 		\item Controller::ExecutionController
 	\end{itemize}
-	\textbf{Attributi}\\
-	\indent Al momento non sono stati previsti degli attributi.\\\\
 	\textbf{Input utente}
 	\begin{itemize}
 		\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del framework Impress.js e che visualizzerà il frame successivo della presentazione;
@@ -101,31 +97,55 @@
 }
 \subsection{View::Pages::Edit}{
 	\textbf{Funzione}\\
-	\indent Questa pagina si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
+	\indent Questa pagina si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\
 	\textbf{Relazioni d'uso con altri moduli}\\
 	\indent Questa pagina utilizzerà le seguenti classi:
 	\begin{itemize}
 		\item Controller::EditController
 	\end{itemize}
 	\textbf{Attributi}\\
-	\indent Al momento non sono stati previsti degli attributi.\\\\
+		\begin{itemize}
+			\item active: oggetto che rappresenta l'elemento attualmente selezionato;
+			\item mainPath: oggetto che rappresenta il percorso principale della presentazione.
+		\end{itemize}
 	\textbf{Input utente}
 	\begin{itemize}
-		\item bottoneInsertFrame(): bottone che fa comparire nel piano della presentazione il nuovo frame in base alla forma selezionata, e attiva il metodo in Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
-		\item bottoneInsertMedia(): bottone che fa comparire nel piano della presentazione il nuovo file media e attiva il metodo in Controller::EditController che aggiornerà le informazioni della presentazione e caricherà il file richiesto nel server;
-		\item dropMove(): evento che si attiva al rilascio dello spostamento di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-		\item bottoneInsertText(): bottone che fa comparire nel piano della presentazione il nuovo elemento testuale e attiva il metodo in Controller::EditController che aggiornerà le informazioni della presentazione;
+		\item bottoneEseguiPresentazione(): bottone che richiama Controller::EditController::goExecute() per eseguire la presentazione;
+		\item bottoneAnnulla: bottone che richiama Controller::EditController::annullaModifica() per annullare l'ultima modifica eseguita;
+		\item bottoneRipristina: bottone che richiama Controller::EditController::ripristinaModifica() per ripristina l'ultima modifica annullata;
+		\item bottoneInserisciFrame: bottone che richiama Controller::EditController::inserisciFrame() per inserire un frame nel piano della presentazione;
+		\item bottoneInserisciTesto: bottone che richiama Controller::EditController::inserisciTesto() per inserire un elemento testo nel piano della presentazione;
+		\item bottoneInserisciImmagine: bottone che richiama Controller::EditController::inserisciImmagine() passandogli le immagini da inserire;
+		\item bottoneInserisciAudio: bottone che richiama Controller::EditController::inserisciAudio() passandogli gli audio da inserire;
+		\item bottoneInserisciVideo: bottone che richiama Controller::EditController::inserisciVideo() passandogli i video da inserire;
+		\item bottoneRuota: bottone che richiama Controller::EditController::ruotaElemento() passandogli il valore della rotazione da applicare all'elemento selezionato;
+		\item bottoneCambiaColoreSfondo: bottone che richiama Controller::EditController::cambiaColoreSfondo() passandogli il valore del colore da applicare al background della presentazione;
+		\item bottoneCambiaImmagineSfondo: bottone che richiama Controller::EditController::cambiaImmagineSfondo() passandogli l'immagine da applicare al background della presentazione;
+		\item eliminaSfondoPresentazine: bottone che richiama Controller::EditController::rimuoviSfondo() per resettare lo sfondo della presentazione;
+		\item bottoneCambiaColoreSfondoFrame: bottone che richiama Controller::EditController::cambiaColoreSfondoFrame() passandogli il valore del colore da applicare al frame selezionato;
+		\item bottoneCambiaImmagineSfondoFrame: bottone che richiama Controller::EditController::cambiaImmagineSfondoFrame() passandogli l'immagine da applicare al background del frame selezionato;
+		\item eliminaSfondoFrame: bottone che richiama Controller::EditController::rimuoviSfondo() per resettare lo sfondo del frame selezionato;
+		\item bottoneAggiungiPercorsoPrincipale: bottone che richiama Controller::EditControlelr::aggiungiMainPath() per aggiungere il frame corrente al percorso principale di presentazione;
+
+		\item inserisciFrame(spec): funzione javascript che permette l'inserimento di un nuovo frame. Se spec è definito, le proprietà contenute in esso vengono assegnate al frame appena inserito;
+		\item inserisciTesto(spec): funzione javascript che permette l'inserimento di un nuovo elemento testo. Se spec è definito, le proprietà contenute in esso vengono assegnate al testo appena inserito;
+		\item inserisciImmagine(x, spec): funzione javascript che permette l'inserimento di un nuovo elemento immagine con path passato tramite il parametro x. Se spec è definito, le proprietà contenute in esso vengono assegnate all'immagine appena inserita;
+		\item inserisciAudio(x, spec): funzione javascript che permette l'inserimento di un nuovo elemento audio con path passato tramite il parametro x. Se spec è definito, le proprietà contenute in esso vengono assegnate all'audio appena inserito;
+		\item inserisciVideo(x, spec): funzione javascript che permette l'inserimento di un nuovo elemento video con path passato tramite il parametro x. Se spec è definito, le proprietà contenute in esso vengono assegnate al video appena inserito;
+		\item elimina(id): funzione javascript che permette l'eliminazione dell'elemento id dal piano della presentazione;
+		\item rotate(el, value): funzione javascript che permette di ruotare l'elemento el in base al valore definito dal parametro value;
+		\item portaAvanti(id): funzione javascript che incrementa la proprietà zIndex dell'elemento id;
+		\item mandaDietro(id): funzione javascript che decrementa la proprietà zIndex dell'elemento id;
+		\item Drag&Drop: evento javascript che permette di poter spostare un elemento all'interno del piano della presentazione;
+		\item Resizable: evento javascript che permette di poter ridimensionare un elemento all'interno del piano della presentazione;
+
+
 		\item bottoneTextEdit(): bottone che modifica il testo selezionato e attiva il metodo in Controller::EditController che si occupa dell'aggiornamento dell'elemento testuale modificato; 
-		\item bottoneDeleteElement(): bottone che fa scomparire l'elemento dal piano della presentazione e attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
+		
 		\item bottoneInsertChoice(): bottone che fa inserire all'utente il testo della scelta e fa scegliere il frame al quale farà riferimento, attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
 		\item bottoneBookmark(): bottone che assegna o rimuove il bookmark al frame, attiva il metodo di Controller::EditController che si occuperà dell'aggiornamento della presentazione;
-		\item dropSize(): evento che si attiva al rilascio del ridimensionamento di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-		\item dropRotation(): evento che si attiva al rilascio della rotazione di un elemento, attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-		\item bottonePath(): bottone che mostra all'utente l'ordine dei frame e da la possibilità di modificarlo, se viene modificato attiva il metodo in Controller::EditController che si occuperà dell'aggiornamento delle informazioni della presentazione;
-		\item bottoneFrameBackground(): bottone assegna l'immagine caricata come sfondo del frame e che attiva il metodo in Controller::EditController per caricare il file nel server e lo imposta come sfondo del frame;
-		\item bottoneBackground(): bottone che assegna l'immagine caricata come sfondo della presentazione e attiva il metodo in Controller::EditController per caricare il file nel server e lo imposta come sfondo della presentazione;
+
 		\item bottoneInsertSvg(): bottone che fa comparire nel piano della presentazione il nuovo elemento svg selezionato e attiva il metodo in Controller::EditController che si occuperà di aggiornare le informazioni della presentazione;
-		\item bottoneExecute(): bottone che reindirizza alla pagina View::Pages::Execute e attiva il metodo in Controller::EditController che salverà l'id della presentazione da eseguire nella pagina successiva;
 	\end{itemize}
 }
 
