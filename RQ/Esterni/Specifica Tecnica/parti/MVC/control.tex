@@ -2,11 +2,11 @@
 	\textbf{\tipo}: fanno parte di questo livello i package che gestiscono i segnali e le chiamate effettuati dalla view.\\
 	\textbf{\relaz}: comunica con il Model per rendere possibile la gestione del profilo e la gestione delle presentazioni da parte dell'utente.\\
 	
-	\subsubsection{Controller::EditController}{
-		\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate delle pagine View::Pages::DesktopEdit e View::Pages::MobileEdit.\\	
+	\subsubsection{Controller::\-EditController}{
+		\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate delle pagine View::\-Pages::\-DesktopEdit e View::\-Pages::\-MobileEdit.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Model::SlideShow::SlideShowActions::Command::ConcreteTextInsertCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
 			\item ConcreteFrameInsertCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
 			\item ConcreteImageInsertCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
 			\item ConcreteSVGInsertCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
@@ -28,54 +28,54 @@
 			\item ConcreteEditFontCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
 			\item ConcreteEditContentCommand <- EditController costruisce un comando e lo dà in pasto a Model:Invoker;
 			\item Invoker <- EditController costruisce l’oggetto di classe Invoker. Invoca il metodo execute() di Invoker, passando come parametro un oggetto di classe Command oppure invoca il metodo unexecute() di Invoker;
-			\item Model::ApacheManager::FileManager <- EditController invoca i metodi uploadFile() di FileManager quando viene inserito nella presentazione un file non ancora presente nel server;
-			\item Model::ApacheRelations::ResourceGetter <- la classe della view invoca il metodo save() presente in  ExecutionController che a sua volta invoca il metodo getResources() di ResourceGetter che aggiorna il file manifest con tutti gli elementi della presentazione e lo ricarica.
-			\item View::Pages::DesktopEdit e View::Pages::MobileEdit -> invocano i metodi di EditController, passando i parametri degli oggetti modificati;
-			\item View::Pages::DesktopEdit e View::Pages::MobileEdit <- quando il logout ha successo EditController comunica alla view di effettuare una redirect verso Index;
-			\item Model::MongoRelations::Loader::Autenticazione <- Quando la view invia una richiesta di logout, EditController invoca il metodo di Autenticazione deAuthenticate(), che termina la sessione.
-			\item Model::MongoRelations::Loader::Loaderclass <- EditController invoca i metodi forniti da LoaderClass che restituiscono l'oggetto JSON della presentazione. 
-			\item View::ViewJavascript <- EditController invoca le funzioni Javascript passando l'oggetto presentazione, destinate alla sua traduzione in formato HTML. Inoltre, EditController invoca le funzioni ViewJavascript ogniqualvolta sia richiesta una modifica della View a seguito di una modifica del model, nello specifico nelle operazioni di annulla e ripristina, gestite dal package Model::SlideShow::SlideShowActions::Command.
-			\item Model::SlideShow::SlideShowActions::Command -> le sottoclassi concrete di AbstractCommand invocano il metodo di update di EditController, tale metodo invoca quindi le funzioni di ViewJavascript destinate alla modifica della pagina HTML.
+			\item Model::\-serverRelations::\-FileServerRelation <- EditController invoca i metodi uploadFile() di FileServerRelation quando viene inserito nella presentazione un file non ancora presente nel server;
+			\item View::\-Pages::\-DesktopEdit e View::\-Pages::\-MobileEdit -> invocano i metodi di EditController, passando i parametri degli oggetti modificati;
+			\item View::\-Pages::\-DesktopEdit e View::\-Pages::\-MobileEdit <- quando il logout ha successo EditController comunica alla view di effettuare una redirect verso Index;
+			\item Model::\-MongoRelations::\-Loader::\-Autenticazione <- Quando la view invia una richiesta di logout, EditController invoca il metodo di Autenticazione deAuthenticate(), che termina la sessione.
+			\item Model::\-MongoRelations::\-Loader::\-Loaderclass <- EditController invoca i metodi forniti da LoaderClass che restituiscono l'oggetto JSON della presentazione. 
+			\item View::\-ViewJavascript <- EditController invoca le funzioni Javascript passando l'oggetto presentazione, destinate alla sua traduzione in formato HTML. Inoltre, EditController invoca le funzioni ViewJavascript ogniqualvolta sia richiesta una modifica della View a seguito di una modifica del model, nello specifico nelle operazioni di annulla e ripristina, gestite dal package Model::\-SlideShow::\-SlideShowActions::\-Command.
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command -> le sottoclassi concrete di AbstractCommand invocano il metodo di update di EditController, tale metodo invoca quindi le funzioni di ViewJavascript destinate alla modifica della pagina HTML.
 		\end{itemize} 
-		\textbf{\interfacce}: La pagina DesktopEdit o la pagina MobileEdit invia a EditController comunica l’avvenuta modifica o la rimozione di un elemento della presentazione o l’inserimento di un nuovo elemento invocando i metodi corrispondenti di EditController. EditController istanzia un oggetto di una sottoclasse di Model::SlideShow::SlideShowActions::Command::AbstractCommand e lo dà in pasto a Model::Invoker. Eventualmente EditController, dopo che la View ha invocato il metodo undo() di EditController, può semplicemente annullare il comando appena eseguito invocando il metodo unexecute di Invoker.
-		La pagina web può, inoltre richiedere il caricamento di una presentazione o la creazione di una nuova presentazione a EditController, che, tramite invocazione dei metodi di Model::MongoRelations::Loader::LoaderClass, caricherà dal database.
+		\textbf{\interfacce}: La pagina DesktopEdit o la pagina MobileEdit invia a EditController comunica l’avvenuta modifica o la rimozione di un elemento della presentazione o l’inserimento di un nuovo elemento invocando i metodi corrispondenti di EditController. EditController istanzia un oggetto di una sottoclasse di Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand e lo dà in pasto a Model::\-Invoker. Eventualmente EditController, dopo che la View ha invocato il metodo undo() di EditController, può semplicemente annullare il comando appena eseguito invocando il metodo unexecute di Invoker.
+		La pagina web può, inoltre richiedere il caricamento di una presentazione o la creazione di una nuova presentazione a EditController, che, tramite invocazione dei metodi di Model::\-MongoRelations::\-Loader::\-LoaderClass, caricherà dal database.
 		\\
 	}
-	\subsubsection{Controller::HomeController}{
-				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::Pages::Home.\\	
+	\subsubsection{Controller::\-HomeController}{
+				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Home.\\	
 				\textbf{\relaz}:
 				\begin{itemize}
-					\item View::Pages::Home -> costruisce HomeController, ne invoca i metodi passando i parametri dell’utente;
-					\item Model::MongoRelations::Loader::LoaderClass <- HomeController invoca un metodo di LoaderClass che restituisce l’elenco dei titoli delle presentazioni dell’utente;
-					\item Model::MongoRelations::Loader::Autenticazione <- Quando la view invia una richiesta di logout, HomeController invoca il metodo deAuthenticate() fornito da Autenticazione, che termina la sessione;
-					\item Model::ApacheRelations::ResourceGetter <- la classe della view invoca il metodo save() presente in  HomeController passando per parametro un array di id di presentazioni che l'utente intende scaricare in locale, a sua volta HomeController invoca il metodo update() di ResourceGetter che controlla se esiste già un file manifest dopodiché lo aggiorna con tutti i riferimenti alle pagine da scaricare e lo ricarica. 					
+					\item View::\-Pages::\-Home -> costruisce HomeController, ne invoca i metodi passando i parametri dell’utente;
+					\item Model::\-MongoRelations::\-Loader::\-LoaderClass <- HomeController invoca un metodo di LoaderClass che restituisce l’elenco dei titoli delle presentazioni dell’utente;
+					\item Model::\-MongoRelations::\-Loader::\-Autenticazione <- Quando la view invia una richiesta di logout, HomeController invoca il metodo deAuthenticate() fornito da Autenticazione, che termina la sessione;
+					\item Model::\-ApacheRelations::\-ResourceGetter <- la view invoca il metodo save() presente in HomeController passando per parametro un id di una presentazione che l'utente intende scaricare in locale, a sua volta HomeController invoca il metodo update() di ResourceGetter che crea un file manifest con tutti i riferimenti agli elementi multimediali della presentazione e scarica la .
 				\end{itemize} 
 			}
-		\subsubsection{Controller::ExecutionController}{
-				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali delle pagine View::Pages::Execution verso il model.\\	
+		\subsubsection{Controller::\-ExecutionController}{
+				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali delle pagine View::\-Pages::\-Execution verso il model.\\	
 				\textbf{\relaz}:
 					\begin{itemize}
-						\item View::Pages::Execution -> costruisce ExecutionController, ne invoca i metodi passando i parametri della presentazione da caricare;
-						\item Model::MongoRelations::Loader::LoaderClass <- ExecutionController passa i parametri di caricamento al Loader che carica la presentazione attraverso nodeAPI e la restituisce a ExecutionController;
-						\item View::ViewJavascript <- ExecutionController invoca le funzioni di ViewJavascript preposte alla traduzione della presentazione nel codice HTML interpretabile da Impress.
+						\item View::\-Pages::\-Execution -> costruisce ExecutionController, ne invoca i metodi passando i parametri della presentazione da caricare;
+						\item Model::\-MongoRelations::\-Loader::\-LoaderClass <- ExecutionController passa i parametri di caricamento al Loader che carica la presentazione attraverso nodeAPI e la restituisce a ExecutionController;
+						\item View::\-ViewJavascript <- ExecutionController invoca le funzioni di ViewJavascript preposte alla traduzione della presentazione nel codice HTML interpretabile da Impress.
 					\end{itemize}
 		}
 		
-		\subsubsection{Controller::IndexController}{
-				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate della pagina View::Pages::Index.\\	
+		\subsubsection{Controller::\-IndexController}{
+				\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate della pagina View::\-Pages::\-Index.\\	
 				\textbf{\relaz}:
 					\begin{itemize}
-						\item Model::MongoRelations::Loader::Autenticazione <- Quando la view invia una richiesta di login, HomeController invoca il metodo authenticate() fornito da Autenticazione, se il login ha successo IndexController invia alla view una richiesta di redirect alla pagina Home;
-						\item Model::MongoRelations::Loader::Registrazione <- Quando la view invia una richiesta di registrazione, HomeController invoca il metodo register() fornito da Registrazione, se la registrazione ha successo viene eseguito il login e IndexController invia alla view una richiesta di redirect alla pagina Home;
+						\item Model::\-MongoRelations::\-Loader::\-Autenticazione <- Quando la view invia una richiesta di login, HomeController invoca il metodo authenticate() fornito da Autenticazione, se il login ha successo IndexController invia alla view una richiesta di redirect alla pagina Home;
+						\item Model::\-MongoRelations::\-Loader::\-Registrazione <- Quando la view invia una richiesta di registrazione, HomeController invoca il metodo register() fornito da Registrazione, se la registrazione ha successo viene eseguito il login e IndexController invia alla view una richiesta di redirect alla pagina Home;
 					\end{itemize}
 		}
 				
-		\subsubsection{Controller::ProfileController}{
-						\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate della pagina View::Pages::Controller.\\	
+		\subsubsection{Controller::\-ProfileController}{
+						\textbf{\tipo}: Lo scopo di questa classe è di gestire i segnali e le chiamate della pagina View::\-Pages::\-Controller.\\	
 						\textbf{\relaz}:
 							\begin{itemize}
-								\item Model::ApacheRelations::FileManager <- EditController invoca i metodi di FileManager per caricare un file nel server, per modificarne il nome o per eliminarlo dal server;
-								\item Model::MongoRelations::Loader::Autenticazione <- Quando la view invia una richiesta di logout, ProfileController invoca il metodo di Autenticazione deAuthenticate(), che termina la sessione. ProfileController invia quindi una richiesta di redirect alla pagina Index.
+								\item Model::\-ServerRelations::\-FileServerRelation <- EditController invoca i metodi di FileServerRelation per caricare un file nel server, per modificarne il nome o per eliminarlo dal server;
+								\item Model::\-MongoRelations::\-Loader::\-Autenticazione <- Quando la view invia una richiesta di logout, ProfileController invoca il metodo di Autenticazione deAuthenticate(), che termina la sessione. ProfileController invia quindi una richiesta di redirect alla pagina Index.
 							\end{itemize}
 				}
 			}
+		\subsubsection{Controller::\-}
