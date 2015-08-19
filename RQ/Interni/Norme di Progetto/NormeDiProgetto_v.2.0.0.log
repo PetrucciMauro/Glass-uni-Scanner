@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  2 AUG 2015 13:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  19 AUG 2015 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,68 +1213,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 253.
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [21]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 283.
+Package pdftex.def Info: ../../logo.jpg used on input line 284.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 284.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 283.
+(hyperref)                removing `subscript' on input line 284.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 284.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 304.
+Package pdftex.def Info: ../../logo.jpg used on input line 305.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-Overfull \hbox (3.72418pt too wide) in paragraph at lines 330--331
+Overfull \hbox (3.72418pt too wide) in paragraph at lines 331--332
 \T1/cmr/m/n/12 Per la ste-su-ra dei gra-fi-ci UML vie-ne uti-liz-za-to il Progr
 amma$[]$ \T1/cmr/bx/n/12 Vi-sual Pa-ra-digm\T1/cmr/m/n/12 . Il Programma$[]$
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 339.
+Package pdftex.def Info: ../../logo.jpg used on input line 340.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [24]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.4.6.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.346   \subsubsubsection{Stesura}
+l.347   \subsubsubsection{Stesura}
                                   pdfTeX warning (ext4): destination with the s
 ame identifier (name{subsubsubsection.4.6.2}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.349   \subsubsubsection{Verifica}
+l.350   \subsubsubsection{Verifica}
                                    
-<./images/LateTrack.png, id=514, 1732.4725pt x 972.63374pt>
+<./images/LateTrack.png, id=516, 1732.4725pt x 972.63374pt>
 File: ./images/LateTrack.png Graphic file (type png)
 
 <use ./images/LateTrack.png>
-Package pdftex.def Info: ./images/LateTrack.png used on input line 361.
+Package pdftex.def Info: ./images/LateTrack.png used on input line 362.
 (pdftex.def)             Requested size: 483.69687pt x 271.54901pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 365.
+Package pdftex.def Info: ../../logo.jpg used on input line 366.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [25]
-<./images/CreazioneRequisito.jpg, id=523, 339.2675pt x 775.89874pt>
+<./images/CreazioneRequisito.jpg, id=525, 339.2675pt x 775.89874pt>
 File: ./images/CreazioneRequisito.jpg Graphic file (type jpg)
 
 <use ./images/CreazioneRequisito.jpg>
-Package pdftex.def Info: ./images/CreazioneRequisito.jpg used on input line 370
+Package pdftex.def Info: ./images/CreazioneRequisito.jpg used on input line 371
 .
 (pdftex.def)             Requested size: 241.84843pt x 553.09407pt.
 )
@@ -1687,7 +1687,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 431.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [48]
-<./images/CreazioneTicket.jpg, id=740, 809.0225pt x 1606.0pt>
+<./images/CreazioneTicket.jpg, id=742, 809.0225pt x 1606.0pt>
 File: ./images/CreazioneTicket.jpg Graphic file (type jpg)
 
 <use ./images/CreazioneTicket.jpg>
@@ -1698,7 +1698,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 459.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [49]
-<./images/AggiornamentoTicket.jpg, id=748, 1049.9225pt x 1333.98375pt>
+<./images/AggiornamentoTicket.jpg, id=750, 1049.9225pt x 1333.98375pt>
 File: ./images/AggiornamentoTicket.jpg Graphic file (type jpg)
 
 <use ./images/AggiornamentoTicket.jpg>
@@ -1739,13 +1739,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14349 strings out of 494969
- 205553 string characters out of 6178806
- 393747 words of memory out of 5000000
- 17051 multiletter control sequences out of 15000+600000
+ 14319 strings out of 494969
+ 205215 string characters out of 6178806
+ 375747 words of memory out of 5000000
+ 17019 multiletter control sequences out of 15000+600000
  20491 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,16n,60p,817b,1248s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,16n,60p,817b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti080
 0.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk>
  </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
@@ -1759,10 +1759,10 @@ ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488
 .600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on NormeDiProgetto_v.2.0.0.pdf (54 pages, 647405 bytes).
+Output written on NormeDiProgetto_v.2.0.0.pdf (54 pages, 645044 bytes).
 PDF statistics:
- 1664 PDF objects out of 1728 (max. 8388607)
- 1191 compressed objects within 12 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 1660 PDF objects out of 1728 (max. 8388607)
+ 1194 compressed objects within 12 object streams
+ 248 named destinations out of 1000 (max. 500000)
  1050 words of extra memory for PDF output out of 10000 (max. 10000000)
 
