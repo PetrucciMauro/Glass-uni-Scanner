@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  19 AUG 2015 15:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  19 AUG 2015 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -817,12 +817,6 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count165
 \c@@ppsaveapp=\count166
 )
-! Too many }'s.
-l.72 ... Prodotto/DefinizioneDelProdotto_v.1.0.0}}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -3139,7 +3133,7 @@ m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb
 onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
 
-Output written on DefinizioneDelProdotto_v.1.0.0.pdf (103 pages, 592829 bytes).
+Output written on DefinizioneDelProdotto_v.1.0.0.pdf (103 pages, 592806 bytes).
 
 PDF statistics:
  1500 PDF objects out of 1728 (max. 8388607)
