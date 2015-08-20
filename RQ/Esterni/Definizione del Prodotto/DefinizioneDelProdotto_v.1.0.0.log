@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  19 AUG 2015 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  20 AUG 2015 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**man.tex
-(./man.tex
+**DefinizioneDelProdotto_v.1.0.0.tex
+(./DefinizioneDelProdotto_v.1.0.0.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -818,7 +818,7 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 125.
+Package hyperref Info: Option `colorlinks' set `true' on input line 128.
 \c@subsubsubsection=\count167
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -832,27 +832,28 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./man.aux)
-\openout1 = `man.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+(./DefinizioneDelProdotto_v.1.0.0.aux)
+\openout1 = `DefinizioneDelProdotto_v.1.0.0.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -888,8 +889,8 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 29.
-LaTeX Info: Redefining \it@ccap on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 33.
+LaTeX Info: Redefining \it@ccap on input line 33.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count168
@@ -919,7 +920,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 33.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -929,12 +930,12 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 29.
+(lastpage)             ! on input line 33.
 \c@lstlisting=\count175
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -946,146 +947,54 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62pt x 227.62pt.
- [1
+
+Overfull \hbox (7.0195pt too wide) in paragraph at lines 29--46
+ [] 
+ []
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../../l
 ogo.jpg>]) (../../Template/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 33.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 37.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 	\newpage
+l.37 	\newpage
                [1] (./parti/registroMod.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 47.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+./parti/registroMod.tex:49: Missing $ inserted.
+<inserted text> 
+                $
+l.49 ...4 & \TP & 02-07-2015 & Aggiornamento node_
+                                                  server::Premi_Server\\
+? 
+./parti/registroMod.tex:49: Emergency stop.
+<inserted text> 
+                $
+l.49 ...4 & \TP & 02-07-2015 & Aggiornamento node_
+                                                  server::Premi_Server\\
+End of file on the terminal!
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 52--35
-
- []
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 35.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3] (./man.toc)
-\tf@toc=\write3
-\openout3 = `man.toc'.
-
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 37.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4] (./man.lof)
-\tf@lof=\write4
-\openout4 = `man.lof'.
-
-
-(./man.lot)
-\tf@lot=\write5
-\openout5 = `man.lot'.
-
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 40.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 49.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6]
-<./images/node.pdf, id=85, 796.51233pt x 597.23125pt>
-File: ./images/node.pdf Graphic file (type pdf)
- <use ./images/node.pdf>
-Package pdftex.def Info: ./images/node.pdf used on input line 54.
-(pdftex.def)             Requested size: 318.59929pt x 238.88826pt.
-
-<./images/mongo.pdf, id=86, 845.1575pt x 597.23125pt>
-File: ./images/mongo.pdf Graphic file (type pdf)
- <use ./images/mongo.pdf>
-Package pdftex.def Info: ./images/mongo.pdf used on input line 60.
-(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./images/windows.pdf, id=87, 386.99231pt x 307.18303pt>
-File: ./images/windows.pdf Graphic file (type pdf)
-
-<use ./images/windows.pdf>
-Package pdftex.def Info: ./images/windows.pdf used on input line 66.
-(pdftex.def)             Requested size: 232.19716pt x 184.31123pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 74.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7 <./images/node.pdf>] 
-AED: lastpage setting LastPage
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 90.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8 <./images/mongo.pdf>]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 90.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9 <./images/windows.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
- (./man.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ 
 Here is how much of TeX's memory you used:
- 13442 strings out of 493089
- 196264 string characters out of 6134842
- 371887 words of memory out of 5000000
- 16653 multiletter control sequences out of 15000+600000
- 14674 words of font info for 36 fonts, out of 8000000 for 9000
+ 13363 strings out of 493089
+ 195498 string characters out of 6134842
+ 364019 words of memory out of 5000000
+ 16615 multiletter control sequences out of 15000+600000
+ 13131 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,15n,60p,797b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on man.pdf (10 pages, 581761 bytes).
-PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 51i,15n,60p,824b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+./parti/registroMod.tex:49:  ==> Fatal error occurred, no output PDF file produ
+ced!
