@@ -151,13 +151,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertText(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertText(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciTesto(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeText(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeText(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -183,16 +183,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertFrame(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertFrame(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciFrame(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeFrame(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeFrame(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteImageInsertCommand}{
 	\label{ImageInsertCommand}
 	\textbf{Funzione}\\
@@ -214,16 +215,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertImage(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertImage(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciImmagine() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeImage(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteSVGInsertCommand}{
 	\label{SVGInsertCommand}
 	\textbf{Funzione}\\
@@ -255,6 +257,7 @@
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteAudioInsertCommand}{
 	\label{AudioInsertCommand}
 	\textbf{Funzione}\\
@@ -275,16 +278,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertAudio(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertAudio(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciAudio() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeAudio(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeAudio(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteVideoInsertCommand}{
 	\label{VideoInsertCommand}
 	\textbf{Funzione}\\
@@ -306,16 +310,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: ivoca il metodo di Inserter insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: ivoca il metodo di Inserter insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciVideo() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeVideo(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor removeVideo(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteBackgroundInsertCommand}{
 	\label{BackgroundInsertCommand}
 	\textbf{Funzione}\\
@@ -358,16 +363,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertBackground (ref, color) passando come parametri i  campi dati ref e color. insertBackground restituisce un int che rappresenta l’id dell’oggetto o eventualmente un oggetto di tipo Background a cui ConcreteBackgroundInsertCommand istanzia oldBackground e al cui id inizializza il campo id. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Inserter insertBackground (ref, color) passando come parametri i  campi dati ref e color. insertBackground restituisce un int che rappresenta l’id dell’oggetto o eventualmente un oggetto di tipo Background a cui ConcreteBackgroundInsertCommand istanzia oldBackground e al cui id inizializza il campo id. Se executed è settato a false lo setta come true, altrimenti invoca il metodo updateSfondo(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Remover removeBackground(id) passando come parametro il campo id. Se il campo oldBackground è inizializzato invoca il metodo InsertEditRemove::insertBackground(SlideShowElement::Background) e invoca il metodo update(id) di EditController, altrimenti ne invoca il metodo remove(id).
+			\item \textbf{Descrizione}: viene invocato il metodo InsertEditRemove::insertBackground(SlideShowElement::Background) e il metodo updateSfondo(oldBackground) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteTextRemoveCommand}{
 	\label{TextRemoveCommand}
 	\textbf{Funzione}\\
@@ -398,16 +404,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeText(id) passando come parametro l’id dell’elemento. removeText restituisce un oggetto di tipo SlideShowElements::Text a cui viene inizializzato oldText. Se executed è settato a false lo setta come true, altrimenti invoca il metodo EditController::update(id).
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeText(id) passando come parametro l’id dell’elemento. removeText restituisce un oggetto di tipo SlideShowElements::Text a cui viene inizializzato oldText. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertText(Text) passando come parametro text. Invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertText(Text) passando come parametro text. Invoca il metodo inserisciTesto(oldText) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteFrameRemoveCommand}{
 	\label{FrameRemoveCommand}
 	\textbf{Funzione}\\
@@ -438,16 +445,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrame(id) passando come parametro il  campo dati id. removeFrame restituisce una copia dell’oggetto rimosso che verrà settata come campo dati oldFrame. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrame(id) passando come parametro il  campo dati id. removeFrame restituisce una copia dell’oggetto rimosso che verrà settata come campo dati oldFrame. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertFrame(Frame) passando come parametro il campo oldFrame. Invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertFrame(Frame) passando come parametro il campo oldFrame. Invoca il metodo inserisciFrame(oldFrame) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteImageRemoveCommand}{
 	\label{ImageRemoveCommand}
 	\textbf{Funzione}\\
@@ -478,16 +486,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeImage(id) passando come parametro l’id dell’oggetto da rimuovere. removeImage restituisce un oggetto di tipo SlideShowElements::Image cui sarà settato il campo oldImage. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeImage(id) passando come parametro l’id dell’oggetto da rimuovere. removeImage restituisce un oggetto di tipo SlideShowElements::Image cui sarà settato il campo oldImage. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertImage(Image) passando come parametro il campo oldImage. Invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertImage(Image) passando come parametro il campo oldImage. Invoca il metodo inserisciImmagine() di EditController passandogli oldImage.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteSVGRemoveCommand}{
 	\label{SVGRemoveCommand}
 	\textbf{Funzione}\\
@@ -528,6 +537,7 @@
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteAudioRemoveCommand}{
 	\label{AudioRemoveCommand}
 	\textbf{Funzione}\\
@@ -558,16 +568,17 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeAudio(id) passando come parametro il campo dati id. removeAudio restituisce una copia dell’oggetto Audio rimosso. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeAudio(id) passando come parametro il campo dati id. removeAudio restituisce una copia dell’oggetto Audio rimosso. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertAudio(Audio) passando come parametro il campo oldAudio. Invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertAudio(Audio) passando come parametro il campo oldAudio. Invoca il metodo inserisciAudio() di EditController passandogli oldAudio.
 		\end{itemize}
 	\end{itemize}
 	}
+
 \subsubsubsection{Classe ConcreteVideoRemoveCommand}{
 	\label{VideoRemoveCommand}
 	\textbf{Funzione}\\
@@ -598,58 +609,18 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeVideo(id) passando come parametro il campo dati id. removeVideo restituisce una copia dell’oggetto Video rimosso. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeVideo(id) passando come parametro il campo dati id. removeVideo restituisce una copia dell’oggetto Video rimosso. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertVideo(Video) passando come parametro il campo oldVideo. Invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertVideo(Video) passando come parametro il campo oldVideo. Invoca il metodo inserisciVideo() di EditController passandogli oldVideo.
 		\end{itemize}
 	\end{itemize}
 	}
-\subsubsubsection{Classe ConcreteBackgroundRemoveCommand}{
-	\label{BackgroundRemoveCommand}
-	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
-   	\textbf{Scope}\\
-		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteBackgroundRemoveCommand.\\
-	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento sfondo da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeBackground(id).\\
-	\textbf{Attributi}
-	\begin{itemize}
-		\item \textbf{oldBackground}
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: SlideShowElements:: Background;
-			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’elemento rimosso.
-		\end{itemize}
-	\end{itemize}
-	
-	\noindent{\textbf{Metodi}}
-	\begin{itemize}
-		\item \textbf{ConcreteBackgroundRemoveCommand}(id:integer)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: costruisce l’oggetto ConcreteBackgroundRemoveCommand e setta il campo dati id.
-		\end{itemize}
-		\item \textbf{doAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeBackground (id) passando come parametro il campo dati id. removeBackground restituisce una copia dell’oggetto Audio rimosso. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
-		\end{itemize}
-		\item \textbf{undoAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertBackground (Background) passando come parametro il campo oldBackground. Invoca il metodo update(id) di EditController.
-		\end{itemize}
-	\end{itemize}
-	}
-	
-	\subsubsubsection{Classe ConcreteEditPositionCommand}{
+
+\subsubsubsection{Classe ConcreteEditPositionCommand}{
 		\label{EditPositionCommand}
 		\textbf{Funzione}\\
 			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
@@ -704,17 +675,18 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro l'oggetto spec. editPosition ritorna un oggetto a cui ConcreteEditPositionCommand inizializza oldPoition. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro l'oggetto spec. editPosition ritorna un oggetto a cui ConcreteEditPositionCommand inizializza oldPoition. Se executed è settato a false lo setta come true, altrimenti invoca il metodo muoviElemento(spec) di EditController.
 			\end{itemize}
 			\item \textbf{undoAction}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro il campo dati oldPosition. Invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro il campo dati oldPosition. Invoca il metodo muoviElemento(oldPosition) di EditController.
 			\end{itemize}
 		\end{itemize}
 		}
-	\subsubsubsection{Classe ConcreteEditRotationCommand}{
+	
+\subsubsubsection{Classe ConcreteEditRotationCommand}{
 		\label{EditRotationCommand}
 		\textbf{Funzione}\\
 			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
@@ -763,16 +735,17 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editRotation(spec) passando come parametro l'oggetto spec. editRotation ritorna un oggetto a cui ConcreteEditRotationCommand inizializza oldRotation. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editRotation(spec) passando come parametro l'oggetto spec. editRotation ritorna un oggetto a cui ConcreteEditRotationCommand inizializza oldRotation. Se executed è settato a false lo setta come true, altrimenti invoca il metodo ruotaElemento(spec) di EditController.
 			\end{itemize}
 			\item \textbf{undoAction}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editRotation(spec) passando come parametro il campo dati oldRotation. Invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editRotation(spec) passando come parametro il campo dati oldRotation. Invoca il metodo ruotaElemento(oldRotation) di EditController.
 			\end{itemize}
 		\end{itemize}
 		}
+
 \subsubsubsection{Classe ConcreteEditSizeCommand}{
 	\label{EditSizeCommand}
 	\textbf{Funzione}\\
@@ -828,16 +801,17 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editSize(spec) passando come parametro l'oggetto spec. editSize ritorna un oggetto a cui ConcreteEditSizeCommand inizializza oldSize. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editSize(spec) passando come parametro l'oggetto spec. editSize ritorna un oggetto a cui ConcreteEditSizeCommand inizializza oldSize. Se executed è settato a false lo setta come true, altrimenti invoca il metodo ridimensionaElemento(spec) di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editSize(spec) passando come parametro il campo dati oldSize. Invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editSize(spec) passando come parametro il campo dati oldSize. Invoca il metodo ridimensionaElemento(oldSize) di EditController.
 				\end{itemize}
 			\end{itemize}
 			}
+
 \subsubsubsection{Classe ConcreteEditContentCommand}{
 	\label{EditContentCommand}
 	\textbf{Funzione}\\
@@ -887,16 +861,17 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editContent(spec) passando come parametro l'oggetto spec. editContent ritorna un oggetto a cui ConcreteEditContentCommand inizializza oldContent. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editContent(spec) passando come parametro l'oggetto spec. editContent ritorna un oggetto a cui ConcreteEditContentCommand inizializza oldContent. Se executed è settato a false lo setta come true, altrimenti invoca il metodo aggiornaTesto() di EditController passandogli spec.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editContent(spec) passando come parametro il campo dati oldContent. Invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editContent(spec) passando come parametro il campo dati oldContent. Invoca il metodo aggiornaTesto() di EditController passandogli oldContent.
 				\end{itemize}
 			\end{itemize}
 			}
+
 \subsubsubsection{Classe ConcreteEditBackgroundCommand}{
 	\label{EditBackgroundCommand}
 	\textbf{Funzione}\\
@@ -952,16 +927,17 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editBackground(spec) passando come parametro l'oggetto spec. editBackground ritorna un oggetto a cui ConcreteEditBackgroundCommand inizializza oldBackground. ConcreteEditBackgroundCommand assegna quindi i campi dati id e tipo dell'oggetto oldBackground. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editBackground(spec) passando come parametro l'oggetto spec. editBackground ritorna un oggetto a cui ConcreteEditBackgroundCommand inizializza oldBackground. ConcreteEditBackgroundCommand assegna quindi i campi dati id e tipo dell'oggetto oldBackground. Se executed è settato a false lo setta come true, altrimenti invoca il metodo updateSfondoFrame(spec) di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editBackground(spec) passando come parametro il campo dati oldBackground. Invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editBackground(spec) passando come parametro il campo dati oldBackground. Invoca il metodo updateSfondoFrame(oldBackground) di EditController.
 				\end{itemize}
 			\end{itemize}
 			}
+
 \subsubsubsection{Classe ConcreteEditColorCommand}{
 	\label{EditColorCommand}
 	\textbf{Funzione}\\
@@ -1011,13 +987,13 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editColor(spec) passando come parametro l'oggetto spec. editColor ritorna un oggetto a cui ConcreteEditColorCommand inizializza oldColor. ConcreteEditColorCommand assegna quindi i campi dati id e tipo dell'oggetto oldColor. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editColor(spec) passando come parametro l'oggetto spec. editColor ritorna un oggetto a cui ConcreteEditColorCommand inizializza oldColor. ConcreteEditColorCommand assegna quindi i campi dati id e tipo dell'oggetto oldColor. Se executed è settato a false lo setta come true, altrimenti invoca il metodo cambiaColoreTesto() di EditController passandogli spec.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editColor(spec) passando come parametro il campo dati oldColor. Invoca il metodo update(id) di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editColor(spec) passando come parametro il campo dati oldColor. Invoca il metodo cambiaColoreTesto() di EditController passandogli oldColor.
 				\end{itemize}
 			\end{itemize}
 			}
@@ -1071,16 +1047,187 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro l'oggetto spec. editFont ritorna un oggetto a cui ConcreteEditFontCommand inizializza oldFont. ConcreteEditFontCommand assegna quindi i campi dati id e tipo dell'oggetto oldFont. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro l'oggetto spec. editFont ritorna un oggetto a cui ConcreteEditFontCommand inizializza oldFont. ConcreteEditFontCommand assegna quindi i campi dati id e tipo dell'oggetto oldFont. Se executed è settato a false lo setta come true, altrimenti invoca il metodo cambiaFontTesto() di EditController passandogli spec.
 			\end{itemize}
 			\item \textbf{undoAction}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro il campo dati oldFont. Invoca il metodo update(id) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro il campo dati oldFont. Invoca il metodo cambiaFontTesto() di EditController passandogli oldFont.
 			\end{itemize}
 		\end{itemize}
 }
+
+\subsubsubsection{Classe ConcreteEditBookmarkCommand}{
+\label{EditFontCommand}
+\textbf{Funzione}\\
+	\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+  	\textbf{Scope}\\
+	\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditFontCommand.\\
+\textbf{Utilizzo}\\
+	\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editFont(spec).\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{oldFont}
+			\begin{itemize}
+			\item \textbf{Accesso}: Private;
+			\item \textbf{Tipo}: Oggetto;
+			\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'elemento modificato, contiene al suo interno i campi:
+			\begin{itemize}
+			\item \textbf{id}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Int;
+				\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+			\end{itemize}
+			\item \textbf{tipo}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+			\end{itemize}
+			\item \textbf{font}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: indica il font dell’elemento.
+			\end{itemize}
+		\end{itemize}
+			\end{itemize}
+			\end{itemize}
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{ConcreteEditFontCommand}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto ConcreteEditFontCommand.
+			\end{itemize}
+			\item \textbf{doAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro l'oggetto spec. editFont ritorna un oggetto a cui ConcreteEditFontCommand inizializza oldFont. ConcreteEditFontCommand assegna quindi i campi dati id e tipo dell'oggetto oldFont. Se executed è settato a false lo setta come true, altrimenti invoca il metodo updateBookmark() di EditController passandogli spec.
+			\end{itemize}
+			\item \textbf{undoAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editFont(spec) passando come parametro il campo dati oldFont. Invoca il metodo updateBookmark() di EditController passandogli spec.
+			\end{itemize}
+		\end{itemize}
+}
+
+\subsubsubsection{Classe ConcretePortaAvantiCommand}{
+\label{PortaAvantiCommand}
+\textbf{Funzione}\\
+	\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+  	\textbf{Scope}\\
+	\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaAvantiCommand.\\
+\textbf{Utilizzo}\\
+	\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione, invoca il metodo InsertEditRemove::portaAvanti(spec).\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{oldZIndex}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Oggetto;
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'elemento modificato. Tale oggetto contiene i seguenti campi:
+				\begin{itemize}
+					\item \textbf{id}
+					\begin{itemize}
+						\item \textbf{Accesso}: Private;
+						\item \textbf{Tipo}: Int;
+						\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\end{itemize}
+					\item \textbf{tipo}
+					\begin{itemize}
+						\item \textbf{Accesso}: Private;
+						\item \textbf{Tipo}: String;
+						\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\end{itemize}
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+			
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{ConcretePortaAvantiCommand}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto ConcretePortaAvantiCommand.
+			\end{itemize}
+			\item \textbf{doAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::portaAvanti(spec) passando come parametro l'oggetto spec. Se executed è settato a false lo setta come true, altrimenti invoca il metodo portaAvanti(spec) di EditController.
+			\end{itemize}
+			\item \textbf{undoAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::portaDietro(spec) passando come parametro il campo dati oldZIndex. Invoca il metodo portaDietro(oldZIndex) di EditController.
+			\end{itemize}
+		\end{itemize}
+}
+
+\subsubsubsection{Classe ConcretePortaDietroCommand}{
+\label{PortaAvantiCommand}
+\textbf{Funzione}\\
+	\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+  	\textbf{Scope}\\
+	\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaDietroCommand.\\
+\textbf{Utilizzo}\\
+	\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione, invoca il metodo InsertEditRemove::portaDietro(spec).\\
+		\textbf{Attributi}
+		\begin{itemize}
+			\item \textbf{oldZIndex}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Oggetto;
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'elemento modificato. Tale oggetto contiene i seguenti campi:
+				\begin{itemize}
+					\item \textbf{id}
+					\begin{itemize}
+						\item \textbf{Accesso}: Private;
+						\item \textbf{Tipo}: Int;
+						\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\end{itemize}
+					\item \textbf{tipo}
+					\begin{itemize}
+						\item \textbf{Accesso}: Private;
+						\item \textbf{Tipo}: String;
+						\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\end{itemize}
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+			
+		\noindent{\textbf{Metodi}}
+		\begin{itemize}
+			\item \textbf{ConcretePortaDietroCommand}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: costruisce l’oggetto ConcretePortaDietroCommand.
+			\end{itemize}
+			\item \textbf{doAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::portaDietro(spec) passando come parametro l'oggetto spec. Se executed è settato a false lo setta come true, altrimenti invoca il metodo portaDietro(spec) di EditController.
+			\end{itemize}
+			\item \textbf{undoAction}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::portaAvanti(spec) passando come parametro il campo dati oldZIndex. Invoca il metodo portaAvanti(oldZIndex) di EditController.
+			\end{itemize}
+		\end{itemize}
+}
+
 \subsubsubsection{Classe ConcreteAddToMainPathCommand}{
 	\label{addFrameToMainPathCommand}
 	\textbf{Funzione}\\
@@ -1102,13 +1249,13 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(spec) passando come parametro l'oggetto spec. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateMainPath().
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(spec) passando come parametro l'oggetto spec. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo aggiungiMainPath(spec) di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameToMainPath(id) passando come parametro il campo id del parametro spec. Invoca il metodo updateMainPath() di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameToMainPath(id) passando come parametro il campo id del parametro spec. Invoca il metodo rimuoviMainPath(spec) di EditController.
 				\end{itemize}
 			\end{itemize}
 			}
@@ -1156,13 +1303,13 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameFromMainPath(spec) passando come parametro l'oggetto spec.  removeFrameFromMainPath ritorna un oggetto a cui concreteRemoveFromMainPathCommand inizializza oldFrame. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo EditController::updateMainPath().
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameFromMainPath(spec) passando come parametro l'oggetto spec.  removeFrameFromMainPath ritorna un oggetto a cui concreteRemoveFromMainPathCommand inizializza oldFrame. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo rimuoviMainPath(null, spec) di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(id) passando come parametro l'oggetto oldFrame. Invoca il metodo updateMainPath() di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addFrameToMainPath(id) passando come parametro l'oggetto oldFrame. Invoca il metodo aggiungiMainPath(oldFrame) di EditController.
 				\end{itemize}
 			\end{itemize}
 			}
@@ -1245,7 +1392,3 @@
 			\end{itemize}
 			
 			}
-
-
-
-

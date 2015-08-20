@@ -1,863 +1,912 @@
-\section {Specifica classi del front-end}
-\subsection{Premi::App}
-	\label{sec:premiapp}
-	\textbf{Funzione}\\
-	\indent Questa classe si occuperà di fare il boostrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item Services::Utils;
-		\item Services::Main;
-		\item Services::toPages.
-	\end{itemize}
-	\textbf{Attributi}\\
-	\begin{itemize}
-		\item scope:Object\\
-		Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
-		\item rootScope:Object\\
-		Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope	discendono da questo;
-		\item \textdollar routeProvider::Object\\
-		Questo campo dati rappresenta il servizio che collega tra loro controller, view e l'URL corrente nel browser;
-		\item \textdollar mdIconProvider\\
-		\item \textdollar mdThemingProvider\\
-		\item \textdollar httpProvider\\
-		\item \textdollar provide\\
-		\item \textdollar locationProvider\\
-	\end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item run;
-		\item config;
-		\item interceptors;
-		\item decorator.
-	\end{itemize}
+\section{Package Premi::\-Controller}{
+	\label{sec:controller}
+	Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::\-[nome package].\\
+	\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
+	\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
 
-\subsection {Package Premi::Services}
-\label{sec:services}
-\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
-\textbf{\relaz}: comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.\\
-\subsubsection{Services::Main}{
-		\label{sub:servicesMain}
+	\subsection{Controller::\-premiApp}{
+		\label{sec:premiapp}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire le funzioni base dell'applicazione, in particolare autenticazione e registrazione al server degli utenti.\\
+		\indent Questa classe si occuperà di fare il boostrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari. Verranno configurate tutte le impostazioni necessarie.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item Services::Utils;
-			\item localStorage:Object\\
-				\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
+			\item Controller;
+			\item View::Pages;
+			\item ngRoute:Object\\
+				\indent Modulo Angular che inietta i servizi necessari per il routing;
+			\item ngMaterial:Object\\
+				\indent Modulo Angular che inietta i servizi necessari per l'utilizzo di Angular Material;
+			\item ngStorage:Object\\
+				\indent Modulo Angular che inietta i servizi necessari per l'utilizzo dello storage locale.
+			\item \textdollar routeProvider:Object\\
+				\indent Questo campo dati rappresenta il servizio che collega tra loro controller, view e l'URL corrente nel browser;
+			\item \textdollar mdIconProvider e \textdollar mdThemingProvider\\
+				\indent Moduli di Angular Material
+			\item \textdollar httpProvider\\
+				\indent Provider Angular per configurare il servizio http;
+			\item \textdollar provide\\
+				\indent Modulo Angular utilizzato per la gestione delle eccezioni;
+			\item \textdollar locationProvider\\
+				\indent Provider Angular utilizzato per rendere disponibile il servizio di reindirizzamento delle pagine.
 		\end{itemize}
-		\textbf{Attributi}
-		\begin{itemize}
-			\item \textbf{login}
+	}
+
+	\subsection {Controller::\-Services}{
+		\label{sec:services}
+		\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
+		\textbf{\relaz}: comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.
+
+		\subsubsection{Services::\-Main}{
+			\label{sub:servicesMain}
+			\textbf{Funzione}\\
+			\indent Questa classe si occuperà di eseguire le funzioni base dell'applicazione, in particolare autenticazione e registrazione al server degli utenti.\\
+			\textbf{Relazioni d'uso con altri moduli}\\
+			\indent Questa classe utilizzerà le seguenti classi:
 			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che mantiene la sessione corrente.
+				\item Controller::Services::\-Utils;
+				\item Model::serverRelation::accessControl::Authentication;
+				\item Model::serverRelation::accessControl::Registration;
+				\item Model::serverRelation::accessControl::ChangePassword;
+				\item localStorage:Object\\
+					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
 			\end{itemize}
-		\end{itemize}
-		\textbf{Metodi}
-		\begin{itemize}
-			\item \textbf{value}()
+			\textbf{Attributi}
 			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che controlla se è stato effettuato un refresh della pagina, in tal caso ripristina login.
+				\item \textbf{login}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: Oggetto;
+					\item \textbf{Descrizione}: oggetto che mantiene la sessione corrente.
+				\end{itemize}
 			\end{itemize}
-			\item \textbf{register}(formData, success, error)
+			\textbf{Metodi}
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua la registrazione al server di un nuovo utente. Se l'operazione ha successo viene invocato success altrimenti error.
-			\end{itemize}
-			\item \textbf{login}(formData, success, error)
+				\item \textbf{value}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che controlla se è stato effettuato un refresh della pagina, in tal caso ripristina login.
+				\end{itemize}
+				\item \textbf{register}(formData, success, error)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua la registrazione al server di un nuovo utente richiamando il metodo register() di Registration. Se l'operazione ha successo, viene autenticato l'utente ed invocato success altrimenti error.
+				\end{itemize}
+				\item \textbf{login}(formData, success, error)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua l'autenticazione al server di un utente richiamando il metodo authenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
+				\end{itemize}
+				\item \textbf{logout}(success, error)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che effettua il logout dal server richiamando il metodo deauthenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
+				\end{itemize}
+				\item \textbf{changepassword}(formData, success, error)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso e la nuova password, effettua il cambio della password di un utente richiamando il metodo changepassword() di ChangePassword. Se l'operazione ha successo viene invocato success altrimenti error.
+				\end{itemize}
+				\item \textbf{getToken}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: JSONWebToken;
+					\item \textbf{Descrizione}: metodo che ritorna il token di sessione richiamando getToken() di Authentication.
+				\end{itemize}
+				\item \textbf{getUser}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che ritorna l'utente attualmente autenticato con il server.
+				\end{itemize}
+			\end{itemize} 
+		}
+		\subsubsection{Services::\-Upload}{
+			\label{sub:servicesUpload}
+			\textbf{Funzione}\\
+			\indent Questa classe si occuperà di eseguire l'upload di file media nel database.\\
+			\textbf{Relazioni d'uso con altri moduli}\\
+			\indent Questa classe utilizzerà le seguenti classi:
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua l'autenticazione al server di un utente. Se l'operazione ha successo viene invocato success altrimenti error.
+				\item Controller::Services::\-Main;
+				\item Controller::Services::\-Utils.
 			\end{itemize}
-			\item \textbf{logout}(success, error)
+			\textbf{Attributi}
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che effettua il logout dal server. Se l'operazione ha successo viene invocato success altrimenti error.
+				\item \textbf{image}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: Array;
+					\item \textbf{Descrizione}: array contenente i formati immagini accettati per l'upload.
+				\end{itemize}
+				\item \textbf{audio}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: Array;
+					\item \textbf{Descrizione}: array contenente i formati audio accettati per l'upload.
+				\end{itemize}
+				\item \textbf{video}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: Array;
+					\item \textbf{Descrizione}: array contenente i formati video accettati per l'upload.
+				\end{itemize}
 			\end{itemize}
-			\item \textbf{changepassword}(formData, success, error)
+			\textbf{Metodi}
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso e la nuova password, effettua il cambio della password di un utente. Se l'operazione ha successo viene invocato success altrimenti error.
-			\end{itemize}
-			\item \textbf{getToken}()
+				\item \textbf{uploadmedia}(files, callback)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
+				\end{itemize}
+				\item \textbf{isImage}(files)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Bool;
+					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array image, altrimenti ritorna false.
+				\end{itemize}
+				\item \textbf{isAudio}(files)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Bool;
+					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array audio, altrimenti ritorna false.
+				\end{itemize}
+				\item \textbf{isVideo}(files)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Bool;
+					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
+				\end{itemize}
+				\item \textbf{getFileUrl}(file)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio del parametro file rispetto all'utente corrente.
+				\end{itemize}
+			\end{itemize} 
+		}
+		\subsubsection{Services::\-Utils}{
+			\label{sub:servicesUtils}
+			\textbf{Funzione}\\
+			\indent Questa classe si occuperà di eseguire piccole funzionalità utili ad ogni parte dell'applicazione.\\
+			\textbf{Metodi}
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: JSONWebToken;
-				\item \textbf{Descrizione}: metodo che ritorna il token di sessione.
+				\item \textbf{decodeToken}(token)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che decodifica token, passato come parametro, e ritorna l'oggetto utente corrispondente.
+				\end{itemize}
+				\item \textbf{grade}(password)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: metodo che determina la robustezza del parametro password. La lunghezza minima di una password è stata impostata a sei caratteri.
+				\end{itemize}
+				\item \textbf{hostname}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: metodo che ritorna il dominio dell'applicazione.
+				\end{itemize}
+				\item \textbf{isUndefined}(object)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Bool;
+					\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta indefinito, altrimento ritorna false.
+				\end{itemize}
+				\item \textbf{isObject}(object)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Void;
+					\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta definito, altrimento ritorna false.
+				\end{itemize}
+				\item \textbf{encrypt}(string)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: String;
+					\item \textbf{Descrizione}: metodo che ritorna il parametro string criptato. Il metodo di criptaggio scelto è lo SHA-1.
+				\end{itemize}
 			\end{itemize}
-			\item \textbf{getUser}()
+		}
+		\subsubsection{Services::\-SharedData}{
+			\label{sub:servicesSharedData}
+			\textbf{Funzione}\\
+			\indent Questa classe mantiene in memoria la presentazione sulla quale l'utente sta lavorando.\\
+			\textbf{Relazioni d'uso con altri moduli}\\
+			\indent Questa classe utilizzerà le seguenti classi:
 			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna l'utente attualmente autenticato con il server.
+				\item Controller::Services::\-Utils;
+				\item Controller::Services::\-Main;
+				\item Model::serverRelation::mongoRelation;
+				\item localStorage:Object\\
+					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
 			\end{itemize}
-		\end{itemize} 
-}
-\subsubsection{Services::Upload}{
-		\label{sub:servicesUpload}
+			\textbf{Attributi}\\
+			\begin{itemize}
+				\item \textbf{myPresentation}
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo}: Object;
+					\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione aperta.
+				\end{itemize}
+			\end{itemize}
+			\textbf{Metodi}
+			\begin{itemize}
+				\item \textbf{getPresentazione}(idSlideShow)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-serverRelation::\-mongoRelation::\-getPresentation() passandogli il parametro idSlideShow e assegnando il risultato a myPresentation. In ogni caso myPresentation viene ritornato.
+				\end{itemize}
+			\end{itemize}
+		}
+		\subsubsection{Services::\-toPages}{
+			\label{sub:servicestoPages}
+			\textbf{Funzione}\\
+			\indent Questa classe si occuperà di eseguire i reindirizzamenti alle pagine corrette.\\
+			\textbf{Relazioni d'uso con altri moduli}\\
+			\indent Questa classe utilizzerà le seguenti classi:
+			\begin{itemize}
+				\item Controller::Services::\-Utils;
+				\item Controller::Services::\-Main;
+				\item Controller::Services::\-SharedData;
+				\item \$http:Object\\
+					\indent Servizio Angular che permette la comunicazione in remoto con un server.
+				\item \$location:Object\\
+					\indent Servizio Angular che gestisce gli indirizzi URL.
+			\end{itemize}
+			\textbf{Metodi}
+			\begin{itemize}
+				\item \textbf{sendRequest}(dest, success, error)
+				\begin{itemize}
+					\item \textbf{Accesso}: Private;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che ritorna una richiesta http all'indirizzo definito dal parametro dest. Se l'operazione ha successo viene invocato success altrimenti error.
+				\end{itemize}
+				\item \textbf{loginpage}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Login. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/publicpages/login}, il quale, se ha successo, reindirizza alla pagina richiesta.
+				\end{itemize}
+				\item \textbf{registrazionepage}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Registrazione. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/publicpages/registrazione}, il quale, se ha successo, reindirizza alla pagina richiesta.
+				\end{itemize}
+				\item \textbf{homepage}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Home. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/private/home}, il quale, se ha successo, reindirizza alla pagina richiesta.
+				\end{itemize}
+				\item \textbf{profilepage}()
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Profile. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/private/profile}, il quale, se ha successo, reindirizza alla pagina richiesta.
+				\end{itemize}
+				\item \textbf{editpage}(slideId)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Edit. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/private/edit}, il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
+				\end{itemize}
+				\item \textbf{executionpage}(slideId)
+				\begin{itemize}
+					\item \textbf{Accesso}: Public;
+					\item \textbf{Tipo di ritorno}: Object;
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Execution. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/private/execution}, il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
+				\end{itemize}
+			\end{itemize} 
+		}
+	}
+
+	\subsubsection{Controller::\-HeaderController}
+		\label{sub:HeaderController}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire l'upload di file media nel database.\\
+		\indent Questa classe si occuperà di controllare l'Header dell'applicazione.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item Services::Main;
-			\item Services::Utils;
+			\item View::\-Pages::\-Index;
+			\item Controller::Services::\-Utils;
+			\item Controller::Services::\-Main;
+			\item Controller::Services::\-toPages;
+			\item \$scope:Object\\
+				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+			\item \$rootScope:Object\\
+				\indent Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope discendono da questo.
 		\end{itemize}
-		\textbf{Attributi}
-		\begin{itemize}
-			\item \textbf{image}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Array;
-				\item \textbf{Descrizione}: array contenente i formati immagini accettati per l'upload.
-			\end{itemize}
-			\item \textbf{audio}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Array;
-				\item \textbf{Descrizione}: array contenente i formati audio accettati per l'upload.
-			\end{itemize}
-			\item \textbf{video}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Array;
-				\item \textbf{Descrizione}: array contenente i formati video accettati per l'upload.
-			\end{itemize}
-		\end{itemize}
+
 		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{uploadmedia}(files, callback)
+			\item \textbf{goLogin}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
+				\item \textbf{Descrizione}: metodo che richiama loginpage() di toPages per effettuare il reindirizzamento alla pagina di login.
 			\end{itemize}
-			\item \textbf{isImage}(files)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Bool;
-				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array image, altrimenti ritorna false.
-			\end{itemize}
-			\item \textbf{isAudio}(files)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Bool;
-				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array audio, altrimenti ritorna false.
-			\end{itemize}
-			\item \textbf{isVideo}(files)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Bool;
-				\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
-			\end{itemize}
-			\item \textbf{getFileUrl}(file)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: String;
-				\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio del parametro file rispetto all'utente corrente.
-			\end{itemize}
-		\end{itemize} 
-}
-
-\subsubsection{Services::Utils}{
-		\label{sub:servicesUtils}
-		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire piccole funzionalità utili ad ogni parte dell'applicazione.\\
-		\textbf{Metodi}
-		\begin{itemize}
-			\item \textbf{decodeToken}(token)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che decodifica token, passato come parametro, e ritorna l'oggetto utente corrispondente.
-			\end{itemize}
-			\item \textbf{grade}(password)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: String;
-				\item \textbf{Descrizione}: metodo che determina la robustezza del parametro password. La lunghezza minima di una password è stata impostata a sei caratteri.
-			\end{itemize}
-			\item \textbf{hostname}()
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: String;
-				\item \textbf{Descrizione}: metodo che ritorna il dominio dell'applicazione.
-			\end{itemize}
-			\item \textbf{isUndefined}(object)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Bool;
-				\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta indefinito, altrimento ritorna false.
-			\end{itemize}
-			\item \textbf{isObject}(object)
+			\item \textbf{goRegistrazione}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta definito, altrimento ritorna false.
+				\item \textbf{Descrizione}: metodo che richiama registrazionepage() di toPages per effettuare il reindirizzamento alla pagina di registrazione.
 			\end{itemize}
-			\item \textbf{encrypt}(string)
+			\item \textbf{goHome}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama homepage() di toPages per effettuare il reindirizzamento alla pagina home.
+			\end{itemize}
+			\item \textbf{goProfile}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama profilepage() di toPages per effettuare il reindirizzamento alla pagina profile.
+			\end{itemize}
+			\item \textbf{who}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: String;
-				\item \textbf{Descrizione}: metodo che ritorna il parametro string criptato. Il metodo di criptaggio scelto è lo SHA-1.
+				\item \textbf{Descrizione}: metodo che ritorna lo username dell'utente attualmente autenticato richiamando il metodo getUser() di Main.
+			\end{itemize}
+			\item \textbf{isToken}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Boolean;
+				\item \textbf{Descrizione}: metodo che verifica l'effettiva autenticazione dell'utente richiamando il metodo getToken() di Main.
+			\end{itemize}
+			\item \textbf{logout}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama il metodo logout() di Main per effettuare il logout dal server. Se l'operazione va a buon fine, viene effettuato il reindirizzamento alla pagina di login richiamando il metodo loginpage() di toPages.
+			\end{itemize}
+			\item \textbf{error}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: String;
+				\item \textbf{Descrizione}: metodo che ritorna l'errore individuato; esso deve essere posto all'interno di \$rootScope.error.
 			\end{itemize}
 		\end{itemize}
-}
 
-\subsubsection{Services::SharedData}{
-		\label{sub:servicesSharedData}
+	\subsubsection{Controller::\-AccessController}{
+		\label{sub:AccessController}
 		\textbf{Funzione}\\
-		\indent Questa classe mantiene in memoria la presentazione sulla quale l'utente sta lavorando.\\
+			\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
-		\indent Questa classe utilizzerà le seguenti classi:
+			\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item Services::Utils;
-			\item Services::Main;
-			\item localStorage:Object\\
-				\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
+			\item View::\-Pages::\-Login;
+			\item View::\-Pages::\-Registrazione;
+			\item Controller::Services::\-Utils;
+			\item Controller::Services::\-Main;
+			\item Controller::Services::\-toPages;
+			\item \$scope:Object\\
+	    		\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
 		\end{itemize}
 		\textbf{Attributi}\\
-		\begin{itemize}
-			\item \textbf{myPresentation}
+	    \begin{itemize}
+	    	\item \textbf{user}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
-				\item \textbf{Descrizione}: oggetto che rappresenta l'attuale presentazione aperta.
+				\item \textbf{Descrizione}: oggetto contenente username e password derivanti dal form della pagina html.
 			\end{itemize}
-		\end{itemize}
+	    	\item \textbf{getData}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$scope. La password viene criptata grazie al metodo encrypt(password) di Utils.
+			\end{itemize}
+	    \end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{getPresentazione}(idSlideShow)
+			\item \textbf{reset}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che, nel caso in cui il parametro idSlideShow sia definito, richiama il metodo Model::\-ServerRelation::\-MongoRelation::\-getPresentation(idSlideShow) assegnando il risultato a myPresentation. In ogni caso myPresentation viene ritornato.
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che cancella i valori delle variabili all'interno di \$scope.
+			\end{itemize}
+			\item \textbf{login}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama login(data) di Main per effettuare il login al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
+			\end{itemize}
+	        \item \textbf{registration}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama register(data) di Main per effettuare la registrazione al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
 			\end{itemize}
 		\end{itemize}
-}
-\subsubsection{Services::toPages}{
-		\label{sub:servicestoPages}
+	}
+	\subsubsection{Controller::\-HomeController}{
+		\label{sub:homecontroller}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di eseguire i reindirizzamenti alle pagine corrette.\\
+		\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina Home.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item Services::Utils;
-			\item Services::Main;
-			\item Services::SharedData;
-			\item \$http:Object\\
-				\indent Servizio Angular che permette la comunicazione in remoto con un server.
-			\item \$location:Object\\
-				\indent Servizio Angular che gestisce gli indirizzi URL.
+			\item View::\-Pages::\-Home;
+			\item Model::\-serverRelation::\-mongoRelation;
+			\item Services::\-Utils;
+			\item Services::\-Main;
+			\item Services::\-toPages;
+			\item \$scope:Object\\
+				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+		\end{itemize}
+		\textbf{Attributi}\\
+		\begin{itemize}
+			\item \textbf{mongo}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che mantiene una istanza di MongoRelation.
+			\end{itemize}
+	    \end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+			\item \textbf{update}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che aggiorna i contenuti della pagina home.
+			\end{itemize}
+			\item \textbf{goEdit}(slideId)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama edipage(slideId) di toPages per effettuare il reindirizzamento alla pagina di edit.
+			\end{itemize}
+			\item \textbf{goExecute}(slideId)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama executionpage(slideId) di toPages per effettuare il reindirizzamento alla pagina di esecuzione.
+			\end{itemize}
+			\item \textbf{getSS}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che richiama getPresentationsMeta() di mongoRelation per visualizzare le presentazioni dell'utente corrente.
+			\end{itemize}
+			\item \textbf{deleteSlideShow}(slideId)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama deletePresentation(slideId) di mongoRelation per eliminare la presentazione slideId dal database. Se l'operazione ha successo, viene richiamato il metodo update().
+			\end{itemize}
+			\item \textbf{renameSlideShow}(nameSS, rename)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama renamePresentation(nameSS, rename) di mongoRelation per rinominare la presentazione slideId. Se l'operazione ha successo, viene richiamato il metodo update().
+			\end{itemize}
+			\item \textbf{createSlideShow}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama newPresentation() di mongoRelation per creare una nuova presentazione. Se l'operazione ha successo, viene richiamato il metodo update().
+			\end{itemize}
+		\end{itemize}
+		}
+	\subsubsection{Controller::\-ProfileController}{
+		\textbf{Funzione}\\
+		\indent Questa classe si occupa di gestire i segnali e le chiamate provenienti dalla pagina profilo di un utente.\\
+		\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
+		\begin{itemize}
+			\item Services::\-Utils;
+			\item Services::\-Main;
+			\item Services::\-toPages;
+			\item \$scope:Object\\
+				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+		\end{itemize}
+		\textbf{Attributi}\\
+	    \begin{itemize}
+	    	\item \textbf{user}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto contenente username, password e nuova password derivanti dal form della pagina html.
+			\end{itemize}
+	    	\item \textbf{getData}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$scope. Le password vengono criptate grazie a encrypt(password) di Utils.
+			\end{itemize}
+	    \end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+			\item \textbf{changepassword}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama il metodo changepassword() di Main per cambiare la password dell'utente, passandogli i dati da modificare.
+			\end{itemize}
+		\end{itemize}
+	}
+	\subsubsection{Controller::\-ExecutionController}{
+		\textbf{Funzione}\\
+		\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina di esecuzione.\\
+		\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
+		\begin{itemize}
+			\item View::\-Pages::\-Execution;
+			\item Services::\-SharedData;
+			\item Services::\-Main;
+			\item Services::\-toPages;
+			\item Services::\-Utils;
+			\item \$scope:Object\\
+				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+			\item \$route:Object\\
+				\indent Servizio angular che permette la gestione del routing all'interno dell'applicazione.
 		\end{itemize}
 		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{sendRequest}(dest, success, error)
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna una richiesta http all'indirizzo definito dal parametro dest. Se l'operazione ha successo viene invocato success altrimenti error.
-			\end{itemize}
-			\item \textbf{loginpage}()
+			\item \textbf{on \$locationChangeSuccess}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Login. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: evento che permette l'interazione di Angular.js e Impress.js. Dato che il framework Impress.js cambia l'url della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
 			\end{itemize}
-			\item \textbf{registrazionepage}()
+			\item \textbf{translateImpress}(json)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Registrazione. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, ricavato tramite getPresentazione() di SharedData, in html eseguibile dal framework Impress.js.
 			\end{itemize}
-			\item \textbf{homepage}()
+			\item \textbf{goHome}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Home. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama homepage() di toPages per effettuare il reindirizzamento alla pagina home. Nonostante tale metodo sia già presente in HeaderController, è necessario avere la possibilità di accedere alla home, in quanto l'header viene nascosto per permettere la piena funzionalità ad Impress.js e visulizzare la presentazione a pieno schermo.
 			\end{itemize}
-			\item \textbf{profilepage}()
+			\item \textbf{goEdit}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina Profile. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta.
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama editpage() di toPages per effettuare il reindirizzamento alla pagina di edit.
 			\end{itemize}
-			\item \textbf{editpage}(slideId)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Edit. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
-			\end{itemize}
-			\item \textbf{executionpage}(slideId)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Execution. Esso richiama il metodo sendRequest() il quale, se ha successo, reindirizza alla pagina richiesta e richiama il metodo SharedData.forEdit() passandogli il parametro slideId.
-			\end{itemize}
-		\end{itemize} 
-}
-
-\subsection{Package Premi::Controller}{
-\label{sec:controller}
-Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::[nome package].\\\\
-\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
-\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
-
-\subsubsection{Controller::HeaderController}
-	\label{sub:HeaderController}
-	\textbf{Funzione}\\
-	\indent Questa classe si occuperà di controllare l'Header dell'applicazione.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item View::Pages::Index;
-		\item Services::Utils;
-		\item Services::Main;
-		\item Services::toPages.
-		\item \$scope:Object\\
-			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-		\item \$rootScope:Object\\
-			\indent Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope discendono da questo.
-	\end{itemize}
-
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{goLogin}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-loginpage() per effettuare il reindirizzamento alla pagina di login.
 		\end{itemize}
-		\item \textbf{goRegistrazione}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-registrazionepage() per effettuare il reindirizzamento alla pagina di registrazione.
-		\end{itemize}
-		\item \textbf{goHome}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-homepage() per effettuare il reindirizzamento alla pagina home.
-		\end{itemize}
-		\item \textbf{goProfile}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-profilepage() per effettuare il reindirizzamento alla pagina profile.
-		\end{itemize}
-		\item \textbf{who}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: String;
-			\item \textbf{Descrizione}: metodo che ritorna lo username dell'utente attualmente autenticato.
-		\end{itemize}
-		\item \textbf{isToken}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Boolean;
-			\item \textbf{Descrizione}: metodo che verifica l'effettiva autenticazione dell'utente.
-		\end{itemize}
-		\item \textbf{logout}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-Main::\-logout() per effettuare il logout dal server. Se l'operazione va a buon fine, viene effettuato il reindirizzamento alla pagina di login richiamando Services::\-toPages::\-loginpage().
-		\end{itemize}
-		\item \textbf{error}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: String;
-			\item \textbf{Descrizione}: metodo che ritorna l'errore individuato; esso deve essere posto all'interno di \$rootScope.error.
-		\end{itemize}
-	\end{itemize}
-
-\subsubsection{Controller::AccessController}{
-	\label{sub:AccessController}
-	\textbf{Funzione}\\
-		\indent Questa classe si occuperà di controllare che le credenziali di accesso siano corrette nel caso dell'autenticazione oppure di registrare un nuovo utente.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-		\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item View::Pages::Login;
-		\item View::Pages::Registrazione;
-		\item Model::\-serverRelation::\-Authentication;
-		\item Model::\-serverRelation::\-Registration.
-		\item Services::Utils;
-		\item Services::Main;
-		\item Services::toPages;
-		\item \$scope:Object\\
-    		\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-	\end{itemize}
-	\textbf{Attributi}\\
-    \begin{itemize}
-    	\item \textbf{user}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: oggetto contenente username e password derivanti dal form della pagina html.
-		\end{itemize}
-    	\item \textbf{getData}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$scope. La password viene criptata grazie a Services::\-Utils::\-encrypt(password).
-		\end{itemize}
-    \end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{reset}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che cancella i valori delle variabili all'interno di \$scope.
-		\end{itemize}
-		\item \textbf{login}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Services::\-Main::\-login(data) per effettuare il login al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando Services::\-toPages::\-homepage().
-		\end{itemize}
-        \item \textbf{registration}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Services::\-Main::\-register(data) per effettuare la registrazione al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando Services::\-toPages::\-homepage().
-		\end{itemize}
-	\end{itemize}
-}
-\subsubsection{Controller::HomeController}{
-	\label{sub:homecontroller}
-	\textbf{Funzione}\\
-	\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina Home.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item View::Pages::Home;
-		\item Model::\-serverRelation::\-MongoRelation;
-		\item Services::Utils;
-		\item Services::Main;
-		\item Services::toPages;
-		\item \$scope:Object\\
-			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-	\end{itemize}
-	\textbf{Attributi}\\
-	\begin{itemize}
-		\item \textbf{mongo}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-serverRelation::\-MongoRelation.
-		\end{itemize}
-    \end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{update}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiorna i contenuti della pagina home.
-		\end{itemize}
-		\item \textbf{goProfile}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-profilepage() per effettuare il reindirizzamento alla pagina profile.
-		\end{itemize}
-		\item \textbf{goEdit}(slideId)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-edipage(slideId) per effettuare il reindirizzamento alla pagina di edit.
-		\end{itemize}
-		\item \textbf{goExecute}(slideId)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage(slideId) per effettuare il reindirizzamento alla pagina di esecuzione.
-		\end{itemize}
-		\item \textbf{getSS}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Object;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-getPresentationsMeta() per visualizzare le presentazioni dell'utente corrente.
-		\end{itemize}
-		\item \textbf{deleteSlideShow}(slideId)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-deletePresentation(slideId) per eliminare la presentazione slideId dal database. Se l'operazione ha successo, viene richiamato il metodo update().
-		\end{itemize}
-		\item \textbf{renameSlideShow}(nameSS, rename)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-renamePresentation(nameSS, rename) per rinominare la presentazione slideId. Se l'operazione ha successo, viene richiamato il metodo update().
-		\end{itemize}
-		\item \textbf{createSlideShow}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-newPresentation() per creare una nuova presentazione. Se l'operazione ha successo, viene richiamato il metodo update().
-		\end{itemize}
-		\item \textbf{salvaManifest}(slideId)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-??????????????????????????????????????????????????????????????????????????????????????????????? per salvare nel manifest la presentazione slideId.
-		\end{itemize}
-	\end{itemize}
 	}
-\subsubsection{Controller::ProfileController}{
-	\textbf{Funzione}\\
-	\indent Questa classe si occupa di gestire i segnali e le chiamate provenienti dalla pagina profilo di un utente.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item Model::\-serverRelation::\-?????????????????????????????????????????????????????????????????????????????.
-		\item Services::Utils;
-		\item Services::Main;
-		\item Services::toPages;
-		\item Services::Upload;
-		\item \$scope:Object\\
-			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-	\end{itemize}
-	\textbf{Attributi}\\
-    \begin{itemize}
-    	\item \textbf{user}()
+	\subsubsection{Controller::\-EditController}{
+		\textbf{Funzione}\\
+		\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
+		\textbf{Relazioni d'uso con altri moduli}\\
+		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: oggetto contenente username, password e nuova password derivanti dal form della pagina html.
-		\end{itemize}
-    	\item \textbf{getData}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$scope. Le password vengono criptate grazie a Services::\-Utils::\-encrypt(password).
-		\end{itemize}
-    \end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{changepassword}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama Model::\-serverRelation::\-??????????????????????????????????????????????????????????????????????????????????????????????? per cambiare la password dell'utente.
-		\end{itemize}
-	\end{itemize}
-}
-\subsubsection{Controller::Execution}{
-	\textbf{Funzione}\\
-	\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina di esecuzione.\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item View::Pages::Execution;
-		\item Services::SharedData;
-		\item Services::Main;
-		\item Services::toPages;
-		\item Services::Utils;
-		\item \$scope:Object\\
-			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
-		\item \$route:Object\\
-			\indent Servizio angular che permette la gestione del routing all'interno dell'applicazione.
-	\end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{on \$locationChangeSuccess}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: evento che permette l'interazione tra Angular.js e Impress.js. Dato che il framework Impress.js cambia l'url della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
-		\end{itemize}
-		\item \textbf{translateImpress}(json)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, passato come parametro, in html eseguibile dal framework Impress.js.
-		\end{itemize}
-		\item \textbf{goHome}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-homepage() per effettuare il reindirizzamento alla pagina home.
-		\end{itemize}
-		\item \textbf{goEdit}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-editpage() per effettuare il reindirizzamento alla pagina di edit.
-		\end{itemize}
-	\end{itemize}
-}
-\subsubsection{Controller::EditController}{
-	\textbf{Funzione}\\
-	\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\
-	\textbf{Relazioni d'uso con altri moduli}\\
-	\indent Questa classe utilizzerà le seguenti classi:
-	\begin{itemize}
-		\item View::Pages::Edit;
-		\item Model::SlideShow::SlideShowActions::Command:
-		\begin{itemize}
-			\item ConcreteTextInsertCommand;
-			\item ConcreteFrameInsertCommand;
-			\item ConcreteImageInsertCommand;
-			\item ConcreteSVGInsertCommand;
-			\item ConcreteAudioInsertCommand;
-			\item ConcreteVideoInsertCommand;
-			\item ConcreteBackgroundInsertCommand;
-			\item ConcreteTextRemoveCommand;
-			\item ConcreteFrameRemoveCommand;
-			\item ConcreteImageRemoveCommand;
-			\item ConcreteSVGRemoveCommand;
-			\item ConcreteAudioRemoveCommand;
-			\item ConcreteVideoRemoveCommand;
-			\item ConcreteEditSizeCommand;
-			\item ConcreteEditPositionCommand;
-			\item ConcreteEditRotationCommand;
-			\item ConcreteEditColorCommand;
-			\item ConcreteEditBackgroundCommand;
-			\item ConcreteEditFontCommand;
-			\item ConcreteEditContentCommand;
-			\item Invoker;
-		\end{itemize}
-		\item Services::Main;
-		\item Services::toPages;
-		\item Services::Utils;
-		\item Services::SaredData;
-		\item Services::Upload;
-		\item Model::\-serverRelation::\-MongoRelation::\-Loader;
-		\item \$scope:Object\\
-			\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
-		\item \$interval:Object\\
-			\indent servizio Angular che permette di eseguire determinate operazioni ad ogni intervallo di tempo T.
-		\item \$q::Object\\
-			\indent Servizio Angular che permette di eseguire funzioni in modo asincrono;
-		\item \$mdSideNav::Object\\
-			\indent Servizio Angular Material per il controllo della barra laterale;
-		\item \$mdBottomSheet::Object\\
-			\indent Servizio Angular Material per il controllo del'oggetto mdBottomsSheet.
-	\end{itemize}
-	\textbf{Attributi}\\
-	\begin{itemize}
-		\item \textbf{inv}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-Command::\-Invoker.
-		\end{itemize}
-		\item \textbf{mongo}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: Object;
-			\item \textbf{Descrizione}: oggetto che mantiene una istanza di Model::\-serverRelation::\-MongoRelation.
-		\end{itemize}
-    \end{itemize}
-	\textbf{Metodi}
-	\begin{itemize}
-		\item \textbf{translateEdit}(json)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che permette la traduzione dell'oggetto json, passato come parametro, in html permettendo all'utente di modificare la presentazione.
-		\end{itemize}
-		\item \textbf{goExecute}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Services::\-toPages::\-executionpage() per effettuare il reindirizzamento alla pagina di execution, passando il titolo della presentazione.
-		\end{itemize}
-		\item \textbf{toggleList}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che gestisce \$mdBottomSheet e \$mdSidenav.
-		\end{itemize}
-		\item \textbf{showPathBottomSheet}(\$event)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che fa apparire \$mdBottomSheet per la visualizzazione dei percorsi.
-		\end{itemize}
-		\item \textbf{show}(id)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'elemento html cliccato.
-		\end{itemize}
-		\item \textbf{salvaPresentazione}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che richiama Model::\-serverRelation::\-Loader::\-update() per salvare la presentazione nel database. Questo metodo viene utilizzato in congiunta ad \$interval in modo da assicurare un salvataggio continuo della presentazione ma senza creare troppo traffico in rete.
-		\end{itemize}
-		\item \textbf{inserisciFrame}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand() passandogli le specifiche del frame inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{inserisciTesto}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciTesto(spec), e che richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand() passandogli le specifiche dell'elemento testo inserito. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{inserisciImmagini}(files, spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isImage(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file immagine. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciImmagine(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand() passandogli le specifiche degli elementi immagine inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{inserisciAudio}(files, spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isAudio(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file audio. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciAudio(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand() passandogli le specifiche degli elementi audio inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{inserisciVideo}(files, spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che prima richiama Services::\-Upload::\-isVideo(frames) per controllare che le estensioni siano corrette, successivamente Services::\-Upload::\-uploadmedia(files, callback) per l'upload dei file video. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione View::Pages::Edit::inserisciVideo(percorso_file, spec), e richiama, utilizzando il metodo execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand() passandogli le specifiche degli elementi video inseriti. Infine, richiama Model::\-serverRelation::\-Loader::\-addInsert() passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{rimuoviElemento}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando View::Pages::Edit::elimina(id_elemento) e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+			\item View::\-Pages::\-Edit;
+			\item View::Pages::[javascript_functions];
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command:
 			\begin{itemize}
+				\item Invoker;
+				\item ConcreteTextInsertCommand;
+				\item ConcreteFrameInsertCommand;
+				\item ConcreteImageInsertCommand;
+				\item ConcreteSVGInsertCommand;
+				\item ConcreteAudioInsertCommand;
+				\item ConcreteVideoInsertCommand;
+				\item ConcreteBackgroundInsertCommand;
 				\item ConcreteTextRemoveCommand;
 				\item ConcreteFrameRemoveCommand;
 				\item ConcreteImageRemoveCommand;
+				\item ConcreteSVGRemoveCommand;
 				\item ConcreteAudioRemoveCommand;
-				\item ConcreteVideoRemoveCommand.
+				\item ConcreteVideoRemoveCommand;
+				\item ConcreteEditSizeCommand;
+				\item ConcreteEditPositionCommand;
+				\item ConcreteEditRotationCommand;
+				\item ConcreteEditColorCommand;
+				\item ConcreteEditBackgroundCommand;
+				\item ConcreteEditFontCommand;
+				\item ConcreteEditContentCommand;
 			\end{itemize}
-			 Infine, richiama Model::\-serverRelation::\-Loader::\-addDelete() passandogli l'identificativo dell'elemento eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\item Model::\-serverRelation::\-Loader;
+			\item Services::\-Main;
+			\item Services::\-toPages;
+			\item Services::\-Utils;
+			\item Services::\-SaredData;
+			\item Services::\-Upload;
+			\item \$scope:Object\\
+				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+			\item \$interval:Object\\
+				\indent servizio Angular che permette di eseguire determinate operazioni ad ogni intervallo di tempo T;
+			\item \$q::\-Object\\
+				\indent Servizio Angular che permette di eseguire funzioni in modo asincrono;
+			\item \$mdSideNav::\-Object\\
+				\indent Servizio Angular Material per il controllo della barra laterale;
+			\item \$mdBottomSheet::\-Object\\
+				\indent Servizio Angular Material per il controllo del'oggetto mdBottomsSheet.
 		\end{itemize}
-		\item \textbf{updateSfondo}(spec)
+		\textbf{Attributi}\\
 		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background della presentazione nella view.
-		\end{itemize}
-		\item \textbf{cambiaColoreSfondo}(color)
+			\item \textbf{inv}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che mantiene una istanza di Invoker.
+			\end{itemize}
+			\item \textbf{mongo}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che mantiene una istanza di mongoRelation.
+			\end{itemize}
+	    \end{itemize}
+		\textbf{Metodi}
 		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
+			\item \textbf{translateEdit}(json)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che permette la traduzione dell'oggetto json, ricavato tramite getPresentazione() di SharedData, in html permettendo all'utente di modificare la presentazione.
+			\end{itemize}
+			\item \textbf{goExecute}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama executionpage() di toPages per effettuare il reindirizzamento alla pagina di execution.
+			\end{itemize}
+			\item \textbf{toggleList}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che gestisce \$mdBottomSheet e \$mdSidenav.
+			\end{itemize}
+			\item \textbf{showPathBottomSheet}(\$event)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che fa apparire \$mdBottomSheet per la visualizzazione dei percorsi.
+			\end{itemize}
+			\item \textbf{show}(id)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'elemento html cliccato.
+			\end{itemize}
+			\item \textbf{salvaPresentazione}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che richiama update() di Loader per salvare la presentazione nel database. Questo metodo viene utilizzato in congiunta ad \$interval in modo da assicurare un salvataggio continuo della presentazione ma senza creare troppo traffico in rete.
+			\end{itemize}
+			\item \textbf{inserisciFrame}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso la funzione javascript inserisciFrame(spec) di Edit inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, ConcreteFrameInsertCommand() del Command passandogli le specifiche del frame inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{inserisciTesto}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso la funzione javascript inserisciTesto(spec) di Edit, e che richiama, utilizzando il metodo execute di inv, ConcreteTextInsertCommand() di Command passandogli le specifiche dell'elemento testo inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{inserisciImmagini}(files, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che prima richiama isImage(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file immagine nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione javascipt inserisciImmagine(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteImageInsertCommand() di Command passandogli le specifiche degli elementi immagine inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{inserisciAudio}(files, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che prima richiama isAudio(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file audio nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione javascript inserisciAudio(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteAudioInsertCommand() di Command passandogli le specifiche degli elementi audio inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{inserisciVideo}(files, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che prima richiama isVideo(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file video nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione javascript inserisciVideo(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteVideoInsertCommand() di Command passandogli le specifiche degli elementi video inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{dragMedia}(files, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo apposito per la gestione del drag and drop di file media all'interno della presentazione. Gestisce l'inserimento di immagini, audio e video richiamando una tra le seguenti funzioni javascript di Edit:
+				\begin{itemize}
+					\item inserisciImmagine(pecorso_file, spec);
+					\item inserisciAudio(pecorso_file, spec);
+					\item inserisciVideo(pecorso_file, spec).
+				\end{itemize}
+				 e successivamente uno tra i seguenti metodi di Command, dandolo in pasto al metodo execute() di inv:
+				\begin{itemize}
+					\item ConcreteImageInsertCommand;
+					\item ConcreteAudioInsertCommand;
+					\item ConcreteVideoInsertCommand.
+				\end{itemize}
+				Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito.
+			\end{itemize}
+			\item \textbf{getMediaSpec}(ele, tipo, url)
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna le specifiche dell'elemento ele inserito nel piano della presentazione, da passare al Command. Tale metodo viene richiamato dai metodi adibiti all'inserimento di immagini, audio o video.
+			\end{itemize}
+			\item \textbf{rimuoviElemento}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando la funzione javascript elimina(id_elemento) di Edit e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+				\begin{itemize}
+					\item ConcreteTextRemoveCommand;
+					\item ConcreteFrameRemoveCommand;
+					\item ConcreteImageRemoveCommand;
+					\item ConcreteAudioRemoveCommand;
+					\item ConcreteVideoRemoveCommand.
+				\end{itemize}
+				 Infine, richiama addDelete() di Loader passandogli l'identificativo dell'elemento eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{updateSfondo}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background della presentazione nella view.
+			\end{itemize}
+			\item \textbf{cambiaColoreSfondo}(color)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+			\end{itemize}
+			\item \textbf{cambiaImmagineSfondo}(files)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+			\end{itemize}
+			\item \textbf{rimuoviSfondo}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+			\end{itemize}
+			\item \textbf{updateSfondoFrame}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background del frame spec.id nella view.
+			\end{itemize}
+			\item \textbf{cambiaColoreSfondoFrame}(color)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background del frame. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+			\end{itemize}
+			\item \textbf{cambiaImmagineSfondoFrame}(files)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+			\end{itemize}
+			\item \textbf{rimuoviSfondoFrame}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+			\end{itemize}
+			\item \textbf{cambiaColoreTesto}(color)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che cambia il colore dei caratteri dell'elemento testo selezionato, in base al parametro color, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditColorCommand() di Command passandogli le specifiche del colore. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+			\end{itemize}
+			\item \textbf{cambiaSizeTesto}(value)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'elemento testo selezionato, in base al parametro value, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+			\end{itemize}
+			\item \textbf{cambiaFontTesto}(font)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'elemento testo selezionato, in base al parametro font, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+			\end{itemize}
+			\item \textbf{aggiornaTesto}(textId, textContent, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che cambia il contenuto dell'elemento testo textId, in base al parametro textContent, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditContentCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{mediaControl}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un file media.
+			\end{itemize}
+			\item \textbf{ruotaElemento}(value, spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando la funzione javascript rotate(id_elemento, value) di Edit. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{muoviElemento}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditPositionCommand() di Command passandogli le specifiche della nuova posizione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{ridimensionaElemento}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditSizeCommand(spec) di Command passandogli le specifiche della nuova dimensione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{aggiungiMainPath}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che aggiunge il frame selezionato al percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, AddToMainPathCommand() di Command passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{rimuoviMainPath}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che rimuove il frame selezionato dal percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, RemoveFromMainPathCommand() di Command passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{portaAvanti}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript portaAvanti(id_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{portaDietro}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript mandaDietro(id_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaDietroCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+			\end{itemize}
+			\item \textbf{impostaPrimoSfondo}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che viene richiamato nel caso in cui la presentazione sia vuota, oppure se il valore background non è impostato. Esso richiama ConcreteBackgroundInsertCommand() di Command passandogli le dimensioni del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+			\end{itemize}
+			\item \textbf{updateBookmark}(id)
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che aggiorna il campo bookmark del frame id. Esso richiama ConcreteEditBookmarkCommand() di Command passandogli le specifiche del frame. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+			\end{itemize}
+			\item \textbf{AddBookmark}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante bookmark nella view, in base al parametro spec.
+			\end{itemize}
+			\item \textbf{RemoveBookmark}(spec)
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante bookmark nella view, in base al parametro spec.
+			\end{itemize}
+			\item \textbf{annullaModifica}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che annulla una modifica effettuata richiamando il metodo undo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Loader in base al tipo di azione effettuata con l'undo.
+			\end{itemize}
+			\item \textbf{ripristinaModifica}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Void;
+				\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Loader in base al tipo di azione effettuata con il redo.
+			\end{itemize}
 		\end{itemize}
-		\item \textbf{cambiaImmagineSfondo}(files)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
-		\end{itemize}
-		\item \textbf{rimuoviSfondo}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
-		\end{itemize}
-		\item \textbf{updateSfondoFrame}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background del frame spec.id nella view.
-		\end{itemize}
-		\item \textbf{cambiaColoreSfondoFrame}(color)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background del frame. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
-		\end{itemize}
-		\item \textbf{cambiaImmagineSfondoFrame}(files)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
-		\end{itemize}
-		\item \textbf{rimuoviSfondoFrame}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand() passandogli le specifiche del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo del frame modificato.
-		\end{itemize}
-		\item \textbf{mediaControl}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un file media.
-		\end{itemize}
-		\item \textbf{ruotaElemento}(value, spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando View::Pages::Edit::rotate(id_elemento, value). Successivamente richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand() passandogli le specifiche della nuova rotazione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{muoviElemento}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand() passandogli le specifiche della nuova posizione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{ridimensionaElemento}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand(spec) passandogli le specifiche della nuova dimensione. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{aggiungiMainPath}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiunge il frame selezionato al percorso principale salvato in View::Pages::Edit::mainPath, e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-AddToMainPathCommand() passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{rimuoviMainPath}(spec)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che rimuove il frame selezionato dal percorso principale salvato in View::Pages::Edit::mainPath, e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-RemoveFromMainPathCommand() passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama Model::\-serverRelation::\-Loader::\-addPaths(). Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Model::\-Command, per cui, il metodo si occuperà solamente di aggiornare la view.
-		\end{itemize}
-		\item \textbf{portaAvanti}(id)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento id attraverso la funzione View::Pages::Edit::portaAvanti(id), e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
-		\end{itemize}
-		\item \textbf{portaDietro}(id)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento id attraverso la funzione View::Pages::Edit::mandaDietro(id), e che aggiorna il valore zIndex dell'elemento con identificativo il parametro id e che richiama, utilizzando la funzione execute di inv, Model::\-SlideShow::\-SlideShowActions::\-Command::\-???????????????????????????????????????????????????????????????????????????????????? passandogli le specifiche con l'elemento da aggiornare.
-		\end{itemize}
-		\item \textbf{impostaPrimoSfondo}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che viene richiamato nel caso in cui la presentazione sia vuota, oppure se il valore background non è impostato. Esso richiama Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand() passandogli le dimensioni del background. Infine, richiama Model::\-serverRelation::\-Loader::\-addUpdate() passandogli l'identificativo dell'elemento background modificato.
-		\end{itemize}
-		\item \textbf{annullaModifica}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che annulla una modifica effettuata richiamando il metodo undo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con l'undo.
-		\end{itemize}
-		\item \textbf{ripristinaModifica}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Model::\-serverRelation::\-Loader in base al tipo di azione effettuata con il redo.
-		\end{itemize}
-	\end{itemize}
-}
+	}
