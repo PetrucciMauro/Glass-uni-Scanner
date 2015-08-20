@@ -168,6 +168,36 @@
 	%  FILE_SERVER
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 			
+		\item \textbf{GetImage:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/image/[imagename]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [imagename] nella cartella /users/[username]/image
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{GetAudio:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/audio/[audioname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [audioname] nella cartella /users/[username]/audios
+				\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
+				\end{itemize}		
+			\end{itemize}
+			
+		\item \textbf{GetVideo:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [videoname] nella cartella /users/[username]/videos					\item \textbf{input:} in header campo Authorization il token di autenticazione
+				\item \textbf{output:} file statico
+				\end{itemize}
+			\end{itemize}
+			
+			
 		\item \textbf{ImagesMeta:}
 			\begin{itemize}
 			\item   \textbf{GET} /private/api/files/image 
@@ -180,12 +210,6 @@
 			
 		\item \textbf{Image:}
 			\begin{itemize}
-			\item    \textbf{GET} /private/api/files/image/[imagename]
-				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [imagename] nella cartella /users/[username]/images					
-				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} file statico
-				\end{itemize}
 			\item    \textbf{POST} /private/api/files/image/[imagename]
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/images					
@@ -222,12 +246,6 @@
 			
 		\item \textbf{Audio:}
 			\begin{itemize}
-			\item    \textbf{GET} /private/api/files/audio/audioname]
-				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [audioname] nella cartella /users/[username]/audios					
-				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} file statico
-				\end{itemize}
 			\item    \textbf{POST} /private/api/files/audio/[audioname]
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/audios					
@@ -264,12 +282,6 @@
 			
 		\item \textbf{Video:}
 			\begin{itemize}
-			\item    \textbf{GET} /private/api/files/video/videoname]
-				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [videoname] nella cartella /users/[username]/videos					
-				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} file statico
-				\end{itemize}
 			\item    \textbf{POST} /private/api/files/video/[videoname]
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/videos					

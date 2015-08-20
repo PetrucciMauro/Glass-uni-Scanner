@@ -33,27 +33,270 @@
 		}
 	}
 	
+	
+	
+	
+	
 	\subsection{Servizi Api nodeAPI}{
-		\begin{figure}[H]
+
+		Il seguente diagramma delle classi \`{e} stato esteso con le primitive:
+	\begin{itemize}
+	\item \textbf{<<Resource>>} : rappresenta una risorsa associata ad un certo url a cui sono disponibili dei servizi
+	\item \textbf{<<Node>>} : rappresenta una parte di url a cui non sono disponibili servizi ma \`{e} utile per suddividere quest'ultimi
+	\item \textbf{<<Server>>} : rappresenta la radice dei servizi offerti dal server
+	\item \textbf{<<Path>>} : indica una aggiunta in coda all' url attuale per raggiungere una nuova risorsa o nodo
+	\item \textbf{<<Middleware>>} : indica un middleware, un insieme di funzionalit\`{a} chiamate ogni qualvolta si accede a risorse attraversando questo elemento
+	\end{itemize}
+	
+			\begin{figure}[H]
 			\centering
 			\includegraphics[scale=0.6]{\imgs {nodeAPI}.pdf}
 			\label{fig:nodeAPI}
 			\caption{Servizio Api nodeApI}
 		\end{figure}
+		
 		\begin{itemize}
 			
-			\item \textbf{NodeApiServer:} radice dei servizi offerti da nodeApi, ovvero servizi di autenticazione e di interazione con il database MongoDB per salvare in modo persistente le presentazioni degli utenti in remoto
+		\item \textbf{NodeServer:} radice dei servizi offerti dal server:
+			\begin{enumerate}
+				\item server per pagine html e file statici associati
+				\item servizi di autenticazione stateless
+				\item servizi di upload e reperimento file statici multimediali per utente
+				\item servizi di interazione con MongoDB per salvataggio persistente delle presentazioni
+			\end{enumerate}	
+				
+		\item \textbf{Register:}
+			\begin{itemize}
+			\item  \textbf{POST} /account/register 
+				\begin{itemize} 
+				\item \textbf{descrizione:} inserisce nuovo utente in MongoDB, crea una nuova collezione 'presentations'+username, crea le cartelle per i file utente
+				\end{itemize}
+			\end{itemize}
 			
-			\item \textbf{User:} servizi disponibili al path /users, offre funzionalità di registrazione e autenticazione di un utente attraverso token scambiati dal client al server ad ogni richiesta di servizio
+		\item \textbf{Authenticate:}
+			\begin{itemize}
+			\item  \textbf{GET} /account/authenticate 
+				\begin{itemize} 
+				\item \textbf{descrizione:} verifica se username e password sono corretti e ritorna un token per l'accesso ai servizi protetti
+				\end{itemize}
+			\end{itemize}
+				
+		\item \textbf{ChangePassword:}
+			\begin{itemize}
+			\item  \textbf{POST} /account/changepassword 
+				\begin{itemize} 
+				\item \textbf{descrizione:} verifica la correttezza di username e password e modifica questa'ultima con la nuova 
+				\end{itemize}
+			\end{itemize}
 			
-			\item \textbf{apiMiddleware:} al path /api è presente un middleware per proteggere i servizi Presentations, Presentation ed Element da accessi di utenti non autenticati
+		\item \textbf{PublicPages:}
+			\begin{itemize}
+			\item  \textbf{GET} /publicpages/[file] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} se presente [file] nella cartella /public\_html del server ritorna il file stesso 
+				\end{itemize}
+			\end{itemize}
 			
-			\item \textbf{Presentations:} al path /api/presentations è disponibile un servizio per ottenere meta-informazioni sulle presentazioni create dall'utente 
+		\item \textbf{tokenMiddleware:} verifica che il token passato nel campo Authorization dell' Header sia valido, dal token ricava lo username dell'utente
+		
+		\item \textbf{PrivatePages:}
+			\begin{itemize}
+			\item  \textbf{GET} /private/htdocs/[file] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} se presente [file] nella cartella /private\_html del server ritorna il file stesso
+				\end{itemize}
+			\end{itemize}
 			
-			\item \textbf{Presentation:} al path /api/presentations/presentation sono disponibili servizi per creare una nuova presentazione e per recuperare o eliminare una presentazione dell'utente
+		\item \textbf{PresentationMeta:}
+			\begin{itemize}
+			\item  \textbf{GET} /private/api/presentations 
+				\begin{itemize} 
+				\item \textbf{descrizione:} cerca in mongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono i campi meta delle presentazioni dell'utente
+				\end{itemize}
+			\end{itemize}
 			
-			\item \textbf{Element:} al path /api/presentations/presentation/element sono disponibili servizi per inserire, sostituire o eliminare un elemento in una presentazione dell'utente
-		\end{itemize}
+		\item \textbf{NewPresentation:}
+			\begin{itemize}
+			\item  \textbf{POST} /private/api/presentations/new/[presentationName] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} se non esiste gi\`{a} crea una nuova presentazione con il nome [presentatioNname]
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{NewCopyPresentation:}
+			\begin{itemize}
+			\item  \textbf{POST} /private/api/presentations/new/[newPresentationName]/[oldPresentationName]
+				\begin{itemize} 
+				\item \textbf{descrizione:} crea una nuova presentazione con nome [newPresentationName] dalla presentazione con titolo [oldPresentationName]
+				\end{itemize}
+			\end{itemize}
+
+			
+		\item \textbf{Presentation:}
+			\begin{itemize}
+			\item  \textbf{GET} /private/api/presentations/[presentationName]
+				\begin{itemize} 
+				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'url
+				\end{itemize}
+				
+			\item  \textbf{DELETE} /private/api/presentations/[presentationName]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'url
+				\end{itemize}
+			\end{itemize}
+
+		\item \textbf{RenamePresentation:}
+			\begin{itemize}
+			\item  \textbf{POST} /private/api/presentations/[presentationName]/rename/[newname] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'url con il nome [newname]
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{PresentationElement:}
+			\begin{itemize}
+			\item   \textbf{POST} /private/api/presentations/[presentationName]/element
+				\begin{itemize} 
+				\item \textbf{descrizione:} inserisce nella presentazione dell'utente individuata da [presentationName] l'oggetto element passato nel body della richiesta
+				\end{itemize}
+				
+			\item  \textbf{PUT} /private/api/presentations/[presentationName]/element
+				\begin{itemize} 
+				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'elemento passato nel body della richiesta
+				\end{itemize}
+			\end{itemize}
+				
+		\item \textbf{DeleteElement:}
+			\begin{itemize}
+			\item   \textbf{DELETE} /private/api/presentations/[presentationName]/delete/[type/[id\_element]]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina dalla presentazione con il titolo [presentationName] l'elemento con identificativo [idElement]						
+				\end{itemize}
+			\end{itemize}
+			
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%  FILE_SERVER
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			
+		\item \textbf{GetImage:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/image/[imagename]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [imagename] nella cartella /users/[username]/image				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{GetAudio:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/audio/[audioname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [audioname] nella cartella /users/[username]/audios				\end{itemize}		
+			\end{itemize}
+			
+		\item \textbf{GetVideo:}
+			\begin{itemize}
+			\item    \textbf{GET} /files/[user]/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna il file [videoname] nella cartella /users/[username]/videos					
+				\end{itemize}
+			\end{itemize}
+	
+			
+			
+		\item \textbf{ImagesMeta:}
+			\begin{itemize}
+			\item   \textbf{GET} /private/api/files/image 
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file immagine dell'utente
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{Image:}
+			\begin{itemize}
+			\item    \textbf{POST} /private/api/files/image/[imagename]
+				\begin{itemize} 
+				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/images					
+				\end{itemize}
+			\item   \textbf{DELETE} /private/api/files/image/[imagename]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina il file immagine [imagename] dalla cartella /users/[username]/images			
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{RenameImage:}
+			\begin{itemize}
+			\item   \textbf{POST} /private/api/files/image/[imagename]/[newname] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} rinomina il file immagine [imagename] con [newname] nella cartella /users/[username]/images
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{AudiosMeta:}
+			\begin{itemize}
+			\item   \textbf{GET} /private/api/files/audio
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file audio dell'utente
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{Audio:}
+			\begin{itemize}
+			\item    \textbf{POST} /private/api/files/audio/[audioname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/audios					
+
+				\end{itemize}
+			\item   \textbf{DELETE} /private/api/files/audio/[audioname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina il file audio [audioname] dalla cartella /users/[username]/audios			
+
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{RenameAudio:}
+			\begin{itemize}
+			\item   \textbf{POST} /private/api/files/audio/[audioname]/[newname] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} rinomina il file audio [audioname] con [newname] nella cartella /users/[username]/audios
+
+				\end{itemize}
+			\end{itemize}
+						
+		\item \textbf{VideosMeta:}
+			\begin{itemize}
+			\item   \textbf{GET} /private/api/files/video
+				\begin{itemize} 
+				\item \textbf{descrizione:} ritorna un array con i nomi dei file video dell'utente
+	
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{Video:}
+			\begin{itemize}
+			
+			\item    \textbf{POST} /private/api/files/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/videos					
+
+				\end{itemize}
+			\item   \textbf{DELETE} /private/api/files/video/[videoname]
+				\begin{itemize} 
+				\item \textbf{descrizione:} elimina il file video [videoname] dalla cartella /users/[username]/videos			
+
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{RenameVideo:}
+			\begin{itemize}
+			\item   \textbf{POST} /private/api/files/video/[videoname]/[newname] 
+				\begin{itemize} 
+				\item \textbf{descrizione:} rinomina il file video [videoname] con [newname] nella cartella /users/[username]/videos
+
+				\end{itemize}
+			\end{itemize}
+
+			
+	\end{itemize}
+		
 	}
 	
 }

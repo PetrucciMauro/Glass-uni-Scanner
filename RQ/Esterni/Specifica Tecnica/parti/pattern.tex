@@ -41,25 +41,3 @@
 			Premi::Controller::Presentazione::Edit può invocare il metodo unexecute() di Invoker che a sua volta invoca il metodo AbstractCommand::undoCommand() nell'ultimo oggetto inserito nel membro contenitore undo. Questo metodo esegue le operazioni necessarie per annullare tutte le modifiche apportate dal comando. Quindi Invoker toglie il comando dal contenitore undo e lo inserisce nel contenitore redo. Quando Premi::Controller::Presentazione::Edit invoca il metodo Invoker::execute(), l'oggetto Invoker esegue il comando e lo sposta nuovamente dal membro contenitore redo e lo mette nel membro undo.    
 		}
 	}
-	\subsection{Observer}{
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{\imgs {Observer}.pdf}
-			\label{fig:observer}
-			\caption{Observer}
-		\end{figure}
-		\begin{itemize}
-		\item \textbf{Descrizione}: L'Observer pattern è un design pattern utilizzato per tenere sotto controllo lo stato di diversi oggetti.  Il pattern si basa su uno o più oggetti, chiamati listerei, che vengono registrati presso un oggetto Subject per gestire un evento che potrebbe essere generato dall'oggetto "osservato".
-		
-		\item \textbf{Scopo dell’utilizzo}: I questo sistema il pattern viene utilizzato per aggiornare automaticamente la rappresentazione, persistente sul database MongoDB, della presentazione che l'utente sta modificando localmente.
-		\item \textbf{Contesto d’utilizzo}: viene utilizzato in fase di modifica delle presentazioni.
-		\end{itemize}
-		\subsubsection{Premi::Model::MongoRelations::DBSynch}{
-			    Il package Premi::Model::MongoRelations::DBSynch contiene le classi che costituiscono il pattern Observer, in particolare le classi ConcreteSubjects non sono le classi degli oggetti che vengono modificati(che sono invece definite in Model::SlideShow::SlideShowElements) ma fungono da tramite tra questi e gli oggetti ConcreteObserver. Questo permette di avere il pattern Observer e la gerarchia di definizione degli elementi in package differenti.
-		}
-		\begin{figure}[H]
-			\centering
-			\includegraphics[scale=0.6]{\imgs {SequenceObserver}.pdf}
-			\label{fig:diaobserver}
-			\caption{Diagramma di sequenza Observer}
-		\end{figure}

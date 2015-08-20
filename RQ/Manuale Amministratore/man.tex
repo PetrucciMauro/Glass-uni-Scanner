@@ -1,0 +1,96 @@
+documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/} %se esistono
+\newcommand{\temp}{../../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Manuale Amministratore}
+\newcommand{\dataCreazione}{19-08-2015}
+\newcommand{\versione}{5.0.0} % versione corrente del documento
+\newcommand{\dataUM}{19-08-2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\redaz}{\FM, \BM}
+\newcommand{\verif}{\GP}
+\newcommand{\appr}{\VG}
+\newcommand{\sommario}{
+	Il presente documento consiste del manuale per l'amministratore del sistema \premi.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\listoffigures
+	\listoftables
+	\newpage
+	
+\section{Introduzione}
+\subsection{Scopo del documento}
+Questo documento rappresenta il manuale amministratore per il sistema software Premi, vengono descritte le procedure per la corretta installazione e avviamento del server nodeJs  e per l'avvio e configurazione del database mognoDB.
+
+\subsection{Glossario}
+Per ridurre il rischio di ambiguita di linguaggio e migliorare la comprensione del documento, i termini tecnici, di dominio e gli acronimi sono riportate nel documento Glossario v5.x.x
+
+\section{Requisiti}
+Per poter avviare correttamente il server deve essere installato sul pc ospitante le tecnologie mongoDB e nodeJs.
+Di seguito le istruzioni per ottenere mongoDB e nodeJs:
+
+% immagini per scaricare mongoDB e nodeJs con link al sito
+
+per poter utilizzare i comandi mongod e mongo è utile esportare il percorso per la cartella ottenuta:
+\begin{itemize}
+\item in OSX Yosemite inserire la riga "export PATH=$PATH:/percorso/alla/mia/cartella" 
+\item in Ubuntu 12.04LTS %...
+\item in Windows7 %...
+
+\section{Installazione e Avvio}
+
+Di seguito sono riportati i passi per la configurazione del database mongoDB e l'avviamento del server per i sitemi operativi OSX Yosemite, Ubuntu  12.04LTS e Windows7:
+
+\subsection{OSX Yosemite}
+\begin{enumerate}
+\item creare una cartella data per raccogliere in database creati con mongoDB
+mongod --dbpath /usr/local/mongodb-data
+\item avviamento mongodb con il comando "sudo mongod" (--port xxxxx se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei darabase con l'opzione "mongod --dbpath /mia/cartella/"
+\item  spostarsi da terminale nella cartella Premi (o quella in cui è presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "mongo", avvenuto l'accesso configurare il database con il comando "load('mongoConfig.js')"
+\item se è stato avviato mongod con una porta differente da qulla di default modificare il file config.js all'interno della cartella Premi specificando la porta con cui è stato avviato mongod
+\item  avviamento server node spostandosi da terminale sulla cartella premi e lanciare il comando "node premi_Server.js" % modifica porta avviamento server node
+%\item configurazione premi per config porta
+
+\end{enumerate}
+
+subsection{Ubuntu 12.04 LTS}
+\begin{enumerate}
+\item % avviamento mongodb con porta definita utente e cartella definita
+\item % configurazione mongo con load script
+\item % configurazione node file config per porta
+\item %configurazione premi per config porta
+\item % avviamento server node
+\end{enumerate}
+
+subsection{Windows7}
+\begin{enumerate}
+\item % avviamento mongodb con porta definita utente e cartella definita
+\item % configurazione mongo con load script
+\item % configurazione node file config per porta
+\item %configurazione premi per config porta
+\item % avviamento server node
+\end{enumerate}
+
+	
+\end{document}
