@@ -1,22 +1,27 @@
 \section{Editor}
-Per poter accedere all'editor bisogner� essere autenticati e aver creato una presentazione. La schermata di editor si presenter� in questo modo:
+Per poter accedere all'editor bisognerà essere autenticati e aver creato una presentazione. La schermata di editor si presenterà in questo modo:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.75]{\imgs {editor}.jpg} %inserire il diagramma UML
 		\label{editor}
 		\caption{Schermata Editor}
 	\end{figure}
-\subsection{Creazione primo frame}
-L'editor permette l'inserimento dentro l'area apposita di frame , nei quali si potranno inserire elementi multimediali. Per procedere alla creazione della slide � sufficiente:
+\subsection{Inserimento frame}
+L'editor permette l'inserimento dentro l'area apposita di frame , nei quali si potranno inserire elementi multimediali. Per procedere alla creazione della slide è sufficiente:
 \begin{itemize}
 \item premere il pulsante per l'inserimento di un nuovo elemento;
 
 \item posizionarsi con il mouse su Inserisci frame premere il tasto sinistro del mouse e successivamente trascinare il nuovo frame nell'apposita area;
-
-
+\end{itemize}
+\subsubsection{Modifica frame}
+Per ogni frame all'interno della presentazioni son possibili le seguenti azioni:
+\begin{itemize}
+\item Spostamento e ridimensionamento;
+\item Rotazione;
+\item Cambio dello sfondo.
 \end{itemize}
 \subsection{Inserimento testo}
-L'editor permette l'inserimento di testi all'interno della presentazione. Per procedere all' inserimento del testo � sufficiente:
+L'editor permette l'inserimento di testi all'interno della presentazione. Per procedere all' inserimento del testo è sufficiente:
 \begin{itemize}
 \item premere il pulsante per l'inserimento di un nuovo elemento;
 
@@ -27,14 +32,13 @@ L'editor permette l'inserimento di testi all'interno della presentazione. Per pr
 \subsubsection{Modifica testo}
 Sono possibili per il testo le seguenti modifiche:
 \begin{itemize}
-
-
 \item Gestione colore testo
 \item Gestione dimensione testo
 \item Gestione font testo
+\item Rotazione testo
 \end{itemize}
 \subsection{Inserimento Elemento multimediale}
-L'editor permette l'inserimento di elementi multimediali quali, immagini,audio e video. Per procedere all'inserimento di un Elemento multimediale � sufficiente:
+L'editor permette l'inserimento di elementi multimediali quali, immagini,audio e video. Per procedere all'inserimento di un Elemento multimediale è sufficiente:
 \begin{itemize}
 \item premere il pulsante per l'inserimento di un nuovo elemento;
 \item premere il pulsante inserisci immagine/audio/video/
@@ -42,9 +46,18 @@ L'editor permette l'inserimento di elementi multimediali quali, immagini,audio e
 \item Immagini e video possono essere ridimensionati a piacimento 
 \end{itemize}
 \subsection{Gestione sfondo}
-L'editor permette l'inserimento di un proprio sfondo personale per la presentazione. Per procedere all'inserimento di uno sfondo � sufficiente:
+L'editor permette l'inserimento di un proprio sfondo personale per la presentazione. Per procedere all'inserimento di uno sfondo è sufficiente:
 \begin{itemize}
 \item premere il pulsante per la gestione dello sfondo;
 \item preme il pulsante Scegli immagine di sfondo;
 \item selezionare l'immagine che si vuole;
 \end{itemize}
+\subsection{Impostare percorso per la presentazione}
+L'editor permette di impostare un percorso per la propria presentazione per fare ciò è necessario aver inserito almeno un frame nell'editor e successivamente:
+\begin{itemize}
+\item Selezionare il frame da inserire nel percorso, una volta selezionato nella barra degli stumenti appariranno dei nuovi pulsanti;
+\item Premere il pulsante Aggiungi a un percorso;
+\item Premere il pulsante Aggiungi frame al percorso principale, a questo punto i bordi del frame saranno diventati rossi ad indicare che si è selezionato il percorso principale di esecuzione;
+\end{itemize}
+\subsubsection{Visualizzazione percorso}
+Dopo aver inserito un numero maggiore ad uno di frame nel percorso di esecuzione è possibile visualizzarlo aprendo il menu laterale, a questo punto bisognerà preme il pulsante Percorso principale per poter visualizzare il percorso con l'insieme ordinato dei frame, sarà possibile spostare con il proprio mouse l'ordine di esecuzione ed eliminare dal percorso i frame.
