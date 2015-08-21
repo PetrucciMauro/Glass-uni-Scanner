@@ -1,5 +1,261 @@
 \section{Tracciamento}
 \subsection{tracciamento requisiti-classi}
+
+\begin{center}
+\bgroup
+\def\arraystretch{1.5}
+\begin{longtable}{ | p{2cm} | p{12cm} | }
+\hline
+\cellcolor[gray]{0.9} \textbf{Requisiti} & \cellcolor[gray]{0.9} \textbf{Classi}
+ \\ \hline
+RF 1 & Services::Main, Registration\\ 
+ \hline 
+RF 1.1 & Services::Main, Registration\\ 
+ \hline 
+RF 1.2 & Services::Main, Registration\\ 
+ \hline 
+RF 3 & Services::Main, Authentication\\ 
+ \hline 
+RF 3.1 & Services::Main, Authentication\\ 
+ \hline 
+RF 3.2 & Services::Main, Authentication\\ 
+ \hline 
+RF 4 & MongoRelation\\ 
+ \hline 
+RF 7 & Inserter\\ 
+ \hline 
+RF 7.1 & Frame, Insert, ConcreteFrameInsertCommand\\ 
+ \hline 
+RF 7.1.1 & ConcreteEditContentCommand\\ 
+ \hline 
+RF 7.4 & ConcreteEditPositionCommand\\ 
+ \hline 
+RF 7.7 & ConcreteEditContentCommand, ConcreteEditBackgroundCommand\\ 
+ \hline 
+RF 7.7.1 & ConcreteEditContentCommand\\ 
+ \hline 
+RF 7.7.4 & ConcreteEditBackgroundCommand\\ 
+ \hline 
+RF 7.7.7 & Image, ConcreteImageInsertCommand, Inserter\\ 
+ \hline 
+RF 7.7.10 & ConcreteEditSizeCommand\\ 
+ \hline 
+RF 7.7.13 & Inserter, Background, ConcreteBackgroundInsertCommand\\ 
+ \hline 
+RF 7.7.16 & ConcreteEditSizeCommand\\ 
+ \hline 
+RF 7.7.19 & ConcreteEditPositionCommand\\ 
+ \hline 
+RF 7.7.25 & concreteNewChoicePathCommand\\ 
+ \hline 
+RF 7.7.28 & \\ 
+ \hline 
+RF 7.7.31 & Inserter\\ 
+ \hline 
+RF 7.7.34 & Inserter, ConcreteEditSizeCommand\\ 
+ \hline 
+RF 7.7.37 & \\ 
+ \hline 
+RF 7.7.40 & \\ 
+ \hline 
+RF 7.7.43 & Inserter, ConcreteEditBackgroundCommand\\ 
+ \hline 
+RF 7.7.46 & Inserter, ConcreteEditRotationCommand\\ 
+ \hline 
+RF 7.10 & Inserter, ConcreteFrameRemoveCommand\\ 
+ \hline 
+RF 7.13 & Inserter, ConcreteImadeInsertCommand\\ 
+ \hline 
+RF 7.16 & Background, Inserter, ConcreteBackgroundInsertCommand\\ 
+ \hline 
+RF 7.19 & Inserter, ConcreteAddToMainPathCommand\\ 
+ \hline 
+RF 7.19.1 & ConcreteAddToMainPathCommand\\ 
+ \hline 
+RF 7.19.4 & ConcreteAddToMainPathCommand\\ 
+ \hline 
+RF 7.19.10 & Inserter\\ 
+ \hline 
+RF 7.19.13 & ConcreteRemoveFromMainPathCommand\\ 
+ \hline 
+RF 7.22 & [impress.js]\\ 
+ \hline 
+RF 7.25 & [impress.js]\\ 
+ \hline 
+RF 7.28 & \\ 
+ \hline 
+RF 7.31 & \\ 
+ \hline 
+RF 7.34 & \\ 
+ \hline 
+RF 7.37 & SVG, Inserter, classConcreteSVGInsertCommand\\ 
+ \hline 
+RF 7.40 & \\ 
+ \hline 
+RF 7.40.1 & Inserter, ConcreteEditSizeCommand\\ 
+ \hline 
+RF 7.40.4 & \\ 
+ \hline 
+RF 7.43 & Inserter, ConcreteImageRemoveCommand, ConcreteSVGRemoveCommand, ConcreteVideoRemoveCommand, ConcreteAudioRemoveCommand, concreteDeleteChoicePathCommand\\ 
+ \hline 
+RF 7.46 & Inserter, ConcreteEditRotationCommand\\ 
+ \hline 
+RF 10 & \\ 
+ \hline 
+RF 10.1 & \\ 
+ \hline 
+RF 10.4 & \\ 
+ \hline 
+RF 10.5 & \\ 
+ \hline 
+RF 10.8 & \\ 
+ \hline 
+RF 12 & MongoRelation\\ 
+ \hline 
+RF 13 & Services::Upload\\ 
+ \hline 
+RF 16 & fileServerRelation\\ 
+ \hline 
+RF 17 & fileServerRelation\\ 
+ \hline 
+RF 19 & MongoRelation\\ 
+ \hline 
+RF 25 & \\ 
+ \hline 
+RF 31 & \\ 
+ \hline 
+RF 34 & MongoRelation\\ 
+ \hline 
+RF 35 & MongoRelation\\ 
+ \hline 
+RF 36 & \\ 
+ \hline 
+RF 37 & fileServerRelation\\ 
+ \hline 
+RF 43 & Services::Main\\ 
+ \hline 
+RF 46 & \\ 
+ \hline 
+RF 49 & \\ 
+ \hline 
+RF 52 & \\ 
+ \hline 
+RF 55 & Invoker\\ 
+ \hline 
+RF 58 & Invoker\\ 
+ \hline 
+RF 61 & MongoRelation\\ 
+ \hline 
+RF 61.1 & MongoRelation\\ 
+ \hline 
+RF 61.1.1 impress.js\\ 
+ \hline 
+RF 61.1.4 impress.js\\ 
+ \hline 
+RF 61.1.7 & impress.js\\ 
+ \hline 
+RF 61.1.10 & \\ 
+ \hline 
+RF 61.1.13 & \\ 
+ \hline 
+RF 61.1.16 & impress.js\\ 
+ \hline 
+RF 61.1.16.1 & impress.js\\ 
+ \hline 
+RF 61.1.16.4 & impress.js\\ 
+ \hline 
+RF 61.1.16.7 & \\ 
+ \hline 
+RF 61.1.16.10 & impress.js\\ 
+ \hline 
+RF 61.4 & \\ 
+ \hline 
+RF 61.4.1 & \\ 
+ \hline 
+RF 61.4.4 & \\ 
+ \hline 
+RF 61.4.7 & \\ 
+ \hline 
+RF 61.4.10 & \\ 
+ \hline 
+RF 61.4.10.1 & impress.js\\ 
+ \hline 
+RF 61.4.10.4 & \\ 
+ \hline 
+RF 61.4.10.7 & \\ 
+ \hline 
+RF 61.4.10.10 & \\ 
+ \hline 
+RF 61.7 & \\ 
+ \hline 
+RF 61.10 & \\ 
+ \hline 
+RF 64 & Services::Main \\ 
+ \hline 
+RF 67 & \\ 
+ \hline 
+RF 67.1 & \\ 
+ \hline 
+RF 67.4 & \\ 
+ \hline 
+RF 67.7 & \\ 
+ \hline 
+RF 67.10 & \\ 
+ \hline 
+RF 67.13 & \\ 
+ \hline 
+RF 70 & \\ 
+ \hline 
+RF 70.1 & \\ 
+ \hline 
+RF 70.4 & \\ 
+ \hline 
+RF 70.5 & \\ 
+ \hline 
+RF 70.10 & \\ 
+ \hline 
+RF 70.10.1 & \\ 
+ \hline 
+RF 70.10.1.1 & \\ 
+ \hline 
+RF 70.10.1.4 & \\ 
+ \hline 
+RF 70.10.1.4.1 & \\ 
+ \hline 
+RF 70.10.1.4.4 & \\ 
+ \hline 
+RF 70.10.1.4.7 & \\ 
+ \hline 
+RF 70.10.1.4.10 & \\ 
+ \hline 
+RF 70.10.1.4.13 & \\ 
+ \hline 
+RF 70.10.1.7 & \\ 
+ \hline 
+RF 70.10.4 & \\ 
+ \hline 
+RF 70.10.7 & \\ 
+ \hline 
+RF 70.10.10 & \\ 
+ \hline 
+RF 70.10.13 & \\ 
+ \hline 
+RF 70.10.16 & \\ 
+ \hline 
+RF 70.10.19 & \\ 
+ \hline 
+RF 70.13 & \\ 
+ \hline 
+RF 70.19 & \\ 
+ \hline 
+RF 73 & \\
+
+\caption{Requisiti-Classi}
+\end{longtable}
+\egroup
+\end{center}
+
+
 \subsection{tracciamento metodi-test}
 \begin{center}
 \bgroup
