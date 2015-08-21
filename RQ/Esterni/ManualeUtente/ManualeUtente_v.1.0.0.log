@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  21 AUG 2015 17:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  21 AUG 2015 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -835,7 +835,7 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-No file ManualeUtente_v.1.0.0.aux.
+(./ManualeUtente_v.1.0.0.aux)
 \openout1 = `ManualeUtente_v.1.0.0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -856,6 +856,7 @@ LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -960,10 +961,6 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 33.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -978,11 +975,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 27.
-
-[2]
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
@@ -997,11 +990,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 35.
-
-[3]
+ [3] (./ManualeUtente_v.1.0.0.toc)
 \tf@toc=\write3
 \openout3 = `ManualeUtente_v.1.0.0.toc'.
 
@@ -1010,25 +999,20 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 37.
-
-[4]
+[4] (./ManualeUtente_v.1.0.0.lof)
 \tf@lof=\write4
 \openout4 = `ManualeUtente_v.1.0.0.lof'.
 
+ (./ManualeUtente_v.1.0.0.lot)
 \tf@lot=\write5
 \openout5 = `ManualeUtente_v.1.0.0.lot'.
 
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 40.
-
-[5] (./parti/introduzione.tex
+ [5] (./parti/introduzione.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1042,18 +1026,15 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 42.
-
 [6] (./parti/autenticazione.tex
-<./images/registrazione.png, id=64, 1912.14375pt x 1015.795pt>
+<./images/registrazione.png, id=163, 1912.14375pt x 1015.795pt>
 File: ./images/registrazione.png Graphic file (type png)
 
 <use ./images/registrazione.png>
 Package pdftex.def Info: ./images/registrazione.png used on input line 7.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 
-<./images/formregistrazione.png, id=65, 570.13pt x 628.3475pt>
+<./images/formregistrazione.png, id=164, 570.13pt x 628.3475pt>
 File: ./images/formregistrazione.png Graphic file (type png)
 
 <use ./images/formregistrazione.png>
@@ -1063,12 +1044,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 24.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 24.
-
-[7 <./images/registrazione.png>]
-<./images/login.png, id=78, 1912.14375pt x 1015.795pt>
+ [7 <./images/registrazione.png>] <./images/login.png, id=176, 1912.14375pt x 1
+015.795pt>
 File: ./images/login.png Graphic file (type png)
 
 <use ./images/login.png>
@@ -1078,12 +1055,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 34.
-
-[8 <./images/formregistrazione.png>]
-<./images/formlogin.png, id=89, 541.02126pt x 618.31pt>
+ [8 <./images/formregistrazione.png>] <./images/formlogin.png, id=186, 541.0212
+6pt x 618.31pt>
 File: ./images/formlogin.png Graphic file (type png)
 
 <use ./images/formlogin.png>
@@ -1093,12 +1066,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 48.
-
-[9 <./images/login.png>]
-<./images/logout.png, id=99, 1912.14375pt x 1015.795pt>
+ [9 <./images/login.png>]
+<./images/logout.png, id=196, 1912.14375pt x 1015.795pt>
 File: ./images/logout.png Graphic file (type png)
 
 <use ./images/logout.png>
@@ -1108,12 +1077,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 58.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 58.
-
-[10 <./images/formlogin.png>]
-<./images/profilo.png, id=109, 1912.14375pt x 1015.795pt>
+ [10 <./images/formlogin.png>]
+<./images/profilo.png, id=205, 1912.14375pt x 1015.795pt>
 File: ./images/profilo.png Graphic file (type png)
 
 <use ./images/profilo.png>
@@ -1123,12 +1088,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 69.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 11 undefined on input line 69.
-
-[11 <./images/logout.png> <./images/profilo.png>]
-<./images/cambiopassword.png, id=122, 1912.14375pt x 1015.795pt>
+ [11 <./images/logout.png> <./images/profilo.png>]
+<./images/cambiopassword.png, id=216, 1912.14375pt x 1015.795pt>
 File: ./images/cambiopassword.png Graphic file (type png)
 
 <use ./images/cambiopassword.png>
@@ -1139,19 +1100,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 12 undefined on input line 44.
-
-[12 <./images/cambiopassword.png>] (./parti/home.tex
-<./images/creanuovapres.png, id=137, 1912.14375pt x 1015.795pt>
+ [12 <./images/cambiopassword.png>] (./parti/home.tex
+<./images/creanuovapres.png, id=231, 1912.14375pt x 1015.795pt>
 File: ./images/creanuovapres.png Graphic file (type png)
 
 <use ./images/creanuovapres.png>
 Package pdftex.def Info: ./images/creanuovapres.png used on input line 8.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 
-<./images/eliminapres.png, id=138, 1912.14375pt x 1015.795pt>
+<./images/eliminapres.png, id=232, 1912.14375pt x 1015.795pt>
 File: ./images/eliminapres.png Graphic file (type png)
 
 <use ./images/eliminapres.png>
@@ -1161,12 +1118,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 24.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 24.
-
-[13 <./images/creanuovapres.png>]
-<./images/rinominapresentazione.png, id=154, 1927.2pt x 1084.05pt>
+ [13 <./images/creanuovapres.png>] <./images/rinominapresentazione.png, id=244,
+ 1927.2pt x 1084.05pt>
 File: ./images/rinominapresentazione.png Graphic file (type png)
 
 <use ./images/rinominapresentazione.png>
@@ -1177,12 +1130,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 38.
-
-[14 <./images/eliminapres.png>]
-<./images/salvapres.png, id=167, 1912.14375pt x 1015.795pt>
+ [14 <./images/eliminapres.png>] <./images/salvapres.png, id=256, 1912.14375pt 
+x 1015.795pt>
 File: ./images/salvapres.png Graphic file (type png)
 
 <use ./images/salvapres.png>
@@ -1192,16 +1141,147 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [15 <./images/rinominapresentazione.png>] <./images/goeditor.png, id=266, 1912
+.14375pt x 1015.795pt>
+File: ./images/goeditor.png Graphic file (type png)
 
+<use ./images/goeditor.png>
+Package pdftex.def Info: ./images/goeditor.png used on input line 54.
+(pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 47.
+<./images/goesecuzione.png, id=267, 1912.14375pt x 1015.795pt>
+File: ./images/goesecuzione.png Graphic file (type png)
 
-[15 <./images/rinominapresentazione.png>]
-! Missing control sequence inserted.
-<inserted text> 
-                \inaccessible 
-l.54 ...s[scale=0.25]{\imgs {goEditor\ped{g}}.png}
-                                                   %inserire il diagramma UML
-Please don't say `\def cs{...}', say `\def\cs{...}'.
-I've inserted an inaccessible control sequence so that your
-definition will be compl
+<use ./images/goesecuzione.png>
+Package pdftex.def Info: ./images/goesecuzione.png used on input line 64.
+(pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 67.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [16 <./images/salvapres.png> <./images/goeditor.png>])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17 <./images/goesecuzione.png>] (./parti/editor.tex
+<./images/editor.png, id=288, 1912.14375pt x 1005.7575pt>
+File: ./images/editor.png Graphic file (type png)
+
+<use ./images/editor.png>
+Package pdftex.def Info: ./images/editor.png used on input line 5.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+
+<./images/inserimentoframe.png, id=289, 1927.2pt x 1084.05pt>
+File: ./images/inserimentoframe.png Graphic file (type png)
+
+<use ./images/inserimentoframe.png>
+Package pdftex.def Info: ./images/inserimentoframe.png used on input line 17.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 21.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [18 <./images/editor.png>] <./images/inserimentotesto.png, id=299, 1912.14375p
+t x 1005.7575pt>
+File: ./images/inserimentotesto.png Graphic file (type png)
+
+<use ./images/inserimentotesto.png>
+Package pdftex.def Info: ./images/inserimentotesto.png used on input line 39.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [19 <./images/inserimentoframe.png>]
+<./images/inserimentomultimediale.png, id=308, 1912.14375pt x 1005.7575pt>
+File: ./images/inserimentomultimediale.png Graphic file (type png)
+
+<use ./images/inserimentomultimediale.png>
+Package pdftex.def Info: ./images/inserimentomultimediale.png used on input lin
+e 62.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 66.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [20 <./images/inserimentotesto.png>]
+<./images/gestionesfondo.png, id=317, 1912.14375pt x 1005.7575pt>
+File: ./images/gestionesfondo.png Graphic file (type png)
+
+<use ./images/gestionesfondo.png>
+Package pdftex.def Info: ./images/gestionesfondo.png used on input line 75.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 79.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [21 <./images/inserimentomultimediale.png>]
+<./images/impostarepercorso.png, id=326, 1912.14375pt x 1005.7575pt>
+File: ./images/impostarepercorso.png Graphic file (type png)
+
+<use ./images/impostarepercorso.png>
+Package pdftex.def Info: ./images/impostarepercorso.png used on input line 87.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 91.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22 <./images/gestionesfondo.png>] <./images/menupercorso.png, id=335, 1912.14
+375pt x 1005.7575pt>
+File: ./images/menupercorso.png Graphic file (type png)
+
+<use ./images/menupercorso.png>
+Package pdftex.def Info: ./images/menupercorso.png used on input line 96.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 48.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23 <./images/impostarepercorso.png> <./images/menupercorso.png>] (./parti/ese
+cuzione.tex
+<./images/menuesecuzione.png, id=345, 1927.2pt x 1084.05pt>
+File: ./images/menuesecuzione.png Graphic file (type png)
+
+<use ./images/menuesecuzione.png>
+Package pdftex.def Info: ./images/menuesecuzione.png used on input line 13.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+) 
+AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 50.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24 <./images/menuesecuzione.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
+
+(./ManualeUtente_v.1.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 50.
+ ) 
+Here is how much of TeX's memory you used:
+ 13728 strings out of 494969
+ 200324 string characters out of 6178806
+ 352879 words of memory out of 5000000
+ 16574 multiletter control sequences out of 15000+600000
+ 15438 words of font info for 37 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 51i,15n,60p,815b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </hom
+e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petruc
+ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb>
+Output written on ManualeUtente_v.1.0.0.pdf (25 pages, 914594 bytes).
+PDF statistics:
+ 728 PDF objects out of 1000 (max. 8388607)
+ 409 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
+
