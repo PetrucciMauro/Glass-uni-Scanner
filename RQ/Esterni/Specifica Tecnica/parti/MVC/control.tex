@@ -36,7 +36,7 @@
 
 			\item Model::\-serverRelation::\-Loader <- EditController, ad ogni modifica della presentazione, richiama i metodi appropriati di Loader in modo tale da permettere il salvataggio della presentazione stessa nel server;
 
-			\item View::\-Pages::\-Edit::\-[javascript_functions] <- EditController invoca le appropriate funzioni Javascript per applicare le modifiche alla presentazione sulla pagina di Edit.
+			\item View::\-Pages::\-Edit::\-[javascript\_functions] <- EditController invoca le appropriate funzioni Javascript per applicare le modifiche alla presentazione sulla pagina di Edit.
 		\end{itemize} 
 		\textbf{\interfacce}: EditController richiama le funzioni javascript fornite da View::\-Pages::\-Edit per la modifica della view. Successivamente istanzia un oggetto di una sottoclasse di Command e lo dà in pasto a Invoker e successivamente richiama il metodo corretto di Loader per il salvataggio nel database. Nel caso di un annullamento di una modifica o di un suo ripristino, EditController richiama il metodo undo() (o redo()) di Invoker il quale a sua volta, richiama il metodo corretto di EditController per l'aggiornamento della view.
 	}

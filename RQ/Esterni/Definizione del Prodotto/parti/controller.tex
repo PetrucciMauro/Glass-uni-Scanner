@@ -143,7 +143,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
+					\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome\_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
 				\end{itemize}
 				\item \textbf{isImage}(files)
 				\begin{itemize}
@@ -589,7 +589,7 @@
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
 			\item View::\-Pages::\-Edit;
-			\item View::Pages::[javascript_functions];
+			\item View::Pages::[javascript\_functions];
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command:
 			\begin{itemize}
 				\item Invoker;
@@ -700,19 +700,19 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isImage(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file immagine nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione javascipt inserisciImmagine(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteImageInsertCommand() di Command passandogli le specifiche degli elementi immagine inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isImage(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file immagine nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione javascipt inserisciImmagine(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteImageInsertCommand() di Command passandogli le specifiche degli elementi immagine inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{inserisciAudio}(files, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isAudio(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file audio nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione javascript inserisciAudio(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteAudioInsertCommand() di Command passandogli le specifiche degli elementi audio inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isAudio(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file audio nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione javascript inserisciAudio(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteAudioInsertCommand() di Command passandogli le specifiche degli elementi audio inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{inserisciVideo}(files, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isVideo(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file video nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione javascript inserisciVideo(percorso_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteVideoInsertCommand() di Command passandogli le specifiche degli elementi video inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isVideo(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file video nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione javascript inserisciVideo(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteVideoInsertCommand() di Command passandogli le specifiche degli elementi video inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{dragMedia}(files, spec)
 			\begin{itemize}
@@ -720,9 +720,9 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo apposito per la gestione del drag and drop di file media all'interno della presentazione. Gestisce l'inserimento di immagini, audio e video richiamando una tra le seguenti funzioni javascript di Edit:
 				\begin{itemize}
-					\item inserisciImmagine(pecorso_file, spec);
-					\item inserisciAudio(pecorso_file, spec);
-					\item inserisciVideo(pecorso_file, spec).
+					\item inserisciImmagine(pecorso\_file, spec);
+					\item inserisciAudio(pecorso\_file, spec);
+					\item inserisciVideo(pecorso\_file, spec).
 				\end{itemize}
 				 e successivamente uno tra i seguenti metodi di Command, dandolo in pasto al metodo execute() di inv:
 				\begin{itemize}
@@ -742,7 +742,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando la funzione javascript elimina(id_elemento) di Edit e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+				\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando la funzione javascript elimina(id\_elemento) di Edit e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
 				\begin{itemize}
 					\item ConcreteTextRemoveCommand;
 					\item ConcreteFrameRemoveCommand;
@@ -834,7 +834,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando la funzione javascript rotate(id_elemento, value) di Edit. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando la funzione javascript rotate(id\_elemento, value) di Edit. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{muoviElemento}(spec)
 			\begin{itemize}
@@ -864,13 +864,13 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript portaAvanti(id_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript portaAvanti(id\_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{portaDietro}(spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript mandaDietro(id_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaDietroCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript mandaDietro(id\_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaDietroCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{impostaPrimoSfondo}()
 			\begin{itemize}
