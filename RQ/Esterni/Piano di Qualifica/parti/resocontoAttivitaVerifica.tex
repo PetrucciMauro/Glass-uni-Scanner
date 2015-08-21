@@ -29,7 +29,7 @@ Vengono qui riportati i valori dell’indice Gulpease per ogni documento durante
 
 Come si può notare dalla tabella, tutti gli indici Gulpease dei documenti rientrano nel range ottimale precedentemente definito e quindi i documenti redatti hanno raggiunto la leggibilità desiderata.
 }
-\subsection{Progettazione}
+\subsection{Progettazione Architetturale}
 Viene qui riportata una tabella riassuntiva che riporta il calcolo dei parametri di accoppiamento afferente ed efferente per i componenti individuati nella progettazione.
 
 \begin{table}[H]
@@ -56,3 +56,57 @@ Viene qui riportata una tabella riassuntiva che riporta il calcolo dei parametri
 
 Come si può vedere dalla tabella, l’accoppiamento efferente è generalmente molto basso e quindi positivo, ad eccezione del package Command, per il quale però questo è accettato a causa della natura intrinseca di tale componente. L’accoppiamento afferente mostra invece la stabilità richiesta dalle classi del Model.
 }
+\subsection{Progettazione di dettaglio e codifica}
+Vengono qui riportate le misure rilevate con le metriche sull’analisi statica e dinamica del codice. Per ogni metrica si riportano i valore calcolati mantenendo una separazione tra backend e frontend. Per una descrizione delle metriche si rimanda alla sezione \S\ref{sec:metrichecodice}\\\\
+\textbf{Complessità ciclomatica}
+\begin{itemize}
+\item \textbf{Backend}
+\begin{itemize}
+\item Medio: 1.2
+\item Massimo: 3
+\end{itemize}
+\item \textbf{Frontend}
+\begin{itemize}
+\item Medio: 2.4
+\item Massimo: 12
+\end{itemize}
+\end{itemize}
+I valori del Backend rispettano i parametri ottimali prefissati al contrario il Frontend ha una complessità ciclomatica troppo elevata.
+\\\\
+\textbf{Halstead\ped{g} Volume}
+\begin{itemize}
+\item \textbf{Backend}
+\begin{itemize}
+\item Medio: 53.3
+\item Massimo: 228
+\end{itemize}
+\item \textbf{Frontend}
+\begin{itemize}
+\item Medio: 326.6
+\item Massimo: 1304
+\end{itemize}
+\end{itemize}
+I Valori sia del backend che del frontend sono accettabili e rispettano i parametri prefissati.
+\\\\
+\textbf{Indice di manutenibilità}
+\begin{itemize}
+\item \textbf{Backend}
+\begin{itemize}
+\item Medio: 102.3
+\item Massimo: 153.69
+\end{itemize}
+\item \textbf{Frontend}
+\begin{itemize}
+\item Medio: 95.6
+\item Massimo: 150.10
+\end{itemize}
+\end{itemize}
+I valori sia del backend che del frontend sono accettabili e rispettano i parametri prefissati.
+\\\\
+\textbf{Copertura del codice}
+\begin{itemize}
+\item \textbf{Backend}:93.29 \%
+\item \textbf{Frontend}:60.13 \%
+\end{itemize}
+Il frontend rientra strettamente nella sufficienza della copertura del codice questo a causa della difficoltà nel testare i controller ed ottenere una copertura elevata.\\
+Il backend rientra nei parametri ottimali prefissati.
