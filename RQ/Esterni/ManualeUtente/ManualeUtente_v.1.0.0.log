@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  21 AUG 2015 17:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.13)  21 AUG 2015 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **ManualeUtente_v.1.0.0.tex
 (./ManualeUtente_v.1.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 8 languages loaded.
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -1071,29 +1071,29 @@ Package pdftex.def Info: ../../logo.jpg used on input line 48.
 File: ./images/logout.png Graphic file (type png)
 
 <use ./images/logout.png>
-Package pdftex.def Info: ./images/logout.png used on input line 54.
+Package pdftex.def Info: ./images/logout.png used on input line 53.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 58.
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10 <./images/formlogin.png>]
 <./images/profilo.png, id=205, 1912.14375pt x 1015.795pt>
 File: ./images/profilo.png Graphic file (type png)
 
 <use ./images/profilo.png>
-Package pdftex.def Info: ./images/profilo.png used on input line 64.
+Package pdftex.def Info: ./images/profilo.png used on input line 63.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 69.
+Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [11 <./images/logout.png> <./images/profilo.png>]
 <./images/cambiopassword.png, id=216, 1912.14375pt x 1015.795pt>
 File: ./images/cambiopassword.png Graphic file (type png)
 
 <use ./images/cambiopassword.png>
-Package pdftex.def Info: ./images/cambiopassword.png used on input line 76.
+Package pdftex.def Info: ./images/cambiopassword.png used on input line 75.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 )
 File: ../../logo.jpg Graphic file (type jpg)
@@ -1165,14 +1165,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [17 <./images/goesecuzione.png>] (./parti/editor.tex
-<./images/editor.png, id=288, 1912.14375pt x 1005.7575pt>
+<./images/editor.png, id=289, 1912.14375pt x 1005.7575pt>
 File: ./images/editor.png Graphic file (type png)
 
 <use ./images/editor.png>
 Package pdftex.def Info: ./images/editor.png used on input line 5.
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
 
-<./images/inserimentoframe.png, id=289, 1927.2pt x 1084.05pt>
+<./images/inserimentoframe.png, id=290, 1927.2pt x 1084.05pt>
 File: ./images/inserimentoframe.png Graphic file (type png)
 
 <use ./images/inserimentoframe.png>
@@ -1182,7 +1182,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18 <./images/editor.png>] <./images/inserimentotesto.png, id=299, 1912.14375p
+ [18 <./images/editor.png>] <./images/inserimentotesto.png, id=300, 1912.14375p
 t x 1005.7575pt>
 File: ./images/inserimentotesto.png Graphic file (type png)
 
@@ -1194,7 +1194,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [19 <./images/inserimentoframe.png>]
-<./images/inserimentomultimediale.png, id=308, 1912.14375pt x 1005.7575pt>
+<./images/inserimentomultimediale.png, id=309, 1912.14375pt x 1005.7575pt>
 File: ./images/inserimentomultimediale.png Graphic file (type png)
 
 <use ./images/inserimentomultimediale.png>
@@ -1206,7 +1206,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [20 <./images/inserimentotesto.png>]
-<./images/gestionesfondo.png, id=317, 1912.14375pt x 1005.7575pt>
+<./images/gestionesfondo.png, id=318, 1912.14375pt x 1005.7575pt>
 File: ./images/gestionesfondo.png Graphic file (type png)
 
 <use ./images/gestionesfondo.png>
@@ -1217,7 +1217,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 79.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [21 <./images/inserimentomultimediale.png>]
-<./images/impostarepercorso.png, id=326, 1912.14375pt x 1005.7575pt>
+<./images/impostarepercorso.png, id=327, 1912.14375pt x 1005.7575pt>
 File: ./images/impostarepercorso.png Graphic file (type png)
 
 <use ./images/impostarepercorso.png>
@@ -1227,7 +1227,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22 <./images/gestionesfondo.png>] <./images/menupercorso.png, id=335, 1912.14
+ [22 <./images/gestionesfondo.png>] <./images/menupercorso.png, id=336, 1912.14
 375pt x 1005.7575pt>
 File: ./images/menupercorso.png Graphic file (type png)
 
@@ -1241,7 +1241,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23 <./images/impostarepercorso.png> <./images/menupercorso.png>] (./parti/ese
 cuzione.tex
-<./images/menuesecuzione.png, id=345, 1927.2pt x 1084.05pt>
+<./images/menuesecuzione.png, id=346, 1927.2pt x 1084.05pt>
 File: ./images/menuesecuzione.png Graphic file (type png)
 
 <use ./images/menuesecuzione.png>
@@ -1262,26 +1262,26 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
- 13728 strings out of 494969
- 200324 string characters out of 6178806
- 352879 words of memory out of 5000000
- 16574 multiletter control sequences out of 15000+600000
- 15438 words of font info for 37 fonts, out of 8000000 for 9000
+ 13730 strings out of 495017
+ 200384 string characters out of 6181021
+ 352604 words of memory out of 5000000
+ 16561 multiletter control sequences out of 15000+600000
+ 16214 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,15n,60p,815b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </hom
-e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petruc
-ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on ManualeUtente_v.1.0.0.pdf (25 pages, 914596 bytes).
+ 51i,15n,60p,815b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/
+pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/pietro/.te
+xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/pietro/.texmf-var/fonts/pk/ljf
+our/jknappen/ec/ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknapp
+en/ec/ecti1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+1200.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk
+> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ManualeUtente_v.1.0.0.pdf (25 pages, 916281 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
+ 736 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
  94 named destinations out of 1000 (max. 500000)
  319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

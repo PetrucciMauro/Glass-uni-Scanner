@@ -42,9 +42,9 @@
 		Il seguente diagramma delle classi \`{e} stato esteso con le primitive:
 	\begin{itemize}
 	\item \textbf{<<Resource>>} : rappresenta una risorsa associata ad un certo url a cui sono disponibili dei servizi
-	\item \textbf{<<Node>>} : rappresenta una parte di url a cui non sono disponibili servizi ma \`{e} utile per suddividere quest'ultimi
+	\item \textbf{<<Node>>} : rappresenta una parte di URL a cui non sono disponibili servizi ma \`{e} utile per suddividere quest'ultimi
 	\item \textbf{<<Server>>} : rappresenta la radice dei servizi offerti dal server
-	\item \textbf{<<Path>>} : indica una aggiunta in coda all' url attuale per raggiungere una nuova risorsa o nodo
+	\item \textbf{<<Path>>} : indica una aggiunta in coda all' URL attuale per raggiungere una nuova risorsa o nodo
 	\item \textbf{<<Middleware>>} : indica un middleware, un insieme di funzionalit\`{a} chiamate ogni qualvolta si accede a risorse attraversando questo elemento
 	\end{itemize}
 	
@@ -59,7 +59,7 @@
 			
 		\item \textbf{NodeServer:} radice dei servizi offerti dal server:
 			\begin{enumerate}
-				\item server per pagine html e file statici associati
+				\item server per pagine HTML e file statici associati
 				\item servizi di autenticazione stateless
 				\item servizi di upload e reperimento file statici multimediali per utente
 				\item servizi di interazione con MongoDB per salvataggio persistente delle presentazioni
@@ -111,7 +111,7 @@
 			\begin{itemize}
 			\item  \textbf{GET} /private/api/presentations 
 				\begin{itemize} 
-				\item \textbf{descrizione:} cerca in mongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono i campi meta delle presentazioni dell'utente
+				\item \textbf{descrizione:} cerca in MongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono i campi meta delle presentazioni dell'utente
 				\end{itemize}
 			\end{itemize}
 			
@@ -136,12 +136,12 @@
 			\begin{itemize}
 			\item  \textbf{GET} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'url
+				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'URL
 				\end{itemize}
 				
 			\item  \textbf{DELETE} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'url
+				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'URL
 				\end{itemize}
 			\end{itemize}
 
@@ -149,7 +149,7 @@
 			\begin{itemize}
 			\item  \textbf{POST} /private/api/presentations/[presentationName]/rename/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'url con il nome [newname]
+				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'URL con il nome [newname]
 				\end{itemize}
 			\end{itemize}
 			
