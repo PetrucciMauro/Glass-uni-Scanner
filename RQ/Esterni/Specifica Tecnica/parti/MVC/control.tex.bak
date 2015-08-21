@@ -138,7 +138,7 @@
 		\begin{itemize}
 			\item Model::\-serverRelation::\-mongoRelation <- SharedData richiama mongoRelation per ottenere la presentazione corrente.
 		\end{itemize}
-		\textbf{\interfacce}: SharedData richiama il metodo corretto di mongoRelation in modo da inviare una richiesta http al server per ottenere la presentazione voluta.
+		\textbf{\interfacce}: SharedData richiama il metodo corretto di mongoRelation in modo da inviare una richiesta http al server per ottentere la presentazione voluta.
 		}
 
 		\subsubsubsection{Services::\-Utils}{

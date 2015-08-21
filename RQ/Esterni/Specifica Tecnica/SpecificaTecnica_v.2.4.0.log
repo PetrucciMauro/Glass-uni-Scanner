@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  21 AUG 2015 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  21 AUG 2015 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,13 +1058,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12] (./parti/pattern.tex
-<./images/MVC.png, id=391, 680.5425pt x 578.16pt>
+<./images/MVC.png, id=393, 680.5425pt x 578.16pt>
 File: ./images/MVC.png Graphic file (type png)
  <use ./images/MVC.png>
 Package pdftex.def Info: ./images/MVC.png used on input line 5.
 (pdftex.def)             Requested size: 408.32864pt x 346.89867pt.
 
-<./images/CommandPackagePattern.pdf, id=392, 1211.52625pt x 1076.02pt>
+<./images/CommandPackagePattern.pdf, id=394, 1211.52625pt x 1076.02pt>
 File: ./images/CommandPackagePattern.pdf Graphic file (type pdf)
 
 <use ./images/CommandPackagePattern.pdf>
@@ -1072,7 +1072,7 @@ Package pdftex.def Info: ./images/CommandPackagePattern.pdf used on input line
 18.
 (pdftex.def)             Requested size: 460.38477pt x 408.89186pt.
 
-<./images/Command.pdf, id=393, 515.9275pt x 429.605pt>
+<./images/Command.pdf, id=395, 515.9275pt x 429.605pt>
 File: ./images/Command.pdf Graphic file (type pdf)
 
 <use ./images/Command.pdf>
@@ -1111,7 +1111,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 53.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [16]
 (./parti/presentazione.tex
-<./images/General.jpg, id=661, 1971.365pt x 841.1425pt>
+<./images/General.jpg, id=663, 1971.365pt x 841.1425pt>
 File: ./images/General.jpg Graphic file (type jpg)
 
 <use ./images/General.jpg>
@@ -1122,7 +1122,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 28.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [17 <./images/General.jpg>]
-<./images/nodeAPI.pdf, id=669, 541.99957pt x 475.24512pt>
+<./images/nodeAPI.pdf, id=671, 541.99957pt x 475.24512pt>
 File: ./images/nodeAPI.pdf Graphic file (type pdf)
 
 <use ./images/nodeAPI.pdf>
@@ -1182,16 +1182,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [22] (./parti/componenti.tex) (./parti//MVC/model.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
-
- []
-
-<./images/inserteditremove.pdf, id=724, 1392.20125pt x 594.22pt>
+<./images/inserteditremove.pdf, id=726, 1392.20125pt x 594.22pt>
 File: ./images/inserteditremove.pdf Graphic file (type pdf)
 
 <use ./images/inserteditremove.pdf>
@@ -1202,49 +1193,89 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [23]
-Overfull \hbox (0.11795pt too wide) in paragraph at lines 37--38
+Overfull \hbox (0.11795pt too wide) in paragraph at lines 36--37
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteEditS
 izeCommand -> in-vo-ca il
  []
 
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 45.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24 <./images/inserteditremove.pdf>]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 67.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[25]
-Overfull \hbox (1.91066pt too wide) in paragraph at lines 84--85
-[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteFrame
-RemoveCommand -> in-
+Overfull \hbox (6.80525pt too wide) in paragraph at lines 42--43
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteEditB
+ookmarkCommand -> ag-
+ []
+
+
+Overfull \hbox (2.39798pt too wide) in paragraph at lines 43--44
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcretePorta
+AvantiCommand -> in-vo-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 92.
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24 <./images/inserteditremove.pdf>]
+Overfull \hbox (1.91064pt too wide) in paragraph at lines 44--45
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcretePorta
+DietroCommand -> in-vo-
+ []
+
+
+Overfull \hbox (15.77252pt too wide) in paragraph at lines 46--47
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteRemov
+eFromMainPathCommand
+ []
+
+
+Overfull \hbox (11.20839pt too wide) in paragraph at lines 47--48
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteNewCh
+oicePathCommand -> in-
+ []
+
+
+Overfull \hbox (4.84746pt too wide) in paragraph at lines 48--49
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteDelet
+eChoicePathCommand ->
+ []
+
+
+Overfull \hbox (23.93442pt too wide) in paragraph at lines 50--51
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteRemov
+eFromChoicePathCommand
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 66.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 90.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [26]
-<./images/CommandPackage.pdf, id=846, 1699.34875pt x 1168.365pt>
+Overfull \hbox (1.91066pt too wide) in paragraph at lines 91--92
+[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-ConcreteFrame
+RemoveCommand -> in-
+ []
+
+<./images/CommandPackage.pdf, id=848, 1699.34875pt x 1168.365pt>
 File: ./images/CommandPackage.pdf Graphic file (type pdf)
 
 <use ./images/CommandPackage.pdf>
-Package pdftex.def Info: ./images/CommandPackage.pdf used on input line 111.
+Package pdftex.def Info: ./images/CommandPackage.pdf used on input line 110.
 (pdftex.def)             Requested size: 509.80856pt x 350.5122pt.
 
-Overfull \hbox (26.1117pt too wide) in paragraph at lines 111--113
+Overfull \hbox (26.1117pt too wide) in paragraph at lines 110--112
  [][] 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 115.
+Package pdftex.def Info: ../../logo.jpg used on input line 114.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
@@ -1252,14 +1283,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 	\subsubsubsection{Invoker}
-                                 {
+l.120 \subsubsubsection{Invoker}
+                                {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 127.
+Package pdftex.def Info: ../../logo.jpg used on input line 126.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [28 <./images/CommandPackage.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
@@ -1267,409 +1298,358 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132 	\subsubsubsection{AbstractCommand}
-                                         {
+l.130 \subsubsubsection{AbstractCommand}
+                                        {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 151.
+Package pdftex.def Info: ../../logo.jpg used on input line 150.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [29]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.5.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 ...bsubsubsection{ConcreteTextInsertCommand}
+l.170 \subsubsubsection{ConcreteTextInsertCommand}
                                                   {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 181.
+Package pdftex.def Info: ../../logo.jpg used on input line 177.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [30]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 209.
+Package pdftex.def Info: ../../logo.jpg used on input line 206.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [31]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 238.
+Package pdftex.def Info: ../../logo.jpg used on input line 234.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [32]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 266.
+Package pdftex.def Info: ../../logo.jpg used on input line 262.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [33]
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 269--270
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 275--276
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 283--284
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 289--290
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 294.
+Package pdftex.def Info: ../../logo.jpg used on input line 290.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [34]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 296--297
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 302--303
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 297--298
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 303--304
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 310--311
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 316--317
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 311--312
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 317--318
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 322.
+Package pdftex.def Info: ../../logo.jpg used on input line 318.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [35]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 324--325
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 330--331
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 325--326
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 331--332
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 338--339
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 344--345
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 339--340
+Overfull \hbox (0.50122pt too wide) in paragraph at lines 345--346
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
 ver <- in-vo-ca il me-to-do re-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 350.
+Package pdftex.def Info: ../../logo.jpg used on input line 346.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [36]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 352--353
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 358--359
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (0.50122pt too wide) in paragraph at lines 353--354
-[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-InsertEditRemove::-Remo
-ver <- in-vo-ca il me-to-do re-
- []
-
-
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 366--367
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 372--373
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 378.
+Package pdftex.def Info: ../../logo.jpg used on input line 374.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [37]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 380--381
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 386--387
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 394--395
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 400--401
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 406.
+Package pdftex.def Info: ../../logo.jpg used on input line 402.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [38]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 408--409
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 414--415
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 422--423
+Overfull \hbox (8.10626pt too wide) in paragraph at lines 428--429
 []\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
 -vo-ker in-vo-ca il me-to-do doac-
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 434.
+Package pdftex.def Info: ../../logo.jpg used on input line 430.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [39]
-Overfull \hbox (8.10626pt too wide) in paragraph at lines 436--437
-[]\T1/cmr/m/n/12 Model::-SlideShow::-SlideShowActions::-Command::-Invoker -> In
--vo-ker in-vo-ca il me-to-do doac-
- []
-
-<./images/slideshowelements.pdf, id=1158, 1677.26625pt x 572.1375pt>
+<./images/slideshowelements.pdf, id=1160, 1677.26625pt x 572.1375pt>
 File: ./images/slideshowelements.pdf Graphic file (type pdf)
 
 <use ./images/slideshowelements.pdf>
-Package pdftex.def Info: ./images/slideshowelements.pdf used on input line 450.
+Package pdftex.def Info: ./images/slideshowelements.pdf used on input line 442.
 
 (pdftex.def)             Requested size: 469.63135pt x 160.1974pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 458.
+Package pdftex.def Info: ../../logo.jpg used on input line 453.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [40 <./images/slideshowelements.pdf>]pdfTeX warning (ext4): destination with t
 he same identifier (name{subsubsubsection.5.1.1}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.463     \subsubsubsection{SlideShowElement}
-                                             {pdfTeX warning (ext4): destinatio
-n with the same identifier (name{subsubsubsection.5.1.2}) has been already used
-, duplicate ignored
+l.455 \subsubsubsection{SlideShowElement}
+                                         {pdfTeX warning (ext4): destination wi
+th the same identifier (name{subsubsubsection.5.1.2}) has been already used, du
+plicate ignored
 <to be read again> 
                    \relax 
-l.484      \subsubsubsection{Text}
-                                  {
+l.476  \subsubsubsection{Text}
+                              {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 487.
+Package pdftex.def Info: ../../logo.jpg used on input line 481.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [41]
-Overfull \hbox (22.825pt too wide) in paragraph at lines 489--490
+Overfull \hbox (13.36621pt too wide) in paragraph at lines 481--482
 \T1/cmr/m/n/12 Text dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Model:
-:-MongoRelations::-Loader::-LoaderClass,
+:-serverRelation::-Loader::-LoaderClass,
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.499            \subsubsubsection{Frame}
-                                         {
-Overfull \hbox (31.47011pt too wide) in paragraph at lines 504--505
+l.491        \subsubsubsection{Frame}
+                                     {
+Overfull \hbox (22.01132pt too wide) in paragraph at lines 496--497
 \T1/cmr/m/n/12 Fra-me dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mode
-l::-MongoRelations::-Loader::-LoaderClass,
+l::-serverRelation::-Loader::-LoaderClass,
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 509.
+Package pdftex.def Info: ../../logo.jpg used on input line 501.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [42]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.5.1.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.513                     \subsubsubsection{Image}
-                                                  {
-Overfull \hbox (30.32594pt too wide) in paragraph at lines 518--519
+l.505                 \subsubsubsection{Image}
+                                              {
+Overfull \hbox (20.86716pt too wide) in paragraph at lines 510--511
 \T1/cmr/m/n/12 Ima-ge dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mode
-l::-MongoRelations::-Loader::-LoaderClass,
+l::-serverRelation::-Loader::-LoaderClass,
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.528                     \subsubsubsection{SVG}
-                                                {
-Overfull \hbox (23.55269pt too wide) in paragraph at lines 533--534
+l.520                 \subsubsubsection{SVG}
+                                            {
+Overfull \hbox (14.0939pt too wide) in paragraph at lines 525--526
 \T1/cmr/m/n/12 SVG dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Model::
--MongoRelations::-Loader::-LoaderClass,
+-serverRelation::-Loader::-LoaderClass,
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 536.
+Package pdftex.def Info: ../../logo.jpg used on input line 528.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [43]pdfTeX warning (ext4): destination with the same identifier (name{subsubsu
 bsection.5.1.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.543                     \subsubsubsection{Audio}
-                                                  {
-Overfull \hbox (30.32593pt too wide) in paragraph at lines 548--549
+l.535                 \subsubsubsection{Audio}
+                                              {
+Overfull \hbox (20.86714pt too wide) in paragraph at lines 540--541
 \T1/cmr/m/n/12 Au-dio dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mode
-l::-MongoRelations::-Loader::-LoaderClass,
+l::-serverRelation::-Loader::-LoaderClass,
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.558                     \subsubsubsection{Video}
-                                                  {
+l.550                 \subsubsubsection{Video}
+                                              {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 563.
+Package pdftex.def Info: ../../logo.jpg used on input line 555.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[44]
-Overfull \hbox (29.0207pt too wide) in paragraph at lines 563--564
+ [44]
+Overfull \hbox (19.56192pt too wide) in paragraph at lines 555--556
 \T1/cmr/m/n/12 Vi-deo dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mode
-l::-MongoRelations::-Loader::-LoaderClass,
+l::-serverRelation::-Loader::-LoaderClass,
  []
 
 
-Overfull \hbox (29.0207pt too wide) in paragraph at lines 578--579
+Overfull \hbox (19.56192pt too wide) in paragraph at lines 570--571
 \T1/cmr/m/n/12 Vi-deo dal cam-po da-ti pre-sen-ta-zio-ne al-l'in-ter-no di Mode
-l::-MongoRelations::-Loader::-LoaderClass,
+l::-serverRelation::-Loader::-LoaderClass,
  []
 
-<./images/serverRelation.pdf, id=1325, 559.78545pt x 267.51846pt>
+<./images/serverRelation.pdf, id=1327, 559.78545pt x 267.51846pt>
 File: ./images/serverRelation.pdf Graphic file (type pdf)
 
 <use ./images/serverRelation.pdf>
-Package pdftex.def Info: ./images/serverRelation.pdf used on input line 598.
+Package pdftex.def Info: ./images/serverRelation.pdf used on input line 590.
 (pdftex.def)             Requested size: 447.82896pt x 214.01505pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 602.
+Package pdftex.def Info: ../../logo.jpg used on input line 594.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [45]
-<./images/accessControll.pdf, id=1333, 558.94037pt x 394.4886pt>
+<./images/accessControll.pdf, id=1335, 558.94037pt x 394.4886pt>
 File: ./images/accessControll.pdf Graphic file (type pdf)
 
 <use ./images/accessControll.pdf>
-Package pdftex.def Info: ./images/accessControll.pdf used on input line 615.
+Package pdftex.def Info: ./images/accessControll.pdf used on input line 607.
 (pdftex.def)             Requested size: 335.3668pt x 236.69498pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 619.
+Package pdftex.def Info: ../../logo.jpg used on input line 611.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [46 <./images/serverRelation.pdf>]pdfTeX warning (ext4): destination with the 
 same identifier (name{subsubsubsection.5.1.1}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.628         \subsubsubsection{Authentication}
+l.620         \subsubsubsection{Authentication}
                                                {pdfTeX warning (ext4): destinat
 ion with the same identifier (name{subsubsubsection.5.1.2}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.637         \subsubsubsection{Registration}
+l.629         \subsubsubsection{Registration}
                                              {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 640.
+Package pdftex.def Info: ../../logo.jpg used on input line 632.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [47 <./images/accessControll.pdf>]
-<./images/Loader.pdf, id=1379, 306.83585pt x 132.7635pt>
+<./images/Loader.pdf, id=1381, 306.83585pt x 132.7635pt>
 File: ./images/Loader.pdf Graphic file (type pdf)
 
 <use ./images/Loader.pdf>
-Package pdftex.def Info: ./images/Loader.pdf used on input line 651.
+Package pdftex.def Info: ./images/Loader.pdf used on input line 643.
 (pdftex.def)             Requested size: 245.46901pt x 106.21092pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsubsect
 ion.5.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.662 \subsubsubsection{Loader}
+l.654 \subsubsubsection{Loader}
                                {pdfTeX warning (ext4): destination with the sam
 e identifier (name{subsubsubsection.5.1.2}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.673 \subsubsubsection{FileServerRelation}
+l.665 \subsubsubsection{FileServerRelation}
                                            {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 679.
+Package pdftex.def Info: ../../logo.jpg used on input line 671.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [48 <./images/Loader.pdf>]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subsubsubsection.5.1.3}) has been already used, duplicate ignored
 
 <to be read again> 
                    \relax 
-l.684 \subsubsubsection{MongoRelation}
+l.676 \subsubsubsection{MongoRelation}
                                       {)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 58.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [49]
-(./parti//MVC/view.tex <./images/View.jpg, id=1410, 928.46875pt x 489.83pt>
+(./parti//MVC/view.tex <./images/View.jpg, id=1412, 928.46875pt x 489.83pt>
 File: ./images/View.jpg Graphic file (type jpg)
 
 <use ./images/View.jpg>
 Package pdftex.def Info: ./images/View.jpg used on input line 4.
 (pdftex.def)             Requested size: 371.38092pt x 195.92853pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-
- []
-
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 19.
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 24.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [50 <./images/View.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-
- []
-
-
-Overfull \hbox (16.08673pt too wide) in paragraph at lines 30--34
-\T1/cmr/m/n/12 press.js uti-liz-za-to; uti-liz-za i me-to-di mes-si a di-spo-si
--zio-ne del-la clas-se Controller::-ExecutionController
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--34
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 35--60
-
- []
-
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 60.
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [51]
+ [51])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 60.
@@ -1683,37 +1663,41 @@ Package pdftex.def Info: ../../logo.jpg used on input line 26.
  [53]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 50.
+Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [54]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 85.
+Package pdftex.def Info: ../../logo.jpg used on input line 77.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
 [55]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 116.
+Package pdftex.def Info: ../../logo.jpg used on input line 108.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [56]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
 
-Overfull \hbox (7.03159pt too wide) in paragraph at lines 122--123
+Overfull \hbox (7.03159pt too wide) in paragraph at lines 130--131
 []\T1/cmr/m/n/12 Model::-serverRelation::-accessControl::-ChangePassword <- Mai
 n ri-chia-ma Chan-ge-Pas-sword
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 138.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [57]
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
@@ -1722,15 +1706,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 62.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [57] (./parti/diagrammiAttivita.tex
-<./images/AttivitaPrincipali.pdf, id=1468, 1577.895pt x 1162.3425pt>
+ [58] (./parti/diagrammiAttivita.tex
+<./images/AttivitaPrincipali.pdf, id=1477, 1577.895pt x 1162.3425pt>
 File: ./images/AttivitaPrincipali.pdf Graphic file (type pdf)
 
 <use ./images/AttivitaPrincipali.pdf>
 Package pdftex.def Info: ./images/AttivitaPrincipali.pdf used on input line 7.
 (pdftex.def)             Requested size: 473.37216pt x 348.70544pt.
 
-<./images/CaricarePresentazione.pdf, id=1469, 703.62875pt x 666.49pt>
+<./images/CaricarePresentazione.pdf, id=1478, 703.62875pt x 666.49pt>
 File: ./images/CaricarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/CaricarePresentazione.pdf>
@@ -1741,15 +1725,15 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [58 <./images/AttivitaPrincipali.pdf>]
-<./images/CaricareFile.pdf, id=1601, 1063.975pt x 591.20876pt>
+ [59 <./images/AttivitaPrincipali.pdf>]
+<./images/CaricareFile.pdf, id=1610, 1063.975pt x 591.20876pt>
 File: ./images/CaricareFile.pdf Graphic file (type pdf)
 
 <use ./images/CaricareFile.pdf>
 Package pdftex.def Info: ./images/CaricareFile.pdf used on input line 25.
 (pdftex.def)             Requested size: 425.58246pt x 236.47931pt.
 
-<./images/ModificarePresentazione.pdf, id=1602, 1359.0775pt x 682.55pt>
+<./images/ModificarePresentazione.pdf, id=1611, 1359.0775pt x 682.55pt>
 File: ./images/ModificarePresentazione.pdf Graphic file (type pdf)
 
 <use ./images/ModificarePresentazione.pdf>
@@ -1765,8 +1749,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [59 <./images/CaricarePresentazione.pdf> <./images/CaricareFile.pdf>]
-<./images/ModificaPresentazioneMobile.pdf, id=1704, 654.445pt x 447.6725pt>
+ [60 <./images/CaricarePresentazione.pdf> <./images/CaricareFile.pdf>]
+<./images/ModificaPresentazioneMobile.pdf, id=1714, 654.445pt x 447.6725pt>
 File: ./images/ModificaPresentazioneMobile.pdf Graphic file (type pdf)
 
 <use ./images/ModificaPresentazioneMobile.pdf>
@@ -1774,7 +1758,7 @@ Package pdftex.def Info: ./images/ModificaPresentazioneMobile.pdf used on input
  line 43.
 (pdftex.def)             Requested size: 261.77336pt x 179.06583pt.
 
-<./images/GestireSfondo.pdf, id=1705, 584.1825pt x 847.165pt>
+<./images/GestireSfondo.pdf, id=1715, 584.1825pt x 847.165pt>
 File: ./images/GestireSfondo.pdf Graphic file (type pdf)
 
 <use ./images/GestireSfondo.pdf>
@@ -1784,12 +1768,12 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [60 <./images/ModificarePresentazione.pdf> <./images/ModificaPresentazioneMobi
+ [61 <./images/ModificarePresentazione.pdf> <./images/ModificaPresentazioneMobi
 le.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./images/ModificaPresentazioneMobile
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <./images/InserireElemento.pdf, id=1818, 786.94pt x 519.9425pt>
+>] <./images/InserireElemento.pdf, id=1827, 786.94pt x 519.9425pt>
 File: ./images/InserireElemento.pdf Graphic file (type pdf)
 
 <use ./images/InserireElemento.pdf>
@@ -1799,8 +1783,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [61 <./images/GestireSfondo.pdf>]
-<./images/ModificareElemento.pdf, id=1865, 662.475pt x 530.98375pt>
+ [62 <./images/GestireSfondo.pdf>]
+<./images/ModificareElemento.pdf, id=1874, 662.475pt x 530.98375pt>
 File: ./images/ModificareElemento.pdf Graphic file (type pdf)
 
 <use ./images/ModificareElemento.pdf>
@@ -1808,7 +1792,7 @@ Package pdftex.def Info: ./images/ModificareElemento.pdf used on input line 70.
 
 (pdftex.def)             Requested size: 264.9853pt x 212.38972pt.
 
-<./images/ModificareFrame.pdf, id=1866, 1358.07375pt x 585.18625pt>
+<./images/ModificareFrame.pdf, id=1875, 1358.07375pt x 585.18625pt>
 File: ./images/ModificareFrame.pdf Graphic file (type pdf)
 
 <use ./images/ModificareFrame.pdf>
@@ -1823,15 +1807,15 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 84.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [62 <./images/InserireElemento.pdf> <./images/ModificareElemento.pdf>] <./imag
-es/ModificareSVG.pdf, id=1955, 974.64125pt x 645.41125pt>
+ [63 <./images/InserireElemento.pdf> <./images/ModificareElemento.pdf>] <./imag
+es/ModificareSVG.pdf, id=1964, 974.64125pt x 645.41125pt>
 File: ./images/ModificareSVG.pdf Graphic file (type pdf)
 
 <use ./images/ModificareSVG.pdf>
 Package pdftex.def Info: ./images/ModificareSVG.pdf used on input line 88.
 (pdftex.def)             Requested size: 389.8496pt x 258.15993pt.
 
-<./images/ModificareTesto.pdf, id=1956, 1422.31375pt x 467.7475pt>
+<./images/ModificareTesto.pdf, id=1965, 1422.31375pt x 467.7475pt>
 File: ./images/ModificareTesto.pdf Graphic file (type pdf)
 
 <use ./images/ModificareTesto.pdf>
@@ -1846,18 +1830,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 100.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [63 <./images/ModificareFrame.pdf> <./images/ModificareSVG.pdf>])
+ [64 <./images/ModificareFrame.pdf> <./images/ModificareSVG.pdf>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 64.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [64 <./images/ModificareTesto.pdf>]
+ [65 <./images/ModificareTesto.pdf>]
 (./parti/stime.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 66.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [65] (./parti/tracciamento.tex
+ [66] (./parti/tracciamento.tex
 (./parti/traccCompReq.tex
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 \T1/cmr/m/n/12 7.7.19, RF 7.7.16, RF
@@ -1872,7 +1856,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [66]
+ [67]
 Underfull \hbox (badness 2326) in paragraph at lines 152--153
 \T1/cmr/m/n/12 61.1.10, RF 61.1.13, RF
  []
@@ -1891,18 +1875,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 162.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [67]
+ [68]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 162.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [68])
+ [69])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 3.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[69] (./parti/traccReqComp.tex
+[70] (./parti/traccReqComp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 []|\T1/cmr/m/n/12 ::-SlideShow::-SlideShowActions::-InsertEditRemove::-
  []
@@ -2055,7 +2039,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [70]
+ [71]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 []|\T1/cmr/m/n/12 ::-SlideShow::-SlideShowActions::-InsertEditRemove::-Inserter
 , ::-
@@ -2146,7 +2130,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [71]
+ [72]
 Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/cmr/m/n/12 RF
  []
@@ -2170,7 +2154,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 207.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [72]
+ [73]
 Underfull \hbox (badness 10000) in paragraph at lines 216--216
 []|\T1/cmr/m/n/12 RF
  []
@@ -2244,19 +2228,19 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 247.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [73]
+ [74]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 250.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [74]))
+ [75]))
 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [75]
+ [76]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./SpecificaTecnica_v.2.4.0.aux)
@@ -2268,10 +2252,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 68.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13955 strings out of 493089
- 205133 string characters out of 6134842
+ 13958 strings out of 493089
+ 205162 string characters out of 6134842
  379019 words of memory out of 5000000
- 16919 multiletter control sequences out of 15000+600000
+ 16920 multiletter control sequences out of 15000+600000
  15751 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,16n,60p,818b,711s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2286,10 +2270,10 @@ fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.2.4.0.pdf (76 pages, 2679150 bytes).
+Output written on SpecificaTecnica_v.2.4.0.pdf (77 pages, 2679787 bytes).
 PDF statistics:
- 2597 PDF objects out of 2984 (max. 8388607)
- 1852 compressed objects within 19 object streams
- 206 named destinations out of 1000 (max. 500000)
- 1017 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2609 PDF objects out of 2984 (max. 8388607)
+ 1863 compressed objects within 19 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 1025 words of extra memory for PDF output out of 10000 (max. 10000000)
 
