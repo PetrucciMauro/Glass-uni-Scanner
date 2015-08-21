@@ -625,16 +625,16 @@
 		\item relazioni da \textbf{loader, fileServerRelation, mongoRelation} a cui viene esposto il token ricevuto dal Server dopo la autenticazione
 		\end{itemize}
 		
-        \subsubsubsection{Autenticazione}{
+        \subsubsubsection{Authentication}{
 				\textbf{\tipo}: Classe, fornisce le funzionalità di autenticazione e deautenticazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
-					\item relazione verso \textbf{Server} per il recupero del token passando i parametri di autenticazione dell'utente
+					\item relazione verso \textbf{Server} per il recupero del token passando i parametri di autenticazione dell'utente, cambio password dell'utente
                     			\item relazione da \textbf{Controller} da cui riceve in input i parametri dell'utente per la autenticazione 
 					\item relazione da \textbf{loader, fileServerRelation, mongoRelation} a cui espone il token per poter usare i servizi del Server
 				\end{itemize}	
                     }
-        \subsubsubsection{Registrazione}{
+        \subsubsubsection{Registration}{
 				\textbf{\tipo}: Classe, fornisce le funzionalità di registrazione.\\	
 				\textbf{\relaz}: 
 				\begin{itemize}
@@ -655,7 +655,7 @@
 		\textbf{\tipo}: package, racchiude le funzioni di recupero o creazione di una presentazione dal server attraverso i servizi offerti dalla Api, una volta ottenuta la presentazione e' esposta per le modifiche provenienti da altri package nel Model 
 		\textbf{\relaz}: 
 		\begin{itemize}
-		\item relazione verso \textbf{Server} per il recupero della presentazione dal database MongoDB
+		\item relazione verso \textbf{Server} per la modifica della presentazione nel database MongoDB
 		\item relazione da \textbf{Model::\-SlideShow::\-InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
 		\end{itemize}
 

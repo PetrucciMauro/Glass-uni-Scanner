@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  21 AUG 2015 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  21 AUG 2015 12:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1567,14 +1567,14 @@ same identifier (name{subsubsubsection.5.1.1}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.628         \subsubsubsection{Autenticazione}
+l.628         \subsubsubsection{Authentication}
                                                {pdfTeX warning (ext4): destinat
 ion with the same identifier (name{subsubsubsection.5.1.2}) has been already us
 ed, duplicate ignored
 <to be read again> 
                    \relax 
-l.637         \subsubsubsection{Registrazione}
-                                              {
+l.637         \subsubsubsection{Registration}
+                                             {
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 640.
@@ -2286,7 +2286,7 @@ fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on SpecificaTecnica_v.2.4.0.pdf (76 pages, 2679106 bytes).
+Output written on SpecificaTecnica_v.2.4.0.pdf (76 pages, 2679150 bytes).
 PDF statistics:
  2597 PDF objects out of 2984 (max. 8388607)
  1852 compressed objects within 19 object streams
