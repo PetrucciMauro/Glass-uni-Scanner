@@ -41,21 +41,21 @@
 	
 \section{Introduzione}
 \subsection{Scopo del documento}
-Questo documento rappresenta il manuale amministratore per il sistema software Premi, vengono descritte le procedure per la corretta installazione e avviamento del server nodeJs  e per l'avvio e configurazione del database mognoDB.
+Questo documento rappresenta il manuale amministratore per il sistema software Premi, vengono descritte le procedure per la corretta installazione e avviamento del server nodeJs  e per l'avvio e configurazione del database MongoDB.
 
 \subsection{Glossario}
-Per ridurre il rischio di ambiguita di linguaggio e migliorare la comprensione del documento, i termini tecnici, di dominio e gli acronimi sono riportate nel documento Glossario v5.x.x
+Per ridurre il rischio di ambiguità di linguaggio e migliorare la comprensione del documento, i termini tecnici, di dominio e gli acronimi sono riportate nel documento Glossario v5.x.x
 
 \section{Requisiti}
-Per poter avviare correttamente il server deve essere installato sul pc ospitante il server le tecnologie mongoDB e nodeJs. I sistemi operativi supportati sono OSX Yosemite, Ubuntu dalla versione 12.04LTS, Windows7 o successivi.
+Per poter avviare correttamente il server deve essere installato sul PC ospitante il server le tecnologie MongoDB e nodeJs. I sistemi operativi supportati sono OSX Yosemite, Ubuntu dalla versione 12.04LTS, Windows7 o successivi.
 
 \section{Installazione e Avvio}
 
-Di seguito sono riportati i passi per la configurazione del database mongoDB e l'avviamento del server per i sitemi operativi OSX Yosemite, Ubuntu  12.04LTS e Windows7:
+Di seguito sono riportati i passi per la configurazione del database MongoDB e l'avviamento del server per i sistemi operativi OSX Yosemite, Ubuntu  12.04LTS e Windows7:
 
 %\subsection{OSX Yosemite}
 \begin{enumerate}
-\item creare una cartella data per raccogliere in database creati con mongoDB
+\item creare una cartella data per raccogliere in database creati con MongoDB
 mongod --dbpath /usr/local/mongodb-data
 \item avviamento mongodb con il comando "sudo mongod" (--port xxxxx se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei darabase con l'opzione "mongod --dbpath /mia/cartella/"
 \item  spostarsi da terminale nella cartella Premi (o quella in cui \`{e} presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "mongo", avvenuto l'accesso configurare il database con il comando "load('mongoConfig.js')"
