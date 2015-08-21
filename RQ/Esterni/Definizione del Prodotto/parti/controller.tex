@@ -47,7 +47,6 @@
 				\item Controller::Services::\-Utils;
 				\item Model::serverRelation::accessControl::Authentication;
 				\item Model::serverRelation::accessControl::Registration;
-				\item Model::serverRelation::accessControl::ChangePassword;
 				\item localStorage:Object\\
 					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al garantimento delle funzioni dell'applicazione.
 			\end{itemize}
@@ -90,7 +89,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso e la nuova password, effettua il cambio della password di un utente richiamando il metodo changepassword() di ChangePassword. Se l'operazione ha successo viene invocato success altrimenti error.
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso e la nuova password, effettua il cambio della password di un utente richiamando il metodo changepassword() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
 				\end{itemize}
 				\item \textbf{getToken}()
 				\begin{itemize}
@@ -613,6 +612,10 @@
 				\item ConcreteEditBackgroundCommand;
 				\item ConcreteEditFontCommand;
 				\item ConcreteEditContentCommand;
+				\item ConcretePortaAvantiCommand;
+				\item ConcretePortaDietroCommand;
+				\item ConcreteAddToMainPathCommand;
+				\item ConcreteRemoveFromMainPathCommand
 			\end{itemize}
 			\item Model::\-serverRelation::\-Loader;
 			\item Services::\-Main;
@@ -684,13 +687,13 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che richiama update() di Loader per salvare la presentazione nel database. Questo metodo viene utilizzato in congiunta ad \$interval in modo da assicurare un salvataggio continuo della presentazione ma senza creare troppo traffico in rete.
 			\end{itemize}
-			\item \textbf{inserisciFrame}(spec)
+			\item \textbf{inserisciFrame}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso la funzione javascript inserisciFrame(spec) di Edit inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, ConcreteFrameInsertCommand() del Command passandogli le specifiche del frame inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{inserisciTesto}(spec)
+			\item \textbf{inserisciTesto}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -738,7 +741,7 @@
 				\item \textbf{Tipo di ritorno}: Object;
 				\item \textbf{Descrizione}: metodo che ritorna le specifiche dell'elemento ele inserito nel piano della presentazione, da passare al Command. Tale metodo viene richiamato dai metodi adibiti all'inserimento di immagini, audio o video.
 			\end{itemize}
-			\item \textbf{rimuoviElemento}(spec)
+			\item \textbf{rimuoviElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -752,7 +755,7 @@
 				\end{itemize}
 				 Infine, richiama addDelete() di Loader passandogli l'identificativo dell'elemento eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{updateSfondo}(spec)
+			\item \textbf{updateSfondo}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -776,7 +779,7 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
 			\end{itemize}
-			\item \textbf{updateSfondoFrame}(spec)
+			\item \textbf{updateSfondoFrame}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -836,37 +839,37 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando la funzione javascript rotate(id\_elemento, value) di Edit. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{muoviElemento}(spec)
+			\item \textbf{muoviElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditPositionCommand() di Command passandogli le specifiche della nuova posizione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{ridimensionaElemento}(spec)
+			\item \textbf{ridimensionaElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditSizeCommand(spec) di Command passandogli le specifiche della nuova dimensione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{aggiungiMainPath}(spec)
+			\item \textbf{aggiungiMainPath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che aggiunge il frame selezionato al percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, AddToMainPathCommand() di Command passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{rimuoviMainPath}(spec)
+			\item \textbf{rimuoviMainPath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che rimuove il frame selezionato dal percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, RemoveFromMainPathCommand() di Command passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{portaAvanti}(spec)
+			\item \textbf{portaAvanti}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript portaAvanti(id\_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{portaDietro}(spec)
+			\item \textbf{portaDietro}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
@@ -884,13 +887,13 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che aggiorna il campo bookmark del frame id. Esso richiama ConcreteEditBookmarkCommand() di Command passandogli le specifiche del frame. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
 			\end{itemize}
-			\item \textbf{AddBookmark}(spec)
+			\item \textbf{AddBookmark}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante bookmark nella view, in base al parametro spec.
 			\end{itemize}
-			\item \textbf{RemoveBookmark}(spec)
+			\item \textbf{RemoveBookmark}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
