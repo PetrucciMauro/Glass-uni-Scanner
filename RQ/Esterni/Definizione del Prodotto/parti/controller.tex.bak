@@ -204,7 +204,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta definito, altrimenti ritorna false.
+					\item \textbf{Descrizione}: metodo che ritorna true se il parametro object risulta definito, altrimento ritorna false.
 				\end{itemize}
 				\item \textbf{encrypt}(string)
 				\begin{itemize}
@@ -723,9 +723,9 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo apposito per la gestione del drag and drop di file media all'interno della presentazione. Gestisce l'inserimento di immagini, audio e video richiamando una tra le seguenti funzioni javascript di Edit:
 				\begin{itemize}
-					\item inserisciImmagine(percorso\_file, spec);
-					\item inserisciAudio(percorso\_file, spec);
-					\item inserisciVideo(percorso\_file, spec).
+					\item inserisciImmagine(pecorso\_file, spec);
+					\item inserisciAudio(pecorso\_file, spec);
+					\item inserisciVideo(pecorso\_file, spec).
 				\end{itemize}
 				 e successivamente uno tra i seguenti metodi di Command, dandolo in pasto al metodo execute() di inv:
 				\begin{itemize}

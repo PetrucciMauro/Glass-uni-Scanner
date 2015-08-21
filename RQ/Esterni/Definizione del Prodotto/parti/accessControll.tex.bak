@@ -67,7 +67,7 @@
 		\item \textbf{authenticate(user : string, password : string) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} chiama il servizio account/authenticate, ritorna true se la chiamata \`{e} andata a buon fine, in questo caso mette nel campo token il token ritornato dal server nodeJs
+			\item \textbf{Descrizione:} chiama il servizo account/authenticate, ritorna true se la chiamata \`{e} andata a buon fine, in questo caso mette nel campo token il token ritornato dal server nodeJs
 
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}

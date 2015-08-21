@@ -372,7 +372,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciVideo() di EditController passandogli spec.
+			\item \textbf{Descrizione}: ivoca il metodo di Inserter insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciVideo() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
@@ -737,7 +737,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro l'oggetto spec. editPosition ritorna un oggetto a cui ConcreteEditPositionCommand inizializza oldPosition. Se executed è settato a false lo setta come true, altrimenti invoca il metodo muoviElemento(spec) di EditController.
+				\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::editPosition(spec) passando come parametro l'oggetto spec. editPosition ritorna un oggetto a cui ConcreteEditPositionCommand inizializza oldPoition. Se executed è settato a false lo setta come true, altrimenti invoca il metodo muoviElemento(spec) di EditController.
 			\end{itemize}
 			\item \textbf{undoAction}()
 			\begin{itemize}
