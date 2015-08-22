@@ -470,4 +470,64 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
           \hline
           TU59 & Si verifica che EditController venga istanziato correttamente & Success \\
 		 		\end{longtable}
+		 		
+		   \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		 		 	 						\caption{Descrizione dei test di Unità per SlideShowElements \label{tab:verTestUnit}}\\
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 	  		 \hline
+		 	  		 \endfirsthead
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 	  		 \hline
+		 		 	 						\endhead
+		 	  		 \hline
+		 	  		 \endfoot
+		 	  		 \hline
+		 	  		 \endlastfoot
+		  		 TU60 & Richiama il costruttore di Text(...) e verifica che sia stato creato un oggetto di tipo text  & slideShowElements::Text() & success \\
+		  		 TU61 & Richiama il costruttore di Frame(...) e verifica che sia stato creato un oggetto di tipo frame & slideShowElements::Frame() & success \\
+		  		 TU62 & Richiama il costruttore di Image(...) e verifica che sia stato creato un oggetto di tipo image & slideShowElements::Image() & success \\
+		  		 TU63 & Richiama il costruttore di Audio(...) e verifica che sia stato creato un oggetto di tipo audio  & slideShowElements::Audio() & success \\
+		  		 TU64 & Richiama il costruttore di Video(...) e verifica che sia stato creato un oggetto di tipo video  & slideShowElements::Video() & success \\
+		  		 TU65 & Richiama il costruttore di Background(...) e verifica che sia stato creato un oggetto di tipo background  & slideShowElements::Background() & success \\
+		  		 
+		  		 \end{longtable}
+		  		   \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		 		 	 						\caption{Descrizione dei test di Unità per InsertEditRemove \label{tab:verTestUnit}}\\
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 	  		 \hline
+		 	  		 \endfirsthead
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 	  		 \hline
+		 		 	 						\endhead
+		 	  		 \hline
+		 	  		 \endfoot
+		 	  		 \hline
+		 	  		 \endlastfoot
+		  		 TU66 & Richiama il costruttore di InsertEditRemove() e verifica che venga istanziato un oggetto di tale classe  & slideShowActions::InsertEditRemove() & success \\
+		  		 TU67 & Richiama il costruttore di InsertEditRemove() e verifica che sia stata generata una sola istanza di tale classe  & slideShowActions::InsertEditRemove() & success \\
+		 		 TU68 & Richiama il InsertEditRemove()::insertText e verifica che venga inserito nella presentazione un oggetto Text & slideShowActions::InsertEditRemove()::insertText(...) & success \\
+		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame  & slideShowActions::InsertEditRemove()::insertFrame(...) & success \\
+		 		 TU70 & Richiama il InsertEditRemove()::insertImage e verifica che venga inserito nella presentazione un oggetto Image  & slideShowActions::InsertEditRemove()::insertImage(...) & success \\
+		 		 TU71 & Richiama il InsertEditRemove()::insertSVG e verifica che venga inserito nella presentazione un oggetto SVG  & slideShowActions::InsertEditRemove()::insertSVG(...) & success \\
+		 		 TU72 & Richiama il InsertEditRemove()::insertAudio e verifica che venga inserito nella presentazione un oggetto Audio  & slideShowActions::InsertEditRemove()::insertAudio(...) & success \\
+		 		 TU73 & Richiama il InsertEditRemove()::insertVideo e verifica che venga inserito nella presentazione un oggetto Video  & slideShowActions::InsertEditRemove()::insertVideo(...) & success \\
+		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
+		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editSize(...) & success \\
+		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editRotation(...) & success \\
+		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editBackground(...) & success \\
+		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editColor(...) & success \\
+		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
+		 		 TU80 & Richiama il InsertEditRemove()::removeText(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeText(...) & success \\
+		 		 TU81 & Richiama il InsertEditRemove()::removeFrame(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeFrame(...) & success \\
+		 		 TU82 & Richiama il InsertEditRemove()::removeImage(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeImage(...) & success \\
+		 		 TU83 & Richiama il InsertEditRemove()::removeAudio(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeAudio(...) & success \\
+		 		 TU84 & Richiama il InsertEditRemove()::removeVideo(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeVideo(...) & success \\
+		 		 TU85 & Richiama il InsertEditRemove()::removeBackground(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeBackground(...) & success \\
+		 		 TU86 & Richiama il InsertEditRemove()::removeSVG(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeSVG(...) & success \\
+		 		 
+		  		 \end{longtable}
  				 
