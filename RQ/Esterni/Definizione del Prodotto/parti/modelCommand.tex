@@ -58,18 +58,18 @@
 	
 	\subsubsection{Classe AbstractCommand}{
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo testo.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo testo.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand.\\
 		\textbf{Utilizzo}\\
-			\indent È classe base per i comandi di modifica, inserimento ed eliminazione degli elementi della presentazione.\\
+			\indent È classe base per i comandi di modifica, inserimento ed eliminazione degli elementi\ped{g} della presentazione.\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{id}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Integer;
-				\item \textbf{Descrizione}: indica il codice identificativo dell’oggetto su cui viene eseguito il comando.
+				\item \textbf{Descrizione}: indica il Codice\ped{g} identificativo dell’oggetto su cui viene eseguito il comando.
 			\end{itemize}
 			\item \textbf{executed}
 			\begin{itemize}
@@ -87,7 +87,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
-				\item \textbf{Descrizione}: mantiene salvati id e tipo dell'elemento su cui abstractCommand è stato richiamato.
+				\item \textbf{Descrizione}: mantiene salvati id e tipo dell'Elemento\ped{g} su cui abstractCommand è stato richiamato.
 			\end{itemize}
 		\end{itemize}
 		
@@ -134,25 +134,25 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: metodo che ritorna l'id dell'elemento.
+				\item \textbf{Descrizione}: metodo che ritorna l'id dell'Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{getPosition}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna le posizioni xIndex e yIndex dell'elemento.
+				\item \textbf{Descrizione}: metodo che ritorna le posizioni xIndex e yIndex dell'Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{getRotation}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna la rotazione dell'elemento.
+				\item \textbf{Descrizione}: metodo che ritorna la rotazione dell'Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{getSize}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna le dimensioni dell'elemento.
+				\item \textbf{Descrizione}: metodo che ritorna le dimensioni dell'Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{getEnabler}()
 			\begin{itemize}
@@ -219,7 +219,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeText(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeText(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -251,7 +251,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeFrame(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeFrame(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -283,7 +283,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -315,7 +315,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeSVG(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeSVG(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -346,7 +346,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeAudio(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeAudio(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -378,7 +378,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor removeVideo(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeVideo(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -397,7 +397,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: String;
-			\item \textbf{Descrizione}: rappresenta l’url dell’oggetto inserito.
+			\item \textbf{Descrizione}: rappresenta l’URL\ped{g} dell’oggetto inserito.
 		\end{itemize}
 		\item \textbf{color}
 		\begin{itemize}
@@ -443,14 +443,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteTextRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento testo da rimuovere dalla presentazione e invoca il metodo di Remover removeText(id).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} testo da rimuovere dalla presentazione e invoca il metodo di Remover removeText(id).\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldText}
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: SlideShowElements::Text;
-			\item \textbf{Descrizione}: è una copia dell’elemento testo rimosso. 
+			\item \textbf{Descrizione}: è una copia dell’Elemento\ped{g} testo rimosso. 
 		\end{itemize}
 	\end{itemize}
 	
@@ -466,7 +466,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeText(id) passando come parametro l’id dell’elemento. removeText restituisce un oggetto di tipo SlideShowElements::Text a cui viene inizializzato oldText. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeText(id) passando come parametro l’id dell’Elemento\ped{g}. removeText restituisce un oggetto di tipo SlideShowElements::Text a cui viene inizializzato oldText. Se executed è settato a false lo setta come true, altrimenti invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
@@ -484,7 +484,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteFrameRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id del frame da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeFrame(id).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id del Frame\ped{g} da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeFrame(id).\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldFrame}
@@ -513,7 +513,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertFrame(Frame) passando come parametro il campo oldFrame. Invoca il metodo inserisciFrame(oldFrame) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertFrame(Frame\ped{g}) passando come parametro il campo oldFrame. Invoca il metodo inserisciFrame(oldFrame) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -566,14 +566,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteSVGRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento SVG da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeSVG().\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} SVG da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeSVG().\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldSVG}
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: SlideShowElements::SVG;
-			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’elemento rimosso.
+			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’Elemento\ped{g} rimosso.
 		\end{itemize}
 	\end{itemize}
 	
@@ -589,7 +589,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeSVG(id) passando come parametro il campo dati id.	removeSVG restituisce un elemento di tipo SlideShowElements::SVG che rappresenta l’elemento rimosso e a cui viene inizializzato il campo oldSVG. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeSVG(id) passando come parametro il campo dati id.	removeSVG restituisce un Elemento\ped{g} di tipo SlideShowElements::SVG che rappresenta l’Elemento\ped{g} rimosso e a cui viene inizializzato il campo oldSVG. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
@@ -607,14 +607,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAudioRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento audio da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeAudio(id).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} audio da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeAudio(id).\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldAudio}
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: SlideShowElements::Audio;
-			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’elemento rimosso.
+			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’Elemento\ped{g} rimosso.
 		\end{itemize}
 	\end{itemize}
 	
@@ -648,14 +648,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteVideoRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento video da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeVideo(id).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} video da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeVideo(id).\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldVideo}
 		\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: SlideShowElements::Video;
-			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’elemento rimosso.
+			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’Elemento\ped{g} rimosso.
 		\end{itemize}
 	\end{itemize}
 	
@@ -689,38 +689,38 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditPositionCommand.\\
 		\textbf{Utilizzo}\\
-			\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e le coordinate x e y in cui deve essere spostato l’elemento, invoca il metodo InsertEditRemove::editPosition(spec).\\
+			\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e le coordinate x e y in cui deve essere spostato l’Elemento\ped{g}, invoca il metodo InsertEditRemove::editPosition(spec).\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{oldPosition}
 			\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Oggetto;
-			\item \textbf{Descrizione}: oggetto che contiene i parametri di posizione dell'elemento modificato, contiene al suo interno i campi:
+			\item \textbf{Descrizione}: oggetto che contiene i parametri di posizione dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 			\begin{itemize}
 			\item \textbf{id}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Int;
-				\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+				\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 			\end{itemize}
 			\item \textbf{tipo}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+				\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 			\end{itemize}
 			\item \textbf{xIndex}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: indica la vecchia posizione sull’asse x dell’elemento.
+				\item \textbf{Descrizione}: indica la vecchia posizione sull’asse x dell’Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{yIndex}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: indica la vecchia posizione sull’asse y dell’elemento.
+				\item \textbf{Descrizione}: indica la vecchia posizione sull’asse y dell’Elemento\ped{g}.
 			\end{itemize}
 		\end{itemize}
 			\end{itemize}
@@ -755,32 +755,32 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditRotationCommand.\\
 		\textbf{Utilizzo}\\
-			\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e il grado a cui deve essere ruotato l’elemento, invoca il metodo InsertEditRemove::editRotation(spec).\\
+			\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e il grado a cui deve essere ruotato l’Elemento\ped{g}, invoca il metodo InsertEditRemove::editRotation(spec).\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{oldRotation}
 			\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Oggetto;
-			\item \textbf{Descrizione}: oggetto che contiene i parametri di rotazione dell'elemento modificato, contiene al suo interno i campi:
+			\item \textbf{Descrizione}: oggetto che contiene i parametri di rotazione dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 			\begin{itemize}
 			\item \textbf{id}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Int;
-				\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+				\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 			\end{itemize}
 			\item \textbf{tipo}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+				\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 			\end{itemize}
 			\item \textbf{rotation}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: indica il vecchio grado di rotazione dell’elemento.
+				\item \textbf{Descrizione}: indica il vecchio grado di rotazione dell’Elemento\ped{g}.
 			\end{itemize}
 		\end{itemize}
 			\end{itemize}
@@ -815,38 +815,38 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditSizeCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e le dimensioni a cui deve essere ridimensionato l’elemento, invoca il metodo InsertEditRemove::editSize(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e le dimensioni a cui deve essere ridimensionato l’Elemento\ped{g}, invoca il metodo InsertEditRemove::editSize(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldSize}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i parametri di dimensione dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i parametri di dimensione dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{oldHeight}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Double;
-					\item \textbf{Descrizione}: indica la vecchia altezza dell’elemento.
+					\item \textbf{Descrizione}: indica la vecchia altezza dell’Elemento\ped{g}.
 				\end{itemize}
 				\item \textbf{oldWidth}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Double;
-					\item \textbf{Descrizione}: indica la vecchia larghezza dell’elemento.
+					\item \textbf{Descrizione}: indica la vecchia larghezza dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -881,32 +881,32 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditContentCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e il contenuto di testo che deve essere assegnato all'elemento, invoca il metodo InsertEditRemove::editContent(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e il contenuto di testo che deve essere assegnato all'Elemento\ped{g}, invoca il metodo InsertEditRemove::editContent(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldContent}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i parametri di dimensione dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i parametri di dimensione dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{oldContent}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Double;
-					\item \textbf{Descrizione}: indica il vecchio contenuto dell’elemento.
+					\item \textbf{Descrizione}: indica il vecchio contenuto dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -941,38 +941,38 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditBackgroundCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editBackground(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editBackground(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldBackground}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{backgroundImage}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica l'url dell'immagine di sfondo dell’elemento.
+					\item \textbf{Descrizione}: indica l'URL\ped{g} dell'immagine di sfondo dell’Elemento\ped{g}.
 				\end{itemize}
 				\item \textbf{backgroundColor}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: string;
-					\item \textbf{Descrizione}: indica il colore dello sfondo dell’elemento.
+					\item \textbf{Descrizione}: indica il colore dello sfondo dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -1007,32 +1007,32 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditColorCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e il colore da applicargli, invoca il metodo InsertEditRemove::editColor(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e il colore da applicargli, invoca il metodo InsertEditRemove::editColor(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldColor}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{color}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il colore dell’elemento.
+					\item \textbf{Descrizione}: indica il colore dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -1067,32 +1067,32 @@
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditFontCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editFont(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editFont(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldFont}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{font}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il font dell’elemento.
+					\item \textbf{Descrizione}: indica il Font\ped{g} dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -1127,32 +1127,32 @@
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditFontCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editFont(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione e lo sfondo da applicargli, invoca il metodo InsertEditRemove::editFont(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldFont}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'elemento modificato, contiene al suo interno i campi:
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello sfondo dell'Elemento\ped{g} modificato, contiene al suo interno i campi:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{tipo}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+					\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 				\end{itemize}
 				\item \textbf{font}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: indica il font dell’elemento.
+					\item \textbf{Descrizione}: indica il Font\ped{g} dell’Elemento\ped{g}.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -1187,26 +1187,26 @@
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaAvantiCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione, invoca il metodo InsertEditRemove::portaAvanti(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione, invoca il metodo InsertEditRemove::portaAvanti(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldZIndex}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Oggetto;
-					\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'elemento modificato. Tale oggetto contiene i seguenti campi:
+					\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'Elemento\ped{g} modificato. Tale oggetto contiene i seguenti campi:
 					\begin{itemize}
 						\item \textbf{id}
 						\begin{itemize}
 							\item \textbf{Accesso}: Private;
 							\item \textbf{Tipo}: Int;
-							\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+							\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 						\end{itemize}
 						\item \textbf{tipo}
 						\begin{itemize}
 							\item \textbf{Accesso}: Private;
 							\item \textbf{Tipo}: String;
-							\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+							\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 						\end{itemize}
 					\end{itemize}
 				\end{itemize}
@@ -1242,26 +1242,26 @@
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaDietroCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’elemento dalla presentazione, invoca il metodo InsertEditRemove::portaDietro(spec).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} dalla presentazione, invoca il metodo InsertEditRemove::portaDietro(spec).\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldZIndex}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Oggetto;
-					\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'elemento modificato. Tale oggetto contiene i seguenti campi:
+					\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri dello z-index dell'Elemento\ped{g} modificato. Tale oggetto contiene i seguenti campi:
 					\begin{itemize}
 						\item \textbf{id}
 						\begin{itemize}
 							\item \textbf{Accesso}: Private;
 							\item \textbf{Tipo}: Int;
-							\item \textbf{Descrizione}: indica l'id dell’elemento da modificare.
+							\item \textbf{Descrizione}: indica l'id dell’Elemento\ped{g} da modificare.
 						\end{itemize}
 						\item \textbf{tipo}
 						\begin{itemize}
 							\item \textbf{Accesso}: Private;
 							\item \textbf{Tipo}: String;
-							\item \textbf{Descrizione}: indica il tipo dell’elemento da modificare.
+							\item \textbf{Descrizione}: indica il tipo dell’Elemento\ped{g} da modificare.
 						\end{itemize}
 					\end{itemize}
 				\end{itemize}
@@ -1297,7 +1297,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteAddToMainPathCommand.\\
 		\textbf{Utilizzo}\\
-			\indent Viene costruito da Premi::Controller::EditController, riceve l’id del frame da inserire nella presentazione e la sua posizione all'interno del percorso principale.\\
+			\indent Viene costruito da Premi::Controller::EditController, riceve l’id del Frame\ped{g} da inserire nella presentazione e la sua posizione all'interno del Percorso\ped{g} principale.\\
 				
 				\noindent{\textbf{Metodi}}
 				\begin{itemize}
@@ -1329,26 +1329,26 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteRemoveFromMainPathCommand.\\
 		\textbf{Utilizzo}\\
-			\indent Viene costruito da Premi::Controller::EditController, riceve l’id del frame da rimuovere dal percorso principale della presentazione.\\
+			\indent Viene costruito da Premi::Controller::EditController, riceve l’id del Frame\ped{g} da rimuovere dal Percorso\ped{g} principale della presentazione.\\
 				\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{oldFrame}
 				\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Oggetto;
-				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri che indicano la posizione del frame all'interno del percorso originale prima della rimozione:
+				\item \textbf{Descrizione}: oggetto che contiene i vecchi parametri che indicano la posizione del Frame\ped{g} all'interno del Percorso\ped{g} originale prima della rimozione:
 				\begin{itemize}
 				\item \textbf{id}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id del frame da rimuovere all'interno del percorso principale.
+					\item \textbf{Descrizione}: indica l'id del Frame\ped{g} da rimuovere all'interno del Percorso\ped{g} principale.
 				\end{itemize}
 				\item \textbf{pos}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Integer;
-					\item \textbf{Descrizione}: indica la posizione del frame nel percorso principale, prima dell'avvenuta rimozione.
+					\item \textbf{Descrizione}: indica la posizione del Frame\ped{g} nel Percorso\ped{g} principale, prima dell'avvenuta rimozione.
 				\end{itemize}
 			\end{itemize}
 				\end{itemize}
@@ -1383,14 +1383,14 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteNewChoicePathCommand.\\
 		\textbf{Utilizzo}\\
-			\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da cui parte il nuovo percorso scelta.\\
+			\indent Viene costruito da Premi::Controller::EditController, riceve l'id del Frame\ped{g} da cui parte il nuovo Percorso\ped{g} scelta.\\
 				\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{PathId}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: Int;
-					\item \textbf{Descrizione}: indica l'id del percorso.
+					\item \textbf{Descrizione}: indica l'id del Percorso\ped{g}.
 				\end{itemize}
 				\noindent{\textbf{Metodi}}
 				\begin{itemize}
@@ -1422,14 +1422,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteNewChoicePathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id da cui parte il nuovo percorso scelta.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id da cui parte il nuovo Percorso\ped{g} scelta.\\
 			\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{pathId}
 			\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Integer;
-			\item \textbf{Descrizione}: copia dell'id del percorso eliminato.
+			\item \textbf{Descrizione}: copia dell'id del Percorso\ped{g} eliminato.
 			\end{itemize}
 			\end{itemize}
 			\noindent{\textbf{Metodi}}
@@ -1444,7 +1444,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addChoicePath() passando come parametro il valore spec.id. deleteChoicePath ritorna la copia del percorso rimosso, a cui viene inizializzato oldPath. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::addChoicePath() passando come parametro il valore spec.id. deleteChoicePath ritorna la copia del Percorso\ped{g} rimosso, a cui viene inizializzato oldPath. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
@@ -1463,14 +1463,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteDeleteChoicePathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del  percorso scelta da rimuovere.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del  Percorso\ped{g} scelta da rimuovere.\\
 			\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{oldPath}
 			\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Oggetto;
-			\item \textbf{Descrizione}: copia del percorso eliminato.
+			\item \textbf{Descrizione}: copia del Percorso\ped{g} eliminato.
 			\end{itemize}
 			\end{itemize}
 			\noindent{\textbf{Metodi}}
@@ -1485,7 +1485,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::deleteChoicePath() passando come parametro il valore spec.id. deleteChoicePath ritorna la copia del percorso rimosso, a cui viene inizializzato oldPath. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::deleteChoicePath() passando come parametro il valore spec.id. deleteChoicePath ritorna la copia del Percorso\ped{g} rimosso, a cui viene inizializzato oldPath. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
@@ -1504,14 +1504,14 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteRemoveFromChoicePathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da rimuovere da un percorso a scelta.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del Frame\ped{g} da rimuovere da un Percorso\ped{g} a scelta.\\
 			\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{oldFrame}
 			\begin{itemize}
 			\item \textbf{Accesso}: Private;
 			\item \textbf{Tipo}: Oggetto;
-			\item \textbf{Descrizione}: copia del frame eliminato.
+			\item \textbf{Descrizione}: copia del Frame\ped{g} eliminato.
 			\end{itemize}
 			\end{itemize}
 			\noindent{\textbf{Metodi}}
@@ -1526,7 +1526,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameFromChoicePath(spec). removeFrameFromChoicePath ritorna la copia del frame rimosso, a cui viene inizializzato oldFrame. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato di EditController.
+					\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeFrameFromChoicePath(spec). removeFrameFromChoicePath ritorna la copia del Frame\ped{g} rimosso, a cui viene inizializzato oldFrame. Se executed è posto a zero, lo pone a uno, altrimenti invoca il metodo appropriato di EditController.
 				\end{itemize}
 				\item \textbf{undoAction}()
 				\begin{itemize}
@@ -1545,7 +1545,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAddToChoicePathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da aggiungere ad un percorso a scelta.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del Frame\ped{g} da aggiungere ad un Percorso\ped{g} a scelta.\\
 			
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
@@ -1578,7 +1578,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAddToMainPathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da aggiungere al percorso principale.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del Frame\ped{g} da aggiungere al Percorso\ped{g} principale.\\
 			
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}
@@ -1611,7 +1611,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteRemoveFromMainPathCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del frame da togliere dal percorso principale.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l'id del Frame\ped{g} da togliere dal Percorso\ped{g} principale.\\
 			
 		\noindent{\textbf{Metodi}}
 		\begin{itemize}

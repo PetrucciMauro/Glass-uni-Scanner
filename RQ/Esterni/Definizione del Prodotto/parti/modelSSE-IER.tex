@@ -1,35 +1,35 @@
 	\subsection{Classe SlideShowElements}{
 		\textbf{Funzione}\\
-			\indent Classe astratta, base delle classi usate per rappresentare gli elementi della presentazione.\\
+			\indent Classe astratta, base delle classi usate per rappresentare gli elementi\ped{g} della presentazione.\\
 		\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements.\\
 		\textbf{Utilizzo}\\
-			\indent Contiene gli attributi e i metodi comuni degli oggetti che rappresentano gli elementi della presentazione.\\
+			\indent Contiene gli attributi e i metodi comuni degli oggetti che rappresentano gli elementi\ped{g} della presentazione.\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{id}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Integer;
-				\item \textbf{Descrizione}: indica l’identificativo univoco dell’elemento.
+				\item \textbf{Descrizione}: indica l’identificativo univoco dell’Elemento\ped{g}.
 			\end{itemize}
 			\item \textbf{yIndex}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle y dell’elemento rispetto alla presentazione.
+				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle y dell’Elemento\ped{g} rispetto alla presentazione.
 			\end{itemize}
 			\item \textbf{xIndex}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle x dell’elemento rispetto alla presentazione.
+				\item \textbf{Descrizione}: rappresenta la posizione sull’asse delle x dell’Elemento\ped{g} rispetto alla presentazione.
 			\end{itemize}
 			\item \textbf{zIndex}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Integer;
-				\item \textbf{Descrizione}: rappresenta la posizione dell’elemento rispetto agli altri elementi della presentazione.
+				\item \textbf{Descrizione}: rappresenta la posizione dell’Elemento\ped{g} rispetto agli altri elementi\ped{g} della presentazione.
 			\end{itemize}
 			\item \textbf{rotation}
 			\begin{itemize}
@@ -53,7 +53,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Double;
-				\item \textbf{Descrizione}: campo dati utilizzato dal traduttore Impress per mettere gli elementi nel modo corretto.
+				\item \textbf{Descrizione}: campo dati utilizzato dal traduttore Impress per mettere gli elementi\ped{g} nel modo corretto.
 			\end{itemize}
 		\end{itemize}
 		
@@ -61,7 +61,7 @@
 		\begin{itemize}
 			\item Text (\S\ref{Text});
 			\item Image (\S\ref{Image});
-			\item Frame (\S\ref{Frame});
+			\item Frame\ped{g} (\S\ref{Frame});
 			\item SVG (\S\ref{SVG});
 			\item Background (\S\ref{Background});
 			\item Audio (\S\ref{Audio});
@@ -71,7 +71,7 @@
 		\subsubsection{Classe Text}{
 			\label{Text}
 			\textbf{Funzione}\\
-				\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo testo.\\
+				\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo testo.\\
 		   	\textbf{Scope}\\
 				\indent Model::SlideShow::SlideShowElements::Text.\\
 			\textbf{Utilizzo}\\
@@ -82,13 +82,13 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: rappresenta il font dell’oggetto.
+					\item \textbf{Descrizione}: rappresenta il Font\ped{g} dell’oggetto.
 				\end{itemize}
 				\item \textbf{fontSize}
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: rappresenta la dimensione del font dell’oggetto.
+					\item \textbf{Descrizione}: rappresenta la dimensione del Font\ped{g} dell’oggetto.
 				\end{itemize}
 				\item \textbf{content}
 				\begin{itemize}
@@ -113,7 +113,7 @@
 	\subsubsection{Classe Image}{
 		\label{Image}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo immagine.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo immagine.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Image.\\
 		\textbf{Utilizzo}\\
@@ -124,7 +124,7 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo}: String;
-					\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+					\item \textbf{Descrizione}: rappresenta il Percorso\ped{g} dell’oggetto.
 				\end{itemize}
 				\item \textbf{type}
 				\begin{itemize}
@@ -138,7 +138,7 @@
 	\subsubsection{Classe Frame}{
 		\label{Frame}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo frame.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo Frame\ped{g}.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Frame.\\
 		\textbf{Utilizzo}\\
@@ -149,19 +149,19 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Bool;
-				\item \textbf{Descrizione}: è a 1 se il frame è un bookmark, 0 altrimenti.
+				\item \textbf{Descrizione}: è a 1 se il Frame\ped{g} è un Bookmark\ped{g}, 0 altrimenti.
 			\end{itemize}
 			\item \textbf{ref}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: contiene il riferimento dell’immagine di sfondo frame.
+				\item \textbf{Descrizione}: contiene il riferimento dell’immagine di sfondo Frame\ped{g}.
 			\end{itemize}
 			\item \textbf{color}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: rappresenta il colore dello sfondo del frame.
+				\item \textbf{Descrizione}: rappresenta il colore dello sfondo del Frame\ped{g}.
 			\end{itemize}
 			\item \textbf{type}
 			\begin{itemize}
@@ -174,7 +174,7 @@
 	\subsubsection{Classe SVG}{
 		\label{SVG}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo SVG.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo SVG.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::SVG.\\
 		\textbf{Utilizzo}\\
@@ -204,7 +204,7 @@
 	\subsubsection{Classe Audio}{
 		\label{Audio}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo immagina.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo immagina.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Audio.\\
 		\textbf{Utilizzo}\\
@@ -215,7 +215,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+				\item \textbf{Descrizione}: rappresenta il Percorso\ped{g} dell’oggetto.
 			\end{itemize}
 			\item \textbf{type}
 			\begin{itemize}
@@ -229,7 +229,7 @@
 	\subsubsection{Classe Video}{
 		\label{Video}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano un oggetto di tipo video.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo video.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Video.\\
 		\textbf{Utilizzo}\\
@@ -240,7 +240,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: rappresenta il percorso dell’oggetto.
+				\item \textbf{Descrizione}: rappresenta il Percorso\ped{g} dell’oggetto.
 			\end{itemize}
 			\item \textbf{type}
 			\begin{itemize}
@@ -254,7 +254,7 @@
 	\subsubsection{Classe Background}{
 		\label{Background}
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi rappresentano lo sfondo.\\
+			\indent Classe concreta, i suoi elementi\ped{g} rappresentano lo sfondo.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Background.\\
 		\textbf{Utilizzo}\\
@@ -285,7 +285,7 @@
 	}
 \subsection{Classe InsertEditRemove}{
 		\textbf{Funzione}\\
-			\indent Classe statica in cui vengono implementati gli algoritmi di inserimento di elementi nella presentazione.\\
+			\indent Classe statica in cui vengono implementati gli algoritmi di inserimento di elementi\ped{g} nella presentazione.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::InsertEditRemove.\\
 		\textbf{Utilizzo}\\
@@ -295,7 +295,7 @@
 			\item \textbf{Presentazione}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
-				\item \textbf{Descrizione}: oggetto json che contiene gli oggetti delle classi che rappresentano gli elementi della presentazione.
+				\item \textbf{Descrizione}: oggetto json che contiene gli oggetti delle classi che rappresentano gli elementi\ped{g} della presentazione.
 			\end{itemize}
 			\item \textbf{id =0}
 			\begin{itemize}
@@ -333,37 +333,37 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna i frame della presentazione.
+				\item \textbf{Descrizione}: ritorna i Frame\ped{g} della presentazione.
 			\end{itemize}
 			\item \textbf{getTexts}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna gli elementi testo della presentazione.
+				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} testo della presentazione.
 			\end{itemize}
 			\item \textbf{getImages}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna gli elementi immagine della presentazione.
+				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} immagine della presentazione.
 			\end{itemize}
 			\item \textbf{getAudios}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna gli elementi audio della presentazione.
+				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} audio della presentazione.
 			\end{itemize}
 			\item \textbf{getVideos}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna gli elementi video della presentazione.
+				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} video della presentazione.
 			\end{itemize}
 			\item \textbf{getSVGs}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Array;
-				\item \textbf{Descrizione}: ritorna gli elementi SVG della presentazione.
+				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} SVG della presentazione.
 			\end{itemize}
 			\item \textbf{getBackground}()
 			\begin{itemize}
@@ -375,13 +375,13 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: ritorna i percorsi della presentazione.
+				\item \textbf{Descrizione}: ritorna i percorsi\ped{g} della presentazione.
 			\end{itemize}
 			\item \textbf{getElement}(id)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: ritorna l'elemento id della presentazione.
+				\item \textbf{Descrizione}: ritorna l'Elemento\ped{g} id della presentazione.
 			\end{itemize}
 			\item \textbf{insertText}(spec:object)
 			\begin{itemize}
@@ -434,7 +434,7 @@
 			\item \textbf{removeFrame}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Frame;
+				\item \textbf{Tipo di ritorno}: Frame\ped{g};
 				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente, accede al suo campo prev e ne identifica i predecessore, pone prev.next=next. Rimuove l’oggetto dall’oggetto Presentazione e restituisce l’oggetto copiato.
 			\end{itemize}
 			\item \textbf{removeImage}(id:integer)
@@ -507,7 +507,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo font e fontSize in un oggetto oldFont e imposta font con il valore di newFont e fontSize con i valori passati tramite spec. Restituisce oldFont.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo Font\ped{g} e fontSize in un oggetto oldFont e imposta Font\ped{g} con il valore di newFont e fontSize con i valori passati tramite spec. Restituisce oldFont.
 			\end{itemize}
 			\item \textbf{portaAvanti}(spec:object)
 			\begin{itemize}
@@ -525,37 +525,37 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: aggiunge il frame spec.id nel percorso principale nella posizione spec.pos.
+				\item \textbf{Descrizione}: aggiunge il Frame\ped{g} spec.id nel Percorso\ped{g} principale nella posizione spec.pos.
 			\end{itemize}
 			\item \textbf{removeFrameFromMainPath}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: scorre il percorso principale in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia la posizione in un oggetto oldFrame e elimina dal percorso il frame. Restituisce oldFrame.
+				\item \textbf{Descrizione}: scorre il Percorso\ped{g} principale in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia la posizione in un oggetto oldFrame e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce oldFrame.
 			\end{itemize}
 			\item \textbf{addChoicePath}(id)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: metodo che aggiunge un nuovo percorso a scelta id a Presentazione e ritorna l'id del percorso.
+				\item \textbf{Descrizione}: metodo che aggiunge un nuovo Percorso\ped{g} a scelta id a Presentazione e ritorna l'id del Percorso\ped{g}.
 			\end{itemize}
 			\item \textbf{deleteChoicePath}(pathId)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che elimina il percorso a scelta pathId da Presentazione e ritorna l'oggetto eliminato.
+				\item \textbf{Descrizione}: metodo che elimina il Percorso\ped{g} a scelta pathId da Presentazione e ritorna l'oggetto eliminato.
 			\end{itemize}
 			\item \textbf{addFrameToChoicePath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: aggiunge il frame spec.id al percorso a scelta spec.pathId.
+				\item \textbf{Descrizione}: aggiunge il Frame\ped{g} spec.id al Percorso\ped{g} a scelta spec.pathId.
 			\end{itemize}
 			\item \textbf{removeFrameFromChoicePath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: scorre il percorso a scelta spec.pathId in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia posizione, id e id del percorso in un oggetto obj e elimina dal percorso il frame. Restituisce obj.
+				\item \textbf{Descrizione}: scorre il Percorso\ped{g} a scelta spec.pathId in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia posizione, id e id del Percorso\ped{g} in un oggetto obj e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce obj.
 			\end{itemize}
 		\end{itemize}
 		

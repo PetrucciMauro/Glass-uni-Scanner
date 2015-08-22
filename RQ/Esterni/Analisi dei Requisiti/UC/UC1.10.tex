@@ -6,26 +6,26 @@
 		\label{fig:uc1.11}
 		\caption{Caso d'uso 1.11: Annulla/Ripristina presentazione desktop}
 	\end{figure}
-	\textbf{Attori}: Utente desktop. \\
+	\textbf{Attori}: Utente Desktop\ped{g}. \\
 	\textbf{Descrizione}:L'utente può annullare un comando selezionato o ripristinare un comando annullato
-	\textbf{Precondizione}:  l'utente ha effettuato l'accesso al sistema in modalità modifica ad una presentazione in modalità desktop \\
+	\textbf{Precondizione}:  l'utente ha effettuato l'accesso al sistema in modalità modifica ad una presentazione in modalità Desktop\ped{g} \\
 	\textbf{Postcondizione}: l'utente ha annullato un comando o ripristinato un comando annullato  \\
 	
 \subsubsection{UC 1.10.1 - Annulla modifica}{
 		\label{uc1.10.1}
-		\textbf{Attori}: Utente Desktop. \\
+		\textbf{Attori}: Utente Desktop\ped{g}. \\
 		\textbf{Descrizione}:L'utente può annullare l'ultimo comando di modifica tra:. \\
 		\begin{itemize}
-			\item inserimento frame
-			\item eliminazione frame
-			\item spostamento frame
-			\item modifica frame
+			\item inserimento Frame\ped{g}
+			\item eliminazione Frame\ped{g}
+			\item spostamento Frame\ped{g}
+			\item modifica Frame\ped{g}
 			\item inserimento SVG
 			\item modifica SVG
-			\item eliminazione elemento
-			\item inserimento bookmark
-			\item cancellazione bookmark
-			\item modifica nella definizione di percorso
+			\item eliminazione Elemento\ped{g}
+			\item inserimento Bookmark\ped{g}
+			\item cancellazione Bookmark\ped{g}
+			\item modifica nella definizione di Percorso\ped{g}
 		\end{itemize}
 		\textbf{Precondizione}: Il sistema ha registrato almeno un comando di modifica della presentazione da parte dell'utente. \\
 		\textbf{Postcondizione}: Il sistema ha ripristinato lo stato precedente all'ultimo comando di modifica della presentazione dell'utente, e ha memorizzato nello storico degli annullamenti il comando annullato.	\\
@@ -37,7 +37,7 @@
 		
 \subsubsection{UC 1.10.2 - Ripristina modifica}{
 		\label{uc1.10.2}
-		\textbf{Attori}: Utente Desktop. \\
+		\textbf{Attori}: Utente Desktop\ped{g}. \\
 		\textbf{Descrizione}: L'utente può ripristinare l'ultimo comando presente nello storico dei comandi annullati.
 		\textbf{Precondizione}: Lo storico degli annullamenti di comando non è vuoto. \\
 		\textbf{Postcondizione}: Il sistema ha rieseguito l'ultimo comando di modifica della presentazione presente nello storico dei comandi annullati, ed è stato rimosso il comando rieseguito dallo storico.

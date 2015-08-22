@@ -5,51 +5,51 @@
 			\label{fig:view}
 			\caption{View}
 		\end{figure}
-		\textbf{\tipo}: questo livello costituisce l'interfaccia del software utilizzabile dagli utenti mediante pagine web.\\
+		\textbf{\tipo}: questo livello costituisce l'interfaccia del Software\ped{g} utilizzabile dagli utenti mediante pagine WEB\ped{g}.\\
 		\textbf{\relaz}: il componente è costituito dal package Pages e comunica con il Controller per rendere possibile la gestione del proprio profilo, la gestione delle presentazioni e per controllare i dati in transito per il sistema, dovuti all'interazione dell'utente con lo stesso e la comunicazione con il Controller.
 		
 		\subsubsection{View::\-Pages}{
 			\textbf{\tipo}: questo package costituisce le pagine fisiche del sistema, realizzate in HTML.\\
-			\textbf{\relaz}: il componente comunica con il package Premi::\-Controller per l'utilizzo delle funzioni presenti all'interno dello stesso per l'interazione dell'utente con il sito.
+			\textbf{\relaz}: il componente comunica con il package Premi::\-Controller per l'utilizzo delle funzioni\ped{g} presenti all'interno dello stesso per l'interazione dell'utente con il sito.
 		\subsubsection{View::\-Pages::\-Index}{
-			\textbf{\tipo}: la classe Index definisce la struttura, e la conseguente visualizzazione, della pagina web che consente ad un utente di effettuare login e registrazione al sistema.\\
-			\textbf{\relaz}: la classe Index utilizza i metodi messi a disposizione dalla classe Controller::\-HeaderController per effettuare il logout o il reindirizzamento alle pagine Home e Profile.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web comune a tutte le altre pagine.
+			\textbf{\tipo}: la classe Index definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che consente ad un utente di effettuare Login\ped{g} e registrazione al sistema.\\
+			\textbf{\relaz}: la classe Index utilizza i metodi messi a disposizione dalla classe Controller::\-HeaderController per effettuare il Logout\ped{g} o il reindirizzamento alle pagine Home e Profile.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} comune a tutte le altre pagine.
 		}
 		\subsubsection{View::\-Pages::\-Login}{
-			\textbf{\tipo}: la classe Login definisce la struttura, e la conseguente visualizzazione, della pagina web che consente ad un utente di effettuare il login al sistema.\\
-			\textbf{\relaz}: la classe Login utilizza i metodi messi a disposizione dalla classe Controller::\-AuthenticationController per verificare i dati inseriti, per inviare i dati relativi alla login e per visualizzare eventuali errori.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di autenticarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione al sistema.
+			\textbf{\tipo}: la classe Login\ped{g} definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che consente ad un utente di effettuare il Login\ped{g} al sistema.\\
+			\textbf{\relaz}: la classe Login\ped{g} utilizza i metodi messi a disposizione dalla classe Controller::\-AuthenticationController per verificare i dati inseriti, per inviare i dati relativi alla Login\ped{g} e per visualizzare eventuali errori.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di autenticarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per l’autenticazione al sistema.
 		}
 		\subsubsection{View::\-Pages::\-Registrazione}{
-			\textbf{\tipo}: la classe Registrazione definisce la struttura, e la conseguente visualizzazione, della pagina web che consente ad un utente di effettuare la registrazione al sistema.\\
+			\textbf{\tipo}: la classe Registrazione definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che consente ad un utente di effettuare la registrazione al sistema.\\
 			\textbf{\relaz}: la classe Registrazione utilizza i metodi messi a disposizione dalla classe Controller::\-AuthenticationController per verificare i dati inseriti, per inviare i dati relativi alla registrazione e per visualizzare eventuali errori.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per la registrazione al sistema.
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di registrarsi al sistema. Essa resta in attesa che un utente inserisca i dati necessari per la registrazione al sistema.
 		}
 		\subsubsection{View::\-Pages::\-Home}{
-			\textbf{\tipo}: la classe Home definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente le presentazioni presenti sul server e i comandi principali per gestirle.\\	
-			\textbf{\relaz}: la classe Home utilizza i metodi messi a disposizione dalla classe Controller::\-HomeController per l'eliminazione delle presentazioni dal server, la loro rinominazione o la creazione di una nuova.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visualizzare una lista delle proprie presentazioni, crearne di nuove, modificarle, eliminarle, scaricarle, eseguirle o modificarle.
+			\textbf{\tipo}: la classe Home definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che mostra ad un utente le presentazioni presenti sul Server\ped{g} e i comandi principali per gestirle.\\	
+			\textbf{\relaz}: la classe Home utilizza i metodi messi a disposizione dalla classe Controller::\-HomeController per l'eliminazione delle presentazioni dal Server\ped{g}, la loro rinominazione o la creazione di una nuova.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di visualizzare una lista delle proprie presentazioni, crearne di nuove, modificarle, eliminarle, scaricarle, eseguirle o modificarle.
 		}
 		\subsubsection{View::\-Pages::\-Profile}{
-			\textbf{\tipo}: la classe Profile definisce la struttura della pagina web che consente agli utenti di modificare i propri dati di profilo e gestire i file media caricati nel server \\
+			\textbf{\tipo}: la classe Profile definisce la struttura della pagina WEB\ped{g} che consente agli utenti di modificare i propri dati di profilo e gestire i File\ped{g} media caricati nel Server\ped{g} \\
 			\textbf{\relaz}: la classe Profile utilizza i metodi messi a disposizione dalla classe Controller::\-ProfileController, per la modifica della password.\\
-			\textbf{\attivita}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente i dati del proprio profilo e la possibilità di modificarli.
+			\textbf{\attivita}: la classe Profile definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che mostra ad un utente i dati del proprio profilo e la possibilità di modificarli.
 		}
 		\subsubsection{View::\-Pages::\-Execution}{
-			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
-			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js; utilizza i metodi messi a disposizione della classe Controller::\-ExecutionController per creare la pagina che verrà eseguita da Impress.js.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo percorso.
+			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che mostra ad un utente l'esecuzione di una presentazione.\\
+			\textbf{\relaz}: questa classe è gestita dal Framework\ped{g} esterno Impress.js; utilizza i metodi messi a disposizione della classe Controller::\-ExecutionController per creare la pagina che verrà eseguita da Impress.js.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo Percorso\ped{g}.
 		}
 		\subsubsection{View::\-Pages::\-Edit}{
-			\textbf{\tipo}: la classe Edit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra l'editor di modifica di una presentazione.\\
-			\textbf{\relaz}: la classe Edit utilizza i metodi messi a disposizione dalla classe Controller::\-EditController per caricare la presentazione da modificare, per l'inserimento di nuovi elementi, per il loro spostamento ed eliminazione, per le modifiche  effettuate agli elementi e per cambiare il percorso della presentazione.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi), cambiare il percorso e assegnare bookmark ai frame.\\
-			La classe dovrà predisporre delle apposite funzioni javascript per la gestione degli elementi nella view.
+			\textbf{\tipo}: la classe Edit definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che mostra l'Editor\ped{g} di modifica di una presentazione.\\
+			\textbf{\relaz}: la classe Edit utilizza i metodi messi a disposizione dalla classe Controller::\-EditController per caricare la presentazione da modificare, per l'inserimento di nuovi elementi\ped{g}, per il loro spostamento ed eliminazione, per le modifiche  effettuate agli elementi\ped{g} e per cambiare il Percorso\ped{g} della presentazione.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi\ped{g}), cambiare il Percorso\ped{g} e assegnare Bookmark\ped{g} ai Frame\ped{g}.\\
+			La classe dovrà predisporre delle apposite funzioni\ped{g} JavaScript\ped{g} per la gestione degli elementi\ped{g} nella view.
 		}
 
 		\subsubsection{View::\-Pages::\-Manifest}{
-			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra all'utente le presentazioni salvate in locale, permettendone l'esecuzione.\\
-			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visulizzare le presentazioni salvate in locale e permette la loro esecuzione.\\
+			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina WEB\ped{g} che mostra all'utente le presentazioni salvate in locale, permettendone l'esecuzione.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina WEB\ped{g} che consente agli utenti di visulizzare le presentazioni salvate in locale e permette la loro esecuzione.\\
 		}
 	}

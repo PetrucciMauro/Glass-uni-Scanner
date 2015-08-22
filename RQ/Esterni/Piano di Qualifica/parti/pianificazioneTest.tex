@@ -281,7 +281,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 \newpage
 \subsection{Test d'integrazione}{
 	Vengono descritti i test di integrazione che permettono di verificare la corretta integrazione e comunicazione tra parti distinte di sistema.	\\
-	Verrà utilizzata la strategia di integrazione incrementale per una più semplice individuazione dei difetti, per assemblare il sistema in passi di integrazione reversibili e per avere corretti flussi di controllo da parti “consumatore” verso parti “produttore”. In particolare per limitare il numero di stub richiesti verrà adottato un approccio Bottom-up integrando prima le parti con minore dipendenza funzionale. \\
+	Verrà utilizzata la strategia di integrazione incrementale per una più semplice individuazione dei difetti, per assemblare il sistema in passi di integrazione reversibili e per avere corretti flussi di controllo da parti “consumatore” verso parti “produttore”. In particolare per limitare il numero di stub richiesti verrà adottato un approccio Bottom-up\ped{g} integrando prima le parti con minore dipendenza funzionale. \\
 	Di seguito viene riportato il diagramma per chiarire l'albero dei test d'integrazione.	\\
 	
 	\begin{figure}[H]
@@ -329,7 +329,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 \subsection{Test d'unità}
 		
 	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
-				\caption{Descrizione dei test di Unità per il Server \label{tab:verTestUnit}}\\
+				\caption{Descrizione dei test di Unità per il Server\ped{g} \label{tab:verTestUnit}}\\
 		 \hline
 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
 		 \hline
@@ -342,37 +342,37 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 \endfoot
 		 \hline
 		 \endlastfoot
-		 TU1 & viene verificato l'inserimento di un utente nel database in seguito ad una chiamata al metodo del server con un utente non ancora registrato & POST account/register & success \\
-		 TU2 & viene verificato che il server non inserisce in database un utente gia registrato chiamando il metodo opportuno del server con un utente inserito & POST account/register & success \\
-		 TU3 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente inserito e verificandone il token ritornato  & GET account/authenticate & success \\
-		 TU4 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente non inserito e verificando la risposta del server & GET account/authenticate & success \\
-		 TU5 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente inserito nel database ma con il parametro password errato e verificando la risposta del server & GET account/authenticate & success \\
-		 TU6 & viene verificato che il server modifica la password salvata in database di un utente attraverso una chiamata con parametri corretti rispetto ad un utente inserito & POST account/changepassword & success \\
-		 TU7 & viene verificato che il server non modifica la password salvata in database di un utente attraverso una chiamata con parametro un utente non inserito & POST account/changepassword & success \\
-		 TU8 & viene verificato che il server non modifica la password salvata in database di un utente attraverso una chiamata con parametro password errato rispetto all'utente indicato  & POST account/changepassword & success \\
-		 TU9 & viene inserita una presentazione in database e viene verificato che una chiamata al metodo del server ritorni un array il cui primo elemento è corretto rispetto alla presentazione inserita & GET private/api/presentations & success \\
-		 TU10 & viene chiamato il metodo del server per l'inserimento di una nuova presentazione, si verifica che la presentazione sia stata inserita e che abbia il nome corretto & POST private/api/presentations/new/[newpres] & success \\
-		 TU11 & viene chiamato il metodo del server per l'inserimento di una nuova presentazione come copia di una gia esistente e se ne verifica il corretti inserimento in database & POST private/api/presentations/new/[oldpres]/[newpres] & success \\
-		 TU12 & viene inserita una presentazione in database e viene chiamato il metodo del server per il recupero della presentazione, si verifica il corretto recupero nella risposta  & GET private/api/presentations/[presentation] & success \\
-		 TU13 & viene inserita una presentazione in database, poi viene chiamato il metodo del server per la eliminazione della presentazione, si verifica la cancellazione della presentazione in database & DELETE private/api/presentations/[presentation] & success \\
-		 TU14 & viene inserita una presentazione in database e viene chiamato il metodo del server per la rinomina della presentazione verificando che il nome sia cambiato con quello indicato  & RENAME private/api/presentations/[oldname]/rename/[new] & success \\
-		 TU15 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo del server con i parametri corretti e si osserva la cancellazione dell'elemento dalla presentazione & DELETE private/api/presentations/[presname]/delete/[type]/[id] & success \\
-		 TU16 & viene chiamato il metodo del server per l'inserimento di un elemento in una presentazione, viene verificato l'inserimento dell'elemento in database & POST private/api/presentations/[presname]/element & success \\
-		 TU17 & viene verificata la modifica dell'elemento paths di una presentazione in database attraverso la chiamata al server con dei parametri di esempio & PUT private/api/presentations/[presname]/paths & success \\
-		 TU18 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo del server per la modifica di questo elemento con dei valori di esempio, si verifica la modifica dei valori in database & PUT private/api/presentations/[presname]/element & success \\
-		 TU19 & viene inserita una immagine e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome dell'immagine inserita & GET private/api/files/image & success \\
-		 TU20 & viene inserito un file immagine, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[image] & success \\
-		 TU21 & viene chiamato il metodo del server per l'inserimento di un file immagine e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[image] & success \\
-		 TU22 & viene inserito un file immagine, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[image]/[newname] & success \\
-		 TU23 & viene inserita una immagine con valori degli attributi height e width noti, viene chiamato il metodo del server per questa immagine e si verificano i valori ritornati con quelli noti  & GET private/api/files/sizeImage/[image] & success \\
-		 TU24 & viene inserito un file audio e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome del file inserito & GET private/api/files/audio & success \\
-		 TU25 & viene inserito un file audio, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[audio] & success \\
-		 TU26 & viene chiamato il metodo del server per l'inserimento di un file audio e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[audio] & success \\
-		 TU27 & viene inserito un file audio, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[audio]/[newname] & success \\
-		 TU28 & viene inserito un file video e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome del file inserito & GET private/api/files/video & success \\
-		 TU29 & viene inserito un file video, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[video] & success \\
-		 TU30 & viene chiamato il metodo del server per l'inserimento di un file video e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[video] & success \\
-		 TU31 & viene inserito un file video, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[video]/[newname] & success \\
+		 TU1 & viene verificato l'inserimento di un utente nel database in seguito ad una chiamata al metodo del Server\ped{g} con un utente non ancora registrato & POST Account/register & success \\
+		 TU2 & viene verificato che il Server\ped{g} non inserisce in database un utente gia registrato chiamando il metodo opportuno del Server\ped{g} con un utente inserito & POST Account/register & success \\
+		 TU3 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente inserito e verificandone il token ritornato  & GET Account/authenticate & success \\
+		 TU4 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente non inserito e verificando la risposta del Server\ped{g} & GET Account/authenticate & success \\
+		 TU5 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente inserito nel database ma con il parametro password errato e verificando la risposta del Server\ped{g} & GET Account/authenticate & success \\
+		 TU6 & viene verificato che il Server\ped{g} modifica la password salvata in database di un utente attraverso una chiamata con parametri corretti rispetto ad un utente inserito & POST Account/changepassword & success \\
+		 TU7 & viene verificato che il Server\ped{g} non modifica la password salvata in database di un utente attraverso una chiamata con parametro un utente non inserito & POST Account/changepassword & success \\
+		 TU8 & viene verificato che il Server\ped{g} non modifica la password salvata in database di un utente attraverso una chiamata con parametro password errato rispetto all'utente indicato  & POST Account/changepassword & success \\
+		 TU9 & viene inserita una presentazione in database e viene verificato che una chiamata al metodo del Server\ped{g} ritorni un array il cui primo Elemento\ped{g} è corretto rispetto alla presentazione inserita & GET private/api/presentations & success \\
+		 TU10 & viene chiamato il metodo del Server\ped{g} per l'inserimento di una nuova presentazione, si verifica che la presentazione sia stata inserita e che abbia il nome corretto & POST private/api/presentations/new/[newpres] & success \\
+		 TU11 & viene chiamato il metodo del Server\ped{g} per l'inserimento di una nuova presentazione come copia di una gia esistente e se ne verifica il corretti inserimento in database & POST private/api/presentations/new/[oldpres]/[newpres] & success \\
+		 TU12 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per il recupero della presentazione, si verifica il corretto recupero nella risposta  & GET private/api/presentations/[presentation] & success \\
+		 TU13 & viene inserita una presentazione in database, poi viene chiamato il metodo del Server\ped{g} per la eliminazione della presentazione, si verifica la cancellazione della presentazione in database & DELETE private/api/presentations/[presentation] & success \\
+		 TU14 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per la rinomina della presentazione verificando che il nome sia cambiato con quello indicato  & RENAME private/api/presentations/[oldname]/rename/[new] & success \\
+		 TU15 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo del Server\ped{g} con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & DELETE private/api/presentations/[presname]/delete/[type]/[id] & success \\
+		 TU16 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & POST private/api/presentations/[presname]/element & success \\
+		 TU17 & viene verificata la modifica dell'Elemento\ped{g} paths di una presentazione in database attraverso la chiamata al Server\ped{g} con dei parametri di esempio & PUT private/api/presentations/[presname]/paths & success \\
+		 TU18 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo del Server\ped{g} per la modifica di questo Elemento\ped{g} con dei valori di esempio, si verifica la modifica dei valori in database & PUT private/api/presentations/[presname]/element & success \\
+		 TU19 & viene inserita una immagine e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome dell'immagine inserita & GET private/api/files/image & success \\
+		 TU20 & viene inserito un File\ped{g} immagine, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[image] & success \\
+		 TU21 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} immagine e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[image] & success \\
+		 TU22 & viene inserito un File\ped{g} immagine, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[image]/[newname] & success \\
+		 TU23 & viene inserita una immagine con valori degli attributi height e width noti, viene chiamato il metodo del Server\ped{g} per questa immagine e si verificano i valori ritornati con quelli noti  & GET private/api/files/sizeImage/[image] & success \\
+		 TU24 & viene inserito un File\ped{g} audio e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome del File\ped{g} inserito & GET private/api/files/audio & success \\
+		 TU25 & viene inserito un File\ped{g} audio, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[audio] & success \\
+		 TU26 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} audio e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[audio] & success \\
+		 TU27 & viene inserito un File\ped{g} audio, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[audio]/[newname] & success \\
+		 TU28 & viene inserito un File\ped{g} video e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome del File\ped{g} inserito & GET private/api/files/video & success \\
+		 TU29 & viene inserito un File\ped{g} video, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[video] & success \\
+		 TU30 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} video e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[video] & success \\
+		 TU31 & viene inserito un File\ped{g} video, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[video]/[newname] & success \\
  		\end{longtable}	
  		
 		\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
@@ -389,16 +389,16 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 \endfoot
 		 \hline
 		 \endlastfoot
-		 TU32 & viene verificato che il ritorno della funzione sia corrispondente ai file immagini dell'utente nel server & getMetasImages() & success \\
-		 TU33 & viene verificato che il ritorno della funzione sia corrispondente ai file audio dell'utente nel server & getMetasAudios() & success \\
-		 TU34 & viene verificato che il ritorno della funzione sia corrispondente ai file video dell'utente nel server & getMetasVideos() & success \\
-		 TU35 & viene verificato che il ritorno della funzione sia corretto rispetto ai valori di width e height del file immagine inserito nel server & getImageDimension(img:string) & success \\
-		 TU36 & viene verificata l'eliminazione di un file immagine con la chiamata della funzione su un file immagine inserito nel server & deleteImage(img:string) & success \\
-		 TU37 & viene verificata l'eliminazione di un file audio con la chiamata della funzione su un file audio inserito nel server & deleteAudio(img:string) & success \\
-		 TU38 & viene verificata l'eliminazione di un file video con la chiamata della funzione su un file video inserito nel server & deleteVideo(img:string) & success \\
-		 TU39 & viene verificata la rinominazione di un file immagine inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameImage(old:string,new:string) & success \\
-		 TU40 & viene verificata la rinominazione di un file audio inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameAudio(old:string,new:string) & success \\
-		 TU41 & viene verificata la rinominazione di un file video inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameVideo(old:string,new:string) & success \\
+		 TU32 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} immagini dell'utente nel Server\ped{g} & getMetasImages() & success \\
+		 TU33 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} audio dell'utente nel Server\ped{g} & getMetasAudios() & success \\
+		 TU34 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} video dell'utente nel Server\ped{g} & getMetasVideos() & success \\
+		 TU35 & viene verificato che il ritorno della Funzione\ped{g} sia corretto rispetto ai valori di width e height del File\ped{g} immagine inserito nel Server\ped{g} & getImageDimension(img:string) & success \\
+		 TU36 & viene verificata l'eliminazione di un File\ped{g} immagine con la chiamata della Funzione\ped{g} su un File\ped{g} immagine inserito nel Server\ped{g} & deleteImage(img:string) & success \\
+		 TU37 & viene verificata l'eliminazione di un File\ped{g} audio con la chiamata della Funzione\ped{g} su un File\ped{g} audio inserito nel Server\ped{g} & deleteAudio(img:string) & success \\
+		 TU38 & viene verificata l'eliminazione di un File\ped{g} video con la chiamata della Funzione\ped{g} su un File\ped{g} video inserito nel Server\ped{g} & deleteVideo(img:string) & success \\
+		 TU39 & viene verificata la rinominazione di un File\ped{g} immagine inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameImage(old:string,new:string) & success \\
+		 TU40 & viene verificata la rinominazione di un File\ped{g} audio inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameAudio(old:string,new:string) & success \\
+		 TU41 & viene verificata la rinominazione di un File\ped{g} video inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameVideo(old:string,new:string) & success \\
 		 \end{longtable}
  \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
 	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: serverRelation \label{tab:verTestUnit}}\\
@@ -414,15 +414,15 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
  		 \endfoot
  		 \hline
  		 \endlastfoot
- 		 TU42 & viene inserita una presentazione in database e viene verificato che il ritorno della funzione sia consistente che le presentazioni presenti in database & getPresentationsMeta() & success \\
- 		 TU43 & viene chiamata la funzione per l'inserimento di una nuova presentazione, viene verificato l'inserimento della presentazione in database & newPresentation(name:string) & success \\
- 		 TU44 & viene chiamata la funzione per l'inserimento di una nuova presentazione come copia di una gia esistente, viene verificato l'inserimento della presentazione in database come copia della esistente & newCopyPresentation(name:string) & success \\
- 		 TU45 & viene inserita una presentazione in database e viene chiamato il metodo del server per il recupero della presentazione, si verifica il corretto ritorno della funzione & getPresentation(name:string) & success \\
+ 		 TU42 & viene inserita una presentazione in database e viene verificato che il ritorno della Funzione\ped{g} sia consistente che le presentazioni presenti in database & getPresentationsMeta() & success \\
+ 		 TU43 & viene chiamata la Funzione\ped{g} per l'inserimento di una nuova presentazione, viene verificato l'inserimento della presentazione in database & newPresentation(name:string) & success \\
+ 		 TU44 & viene chiamata la Funzione\ped{g} per l'inserimento di una nuova presentazione come copia di una gia esistente, viene verificato l'inserimento della presentazione in database come copia della esistente & newCopyPresentation(name:string) & success \\
+ 		 TU45 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per il recupero della presentazione, si verifica il corretto ritorno della Funzione\ped{g} & getPresentation(name:string) & success \\
  		 TU46 & viene inserita una presentazione in database e viene chiamato il metodo di eliminazione della presentazione dell'utente, si verifica la cancellazione della presentazione & deletePresentation(name:string) & success \\
  		 TU47 & viene inserita una presentazione in database e viene chiamato il metodo di rinominazione della presentazione dell'utente, si verifica la rinominazione della presentazione & renamePresentation(old:string,new:string) & success \\
- 		 TU48 & viene chiamato il metodo del server per l'inserimento di un elemento in una presentazione, viene verificato l'inserimento dell'elemento in database & newElement(presentation:string,onj:object,callback:function) & success \\
- 		 TU49 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'elemento dalla presentazione & updateElement(presentation:string,onj:object,callback:function) & success \\
- 		 TU50 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'elemento dalla presentazione & deleteElement(presentation:strin,type:string,id:string) & success \\
+ 		 TU48 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & newElement(presentation:string,onj:object,callback:function) & success \\
+ 		 TU49 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'Elemento\ped{g} dalla presentazione & updateElement(presentation:string,onj:object,callback:function) & success \\
+ 		 TU50 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & deleteElement(presentation:strin,type:string,id:string) & success \\
  		 TU51 & viene chiamato il metodo per la modifica del campo paths di una presentazione e si osserva la modifica del campo dati della presentazioni in database & updatePaths(presentation:string,obj:object) & success \\
  		 \end{longtable}
   \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
@@ -439,7 +439,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 	  		 \endfoot
 	  		 \hline
 	  		 \endlastfoot
- 		 TU52 & vengono chiamati i metodi addInsert(), addUpdate e addDelete() su un oggetto mook per la simulazione di altre classi del model per il recupero degli elementi della presentazione associati, si verifica lo stato della presentazione alle diverse chiamate del metodo  & update() & success \\
+ 		 TU52 & vengono chiamati i metodi addInsert(), addUpdate e addDelete() su un oggetto mook per la simulazione di altre classi del model per il recupero degli elementi\ped{g} della presentazione associati, si verifica lo stato della presentazione alle diverse chiamate del metodo  & update() & success \\
  		 \end{longtable}
  		 
 	 \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
@@ -486,7 +486,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 	  		 \hline
 		 	  		 \endlastfoot
 		  		 TU60 & Richiama il costruttore di Text(...) e verifica che sia stato creato un oggetto di tipo text  & slideShowElements::Text() & success \\
-		  		 TU61 & Richiama il costruttore di Frame(...) e verifica che sia stato creato un oggetto di tipo frame & slideShowElements::Frame() & success \\
+		  		 TU61 & Richiama il costruttore di Frame(...) e verifica che sia stato creato un oggetto di tipo Frame\ped{g} & slideShowElements::Frame() & success \\
 		  		 TU62 & Richiama il costruttore di Image(...) e verifica che sia stato creato un oggetto di tipo image & slideShowElements::Image() & success \\
 		  		 TU63 & Richiama il costruttore di Audio(...) e verifica che sia stato creato un oggetto di tipo audio  & slideShowElements::Audio() & success \\
 		  		 TU64 & Richiama il costruttore di Video(...) e verifica che sia stato creato un oggetto di tipo video  & slideShowElements::Video() & success \\
@@ -510,17 +510,17 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		  		 TU66 & Richiama il costruttore di InsertEditRemove() e verifica che venga istanziato un oggetto di tale classe  & slideShowActions::InsertEditRemove() & success \\
 		  		 TU67 & Richiama il costruttore di InsertEditRemove() e verifica che sia stata generata una sola istanza di tale classe  & slideShowActions::InsertEditRemove() & success \\
 		 		 TU68 & Richiama il InsertEditRemove()::insertText e verifica che venga inserito nella presentazione un oggetto Text & slideShowActions::InsertEditRemove()::insertText(...) & success \\
-		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame  & slideShowActions::InsertEditRemove()::insertFrame(...) & success \\
+		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame\ped{g}  & slideShowActions::InsertEditRemove()::insertFrame(...) & success \\
 		 		 TU70 & Richiama il InsertEditRemove()::insertImage e verifica che venga inserito nella presentazione un oggetto Image  & slideShowActions::InsertEditRemove()::insertImage(...) & success \\
 		 		 TU71 & Richiama il InsertEditRemove()::insertSVG e verifica che venga inserito nella presentazione un oggetto SVG  & slideShowActions::InsertEditRemove()::insertSVG(...) & success \\
 		 		 TU72 & Richiama il InsertEditRemove()::insertAudio e verifica che venga inserito nella presentazione un oggetto Audio  & slideShowActions::InsertEditRemove()::insertAudio(...) & success \\
 		 		 TU73 & Richiama il InsertEditRemove()::insertVideo e verifica che venga inserito nella presentazione un oggetto Video  & slideShowActions::InsertEditRemove()::insertVideo(...) & success \\
-		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
-		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editSize(...) & success \\
-		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editRotation(...) & success \\
-		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editBackground(...) & success \\
-		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editColor(...) & success \\
-		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni elemento della presentazione e verifica che ogni elemento venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
+		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
+		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editSize(...) & success \\
+		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editRotation(...) & success \\
+		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editBackground(...) & success \\
+		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editColor(...) & success \\
+		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
 		 		 TU80 & Richiama il InsertEditRemove()::removeText(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeText(...) & success \\
 		 		 TU81 & Richiama il InsertEditRemove()::removeFrame(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeFrame(...) & success \\
 		 		 TU82 & Richiama il InsertEditRemove()::removeImage(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeImage(...) & success \\

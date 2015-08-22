@@ -35,14 +35,14 @@
 				\item ConcreteAddToMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
 				\item ConcreteRemoveFromMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker.
 			\end{itemize}
-			\item Controller::\-Services::\-Upload <- EditController richiama Upload quando è necessario caricare nel server un file media;
+			\item Controller::\-Services::\-Upload <- EditController richiama Upload quando è necessario caricare nel Server\ped{g} un File\ped{g} media;
 			\item Controller::\-Services::\-SharedData -> EditController ricava la presentazione corrente da SharedData;
 
-			\item Model::\-serverRelation::\-Loader <- EditController, ad ogni modifica della presentazione, richiama i metodi appropriati di Loader in modo tale da permettere il salvataggio della presentazione stessa nel server;
+			\item Model::\-serverRelation::\-Loader <- EditController, ad ogni modifica della presentazione, richiama i metodi appropriati di Loader in modo tale da permettere il salvataggio della presentazione stessa nel Server\ped{g};
 
-			\item View::\-Pages::\-Edit::\-[javascript\_functions] <- EditController invoca le appropriate funzioni Javascript per applicare le modifiche alla presentazione sulla pagina di Edit.
+			\item View::\-Pages::\-Edit::\-[javascript\_functions] <- EditController invoca le appropriate funzioni\ped{g} Javascript per applicare le modifiche alla presentazione sulla pagina di Edit.
 		\end{itemize} 
-		\textbf{\interfacce}: EditController richiama le funzioni javascript fornite da View::\-Pages::\-Edit per la modifica della view. Successivamente istanzia un oggetto di una sottoclasse di Command e lo dà in pasto a Invoker e successivamente richiama il metodo corretto di Loader per il salvataggio nel database. Nel caso di un annullamento di una modifica o di un suo ripristino, EditController richiama il metodo undo() (o redo()) di Invoker il quale a sua volta, richiama il metodo corretto di EditController per l'aggiornamento della view.
+		\textbf{\interfacce}: EditController richiama le funzioni\ped{g} JavaScript\ped{g} fornite da View::\-Pages::\-Edit per la modifica della view. Successivamente istanzia un oggetto di una sottoclasse di Command e lo dà in pasto a Invoker e successivamente richiama il metodo corretto di Loader per il salvataggio nel database. Nel caso di un annullamento di una modifica o di un suo ripristino, EditController richiama il metodo undo() (o redo()) di Invoker il quale a sua volta, richiama il metodo corretto di EditController per l'aggiornamento della view.
 	}
 		
 	\subsubsection{Controller::\-ExecutionController}{
@@ -59,17 +59,17 @@
 		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Index.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di logout, HeaderController invoca il metodo per la deautenticazione fornito da Main;
+			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di Logout\ped{g}, HeaderController invoca il metodo per la deautenticazione fornito da Main;
 			\item Controller::\-Services::\-toPages <- Quando la view invia una richiesta di reindirizzamento alla pagina View::\-Pages::\-Home o View::\-Pages::\-Profile, HeaderController invoca il metodo appropriato di toPages.
 		\end{itemize}
-		\textbf{\interfacce}: la view invia a HeaderController una richiesta di logout o di reindirizzamento ad una pagina. HeaderController richiama il metodo per il logout di Main, oppure, se è un reindirizzamento, richiama il metodo appropriato di toPages.
+		\textbf{\interfacce}: la view invia a HeaderController una richiesta di Logout\ped{g} o di reindirizzamento ad una pagina. HeaderController richiama il metodo per il Logout\ped{g} di Main, oppure, se è un reindirizzamento, richiama il metodo appropriato di toPages.
 	}
 
 	\subsubsection{Controller::\-AuthenticationController}{
-		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalle pagine View::\-Pages::\-Login e View::\-Pages::\-Registrazione.\\	
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalle pagine View::\-Pages::\-Login\ped{g} e View::\-Pages::\-Registrazione.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di autenticazione, logout o registrazione, HeaderController invoca il metodo corretto fornito da Main;
+			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di autenticazione, Logout\ped{g} o registrazione, HeaderController invoca il metodo corretto fornito da Main;
 		\end{itemize}
 		\textbf{\interfacce}: la view invia a AuthenticationController una richiesta di registrazione o autenticazione. AuthenticationController richiama il metodo appropriato di Main.
 	}
@@ -94,38 +94,38 @@
 
 
 	\subsubsection{Controller::\-Services}{
-		\textbf{\tipo}: lo scopo di questa classe è di gestire le principali funzioni dell'applicazione, a partire dall'autenticazione fino ad arrivare all'upload dei file nel server.\\	
+		\textbf{\tipo}: lo scopo di questa classe è di gestire le principali funzioni\ped{g} dell'applicazione, a partire dall'autenticazione fino ad arrivare all'upload dei File\ped{g} nel Server\ped{g}.\\	
 		\textbf{\relaz}: comunica con il Model per svolgere le operazioni necessarie.
 
 		\subsubsubsection{Services::\-toPages}{
 		\textbf{\tipo}: lo scopo di questa classe è di gestire i reindirizzamenti alle pagine corrette.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item /private <- toPages invia una richiesta http al server, il quale controlla l'esistenza del token per le pagine in cui è richiesta l'autenticazione.
+			\item /private <- toPages invia una richiesta http al Server\ped{g}, il quale controlla l'esistenza del token per le pagine in cui è richiesta l'autenticazione.
 		\end{itemize}
-		\textbf{\interfacce}: toPages invia una richiesta http al server per il reindirizzamento alla pagina corretta. Nel caso in cui la pagina richieda di essere autenticati, viene inviato anche il token di sessione per verificare l'effettiva autenticazione.
+		\textbf{\interfacce}: toPages invia una richiesta http al Server\ped{g} per il reindirizzamento alla pagina corretta. Nel caso in cui la pagina richieda di essere autenticati, viene inviato anche il token di sessione per verificare l'effettiva autenticazione.
 		}
 
 		\subsubsubsection{Services::\-Upload}{
-		\textbf{\tipo}: lo scopo di questa classe è di permettere l'upload dei file media nel server.\\	
+		\textbf{\tipo}: lo scopo di questa classe è di permettere l'upload dei File\ped{g} media nel Server\ped{g}.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item /private/api/files/image/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file immagine filename;
-			\item /private/api/files/video/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file video filename;
-			\item /private/api/files/audio/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file audio filename.
+			\item /private/api/files/image/[filename] <- Upload invia una richiesta http al Server\ped{g} per effettuare l'upload del File\ped{g} immagine filename;
+			\item /private/api/files/video/[filename] <- Upload invia una richiesta http al Server\ped{g} per effettuare l'upload del File\ped{g} video filename;
+			\item /private/api/files/audio/[filename] <- Upload invia una richiesta http al Server\ped{g} per effettuare l'upload del File\ped{g} audio filename.
 		\end{itemize}
-		\textbf{\interfacce}: Upload invia una richiesta http al server per il caricamento di un file media nel server, inviando anche il token di sessione per verificare l'effettiva autenticazione.
+		\textbf{\interfacce}: Upload invia una richiesta http al Server\ped{g} per il caricamento di un File\ped{g} media nel Server\ped{g}, inviando anche il token di sessione per verificare l'effettiva autenticazione.
 		}
 
 		\subsubsubsection{Services::\-Main}{
-		\textbf{\tipo}: lo scopo di questa classe è di permettere le funzioni di base dell'applicazione, tra cui l'autenticazione al server.\\	
+		\textbf{\tipo}: lo scopo di questa classe è di permettere le funzioni\ped{g} di base dell'applicazione, tra cui l'autenticazione al Server\ped{g}.\\	
 		\textbf{\relaz}:
 		\begin{itemize}
-			\item Model::\-serverRelation::\-accessControl::\-Authentication <- Main richiama Authentication per inviare una richiesta di autenticazione o di logout al server;
-			\item Model::\-serverRelation::\-accessControl::\-Registration <- Main richiama Registration per inviare una richiesta di registrazione di un nuovo utente al server;
-			\item Model::\-serverRelation::\-accessControl::\-ChangePassword <- Main richiama ChangePassword per inviare una richiesta di cambio password al server.
+			\item Model::\-serverRelation::\-accessControl::\-Authentication <- Main richiama Authentication per inviare una richiesta di autenticazione o di Logout\ped{g} al Server\ped{g};
+			\item Model::\-serverRelation::\-accessControl::\-Registration <- Main richiama Registration per inviare una richiesta di registrazione di un nuovo utente al Server\ped{g};
+			\item Model::\-serverRelation::\-accessControl::\-ChangePassword <- Main richiama ChangePassword per inviare una richiesta di cambio password al Server\ped{g}.
 		\end{itemize}
-		\textbf{\interfacce}: Main richiama il metodo corretto di accessControl in modo da inviare una richiesta http al server per effettuare l'autenticazione, la registrazione o il cambio della password.
+		\textbf{\interfacce}: Main richiama il metodo corretto di accessControl in modo da inviare una richiesta http al Server\ped{g} per effettuare l'autenticazione, la registrazione o il cambio della password.
 		}
 
 		\subsubsubsection{Services::\-SharedData}{
@@ -134,11 +134,11 @@
 		\begin{itemize}
 			\item Model::\-serverRelation::\-mongoRelation <- SharedData richiama mongoRelation per ottenere la presentazione corrente.
 		\end{itemize}
-		\textbf{\interfacce}: SharedData richiama il metodo corretto di mongoRelation in modo da inviare una richiesta http al server per ottenere la presentazione voluta.
+		\textbf{\interfacce}: SharedData richiama il metodo corretto di mongoRelation in modo da inviare una richiesta http al Server\ped{g} per ottenere la presentazione voluta.
 		}
 
 		\subsubsubsection{Services::\-Utils}{
-		\textbf{\tipo}: lo scopo di questa classe è definire delle funzioni utili a tutta l'applicazione.\\	
+		\textbf{\tipo}: lo scopo di questa classe è definire delle funzioni\ped{g} utili a tutta l'applicazione.\\	
 		\textbf{\relaz}: data la sua natura, non comunica con nessun package.
 		}
 

@@ -1,10 +1,10 @@
 \section{Descrizione architetturale}{
 \subsection{Metodo e formalismi}{
-	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle iterazioni successive.
+	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle Iterazioni\ped{g} successive.
 	Si passerà quindi alla definizione dei package e successivamente dei componenti di questi. Infine si andranno a definire le singole classi e interfacce specificando per ognuna:
 	\begin{itemize}
 	\item Tipo;
-	\item Funzione;
+	\item Funzione\ped{g};
 	\item Classi o interfacce estese;
 	\item Interfacce implementate;
 	\item Relazioni con altre classi.
@@ -23,10 +23,10 @@
 		\caption{Architettura generale del sistema}
 	\end{figure}
 	\subsubsection{Model}{
-		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del software e risulta di fatto totalmente indipendente dagli altri due strati.
+		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del Software\ped{g} e risulta di fatto totalmente indipendente dagli altri due strati.
 		}
 	\subsubsection{View}{	
-		Contiene tutti gli elementi della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Controller, demandandone a quest'ultimo la	gestione.
+		Contiene tutti gli elementi\ped{g} della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Controller, demandandone a quest'ultimo la	gestione.
 		}
 	\subsubsection{Controller}{
 		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
@@ -41,11 +41,11 @@
 
 		Il seguente diagramma delle classi \`{e} stato esteso con le primitive:
 	\begin{itemize}
-	\item \textbf{<<Resource>>} : rappresenta una risorsa associata ad un certo url a cui sono disponibili dei servizi
-	\item \textbf{<<Node>>} : rappresenta una parte di URL a cui non sono disponibili servizi ma \`{e} utile per suddividere quest'ultimi
-	\item \textbf{<<Server>>} : rappresenta la radice dei servizi offerti dal server
-	\item \textbf{<<Path>>} : indica una aggiunta in coda all' URL attuale per raggiungere una nuova risorsa o nodo
-	\item \textbf{<<Middleware>>} : indica un middleware, un insieme di funzionalit\`{a} chiamate ogni qualvolta si accede a risorse attraversando questo elemento
+	\item \textbf{<<Resource>>} : rappresenta una Risorsa\ped{g} associata ad un certo URL\ped{g} a cui sono disponibili dei servizi
+	\item \textbf{<<Node>>} : rappresenta una parte di URL\ped{g} a cui non sono disponibili servizi ma \`{e} utile per suddividere quest'ultimi
+	\item \textbf{<<Server>>} : rappresenta la radice dei servizi offerti dal Server\ped{g}
+	\item \textbf{<<Path>>} : indica una aggiunta in coda all' URL\ped{g} attuale per raggiungere una nuova Risorsa\ped{g} o nodo
+	\item \textbf{<<Middleware>>} : indica un middleware, un insieme di funzionalit\`{a} chiamate ogni qualvolta si accede a Risorse\ped{g} attraversando questo Elemento\ped{g}
 	\end{itemize}
 	
 			\begin{figure}[H]
@@ -57,11 +57,11 @@
 		
 		\begin{itemize}
 			
-		\item \textbf{NodeServer:} radice dei servizi offerti dal server:
+		\item \textbf{NodeServer:} radice dei servizi offerti dal Server\ped{g}:
 			\begin{enumerate}
-				\item server per pagine HTML e file statici associati
+				\item Server\ped{g} per pagine HTML e File\ped{g} statici associati
 				\item servizi di autenticazione stateless
-				\item servizi di upload e reperimento file statici multimediali per utente
+				\item servizi di upload e reperimento File\ped{g} statici multimediali per utente
 				\item servizi di interazione con MongoDB per salvataggio persistente delle presentazioni
 			\end{enumerate}	
 				
@@ -69,7 +69,7 @@
 			\begin{itemize}
 			\item  \textbf{POST} /account/register 
 				\begin{itemize} 
-				\item \textbf{descrizione:} inserisce nuovo utente in MongoDB, crea una nuova collezione 'presentations'+username, crea le cartelle per i file utente
+				\item \textbf{descrizione:} inserisce nuovo utente in MongoDB, crea una nuova collezione 'presentations'+username, crea le cartelle per i File\ped{g} utente
 				\end{itemize}
 			\end{itemize}
 			
@@ -93,7 +93,7 @@
 			\begin{itemize}
 			\item  \textbf{GET} /publicpages/[file] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} se presente [file] nella cartella /public\_html del server ritorna il file stesso 
+				\item \textbf{descrizione:} se presente [file] nella cartella /public\_html del Server\ped{g} ritorna il File\ped{g} stesso 
 				\end{itemize}
 			\end{itemize}
 			
@@ -103,7 +103,7 @@
 			\begin{itemize}
 			\item  \textbf{GET} /private/htdocs/[file] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} se presente [file] nella cartella /private\_html del server ritorna il file stesso
+				\item \textbf{descrizione:} se presente [file] nella cartella /private\_html del Server\ped{g} ritorna il File\ped{g} stesso
 				\end{itemize}
 			\end{itemize}
 			
@@ -111,7 +111,7 @@
 			\begin{itemize}
 			\item  \textbf{GET} /private/api/presentations 
 				\begin{itemize} 
-				\item \textbf{descrizione:} cerca in MongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi sono i campi meta delle presentazioni dell'utente
+				\item \textbf{descrizione:} cerca in MongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi\ped{g} sono i campi meta delle presentazioni dell'utente
 				\end{itemize}
 			\end{itemize}
 			
@@ -136,12 +136,12 @@
 			\begin{itemize}
 			\item  \textbf{GET} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'URL
+				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g}
 				\end{itemize}
 				
 			\item  \textbf{DELETE} /private/api/presentations/[presentationName]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'URL
+				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g}
 				\end{itemize}
 			\end{itemize}
 
@@ -149,7 +149,7 @@
 			\begin{itemize}
 			\item  \textbf{POST} /private/api/presentations/[presentationName]/rename/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'URL con il nome [newname]
+				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g} con il nome [newname]
 				\end{itemize}
 			\end{itemize}
 			
@@ -162,7 +162,7 @@
 				
 			\item  \textbf{PUT} /private/api/presentations/[presentationName]/element
 				\begin{itemize} 
-				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'elemento passato nel body della richiesta
+				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'Elemento\ped{g} passato nel body della richiesta
 				\end{itemize}
 			\end{itemize}
 				
@@ -170,7 +170,7 @@
 			\begin{itemize}
 			\item   \textbf{DELETE} /private/api/presentations/[presentationName]/delete/[type/[id\_element]]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina dalla presentazione con il titolo [presentationName] l'elemento con identificativo [idElement]						
+				\item \textbf{descrizione:} elimina dalla presentazione con il titolo [presentationName] l'Elemento\ped{g} con identificativo [idElement]						
 				\end{itemize}
 			\end{itemize}
 			
@@ -182,21 +182,21 @@
 			\begin{itemize}
 			\item    \textbf{GET} /files/[user]/image/[imagename]
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [imagename] nella cartella /users/[username]/image				\end{itemize}
+				\item \textbf{descrizione:} ritorna il File\ped{g} [imagename] nella cartella /users/[username]/image				\end{itemize}
 			\end{itemize}
 			
 		\item \textbf{GetAudio:}
 			\begin{itemize}
 			\item    \textbf{GET} /files/[user]/audio/[audioname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [audioname] nella cartella /users/[username]/audios				\end{itemize}		
+				\item \textbf{descrizione:} ritorna il File\ped{g} [audioname] nella cartella /users/[username]/audios				\end{itemize}		
 			\end{itemize}
 			
 		\item \textbf{GetVideo:}
 			\begin{itemize}
 			\item    \textbf{GET} /files/[user]/video/[videoname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna il file [videoname] nella cartella /users/[username]/videos					
+				\item \textbf{descrizione:} ritorna il File\ped{g} [videoname] nella cartella /users/[username]/videos					
 				\end{itemize}
 			\end{itemize}
 	
@@ -206,7 +206,7 @@
 			\begin{itemize}
 			\item   \textbf{GET} /private/api/files/image 
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con i nomi dei file immagine dell'utente
+				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} immagine dell'utente
 				\end{itemize}
 			\end{itemize}
 			
@@ -214,11 +214,11 @@
 			\begin{itemize}
 			\item    \textbf{POST} /private/api/files/image/[imagename]
 				\begin{itemize} 
-				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/images					
+				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/images					
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/image/[imagename]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file immagine [imagename] dalla cartella /users/[username]/images			
+				\item \textbf{descrizione:} elimina il File\ped{g} immagine [imagename] dalla cartella /users/[username]/images			
 				\end{itemize}
 			\end{itemize}
 			
@@ -226,7 +226,7 @@
 			\begin{itemize}
 			\item   \textbf{POST} /private/api/files/image/[imagename]/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file immagine [imagename] con [newname] nella cartella /users/[username]/images
+				\item \textbf{descrizione:} rinomina il File\ped{g} immagine [imagename] con [newname] nella cartella /users/[username]/images
 				\end{itemize}
 			\end{itemize}
 			
@@ -234,7 +234,7 @@
 			\begin{itemize}
 			\item   \textbf{GET} /private/api/files/audio
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con i nomi dei file audio dell'utente
+				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} audio dell'utente
 				\end{itemize}
 			\end{itemize}
 			
@@ -242,12 +242,12 @@
 			\begin{itemize}
 			\item    \textbf{POST} /private/api/files/audio/[audioname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/audios					
+				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/audios					
 
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/audio/[audioname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file audio [audioname] dalla cartella /users/[username]/audios			
+				\item \textbf{descrizione:} elimina il File\ped{g} audio [audioname] dalla cartella /users/[username]/audios			
 
 				\end{itemize}
 			\end{itemize}
@@ -256,7 +256,7 @@
 			\begin{itemize}
 			\item   \textbf{POST} /private/api/files/audio/[audioname]/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file audio [audioname] con [newname] nella cartella /users/[username]/audios
+				\item \textbf{descrizione:} rinomina il File\ped{g} audio [audioname] con [newname] nella cartella /users/[username]/audios
 
 				\end{itemize}
 			\end{itemize}
@@ -265,7 +265,7 @@
 			\begin{itemize}
 			\item   \textbf{GET} /private/api/files/video
 				\begin{itemize} 
-				\item \textbf{descrizione:} ritorna un array con i nomi dei file video dell'utente
+				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} video dell'utente
 	
 				\end{itemize}
 			\end{itemize}
@@ -275,12 +275,12 @@
 			
 			\item    \textbf{POST} /private/api/files/video/[videoname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} caricare da locale un nuovo file immagine nella cartella /users/[username]/videos					
+				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/videos					
 
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/video/[videoname]
 				\begin{itemize} 
-				\item \textbf{descrizione:} elimina il file video [videoname] dalla cartella /users/[username]/videos			
+				\item \textbf{descrizione:} elimina il File\ped{g} video [videoname] dalla cartella /users/[username]/videos			
 
 				\end{itemize}
 			\end{itemize}
@@ -289,7 +289,7 @@
 			\begin{itemize}
 			\item   \textbf{POST} /private/api/files/video/[videoname]/[newname] 
 				\begin{itemize} 
-				\item \textbf{descrizione:} rinomina il file video [videoname] con [newname] nella cartella /users/[username]/videos
+				\item \textbf{descrizione:} rinomina il File\ped{g} video [videoname] con [newname] nella cartella /users/[username]/videos
 
 				\end{itemize}
 			\end{itemize}

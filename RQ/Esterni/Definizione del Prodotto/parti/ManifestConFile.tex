@@ -33,34 +33,34 @@
 				\textbf{\metodi}:
 				\begin{itemize}
 					\item UploadMedia(username :String, path :String, type :String)) \\
-						Questo metodo prende in input il percorso di un file locale e lo inserisce nella cartella dell'utente.
+						Questo metodo prende in input il Percorso\ped{g} di un File\ped{g} locale e lo inserisce nella cartella dell'utente.
 						\begin{\itemize}
 							\item username :String \\Rappresenta il nome dell'utente
-							\item path :String \\Rappresenta la cartella in cui andare a salvare il file
-							\item type :String \\Rappresenta il tipo del file
+							\item path :String \\Rappresenta la cartella in cui andare a salvare il File\ped{g}
+							\item type :String \\Rappresenta il tipo del File\ped{g}
 						\end{\itemize}
 					\item DeleteMedia(username :String, id :String, type :String) \\
-						Questo metodo prende in input l'id di un file caricato dall'utente e lo rimuove dal server.
+						Questo metodo prende in input l'id di un File\ped{g} caricato dall'utente e lo rimuove dal Server\ped{g}.
 						\begin{\itemize}
 							\item username :String \\Rappresenta il nome dell'utente;
-							\item id :String \\Rappresenta il nome univoco del file da eliminare;
-							\item type :String \\Rappresenta il tipo del file da eliminare.
+							\item id :String \\Rappresenta il nome univoco del File\ped{g} da eliminare;
+							\item type :String \\Rappresenta il tipo del File\ped{g} da eliminare.
 						\end{\itemize}
 					\item RenameMedia(username :String, newname :String, id :String, type :String) \\
-						Questo metodo rinomina un file caricato dall'utente nel server.
+						Questo metodo rinomina un File\ped{g} caricato dall'utente nel Server\ped{g}.
 						\begin{\itemize}
 							\item username :String \\Rappresenta il nome dell'utente;
-							\item newname :String \\Rappresenta il nuovo nome del file da rinominare;
-							\item id :String \\Rappresenta il nome univoco del file da rinominare;
-							\item type :String \\Rappresenta il tipo del file da eliminare.
+							\item newname :String \\Rappresenta il nuovo nome del File\ped{g} da rinominare;
+							\item id :String \\Rappresenta il nome univoco del File\ped{g} da rinominare;
+							\item type :String \\Rappresenta il tipo del File\ped{g} da eliminare.
 						\end{\itemize}
 				\end{itemize}
 			}
 			
 
 \subsubsection{Model::ApacheRelations::ResourceGetter}{
-	\textbf{\descrizione}: Classe che rende disponibili le presentazioni in locale tramite chiamate a funzioni o servizi del server Apache.
-	\textbf{\utilizzo}: Questa classe viene chiamata dal Presenter passando un JSON contenente una lista di presentazioni da rendere disponibili in locale. Si occupa di prendere i file JSON delle presentazioni corrispondenti, fare il parsing alla ricerca delle risorse e riportare i percorsi di queste all'interno di un file Manifest, generare i file HTML delle presentazioni selezionate ed un file Index con i collegamenti alle presentazioni selezionate.
+	\textbf{\descrizione}: Classe che rende disponibili le presentazioni in locale tramite chiamate a funzioni\ped{g} o servizi del Server\ped{g} Apache.
+	\textbf{\utilizzo}: Questa classe viene chiamata dal Presenter passando un JSON contenente una lista di presentazioni da rendere disponibili in locale. Si occupa di prendere i File\ped{g} JSON delle presentazioni corrispondenti, fare il parsing alla ricerca delle Risorse\ped{g} e riportare i percorsi\ped{g} di queste all'interno di un File\ped{g} Manifest, generare i File\ped{g} HTML delle presentazioni selezionate ed un File\ped{g} Index con i collegamenti alle presentazioni selezionate.
 	\textbf{\relazioni}: utilizza le classi:
 	\begin{itemize}
 	\item

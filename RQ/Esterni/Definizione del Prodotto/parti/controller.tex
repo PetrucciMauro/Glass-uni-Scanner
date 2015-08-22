@@ -20,7 +20,7 @@
 			\item ngStorage:Object\\
 				\indent Modulo Angular che inietta i servizi necessari per l'utilizzo dello storage locale.
 			\item \textdollar routeProvider:Object\\
-				\indent Questo campo dati rappresenta il servizio che collega tra loro controller, view e l'URL corrente nel browser;
+				\indent Questo campo dati rappresenta il servizio che collega tra loro controller, view e l'URL\ped{g} corrente nel Browser\ped{g};
 			\item \textdollar mdIconProvider e \textdollar mdThemingProvider\\
 				\indent Moduli di Angular Material
 			\item \textdollar httpProvider\\
@@ -34,13 +34,13 @@
 
 	\subsection {Controller::\-Services}{
 		\label{sec:services}
-		\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del codice che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
-		\textbf{\relaz}: comunica con il controller per la gestione delle funzioni da eseguire e con il model per la gestione delle componenti necessarie.
+		\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del Codice\ped{g} che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
+		\textbf{\relaz}: comunica con il controller per la gestione delle funzioni\ped{g} da eseguire e con il model per la gestione delle componenti necessarie.
 
 		\subsubsection{Services::\-Main}{
 			\label{sub:servicesMain}
 			\textbf{Funzione}\\
-			\indent Questa classe si occuperà di eseguire le funzioni base dell'applicazione, in particolare autenticazione e registrazione al server degli utenti.\\
+			\indent Questa classe si occuperà di eseguire le funzioni\ped{g} base dell'applicazione, in particolare autenticazione e registrazione al Server\ped{g} degli utenti.\\
 			\textbf{Relazioni d'uso con altri moduli}\\
 			\indent Questa classe utilizzerà le seguenti classi:
 			\begin{itemize}
@@ -48,7 +48,7 @@
 				\item Model::serverRelation::accessControl::Authentication;
 				\item Model::serverRelation::accessControl::Registration;
 				\item localStorage:Object\\
-					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al  garantire delle funzioni dell'applicazione.
+					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al  garantire delle funzioni\ped{g} dell'applicazione.
 			\end{itemize}
 			\textbf{Attributi}
 			\begin{itemize}
@@ -65,25 +65,25 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che controlla se è stato effettuato un refresh della pagina, in tal caso ripristina login.
+					\item \textbf{Descrizione}: metodo che controlla se è stato effettuato un refresh della pagina, in tal caso ripristina Login\ped{g}.
 				\end{itemize}
 				\item \textbf{register}(formData, success, error)
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua la registrazione al server di un nuovo utente richiamando il metodo register() di Registration. Se l'operazione ha successo, viene autenticato l'utente ed invocato success altrimenti error.
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua la registrazione al Server\ped{g} di un nuovo utente richiamando il metodo register() di Registration. Se l'operazione ha successo, viene autenticato l'utente ed invocato success altrimenti error.
 				\end{itemize}
 				\item \textbf{login}(formData, success, error)
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua l'autenticazione al server di un utente richiamando il metodo authenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
+					\item \textbf{Descrizione}: metodo che, attraverso l'oggetto formData contenente le credenziali di accesso, effettua l'autenticazione al Server\ped{g} di un utente richiamando il metodo authenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
 				\end{itemize}
 				\item \textbf{logout}(success, error)
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che effettua il logout dal server richiamando il metodo deauthenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
+					\item \textbf{Descrizione}: metodo che effettua il Logout\ped{g} dal Server\ped{g} richiamando il metodo deauthenticate() di Authentication. Se l'operazione ha successo viene invocato success altrimenti error.
 				\end{itemize}
 				\item \textbf{changepassword}(formData, success, error)
 				\begin{itemize}
@@ -101,14 +101,14 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Object;
-					\item \textbf{Descrizione}: metodo che ritorna l'utente attualmente autenticato con il server.
+					\item \textbf{Descrizione}: metodo che ritorna l'utente attualmente autenticato con il Server\ped{g}.
 				\end{itemize}
 			\end{itemize} 
 		}
 		\subsubsection{Services::\-Upload}{
 			\label{sub:servicesUpload}
 			\textbf{Funzione}\\
-			\indent Questa classe si occuperà di eseguire l'upload di file media nel database.\\
+			\indent Questa classe si occuperà di eseguire l'upload di File\ped{g} media nel database.\\
 			\textbf{Relazioni d'uso con altri moduli}\\
 			\indent Questa classe utilizzerà le seguenti classi:
 			\begin{itemize}
@@ -138,35 +138,35 @@
 			\end{itemize}
 			\textbf{Metodi}
 			\begin{itemize}
-				\item \textbf{uploadmedia}(files, callback)
+				\item \textbf{uploadmedia}(files\ped{g}, callback)
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Void;
-					\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome\_file]} effettuando l'upload dei file contenuti nell'array files passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
+					\item \textbf{Descrizione}: metodo che invia una richiesta XMLHttpRequest a \textit{[hostname]\-/private/api/files/\-[image|audio|video]/\-[nome\_file]} effettuando l'upload dei File\ped{g} contenuti nell'array files\ped{g} passato come parametro. Se l'operazione ha successo viene richiamato callback, altrimenti viene lanciato un errore.
 				\end{itemize}
-				\item \textbf{isImage}(files)
+				\item \textbf{isImage}(files\ped{g})
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Bool;
-					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array image, altrimenti ritorna false.
+					\item \textbf{Descrizione}: metodo che ritorna true se i File\ped{g} contenuti nell'array files\ped{g}, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array image, altrimenti ritorna false.
 				\end{itemize}
-				\item \textbf{isAudio}(files)
+				\item \textbf{isAudio}(files\ped{g})
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Bool;
-					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array audio, altrimenti ritorna false.
+					\item \textbf{Descrizione}: metodo che ritorna true se i File\ped{g} contenuti nell'array files\ped{g}, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array audio, altrimenti ritorna false.
 				\end{itemize}
-				\item \textbf{isVideo}(files)
+				\item \textbf{isVideo}(files\ped{g})
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Bool;
-					\item \textbf{Descrizione}: metodo che ritorna true se i file contenuti nell'array files, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
+					\item \textbf{Descrizione}: metodo che ritorna true se i File\ped{g} contenuti nell'array files\ped{g}, passato come parametro, rispettano almeno uno tra i formati contenuti nell'array video, altrimenti ritorna false.
 				\end{itemize}
-				\item \textbf{getFileUrl}(file)
+				\item \textbf{getFileUrl}(File\ped{g})
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: String;
-					\item \textbf{Descrizione}: metodo che ritorna il percorso di salvataggio del parametro file rispetto all'utente corrente.
+					\item \textbf{Descrizione}: metodo che ritorna il Percorso\ped{g} di salvataggio del parametro File\ped{g} rispetto all'utente corrente.
 				\end{itemize}
 			\end{itemize} 
 		}
@@ -225,7 +225,7 @@
 				\item Controller::Services::\-Main;
 				\item Model::serverRelation::mongoRelation;
 				\item localStorage:Object\\
-					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al  garantire delle funzioni dell'applicazione.
+					\indent Servizio angular che permette il salvataggio in locale di oggetti necessari al  garantire delle funzioni\ped{g} dell'applicazione.
 			\end{itemize}
 			\textbf{Attributi}\\
 			\begin{itemize}
@@ -257,9 +257,9 @@
 				\item Controller::Services::\-Main;
 				\item Controller::Services::\-SharedData;
 				\item \$http:Object\\
-					\indent Servizio Angular che permette la comunicazione in remoto con un server.
+					\indent Servizio Angular che permette la comunicazione in remoto con un Server\ped{g}.
 				\item \$location:Object\\
-					\indent Servizio Angular che gestisce gli indirizzi URL.
+					\indent Servizio Angular che gestisce gli indirizzi\ped{g} URL\ped{g}.
 			\end{itemize}
 			\textbf{Metodi}
 			\begin{itemize}
@@ -267,13 +267,13 @@
 				\begin{itemize}
 					\item \textbf{Accesso}: Private;
 					\item \textbf{Tipo di ritorno}: Object;
-					\item \textbf{Descrizione}: metodo che ritorna una richiesta http all'indirizzo definito dal parametro dest. Se l'operazione ha successo viene invocato success altrimenti error.
+					\item \textbf{Descrizione}: metodo che ritorna una richiesta http all'Indirizzo\ped{g} definito dal parametro dest. Se l'operazione ha successo viene invocato success altrimenti error.
 				\end{itemize}
 				\item \textbf{loginpage}()
 				\begin{itemize}
 					\item \textbf{Accesso}: Public;
 					\item \textbf{Tipo di ritorno}: Object;
-					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Login. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/publicpages/login}, il quale, se ha successo, reindirizza alla pagina richiesta.
+					\item \textbf{Descrizione}: metodo che permette di accedere alla pagina di Login\ped{g}. Esso richiama il metodo sendRequest(), per effettuare una richiesta a \textit{/publicpages/login}, il quale, se ha successo, reindirizza alla pagina richiesta.
 				\end{itemize}
 				\item \textbf{registrazionepage}()
 				\begin{itemize}
@@ -332,7 +332,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che richiama loginpage() di toPages per effettuare il reindirizzamento alla pagina di login.
+				\item \textbf{Descrizione}: metodo che richiama loginpage() di toPages per effettuare il reindirizzamento alla pagina di Login\ped{g}.
 			\end{itemize}
 			\item \textbf{goRegistrazione}()
 			\begin{itemize}
@@ -368,7 +368,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che richiama il metodo logout() di Main per effettuare il logout dal server. Se l'operazione va a buon fine, viene effettuato il reindirizzamento alla pagina di login richiamando il metodo loginpage() di toPages.
+				\item \textbf{Descrizione}: metodo che richiama il metodo logout() di Main per effettuare il Logout\ped{g} dal Server\ped{g}. Se l'operazione va a buon fine, viene effettuato il reindirizzamento alla pagina di Login\ped{g} richiamando il metodo loginpage() di toPages.
 			\end{itemize}
 			\item \textbf{error}()
 			\begin{itemize}
@@ -385,7 +385,7 @@
 		\textbf{Relazioni d'uso con altri moduli}\\
 			\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
-			\item View::\-Pages::\-Login;
+			\item View::\-Pages::\-Login\ped{g};
 			\item View::\-Pages::\-Registrazione;
 			\item Controller::Services::\-Utils;
 			\item Controller::Services::\-Main;
@@ -420,13 +420,13 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama login(data) di Main per effettuare il login al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
+				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama login(data) di Main per effettuare il Login\ped{g} al Server\ped{g}. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
 			\end{itemize}
 	        \item \textbf{registration}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama register(data) di Main per effettuare la registrazione al server. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
+				\item \textbf{Descrizione}: metodo che controlla se user è definito e, in caso affermativo, richiama register(data) di Main per effettuare la registrazione al Server\ped{g}. Se l'operazione ha successo viene effettuato il reindirizzamento alla pagina home richiamando il metodo homepage() di toPages.
 			\end{itemize}
 		\end{itemize}
 	}
@@ -559,13 +559,13 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: evento che permette l'interazione di Angular.js e Impress.js. Dato che il framework Impress.js cambia l'url della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
+				\item \textbf{Descrizione}: evento che permette l'interazione di Angular.js e Impress.js. Dato che il Framework\ped{g} Impress.js cambia l'URL\ped{g} della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
 			\end{itemize}
 			\item \textbf{translateImpress}(json)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che richiama una funzione JavaScript per la traduzione dell'oggetto json, ricavato tramite getPresentazione() di SharedData, in html eseguibile dal framework Impress.js.
+				\item \textbf{Descrizione}: metodo che richiama una Funzione\ped{g} JavaScript\ped{g} per la traduzione dell'oggetto json, ricavato tramite getPresentazione() di SharedData, in html eseguibile dal Framework\ped{g} Impress.js.
 			\end{itemize}
 			\item \textbf{goHome}()
 			\begin{itemize}
@@ -628,7 +628,7 @@
 			\item \$interval:Object\\
 				\indent servizio Angular che permette di eseguire determinate operazioni ad ogni intervallo di tempo T;
 			\item \$q::\-Object\\
-				\indent Servizio Angular che permette di eseguire funzioni in modo asincrono;
+				\indent Servizio Angular che permette di eseguire funzioni\ped{g} in modo asincrono;
 			\item \$mdSideNav::\-Object\\
 				\indent Servizio Angular Material per il controllo della barra laterale;
 			\item \$mdBottomSheet::\-Object\\
@@ -673,13 +673,13 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che fa apparire \$mdBottomSheet per la visualizzazione dei percorsi.
+				\item \textbf{Descrizione}: metodo che fa apparire \$mdBottomSheet per la visualizzazione dei percorsi\ped{g}.
 			\end{itemize}
 			\item \textbf{show}(id)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'elemento html cliccato.
+				\item \textbf{Descrizione}: metodo che gestisce la comparsa/scomparsa dei bottoni di gestione della presentazione (inserimento, rimozione, etc.) in base all'id dell'Elemento\ped{g} html cliccato.
 			\end{itemize}
 			\item \textbf{salvaPresentazione}()
 			\begin{itemize}
@@ -691,41 +691,41 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che inserisce un frame nel piano della presentazione, attraverso la funzione javascript inserisciFrame(spec) di Edit inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, ConcreteFrameInsertCommand() del Command passandogli le specifiche del frame inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del frame inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che inserisce un Frame\ped{g} nel piano della presentazione\ped{g}, attraverso la Funzione\ped{g} JavaScript\ped{g} inserisciFrame(spec) di Edit inserisciFrame(spec), e che richiama, utilizzando il metodo execute di inv, ConcreteFrameInsertCommand() del Command passandogli le specifiche del Frame\ped{g} inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del Frame\ped{g} inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{inserisciTesto}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che inserisce un elemento testo nel piano della presentazione, attraverso la funzione javascript inserisciTesto(spec) di Edit, e che richiama, utilizzando il metodo execute di inv, ConcreteTextInsertCommand() di Command passandogli le specifiche dell'elemento testo inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che inserisce un Elemento\ped{g} testo nel piano della presentazione\ped{g}, attraverso la Funzione\ped{g} JavaScript\ped{g} inserisciTesto(spec) di Edit, e che richiama, utilizzando il metodo execute di inv, ConcreteTextInsertCommand() di Command passandogli le specifiche dell'Elemento\ped{g} testo inserito. Infine, richiama addInsert() di Loader passandogli l'identificativo del testo inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{inserisciImmagini}(files, spec)
+			\item \textbf{inserisciImmagini}(files\ped{g}, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isImage(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file immagine nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione, attraverso la funzione javascipt inserisciImmagine(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteImageInsertCommand() di Command passandogli le specifiche degli elementi immagine inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isImage(frames) di Upload per controllare che le estensioni\ped{g} siano corrette, successivamente uploadmedia(files\ped{g}, callback) di Upload per il caricamento dei File\ped{g} immagine nel Server\ped{g}. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni immagine nel piano della presentazione\ped{g}, attraverso la Funzione\ped{g} javascipt inserisciImmagine(percorso\_File\ped{g}, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteImageInsertCommand() di Command passandogli le specifiche degli elementi\ped{g} immagine inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'immagine inserita. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{inserisciAudio}(files, spec)
+			\item \textbf{inserisciAudio}(files\ped{g}, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isAudio(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file audio nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione, attraverso la funzione javascript inserisciAudio(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteAudioInsertCommand() di Command passandogli le specifiche degli elementi audio inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isAudio(frames) di Upload per controllare che le estensioni\ped{g} siano corrette, successivamente uploadmedia(files\ped{g}, callback) di Upload per il caricamento dei File\ped{g} audio nel Server\ped{g}. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni audio nel piano della presentazione\ped{g}, attraverso la Funzione\ped{g} JavaScript\ped{g} inserisciAudio(percorso\_File\ped{g}, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteAudioInsertCommand() di Command passandogli le specifiche degli elementi\ped{g} audio inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo dell'audio inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{inserisciVideo}(files, spec)
+			\item \textbf{inserisciVideo}(files\ped{g}, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che prima richiama isVideo(frames) di Upload per controllare che le estensioni siano corrette, successivamente uploadmedia(files, callback) di Upload per il caricamento dei file video nel server. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione, attraverso la funzione javascript inserisciVideo(percorso\_file, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteVideoInsertCommand() di Command passandogli le specifiche degli elementi video inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che prima richiama isVideo(frames) di Upload per controllare che le estensioni\ped{g} siano corrette, successivamente uploadmedia(files\ped{g}, callback) di Upload per il caricamento dei File\ped{g} video nel Server\ped{g}. Se l'operazione ha successo, viene invocato callback() il quale inserisce ogni video nel piano della presentazione\ped{g}, attraverso la Funzione\ped{g} JavaScript\ped{g} inserisciVideo(percorso\_File\ped{g}, spec) di Edit, e richiama, utilizzando il metodo execute di inv, ConcreteVideoInsertCommand() di Command passandogli le specifiche degli elementi\ped{g} video inseriti. Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
-			\item \textbf{dragMedia}(files, spec)
+			\item \textbf{dragMedia}(files\ped{g}, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo apposito per la gestione del drag and drop di file media all'interno della presentazione. Gestisce l'inserimento di immagini, audio e video richiamando una tra le seguenti funzioni javascript di Edit:
+				\item \textbf{Descrizione}: metodo apposito per la gestione del drag and drop di File\ped{g} media all'interno della presentazione. Gestisce l'inserimento di immagini, audio e video richiamando una tra le seguenti funzioni\ped{g} JavaScript\ped{g} di Edit:
 				\begin{itemize}
-					\item inserisciImmagine(percorso\_file, spec);
-					\item inserisciAudio(percorso\_file, spec);
-					\item inserisciVideo(percorso\_file, spec).
+					\item inserisciImmagine(percorso\_File\ped{g}, spec);
+					\item inserisciAudio(percorso\_File\ped{g}, spec);
+					\item inserisciVideo(percorso\_File\ped{g}, spec).
 				\end{itemize}
 				 e successivamente uno tra i seguenti metodi di Command, dandolo in pasto al metodo execute() di inv:
 				\begin{itemize}
@@ -735,17 +735,17 @@
 				\end{itemize}
 				Infine, richiama addInsert() di Loader passandogli l'identificativo del video inserito.
 			\end{itemize}
-			\item \textbf{getMediaSpec}(ele, tipo, url)
+			\item \textbf{getMediaSpec}(ele, tipo, URL\ped{g})
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: metodo che ritorna le specifiche dell'elemento ele inserito nel piano della presentazione, da passare al Command. Tale metodo viene richiamato dai metodi adibiti all'inserimento di immagini, audio o video.
+				\item \textbf{Descrizione}: metodo che ritorna le specifiche dell'Elemento\ped{g} ele inserito nel piano della presentazione\ped{g}, da passare al Command. Tale metodo viene richiamato dai metodi adibiti all'inserimento di immagini, audio o video.
 			\end{itemize}
 			\item \textbf{rimuoviElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che rimuove l'elemento corrente dal piano della presentazione richiamando la funzione javascript elimina(id\_elemento) di Edit e successivamente, in base al tipo dell'elemento, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
+				\item \textbf{Descrizione}: metodo che rimuove l'Elemento\ped{g} corrente dal piano della presentazione\ped{g} richiamando la Funzione\ped{g} JavaScript\ped{g} elimina(id\_Elemento\ped{g}) di Edit e successivamente, in base al tipo dell'Elemento\ped{g}, utilizzando il metodo execute di inv, richiama uno tra i seguenti:
 				\begin{itemize}
 					\item ConcreteTextRemoveCommand;
 					\item ConcreteFrameRemoveCommand;
@@ -753,7 +753,7 @@
 					\item ConcreteAudioRemoveCommand;
 					\item ConcreteVideoRemoveCommand.
 				\end{itemize}
-				 Infine, richiama addDelete() di Loader passandogli l'identificativo dell'elemento eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				 Infine, richiama addDelete() di Loader passandogli l'identificativo dell'Elemento\ped{g} eliminato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{updateSfondo}(spec:object)
 			\begin{itemize}
@@ -765,139 +765,139 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+				\item \textbf{Descrizione}: metodo che assegna al background della presentazione il valore color, passato come parametro. Successivamente richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} background modificato.
 			\end{itemize}
-			\item \textbf{cambiaImmagineSfondo}(files)
+			\item \textbf{cambiaImmagineSfondo}(files\ped{g})
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+				\item \textbf{Descrizione}: metodo che assegna al background della presentazione un nuovo sfondo in base al parametro files\ped{g}. Successivamente richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} background modificato.
 			\end{itemize}
 			\item \textbf{rimuoviSfondo}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteBackgroundInsertCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} background modificato.
 			\end{itemize}
 			\item \textbf{updateSfondoFrame}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background del frame spec.id nella view.
+				\item \textbf{Descrizione}: metodo che viene richiamato solo in seguito ad una operazione di undo/redo e che per questo, si occupa solamente di aggiornare il background del Frame\ped{g} spec.id nella view.
 			\end{itemize}
 			\item \textbf{cambiaColoreSfondoFrame}(color)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background del frame. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+				\item \textbf{Descrizione}: metodo che assegna al background del Frame\ped{g} selezionato il valore color, passato come parametro. Successivamente richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background del Frame\ped{g}. Infine, richiama addUpdate() di Loader passandogli l'identificativo del Frame\ped{g} modificato.
 			\end{itemize}
-			\item \textbf{cambiaImmagineSfondoFrame}(files)
+			\item \textbf{cambiaImmagineSfondoFrame}(files\ped{g})
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che assegna al background del frame selezionato un nuovo sfondo in base al parametro files. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+				\item \textbf{Descrizione}: metodo che assegna al background del Frame\ped{g} selezionato un nuovo sfondo in base al parametro files\ped{g}. Successivamente richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del Frame\ped{g} modificato.
 			\end{itemize}
 			\item \textbf{rimuoviSfondoFrame}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del frame selezionato e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del frame modificato.
+				\item \textbf{Descrizione}: metodo che rimuove colore e sfondo dal background del Frame\ped{g} selezionato e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteEditBackgroundCommand() di Command passandogli le specifiche del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo del Frame\ped{g} modificato.
 			\end{itemize}
 			\item \textbf{cambiaColoreTesto}(color)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che cambia il colore dei caratteri dell'elemento testo selezionato, in base al parametro color, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditColorCommand() di Command passandogli le specifiche del colore. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+				\item \textbf{Descrizione}: metodo che cambia il colore dei caratteri dell'Elemento\ped{g} testo selezionato, in base al parametro color, e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteEditColorCommand() di Command passandogli le specifiche del colore. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} testo modificato.
 			\end{itemize}
 			\item \textbf{cambiaSizeTesto}(value)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'elemento testo selezionato, in base al parametro value, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'Elemento\ped{g} testo selezionato, in base al parametro value, e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} testo modificato.
 			\end{itemize}
-			\item \textbf{cambiaFontTesto}(font)
+			\item \textbf{cambiaFontTesto}(Font\ped{g})
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'elemento testo selezionato, in base al parametro font, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato.
+				\item \textbf{Descrizione}: metodo che cambia la dimensione dei caratteri dell'Elemento\ped{g} testo selezionato, in base al parametro Font\ped{g}, e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteEditFontCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} testo modificato.
 			\end{itemize}
 			\item \textbf{aggiornaTesto}(textId, textContent, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che cambia il contenuto dell'elemento testo textId, in base al parametro textContent, e che successivamente, utilizzando la funzione execute di inv, richiama ConcreteEditContentCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento testo modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che cambia il contenuto dell'Elemento\ped{g} testo textId, in base al parametro textContent, e che successivamente, utilizzando la Funzione\ped{g} execute di inv, richiama ConcreteEditContentCommand() di Command passandogli le specifiche del testo modificato. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} testo modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{mediaControl}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un file media.
+				\item \textbf{Descrizione}: metodo che attiva le funzionalità per la riproduzione di un File\ped{g} media.
 			\end{itemize}
 			\item \textbf{ruotaElemento}(value, spec)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che ruota l'elemento selezionato in base al parametro value richiamando la funzione javascript rotate(id\_elemento, value) di Edit. Successivamente richiama, utilizzando la funzione execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che ruota l'Elemento\ped{g} selezionato in base al parametro value richiamando la Funzione\ped{g} JavaScript\ped{g} rotate(id\_Elemento\ped{g}, value) di Edit. Successivamente richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteEditRotationCommand() di Command passandogli le specifiche della nuova rotazione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{muoviElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditPositionCommand() di Command passandogli le specifiche della nuova posizione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che, in base al nuovo posizionamento dell'Elemento\ped{g} selezionato all'interno del piano della presentazione\ped{g}, richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteEditPositionCommand() di Command passandogli le specifiche della nuova posizione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{ridimensionaElemento}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'elemento selezionato all'interno del piano della presentazione, richiama, utilizzando la funzione execute di inv, ConcreteEditSizeCommand(spec) di Command passandogli le specifiche della nuova dimensione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che, in base alla nuova dimensione dell'Elemento\ped{g} selezionato all'interno del piano della presentazione\ped{g}, richiama, utilizzando la Funzione\ped{g} execute di inv, ConcreteEditSizeCommand(spec) di Command passandogli le specifiche della nuova dimensione. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} modificato. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{aggiungiMainPath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiunge il frame selezionato al percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, AddToMainPathCommand() di Command passandogli le specifiche del frame da aggiungere al percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che aggiunge il Frame\ped{g} selezionato al Percorso\ped{g} principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la Funzione\ped{g} execute di inv, AddToMainPathCommand() di Command passandogli le specifiche del Frame\ped{g} da aggiungere al Percorso\ped{g} principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{rimuoviMainPath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che rimuove il frame selezionato dal percorso principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la funzione execute di inv, RemoveFromMainPathCommand() di Command passandogli le specifiche del frame da togliere dal percorso principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che rimuove il Frame\ped{g} selezionato dal Percorso\ped{g} principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la Funzione\ped{g} execute di inv, RemoveFromMainPathCommand() di Command passandogli le specifiche del Frame\ped{g} da togliere dal Percorso\ped{g} principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{portaAvanti}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript portaAvanti(id\_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'Elemento\ped{g} correntemente selezionato attraverso la Funzione\ped{g} JavaScript\ped{g} portaAvanti(id\_Elemento\ped{g}) di Edit, e che richiama, utilizzando la Funzione\ped{g} execute di inv, concretePortaAvantiCommand() di Command passandogli le specifiche con l'Elemento\ped{g} da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{portaDietro}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'elemento correntemente selezionato attraverso la funzione javascript mandaDietro(id\_elemento) di Edit, e che richiama, utilizzando la funzione execute di inv, concretePortaDietroCommand() di Command passandogli le specifiche con l'elemento da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
+				\item \textbf{Descrizione}: metodo che aggiorna il valore zIndex dell'Elemento\ped{g} correntemente selezionato attraverso la Funzione\ped{g} JavaScript\ped{g} mandaDietro(id\_Elemento\ped{g}) di Edit, e che richiama, utilizzando la Funzione\ped{g} execute di inv, concretePortaDietroCommand() di Command passandogli le specifiche con l'Elemento\ped{g} da aggiornare. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
 			\item \textbf{impostaPrimoSfondo}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che viene richiamato nel caso in cui la presentazione sia vuota, oppure se il valore background non è impostato. Esso richiama ConcreteBackgroundInsertCommand() di Command passandogli le dimensioni del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+				\item \textbf{Descrizione}: metodo che viene richiamato nel caso in cui la presentazione sia vuota, oppure se il valore background non è impostato. Esso richiama ConcreteBackgroundInsertCommand() di Command passandogli le dimensioni del background. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} background modificato.
 			\end{itemize}
 			\item \textbf{updateBookmark}(id)
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che aggiorna il campo bookmark del frame id. Esso richiama ConcreteEditBookmarkCommand() di Command passandogli le specifiche del frame. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'elemento background modificato.
+				\item \textbf{Descrizione}: metodo che aggiorna il campo Bookmark\ped{g} del Frame\ped{g} id. Esso richiama ConcreteEditBookmarkCommand() di Command passandogli le specifiche del Frame\ped{g}. Infine, richiama addUpdate() di Loader passandogli l'identificativo dell'Elemento\ped{g} background modificato.
 			\end{itemize}
 			\item \textbf{AddBookmark}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante bookmark nella view, in base al parametro spec.
+				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante Bookmark\ped{g} nella view, in base al parametro spec.
 			\end{itemize}
 			\item \textbf{RemoveBookmark}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante bookmark nella view, in base al parametro spec.
+				\item \textbf{Descrizione}: metodo che mantiene aggiornata l'icona del pulsante Bookmark\ped{g} nella view, in base al parametro spec.
 			\end{itemize}
 			\item \textbf{annullaModifica}()
 			\begin{itemize}

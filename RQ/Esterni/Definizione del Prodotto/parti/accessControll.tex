@@ -11,7 +11,7 @@
 				\begin{itemize}
 				\item \textbf{Accesso:} private
 				\item \textbf{Tipo:} string
-				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al server
+				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al Server\ped{g}
 				\end{itemize}
 			\end{itemize}
 	
@@ -48,14 +48,14 @@
 				\begin{itemize}
 				\item \textbf{Accesso:} private
 				\item \textbf{Tipo:} string
-				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al server
+				\item \textbf{Descrizione:} messaggio ritornato dall'ultima chiamata di autenticazione al Server\ped{g}
 				\end{itemize}
 				
 			\item \textbf{-token}
 				\begin{itemize}
 				\item \textbf{Accesso:} private
 				\item \textbf{Tipo:} string
-				\item \textbf{Descrizione:} stringa per l?autenticazione ai servizi Server nodeJs
+				\item \textbf{Descrizione:} stringa per l?autenticazione ai servizi Server\ped{g} nodeJs
 				\item \textbf{Note:} valore ?empty? se non \`{e} ancora stato richiesto il token, \`{e} stato cancellato, oppure l? autenticazione \`{e} fallita
 				\end{itemize}
 			\end{itemize}
@@ -65,7 +65,7 @@
 		\item \textbf{authenticate(user : string, password : string) : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} chiama il servizio account/authenticate, ritorna true se la chiamata \`{e} andata a buon fine, in questo caso mette nel campo token il token ritornato dal server nodeJs
+			\item \textbf{Descrizione:} chiama il servizio Account\ped{g}/authenticate, ritorna true se la chiamata \`{e} andata a buon fine, in questo caso mette nel campo token il token ritornato dal Server\ped{g} nodeJs
 
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
@@ -73,7 +73,7 @@
 		\item \textbf{deAuthenticate() : bool}
 			\begin{itemize}
 			\item \textbf{Accessibilit\`{a}:} public
-			\item \textbf{Descrizione:} de-autentica l?utente dai servizi server cancellando il contenuto del campo dati token, ritorna true se l?operazione va a buon fine
+			\item \textbf{Descrizione:} de-autentica l?utente dai servizi Server\ped{g} cancellando il contenuto del campo dati token, ritorna true se l?operazione va a buon fine
 			\item \textbf{Tipo di ritorno:} bool
 			\end{itemize}
 			
