@@ -33,11 +33,7 @@
 				\item ConcretePortaAvantiCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
 				\item ConcretePortaDietroCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
 				\item ConcreteAddToMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
-				\item ConcreteRemoveFromMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
-				\item ConcreteNewChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
-				\item ConcreteDeleteChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
-				\item ConcreteAddToChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
-				\item ConcreteRemoveFromChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker.
+				\item ConcreteRemoveFromMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker.
 			\end{itemize}
 			\item Controller::\-Services::\-Upload <- EditController richiama Upload quando è necessario caricare nel server un file media;
 			\item Controller::\-Services::\-SharedData -> EditController ricava la presentazione corrente da SharedData;
@@ -123,7 +119,7 @@
 
 		\subsubsubsection{Services::\-Main}{
 		\textbf{\tipo}: lo scopo di questa classe è di permettere le funzioni di base dell'applicazione, tra cui l'autenticazione al server.\\	
-		\textbf{\relaz}: comunica con Model::\-serverRelation::\-accessControl per l'autenticazione, la registrazione e il cambio della password.\\
+		\textbf{\relaz}:
 		\begin{itemize}
 			\item Model::\-serverRelation::\-accessControl::\-Authentication <- Main richiama Authentication per inviare una richiesta di autenticazione o di logout al server;
 			\item Model::\-serverRelation::\-accessControl::\-Registration <- Main richiama Registration per inviare una richiesta di registrazione di un nuovo utente al server;
@@ -134,7 +130,7 @@
 
 		\subsubsubsection{Services::\-SharedData}{
 		\textbf{\tipo}: lo scopo di questa classe è di mantenere in memoria la presentazione corrente.\\	
-		\textbf{\relaz}: comunica con Model::\-serverRelation::\-mongoRelation per ricavare la presentazione su cui si sta lavorando dal server.\\
+		\textbf{\relaz}:
 		\begin{itemize}
 			\item Model::\-serverRelation::\-mongoRelation <- SharedData richiama mongoRelation per ottenere la presentazione corrente.
 		\end{itemize}
@@ -143,7 +139,7 @@
 
 		\subsubsubsection{Services::\-Utils}{
 		\textbf{\tipo}: lo scopo di questa classe è definire delle funzioni utili a tutta l'applicazione.\\	
-		\textbf{\relaz}: data la sua natura, non comunica con nessun package.\\
+		\textbf{\relaz}: data la sua natura, non comunica con nessun package.
 		}
 
 	}

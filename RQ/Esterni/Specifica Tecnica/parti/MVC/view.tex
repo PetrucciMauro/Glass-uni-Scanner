@@ -39,12 +39,17 @@
 		\subsubsection{View::\-Pages::\-Execution}{
 			\textbf{\tipo}: la classe Execution definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra ad un utente l'esecuzione di una presentazione.\\
 			\textbf{\relaz}: questa classe è gestita dal framework esterno Impress.js; utilizza i metodi messi a disposizione della classe Controller::\-ExecutionController per creare la pagina che verrà eseguita da Impress.js.\\
-			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo percorso.
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di eseguire la presentazione spostandosi con la tastiera avanti e indietro, passare al capitolo successivo oppure selezionare un nuovo percorso.
 		}
 		\subsubsection{View::\-Pages::\-Edit}{
 			\textbf{\tipo}: la classe Edit definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra l'editor di modifica di una presentazione.\\
 			\textbf{\relaz}: la classe Edit utilizza i metodi messi a disposizione dalla classe Controller::\-EditController per caricare la presentazione da modificare, per l'inserimento di nuovi elementi, per il loro spostamento ed eliminazione, per le modifiche  effettuate agli elementi e per cambiare il percorso della presentazione.\\
-			\textbf{\attivita}: La classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi), cambiare il percorso e assegnare bookmark ai frame.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di modificare una presentazione (inserendo, spostando, modificando o eliminando elementi), cambiare il percorso e assegnare bookmark ai frame.\\
 			La classe dovrà predisporre delle apposite funzioni javascript per la gestione degli elementi nella view.
+		}
+
+		\subsubsection{View::\-Pages::\-Manifest}{
+			\textbf{\tipo}: la classe Manifest definisce la struttura, e la conseguente visualizzazione, della pagina web che mostra all'utente le presentazioni salvate in locale, permettendone l'esecuzione.\\
+			\textbf{\attivita}: la classe definisce la struttura della pagina web che consente agli utenti di visulizzare le presentazioni salvate in locale e permette la loro esecuzione.\\
 		}
 	}
