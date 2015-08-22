@@ -309,51 +309,163 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 			\hline
 			TIA2 & Si verifica che il Loader interagisca correttamente con NodeApi e AccessControll  & Loader & N.E.\\
 			\hline
-			TIA3 & Si verifica che DBSynch interagisca correttamente con le NodeApi, Loader e AccessControll & DbSynch & N.E.\\
+			TIA3 & Si verifica che Registration interagisca correttamente con le NodeApi, Loader e AccessControll & Registration & N.E.\\
 			\hline
-			TIB1 & Si verifica che ApacheServerManager utilizzi correttamente le PhpFunctions & ApacheServermanager, PhpFunctions & N.E.\\
+			TIA4 & Si verifica che Authentication interagisca correttamente con le NodeApi, Loader e AccessControll & Authentication & N.E.\\
 			\hline
-			TIC1 & Si  verifica che la classe Manifest dialoghi correttamente con le classi di ServerApaches e di MongoRelations & Manifest & N.E.\\
+			TIC2 & Si verifica che i componenti di SlideShowElements dialoghino correttamente con serverRelations &  & N.E.\\
 			\hline
-			TIC2 & Si verifica che i componenti di SlideShowElements dialoghino correttamente con MongoRelations &  & N.E.\\
-			\hline
-			TIC3 & Si verifica che le classi che compongono InseritEditRemove interagiscano correttamente con SlideShowElements e MongoRelations & SlideshowActions & N.E.\\
+			TIC3 & Si verifica che le classi che compongono InseritEditRemove interagiscano correttamente con SlideShowElements e serverRelations & SlideshowActions & N.E.\\
 			\hline
 			TIC4 & Si verifica che le classi che compongono Command si integrino con InsertEditRemove &  & N.E.\\
 			\hline
 			TID1 & Si verifica che il Controller  ed il Model dialoghino correttamente & Controller & N.E.\\
 			\hline
-			TID2 & Si verifica che la View si integri correttamente con il Controller e con le classi di ApacheRelations & View & N.E.\\
-		\end{longtable}			
+			TID2 & Si verifica che la View si integri correttamente con il Controller & View & N.E.\\
+		\end{longtable}
 }
 }
 \newpage
 \subsection{Test d'unità}
-
-	
+		
 	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
-			\caption{Descrizione dei test di Unità \label{tab:verTestUnit}}\\
+				\caption{Descrizione dei test di Unità per il Server \label{tab:verTestUnit}}\\
 		 \hline
-		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Stato} \\
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
 		 \hline
 		 \endfirsthead
 		 \hline
-		 \textbf{Test} & \textbf{Descrizione} & \textbf{Stato} \\
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
 		 \hline
-			\endhead
+				\endhead
 		 \hline
 		 \endfoot
 		 \hline
 		 \endlastfoot
-          TU1 & Si verifica che le classi Services vengano istanziate correttamente & Success \\
+		 TU1 & viene verificato l'inserimento di un utente nel database in seguito ad una chiamata al metodo del server con un utente non ancora registrato & POST account/register & success \\
+		 TU2 & viene verificato che il server non inserisce in database un utente gia registrato chiamando il metodo opportuno del server con un utente inserito & POST account/register & success \\
+		 TU3 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente inserito e verificandone il token ritornato  & GET account/authenticate & success \\
+		 TU4 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente non inserito e verificando la risposta del server & GET account/authenticate & success \\
+		 TU5 & viene verificato il metodo di autenticazione del server attraverso una chiamata ad esso con un utente inserito nel database ma con il parametro password errato e verificando la risposta del server & GET account/authenticate & success \\
+		 TU6 & viene verificato che il server modifica la password salvata in database di un utente attraverso una chiamata con parametri corretti rispetto ad un utente inserito & POST account/changepassword & success \\
+		 TU7 & viene verificato che il server non modifica la password salvata in database di un utente attraverso una chiamata con parametro un utente non inserito & POST account/changepassword & success \\
+		 TU8 & viene verificato che il server non modifica la password salvata in database di un utente attraverso una chiamata con parametro password errato rispetto all'utente indicato  & POST account/changepassword & success \\
+		 TU9 & viene inserita una presentazione in database e viene verificato che una chiamata al metodo del server ritorni un array il cui primo elemento è corretto rispetto alla presentazione inserita & GET private/api/presentations & success \\
+		 TU10 & viene chiamato il metodo del server per l'inserimento di una nuova presentazione, si verifica che la presentazione sia stata inserita e che abbia il nome corretto & POST private/api/presentations/new/[newpres] & success \\
+		 TU11 & viene chiamato il metodo del server per l'inserimento di una nuova presentazione come copia di una gia esistente e se ne verifica il corretti inserimento in database & POST private/api/presentations/new/[oldpres]/[newpres] & success \\
+		 TU12 & viene inserita una presentazione in database e viene chiamato il metodo del server per il recupero della presentazione, si verifica il corretto recupero nella risposta  & GET private/api/presentations/[presentation] & success \\
+		 TU13 & viene inserita una presentazione in database, poi viene chiamato il metodo del server per la eliminazione della presentazione, si verifica la cancellazione della presentazione in database & DELETE private/api/presentations/[presentation] & success \\
+		 TU14 & viene inserita una presentazione in database e viene chiamato il metodo del server per la rinomina della presentazione verificando che il nome sia cambiato con quello indicato  & RENAME private/api/presentations/[oldname]/rename/[new] & success \\
+		 TU15 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo del server con i parametri corretti e si osserva la cancellazione dell'elemento dalla presentazione & DELETE private/api/presentations/[presname]/delete/[type]/[id] & success \\
+		 TU16 & viene chiamato il metodo del server per l'inserimento di un elemento in una presentazione, viene verificato l'inserimento dell'elemento in database & POST private/api/presentations/[presname]/element & success \\
+		 TU17 & viene verificata la modifica dell'elemento paths di una presentazione in database attraverso la chiamata al server con dei parametri di esempio & PUT private/api/presentations/[presname]/paths & success \\
+		 TU18 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo del server per la modifica di questo elemento con dei valori di esempio, si verifica la modifica dei valori in database & PUT private/api/presentations/[presname]/element & success \\
+		 TU19 & viene inserita una immagine e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome dell'immagine inserita & GET private/api/files/image & success \\
+		 TU20 & viene inserito un file immagine, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[image] & success \\
+		 TU21 & viene chiamato il metodo del server per l'inserimento di un file immagine e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[image] & success \\
+		 TU22 & viene inserito un file immagine, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[image]/[newname] & success \\
+		 TU23 & viene inserita una immagine con valori degli attributi height e width noti, viene chiamato il metodo del server per questa immagine e si verificano i valori ritornati con quelli noti  & GET private/api/files/sizeImage/[image] & success \\
+		 TU24 & viene inserito un file audio e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome del file inserito & GET private/api/files/audio & success \\
+		 TU25 & viene inserito un file audio, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[audio] & success \\
+		 TU26 & viene chiamato il metodo del server per l'inserimento di un file audio e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[audio] & success \\
+		 TU27 & viene inserito un file audio, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[audio]/[newname] & success \\
+		 TU28 & viene inserito un file video e viene chiamato il metodo del server verificando che ritorni un'array con il primo elemento avente il nome del file inserito & GET private/api/files/video & success \\
+		 TU29 & viene inserito un file video, viene chiamato il metodo del server per la cancellazione di quel file e se ne verifica la cancellazione dalla opportuna cartella del server & DELETE private/api/files/[video] & success \\
+		 TU30 & viene chiamato il metodo del server per l'inserimento di un file video e si verifica l'inserimento del file nella cartella destinazione sul server & POST private/api/files/[video] & success \\
+		 TU31 & viene inserito un file video, viene chiamato il metodo del server per la rinomina del file, si verifica che il file nella cartella del server sia stato rinominato & POST private/api/files/[video]/[newname] & success \\
+ 		\end{longtable}	
+ 		
+		\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+						\caption{Descrizione dei test di Unità per ServerRelation; classe: fileServerRelation \label{tab:verTestUnit}}\\
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 \hline
+						\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 TU32 & viene verificato che il ritorno della funzione sia corrispondente ai file immagini dell'utente nel server & getMetasImages() & success \\
+		 TU33 & viene verificato che il ritorno della funzione sia corrispondente ai file audio dell'utente nel server & getMetasAudios() & success \\
+		 TU34 & viene verificato che il ritorno della funzione sia corrispondente ai file video dell'utente nel server & getMetasVideos() & success \\
+		 TU35 & viene verificato che il ritorno della funzione sia corretto rispetto ai valori di width e height del file immagine inserito nel server & getImageDimension(img:string) & success \\
+		 TU36 & viene verificata l'eliminazione di un file immagine con la chiamata della funzione su un file immagine inserito nel server & deleteImage(img:string) & success \\
+		 TU37 & viene verificata l'eliminazione di un file audio con la chiamata della funzione su un file audio inserito nel server & deleteAudio(img:string) & success \\
+		 TU38 & viene verificata l'eliminazione di un file video con la chiamata della funzione su un file video inserito nel server & deleteVideo(img:string) & success \\
+		 TU39 & viene verificata la rinominazione di un file immagine inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameImage(old:string,new:string) & success \\
+		 TU40 & viene verificata la rinominazione di un file audio inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameAudio(old:string,new:string) & success \\
+		 TU41 & viene verificata la rinominazione di un file video inserito nel server attraverso la chiamata alla funzione con i parametri corretti & renameVideo(old:string,new:string) & success \\
+		 \end{longtable}
+ \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: serverRelation \label{tab:verTestUnit}}\\
+ 		 \hline
+ 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+ 		 \hline
+ 		 \endfirsthead
+ 		 \hline
+ 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+ 		 \hline
+	 						\endhead
+ 		 \hline
+ 		 \endfoot
+ 		 \hline
+ 		 \endlastfoot
+ 		 TU42 & viene inserita una presentazione in database e viene verificato che il ritorno della funzione sia consistente che le presentazioni presenti in database & getPresentationsMeta() & success \\
+ 		 TU43 & viene chiamata la funzione per l'inserimento di una nuova presentazione, viene verificato l'inserimento della presentazione in database & newPresentation(name:string) & success \\
+ 		 TU44 & viene chiamata la funzione per l'inserimento di una nuova presentazione come copia di una gia esistente, viene verificato l'inserimento della presentazione in database come copia della esistente & newCopyPresentation(name:string) & success \\
+ 		 TU45 & viene inserita una presentazione in database e viene chiamato il metodo del server per il recupero della presentazione, si verifica il corretto ritorno della funzione & getPresentation(name:string) & success \\
+ 		 TU46 & viene inserita una presentazione in database e viene chiamato il metodo di eliminazione della presentazione dell'utente, si verifica la cancellazione della presentazione & deletePresentation(name:string) & success \\
+ 		 TU47 & viene inserita una presentazione in database e viene chiamato il metodo di rinominazione della presentazione dell'utente, si verifica la rinominazione della presentazione & renamePresentation(old:string,new:string) & success \\
+ 		 TU48 & viene chiamato il metodo del server per l'inserimento di un elemento in una presentazione, viene verificato l'inserimento dell'elemento in database & newElement(presentation:string,onj:object,callback:function) & success \\
+ 		 TU49 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'elemento dalla presentazione & updateElement(presentation:string,onj:object,callback:function) & success \\
+ 		 TU50 & viene inserito un elemento in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'elemento dalla presentazione & deleteElement(presentation:strin,type:string,id:string) & success \\
+ 		 TU51 & viene chiamato il metodo per la modifica del campo paths di una presentazione e si osserva la modifica del campo dati della presentazioni in database & updatePaths(presentation:string,obj:object) & success \\
+ 		 \end{longtable}
+  \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		 	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: Loader \label{tab:verTestUnit}}\\
+	  		 \hline
+	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+	  		 \hline
+	  		 \endfirsthead
+	  		 \hline
+	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+	  		 \hline
+		 	 						\endhead
+	  		 \hline
+	  		 \endfoot
+	  		 \hline
+	  		 \endlastfoot
+ 		 TU52 & vengono chiamati i metodi addInsert(), addUpdate e addDelete() su un oggetto mook per la simulazione di altre classi del model per il recupero degli elementi della presentazione associati, si verifica lo stato della presentazione alle diverse chiamate del metodo  & update() & success \\
+ 		 \end{longtable}
+ 		 
+	 \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		 			\caption{Descrizione dei test di Unità \label{tab:verTestUnit}}\\
+	 		 \hline
+	 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Stato} \\
+	 		 \hline
+	 		 \endfirsthead
+	 		 \hline
+	 		 \textbf{Test} & \textbf{Descrizione} & \textbf{Stato} \\
+	 		 \hline
+		 			\endhead
+	 		 \hline
+	 		 \endfoot
+	 		 \hline
+	 		 \endlastfoot
+          TU53 & Si verifica che le classi Services vengano istanziate correttamente & Success \\
           \hline
-          TU2 & Si verifica che HeaderController venga istanziato correttamente & Success \\
+          TU54 & Si verifica che HeaderController venga istanziato correttamente & Success \\
           \hline 
-          TU3 & Si verifica che AuthenticationControllerController venga istanziato correttamente & Success\\
+          TU55 & Si verifica che AuthenticationControllerController venga istanziato correttamente & Success\\
           \hline
-          TU4 & Si verifica che ProfileController venga istanziato correttamente & Success \\
+          TU56 & Si verifica che ProfileController venga istanziato correttamente & Success \\
           \hline
-          TU5 & Si verifica che ExecutionController venga istanziato correttamente & Success \\
+          TU57 & Si verifica che ExecutionController venga istanziato correttamente & Success \\
           \hline
-          TU6 & Si verifica che EditController venga istanziato correttamente & Success \\
-		\end{longtable}		
+          TU58 & Si verifica che EditController venga istanziato correttamente & Success \\
+		 		\end{longtable}
+ 				 

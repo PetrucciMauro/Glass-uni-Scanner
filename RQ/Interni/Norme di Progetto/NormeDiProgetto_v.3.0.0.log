@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  21 AUG 2015 16:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.13)  22 AUG 2015 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **NormeDiProgetto_v.3.0.0.tex
 (./NormeDiProgetto_v.3.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 8 languages loaded.
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -1739,26 +1739,26 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14324 strings out of 494969
- 205314 string characters out of 6178806
- 378879 words of memory out of 5000000
- 17023 multiletter control sequences out of 15000+600000
+ 14324 strings out of 495017
+ 205353 string characters out of 6181021
+ 378604 words of memory out of 5000000
+ 17009 multiletter control sequences out of 15000+600000
  20491 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,60p,817b,1242s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti080
-0.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk>
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
-petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/petrucci/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488
-.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+ </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.
+600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </h
+ome/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/pietro
+/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pietro/.texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </home/pietro/.texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm0800.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecrm0600.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/
+ecbx1728.600pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.6
+00pk> </home/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </ho
+me/pietro/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/pietro/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 Output written on NormeDiProgetto_v.3.0.0.pdf (54 pages, 645306 bytes).
 PDF statistics:
  1661 PDF objects out of 1728 (max. 8388607)
