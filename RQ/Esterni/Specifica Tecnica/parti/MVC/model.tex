@@ -173,7 +173,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertText(...) della classe statica per l’inserimento di un elemento;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertText(...) della classe statica per l’inserimento di un elemento;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -187,7 +187,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertFrame(...) della classe statica per l’inserimento di un elemento frame nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertFrame(...) della classe statica per l’inserimento di un elemento frame nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -201,7 +201,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertImage(...) della classe statica per l’inserimento di un elemento immagine nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertImage(...) della classe statica per l’inserimento di un elemento immagine nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -215,7 +215,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertSVG(...) della classe statica per l’inserimento di un elemento SVG nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertSVG(...) della classe statica per l’inserimento di un elemento SVG nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -229,7 +229,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertAudio(...) della classe statica per l’inserimento di un elemento audio nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertAudio(...) della classe statica per l’inserimento di un elemento audio nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\interfacce}: viene utilizzata per gestire le richieste di inserimento di un nuovo elemento Audio.\\
@@ -244,7 +244,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando  e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertVideo(...) della classe statica per l’inserimento di un elemento video nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertVideo(...) della classe statica per l’inserimento di un elemento video nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -258,7 +258,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter <- invoca il metodo insertBackground(...) della classe statica per l’inserimento di un elemento sfondo nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertBackground(...) della classe statica per l’inserimento di un elemento sfondo nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}
 	\textbf{\base}: 
@@ -272,7 +272,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeText(...) della classe statica per la rimozione di un elemento testuale nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeText(...) della classe statica per la rimozione di un elemento testuale nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -286,7 +286,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeFrame(...) della classe statica per la rimozione di un elemento frame dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeFrame(...) della classe statica per la rimozione di un elemento frame dalla presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -300,7 +300,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeImage(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeImage(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -314,7 +314,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeSVG(...) della classe statica per l’eliminazione di un elemento SVG dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeSVG(...) della classe statica per l’eliminazione di un elemento SVG dalla presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -328,7 +328,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeAudio(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeAudio(...) della classe statica per l’eliminazione di un elemento immagine dalla presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -342,7 +342,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover <- invoca il metodo removeVideo(...) della classe statica per l’eliminazione di un elemento video dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeVideo(...) della classe statica per l’eliminazione di un elemento video dalla presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}
 	\textbf{\base}: 
@@ -356,7 +356,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editSize(...) della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editSize(...) della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -370,7 +370,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editPosition(...) della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editPosition(...) della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -384,7 +384,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editColor(...) della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editColor(...) della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -398,7 +398,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editBackground(...) della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editBackground(...) della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -412,7 +412,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editRotation(...) della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editRotation(...) della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -426,7 +426,7 @@
 	\begin{itemize}
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editColor(...) della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editColor(...) della classe statica per la modifica dei campi dati relativi al font dell'oggetto testuale della presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -441,7 +441,7 @@
 				\begin{itemize}
 						\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 						\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-						\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo editContent(spec) della classe statica per la modifica dei campi dati relativi testo dell'oggetto della presentazione;
+						\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editContent(spec) della classe statica per la modifica dei campi dati relativi testo dell'oggetto della presentazione;
 						 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 						\end{itemize}	
 			\textbf{\base}: 
@@ -456,7 +456,7 @@
 		\begin{itemize}
 				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo updateBookmark(...) della classe statica per la modifica del campo relativo al bookmark dell'elemento della presentazione;
+				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo updateBookmark(...) della classe statica per la modifica del campo relativo al bookmark dell'elemento della presentazione;
 				\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 						\end{itemize}	
 				\textbf{\base}: 
@@ -471,7 +471,7 @@
 		\begin{itemize}
 			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo portaAvanti() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo portaAvanti() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
 			 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 					\end{itemize}	
 		\textbf{\base}: 
@@ -486,7 +486,7 @@
 		\begin{itemize}
 			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo portaDietro() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo portaDietro() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
 			 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 					\end{itemize}	
 		\textbf{\base}: 
@@ -501,7 +501,7 @@
 		 \begin{itemize}
 			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo addFrameToMainPath(...) della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo addFrameToMainPath(...) della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
 		 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 					\end{itemize}	
 		\textbf{\base}: 
@@ -516,7 +516,7 @@
 		 \begin{itemize}
 			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo removeFrameFromMainPath(...) della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo removeFrameFromMainPath(...) della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
 		 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 					\end{itemize}	
 		\textbf{\base}: 
@@ -531,7 +531,7 @@
 		  \begin{itemize}
 			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo addChoicePath(...) della classe statica per la modifica dell'oggetto relativo ai percorsi della presentazione; 
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo addChoicePath(...) della classe statica per la modifica dell'oggetto relativo ai percorsi della presentazione; 
 			\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 						\end{itemize}	
 			\textbf{\base}: 
@@ -546,7 +546,7 @@
 		  \begin{itemize}
 				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor <- il comando invoca il metodo deleteChoicePath(...)  della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
+				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo deleteChoicePath(...)  della classe statica per la modifica dell'oggetto relativo al percorso principale della presentazione;
 				\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 			\end{itemize}	
 			\textbf{\base}: 
@@ -602,12 +602,12 @@
 	\textbf{\tipo}: gli oggetti della classe SlideShowElement rappresentano gli elementi della presentazione.\\	
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore delle sottoclassi di SlideShowElements;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore delle sottoclassi di SlideShowElements;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> gli oggetti delle sue sottoclassi richiamano le funzioni delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
 	\end{itemize}	
 	\textbf{\interfacce}:\\
-	\indent Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter istanzia oggetti di sottoclassi di SlideShowElement.\\
+	\indent Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove istanzia oggetti di sottoclassi di SlideShowElement.\\
 	\textbf{\figli}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-Text;
@@ -623,9 +623,9 @@
 	\textbf{\tipo}: gli oggetti della classe Text rappresentano gli elementi di tipo testuale della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Text e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Text dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Text e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Text dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
 	\textbf{\interfacce}: gli oggetti della classe Text vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
 	\textbf{\base}: 
@@ -637,9 +637,9 @@
 	\textbf{\tipo}: gli oggetti della classe Frame rappresentano gli elementi di tipo frame della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Frame e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Frame dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Frame e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove-> rimuove l’oggetto Frame dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
 	\textbf{\interfacce}: gli oggetti della classe Frame vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
 	\textbf{\base}: 
@@ -652,9 +652,9 @@
 	\textbf{\tipo}: gli oggetti della classe Image rappresentano gli elementi di tipo immagine della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Image e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Image dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor ->  invoca i metodi che modificano i campi dati dell'oggetto;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Image e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Image dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove ->  invoca i metodi che modificano i campi dati dell'oggetto;
 	\end{itemize}	
 	\textbf{\interfacce}: gli oggetti della classe Image vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
 	\textbf{\base}: 
@@ -667,9 +667,9 @@
 	\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi di tipo SVG della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di SVG e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto SVG dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di SVG e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove: -> rimuove l’oggetto SVG dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
 	\textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
 	\textbf{\base}: 
