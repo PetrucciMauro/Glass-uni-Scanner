@@ -8,8 +8,8 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 	meritevoli di un test.
 	
 	
-		\renewcommand*{\arraystretch}{1.4}
-		\begin{longtable} [c]{| p{3cm} | p{6cm} |p{3cm}|}
+		\renewcommand*{\arraystretch}{1.5}
+		\begin{longtable} [c]{| p{3cm} | p{6cm} |p{5cm}|}
 			\caption{Descrizione dei test di sistema per i Requisiti\ped{g} Funzionali
 			 \label{tab:verReqFunz}}\\
 			 \hline
@@ -253,7 +253,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 			TS 73 & Viene verificato che si possa creare un'Infografica\ped{g} & RF 73\\
 \end{longtable}
 
-		\begin{longtable} [c]{| p{7cm} |p{4cm}|}
+		\begin{longtable} [c]{| p{7cm} |p{5cm}|}
 			\caption{
 			Descrizione dei test di sistema
 			per i Requisiti\ped{g} di Qualità e Vincoli \label{tab:verReqQualVinc}}\\
@@ -291,7 +291,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 	  \label{fig:SeqIntComp}
 	\end{figure}
 	
-	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{5cm} |}
 			\caption{Descrizione dei test di Integrazione \label{tab:verReqInteg}}\\
 		 \hline
 		 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti aggiuntive}& \textbf{Stato} \\
@@ -328,7 +328,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 \newpage
 \subsection{Test d'unità}
 		
-	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+	\begin{longtable} [c]{| p{1cm} | p{6cm} |p{6cm} | p{1.5cm} |}
 				\caption{Descrizione dei test di Unità per il Server\ped{g} \label{tab:verTestUnit}}\\
 		 \hline
 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -375,7 +375,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 TU31 & viene inserito un File\ped{g} video, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[video]/[newname] & success \\
  		\end{longtable}	
  		
-		\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		\begin{longtable} [c]{| p{1cm} | p{6cm} |p{7cm} | p{1.5cm} |}
 						\caption{Descrizione dei test di Unità per ServerRelation; classe: fileServerRelation \label{tab:verTestUnit}}\\
 		 \hline
 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -400,7 +400,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 TU40 & viene verificata la rinominazione di un File\ped{g} audio inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameAudio(old:string,new:string) & success \\
 		 TU41 & viene verificata la rinominazione di un File\ped{g} video inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameVideo(old:string,new:string) & success \\
 		 \end{longtable}
- \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+ \begin{longtable} [c]{| p{1cm} | p{6cm} |p{8cm} | p{1.5cm} |}
 	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: serverRelation \label{tab:verTestUnit}}\\
  		 \hline
  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -420,12 +420,12 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
  		 TU45 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per il recupero della presentazione, si verifica il corretto ritorno della Funzione\ped{g} & getPresentation(name:string) & success \\
  		 TU46 & viene inserita una presentazione in database e viene chiamato il metodo di eliminazione della presentazione dell'utente, si verifica la cancellazione della presentazione & deletePresentation(name:string) & success \\
  		 TU47 & viene inserita una presentazione in database e viene chiamato il metodo di rinominazione della presentazione dell'utente, si verifica la rinominazione della presentazione & renamePresentation(old:string,new:string) & success \\
- 		 TU48 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & newElement(presentation:string,onj:object,callback:function) & success \\
- 		 TU49 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'Elemento\ped{g} dalla presentazione & updateElement(presentation:string,onj:object,callback:function) & success \\
- 		 TU50 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & deleteElement(presentation:strin,type:string,id:string) & success \\
+ 		 TU48 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & newElement( presentation:string , onj:object , callback:function ) & success \\
+ 		 TU49 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'Elemento\ped{g} dalla presentazione & updateElement(presentation  :string , onj : object , callback : function) & success \\
+ 		 TU50 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & deleteElement(presentation : string, type : string , id : string) & success \\
  		 TU51 & viene chiamato il metodo per la modifica del campo paths di una presentazione e si osserva la modifica del campo dati della presentazioni in database & updatePaths(presentation:string,obj:object) & success \\
  		 \end{longtable}
-  \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+  \begin{longtable} [c]{| p{1cm} | p{6cm} |p{3cm} | p{1.5cm} |}
 		 	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: Loader \label{tab:verTestUnit}}\\
 	  		 \hline
 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -442,7 +442,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
  		 TU52 & vengono chiamati i metodi addInsert(), addUpdate e addDelete() su un oggetto mook per la simulazione di altre classi del model per il recupero degli elementi\ped{g} della presentazione associati, si verifica lo stato della presentazione alle diverse chiamate del metodo  & update() & success \\
  		 \end{longtable}
  		 
-	 \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+	 \begin{longtable} [c]{| p{1cm} | p{6cm} |p{3cm} | p{2cm} |}
 		 			\caption{Descrizione dei test di Unità \label{tab:verTestUnit}}\\
 	 		 \hline
 	 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Stato} \\
@@ -471,7 +471,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
           TU59 & Si verifica che EditController venga istanziato correttamente & Success \\
 		 		\end{longtable}
 		 		
-		   \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		   \begin{longtable} [c]{| p{1cm} | p{6cm} | p{6cm} | p{1.5cm} |}
 		 		 	 						\caption{Descrizione dei test di Unità per SlideShowElements \label{tab:verTestUnit}}\\
 		 	  		 \hline
 		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -493,7 +493,7 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		  		 TU65 & Richiama il costruttore di Background(...) e verifica che sia stato creato un oggetto di tipo background  & slideShowElements::Background() & success \\
 		  		 
 		  		 \end{longtable}
-		  		   \begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{2cm} |}
+		  		   \begin{longtable} [c]{| p{1cm} | p{6cm} | p{7cm} | p{1.5cm} |}
 		 		 	 						\caption{Descrizione dei test di Unità per InsertEditRemove \label{tab:verTestUnit}}\\
 		 	  		 \hline
 		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
@@ -509,25 +509,25 @@ comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descrit
 		 	  		 \endlastfoot
 		  		 TU66 & Richiama il costruttore di InsertEditRemove() e verifica che venga istanziato un oggetto di tale classe  & slideShowActions::InsertEditRemove() & success \\
 		  		 TU67 & Richiama il costruttore di InsertEditRemove() e verifica che sia stata generata una sola istanza di tale classe  & slideShowActions::InsertEditRemove() & success \\
-		 		 TU68 & Richiama il InsertEditRemove()::insertText e verifica che venga inserito nella presentazione un oggetto Text & slideShowActions::InsertEditRemove()::insertText(...) & success \\
-		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame\ped{g}  & slideShowActions::InsertEditRemove()::insertFrame(...) & success \\
-		 		 TU70 & Richiama il InsertEditRemove()::insertImage e verifica che venga inserito nella presentazione un oggetto Image  & slideShowActions::InsertEditRemove()::insertImage(...) & success \\
-		 		 TU71 & Richiama il InsertEditRemove()::insertSVG e verifica che venga inserito nella presentazione un oggetto SVG  & slideShowActions::InsertEditRemove()::insertSVG(...) & success \\
-		 		 TU72 & Richiama il InsertEditRemove()::insertAudio e verifica che venga inserito nella presentazione un oggetto Audio  & slideShowActions::InsertEditRemove()::insertAudio(...) & success \\
-		 		 TU73 & Richiama il InsertEditRemove()::insertVideo e verifica che venga inserito nella presentazione un oggetto Video  & slideShowActions::InsertEditRemove()::insertVideo(...) & success \\
-		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
-		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editSize(...) & success \\
-		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editRotation(...) & success \\
-		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editBackground(...) & success \\
-		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editColor(...) & success \\
-		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions::InsertEditRemove()::editPosition(...) & success \\
-		 		 TU80 & Richiama il InsertEditRemove()::removeText(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeText(...) & success \\
-		 		 TU81 & Richiama il InsertEditRemove()::removeFrame(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeFrame(...) & success \\
-		 		 TU82 & Richiama il InsertEditRemove()::removeImage(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeImage(...) & success \\
-		 		 TU83 & Richiama il InsertEditRemove()::removeAudio(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeAudio(...) & success \\
-		 		 TU84 & Richiama il InsertEditRemove()::removeVideo(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeVideo(...) & success \\
-		 		 TU85 & Richiama il InsertEditRemove()::removeBackground(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeBackground(...) & success \\
-		 		 TU86 & Richiama il InsertEditRemove()::removeSVG(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions::InsertEditRemove()::removeSVG(...) & success \\
+		 		 TU68 & Richiama il InsertEditRemove()::insertText e verifica che venga inserito nella presentazione un oggetto Text & slideShowActions:: InsertEditRemove():: insertText(...) & success \\
+		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame\ped{g}  & slideShowActions:: InsertEditRemove()::insertFrame(...) & success \\
+		 		 TU70 & Richiama il InsertEditRemove()::insertImage e verifica che venga inserito nella presentazione un oggetto Image  & slideShowActions:: InsertEditRemove()::insertImage(...) & success \\
+		 		 TU71 & Richiama il InsertEditRemove()::insertSVG e verifica che venga inserito nella presentazione un oggetto SVG  & slideShowActions:: InsertEditRemove()::insertSVG(...) & success \\
+		 		 TU72 & Richiama il InsertEditRemove()::insertAudio e verifica che venga inserito nella presentazione un oggetto Audio  & slideShowActions:: InsertEditRemove()::insertAudio(...) & success \\
+		 		 TU73 & Richiama il InsertEditRemove()::insertVideo e verifica che venga inserito nella presentazione un oggetto Video  & slideShowActions:: InsertEditRemove()::insertVideo(...) & success \\
+		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editPosition(...) & success \\
+		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editSize(...) & success \\
+		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editRotation(...) & success \\
+		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editBackground(...) & success \\
+		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editColor(...) & success \\
+		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editPosition(...) & success \\
+		 		 TU80 & Richiama il InsertEditRemove()::removeText(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeText(...) & success \\
+		 		 TU81 & Richiama il InsertEditRemove()::removeFrame(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeFrame(...) & success \\
+		 		 TU82 & Richiama il InsertEditRemove()::removeImage(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeImage(...) & success \\
+		 		 TU83 & Richiama il InsertEditRemove()::removeAudio(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeAudio(...) & success \\
+		 		 TU84 & Richiama il InsertEditRemove()::removeVideo(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeVideo(...) & success \\
+		 		 TU85 & Richiama il InsertEditRemove()::removeBackground(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeBackground(...) & success \\
+		 		 TU86 & Richiama il InsertEditRemove()::removeSVG(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeSVG(...) & success \\
 		 		 
 		  		 \end{longtable}
  				 
