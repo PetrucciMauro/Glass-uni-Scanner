@@ -7,6 +7,57 @@
 \hline
 \cellcolor[gray]{0.9} \textbf{Classe e Metodo} & \cellcolor[gray]{0.9} \textbf{Test}
  \\ \hline
+serverRelation::Loader::addInsert(id:string) & TU52 \\ \hline
+serverRelation::Loader::addDelete(type:string,id:string) & TU52 \\ \hline
+serverRelation::Loader::addUpdate(id:string) & TU52 \\ \hline
+serverRelation::Loader::addpahts() & TU52 \\ \hline
+serverRelation::Loader::update() & TU52 \\ \hline
+serverRelation::MongoRelation::ServerRelation::Loader::addInsert() & TU51 \\ \hline
+serverRelation::MongoRelation::deleteElement(presentation:strin,type:string,id:string) & TU50 \\ \hline
+serverRelation::MongoRelation::updateElement(presentation:string,onj:object,callback:function) & TU49 \\ \hline
+serverRelation::MongoRelation::newElement(presentation:string,onj:object,callback:function) & TU48 \\ \hline
+serverRelation::MongoRelation::renamePresentation(old:string,new:string) & TU47 \\ \hline
+serverRelation::MongoRelation::deletePresentation(name:string) & TU46 \\ \hline
+serverRelation::MongoRelation::getPresentation(name:string) & TU45 \\ \hline
+serverRelation::MongoRelation::newCopyPresentation(name:string) & TU44 \\ \hline
+serverRelation::MongoRelation::newPresentation(name:string) & TU43 \\ \hline
+serverRelation::MongoRelation::getPresentationsMeta() & TU42 \\ \hline
+serverRelation::FileServerRelation::renameVideo(old:string,new:string) & TU41 \\ \hline
+serverRelation::FileServerRelation::renameAudio(old:string,new:string) & TU40 \\ \hline
+serverRelation::FileServerRelation::renameImage(old:string,new:string) & TU39 \\ \hline
+serverRelation::FileServerRelation::deleteVideo(img:string) & TU38 \\ \hline
+serverRelation::FileServerRelation::deleteAudio(img:string) & TU37 \\ \hline
+serverRelation::FileServerRelationdeleteImage(img:string) & TU36 \\ \hline
+serverRelation::FileServerRelation::getImageDimension(img:string) & TU35 \\ \hline
+serverRelation::FileServerRelation::getMetasVideos() & TU34 \\ \hline
+serverRelation::FileServerRelation::getMetasAudios() & TU33 \\ \hline
+serverRelation::FileServerRelation::getMetasImages() & TU32 \\ \hline
+server::POST private/api/files/[video]/[newname] & TU31 \\ \hline
+server::POST private/api/files/[video] & TU30 \\ \hline
+server::DELETE private/api/files/[video] & TU29 \\ \hline
+server::GET private/api/files/video & TU28 \\ \hline
+server::POST private/api/files/[audio]/[newname] & TU27 \\ \hline
+server::POST private/api/files/[audio] & TU26 \\ \hline
+server::DELETE private/api/files/[audio] & TU25 \\ \hline
+server::GET private/api/files/audio & TU24 \\ \hline
+server::GET private/api/files/sizeImage/[image] & TU23 \\ \hline
+server::POST private/api/files/[image]/[newname] & TU22 \\ \hline
+server::POST private/api/files/[image] & TU21 \\ \hline
+server::DELETE private/api/files/[image] & TU20 \\ \hline
+server::GET private/api/files/image & TU19 \\ \hline
+server::PUT private/api/presentations/[presname]/element & TU18 \\ \hline
+server::PUT private/api/presentations/[presname]/paths & TU17 \\ \hline
+server::POST private/api/presentations/[presname]/element & TU16 \\ \hline
+server::DELETE private/api/presentations/[presname]/delete/[type]/[id] & TU15 \\ \hline
+server::PUT private/api/presentations/[oldname]/rename/[new] & TU14 \\ \hline
+Server::DELETE private/api/presentations/[presentation] & TU13 \\ \hline
+server::GET private/api/presentations/[presentation] & TU12 \\ \hline
+server::POST private/api/presentations/new/[oldpres]/[newpres] & TU11 \\ \hline
+server::POST private/api/presentations/new/[newpres] & TU10 \\ \hline
+server::GET private/api/presentations & TU9 \\ \hline
+server::POST account/changepassword & TU8, TU7, TU6 \\ \hline
+server::GET account/authenticate & TU5, TU4, TU3 \\ \hline
+POST account/register & TU2, TU1 \\ \hline
 Premi::Services::Main & TU 53 \\ \hline 
 Premi::Services::Upload & TU 53 \\ \hline
 Premi::Services::Utils  & TU 53 \\ \hline
@@ -18,6 +69,7 @@ Premi::HomeController & TU 56\\ \hline
 Premi::ProfileController & TU 57 \\ \hline
 Premi::ExecutionController & TU 58 \\ \hline
 Premi::EditController & TU 59 \\ \hline
+
 
 \caption{Metodi-Test Controller}
 \end{longtable}
