@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  22 AUG 2015 11:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  22 AUG 2015 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,24 +838,24 @@ Package csquotes Info: ... found 'babel' package.
 (./ManualeAmministratore_v.1.0.0.aux)
 \openout1 = `ManualeAmministratore_v.1.0.0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -891,8 +891,8 @@ LaTeX Font Info:    ... okay on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 29.
-LaTeX Info: Redefining \it@ccap on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 30.
+LaTeX Info: Redefining \it@ccap on input line 30.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count168
@@ -922,7 +922,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -932,16 +932,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 29.
+(lastpage)             ! on input line 30.
 \c@lstlisting=\count175
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -959,13 +959,13 @@ Package pdftex.def Info: ../../logo.jpg used on input line 22.
 emplate/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 33.
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.33 	\newpage
+l.34 	\newpage
                [1] (./parti/registroMod.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
@@ -988,7 +988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 35.
+Package pdftex.def Info: ../../logo.jpg used on input line 36.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [3] (./ManualeAmministratore_v.1.0.0.toc)
 \tf@toc=\write3
@@ -997,7 +997,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 35.
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 37.
+Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [4] (./ManualeAmministratore_v.1.0.0.lof)
 \tf@lof=\write4
@@ -1010,67 +1010,47 @@ Package pdftex.def Info: ../../logo.jpg used on input line 37.
 
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 40.
+Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [5]
-(./parti/introduzione.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-
- []
-
-)
+(./parti/introduzione.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 42.
+Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [6] (./parti/installazione.tex)
-
-AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 44.
+Package pdftex.def Info: ../../logo.jpg used on input line 45.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
- (./ManualeAmministratore_v.1.0.0.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 44.
+ [7] 
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
+(./ManualeAmministratore_v.1.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
  ) 
 Here is how much of TeX's memory you used:
- 13526 strings out of 494969
- 196799 string characters out of 6178806
- 352879 words of memory out of 5000000
- 16467 multiletter control sequences out of 15000+600000
- 15751 words of font info for 38 fonts, out of 8000000 for 9000
+ 13482 strings out of 494969
+ 195753 string characters out of 6178806
+ 350879 words of memory out of 5000000
+ 16430 multiletter control sequences out of 15000+600000
+ 15438 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,15n,60p,823b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </hom
-e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petruc
-ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm12
-00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb>
-Output written on ManualeAmministratore_v.1.0.0.pdf (8 pages, 139131 bytes).
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </hom
+e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petruc
+ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecrm1200.600pk>
+Output written on ManualeAmministratore_v.1.0.0.pdf (8 pages, 121654 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 381 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
