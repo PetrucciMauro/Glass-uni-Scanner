@@ -14,92 +14,71 @@
 \subsubsection{Model::\-SlideShow::\-SlideShowActions}{
 	\textbf{\tipo}: all’interno di questo Package si trovano le classi che si occupano della costruzione, dell'inserimento, della rimozione e della modifica degli elementi della presentazione.\\
 	\textbf{\relaz}: il package è in relazione con\\ Model::\-SlideShow::\-SlideShowActions::\-Command che ne invoca le funzioni passando i relativi parametri per l'inserimento, la rimozione e la modifica degli elementi.
+		Tutti i componenti seguenti appartengono al package SlideShowActions, quindi lo scope sarà Model::\-SlideShow::\-SlideShowActions::\-<componente>.
 }
+\subsubsection{InsertEditRemove}{
 
-\subsubsection{Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove}{
-	Tutti i componenti seguenti appartengono al package InsertEditRemove, quindi lo scope sarà Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-<componente>.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.3]{\imgs {inserteditremove}.pdf}
 		\label{fig:ier}
 		\caption{InsertEditRemove}
 	\end{figure}
-	\textbf{\tipo}: all’interno di questo Package sono implementate le classi statiche destinate all'inserimento, alla rimozione e alla modifica degli elementi della presentazione. InsertEditRemove avrà un oggetto json che rappresenta la presentazione.\\
-	\textbf{\relaz}: il package è in relazione con\\ Model::\-SlideShow::\-SlideShowActions::\-Command che invoca i metodi delle classi del package.
-	Inoltre Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter si occupa di costruire gli oggetti presenti nelle classi del package Model::\-SlideShow::\-SlideShowElements.
-
-	\subsubsubsection{Editor}{
-		\textbf{\tipo}: classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\
+\textbf{\tipo}: classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\
 		\textbf{\interfacce}: è il componente receiver del Design Pattern Command.\\
 		\textbf{\relaz}:
-		\begin{itemize}
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da Editor;
+\begin{itemize}
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da insertEditRemove;
 			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBookmarkCommand -> aggiorna il valore di bookmark;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaAvantiCommand -> invoca il metodo portaAvanti() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaDietroCommand -> invoca il metodo portaDietro() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToMainPathCommand -> invoca il metodo addFrameToMainPath() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromMainPathCommand -> invoca il metodo removeFrameFromMainPath() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteNewChoicePathCommand -> invoca il metodo addChoicePath() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteDeleteChoicePathCommand -> invoca il metodo deleteChoicePath() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToChoicePathCommand -> invoca il metodo addFrameToChoicePath() messo a disposizione da Editor;
-			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromChoicePathCommand -> invoca il metodo removeFrameFromChoicePath() messo a disposizione da Editor.
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaAvantiCommand -> invoca il metodo portaAvanti() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaDietroCommand -> invoca il metodo portaDietro() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToMainPathCommand -> invoca il metodo addFrameToMainPath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromMainPathCommand -> invoca il metodo removeFrameFromMainPath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteNewChoicePathCommand -> invoca il metodo addChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteDeleteChoicePathCommand -> invoca il metodo deleteChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToChoicePathCommand -> invoca il metodo addFrameToChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromChoicePathCommand -> invoca il metodo removeFrameFromChoicePath() messo a disposizione da insertEditRemove;
+					\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da insertEditRemove;
 			
-			\item Model::\-SlideShow::\-SlideShowElements::\-Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-			\item Model::\-SlideShow::\-SlideShowElements::\-Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-			\item Model::\-SlideShow::\-SlideShowElements::\-Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-			\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-			\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-			\item Model::\-SlideShow::\-SlideShowElements::\-Video <- Editor invoca i metodi di set degli oggetti di classe Video;
-			\item Model::\-SlideShow::\-SlideShowElements::\-Background <- Editor invoca i metodi di set degli oggetti di classe Background;
-		\end{itemize} 
-	}
-\subsubsubsection{Inserter}{
-	\textbf{\tipo}: classe statica che offre dei metodi per l’inserimento di elementi all’interno di una presentazione.\\
-	\textbf{\interfacce}: è il componente receiver del Design Pattern Command.\\	
-	\textbf{\relaz}:
-	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da Inserter;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da Inserter;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Frame <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
+			\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove invoca i metodi di set degli oggetti di classe Background;
 
-		\item Model::\-SlideShow::\-SlideShowElements::\-Text <- Inserter costruisce gli oggetti di classe Text;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Frame <- Inserter costruisce gli oggetti di classe Frame;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- Inserter costruisce gli oggetti di classe Image;
-		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- Inserter costruisce gli oggetti di classe SVG;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- Inserter costruisce gli oggetti di classe Audio;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- Inserter costruisce gli oggetti di classe Video;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Background <- Inserter costruisce gli oggetti di classe Background;
-	\end{itemize} 
 
-}
-
-\subsubsubsection{Remover}{
-	\textbf{\tipo}: classe statica che offre i metodi destinati all'eliminazione degli elementi all’interno di una presentazione.\\	
-	\textbf{\interfacce}: è il componente receiver del Design Pattern Command.\\
-	\textbf{\relaz}:
-	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da Remover;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da Remover;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da Remover;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da Remover;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da Remover;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da Remover;
-
-	   \item Model::\-SlideShow::\-SlideShowElements::\-Text <- Editor invoca i metodi di set degli oggetti di classe Text;
-	   \item Model::\-SlideShow::\-SlideShowElements::\-Frame <- Editor invoca i metodi di set degli oggetti di classe Frame;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- Editor invoca i metodi di set degli oggetti di classe Image;
-		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- Editor invoca i metodi di set degli oggetti di classe SVG;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- Editor invoca i metodi di set degli oggetti di classe Audio;
-		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- Editor invoca i metodi di set degli oggetti di classe Video;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove costruisce gli oggetti di classe Text;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Frame <- insertEditRemove costruisce gli oggetti di classe Frame;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove costruisce gli oggetti di classe Image;
+		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove costruisce gli oggetti di classe SVG;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove costruisce gli oggetti di classe Audio;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove costruisce gli oggetti di classe Video;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove costruisce gli oggetti di classe Background;
+	   \item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
+	   \item Model::\-SlideShow::\-SlideShowElements::\-Frame <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
+		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
 	\end{itemize} 
 }	
 }
