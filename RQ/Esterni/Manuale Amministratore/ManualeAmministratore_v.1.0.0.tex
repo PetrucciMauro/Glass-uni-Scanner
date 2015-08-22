@@ -9,14 +9,14 @@
 
 %	Informazioni documento
 \newcommand{\titoloDoc}{Manuale Amministratore}
-\newcommand{\dataCreazione}{19-08-2015}
-\newcommand{\versione}{5.0.0} % versione corrente del documento
-\newcommand{\dataUM}{19-08-2015} % data dell'ultima modifica
+\newcommand{\dataCreazione}{17-08-2015}
+\newcommand{\versione}{1.0.0} % versione corrente del documento
+\newcommand{\dataUM}{17-08-2015} % data dell'ultima modifica
 \newcommand{\stato}{Formale}
 \newcommand{\uso}{Esterno}
-\newcommand{\redaz}{\FM, \BM}
+\newcommand{\redaz}{\TP}
 \newcommand{\verif}{\GP}
-\newcommand{\appr}{\VG}
+\newcommand{\appr}{\FM}
 \newcommand{\sommario}{
 	Il presente documento consiste del manuale per l'amministratore del sistema \premi.
 	}
@@ -38,13 +38,8 @@
 	\listoffigures
 	\listoftables
 	\newpage
-	
-\section{Introduzione}
-\subsection{Scopo del documento}
-Questo documento rappresenta il manuale amministratore per il sistema software Premi, vengono descritte le procedure per la corretta installazione e avviamento del server nodeJs  e per l'avvio e configurazione del database MongoDB.
-
-\subsection{Glossario}
-Per ridurre il rischio di ambiguità di linguaggio e migliorare la comprensione del documento, i termini tecnici, di dominio e gli acronimi sono riportate nel documento Glossario v5.x.x
+	\input{\parti introduzione}
+	\newpage
 
 \section{Requisiti}
 Per poter avviare correttamente il server deve essere installato sul PC ospitante il server le tecnologie MongoDB e nodeJs. I sistemi operativi supportati sono OSX Yosemite, Ubuntu dalla versione 12.04LTS, Windows7 o successivi.
@@ -57,8 +52,8 @@ Di seguito sono riportati i passi per la configurazione del database MongoDB e l
 \begin{enumerate}
 \item creare una cartella data per raccogliere in database creati con MongoDB
 mongod --dbpath /usr/local/mongodb-data
-\item avviamento mongodb con il comando "sudo mongod" (--port xxxxx se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei darabase con l'opzione "mongod --dbpath /mia/cartella/"
-\item  spostarsi da terminale nella cartella Premi (o quella in cui \`{e} presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "mongo", avvenuto l'accesso configurare il database con il comando "load('mongoConfig.js')"
+\item avviamento mongodb con il comando "sudo mongod" (--port xxxxx se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei database con l'opzione "mongod --dbpath /mia/cartella/"
+\item  spostarsi dal terminale nella cartella Premi (o quella in cui \`{e} presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "mongo", avvenuto l'accesso configurare il database con il comando "load('mongoConfig.js')"
 \item se \`{e} stato avviato mongod con una porta differente da qulla di default modificare il file config.js all'interno della cartella Premi specificando la porta con cui \`{e} stato avviato mongod
 \item  avviamento server node spostandosi da terminale sulla cartella premi e lanciare il comando "node premi\_Server.js" % modifica porta avviamento server node
 %\item configurazione premi per config porta
