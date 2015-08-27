@@ -1,0 +1,2904 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  22 AUG 2015 15:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**PianoDiQualifica_v.3.0.0.tex
+(./PianoDiQualifica_v.3.0.0.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 8 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(../../Template/format.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2013/12/03 3.9h The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
+Language: italian 2013/11/22 v1.3f Italian support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2013/12/03 3.9h Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen111
+)
+\it@lettering=\count91
+Package babel Info: Making " an active character on input line 98.
+\Virgola=\count92
+))
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count93
+)
+\etb@tempcnta=\count94
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+\csq@reset=\count95
+\csq@gtype=\count96
+\csq@glevel=\count97
+\csq@qlevel=\count98
+\csq@maxlvl=\count99
+\csq@tshold=\count100
+\csq@ltx@everypar=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Option 'babel' depreciated.
+(csquotes)             Using 'autostyle'.
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen112
+\extrarowheight=\dimen113
+\NC@list=\toks19
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen114
+\TX@old@table=\dimen115
+\TX@old@col=\dimen116
+\TX@target=\dimen117
+\TX@delta=\dimen118
+\TX@cols=\count101
+\TX@ftn=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
+))
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen121
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count105
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count106
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count107
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count113
+\lst@gtempboxa=\box26
+\lst@token=\toks21
+\lst@length=\count114
+\lst@currlwidth=\dimen125
+\lst@column=\count115
+\lst@pos=\count116
+\lst@lostspace=\dimen126
+\lst@width=\dimen127
+\lst@newlines=\count117
+\lst@lineno=\count118
+\lst@maxwidth=\dimen128
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+\c@lstnumber=\count119
+\lst@skipnumbers=\count120
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2013/08/26 1.5b listings configuration
+))
+Package: listings 2013/08/26 1.5b (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks22
+\minrowclearance=\skip55
+)
+LaTeX Info: Redefining \color on input line 702.
+\rownum=\count121
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen129
+\lightrulewidth=\dimen130
+\cmidrulewidth=\dimen131
+\belowrulesep=\dimen132
+\belowbottomsep=\dimen133
+\aboverulesep=\dimen134
+\abovetopsep=\dimen135
+\cmidrulesep=\dimen136
+\cmidrulekern=\dimen137
+\defaultaddspace=\dimen138
+\@cmidla=\count122
+\@cmidlb=\count123
+\@aboverulesep=\dimen139
+\@belowrulesep=\dimen140
+\@thisruleclass=\count124
+\@lastruleclass=\count125
+\@thisrulewidth=\dimen141
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count126
+\LTcapwidth=\dimen142
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
+\LT@p@ftn=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen143
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box32
+\sift@deathcycles=\count131
+\@vwid@loff=\dimen144
+\@vwid@roff=\dimen145
+)
+\c@taburow=\count132
+\tabu@nbcols=\count133
+\tabu@cnt=\count134
+\tabu@Xcol=\count135
+\tabu@alloc=\count136
+\tabu@nested=\count137
+\tabu@target=\dimen146
+\tabu@spreadtarget=\dimen147
+\tabu@naturalX=\dimen148
+\tabucolX=\dimen149
+\tabu@Xsum=\dimen150
+\extrarowdepth=\dimen151
+\abovetabulinesep=\dimen152
+\belowtabulinesep=\dimen153
+\tabustrutrule=\dimen154
+\tabu@thebody=\toks24
+\tabu@footnotes=\toks25
+\tabu@box=\box33
+\tabu@arstrutbox=\box34
+\tabu@hleads=\box35
+\tabu@vleads=\box36
+\tabu@cellskip=\skip60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box37
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen155
+\ttl@minus=\dimen156
+\ttl@toksa=\toks26
+\titlewidth=\dimen157
+\titlewidthlast=\dimen158
+\titlewidthfirst=\dimen159
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
+Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
+\BKM@id=\count138
+))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count139
+\float@exts=\toks27
+\float@box=\box38
+\@float@everytoks=\toks28
+\@floatcapt=\box39
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen160
+\captionmargin@=\dimen161
+\captionwidth=\dimen162
+\caption@tempdima=\dimen163
+\caption@indent=\dimen164
+\caption@parindent=\dimen165
+\caption@hangindent=\dimen166
+)
+\c@ContinuedFloat=\count140
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+))
+\c@KVtest=\count141
+\sf@farskip=\skip63
+\sf@captopadj=\dimen167
+\sf@capskip=\skip64
+\sf@nearskip=\skip65
+\c@subfigure=\count142
+\c@subfigure@save=\count143
+\c@lofdepth=\count144
+\c@subtable=\count145
+\c@subtable@save=\count146
+\c@lotdepth=\count147
+\sf@top=\skip66
+\sf@bottom=\skip67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/yfonts/yfonts.sty
+Package: yfonts 2003/01/08 v1.3 (WaS)
+Now handling font encoding LY ...
+... no UTF-8 mapping file for font encoding LY
+Now handling font encoding LYG ...
+... no UTF-8 mapping file for font encoding LYG
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box40
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mathtools.sty
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count148
+\calc@Bcount=\count149
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count150
+\calc@Cskip=\skip70
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mh/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks29
+\ex@=\dimen170
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count151
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count152
+\leftroot@=\count153
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count154
+\DOTSCASE@=\count155
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen172
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count156
+\c@MaxMatrixCols=\count157
+\dotsspace@=\muskip11
+\c@parentequation=\count158
+\dspbrk@lvl=\count159
+\tag@help=\toks30
+\row@=\count160
+\column@=\count161
+\maxfields@=\count162
+\andhelp@=\toks31
+\eqnshift@=\dimen173
+\alignsep@=\dimen174
+\tagshift@=\dimen175
+\tagwidth@=\dimen176
+\totwidth@=\dimen177
+\lineht@=\dimen178
+\@envbody=\toks32
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count163
+\l_MT_multwidth_dim=\dimen179
+\origjot=\skip74
+\l_MT_shortvdotswithinadjustabove_dim=\dimen180
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen181
+\l_MT_above_intertext_sep=\dimen182
+\l_MT_below_intertext_sep=\dimen183
+\l_MT_above_shortintertext_sep=\dimen184
+\l_MT_below_shortintertext_sep=\dimen185
+)
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count164
+\c@@ppsavesec=\count165
+\c@@ppsaveapp=\count166
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 125.
+\c@subsubsubsection=\count167
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2013/08/26 1.5b listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+
+(./PianoDiQualifica_v.3.0.0.aux
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+
+LaTeX Warning: Label `tab:verTestUnit' multiply defined.
+
+)
+\openout1 = `PianoDiQualifica_v.3.0.0.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 674.33032pt, 113.81102pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=674.33032pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=71.13188pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \it@ocap on input line 29.
+LaTeX Info: Redefining \it@ccap on input line 29.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count168
+\scratchdimen=\dimen186
+\scratchbox=\box43
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count171
+\MPscratchDim=\dimen187
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks35
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box44
+Package hyperref Info: Link coloring ON on input line 29.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count174
+)
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 29.
+\c@lstlisting=\count175
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(../../Template/firstpage.tex <../../logo.jpg, id=4, 572.1375pt x 572.1375pt>
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 22.
+(pdftex.def)             Requested size: 227.62pt x 227.62pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo.jpg>]) (./parti
+/registroMod.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [2] (./PianoDiQualifica_v.3.0.0.toc)
+\tf@toc=\write3
+\openout3 = `PianoDiQualifica_v.3.0.0.toc'.
+
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [3] (./PianoDiQualifica_v.3.0.0.lof)
+\tf@lof=\write4
+\openout4 = `PianoDiQualifica_v.3.0.0.lof'.
+
+
+(./PianoDiQualifica_v.3.0.0.lot)
+\tf@lot=\write5
+\openout5 = `PianoDiQualifica_v.3.0.0.lot'.
+
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 38.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [4]
+(../../Template/sommario.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 40.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [5]
+(./parti/introduzione.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 14.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 30.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[6])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 42.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7] (./parti/obiettivi.tex
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [9]
+<./images/ISO-IEC_9126.png, id=215, 858.95906pt x 484.05844pt>
+File: ./images/ISO-IEC_9126.png Graphic file (type png)
+
+<use ./images/ISO-IEC_9126.png>
+Package pdftex.def Info: ./images/ISO-IEC_9126.png used on input line 62.
+(pdftex.def)             Requested size: 338.58632pt x 190.80582pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 75.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10 <./images/ISO-IEC_9126.png>]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 91.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [11]
+<./images/deming.png, id=232, 220.825pt x 150.5625pt>
+File: ./images/deming.png Graphic file (type png)
+
+<use ./images/deming.png>
+Package pdftex.def Info: ./images/deming.png used on input line 101.
+(pdftex.def)             Requested size: 241.84843pt x 164.90475pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 113.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [12 <./images/deming.png>])
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 44.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [13] (./parti/strategiaVerifica.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 27.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [14])
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 46.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [15]
+(./parti/strumentiTecnicheMetodi.tex
+Overfull \hbox (13.3293pt too wide) in paragraph at lines 22--23
+[]\T1/cmr/bx/n/12 Test fun-zio-na-li\T1/cmr/m/n/12 : met-to-no al-la pro-va le 
+fun-zio-na-li-tà del si-ste-ma, si-mu-lan-do l'Iterazione$[]$
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 23.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [16]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 32.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 47.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 47.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 47.
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 55.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 83.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [18]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 95.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 95.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [19] (./parti/resocontoAttivitaVerifica.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+
+ []
+
+
+Overfull \hbox (4.28546pt too wide) in paragraph at lines 42--42
+[]|\T1/cmr/m/n/12 Afferente| 
+ []
+
+
+Overfull \hbox (3.47177pt too wide) in paragraph at lines 42--43
+[]|\T1/cmr/m/n/12 Efferente| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 59.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--80
+
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 85.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 54.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22] (./parti/pianificazioneTest.tex
+Underfull \hbox (badness 3919) in paragraph at lines 29--29
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 31--31
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 35--35
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 37--37
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 39--39
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 45--45
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 45--45
+\T1/cmr/m/n/12 sce-glie-re il ti-po di Frame$[]$ da
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 47--47
+\T1/cmr/m/n/12 sta-re un Frame$[]$ in mo-da-li-tà
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 53--53
+\T1/cmr/m/n/12 di-fi-ca-re del te-sto già pre-sen-te
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 59--59
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 59--59
+\T1/cmr/m/n/12 in-se-ri-re un vi-deo o un au-dio
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 67--67
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 69--69
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 71--71
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 77--77
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 79--79
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 91--91
+\T1/cmr/m/n/12 fi-ni-re una tran-si-zio-ne tra due
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 97--97
+\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 106.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23]
+Underfull \hbox (badness 3919) in paragraph at lines 107--107
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 107--107
+\T1/cmr/m/n/12 in-se-ri-re un Elemento$[]$ SVG in
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 107--107
+\T1/cmr/m/n/12 un Frame$[]$ o nel pia-no del-la
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 109--109
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 113--113
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 115--115
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 123--123
+\T1/cmr/m/n/12 se-gna-re un Bookmark$[]$ ad un
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 146.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 146.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25]
+Underfull \hbox (badness 2088) in paragraph at lines 149--149
+\T1/cmr/m/n/12 ri-ca-re in lo-ca-le un'Infografica$[]$
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 159--159
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 159--159
+\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 173--173
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 177--177
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 179--179
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 179--179
+\T1/cmr/m/n/12 ese-gui-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 181--181
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 181--181
+\T1/cmr/m/n/12 chiu-de-re una pre-sen-ta-zio-ne in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 183--183
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 186.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26]
+Underfull \hbox (badness 3919) in paragraph at lines 187--187
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 187--187
+\T1/cmr/m/n/12 Sospendere$[]$ la ri-pro-du-zio-ne di
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 187--187
+\T1/cmr/m/n/12 un vi-deo/au-dio e ri-pren-der-la
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 193--193
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 195--195
+\T1/cmr/m/n/12 sa-re da pre-sen-ta-zio-ne au-to-ma-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 197--197
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 203--203
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--205
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 205--205
+\T1/cmr/m/n/12 ni-stra-to-re pos-sa eli-mi-na-re un
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 207--207
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che l'am-mi-ni-
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 207--207
+\T1/cmr/m/n/12 stra-to-re pos-sa ri-pri-sti-na-re un
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 213--213
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 213--213
+\T1/cmr/m/n/12 sa-no se-le-zio-na-re gli elementi$[]$
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 215--215
+\T1/cmr/m/n/12 sa-re in mo-da-li-tà mo-di-fi-ca di
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 217--217
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 221--221
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 226.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [27]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 226.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [28]
+Underfull \hbox (badness 3919) in paragraph at lines 227--227
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 233--233
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 233--233
+\T1/cmr/m/n/12 cam-bia-re la po-si-zio-ne di un
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 235--235
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
+\T1/cmr/m/n/12 sa ri-muo-ve-re lo sfon-do
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 239--239
+\T1/cmr/m/n/12 se-ri-re un Elemento$[]$ im-ma-gi-ne
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 241--241
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 245--245
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa-
+ []
+
+
+Underfull \hbox (badness 7613) in paragraph at lines 251--251
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 251--251
+\T1/cmr/m/n/12 sa espor-ta-re un'Infografica$[]$ in
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 253--253
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [29]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [30]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 254.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[31]
+Underfull \hbox (badness 3838) in paragraph at lines 274--274
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che sia di-spo-ni-bi-
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 278--278
+[]|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che il si-ste-ma of-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 281.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+<./images/IntegrazioneDiagramma.pdf, id=399, 751.60799pt x 1320.935pt>
+File: ./images/IntegrazioneDiagramma.pdf Graphic file (type pdf)
+
+<use ./images/IntegrazioneDiagramma.pdf>
+Package pdftex.def Info: ./images/IntegrazioneDiagramma.pdf used on input line 
+289.
+(pdftex.def)             Requested size: 263.06673pt x 462.33418pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]|\T1/cmr/bx/n/12 Componenti
+ []
+
+
+Overfull \hbox (21.54716pt too wide) in alignment at lines 294--299
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
+[]|\T1/cmr/bx/n/12 Componenti
+ []
+
+
+Overfull \hbox (21.54716pt too wide) in alignment at lines 299--303
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (21.54716pt too wide) in alignment at lines 303--305
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (21.54716pt too wide) in alignment at lines 305--307
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 314--314
+\T1/cmr/m/n/12 te-ra-gi-sca cor-ret-ta-men-te con le
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 318--318
+\T1/cmr/m/n/12 de-Sho-wE-le-men-ts e ser-ver-Re-la-
+ []
+
+
+Overfull \hbox (3.19781pt too wide) in paragraph at lines 318--318
+[]|\T1/cmr/m/n/12 SlideshowActions| 
+ []
+
+
+Overfull \hbox (21.54716pt too wide) in alignment at lines 307--325
+ [] [] [] [] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 325.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [33 <./images/IntegrazioneDiagramma.pdf>]
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 328.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [34]
+Underfull \hbox (badness 1533) in paragraph at lines 353--353
+[]|\T1/cmr/m/n/12 viene in-se-ri-ta una pre-sen-ta-zio-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 354--354
+[]|\T1/cmr/m/n/12 TU10| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 354--354
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 3019) in paragraph at lines 354--354
+\T1/cmr/m/n/12 nuo-va pre-sen-ta-zio-ne, si ve-ri-fi-
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 354--354
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 355--355
+[]|\T1/cmr/m/n/12 TU11| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 355--355
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 355--355
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 356--356
+[]|\T1/cmr/m/n/12 TU12| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
+[]|\T1/cmr/m/n/12 GET pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 357--357
+[]|\T1/cmr/m/n/12 TU13| 
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 357--357
+[]|\T1/cmr/m/n/12 DELETE pri-va-te/a-pi/-pre-sen-ta-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 358--358
+[]|\T1/cmr/m/n/12 TU14| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 359--359
+[]|\T1/cmr/m/n/12 TU15| 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 359--359
+\T1/cmr/m/n/12 una pre-sen-ta-zio-ne in da-ta-ba-se,
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 359--359
+\T1/cmr/m/n/12 vie-ne chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
+[]|\T1/cmr/m/n/12 DELETE pri-va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
+\T1/cmr/m/n/12 te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 360--360
+[]|\T1/cmr/m/n/12 TU16| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 360--360
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 360--360
+\T1/cmr/m/n/12 Elemento$[]$ in una pre-sen-ta-zio-
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 360--360
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 361--361
+[]|\T1/cmr/m/n/12 TU17| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]|\T1/cmr/m/n/12 viene ve-ri-fi-ca-ta la mo-di-fi-ca
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]|\T1/cmr/m/n/12 PUT pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 362--362
+[]|\T1/cmr/m/n/12 TU18| 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 362--362
+\T1/cmr/m/n/12 una pre-sen-ta-zio-ne in da-ta-ba-se,
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 362--362
+\T1/cmr/m/n/12 vie-ne chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
+[]|\T1/cmr/m/n/12 PUT pri-va-te/a-pi/-pre-sen-ta-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 363--363
+[]|\T1/cmr/m/n/12 TU19| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 364--364
+[]|\T1/cmr/m/n/12 TU20| 
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 364--364
+[]|\T1/cmr/m/n/12 viene in-se-ri-to un File$[]$ im-ma-
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 364--364
+\T1/cmr/m/n/12 del Server$[]$ per la can-cel-la-zio-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
+[]|\T1/cmr/m/n/12 DELETE
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 365--365
+[]|\T1/cmr/m/n/12 TU21| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 365--365
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 366--366
+[]|\T1/cmr/m/n/12 TU22| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--366
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-fi-le-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 367--367
+[]|\T1/cmr/m/n/12 TU23| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--367
+[]|\T1/cmr/m/n/12 GET pri-va-te/a-pi/-fi-le-s/-si-zeI-ma-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 368--368
+[]|\T1/cmr/m/n/12 TU24| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 369--369
+[]|\T1/cmr/m/n/12 TU25| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\T1/cmr/m/n/12 DELETE
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 370--370
+[]|\T1/cmr/m/n/12 TU26| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 370--370
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 371--371
+[]|\T1/cmr/m/n/12 TU27| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-fi-le-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 372--372
+[]|\T1/cmr/m/n/12 TU28| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 373--373
+[]|\T1/cmr/m/n/12 TU29| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\T1/cmr/m/n/12 DELETE
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 374--374
+[]|\T1/cmr/m/n/12 TU30| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 374--374
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 375--375
+[]|\T1/cmr/m/n/12 TU31| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]|\T1/cmr/m/n/12 POST pri-va-te/a-pi/-fi-le-
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 376.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [35]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 376.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [36]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 376.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[37]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 376.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [38]
+Overfull \hbox (7.32077pt too wide) in alignment at lines 378--383
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 383--387
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 387--389
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 389--391
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 392--392
+[]|\T1/cmr/m/n/12 TU32| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 393--393
+[]|\T1/cmr/m/n/12 TU33| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 394--394
+[]|\T1/cmr/m/n/12 TU34| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 395--395
+[]|\T1/cmr/m/n/12 TU35| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 396--396
+[]|\T1/cmr/m/n/12 TU36| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 397--397
+[]|\T1/cmr/m/n/12 TU37| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 398--398
+[]|\T1/cmr/m/n/12 TU38| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 399--399
+[]|\T1/cmr/m/n/12 TU39| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 400--400
+[]|\T1/cmr/m/n/12 TU40| 
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 400--400
+\T1/cmr/m/n/12 Server$[]$ at-tra-ver-so la chia-ma-ta
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 401--401
+[]|\T1/cmr/m/n/12 TU41| 
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 401--401
+\T1/cmr/m/n/12 Server$[]$ at-tra-ver-so la chia-ma-ta
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 391--402
+ [] [] [] [] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 402.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [39]
+Overfull \hbox (35.77353pt too wide) in alignment at lines 403--408
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (35.77353pt too wide) in alignment at lines 408--412
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (35.77353pt too wide) in alignment at lines 412--414
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (35.77353pt too wide) in alignment at lines 414--416
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 417--417
+[]|\T1/cmr/m/n/12 TU42| 
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 417--417
+[]|\T1/cmr/m/n/12 viene in-se-ri-ta una pre-sen-ta-zio-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 418--418
+[]|\T1/cmr/m/n/12 TU43| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 419--419
+[]|\T1/cmr/m/n/12 TU44| 
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 419--419
+\T1/cmr/m/n/12 sen-ta-zio-ne co-me co-pia di una
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 419--419
+\T1/cmr/m/n/12 gia esi-sten-te, vie-ne ve-ri-fi-ca-to
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 419--419
+\T1/cmr/m/n/12 in da-ta-ba-se co-me co-pia del-la
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 420--420
+[]|\T1/cmr/m/n/12 TU45| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 421--421
+[]|\T1/cmr/m/n/12 TU46| 
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 421--421
+[]|\T1/cmr/m/n/12 viene in-se-ri-ta una pre-sen-ta-zio-
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 421--421
+\T1/cmr/m/n/12 ne in da-ta-ba-se e vie-ne chia-
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 421--421
+\T1/cmr/m/n/12 ma-to il me-to-do di eli-mi-na-zio-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 422--422
+[]|\T1/cmr/m/n/12 TU47| 
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 422--422
+[]|\T1/cmr/m/n/12 viene in-se-ri-ta una pre-sen-ta-zio-
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 422--422
+\T1/cmr/m/n/12 ne in da-ta-ba-se e vie-ne chia-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 423--423
+[]|\T1/cmr/m/n/12 TU48| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 423--423
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do del
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 423--423
+\T1/cmr/m/n/12 Elemento$[]$ in una pre-sen-ta-zio-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 424--424
+[]|\T1/cmr/m/n/12 TU49| 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 424--424
+\T1/cmr/m/n/12 una pre-sen-ta-zio-ne in da-ta-ba-se,
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 424--424
+\T1/cmr/m/n/12 pa-ra-me-tri cor-ret-ti e si os-ser-va
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 425--425
+[]|\T1/cmr/m/n/12 TU50| 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 425--425
+\T1/cmr/m/n/12 una pre-sen-ta-zio-ne in da-ta-ba-se,
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 425--425
+\T1/cmr/m/n/12 vie-ne chia-ma-to il me-to-do con
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 426--426
+[]|\T1/cmr/m/n/12 TU51| 
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 426--426
+[]|\T1/cmr/m/n/12 viene chia-ma-to il me-to-do per
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 426--426
+\T1/cmr/m/n/12 una pre-sen-ta-zio-ne e si os-ser-va
+ []
+
+
+Overfull \hbox (35.77353pt too wide) in alignment at lines 416--427
+ [] [] [] [] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 427.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [40]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 427.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [41]
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 442--442
+[]|\T1/cmr/m/n/12 TU52| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 459--459
+[]|\T1/cmr/m/n/12 TU53| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 461--461
+[]|\T1/cmr/m/n/12 TU54| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 463--463
+[]|\T1/cmr/m/n/12 TU55| 
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 463--463
+[]|\T1/cmr/m/n/12 Si ve-ri-fi-ca che Au-then-ti-ca-tion-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 465--465
+[]|\T1/cmr/m/n/12 TU56| 
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 465--465
+[]|\T1/cmr/m/n/12 Si ve-ri-fi-ca che Ho-me-Con-trol-ler
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 467--467
+[]|\T1/cmr/m/n/12 TU57| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 469--469
+[]|\T1/cmr/m/n/12 TU58| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 471--471
+[]|\T1/cmr/m/n/12 TU59| 
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 471--471
+[]|\T1/cmr/m/n/12 Si ve-ri-fi-ca che Edit-Con-trol-ler
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 488--488
+[]|\T1/cmr/m/n/12 TU60| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
+[]|\T1/cmr/m/n/12 Richiama il co-strut-to-re di
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 489--489
+[]|\T1/cmr/m/n/12 TU61| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 490--490
+[]|\T1/cmr/m/n/12 TU62| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 491--491
+[]|\T1/cmr/m/n/12 TU63| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 492--492
+[]|\T1/cmr/m/n/12 TU64| 
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 492--492
+[]|\T1/cmr/m/n/12 Richiama il co-strut-to-re di Vi-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 493--493
+[]|\T1/cmr/m/n/12 TU65| 
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 493--493
+\T1/cmr/m/n/12 ground(...) e ve-ri-fi-ca che sia
+ []
+
+
+Overfull \hbox (3.00624pt too wide) in paragraph at lines 493--493
+[]|\T1/cmr/m/n/12 slideShowElements::Background()| 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 495.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [42]
+Overfull \hbox (7.32077pt too wide) in alignment at lines 496--501
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 501--505
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 505--507
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 507--509
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 510--510
+[]|\T1/cmr/m/n/12 TU66| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 511--511
+[]|\T1/cmr/m/n/12 TU67| 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 512--512
+[]|\T1/cmr/m/n/12 TU68| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 512--512
+\T1/cmr/m/n/12 ve()::insertText e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 512--512
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 513--513
+[]|\T1/cmr/m/n/12 TU69| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 513--513
+\T1/cmr/m/n/12 ve()::insertFrame e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 513--513
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 514--514
+[]|\T1/cmr/m/n/12 TU70| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--514
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 514--514
+\T1/cmr/m/n/12 ve()::insertImage e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 514--514
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 515--515
+[]|\T1/cmr/m/n/12 TU71| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--515
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 515--515
+\T1/cmr/m/n/12 ve()::insertSVG e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 515--515
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 516--516
+[]|\T1/cmr/m/n/12 TU72| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 516--516
+\T1/cmr/m/n/12 ve()::insertAudio e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 516--516
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 517--517
+[]|\T1/cmr/m/n/12 TU73| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 517--517
+\T1/cmr/m/n/12 ve()::insertVideo e ve-ri-fi-ca che
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 517--517
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 518--518
+[]|\T1/cmr/m/n/12 TU74| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 518--518
+\T1/cmr/m/n/12 ve()::editPosition(...) su ogni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 518--518
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 518--518
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 519--519
+[]|\T1/cmr/m/n/12 TU75| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-
+ []
+
+
+Underfull \hbox (badness 4582) in paragraph at lines 519--519
+\T1/cmr/m/n/12 mo-ve()::editSize(...) su ogni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 519--519
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 519--519
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 520--520
+[]|\T1/cmr/m/n/12 TU76| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 520--520
+\T1/cmr/m/n/12 ve()::editRotation(...) su ogni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 520--520
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 520--520
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 521--521
+[]|\T1/cmr/m/n/12 TU77| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 521--521
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 521--521
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 522--522
+[]|\T1/cmr/m/n/12 TU78| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
+\T1/cmr/m/n/12 ve()::editColor(...) su ogni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 522--522
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 522--522
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 523--523
+[]|\T1/cmr/m/n/12 TU79| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 523--523
+\T1/cmr/m/n/12 ve()::editShape(...) su ogni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+\T1/cmr/m/n/12 mo-di-fi-ca-to ap-pro-pria-ta-men-te,
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 523--523
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 523--523
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 524--524
+[]|\T1/cmr/m/n/12 TU80| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
+\T1/cmr/m/n/12 ve()::removeText(...), con-trol-la
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 524--524
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 524--524
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 525--525
+[]|\T1/cmr/m/n/12 TU81| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 525--525
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 525--525
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 526--526
+[]|\T1/cmr/m/n/12 TU82| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 526--526
+\T1/cmr/m/n/12 ve()::removeImage(...), con-trol-la
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 526--526
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 526--526
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 527--527
+[]|\T1/cmr/m/n/12 TU83| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 527--527
+\T1/cmr/m/n/12 ve()::removeAudio(...), con-trol-la
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 527--527
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 527--527
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 528--528
+[]|\T1/cmr/m/n/12 TU84| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--528
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 528--528
+\T1/cmr/m/n/12 ve()::removeVideo(...), con-trol-la
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 528--528
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 528--528
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 529--529
+[]|\T1/cmr/m/n/12 TU85| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
+\T1/cmr/m/n/12 ve()::removeBackground(...),
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 529--529
+\T1/cmr/m/n/12 con-trol-la che ven-ga ri-tor-na-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 529--529
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 509--530
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.58461pt too wide) in paragraph at lines 530--530
+[]|\T1/cmr/m/n/12 TU86| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
+[]|\T1/cmr/m/n/12 Richiama il In-ser-tE-di-tRe-mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
+\T1/cmr/m/n/12 ve()::removeSVG(...), con-trol-la
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 530--530
+\T1/cmr/m/n/12 che ven-ga ri-tor-na-to l'og-get-to
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 530--530
+[]|\T1/cmr/m/n/12 slideShowActions:: In-ser-tE-di-tRe-mo-
+ []
+
+
+Overfull \hbox (7.32077pt too wide) in alignment at lines 530--532
+ [] [] [] [] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 532.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [43]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 532.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [44]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 532.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[45]) 
+AED: lastpage setting LastPage
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [46]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+ (./PianoDiQualifica_v.3.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13696 strings out of 494969
+ 198916 string characters out of 6178806
+ 386759 words of memory out of 5000000
+ 16533 multiletter control sequences out of 15000+600000
+ 16527 words of font info for 39 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 51i,16n,60p,950b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </hom
+e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/petruc
+ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
+88.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on PianoDiQualifica_v.3.0.0.pdf (47 pages, 397457 bytes).
+PDF statistics:
+ 1045 PDF objects out of 1200 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 112 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+

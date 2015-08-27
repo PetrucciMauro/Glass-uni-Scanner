@@ -1,0 +1,104 @@
+\subsection{UC 1.4 - Modifica presentazione da mobile}{
+	\label{uc1.4}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4}
+		\caption{Caso d'uso 1.4: Modifica mobile di una presentazione}
+	\end{figure}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: L'utente mobile\ped{g} ha scelto l'opzione di modifica della presentazione. L'utente mobile\ped{g} può scegliere di modificare un Frame\ped{g} o di gestire i Bookmark\ped{g}. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
+	\textbf{Postcondizione}: il sistema contiene una presentazione che l'utente è riuscito a modificare correttamente.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Modifica mobile di un Frame\ped{g} \S\hyperref[uc1.4.1]{(UC 1.4.1)};
+		\item Gestione mobile dei Bookmark\ped{g} \S\hyperref[uc1.4.2]{(UC 1.4.2)}.
+	\end{enumerate}
+	\textbf{Scenari alternativi}: 
+	\begin{itemize}
+		\item L'operazione viene annullata e non si apportano cambiamenti \S\hyperref[uc1.5]{(UC 1.5)}.
+	\end{itemize}
+	}
+\subsubsection{UC 1.4.1 - Modifica mobile di un frame}{
+	\label{uc1.4.1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4.1}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4.1}
+		\caption{Caso d'uso 1.4.1: Modifica mobile di un frame}
+	\end{figure}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} ha scelto l'opzione di modifica di un Frame\ped{g}. L'utente mobile\ped{g} può scegliere di inserire o modificare un Elemento\ped{g} testo. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
+	\textbf{Postcondizione}: la presentazione contiene un Frame\ped{g} che l'utente è riuscito a modificare correttamente.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento di un Elemento\ped{g} testo \S\hyperref[uc1.4.1.1]{(UC 1.4.1.1)};
+		\item Modifica di un Elemento\ped{g} testo \S\hyperref[uc1.4.1.2]{(UC 1.4.1.2)}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.1.1 - Inserimento di un Elemento\ped{g} testo}{
+	\label{uc1.4.1.1}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} inserisce un Elemento\ped{g} di tipo testo all'interno del Frame\ped{g}. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera aggiungere un nuovo Elemento\ped{g} testuale.	\\
+	\textbf{Postcondizione}: l'utente ha inserito nel Frame\ped{g} un nuovo Elemento\ped{g} testo.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile\ped{g} seleziona l'opzione di inserimento testo;
+		\item L'utente mobile\ped{g} inserisce il testo desiderato.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.1.2 - Modifica di un Elemento\ped{g} testo}{
+	\label{uc1.4.1.2}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} modifica un Elemento\ped{g} testo presente all'interno del Frame\ped{g}. \\
+	\textbf{Precondizione}: il sistema presenta un Elemento\ped{g} testo selezionato e l'utente desidera modificarne il contenuto.	\\
+	\textbf{Postcondizione}: nel Frame\ped{g} è presente un Elemento\ped{g} testo che l'utente ha modificato con successo.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile\ped{g} seleziona un Elemento\ped{g} testo;
+		\item L'utente mobile\ped{g} modifica il testo selezionato.
+	\end{enumerate}
+	}	
+\subsubsection{UC 1.4.2 - Gestione mobile bookmark}{
+	\label{uc1.4.2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {UC1.4.2}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.4.2}
+		\caption{Caso d'uso 1.4.2: Gestione mobile dei bookmark}
+	\end{figure}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} ha scelto l'opzione di gestione dei Bookmark\ped{g}. L'utente mobile\ped{g} può scegliere di inserire o rimuovere Bookmark\ped{g}. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata correttamente e aperta in modalità modifica.	\\
+	\textbf{Postcondizione}: la presentazione contiene una diversa disposizione dei Bookmark\ped{g}.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item Inserimento di un nuovo Bookmark\ped{g} \S\hyperref[uc1.4.2.1]{(UC 1.4.2.1)};
+		\item Rimozione di un Bookmark\ped{g} \S\hyperref[uc1.4.2.2]{(UC 1.4.2.2)}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.2.1 - Inserimento di un nuovo bookmark}{
+	\label{uc1.4.2.1}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} inserisce un Bookmark\ped{g} su un Frame\ped{g} che non ne contiene uno. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera aggiungere un nuovo Bookmark\ped{g}.	\\
+	\textbf{Postcondizione}: il Frame\ped{g} selezionato contiene un nuovo Bookmark\ped{g}.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile\ped{g} seleziona un Frame\ped{g} assegnando il Bookmark\ped{g}.
+	\end{enumerate}
+	}
+\subsubsection{UC 1.4.2.2 - Rimozione di un bookmark}{
+	\label{uc1.4.2.2}
+	\textbf{Attori}: utente mobile\ped{g} \\
+	\textbf{Descrizione}: l'utente mobile\ped{g} rimuove un Bookmark\ped{g} da un Frame\ped{g}. \\
+	\textbf{Precondizione}: il sistema ha una presentazione caricata e l'utente desidera rimuovere un Bookmark\ped{g}.	\\
+	\textbf{Postcondizione}: il Frame\ped{g} selezionato non contiene un Bookmark\ped{g}.	\\
+	\textbf{Scenario principale}:
+	\begin{enumerate}
+		\item L'utente mobile\ped{g} seleziona un Frame\ped{g} rimuovendo il Bookmark\ped{g}.
+	\end{enumerate}
+	}

@@ -1,0 +1,20 @@
+\subsection{Gerarchia di utenti}{
+	\label{users}
+	Verrà considerata in tutti i casi d'uso\ped{g} la seguente gerarchia di utenti:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {GerarchiaUtenti}.jpg} %inserire il diagramma UML
+		\label{fig:uc1}
+		\caption{Gerarchia utenti}
+	\end{figure}
+	
+	\begin{enumerate}
+		\item Utente offline: attore che ha aperto l'applicazione WEB\ped{g} \premi\ senza una connessione alla rete;
+		\item Utente online: attore che ha aperto l'applicazione WEB\ped{g} \premi\ attraverso una connessione alla rete;
+		\item Utente non autenticato\ped{g}: utente online non autenticato al sistema;
+		\item Utente autenticato\ped{g}: utente online autenticato al sistema;
+		\item Utente mobile\ped{g}: utente autenticato\ped{g} da dispositivo mobile\ped{g};
+		\item Utente Desktop\ped{g}: utente autenticato\ped{g} da dispositivo Desktop\ped{g};
+		\item Amministratore: utente Desktop\ped{g} autenticatosi con le credenziali di amministratore.
+	\end{enumerate}
+	}

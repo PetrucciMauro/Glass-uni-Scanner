@@ -1,0 +1,469 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                  %%
+%%  This is the header of a LaTeX2e file exported from Gnumeric.    %%
+%%                                                                  %%
+%%  This file can be compiled as it stands or included in another   %%
+%%  LaTeX document. The table is based on the longtable package so  %%
+%%  the longtable options (headers, footers...) can be set in the   %%
+%%  preamble section below (see PRAMBLE).                           %%
+%%                                                                  %%
+%%  To include the file in another, the following two lines must be %%
+%%  in the including file:                                          %%
+%%        \def\inputGnumericTable{}                                 %%
+%%  at the beginning of the file and:                               %%
+%%        \input{name-of-this-file.tex}                             %%
+%%  where the table is to be placed. Note also that the including   %%
+%%  file must use the following packages for the table to be        %%
+%%  rendered correctly:                                             %%
+%%    \usepackage[latin1]{inputenc}                                 %%
+%%    \usepackage{color}                                            %%
+%%    \usepackage{array}                                            %%
+%%    \usepackage{longtable}                                        %%
+%%    \usepackage{calc}                                             %%
+%%    \usepackage{multirow}                                         %%
+%%    \usepackage{hhline}                                           %%
+%%    \usepackage{ifthen}                                           %%
+%%  optionally (for landscape tables embedded in another document): %%
+%%    \usepackage{lscape}                                           %%
+%%                                                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%  This section checks if we are begin input into another file or  %%
+%%  the file will be compiled alone. First use a macro taken from   %%
+%%  the TeXbook ex 7.7 (suggestion of Han-Wen Nienhuys).            %%
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax}
+
+
+%%  Check for the \def token for inputed files. If it is not        %%
+%%  defined, the file will be processed as a standalone and the     %%
+%%  preamble will be used.                                          %%
+\ifundefined{inputGnumericTable}
+
+%%  We must be able to close or not the document at the end.        %%
+	\def\gnumericTableEnd{\end{document}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                  %%
+%%  This is the PREAMBLE. Change these values to get the right      %%
+%%  paper size and other niceties.                                  %%
+%%                                                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\documentclass[12pt%
+			  %,landscape%
+                    ]{report}
+       \usepackage[latin1]{inputenc}
+       \usepackage{fullpage}
+       \usepackage{color}
+       \usepackage{array}
+       \usepackage{longtable}
+       \usepackage{calc}
+       \usepackage{multirow}
+       \usepackage{hhline}
+       \usepackage{ifthen}
+
+	\begin{document}
+
+
+%%  End of the preamble for the standalone. The next section is for %%
+%%  documents which are included into other LaTeX2e files.          %%
+\else
+
+%%  We are not a stand alone document. For a regular table, we will %%
+%%  have no preamble and only define the closing to mean nothing.   %%
+    \def\gnumericTableEnd{}
+
+%%  If we want landscape mode in an embedded document, comment out  %%
+%%  the line above and uncomment the two below. The table will      %%
+%%  begin on a new page and run in landscape mode.                  %%
+%       \def\gnumericTableEnd{\end{landscape}}
+%       \begin{landscape}
+
+
+%%  End of the else clause for this file being \input.              %%
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                  %%
+%%  The rest is the gnumeric table, except for the closing          %%
+%%  statement. Changes below will alter the table's appearance.     %%
+%%                                                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providecommand{\gnumericmathit}[1]{#1} 
+%%  Uncomment the next line if you would like your numbers to be in %%
+%%  italics if they are italizised in the gnumeric table.           %%
+%\renewcommand{\gnumericmathit}[1]{\mathit{#1}}
+\providecommand{\gnumericPB}[1]%
+{\let\gnumericTemp=\\#1\let\\=\gnumericTemp\hspace{0pt}}
+ \ifundefined{gnumericTableWidthDefined}
+        \newlength{\gnumericTableWidth}
+        \newlength{\gnumericTableWidthComplete}
+        \newlength{\gnumericMultiRowLength}
+        \global\def\gnumericTableWidthDefined{}
+ \fi
+%% The following setting protects this code from babel shorthands.  %%
+ \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{english}}
+%%  The default table format retains the relative column widths of  %%
+%%  gnumeric. They can easily be changed to c, r or l. In that case %%
+%%  you may want to comment out the next line and uncomment the one %%
+%%  thereafter                                                      %%
+\providecommand\gnumbox{\makebox[0pt]}
+%%\providecommand\gnumbox[1][]{\makebox}
+
+%% to adjust positions in multirow situations                       %%
+\setlength{\bigstrutjot}{\jot}
+\setlength{\extrarowheight}{\doublerulesep}
+
+%%  The \setlongtables command keeps column widths the same across  %%
+%%  pages. Simply comment out next line for varying column widths.  %%
+\setlongtables
+
+\setlength\gnumericTableWidth{%
+	64pt+%
+	103pt+%
+	457pt+%
+	68pt+%
+0pt}
+\def\gumericNumCols{4}
+\setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
+         \tabcolsep*\gumericNumCols*2+\arrayrulewidth*\gumericNumCols}
+\ifthenelse{\lengthtest{\gnumericTableWidthComplete > \linewidth}}%
+         {\def\gnumericScale{\ratio{\linewidth-%
+                        \tabcolsep*\gumericNumCols*2-%
+                        \arrayrulewidth*\gumericNumCols}%
+{\gnumericTableWidth}}}%
+{\def\gnumericScale{1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                  %%
+%% The following are the widths of the various columns. We are      %%
+%% defining them here because then they are easier to change.       %%
+%% Depending on the cell formats we may use them more than once.    %%
+%%                                                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{64pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{103pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{457pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{68pt*\gnumericScale}@{}}x\end{tabular}}
+
+\begin{longtable}[c]{%
+	b{\gnumericColB}%
+	b{\gnumericColC}%
+	b{\gnumericColD}%
+	b{\gnumericColE}%
+	}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  The longtable options. (Caption, headers... see Goosens, p.124) %%
+%	\caption{The Table Caption.}             \\	%
+% \hline	% Across the top of the table.
+%%  The rest of these options are table rows which are placed on    %%
+%%  the first, last or every page. Use \multicolumn if you want.    %%
+
+%%  Header for the first page.                                      %%
+%	\multicolumn{4}{c}{The First Header} \\ \hline 
+%	\multicolumn{1}{c}{colTag}	%Column 1
+%	&\multicolumn{1}{c}{colTag}	%Column 2
+%	&\multicolumn{1}{c}{colTag}	%Column 3
+%	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
+%	\endfirsthead
+
+%%  The running header definition.                                  %%
+%	\hline
+%	\multicolumn{4}{l}{\ldots\small\slshape continued} \\ \hline
+%	\multicolumn{1}{c}{colTag}	%Column 1
+%	&\multicolumn{1}{c}{colTag}	%Column 2
+%	&\multicolumn{1}{c}{colTag}	%Column 3
+%	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
+%	\endhead
+
+%%  The running footer definition.                                  %%
+%	\hline
+%	\multicolumn{4}{r}{\small\slshape continued\ldots} \\
+%	\endfoot
+
+%%  The ending footer definition.                                   %%
+%	\multicolumn{4}{c}{That's all folks} \\ \hline 
+%	\endlastfoot
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hhline{|-|-|-|-}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\centering}\textsf{\textbf{Requisito}}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\textsf{\textbf{Tipologia}}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\centering}\textsf{\textbf{Descrizione}}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\centering}\textsf{\textbf{Fonte}}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente, all'interno del server, deve avere 3 cartelle diverse che contengono una solo le presentazioni, una solo le infografiche ed una solo le immagini}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7, UC1.12}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter selezionare una o più immagini dal proprio FS e caricarla sul server all'interno della parte dedicata alle immagini}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7.1}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di creare nuove cartelle all'interno del server}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7,UC1.15}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di cancellare le immagini che ha caricato nel server}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7.2}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di navigare all'interno delle proprie cartelle nel server e vedere i file presenti}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7,UC1.12,UC1.16}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di spostare le proprie presentazioni all'interno del server, dalla posizione in cui queste si trovano, ad una posizione diversa, anche nuova}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7.4}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di spostare le immagini che ha caricato all'interno del server}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7.3}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di eliminare dal server le presentazioni che ha creato}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.7.5}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.11}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Facoltativo}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di modificare la propria password d'accesso al sistema}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.11}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.12}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di scaricare in locale un'infografica che ha creato}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.12}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di navigare nel proprio FS per selezionare la cartella dove salvare l'infografica che vuole scaricare}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.12, UC1.16}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC.13}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter effettuare l'uscita dal sistema}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente una volta uscito dal sistema deve passare alla modalitÃ à offline del sistema}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente, in modalitÃ à offline, deve avere accesso alle cartelle locali destinate alle presentazioni ed alle infografiche.}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.18}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter eseguire una presentazione presente nel server}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.15}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.16}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Facoltativo}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter scaricare dal server una presentazione che ha creato}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.16}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Facoltativo}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter selezionare la posizione in cui salvare la presentazione che sta andando a scaricare}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.16}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.15 -vero}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Funzionale Obbligatorio}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve poter rimuovere una presentazione che ha salvato in locale}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.15}}
+\\
+\hhline{|----|}
+	 \multicolumn{1}{|p{\gnumericColB}|}%
+	{}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\raggedright}\textsf{Facoltativo}}
+	&\multicolumn{1}{p{\gnumericColD}|}%
+	{\gnumericPB{\raggedright}\textsf{L'utente deve essere in grado di navigare all'interno delle cartelle locali destinate alle presentazioni}}
+	&\multicolumn{1}{p{\gnumericColE}|}%
+	{\gnumericPB{\raggedright}\textsf{UC1.15}}
+\\
+\hhline{|-|-|-|-|}
+\end{longtable}
+
+\ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
+\gnumericTableEnd

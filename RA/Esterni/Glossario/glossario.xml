@@ -1,0 +1,401 @@
+<glossario>
+    <lemma>
+        <word>Account</word>
+        <desc>L'insieme di funzionalità, strumenti e contenuti attribuiti ad un nome utente all'interno del programma.</desc>
+    </lemma>
+    <lemma>
+        <word>Analisi Dinamica</word>
+        <plural>analisi dinamiche</plural>
+        <desc>Analisi del software svolta eseguendo il programma.</desc>
+    </lemma>
+    <lemma>
+        <word>Analisi Statica</word>
+        <plural>analisi statiche</plural>
+        <desc>Analisi del software svolta senza eseguire il programma.</desc>
+    </lemma>
+    <lemma>
+        <word>Android</word>
+        <desc>Sistema operativo open-source per dispositivi mobili attualmente sviluppato da Google.</desc>
+    </lemma>
+    <lemma>
+        <word>Arrestare</word>
+        <desc>Interruzione permanente di un’attività.</desc>
+    </lemma>
+    <lemma>
+        <word>Back-end</word>
+        <desc>Parte di un software che elabora i dati generati dal front end e non interagisce con l’utente. Spesso si trova in una macchina diversa da quella del front-end.</desc>
+    </lemma>
+    <lemma>
+        <word>Bookmark</word>
+        <desc>Segnalibro che permette di spostarsi rapidamente da un frame ad un altro al livello più esterno.</desc>
+    </lemma>
+    <lemma>
+        <word>Bottom-up</word>
+        <desc>Il bottom up prende corpo dal punto di partenza (bottom) ovvero dalla situazione iniziale; considera l’obiettivo finale, induce a costruire un percorso sequenziale organizzato in passaggi successivi in cui l’ancoraggio tra traguardi intermedi e obiettivo finale è generalmente ricercato in modo intuitivo (euristico).</desc>
+    </lemma>
+    <lemma>
+        <word>Browser</word>
+        <desc>Un browser è un programma che consente di usufruire dei servizi di connettività in Rete e di navigare sul World Wide Web.</desc>
+    </lemma>
+    <lemma>
+        <word>CSS</word>
+        <desc>(Cascading Style Sheets, in italiano fogli di stile), linguaggio usato per descrivere l’aspetto e la formattazione di un documento scritto con un linguaggio di marcatura.</desc>
+    </lemma>
+    <lemma>
+        <word>Caso d'Uso</word>
+        <plural>Caso D'Uso</plural>
+        <plural>casi d'uso</plural>
+        <plural>Casi D'Uso</plural>
+        <desc>Tecnica utilizzata al fine di effettuare in maniera esaustiva e non ambigua, la raccolta dei requisiti al fine di produrre software di qualità. Essa consiste nel valutare ogni requisito focalizzandosi sugli attori che interagiscono col sistema, valutandone le varie interazioni.</desc>
+    </lemma>
+    <lemma>
+        <word>Ciclo di vita</word>
+        <plural>Cicli di vita</plural>
+        <desc>Scomposizione dell'attività da parte della metodologia di sviluppo di realizzazione di prodotti software in sottoattività fra loro coordinate, il cui risultato finale è il prodotto stesso e tutta la documentazione ad esso associata.</desc>
+    </lemma>
+    <lemma>
+        <word>Codice</word>
+        <plural>codici</plural>
+        <desc>Testo di un algoritmo di un programma scritto in un linguaggio di programmazione da parte di un programmatore in fase di programmazione.</desc>
+    </lemma>
+    <lemma>
+        <word>Codifica</word>
+        <plural>Codifiche</plural>
+        <desc>Stesura di un programma in un certo linguaggio di programmazione, effettuata sulla base di un flusso logico e di algoritmi definiti.</desc>
+    </lemma>
+    <lemma>
+        <word>Commit</word>
+        <desc>Nel contesto di scienza di computer e gestione di dati, commit si riferisce all’idea di rendere permanenti i cambiamenti effettuati nel repository locale.</desc>
+    </lemma>
+    <lemma>
+        <word>Committente</word>
+        <plural>committenti</plural>
+        <desc>Colui che commissiona, per conto di un proponente, un capitolato d’appalto ad un particolare gruppo.</desc>
+    </lemma>
+    <lemma>
+        <word>Crawler</word>
+        <plural>Crawlers</plural>
+        <desc>Detto anche Web Spider, Ant, Automatic Indexer; software che naviga in maniera metodica ed automatizzata il World Wide Web. Viene usato dai motori di ricerca per aggiornare i propri contenuti o per indicizzare i contenuti di altri siti.</desc>
+    </lemma>
+    <lemma>
+        <word>Desktop</word>
+        <desc>Si intende una tipologia di computer contraddistinto dall’essere general purpose, monoutente, destinato ad un utilizzo non in mobilità e principalmente produttivo e di dimensioni tali per cui l’installazione in una scrivania risulta la più appropriata per un comodo utilizzo.</desc>
+    </lemma>
+    <lemma>
+        <word>Diagramma di Gantt</word>
+        <desc>Strumento di supporto alla gestione de progetti; usato principalmente nelle attività di project management, è costruito partendo da un asse orizzontale - a rappresentazione dell'arco temporale totale del progetto, suddiviso in fasi incrementali (ad esempio, giorni, settimane, mesi) - e da un asse verticale - a rappresentazione delle mansioni o attività che costituiscono il progetto. Delle barre orizzontali di lunghezza variabile rappresentano le sequenze, la durata e l'arco temporale di ogni singola attività del progetto (l'insieme di tutte le attività del progetto ne costituisce la work breakdown structure). Queste barre possono sovrapporsi durante il medesimo arco temporale ad indicare la possibilità dello svolgimento in parallelo di alcune delle attività. Man mano che il progetto progredisce, delle barre secondarie, delle frecce o delle barre colorate possono essere aggiunte al diagramma, per indicare le attività sottostanti completate o una porzione completata di queste. Una linea verticale è utilizzata per indicare la data di riferimento.</desc>
+    </lemma>
+    <lemma>
+        <word>Dispositivo Mobile</word>
+        <plural>dispositivi mobile</plural>
+        <plural>dispositivi mobili</plural>
+        <desc>Dispositivo portatile che permette di ricevere, elaborare ed esportare dati senza usare una connessione Internet cablata. Di norma si usa per indicare sia smartphone che tablet.</desc>
+    </lemma>
+    <lemma>
+        <word>Editor</word>
+        <desc>Programma per la composizione di testi. Un semplice editor è generalmente incluso in ogni sistema operativo.</desc>
+    </lemma>
+    <lemma>
+        <word>Elemento</word>
+        <plural>elementi</plural>
+        <desc>Elemento presente all'interno di un frame il quale può essere un file media, un svg o un testo .</desc>
+    </lemma>
+    <lemma>
+        <word>Elemento scelta</word>
+        <plural>elementi scelta</plural>
+        <desc>Elemento presente all'interno di un frame che, selezionandolo, permette di spostarsi in un nuovo percorso di presentazione.</desc>
+    </lemma>
+    <lemma>
+        <word>Estensibilità</word>
+        <plural>estensibile</plural>
+        <plural>estensibili</plural>
+        <desc>va definita seriamente</desc>
+    </lemma>
+    <lemma>
+        <word>Estensione</word>
+        <plural>estensioni</plural>
+        <desc>Breve sequenza di caratteri alfanumerici (tipicamente tre), posta alla fine del nome di un file e separata dalla parte precedente con un punto. Attraverso l’estensione del file il sistema operativo riesce a distinguere il tipo di contenuto (testo, musica, immagine...) e il formato utilizzato e aprirlo, di conseguenza, con la corrispondente applicazione.</desc>
+    </lemma>
+    <lemma>
+        <word>File</word>
+        <plural>files</plural>
+        <desc>Contenitore di informazioni in forma digitale che si basa su un sistema di archiviazione durevole, è cioè a disposizione di altri programmi anche quando il programma che l’ha creato termina la sua esecuzione.</desc>
+    </lemma>
+    <lemma>
+        <word>File Sorgente</word>
+        <desc>File di testo contenente una serie di istruzioni (dette codice sorgente) scritte in un certo linguaggio di programmazione (normalmente ad alto livello) pronto per essere trasformato da un apposito compilatore in un programma eseguibile o per essere interpretato da un apposito interprete.</desc>
+    </lemma>
+    <lemma>
+        <word>File media</word>
+        <desc>Tutti i file con contenuto multimediale: immagini, video e audio.</desc>
+    </lemma>
+    <lemma>
+        <word>File system</word>
+        <desc>Struttura organizzativa, all’interno di un sistema operativo, che regola il funzionamento dei nomi di file, la loro memorizzazione e il loro recupero.</desc>
+    </lemma>
+    <lemma>
+        <word>Foglio di calcolo</word>
+        <plural>fogli di calcolo</plural>
+        <plural>foglio elettronico</plural>
+        <desc>Programma che permette di effettuare calcoli, elaborare dati e tracciare efficaci rappresentazioni grafiche; solitamente agisce tramite l’uso di tabelle.</desc>
+    </lemma>
+    <lemma>
+        <word>Font</word>
+        <desc>Serie di caratteri distinti per stile.</desc>
+    </lemma>
+    <lemma>
+        <word>Frame</word>
+        <desc>Ciascuna delle aree di schermo che visualizzano parti indipendenti di contenuto durante la visualizzazione di una presentazione.</desc>
+    </lemma>
+    <lemma>
+        <word>Framework</word>
+        <desc>Nella produzione del software, il framework è una struttura di supporto su cui un software può essere organizzato e progettato.</desc>
+    </lemma>
+    <lemma>
+        <word>Funzione</word>
+        <plural>funzioni</plural>
+        <desc>Particolare costrutto sintattico, utilizzato all’interno del codice di un programma, che permette di raggruppare una sequenza di istruzioni in un unico blocco espletando così una determinata e in generale più complessa operazione, azione o elaborazione sui dati del programma stesso.</desc>
+    </lemma>
+    <lemma>
+        <word>GitHub</word>
+        <desc>Servizio web di hosting per lo sviluppo di progetti software, che usa il sistema di controllo di versione Git .</desc>
+    </lemma>
+    <lemma>
+        <word>Halstead</word>
+        <desc>Metriche software introdotte da Maurice Howard Halstead nel 1977.</desc>
+    </lemma>
+    <lemma>
+        <word>IDE</word>
+        <desc>(Integrated Development Environment o Integrated Design Environment o Integrated Debugging Environment, rispettivamente ambiente integrato di progettazione e ambiente integrato di debugging), traducibile con: Ambiente di sviluppo integrato. Software che aiuta i programmatori nello sviluppo del codice sorgente in fase di programmazione.</desc>
+    </lemma>
+    <lemma>
+        <word>ISO</word>
+        <desc>ISO (International Organization for Standardization)è la più importante organizzazione a livello mondiale per la definizione di norme tecniche.</desc>
+    </lemma>
+    <lemma>
+        <word>Indirizzo</word>
+        <plural>indirizzi</plural>
+        <desc>v. percorso. Indirizzo web: Nome che contiene, in forma esplicita, informazioni sulla posizione di una pagina internet o di un file all'interno del web.</desc>
+    </lemma>
+    <lemma>
+        <word>Infografica</word>
+        <plural>Infografiche</plural>
+        <desc>Formato di stampa dei dati contenuti nelle slide.</desc>
+    </lemma>
+    <lemma>
+        <word>Iterare</word>
+        <desc>Ripetere.</desc>
+    </lemma>
+    <lemma>
+        <word>Iterazione</word>
+        <plural>Iterazioni</plural>
+        <desc>Ripetizioni.</desc>
+    </lemma>
+    <lemma>
+        <word>JavaScript</word>
+        <desc>In informatica JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi.</desc>
+    </lemma>
+    <lemma>
+        <word>Link</word>
+        <desc>Rinvio da un'unità informativa su supporto digitale ad un'altra. È ciò che caratterizza la non linearità dell'informazione propria di un ipertesto.</desc>
+    </lemma>
+    <lemma>
+        <word>Linux</word>
+        <desc>Famiglia di sistemi operativi di tipo Unix-like, rilasciati sotto varie possibili distribuzioni, aventi la caratteristica comune di utilizzare come nucleo il kernel Linux.</desc>
+    </lemma>
+    <lemma>
+        <word>Login</word>
+        <desc>Autenticazione dell’utente nel sistema mediante l’inserimento di un username e password.</desc>
+    </lemma>
+    <lemma>
+        <word>Logout</word>
+        <desc>Uscita dal sistema da parte dell’utente.</desc>
+    </lemma>
+    <lemma>
+        <word>Mac OS</word>
+        <desc>Famiglia di sistemi operativi creati per computer Macintosh, prodotti da Apple.</desc>
+    </lemma>
+    <lemma>
+        <word>Material Design</word>
+        <desc>L’obiettivo del Material Design è di creare un linguaggio visivo che sintetizzi i principi classici di buon design con l’innovazione e le possibilità della scienza, ovvero offrire un’esperienza unificata tra diverse piattaforme. Spazio, scala, colore, font, grassetti creeranno una gerarchia che guiderà l’utente nella navigazione. Le linee guida si possono trovare alla pagina: \url{http://www.google.com/design/spec}.</desc>
+    </lemma>
+    <lemma>
+        <word>Metrica</word>
+        <plural>metriche</plural>
+        <desc>Standard per la misura di alcune proprietà del software o delle sue specifiche.</desc>
+    </lemma>
+    <lemma>
+        <word>Milestone</word>
+        <desc>Importante traguardo intermedio nello svolgimento del progetto, viene evidenziata in maniera diversa dalle altre attività nell'ambito dei documenti di progetto.</desc>
+    </lemma>
+    <lemma>
+        <word>PC</word>
+        <desc>Personal Computer</desc>
+    </lemma>
+    <lemma>
+        <word>Pacchetto</word>
+        <plural>pacchetti</plural>
+        <desc>Insieme di programmi distribuiti congiuntamente. In senso più specifico, un pacchetto indica un software per computer compresso in un formato archivio per essere installato da un sistema di gestione dei pacchetti o da unprogramma d'installazione autonomo.</desc>
+    </lemma>
+    <lemma>
+        <word>Percorso</word>
+        <plural>percorsi</plural>
+        <desc>Nome che contiene in forma esplicita informazioni sulla posizione di un file all'interno del sistema.</desc>
+    </lemma>
+    <lemma>
+        <word>Pert</word>
+        <desc>(programme evaluation and review technique) tecnica di valutazione e revisione dei programmi.</desc>
+    </lemma>
+    <lemma>
+        <word>Piano della presentazione</word>
+        <desc>piano nel quale sono visualizzati tutti gli elementi di una presentazione.</desc>
+    </lemma>
+    <lemma>
+        <word>Processo</word>
+        <plural>Processi</plural>
+        <desc>Serie di operazioni tecniche attraverso le quali viene svolta un'attività produttiva.</desc>
+    </lemma>
+    <lemma>
+        <word>Progetto</word>
+        <plural>Progetti</plural>
+        <desc>Un progetto consiste, in senso generale, nell'organizzazione di azioni nel tempo per il perseguimento di uno scopo predefinito.</desc>
+    </lemma>
+    <lemma>
+        <word>Programma</word>
+        <plural>programmi</plural>
+        <desc>Insieme di istruzioni che, una volta eseguite su un computer, produce soluzioni per una data classe di problemi automatizzati.</desc>
+    </lemma>
+    <lemma>
+        <word>Proponente</word>
+        <plural>proponenti</plural>
+        <desc>Colui che ha proposto al committente il proprio capitolato d’appalto.</desc>
+    </lemma>
+    <lemma>
+        <word>RA</word>
+        <desc>Revisione di Accettazione.</desc>
+    </lemma>
+    <lemma>
+        <word>RP</word>
+        <desc>Revisione di Progettazione.</desc>
+    </lemma>
+    <lemma>
+        <word>RQ</word>
+        <desc>Revisione di Qualifica.</desc>
+    </lemma>
+    <lemma>
+        <word>RR</word>
+        <desc>Revisione dei Requisiti.</desc>
+    </lemma>
+    <lemma>
+        <word>Repository</word>
+        <desc>Luogo di stoccaggio dati centralizzato in cui risiedono i componenti software, ed e in grado, inoltre, di fornire funzionalità di versionamento per tener traccia della storia dei prodotti.</desc>
+    </lemma>
+    <lemma>
+        <word>Requisito</word>
+        <plural>Requisiti</plural>
+        <desc>Ciascuna delle qualità necessarie e richieste per uno scopo determinato.</desc>
+    </lemma>
+    <lemma>
+        <word>Risorsa</word>
+        <plural>Risorse</plural>
+        <desc>Ogni componente, fisico o virtuale, che offra una certa funzionalità con disponibilità limitata/finita all'interno di un sistema informatico.</desc>
+    </lemma>
+    <lemma>
+        <word>Risorsa Umana</word>
+        <plural>Risorse Umane</plural>
+        <desc>Personale che lavora al progetto.</desc>
+    </lemma>
+    <lemma>
+        <word>SEO</word>
+        <desc>(Search Engine Optimization) attività finalizzate ad ottenere un miglior posizionamento nelle pagine dei risultati dei motori di ricerca. In generale, più alto appare il sito tra i risultati, maggiori saranno gli utenti di quel motore di ricerca che lo andranno a visitare.</desc>
+    </lemma>
+    <lemma>
+        <word>SPICE</word>
+        <desc>Acronimo di Simulation Program with Integrated Circuit Emphasis, è un insieme di documenti tecnici per il processo di sviluppo software e le relative funzioni di gestione delle risorse.</desc>
+    </lemma>
+    <lemma>
+        <word>Server</word>
+        <desc>Componente o sottosistema informatico di elaborazione che fornisce, a livello logico e a livello fisico, un qualunque tipo di servizio ad altre componenti (tipicamente chiamate client, cioè "cliente") che ne fanno richiesta attraverso una rete di computer, all'interno di un sistema informatico o direttamente in locale su un computer.</desc>
+    </lemma>
+    <lemma>
+        <word>Smartphone</word>
+        <desc>Uno smartphone è un dispositivo mobile che abbina funzionalità di telefono cellulare a quelle di gestione di dati personali.</desc>
+    </lemma>
+    <lemma>
+        <word>Software</word>
+        <desc>set di istruzioni interpretabili da una macchina che guidano le componenti di un computer a svolgere specifiche operazioni.</desc>
+    </lemma>
+    <lemma>
+        <word>Sospendere</word>
+        <desc>Interruzione temporanea di un’attività.</desc>
+    </lemma>
+    <lemma>
+        <word>Tablet</word>
+        <desc>Dispositivo mobile con dimensioni dello schermo maggiori ai 7”, con potenza di calcolo e numero di porte di comunicazione simili a quelle di uno smartphone.</desc>
+    </lemma>
+    <lemma>
+        <word>Tag</word>
+        <desc>Etichetta.</desc>
+    </lemma>
+    <lemma>
+        <word>Template</word>
+        <desc>Il termine in inglese template( letteralmente, sagoma) indica un documento o programma che fornisce uno scheletro standard per altri documenti o programmi.</desc>
+    </lemma>
+    <lemma>
+        <word>Ticket</word>
+        <desc>Insieme di informazioni che possono essere usate per definire un’attivita, per permettere una migliore organizzazione del lavoro.</desc>
+    </lemma>
+    <lemma>
+        <word>Ticketing</word>
+        <desc>Servizio basato sull’utilizzo dei ticket.</desc>
+    </lemma>
+    <lemma>
+        <word>URL</word>
+        <desc>Uniform Resource Locator: sequenza di caratteri che identifica univocamente l'indirizzo di una risorsa in Internet, tipicamente presente su un host server, come ad esempio un documento, un'immagine, un video.</desc>
+    </lemma>
+    <lemma>
+        <word>Ubuntu</word>
+        <desc>Sistema operativo basato su kernel Linux.</desc>
+    </lemma>
+    <lemma>
+        <word>Utente autenticato</word>
+        <desc>Utente che risulta essere registrato e di conseguenze possiede uno spazio di lavoro nel server.</desc>
+    </lemma>
+    <lemma>
+        <word>Utente desktop</word>
+        <desc>Utente che sta lavorando con Premi attraverso un computer.</desc>
+    </lemma>
+    <lemma>
+        <word>Utente mobile</word>
+        <desc>Utente che sta lavorando con Premi attraverso un dispositivo mobile, quali smartphone o tablet.</desc>
+    </lemma>
+    <lemma>
+        <word>Utente non autenticato</word>
+        <desc>Utente che non è in possesso di uno spazio di lavoro nel server e che quindi non risulta essere registrato oppure che ha un account ma non è connesso alla rete.</desc>
+    </lemma>
+    <lemma>
+        <word>Validazione</word>
+        <plural>validazioni</plural>
+        <desc>Conferma attraverso l’esame e l'apporto di evidenza oggettiva che i requisiti particolari per l'utilizzo previsto di file, documenti e programmi siano soddisfatti.</desc>
+    </lemma>
+    <lemma>
+        <word>W3C</word>
+        <desc>Il W3C ( World Wide Web Consortium) è un’associazione nata nel 1994 con lo scopo di migliorare gli esistenti protocolli e linguaggi per il World Wide Web e di aiutare il web a sviluppare tutte le sue potenzialità. Sono membri di questa associazione importanti aziende informatiche, compagnie telefoniche, societa interessate alla crescita del Web, organizzazioni no-prot, università e istituzioni per la ricerca.</desc>
+    </lemma>
+    <lemma>
+        <word>WBS</word>
+        <desc>(work breakdown structure) detta anche struttura di scomposizione del lavoro (traduzione letterale) o struttura analitica di progetto; elenco di tutte le attività di un progetto.</desc>
+    </lemma>
+    <lemma>
+        <word>WEB</word>
+        <desc>Uno dei principali servizi di Internet che permette di navigare e usufruire di un insieme vastissimo di contenuti (multimediali e non) collegati tra loro attraverso legami, e di ulteriori servizi accessibili a tutti o ad una parte selezionata degli utenti di Internet.</desc>
+    </lemma>
+    <lemma>
+        <word>Windows</word>
+        <desc>Sistema operativo di Microsoft per computer desktop e laptop. Windows Phone: Sistema operativo per dispositivi mobile di Microsoft.</desc>
+    </lemma>
+    <lemma>
+        <word>IOS</word>
+        <desc>Sistema operativo per dispositivi mobile di Apple.</desc>
+    </lemma>
+</glossario>
