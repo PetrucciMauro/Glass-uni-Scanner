@@ -1,0 +1,96 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {section}{\numberline {1}Introduzione}{9}{section.1}
+\contentsline {subsection}{\numberline {1.1}Scopo del documento}{9}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{9}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Glossario}{9}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Riferimenti}{9}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Normativi}{9}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Informativi}{9}{subsubsection.1.4.2}
+\contentsline {section}{\numberline {2}Descrizione generale}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}funzioni\bbl@it@ped {g} del prodotto}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Caratteristiche degli utenti}{10}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Vincoli generali}{11}{subsection.2.3}
+\contentsline {section}{\numberline {3}Standard di progetto}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Standard di progettazione architetturale}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Standard di documentazione del codice}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Standard di denominazione di entit\IeC {\`a} e relazioni}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Standard di programmazione}{12}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Strumenti di lavoro}{12}{subsection.3.5}
+\contentsline {section}{\numberline {4}NodeServer}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Risorse e Servizi}{14}{subsection.4.1}
+\contentsline {section}{\numberline {5}Package Premi::Model}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Classe SlideShowElements}{19}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Classe Text}{21}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Classe Image}{22}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Classe Frame}{23}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Classe SVG}{26}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Classe Audio}{27}{subsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.6}Classe Video}{27}{subsubsection.5.1.6}
+\contentsline {subsubsection}{\numberline {5.1.7}Classe Background}{28}{subsubsection.5.1.7}
+\contentsline {subsection}{\numberline {5.2}Classe InsertEditRemove}{29}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Classe Inserter}{29}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Classe Command}{35}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Classe Invoker}{35}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Classe AbstractCommand}{36}{subsubsection.5.3.2}
+\contentsline {subsubsubsection}{\numberline {5.3.2.1}Classe ConcreteTextInsertCommand}{38}{subsubsubsection.5.3.1}
+\contentsline {subsubsubsection}{\numberline {5.3.2.2}Classe ConcreteFrameInsertCommand}{38}{subsubsubsection.5.3.2}
+\contentsline {subsubsubsection}{\numberline {5.3.2.3}Classe ConcreteImageInsertCommand}{39}{subsubsubsection.5.3.3}
+\contentsline {subsubsubsection}{\numberline {5.3.2.4}Classe ConcreteSVGInsertCommand}{40}{subsubsubsection.5.3.4}
+\contentsline {subsubsubsection}{\numberline {5.3.2.5}Classe ConcreteAudioInsertCommand}{40}{subsubsubsection.5.3.5}
+\contentsline {subsubsubsection}{\numberline {5.3.2.6}Classe ConcreteVideoInsertCommand}{41}{subsubsubsection.5.3.6}
+\contentsline {subsubsubsection}{\numberline {5.3.2.7}Classe ConcreteBackgroundInsertCommand}{42}{subsubsubsection.5.3.7}
+\contentsline {subsubsubsection}{\numberline {5.3.2.8}Classe ConcreteTextRemoveCommand}{43}{subsubsubsection.5.3.8}
+\contentsline {subsubsubsection}{\numberline {5.3.2.9}Classe ConcreteFrameRemoveCommand}{44}{subsubsubsection.5.3.9}
+\contentsline {subsubsubsection}{\numberline {5.3.2.10}Classe ConcreteImageRemoveCommand}{45}{subsubsubsection.5.3.10}
+\contentsline {subsubsubsection}{\numberline {5.3.2.11}Classe ConcreteSVGRemoveCommand}{46}{subsubsubsection.5.3.11}
+\contentsline {subsubsubsection}{\numberline {5.3.2.12}Classe ConcreteAudioRemoveCommand}{47}{subsubsubsection.5.3.12}
+\contentsline {subsubsubsection}{\numberline {5.3.2.13}Classe ConcreteVideoRemoveCommand}{48}{subsubsubsection.5.3.13}
+\contentsline {subsubsubsection}{\numberline {5.3.2.14}Classe ConcreteBackgroundRemoveCommand}{49}{subsubsubsection.5.3.14}
+\contentsline {subsubsubsection}{\numberline {5.3.2.15}Classe ConcreteEditPositionCommand}{50}{subsubsubsection.5.3.15}
+\contentsline {subsubsubsection}{\numberline {5.3.2.16}Classe ConcreteEditRotationCommand}{51}{subsubsubsection.5.3.16}
+\contentsline {subsubsubsection}{\numberline {5.3.2.17}Classe ConcreteEditSizeCommand}{52}{subsubsubsection.5.3.17}
+\contentsline {subsubsubsection}{\numberline {5.3.2.18}Classe ConcreteEditContentCommand}{53}{subsubsubsection.5.3.18}
+\contentsline {subsubsubsection}{\numberline {5.3.2.19}Classe ConcreteEditBackgroundCommand}{55}{subsubsubsection.5.3.19}
+\contentsline {subsubsubsection}{\numberline {5.3.2.20}Classe ConcreteEditColorCommand}{56}{subsubsubsection.5.3.20}
+\contentsline {subsubsubsection}{\numberline {5.3.2.21}Classe ConcreteEditFontCommand}{57}{subsubsubsection.5.3.21}
+\contentsline {subsubsubsection}{\numberline {5.3.2.22}Classe ConcreteAddToMainPathCommand}{59}{subsubsubsection.5.3.22}
+\contentsline {subsubsubsection}{\numberline {5.3.2.23}Classe concreteRemoveFromMainPathCommand}{59}{subsubsubsection.5.3.23}
+\contentsline {subsubsubsection}{\numberline {5.3.2.24}Classe concreteNewChoicePathCommand}{60}{subsubsubsection.5.3.24}
+\contentsline {subsubsubsection}{\numberline {5.3.2.25}Classe concreteDeleteChoicePathCommand}{61}{subsubsubsection.5.3.25}
+\contentsline {subsection}{\numberline {5.4}serverRelation}{63}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Loader}{63}{subsubsection.5.4.1}
+\contentsline {subsection}{\numberline {5.5}serverRelation}{65}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Registration}{65}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Authentication}{65}{subsubsection.5.5.2}
+\contentsline {subsection}{\numberline {5.6}serverRelation}{67}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}MongoRelation}{67}{subsubsection.5.6.1}
+\contentsline {subsection}{\numberline {5.7}serverRelation}{70}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Loader}{70}{subsubsection.5.7.1}
+\contentsline {section}{\numberline {6}Specifica classi del front-end}{72}{section.6}
+\contentsline {subsection}{\numberline {6.1}Premi::App}{72}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Package Premi::Services}{73}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Services::Main}{73}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Services::Upload}{74}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Services::Utils}{76}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Services::SharedData}{77}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Services::toPages}{78}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}Package Premi::Controller}{79}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Controller::HeaderController}{79}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Controller::AccessController}{81}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Controller::HomeController}{82}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Controller::ProfileController}{85}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Controller::Execution}{86}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Controller::EditController}{87}{subsubsection.6.3.6}
+\contentsline {section}{\numberline {7}Package View}{96}{section.7}
+\contentsline {subsection}{\numberline {7.1}View::Pages}{96}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}View::Pages::Index}{96}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}View::Pages::Login}{96}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}View::Pages::Registrazione}{97}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}View::Pages::Home}{97}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}View::Pages::Profile}{98}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}View::Pages::Execution}{98}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}View::Pages::Edit}{98}{subsection.7.8}
+\contentsline {section}{\numberline {8}Tracciamento}{102}{section.8}
+\contentsline {subsection}{\numberline {8.1}tracciamento requisiti-classi}{102}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}tracciamento metodi-test}{102}{subsection.8.2}
