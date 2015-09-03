@@ -1,13 +1,13 @@
 \section{Package Premi::\-Controller}{
 	\label{sec:controller}
-	Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::\-[nome package].\\
-	\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View.\\
-	\textbf{\relaz}: comunica con il Model per la gestione del profilo e delle presentazioni.\\
+	Tutti i package seguenti appartengono al package Premi, quindi per ognuno di essi lo scope sarà: Premi::\-[nome package].\\\\
+	\textbf{\tipo}: contiene le classi che gestiscono i segnali e le chiamate effettuati dalla View. Il Controller è interamente implementato utilizzando la tecnologia Angular.js.\\
+	\textbf{\relaz}: comunica con la View ricevendone i segnali e mantenendola aggiornata e con il Model per recuperare informazioni, modificarle e salvare i dati correttamente nel server.\\
 
 	\subsection{Controller::\-premiApp}{
 		\label{sec:premiapp}
 		\textbf{Funzione}\\
-		\indent Questa classe si occuperà di fare il bootstrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari. Verranno configurate tutte le impostazioni necessarie.\\
+		\indent Questa classe si occuperà di fare il bootstrap dell'applicazione instanziando la rootscope  e iniettando tutti i moduli necessari. Verranno configurate tutte le impostazioni necessarie relative al funzionamento di Angular.\\
 		\textbf{Relazioni d'uso con altri moduli}\\
 		\indent Questa classe utilizzerà le seguenti classi:
 		\begin{itemize}
@@ -34,8 +34,8 @@
 
 	\subsection {Controller::\-Services}{
 		\label{sec:services}
-		\textbf{\tipo}: i servizi sono degli oggetti che incapsulano del Codice\ped{g} che si occupa di eseguire uno specifico compito, il quale sarà poi utilizzato all’interno di una o più parti dell’applicazione.\\
-		\textbf{\relaz}: comunica con il controller per la gestione delle funzioni\ped{g} da eseguire e con il model per la gestione delle componenti necessarie.
+		\textbf{\tipo}: questo package contiene tutte le funzionalità di base richieste dall'applicazione tra cui l'autenticazione al server, il reindirizzamento delle pagine e l'upload dei file nel server. \\
+		\textbf{\relaz}: comunica con gli altri package del controller per la gestione delle funzioni\ped{g} da eseguire e con il model per la gestione delle componenti necessarie.
 
 		\subsubsection{Services::\-Main}{
 			\label{sub:servicesMain}
@@ -321,7 +321,7 @@
 			\item Controller::Services::\-Main;
 			\item Controller::Services::\-toPages;
 			\item \$scope:Object\\
-				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+				\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione;
 			\item \$rootScope:Object\\
 				\indent Questo campo dati rappresenta lo scope radice dell’applicazione. Tutti gli altri scope discendono da questo.
 		\end{itemize}
@@ -391,25 +391,37 @@
 			\item Controller::Services::\-Main;
 			\item Controller::Services::\-toPages;
 			\item \$scope:Object\\
-	    		\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+	    		\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione.
 		\end{itemize}
 		\textbf{Attributi}\\
 	    \begin{itemize}
-	    	\item \textbf{user}()
+	    	\item \textbf{user}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: oggetto contenente username e password derivanti dal form della pagina html.
 			\end{itemize}
-	    	\item \textbf{getData}()
+			\item \textbf{usernameError}
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: stringa contenente l'eventuale errore accorso con l'inserimento dello username.
+			\end{itemize}
+			\item \textbf{passwordError}
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo}: String;
+				\item \textbf{Descrizione}: stringa contenente l'eventuale errore accorso con l'inserimento della password.
+			\end{itemize}
+	    \end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+			\item \textbf{getData}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username e password ricavati dallo \$scope. La password viene criptata grazie al metodo encrypt(password) di Utils.
 			\end{itemize}
-	    \end{itemize}
-		\textbf{Metodi}
-		\begin{itemize}
 			\item \textbf{reset}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
@@ -443,11 +455,11 @@
 			\item Services::\-Main;
 			\item Services::\-toPages;
 			\item \$scope:Object\\
-				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+				\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione.
 		\end{itemize}
 		\textbf{Attributi}\\
 		\begin{itemize}
-			\item \textbf{mongo}()
+			\item \textbf{mongo}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
@@ -466,7 +478,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: metodo che richiama edipage(slideId) di toPages per effettuare il reindirizzamento alla pagina di edit.
+				\item \textbf{Descrizione}: metodo che richiama editpage(slideId) di toPages per effettuare il reindirizzamento alla pagina di edit.
 			\end{itemize}
 			\item \textbf{goExecute}(slideId)
 			\begin{itemize}
@@ -498,6 +510,12 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che richiama newPresentation() di mongoRelation per creare una nuova presentazione. Se l'operazione ha successo, viene richiamato il metodo update().
 			\end{itemize}
+			\item \textbf{setStyleSS}(slide)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: CSS Object;
+				\item \textbf{Descrizione}: metodo che ricava il background da slide e ritorna l'oggetto con le proprietà CSS corrispondenti. Se l'immagine di background non è definita, allora nel CSS non verrà riportata tale proprietà.
+			\end{itemize}
 		\end{itemize}
 		}
 	\subsubsection{Controller::\-ProfileController}{
@@ -510,25 +528,25 @@
 			\item Services::\-Main;
 			\item Services::\-toPages;
 			\item \$scope:Object\\
-				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding.
+				\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione.
 		\end{itemize}
 		\textbf{Attributi}\\
 	    \begin{itemize}
-	    	\item \textbf{user}()
+	    	\item \textbf{user}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: oggetto contenente username, password e nuova password derivanti dal form della pagina html.
 			\end{itemize}
-	    	\item \textbf{getData}()
+	    \end{itemize}
+		\textbf{Metodi}
+		\begin{itemize}
+			\item \textbf{getData}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: metodo che ritorna un oggetto contenente i campi dati username, password e newpassword ricavati dallo \$scope. Le password vengono criptate grazie a encrypt(password) di Utils.
 			\end{itemize}
-	    \end{itemize}
-		\textbf{Metodi}
-		\begin{itemize}
 			\item \textbf{changepassword}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
@@ -549,7 +567,7 @@
 			\item Services::\-toPages;
 			\item Services::\-Utils;
 			\item \$scope:Object\\
-				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+				\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione;
 			\item \$route:Object\\
 				\indent Servizio angular che permette la gestione del routing all'interno dell'applicazione.
 		\end{itemize}
@@ -624,7 +642,7 @@
 			\item Services::\-SharedData;
 			\item Services::\-Upload;
 			\item \$scope:Object\\
-				\indent Questo campo dati rappresenta l’oggetto che permette la comunicazione tra la view ed il controller, rendendo possibile l’accesso al model mantenendolo sincronizzato, implementando in questo modo il 2-way data binding;
+				\indent Oggetto Angular che lega Controller e View. Nello specifico, permette l'esecuzione di espressioni che mantengono aggiornata la View e l'implementazione del 2-way data binding. Possono esistere più scope, strutturati in modo gerarchico, i quali simulano la struttura DOM dell'applicazione;
 			\item \$interval:Object\\
 				\indent servizio Angular che permette di eseguire determinate operazioni ad ogni intervallo di tempo T;
 			\item \$q::\-Object\\
@@ -636,17 +654,35 @@
 		\end{itemize}
 		\textbf{Attributi}\\
 		\begin{itemize}
-			\item \textbf{inv}()
+			\item \textbf{inv}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: oggetto che mantiene una istanza di Invoker.
 			\end{itemize}
-			\item \textbf{mongo}()
+			\item \textbf{mongo}
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: Object;
 				\item \textbf{Descrizione}: oggetto che mantiene una istanza di mongoRelation.
+			\end{itemize}
+			\item \textbf{canRemoveBookmark}
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo}: Boolean;
+				\item \textbf{Descrizione}: oggetto utilizzato per il data-binding, in base al quale, se settato a true, il frame selezionato non ha un bookmark e per questo è possibile aggiungerlo.
+			\end{itemize}
+			\item \textbf{canRemoveBookmark}
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo}: Boolean;
+				\item \textbf{Descrizione}: oggetto utilizzato per il data-binding, in base al quale, se settato a true, il frame selezionato ha un bookmark e per questo è possibile la sua rimozione.
+			\end{itemize}
+			\item \textbf{allFonts}
+			\begin{itemize}
+				\item \textbf{Accesso}: Private;
+				\item \textbf{Tipo}: Object;
+				\item \textbf{Descrizione}: oggetto che contiene tutti caratteri possibili che un elemento testo può avere.
 			\end{itemize}
 	    \end{itemize}
 		\textbf{Metodi}
@@ -863,6 +899,12 @@
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che rimuove il Frame\ped{g} selezionato dal Percorso\ped{g} principale salvato nell'oggetto mainPath di Edit, e che richiama, utilizzando la Funzione\ped{g} execute di inv, RemoveFromMainPathCommand() di Command passandogli le specifiche del Frame\ped{g} da togliere dal Percorso\ped{g} principale. Infine, richiama addPaths() di Loader. Nel caso in cui il parametro spec sia definito, significa che è stata inviata una richiesta di undo/redo da Command, per cui, il metodo si occuperà solamente di aggiornare la view.
 			\end{itemize}
+			\item \textbf{inPath}(id)
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Boolean;
+				\item \textbf{Descrizione}: metodo che controlla se un frame è all'interno del percorso principale attraverso il metodo getPaths() di InsertEditRemove. Ritorna true se il frame è nel path, altrimenti false.
+			\end{itemize}
 			\item \textbf{portaAvanti}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
@@ -910,6 +952,18 @@
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
 				\item \textbf{Descrizione}: metodo che ripristina una modifica annullata richiamando il metodo redo() di inv e che richiama uno tra i metodi addInsert, addUpdate, addDelete o addPaths di Loader in base al tipo di azione effettuata con il redo.
+			\end{itemize}
+			\item \textbf{getUndoStack}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna lo stack dell'undo richiamando il metodo getUndoStack() di inv.
+			\end{itemize}
+			\item \textbf{getRedoStack}()
+			\begin{itemize}
+				\item \textbf{Accesso}: Public;
+				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Descrizione}: metodo che ritorna lo stack del redo richiamando il metodo getRedoStack() di inv.
 			\end{itemize}
 		\end{itemize}
 	}

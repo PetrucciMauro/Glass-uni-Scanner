@@ -4,9 +4,9 @@
 	\textbf{\relaz}: utilizza le classi contenute nel package Controller per le comunicazioni con il Model.\\
 	\textbf{\attivita}: rappresenta l'intera GUI del nostro sistema.
 \subsection{View::Pages}{
-\textbf{\tipo}: contiene le pagine in Html, rappresentano l'interfaccia grafica vera e propria.\\
+\textbf{\tipo}: contiene le pagine in Html che rappresentano l'interfaccia grafica vera e propria.\\
 \textbf{\relaz}: utilizza le classi contenute nel package Controller.\\
-\textbf{\attivita}: rappresenta le pagine fisiche del Software\ped{g}.
+\textbf{\attivita}: rappresenta le pagine fisiche del Software\ped{g}. Sono realizzate utilizzando HTML5 e Angular Material per la grafica e il data-binding di Angular.js per mantenere la view aggiornata rispetto ai cambiamenti che avvengono nel Model.
 }
 \subsection{View::Pages::Index}{
 	\textbf{Funzione}\\
@@ -17,11 +17,16 @@
 		\item Controller::HeaderController.
 	\end{itemize}
 	\textbf{Input utente}
-		\begin{itemize}
+	\begin{itemize}
 		\item bottoneAccedi(): richiama Controller::HeaderController::goLogin() che reindirizza alla pagina View::Pages::Login;
 		\item bottoneRegistrati(): richiama Controller::HeaderController::goRegistrazione() che reindirizza alla pagina View::Pages::Registrazione;
 		\item bottoneHome(): richiama Controller::HeaderController::goHome() che reindirizza alla pagina View::Pages::Home;
 		\item bottoneProfilo(): richiama Controller::HeaderController::goProfile() che reindirizza alla pagina View::Pages::Profilo;
+	\end{itemize}
+	\textbf{Data binding}
+	\begin{itemize}
+		\item data-ng-hide: utilizzato per la comparsa/scomparsa dei bottoni di cui sopra, in base al metodo isToken() di Controller::\-HeaderController;
+		\item ng-click: utilizzato dai bottoni di cui sopra per richiamare il rispettivo metodo di Controller::HeaderController.
 	\end{itemize}
 	}
 \subsection{View::Pages::Login}{
@@ -36,6 +41,11 @@
 		\begin{itemize}
 		\item bottoneLogin(): attiva il metodo Controller::AccessController::login() che controlla se i campi della form sono stati compilati correttamente. Se l'operazione ha successo, viene effettuato il reindirizzamento alla pagina View::Pages::Home;
 	\end{itemize}
+	\textbf{Data binding}
+	\begin{itemize}
+		\item ng-click: utilizzato dal bottone di cui sopra per richiamare il rispettivo metodo di Controller::AccessController;
+		\item ng-bind: utilizzato per mostrare gli eventuali errori accorsi in fase di autenticazione. L'errore è ricavato dagli attributi usernameError e passwordError di Controller::\-AccessController.
+	\end{itemize}
 	}
 	\subsection{View::Pages::Registrazione}{
 	\textbf{Funzione}\\
@@ -49,10 +59,15 @@
 		\begin{itemize}
 		\item bottoneRegistrati(): attiva il metodo Controller::AccessController::registration() che controlla se i campi della form sono stati compilati correttamente. Se l'operazione ha successo, viene effettuato il reindirizzamento alla pagina View::Pages::Home;
 	\end{itemize}
+	\textbf{Data binding}
+	\begin{itemize}
+		\item ng-click: utilizzato dal bottone di cui sopra per richiamare il rispettivo metodo di Controller::AccessController;
+		\item ng-bind: utilizzato per mostrare gli eventuali errori accorsi in fase di registrazione. L'errore è ricavato dagli attributi usernameError e passwordError di Controller::\-AccessController.
+	\end{itemize}
 	}
 \subsection{View::Pages::Home}{
 	\textbf{Funzione}\\
-	\indent Questa pagina si occuperà di mostrare all'utente le presentazioni presenti sul proprio database dando la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle o crearne di nuove.\\
+	\indent Questa pagina si occuperà di mostrare all'utente le presentazioni salvate nel server dando la possibilità di eliminarle, eseguirle, scaricarle in locale, rinominarle, modificarle o crearne di nuove.\\
 	\textbf{Relazioni d'uso con altri moduli}\\
 	\indent Questa pagina utilizzerà le seguenti classi:
 	\begin{itemize}
@@ -64,7 +79,13 @@
 		\item bottoneElimina(): bottone che richiama il metodo di Controller::HomeController::deleteSlideShow() passandogli il nome della presentazione da eliminare;
 		\item bottoneRinomina(): bottone che richiama il metodo di Controller::HomeController::renameSlideShow() passandogli il nome della presentazione da rinominare;
 		\item bottoneEsegui(): bottone che richiama il metodo di Controller::HomeController::goExecute() passandogli il nome della presentazione da eseguire;
-		\item bottoneEdit(): bottone che richiama il metodo di Controller::HomeController::goEdit() passandogli il nome della presentazione da modificare;
+		\item bottoneEdit(): bottone che richiama il metodo di Controller::\-HomeController::goEdit() passandogli il nome della presentazione da modificare;
+	\end{itemize}
+	\textbf{Data binding}
+	\begin{itemize}
+		\item ng-click: utilizzato dai bottoni di cui sopra per richiamare il rispettivo metodo di Controller::\-HomeController;
+		\item ng-repeat: utilizzato per stampare nella pagina tutte le presentazioni dell'utente presenti nell'oggetto ritornato da getSS() di Controller::HomeController;
+		\item ng-style: utilizzato per fornire l'anteprima di ogni presentazione richiamando setStyleSS() di Controller::HomeController passandogli una delle presentazioni ricavate tramite getSS().
 	\end{itemize}
 	}
 \subsection{View::Pages::Profile}{
@@ -79,6 +100,10 @@
 	\begin{itemize}
 		\item bottoneCambiaPassword(): bottone che richiama il metodo di Controller::ProfileController::changePassword(). Il risultato dell'operazione viene in ogni caso comunicato all'utente.
 	\end{itemize}
+	\textbf{Data binding}
+	\begin{itemize}
+		\item ng-submit: utilizzato dal bottone di cui sopra per richiamare il rispettivo metodo di Controller::ProfileController.
+	\end{itemize}
 }
 \subsection{View::Pages::Execution}{
 	\textbf{Funzione}\\
@@ -90,9 +115,9 @@
 	\end{itemize}
 	\textbf{Input utente}
 	\begin{itemize}
-		\item +next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} successivo della presentazione;
-		\item +prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} precedente della presentazione;
-		\item +bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} con Bookmark\ped{g} successivo.
+		\item next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} successivo della presentazione;
+		\item prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} precedente della presentazione;
+		\item bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} con Bookmark\ped{g} successivo.
 	\end{itemize}
 }
 \subsection{View::Pages::Edit}{
@@ -134,13 +159,35 @@
 		\item eliminaSfondoPresentazine: bottone che richiama rimuoviSfondo() di EditController per resettare lo sfondo della presentazione;
 		\item bottoneCambiaColoreSfondoFrame: bottone che richiama cambiaColoreSfondoFrame() di EditController passandogli il valore del colore da applicare al Frame\ped{g} selezionato;
 		\item bottoneCambiaImmagineSfondoFrame: bottone che richiama cambiaImmagineSfondoFrame() di EditController passandogli l'immagine da applicare al background del Frame\ped{g} selezionato;
-		\item eliminaSfondoFrame: bottone che richiama rimuoviSfondoFrame() di EditController per resettare lo sfondo del Frame\ped{g} selezionato;
+		\item bottoneCambiaFontTesto: bottone che richiama cambiaCambiaFontTesto() di EditController passandogli il font da applicare all'elemento testo selezionato;
+		\item bottoneCambiaDimensioniTesto: bottone che richiama cambiaCambiaSizeTesto() di EditController passandogli la dimensione da applicare all'elemento testo selezionato;
+		\item bottoneCambiaColoreTesto: bottone che richiama cambiaCambiaColoreTesto() di EditController passandogli il colore del carattere da applicare all'elemento testo selezionato;
+		\item bottoneEliminaSfondoFrame: bottone che richiama rimuoviSfondoFrame() di EditController per resettare lo sfondo del Frame\ped{g} selezionato;
 		\item bottoneAggiungiPercorsoPrincipale: bottone che richiama aggiungiMainPath() di EditController per aggiungere il Frame\ped{g} corrente al Percorso\ped{g} principale di presentazione;
 		\item bottoneRimuoviPercorsoPrincipale: bottone che richiama rimuoviMainPath() di EditController per rimuovere il Frame\ped{g} corrente dal Percorso\ped{g} principale di presentazione;
 		\item bottonePortaAvanti(): bottone che richiama portaAvanti() di EditController per cambiare il parametro z-index dell'Elemento\ped{g} selezionato;
 		\item bottonePortaDietro(): bottone che richiama portaDietro() di EditController per cambiare il parametro z-index dell'Elemento\ped{g} selezionato;
 		\item bottoneBookmark(): bottone che assegna o rimuove il Bookmark\ped{g} al Frame\ped{g}, attiva il metodo di updateBookmark() di EditController che si occuperà dell'aggiornamento della presentazione;
-
+	\end{itemize}
+	\textbf{Data binding ed eventi HTML}
+	\begin{itemize}
+		\item ng-click: utilizzato dai bottoni di cui sopra per richiamare il rispettivo metodo di EditController;
+		\item ng-show: utilizzato per far comparire/scomparire i bottoni in base allo stato corrente della presentazione. In particolare, viene utilizzato per i seguenti bottoni:
+		\begin{itemize}
+			\item Annulla e Ripristina: richiamando i metodi getUndoStack() e getRedoStack di EditController;
+			\item AggiungiPercorsoPrincipale: richiamando il metodo inPath() di EditController;
+			\item RimuoviBookmark e AggiungiBookmark: utilizzando rispettivamente gli attributi canAddBookmark e canRemoveBookmark di EditController.
+		\end{itemize}
+		\item ng-change: utilizzato dai bottoni CambiaColoreSfondo, CambiaColoreTesto, CambiaDimensioneTesto e CambiaFontTesto per richiamare i rispettivi metodi di EditController;
+		\item ng-repeat: utilizzato dal bottone CambiaFontTesto per rappresentare tutti i font contenuti in allFonts di EditController;
+		\item onchange: utilizzato dai bottoni InserisciImmagine, InserisciAudio, InserisciVideo, CambiaImmagineSfondo e CambiaImmagineSfondoFrame richiamando i metodi specificati sopra;
+		\item onblur: utilizzato dagli elementi testo per richiamare aggiornaTesto() di EditController passandogli l'id dell'elemento e il contenuto del testo;
+		\item onresize: utilizzato dagli elementi frame, immagine, video e testo per il ridimensionamento. Richiama resizeDiv() delle funzioni Javascript della pagina Edit;
+		\item Drag\&Drop: evento JavaScript\ped{g} che permette di poter spostare un Elemento\ped{g} all'interno del piano della presentazione\ped{g} e che richiama muoviElemento() di EditController;
+		\item Resizable: evento JavaScript\ped{g} che permette di poter ridimensionare un Elemento\ped{g} all'interno del piano della presentazione\ped{g} e che richiama ridimensionaElemento() di EditController;
+	\end{itemize}
+	\textbf{Funzioni Javascript}
+	\begin{itemize}
 		\item inserisciFrame(spec): Funzione\ped{g} JavaScript\ped{g} che permette l'inserimento di un nuovo Frame\ped{g}. Se spec è definito, le proprietà contenute in esso vengono assegnate al Frame\ped{g} appena inserito;
 		\item inserisciTesto(spec): Funzione\ped{g} JavaScript\ped{g} che permette l'inserimento di un nuovo Elemento\ped{g} testo. Se spec è definito, le proprietà contenute in esso vengono assegnate al testo appena inserito;
 		\item inserisciImmagine(x, spec): Funzione\ped{g} JavaScript\ped{g} che permette l'inserimento di un nuovo Elemento\ped{g} immagine con path passato tramite il parametro x. Se spec è definito, le proprietà contenute in esso vengono assegnate all'immagine appena inserita;
@@ -150,10 +197,9 @@
 		\item rotate(el, value): Funzione\ped{g} JavaScript\ped{g} che permette di ruotare l'Elemento\ped{g} el in base al valore definito dal parametro value;
 		\item portaAvanti(id): Funzione\ped{g} JavaScript\ped{g} che incrementa la proprietà zIndex dell'Elemento\ped{g} id;
 		\item mandaDietro(id): Funzione\ped{g} JavaScript\ped{g} che decrementa la proprietà zIndex dell'Elemento\ped{g} id;
-		\item aggiornaTesto(id, element): metodo che richiama aggiornaTesto(id, element.value) di EditController per aggiornare il json con il nuovo testo inserito;
-		\item Drag\&Drop: evento JavaScript\ped{g} che permette di poter spostare un Elemento\ped{g} all'interno del piano della presentazione\ped{g};
-		\item Resizable: evento JavaScript\ped{g} che permette di poter ridimensionare un Elemento\ped{g} all'interno del piano della presentazione\ped{g};
+		\item resizeDiv(element, type): metodo che aggiusta il ridimensionamento dell'elemento element di tipo type;
 		\item mediaControl(): metodo che permette di riprodurre un File\ped{g} media o di fermarne la riproduzione;
+		\item zoom(element): metodo che permette di effettuare lo zoom sull'elemento element.
 	\end{itemize}
 }
 
