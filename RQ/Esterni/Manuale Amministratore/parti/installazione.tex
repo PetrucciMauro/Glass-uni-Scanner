@@ -1,20 +1,40 @@
-\section{Requisiti}
-Per poter avviare correttamente il Server\ped{g} deve essere installato sul PC\ped{g} ospitante il Server\ped{g} le tecnologie MongoDB e nodeJs. I sistemi operativi supportati sono OSX Yosemite, Ubuntu\ped{g} dalla versione 12.04LTS, Windows7 o successivi.
+\section{Requisiti}  %requisiti OS e pacchetti 
+\subsection{Sistema operativo}
+Il  computer utilizzato come server dovr\`{a} avere i seguenti requisiti in termini di sistema operativo:
+\begin{itemize}
+\item  Mac OS versione 10.10 o successiva
+\item Ubuntu versione 12.04 o successiva
+\item Windows7 e successivi
+\end{itemize}
 
-\section{Installazione e Avvio}
+\subsection{Tecnologie e pacchetti}
+Per poter avviare correttamente il sistema \premi, devono essere installate sul PC ospitante le seguenti tecnologie:
+\begin{itemize}
+\item  MongoDb dalla versione 3.0.5
+\item  Node.js dalla versione 0.12.7
+\item  npm dalla versione 2.11.3
+\item  bower dalla versione 1.4.1
+\item tutti i pacchetti npm listati nel file package.json con le versioni descritte nel file stesso
+\item tutti i pacchetti bower listati nel file bower.json con le versioni descritte nel file stesso
+\end{itemize}
 
-Di seguito sono riportati i passi per la configurazione del database MongoDB e l'avviamento del Server\ped{g} per i sistemi operativi OSX Yosemite, Ubuntu\ped{g}  12.04LTS e Windows7:
+\newpage
+\section{Installazione} % recupero e installazione pacchetti
 
-%\subsection{OSX Yosemite}
-\begin{enumerate}
-\item da terminale eseguire il comando npm install , per sistemi operativi che richiedono i permessi di root sarà necessario eseguire il comando sudo npm install, il comando eseguirà il download di tutti moduli necessari al funzionamento di \premi;
-\item da terminale eseguire il comando bower install , il comando eseguirà il download del Framework\ped{g} angular con tutte le sue dipendenze;
-\item creare una cartella data per raccogliere in database creati con MongoDB
-mongod --dbpath /usr/local/mongodb-data
-\item avviamento mongodb con il comando "sudo mongod" (--port xxxxx se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei database con l'opzione "mongod --dbpath /mia/cartella/"
-\item  spostarsi dal terminale nella cartella Premi (o quella in cui \`{e} presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "mongo", avvenuto l'accesso configurare il database con il comando "load('mongoConfig.js')"
-\item se \`{e} stato avviato mongod con una porta differente da qulla di default modificare il File\ped{g} config.js all'interno della cartella Premi specificando la porta con cui \`{e} stato avviato mongod
-\item  avviamento Server\ped{g} node spostandosi da terminale sulla cartella premi e lanciare il comando "node premi\_Server\ped{g}.js" % modifica porta avviamento Server\ped{g} node
-%\item configurazione premi per config porta
+\subsection{Installazione tecnologie}
+Di seguito le istruzioni per installare le tecnologie dette:
+\begin{itemize}
+\item \textbf{MongoDB}: recuperabile dalla pagina \textbf{https://www.mongodb.org}, sono disponibili diverse versioni scaricabili a seconda del sistema operativo, per l'installazione seguire il wizard di supporto
+\item \textbf{Node.js}: recuperabile dalla pagina \textbf{https://nodejs.org/en/}, sono disponibili diverse versioni scaricabili a seconda del sistema operativo, per l'installazione seguire il wizard di supporto
+\item \textbf{npm}: viene recuperato ed installato automaticamente con l'installazione di Node.js per ogni versione successiva alla 0.10.32, altrimenti recuperabile dalla pagina \\ \textbf{http://nodejs.org/download/}
+\item \textbf{bower}: per l'installazione \`{e} necessario aver gi\`{a} installato npm, istruzioni per l'installazione alla pagina \textbf{http://bower.io}
+\end{itemize}
 
-\end{enumerate}
+\subsection{Installazione pacchetti}
+Una volta installate le tecnologie npm e bower si devono recuperare i pacchetti descritti nei file package.json e bower.json.
+Il recupero e l'installazione di questi pacchetti pu\`{o} essere svolta facilmente da riga di comando come segue:
+\begin{itemize}
+\item dalla cartella radice del sistema installare i pacchetti npm con il comando "\textbf{npm install}"
+\item dalla cartella radice del sistema installare i pacchetti bower con il comando "\textbf{bower install}"
+\end{itemize}
+
