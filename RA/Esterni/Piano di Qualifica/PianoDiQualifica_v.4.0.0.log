@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  22 AUG 2015 15:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  8 SEP 2015 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**PianoDiQualifica_v.3.0.0.tex
-(./PianoDiQualifica_v.3.0.0.tex
+**PianoDiQualifica_v.4.0.0.tex
+(./PianoDiQualifica_v.4.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 8 languages loaded.
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -835,7 +835,7 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./PianoDiQualifica_v.3.0.0.aux
+(./PianoDiQualifica_v.4.0.0.aux
 
 LaTeX Warning: Label `tab:verTestUnit' multiply defined.
 
@@ -855,7 +855,7 @@ LaTeX Warning: Label `tab:verTestUnit' multiply defined.
 LaTeX Warning: Label `tab:verTestUnit' multiply defined.
 
 )
-\openout1 = `PianoDiQualifica_v.3.0.0.aux'.
+\openout1 = `PianoDiQualifica_v.4.0.0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -982,57 +982,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 57.
+Package pdftex.def Info: ../../logo.jpg used on input line 59.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \newpage
-              [1]
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+l.59 \end{longtable}
+                     [1]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 61.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 )
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [2] (./PianoDiQualifica_v.3.0.0.toc)
+ [3] (./PianoDiQualifica_v.4.0.0.toc
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 34.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+
+[4])
 \tf@toc=\write3
-\openout3 = `PianoDiQualifica_v.3.0.0.toc'.
+\openout3 = `PianoDiQualifica_v.4.0.0.toc'.
 
 File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3] (./PianoDiQualifica_v.3.0.0.lof)
+ [5] (./PianoDiQualifica_v.4.0.0.lof)
 \tf@lof=\write4
-\openout4 = `PianoDiQualifica_v.3.0.0.lof'.
+\openout4 = `PianoDiQualifica_v.4.0.0.lof'.
 
 
-(./PianoDiQualifica_v.3.0.0.lot)
+(./PianoDiQualifica_v.4.0.0.lot)
 \tf@lot=\write5
-\openout5 = `PianoDiQualifica_v.3.0.0.lot'.
+\openout5 = `PianoDiQualifica_v.4.0.0.lot'.
 
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4]
+ [6]
 (../../Template/sommario.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [5]
+ [7]
 (./parti/introduzione.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
 
@@ -1051,18 +1064,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[6])
+[8])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7] (./parti/obiettivi.tex
+ [9] (./parti/obiettivi.tex
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[8]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -1071,8 +1084,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9]
-<./images/ISO-IEC_9126.png, id=215, 858.95906pt x 484.05844pt>
+ [11]
+<./images/ISO-IEC_9126.png, id=240, 858.95906pt x 484.05844pt>
 File: ./images/ISO-IEC_9126.png Graphic file (type png)
 
 <use ./images/ISO-IEC_9126.png>
@@ -1082,13 +1095,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10 <./images/ISO-IEC_9126.png>]
+ [12 <./images/ISO-IEC_9126.png>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 91.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11]
-<./images/deming.png, id=232, 220.825pt x 150.5625pt>
+ [13]
+<./images/deming.png, id=258, 220.825pt x 150.5625pt>
 File: ./images/deming.png Graphic file (type png)
 
 <use ./images/deming.png>
@@ -1098,13 +1111,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 113.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12 <./images/deming.png>])
+ [14 <./images/deming.png>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13] (./parti/strategiaVerifica.tex
+ [15] (./parti/strategiaVerifica.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1113,12 +1126,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14])
+ [16])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15]
+ [17]
 (./parti/strumentiTecnicheMetodi.tex
 Overfull \hbox (13.3293pt too wide) in paragraph at lines 22--23
 []\T1/cmr/bx/n/12 Test fun-zio-na-li\T1/cmr/m/n/12 : met-to-no al-la pro-va le 
@@ -1129,7 +1142,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16]
+ [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 32.
@@ -1163,7 +1176,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
+ [19]
 Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
@@ -1172,7 +1185,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 83.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18]
+ [20]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 95.
@@ -1195,7 +1208,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 52.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19] (./parti/resocontoAttivitaVerifica.tex
+ [21] (./parti/pdca.tex)
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 54.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22]
+(./parti/resocontoAttivitaVerifica.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 
  []
@@ -1214,7 +1233,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 59.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20]
+ [23]
 Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
@@ -1228,7 +1247,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 85.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21]
+ [24]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
@@ -1238,12 +1257,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
  []
 
+
+Underfull \hbox (badness 1158) in paragraph at lines 127--128
+\T1/cmr/m/n/12 ta-va spes-so a con-flit-ti di
+ []
+
 )
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 54.
+Package pdftex.def Info: ../../logo.jpg used on input line 56.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22] (./parti/pianificazioneTest.tex
+ [25]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 56.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26]
+(./parti/pianificazioneTest.tex
 Underfull \hbox (badness 3919) in paragraph at lines 29--29
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1337,7 +1367,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 106.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
+ [27]
 Underfull \hbox (badness 3919) in paragraph at lines 107--107
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1376,12 +1406,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 146.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24]
+ [28]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 146.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25]
+ [29]
 Underfull \hbox (badness 2088) in paragraph at lines 149--149
 \T1/cmr/m/n/12 ri-ca-re in lo-ca-le un'Infografica$[]$
  []
@@ -1435,7 +1465,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 186.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [26]
+ [30]
 Underfull \hbox (badness 3919) in paragraph at lines 187--187
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1519,12 +1549,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 226.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27]
+ [31]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 226.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28]
+ [32]
 Underfull \hbox (badness 3919) in paragraph at lines 227--227
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che si pos-sa
  []
@@ -1583,18 +1613,18 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29]
+ [33]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30]
+ [34]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[31]
+[35]
 Underfull \hbox (badness 3838) in paragraph at lines 274--274
 []|\T1/cmr/m/n/12 Viene ve-ri-fi-ca-to che sia di-spo-ni-bi-
  []
@@ -1608,12 +1638,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 281.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [32]
+ [36]
 Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
-<./images/IntegrazioneDiagramma.pdf, id=399, 751.60799pt x 1320.935pt>
+<./images/IntegrazioneDiagramma.pdf, id=441, 751.60799pt x 1320.935pt>
 File: ./images/IntegrazioneDiagramma.pdf Graphic file (type pdf)
 
 <use ./images/IntegrazioneDiagramma.pdf>
@@ -1674,13 +1704,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 325.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [33 <./images/IntegrazioneDiagramma.pdf>]
+ [37 <./images/IntegrazioneDiagramma.pdf>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 328.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [34]
+ [38]
 Underfull \hbox (badness 1533) in paragraph at lines 353--353
 []|\T1/cmr/m/n/12 viene in-se-ri-ta una pre-sen-ta-zio-
  []
@@ -1954,23 +1984,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 376.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [35]
+ [39]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 376.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [36]
+ [40]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 376.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[37]
+[41]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 376.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [38]
+ [42]
 Overfull \hbox (7.32077pt too wide) in alignment at lines 378--383
  [] [] [] [] 
  []
@@ -2059,7 +2089,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 402.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [39]
+ [43]
 Overfull \hbox (35.77353pt too wide) in alignment at lines 403--408
  [] [] [] [] 
  []
@@ -2223,12 +2253,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 427.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [40]
+ [44]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 427.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [41]
+ [45]
 Overfull \hbox (0.58461pt too wide) in paragraph at lines 442--442
 []|\T1/cmr/m/n/12 TU52| 
  []
@@ -2337,7 +2367,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 495.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [42]
+ [46]
 Overfull \hbox (7.32077pt too wide) in alignment at lines 496--501
  [] [] [] [] 
  []
@@ -2846,59 +2876,70 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 532.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [43]
+ [47]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 532.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [44]
+ [48]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 532.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[45]) 
+[49]) 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 57.
+Package pdftex.def Info: ../../logo.jpg used on input line 59.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [46]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
- (./PianoDiQualifica_v.3.0.0.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 57.
+ [50]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+ (./PianoDiQualifica_v.4.0.0.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 59.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13696 strings out of 494969
- 198916 string characters out of 6178806
- 386759 words of memory out of 5000000
- 16533 multiletter control sequences out of 15000+600000
+ 13718 strings out of 495017
+ 199224 string characters out of 6181021
+ 386317 words of memory out of 5000000
+ 16524 multiletter control sequences out of 15000+600000
  16527 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,16n,60p,950b,693s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0800.600pk> </hom
-e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/petruc
-ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/l
-jfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
-88.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on PianoDiQualifica_v.3.0.0.pdf (47 pages, 397457 bytes).
+ 51i,16n,60p,950b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.7} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+i1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on PianoDiQualifica_v.4.0.0.pdf (51 pages, 500516 bytes).
 PDF statistics:
- 1045 PDF objects out of 1200 (max. 8388607)
- 621 compressed objects within 7 object streams
- 112 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 748 PDF objects out of 1000 (max. 8388607)
+ 666 compressed objects within 7 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 
