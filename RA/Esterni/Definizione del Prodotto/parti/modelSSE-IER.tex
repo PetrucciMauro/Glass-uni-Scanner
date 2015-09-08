@@ -75,7 +75,7 @@
 		   	\textbf{Scope}\\
 				\indent Model::SlideShow::SlideShowElements::Text.\\
 			\textbf{Utilizzo}\\
-				\indent Il costruttore viene invocato da Inserter::insertText().\\
+				\indent Il costruttore viene invocato da InsertEditRemove::insertText().\\
 			\textbf{Attributi}
 			\begin{itemize}
 				\item \textbf{font}
@@ -117,7 +117,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Image.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertImage().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertImage().\\
 		\textbf{Attributi}
 		\begin{itemize}
 				\item \textbf{url}
@@ -142,7 +142,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Frame.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertFrame().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertFrame().\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{bookmark}
@@ -178,7 +178,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::SVG.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertSVG().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertSVG().\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{color}
@@ -208,7 +208,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Audio.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertAudio().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertAudio().\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{url}
@@ -233,7 +233,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Video.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertVideo().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertVideo().\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{url}
@@ -258,7 +258,7 @@
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowElements::Background.\\
 		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da Inserter::insertBackground().\\
+			\indent Il costruttore viene invocato da InsertEditRemove::insertBackground().\\
 		\textbf{Attributi}
 		\begin{itemize}
 			\item \textbf{image}
@@ -285,7 +285,7 @@
 	}
 \subsection{Classe InsertEditRemove}{
 		\textbf{Funzione}\\
-			\indent Classe statica in cui vengono implementati gli algoritmi di inserimento di elementi\ped{g} nella presentazione.\\
+			\indent Classe concreta in cui vengono implementati gli algoritmi di inserimento, modifica e rimozione degli elementi\ped{g} nella presentazione.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::InsertEditRemove.\\
 		\textbf{Utilizzo}\\
@@ -296,11 +296,6 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Descrizione}: oggetto json che contiene gli oggetti delle classi che rappresentano gli elementi\ped{g} della presentazione.
-			\end{itemize}
-			\item \textbf{id =0}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Descrizione}: attributo statico, indica gli id univoci degli oggetti generati.
 			\end{itemize}
 		\end{itemize}
 		\noindent{\textbf{Metodi}}
@@ -314,20 +309,20 @@
 			\item \textbf{getPresentazione}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: ritorna Presentazione.
 			\end{itemize}
 			\item \textbf{getPresentationName}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: ritorna il nome di Presentazione.
 			\end{itemize}
 			\item \textbf{getIdPresentazione}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
-				\item \textbf{Descrizione}: ritorna l'id di Presentazione.
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
+				\item \textbf{Descrizione}: ritorna l'id di Presentazione. 
 			\end{itemize}
 			\item \textbf{getFrames}()
 			\begin{itemize}
@@ -368,19 +363,19 @@
 			\item \textbf{getBackground}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: ritorna il background della presentazione.
 			\end{itemize}
 			\item \textbf{getPaths}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: ritorna i percorsi\ped{g} della presentazione.
 			\end{itemize}
 			\item \textbf{getElement}(id)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: ritorna l'Elemento\ped{g} id della presentazione.
 			\end{itemize}
 			\item \textbf{insertText}(spec:object)
@@ -464,49 +459,49 @@
 			\item \textbf{editPosition}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldPosition per contenere i valori di xIndex e di yIndex dell’oggetto trovato e imposta xIndex e yIndex con i valori passati tramite spec. Restituisce oldPosition.
 			\end{itemize}
 			\item \textbf{editRotation}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldRotation per contenere il valore di rotation dell’oggetto trovato e imposta rotation con il valore passato tramite spec. Restituisce oldRotation.
 			\end{itemize}
 			\item \textbf{editSize}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldSize per contenere i valori di height e di width dell’oggetto trovato e imposta height e width con i valori passati tramite spec. Restituisce oldSize.
 			\end{itemize}
 			\item \textbf{editBackground}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova crea un oggetto oldBackground per salvare i valori di color e ref dell’oggetto trovato e imposta color e ref con i valori passati tramite spec. Restituisce oldBackground.
 			\end{itemize}
 			\item \textbf{editColor}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldColor per contenere il valore di color dell’oggetto trovato e imposta color con il valore passato tramite spec. Restituisce oldColor.
 			\end{itemize}
 			\item \textbf{editShape}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldShape per contenere il valore di shape dell’oggetto trovato e imposta shape con il valore passato tramite spec. Restituisce oldShape.
 			\end{itemize}
 			\item \textbf{editContent}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo content in un oggetto oldContent e imposta content con il valore passato tramite spec. Restituisce oldContent.
 			\end{itemize}
 			\item \textbf{editFont}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo Font\ped{g} e fontSize in un oggetto oldFont e imposta Font\ped{g} con il valore di newFont e fontSize con i valori passati tramite spec. Restituisce oldFont.
 			\end{itemize}
 			\item \textbf{portaAvanti}(spec:object)
@@ -542,7 +537,7 @@
 			\item \textbf{deleteChoicePath}(pathId)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: metodo che elimina il Percorso\ped{g} a scelta pathId da Presentazione e ritorna l'oggetto eliminato.
 			\end{itemize}
 			\item \textbf{addFrameToChoicePath}(spec:object)
@@ -554,7 +549,7 @@
 			\item \textbf{removeFrameFromChoicePath}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Object;
+				\item \textbf{Tipo di ritorno}: SlideShowElement;
 				\item \textbf{Descrizione}: scorre il Percorso\ped{g} a scelta spec.pathId in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia posizione, id e id del Percorso\ped{g} in un oggetto obj e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce obj.
 			\end{itemize}
 		\end{itemize}
