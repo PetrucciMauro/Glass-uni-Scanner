@@ -1,0 +1,97 @@
+\subsubsection{MongoRelation}{
+	
+	\begin{figure}[H]
+		\includegraphics[scale=0.8]{\imgs {mongoRelation}.pdf}
+		\label{fig:nodeAPI}
+		\caption{Diagramma classe Model::serverRelation::mongoRelation::MongoRelation}
+	\end{figure}
+	
+		\textbf{Metodi:}
+		\begin{itemize}
+		\item \textbf{getPresentationsMeta() : object}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations GET" ritornando l'oggetto con le informazioni sulle presentazioni create dall'utente
+			\item \textbf{Tipo di ritorno:} object
+			\end{itemize}
+		
+		\item \textbf{newPresentation(name : string) : void}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/new/[name] POST" per creare una nuova presentazione sul database MongoDB
+			\item \textbf{Tipo di ritorno:} object
+			\end{itemize}
+			
+		\item \textbf{newCopyPresentation(nameOldPresentation : string, nameNewPresentation : string) : void}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/new/[nameOldPresentation]/[nameNewPresentation] POST" per creare una nuova presentazione sul database MongoDB
+			\item \textbf{Tipo di ritorno:} object
+			\end{itemize}
+			
+		\item \textbf{getPresentation(namePresentation : string) : object}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation] GET" per ricevere la presentazione [namePresentation] dell'utente
+			\item \textbf{Tipo di ritorno:} object
+			\end{itemize}
+			
+		\item \textbf{deletePresentation(namePresentation : string) : bool}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation] DELETE" per eliminare la presentazione [namePresentation] creata dall'utente dal database MongoDB
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{renamePresentation(name : string, newName : string) : bool}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[name]/rename/[newName] POST" per rinominare la presentazione [name] dell'utente in [newName] 
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{updateElement(namePresentation: string, element : object, callback) }
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation]/element PUT" per aggiornare l'Elemento\ped{g} passato come parametro, esegue la Funzione\ped{g} callback
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{deleteElement(namePresentation: string, typeObj : string, idElement : string, callback) }
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation]/[typeObj]/[idElement] DELETE" per eliminare l'Elemento\ped{g} con identificativo [idElement] dalla presentazione nel database MongoDB, esegue la Funzione\ped{g} callback
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{newElement(namePresentation: string, element : object, callback)}
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation]/element POST" per inserire un nuovo Elemento\ped{g} nella presentazione dell'utente(element) nella base dati MongoDB, esegue la Funzione\ped{g} callback
+ 			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+			
+		\item \textbf{updatePaths(namePresentation: string, element : object, callback) }
+			\begin{itemize}
+			\item \textbf{Accessibilit\`{a}:} public
+			\item \textbf{Descrizione:} effettua una chiamata asincrona verso il Server\ped{g} nodeJs al servizio "/private/api/presentations/[namePresentation]/paths PUT" per aggiornare il campo paths della presentazione con l'Elemento\ped{g} passato come parametro, esegue la Funzione\ped{g} callback
+			\item \textbf{Tipo di ritorno:} bool
+			\end{itemize}
+
+		\end{itemize}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

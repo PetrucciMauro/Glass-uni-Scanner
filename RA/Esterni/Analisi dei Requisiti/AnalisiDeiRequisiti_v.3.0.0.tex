@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/} %se esistono
+\newcommand{\temp}{../../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Analisi dei Requisiti}
+\newcommand{\dataCreazione}{20-03-2015}
+\newcommand{\versione}{3.0.0} % versione corrente del documento
+\newcommand{\dataUM}{19-08-2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\redaz}{\PM, \GP}
+\newcommand{\verif}{\TP}
+\newcommand{\appr}{\FM}
+\newcommand{\sommario}{
+	Il presente documento riporta l'Analisi dei Requisiti effettuata per il capitolato \premi.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\listoffigures
+	\listoftables
+	\newpage
+	\input{\parti introduzione}
+	\newpage
+	\input{\parti descrizioneGenerale}
+	\newpage
+	\input{\parti casiduso}
+	\newpage
+	\input{\parti requisiti}
+\end{document}

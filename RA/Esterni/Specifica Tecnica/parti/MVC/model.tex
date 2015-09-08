@@ -1,0 +1,807 @@
+\subsection{Model}{
+	\textbf{\tipo}: questo Package è la parte Model dell'architettura MVC.\\
+	\textbf{\relaz}: è in relazione con il package Controller e con NodeAPI.\\
+	\textbf{Package contenuti}: 
+	\begin{itemize}
+	\item Model::\-SlideShow;
+	\item Model::\-serverRelation;
+	\end{itemize}
+}
+\subsubsection{Model::\-SlideShow}{
+	\textbf{\tipo}: all’interno di questo Package si trovano le classi che si riferiscono alla costruzione, alla distruzione e alla modifica degli elementi\ped{g} della presentazione oltre alle classi che rappresentano gli elementi\ped{g} stessi della presentazione.\\
+	\textbf{\relaz}: il package è in relazione con Controller da cui riceve le chiamate relative a inserimento, eliminazione e modifica degli elementi\ped{g}.
+}
+\subsubsection{Model::\-SlideShow::\-SlideShowActions}{
+	\textbf{\tipo}: all’interno di questo Package si trovano le classi che si occupano della costruzione, dell'inserimento, della rimozione e della modifica degli elementi\ped{g} della presentazione.\\
+	\textbf{\relaz}: il package è in relazione con\\ Model::\-SlideShow::\-SlideShowActions::\-Command che ne invoca le funzioni\ped{g} passando i relativi parametri per l'inserimento, la rimozione e la modifica degli elementi\ped{g}.
+		Tutti i componenti seguenti appartengono al package SlideShowActions, quindi lo scope sarà Model::\-SlideShow::\-SlideShowActions::\-<componente>.
+}
+\subsubsection{InsertEditRemove}{
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.3]{\imgs {inserteditremove}.pdf}
+		\label{fig:ier}
+		\caption{InsertEditRemove}
+	\end{figure}
+\textbf{\tipo}: classe statica che offre i metodi destinati all'inserimento, eliminazione e modifica degli elementi\ped{g} all’interno di una presentazione.\\
+		\textbf{\interfacce}: è il componente receiver del Design Pattern Command.\\
+		\textbf{\relaz}:
+\begin{itemize}
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditSizeCommand -> invoca il metodo editSize() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditPositionCommand -> invoca il metodo editPosition() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditRotationCommand -> invoca il metodo editRotation() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditColorCommand -> invoca il metodo editColor() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditFontCommand -> invoca il metodo editFont() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBackgroundCommand -> invoca il metodo editBackground() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteEditBookmarkCommand -> aggiorna il valore di Bookmark\ped{g};
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaAvantiCommand -> invoca il metodo portaAvanti() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcretePortaDietroCommand -> invoca il metodo portaDietro() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToMainPathCommand -> invoca il metodo addFrameToMainPath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromMainPathCommand -> invoca il metodo removeFrameFromMainPath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteNewChoicePathCommand -> invoca il metodo addChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteDeleteChoicePathCommand -> invoca il metodo deleteChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAddToChoicePathCommand -> invoca il metodo addFrameToChoicePath() messo a disposizione da insertEditRemove;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteRemoveFromChoicePathCommand -> invoca il metodo removeFrameFromChoicePath() messo a disposizione da insertEditRemove;
+					\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da insertEditRemove;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da insertEditRemove;
+			
+			\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame\ped{g};
+			\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
+			\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
+			\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove invoca i metodi di set degli oggetti di classe Background;
+
+
+		\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove costruisce gli oggetti di classe Text;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove costruisce gli oggetti di classe Frame\ped{g};
+		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove costruisce gli oggetti di classe Image;
+		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove costruisce gli oggetti di classe SVG;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove costruisce gli oggetti di classe Audio;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove costruisce gli oggetti di classe Video;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove costruisce gli oggetti di classe Background;
+	   \item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
+	   \item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame\ped{g};
+		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
+		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
+		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
+	\end{itemize} 
+}	
+}
+\subsubsection{Model::\-SlideShow::\-SlideShowActions::\-Command}{
+		Tutti i componenti seguenti appartengono al package Command, quindi lo scope sarà Model::\-SlideShow::\-SlideShowActions::\-Command::\-<componente>.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.3]{\imgs {CommandPackage}.pdf}
+		\label{fig:cp}
+		\caption{Command Package}
+	\end{figure}
+	\textbf{\tipo}: all’interno di questo Package viene implementato il Design Pattern command, utile per la gestione di funzioni\ped{g} di annullamento e ripristino.\\
+	\textbf{\relaz}: all’interno del Model, il package è in relazione con
+	\begin{itemize}
+	\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove;
+	\end{itemize}
+	Controller::\-EditController costruisce gli oggetti delle sottoclassi di AbstractCommand, inoltre quando viene invocato il metodo "undo()" di un comando concreto, questo invoca il metodo appropriato di EditController.\\
+\subsubsubsection{Invoker}{
+	\textbf{\tipo}: è componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di Elemento\ped{g}, eliminazione di Elemento\ped{g} e inserimento di Elemento\ped{g}) per poter implementare le funzioni\ped{g} di annulla/ripristina.\\	
+	\textbf{\relaz}:
+	\begin{itemize}
+		\item Controller::\-EditController->crea un oggetto di una sottoclasse di\\ Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand passandolo all’Invoker che ne invoca il metodo execute() e lo inserisce nello stack “undostack”, richiama il metodo che svuota lo stack “redostack”.\\
+		Può inoltre invocare il  metodo “undo()” dell’Invoker che provvede a richiamare il metodo "undoaction()" del comando sulla cima dello stack “undostack” e a spostarlo quindi nello stack “redostack”. Alternativamente invoca il  metodo “redo()” dell’Invoker che provvede a invocare il metodo "doaction()" del comando sulla cima dello stack “redostack” e a spostarlo quindi nello stack “undostack”;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand <- Invoker invoca il metodo doaction() dell'oggetto della sottoclasse di AbstractCommand. Alternativamente invoca il metodo undoaction().
+	\end{itemize} 
+	\textbf{\interfacce}: viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca i metodi doaction() o undoaction() di una classe derivata da Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undostack[ ].\\
+}
+\subsubsubsection{AbstractCommand}{
+			\textbf{\tipo}: è interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
+			\textbf{\relaz}: 
+			\begin{itemize}
+				\item Model::\-Invoker -> esegue materialmente il comando, richiamandone il metodo doaction(); inoltre provvede ad annullare l’ultima operazione invocandone il metodo undoaction().
+			\end{itemize}	
+			\textbf{\interfacce}:Viene utilizzata per applicare un generico parametro di trasformazione ad un oggetto della presentazione, questo parametro verrà poi specificato dalle classi concrete.\\
+			\textbf{\figli}: 
+				\begin{itemize}
+				\item ConcreteTextInsertCommand;
+				\item ConcreteFrameInsertCommand;
+				\item ConcreteImageInsertCommand;
+				\item ConcreteSVGInsertCommand;
+				\item ConcreteAudioInsertCommand;
+				\item ConcreteVideoInsertCommand;
+				\item ConcreteBackgroundInsertCommand;
+				\item ConcreteTextRemoveCommand;
+				\item ConcreteFrameRemoveCommand;
+				\item ConcreteImageRemoveCommand;
+				\item ConcreteSVGRemoveCommand;
+				\item ConcreteAudioRemoveCommand;
+				\item ConcreteVideoRemoveCommand;
+				\item ConcreteEditSizeCommand;
+				\item ConcreteEditPositionCommand;
+				\item ConcreteEditRotationCommand;
+				\item ConcreteEditColorCommand;
+				\item ConcreteEditBackgroundCommand;
+				\item ConcreteEditFontCommand;
+				\item ConcreteEditContentCommand;
+				\item ConcreteEditBookmarkCommand;
+				\item ConcretePortaAvantiCommand;
+				\item ConcretePortaDietroCommand;
+				\item ConcreteAddToMainPathCommand;
+				\item ConcreteRemoveFromMainPathCommand;
+				\item ConcreteNewChoicePathCommand;
+				\item ConcreteDeleteChoicePathCommand;
+				\item ConcreteAddToChoicePathCommand;
+				\item ConcreteRemoveFromChoicePathCommand.
+				\end{itemize}
+				}
+\subsubsubsection{ConcreteTextInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} testuale nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertText(...) della classe statica per l’inserimento di un Elemento\ped{g};
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteFrameInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} Frame\ped{g} nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertFrame(...) della classe statica per l’inserimento di un Elemento\ped{g} Frame\ped{g} nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteImageInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} immagine nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertImage(...) della classe statica per l’inserimento di un Elemento\ped{g} immagine nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteSVGInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} SVG nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertSVG(...) della classe statica per l’inserimento di un Elemento\ped{g} SVG nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+	\subsubsubsection{ConcreteAudioInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} audio nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertAudio(...) della classe statica per l’inserimento di un Elemento\ped{g} audio nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\interfacce}: viene utilizzata per gestire le richieste di inserimento di un nuovo Elemento\ped{g} Audio.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+	\subsubsubsection{ConcreteVideoInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} video nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando  e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertVideo(...) della classe statica per l’inserimento di un Elemento\ped{g} video nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+	\subsubsubsection{ConcreteBackgroundInsertCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} video nella presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertBackground(...) della classe statica per l’inserimento di un Elemento\ped{g} sfondo nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}        
+\subsubsubsection{ConcreteTextRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeText(...) della classe statica per la rimozione di un Elemento\ped{g} testuale nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+\subsubsubsection{ConcreteFrameRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} Frame\ped{g} dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeFrame(...) della classe statica per la rimozione di un Elemento\ped{g} Frame\ped{g} dalla presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}                   
+		\subsubsubsection{ConcreteImageRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} immagine dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeImage(...) della classe statica per l’eliminazione di un Elemento\ped{g} immagine dalla presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}               
+		\subsubsubsection{ConcreteSVGRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} SVG dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeSVG(...) della classe statica per l’eliminazione di un Elemento\ped{g} SVG dalla presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteAudioRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} audio dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeAudio(...) della classe statica per l’eliminazione di un Elemento\ped{g} immagine dalla presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteVideoRemoveCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} video dalla presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeVideo(...) della classe statica per l’eliminazione di un Elemento\ped{g} video dalla presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+  \subsubsubsection{ConcreteEditSizeCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare le dimensioni di un Elemento\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editSize(...) della classe statica per la modifica dei campi dati relativi alle dimensioni dell'oggetto nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteEditPositionCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare la posizione di un Elemento\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editPosition(...) della classe statica per la modifica dei campi dati relativi alla posizione dell'oggetto nella presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteEditColorCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare il colore di un Elemento\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editColor(...) della classe statica per la modifica del campo dati relativo al colore dell'oggetto della presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		 \subsubsubsection{ConcreteEditBackgroundCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare lo sfondo di un Elemento\ped{g} Frame\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editBackground(...) della classe statica per la modifica del campo dati relativo allo sfondo dell'oggetto della presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		 \subsubsubsection{ConcreteEditRotationCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare l'orientamento di un Elemento\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editRotation(...) della classe statica per la modifica del campo dati relativo all'orientamento dell'oggetto della presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		\subsubsubsection{ConcreteEditFontCommand}{
+	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per modificare il carattere di un Elemento\ped{g} testuale della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editColor(...) della classe statica per la modifica dei campi dati relativi al Font\ped{g} dell'oggetto testuale della presentazione;
+		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+	\end{itemize}	
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+		
+		\subsubsubsection{Classe ConcreteEditContentCommand}{
+				 È classe concreta del Design Pattern Command, serve a assegnare del testo ad un Elemento\ped{g} della presentazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+						\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+						\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+						\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo editContent(spec) della classe statica per la modifica dei campi dati relativi testo dell'oggetto della presentazione;
+						 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+						\end{itemize}	
+			\textbf{\base}: 
+				\begin{itemize}
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+				\end{itemize}
+				}
+		
+		\subsubsubsection{Classe ConcreteEditBookmarkCommand}{
+		 È classe concreta del Design Pattern Command, applica un Bookmark\ped{g} ad un Elemento\ped{g} della presentazione.\\	
+		\textbf{\relaz}: 
+		\begin{itemize}
+				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo updateBookmark(...) della classe statica per la modifica del campo relativo al Bookmark\ped{g} dell'Elemento\ped{g} della presentazione;
+				\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+						\end{itemize}	
+				\textbf{\base}: 
+			  \begin{itemize}
+			  \item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+			  \end{itemize}
+			  }
+		
+	\subsubsubsection{Classe ConcretePortaAvantiCommand}{
+		 È classe concreta del Design Pattern Command, sposta all'indietro l'Elemento\ped{g} su cui è stata invocata.\\	
+		\textbf{\relaz}: 
+		\begin{itemize}
+			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo portaAvanti() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
+			 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\end{itemize}	
+		\textbf{\base}: 
+		 \begin{itemize}
+		 \item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		 \end{itemize}
+		 }
+				
+	\subsubsubsection{Classe ConcretePortaDietroCommand}{
+		 È classe concreta del Design Pattern Command, sposta all'indietro l'Elemento\ped{g} su cui è stata invocata.\\	
+		\textbf{\relaz}: 
+		\begin{itemize}
+			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo portaDietro() della classe statica per la modifica del campo z-index degli oggetti della presentazione;
+			 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\end{itemize}	
+		\textbf{\base}: 
+		 \begin{itemize}
+		 \item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		 \end{itemize}
+		 }
+			
+		\subsubsubsection{Classe ConcreteAddToMainPathCommand}{
+		 È classe concreta del Design Pattern Command, inserisce in Frame\ped{g} su cui è chiamata nella posizione specificata, all'interno del Percorso\ped{g} principale.\\	
+		 \textbf{\relaz}: 
+		 \begin{itemize}
+			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo addFrameToMainPath(...) della classe statica per la modifica dell'oggetto relativo al Percorso\ped{g} principale della presentazione;
+		 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\end{itemize}	
+		\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+			
+	   \subsubsubsection{Classe concreteRemoveFromMainPathCommand}{
+		 È classe concreta del Design Pattern Command, rimuove dal Percorso\ped{g} principale della presentazione il Frame\ped{g} su cui è stata chiamata.\\	
+		 \textbf{\relaz}: 
+		 \begin{itemize}
+			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo removeFrameFromMainPath(...) della classe statica per la modifica dell'oggetto relativo al Percorso\ped{g} principale della presentazione;
+		 \item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+					\end{itemize}	
+		\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+		\end{itemize}
+		}
+			
+	  \subsubsubsection{Classe concreteNewChoicePathCommand}{
+		 È classe concreta del Design Pattern Command, riceve l'id del Frame\ped{g} da cui parte il nuovo Percorso\ped{g} scelta.\\	
+		  \textbf{\relaz}: 
+		  \begin{itemize}
+			\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+			\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo addChoicePath(...) della classe statica per la modifica dell'oggetto relativo ai percorsi\ped{g} della presentazione; 
+			\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+						\end{itemize}	
+			\textbf{\base}: 
+			\begin{itemize}
+			\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+			\end{itemize}
+			}
+
+		\subsubsubsection{Classe concreteDeleteChoicePathCommand}{
+			È classe concreta del Design Pattern Command, rimuove dal Percorso\ped{g} scelta il Frame\ped{g} su cui è stata chiamata.\\	
+		  \textbf{\relaz}: 
+		  \begin{itemize}
+				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
+				\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- il comando invoca il metodo deleteChoicePath(...)  della classe statica per la modifica dell'oggetto relativo al Percorso\ped{g} principale della presentazione;
+				\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+			\end{itemize}	
+			\textbf{\base}: 
+			\begin{itemize}
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+			\end{itemize}
+			}
+		
+		\subsubsubsection{Classe ConcreteRemoveFromChoicePathCommand}{
+			 È classe concreta del Design Pattern Command, rimuove dal Percorso\ped{g} scelta il Frame\ped{g} su cui è stata chiamata.\\	
+			  \textbf{\relaz}: 
+			  \begin{itemize}
+				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo removeFrameFromChoicePath(...)della classe statica per la modifica dell'oggetto relativo al Percorso\ped{g} scelta della presentazione;
+					\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+								\end{itemize}	
+					\textbf{\base}: 
+					\begin{itemize}
+					\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+					\end{itemize}
+					}
+		\subsubsubsection{Classe ConcreteAddToChoicePathCommand}{
+			 È classe concreta del Design Pattern Command, aggiunge il Frame\ped{g} su cui è chiamata ad un Percorso\ped{g} scelta.\\	
+			\textbf{\relaz}: 
+			\begin{itemize}
+				\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo addFrameToChoicePath(...)della classe statica per la modifica dell'oggetto relativo al Percorso\ped{g} scelta della presentazione;
+				\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
+			\end{itemize}	
+			\textbf{\base}: 
+			\begin{itemize}
+				\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
+			\end{itemize}
+			} 
+		}
+ \subsubsection{Model::\-SlideShow::\-SlideShowElements}{
+	Tutti i componenti seguenti appartengono al package SlideShowElements, quindi lo scope sarà Model::\-SlideShow::\-SlideShowElements::\-<componente>.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.28]{\imgs {slideshowelements}.pdf}
+		\label{fig:sse}
+		\caption{SlideShowElements}
+	\end{figure}
+	\textbf{\tipo}: di questo package fanno parte le classi degli elementi\ped{g} della presentazione e la classe che definisce la presentazione stessa.\\
+	\textbf{\relaz}: Model::\-SlideShow::\-SlideShowElements è in comunicazione con 
+	\begin{itemize}
+	\item Model::\-SlideShow::\-SlideShowActions::\-Insert, i cui oggetti durante la modifica della presentazione istanziano oggetti di tipo SlideShowElement;
+	\item Model::\-Remove, i cui oggetti rimuovono gli elementi\ped{g} di tipo SlideShowElements;
+	\item Model::\-SlideShow::\-SlideShowActions::\-EditElements, i cui oggetti invocano metodi degli oggetti SlideShowElement che ne impostano i campi.
+		\end{itemize}
+
+\subsubsubsection{SlideShowElement}{
+	\textbf{\tipo}: gli oggetti della classe SlideShowElement rappresentano gli elementi\ped{g} della presentazione.\\	
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore delle sottoclassi di SlideShowElements;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> gli oggetti delle sue sottoclassi richiamano le funzioni\ped{g} delle sottoclassi di SlideShowElement che gestiscono l’impostazione dei campi dati;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> gli oggetti delle sue sottoclassi rimuovono dai contenitori di SlideShow gli oggetti di classe SlideShowElement e ne richiamano i distruttori.
+	\end{itemize}	
+	\textbf{\interfacce}:\\
+	\indent Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove istanzia oggetti di sottoclassi di SlideShowElement.\\
+	\textbf{\figli}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-Text;
+		\item Model::\-SlideShow::\-Frame\ped{g};
+		\item Model::\-SlideShow::\-Image;
+		\item Model::\-SlideShow::\-SVG;
+		\item Model::\-SlideShow::\-Audio;
+		\item Model::\-SlideShow::\-Video;
+		\item Model::\-SlideShow::\-Background.
+		\end{itemize}
+		}
+ \subsubsubsection{Text}{
+	\textbf{\tipo}: gli oggetti della classe Text rappresentano gli elementi\ped{g} di tipo testuale della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Text e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Text dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Text vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElement.
+		\end{itemize}
+		}
+\subsubsubsection{Frame}{
+	\textbf{\tipo}: gli oggetti della classe Frame\ped{g} rappresentano gli elementi\ped{g} di tipo Frame\ped{g} della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Frame\ped{g} e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove-> rimuove l’oggetto Frame\ped{g} dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Frame\ped{g} vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElement.
+		\end{itemize}
+		}
+
+\subsubsubsection{Image}{
+	\textbf{\tipo}: gli oggetti della classe Image rappresentano gli elementi\ped{g} di tipo immagine della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Image e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Image dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove ->  invoca i metodi che modificano i campi dati dell'oggetto;
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Image vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElement.
+		\end{itemize}
+		}
+
+\subsubsubsection{SVG}{
+	\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi\ped{g} di tipo SVG della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di SVG e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove: -> rimuove l’oggetto SVG dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElement.
+		\end{itemize}
+		}
+
+\subsubsubsection{Audio}{
+	\textbf{\tipo}: gli oggetti della classe Audio rappresentano gli elementi\ped{g} di tipo audio della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Audio dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Audio vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}:  
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.
+		\end{itemize}
+		}
+
+\subsubsubsection{Video}{
+	\textbf{\tipo}: gli oggetti della classe Video rappresentano gli elementi\ped{g} di tipo video della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Video e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Video dalla presentazione;
+		 \item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Video vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.
+		\end{itemize}
+		}     
+\subsubsection{Background}{
+	\textbf{\tipo}: gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
+	\textbf{\relaz}: 
+	\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Background e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Video dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+	\end{itemize}	
+	\textbf{\interfacce}: gli oggetti della classe Background vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\base}: 
+		\begin{itemize}
+		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.
+		\end{itemize}
+		}
+}
+
+
+%====================================
+% 			serverRelations
+%====================================
+
+\subsubsection{Model::\-serverRelations}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{\imgs {serverRelation}.pdf}
+		\label{fig:sr}
+		\caption{diagramma package Model::\-serverRelations}
+	\end{figure}
+		\textbf{\tipo}: package, racchiude le funzionalità del sistema che interagiscono con i servizi offerti dal Server\ped{g} nodeJs per l'interazione con la base dati MongoDB e la gestione dei File\ped{g} multimediali in Cloud\\
+		\textbf{\relaz}:
+		\begin{itemize}
+		\item relazioni verso \textbf{Server} del quale si utilizzano i servizi RESTfull;
+		\item relazioni da \textbf{Controller} per il recupero o la creazione di una nuova presentazione dal database MongoDB al caricamento delle pagine HTML;
+		\item relazioni da \textbf{Model::\-SlideShow} che utilizza la rappresentazione locale della presentazione.
+		\end{itemize} 
+}
+% AccessControll
+\subsubsection{Model::\-serverRelations::\-accessControl}{
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{\imgs {accessControll}.pdf}
+		\label{fig:cd}
+		\caption{accessControl}
+	\end{figure}
+
+		\textbf{\tipo}: package, racchiude le funzioni\ped{g} di registrazione dell’utente e autenticazione tramite token ai servizi esposti da nodeApi.\\
+		\textbf{\relaz}: 
+		\begin{itemize}
+		\item relazioni verso \textbf{Server} a cui vengono passati i parametri per la registrazione e l'autenticazione dell'utente
+		\item relazioni da \textbf{Controller} da cui si ricevono i parametri in input dell'utente
+		\item relazioni da \textbf{loader, fileServerRelation, mongoRelation} a cui viene esposto il token ricevuto dal Server\ped{g} dopo la autenticazione
+		\end{itemize}
+		
+		\subsubsubsection{Authentication}{
+				\textbf{\tipo}: Classe, fornisce le funzionalità di autenticazione e deautenticazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item relazione verso \textbf{Server} per il recupero del token passando i parametri di autenticazione dell'utente, cambio password dell'utente
+								\item relazione da \textbf{Controller} da cui riceve in input i parametri dell'utente per la autenticazione 
+					\item relazione da \textbf{loader, fileServerRelation, mongoRelation} a cui espone il token per poter usare i servizi del Server\ped{g}
+				\end{itemize}	
+					}
+		\subsubsubsection{Registration}{
+				\textbf{\tipo}: Classe, fornisce le funzionalità di registrazione.\\	
+				\textbf{\relaz}: 
+				\begin{itemize}
+					\item relazione verso \textbf{Server} per il la registrazione dell'utente presso il database MongoDB
+								\item relazione da \textbf{Controller} da cui riceve in input i parametri dell'utente per la registrazione
+				\end{itemize}	
+			}
+}
+
+% Loader
+\subsubsection{Model::\-serverRelations:loader}{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.8]{\imgs {Loader}.pdf}
+		\label{fig:srl}
+		\caption{serverRelation::\-Loader}
+	\end{figure}
+		\textbf{\tipo}: package, racchiude le funzioni\ped{g} di recupero o creazione di una presentazione dal Server\ped{g} attraverso i servizi offerti dalla Api, una volta ottenuta la presentazione e' esposta per le modifiche provenienti da altri package nel Model 
+		\textbf{\relaz}: 
+		\begin{itemize}
+		\item relazione verso \textbf{Server} per la modifica della presentazione nel database MongoDB
+		\item relazione da \textbf{Model::\-SlideShow::\-InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
+		\end{itemize}
+
+\subsubsubsection{Loader}{
+				\textbf{\tipo}: Classe la cui Funzione\ped{g} è esporre una interfaccia per la sincronizzazione delle modifiche della presentazione nel model verso il server\\
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item relazione verso \textbf{Server} per il recupero della presentazione dal database MongoDB
+				\item relazione da \textbf{Model::\-SlideShow::\-InsertEditRemove} a cui viene esposta la rappresentazione della presentazione locale per essere modificata
+				\end{itemize}	
+					}
+}
+
+%fileServerRelations
+\subsubsubsection{FileServerRelation}{
+				\textbf{\tipo}: Classe che si interfaccia con il Server\ped{g} per l'upload, la gestione e il recupero di informazioni dei File\ped{g} multimediali presenti nello spazio dell'utente
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item dipendenza verso \textbf{Server} per recupero informazioni sui File\ped{g} e upload e gestione di nuovi File\ped{g} verso nello spazio utente 
+				\item dipendenza verso \textbf{accessControll} per il recupero del token per accedere ai servizi protetti del Server\ped{g}
+				\item dipendenza da \textbf{Controller} da cui vengono chiamati i metodi esposti
+				\end{itemize}	
+					}
+					
+%mongoRelation
+\subsubsubsection{MongoRelation}{
+				\textbf{\tipo}: Classe che si interfaccia con il Server\ped{g} per la gestione delle presentazioni salvate in formato json su un database MongoDB
+				\textbf{\relaz}: 
+				\begin{itemize}
+				\item dipendenza verso \textbf{Server} per l'interazione con il database MongoDB
+				\item dipendenza verso \textbf{accessControll} per il recupero del token per accedere ai servizi protetti del Server\ped{g}
+				\item dipendenza da \textbf{Loader} da cui vengono chiamati i metodi esposti
+				\end{itemize}
+					}

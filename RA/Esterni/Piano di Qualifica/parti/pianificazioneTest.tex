@@ -1,0 +1,533 @@
+\section{Pianificazione dei test}{
+Si descrivono di seguito tutti i test di Validazione\ped{g}, sistema ed integrazione previsti,prevedendo un aggiornamento futuro per i test di unità. Per le tempistiche di esecuzione
+dei test si faccia riferimento al  \href{run:../../Esterni/\fPianoDiProgetto}{\fEscapePianoDiProgetto}.
+\subsection{Test di sistema}{
+In questa sezione vengono descritti i test di sistema che permettono di verificare il
+comportamento dinamico del sistema completo rispetto ai Requisiti\ped{g} descritti nell’ \href{run:../../Esterni/\fAnalisiDeiRequisiti}{\fEscapeAnalisiDeiRequisiti}.
+	I test di sistema riportati sono quelli relativi ai Requisiti\ped{g} Software\ped{g} individuati e pertanto
+	meritevoli di un test.
+	
+	
+		\renewcommand*{\arraystretch}{1.5}
+		\begin{longtable} [c]{| p{3cm} | p{6cm} |p{5cm}|}
+			\caption{Descrizione dei test di sistema per i Requisiti\ped{g} Funzionali
+			 \label{tab:verReqFunz}}\\
+			 \hline
+			 \textbf{Test} & \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			 \endfirsthead
+			 \hline
+			 \textbf{Test} & \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			\endhead
+			 \hline
+			 \endfoot
+			 \hline
+			 \endlastfoot
+			TS 1 & Viene verificato che ci si possa registrare al sistema inserendo username e password & RF 1\\
+			\hline
+			TS 1.1 & Viene verificato che si possa immettere uno username univoco & RF 1.1\\
+			\hline
+			TS 1.2 & Viene verificato che si possa immettere una password valida & RF 1.2\\
+			\hline
+			TS 3 & Viene verificato che ci si possa autenticare con username e password & RF 3\\
+			\hline
+			TS 3.1 & Viene verificato che si possa immettere uno username & RF 3.1\\
+			\hline
+			TS 3.2 & Viene verificato che si possa immettere una password & RF 3.2\\
+			\hline
+			TS 4 & Viene verificato che si possa creare una nuova presentazione vuota & RF 4\\
+			\hline
+			TS 7 & Viene verificato che si possa passare in modalità modifica di una presentazione da Desktop\ped{g} & RF 7\\
+			\hline
+			TS 7.1 & Viene verificato che si possa inserire un nuovo Frame\ped{g} nel piano della presentazione\ped{g} & RF 7.1\\
+			\hline
+			TS 7.1.1 & Viene verificato che si possa scegliere il tipo di Frame\ped{g} da inserire & RF 7.1.1\\
+			\hline
+			TS 7.4 & Viene verificato che si possa spostare un Frame\ped{g} in modalità modifica & RF 7.4\\
+			\hline
+			TS 7.7 & Viene verificato che si possa passare in modalità modifica di un Frame\ped{g} & RF 7.7\\
+			\hline
+			TS 7.7.1 & Viene verificato che si possa inserire del testo all'interno di un Frame\ped{g} & RF 7.7.1\\
+			\hline
+			TS 7.7.4 & Viene verificato che si possa modificare del testo già presente all'interno di un Frame\ped{g} & RF 7.7.4\\
+			\hline
+			TS 7.7.7 & Viene verificato che si possa inserire un'immagine all'interno del Frame\ped{g} & RF 7.7.7\\
+			\hline
+			TS 7.7.10 & Viene verificato che si possa modificare la dimensione di un'immagine & RF 7.7.10\\
+			\hline
+			TS 7.7.13 & Viene verificato che si possa inserire un video o un audio all'interno di un Frame\ped{g} & RF 7.7.13\\
+			\hline
+			TS 7.7.16 & Viene verificato che si possa modificare la dimensione di un video all'interno di un Frame\ped{g} & RF 7.7.16\\
+			\hline
+			TS 7.7.19 & Viene verificato che si possa spostare un Elemento\ped{g} all'interno del Frame\ped{g} & RF 7.7.19\\
+			\hline
+			TS 7.7.25 & Verificare che si possa inserire un Elemento scelta\ped{g} in un Frame\ped{g} & RF 7.7.25\\
+			\hline
+			TS 7.7.28 & Viene verificato che si possa modificare un Elemento scelta\ped{g} & RF 7.7.28\\
+			\hline
+			TS 7.7.31 & Viene verificato che si possa modificare la forma di un Frame\ped{g} & RF 7.7.31\\
+			\hline
+			TS 7.7.34 & Viene verificato che si possa modificare la dimensione di un Frame\ped{g} & RF 7.7.34\\
+			\hline
+			TS 7.7.37 & Viene verificato che si possa modificare  lo spessore del bordo di un Frame\ped{g} & RF 7.7.37\\
+			\hline
+			TS 7.7.40 & Viene verificato che si possa modificare il colore del bordo di un Frame\ped{g} & RF 7.7.40\\
+			\hline
+			TS 7.7.43 & Viene verificato che si possa modificare lo sfondo di un Frame\ped{g} & RF 7.7.43\\
+			\hline
+			TS 7.7.46 & Viene verificato che si possa ruotare un Frame\ped{g} & RF 7.7.46 \\
+			\hline
+			TS 7.10 & Viene verificato che si possa eliminare un Frame\ped{g} dal piano di una presentazione & RF 7.10\\
+			\hline
+			TS 7.13 & Viene verificato che si possa inserire un'immagine di sfondo in un'area della presentazione & RF 7.13 \\
+			\hline
+			TS 7.16 & Viene verificato che si possa inserire un colore di sfondo in un'area della presentazione & RF 7.16\\
+			\hline
+			TS 7.19 & Viene verificato che si possa definire un Percorso\ped{g} di visualizzazione & RF 7.19\\
+			\hline				
+			TS 7.19.1 & Viene verificato che si possa impostare un Frame\ped{g} iniziale per il Percorso\ped{g} di presentazione & RF7.19.1\\
+			\hline
+			TS 7.19.4 & Viene verificato che si possa definire una transizione tra due Frame\ped{g} & RF 7.19.4\\
+			\hline
+			TS 7.19.10 & Viene verificato che si possa eliminare una transizione tra due Frame\ped{g} & RF 7.19.10\\
+			\hline
+			TS 7.19.13 & Viene verificato che si possa togliere un Frame\ped{g} dal Percorso\ped{g} di presentazione & RF 7.19.13\\
+			\hline
+			TS 7.22 & Viene verificato che si possa assegnare un Bookmark\ped{g} ad un Frame\ped{g} & RF 7.22\\
+			\hline
+			TS 7.25 & Viene verificato che si possa rimuovere un Bookmark\ped{g} da un Frame\ped{g} & RF 7.25\\
+			\hline
+			TS 7.28 & Viene verificato che si possa modificare la velocità di transizione tra due Frame\ped{g} consecutivi & RF 7.28\\
+			\hline
+			TS 7.31 & Viene verificato che si possa impostare un effetto di transizione tra due Frame\ped{g} consecutivi & RF 7.31\\
+			\hline
+			TS 7.34 & Viene verificato che si possa impostare il tempo di attesa tra due Frame\ped{g} consecutivi durante la "riproduzione automatica" & RF 7.34\\
+			\hline
+			TS 7.37 & Viene verificato che si possa inserire un Elemento\ped{g} SVG in un Frame\ped{g} o nel piano della presentazione\ped{g} & RF 7.37\\
+			\hline
+			TS 7.40.1 & Viene verificato che si possa modificare le dimensioni di un Elemento\ped{g} SVG  & RF 7.40.1\\
+			\hline
+			TS 7.40.2 & Viene verificato che si possa modificare il colore di un Elemento\ped{g} SVG  & RF 7.40.2\\
+			\hline
+			TS 7.43 & Viene verificato che si possa eliminare un Elemento\ped{g} & RF 7.43 \\
+			\hline
+			TS 7.46 & Viene verificato che si possa ruotare un Elemento\ped{g} & RF 7.46 \\
+			\hline			 
+			TS 10 & Viene verificato il poter passare in modalità modifica di una presentazione da mobile & RF 10\\
+			\hline
+			TS 10.1 & Viene verificato che si possa editare da mobile il testo all'interno di un Frame\ped{g} & RF 10.1\\
+			\hline
+			TS 10.4 & Viene verificato che si possa modificare da mobile il testo presente all'interno di un Frame\ped{g} & RF 10.4\\
+			\hline
+			TS 10.5 & Viene verificato che si possa assegnare un Bookmark\ped{g} ad un Frame\ped{g} da mobile & RF 10.5\\
+			\hline
+			TS 10.8 & Viene verificato che si possa rimuovere un Bookmark\ped{g} ad un Frame\ped{g} da mobile & RF 10.8\\
+			\hline
+			TS 13 & Viene verificato che si possa caricare un File\ped{g} media presente in locale nel Server\ped{g} & RF 13\\
+			\hline
+			TS 16 & Viene verificato che si possano eliminare dal Server\ped{g} i File\ped{g} media caricati & RF 16\\
+			\hline
+			TS 17 & Viene verificato che si possano rinominare i File\ped{g} media presenti sul Server\ped{g} & RF 17\\
+			\hline
+			TS 19 & Viene verificato che si possano rinominare le presentazioni salvate nel Server\ped{g} & RF 19\\
+			\hline
+			TS 25 & Viene verificato che si possano rinominare le Infografiche\ped{g} salvate nel Server\ped{g} & RF 25\\
+			\hline
+			TS 31 & Viene verificato che si possa eliminare dal Server\ped{g} un'Infografica\ped{g} creata & RF 31\\
+			\hline
+			TS 34 & Viene verificato che si possa eliminare dal Server\ped{g} una presentazione creata & RF 34\\
+			\hline
+			TS 35 & Viene verificato che si possano visualizzare le presentazioni salvate sul Server\ped{g} & RF 35\\
+			\hline
+			TS 36 & Viene verificato che si possano visualizzare le Infografiche\ped{g} salvate sul Server\ped{g} & RF 36\\
+			\hline
+			TS 37 & Viene verificato che si possano visualizzare i File\ped{g} media salvati sul Server\ped{g} & RF 37\\						
+			\hline
+			TS 43 & Viene verificato che si possa modificare la propria password di accesso al sistema & RF 43\\
+			\hline
+			TS 46 & Viene verificato che si possa scaricare in locale un'Infografica\ped{g} creata sul Server\ped{g} & RF 46\\
+			\hline
+			TS 49 & Viene verificato che si possa salvare in locale una presentazione creata sul Server\ped{g} & RF 49\\
+			\hline
+			TS 52 & Viene verificato che si possa rimuovere una presentazione salvata in locale & RF 52\\
+			\hline
+			TS 55 & Viene verificato che si possa annullare una modifica non voluta & RF 55\\
+			\hline
+			TS 58 & Viene verificato che si possa ripristinare una modifica annullata precedentemente  & RF 58\\
+			\hline
+			TS 61.1 & Viene verificato che si possa eseguire una presentazione in modalità manuale & RF 61.1\\
+			\hline
+			TS 61.1.1 & Viene verificato che durante la presentazione si possa passare al Frame\ped{g} successivo o al precedente & RF 61.1.1\\
+			\hline
+			TS 61.1.4 & Viene verificato che si possa selezionare un Elemento scelta\ped{g} se presente nel Frame\ped{g} & RF 61.1.4\\
+			\hline
+			TS 61.1.7 & Viene verificato che si possa passare al Frame\ped{g} con Bookmark\ped{g} successivo o precedente & RF 61.1.7\\
+			\hline
+			TS 61.1.10 & Viene verificato che si possa passare da un Frame\ped{g} visualizzato al suo Frame\ped{g} contenitore & RF 61.1.10\\
+			\hline
+			TS 61.1.13 & Viene verificato che si possa zoomare in una parte qualsiasi del Frame\ped{g} & RF 61.1.13\\
+			\hline
+			TS 61.1.16.1 & Viene verificato che si possa iniziare l’esecuzione di un video/audio all'interno di un Frame\ped{g} & RF 61.1.16.1\\
+			\hline
+			TS 61.1.16.4 & Viene verificato che si possa Sospendere\ped{g} e poi riprendere l'esecuzione di un video/audio all'interno di un Frame\ped{g} & RF 61.1.16.4\\
+			\hline
+			TS 61.1.16.7 & Viene verificato che si possa eseguire un video/audio da un punto qualsiasi dello stesso & RF 61.1.16.7\\
+			\hline
+			TS 61.1.16.10 & Viene verificato che si possa interrompere l'esecuzione di un video/audio & RF 61.1.16.10\\
+			\hline
+			TS 61.4 & Viene verificato che si possa eseguire una presentazione in modalità automatica & RF 61.4\\
+			\hline
+			TS 61.4.1 & Viene verificato che si possa chiudere una presentazione in esecuzione automatica & RF 61.4.1\\
+			\hline
+			TS 61.4.4 & Viene verificato che si possa Sospendere\ped{g} e riavviare una presentazione in esecuzione automatica & RF 61.4.4\\
+			\hline
+			TS 61.4.7 & Viene verificato che si possa impostare la velocità di riproduzione della presentazione & RF 61.4.7\\
+			\hline
+			TS 61.4.10.1 & Viene verificato che si possa Sospendere\ped{g} la riproduzione di un video/audio e riprenderla successivamente & RF 61.4.10.1\\
+			\hline
+			TS 61.4.10.4 & Viene verificato che si possa riprodurre un File\ped{g} video/audio da un punto qualsiasi dello stesso & RF 61.4.10.4\\
+			\hline
+			TS 61.4.10.7 & Viene verificato che si possa saltare la riproduzione di un video/audio nel Frame\ped{g} visualizzato & RF 61.4.10.7\\
+			\hline
+			TS 61.4.10.10 & Viene verificato che si possa visualizzare la riproduzione del video a schermo intero & RF 61.4.10.10\\
+			\hline
+			TS 61.7 & Viene verificato che si possa passare da presentazione automatica a presentazione manuale e viceversa & RF 61.7, RF 61.10\\
+			\hline
+			TS 64 & Viene verificato che si possa effettuare il Logout\ped{g} dal Server\ped{g} & RF 64\\
+			\hline
+			TS 67.1 & Viene verificato che l'amministratore possa inserire dei Template\ped{g} di presentazioni & RF 67.1\\
+			\hline
+			TS 67.4 & Viene verificato che l'amministratore possa inserire Template\ped{g} di Infografiche\ped{g} & RF 67.4\\
+			\hline
+			TS 67.7 & Viene verificato che l'amministratore possa inserire elementi\ped{g} grafici & RF 67.7\\
+			\hline
+			TS 67.10 & Viene verificato che l'amministratore possa eliminare un Template\ped{g} & RF 67.10\\
+			\hline
+			TS 67.13 & Viene verificato che l'amministratore possa ripristinare un Template\ped{g} eliminato & RF 67.13\\
+			\hline
+			TS 70.1 & Viene verificato che si possa selezionare una presentazione da cui produrre l'Infografica\ped{g}  & RF 70.1\\
+			\hline
+			TS 70.4 & Viene verificato che si possa selezionare Template\ped{g} di Infografica\ped{g} & RF 70.4\\
+			\hline
+			TS 70.5 & Viene verificato che si possano selezionare gli elementi\ped{g} dell'Infografica\ped{g}  & RF 70.5\\
+			\hline
+			TS 70.10 & Viene verificato che si possa passare in modalità modifica di un'Infografica\ped{g} & RF 70.10\\
+			\hline
+			TS 70.10.1 & Viene verificato che si possa modificare un Elemento\ped{g} di un'Infografica\ped{g} & RF 70.10.1\\
+			\hline
+			TS 70.10.1.1 & Viene verificato che si possano modificare le dimensioni di un Elemento\ped{g} grafico & RF 70.10.1.1\\
+			\hline
+			TS 70.10.1.4 & Viene verificato che si possa modificare un Elemento\ped{g} testuale  & RF 70.10.1.4\\
+			\hline
+			TS 70.10.1.4.1 & Viene verificato che si possa modificare il Font\ped{g} di un Elemento\ped{g} testuale & RF 70.10.1.4.1\\
+			\hline
+			TS 70.10.1.4.4 & Viene verificato che si possa modificare la dimensione del carattere di un Elemento\ped{g} testuale & RF 70.10.1.4.4\\
+			\hline
+			TS 70.10.1.4.7 & Viene verificato che si possa modificare lo stile del testo & RF 70.10.1.4.7\\
+			\hline
+			TS 70.10.1.4.10 & Viene verificato che si possa modificare il colore della scritta del testo & RF 70.10.1.4.10\\
+			\hline
+			TS 70.10.1.4.13 & Viene verificato che si possa modificare il colore di sfondo del testo & RF 70.10.1.4.13\\
+			\hline
+			TS 70.10.1.7 & Viene verificato che si possa cambiare la posizione di un Elemento\ped{g} & RF 70.10.1.7\\
+			\hline
+			TS 70.10.4 & Viene verificato che si possa rimuovere lo sfondo dell'Infografica\ped{g} & RF 70.4.4\\
+			\hline
+			TS 70.10.7 & Viene verificato che si possa inserire uno sfondo nell'Infografica\ped{g} & RF 70.10.7\\
+			\hline
+			TS 70.10.10 & Viene verificato che si possa inserire un Elemento\ped{g} immagine nell'Infografica\ped{g} & RF 70.10.10\\
+			\hline
+			TS 70.10.13 & Viene verificato che si possa inserire del testo nell'Infografica\ped{g} & RF 70.10.13\\
+			\hline
+			TS 70.10.16 & Viene verificato che si possa inserire un Frame\ped{g} nella sua interezza presente nella presentazione & RF 70.10.16\\
+			\hline
+			TS 70.10.19 & Viene verificato che si possano eliminare elementi\ped{g} grafici o testuali & RF 70.10.19\\
+			\hline
+			TS 70.13 & Viene verificato che si possa salvare l'Infografica\ped{g} nel suo spazio & RF 70.13\\
+			\hline
+			TS 70.16 & Viene verificato che si possa annullare e ripristinare una modifica appena effettuata & RF 70.16\\
+			\hline
+			TS 70.19 & Viene verificato che si possa esportare un'Infografica\ped{g} in formato stampabile & RF 70.19\\
+			\hline
+			TS 73 & Viene verificato che si possa creare un'Infografica\ped{g} & RF 73\\
+\end{longtable}
+
+		\begin{longtable} [c]{| p{7cm} |p{5cm}|}
+			\caption{
+			Descrizione dei test di sistema
+			per i Requisiti\ped{g} di Qualità e Vincoli \label{tab:verReqQualVinc}}\\
+			 \hline
+			 \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			 \endfirsthead
+			 \hline
+			 \textbf{Descrizione} & \textbf{Requisito} \\
+			 \hline
+			\endhead
+			 \hline
+			 \endfoot
+			 \hline
+			 \endlastfoot
+			Viene verificato che ogni funzionalità dell'applicazione sia documentata & RQ\ped{g} 1, 7\\
+			\hline
+			Viene verificato che sia disponibile un tutorial per la creazione delle presentazioni & RQ\ped{g} 4\\
+			\hline
+			Viene verificato che sia disponibile la documentazione sui test eseguiti & RQ\ped{g} 10\\
+			\hline
+			Viene verificato che il sistema offra la possibilità di eseguire offline le presentazioni & RQ\ped{g} 13\\
+\end{longtable}
+}
+\newpage
+\subsection{Test d'integrazione}{
+	Vengono descritti i test di integrazione che permettono di verificare la corretta integrazione e comunicazione tra parti distinte di sistema.	\\
+	Verrà utilizzata la strategia di integrazione incrementale per una più semplice individuazione dei difetti, per assemblare il sistema in passi di integrazione reversibili e per avere corretti flussi di controllo da parti “consumatore” verso parti “produttore”. In particolare per limitare il numero di stub richiesti verrà adottato un approccio Bottom-up\ped{g} integrando prima le parti con minore dipendenza funzionale. \\
+	Di seguito viene riportato il diagramma per chiarire l'albero dei test d'integrazione.	\\
+	
+	\begin{figure}[H]
+	  \centering
+	    \includegraphics[scale=0.35]{\imgs {IntegrazioneDiagramma}.pdf}
+	  \caption{Sequenza d’integrazione delle componenti}
+	  \label{fig:SeqIntComp}
+	\end{figure}
+	
+	\begin{longtable} [c]{| p{2cm} | p{6cm} |p{3cm} | p{5cm} |}
+			\caption{Descrizione dei test di Integrazione \label{tab:verReqInteg}}\\
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti aggiuntive}& \textbf{Stato} \\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \textbf{Componenti aggiuntive}& \textbf{Stato} \\
+		 \hline
+			\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+			TIA1 & Si verifica che NodeApi si integri correttamente con le classi che compongono AccessControll & NodeApi, AccessControll & N.E.\\
+			\hline
+			TIA2 & Si verifica che il Loader interagisca correttamente con NodeApi e AccessControll  & Loader & N.E.\\
+			\hline
+			TIA3 & Si verifica che Registration interagisca correttamente con le NodeApi, Loader e AccessControll & Registration & N.E.\\
+			\hline
+			TIA4 & Si verifica che Authentication interagisca correttamente con le NodeApi, Loader e AccessControll & Authentication & N.E.\\
+			\hline
+			TIC2 & Si verifica che i componenti di SlideShowElements dialoghino correttamente con serverRelations &  & N.E.\\
+			\hline
+			TIC3 & Si verifica che le classi che compongono InseritEditRemove interagiscano correttamente con SlideShowElements e serverRelations & SlideshowActions & N.E.\\
+			\hline
+			TIC4 & Si verifica che le classi che compongono Command si integrino con InsertEditRemove &  & N.E.\\
+			\hline
+			TID1 & Si verifica che il Controller  ed il Model dialoghino correttamente & Controller & N.E.\\
+			\hline
+			TID2 & Si verifica che la View si integri correttamente con il Controller & View & N.E.\\
+		\end{longtable}
+}
+}
+\newpage
+\subsection{Test d'unità}
+		
+	\begin{longtable} [c]{| p{1cm} | p{6cm} |p{6cm} | p{1.5cm} |}
+				\caption{Descrizione dei test di Unità per il Server\ped{g} \label{tab:verTestUnit}}\\
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 \hline
+				\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 TU1 & viene verificato l'inserimento di un utente nel database in seguito ad una chiamata al metodo del Server\ped{g} con un utente non ancora registrato & POST Account/register & success \\
+		 TU2 & viene verificato che il Server\ped{g} non inserisce in database un utente gia registrato chiamando il metodo opportuno del Server\ped{g} con un utente inserito & POST Account/register & success \\
+		 TU3 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente inserito e verificandone il token ritornato  & GET Account/authenticate & success \\
+		 TU4 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente non inserito e verificando la risposta del Server\ped{g} & GET Account/authenticate & success \\
+		 TU5 & viene verificato il metodo di autenticazione del Server\ped{g} attraverso una chiamata ad esso con un utente inserito nel database ma con il parametro password errato e verificando la risposta del Server\ped{g} & GET Account/authenticate & success \\
+		 TU6 & viene verificato che il Server\ped{g} modifica la password salvata in database di un utente attraverso una chiamata con parametri corretti rispetto ad un utente inserito & POST Account/changepassword & success \\
+		 TU7 & viene verificato che il Server\ped{g} non modifica la password salvata in database di un utente attraverso una chiamata con parametro un utente non inserito & POST Account/changepassword & success \\
+		 TU8 & viene verificato che il Server\ped{g} non modifica la password salvata in database di un utente attraverso una chiamata con parametro password errato rispetto all'utente indicato  & POST Account/changepassword & success \\
+		 TU9 & viene inserita una presentazione in database e viene verificato che una chiamata al metodo del Server\ped{g} ritorni un array il cui primo Elemento\ped{g} è corretto rispetto alla presentazione inserita & GET private/api/presentations & success \\
+		 TU10 & viene chiamato il metodo del Server\ped{g} per l'inserimento di una nuova presentazione, si verifica che la presentazione sia stata inserita e che abbia il nome corretto & POST private/api/presentations/new/[newpres] & success \\
+		 TU11 & viene chiamato il metodo del Server\ped{g} per l'inserimento di una nuova presentazione come copia di una gia esistente e se ne verifica il corretti inserimento in database & POST private/api/presentations/new/[oldpres]/[newpres] & success \\
+		 TU12 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per il recupero della presentazione, si verifica il corretto recupero nella risposta  & GET private/api/presentations/[presentation] & success \\
+		 TU13 & viene inserita una presentazione in database, poi viene chiamato il metodo del Server\ped{g} per la eliminazione della presentazione, si verifica la cancellazione della presentazione in database & DELETE private/api/presentations/[presentation] & success \\
+		 TU14 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per la rinomina della presentazione verificando che il nome sia cambiato con quello indicato  & RENAME private/api/presentations/[oldname]/rename/[new] & success \\
+		 TU15 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo del Server\ped{g} con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & DELETE private/api/presentations/[presname]/delete/[type]/[id] & success \\
+		 TU16 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & POST private/api/presentations/[presname]/element & success \\
+		 TU17 & viene verificata la modifica dell'Elemento\ped{g} paths di una presentazione in database attraverso la chiamata al Server\ped{g} con dei parametri di esempio & PUT private/api/presentations/[presname]/paths & success \\
+		 TU18 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo del Server\ped{g} per la modifica di questo Elemento\ped{g} con dei valori di esempio, si verifica la modifica dei valori in database & PUT private/api/presentations/[presname]/element & success \\
+		 TU19 & viene inserita una immagine e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome dell'immagine inserita & GET private/api/files/image & success \\
+		 TU20 & viene inserito un File\ped{g} immagine, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[image] & success \\
+		 TU21 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} immagine e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[image] & success \\
+		 TU22 & viene inserito un File\ped{g} immagine, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[image]/[newname] & success \\
+		 TU23 & viene inserita una immagine con valori degli attributi height e width noti, viene chiamato il metodo del Server\ped{g} per questa immagine e si verificano i valori ritornati con quelli noti  & GET private/api/files/sizeImage/[image] & success \\
+		 TU24 & viene inserito un File\ped{g} audio e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome del File\ped{g} inserito & GET private/api/files/audio & success \\
+		 TU25 & viene inserito un File\ped{g} audio, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[audio] & success \\
+		 TU26 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} audio e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[audio] & success \\
+		 TU27 & viene inserito un File\ped{g} audio, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[audio]/[newname] & success \\
+		 TU28 & viene inserito un File\ped{g} video e viene chiamato il metodo del Server\ped{g} verificando che ritorni un'array con il primo Elemento\ped{g} avente il nome del File\ped{g} inserito & GET private/api/files/video & success \\
+		 TU29 & viene inserito un File\ped{g} video, viene chiamato il metodo del Server\ped{g} per la cancellazione di quel File\ped{g} e se ne verifica la cancellazione dalla opportuna cartella del Server\ped{g} & DELETE private/api/files/[video] & success \\
+		 TU30 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un File\ped{g} video e si verifica l'inserimento del File\ped{g} nella cartella destinazione sul Server\ped{g} & POST private/api/files/[video] & success \\
+		 TU31 & viene inserito un File\ped{g} video, viene chiamato il metodo del Server\ped{g} per la rinomina del File\ped{g}, si verifica che il File\ped{g} nella cartella del Server\ped{g} sia stato rinominato & POST private/api/files/[video]/[newname] & success \\
+ 		\end{longtable}	
+ 		
+		\begin{longtable} [c]{| p{1cm} | p{6cm} |p{7cm} | p{1.5cm} |}
+						\caption{Descrizione dei test di Unità per ServerRelation; classe: fileServerRelation \label{tab:verTestUnit}}\\
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 \hline
+		 \endfirsthead
+		 \hline
+		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 \hline
+						\endhead
+		 \hline
+		 \endfoot
+		 \hline
+		 \endlastfoot
+		 TU32 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} immagini dell'utente nel Server\ped{g} & getMetasImages() & success \\
+		 TU33 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} audio dell'utente nel Server\ped{g} & getMetasAudios() & success \\
+		 TU34 & viene verificato che il ritorno della Funzione\ped{g} sia corrispondente ai File\ped{g} video dell'utente nel Server\ped{g} & getMetasVideos() & success \\
+		 TU35 & viene verificato che il ritorno della Funzione\ped{g} sia corretto rispetto ai valori di width e height del File\ped{g} immagine inserito nel Server\ped{g} & getImageDimension(img:string) & success \\
+		 TU36 & viene verificata l'eliminazione di un File\ped{g} immagine con la chiamata della Funzione\ped{g} su un File\ped{g} immagine inserito nel Server\ped{g} & deleteImage(img:string) & success \\
+		 TU37 & viene verificata l'eliminazione di un File\ped{g} audio con la chiamata della Funzione\ped{g} su un File\ped{g} audio inserito nel Server\ped{g} & deleteAudio(img:string) & success \\
+		 TU38 & viene verificata l'eliminazione di un File\ped{g} video con la chiamata della Funzione\ped{g} su un File\ped{g} video inserito nel Server\ped{g} & deleteVideo(img:string) & success \\
+		 TU39 & viene verificata la rinominazione di un File\ped{g} immagine inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameImage(old:string,new:string) & success \\
+		 TU40 & viene verificata la rinominazione di un File\ped{g} audio inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameAudio(old:string,new:string) & success \\
+		 TU41 & viene verificata la rinominazione di un File\ped{g} video inserito nel Server\ped{g} attraverso la chiamata alla Funzione\ped{g} con i parametri corretti & renameVideo(old:string,new:string) & success \\
+		 \end{longtable}
+ \begin{longtable} [c]{| p{1cm} | p{6cm} |p{8cm} | p{1.5cm} |}
+	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: serverRelation \label{tab:verTestUnit}}\\
+ 		 \hline
+ 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+ 		 \hline
+ 		 \endfirsthead
+ 		 \hline
+ 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+ 		 \hline
+	 						\endhead
+ 		 \hline
+ 		 \endfoot
+ 		 \hline
+ 		 \endlastfoot
+ 		 TU42 & viene inserita una presentazione in database e viene verificato che il ritorno della Funzione\ped{g} sia consistente che le presentazioni presenti in database & getPresentationsMeta() & success \\
+ 		 TU43 & viene chiamata la Funzione\ped{g} per l'inserimento di una nuova presentazione, viene verificato l'inserimento della presentazione in database & newPresentation(name:string) & success \\
+ 		 TU44 & viene chiamata la Funzione\ped{g} per l'inserimento di una nuova presentazione come copia di una gia esistente, viene verificato l'inserimento della presentazione in database come copia della esistente & newCopyPresentation(name:string) & success \\
+ 		 TU45 & viene inserita una presentazione in database e viene chiamato il metodo del Server\ped{g} per il recupero della presentazione, si verifica il corretto ritorno della Funzione\ped{g} & getPresentation(name:string) & success \\
+ 		 TU46 & viene inserita una presentazione in database e viene chiamato il metodo di eliminazione della presentazione dell'utente, si verifica la cancellazione della presentazione & deletePresentation(name:string) & success \\
+ 		 TU47 & viene inserita una presentazione in database e viene chiamato il metodo di rinominazione della presentazione dell'utente, si verifica la rinominazione della presentazione & renamePresentation(old:string,new:string) & success \\
+ 		 TU48 & viene chiamato il metodo del Server\ped{g} per l'inserimento di un Elemento\ped{g} in una presentazione, viene verificato l'inserimento dell'Elemento\ped{g} in database & newElement( presentation:string , onj:object , callback:function ) & success \\
+ 		 TU49 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la modifica dell'Elemento\ped{g} dalla presentazione & updateElement(presentation  :string , onj : object , callback : function) & success \\
+ 		 TU50 & viene inserito un Elemento\ped{g} in una presentazione in database, viene chiamato il metodo con i parametri corretti e si osserva la cancellazione dell'Elemento\ped{g} dalla presentazione & deleteElement(presentation : string, type : string , id : string) & success \\
+ 		 TU51 & viene chiamato il metodo per la modifica del campo paths di una presentazione e si osserva la modifica del campo dati della presentazioni in database & updatePaths(presentation:string,obj:object) & success \\
+ 		 \end{longtable}
+  \begin{longtable} [c]{| p{1cm} | p{6cm} |p{3cm} | p{1.5cm} |}
+		 	 						\caption{Descrizione dei test di Unità per ServerRelation; classe: Loader \label{tab:verTestUnit}}\\
+	  		 \hline
+	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+	  		 \hline
+	  		 \endfirsthead
+	  		 \hline
+	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+	  		 \hline
+		 	 						\endhead
+	  		 \hline
+	  		 \endfoot
+	  		 \hline
+	  		 \endlastfoot
+ 		 TU52 & vengono chiamati i metodi addInsert(), addUpdate e addDelete() su un oggetto mook per la simulazione di altre classi del model per il recupero degli elementi\ped{g} della presentazione associati, si verifica lo stato della presentazione alle diverse chiamate del metodo  & update() & success \\
+ 		 \end{longtable}
+ 		 
+	 \begin{longtable} [c]{| p{1cm} | p{6cm} |p{3cm} | p{2cm} |}
+		 			\caption{Descrizione dei test di Unità \label{tab:verTestUnit}}\\
+	 		 \hline
+	 		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Stato} \\
+	 		 \hline
+	 		 \endfirsthead
+	 		 \hline
+	 		 \textbf{Test} & \textbf{Descrizione} & \textbf{Stato} \\
+	 		 \hline
+		 			\endhead
+	 		 \hline
+	 		 \endfoot
+	 		 \hline
+	 		 \endlastfoot
+          TU53 & Si verifica che le classi Services vengano istanziate correttamente & Success \\
+          \hline
+          TU54 & Si verifica che HeaderController venga istanziato correttamente & Success \\
+          \hline 
+          TU55 & Si verifica che AuthenticationController venga istanziato correttamente & Success\\
+          \hline
+          TU56 & Si verifica che HomeController venga istanziato correttamente & Success \\
+          \hline
+          TU57 & Si verifica che ProfileController venga istanziato correttamente & Success \\
+          \hline
+          TU58 & Si verifica che ExecutionController venga istanziato correttamente & Success \\
+          \hline
+          TU59 & Si verifica che EditController venga istanziato correttamente & Success \\
+		 		\end{longtable}
+		 		
+		   \begin{longtable} [c]{| p{1cm} | p{6cm} | p{6cm} | p{1.5cm} |}
+		 		 	 						\caption{Descrizione dei test di Unità per SlideShowElements \label{tab:verTestUnit}}\\
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 	  		 \hline
+		 	  		 \endfirsthead
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 	  		 \hline
+		 		 	 						\endhead
+		 	  		 \hline
+		 	  		 \endfoot
+		 	  		 \hline
+		 	  		 \endlastfoot
+		  		 TU60 & Richiama il costruttore di Text(...) e verifica che sia stato creato un oggetto di tipo text  & slideShowElements::Text() & success \\
+		  		 TU61 & Richiama il costruttore di Frame(...) e verifica che sia stato creato un oggetto di tipo Frame\ped{g} & slideShowElements::Frame() & success \\
+		  		 TU62 & Richiama il costruttore di Image(...) e verifica che sia stato creato un oggetto di tipo image & slideShowElements::Image() & success \\
+		  		 TU63 & Richiama il costruttore di Audio(...) e verifica che sia stato creato un oggetto di tipo audio  & slideShowElements::Audio() & success \\
+		  		 TU64 & Richiama il costruttore di Video(...) e verifica che sia stato creato un oggetto di tipo video  & slideShowElements::Video() & success \\
+		  		 TU65 & Richiama il costruttore di Background(...) e verifica che sia stato creato un oggetto di tipo background  & slideShowElements::Background() & success \\
+		  		 
+		  		 \end{longtable}
+		  		   \begin{longtable} [c]{| p{1cm} | p{6cm} | p{7cm} | p{1.5cm} |}
+		 		 	 						\caption{Descrizione dei test di Unità per InsertEditRemove \label{tab:verTestUnit}}\\
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \ \textbf{Stato} \\
+		 	  		 \hline
+		 	  		 \endfirsthead
+		 	  		 \hline
+		 	  		 \textbf{Test} & \textbf{Descrizione} & \ \textbf{Metodi} & \textbf{Stato} \\
+		 	  		 \hline
+		 		 	 						\endhead
+		 	  		 \hline
+		 	  		 \endfoot
+		 	  		 \hline
+		 	  		 \endlastfoot
+		  		 TU66 & Richiama il costruttore di InsertEditRemove() e verifica che venga istanziato un oggetto di tale classe  & slideShowActions::InsertEditRemove() & success \\
+		  		 TU67 & Richiama il costruttore di InsertEditRemove() e verifica che sia stata generata una sola istanza di tale classe  & slideShowActions::InsertEditRemove() & success \\
+		 		 TU68 & Richiama il InsertEditRemove()::insertText e verifica che venga inserito nella presentazione un oggetto Text & slideShowActions:: InsertEditRemove():: insertText(...) & success \\
+		 		 TU69 & Richiama il InsertEditRemove()::insertFrame e verifica che venga inserito nella presentazione un oggetto Frame\ped{g}  & slideShowActions:: InsertEditRemove()::insertFrame(...) & success \\
+		 		 TU70 & Richiama il InsertEditRemove()::insertImage e verifica che venga inserito nella presentazione un oggetto Image  & slideShowActions:: InsertEditRemove()::insertImage(...) & success \\
+		 		 TU71 & Richiama il InsertEditRemove()::insertSVG e verifica che venga inserito nella presentazione un oggetto SVG  & slideShowActions:: InsertEditRemove()::insertSVG(...) & success \\
+		 		 TU72 & Richiama il InsertEditRemove()::insertAudio e verifica che venga inserito nella presentazione un oggetto Audio  & slideShowActions:: InsertEditRemove()::insertAudio(...) & success \\
+		 		 TU73 & Richiama il InsertEditRemove()::insertVideo e verifica che venga inserito nella presentazione un oggetto Video  & slideShowActions:: InsertEditRemove()::insertVideo(...) & success \\
+		 		 TU74 & Richiama il InsertEditRemove()::editPosition(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editPosition(...) & success \\
+		 		 TU75 & Richiama il InsertEditRemove()::editSize(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editSize(...) & success \\
+		 		 TU76 & Richiama il InsertEditRemove()::editRotation(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editRotation(...) & success \\
+		 		 TU77 & Richiama il InsertEditRemove()::editBackground(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editBackground(...) & success \\
+		 		 TU78 & Richiama il InsertEditRemove()::editColor(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editColor(...) & success \\
+		 		 TU79 & Richiama il InsertEditRemove()::editShape(...) su ogni Elemento\ped{g} della presentazione e verifica che ogni Elemento\ped{g} venga modificato appropriatamente, controlla che venga ritornato l'oggetto precedente alla modifica   & slideShowActions:: InsertEditRemove()::editPosition(...) & success \\
+		 		 TU80 & Richiama il InsertEditRemove()::removeText(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeText(...) & success \\
+		 		 TU81 & Richiama il InsertEditRemove()::removeFrame(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeFrame(...) & success \\
+		 		 TU82 & Richiama il InsertEditRemove()::removeImage(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeImage(...) & success \\
+		 		 TU83 & Richiama il InsertEditRemove()::removeAudio(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeAudio(...) & success \\
+		 		 TU84 & Richiama il InsertEditRemove()::removeVideo(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeVideo(...) & success \\
+		 		 TU85 & Richiama il InsertEditRemove()::removeBackground(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeBackground(...) & success \\
+		 		 TU86 & Richiama il InsertEditRemove()::removeSVG(...), controlla che venga ritornato l'oggetto precedente alla modifica & slideShowActions:: InsertEditRemove()::removeSVG(...) & success \\
+		 		 
+		  		 \end{longtable}
+ 				 

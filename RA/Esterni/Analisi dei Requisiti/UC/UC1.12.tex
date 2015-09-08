@@ -1,0 +1,43 @@
+\subsection{UC 1.12 - Annulla/Ripristina presentazione mobile}{
+	\label{uc1.12}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.70]{\imgs {UC1.12}.jpg} %inserire il diagramma UML
+		\label{fig:uc1.12}
+		\caption{Caso d'uso 1.12: Annulla/Ripristina presentazione mobile}
+	\end{figure}
+	\textbf{Attori}: Utente mobile\ped{g}. \\
+	\textbf{Descrizione}:L'utente può annullare un comando selezionato o ripristinare un comando annullato
+	\textbf{Precondizione}:  l'utente ha effettuato l'accesso al sistema in modalità modifica ad una presentazione in modalità mobile \\
+	\textbf{Postcondizione}: l'utente ha annullato un comando o ripristinato un comando annullato  \\
+	
+\subsubsection{UC 1.12.1 - Annulla modifica}{
+		\label{uc1.12.1}
+		\textbf{Attori}: utente mobile\ped{g} \\
+		\textbf{Descrizione}:L'utente può annullare l'ultimo comando di modifica tra:. \\
+		\begin{itemize}
+			\item eliminazione Frame\ped{g}
+			\item spostamento Frame\ped{g}
+			\item modifica Frame\ped{g}
+			\item inserimento Bookmark\ped{g}
+			\item cancellazione Bookmark\ped{g}
+			\item modifica nella definizione di Percorso\ped{g}
+		\end{itemize}
+		\textbf{Precondizione}: Il sistema ha registrato almeno un comando di modifica della presentazione da parte dell'utente. \\
+		\textbf{Postcondizione}: Il sistema ha ripristinato lo stato precedente all'ultimo comando di modifica della presentazione dell'utente, e ha memorizzato nello storico degli annullamenti il comando annullato.	\\
+		\textbf{Scenario principale}:
+		\begin{enumerate}
+			\item l'utente seleziona l'azione annulla 
+		\end{enumerate}
+		}
+		
+\subsubsection{UC 1.12.2 - Ripristina modifica}{
+		\label{uc1.12.2}
+		\textbf{Attori}: Utente mobile\ped{g}. \\
+		\textbf{Descrizione}: L'utente può ripristinare l'ultimo comando presente nello storico dei comandi annullati.
+		\textbf{Precondizione}: Lo storico degli annullamenti di comando non è vuoto. \\
+		\textbf{Postcondizione}: Il sistema ha rieseguito l'ultimo comando di modifica della presentazione presente nello storico dei comandi annullati, ed è stato rimosso il comando rieseguito dallo storico.
+		}
+
+
+

@@ -1,0 +1,55 @@
+\section{Autenticazione e gestione profilo}
+\subsection{Autenticazione}
+\begin{enumerate}
+\item Per poter accedere a \premi\ bisogna essere prima di tutto registrati. Per effettuare la Login basta compilare la form nell'Homepage o, in alternativa, premere il pulsante \textbf{login}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.25]{\imgs {login}.png} %inserire il diagramma UML
+		\label{fig:login}
+		\caption{Pagina Autenticazione}
+	\end{figure}
+\item Verrà proposto un form da completare seguendo la procedura:
+\begin{itemize}
+\item username:Inserire lo username con il quale ci si vuole registrare;
+\item password: Inserire la password scelta; per motivi di sicurezza questa ha più di 6 caratteri;
+\item Login: Premere infine il pulsante Login per confermare i dati e poter iniziare ad utilizzare \premi.
+\end{itemize}
+
+\end{enumerate}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.75]{\imgs {formlogin}.png} %inserire il diagramma UML
+		\label{formlogin}
+		\caption{Form di autenticazione}
+	\end{figure}
+\subsection{Logout}
+Per poter effettuare il Logout è necessario essere registrati ed autenticati. Il Logout permette di terminare la propria sessione di lavoro. Un volta effettuato il Logout al successivo accesso alla piattaforma sarà richiesto di autenticarsi. Per effettuare il Logout cliccare sul pulsante \textbf{Logout}.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.35]{\imgs {logout}.png} %inserire il diagramma UML
+		\label{logout}
+		\caption{Logout}
+	\end{figure}
+\subsection{Cambio password}
+\begin{enumerate}
+\item Per poter effettuare il cambio password è necessario essere registrati. Per poter eseguire il cambio password bisogna premere sul pulsante \textbf{profilo} posto nella barra di navigazione.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.35]{\imgs {profilo}.png} %inserire il diagramma UML
+		\label{profilo}
+		\caption{Procedura cambio password}
+	\end{figure}
+\item Cambia Password: Premere il pulsante \textbf{Cambia password}, apparirà la form per effettuare il cambio della password;
+\item Password Attuale: Inserire la password attuale associata al proprio Account\ped{g};
+\item Nuova Password: Inserire una nuova password, per motivi di sicurezza sono accettabili solo password più lunghe di 6 caratteri;
+\item Conferma Nuova Password: Inserire nuovamente la password;
+\item Submit: Preme il pulsante submit per confermare i dati e procedere al cambio password.
+\end{enumerate}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.25]{\imgs {cambiopassword}.png} %inserire il diagramma UML
+		\label{cambiopassword}
+		\caption{Form cambio password}
+	\end{figure}

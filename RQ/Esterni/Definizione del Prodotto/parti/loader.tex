@@ -1,0 +1,85 @@
+\subsection{serverRelation}{
+
+	\subsubsection{Loader}{
+	
+	\begin{figure}[H]
+		\includegraphics[scale=0.8]{\imgs {Loader}.pdf}
+		\label{fig:nodeAPI}
+		\caption{Diagramma classe Model::serverRelation::loader::Loader}
+	\end{figure}
+		\textbf{Attributi:}
+			\begin{itemize}
+			\item \textbf{- toInsert}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} object
+				\item \textbf{Descrizione:} array di identificativi di elementi\ped{g} inseriti in locale dall'ultima sincronizzazione verso MongoDB
+				\end{itemize}
+			\item \textbf{- toUpdate}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} object
+				\item \textbf{Descrizione:} array di identificativi di elementi\ped{g} modificati in locale dall'ultima sincronizzazione verso MongoDB
+				\end{itemize}
+			\item \textbf{- toDelete}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} object
+				\item \textbf{Descrizione:} array di identificativi di elementi\ped{g} eliminati in locale dall'ultima sincronizzazione verso MongoDB
+				\end{itemize}
+			\item \textbf{- toPaths}
+				\begin{itemize}
+				\item \textbf{Accesso:} private
+				\item \textbf{Tipo:} bool
+				\item \textbf{Descrizione:} valore booleano che indica se \`{e} stato modificato l'oggetto paths della presentazione dall'ultima update() 
+				\end{itemize}
+
+			\end{itemize}
+	
+		\textbf{Metodi:}
+			\begin{itemize}
+			\item \textbf{update() : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} scorre gli array toInsert, toUpdate, toDelete e chiama le funzioni\ped{g} in mongoRelation per la sincronizzazione della presentazione sul database MongoDB
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+			\item \textbf{addInsert(idElement : string) : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} inserisce la stringa parametro in toInsert
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+			\item \textbf{addUpdate(idElement : string) : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} inserisce la stringa parametro in toUpdate se non \`{e} presente in toInsert
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+			\item \textbf{addDelete(idElement : string, typeObj : string) : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} inserisce la stringa parametro in toDelete se non \`{e} presente in toInsert, altrimenti non inserisce nulla in toDelete e cancella l'identificativo da toInsert, sempre cancella da toUpdate
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+			\item \textbf{addPaths() : bool}
+				\begin{itemize}
+				\item \textbf{Accessibilit\`{a}:} public
+				\item \textbf{Descrizione:} setta il valore del campo dati toPaths a true
+				\item \textbf{Tipo di ritorno:} bool
+				\end{itemize}
+
+
+			\end{itemize}
+	}
+ }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

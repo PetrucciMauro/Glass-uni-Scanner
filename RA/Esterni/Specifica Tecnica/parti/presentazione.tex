@@ -1,0 +1,41 @@
+\section{Descrizione architetturale}{
+\subsection{Metodo e formalismi}{
+	Si progetterà l'architettura del sistema secondo un approccio top-down, ovvero iniziando da una visione più astratta sul sistema ed aumentando di concretezza nelle Iterazioni\ped{g} successive.
+	Si passerà quindi alla definizione dei package e successivamente dei componenti di questi. Infine si andranno a definire le singole classi e interfacce specificando per ognuna:
+	\begin{itemize}
+	\item Tipo;
+	\item Funzione\ped{g};
+	\item Classi o interfacce estese;
+	\item Interfacce implementate;
+	\item Relazioni con altre classi.
+	\end{itemize}
+	
+	Verranno quindi illustrati i Design Pattern usati nella progettazione architetturale del sistema rimandano la spiegazione all'appendice (A1).\\
+	Per i diagrammi di Package, classi e attività verrà usata la notazione UML 2.0.
+}
+\subsection{Architettura generale}{
+	Il prodotto si presenta suddiviso in due parti distinte, una parte che verr\`{a} eseguita localmente all'utente ed una parte server.
+	La parte remota \`{e} formata da un server con tecnologia NodeJs che comunica direttamente con un database MongoDB.
+	La parte locale si presenta suddivisa in tre parti distinte: Model, View e Controller. Per la parte locale si è quindi cercato di implementare il design pattern architetturale MVC in modo da garantire un basso livello di accoppiamento. In figura 1 viene riportato il diagramma dei package, in seguito vengono elencate le componenti dell'applicativo con le relative caratteristiche e funzionalità generali, per una trattazione più approfondita si rimanda alle sezioni specifiche dei componenti.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[scale=0.23]{\imgs {General}.pdf} %inserire il diagramma UML
+		\label{fig:architettura}
+		\caption{Architettura generale del sistema}
+	\end{figure}
+	\subsubsection{Model}{
+		Contiene la rappresentazione dei dati, l'implementazione dei metodi da applicare ad essi e lo stato di questi ultimi; costituisce il cuore del Software\ped{g} e risulta di fatto totalmente indipendente dagli altri due strati.
+		}
+	\subsubsection{View}{	
+		Contiene tutti gli elementi\ped{g} della GUI, comprese le interfacce di comunicazione con le librerie grafiche esterne. Si limita a passare gli input inviati dall'utente allo strato che sta sotto di lei, il Controller, demandandone a quest'ultimo la	gestione.
+		}
+	\subsubsection{Controller}{
+		E' il punto di incontro tra la View e il Model: i dati ricevuti da quest’ultimo sono elaborati per essere presentati alla View.
+		}
+	\subsubsection{nodeApi}{
+		Si tratta della parte remota del sistema rispetto all'utente. La Api segue i principi di una API REST e raccoglie funzionalit\`{a} di interazione con la base dati MongoDB e di caricamento e gestione dei file multimediali che l'utente pu\`{o} inserire nelle presentazioni.
+		}
+	}
+
+}

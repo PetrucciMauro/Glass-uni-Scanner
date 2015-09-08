@@ -1,0 +1,21 @@
+UC 1.9.6.5.1 Modifica Dimensione testo
+
+Attori primari: Amministratore .
+Descrizione: l'Amministratore può modificare la dimensione del testo del template.
+Precondizione: il sistema è funzionante e il template esiste nel database.
+Postcondizione: La dimensione del testo è stata modificata correttamente.
+
+UC 1.9.6.5.2 Modifica colore del testo:
+
+Attori primari: Amministratore .
+Descrizione: l'Amministratore può modificare il colore del testo del template.
+Precondizione: il sistema è funzionante e il template esiste nel database.
+Postcondizione: il colore del testo è stato modificata correttamente.
+
+UC 1.9.6.5.3 Modifica font del testo:
+
+Attori primari: Amministratore .
+Descrizione: l'Amministratore può modificare il font  del testo del template.
+Precondizione: il sistema è funzionante e il template esiste nel database.
+Postcondizione: il font del testo è stato modificato correttamente.
+

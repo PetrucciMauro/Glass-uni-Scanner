@@ -1,0 +1,150 @@
+\subsection{Controller}{
+	\textbf{\tipo}: fanno parte di questo livello i package che gestiscono i segnali e le chiamate effettuati dalla view.\\
+	\textbf{\relaz}: comunica con il Model per rendere possibile la gestione del profilo e la gestione delle presentazioni da parte dell'utente.
+	
+	\subsubsection{Controller::\-EditController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Edit.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Tutte le seguenti classi, appartenenti al package Model::\-SlideShow::\-SlideShowActions::\-Command:
+			\begin{itemize}
+				\item Invoker <- EditController costruisce l'oggetto Invoker, gli passa un oggetto di classe Command eseguendo e annullando tale comando;
+				\item ConcreteTextInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteFrameInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteImageInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteSVGInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteAudioInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteVideoInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteBackgroundInsertCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteTextRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteFrameRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteImageRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteSVGRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteAudioRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteVideoRemoveCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditSizeCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditPositionCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditRotationCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditColorCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditBackgroundCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditFontCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditContentCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteEditBookmarkCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcretePortaAvantiCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcretePortaDietroCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteAddToMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteRemoveFromMainPathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteNewChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteDeleteChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteAddToChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker;
+				\item ConcreteRemoveFromChoicePathCommand <- EditController costruisce un comando e lo dà in pasto a Invoker.
+			\end{itemize}
+			\item Controller::\-Services::\-Upload <- EditController richiama Upload quando è necessario caricare nel server un file media;
+			\item Controller::\-Services::\-SharedData -> EditController ricava la presentazione corrente da SharedData;
+
+			\item Model::\-serverRelation::\-Loader <- EditController, ad ogni modifica della presentazione, richiama i metodi appropriati di Loader in modo tale da permettere il salvataggio della presentazione stessa nel server;
+
+			\item View::\-Pages::\-Edit::\-[javascript\_functions] <- EditController invoca le appropriate funzioni Javascript per applicare le modifiche alla presentazione sulla pagina di Edit.
+		\end{itemize} 
+		\textbf{\interfacce}: EditController richiama le funzioni javascript fornite da View::\-Pages::\-Edit per la modifica della view. Successivamente istanzia un oggetto di una sottoclasse di Command e lo dà in pasto a Invoker e successivamente richiama il metodo corretto di Loader per il salvataggio nel database. Nel caso di un annullamento di una modifica o di un suo ripristino, EditController richiama il metodo undo() (o redo()) di Invoker il quale a sua volta, richiama il metodo corretto di EditController per l'aggiornamento della view.
+	}
+		
+	\subsubsection{Controller::\-ExecutionController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali provenienti della pagina View::\-Pages::\-Execution.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Controller::\-Services::\-SharedData -> ExecutionController ricava la presentazione corrente da SharedData;
+			\item Controller::\-Services::\-toPages <- Quando la view invia una richiesta di reindirizzamento alla pagina View::\-Pages::\-Home o View::\-Pages::\-Edit, HeaderController invoca il metodo appropriato di toPages.
+		\end{itemize}
+		\textbf{\interfacce}: la view invia a ExecutionController una richiesta di reindirizzamento ad una pagina oppure per ricavare la presentazione corrente. ExecutionController richiama il metodo appropriato di toPages, se la richiesta è un reindirizzamento, oppure di SharedData.
+	}
+	
+	\subsubsection{Controller::\-HeaderController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Index.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di logout, HeaderController invoca il metodo per la deautenticazione fornito da Main;
+			\item Controller::\-Services::\-toPages <- Quando la view invia una richiesta di reindirizzamento alla pagina View::\-Pages::\-Home o View::\-Pages::\-Profile, HeaderController invoca il metodo appropriato di toPages.
+		\end{itemize}
+		\textbf{\interfacce}: la view invia a HeaderController una richiesta di logout o di reindirizzamento ad una pagina. HeaderController richiama il metodo per il logout di Main, oppure, se è un reindirizzamento, richiama il metodo appropriato di toPages.
+	}
+
+	\subsubsection{Controller::\-AuthenticationController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalle pagine View::\-Pages::\-Login e View::\-Pages::\-Registrazione.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di autenticazione, logout o registrazione, HeaderController invoca il metodo corretto fornito da Main;
+		\end{itemize}
+		\textbf{\interfacce}: la view invia a AuthenticationController una richiesta di registrazione o autenticazione. AuthenticationController richiama il metodo appropriato di Main.
+	}
+			
+	\subsubsection{Controller::\-ProfileController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate della pagina View::\-Pages::\-Profile.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Controller::\-Services::\-Main <- Quando la view invia una richiesta di cambio della password, viene invocato il metodo per il cambio della password di Main.
+		\end{itemize}
+		\textbf{\interfacce}: la pagina Profile invia a ProfileController la richiesta di cambio password. ProfileController richiama il metodo appropriato di Main.
+	}
+
+	\subsubsection{Controller::\-HomeController}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Home.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item Model::\-serverRelation::\-mongoRelation <- HomeController invoca i metodi necessari per il recupero di tutte le presentazioni dell'utente, la creazione di una nuova, la rinominazione o la cancellazione di una presentazione.
+		\end{itemize}
+		\textbf{\interfacce}: la pagina Home invia a HomeController una richiesta. HomeController, in base al tipo di richiesta (creazione nuova presentazione, rinominazione, eliminazione o ottenimento della lista delle presentazioni) richiama il metodo appropriato di mongoRelation per soddisfarla.
+	}
+
+
+	\subsubsection{Controller::\-Services}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire le principali funzioni dell'applicazione, a partire dall'autenticazione fino ad arrivare all'upload dei file nel server.\\	
+		\textbf{\relaz}: comunica con il Model per svolgere le operazioni necessarie.
+
+		\subsubsubsection{Services::\-toPages}{
+		\textbf{\tipo}: lo scopo di questa classe è di gestire i reindirizzamenti alle pagine corrette.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item /private <- toPages invia una richiesta http al server, il quale controlla l'esistenza del token per le pagine in cui è richiesta l'autenticazione.
+		\end{itemize}
+		\textbf{\interfacce}: toPages invia una richiesta http al server per il reindirizzamento alla pagina corretta. Nel caso in cui la pagina richieda di essere autenticati, viene inviato anche il token di sessione per verificare l'effettiva autenticazione.
+		}
+
+		\subsubsubsection{Services::\-Upload}{
+		\textbf{\tipo}: lo scopo di questa classe è di permettere l'upload dei file media nel server.\\	
+		\textbf{\relaz}:
+		\begin{itemize}
+			\item /private/api/files/image/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file immagine filename;
+			\item /private/api/files/video/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file video filename;
+			\item /private/api/files/audio/[filename] <- Upload invia una richiesta http al server per effettuare l'upload del file audio filename.
+		\end{itemize}
+		\textbf{\interfacce}: Upload invia una richiesta http al server per il caricamento di un file media nel server, inviando anche il token di sessione per verificare l'effettiva autenticazione.
+		}
+
+		\subsubsubsection{Services::\-Main}{
+		\textbf{\tipo}: lo scopo di questa classe è di permettere le funzioni di base dell'applicazione, tra cui l'autenticazione al server.\\	
+		\textbf{\relaz}: comunica con Model::\-serverRelation::\-accessControl per l'autenticazione, la registrazione e il cambio della password.\\
+		\begin{itemize}
+			\item Model::\-serverRelation::\-accessControl::\-Authentication <- Main richiama Authentication per inviare una richiesta di autenticazione o di logout al server;
+			\item Model::\-serverRelation::\-accessControl::\-Registration <- Main richiama Registration per inviare una richiesta di registrazione di un nuovo utente al server;
+			\item Model::\-serverRelation::\-accessControl::\-ChangePassword <- Main richiama ChangePassword per inviare una richiesta di cambio password al server.
+		\end{itemize}
+		\textbf{\interfacce}: Main richiama il metodo corretto di accessControl in modo da inviare una richiesta http al server per effettuare l'autenticazione, la registrazione o il cambio della password.
+		}
+
+		\subsubsubsection{Services::\-SharedData}{
+		\textbf{\tipo}: lo scopo di questa classe è di mantenere in memoria la presentazione corrente.\\	
+		\textbf{\relaz}: comunica con Model::\-serverRelation::\-mongoRelation per ricavare la presentazione su cui si sta lavorando dal server.\\
+		\begin{itemize}
+			\item Model::\-serverRelation::\-mongoRelation <- SharedData richiama mongoRelation per ottenere la presentazione corrente.
+		\end{itemize}
+		\textbf{\interfacce}: SharedData richiama il metodo corretto di mongoRelation in modo da inviare una richiesta http al server per ottentere la presentazione voluta.
+		}
+
+		\subsubsubsection{Services::\-Utils}{
+		\textbf{\tipo}: lo scopo di questa classe è definire delle funzioni utili a tutta l'applicazione.\\	
+		\textbf{\relaz}: data la sua natura, non comunica con nessun package.\\
+		}
+
+	}
+}

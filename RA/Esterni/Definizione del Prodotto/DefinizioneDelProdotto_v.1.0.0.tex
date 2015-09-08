@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{../../Template/format}
+
+%	VARIABILI
+%	Percorsi file
+\newcommand{\parti}{./parti/}
+\newcommand{\imgs}{./images/} %se esistono
+\newcommand{\temp}{../../Template/}
+
+%	Informazioni documento
+\newcommand{\titoloDoc}{Definizione del Prodotto}
+\newcommand{\dataCreazione}{09-06-2015}
+\newcommand{\versione}{1.0.0} % versione corrente del documento
+\newcommand{\dataUM}{20-08-2015} % data dell'ultima modifica
+\newcommand{\stato}{Formale}
+\newcommand{\uso}{Esterno}
+\newcommand{\redaz}{\FM, \VG, \TP, \BM}
+\newcommand{\verif}{\PM}
+\newcommand{\appr}{\FM}
+\newcommand{\tipo}{Tipo, obiettivo e funzione del componente}
+\newcommand{\relaz}{Relazioni d'uso di altre componenti}
+\newcommand{\interfacce}{Interfacce con e relazioni d'uso e da altre componenti}
+\newcommand{\attivita}{Attività svolte e dati trattati}
+\newcommand{\sommario}{
+	Il presente documento riporta la Definizione del Prodotto effettuata per il capitolato \premi.
+	}
+\title{\titoloDoc}
+
+%	HEADER
+\rhead{\titoloDoc \ v.\versione}
+
+%	CORPO
+\begin{document}
+	\input{\temp firstpage} % prima pagina
+	\newpage
+	\input{\temp sommario} % breve sommario
+	\newpage
+	\input{\parti registroMod} % registro delle modifiche
+	\newpage
+	\tableofcontents % crea l'indice
+	\newpage
+	\listoffigures
+	\listoftables
+	\newpage
+	\input{\parti introduzione}
+	\newpage
+	\input{\parti descrizioneGenerale}
+	\newpage
+	\input{\parti standardProgetto}
+	\newpage
+	\input{\parti specificaClassi}
+	\newpage
+	\input{\parti node.tex}
+	\newpage
+	\input{\parti model}
+	\newpage
+	\input{\parti controller}
+	\newpage
+	\input{\parti view}
+	\newpage
+	\input{\parti diagrammiDiSequenza}
+	\newpage
+	\input{\parti tracciamento}
+	\newpage
+	\input{\parti schemiFile}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+

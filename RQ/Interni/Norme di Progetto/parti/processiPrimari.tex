@@ -1,0 +1,376 @@
+\section{Processo\ped{g} di sviluppo}
+	\subsection{Analisi dei Requisiti}{ 
+	   \subsubsection{Fattibilità}{
+	    		A partire da informazioni preliminari sul capitolato, lo studio di fattibilità dovrà generare un rapporto che indichi la convenienza o meno del gruppo nello sviluppo del sistema. In particolare si dovrà considerare:
+	    		\begin{enumerate}
+	    			\item Sufficienza di risorse umane\ped{g};
+	    			\item Rapporto tra i costi ed i benefici;
+	    			\item Rischi individuati.
+	    		\end{enumerate}
+	    		Nello stimare i benefici dovrà essere data molta importanza alle competenze che i membri del gruppo acquisirebbero nello sviluppo del sistema.
+	    	 }
+		\subsubsection{Scoperta dei requisiti}{
+			\subsubsection{Interviste}
+			Al fine di evitare interviste infruttuose verrà preparato un elenco di punti da sottoporre al Proponente\ped{g} in modo da dare una direzione precisa all’intervista. Potrebbe essere utile discutere con il Proponente\ped{g} dei casi d'uso\ped{g} analizzati internamente al gruppo durante la fase di analisi.
+			Le richieste di interviste al Proponente\ped{g} avverranno con le modalità descritte in ”comunicazioni esterne”. Durante ogni intervista dovrà essere scritta una minuta che sarà confermata dal Proponente\ped{g}, eventualmente con le opportune modifiche. La minuta sarà confermata al termine dell’incontro. Quando non fosse un problema per il Proponente\ped{g} l’audio dell’intervista dovrà essere registrato per favorire la futura fase di analisi.
+			\subsubsection{Riunioni interne e casi d'uso}
+			Individualmente e durante le riunioni interne gli analisti dovranno analizzare le informazioni raccolte dalle interviste con il Proponente\ped{g} per individuare problemi e fonti da cui attingere i Requisiti\ped{g}.\\
+			L’individuazione dei Requisiti\ped{g} funzionali sarà guidata dai casi d’uso. I casi d’uso potranno avere rappresentazione a diagrammi ma ogni caso d’uso dovrà avere anche la rappresentazione testuale. In particolare nella rappresentazione testuale si definirà:
+			\begin{enumerate}
+				\item Identificativo;
+				\item Attore primario;
+				\item Precondizioni;
+				\item Postcondizioni;
+				\item Scenario principale;
+				\item estensioni\ped{g}.
+			\end{enumerate}
+			Per la sintassi si rimanda a ”Dall’idea al Codice\ped{g} con UML2.0, Luciano Baresi, Luigi Lavazza, Massimiliano Pianciamore”.
+			}
+			\subsubsection{Classificazione e priorità}{
+				I Requisiti\ped{g} dovranno essere classificati in:
+				\begin{enumerate}
+					\item Requisiti\ped{g} di Processo\ped{g};
+					\item Requisiti\ped{g} di prodotto.
+				\end{enumerate}
+				I Requisiti\ped{g} di prodotto saranno classificati in base a:
+				\begin{enumerate}
+					\item Tipologia;
+					\item Importanza;
+					\item Provenienza.
+				\end{enumerate}
+				Dove i gradi di importanza saranno:
+				\begin{itemize}
+						\item \{\textbf{Obbligatorio}\}: Requisito\ped{g} da considerarsi \textbf{irrinunciabile} per il cliente. Senza di esso l’applicazione è da considerarsi non soddisfacente per il cliente;
+						\item \{\textbf{Desiderabile}\}: Requisiti\ped{g} non strettamente necessari, ma che apportano valore aggiunto importante al prodotto;
+						\item \{\textbf{Opzionale}\}: Requisito\ped{g} relativamente utile/importante o che potrebbe essere soggetto di ulteriore contrattazione.
+				\end{itemize}
+				La provenienza può essere:
+				\begin{itemize}
+					\item \{\textbf{Capitolato}\}: da capitolato;
+					\item \{\textbf{Interni}\}: da analisi interna;
+					\item \{\textbf{Proponente}\}: da incontro con Proponente\ped{g}.
+				\end{itemize}
+				Mentre le tipologie saranno:
+				\begin{itemize}
+					\item \{\textbf{RF}\}: Requisito\ped{g} funzionale, determina le capacità richieste al sistema;
+					\item \{\textbf{RQ}\}: Requisito\ped{g} di qualità, Requisito\ped{g} volto a portare valore aggiunto al sistema;
+					\item \{\textbf{RV}\}: Requisito\ped{g} di vincolo, Requisiti\ped{g} espressamente indicati nel capitolato d’appalto o nei verbali d'incontro con il Proponente\ped{g} o Committente\ped{g}.
+				\end{itemize}
+			}
+			\subsubsection{Specifica}{
+				Nella specifica dei Requisiti\ped{g} dovrà essere considerato come riferimento lo standard IEEE 830-1998. In particolare saranno da perseguire le seguenti caratteristiche dei Requisiti\ped{g}:
+				\begin{enumerate}
+					\item Non ambigui;
+					\item Corretti;
+					\item Completi;
+					\item Verificabili;
+					\item Consistenti;
+					\item Modificabili;
+					\item Tracciabili;
+					\item Ordinati per rilevanza.
+				\end{enumerate}
+				I Requisiti\ped{g} dovranno essere specificati in un documento ”Analisi dei requisiti” secondo la struttura definita nello standard IEEE 830-1998. La specifica dei Requisiti\ped{g} dovrà essere documentata in forma tabellare per evitare ambiguità. Per ogni Requisito\ped{g} dovranno essere definiti un Codice\ped{g}, una descrizione, un riferimento alla fonte e un riferimento alla verifica. Al fine di rendere meno ambigui i Requisiti\ped{g} sarà redatto un ”Glossario” contenente la definizione di tutti i termini non ovvi usati in fase di analisi.
+			}
+
+		}
+
+
+   \subsection{Progettazione architetturale}
+   
+    \subsubsection{Struttura del documento}
+        Il documento in questione deve rispettare la seguente struttura:
+        \begin{enumerate}
+        
+        
+        \item Introduzione;
+        \item Definizione di prodotto;
+        \begin{enumerate}
+        \item Metodo e formalismo di specifica;
+        \item Architettura generale;
+        \end{enumerate}
+        \item Descrizione dei singoli componenti;
+        \begin{itemize}
+        \item Tipo, obiettivo e Funzione\ped{g} del componente;
+        \item Relazioni d’uso di altre componenti;
+        \item Interfacce con e relazioni di uso da altre componenti;
+        \item Attività svolte e dati trattati;
+        \item Logica di progettazione;
+        \item Descrizione delle classi;
+        \end{itemize}
+        \item Diagramma di attività;
+        \item Prototipi di interfaccia utente;
+        \item Stime di fattibilità e bisogno di Risorse\ped{g};
+        \item Tracciamento.
+        \end{enumerate}
+        Nella sezione di descrizione del metodo e formalismo di specifica è necessario  indicare quali design pattern verranno utilizzati, quale metodo di progettazione verrà adottato e quali librerie o strumenti sono necessari per lo sviluppo del sistema progettato durante questa fase. La descrizione dei singoli componenti deve operare in modo ricorsivo partendo da una visione ad alto livello, nel caso di un’analisi \emph{top-down}, fino a giungere ad un grado di dettaglio coerente con quello richiesto, specificato nel \emph{Piano di Progetto} per questa fase. Nel caso di un’analisi di tipo \emph{bottom-up} la progettazione procederà nel senso inverso.  
+
+\subsubsection{Task}
+Lo scopo di questo attività è quello di realizzare una visione globale di ciò che dovrà essere il sistema a fronte dei Requisiti\ped{g} ricavati dall’attività di analisi.
+Terminata l’attività di progettazione architetturale si deve produrre un documento completo ed esplicativo: la \emph{Specifica Tecnica}.
+Le attività necessarie alla redazione del documento sono:
+\begin{itemize}
+\item Definizione dell’architettura di prodotto a partire dall’Analisi dei Requisiti\ped{g};
+\item Analisi delle tecnologie da adottare;
+\item Individuazione e studio dei design pattern applicabili;
+\item Individuazione della struttura dei package;
+\item Individuazione delle classi che compongono il sistema e delle relazioni tra esse;
+\item Studio di fattibilità;
+\item Tracciamento componenti-Requisiti\ped{g}.
+\end{itemize}
+Si devono inoltre definire, in un documento specifico  (\href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica}), vari
+test da eseguire sulle parti del sistema per verificarne la corretta interazione:
+\begin{itemize}
+\item \textbf{Input}: Analisi dei Requisiti\ped{g};
+\item \textbf{Output}: Specifica Tecnica, pianificazione test di integrazione e di sistema;
+\item \textbf{Risorse}: Progettisti, documentazione, strumentazione;
+\item \textbf{Misurazioni}: avanzamento dell'elaborazione del documento \emph{Specifica Tecnica} rispetto alla totalità dei Requisiti\ped{g} definiti nel documento di Analisi dei Requisiti\ped{g};
+\item \textbf{Norme}: descritte in seguito.
+\end{itemize}
+       
+    \subsubsection{Direttive di progettazione}
+     Per garantire una buona qualità del Software\ped{g} prodotto in fase di Codifica\ped{g} è necessario prevedere alcuni accorgimenti durante la progettazione in modo da evitare descrizioni del sistema errate o inutilmente complicate. Durante la fase di progettazione si richiede il soddisfacimento delle seguenti proprietà:
+     \begin{itemize}
+     
+     
+     \item \textbf{Semplicità:} viene ribadita da un principio, noto con il nome di “rasoio di Occam”, il quale afferma che tra tutte le soluzioni che portano al medesimo risultato è utile considerare quella più semplice. È difficile definire criteri precisi per il conseguimento di questa proprietà. Una buona pratica prevede la  descrizione, per ogni vista del documento di Progetto\ped{g}, delle scelte progettuali
+     effettuate e delle alternative scartate;
+     \item \textbf{Incapsulazione:} consiste nel fornire pubblicamente solamente l’interfaccia e  nascondere tutti i caratteri implementativi come gli algoritmi e la struttura  dati interna di una classe. Questa proprietà garantisce la produzione di Codice\ped{g} più facilmente manutenibile e con ridotto numero di dipendenze da altri componenti. La produzione di Codice\ped{g} incapsulato deriva da una buona progettazione dei metodi e degli attributi delle classi, la quale verrà affrontata più dettagliatamente nella fase successiva, e un accurato studio delle interfacce e dei package;
+     \item \textbf{Coesione:} riguarda il grado di decomposizione di componenti in parti più piccole. La modularità spinge a dividere il più possibile i componenti ma non sempre è una scelta efficace. Nella fase di progettazione questa proprietà si rivela fondamentale in quanto andrà ad influire, in fase di Codifica\ped{g}, sulle metriche\ped{g} di  qualità del Codice\ped{g}. Per garantire la produzione di componenti coese è necessario chiedersi ogni volta che si struttura una classe se gli attributi e i metodi in essa definiti sono direttamente correlati con la sua entità o se è conveniente raggrupparli in un’ulteriore classe;
+     \item \textbf{Accoppiamento:} indica l’utilità di un componente e la dipendenza da altri moduli. L’accoppiamento è caratterizzato da due valori:
+     \begin{itemize}
+
+     \item \textbf{Fan-in:} indica il grado di riuso del Codice\ped{g}. Maggiore è questo valore più alto è il grado di riuso e quindi maggiore è l’utilità del metodo;
+     \item \textbf{Fan-out:} indica il grado di accoppiamento e di dipendenza da altre porzioni di Codice\ped{g}. Un valore elevato denota una maggiore complessità nella fase di esecuzione e di test.
+     Entrambi questi valori vanno a influenzare le metriche\ped{g} di bontà del Codice\ped{g} quindi bisognerà prestare attenzione a tracciare e minimizzare le dipendenze tra classi e ad evitare dipendenze circolari a livello di package.
+     \end{itemize}
+     \end{itemize}
+		\subsubsection{Diagrammi UML}
+		Data la visione a livello medio-alto di dettaglio richiesta per questo documento si dovranno utilizzare schemi UML 2.x in grado di descrivere formalmente i vari componenti del sistema. In particolare si andranno ad utilizzare i seguenti tipi di diagrammi:
+		\begin{itemize}
+		
+		
+		\item \textbf{Diagrammi di package}: saranno utilizzati per raggruppare più elementi\ped{g} UML aventi funzionalità simili. Ogni package dovrà essere identificato da un nome che risulti completamente qualificato e univoco all’interno dello spazio dei nomi. Schemi di questo tipo sono utili per individuare le dipendenze tra classi e per stimare la complessità strutturale del sistema.
+		\item \textbf{Diagrammi di classe}: utilizzati per descrivere i tipi di oggetti che fanno parte di un sistema e le relazioni che vi sono tra di essi. Per garantire una buona leggibilità dello schema si consiglia di valutare l'inserimento degli elementi\ped{g} di una classe in base al loro numero. È possibile omettere gli elementi\ped{g} di una classe anche nel caso in cui lo schema debba riportare un numero elevato di classi. Anche il livello di dettaglio della segnatura dei metodi è a discrezione del progettista con l’indicazione di considerare la seguente lista di priorità:
+		\begin{itemize}		
+		\item Nome del metodo;
+		\item Livello di accessibilità;
+		\item Tipo di ritorno, tipo dei parametri in ingresso ed eccezioni lanciabili;
+		\item Nome dei parametri in ingresso.
+		\end{itemize}
+		\item \textbf{Diagrammi di sequenza}: utilizzati per descrivere la collaborazione tra più oggetti che hanno lo scopo di implementare collettivamente un comportamento. Non sono adatti per la modellazione della logica di controllo e vanno preferiti i diagrammi di attività se si intende modellare dei cicli o delle condizioni;
+		\item \textbf{Diagrammi di attività}: descrivono la procedura logica con la quale vengono eseguite delle operazioni. Vanno utilizzati quando si vuole descrivere	l’esecuzione di flussi paralleli.
+        \end{itemize}
+ 
+	\subsubsection{Design pattern}
+	I \textit{Progettisti} devono descrivere i design pattern utilizzati per realizzare l'architettura:
+	di essi si deve includere una breve descrizione e un diagramma che ne esemplifichi il funzionamento e la struttura.
+	\subsubsection{Tracciamento componenti}
+	Ogni Requisito\ped{g} deve essere tracciato al componente che lo soddisfa. Il Software\ped{g} LateTrack genera automaticamente le tabelle di tracciamento come descritto nella sezione \S\ref{sec:lateTrack}. In questo modo sarà possibile misurare il progresso nell'attività di progettazione e garantire che ogni Requisito\ped{g} venga soddisfatto.
+	\subsection{Progettazione di dettaglio}
+	
+	Dopo una progettazione di livello medio si passa alla produzione di un documento che descrive nei minimi dettagli le caratteristiche delle classi, delle procedure, delle attività ed eventualmente degli oggetti. Il documento prodotto in questa fase è
+	chiamato \emph{Definizione di Prodotto} e consiste in un raffinamento del documento di	\emph{Specifica Tecnica}.
+	\subsubsection{Struttura del documento}
+	Il documento in questione deve rispettare la seguente struttura:
+	\begin{enumerate}
+	\item Introduzione;
+	\item Descrizione generale;
+	\item Standard di Progetto\ped{g};
+	\begin{enumerate}
+	\item Standard di progettazione architetturale;
+	\item Standard di documentazione del Codice\ped{g};
+	\item Standard di denominazione di entità e relazioni;
+	\item Standard di programmazione;
+	\item Strumenti di lavoro;
+	\end{enumerate}
+	\item Specifica delle componenti;
+	\item Codice\ped{g} sorgente;
+	\item Tracciamento.
+	\end{enumerate}
+	In questa ultima fase di progettazione si utilizzeranno ancora i diagrammi UML indicati nella fase precedente ma con particolare attenzione per quelli a più basso livello come i diagrammi di classe e di sequenza.
+	Per ogni singola classe descritta è necessario riportare i seguenti dettagli:
+	\begin{itemize}
+	\item \textbf{Funzione\ped{g}:} una descrizione del compito svolto dalla classe;
+	\item \textbf{Relazione d’uso}:
+	\begin{itemize}
+	\item \textbf{la classe utilizza:} lista delle entità che sono necessarie per l’esecuzione della classe;
+	\item \textbf{la classe è utilizzata da:} lista delle entità che utilizzano la classe;
+	\item \textbf{la classe implementa:} lista delle interfacce implementate dalla classe;
+	\item \textbf{la classe è implementata da:} lista delle classi che implementano l’interfaccia;
+	\item \textbf{la classe estende:} nome della classe che viene estesa dalla classe corrente;
+	\end{itemize}
+	\item \textbf{Attributi:} lista degli attributi contenuti nella classe accompagnati da una descrizione. Viene omessa nella descrizione delle interfacce in quanto prive di attributi;
+	\item \textbf{Metodi:} lista dei metodi con la segnatura completa e descrizione delle funzionalità Nelle liste riportanti gli attributi e i metodi verranno specificati i modificatori di accesso con i seguenti simboli:\\
+    
+	+ per entità pubbliche\\
+    $-$  per entità private (comando \LaTeX \ \verb|$-$| ) \\
+	\#  per entità protette (comando \LaTeX  \ \verb|$\#$|)\\
+	$\sim$ per entità di package (comando \LaTeX  \  \verb|$\sim$| ) \\\\
+	Nel caso si faccia riferimento a classi, metodi o attributi presenti in librerie esterne è necessario qualificare totalmente il nome ed evidenziarlo utilizzando il	colore bbrick nel comando\\\\
+	 
+	\verb|\textcolor{bbrick}{testo}| 
+	
+
+	\end{itemize}
+	\subsubsection{Tracciamento}
+	In questa fase della progettazione il tracciamento verrà inserito in tabelle riportanti	per ogni Requisito\ped{g} le classi che andranno a soddisfarlo e per ogni classe il Requisito\ped{g} da soddisfare.
+	Una completa tracciabilità comporta l’assenza di mancate corrispondenze tra	classe e Requisito\ped{g}.	Se un Requisito\ped{g} funzionale non è associato a nessuna classe non è stata prevista l’implementazione di quest’ultimo mentre se ad una classe non è associato almeno un Requisito\ped{g} vuol dire che è del tutto superflua e se ne può considerare l’eliminazione.
+	
+	
+	
+	
+	
+	
+	
+	\subsection{Codifica}
+	Le convenzioni di Codifica\ped{g} che tutti i membri del gruppo devono seguire sono quelle
+	specificate alla seguente pagina :\\
+	\begin{center} \url{http://www.w3schools.com/js/js_conventions.asp} \end{center}
+	\subsubsection{Nomi}
+	\begin{itemize}
+	\item I nomi di variabili, metodi e funzioni\ped{g} dovranno essere espressi in dromedaryCase;
+	\item I nomi delle classi dovranno essere espressi in CamelCase;
+	\item nomi di variabili globali e costanti dovranno essere in UPPERCASE.
+	\end{itemize}
+	\subsubsection{Documentazione}
+	I File\ped{g} contenenti Codice\ped{g} dovranno essere provvisti di un'intestazione contenente:
+	\begin{lstlisting}
+		/*
+		* Name :  
+		* Module :
+		* Location :
+		*
+		* History :
+		*   -Version       
+		*   -Date
+		*   -Programmer           
+		*   -Description
+		*
+		*/	    
+    \end{lstlisting}
+   
+   \subsection{Procedura di verifica}
+   Per rendere uniforme la procedura di verifica, vengono qui elencate le norme che regolano la verifica del Codice\ped{g} prodotto , si rimanda al \href{run:../../Esterni/\fPianoDiQualifica}{\fEscapePianoDiQualifica} che specifica in maniera dettagliata le tecniche e le modalità con cui verranno condotte le attività di verifica e Validazione\ped{g} durante l’intero sviluppo del Progetto\ped{g}.
+   
+   \subsubsection{Verifica statica}
+   \begin{itemize}
+   
+   \item \textbf{Analisi del flusso di controllo:} si accerta che il Codice\ped{g} segua il flusso aspettato, che non si possa entrare in porzioni di Codice\ped{g} che possano non
+   terminare, che non esista Codice\ped{g} non raggiungibile;
+   \item \textbf{Analisi del flusso dei dati:} si accerta che il Software\ped{g} non acceda mai a variabili non inizializzate o scriva inutilmente più volte prima di usare una variabile;
+   \item \textbf{Analisi del flusso di informazione:} verifica che gli input e gli output di ogni unità di Codice\ped{g} o di più unità rientrino nelle specifiche del Programma\ped{g}.
+   
+  
+   \end{itemize}
+   
+   \subsubsection{Verifica dinamica}  
+  	\begin{itemize}
+  \item \textbf{Test di unità}: test che si effettuano per ogni unità del Software\ped{g} con il massimo grado di parallelismo;
+  \item \textbf{Test di integrazione}: verifica dei componenti formati dall’integrazione delle varie unità che hanno passato il test di unità;
+  \item \textbf{Test di sistema e di collaudo}: verifica che il sistema in cui andrà installato il Software\ped{g} rispetti i Requisiti\ped{g} richiesti, o che il Software\ped{g} riesca ad adattarsi correttamente al contesto dell’azienda Proponente\ped{g}. Finito il collaudo del Software\ped{g} avverrà il rilascio del prodotto.
+  \end{itemize}
+  \subsubsubsection{Definizione dei test}
+  Per agevolare la fase di verifica tramite test è necessario definire una lista di prove da eseguire nelle varie fasi del ciclo di sviluppo del Software\ped{g}.
+  La lista dei test da eseguire è riportata nel documento di \emph{Piano di Qualifica}. Ogni test va accompagnato da un identificativo che verrà utilizzato per riferire
+  la singola attività all’interno degli altri documenti.  L’identificativo dei test è composto da due caratteri maiuscoli, da un numero e da un carattere minuscolo. Il primo è il carattere T e viene utilizzato per indicare che si tratta di un Elemento\ped{g} inerente all’attività di test. Il secondo carattere è uno tra i seguenti:
+  \begin{itemize} 
+  \item \textbf{S:} test di sistema;
+  \item \textbf{I:} test di integrazione;
+  \item \textbf{U:} test di unità.
+  \end{itemize}
+  Il numero posto dopo i due caratteri è incrementale e non gerarchico. L’ultimo carattere identifica i possibili esiti delle operazioni svolte dall’utente, parte dal carattere a e procede in ordine alfabetico crescente. Si consiglia di dare precedenza agli esiti positivi per poi passare a quelli di rifiuto di input non valido o di scatenamento di errori.
+  Nel Piano di Progetto\ped{g} si dovrà inserire una tabella riportante l’identificativo e la descrizione dell’attività di test.
+  
+  \subsubsubsection{Codifica\ped{g} dei test di unità e di integrazione}
+  Per l’automazione dei test di unità e di integrazione il gruppo di sviluppo utilizzeranno gli strumenti elencati nella sezione \S\ref{sec:strumentiTest}. Questi strumenti permettono di definire delle classi di test
+  e dei metodi appositi per verificare il corretto funzionamento delle procedure sotto esame per poi generare un rapporto sul risultato delle attività.
+  Per ogni unità da testare sarà necessario creare una nuova classe di test avente come nome quello dell’Elemento\ped{g} da esaminare seguito dalla parola “Test”. Nel caso di test di integrazione il nome dovrà essere indicativo dei componenti coinvolti e del tipo di interazione sotto esame. Il formalismo da adottare per la stesura del Codice\ped{g} di test è equivalente a quello indicato per il resto del Codice\ped{g} dell’applicativo fatta eccezione per l’inserimento dei commenti che è a discrezione del \emph{Verificatore}. Si consiglia, tuttavia, di inserire una breve descrizione dello scopo dei metodi di test.
+  
+  \subsubsubsection{Rapporto dell’analisi svolta sul codice}
+  Durante le attività di verifica statica e dinamica sul Codice\ped{g} i verificatori sono tenuti a compilare un rapporto che descriva i test e le analisi svolte, accompagnate dai rispettivi risultati. Tutte queste informazioni andranno inserite in un documento, in forma tabellare, suddiviso nelle seguenti sezioni:
+  \begin{itemize}
+ \item \textbf{Rapporto dell’analisi statica\ped{g}:} riassunto dei risultati ottenuti dall’analisi del Codice\ped{g} con gli strumenti di debugging inseriti nella sezione \S\ref{sec:analisiStatica};
+  
+  \item \textbf{Valutazione delle metriche\ped{g}:} rapporto dei valori delle metriche\ped{g} del Codice\ped{g} misurate con \emph{jsmeter} ed eventuali considerazioni sui risultati;
+  \item \textbf{Descrizione dei test}: elenco completo dei test di unità, di integrazione e di sistema. La definizione dei test verrà inserita di pari passo con la loro progettazione.
+  Ogni definizione deve comprendere il nome della classe di test, il nome della classe da testare e l’elenco delle funzioni\ped{g} di verifica accompagnate da una descrizione esplicativa;
+  \item \textbf{Rapporto delle sessione di test:} elenco delle sessioni di test eseguite dai verificatori. Ogni sessione di test deve riportare la data di esecuzione, il nome dei verificatori incaricati e una lista contenente i metodi di test eseguiti e i risultati ottenuti. Per ogni metodo di test eseguito è necessario riportare la dicitura “SUPERATO” o “FALLITO” in base al risultato ottenuto. In caso
+  di fallimento è richiesto l’inserimento di una breve descrizione del problema riscontrato e l’apertura di un Ticket\ped{g} di segnalazione. A discrezione dei verificatori sarà possibile inserire un rapporto sul coverage ottenuto durante la sessione.
+ \end{itemize} 
+  Se durante la fase di test vengono riscontrati degli errori nel Codice\ped{g} è necessario comunicare il problema attraverso lo strumento di Ticketing\ped{g} \emph{redmine}.
+  L’aggiunta dei risultati dei test prevede l’inserimento dei seguenti dati nella  descrizione:
+  \begin{itemize}
+  \item Identificativo dell’attività di test;
+  \item Nome dell’Elemento\ped{g} testato;
+  \item Descrizione dell’errore;
+  \item ORA\ped{g} del rilevamento;
+  \item Nome del verificatore che ha trovato l’errore;
+  \item Codice\ped{g} di un errore precedentemente rilevato, se in presenza di un duplicato.
+ \end{itemize}
+  Successivamente si procederà alla valutazione della gravità dei vari errori e, se considerati risolvibili, il \emph{Responsabile} assegnerà le correzioni da apportare ai programmatori tramite lo strumento di Ticketing\ped{g}.
+  \subsection{Strumenti}
+  \subsubsection{Strumenti per i documenti}
+  \label{sec:strumentiDocumenti}
+  \subsubsubsection{LATEX} 
+   
+  Per la stesura dei documenti è stato scelto di utilizzare il sistema \LaTeX.\\
+  Il motivo principale dietro a questa scelta è la facilità nel separare il contenuto dalla formattazione: 
+  con \LaTeX\ è possibile definire l’aspetto delle pagine in un File\ped{g} Template\ped{g} condiviso da tutti i documenti. Altre soluzioni come Microsoft Office, LibreOffice o Google Docs non avrebbero consentito questa separazione, duplicando il lavoro di formattazione del testo e non garantendo un risultato uniforme.\\
+  Il grande numero di pacchetti\ped{g} esistenti consente di implementare funzionalità comuni in maniera semplice. L’Estensibilità\ped{g} di \LaTeX\ può essere sfruttata per creare funzioni\ped{g} e variabili globali che rendono la scrittura del contenuto più corretta da un punto di vista semantico. Un esempio è dato dal comando /role\textbraceleft ruolo\textbraceright\ che identifica ogni ruolo 
+  all’interno del Progetto\ped{g}.\\
+  Per la scrittura di documenti \LaTeX\  l’Editor\ped{g} consigliato è \textbf{TeXstudio}. 
+  
+  
+  \subsubsubsection{Controllo ortografico}
+  
+  Il Software\ped{g} per il controllo ortografico è \textbf{Aspell}\ .\ Il Programma\ped{g} viene richiamato da linea di comando.
+  
+  
+  \subsubsubsection{Grafici UML} 
+  
+  Per la stesura dei grafici UML viene utilizzato il Programma\ped{g} \textbf{Visual Paradigm}. Il Programma\ped{g} viene utilizzato in licenza Community Edition che ne permette l’uso gratuito per fini non commerciali.
+  
+  \subsubsubsection{Fogli di calcolo}
+  \label{sec:fogliDiCalcolo}
+  L'utilizzo di fogli di calcolo\ped{g} quali Calc, Excel e Numbers è a discrezione del singolo componente.
+  I fogli di calcolo\ped{g} vengono usati per:
+  \begin{itemize}
+  \item Grafici a torta per l'utilizzo delle Risorse\ped{g};
+  \item Grafici a torta per il costo dedicato a ciascuna Risorsa\ped{g};
+  \item Istogrammi per le ore assegnate ad ogni componente del gruppo;
+  \item Tabelle per il confronto tra preventivo e consuntivo;
+  \item Istogrammi per il confronto tra ore preventivate e ore realmente impiegate da ciascuna Risorsa\ped{g}.
+  \end{itemize}
+  
+  \subsubsection{Strumenti per la codifica}
+  \label{sec:strumentiCodifica}
+  \subsubsubsection{Stesura}
+  Per al stesura del Codice\ped{g} HTML e JavaScript\ped{g} verrà usata l'IDE\ped{g} \emph{Aptana}, si è scelto d'utilizzarla perché fornisce un ambiente di sviluppo per applicazioni WEB\ped{g} completo, gratuito e multi-piattaforma.
+  \emph{Aptana} presenta molti strumenti già integrati, come code-assistant e debugger. 
+  \subsubsubsection{Verifica}
+  L’analisi statica\ped{g} e dinamica integrate in Travis vengono lanciate automaticamente ad ogni push di Codice\ped{g} nel Repository\ped{g}. Al verificatore è richiesto quindi soltanto di analizzare l’output del tool, visualizzabile dalla dashboard di Travis.
+  
+  
+  \subsection{LateTack}
+  \label{sec:lateTrack}
+  Per semplificare il tracciamento dei Requisiti\ped{g} è stato realizzato internamente il Software\ped{g}
+  \emph{LateTrack}, un’applicazione WEB\ped{g} accessibile tramite Browser\ped{g} ed ospitata sul Server\ped{g} dedicato.
+  Quest’applicazione consente di gestire il tracciamento dei Requisiti\ped{g}.
+  
+  \begin{figure}[H]
+  	\centering
+  \includegraphics[width=1\textwidth]{\imgs LateTrack.png}
+    \caption{ScreenShot del Programma\ped{g} LateTrack}
+    \label{fig:lateTrack}
+  \end{figure}
+  \subsubsection{Aggiunta nuovo requisito}
+  Per aggiungere un nuovo Requisito\ped{g} al Progetto\ped{g} è necessario eseguire i passi descritti nel
+  diagramma in figura \S\ref{fig:CreazioneRequisito}.
+  \begin{figure}
+  	\centering
+  	\includegraphics[width=0.5\textwidth]{\imgs CreazioneRequisito}
+   	 \caption{Creazione nuovo requisito}
+    	\label{fig:CreazioneRequisito}
+  \end{figure}
+  
+  

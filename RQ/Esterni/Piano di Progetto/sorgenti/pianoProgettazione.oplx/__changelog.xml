@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="pietro" date="2015-03-28T15:53:03.765Z" timestamp="2015-03-28T15:53:03.765Z">
+    <change idref="t13" attribute="title" type="string" from="Stesura req" to="correzione req"/>
+    <change idref="t14" attribute="title" type="string" from="Verifiva req" to="Verifica req"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-03-29T13:50:44.874Z" timestamp="2015-03-29T13:50:44.874Z">
+    <change idref="t31" attribute="effort" type="real" from="7200" to="14400"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-04-03T09:39:44.849Z" timestamp="2015-04-03T09:39:44.849Z">
+    <change idref="t36" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-02T08:45:00.000Z" to="2015-05-01T08:00:00.000Z"/>
+    <change idref="t37" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-01T08:15:00.000Z" to="2015-04-30T08:00:00.000Z"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-05-26T22:08:24.541Z" timestamp="2015-05-26T22:08:24.541Z">
+    <change idref="t32" from="t10" from-position="2" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="97200"/>
+      <change idref="t32" attribute="noEarlierThanConstraintDate" type="date" to="2015-04-25T05:45:00.000Z"/>
+      <change idref="t32" attribute="title" type="string" to="Pianificazione test"/>
+    </change>
+    <change idref="t31" attribute="startLockedDate" type="date" to="2015-04-27T08:45:00.000Z" resolved="yes"/>
+    <change idref="t36" attribute="internalPrerequisitesString" type="string" from="1FS" to="37FS" resolved="yes"/>
+    <change idref="t36" attribute="noEarlierThanConstraintDate" type="date" from="2015-05-01T08:00:00.000Z" to="2015-04-30T05:45:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="internalPrerequisitesString" type="string" from="32FS" to="31FS" resolved="yes"/>
+    <change idref="t37" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t37" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-30T08:00:00.000Z" to="2015-04-28T08:00:00.000Z" resolved="yes"/>
+    <change idref="t37" attribute="startLockedDate" type="date" to="2015-04-28T08:00:00.000Z" resolved="yes"/>
+    <change idref="t53" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="pietro" date="2015-05-26T22:10:44.394Z" timestamp="2015-05-26T22:10:44.394Z">
+    <change idref="t53" attribute="noEarlierThanConstraintDate" type="date" from="2015-04-30T09:00:00.000Z" to="2015-04-29T04:30:00.000Z" resolved="yes"/>
+  </task-change-set>
+</changelog>

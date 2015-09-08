@@ -1,0 +1,92 @@
+\documentclass{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[top=3cm,bottom=4cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage[colorlinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{yfonts}
+\usepackage{eurosym}
+
+
+\newcommand{\unipd}{Universit\`{a} degli studi di Padova}
+\newcommand{\uniAA}{2014/2015}
+\newcommand{\SpecificaTecnica}{\textit{Specifica Tecnica v.1.0.0}}
+\newcommand{\AnalisiDeiRequisiti}{\textit{Analisi dei Requisiti v.2.0.0}}
+\newcommand{\PianoDiProgetto}{\textit{Piano di Progetto v.2.0.0}}
+\newcommand{\NormeDiProgetto}{\textit{Norme di Progetto v.2.0.0}}
+\newcommand{\PianoDiQualifica}{\textit{Piano di Qualifica v.2.0.0}}
+\newcommand{\ManualeDiInstallazione}{\textit{Manuale Installatore v.1.0.0}}
+\newcommand{\ManualeUtente}{\textit{Manuale Utente v.1.0.0}}
+\newcommand{\ManualeAmministratore}{\textit{Manuale Amministratore v1.0.0}}
+\newcommand{\Glossario}{\textit{Glossario v.2.0.0}}
+\newcommand{\StudioDiFattibilita}{\textit{Studio di Fattibilità v.2.0.0}}
+\newcommand{\premi}{Premi}
+\newcommand{\licenza}{Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.}
+\newcommand{\gruppo}{LateButSafe}
+\newcommand{\mail}{latebutsafe@gmail.com}
+\newcommand{\Cardin}{Prof. Riccardo Cardin}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega}
+%	formattazione HEADER
+%cambiare!!!
+\pagestyle{fancy}
+\setlength{\headheight}{2.5cm}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%	Header
+\lhead{\includegraphics[width=2cm,height=2cm]{../../logo}}
+
+\cfoot{
+	\unipd \ - \uniAA \\
+	\href{mailto:\mail}{\mail}\\
+	\tiny Questo documento è distribuito sotto licenza \href{http://http://creativecommons.org/licenses/by-nc-sa/3.0/}{\licenza}}
+\rfoot{	}
+
+%	CORPO
+\address{
+	\Vardanega\\
+	Università degli Studi di Padova\\
+	Dipartimento di Matematica\\
+	Via Trieste 63\\
+	35121 Padova}
+
+\signature{
+	Giovanni Venturelli \\	
+	Responsabile di progetto\\
+	\gruppo}
+ 	
+\begin{document}	
+	\begin{letter}{Oggetto: \textbf{Consegna Revisione di Progettazione.}}
+	\opening {Egregio \Vardanega ,}
+	Con la presente, il gruppo \gruppo\ intende inviarLe i documenti necessari alla presentazione della Revisione di Progettazione prevista in data 29-05-2015.
+	Alla presente si allegano i seguenti documenti:
+			\begin{itemize}
+				\item Interni
+					\begin{itemize}
+						\item \NormeDiProgetto;
+					\end{itemize}
+				\item Esterni
+					\begin{itemize}
+						\item \AnalisiDeiRequisiti;
+						\item \Glossario;
+						\item \PianoDiQualifica;
+						\item \PianoDiProgetto;
+						\item \SpecificaTecnica;
+						\item \StudioDiFattibilita.
+					\end{itemize}
+			\end{itemize} 
+		In seguito a una revisione del Piano di Progetto è stato necessario modificare le date di consegna di Revisione di Qualità e di Revisione di Accettazione, che si prevede svolgere in data 28/08/2015.\\
+		Il gruppo sarà  contattabile per eventuali chiarimenti tramite l'e-mail del gruppo: \mail.	\\
+		La ringrazio per la cortese attenzione attenzione.
+		
+		\thispagestyle{fancy}
+		\closing{Distinti saluti.}
+		\signature{Giovanni Venturelli\\
+					Responsabile di Progetto\\
+					\gruppo}
+   \end{letter}
+\end{document}

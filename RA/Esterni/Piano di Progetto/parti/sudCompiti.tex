@@ -1,0 +1,173 @@
+\section{Suddivisione del lavoro}{
+\renewcommand*{\arraystretch}{1.5} 
+	\subsection{Note}{
+		Il Piano di Progetto\ped{g} garantirà un'equa distribuzione del carico di lavoro individuale, ma anche dei ruoli e delle responsabilità.
+		Ciascun componente del gruppo sarà chiamato a ricoprire più ruoli, sia contemporaneamente che in distinte fasi del Progetto\ped{g}. In particolare:
+		\begin{itemize}
+			\item Ciascun componente dovrà ricoprire almeno una volta ogni ruolo;
+			\item Dovrà essere sempre garantita l'assenza di conflitto di interessi tra ruoli assunti contemporaneamente da una stessa persona: ad esempio, attività di verifica di un particolare documento non potrà essere svolta da chi lo ha redatto;
+			\item Dovrà essere garantita un'equa ripartizione del carico di lavoro individuale;
+			\item Ad ogni ruolo corrisponde un costo orario.
+		\end{itemize}
+}
+\subsection{Ruoli e costi}{
+	\begin{table}[H]
+		\centering
+		  \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.1\linewidth-2\tabcolsep}}
+			   \toprule Ruolo &  Costo \\
+			   \midrule
+			   Responsabile & \EUR{30} \\
+			   Amministratore & \EUR{20} \\
+			   Analista & \EUR{25} \\
+			   Progettista & \EUR{22} \\
+			   Programmatore & \EUR{15} \\
+			   Verificatore & \EUR{15} \\	   
+			   \bottomrule
+		 \end{tabular}
+	 	\label{tab:RuoliECosti}
+	 	\caption{Ruoli e costi}
+	\end{table}
+}
+\subsection{Dettaglio per periodo}{
+\subsubsection{Analisi}{
+	Nel periodo di Analisi ciascun componente ha rivestito i seguenti ruoli:
+	\begin{table}[H]
+		\begin{tabular}{|p{\dimexpr 0.19\linewidth-2\tabcolsep}|p{\dimexpr 0.12\linewidth-2\tabcolsep}
+									p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+									p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+									p{\dimexpr 0.12\linewidth-2\tabcolsep} || p{\dimexpr 0.09\linewidth-2\tabcolsep}|}
+	 		\hline
+	 		 & \TP & \VG & \FM & \BM & \PM & \GP & \textbf{Totali} \\
+	 		 \hline
+			 Responsabile & 18 & 12 & 3 & 10 & 7 & 5 & 55\\
+			 \hline
+			 Amministratore & 2 & 2 & 0 & 1 & 11 & 0 & 16\\
+			 \hline
+			 Analista & 15 & 14 & 16 & 8 & 8 & 15 & 60\\
+			 \hline
+			 Verificatore & 2 & 7 & 13 & 8 & 6 & 2 & 38\\
+			\hline \hline
+			 \textbf{Totali} & 37 & 35 & 33 & 31 & 27 & 22 & \\
+			\hline
+		\end{tabular}
+		\caption{Ruoli analisi}
+		\label{tab:analisi}
+	\end{table}
+	
+	I valori sono riassunti nel seguente grafico:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.85]{\imgs {sudAnalisi}.jpg} %inserire il diagramma UML
+		\caption{Suddivisione analisi}
+	\end{figure}
+}
+\subsubsection{Progettazione}{
+	Nel periodo di  \textbf{Progettazione} ciascun componente rivestirà i seguenti ruoli:
+	\begin{table}[H]
+		\begin{tabular}{|p{\dimexpr 0.19\linewidth-2\tabcolsep}|p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep} || p{\dimexpr 0.09\linewidth-2\tabcolsep}|}
+			 		\hline
+	 		 & \TP & \VG & \FM & \BM & \PM & \GP & \textbf{Totali} \\
+	 		 \hline
+			 Responsabile & 0 & 9(-4) & 0 & 0 & 9 & 0 & 18(-4)\\
+			 \hline
+			 Amministratore & 0 & 0 & 0 & 16(-6) & 0 & 0 & 16(-6)\\
+			 \hline
+			 Analista & 0 & 0 & 6 & 0 & 0 & 0 & 6\\
+			 \hline
+			 Verificatore & 8(-6) & 0 & 0 & 11(-5) & 7 & 14 & 40(-11)\\
+			 \hline
+			 Progettista & 24 & 16 & 22 & 0 & 12(-6) & 8 & 82(-6) \\
+			 \hline \hline
+			 \textbf{Totali} & 32(-6) & 25(-4) & 28 & 27(-11) & 19(-6) & 22 &\\
+			 \hline
+		\end{tabular}
+		\caption{Ruoli progettazione}
+		\label{tab:progettazione}
+	\end{table}
+	
+	I valori sono riassunti nel seguente grafico:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.85]{\imgs {sudProgettazione}.jpg} %inserire il diagramma UML
+		\caption{Suddivisione progettazione}
+	\end{figure}
+}
+\subsubsection{Progettazione in dettaglio e codifica}{
+	Nel periodo di \textbf{Progettazione in dettaglio e codifica} ciascun componente rivestirà i seguenti ruoli:
+	
+	\begin{table}[H]
+		\begin{tabular}{|p{\dimexpr 0.19\linewidth-2\tabcolsep}|p{\dimexpr 0.12\linewidth-0.6\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-0.4\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-0.4\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep} || p{\dimexpr 0.09\linewidth-0.4\tabcolsep}|}
+			 		\hline
+	 		 & \TP & \VG & \FM & \BM & \PM & \GP& \textbf{Totali} \\
+	 		 \hline
+			 Responsabile & 0 & 0(+4) & 0 & 12 & 0 & 0 & 12(+4)\\
+			 \hline
+			 Amministratore & 0 & 0 & 0 & 0(+6) & 0 & 2 & 2(+6)\\
+			 \hline
+			 Analista & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+			 \hline
+			 Verificatore & 28(+6) & 26 & 19 & 10(+5) & 27 & 15 & 125(+11)\\
+			 \hline
+			 Progettista & 10 & 14 & 10 & 24 & 10(+6) & 22 & 90(+6)\\
+			 \hline
+			 Programmatore & 24 & 26 & 26 & 20 & 27 & 29 & 152 \\
+			 \hline \hline
+			\textbf{Totali} & 62(+6) & 66(+4) & 55 & 66(+11) & 64(+6) & 68 &\\
+			\hline
+		\end{tabular}
+		\caption{Ruoli progettazione in dettaglio e codifica}
+		\label{tab:dettagliocodifica}
+	\end{table}
+	
+	I valori sono riassunti nel seguente grafico:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.85]{\imgs {sudCodifica}.jpg} %inserire il diagramma UML
+		\caption{Suddivisione codifica}
+	\end{figure}
+	% IMMAGINE "/perLatex/sudCodifica.png"
+}
+\subsubsection{Accettazione}{
+	Nel periodo di  \textbf{Accettazione} ciascun componente rivestirà i seguenti ruoli:
+	\begin{table}[H] %TABELLA RUOLI
+		\begin{tabular}{|p{\dimexpr 0.19\linewidth-2\tabcolsep}|p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep}p{\dimexpr 0.12\linewidth-2\tabcolsep}
+											p{\dimexpr 0.12\linewidth-2\tabcolsep} || p{\dimexpr 0.09\linewidth-2\tabcolsep}|}
+			 		\hline
+	 		 & \TP & \VG & \FM & \BM & \PM & \GP& \textbf{Totali} \\
+	 		 \hline
+			 Responsabile & 0 & 0 & 6 & 0 & 0 & 6 & 12\\
+			 \hline
+			 Amministratore & 0 & 0 & 7 & 0 & 0 & 0 & 7\\
+			 \hline
+			 Analista & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+			 \hline
+			 Verificatore & 5 & 5 & 1 & 4 & 6 & 4 & 25\\
+			 \hline
+			 Progettista & 6 & 8 & 8 & 0 & 12 & 4 & 38\\
+			 \hline
+			 Programmatore & 0 & 0 & 0 & 9 & 0 & 0 & 9 \\
+			 \hline \hline
+			\textbf{Totali} & 11 & 13 & 22 & 13 & 18 & 14 &\\
+			\hline
+		\end{tabular}
+		\caption{Ruoli accettazione}
+		\label{tab:accettazione}
+	\end{table}
+	
+	I valori sono riassunti nel seguente grafico:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.85]{\imgs {sudAccettazione}.jpg} %inserire il diagramma UML
+		\caption{Suddivisione accettazione}
+	\end{figure}
+}
+}
+}
