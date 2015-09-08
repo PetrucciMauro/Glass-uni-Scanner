@@ -1,5 +1,5 @@
 \section{NodeServer}{
-
+		
 	Il seguente diagramma delle classi \`{e} stato esteso con le primitive:
 	\begin{itemize}
 	\item \textbf{<<Resource>>} : rappresenta una Risorsa\ped{g} associata ad un certo URL\ped{g} a cui sono disponibili dei servizi
@@ -14,6 +14,26 @@
 		\label{fig:nodeAPI}
 		\caption{Servizi RESTfull offerti dal Server\ped{g} nodeJs}
 	\end{figure}
+	
+	La gestione degli errori da parte della API REST nodeApi si basa su:
+	\begin{itemize}
+	\item stato della risposta http del server 
+	\item campo dati 'message' nel corpo della risposta
+	\item campo dati 'success' nel corpo della risposta
+	\end{itemize}
+	
+	Gli stati http usati nelle risposte del server sono:
+	\begin{itemize}
+	\item 500, errore del server
+	\item 400, errore del client
+	\item 404, risorsa non trovata o richiesta con campi dati assenti
+	\item 403, richiesta con campo authorization nell'header non impostato
+	\item 304, nessuna modifica effettuata
+	\item 200, richiesta accettata 
+	\end{itemize}
+	
+	Ogni risposta del server con stato diverso da 200 contiene nel campo dati "message" del corpo una descrizione verbosa dell'errore riscontrato.
+	Ogni risposta del server contiene nel corpo un campo dati "success" con valore "true"/"false" a seconda che l'operazione richiesta abbia avuto successo rispetto alla sua definizione nel documento di "Definizione di Prodotto".
 	
 	\subsection{Risorse\ped{g} e Servizi}{
 	
