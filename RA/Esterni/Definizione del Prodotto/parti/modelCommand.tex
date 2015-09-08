@@ -1,7 +1,7 @@
 \subsection{Classe Command}{
 	\subsubsection{Classe Invoker}{
 	\textbf{Funzione}\\
-		\indent Classe, componente invoker del Design Pattern Command. Implementato tramite design pattern singleton.\\
+		\indent Classe, componente invoker del Design Pattern Command. Implementato tramite design pattern singleton. È necessario che sia creata un'unica istanza dell'invoker dal momento che tale istanza contiene lo stack dei comandi annullabili e quello dei comandi ripristinabili e si deve assicurare che ogni comando che viene eseguito sia inserito in cima allo stack in cui si trovano i comandi eseguiti precedentemente. Si deve quindi garantire che i metodi del controller, ogniqualvolta sia necessario eseguire o annullare un comando, facciano riferimento alla stessa istanza della classe Invoker.\\
 	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::Invoker.\\
 	\textbf{Utilizzo}\\
@@ -58,7 +58,7 @@
 	
 	\subsubsection{Classe AbstractCommand}{
 		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo testo.\\
+			\indent Classe astratta le cui sottoclassi definiscono i comandi che possono essere eseguiti sugli elementi della presentazione.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand.\\
 		\textbf{Utilizzo}\\
@@ -196,7 +196,7 @@
 \subsubsubsection{Classe ConcreteTextInsertCommand}{
 	\label{TextInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteTextInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -227,7 +227,7 @@
 \subsubsubsection{Classe ConcreteFrameInsertCommand}{
 	\label{FrameInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteFrameInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -259,7 +259,7 @@
 \subsubsubsection{Classe ConcreteImageInsertCommand}{
 	\label{ImageInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteImageInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -291,7 +291,7 @@
 \subsubsubsection{Classe ConcreteSVGInsertCommand}{
 	\label{SVGInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteSVGInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -323,7 +323,7 @@
 \subsubsubsection{Classe ConcreteAudioInsertCommand}{
 	\label{AudioInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAudioInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -354,7 +354,7 @@
 \subsubsubsection{Classe ConcreteVideoInsertCommand}{
 	\label{VideoInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteVideoInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -386,7 +386,7 @@
 \subsubsubsection{Classe ConcreteBackgroundInsertCommand}{
 	\label{BackgroundInsertCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteBackgroundInsertCommand.\\
 	\textbf{Utilizzo}\\
@@ -439,7 +439,7 @@
 \subsubsubsection{Classe ConcreteTextRemoveCommand}{
 	\label{TextRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteTextRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -480,7 +480,7 @@
 \subsubsubsection{Classe ConcreteFrameRemoveCommand}{
 	\label{FrameRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteFrameRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -521,7 +521,7 @@
 \subsubsubsection{Classe ConcreteImageRemoveCommand}{
 	\label{ImageRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command\\
+		\indent Classe concreta\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteImageRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -562,7 +562,7 @@
 \subsubsubsection{Classe ConcreteSVGRemoveCommand}{
 	\label{SVGRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteSVGRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -603,7 +603,7 @@
 \subsubsubsection{Classe ConcreteAudioRemoveCommand}{
 	\label{AudioRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAudioRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -644,7 +644,7 @@
 \subsubsubsection{Classe ConcreteVideoRemoveCommand}{
 	\label{VideoRemoveCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteVideoRemoveCommand.\\
 	\textbf{Utilizzo}\\
@@ -685,7 +685,7 @@
 \subsubsubsection{Classe ConcreteEditPositionCommand}{
 		\label{EditPositionCommand}
 		\textbf{Funzione}\\
-			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+			\indent Classe concreta.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditPositionCommand.\\
 		\textbf{Utilizzo}\\
@@ -751,7 +751,7 @@
 \subsubsubsection{Classe ConcreteEditRotationCommand}{
 		\label{EditRotationCommand}
 		\textbf{Funzione}\\
-			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+			\indent Classe concreta.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditRotationCommand.\\
 		\textbf{Utilizzo}\\
@@ -811,7 +811,7 @@
 \subsubsubsection{Classe ConcreteEditSizeCommand}{
 	\label{EditSizeCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditSizeCommand.\\
 	\textbf{Utilizzo}\\
@@ -877,7 +877,7 @@
 \subsubsubsection{Classe ConcreteEditContentCommand}{
 	\label{EditContentCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditContentCommand.\\
 	\textbf{Utilizzo}\\
@@ -937,7 +937,7 @@
 \subsubsubsection{Classe ConcreteEditBackgroundCommand}{
 	\label{EditBackgroundCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditBackgroundCommand.\\
 	\textbf{Utilizzo}\\
@@ -1003,7 +1003,7 @@
 \subsubsubsection{Classe ConcreteEditColorCommand}{
 	\label{EditColorCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditColorCommand.\\
 	\textbf{Utilizzo}\\
@@ -1063,7 +1063,7 @@
 \subsubsubsection{Classe ConcreteEditFontCommand}{
 	\label{EditFontCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditFontCommand.\\
 	\textbf{Utilizzo}\\
@@ -1123,7 +1123,7 @@
 \subsubsubsection{Classe ConcreteEditBookmarkCommand}{
 	\label{EditBookmarkCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteEditFontCommand.\\
 	\textbf{Utilizzo}\\
@@ -1183,7 +1183,7 @@
 \subsubsubsection{Classe ConcretePortaAvantiCommand}{
 	\label{PortaAvantiCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaAvantiCommand.\\
 	\textbf{Utilizzo}\\
@@ -1238,7 +1238,7 @@
 \subsubsubsection{Classe ConcretePortaDietroCommand}{
 	\label{PortaDietroCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
 	  	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcretePortaDietroCommand.\\
 	\textbf{Utilizzo}\\
@@ -1293,7 +1293,7 @@
 	\subsubsubsection{Classe ConcreteAddToMainPathCommand}{
 		\label{addFrameToMainPathCommand}
 		\textbf{Funzione}\\
-			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+			\indent Classe concreta.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteAddToMainPathCommand.\\
 		\textbf{Utilizzo}\\
@@ -1325,7 +1325,7 @@
 	\subsubsubsection{Classe ConcreteRemoveFromMainPathCommand}{
 		\label{RemoveFrameFromMainPathCommand}
 		\textbf{Funzione}\\
-			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+			\indent Classe concreta.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-concreteRemoveFromMainPathCommand.\\
 		\textbf{Utilizzo}\\
@@ -1379,7 +1379,7 @@
 	\subsubsubsection{Classe ConcreteNewChoicePathCommand}{
 		\label{NewChoicePathCommand}
 		\textbf{Funzione}\\
-			\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+			\indent Classe concreta.\\
 	   	\textbf{Scope}\\
 			\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteNewChoicePathCommand.\\
 		\textbf{Utilizzo}\\
@@ -1418,7 +1418,7 @@
 \subsubsubsection{Classe ConcreteNewChoicePathCommand}{
 	\label{NewChoicePathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteNewChoicePathCommand.\\
 	\textbf{Utilizzo}\\
@@ -1459,7 +1459,7 @@
 \subsubsubsection{Classe ConcreteDeleteChoicePathCommand}{
 	\label{DeleteChoicePathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteDeleteChoicePathCommand.\\
 	\textbf{Utilizzo}\\
@@ -1500,7 +1500,7 @@
 \subsubsubsection{Classe ConcreteRemoveFromChoicePathCommand}{
 	\label{RemoveFromChoicePathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteRemoveFromChoicePathCommand.\\
 	\textbf{Utilizzo}\\
@@ -1541,7 +1541,7 @@
 \subsubsubsection{Classe ConcreteAddToChoicePathCommand}{
 	\label{AddToChoicePathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAddToChoicePathCommand.\\
 	\textbf{Utilizzo}\\
@@ -1574,7 +1574,7 @@
 \subsubsubsection{Classe ConcreteAddToMainPathCommand}{
 	\label{AddToMainPathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAddToMainPathCommand.\\
 	\textbf{Utilizzo}\\
@@ -1607,7 +1607,7 @@
 \subsubsubsection{Classe ConcreteRemoveFromMainPathCommand}{
 	\label{RemoveFromMainPathCommand}
 	\textbf{Funzione}\\
-		\indent Classe concreta, è interfaccia del Design Pattern Command.\\
+		\indent Classe concreta.\\
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteRemoveFromMainPathCommand.\\
 	\textbf{Utilizzo}\\
