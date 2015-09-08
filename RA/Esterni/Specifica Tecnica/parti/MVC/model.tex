@@ -107,7 +107,7 @@
 	\textbf{\interfacce}: viene invocato per effettuare le operazioni di modifica alla presentazione, a sua volta invoca i metodi doaction() o undoaction() di una classe derivata da Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand per eseguire materialmente il comando. Quando un comando viene eseguito, Invoker lo salva in un array \$undostack[ ].\\
 }
 \subsubsubsection{AbstractCommand}{
-			\textbf{\tipo}: è interfaccia astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
+			\textbf{\tipo}: è classe astratta del Design Pattern Command, è classe base per i comandi di modifica, inserimento ed eliminazione.\\	
 			\textbf{\relaz}: 
 			\begin{itemize}
 				\item Model::\-Invoker -> esegue materialmente il comando, richiamandone il metodo doaction(); inoltre provvede ad annullare l’ultima operazione invocandone il metodo undoaction().
