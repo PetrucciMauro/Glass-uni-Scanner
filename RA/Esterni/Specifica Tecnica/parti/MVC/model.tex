@@ -46,21 +46,18 @@
 					\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextInsertCommand -> invoca il metodo insertText() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameInsertCommand -> invoca il metodo insertFrame() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageInsertCommand -> invoca il metodo insertImage() messo a disposizione da insertEditRemove;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGInsertCommand -> invoca il metodo insertSVG() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioInsertCommand -> invoca il metodo insertAudio() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoInsertCommand -> invoca il metodo insertVideo() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteBackgroundInsertCommand -> invoca il metodo insertBackground() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteTextRemoveCommand -> invoca il metodo removeText() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteFrameRemoveCommand -> invoca il metodo removeFrame() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteImageRemoveCommand -> invoca il metodo removeImage() messo a disposizione da insertEditRemove;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteSVGRemoveCommand -> invoca il metodo removeSVG() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteAudioRemoveCommand -> invoca il metodo removeAudio() messo a disposizione da insertEditRemove;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-ConcreteVideoRemoveCommand -> invoca il metodo removeVideo() messo a disposizione da insertEditRemove;
 			
 			\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
 			\item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame\ped{g};
 			\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
-			\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
 			\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
 			\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
 			\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove invoca i metodi di set degli oggetti di classe Background;
@@ -69,14 +66,12 @@
 		\item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove costruisce gli oggetti di classe Text;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove costruisce gli oggetti di classe Frame\ped{g};
 		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove costruisce gli oggetti di classe Image;
-		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove costruisce gli oggetti di classe SVG;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove costruisce gli oggetti di classe Audio;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove costruisce gli oggetti di classe Video;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Background <- insertEditRemove costruisce gli oggetti di classe Background;
 	   \item Model::\-SlideShow::\-SlideShowElements::\-Text <- insertEditRemove invoca i metodi di set degli oggetti di classe Text;
 	   \item Model::\-SlideShow::\-SlideShowElements::\-Frame\ped{g} <- insertEditRemove invoca i metodi di set degli oggetti di classe Frame\ped{g};
 		\item Model::\-SlideShow::\-SlideShowElements::\-Image <- insertEditRemove invoca i metodi di set degli oggetti di classe Image;
-		\item Model::\-SlideShow::\-SlideShowElements::\-SVG <- insertEditRemove invoca i metodi di set degli oggetti di classe SVG;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Audio <- insertEditRemove invoca i metodi di set degli oggetti di classe Audio;
 		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
 	\end{itemize} 
@@ -118,14 +113,12 @@
 				\item ConcreteTextInsertCommand;
 				\item ConcreteFrameInsertCommand;
 				\item ConcreteImageInsertCommand;
-				\item ConcreteSVGInsertCommand;
 				\item ConcreteAudioInsertCommand;
 				\item ConcreteVideoInsertCommand;
 				\item ConcreteBackgroundInsertCommand;
 				\item ConcreteTextRemoveCommand;
 				\item ConcreteFrameRemoveCommand;
 				\item ConcreteImageRemoveCommand;
-				\item ConcreteSVGRemoveCommand;
 				\item ConcreteAudioRemoveCommand;
 				\item ConcreteVideoRemoveCommand;
 				\item ConcreteEditSizeCommand;
@@ -181,20 +174,6 @@
 		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertImage(...) della classe statica per l’inserimento di un Elemento\ped{g} immagine nella presentazione;
-		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
-	\end{itemize}	
-	\textbf{\base}: 
-		\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
-		\end{itemize}
-		}
-		\subsubsubsection{ConcreteSVGInsertCommand}{
-	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per inserire un nuovo Elemento\ped{g} SVG nella presentazione.\\	
-	\textbf{\relaz}: 
-	\begin{itemize}
-		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo insertSVG(...) della classe statica per l’inserimento di un Elemento\ped{g} SVG nella presentazione;
 		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
 	\end{itemize}	
 	\textbf{\base}: 
@@ -287,20 +266,6 @@
 		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
 		\end{itemize}
 		}               
-		\subsubsubsection{ConcreteSVGRemoveCommand}{
-	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} SVG dalla presentazione.\\	
-	\textbf{\relaz}: 
-	\begin{itemize}
-		\item Controller::\-EditController -> invoca il costruttore della classe e passa l’oggetto così creato all’Invoker;
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-Invoker -> Invoker invoca il metodo doaction() del comando e lo inserisce nel campo dati "undostack" e ne setta il valore del campo dati booleano "executed" a true, o ne invoca il metodo di annullamento undoaction() e lo inserisce nel campo dati "redostack";
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove <- invoca il metodo removeSVG(...) della classe statica per l’eliminazione di un Elemento\ped{g} SVG dalla presentazione;
-		\item Premi::\-Controller::\-EditController <- l'oggetto invoca il metodo appropriato di EditController quando viene invocato il metodo doaction() e il campo dati booleano "executed" ha valore true, o quando viene invocato il metodo undoaction().
-	\end{itemize}	
-	\textbf{\base}: 
-		\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand.
-		\end{itemize}
-		}
 		\subsubsubsection{ConcreteAudioRemoveCommand}{
 	\textbf{\tipo}: è classe concreta del Design Pattern Command, rappresenta un comando per rimuovere un Elemento\ped{g} audio dalla presentazione.\\	
 	\textbf{\relaz}: 
@@ -592,7 +557,6 @@
 		\item Model::\-SlideShow::\-Text;
 		\item Model::\-SlideShow::\-Frame\ped{g};
 		\item Model::\-SlideShow::\-Image;
-		\item Model::\-SlideShow::\-SVG;
 		\item Model::\-SlideShow::\-Audio;
 		\item Model::\-SlideShow::\-Video;
 		\item Model::\-SlideShow::\-Background.
@@ -636,21 +600,6 @@
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove ->  invoca i metodi che modificano i campi dati dell'oggetto;
 	\end{itemize}	
 	\textbf{\interfacce}: gli oggetti della classe Image vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
-	\textbf{\base}: 
-		\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowElement.
-		\end{itemize}
-		}
-
-\subsubsubsection{SVG}{
-	\textbf{\tipo}: Gli oggetti della classe SVG rappresentano gli elementi\ped{g} di tipo SVG della presentazione.\\
-	\textbf{\relaz}: 
-	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di SVG e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove: -> rimuove l’oggetto SVG dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
-	\end{itemize}	
-	\textbf{\interfacce}: Gli oggetti della classe SVG vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElement.
