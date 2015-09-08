@@ -424,85 +424,85 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Text;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeFrame}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Frame\ped{g};
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente, accede al suo campo prev e ne identifica i predecessore, pone prev.next=next. Rimuove l’oggetto dall’oggetto Presentazione e restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente, accede al suo campo prev e ne identifica i predecessore, pone prev.next=next. Rimuove l’oggetto dall’oggetto Presentazione e restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeImage}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Image;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeSVG}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SVG;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeAudio}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Audio;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeVideo}(id:integer)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Video;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato.
+				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editPosition}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldPosition per contenere i valori di xIndex e di yIndex dell’oggetto trovato e imposta xIndex e yIndex con i valori passati tramite spec. Restituisce oldPosition.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldPosition per contenere i valori di xIndex e di yIndex dell’oggetto trovato e imposta xIndex e yIndex con i valori passati tramite spec. Restituisce oldPosition, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editRotation}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldRotation per contenere il valore di rotation dell’oggetto trovato e imposta rotation con il valore passato tramite spec. Restituisce oldRotation.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldRotation per contenere il valore di rotation dell’oggetto trovato e imposta rotation con il valore passato tramite spec. Restituisce oldRotation, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editSize}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldSize per contenere i valori di height e di width dell’oggetto trovato e imposta height e width con i valori passati tramite spec. Restituisce oldSize.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldSize per contenere i valori di height e di width dell’oggetto trovato e imposta height e width con i valori passati tramite spec. Restituisce oldSize, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editBackground}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova crea un oggetto oldBackground per salvare i valori di color e ref dell’oggetto trovato e imposta color e ref con i valori passati tramite spec. Restituisce oldBackground.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova crea un oggetto oldBackground per salvare i valori di color e ref dell’oggetto trovato e imposta color e ref con i valori passati tramite spec. Restituisce oldBackground, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editColor}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldColor per contenere il valore di color dell’oggetto trovato e imposta color con il valore passato tramite spec. Restituisce oldColor.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldColor per contenere il valore di color dell’oggetto trovato e imposta color con il valore passato tramite spec. Restituisce oldColor, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editShape}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldShape per contenere il valore di shape dell’oggetto trovato e imposta shape con il valore passato tramite spec. Restituisce oldShape.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements in Presentazione per trovare l’oggetto con il campo spec.id corrispondente, crea un oggetto oldShape per contenere il valore di shape dell’oggetto trovato e imposta shape con il valore passato tramite spec. Restituisce oldShape, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editContent}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo content in un oggetto oldContent e imposta content con il valore passato tramite spec. Restituisce oldContent.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo content in un oggetto oldContent e imposta content con il valore passato tramite spec. Restituisce oldContent, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{editFont}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo Font\ped{g} e fontSize in un oggetto oldFont e imposta Font\ped{g} con il valore di newFont e fontSize con i valori passati tramite spec. Restituisce oldFont.
+				\item \textbf{Descrizione}: scorre il campo dati che contiene gli oggetti di tipo SlideShowElements::text in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia il campo Font\ped{g} e fontSize in un oggetto oldFont e imposta Font\ped{g} con il valore di newFont e fontSize con i valori passati tramite spec. Restituisce oldFont, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{portaAvanti}(spec:object)
 			\begin{itemize}
@@ -526,7 +526,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Void;
-				\item \textbf{Descrizione}: scorre il Percorso\ped{g} principale in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia la posizione in un oggetto oldFrame e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce oldFrame.
+				\item \textbf{Descrizione}: scorre il Percorso\ped{g} principale in Presentazione per trovare l’oggetto con il campo id corrispondente. Se lo trova copia la posizione in un oggetto oldFrame e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce oldFrame, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{addChoicePath}(id)
 			\begin{itemize}
@@ -538,7 +538,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: metodo che elimina il Percorso\ped{g} a scelta pathId da Presentazione e ritorna l'oggetto eliminato.
+				\item \textbf{Descrizione}: metodo che elimina il Percorso\ped{g} a scelta pathId da Presentazione e ritorna l'oggetto eliminato, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{addFrameToChoicePath}(spec:object)
 			\begin{itemize}
@@ -550,7 +550,7 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: SlideShowElement;
-				\item \textbf{Descrizione}: scorre il Percorso\ped{g} a scelta spec.pathId in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia posizione, id e id del Percorso\ped{g} in un oggetto obj e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce obj.
+				\item \textbf{Descrizione}: scorre il Percorso\ped{g} a scelta spec.pathId in Presentazione per trovare l’oggetto con il campo spec.id corrispondente. Se lo trova copia posizione, id e id del Percorso\ped{g} in un oggetto obj e elimina dal Percorso\ped{g} il Frame\ped{g}. Restituisce obj, questo verrà poi utilizzato dal command che ha invocato questo metodo per poter eliminare le modifiche effettuate in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 		\end{itemize}
 		
