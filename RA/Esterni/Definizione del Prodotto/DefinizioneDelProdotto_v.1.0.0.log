@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  6 SEP 2015 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.19)  8 SEP 2015 23:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1099,13 +1099,13 @@ Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (./parti/standardProgetto.tex
 Overfull \hbox (28.81946pt too wide) in paragraph at lines 3--4
 \T1/cmr/m/n/12 Gli stan-dard di pro-get-ta-zio-ne ar-chi-tet-tu-ra-le so-no de-
-fi-ni-ti nel do-cu-men-to [][]Spe-ci-fi-ca-Tec-ni-ca_v.3.0.0.pdf[][]. 
+fi-ni-ti nel do-cu-men-to [][]Spe-ci-fi-ca-Tec-ni-ca_v.4.0.0.pdf[][]. 
  []
 
 
 Overfull \hbox (14.7953pt too wide) in paragraph at lines 14--15
 \T1/cmr/m/n/12 Le re-go-le ti-po-gra-fi-che re-la-ti-ve ai no-mi del-le en-ti-t
-à so-no de-fi-ni-te nel-le [][]Nor-me-Di-Pro-get-to_v.3.0.0.pdf[][]. 
+à so-no de-fi-ni-te nel-le [][]Nor-me-Di-Pro-get-to_v.4.0.0.pdf[][]. 
  []
 
 )
@@ -1149,7 +1149,7 @@ newPresentationName]/[oldPresentationName]
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 129.
+Package pdftex.def Info: ../../logo.jpg used on input line 128.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [15]
 Overfull \hbox (11.83244pt too wide) in paragraph at lines 179--180
@@ -1165,48 +1165,48 @@ e con il ti-to-lo [pre-sen-ta-tion-Na-me] l'Elemento$[]$
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 183.
+Package pdftex.def Info: ../../logo.jpg used on input line 182.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [16]
-Overfull \hbox (1.86667pt too wide) in paragraph at lines 195--196
+Overfull \hbox (1.86667pt too wide) in paragraph at lines 205--206
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 ri-tor-na il File$[]$ [ima-ge-na-
 me] nel-la car-tel-la /u-ser-s/[username]/image 
  []
 
 
-Overfull \hbox (2.5845pt too wide) in paragraph at lines 205--206
+Overfull \hbox (2.5845pt too wide) in paragraph at lines 215--216
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 ri-tor-na il File$[]$ [au-dio-na-
 me] nel-la car-tel-la /u-ser-s/[username]/audios 
  []
 
 
-Overfull \hbox (0.62665pt too wide) in paragraph at lines 215--215
+Overfull \hbox (0.62665pt too wide) in paragraph at lines 225--225
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 ri-tor-na il File$[]$ [vi-deo-na-
 me] nel-la car-tel-la /u-ser-s/[username]/videos 
  []
 
-
-Overfull \hbox (61.32016pt too wide) in paragraph at lines 241--242
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 246.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [17]
+Overfull \hbox (61.32016pt too wide) in paragraph at lines 251--252
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 eli-mi-na il File$[]$ im-ma-gi-ne
  [ima-ge-na-me] dal-la car-tel-la /u-ser-s/[username]/images 
  []
 
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 252.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17]
-Overfull \hbox (35.86801pt too wide) in paragraph at lines 277--278
+
+Overfull \hbox (35.86801pt too wide) in paragraph at lines 287--288
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 eli-mi-na il File$[]$ au-dio [au-
 dio-na-me] dal-la car-tel-la /u-ser-s/[username]/audios 
  []
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 309.
+Package pdftex.def Info: ../../logo.jpg used on input line 305.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [18]
-Overfull \hbox (32.93123pt too wide) in paragraph at lines 313--314
+Overfull \hbox (32.93123pt too wide) in paragraph at lines 323--324
 []\T1/cmr/bx/n/12 descrizione: \T1/cmr/m/n/12 eli-mi-na il File$[]$ vi-deo [vi-
 deo-na-me] dal-la car-tel-la /u-ser-s/[username]/videos 
  []
@@ -2273,7 +2273,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  13907 strings out of 493089
  203400 string characters out of 6134842
- 382899 words of memory out of 5000000
+ 382732 words of memory out of 5000000
  16858 multiletter control sequences out of 15000+600000
  17891 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2290,7 +2290,7 @@ fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on DefinizioneDelProdotto_v.1.0.0.pdf (117 pages, 594251 bytes).
+Output written on DefinizioneDelProdotto_v.1.0.0.pdf (117 pages, 594750 bytes).
 
 PDF statistics:
  1600 PDF objects out of 1728 (max. 8388607)

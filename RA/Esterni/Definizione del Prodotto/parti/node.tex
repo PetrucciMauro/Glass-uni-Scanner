@@ -53,7 +53,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} inserisce nuovo utente in MongoDB, crea una nuova collezione 'presentations'+username, crea le cartelle per i File\ped{g} utente
 				\item \textbf{input:} header campo Authorization: "username:password"
-				\item \textbf{output:} body in formato application/json, success : boolean
+				\item \textbf{output:} body in formato application/json, success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -63,7 +63,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} verifica se username e password sono corretti e ritorna un token per l'accesso ai servizi protetti
 				\item \textbf{input:} header campo Authorization: "username:password"
-				\item \textbf{output:}  body in formato application/json, success : boolean; in header campo Authorisation ritorna il token per l'accesso ai servizi protetti 
+				\item \textbf{output:}  body in formato application/json, success : boolean, message : string; in header campo Authorisation ritorna il token per l'accesso ai servizi protetti 
 				\end{itemize}
 			\end{itemize}
 				
@@ -73,7 +73,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} verifica la correttezza di username e password e modifica questa'ultima con la nuova 
 				\item \textbf{input:} in header campo Authorization: "username:password:newpassword"
-				\item \textbf{output:} body in formato application/json, success : boolean  
+				\item \textbf{output:} body in formato application/json, success : boolean  , message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -105,7 +105,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} cerca in MongoDB nella collezione associata alle presentazioni dell'utente, ritorna un array i cui elementi\ped{g} sono i campi meta delle presentazioni dell'utente
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean, message : array
+				\item \textbf{output:} body in formato application/json; success : boolean, message : array se success == true altrimenti string
 				\end{itemize}
 			\end{itemize}
 			
@@ -115,7 +115,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} se non esiste gi\`{a} crea una nuova presentazione con il nome [presentatioNname]
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:}  body in formato application/json; success : boolean
+				\item \textbf{output:}  body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -125,7 +125,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} crea una nuova presentazione con nome [newPresentationName] dalla presentazione con titolo [oldPresentationName]
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:}  body in formato application/json; success : boolean
+				\item \textbf{output:}  body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 
@@ -136,14 +136,14 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} recupera se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g}
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean, presentation : object
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string, presentation : object
 				\end{itemize}
 				
 			\item  \textbf{DELETE} /private/api/presentations/[presentationName]
 				\begin{itemize} 
 				\item \textbf{descrizione:} elimina se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g}
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json, message : string; success : boolean
 				\end{itemize}
 			\end{itemize}
 
@@ -153,7 +153,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} rinomina se presente la presentazione dell'utente associata al titolo passato nell'URL\ped{g} con il nome [newname]
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -163,14 +163,14 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} inserisce nella presentazione dell'utente individuata da [presentationName] l'oggetto element passato nel body della richiesta
 				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 				
 			\item  \textbf{PUT} /private/api/presentations/[presentationName]/element
 				\begin{itemize} 
 				\item \textbf{descrizione:} sostituisce nella presentazione dell'utente l'Elemento\ped{g} passato nel body della richiesta
 				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json l'oggetto: element : object
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 				
@@ -180,7 +180,17 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} elimina dalla presentazione con il titolo [presentationName] l'Elemento\ped{g} con identificativo [idElement]						
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
+				\end{itemize}
+			\end{itemize}
+			
+		\item \textbf{PresentationPath:}
+			\begin{itemize}
+			\item   \textbf{PUT} /private/api/presentations/[presentationName]/path
+				\begin{itemize} 
+				\item \textbf{descrizione:} aggiorna l'elemento paths dalla presentazione con il titolo [presentationName]  con il nuovo elemento paths
+				\item \textbf{input:} in header campo Authorization il token di autenticazione, nel body in formato application/json il nuovo elemento paths con cui aggiornare il campo paths
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -224,7 +234,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} immagine dell'utente
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean, names : array
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string ,names : array
 				\end{itemize}
 			\end{itemize}
 			
@@ -234,13 +244,13 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/images					
 				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; File\ped{g} da caricare
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/image/[imagename]
 				\begin{itemize} 
 				\item \textbf{descrizione:} elimina il File\ped{g} immagine [imagename] dalla cartella /users/[username]/images			
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -250,7 +260,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} rinomina il File\ped{g} immagine [imagename] con [newname] nella cartella /users/[username]/images
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -260,7 +270,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} audio dell'utente
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean, names : array
+				\item \textbf{output:} body in formato application/json; success : boolean, names : array, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -270,13 +280,13 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/audios					
 				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; File\ped{g} da caricare
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean,  message: string
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/audio/[audioname]
 				\begin{itemize} 
 				\item \textbf{descrizione:} elimina il File\ped{g} audio [audioname] dalla cartella /users/[username]/audios			
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -286,7 +296,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} rinomina il File\ped{g} audio [audioname] con [newname] nella cartella /users/[username]/audios
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 						
@@ -296,7 +306,7 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} ritorna un array con i nomi dei File\ped{g} video dell'utente
 				\item \textbf{input:} in header campo Authorization il token di autenticazione
-				\item \textbf{output:} body in formato application/json; success : boolean, names : array
+				\item \textbf{output:} body in formato application/json; success : boolean, names : array, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -306,13 +316,13 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} caricare da locale un nuovo File\ped{g} immagine nella cartella /users/[username]/videos					
 				\item \textbf{input:} in header campo Authorization il token di autenticazione; body in formato "multipart/form-data"; File\ped{g} da caricare
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\item   \textbf{DELETE} /private/api/files/video/[videoname]
 				\begin{itemize} 
 				\item \textbf{descrizione:} elimina il File\ped{g} video [videoname] dalla cartella /users/[username]/videos			
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 			
@@ -322,11 +332,10 @@
 				\begin{itemize} 
 				\item \textbf{descrizione:} rinomina il File\ped{g} video [videoname] con [newname] nella cartella /users/[username]/videos
 				\item \textbf{input:} in header campo Authorization il token di autenticazione;
-				\item \textbf{output:} body in formato application/json; success : boolean
+				\item \textbf{output:} body in formato application/json; success : boolean, message : string
 				\end{itemize}
 			\end{itemize}
 
-			
 	\end{itemize}
 	}
 }
