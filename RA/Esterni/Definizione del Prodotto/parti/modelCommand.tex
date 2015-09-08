@@ -166,14 +166,13 @@
 			\item ConcreteTextInsertCommand (\S\ref{TextInsertCommand});
 			\item ConcreteFrameInsertCommand (\S\ref{FrameInsertCommand});
 			\item ConcreteImageInsertCommand (\S\ref{ImageInsertCommand});
-			\item ConcreteSVGInsertCommand (\S\ref{SVGInsertCommand});
 			\item ConcreteAudioInsertCommand (\S\ref{AudioInsertCommand});
 			\item ConcreteVideoInsertCommand (\S\ref{VideoInsertCommand});
 			\item ConcreteBackgroundInsertCommand (\S\ref{BackgroundInsertCommand});
 			\item ConcreteTextRemoveCommand (\S\ref{TextRemoveCommand});
 			\item ConcreteFrameRemoveCommand (\S\ref{FrameRemoveCommand});
 			\item ConcreteImageRemoveCommand (\S\ref{ImageRemoveCommand});
-			\item ConcreteSVGRemoveCommand (\S\ref{SVGRemoveCommand});
+
 			\item ConcreteAudioRemoveCommand (\S\ref{AudioRemoveCommand});
 			\item ConcreteVideoRemoveCommand (\S\ref{VideoRemoveCommand});
 			\item ConcreteEditSizeCommand (\S\ref{EditSizeCommand});
@@ -284,38 +283,6 @@
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
 			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
-		\end{itemize}
-	\end{itemize}
-	}
-
-\subsubsubsection{Classe ConcreteSVGInsertCommand}{
-	\label{SVGInsertCommand}
-	\textbf{Funzione}\\
-		\indent Classe concreta.\\
-   	\textbf{Scope}\\
-		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteSVGInsertCommand.\\
-	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un SVG nella presentazione e invoca il metodo di Inserter insertSVG() passandogliele.\\
-	
-	\noindent{\textbf{Metodi}}
-	\begin{itemize}
-		\item \textbf{ConcreteSVGInsertCommand}(spec: object)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: costruisce l’oggetto ConcreteSVGInsertCommand.
-		\end{itemize}
-		\item \textbf{doAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertSVG(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
-		\end{itemize}
-		\item \textbf{undoAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeSVG(id) passando come parametro il campo id. Invoca il metodo remove(id) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -555,47 +522,6 @@
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
 			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::insertImage(Image) passando come parametro il campo oldImage. Invoca il metodo inserisciImmagine() di EditController passandogli oldImage.
-		\end{itemize}
-	\end{itemize}
-	}
-
-\subsubsubsection{Classe ConcreteSVGRemoveCommand}{
-	\label{SVGRemoveCommand}
-	\textbf{Funzione}\\
-		\indent Classe concreta.\\
-   	\textbf{Scope}\\
-		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteSVGRemoveCommand.\\
-	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} SVG da rimuovere dalla presentazione e invoca il metodo InsertEditRemove::removeSVG().\\
-	\textbf{Attributi}
-	\begin{itemize}
-		\item \textbf{oldSVG}
-		\begin{itemize}
-			\item \textbf{Accesso}: Private;
-			\item \textbf{Tipo}: SlideShowElements::SVG;
-			\item \textbf{Descrizione}: è una copia dell’oggetto che rappresenta l’Elemento\ped{g} rimosso.
-		\end{itemize}
-	\end{itemize}
-	
-	\noindent{\textbf{Metodi}}
-	\begin{itemize}
-		\item \textbf{ConcreteSVGRemoveCommand}(spec:object)
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: costruisce l’oggetto ConcreteSVGRemoveCommand e setta il campo dati id.
-		\end{itemize}
-		\item \textbf{doAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo InsertEditRemove::removeSVG(id) passando come parametro il campo dati id.	removeSVG restituisce un Elemento\ped{g} di tipo SlideShowElements::SVG che rappresenta l’Elemento\ped{g} rimosso e a cui viene inizializzato il campo oldSVG. Se executed è settato a false lo setta come true, altrimenti invoca il metodo update(id) di EditController.
-		\end{itemize}
-		\item \textbf{undoAction}()
-		\begin{itemize}
-			\item \textbf{Accesso}: Public;
-			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove::insertSVG(SVG) passando come parametro il campo oldSVG. Invoca il metodo update(id) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}

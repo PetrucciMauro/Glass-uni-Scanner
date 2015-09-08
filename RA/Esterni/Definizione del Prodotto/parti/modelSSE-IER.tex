@@ -62,7 +62,6 @@
 			\item Text (\S\ref{Text});
 			\item Image (\S\ref{Image});
 			\item Frame\ped{g} (\S\ref{Frame});
-			\item SVG (\S\ref{SVG});
 			\item Background (\S\ref{Background});
 			\item Audio (\S\ref{Audio});
 			\item Video (\S\ref{Video}).
@@ -162,36 +161,6 @@
 				\item \textbf{Accesso}: Private;
 				\item \textbf{Tipo}: String;
 				\item \textbf{Descrizione}: rappresenta il colore dello sfondo del Frame\ped{g}.
-			\end{itemize}
-			\item \textbf{type}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: rappresenta il tipo dell'oggetto.
-			\end{itemize}
-		\end{itemize}
-		}
-	\subsubsection{Classe SVG}{
-		\label{SVG}
-		\textbf{Funzione}\\
-			\indent Classe concreta, i suoi elementi\ped{g} rappresentano un oggetto di tipo SVG.\\
-	   	\textbf{Scope}\\
-			\indent Model::SlideShow::SlideShowElements::SVG.\\
-		\textbf{Utilizzo}\\
-			\indent Il costruttore viene invocato da InsertEditRemove::insertSVG().\\
-		\textbf{Attributi}
-		\begin{itemize}
-			\item \textbf{color}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: String;
-				\item \textbf{Descrizione}: rappresenta il colore dell’oggetto.
-			\end{itemize}
-			\item \textbf{shape}
-			\begin{itemize}
-				\item \textbf{Accesso}: Private;
-				\item \textbf{Tipo}: Array;
-				\item \textbf{Descrizione}: rappresenta le coordinate della forma dell’oggetto.
 			\end{itemize}
 			\item \textbf{type}
 			\begin{itemize}
@@ -354,12 +323,6 @@
 				\item \textbf{Tipo di ritorno}: Array di oggetti di tipo Video;
 				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} video della presentazione.
 			\end{itemize}
-			\item \textbf{getSVGs}()
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Array di oggetti di tipo SVG;
-				\item \textbf{Descrizione}: ritorna gli elementi\ped{g} SVG della presentazione.
-			\end{itemize}
 			\item \textbf{getBackground}()
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
@@ -396,12 +359,6 @@
 				\item \textbf{Tipo di ritorno}: Integer;
 				\item \textbf{Descrizione}: costruisce un oggetto di tipo Image() passando il parametro spec. Inserisce l’oggetto così costruito nell’oggetto Presentazione.
 			\end{itemize}
-			\item \textbf{insertSVG}(spec:object)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: Integer;
-				\item \textbf{Descrizione}: costruisce un oggetto di tipo SVG() passando il parametro spec. Inserisce l’oggetto così costruito nell’oggetto Presentazione.
-			\end{itemize}
 			\item \textbf{insertAudio}(spec:object)
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
@@ -436,12 +393,6 @@
 			\begin{itemize}
 				\item \textbf{Accesso}: Public;
 				\item \textbf{Tipo di ritorno}: Image;
-				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
-			\end{itemize}
-			\item \textbf{removeSVG}(id:integer)
-			\begin{itemize}
-				\item \textbf{Accesso}: Public;
-				\item \textbf{Tipo di ritorno}: SVG;
 				\item \textbf{Descrizione}: copia l’oggetto con il campo dati id corrispondente e lo rimuove dall’oggetto Presentazione. Restituisce l’oggetto copiato, tale copia verrà poi utilizzata dal command che ha invocato questo metodo per poter ripristinare l'elemento eliminato in caso venisse richiesta una operazione di annulla / ripristina.
 			\end{itemize}
 			\item \textbf{removeAudio}(id:integer)
