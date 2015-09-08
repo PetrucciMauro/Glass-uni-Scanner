@@ -109,34 +109,35 @@ Il ritardo accumulato nella fase precedente si è ripercosso anche in questa fas
 \subsection{Validazione}
 
 Si riporta di seguito il consuntivo del periodo di \textbf{Validazione}.\\
-La tabella sottostante riporta le ore effettivamente impiegate e tra parentesi la differenza di ore tra preventivo e consuntivo, divise per ruolo.\\ Come si può notare dal valore riportato nella riga \textbf{Differenza dei totali}, intesa come differenza tra preventivo e consuntivo, il segno negativo indica che sono state impiegate 10 ore in più per lo svolgimento della Codifica\ped{g} con una spesa aggiuntiva di 10\euro.
-
+La tabella sottostante riporta le ore effettivamente impiegate e tra parentesi la differenza di ore tra preventivo e consuntivo, divise per ruolo.\\ 
 	\begin{table}[H]
 		\centering
 	  \begin{tabular}{p{\dimexpr 0.3\linewidth-2\tabcolsep}p{\dimexpr 0.2\linewidth-2\tabcolsep}
 		    							p{\dimexpr 0.2\linewidth-2\tabcolsep}}
 		   \toprule Ruolo & Ore effettive & Costi \\
 		   \midrule
-		   Responsabile & 12(0) & 360(0) \\
+		   Responsabile & 12(-4) & 360(-120) \\
 		   Amministratore & 7(0) & 140(0) \\
 		   Analista & 0 & 0 \\
-		   Programmatore & 9(0) & 135(0) \\
-		   Progettista & 38(0) & 836(0) \\
-		   Verificatore & 25(0) & 375(0) \\
+		   Programmatore & 29(0) & 135(300) \\
+		   Progettista & 38(-8) & 836(-176) \\
+		   Verificatore & 25(3) & 375(45) \\
 		   \hline
-		   \textbf{Totale consuntivo} & ? & ? \\
+		   \textbf{Totale consuntivo} & 102 & 1895 \\
 		   \textbf{Totale preventivo} & 91 & 1846 \\
-		   \textbf{Differenza dei totali} & ? & ? \\
+		   \textbf{Differenza dei totali} & -11 & -49 \\
 		   \bottomrule
 	 \end{tabular}
-	 	\label{tab:costuntivoCodifica}
-	 	\caption{Differenza preventivo-consuntivo per ruolo, fase di Codifica}
+	 	\label{tab:costuntivoValidazione}
+	 	\caption{Differenza preventivo-consuntivo per ruolo, fase di Validazione}
 	\end{table}
 
 \subsubsection{Conclusioni}
 
 Dalla tabella riportata si può osservare che le ore effettive per svolgere le attività pianificate, sono state superiori rispetto alla pianificazione, questo ci fa capire che la pianificazione era troppo ottimistica sui tempi di Progetto\ped{g} per questo periodo.
-Il ritardo accumulato nella fase precedente si è ripercosso anche in questa fase non permettendo ai progettisti la progettazione di una parte opzionale del Progetto\ped{g}, in aggiunta l'inesperienza del gruppo e le tecnologie poco conosciute hanno fatto aumentare considerevolmente il numero di ore utilizzate dai programmatori.
+I ritardi accumulati nella fasi precedenti di Progettazione e Codifica si sono ripercossi anche in questa fase, a causa di bug e dei pochi requisiti obbligatori rimasti da implementare.\\
+Il gruppo ha preferito contenere i costi risparmiando ore nella implementazione di alcuni requisiti opzionali e desiderabili.\\
+Dalla tabella risulta che la differenza tra consuntivo e preventivo è di 11 ore con una perdita di 49\euro.
 
 
 
