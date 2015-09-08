@@ -76,7 +76,7 @@
 		\item Model::\-SlideShow::\-SlideShowElements::\-Video <- insertEditRemove invoca i metodi di set degli oggetti di classe Video;
 	\end{itemize} 
 }	
-}
+
 \subsubsection{Model::\-SlideShow::\-SlideShowActions::\-Command}{
 		Tutti i componenti seguenti appartengono al package Command, quindi lo scope sarà Model::\-SlideShow::\-SlideShowActions::\-Command::\-<componente>.
 	\begin{figure}[H]
@@ -570,7 +570,7 @@
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Text dalla presentazione;
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Text vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Text vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElement.
@@ -584,7 +584,7 @@
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove-> rimuove l’oggetto Frame\ped{g} dalla presentazione;
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Frame\ped{g} vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Frame\ped{g} vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElement.
@@ -599,7 +599,7 @@
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Image dalla presentazione;
 		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove ->  invoca i metodi che modificano i campi dati dell'oggetto;
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Image vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Image vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElement.
@@ -610,11 +610,11 @@
 	\textbf{\tipo}: gli oggetti della classe Audio rappresentano gli elementi\ped{g} di tipo audio della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Audio e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Audio dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Audio e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Audio dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Audio vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Audio vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}:  
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.
@@ -625,11 +625,11 @@
 	\textbf{\tipo}: gli oggetti della classe Video rappresentano gli elementi\ped{g} di tipo video della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Video e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Video dalla presentazione;
-		 \item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Video e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Video dalla presentazione;
+		 \item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Video vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Video vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.
@@ -639,11 +639,11 @@
 	\textbf{\tipo}: gli oggetti della classe Background rappresentano lo sfondo della presentazione.\\
 	\textbf{\relaz}: 
 	\begin{itemize}
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter -> invoca il costruttore di Background e inserisce l’oggetto nella presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Remover -> rimuove l’oggetto Video dalla presentazione;
-		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Editor\ped{g} -> invoca i metodi che modificano i campi dati dell'oggetto.
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca il costruttore di Background e inserisce l’oggetto nella presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> rimuove l’oggetto Video dalla presentazione;
+		\item Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove -> invoca i metodi che modificano i campi dati dell'oggetto.
 	\end{itemize}	
-	\textbf{\interfacce}: gli oggetti della classe Background vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove::\-Inserter e inseriti nella presentazione.\\
+	\textbf{\interfacce}: gli oggetti della classe Background vengono istanziati da Model::\-SlideShow::\-SlideShowActions::\-InsertEditRemove e inseriti nella presentazione.\\
 	\textbf{\base}: 
 		\begin{itemize}
 		\item Model::\-SlideShow::\-SlideShowElements::\-SlideShowElement.

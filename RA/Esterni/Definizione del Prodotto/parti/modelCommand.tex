@@ -199,7 +199,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteTextInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un testo nella presentazione e invoca il metodo di Inserter insertText() passandogliele.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un testo nella presentazione e invoca il metodo di InsertEditRemove insertText() passandogliele.\\
 	\noindent{\textbf{Metodi}}
 	\begin{itemize}
 		\item \textbf{ConcreteTextInsertCommand}(spec: object)
@@ -212,13 +212,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertText(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciTesto(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertText(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciTesto(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeText(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove removeText(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -230,7 +230,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteFrameInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un testo nella presentazione e invoca il metodo di Inserter insertFrame() passandogliele.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un testo nella presentazione e invoca il metodo di InsertEditRemove insertFrame() passandogliele.\\
 	
 	\noindent{\textbf{Metodi}}
 	\begin{itemize}
@@ -244,13 +244,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertFrame(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciFrame(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertFrame(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciFrame(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeFrame(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove removeFrame(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -262,7 +262,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteImageInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un’immagine nella presentazione e invoca il metodo di Inserter insertImage() passandogliele.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un’immagine nella presentazione e invoca il metodo di InsertEditRemove insertImage() passandogliele.\\
 	
 	\noindent{\textbf{Metodi}}
 	\begin{itemize}
@@ -276,13 +276,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertImage(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciImmagine() di EditController passandogli spec.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertImage(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciImmagine() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove removeImage(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -294,7 +294,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteAudioInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un audio nella presentazione e invoca il metodo di Inserter insertAudio() passandogliele.\\	
+		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un audio nella presentazione e invoca il metodo di InsertEditRemove insertAudio() passandogliele.\\	
 	\noindent{\textbf{Metodi}}
 	\begin{itemize}
 		\item \textbf{ConcreteAudioInsertCommand}(spec: object)
@@ -307,13 +307,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertAudio(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciAudio() di EditController passandogli spec.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertAudio(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciAudio() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeAudio(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove removeAudio(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -325,7 +325,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteVideoInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un video nella presentazione e invoca il metodo di Inserter insertVideo() passandogliele..\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve le coordinate di inserimento di un video nella presentazione e invoca il metodo di InsertEditRemove insertVideo() passandogliele..\\
 	
 	\noindent{\textbf{Metodi}}
 	\begin{itemize}
@@ -339,13 +339,13 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciVideo() di EditController passandogli spec.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertVideo(spec). Se executed è settato a false lo setta come true, altrimenti invoca il metodo inserisciVideo() di EditController passandogli spec.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Editor\ped{g} removeVideo(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove removeVideo(id) passando come parametro il campo id. Invoca il metodo rimuoviElemento(spec) di EditController.
 		\end{itemize}
 	\end{itemize}
 	}
@@ -357,7 +357,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteBackgroundInsertCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve i parametri di inserimento di uno sfondo nella presentazione e invoca il metodo di Inserter insertBackground() passandogliele.\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve i parametri di inserimento di uno sfondo nella presentazione e invoca il metodo di InsertEditRemove insertBackground() passandogliele.\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{ref}
@@ -392,7 +392,7 @@
 		\begin{itemize}
 			\item \textbf{Accesso}: Public;
 			\item \textbf{Tipo di ritorno}: Void;
-			\item \textbf{Descrizione}: invoca il metodo di Inserter insertBackground (ref, color) passando come parametri i  campi dati ref e color. insertBackground restituisce un numero intero che rappresenta l’id dell’oggetto o eventualmente un oggetto di tipo Background a cui ConcreteBackgroundInsertCommand istanzia oldBackground e al cui id inizializza il campo id. Se executed è settato a false lo setta come true, altrimenti invoca il metodo updateSfondo(spec) di EditController.
+			\item \textbf{Descrizione}: invoca il metodo di InsertEditRemove insertBackground (ref, color) passando come parametri i  campi dati ref e color. insertBackground restituisce un numero intero che rappresenta l’id dell’oggetto o eventualmente un oggetto di tipo Background a cui ConcreteBackgroundInsertCommand istanzia oldBackground e al cui id inizializza il campo id. Se executed è settato a false lo setta come true, altrimenti invoca il metodo updateSfondo(spec) di EditController.
 		\end{itemize}
 		\item \textbf{undoAction}()
 		\begin{itemize}
@@ -410,7 +410,7 @@
    	\textbf{Scope}\\
 		\indent Model::SlideShow::SlideShowActions::Command::AbstractCommand::\-ConcreteTextRemoveCommand.\\
 	\textbf{Utilizzo}\\
-		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} testo da rimuovere dalla presentazione e invoca il metodo di Remover removeText(id).\\
+		\indent Viene costruito da Premi::Controller::EditController, riceve l’id dell’Elemento\ped{g} testo da rimuovere dalla presentazione e invoca il metodo di InsertEditRemove removeText(id).\\
 	\textbf{Attributi}
 	\begin{itemize}
 		\item \textbf{oldText}
