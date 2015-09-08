@@ -97,7 +97,7 @@
 	\end{itemize}
 	Controller::\-EditController costruisce gli oggetti delle sottoclassi di AbstractCommand, inoltre quando viene invocato il metodo "undo()" di un comando concreto, questo invoca il metodo appropriato di EditController.\\
 \subsubsubsection{Invoker}{
-	\textbf{\tipo}: è componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di Elemento\ped{g}, eliminazione di Elemento\ped{g} e inserimento di Elemento\ped{g}) per poter implementare le funzioni\ped{g} di annulla/ripristina.\\	
+	\textbf{\tipo}: è componente invoker del Design Pattern Command, il suo scopo è tenere traccia delle modifiche atomiche apportate alla presentazione (modifica di Elemento\ped{g}, eliminazione di Elemento\ped{g} e inserimento di Elemento\ped{g}) per poter implementare le funzioni\ped{g} di annulla/ripristina. È necessario che sia creata un'unica istanza dell'invoker dal momento che tale istanza contiene lo stack dei comandi annullabili e quello dei comandi ripristinabili e si deve assicurare che ogni comando che viene eseguito sia inserito in cima allo stack in cui si trovano i comandi eseguiti precedentemente. Si deve quindi garantire che i metodi del controller, ogniqualvolta sia necessario eseguire o annullare un comando, facciano riferimento alla stessa istanza della classe Invoker.\\	
 	\textbf{\relaz}:
 	\begin{itemize}
 		\item Controller::\-EditController->crea un oggetto di una sottoclasse di\\ Model::\-SlideShow::\-SlideShowActions::\-Command::\-AbstractCommand passandolo all’Invoker che ne invoca il metodo execute() e lo inserisce nello stack “undostack”, richiama il metodo che svuota lo stack “redostack”.\\
