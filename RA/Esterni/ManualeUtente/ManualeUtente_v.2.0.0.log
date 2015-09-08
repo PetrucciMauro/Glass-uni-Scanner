@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  8 SEP 2015 23:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  9 SEP 2015 01:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **ManualeUtente_v.2.0.0.tex
 (./ManualeUtente_v.2.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 3 languages loaded.
+Babel <3.9h> and hyphenation patterns for 8 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -1042,14 +1042,14 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<./images/registrazione.png, id=164, 1912.14375pt x 1015.795pt>
+<./images/registrazione.png, id=196, 1912.14375pt x 1015.795pt>
 File: ./images/registrazione.png Graphic file (type png)
 
 <use ./images/registrazione.png>
 Package pdftex.def Info: ./images/registrazione.png used on input line 8.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 
-<./images/formregistrazione.png, id=165, 570.13pt x 628.3475pt>
+<./images/formregistrazione.png, id=197, 570.13pt x 628.3475pt>
 File: ./images/formregistrazione.png Graphic file (type png)
 
 <use ./images/formregistrazione.png>
@@ -1067,14 +1067,14 @@ Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10 <./images/formregistrazione.png>]
 (./parti/autenticazione.tex
-<./images/login.png, id=185, 1912.14375pt x 1015.795pt>
+<./images/login.png, id=217, 1912.14375pt x 1015.795pt>
 File: ./images/login.png Graphic file (type png)
 
 <use ./images/login.png>
 Package pdftex.def Info: ./images/login.png used on input line 7.
 (pdftex.def)             Requested size: 478.03477pt x 253.94812pt.
 
-<./images/formlogin.png, id=186, 541.02126pt x 618.31pt>
+<./images/formlogin.png, id=218, 541.02126pt x 618.31pt>
 File: ./images/formlogin.png Graphic file (type png)
 
 <use ./images/formlogin.png>
@@ -1085,7 +1085,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [11 <./images/login.png>]
-<./images/logout.png, id=197, 1344.02126pt x 638.385pt>
+<./images/logout.png, id=229, 1344.02126pt x 638.385pt>
 File: ./images/logout.png Graphic file (type png)
 
 <use ./images/logout.png>
@@ -1096,7 +1096,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12 <./images/formlogin.png>]
-<./images/profilo.png, id=207, 1344.02126pt x 638.385pt>
+<./images/profilo.png, id=239, 1344.02126pt x 638.385pt>
 File: ./images/profilo.png Graphic file (type png)
 
 <use ./images/profilo.png>
@@ -1107,7 +1107,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13 <./images/logout.png> <./images/profilo.png>]
-<./images/cambiopassword.png, id=220, 1912.14375pt x 1015.795pt>
+<./images/cambiopassword.png, id=252, 1912.14375pt x 1015.795pt>
 File: ./images/cambiopassword.png Graphic file (type png)
 
 <use ./images/cambiopassword.png>
@@ -1119,14 +1119,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14 <./images/cambiopassword.png>] (./parti/home.tex
-<./images/creanuovapres.png, id=232, 1344.02126pt x 638.385pt>
+<./images/creanuovapres.png, id=264, 1344.02126pt x 638.385pt>
 File: ./images/creanuovapres.png Graphic file (type png)
 
 <use ./images/creanuovapres.png>
 Package pdftex.def Info: ./images/creanuovapres.png used on input line 8.
 (pdftex.def)             Requested size: 470.41449pt x 223.43808pt.
 
-<./images/eliminapres.png, id=233, 1344.02126pt x 638.385pt>
+<./images/eliminapres.png, id=265, 1344.02126pt x 638.385pt>
 File: ./images/eliminapres.png Graphic file (type png)
 
 <use ./images/eliminapres.png>
@@ -1136,7 +1136,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 24.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15 <./images/creanuovapres.png>] <./images/rinominapresentazione.png, id=245,
+ [15 <./images/creanuovapres.png>] <./images/rinominapresentazione.png, id=277,
  1371.1225pt x 770.88pt>
 File: ./images/rinominapresentazione.png Graphic file (type png)
 
@@ -1148,7 +1148,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 38.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <./images/eliminapres.png>] <./images/goeditor.png, id=257, 1354.05875pt x
+ [16 <./images/eliminapres.png>] <./images/goeditor.png, id=290, 1354.05875pt x
  665.48625pt>
 File: ./images/goeditor.png Graphic file (type png)
 
@@ -1156,7 +1156,7 @@ File: ./images/goeditor.png Graphic file (type png)
 Package pdftex.def Info: ./images/goeditor.png used on input line 44.
 (pdftex.def)             Requested size: 473.92766pt x 232.92368pt.
 
-<./images/goesecuzione.png, id=258, 1354.05875pt x 665.48625pt>
+<./images/goesecuzione.png, id=291, 1354.05875pt x 665.48625pt>
 File: ./images/goesecuzione.png Graphic file (type png)
 
 <use ./images/goesecuzione.png>
@@ -1172,14 +1172,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [18 <./images/goesecuzione.png>] (./parti/editor.tex
-<./images/editor.png, id=280, 1354.05875pt x 665.48625pt>
+<./images/editor.png, id=312, 1354.05875pt x 665.48625pt>
 File: ./images/editor.png Graphic file (type png)
 
 <use ./images/editor.png>
 Package pdftex.def Info: ./images/editor.png used on input line 5.
 (pdftex.def)             Requested size: 473.92766pt x 232.92368pt.
 
-<./images/inserimentoframe.png, id=281, 1927.2pt x 1084.05pt>
+<./images/inserimentoframe.png, id=313, 1927.2pt x 1084.05pt>
 File: ./images/inserimentoframe.png Graphic file (type png)
 
 <use ./images/inserimentoframe.png>
@@ -1195,7 +1195,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [19 <./images/editor.png>]
-<./images/inserimentotesto.png, id=290, 1912.14375pt x 1005.7575pt>
+<./images/inserimentotesto.png, id=322, 1912.14375pt x 1005.7575pt>
 File: ./images/inserimentotesto.png Graphic file (type png)
 
 <use ./images/inserimentotesto.png>
@@ -1205,7 +1205,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20 <./images/inserimentoframe.png>] <./images/coloretesto.png, id=299, 1371.1
+ [20 <./images/inserimentoframe.png>] <./images/coloretesto.png, id=331, 1371.1
 225pt x 770.88pt>
 File: ./images/coloretesto.png Graphic file (type png)
 
@@ -1216,109 +1216,164 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 54.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21 <./images/inserimentotesto.png>] <./images/dimensionetesto.png, id=307, 13
-69.115pt x 568.1225pt>
+ [21 <./images/inserimentotesto.png>] <./images/dimensionetesto.png, id=340, 19
+27.2pt x 1084.05pt>
 File: ./images/dimensionetesto.png Graphic file (type png)
 
 <use ./images/dimensionetesto.png>
-Package pdftex.def Info: ./images/dimensionetesto.png used on input line 58.
-(pdftex.def)             Requested size: 479.19743pt x 198.84584pt.
+Package pdftex.def Info: ./images/dimensionetesto.png used on input line 57.
+(pdftex.def)             Requested size: 674.53012pt x 379.42319pt.
 
-Runaway argument?
-scale=0.35{\imgs {fonttesto}.png} \label {fonttesto} \caption {Modifi\ETC.
-! Paragraph ended before \Gin@ii was complete.
-<to be read again> 
-                   \par 
-l.79 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+Overfull \hbox (190.83325pt too wide) in paragraph at lines 57--59
+ [][] 
+ []
 
-<./images/inserimentomultimediale.png, id=308, 1912.14375pt x 1005.7575pt>
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 61.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [22 <./images/coloretesto.png>]
+<./images/fonttesto.png, id=349, 1927.2pt x 1084.05pt>
+File: ./images/fonttesto.png Graphic file (type png)
+
+<use ./images/fonttesto.png>
+Package pdftex.def Info: ./images/fonttesto.png used on input line 64.
+(pdftex.def)             Requested size: 674.53012pt x 379.42319pt.
+
+Overfull \hbox (190.83325pt too wide) in paragraph at lines 64--66
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 68.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [23 <./images/dimensionetesto.png>]
+<./images/ruotatesto.png, id=358, 1927.2pt x 1084.05pt>
+File: ./images/ruotatesto.png Graphic file (type png)
+
+<use ./images/ruotatesto.png>
+Package pdftex.def Info: ./images/ruotatesto.png used on input line 71.
+(pdftex.def)             Requested size: 674.53012pt x 379.42319pt.
+
+Overfull \hbox (190.83325pt too wide) in paragraph at lines 71--73
+ [][] 
+ []
+
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 75.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24 <./images/fonttesto.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 76.
+
+<./images/inserimentomultimediale.png, id=368, 1912.14375pt x 1005.7575pt>
 File: ./images/inserimentomultimediale.png Graphic file (type png)
 
 <use ./images/inserimentomultimediale.png>
 Package pdftex.def Info: ./images/inserimentomultimediale.png used on input lin
-e 82.
+e 85.
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
- |[]\T1/cmr/bx/n/14.4 Gestione sfon-do|
- []
-
-<./images/gestionesfondo.png, id=309, 1912.14375pt x 1005.7575pt>
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 89.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [25 <./images/ruotatesto.png>]
+<./images/gestionesfondo.png, id=378, 1912.14375pt x 1005.7575pt>
 File: ./images/gestionesfondo.png Graphic file (type png)
 
 <use ./images/gestionesfondo.png>
-Package pdftex.def Info: ./images/gestionesfondo.png used on input line 95.
+Package pdftex.def Info: ./images/gestionesfondo.png used on input line 98.
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
- |[]\T1/cmr/bx/n/14.4 Impostare Per-cor-so prin-ci-pa-le pre-sen-ta-zio-ne|
- []
-
-<./images/framedainserire.png, id=310, 1354.05875pt x 665.48625pt>
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 102.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [26 <./images/inserimentomultimediale.png>]
+<./images/framedainserire.png, id=387, 1354.05875pt x 665.48625pt>
 File: ./images/framedainserire.png Graphic file (type png)
 
 <use ./images/framedainserire.png>
-Package pdftex.def Info: ./images/framedainserire.png used on input line 105.
+Package pdftex.def Info: ./images/framedainserire.png used on input line 108.
 (pdftex.def)             Requested size: 473.92766pt x 232.92368pt.
 
-<./images/frameselezionato.png, id=311, 1354.05875pt x 665.48625pt>
+<./images/frameselezionato.png, id=388, 1354.05875pt x 665.48625pt>
 File: ./images/frameselezionato.png Graphic file (type png)
 
 <use ./images/frameselezionato.png>
-Package pdftex.def Info: ./images/frameselezionato.png used on input line 111.
+Package pdftex.def Info: ./images/frameselezionato.png used on input line 114.
 (pdftex.def)             Requested size: 473.92766pt x 232.92368pt.
-
-<./images/impostarepercorso.png, id=312, 1912.14375pt x 1005.7575pt>
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 118.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [27 <./images/gestionesfondo.png> <./images/framedainserire.png>]
+<./images/impostarepercorso.png, id=398, 1912.14375pt x 1005.7575pt>
 File: ./images/impostarepercorso.png Graphic file (type png)
 
 <use ./images/impostarepercorso.png>
-Package pdftex.def Info: ./images/impostarepercorso.png used on input line 119.
+Package pdftex.def Info: ./images/impostarepercorso.png used on input line 122.
 
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
 
-<./images/frameinseritopercorsoprincipale.png, id=313, 1901.1025pt x 983.675pt>
+<./images/frameinseritopercorsoprincipale.png, id=399, 1901.1025pt x 983.675pt>
 File: ./images/frameinseritopercorsoprincipale.png Graphic file (type png)
 <use ./images/frameinseritopercorsoprincipale.png>
 Package pdftex.def Info: ./images/frameinseritopercorsoprincipale.png used on i
-nput line 125.
+nput line 128.
 (pdftex.def)             Requested size: 475.27446pt x 245.91815pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 132.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
- |[]\T1/cmr/bx/n/12 Visualizzazione per-cor-so|
- []
-
-<./images/pulsantemenupercorsi.png, id=314, 1901.1025pt x 983.675pt>
+[28 <./images/frameselezionato.png> <./images/impostarepercorso.png>]
+<./images/pulsantemenupercorsi.png, id=410, 1901.1025pt x 983.675pt>
 File: ./images/pulsantemenupercorsi.png Graphic file (type png)
 
 <use ./images/pulsantemenupercorsi.png>
 Package pdftex.def Info: ./images/pulsantemenupercorsi.png used on input line 1
-34.
+37.
 (pdftex.def)             Requested size: 475.27446pt x 245.91815pt.
 
-<./images/menupercorso.png, id=315, 1912.14375pt x 1005.7575pt>
+<./images/menupercorso.png, id=411, 1912.14375pt x 1005.7575pt>
 File: ./images/menupercorso.png Graphic file (type png)
 
 <use ./images/menupercorso.png>
-Package pdftex.def Info: ./images/menupercorso.png used on input line 139.
+Package pdftex.def Info: ./images/menupercorso.png used on input line 142.
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
 
-<./images/percorsoprincipale.png, id=316, 1912.14375pt x 1005.7575pt>
+<./images/percorsoprincipale.png, id=412, 1912.14375pt x 1005.7575pt>
 File: ./images/percorsoprincipale.png Graphic file (type png)
 
 <use ./images/percorsoprincipale.png>
-Package pdftex.def Info: ./images/percorsoprincipale.png used on input line 144
+Package pdftex.def Info: ./images/percorsoprincipale.png used on input line 147
 .
 (pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
-) (./parti/esecuzione.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
- |[]\T1/cmr/bx/n/17.28 Esecuzione|
- []
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 149.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [29 <./images/frameinseritopercorsoprincipale.png> <./images/pulsantemenuperco
+rsi.png>])
+File: ../../logo.jpg Graphic file (type jpg)
 
-<./images/menuesecuzione.png, id=317, 1927.2pt x 1084.05pt>
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 50.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [30 <./images/menupercorso.png> <./images/percorsoprincipale.png>] (./parti/es
+ecuzione.tex
+<./images/menuesecuzione.png, id=435, 1927.2pt x 1084.05pt>
 File: ./images/menuesecuzione.png Graphic file (type png)
 
 <use ./images/menuesecuzione.png>
@@ -1326,72 +1381,42 @@ Package pdftex.def Info: ./images/menuesecuzione.png used on input line 13.
 (pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
 ) 
 AED: lastpage setting LastPage
-
-! LaTeX Error: \begin{figure} on input line 64 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+File: ../../logo.jpg Graphic file (type jpg)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 52.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [31 <./images/menuesecuzione.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+
 (./ManualeUtente_v.2.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 52.
-
-! You can't use `\end' in internal vertical mode.
-\enddocument ...cumenthook \deadcycles \z@ \@@end 
-                                                  
-l.52 \end{document}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: \begin{figure} on input line 64 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.52 \end{document}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-)
-! Emergency stop.
-<*> ManualeUtente_v.2.0.0.tex
-                             
-*** (job aborted, no legal \end found)
-
- 
+ ) 
 Here is how much of TeX's memory you used:
- 13766 strings out of 495017
- 201816 string characters out of 6181021
- 354317 words of memory out of 5000000
- 16594 multiletter control sequences out of 15000+600000
- 15751 words of font info for 38 fonts, out of 8000000 for 9000
+ 13823 strings out of 494969
+ 202706 string characters out of 6178806
+ 353592 words of memory out of 5000000
+ 16637 multiletter control sequences out of 15000+600000
+ 17891 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,15n,60p,815b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 51i,15n,60p,815b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </hom
+e/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/petruc
+ci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
+88.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on ManualeUtente_v.2.0.0.pdf (32 pages, 1177638 bytes).
+PDF statistics:
+ 860 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+
