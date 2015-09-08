@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  8 SEP 2015 15:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  8 SEP 2015 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,23 +1085,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [11 <./images/login.png>]
-<./images/logout.png, id=221, 1356.06625pt x 667.49374pt>
+<./images/logout.png, id=221, 1344.02126pt x 638.385pt>
 File: ./images/logout.png Graphic file (type png)
 
 <use ./images/logout.png>
 Package pdftex.def Info: ./images/logout.png used on input line 30.
-(pdftex.def)             Requested size: 474.6303pt x 233.62631pt.
+(pdftex.def)             Requested size: 470.41449pt x 223.43808pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [12 <./images/formlogin.png>]
-<./images/profilo.png, id=231, 1356.06625pt x 667.49374pt>
+<./images/profilo.png, id=231, 1344.02126pt x 638.385pt>
 File: ./images/profilo.png Graphic file (type png)
 
 <use ./images/profilo.png>
 Package pdftex.def Info: ./images/profilo.png used on input line 40.
-(pdftex.def)             Requested size: 474.6303pt x 233.62631pt.
+(pdftex.def)             Requested size: 470.41449pt x 223.43808pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 47.
@@ -1119,19 +1119,19 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14 <./images/cambiopassword.png>] (./parti/home.tex
-<./images/creanuovapres.png, id=256, 1356.06625pt x 667.49374pt>
+<./images/creanuovapres.png, id=256, 1344.02126pt x 638.385pt>
 File: ./images/creanuovapres.png Graphic file (type png)
 
 <use ./images/creanuovapres.png>
 Package pdftex.def Info: ./images/creanuovapres.png used on input line 8.
-(pdftex.def)             Requested size: 474.6303pt x 233.62631pt.
+(pdftex.def)             Requested size: 470.41449pt x 223.43808pt.
 
-<./images/eliminapres.png, id=257, 1356.06625pt x 667.49374pt>
+<./images/eliminapres.png, id=257, 1344.02126pt x 638.385pt>
 File: ./images/eliminapres.png Graphic file (type png)
 
 <use ./images/eliminapres.png>
 Package pdftex.def Info: ./images/eliminapres.png used on input line 20.
-(pdftex.def)             Requested size: 474.6303pt x 233.62631pt.
+(pdftex.def)             Requested size: 470.41449pt x 223.43808pt.
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 24.
@@ -1348,7 +1348,7 @@ m-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb
 onts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
 
-Output written on ManualeUtente_v.2.0.0.pdf (28 pages, 1076144 bytes).
+Output written on ManualeUtente_v.2.0.0.pdf (28 pages, 1041118 bytes).
 PDF statistics:
  545 PDF objects out of 1000 (max. 8388607)
  446 compressed objects within 5 object streams
