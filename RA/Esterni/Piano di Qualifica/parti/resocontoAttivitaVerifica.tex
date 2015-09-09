@@ -3,10 +3,10 @@
 
 Durante questa fase sono stati prodotti solamente documenti di testo quindi sono state applicate le tecniche di analisi statica\ped{g} descritte nella sezione \S\ref{sec:tecnicheAnalisi}.\\
 Nella verifica dei documenti sono stati riscontrati soprattutto errori grammaticali e di battitura dovuti a disattenzioni durante la stesura.\\
-È stato trovato anche qualche errore più grave, come il mancato rispetto delle regole di formattazione riportate nelle \NormeDiProgetto e alcune mancanze all'interno del documento di \AnalisiDeiRequisiti.\\
+È stato trovato anche qualche errore più grave, come il mancato rispetto delle regole di formattazione riportate nelle \NormeDiProgetto\ e alcune mancanze all'interno del documento di \AnalisiDeiRequisiti.\\
 }
 \subsection{Documenti}{
-Vengono qui riportati i valori dell’indice Gulpease per ogni documento durante la fase di \textbf{Analisi}. Un documento è considerato valido soltanto se rispetta le metriche\ped{g} descritte su \S\ref{sec:metricadocumenti}.
+Vengono qui riportati i valori dell’indice Gulpease per ogni documento durante la fase di \textbf{Validazione}. Un documento è considerato valido soltanto se rispetta le metriche\ped{g} descritte su \S\ref{sec:metricadocumenti}.
 
 \begin{table}[H]
 	\centering
@@ -104,12 +104,69 @@ I Valori sia del Back-end\ped{g} che del front-end sono accettabili e rispettano
 \item Massimo: 150.10
 \end{itemize}
 \end{itemize}
-I valori sia del Back-end\ped{g} che del front-end sono accettabili e rispettano i parametri prefissati.
+I valori del Back-end sono sufficienti mentre il Front-end non arriva per poco alla sufficienza.
 \\\\
 \textbf{Copertura del codice}
 \begin{itemize}
 \item \textbf{Back-end}:93.29 \%
 \item \textbf{Front-end}:60.13 \%
+\end{itemize}
+Il front-end rientra strettamente nella sufficienza della copertura del Codice\ped{g} questo a causa della difficoltà nel testare i controller ed ottenere una copertura elevata.\\
+Il Back-end\ped{g} rientra nei parametri ottimali prefissati.
+
+\subsection{Validazione}
+
+Vengono qui riportate le misure rilevate con le metriche\ped{g} sull’analisi statica\ped{g} e dinamica del Codice\ped{g}. Per ogni Metrica\ped{g} si riportano i valore calcolati mantenendo una separazione tra back end e front-end. Per una descrizione delle metriche\ped{g} si rimanda alla sezione \S\ref{sec:metrichecodice}\\
+Come si potrà notare i valori riportati sono simili a quelli riportati nella fase precedente, questo perchè nel breve periodo che divideva la fase di codifica da quella della validazione sono state effettuate solo correzioni al codice, migliorie segnalate dal proponente\ped{g} e implementate poche funzioni\ped{g} che comunque non hanno impattato sui risultati.\\\\
+\textbf{Complessità ciclomatica}
+\begin{itemize}
+\item \textbf{Back-end}
+\begin{itemize}
+\item Medio: 1.2
+\item Massimo: 3
+\end{itemize}
+\item \textbf{Front-end}
+\begin{itemize}
+\item Medio: 2.4
+\item Massimo: 11.6
+\end{itemize}
+\end{itemize}
+I valori del Back-end\ped{g} rispettano i parametri ottimali prefissati al contrario il Front-end ha una complessità ciclomatica troppo elevata.
+\\\\
+\textbf{Halstead\ped{g} Volume}
+\begin{itemize}
+\item \textbf{Back-end}
+\begin{itemize}
+\item Medio: 53.3
+\item Massimo: 225.7
+\end{itemize}
+\item \textbf{Front-end}
+\begin{itemize}
+\item Medio: 318.6
+\item Massimo: 1299.8
+\end{itemize}
+\end{itemize}
+I Valori sia del Back-end\ped{g} che del front-end sono accettabili e rispettano i parametri prefissati.
+\\\\
+\textbf{Indice di manutenibilità}
+\begin{itemize}
+\item \textbf{Back-end}
+\begin{itemize}
+\item Medio: 102.3
+\item Massimo: 153.69
+\end{itemize}
+\item \textbf{Front-end}
+\begin{itemize}
+\item Medio: 100.4
+\item Massimo: 152.10
+\end{itemize}
+\end{itemize}
+I valori sia del Back-end\ped{g} che del front-end sono accettabili e rispettano i parametri prefissati.
+\\\\
+\textbf{Copertura del codice}
+\begin{itemize}
+\item \textbf{Back-end}:93.29 \%
+\item \textbf{Front-end}:62.89 \%
 \end{itemize}
 Il front-end rientra strettamente nella sufficienza della copertura del Codice\ped{g} questo a causa della difficoltà nel testare i controller ed ottenere una copertura elevata.\\
 Il Back-end\ped{g} rientra nei parametri ottimali prefissati.
