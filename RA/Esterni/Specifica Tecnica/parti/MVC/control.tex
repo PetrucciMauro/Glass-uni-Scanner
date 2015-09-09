@@ -54,6 +54,22 @@
 		\end{itemize}
 		\textbf{\interfacce}: la view invia a ExecutionController una richiesta di reindirizzamento ad una pagina oppure per ricavare la presentazione corrente. ExecutionController richiama il metodo appropriato di toPages, se la richiesta è un reindirizzamento, oppure di SharedData.
 	}
+	\subsubsection{Controller::\-HomeOfflineController}{
+					\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali provenienti della pagina View::\-Pages::\-HomeOffline.\\	
+					\textbf{\relaz}:
+						\begin{itemize}
+							\item Controller::HomeController <- HomeController invoca i metodi necessari al salvataggio in locale di presentazioni ed eliminazione di presentazioni già salvate in locale.
+						\end{itemize}
+						\textbf{\interfacce}: HomeController invia a HomeOfflineController richieste di salvare una presentazione in locale o di eliminarne una di quelle già presenti. 
+						HomeOfflineController invoca HomeOfflineController per ricavare le presentazioni salvate in locale.
+						HomeController richiama il metodo appropriato di mongoRelation per soddisfarla.
+					}
+		
+		\subsubsection{Controller::\-OfflineExecutionController}{
+				\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali provenienti della pagina View::\-Pages::\-ExecutionOffline.\\	
+				\textbf{\interfacce}: la view invia a ExecutionController richiesta di generare la presentazione richesta.
+			}
+		}
 	
 	\subsubsection{Controller::\-HeaderController}{
 		\textbf{\tipo}: lo scopo di questa classe è di gestire i segnali e le chiamate provenienti dalla pagina View::\-Pages::\-Index.\\	

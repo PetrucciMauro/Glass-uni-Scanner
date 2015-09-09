@@ -1,77 +1,474 @@
 \section{Tracciamento}
-\subsection{tracciamento metodi-test}
-\begin{center}
-\bgroup
-\def\arraystretch{1.5}
-\begin{longtable}{ | p{12cm} | p{2cm} | }
-\hline
-\cellcolor[gray]{0.9} \textbf{Classe e Metodo} & \cellcolor[gray]{0.9} \textbf{Test}
- \\ \hline
-serverRelation::Loader::addInsert(id:string) & TU52 \\ \hline
-serverRelation::Loader::addDelete(type:string,id:string) & TU52 \\ \hline
-serverRelation::Loader::addUpdate(id:string) & TU52 \\ \hline
-serverRelation::Loader::addpahts() & TU52 \\ \hline
-serverRelation::Loader::update() & TU52 \\ \hline
-serverRelation::MongoRelation::ServerRelation::Loader::addInsert() & TU51 \\ \hline
-serverRelation::MongoRelation::deleteElement(presentation:strin,type:string,id:string) & TU50 \\ \hline
-serverRelation::MongoRelation::updateElement(presentation:string,onj:object,callback:function) & TU49 \\ \hline
-serverRelation::MongoRelation::newElement(presentation:string,onj:object,callback:function) & TU48 \\ \hline
-serverRelation::MongoRelation::renamePresentation(old:string,new:string) & TU47 \\ \hline
-serverRelation::MongoRelation::deletePresentation(name:string) & TU46 \\ \hline
-serverRelation::MongoRelation::getPresentation(name:string) & TU45 \\ \hline
-serverRelation::MongoRelation::newCopyPresentation(name:string) & TU44 \\ \hline
-serverRelation::MongoRelation::newPresentation(name:string) & TU43 \\ \hline
-serverRelation::MongoRelation::getPresentationsMeta() & TU42 \\ \hline
-serverRelation::FileServerRelation::renameVideo(old:string,new:string) & TU41 \\ \hline
-serverRelation::FileServerRelation::renameAudio(old:string,new:string) & TU40 \\ \hline
-serverRelation::FileServerRelation::renameImage(old:string,new:string) & TU39 \\ \hline
-serverRelation::FileServerRelation::deleteVideo(img:string) & TU38 \\ \hline
-serverRelation::FileServerRelation::deleteAudio(img:string) & TU37 \\ \hline
-serverRelation::FileServerRelationdeleteImage(img:string) & TU36 \\ \hline
-serverRelation::FileServerRelation::getImageDimension(img:string) & TU35 \\ \hline
-serverRelation::FileServerRelation::getMetasVideos() & TU34 \\ \hline
-serverRelation::FileServerRelation::getMetasAudios() & TU33 \\ \hline
-serverRelation::FileServerRelation::getMetasImages() & TU32 \\ \hline
-Server\ped{g}::POST private/api/files/[video]/[newname] & TU31 \\ \hline
-Server\ped{g}::POST private/api/files/[video] & TU30 \\ \hline
-Server\ped{g}::DELETE private/api/files/[video] & TU29 \\ \hline
-Server\ped{g}::GET private/api/files/video & TU28 \\ \hline
-Server\ped{g}::POST private/api/files/[audio]/[newname] & TU27 \\ \hline
-Server\ped{g}::POST private/api/files/[audio] & TU26 \\ \hline
-Server\ped{g}::DELETE private/api/files/[audio] & TU25 \\ \hline
-Server\ped{g}::GET private/api/files/audio & TU24 \\ \hline
-Server\ped{g}::GET private/api/files/sizeImage/[image] & TU23 \\ \hline
-Server\ped{g}::POST private/api/files/[image]/[newname] & TU22 \\ \hline
-Server\ped{g}::POST private/api/files/[image] & TU21 \\ \hline
-Server\ped{g}::DELETE private/api/files/[image] & TU20 \\ \hline
-Server\ped{g}::GET private/api/files/image & TU19 \\ \hline
-Server\ped{g}::PUT private/api/presentations/[presname]/element & TU18 \\ \hline
-Server\ped{g}::PUT private/api/presentations/[presname]/paths & TU17 \\ \hline
-Server\ped{g}::POST private/api/presentations/[presname]/element & TU16 \\ \hline
-Server\ped{g}::DELETE private/api/presentations/[presname]/delete/[type]/[id] & TU15 \\ \hline
-Server\ped{g}::PUT private/api/presentations/[oldname]/rename/[new] & TU14 \\ \hline
-Server\ped{g}::DELETE private/api/presentations/[presentation] & TU13 \\ \hline
-Server\ped{g}::GET private/api/presentations/[presentation] & TU12 \\ \hline
-Server\ped{g}::POST private/api/presentations/new/[oldpres]/[newpres] & TU11 \\ \hline
-Server\ped{g}::POST private/api/presentations/new/[newpres] & TU10 \\ \hline
-Server\ped{g}::GET private/api/presentations & TU9 \\ \hline
-Server\ped{g}::POST Account\ped{g}/changepassword & TU8, TU7, TU6 \\ \hline
-Server\ped{g}::GET Account\ped{g}/authenticate & TU5, TU4, TU3 \\ \hline
-POST Account\ped{g}/register & TU2, TU1 \\ \hline
-Premi::Services::Main & TU 53 \\ \hline 
-Premi::Services::Upload & TU 53 \\ \hline
-Premi::Services::Utils  & TU 53 \\ \hline
-Premi::Services::SharedData & TU 53 \\ \hline
-Premi::Services::ToPages & TU 53 \\ \hline
-Premi::HeaderController & TU 54 \\ \hline
-Premi::AccessController & TU 55 \\ \hline
-Premi::HomeController & TU 56\\ \hline
-Premi::ProfileController & TU 57 \\ \hline
-Premi::ExecutionController & TU 58 \\ \hline
-Premi::EditController & TU 59 \\ \hline
+\subsection{tracciamento metodi-test}{
+	\begin{center}
+	\bgroup
+	\def\arraystretch{1.5}
+	\begin{longtable} [c]{| p{12cm} | p{2cm} |}
+	\caption{Tracciamento Metodi-Test \label{tab:traccMeTs}}\\ \hline\textbf{Metodo} & \textbf{Test} \\
+	\hline \endfirsthead \hline 
+	\cellcolor[gray]{0.9} \textbf{Classe e Metodo} & \cellcolor[gray]{0.9} \textbf{Test} \\
+	\hline \endhead \hline \endfoot \hline \endlastfoot
+	serverRelation::Loader::addInsert(id:string) & TU52 \\ \hline
+	serverRelation::Loader::addDelete(type:string,id:string) & TU52 \\ \hline
+	serverRelation::Loader::addUpdate(id:string) & TU52 \\ \hline
+	serverRelation::Loader::addpahts() & TU52 \\ \hline
+	serverRelation::Loader::update() & TU52 \\ \hline
+	serverRelation::MongoRelation::ServerRelation::Loader::addInsert() & TU51 \\ \hline
+	serverRelation::MongoRelation::deleteElement(presentation:strin,type:string,id:string) & TU50 \\ \hline
+	serverRelation::MongoRelation::updateElement(presentation:string,onj:object,callback:function) & TU49 \\ \hline
+	serverRelation::MongoRelation::newElement(presentation:string,onj:object,callback:function) & TU48 \\ \hline
+	serverRelation::MongoRelation::renamePresentation(old:string,new:string) & TU47 \\ \hline
+	serverRelation::MongoRelation::deletePresentation(name:string) & TU46 \\ \hline
+	serverRelation::MongoRelation::getPresentation(name:string) & TU45 \\ \hline
+	serverRelation::MongoRelation::newCopyPresentation(name:string) & TU44 \\ \hline
+	serverRelation::MongoRelation::newPresentation(name:string) & TU43 \\ \hline
+	serverRelation::MongoRelation::getPresentationsMeta() & TU42 \\ \hline
+	serverRelation::FileServerRelation::renameVideo(old:string,new:string) & TU41 \\ \hline
+	serverRelation::FileServerRelation::renameAudio(old:string,new:string) & TU40 \\ \hline
+	serverRelation::FileServerRelation::renameImage(old:string,new:string) & TU39 \\ \hline
+	serverRelation::FileServerRelation::deleteVideo(img:string) & TU38 \\ \hline
+	serverRelation::FileServerRelation::deleteAudio(img:string) & TU37 \\ \hline
+	serverRelation::FileServerRelationdeleteImage(img:string) & TU36 \\ \hline
+	serverRelation::FileServerRelation::getImageDimension(img:string) & TU35 \\ \hline
+	serverRelation::FileServerRelation::getMetasVideos() & TU34 \\ \hline
+	serverRelation::FileServerRelation::getMetasAudios() & TU33 \\ \hline
+	serverRelation::FileServerRelation::getMetasImages() & TU32 \\ \hline
+	Server\ped{g}::POST private/api/files/[video]/[newname] & TU31 \\ \hline
+	Server\ped{g}::POST private/api/files/[video] & TU30 \\ \hline
+	Server\ped{g}::DELETE private/api/files/[video] & TU29 \\ \hline
+	Server\ped{g}::GET private/api/files/video & TU28 \\ \hline
+	Server\ped{g}::POST private/api/files/[audio]/[newname] & TU27 \\ \hline
+	Server\ped{g}::POST private/api/files/[audio] & TU26 \\ \hline
+	Server\ped{g}::DELETE private/api/files/[audio] & TU25 \\ \hline
+	Server\ped{g}::GET private/api/files/audio & TU24 \\ \hline
+	Server\ped{g}::GET private/api/files/sizeImage/[image] & TU23 \\ \hline
+	Server\ped{g}::POST private/api/files/[image]/[newname] & TU22 \\ \hline
+	Server\ped{g}::POST private/api/files/[image] & TU21 \\ \hline
+	Server\ped{g}::DELETE private/api/files/[image] & TU20 \\ \hline
+	Server\ped{g}::GET private/api/files/image & TU19 \\ \hline
+	Server\ped{g}::PUT private/api/presentations/[presname]/element & TU18 \\ \hline
+	Server\ped{g}::PUT private/api/presentations/[presname]/paths & TU17 \\ \hline
+	Server\ped{g}::POST private/api/presentations/[presname]/element & TU16 \\ \hline
+	Server\ped{g}::DELETE private/api/presentations/[presname]/delete/[type]/[id] & TU15 \\ \hline
+	Server\ped{g}::PUT private/api/presentations/[oldname]/rename/[new] & TU14 \\ \hline
+	Server\ped{g}::DELETE private/api/presentations/[presentation] & TU13 \\ \hline
+	Server\ped{g}::GET private/api/presentations/[presentation] & TU12 \\ \hline
+	Server\ped{g}::POST private/api/presentations/new/[oldpres]/[newpres] & TU11 \\ \hline
+	Server\ped{g}::POST private/api/presentations/new/[newpres] & TU10 \\ \hline
+	Server\ped{g}::GET private/api/presentations & TU9 \\ \hline
+	Server\ped{g}::POST Account\ped{g}/changepassword & TU8, TU7, TU6 \\ \hline
+	Server\ped{g}::GET Account\ped{g}/authenticate & TU5, TU4, TU3 \\ \hline
+	POST Account\ped{g}/register & TU2, TU1 \\ \hline
+	Premi::Services::Main & TU 53 \\ \hline 
+	Premi::Services::Upload & TU 53 \\ \hline
+	Premi::Services::Utils  & TU 53 \\ \hline
+	Premi::Services::SharedData & TU 53 \\ \hline
+	Premi::Services::ToPages & TU 53 \\ \hline
+	Premi::HeaderController & TU 54 \\ \hline
+	Premi::AccessController & TU 55 \\ \hline
+	Premi::HomeController & TU 56\\ \hline
+	Premi::ProfileController & TU 57 \\ \hline
+	Premi::ExecutionController & TU 58 \\ \hline
+	Premi::EditController & TU 59 \\ \hline
+	
+	
+	\caption{Metodi-Test Controller}
+	\end{longtable}
+	\egroup
+	\end{center}
+}
 
-
-\caption{Metodi-Test Controller}
-\end{longtable}
-\egroup
+\subsection{tracciamento requisiti-classi}{
+	\begin{center}
+	\renewcommand*{\arraystretch}{1.4} 
+	\begin{longtable} [c]{| p{2cm} | p{13cm} |} 
+	\caption{Tracciamento Requisiti-Componenti \label{tab:traccReqCls}}\\ \hline\textbf{Requisito} & \textbf{Componenti} \\ 
+	\hline \endfirsthead \hline 
+	\textbf{Requisito} & \textbf{Componenti} \\ 
+	\hline \endhead \hline \endfoot \hline \endlastfoot 
+	RF 1 & Index, Registration, Controller::\-HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 1.1 & Index, Registration, HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 1.2 & Index, -Registration, HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 3 & Index, Authentication, HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 3.1 & Index, Authentication, HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 3.2 & Index, Authentication, HeaderController, AccessController, Main\\ 
+	 \hline 
+	RF 4 & mongoRelation\\ 
+	 \hline 
+	RF 7 & Home, Edit, Loader, HomeController, SharedData\\ 
+	 \hline 
+	RF 7.1 & Edit, Inserter, ConcreteFrameInsertCommand, Frame, Loader, EditController, mongoRelation\\ 
+	 \hline 
+	RF 7.1.1 & Edit, Inserter, ConcreteFrameInsertCommand, EditController\\ 
+	 \hline 
+	RF 7.4 & Edit, Loader, EditController\\ 
+	 \hline 
+	RF 7.7 & Edit, Loader, EditController\\ 
+	 \hline 
+	RF 7.7.1 & Edit, Inserter, ConcreteTextInsertCommand, Text, Loader, EditController\\ 
+	 \hline 
+	RF 7.7.4 & Edit, ConcreteEditColorCommand, ConcreteEditFontCommand, Loader, Editor, EditController\\ 
+	 \hline 
+	RF 7.7.7 & Edit, Inserter, ConcreteImageInsertCommand, Image, Loader, EditController, Upload, mongoRelation\\ 
+	 \hline 
+	RF 7.7.10 & Edit, ConcreteEditSizeCommand, Loader, Editor, EditController\\ 
+	 \hline 
+	RF 7.7.13 & Edit, Inserter, ConcreteVideoInsertCommand, Image, Loader, EditController, Upload, mongoRelation, Background, ConcreteAudioInsertCommand\\ 
+	 \hline 
+	RF 7.7.16 & Edit, ConcreteEditSizeCommand, Loader, Editor, EditController\\ 
+	 \hline 
+	RF 7.7.19 & Edit, ConcreteEditPositionCommand, Loader, Editor, EditController\\ 
+	 \hline 
+	RF 7.7.25 & Edit, Loader, EditController, concreteNewChoicePathCommand, ConcreteAddToChoicePathCommand\\ 
+	 \hline 
+	RF 7.7.28 & Edit, Loader, EditController, ConcreteRemoveFromChoicePathCommand\\ 
+	 \hline 
+	RF 7.7.31 & Edit, EditController\\ 
+	 \hline 
+	RF 7.7.34 & Edit, Loader, EditController\\ 
+	 \hline 
+	RF 7.7.37 & Edit, EditController\\ 
+	 \hline 
+	RF 7.7.40 & Edit, EditController, ConcreteEditColorCommand, Editor\\ 
+	 \hline 
+	RF 7.7.43 & Edit, EditController, ConcreteEditColorCommand, Editor, ConcreteEditBackgroundCommand\\ 
+	 \hline 
+	RF 7.7.46 & ConcreteEditRotationCommand, Loader, Editor\\ 
+	 \hline 
+	RF 7.10 & Edit, Remover, ConcreteFrameRemoveCommand, Loader, EditController\\ 
+	 \hline 
+	RF 7.13 & Edit, Inserter, ConcreteBackgroundInsertCommand, Loader, EditController, Upload, mongoRelation\\ 
+	 \hline 
+	RF 7.16 & Edit, ConcreteEditColorCommand, Loader, Editor, EditController, mongoRelation\\ 
+	 \hline 
+	RF 7.19 & Edit, Loader, EditController\\ 
+	 \hline 
+	RF 7.19.1 & Edit, Loader, EditController, mongoRelation\\ 
+	 \hline 
+	RF 7.19.4 & Edit, EditController, mongoRelation, ConcreteAddToMainPathCommand\\ 
+	 \hline 
+	RF 7.19.10 & Edit, EditController, mongoRelation\\ 
+	 \hline 
+	RF 7.19.13 &Edit, EditController, mongoRelation, ConcreteEditContentCommand, concreteRemoveFromMainPathCommand\\ 
+	 \hline 
+	RF 7.22 & ConcreteEditBookmarkCommand\\ 
+	 \hline 
+	RF 7.25 & ConcreteEditBookmarkCommand\\ 
+	 \hline 
+	RF 7.28 & EditController\\ 
+	 \hline 
+	RF 7.31 & EditController\\ 
+	 \hline 
+	RF 7.34 & EditController\\ 
+	 \hline 
+	RF 7.37 & Inserter, ConcreteSVGInsertCommand, Loader, mongoRelation\\ 
+	 \hline 
+	RF 7.40 & Model::\-serverRelation::\-Loader\\ 
+	 \hline 
+	RF 7.40.1 & Model::\-serverRelation::\-Loader\\ 
+	 \hline 
+	RF 7.40.4 & ConcreteEditColorCommand, Loader, Editor\\ 
+	 \hline 
+	RF 7.43 & InsertEditRemove::\-Remover, ConcreteTextRemoveCommand, ConcreteImageRemoveCommand, ConcreteSVGRemoveCommand, ConcreteVideoRemoveCommand, Loader, ConcreteAudioRemoveCommand, concreteDeleteChoicePathCommand\\ 
+	 \hline 
+	RF 7.46 & ConcreteEditRotationCommand, Loader, Editor\\ 
+	 \hline 
+	RF 10 & Home, HomeController\\ 
+	 \hline 
+	RF 10.1 & \\ 
+	 \hline 
+	RF 10.4 & \\ 
+	 \hline 
+	RF 10.5 & ConcreteEditBookmarkCommand\\ 
+	 \hline 
+	RF 10.8 & ConcreteEditBookmarkCommand\\ 
+	 \hline 
+	RF 12 & fileServerRelation\\ 
+	 \hline 
+	RF 13 & Profile, ProfileController\\ 
+	 \hline 
+	RF 16 & Home, HomeController, fileServerRelation\\ 
+	 \hline 
+	RF 17 & Home, HomeController, fileServerRelation\\ 
+	 \hline 
+	RF 19 & Home, HomeController, mongoRelation\\ 
+	 \hline 
+	RF 25 & \\ 
+	 \hline 
+	RF 31 & \\ 
+	 \hline 
+	RF 34 & Home, HomeController, mongoRelation\\ 
+	 \hline 
+	RF 35 & mongoRelation\\ 
+	 \hline 
+	RF 36 & \\ 
+	 \hline 
+	RF 37 & fileServerRelation\\ 
+	 \hline 
+	RF 43 & Profile, Authentication, ProfileController\\ 
+	 \hline 
+	RF 46 & \\ 
+	 \hline 
+	RF 49 & Home, HomeController\\ 
+	 \hline 
+	RF 52 & HomeOffline\\ 
+	 \hline 
+	RF 55 & Invoker\\ 
+	 \hline 
+	RF 58 & Invoker\\ 
+	 \hline 
+	RF 61 & HomeOffline, Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.1 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.4 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.7 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.10 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.13 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.16 & Audio,Video, Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.16.1 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.16.4 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.16.7 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.1.16.10 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.1 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.4 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.7 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.10 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.10.1 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.10.4 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.10.7 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.4.10.10 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.7 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 61.10 & Execution, ExecutionController\\ 
+	 \hline 
+	RF 64 & Home, Authentication, HomeController\\ 
+	 \hline 
+	RF 67 & \\ 
+	 \hline 
+	RF 67.1 & \\ 
+	 \hline 
+	RF 67.4 & \\ 
+	 \hline 
+	RF 67.7 & \\ 
+	 \hline 
+	RF 67.10 & \\ 
+	 \hline 
+	RF 67.13 & \\ 
+	 \hline 
+	RF 70 & \\ 
+	 \hline 
+	RF 70.1 & \\ 
+	 \hline 
+	RF 70.4 & \\ 
+	 \hline 
+	RF 70.5 & \\ 
+	 \hline 
+	RF 70.10 & \\ 
+	 \hline 
+	RF 70.10.1 & \\ 
+	 \hline 
+	RF 70.10.1.1 & \\ 
+	 \hline 
+	RF 70.10.1.4 & \\ 
+	 \hline 
+	RF 70.10.1.4.1 & \\ 
+	 \hline 
+	RF 70.10.1.4.4 & \\ 
+	 \hline 
+	RF 70.10.1.4.7 & \\ 
+	 \hline 
+	RF 70.10.1.4.10 & \\ 
+	 \hline 
+	RF 70.10.1.4.13 & \\ 
+	 \hline 
+	RF 70.10.1.7 & \\ 
+	 \hline 
+	RF 70.10.4 & \\ 
+	 \hline 
+	RF 70.10.7 & \\ 
+	 \hline 
+	RF 70.10.10 & \\ 
+	 \hline 
+	RF 70.10.13 & \\ 
+	 \hline 
+	RF 70.10.16 & \\ 
+	 \hline 
+	RF 70.10.19 & \\ 
+	 \hline 
+	RF 70.13 & \\ 
+	 \hline 
+	RF 70.19 & \\ 
+	 \hline 
+	RF 73 & \\ 
+	 \hline 
+	\end{longtable}
 \end{center}
+}
+
+
+
+\subsection{tracciamento classi-requisiti}{
+\begin{center}
+\renewcommand*{\arraystretch}{1.4} 
+\begin{longtable} [c]{| p{7cm} | p{6cm} |} 
+\caption{Tracciamento classi-requisiti \label{tab:traccClRq}}\\ \hline\textbf{Classe} & \textbf {Requisiti} \\ 
+\hline \endfirsthead \hline 
+\textbf{Nome Classe} & \textbf{Requisito} \\ 
+\hline \endhead \hline \endfoot \hline \endlastfoot 
+AccessController & RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2\\ 
+ \hline 
+EditController & RF 7, RF 7.1, RF 7.1.1, RF 7.4, RF 7.7, RF 7.7.1, RF 7.7.4, RF 7.7.7, RF 7.7.10, RF 7.7.13, RF 7.7.19, RF 7.7.25, RF 7.7.16, RF 7.7.28, RF 7.7.31, RF 7.7.34, RF 7.7.37, RF 7.7.40, RF 7.7.43, RF 7.10, RF 7.16, RF 7.13, RF 7.19, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 7.28, RF 7.31, RF 7.34\\ 
+ \hline 
+ExecutionController & RF 61, RF 61.1, RF 61.1.1, RF 61.1.4, RF 61.1.7, RF 61.1.10, RF 61.1.13, RF 61.1.16, RF 61.1.16.1, RF 61.1.16.4, RF 61.1.16.7, RF 61.1.16.10, RF 61.4, RF 61.4.1, RF 61.4.4, RF 61.4.7, RF 61.4.10, RF 61.7, RF 61.10, RF 61.4.10.1, RF 61.4.10.4, RF 61.4.10.7, RF 61.4.10.10\\ 
+ \hline 
+HeaderController & RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2\\ 
+ \hline 
+HomeController & RF 10, RF 49, RF 3.2, RF 7, RF 64, RF 19, RF 34\\ 
+ \hline 
+ProfileController & RF 13, RF 43, RF 16, RF 17\\ 
+ \hline 
+Main & RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2\\ 
+ \hline 
+SharedData & RF 7\\ 
+ \hline 
+toPages & \\ 
+ \hline 
+Upload & RF 7.7.7, RF 7.7.13, RF 7.13\\ 
+ \hline 
+Utils & \\
+ \hline 
+Authentication & RF 3, RF 43, RF 3.1, RF 3.2, RF 64\\ 
+ \hline 
+Registration & RF 1, RF 1.1, RF 1.2\\ 
+ \hline 
+fileServerRelation & RF 16, RF 12, RF 17, RF 37\\ 
+ \hline 
+Loader & RF 7, RF 7.1, RF 7.4, RF 7.7, RF 7.7.1, RF 7.7.4, RF 7.7.7, RF 7.7.10, RF 7.7.13, RF 7.7.19, RF 7.7.25, RF 7.7.16, RF 7.7.28, RF 7.7.34, RF 7.10, RF 7.16, RF 7.13, RF 7.19, RF 7.19.1, RF 7.37, RF 7.40, RF 7.40.1, RF 7.40.4, RF 7.43, RF 7.46, RF 7.7.46\\ 
+ \hline 
+mongoRelation & RF 4, RF 7.1, RF 7.7.7, RF 7.7.13, RF 7.16, RF 7.13, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 19, RF 34, RF 7.37, RF 35\\
+ \hline 
+ConcreteAddToChoicePathCommand & RF 7.7.25\\ 
+ \hline 
+ConcreteAddToMainPathCommand & RF 7.19.4\\ 
+ \hline 
+ConcreteAudioInsertCommand & RF 7.7.13\\ 
+ \hline 
+ConcreteAudioRemoveCommand & RF 7.43\\ 
+ \hline 
+ConcreteBackgroundInsertCommand & RF 7.13\\ 
+ \hline 
+concreteDeleteChoicePathCommand & RF 7.43\\ 
+ \hline 
+ConcreteEditBackgroundCommand & RF 7.7.43\\ 
+ \hline 
+ConcreteEditBookmarkCommand & RF 7.22, RF 7.25, RF 10.5, RF 10.8\\ 
+ \hline 
+ConcreteEditColorCommand & RF 7.7.4, RF 7.7.40, RF 7.16, RF 7.40.4\\ 
+ \hline 
+ConcreteEditContentCommand & RF 7.19.13\\ 
+ \hline 
+ConcreteEditFontCommand & RF 7.7.4\\ 
+ \hline 
+ConcreteEditPositionCommand & RF 7.7.19\\ 
+ \hline 
+ConcreteEditRotationCommand & RF 7.46, RF 7.7.46\\ 
+ \hline 
+ConcreteEditSizeCommand & RF 7.7.10, RF 7.7.16\\ 
+ \hline 
+ConcreteFrameInsertCommand & RF 7.1, RF 7.1.1\\ 
+ \hline 
+ConcreteFrameRemoveCommand & RF 7.10\\ 
+ \hline 
+ConcreteImageInsertCommand & RF 7.7.7\\ 
+ \hline 
+ConcreteImageRemoveCommand & RF 7.43\\ 
+ \hline 
+concreteNewChoicePathCommand & RF 7.7.25\\ 
+ \hline 
+ConcretePortaAvantiCommand &  RF 7.4 \\ 
+ \hline 
+ConcretePortaDietroCommand &  RF 7.4 \\
+ \hline 
+ConcreteRemoveFromChoicePathCommand & RF 7.7.28\\ 
+ \hline 
+concreteRemoveFromMainPathCommand & RF 7.19.13\\ 
+ \hline 
+ConcreteSVGInsertCommand & RF 7.37\\ 
+ \hline 
+ConcreteSVGRemoveCommand & RF 7.43\\ 
+ \hline 
+ConcreteTextInsertCommand & RF 7.7.1\\ 
+ \hline 
+ConcreteTextRemoveCommand & RF 7.43\\ 
+ \hline 
+ConcreteVideoInsertCommand & RF 7.7.13\\ 
+ \hline 
+ConcreteVideoRemoveCommand & RF 7.43\\ 
+ \hline 
+Invoker & RF 55, RF 58\\ 
+ \hline 
+InsertEditRemove & \\ 
+ \hline 
+Editor & RF 7.7.4, RF 7.7.10, RF 7.7.19, RF 7.7.16, RF 7.7.40, RF 7.7.43, RF 7.16, RF 7.40.4, RF 7.46, RF 7.7.46\\ 
+ \hline 
+Inserter & RF 7.1, RF 7.1.1, RF 7.7.1, RF 7.7.7, RF 7.7.13, RF 7.13, RF 7.37\\ 
+ \hline 
+Remover & RF 7.10, RF 7.43\\ 
+ \hline 
+Audio & RF 61.1.16\\ 
+ \hline 
+Background & RF 7.7.13\\ 
+ \hline 
+Frame & RF 7.1\\ 
+ \hline 
+Image & RF 7.7.7, RF 7.7.13\\ 
+ \hline 
+SVG & \\ 
+ \hline 
+Text & RF 7.7.1\\ 
+ \hline 
+Video & RF 61.1.16\\
+ \hline 
+Edit & RF 7, RF 7.1, RF 7.1.1, RF 7.4, RF 7.7, RF 7.7.1, RF 7.7.4, RF 7.7.7, RF 7.7.10, RF 7.7.13, RF 7.7.19, RF 7.7.25, RF 7.7.16, RF 7.7.28, RF 7.7.31, RF 7.7.34, RF 7.7.37, RF 7.7.40, RF 7.7.43, RF 7.10, RF 7.16, RF 7.13, RF 7.19, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 7.28, RF 7.31, RF 7.34\\ 
+ \hline 
+Execution & RF 61, RF 61.1, RF 61.1.1, RF 61.1.4, RF 61.1.7, RF 61.1.10, RF 61.1.13, RF 61.1.16, RF 61.1.16.1, RF 61.1.16.4, RF 61.1.16.7, RF 61.1.16.10, RF 61.4, RF 61.4.1, RF 61.4.4, RF 61.4.7, RF 61.4.10, RF 61.7, RF 61.10, RF 61.4.10.1, RF 61.4.10.4, RF 61.4.10.7, RF 61.4.10.10\\ 
+ \hline 
+Home & RF 10, RF 49, RF 7, RF 64, RF 19, RF 34\\ 
+ \hline 
+Index & RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2\\ 
+ \hline 
+HomeOffline & RF 52, RF 61\\ 
+ \hline 
+Profile & RF 13, RF 43, RF 16, RF 17\\ 
+ \hline 
+\end{longtable}
+
+\end{center}
+}

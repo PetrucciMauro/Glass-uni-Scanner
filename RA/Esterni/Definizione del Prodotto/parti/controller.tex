@@ -599,6 +599,39 @@
 			\end{itemize}
 		\end{itemize}
 	}
+	
+	\subsubsection{Controller::\-OfflineExecutionController}{
+				\textbf{Funzione}\\
+				\indent Questa classe si occuperà di gestire i segnali e le chiamate provenienti dalla pagina di esecuzione.\\
+				\textbf{Metodi}
+				\begin{itemize}
+					\item \textbf{on \$locationChangeSuccess}()
+					\begin{itemize}
+						\item \textbf{Accesso}: Public;
+						\item \textbf{Tipo di ritorno}: Void;
+						\item \textbf{Descrizione}: evento che permette l'interazione di Angular.js e Impress.js. Dato che il Framework\ped{g} Impress.js cambia l'URL\ped{g} della pagina in modo dinamico, è necessario istruire il routing di Angular su come comportarsi, in modo tale che non ci sia alcun reindirizzamento inopportuno.
+					\end{itemize}
+					\item \textbf{translateImpress}(json)
+					\begin{itemize}
+						\item \textbf{Accesso}: Public;
+						\item \textbf{Tipo di ritorno}: Void;
+						\item \textbf{Descrizione}: metodo che richiama una Funzione\ped{g} JavaScript\ped{g} per la traduzione dell'oggetto json, ricavato tramite getPresentazione() di SharedData, in html eseguibile dal Framework\ped{g} Impress.js.
+					\end{itemize}
+					\item \textbf{goHome}()
+					\begin{itemize}
+						\item \textbf{Accesso}: Public;
+						\item \textbf{Tipo di ritorno}: Void;
+						\item \textbf{Descrizione}: metodo che richiama homepage() di toPages per effettuare il reindirizzamento alla pagina home. Nonostante tale metodo sia già presente in HeaderController, è necessario avere la possibilità di accedere alla home, in quanto l'header viene nascosto per permettere la piena funzionalità ad Impress.js e visualizzare la presentazione a pieno schermo.
+					\end{itemize}
+					\item \textbf{goEdit}()
+					\begin{itemize}
+						\item \textbf{Accesso}: Public;
+						\item \textbf{Tipo di ritorno}: Void;
+						\item \textbf{Descrizione}: metodo che richiama editpage() di toPages per effettuare il reindirizzamento alla pagina di edit.
+					\end{itemize}
+				\end{itemize}
+			}
+	
 	\subsubsection{Controller::\-EditController}{
 		\textbf{Funzione}\\
 		\indent Questa classe si occuperà di mostrare all'utente la possibilità di apportare modifiche ad una presentazione.\\\\

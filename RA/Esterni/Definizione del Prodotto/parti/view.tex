@@ -202,4 +202,32 @@
 		\item zoom(element): metodo che permette di effettuare lo zoom sull'elemento element.
 	\end{itemize}
 }
+\subsection{View::Pages::HomeOffline}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di mostrare all'utente le presentazioni salvate in locale.\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::HomeOfflineController
+	\end{itemize}
+	\textbf{Input utente}
+	\begin{itemize}
+		\item bottoneEsegui(): bottone che richiama il metodo di Controller::HomeOfflineController::goExecute() passandogli il nome della presentazione da eseguire;
+	\end{itemize}
+	}
+\subsection{View::Pages::OfflineExecution}{
+	\textbf{Funzione}\\
+	\indent Questa pagina si occuperà di gestire l'esecuzione di una presentazione salvata in locale, utilizzando il Framework\ped{g} Impress.js associato alla pagina.\\\\
+	\textbf{Relazioni d'uso con altri moduli}\\
+	\indent Questa pagina utilizzerà le seguenti classi:
+	\begin{itemize}
+		\item Controller::OfflineExecutionController
+	\end{itemize}
+	\textbf{Input utente}
+	\begin{itemize}
+		\item next(): metodo che viene invocato premendo il tasto "freccia destra" e che invoca a sua volta il metodo impress().next() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} successivo della presentazione;
+		\item prev(): metodo che viene invocato premendo il tasto "freccia sinistra" e che invoca a sua volta il metodo impress().prev() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} precedente della presentazione;
+		\item bookmark(): metodo che viene invocato premendo il tasto "barra spaziatrice" e che invoca a sua volta il metodo impress().bookmark() implementato all'interno del Framework\ped{g} Impress.js e che visualizzerà il Frame\ped{g} con Bookmark\ped{g} successivo.
+	\end{itemize}
+}
 

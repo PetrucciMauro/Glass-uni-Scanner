@@ -1,35 +1,13 @@
 \subsection{Tracciamento Componenti-Requisiti}{ 
 \renewcommand*{\arraystretch}{1.4} 
 \begin{longtable} [c]{| p{8cm} | p{5cm} |} 
-\caption{Tracciamento Componenti-Requisiti\ped{g} \label{tab:traccCompReq}}\\ \hline\textbf{Componente} & \textbf{Requisiti} \\ 
+\caption{Tracciamento Componenti-Requisiti \label{tab:traccCompReq}}\\ \hline\textbf{Componente} & \textbf{Requisiti} \\ 
 \hline \endfirsthead \hline 
 \textbf{Componente} & \textbf{Requisiti} \\ 
 \hline \endhead \hline \endfoot \hline \endlastfoot 
-Controller & \\ 
+Controller & RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2, RF 7, RF 7.1, RF 7.1.1, RF 7.4, RF 7.7, RF 7.7.1, RF 7.7.4, RF 7.7.7, RF 7.7.10, RF 7.7.13, RF 7.7.19, RF 7.7.25, RF 7.7.16, RF 7.7.28, RF 7.7.31, RF 7.7.34, RF 7.7.37, RF 7.7.40, RF 7.7.43, RF 7.10, RF 7.16, RF 7.13, RF 7.19, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 7.28, RF 7.31, RF 7.34, RF 61, RF 61.1, RF 61.1.1, RF 61.1.4, RF 61.1.7, RF 61.1.10, RF 61.1.13, RF 61.1.16, RF 61.1.16.1, RF 61.1.16.4, RF 61.1.16.7, RF 61.1.16.10, RF 61.4, RF 61.4.1, RF 61.4.4, RF 61.4.7, RF 61.4.10, RF 61.7, RF 61.10, RF 61.4.10.1, RF 61.4.10.4, RF 61.4.10.7, RF 61.4.10.10, RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2, RF 10, RF 49, RF 3.2, RF 7, RF 64, RF 19, RF 34, RF 13, RF 43, RF 16, RF 17\\ 
  \hline 
-- >AccessController & \\ 
- \hline 
-- >EditController & \\ 
- \hline 
-- >ExecutionController & \\ 
- \hline 
-- >HeaderController & \\ 
- \hline 
-- >HomeController & \\ 
- \hline 
-- >ProfileController & \\ 
- \hline 
-- >Services & \\ 
- \hline 
-- - >Main & \\ 
- \hline 
-- - >SharedData & \\ 
- \hline 
-- - >toPages & \\ 
- \hline 
-- - >Upload & \\ 
- \hline 
-- - >Utils & \\ 
+- >Services &  RF 1, RF 3, RF 1.1, RF 1.2, RF 3.1, RF 3.2, RF 7, RF 7.7.7, RF 7.7.13, RF 7.13 \\ 
  \hline 
 Model & \\ 
  \hline 
@@ -45,93 +23,17 @@ Model & \\
  \hline 
 - - >Loader & RF 7, RF 7.1, RF 7.4, RF 7.7, RF 7.7.1, RF 7.7.4, RF 7.7.7, RF 7.7.10, RF 7.7.13, RF 7.7.19, RF 7.7.25, RF 7.7.16, RF 7.7.28, RF 7.7.34, RF 7.10, RF 7.16, RF 7.13, RF 7.19, RF 7.19.1, RF 7.37, RF 7.40, RF 7.40.1, RF 7.40.4, RF 7.43, RF 7.46, RF 7.7.46\\ 
  \hline 
-- - >mongoRelation & RF 7.1, RF 7.7.7, RF 7.7.13, RF 7.16, RF 7.13, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 19, RF 34, RF 7.37, RF 35\\ 
+- - >mongoRelation & RF 4, RF 7.1, RF 7.7.7, RF 7.7.13, RF 7.16, RF 7.13, RF 7.19.1, RF 7.19.4, RF 7.19.10, RF 7.19.13, RF 19, RF 34, RF 7.37, RF 35\\ 
  \hline 
 - >SlideShow & \\ 
  \hline 
 - - >SlideShowActions & \\ 
  \hline 
-- - - >Command & \\ 
- \hline 
-- - - - >AbstractCommand & \\ 
- \hline 
-- - - - >ConcreteAddToChoicePathCommand & RF 7.7.25\\ 
- \hline 
-- - - - >ConcreteAddToMainPathCommand & RF 7.19.4\\ 
- \hline 
-- - - - >ConcreteAudioInsertCommand & RF 7.7.13\\ 
- \hline 
-- - - - >ConcreteAudioRemoveCommand & RF 7.43\\ 
- \hline 
-- - - - >ConcreteBackgroundInsertCommand & RF 7.13\\ 
- \hline 
-- - - - >concreteDeleteChoicePathCommand & RF 7.43\\ 
- \hline 
-- - - - >ConcreteEditBackgroundCommand & RF 7.7.43\\ 
- \hline 
-- - - - >ConcreteEditBookmarkCommand & RF 7.22, RF 7.25, RF 10.5, RF 10.8\\ 
- \hline 
-- - - - >ConcreteEditColorCommand & RF 7.7.4, RF 7.7.40, RF 7.16, RF 7.40.4\\ 
- \hline 
-- - - - >ConcreteEditContentCommand & RF 7.19.13\\ 
- \hline 
-- - - - >ConcreteEditFontCommand & RF 7.7.4\\ 
- \hline 
-- - - - >ConcreteEditPositionCommand & RF 7.7.19\\ 
- \hline 
-- - - - >ConcreteEditRotationCommand & RF 7.46, RF 7.7.46\\ 
- \hline 
-- - - - >ConcreteEditSizeCommand & RF 7.7.10, RF 7.7.16\\ 
- \hline 
-- - - - >ConcreteFrameInsertCommand & RF 7.1, RF 7.1.1\\ 
- \hline 
-- - - - >ConcreteFrameRemoveCommand & RF 7.10\\ 
- \hline 
-- - - - >ConcreteImageInsertCommand & RF 7.7.7\\ 
- \hline 
-- - - - >ConcreteImageRemoveCommand & RF 7.43\\ 
- \hline 
-- - - - >concreteNewChoicePathCommand & RF 7.7.25\\ 
- \hline 
-- - - - >ConcretePortaAvantiCommand & \\ 
- \hline 
-- - - - >ConcretePortaDietroCommand & \\ 
- \hline 
-- - - - >ConcreteRemoveFromChoicePathCommand & RF 7.7.28\\ 
- \hline 
-- - - - >concreteRemoveFromMainPathCommand & RF 7.19.13\\ 
- \hline 
-- - - - >ConcreteSVGInsertCommand & RF 7.37\\ 
- \hline 
-- - - - >ConcreteSVGRemoveCommand & RF 7.43\\ 
- \hline 
-- - - - >ConcreteTextInsertCommand & RF 7.7.1\\ 
- \hline 
-- - - - >ConcreteTextRemoveCommand & RF 7.43\\ 
- \hline 
-- - - - >ConcreteVideoInsertCommand & RF 7.7.13\\ 
- \hline 
-- - - - >ConcreteVideoRemoveCommand & RF 7.43\\ 
- \hline 
-- - - - >Invoker & RF 55, RF 58\\ 
+- - - >Command & RF 7.7.25, RF 7.19.4, RF 7.7.13, RF 7.43, RF 7.13, RF 7.43, RF 7.7.43, RF 7.22, RF 7.25, RF 10.5, RF 10.8, RF 7.7.4, RF 7.7.40, RF 7.16, RF 7.40.4, RF 7.19.13, RF 7.7.4, RF 7.7.19, RF 7.46, RF 7.7.46, RF 7.7.10, RF 7.7.16, RF 7.1, RF 7.1.1, RF 7.10, RF 7.7.7, RF 7.43, RF 7.7.25, RF 7.4, RF 7.7.28, RF 7.19.13, RF 7.37, RF 7.43, RF 7.7.1, RF 7.43, RF 7.7.13, RF 7.43, RF 55, RF 58\\ 
  \hline 
 - - - >InsertEditRemove & RF 7.7.4, RF 7.7.10, RF 7.7.19, RF 7.7.16, RF 7.7.40, RF 7.7.43, RF 7.16, RF 7.40.4, RF 7.46, RF 7.7.46, RF 7.1, RF 7.1.1, RF 7.7.1, RF 7.7.7, RF 7.7.13, RF 7.13, RF 7.37, RF 7.10, RF 7.43\\ 
  \hline 
-- - >SlideShowElements & \\ 
- \hline 
-- - - >Audio & RF 61.1.16\\ 
- \hline 
-- - - >Background & RF 7.7.13\\ 
- \hline 
-- - - >Frame\ped{g} & RF 7.1\\ 
- \hline 
-- - - >Image & RF 7.7.7, RF 7.7.13\\ 
- \hline 
-- - - >SVG & \\ 
- \hline 
-- - - >Text & RF 7.7.1\\ 
- \hline 
-- - - >Video & RF 61.1.16\\ 
+- - >SlideShowElements & RF 61.1.16, RF 7.7.13, RF 7.1, RF 7.7.7, RF 7.7.13, RF 7.7.1, RF 61.1.16\\ 
  \hline 
 View & \\ 
  \hline 
