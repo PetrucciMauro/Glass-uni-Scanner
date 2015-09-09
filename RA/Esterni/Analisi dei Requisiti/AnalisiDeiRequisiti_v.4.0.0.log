@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.12)  22 AUG 2015 15:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  9 SEP 2015 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**AnalisiDeiRequisiti_v.3.0.0.tex
-(./AnalisiDeiRequisiti_v.3.0.0.tex
+**AnalisiDeiRequisiti_v.4.0.0.tex
+(./AnalisiDeiRequisiti_v.4.0.0.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 8 languages loaded.
+Babel <3.9h> and hyphenation patterns for 3 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -287,7 +287,7 @@ File: babel.def 2013/12/03 3.9h Babel common definitions
 Package babel Info: Making " an active character on input line 98.
 \Virgola=\count92
 ))
-(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
@@ -835,18 +835,15 @@ File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./AnalisiDeiRequisiti_v.3.0.0.aux
+(./AnalisiDeiRequisiti_v.4.0.0.aux
 
-LaTeX Warning: Label `fig:uc1' multiply defined.
-
-
-LaTeX Warning: Label `uc1.11' multiply defined.
+LaTeX Warning: Label `tabVers3' multiply defined.
 
 
-LaTeX Warning: Label `fig:uc1.11' multiply defined.
+LaTeX Warning: Label `uc0.9.2' multiply defined.
 
 )
-\openout1 = `AnalisiDeiRequisiti_v.3.0.0.aux'.
+\openout1 = `AnalisiDeiRequisiti_v.4.0.0.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -983,73 +980,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 51.
+Package pdftex.def Info: ../../logo.jpg used on input line 57.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 59.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--82
+Underfull \hbox (badness 10000) in paragraph at lines 64--90
 
  []
 
 )
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [3] (./AnalisiDeiRequisiti_v.3.0.0.toc
+ [4] (./AnalisiDeiRequisiti_v.4.0.0.toc
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 46.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [4]
-File: ../../logo.jpg Graphic file (type jpg)
- <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 92.
+Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [5]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 138.
+Package pdftex.def Info: ../../logo.jpg used on input line 81.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [6])
-\tf@toc=\write3
-\openout3 = `AnalisiDeiRequisiti_v.3.0.0.toc'.
-
+ [6]
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 127.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [7]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 172.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [8])
+\tf@toc=\write3
+\openout3 = `AnalisiDeiRequisiti_v.4.0.0.toc'.
+
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [7] (./AnalisiDeiRequisiti_v.3.0.0.lof)
+ [9]
+(./AnalisiDeiRequisiti_v.4.0.0.lof)
 \tf@lof=\write4
-\openout4 = `AnalisiDeiRequisiti_v.3.0.0.lof'.
+\openout4 = `AnalisiDeiRequisiti_v.4.0.0.lof'.
 
+ (./AnalisiDeiRequisiti_v.4.0.0.lot
+File: ../../logo.jpg Graphic file (type jpg)
 
-(./AnalisiDeiRequisiti_v.3.0.0.lot)
+<use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 12.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [10])
 \tf@lot=\write5
-\openout5 = `AnalisiDeiRequisiti_v.3.0.0.lot'.
+\openout5 = `AnalisiDeiRequisiti_v.4.0.0.lot'.
 
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 40.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [8]
-File: ../../logo.jpg Graphic file (type jpg)
-
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 40.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [9] (./parti/introduzione.tex
+ [11] (./parti/introduzione.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1071,31 +1081,20 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 42.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [10] (./parti/descrizioneGenerale.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 8.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8.
-
+ [12] (./parti/descrizioneGenerale.tex
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [11])
+ [13])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 44.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [12] (./parti/casiduso.tex
+ [14] (./parti/casiduso.tex
 (./UC/GerarchiaUtenti.tex
-<./images/GerarchiaUtenti.jpg, id=545, 470.75874pt x 612.2875pt>
+<./images/GerarchiaUtenti.jpg, id=562, 470.75874pt x 612.2875pt>
 File: ./images/GerarchiaUtenti.jpg Graphic file (type jpg)
 
 <use ./images/GerarchiaUtenti.jpg>
@@ -1105,13 +1104,13 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 14.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [13 <./images/GerarchiaUtenti.jpg>])
+ [15 <./images/GerarchiaUtenti.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 5.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [14] (./UC/UC0.tex
-<./images/UC0.jpg, id=567, 827.09pt x 531.9875pt>
+ [16] (./UC/UC0.tex
+<./images/UC0.jpg, id=584, 827.09pt x 531.9875pt>
 File: ./images/UC0.jpg Graphic file (type jpg)
  <use ./images/UC0.jpg>
 Package pdftex.def Info: ./images/UC0.jpg used on input line 5.
@@ -1122,8 +1121,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 7.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [15 <./images/UC0.jpg>] (./UC/UC0.8.tex
-<./images/UC0.8.jpg, id=592, 629.35126pt x 404.51125pt>
+ [17 <./images/UC0.jpg>] (./UC/UC0.8.tex
+<./images/UC0.8.jpg, id=609, 629.35126pt x 404.51125pt>
 File: ./images/UC0.8.jpg Graphic file (type jpg)
 
 <use ./images/UC0.8.jpg>
@@ -1133,43 +1132,19 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [16 <./images/UC0.8.jpg>]
+ [18 <./images/UC0.8.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [17])
+ [19])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 9.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [18] (./UC/UC0.10.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-<./images/UC0.10.jpg, id=629, 365.365pt x 174.6525pt>
+ [20] (./UC/UC0.10.tex
+<./images/UC0.10.jpg, id=647, 365.365pt x 174.6525pt>
 File: ./images/UC0.10.jpg Graphic file (type jpg)
 
 <use ./images/UC0.10.jpg>
@@ -1180,14 +1155,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 11.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [19 <./images/UC0.10.jpg>]
+ [21 <./images/UC0.10.jpg>]
 (./UC/UC0.13.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 13.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [20] (./UC/UC0.7.tex
-<./images/UC0.7.jpg, id=654, 493.845pt x 518.93875pt>
+ [22] (./UC/UC0.7.tex
+<./images/UC0.7.jpg, id=671, 493.845pt x 518.93875pt>
 File: ./images/UC0.7.jpg Graphic file (type jpg)
  <use ./images/UC0.7.jpg>
 Package pdftex.def Info: ./images/UC0.7.jpg used on input line 5.
@@ -1197,97 +1172,51 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 19.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [21 <./images/UC0.7.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 28.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 45.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 69.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [22]
+ [23 <./images/UC0.7.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 69.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [24]
+File: ../../logo.jpg Graphic file (type jpg)
+
+<use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 112.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [23]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 122.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 122.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 122.
-
+ [25]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 153.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [24])
+ [26])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 15.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [25] (./UC/UC0.9.tex
-<./images/UC0.9.jpg, id=739, 722.7pt x 372.39125pt>
+
+[27] (./UC/UC0.9.tex <./images/UC0.9.jpg, id=755, 705.63625pt x 438.63875pt>
 File: ./images/UC0.9.jpg Graphic file (type jpg)
- <use ./images/UC0.9.jpg>
+
+<use ./images/UC0.9.jpg>
 Package pdftex.def Info: ./images/UC0.9.jpg used on input line 5.
-(pdftex.def)             Requested size: 433.62334pt x 223.43646pt.
+(pdftex.def)             Requested size: 423.38501pt x 263.18527pt.
+File: ../../logo.jpg Graphic file (type jpg)
+ <use ../../logo.jpg>
+Package pdftex.def Info: ../../logo.jpg used on input line 33.
+(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
+ [28 <./images/UC0.9.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 34.
+Package pdftex.def Info: ../../logo.jpg used on input line 77.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [26 <./images/UC0.9.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 84.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 84.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 84.
-
-File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
-Package pdftex.def Info: ../../logo.jpg used on input line 91.
-(pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [27])
+ [29])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 17.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [28] (./UC/UC0.11.tex
-<./images/UC0.11.jpg, id=779, 322.20375pt x 193.72375pt>
+ [30] (./UC/UC0.11.tex
+<./images/UC0.11.jpg, id=797, 322.20375pt x 193.72375pt>
 File: ./images/UC0.11.jpg Graphic file (type jpg)
 
 <use ./images/UC0.11.jpg>
@@ -1297,31 +1226,31 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [29 <./images/UC0.11.jpg>])
+ [31 <./images/UC0.11.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 19.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [30] (./UC/UC0.12.tex)
+ [32] (./UC/UC0.12.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 21.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [31]
+ [33]
 (./UC/UC0.16.tex)
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [32] (./UC/UC0.15.tex)
+ [34] (./UC/UC0.15.tex)
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 25.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [33] (./UC/UC1.tex
-<./images/UC1.jpg, id=833, 750.805pt x 553.06625pt>
+ [35] (./UC/UC1.tex
+<./images/UC1.jpg, id=850, 750.805pt x 553.06625pt>
 File: ./images/UC1.jpg Graphic file (type jpg)
  <use ./images/UC1.jpg>
 Package pdftex.def Info: ./images/UC1.jpg used on input line 5.
@@ -1332,14 +1261,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [34 <./images/UC1.jpg>] (./UC/UC1.2.tex)
+ [36 <./images/UC1.jpg>] (./UC/UC1.2.tex)
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [35] (./UC/UC1.3.tex
-<./images/UC1.3.jpg, id=863, 537.00626pt x 602.25pt>
+ [37] (./UC/UC1.3.tex
+<./images/UC1.3.jpg, id=881, 537.00626pt x 602.25pt>
 File: ./images/UC1.3.jpg Graphic file (type jpg)
  <use ./images/UC1.3.jpg>
 Package pdftex.def Info: ./images/UC1.3.jpg used on input line 5.
@@ -1349,11 +1278,11 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 17.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [36 <./images/UC1.3.jpg>]
+ [38 <./images/UC1.3.jpg>]
 
-LaTeX Warning: Hyper reference `uc1.5' on page 37 undefined on input line 31.
+LaTeX Warning: Hyper reference `uc1.5' on page 39 undefined on input line 31.
 
-<./images/UC1.3.1.jpg, id=886, 304.13625pt x 222.8325pt>
+<./images/UC1.3.1.jpg, id=903, 304.13625pt x 222.8325pt>
 File: ./images/UC1.3.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.1.jpg>
@@ -1363,32 +1292,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 51.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [37 <./images/UC1.3.1.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
-
-<./images/UC1.3.3.jpg, id=908, 679.53876pt x 801.99625pt>
+ [39 <./images/UC1.3.1.jpg>]
+<./images/UC1.3.3.jpg, id=925, 679.53876pt x 801.99625pt>
 File: ./images/UC1.3.3.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.3.jpg>
@@ -1398,142 +1303,47 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 98.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [38]
+ [40]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 105.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[39 <./images/UC1.3.3.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 121.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
+[41 <./images/UC1.3.3.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 145.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [40]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 145.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 157.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 169.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 169.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 181.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 181.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 181.
-
+ [42]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 188.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [41]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 217.
-
+[43]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 227.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [42]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 230.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 230.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 230.
-
+ [44]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 272.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [43]
+ [45]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 313.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [44]
-<./images/UC1.3.5.jpg, id=1034, 303.1325pt x 256.96pt>
+
+[46] <./images/UC1.3.5.jpg, id=1051, 303.1325pt x 256.96pt>
 File: ./images/UC1.3.5.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.5.jpg>
 Package pdftex.def Info: ./images/UC1.3.5.jpg used on input line 323.
 (pdftex.def)             Requested size: 227.34882pt x 192.71951pt.
 
-<./images/UC1.3.5.1.jpg, id=1038, 385.44pt x 293.095pt>
+<./images/UC1.3.5.1.jpg, id=1055, 385.44pt x 293.095pt>
 File: ./images/UC1.3.5.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.5.1.jpg>
@@ -1543,7 +1353,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 351.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [45 <./images/UC1.3.5.jpg>]
+ [47 <./images/UC1.3.5.jpg>]
 Overfull \hbox (24.76242pt too wide) in paragraph at lines 351--356
 \T1/cmr/bx/n/12 Descrizione\T1/cmr/m/n/12 : l'u-ten-te può in-se-ri-re una im-m
 a-gi-ne o un co-lo-re di sfon-do nel pia-no del-la presentazione$[]$. 
@@ -1553,26 +1363,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 383.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [46 <./images/UC1.3.5.1.jpg>]
+ [48 <./images/UC1.3.5.1.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 431.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[47]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 438.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 438.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 438.
-
-<./images/UC1.3.6.jpg, id=1086, 406.51875pt x 292.09125pt>
+[49] <./images/UC1.3.6.jpg, id=1104, 406.51875pt x 292.09125pt>
 File: ./images/UC1.3.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.6.jpg>
@@ -1582,49 +1379,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 456.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [48 <./images/UC1.3.6.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 459.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 459.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 459.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 484.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 484.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 484.
-
+ [50 <./images/UC1.3.6.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 504.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [49]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 509.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 509.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 509.
-
-<./images/UC1.3.7.jpg, id=1120, 309.155pt x 211.79124pt>
+ [51]
+<./images/UC1.3.7.jpg, id=1137, 309.155pt x 211.79124pt>
 File: ./images/UC1.3.7.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.7.jpg>
@@ -1634,8 +1396,8 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 546.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [50 <./images/UC1.3.7.jpg>]
-<./images/UC1.3.8.jpg, id=1134, 381.425pt x 287.0725pt>
+ [52 <./images/UC1.3.7.jpg>]
+<./images/UC1.3.8.jpg, id=1151, 381.425pt x 287.0725pt>
 File: ./images/UC1.3.8.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.8.jpg>
@@ -1645,44 +1407,19 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 570.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [51 <./images/UC1.3.8.jpg>]
+ [53 <./images/UC1.3.8.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 618.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [52]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 637.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 637.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 637.
-
-
+ [54]
 Overfull \hbox (9.59698pt too wide) in paragraph at lines 639--644
 \T1/cmr/bx/n/12 Descrizione\T1/cmr/m/n/12 : l'u-ten-te Desktop$[]$ in-se-ri-sce
  un Elemento$[]$ di ti-po SVG nel pia-no del-la presentazione$[]$
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 649.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 649.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 649.
-
-<./images/UC1.3.11.jpg, id=1159, 311.1625pt x 199.74625pt>
+<./images/UC1.3.11.jpg, id=1177, 311.1625pt x 199.74625pt>
 File: ./images/UC1.3.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.3.11.jpg>
@@ -1692,42 +1429,19 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 657.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [53]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 667.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 667.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 667.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 679.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 679.
-
+ [55]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 689.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [54 <./images/UC1.3.11.jpg>])
+
+[56 <./images/UC1.3.11.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
-
-[55] (./UC/UC1.4.tex <./images/UC1.4.jpg, id=1201, 358.33875pt x 250.9375pt>
+ [57] (./UC/UC1.4.tex
+<./images/UC1.4.jpg, id=1219, 358.33875pt x 250.9375pt>
 File: ./images/UC1.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.jpg>
@@ -1735,9 +1449,9 @@ Package pdftex.def Info: ./images/UC1.4.jpg used on input line 5.
 (pdftex.def)             Requested size: 268.7534pt x 188.20265pt.
 
 
-LaTeX Warning: Hyper reference `uc1.5' on page 56 undefined on input line 20.
+LaTeX Warning: Hyper reference `uc1.5' on page 58 undefined on input line 20.
 
-<./images/UC1.4.1.jpg, id=1204, 344.28625pt x 198.7425pt>
+<./images/UC1.4.1.jpg, id=1222, 344.28625pt x 198.7425pt>
 File: ./images/UC1.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.1.jpg>
@@ -1747,37 +1461,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 31.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [56 <./images/UC1.4.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 41.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 41.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 41.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 53.
-
+ [58 <./images/UC1.4.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 61.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [57 <./images/UC1.4.1.jpg>]
-<./images/UC1.4.2.jpg, id=1228, 356.33125pt x 237.88875pt>
+ [59 <./images/UC1.4.1.jpg>]
+<./images/UC1.4.2.jpg, id=1245, 356.33125pt x 237.88875pt>
 File: ./images/UC1.4.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.4.2.jpg>
@@ -1787,21 +1478,21 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 101.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [58 <./images/UC1.4.2.jpg>])
+ [60 <./images/UC1.4.2.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [59] (./UC/UC1.18.tex
-<./images/UC1.18.jpg, id=1251, 585.18625pt x 316.18124pt>
+ [61] (./UC/UC1.18.tex
+<./images/UC1.18.jpg, id=1269, 585.18625pt x 316.18124pt>
 File: ./images/UC1.18.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.jpg>
 Package pdftex.def Info: ./images/UC1.18.jpg used on input line 5.
 (pdftex.def)             Requested size: 409.62758pt x 221.32535pt.
 
-<./images/UC1.18.1.jpg, id=1256, 454.69875pt x 350.30875pt>
+<./images/UC1.18.1.jpg, id=1274, 454.69875pt x 350.30875pt>
 File: ./images/UC1.18.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.jpg>
@@ -1811,108 +1502,35 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 30.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [60 <./images/UC1.18.jpg>]
+ [62 <./images/UC1.18.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 55.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [61 <./images/UC1.18.1.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 70.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 70.
-
+ [63 <./images/UC1.18.1.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 99.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [62]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 103.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
-
-<./images/UC1.18.1.6.jpg, id=1297, 523.9575pt x 302.12875pt>
+ [64]
+<./images/UC1.18.1.6.jpg, id=1315, 523.9575pt x 302.12875pt>
 File: ./images/UC1.18.1.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.1.6.jpg>
 Package pdftex.def Info: ./images/UC1.18.1.6.jpg used on input line 107.
 (pdftex.def)             Requested size: 392.96716pt x 226.596pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 122.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 122.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 122.
-
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 129.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [63 <./images/UC1.18.1.6.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 133.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 144.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 144.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 144.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 155.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 155.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 155.
-
+ [65 <./images/UC1.18.1.6.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 175.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [64]
-<./images/UC1.18.2.jpg, id=1326, 479.7925pt x 303.1325pt>
+ [66]
+<./images/UC1.18.2.jpg, id=1344, 479.7925pt x 303.1325pt>
 File: ./images/UC1.18.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.jpg>
@@ -1922,26 +1540,14 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 209.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [65 <./images/UC1.18.2.jpg>]
+ [67 <./images/UC1.18.2.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 254.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [66]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 257.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 257.
-
-<./images/UC1.18.2.6.jpg, id=1361, 512.91624pt x 342.27875pt>
+ [68]
+<./images/UC1.18.2.6.jpg, id=1378, 512.91624pt x 342.27875pt>
 File: ./images/UC1.18.2.6.jpg Graphic file (type jpg)
 
 <use ./images/UC1.18.2.6.jpg>
@@ -1951,72 +1557,24 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 273.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [67 <./images/UC1.18.2.6.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 277.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 277.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 277.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 288.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 288.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 288.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 299.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 299.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 299.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 309.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 309.
-
+ [69 <./images/UC1.18.2.6.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
-<use ../../logo.jpg>
+ <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 327.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [68])
+ [70])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 35.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [69] (./UC/UC1.6.tex)
+ [71] (./UC/UC1.6.tex)
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 37.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [70] (./UC/UC1.17.tex
-<./images/UC1.17.jpg, id=1416, 518.93875pt x 432.61626pt>
+ [72] (./UC/UC1.17.tex
+<./images/UC1.17.jpg, id=1434, 518.93875pt x 432.61626pt>
 File: ./images/UC1.17.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.jpg>
@@ -2024,32 +1582,19 @@ Package pdftex.def Info: ./images/UC1.17.jpg used on input line 5.
 (pdftex.def)             Requested size: 311.36565pt x 259.57176pt.
 
 
-LaTeX Warning: Hyper reference `uc1.5' on page 71 undefined on input line 23.
+LaTeX Warning: Hyper reference `uc1.5' on page 73 undefined on input line 23.
 
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 34.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [71 <./images/UC1.17.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
-
-
+ [73 <./images/UC1.17.jpg>]
 Overfull \hbox (0.58101pt too wide) in paragraph at lines 51--56
 \T1/cmr/bx/n/12 Descrizione\T1/cmr/m/n/12 : l'u-ten-te è in gra-do di se-le-zio
 -na-re elementi$[]$ spe-ci-fi-ci del Template$[]$ dell'Infografica$[]$
  []
 
-<./images/UC1.17.4.jpg, id=1434, 618.31pt x 498.86375pt>
+<./images/UC1.17.4.jpg, id=1452, 618.31pt x 498.86375pt>
 File: ./images/UC1.17.4.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.jpg>
@@ -2059,57 +1604,21 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 68.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [72]
+ [74]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 81.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[73 <./images/UC1.17.4.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 83.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 83.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 83.
-
-<./images/UC1.17.4.1.jpg, id=1465, 329.23pt x 312.16624pt>
+[75 <./images/UC1.17.4.jpg>]
+<./images/UC1.17.4.1.jpg, id=1482, 329.23pt x 312.16624pt>
 File: ./images/UC1.17.4.1.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.jpg>
 Package pdftex.def Info: ./images/UC1.17.4.1.jpg used on input line 87.
 (pdftex.def)             Requested size: 246.92189pt x 234.1241pt.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 113.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 113.
-
-<./images/UC1.17.4.1.2.jpg, id=1469, 524.96124pt x 389.455pt>
+<./images/UC1.17.4.1.2.jpg, id=1486, 524.96124pt x 389.455pt>
 File: ./images/UC1.17.4.1.2.jpg Graphic file (type jpg)
 
 <use ./images/UC1.17.4.1.2.jpg>
@@ -2119,43 +1628,18 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 121.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [74 <./images/UC1.17.4.1.jpg>]
+ [76 <./images/UC1.17.4.1.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 145.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [75 <./images/UC1.17.4.1.2.jpg>]
+ [77 <./images/UC1.17.4.1.2.jpg>]
 File: ../../logo.jpg Graphic file (type jpg)
 
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 197.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [76]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 222.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 222.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 222.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 233.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 233.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 233.
-
-
+ [78]
 Overfull \hbox (12.84468pt too wide) in paragraph at lines 235--240
 \T1/cmr/bx/n/12 Postcondizione\T1/cmr/m/n/12 : è sta-to in-se-ri-to un Elemento
 $[]$ te-stua-le pre-ce-den-te-men-te as-sen-te nell'Infografica$[]$. 
@@ -2171,13 +1655,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 251.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [77])
+ [79])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 39.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [78] (./UC/UC1.10.tex
-<./images/UC1.10.jpg, id=1539, 408.52625pt x 247.92625pt>
+ [80] (./UC/UC1.10.tex
+<./images/UC1.10.jpg, id=1556, 408.52625pt x 247.92625pt>
 File: ./images/UC1.10.jpg Graphic file (type jpg)
 
 <use ./images/UC1.10.jpg>
@@ -2197,13 +1681,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [79 <./images/UC1.10.jpg>])
+ [81 <./images/UC1.10.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [80]
-(./UC/UC1.11.tex <./images/UC1.11.jpg, id=1555, 408.52625pt x 247.92625pt>
+ [82]
+(./UC/UC1.11.tex <./images/UC1.11.jpg, id=1572, 408.52625pt x 247.92625pt>
 File: ./images/UC1.11.jpg Graphic file (type jpg)
 
 <use ./images/UC1.11.jpg>
@@ -2223,13 +1707,13 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 33.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [81 <./images/UC1.11.jpg>])
+ [83 <./images/UC1.11.jpg>])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 43.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [82]
-(./UC/UC1.12.tex <./images/UC1.12.jpg, id=1571, 408.52625pt x 247.92625pt>
+ [84]
+(./UC/UC1.12.tex <./images/UC1.12.jpg, id=1590, 408.52625pt x 247.92625pt>
 File: ./images/UC1.12.jpg Graphic file (type jpg)
 
 <use ./images/UC1.12.jpg>
@@ -2249,28 +1733,16 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 41.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [83 <./images/UC1.12.jpg>]))
+ [85 <./images/UC1.12.jpg>]))
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [84]
+ [86]
 (./parti/requisiti.tex (./parti/requisitiFunz.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
 
 
 Underfull \hbox (badness 2005) in paragraph at lines 14--14
@@ -2346,7 +1818,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 87.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [85]
+ [87]
 Underfull \hbox (badness 4060) in paragraph at lines 88--88
 \T1/cmr/m/n/12 Elemento$[]$ SVG al-l'in-ter-no di
  []
@@ -2455,12 +1927,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [86]
+ [88]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [87]
+ [89]
 Underfull \hbox (badness 1052) in paragraph at lines 128--128
 []|\T1/cmr/m/n/12 L'utente de-ve po-ter vi-sua-liz-za-
  []
@@ -2544,12 +2016,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [88]
+ [90]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [89]
+ [91]
 Underfull \hbox (badness 2005) in paragraph at lines 168--168
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
@@ -2628,12 +2100,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 207.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [90]
+ [92]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 207.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [91]
+ [93]
 Underfull \hbox (badness 2005) in paragraph at lines 208--208
 []|\T1/cmr/m/n/12 L'utente de-ve es-se-re in gra-do
  []
@@ -2817,36 +2289,23 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 247.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [92]
+ [94]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 250.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [93]
+ [95]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 250.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[94])
+[96])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 4.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [95] (./parti/requisitiQual.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
+ [97] (./parti/requisitiQual.tex
 Underfull \hbox (badness 2600) in paragraph at lines 10--10
 []|\T1/cmr/m/n/12 Sarà for-ni-to un tu-to-rial in-te-
  []
@@ -2871,20 +2330,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 6.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [96] (./parti/requisitiVincolo.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
+ [98] (./parti/requisitiVincolo.tex
 Underfull \hbox (badness 1424) in paragraph at lines 22--22
 \T1/cmr/m/n/12 ca-te nel do-cu-men-to Nor-me di
  []
@@ -2894,7 +2340,7 @@ File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 8.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [97] (./parti/tracciamento.tex
+ [99] (./parti/tracciamento.tex
 Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []|\T1/cmr/m/n/12 UC 1.18.1.6.2, UC
  []
@@ -2928,7 +2374,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 127.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [98]
+ [100]
 Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []|\T1/cmr/m/n/12 UC 1.18.2.2, UC
  []
@@ -2937,7 +2383,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 167.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [99]
+ [101]
 Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \T1/cmr/m/n/12 UC 1.3.5.1.1, UC
  []
@@ -2951,12 +2397,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 247.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [100]
+ [102]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 287.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [101]
+ [103]
 Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []|\T1/cmr/m/n/12 UC 1.18.2.6.2, UC
  []
@@ -2965,7 +2411,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 367.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [102]
+ [104]
 Underfull \hbox (badness 10000) in paragraph at lines 370--370
 \T1/cmr/m/n/12 UC 1.3.5.1.1, UC
  []
@@ -2984,12 +2430,12 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 407.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [103]
+ [105]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 487.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [104]
+ [106]
 Underfull \hbox (badness 10000) in paragraph at lines 502--502
 []|\T1/cmr/m/n/12 UC 1.18.1.6.2, UC
  []
@@ -3013,27 +2459,27 @@ File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 527.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [105]
+ [107]
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 590.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [106])
+ [108])
 File: ../../logo.jpg Graphic file (type jpg)
  <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 10.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
 
-[107] (./parti/riepilogo.tex)) 
+[109] (./parti/riepilogo.tex)) 
 AED: lastpage setting LastPage
 File: ../../logo.jpg Graphic file (type jpg)
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 48.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
- [108]
+ [110]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
- (./AnalisiDeiRequisiti_v.3.0.0.aux)
+ (./AnalisiDeiRequisiti_v.4.0.0.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 48.
 
@@ -3051,29 +2497,27 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 2 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14779 strings out of 494969
- 211770 string characters out of 6178806
- 391759 words of memory out of 5000000
- 16960 multiletter control sequences out of 15000+600000
- 18667 words of font info for 45 fonts, out of 8000000 for 9000
+ 14781 strings out of 495017
+ 211803 string characters out of 6181021
+ 390317 words of memory out of 5000000
+ 16944 multiletter control sequences out of 15000+600000
+ 16527 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 51i,16n,60p,821b,1084s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx080
-0.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk>
- </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/
-petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/petrucci
-/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/petrucci/.texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.600pk> </home/petrucci/.texmf-var/font
-s/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/petrucci/.texmf-var/fonts/pk/ljf
-our/jknappen/ec/ecti1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecbx1200.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx2488.600pk> </home/petrucci/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200
-.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
->
-Output written on AnalisiDeiRequisiti_v.3.0.0.pdf (109 pages, 1682205 bytes).
+ 51i,16n,60p,821b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0
+800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sftt1200.pfb>
+Output written on AnalisiDeiRequisiti_v.4.0.0.pdf (111 pages, 1868894 bytes).
 PDF statistics:
- 2787 PDF objects out of 2984 (max. 8388607)
- 2295 compressed objects within 23 object streams
- 665 named destinations out of 1000 (max. 500000)
- 1542 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2485 PDF objects out of 2487 (max. 8388607)
+ 2303 compressed objects within 24 object streams
+ 670 named destinations out of 1000 (max. 500000)
+ 1550 words of extra memory for PDF output out of 10000 (max. 10000000)
 
