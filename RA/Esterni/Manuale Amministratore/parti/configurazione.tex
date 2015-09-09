@@ -1,5 +1,6 @@
 \section{Configurazione iniziale}
-Una volta installate le tecnologie e i pacchetti utilizzati dal sistema si dovr\`{a} configurarlo e avviarlo come segue:
+Una volta installate le tecnologie e i pacchetti\ped{g} utilizzati dal sistema si dovr\`{a} impostare opportunamente le variabili d'ambiente\ped{g} per gli eseguibili mongod e mongo.
+A questo punto si dovr\`{a} configurare il server\ped{g} come segue:
 
 \subsection{Mac OS e Ubuntu}
 
@@ -14,11 +15,13 @@ Una volta installate le tecnologie e i pacchetti utilizzati dal sistema si dovr\
 
 
 \subsection{Windows}
-%chiedere giovanni
+
 \begin{enumerate}
 
-\item passi per windows
-%...
+\item creare una cartella per raccogliere i database creati con MongoDB
+\item avviamento mongodb con il comando "\textbf{mongod}" (\textbf{--port xxxxx} se si vuole usare una porta diversa da quella di default), specificando la cartella per il savataggio e recupero dei database con l'opzione "\textbf{mongod --dbpath /cartella/dbs/}"
+\item  spostarsi dal terminale nella cartella Premi (o quella in cui \`{e} presente lo script mongoConfig se spostato) ed accedere a mongoDB con il comando "\textbf{mongo}", avvenuto l'accesso configurare il database con il comando "\textbf{load('mongoConfig.js')}"
+\item se \`{e} stato avviato mongod con una porta differente da quella di default modificare il file config.js all'interno della cartella Premi specificando la porta con cui \`{e} stato avviato mongod
 
 \end{enumerate}
 
@@ -34,4 +37,4 @@ Una volta avvenuta la configurazione iniziale si pu\`{o} avviare il server con i
 
 
 \section{Arresto}
-Una volta avviato, per arrestare il sistema basta arrestare il server MongoDb e il server Node.js con il comando \textbf{ctrl + c} nelle finestre di terminale in cui sono stati avviati i due server.
+Una volta avviato, per arrestare il sistema basta arrestare il server MongoDb e il server\ped{g} Node.js con il comando \textbf{ctrl + c} nelle finestre di terminale in cui sono stati avviati i due server\ped{g}.
