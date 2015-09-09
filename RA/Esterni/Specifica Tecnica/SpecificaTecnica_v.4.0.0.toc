@@ -1,4 +1,5 @@
 \select@language {italian}
+\select@language {italian}
 \contentsline {section}{\numberline {1}Introduzione}{9}{section.1}
 \contentsline {subsection}{\numberline {1.1}Scopo del documento}{9}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Scopo del Prodotto}{9}{subsection.1.2}
@@ -83,20 +84,23 @@
 \contentsline {subsubsection}{\numberline {4.2.6}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}Profile}{44}{subsubsection.4.2.6}
 \contentsline {subsubsection}{\numberline {4.2.7}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}Execution}{45}{subsubsection.4.2.7}
 \contentsline {subsubsection}{\numberline {4.2.8}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}Edit}{45}{subsubsection.4.2.8}
-\contentsline {subsubsection}{\numberline {4.2.9}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}Manifest}{45}{subsubsection.4.2.9}
+\contentsline {subsubsection}{\numberline {4.2.9}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}HomeOffline}{45}{subsubsection.4.2.9}
+\contentsline {subsubsection}{\numberline {4.2.10}View::\discretionary {-}{}{}Pages::\discretionary {-}{}{}ExecutionOffline}{45}{subsubsection.4.2.10}
 \contentsline {subsection}{\numberline {4.3}Controller}{46}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Controller::\discretionary {-}{}{}EditController}{46}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Controller::\discretionary {-}{}{}ExecutionController}{48}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Controller::\discretionary {-}{}{}HeaderController}{48}{subsubsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.4}Controller::\discretionary {-}{}{}AuthenticationController}{48}{subsubsection.4.3.4}
-\contentsline {subsubsection}{\numberline {4.3.5}Controller::\discretionary {-}{}{}ProfileController}{49}{subsubsection.4.3.5}
-\contentsline {subsubsection}{\numberline {4.3.6}Controller::\discretionary {-}{}{}HomeController}{49}{subsubsection.4.3.6}
-\contentsline {subsubsection}{\numberline {4.3.7}Controller::\discretionary {-}{}{}Services}{49}{subsubsection.4.3.7}
-\contentsline {subsubsubsection}{\numberline {4.3.7.1}Services::\discretionary {-}{}{}toPages}{49}{subsubsubsection.4.3.1}
-\contentsline {subsubsubsection}{\numberline {4.3.7.2}Services::\discretionary {-}{}{}Upload}{50}{subsubsubsection.4.3.2}
-\contentsline {subsubsubsection}{\numberline {4.3.7.3}Services::\discretionary {-}{}{}Main}{50}{subsubsubsection.4.3.3}
-\contentsline {subsubsubsection}{\numberline {4.3.7.4}Services::\discretionary {-}{}{}SharedData}{50}{subsubsubsection.4.3.4}
-\contentsline {subsubsubsection}{\numberline {4.3.7.5}Services::\discretionary {-}{}{}Utils}{51}{subsubsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.3}Controller::\discretionary {-}{}{}HomeOfflineController}{48}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}Controller::\discretionary {-}{}{}OfflineExecutionController}{48}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}Controller::\discretionary {-}{}{}HeaderController}{48}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}Controller::\discretionary {-}{}{}AuthenticationController}{49}{subsubsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.7}Controller::\discretionary {-}{}{}ProfileController}{49}{subsubsection.4.3.7}
+\contentsline {subsubsection}{\numberline {4.3.8}Controller::\discretionary {-}{}{}HomeController}{49}{subsubsection.4.3.8}
+\contentsline {subsubsection}{\numberline {4.3.9}Controller::\discretionary {-}{}{}Services}{50}{subsubsection.4.3.9}
+\contentsline {subsubsubsection}{\numberline {4.3.9.1}Services::\discretionary {-}{}{}toPages}{50}{subsubsubsection.4.3.1}
+\contentsline {subsubsubsection}{\numberline {4.3.9.2}Services::\discretionary {-}{}{}Upload}{50}{subsubsubsection.4.3.2}
+\contentsline {subsubsubsection}{\numberline {4.3.9.3}Services::\discretionary {-}{}{}Main}{50}{subsubsubsection.4.3.3}
+\contentsline {subsubsubsection}{\numberline {4.3.9.4}Services::\discretionary {-}{}{}SharedData}{51}{subsubsubsection.4.3.4}
+\contentsline {subsubsubsection}{\numberline {4.3.9.5}Services::\discretionary {-}{}{}Utils}{51}{subsubsubsection.4.3.5}
 \contentsline {section}{\numberline {5}REST API nodeApi}{52}{section.5}
 \contentsline {section}{\numberline {6}Diagrammi di attivit\IeC {\`a}}{57}{section.6}
 \contentsline {subsection}{\numberline {6.1}Attivit\IeC {\`a} Principali}{57}{subsection.6.1}
@@ -114,7 +118,7 @@
 \contentsline {section}{\numberline {8}Tracciamento dei Componenti coi Requisiti}{65}{section.8}
 \contentsline {subsection}{\numberline {8.1}Tracciamento Componenti-Requisiti}{65}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Tracciamento Requisiti-Componenti}{69}{subsection.8.2}
-\contentsline {section}{Appendice \numberline {A}Design Pattern e Pattern Architetturali}{76}{Appendice.1.A}
-\contentsline {subsection}{\numberline {A.1}MVC}{76}{subsection.1.A.1}
-\contentsline {subsection}{\numberline {A.2}Command}{77}{subsection.1.A.2}
-\contentsline {subsubsection}{\numberline {A.2.1}Premi::Model::SlideShow::SlideShowActions::Command}{78}{subsubsection.1.A.2.1}
+\contentsline {section}{Appendice \numberline {A}Design Pattern e Pattern Architetturali}{75}{Appendice.1.Alph1}
+\contentsline {subsection}{\numberline {A.1}MVC}{75}{subsection.1.Alph1.1}
+\contentsline {subsection}{\numberline {A.2}Command}{76}{subsection.1.Alph1.2}
+\contentsline {subsubsection}{\numberline {A.2.1}Premi::Model::SlideShow::SlideShowActions::Command}{77}{subsubsection.1.Alph1.2.1}
