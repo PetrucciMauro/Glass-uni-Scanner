@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  9 SEP 2015 15:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.30)  9 SEP 2015 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,19 +1085,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 46.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [10] (./parti/descrizioneGenerale.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 8.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 8.
-
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 29.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
@@ -1125,7 +1114,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 50.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [13] (./parti/specificaClassi.tex) (./parti/node.tex
-<./images/nodeAPI.pdf, id=356, 541.99957pt x 475.24512pt>
+<./images/nodeAPI.pdf, id=355, 541.99957pt x 475.24512pt>
 File: ./images/nodeAPI.pdf Graphic file (type pdf)
 
 <use ./images/nodeAPI.pdf>
@@ -1136,19 +1125,8 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 27.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [14 <./images/nodeAPI.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 38.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 38.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 38.
-
 File: ../../logo.jpg Graphic file (type jpg)
+
 <use ../../logo.jpg>
 Package pdftex.def Info: ../../logo.jpg used on input line 75.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
@@ -1163,7 +1141,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 128.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [16]
-<./images/jsonPostePut.pdf, id=396, 597.23125pt x 845.1575pt>
+<./images/jsonPostePut.pdf, id=395, 597.23125pt x 845.1575pt>
 File: ./images/jsonPostePut.pdf Graphic file (type pdf)
 
 <use ./images/jsonPostePut.pdf>
@@ -1191,7 +1169,7 @@ Overfull \hbox (25.61783pt too wide) in paragraph at lines 189--190
 e con il ti-to-lo [pre-sen-ta-tion-Na-me] l'Elemento$[]$
  []
 
-<./images/jsonPath.pdf, id=426, 274.17892pt x 343.34303pt>
+<./images/jsonPath.pdf, id=425, 274.17892pt x 343.34303pt>
 File: ./images/jsonPath.pdf Graphic file (type pdf)
 
 <use ./images/jsonPath.pdf>
@@ -1765,7 +1743,7 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 8.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [69] (./parti/loader.tex
-<./images/Loader.pdf, id=840, 241.31706pt x 130.29198pt>
+<./images/Loader.pdf, id=839, 241.31706pt x 130.29198pt>
 File: ./images/Loader.pdf Graphic file (type pdf)
 
 <use ./images/Loader.pdf>
@@ -1782,14 +1760,14 @@ File: ../../logo.jpg Graphic file (type jpg)
 Package pdftex.def Info: ../../logo.jpg used on input line 10.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [71] (./parti/accessControll.tex
-<./images/Registration.pdf, id=870, 261.92174pt x 95.90741pt>
+<./images/Registration.pdf, id=869, 261.92174pt x 95.90741pt>
 File: ./images/Registration.pdf Graphic file (type pdf)
 
 <use ./images/Registration.pdf>
 Package pdftex.def Info: ./images/Registration.pdf used on input line 4.
 (pdftex.def)             Requested size: 209.53767pt x 76.72601pt.
 
-<./images/Authentication.pdf, id=871, 406.91264pt x 151.34593pt>
+<./images/Authentication.pdf, id=870, 406.91264pt x 151.34593pt>
 File: ./images/Authentication.pdf Graphic file (type pdf)
 
 <use ./images/Authentication.pdf>
@@ -1806,7 +1784,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 12.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [73]
 (./parti/mongoRelation.tex
-<./images/mongoRelation.pdf, id=920, 387.72961pt x 151.06969pt>
+<./images/mongoRelation.pdf, id=919, 387.72961pt x 151.06969pt>
 File: ./images/mongoRelation.pdf Graphic file (type pdf)
 
 <use ./images/mongoRelation.pdf>
@@ -1845,7 +1823,7 @@ Package pdftex.def Info: ../../logo.jpg used on input line 14.
 (pdftex.def)             Requested size: 56.90282pt x 56.90282pt.
  [76]
 (./parti/fileServerRelation.tex
-<./images/fileServerRelation.pdf, id=956, 279.7969pt x 167.86284pt>
+<./images/fileServerRelation.pdf, id=955, 279.7969pt x 167.86284pt>
 File: ./images/fileServerRelation.pdf Graphic file (type pdf)
 
 <use ./images/fileServerRelation.pdf>
@@ -2490,28 +2468,27 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 1 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13992 strings out of 495017
- 203220 string characters out of 6181021
+ 13985 strings out of 495017
+ 203117 string characters out of 6181021
  395317 words of memory out of 5000000
- 16647 multiletter control sequences out of 15000+600000
- 17891 words of font info for 44 fonts, out of 8000000 for 9000
+ 16641 multiletter control sequences out of 15000+600000
+ 15751 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  51i,16n,60p,1001b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
-1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0
-800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sftt1200.pfb>
-Output written on DefinizioneDelProdotto_v.2.0.0.pdf (128 pages, 764012 bytes).
+e/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
+1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on DefinizioneDelProdotto_v.2.0.0.pdf (128 pages, 754759 bytes).
 
 PDF statistics:
- 1729 PDF objects out of 2073 (max. 8388607)
- 1531 compressed objects within 16 object streams
+ 1725 PDF objects out of 1728 (max. 8388607)
+ 1528 compressed objects within 16 object streams
  244 named destinations out of 1000 (max. 500000)
  822 words of extra memory for PDF output out of 10000 (max. 10000000)
 
